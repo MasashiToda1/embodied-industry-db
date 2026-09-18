@@ -20,7 +20,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
 
-from . import tender, wechat
+from . import paper, tender, wechat
 
 ROOT = Path(__file__).resolve().parent.parent
 DRAFTS = ROOT / "drafts"
@@ -179,7 +179,7 @@ def write_event(event: dict) -> str:
 class ParseIn(BaseModel):
     source: str
     is_url: bool | None = None
-    kind: str = "wechat"          # wechat | tender
+    kind: str = "wechat"          # wechat | tender | paper
 
 
 @app.post("/api/parse")
@@ -189,6 +189,8 @@ def api_parse(payload: ParseIn) -> JSONResponse:
         raise HTTPException(400, "内容为空")
     if payload.kind == "tender":
         return _parse_tender(source)
+    if payload.kind == "paper":
+        return _parse_paper(source)
 
     art = wechat.load(source, payload.is_url)
     snapshot = ""
@@ -280,6 +282,80 @@ def _parse_tender(source: str) -> JSONResponse:
         draft["amount_raw"] = t.amount_raw
     save_draft(draft)
     return JSONResponse({"draft": draft, "extract": t.summary_dict()})
+
+
+def _parse_paper(source: str) -> JSONResponse:
+    """论文转草稿。轴取值只给候选并附原文片段，由人确认。"""
+    p = paper.load(source)
+    kw = paper.load_keywords(ROOT)
+    blob = f"{p.title} {p.abstract}"
+    candidates = paper.extract_axes(blob, kw)
+
+    # ⚠️ 只拿作者串匹配，绝不拿摘要正文匹配。
+    # 摘要里的「deployment on a Unitree G1」说的是论文用了谁家硬件，
+    # 不是论文由谁所写。混在一起会把高校论文记成本体厂商的技术信号。
+    org_hits = paper.match_orgs(" ".join(p.authors), load_orgs_full())
+    # 单独算一次「摘要里提到哪些主体」，只作提示，不参与主体判定
+    mentioned = [
+        h for h in paper.match_orgs(blob, load_orgs_full())
+        if h["id"] not in {x["id"] for x in org_hits}
+    ]
+
+    art = wechat.Article(title=p.title, html=p.html, url=p.url)
+    snapshot = wechat.save_snapshot(ROOT, art, p.published, prefix="arxiv") if p.html else ""
+
+    warnings = list(p.warnings)
+    if not org_hits:
+        warnings.append(
+            "作者里没匹配到 registry 主体。arXiv 元数据不含机构字段，所以必须人工判定作者归属；"
+            "若这篇确实只有高校参与，就不该入库——本库只收产业主体"
+        )
+    if mentioned:
+        names = "、".join(f"{h['zh']}（{h['matched']}）" for h in mentioned)
+        warnings.append(
+            f"摘要里提到了 {names}，但那是论文用了谁家硬件或工具，不等于论文由谁所写，别直接当主体"
+        )
+    if candidates:
+        warnings.append(
+            "轴取值是关键词候选，不是结论：命中可能来自相关工作而非本文方法，逐条看片段再确认"
+        )
+    warnings.append("论文的轴信号弱于产品发布——它说明团队研究过什么，不说明产品里跑什么")
+
+    draft = {
+        "id": uuid.uuid4().hex[:12],
+        "created": datetime.now(CST).isoformat(timespec="seconds"),
+        "kind": "paper",
+        "article": {
+            "url": p.url,
+            "title": p.title,
+            "account": "arXiv" if p.arxiv_id else "",
+            "published": p.published,
+            "published_basis": "stated" if p.published else "",
+            "body": p.abstract,
+            "images": [],
+            "warnings": warnings,
+        },
+        "snapshot": snapshot,
+        "date": p.published,
+        "date_precision": "day" if p.published else "",
+        "date_basis": "stated",
+        "title_zh": p.title,
+        "summary_zh": "",
+        "type": "publication",
+        "tier": "primary",           # 论文是一手文件
+        "corroboration": "single",
+        # 论文一律不自动填主体：作者机构靠文本猜不可靠，猜错就是把别人的论文
+        # 记成某家公司的技术信号，比留空糟得多。
+        "orgs": [],
+        "axes": {},
+        "axis_candidates": candidates,
+        "org_candidates": org_hits,
+        "orgs_mentioned": mentioned,
+        "arxiv_id": p.arxiv_id,
+        "status": "draft",
+    }
+    save_draft(draft)
+    return JSONResponse({"draft": draft, "extract": p.summary_dict()})
 
 
 def _tender_summary(t: tender.Tender) -> str:

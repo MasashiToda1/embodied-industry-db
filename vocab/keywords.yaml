@@ -1,0 +1,56 @@
+# 轴取值的探测关键词。
+#
+# 与 axes-*.yaml 分开放，因为性质不同：词表是契约（改取值要做迁移），
+# 关键词只是探测启发式，可以随时增删，不影响已入库数据。
+#
+# ⚠️ 命中关键词只产生**候选**，不等于事实。一篇论文在相关工作里提到 MuJoCo，
+#    不代表该主体用 MuJoCo。所以抽取结果必须带原文片段、必须人工确认。
+#
+# ⚠️ 论文的轴信号比产品发布弱：论文说明这个团队研究过什么，不说明产品里跑什么。
+#    入库时留意别把研究探索当成技术选型。
+
+axes:
+  control_route:
+    rl: ["reinforcement learning", "PPO", "SAC", "policy gradient", "强化学习"]
+    mpc: ["model predictive control", "MPC", "NMPC", "模型预测控制"]
+    wbc: ["whole-body control", "whole body controller", "WBC", "inverse dynamics", "全身控制"]
+    hybrid: ["residual policy", "hybrid controller", "RL residual", "learning-augmented"]
+
+  model_form:
+    end2end-vla: ["vision-language-action", "VLA", "end-to-end policy", "端到端"]
+    hierarchical: ["hierarchical policy", "high-level planner", "low-level tracker", "planner and tracker", "分层"]
+    motion-library: ["motion library", "motion retargeting", "reference motion", "动作库", "重定向"]
+    world-model: ["world model", "latent dynamics", "dynamics model learning", "世界模型"]
+    il: ["imitation learning", "behavior cloning", "behaviour cloning", "diffusion policy", "模仿学习"]
+
+  sim_stack:
+    isaac-lab: ["Isaac Lab", "IsaacLab", "Isaac Gym", "IsaacGym", "Orbit"]
+    isaac-sim: ["Isaac Sim", "IsaacSim", "Omniverse"]
+    mujoco: ["MuJoCo", "MJX", "mujoco_menagerie"]
+    genesis: ["Genesis simulator", "Genesis physics"]
+    sapien: ["SAPIEN", "ManiSkill"]
+    embodichain: ["EmbodiChain"]
+
+  embodiment_form:
+    humanoid-biped: ["bipedal humanoid", "humanoid robot", "Unitree G1", "Unitree H1", "双足"]
+    quadruped: ["quadruped", "quadrupedal", "ANYmal", "Unitree Go", "四足"]
+    mobile-manipulator: ["mobile manipulator", "mobile manipulation"]
+    dual-arm-stationary: ["bimanual", "dual-arm", "双臂"]
+    arm: ["robotic arm", "manipulator arm", "Franka", "UR5"]
+
+  data_acquisition:
+    mocap: ["motion capture", "MoCap", "AMASS", "SMPL", "光学动捕"]
+    teleop: ["teleoperation", "teleoperated", "VR controller", "exoskeleton", "遥操作"]
+    real-robot: ["real-robot data", "real-world rollouts", "on-robot data", "真机数据"]
+    sim-generated: ["synthetic data", "simulation-generated", "domain randomization", "procedural generation"]
+    human-video: ["human video", "egocentric video", "internet video", "Ego4D", "人类视频"]
+    crowdsourced: ["crowdsourced", "crowd-sourced"]
+
+  data_modality:
+    joint-trajectory: ["joint trajectories", "joint angles", "proprioception"]
+    rgb: ["RGB images", "monocular RGB"]
+    rgbd: ["RGB-D", "depth camera"]
+    pointcloud: ["point cloud", "point clouds", "LiDAR"]
+    tactile: ["tactile", "touch sensing", "触觉"]
+    force-torque: ["force-torque", "force/torque", "wrench"]
+    language-annotated: ["language instructions", "language-annotated", "natural language instruction"]

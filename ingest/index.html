@@ -53,9 +53,10 @@
       <select id="kind">
         <option value="wechat">微信文章 / 官方消息</option>
         <option value="tender">招投标公告</option>
+        <option value="paper">论文 / arXiv</option>
       </select>
     </div>
-    <textarea id="src" placeholder="微信：粘链接或整页 HTML（Cmd+U 看源码后全选复制）&#10;招投标：粘公告正文或整页 HTML 均可"></textarea>
+    <textarea id="src" placeholder="微信：粘链接或整页 HTML（Cmd+U 看源码后全选复制）&#10;招投标：粘公告正文或整页 HTML 均可&#10;论文：粘 arXiv 编号（2601.01234）、abs 链接，或标题加摘要"></textarea>
     <div class="actions">
       <button id="go">解析</button>
       <button class="ghost" id="reload">刷新草稿</button>
@@ -106,17 +107,48 @@ function orgRow(o={}) {
   </div>`;
 }
 
-function axesHtml(axes) {
+// 轴候选连原文片段一起摆出来。不看片段就确认取值等于在猜：
+// 命中「MuJoCo」可能来自相关工作而不是本文方法。
+function candidatesHtml(d) {
+  const c = d.axis_candidates;
+  if (!c || !Object.keys(c).length) return '';
+  const rows = Object.entries(c).map(([field, hits]) => {
+    const a = BOOT.axes[field] || { zh: field };
+    return hits.map(h => {
+      const vz = (a.values || []).find(v => v.id === h.value);
+      return `<tr><td style="white-space:nowrap">${esc(a.zh)}</td>
+        <td style="white-space:nowrap"><b>${esc(vz ? vz.zh : h.value)}</b></td>
+        <td style="white-space:nowrap"><code>${esc(h.matched)}</code></td>
+        <td style="color:#555">${esc(h.snippet)}</td></tr>`;
+    }).join('');
+  }).join('');
+  return `<details open style="margin-top:14px">
+    <summary>轴候选 ${Object.values(c).reduce((n,v)=>n+v.length,0)} 条 —— 关键词命中，不是结论，逐条看片段再去下面勾选</summary>
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <tr style="color:var(--muted)"><th align="left">轴</th><th align="left">候选值</th><th align="left">命中词</th><th align="left">原文片段</th></tr>
+      ${rows}
+    </table>
+  </details>`;
+}
+
+function axesHtml(axes, candidates) {
+  const cand = candidates || {};
   return Object.entries(BOOT.axes).map(([field, a]) => {
+    const suggested = new Set((cand[field] || []).map(h => h.value));
     const cur = axes[field];
     const curArr = Array.isArray(cur) ? cur : (cur ? [cur] : []);
     const values = {}; a.values.forEach(v => values[v.id] = v.zh);
+    // 候选值标上 ◆，方便在长下拉里定位，但不预选——预选等于替人做决定
+    const mark = k => (suggested.has(k) ? '◆ ' : '') + esc(values[k]);
     const sel = a.multi
       ? `<select class="ax" data-field="${field}" data-multi="1" multiple size="3">${
-          Object.entries(values).map(([k,v]) =>
-            `<option value="${k}"${curArr.includes(k)?' selected':''}>${esc(v)}</option>`).join('')}</select>`
-      : `<select class="ax" data-field="${field}">${opts(values, curArr[0], '—')}</select>`;
-    return `<div class="axis"><label>${esc(a.zh)} · ${field}${a.multi?' （可多选）':''}</label>${sel}</div>`;
+          Object.keys(values).map(k =>
+            `<option value="${k}"${curArr.includes(k)?' selected':''}>${mark(k)}</option>`).join('')}</select>`
+      : `<select class="ax" data-field="${field}"><option value="">—</option>${
+          Object.keys(values).map(k =>
+            `<option value="${k}"${curArr[0]===k?' selected':''}>${mark(k)}</option>`).join('')}</select>`;
+    const hint = suggested.size ? ` · <span style="color:var(--warn)">◆ ${suggested.size} 个候选</span>` : '';
+    return `<div class="axis"><label>${esc(a.zh)} · ${field}${a.multi?' （可多选）':''}${hint}</label>${sel}</div>`;
   }).join('');
 }
 
@@ -156,8 +188,10 @@ function draftCard(d) {
     <div class="orgs">${(d.orgs||[]).map(orgRow).join('') || ''}</div>
     <button class="ghost o-add">＋ 加一个主体</button>
 
+    ${candidatesHtml(d)}
+
     <h2 style="margin-top:14px">轴取值</h2>
-    <div class="axes">${axesHtml(d.axes || {})}</div>
+    <div class="axes">${axesHtml(d.axes || {}, d.axis_candidates)}</div>
 
     <div class="actions">
       <button class="save">保存</button>
