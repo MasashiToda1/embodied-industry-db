@@ -52,6 +52,7 @@ class Linter:
         self.org_ids: set[str] = set()
         self.dataset_ids: set[str] = set()
         self.event_count: dict[str, int] = {}
+        self.first_party: list[str] = []
 
     def err(self, where: str, msg: str) -> None:
         self.errors.append(f"{where}: {msg}")
@@ -173,14 +174,32 @@ class Linter:
                 if not amount.get("currency"):
                     self.err(where, "amount 必须带 currency，跨国比价没有币种无意义")
 
-        # 门禁 1：evidence 完整性
+        # 门禁 1：evidence 完整性。要求按来源等级分流——
+        # 公开来源必须给 URL 和快照；一手来源给不出这两样，改为必须交代渠道与时间。
         for i, ev in enumerate(doc.get("evidence") or []):
             tag = f"evidence[{i}]"
-            for field in EVIDENCE_REQUIRED:
-                if not ev.get(field):
-                    self.err(where, f"{tag} 缺 {field}")
-            if ev.get("tier") and ev["tier"] not in self.vocab.enums["source_tiers"]:
-                self.err(where, f"{tag} tier「{ev['tier']}」不在枚举内")
+            tier = ev.get("tier")
+            if not tier:
+                self.err(where, f"{tag} 缺 tier")
+            elif tier not in self.vocab.enums["source_tiers"]:
+                self.err(where, f"{tag} tier「{tier}」不在枚举内")
+
+            if tier == "first-party":
+                if not ev.get("retrieved"):
+                    self.err(where, f"{tag} 一手来源必须填 retrieved（获取日期）")
+                method = ev.get("method")
+                if not method:
+                    self.err(where, f"{tag} 一手来源必须填 method，交代怎么拿到的")
+                elif method not in self.vocab.enums["first_party_methods"]:
+                    self.err(where, f"{tag} method「{method}」不在词表内")
+                if ev.get("url"):
+                    self.warn(where, f"{tag} 一手来源带了 url，确认它是否其实属于公开来源")
+                self.first_party.append(f"{where} [{method}]")
+            else:
+                for field in EVIDENCE_REQUIRED:
+                    if not ev.get(field):
+                        self.err(where, f"{tag} 缺 {field}")
+
             snapshot = ev.get("snapshot")
             if snapshot and not snapshot.startswith("http"):
                 if not (self.root / snapshot).exists():
@@ -240,6 +259,12 @@ class Linter:
             print(f"  warn  {line}")
         for line in self.errors:
             print(f"  ERROR {line}")
+
+        # 一手来源第三方核验不了，所以每次都列出来，让它始终可见、可复核。
+        if self.first_party:
+            print(f"\n一手来源事件 {len(self.first_party)} 条（第三方无法核验，已标注）：")
+            for line in self.first_party:
+                print(f"  · {line}")
 
         total = len(self.org_ids), len(self.dataset_ids), sum(self.event_count.values())
         print(f"\n主体 {total[0]} / 数据集 {total[1]} / 事件引用 {total[2]}")

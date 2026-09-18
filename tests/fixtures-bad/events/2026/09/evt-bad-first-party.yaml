@@ -1,0 +1,15 @@
+# 违规夹具：一手来源缺问责字段。
+# 预期报：缺 retrieved、method 不在词表内。
+id: evt-bad-first-party
+date: 2026-09-10
+date_precision: day
+type: pricing
+orgs:
+  - id: bad-org
+    role: subject
+title:
+  zh: 一手来源字段不全
+evidence:
+  - tier: first-party
+    method: 装成租赁商加微信问到的，对方叫小蒋
+corroboration: single

@@ -88,6 +88,26 @@ def slugify(text: str) -> str:
     return re.sub(r"-+", "-", text).strip("-").lower()[:40]
 
 
+def _evidence(draft: dict, art: dict) -> dict:
+    """按来源等级出不同形状的 evidence。
+
+    公开来源给 URL 加快照；一手来源两样都没有，改为交代渠道类型与获取日期。
+    """
+    retrieved = draft.get("retrieved") or datetime.now(CST).strftime("%Y-%m-%d")
+    if draft.get("tier") == "first-party":
+        ev = {"tier": "first-party", "method": draft.get("method") or "", "retrieved": retrieved}
+        if draft.get("note"):
+            ev["note"] = draft["note"]
+        return ev
+    return {
+        "url": art.get("url") or draft.get("manual_url") or "",
+        "publisher": art.get("account") or draft.get("publisher") or "",
+        "tier": draft.get("tier") or "official",
+        "retrieved": retrieved,
+        "snapshot": draft.get("snapshot") or "",
+    }
+
+
 def build_event(draft: dict) -> dict:
     """草稿转事件 YAML 结构。字段顺序刻意固定，方便 diff 阅读。"""
     art = draft["article"]
@@ -113,15 +133,7 @@ def build_event(draft: dict) -> dict:
         ],
         "title": {"zh": draft.get("title_zh") or art.get("title", "")},
         "summary": {"zh": draft.get("summary_zh") or ""},
-        "evidence": [
-            {
-                "url": art.get("url") or draft.get("manual_url") or "",
-                "publisher": art.get("account") or draft.get("publisher") or "",
-                "tier": draft.get("tier") or "official",
-                "retrieved": draft.get("retrieved") or datetime.now(CST).strftime("%Y-%m-%d"),
-                "snapshot": draft.get("snapshot") or "",
-            }
-        ],
+        "evidence": [_evidence(draft, art)],
         "corroboration": draft.get("corroboration") or "single",
     }
 
@@ -215,6 +227,7 @@ def api_bootstrap() -> dict:
         "event_types": vocab["enums"]["event_types"],
         "org_roles": vocab["enums"]["org_roles"],
         "source_tiers": vocab["enums"]["source_tiers"],
+        "first_party_methods": vocab["enums"]["first_party_methods"],
         "corroboration": vocab["enums"]["corroboration"],
         "date_precision": vocab["enums"]["date_precision"],
         "date_basis": vocab["enums"]["date_basis"],
@@ -261,10 +274,18 @@ def api_approve(did: str) -> dict:
         missing.append("date")
     if not draft.get("orgs"):
         missing.append("orgs（至少一个主体）")
-    if not draft.get("snapshot"):
-        missing.append("snapshot")
-    if not (draft["article"].get("url") or draft.get("manual_url")):
-        missing.append("来源 URL（粘贴 HTML 时需手填原文链接）")
+
+    # 一手来源给不出 URL 和快照，改为必须交代渠道与获取日期
+    if draft.get("tier") == "first-party":
+        if not draft.get("method"):
+            missing.append("method（一手来源必须交代渠道类型）")
+        if not draft.get("retrieved"):
+            missing.append("retrieved（获取日期）")
+    else:
+        if not draft.get("snapshot"):
+            missing.append("snapshot")
+        if not (draft["article"].get("url") or draft.get("manual_url")):
+            missing.append("来源 URL（粘贴 HTML 时需手填原文链接）")
     if missing:
         raise HTTPException(400, "还差：" + "、".join(missing))
 

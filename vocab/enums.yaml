@@ -29,10 +29,24 @@ org_roles:
   supplier:     供应方、承接方
 
 source_tiers:
-  official:   主体自己发布的（官网、公众号、官方博客、发布会）
-  primary:    一手文件（招标公告、专利、SEC filing、工商登记、论文）
-  media:      媒体报道
-  aggregator: 二手聚合（榜单、数据库、转载）
+  official:    主体自己发布的（官网、公众号、官方博客、发布会）
+  primary:     一手文件（招标公告、专利、SEC filing、工商登记、论文）
+  media:       媒体报道
+  aggregator:  二手聚合（榜单、数据库、转载）
+  first-party: 本库自行获取，第三方无法核验（访谈、回访、询价、现场观察、实测）
+
+# first-party 的问责字段。没有 URL 和快照可给，所以用「怎么拿到的」替代，
+# 让读者自己决定信多少。
+#
+# ⚠️ 刻意做成受控词表而不是自由文本：自由文本会诱使人写下获取细节和当事人姓名，
+#    那些东西一旦公开就收不回来，而它们对判断数据可靠性并无必要。
+#    只记渠道类型，不记个人、不记可反推身份的细节。
+first_party_methods:
+  interview:         与从业者访谈
+  customer-review:   客户回访或使用反馈
+  vendor-inquiry:    以买方身份向厂商询价
+  field-observation: 现场或展会观察
+  hands-on-test:     自行实测
 
 corroboration:
   single:      仅一个来源

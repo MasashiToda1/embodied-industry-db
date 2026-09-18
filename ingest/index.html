@@ -137,6 +137,7 @@ function draftCard(d) {
     <div class="row"><label>原文时间表述</label><input class="f" data-k="date_as_stated" value="${esc(d.date_as_stated)}" placeholder="依据非 stated 时必填，如「2025 年下半年」"></div>
     ${needUrl ? `<div class="row"><label>原文链接</label><input class="f" data-k="manual_url" value="${esc(d.manual_url)}" placeholder="粘贴 HTML 时必填"></div>` : ''}
     <div class="row"><label>来源等级</label><select class="f" data-k="tier">${opts(BOOT.source_tiers, d.tier)}</select></div>
+    <div class="row"><label>一手渠道</label><select class="f" data-k="method">${opts(BOOT.first_party_methods, d.method, '—（仅 first-party 需填）')}</select></div>
     <div class="row"><label>佐证状态</label><select class="f" data-k="corroboration">${opts(BOOT.corroboration, d.corroboration)}</select></div>
     <div class="row"><label>中文标题</label><input class="f" data-k="title_zh" value="${esc(d.title_zh)}"></div>
     <div class="row"><label>中文摘要</label><input class="f" data-k="summary_zh" value="${esc(d.summary_zh)}" placeholder="一句事实，别写判断（lint 会拦推断性措辞）"></div>

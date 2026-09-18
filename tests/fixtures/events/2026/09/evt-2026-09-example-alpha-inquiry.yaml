@@ -1,0 +1,26 @@
+# 测试夹具：一手来源事件。验证 evidence 按来源等级分流的门禁。
+id: evt-2026-09-example-alpha-inquiry
+date: 2026-09-10
+date_precision: day
+type: pricing
+orgs:
+  - id: example-alpha
+    role: subject
+counterparties:
+  - 某文旅园区          # 非产业买方只作文本记录，不进 registry
+title:
+  zh: 示例甲群控模块对外报价
+  en: Example Alpha quotes its fleet-control module
+summary:
+  zh: 硬件模块按台买断，软件授权首年随附、次年起按台年付。
+axes:
+  delivery_model: [hardware-sale, software-license]
+amount:
+  value: 1000
+  currency: CNY
+evidence:
+  - tier: first-party
+    method: vendor-inquiry      # 只记渠道类型，不记个人与获取细节
+    retrieved: 2026-09-10
+    note: 以买方身份问到的对外报价口径
+corroboration: single
