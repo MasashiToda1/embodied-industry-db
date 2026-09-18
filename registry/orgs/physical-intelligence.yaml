@@ -1,0 +1,9 @@
+id: physical-intelligence
+names:
+  zh: 物理智能
+  en: Physical Intelligence
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: physical-intelligence

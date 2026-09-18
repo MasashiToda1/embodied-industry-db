@@ -1,0 +1,10 @@
+id: nvidia
+names:
+  zh: 英伟达
+  en: NVIDIA
+status: active
+layers:
+- simulation
+- foundation
+upstream:
+  robotics_notebooks_institution: nvidia

@@ -1,0 +1,9 @@
+id: dmbots
+names:
+  zh: 达妙科技
+  en: DMBots
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: dmbots

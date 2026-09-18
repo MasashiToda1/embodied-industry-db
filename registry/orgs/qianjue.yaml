@@ -1,0 +1,9 @@
+id: qianjue
+names:
+  zh: 千觉机器人
+  en: Qianjue Robotics
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: qianjue

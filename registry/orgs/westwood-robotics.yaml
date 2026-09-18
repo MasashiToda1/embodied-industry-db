@@ -1,0 +1,9 @@
+id: westwood-robotics
+names:
+  zh: 韦斯特伍德机器人
+  en: Westwood Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: westwood-robotics

@@ -1,0 +1,10 @@
+id: alphasquare
+names:
+  zh: 智平方
+  en: AlphaSquare
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: alphasquare

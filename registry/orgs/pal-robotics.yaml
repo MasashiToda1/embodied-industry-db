@@ -1,0 +1,9 @@
+id: pal-robotics
+names:
+  zh: 帕尔机器人
+  en: PAL Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: pal-robotics

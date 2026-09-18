@@ -1,0 +1,9 @@
+id: skild-ai
+names:
+  zh: Skild AI
+  en: Skild AI
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: skild-ai

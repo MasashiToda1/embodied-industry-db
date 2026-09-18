@@ -1,0 +1,10 @@
+id: x-humanoid
+names:
+  zh: 北京人形机器人创新中心
+  en: X-Humanoid
+status: active
+layers:
+- embodiment
+- data
+upstream:
+  robotics_notebooks_institution: x-humanoid

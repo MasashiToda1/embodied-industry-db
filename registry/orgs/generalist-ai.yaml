@@ -1,0 +1,9 @@
+id: generalist-ai
+names:
+  zh: Generalist AI
+  en: Generalist AI
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: generalist-ai

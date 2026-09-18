@@ -1,0 +1,10 @@
+id: galaxea
+names:
+  zh: 星海图
+  en: Galaxea
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: galaxea

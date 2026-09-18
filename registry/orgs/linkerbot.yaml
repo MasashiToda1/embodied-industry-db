@@ -1,0 +1,9 @@
+id: linkerbot
+names:
+  zh: 灵心巧手
+  en: LinkerBot
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: linkerbot

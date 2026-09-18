@@ -1,0 +1,10 @@
+id: hightorque
+names:
+  zh: 高擎机电
+  en: HighTorque Robotics
+status: active
+layers:
+- components
+- embodiment
+upstream:
+  robotics_notebooks_institution: hightorque

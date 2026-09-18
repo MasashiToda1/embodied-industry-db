@@ -1,0 +1,9 @@
+id: direct-drive-tech
+names:
+  zh: 直驱科技
+  en: Direct Drive Tech
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: direct-drive-tech

@@ -1,0 +1,10 @@
+id: spirit-ai
+names:
+  zh: 千寻智能
+  en: Spirit AI
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: spirit-ai

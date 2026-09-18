@@ -1,0 +1,9 @@
+id: scale-ai
+names:
+  zh: Scale AI
+  en: Scale AI
+status: active
+layers:
+- data
+upstream:
+  robotics_notebooks_institution: scale-ai

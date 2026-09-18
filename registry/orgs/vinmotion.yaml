@@ -1,0 +1,9 @@
+id: vinmotion
+names:
+  zh: VinMotion
+  en: VinMotion
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: vinmotion

@@ -1,0 +1,10 @@
+id: noitom
+names:
+  zh: 诺亦腾
+  en: Noitom
+status: active
+layers:
+- data
+- components
+upstream:
+  robotics_notebooks_institution: noitom

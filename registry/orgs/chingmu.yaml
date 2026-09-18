@@ -1,0 +1,10 @@
+id: chingmu
+names:
+  zh: 青瞳视觉
+  en: CHINGMU Vision
+status: active
+layers:
+- data
+- components
+upstream:
+  robotics_notebooks_institution: chingmu

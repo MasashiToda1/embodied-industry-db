@@ -1,0 +1,9 @@
+id: rainbow-robotics
+names:
+  zh: 彩虹机器人
+  en: Rainbow Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: rainbow-robotics

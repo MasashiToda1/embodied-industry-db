@@ -1,0 +1,10 @@
+id: boston-dynamics
+names:
+  zh: 波士顿动力
+  en: Boston Dynamics
+status: active
+layers:
+- embodiment
+- locomotion
+upstream:
+  robotics_notebooks_institution: boston-dynamics

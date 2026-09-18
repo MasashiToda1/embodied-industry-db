@@ -1,0 +1,10 @@
+id: limx
+names:
+  zh: 逐际动力
+  en: LimX Dynamics
+status: active
+layers:
+- embodiment
+- locomotion
+upstream:
+  robotics_notebooks_institution: limx

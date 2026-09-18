@@ -1,0 +1,9 @@
+id: noetix
+names:
+  zh: 松延动力
+  en: Noetix Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: noetix

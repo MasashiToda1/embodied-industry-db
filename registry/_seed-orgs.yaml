@@ -1,0 +1,68 @@
+# 主体种子清单。一行一家，由 scripts/bootstrap_orgs.py 展开成 registry/orgs/*.yaml。
+#
+# 名称与别名取自 Robotics_Notebooks 的 schema/institutions.json（MIT，Copyright 2026 Chong Liu），
+# upstream 字段记下对应的机构 id，后面接论文管道时靠它做主体映射。
+#
+# ⚠️ layers 是首轮分类，不是核实过的事实。看错了直接改对应的 registry/orgs/*.yaml
+#    （脚本不覆盖已存在文件）。founded 与 hq 一律留空，等有来源再补，否则 lint 会警告。
+
+orgs:
+  # ---------------- 整机本体 ----------------
+  - { id: ubtech,          zh: 优必选,        en: UBTECH,          layers: [embodiment, integration],            upstream: ubtech }
+  - { id: fourier,         zh: 傅利叶,        en: Fourier,         layers: [embodiment],                         upstream: fourier }
+  - { id: booster,         zh: 加速进化,      en: Booster Robotics, layers: [embodiment],                        upstream: booster }
+  - { id: engineai,        zh: 众擎机器人,    en: EngineAI,        layers: [embodiment],                         upstream: engineai }
+  - { id: noetix,          zh: 松延动力,      en: Noetix Robotics, layers: [embodiment],                         upstream: noetix }
+  - { id: limx,            zh: 逐际动力,      en: LimX Dynamics,   layers: [embodiment, locomotion],             upstream: limx }
+  - { id: deeprobotics,    zh: 云深处科技,    en: Deep Robotics,   layers: [embodiment, locomotion],             upstream: deeprobotics }
+  - { id: leju,            zh: 乐聚机器人,    en: Leju,            layers: [embodiment],                         upstream: leju }
+  - { id: roboterax,       zh: 星动纪元,      en: ROBOTERA,        layers: [embodiment, foundation],             upstream: roboterax }
+  - { id: galaxea,         zh: 星海图,        en: Galaxea,         layers: [embodiment, foundation],             upstream: galaxea }
+  - { id: galbot,          zh: 银河通用,      en: Galbot,          layers: [embodiment, foundation],             upstream: galbot }
+  - { id: astribot,        zh: 星尘智能,      en: Astribot,        layers: [embodiment],                         upstream: astribot }
+  - { id: boston-dynamics, zh: 波士顿动力,    en: Boston Dynamics, layers: [embodiment, locomotion],             upstream: boston-dynamics }
+  - { id: 1x-technologies, zh: 1X Technologies, en: 1X Technologies, layers: [embodiment, foundation],           upstream: 1x-technologies }
+  - { id: figure-ai,       zh: Figure AI,     en: Figure AI,       layers: [embodiment, foundation],             upstream: figure-ai }
+  - { id: pal-robotics,    zh: 帕尔机器人,    en: PAL Robotics,    layers: [embodiment],                         upstream: pal-robotics }
+  - { id: rainbow-robotics, zh: 彩虹机器人,   en: Rainbow Robotics, layers: [embodiment],                        upstream: rainbow-robotics }
+  - { id: westwood-robotics, zh: 韦斯特伍德机器人, en: Westwood Robotics, layers: [embodiment],                  upstream: westwood-robotics }
+  - { id: vinmotion,       zh: VinMotion,     en: VinMotion,       layers: [embodiment],                         upstream: vinmotion }
+  - { id: x-humanoid,      zh: 北京人形机器人创新中心, en: X-Humanoid, layers: [embodiment, data],                upstream: x-humanoid }
+  - { id: zj-humanoid,     zh: 浙江人形机器人创新中心, en: ZJ Humanoid, layers: [embodiment],                     upstream: zj-humanoid }
+
+  # ---------------- 具身基础模型 ----------------
+  - { id: physical-intelligence, zh: 物理智能, en: Physical Intelligence, layers: [foundation],                   upstream: physical-intelligence }
+  - { id: skild-ai,        zh: Skild AI,      en: Skild AI,        layers: [foundation],                         upstream: skild-ai }
+  - { id: generalist-ai,   zh: Generalist AI, en: Generalist AI,   layers: [foundation],                         upstream: generalist-ai }
+  - { id: x-square-robot,  zh: 自变量机器人,  en: X Square Robot,  layers: [foundation, embodiment],             upstream: x-square-robot }
+  - { id: spirit-ai,       zh: 千寻智能,      en: Spirit AI,       layers: [foundation, embodiment],             upstream: spirit-ai }
+  - { id: alphasquare,     zh: 智平方,        en: AlphaSquare,     layers: [foundation, embodiment],             upstream: alphasquare }
+  - { id: beingbeyond,     zh: 超越智能,      en: BeingBeyond,     layers: [foundation],                         upstream: beingbeyond }
+  - { id: tars-robotics,   zh: 它石智航,      en: TARS Robotics,   layers: [foundation, embodiment],             upstream: tars-robotics }
+  - { id: psibot,          zh: 灵巧智能,      en: PsiBot,          layers: [foundation, embodiment],             upstream: psibot }
+
+  # ---------------- 运控与内容 ----------------
+  - { id: bridgedp,        zh: 桥介数物,      en: BridgeDP,        layers: [locomotion, content, simulation],    upstream: bridgedp }
+
+  # ---------------- 关键部件 ----------------
+  - { id: linkerbot,       zh: 灵心巧手,      en: LinkerBot,       layers: [components],                         upstream: linkerbot }
+  - { id: paxini,          zh: 帕西尼,        en: Paxini Tech,     layers: [components],                         upstream: paxini }
+  - { id: shadow-robotics, zh: 影子机器人,    en: Shadow Robot Company, layers: [components],                    upstream: shadow-robotics }
+  - { id: ohand,           zh: 傲意科技,      en: OHand Technology, layers: [components],                        upstream: ohand }
+  - { id: dmbots,          zh: 达妙科技,      en: DMBots,          layers: [components],                         upstream: dmbots }
+  - { id: direct-drive-tech, zh: 直驱科技,    en: Direct Drive Tech, layers: [components],                       upstream: direct-drive-tech }
+  - { id: qianjue,         zh: 千觉机器人,    en: Qianjue Robotics, layers: [components],                        upstream: qianjue }
+  - { id: ti5robot,        zh: 钛虎机器人,    en: Ti5 Robot,       layers: [components, embodiment],             upstream: ti5robot }
+  - { id: hightorque,      zh: 高擎机电,      en: HighTorque Robotics, layers: [components, embodiment],         upstream: hightorque }
+
+  # ---------------- 数据采集与供给 ----------------
+  - { id: lightwheel,      zh: 光轮科技,      en: Lightwheel,      layers: [data, simulation],                   upstream: lightwheel }
+  - { id: scale-ai,        zh: Scale AI,      en: Scale AI,        layers: [data],                               upstream: scale-ai }
+  - { id: unidata,         zh: 优数数据,      en: Unidata,         layers: [data],                               upstream: unidata }
+  - { id: chingmu,         zh: 青瞳视觉,      en: CHINGMU Vision,  layers: [data, components],                   upstream: chingmu }
+  - { id: noitom,          zh: 诺亦腾,        en: Noitom,          layers: [data, components],                   upstream: noitom }
+
+  # ---------------- 仿真与工具链 ----------------
+  - { id: genesis-ai,      zh: 创世纪 AI,     en: Genesis AI,      layers: [simulation, foundation],             upstream: genesis-ai }
+  - { id: motphys,         zh: 莫特菲斯,      en: Motphys,         layers: [simulation],                         upstream: motphys }
+  - { id: nvidia,          zh: 英伟达,        en: NVIDIA,          layers: [simulation, foundation],             upstream: nvidia }

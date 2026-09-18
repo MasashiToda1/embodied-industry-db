@@ -1,0 +1,10 @@
+id: x-square-robot
+names:
+  zh: 自变量机器人
+  en: X Square Robot
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: x-square-robot

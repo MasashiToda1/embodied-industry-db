@@ -1,0 +1,10 @@
+id: figure-ai
+names:
+  zh: Figure AI
+  en: Figure AI
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: figure-ai

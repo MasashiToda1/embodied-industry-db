@@ -1,0 +1,10 @@
+id: psibot
+names:
+  zh: 灵巧智能
+  en: PsiBot
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: psibot

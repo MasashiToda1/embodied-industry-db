@@ -1,0 +1,10 @@
+id: ubtech
+names:
+  zh: 优必选
+  en: UBTECH
+status: active
+layers:
+- embodiment
+- integration
+upstream:
+  robotics_notebooks_institution: ubtech

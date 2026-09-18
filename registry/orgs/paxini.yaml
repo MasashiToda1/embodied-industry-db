@@ -1,0 +1,9 @@
+id: paxini
+names:
+  zh: 帕西尼
+  en: Paxini Tech
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: paxini

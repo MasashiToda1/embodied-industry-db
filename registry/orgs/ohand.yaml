@@ -1,0 +1,9 @@
+id: ohand
+names:
+  zh: 傲意科技
+  en: OHand Technology
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: ohand

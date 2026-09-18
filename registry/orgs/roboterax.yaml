@@ -1,0 +1,10 @@
+id: roboterax
+names:
+  zh: 星动纪元
+  en: ROBOTERA
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: roboterax

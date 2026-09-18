@@ -1,0 +1,9 @@
+id: booster
+names:
+  zh: 加速进化
+  en: Booster Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: booster

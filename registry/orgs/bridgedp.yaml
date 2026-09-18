@@ -1,0 +1,11 @@
+id: bridgedp
+names:
+  zh: 桥介数物
+  en: BridgeDP
+status: active
+layers:
+- locomotion
+- content
+- simulation
+upstream:
+  robotics_notebooks_institution: bridgedp

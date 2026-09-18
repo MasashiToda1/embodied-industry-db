@@ -1,0 +1,9 @@
+id: astribot
+names:
+  zh: 星尘智能
+  en: Astribot
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: astribot

@@ -1,0 +1,10 @@
+id: genesis-ai
+names:
+  zh: 创世纪 AI
+  en: Genesis AI
+status: active
+layers:
+- simulation
+- foundation
+upstream:
+  robotics_notebooks_institution: genesis-ai

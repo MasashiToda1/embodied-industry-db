@@ -1,0 +1,9 @@
+id: leju
+names:
+  zh: 乐聚机器人
+  en: Leju
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: leju

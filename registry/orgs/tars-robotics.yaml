@@ -1,0 +1,10 @@
+id: tars-robotics
+names:
+  zh: 它石智航
+  en: TARS Robotics
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: tars-robotics

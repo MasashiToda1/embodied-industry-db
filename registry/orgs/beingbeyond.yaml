@@ -1,0 +1,9 @@
+id: beingbeyond
+names:
+  zh: 超越智能
+  en: BeingBeyond
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: beingbeyond

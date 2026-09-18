@@ -1,0 +1,10 @@
+id: ti5robot
+names:
+  zh: 钛虎机器人
+  en: Ti5 Robot
+status: active
+layers:
+- components
+- embodiment
+upstream:
+  robotics_notebooks_institution: ti5robot

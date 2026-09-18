@@ -1,0 +1,10 @@
+id: deeprobotics
+names:
+  zh: 云深处科技
+  en: Deep Robotics
+status: active
+layers:
+- embodiment
+- locomotion
+upstream:
+  robotics_notebooks_institution: deeprobotics

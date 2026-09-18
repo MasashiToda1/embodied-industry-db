@@ -1,0 +1,10 @@
+id: galbot
+names:
+  zh: 银河通用
+  en: Galbot
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: galbot

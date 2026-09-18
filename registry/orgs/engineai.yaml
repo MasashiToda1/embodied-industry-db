@@ -1,0 +1,9 @@
+id: engineai
+names:
+  zh: 众擎机器人
+  en: EngineAI
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: engineai

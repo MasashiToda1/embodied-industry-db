@@ -1,0 +1,9 @@
+id: zj-humanoid
+names:
+  zh: 浙江人形机器人创新中心
+  en: ZJ Humanoid
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: zj-humanoid

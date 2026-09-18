@@ -1,0 +1,9 @@
+id: shadow-robotics
+names:
+  zh: 影子机器人
+  en: Shadow Robot Company
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: shadow-robotics

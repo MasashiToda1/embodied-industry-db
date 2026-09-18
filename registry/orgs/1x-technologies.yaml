@@ -1,0 +1,10 @@
+id: 1x-technologies
+names:
+  zh: 1X Technologies
+  en: 1X Technologies
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: 1x-technologies
