@@ -83,6 +83,12 @@ class Linter:
             if not doc.get("layers"):
                 self.err(str(rel), "layers 不能为空")
 
+            # 身份层也要可核查。成立年份、总部这类断言没来源就报出来，
+            # 否则「每条事实可回溯」这条规矩在 registry 里就破了。
+            claims = [k for k in ("founded", "hq") if doc.get(k)]
+            if claims and not doc.get("sources"):
+                self.warn(str(rel), f"{'、'.join(claims)} 无 sources，待补来源")
+
         for path in sorted((self.root / "registry/datasets").glob("*.yaml")):
             doc = yaml.safe_load(path.read_text()) or {}
             rel = path.relative_to(self.root)
