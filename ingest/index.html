@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>具身产业库 · 入库后台</title>
+<style>
+  :root { --line:#e3e3e6; --muted:#6b6b70; --bg:#fafafa; --warn:#b45309; --ok:#15803d; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.6 -apple-system,"PingFang SC",sans-serif; color:#1a1a1c; background:var(--bg); }
+  header { padding:14px 20px; background:#fff; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; }
+  h1 { font-size:16px; margin:0; }
+  header span { color:var(--muted); font-size:12px; }
+  main { max-width:1180px; margin:0 auto; padding:20px; display:grid; grid-template-columns:400px 1fr; gap:20px; align-items:start; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .card h2 { font-size:13px; margin:0 0 12px; color:var(--muted); font-weight:600; }
+  textarea { width:100%; min-height:150px; font:12px/1.5 ui-monospace,Menlo,monospace; padding:10px; border:1px solid var(--line); border-radius:6px; resize:vertical; }
+  input, select { width:100%; padding:7px 9px; border:1px solid var(--line); border-radius:6px; font:13px inherit; background:#fff; }
+  button { padding:8px 14px; border:0; border-radius:6px; background:#1a1a1c; color:#fff; font-size:13px; cursor:pointer; }
+  button:hover { opacity:.86; }
+  button.ghost { background:#fff; color:#1a1a1c; border:1px solid var(--line); }
+  button.danger { background:#fff; color:#b91c1c; border:1px solid #fca5a5; }
+  .row { display:grid; grid-template-columns:96px 1fr; gap:8px; align-items:center; margin-bottom:8px; }
+  .row label { color:var(--muted); font-size:12px; }
+  .drafts { display:flex; flex-direction:column; gap:14px; }
+  .draft { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .draft h3 { font-size:14px; margin:0 0 4px; }
+  .meta { color:var(--muted); font-size:12px; margin-bottom:12px; }
+  .warn { color:var(--warn); font-size:12px; background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:8px 10px; margin-bottom:12px; }
+  .body-peek { max-height:120px; overflow:auto; background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:10px; font-size:12px; color:#3a3a3e; white-space:pre-wrap; margin-bottom:12px; }
+  pre { background:#1a1a1c; color:#e8e8ea; padding:12px; border-radius:6px; overflow:auto; font:12px/1.5 ui-monospace,Menlo,monospace; max-height:280px; }
+  .axes { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px; margin:10px 0; }
+  .axis label { display:block; color:var(--muted); font-size:11px; margin-bottom:3px; }
+  .orgline { display:grid; grid-template-columns:1fr 130px 32px; gap:6px; margin-bottom:6px; }
+  .actions { display:flex; gap:8px; align-items:center; margin-top:12px; flex-wrap:wrap; }
+  .msg { font-size:12px; }
+  .msg.ok { color:var(--ok); }
+  .msg.err { color:#b91c1c; }
+  .empty { color:var(--muted); padding:30px; text-align:center; }
+  details summary { cursor:pointer; font-size:12px; color:var(--muted); margin-bottom:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>具身产业库 · 入库后台</h1>
+  <span>粘 URL 或整页 HTML → 解析存快照 → 补主体与轴 → 审过才写 events/</span>
+</header>
+
+<main>
+  <div class="card">
+    <h2>投料</h2>
+    <textarea id="src" placeholder="粘微信文章链接，或整页 HTML（Cmd+U 查看源代码后全选复制）"></textarea>
+    <div class="actions">
+      <button id="go">解析</button>
+      <button class="ghost" id="reload">刷新草稿</button>
+      <span class="msg" id="msg"></span>
+    </div>
+    <details style="margin-top:14px">
+      <summary>直取失败怎么办</summary>
+      <div style="font-size:12px;color:#555">
+        微信有防抓、链接也带时效参数，直取失败是常态，不是 bug。
+        在浏览器打开文章，<b>Cmd+U</b> 看源码、全选复制，整页 HTML 粘进来即可。
+        走粘贴路径时记得手填「原文链接」，那是 evidence 的必填项。
+      </div>
+    </details>
+  </div>
+
+  <div>
+    <div class="drafts" id="drafts"><div class="empty">暂无草稿</div></div>
+  </div>
+</main>
+
+<script>
+let BOOT = null;
+
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => (s??'').toString().replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function api(path, opts={}) {
+  const res = await fetch(path, { headers:{'Content-Type':'application/json'}, ...opts });
+  const data = await res.json().catch(()=>({}));
+  if (!res.ok) throw new Error(data.detail || res.statusText);
+  return data;
+}
+
+function opts(map, selected, blank) {
+  let html = blank ? `<option value="">${blank}</option>` : '';
+  for (const [k, v] of Object.entries(map)) {
+    html += `<option value="${esc(k)}"${k===selected?' selected':''}>${esc(v)}${v!==k?` · ${esc(k)}`:''}</option>`;
+  }
+  return html;
+}
+
+function orgRow(o={}) {
+  const list = {}; BOOT.orgs.forEach(x => list[x.id] = x.zh);
+  return `<div class="orgline">
+    <select class="o-id">${opts(list, o.id, '选主体…')}</select>
+    <select class="o-role">${opts(BOOT.org_roles, o.role || 'subject')}</select>
+    <button class="danger o-del" title="移除">×</button>
+  </div>`;
+}
+
+function axesHtml(axes) {
+  return Object.entries(BOOT.axes).map(([field, a]) => {
+    const cur = axes[field];
+    const curArr = Array.isArray(cur) ? cur : (cur ? [cur] : []);
+    const values = {}; a.values.forEach(v => values[v.id] = v.zh);
+    const sel = a.multi
+      ? `<select class="ax" data-field="${field}" data-multi="1" multiple size="3">${
+          Object.entries(values).map(([k,v]) =>
+            `<option value="${k}"${curArr.includes(k)?' selected':''}>${esc(v)}</option>`).join('')}</select>`
+      : `<select class="ax" data-field="${field}">${opts(values, curArr[0], '—')}</select>`;
+    return `<div class="axis"><label>${esc(a.zh)} · ${field}${a.multi?' （可多选）':''}</label>${sel}</div>`;
+  }).join('');
+}
+
+function draftCard(d) {
+  const a = d.article || {};
+  const warn = (a.warnings||[]).length
+    ? `<div class="warn">${a.warnings.map(esc).join('<br>')}</div>` : '';
+  const needUrl = !a.url;
+  return `<div class="draft" data-id="${d.id}">
+    <h3>${esc(d.title_zh || a.title || '（无标题）')}</h3>
+    <div class="meta">
+      ${esc(a.account || '未知来源')} ·
+      ${esc(a.published || '无日期')} ·
+      正文 ${(a.body||'').length} 字 ·
+      快照 ${d.snapshot ? '已存' : '<b style="color:#b91c1c">缺</b>'} ·
+      <code>${esc(d.id)}</code>
+    </div>
+    ${warn}
+    <div class="body-peek">${esc((a.body||'').slice(0, 600))}</div>
+
+    <div class="row"><label>事件类型</label><select class="f" data-k="type">${opts(BOOT.event_types, d.type)}</select></div>
+    <div class="row"><label>日期</label><input class="f" data-k="date" value="${esc(d.date)}" placeholder="2026-09-18 / 2026-09 / 2026-Q3 / 2026"></div>
+    <div class="row"><label>日期精度</label><select class="f" data-k="date_precision">${opts(BOOT.date_precision, d.date_precision)}</select></div>
+    <div class="row"><label>日期依据</label><select class="f" data-k="date_basis">${opts(BOOT.date_basis, d.date_basis)}</select></div>
+    <div class="row"><label>原文时间表述</label><input class="f" data-k="date_as_stated" value="${esc(d.date_as_stated)}" placeholder="依据非 stated 时必填，如「2025 年下半年」"></div>
+    ${needUrl ? `<div class="row"><label>原文链接</label><input class="f" data-k="manual_url" value="${esc(d.manual_url)}" placeholder="粘贴 HTML 时必填"></div>` : ''}
+    <div class="row"><label>来源等级</label><select class="f" data-k="tier">${opts(BOOT.source_tiers, d.tier)}</select></div>
+    <div class="row"><label>佐证状态</label><select class="f" data-k="corroboration">${opts(BOOT.corroboration, d.corroboration)}</select></div>
+    <div class="row"><label>中文标题</label><input class="f" data-k="title_zh" value="${esc(d.title_zh)}"></div>
+    <div class="row"><label>中文摘要</label><input class="f" data-k="summary_zh" value="${esc(d.summary_zh)}" placeholder="一句事实，别写判断（lint 会拦推断性措辞）"></div>
+
+    <h2 style="margin-top:14px">涉及主体</h2>
+    <div class="orgs">${(d.orgs||[]).map(orgRow).join('') || ''}</div>
+    <button class="ghost o-add">＋ 加一个主体</button>
+
+    <h2 style="margin-top:14px">轴取值</h2>
+    <div class="axes">${axesHtml(d.axes || {})}</div>
+
+    <div class="actions">
+      <button class="save">保存</button>
+      <button class="ghost peek">看 YAML</button>
+      <button class="approve">审过，写入 events/</button>
+      <button class="danger drop">丢弃</button>
+      <span class="msg"></span>
+    </div>
+    <pre class="yaml" style="display:none"></pre>
+  </div>`;
+}
+
+function collect(card) {
+  const out = {};
+  card.querySelectorAll('.f').forEach(el => out[el.dataset.k] = el.value);
+  out.orgs = [...card.querySelectorAll('.orgline')].map(r => ({
+    id: $('.o-id', r).value, role: $('.o-role', r).value
+  })).filter(o => o.id);
+  const axes = {};
+  card.querySelectorAll('.ax').forEach(el => {
+    if (el.dataset.multi) {
+      const vals = [...el.selectedOptions].map(o => o.value).filter(Boolean);
+      if (vals.length) axes[el.dataset.field] = vals;
+    } else if (el.value) {
+      axes[el.dataset.field] = el.value;
+    }
+  });
+  out.axes = axes;
+  return out;
+}
+
+async function render() {
+  const { drafts } = await api('/api/drafts');
+  const box = $('#drafts');
+  if (!drafts.length) { box.innerHTML = '<div class="empty">暂无草稿</div>'; return; }
+  box.innerHTML = drafts.map(draftCard).join('');
+}
+
+document.addEventListener('click', async e => {
+  const card = e.target.closest('.draft');
+  if (e.target.id === 'go') {
+    const src = $('#src').value.trim();
+    if (!src) return;
+    $('#msg').textContent = '解析中…'; $('#msg').className = 'msg';
+    try {
+      const { extract } = await api('/api/parse', { method:'POST', body: JSON.stringify({ source: src }) });
+      $('#msg').textContent = extract.warnings.length ? '已入草稿，但有告警' : '已入草稿';
+      $('#msg').className = 'msg ' + (extract.warnings.length ? 'err' : 'ok');
+      $('#src').value = '';
+      await render();
+    } catch (err) { $('#msg').textContent = err.message; $('#msg').className = 'msg err'; }
+    return;
+  }
+  if (e.target.id === 'reload') return render();
+  if (!card) return;
+
+  const id = card.dataset.id, msg = $('.msg', card);
+  if (e.target.classList.contains('o-add')) {
+    $('.orgs', card).insertAdjacentHTML('beforeend', orgRow());
+  } else if (e.target.classList.contains('o-del')) {
+    e.target.closest('.orgline').remove();
+  } else if (e.target.classList.contains('save')) {
+    try { await api(`/api/drafts/${id}`, { method:'PATCH', body: JSON.stringify(collect(card)) });
+      msg.textContent = '已保存'; msg.className = 'msg ok';
+    } catch (err) { msg.textContent = err.message; msg.className = 'msg err'; }
+  } else if (e.target.classList.contains('peek')) {
+    try {
+      await api(`/api/drafts/${id}`, { method:'PATCH', body: JSON.stringify(collect(card)) });
+      const { yaml } = await api(`/api/drafts/${id}/preview`);
+      const pre = $('.yaml', card); pre.textContent = yaml; pre.style.display = 'block';
+    } catch (err) { msg.textContent = err.message; msg.className = 'msg err'; }
+  } else if (e.target.classList.contains('approve')) {
+    try {
+      await api(`/api/drafts/${id}`, { method:'PATCH', body: JSON.stringify(collect(card)) });
+      const r = await api(`/api/drafts/${id}/approve`, { method:'POST' });
+      msg.textContent = '已写入 ' + r.written; msg.className = 'msg ok';
+      setTimeout(render, 700);
+    } catch (err) { msg.textContent = err.message; msg.className = 'msg err'; }
+  } else if (e.target.classList.contains('drop')) {
+    await api(`/api/drafts/${id}`, { method:'DELETE' });
+    render();
+  }
+});
+
+(async () => { BOOT = await api('/api/bootstrap'); await render(); })();
+</script>
+</body>
+</html>

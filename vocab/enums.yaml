@@ -40,6 +40,14 @@ date_precision:
   quarter: YYYY-Qn
   year:    YYYY
 
+# 日期是怎么来的。允许把「2025 下半年」钉成一个具体日期，
+# 但钉完必须留痕，否则半年后分不清哪个日期是原文写的、哪个是我们挑的。
+date_basis:
+  stated:    来源明确写了这个日期
+  derived:   来源没直接写，但由其他确定信息推出（如「发布会当天」）
+  estimated: 来源只给了区间，我们挑了一个代表日期
+# basis 不是 stated 时，date_as_stated 必填，写原文怎么说的
+
 coverage:
   stub:     仅身份信息，事件不足 3 条
   draft:    有 3 条以上带源事件

@@ -128,6 +128,13 @@ class Linter:
         elif not pattern.match(date):
             self.err(where, f"date「{date}」不符合 precision「{precision}」的格式")
 
+        # 允许把模糊区间钉成具体日期，但必须留痕，保证可逆
+        basis = doc.get("date_basis", "stated")
+        if basis not in self.vocab.enums["date_basis"]:
+            self.err(where, f"date_basis「{basis}」不在枚举内")
+        elif basis != "stated" and not doc.get("date_as_stated"):
+            self.err(where, f"date_basis 为「{basis}」时必须填 date_as_stated，写清原文怎么说的")
+
         if doc.get("type") not in self.vocab.enums["event_types"]:
             self.err(where, f"type「{doc.get('type')}」不在枚举内")
 

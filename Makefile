@@ -1,4 +1,12 @@
-.PHONY: lint lint-strict build test clean
+.PHONY: lint lint-strict build test test-ingest serve setup clean
+
+setup:
+	uv venv --python 3.11
+	uv pip install pyyaml fastapi uvicorn httpx beautifulsoup4 lxml
+
+# 入库后台：粘 URL 或整页 HTML，解析存快照，审过才写 events/
+serve:
+	.venv/bin/python -m ingest.server
 
 # 默认门禁：stub 只警告不失败
 lint:
@@ -23,6 +31,9 @@ test:
 	else \
 		echo "OK：违规夹具被正确拒绝"; \
 	fi
+
+test-ingest:
+	.venv/bin/python tests/test_wechat.py
 
 clean:
 	rm -rf build tests/.build
