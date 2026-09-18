@@ -1,0 +1,53 @@
+name: Gate
+
+# 每个分支都跑，PR 到 main 也跑。
+# 本地 make preflight 不能替代这里——环境不一定一致，最终以 PR Checks 为准。
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 装依赖
+        run: pip install --quiet pyyaml beautifulsoup4 lxml httpx
+
+      # 词表和枚举先过一遍语法，后面所有检查都依赖它们
+      - name: 词表自检
+        run: |
+          python - <<'PY'
+          import glob, yaml, sys
+          bad = 0
+          for f in sorted(glob.glob("vocab/*.yaml")):
+              try:
+                  yaml.safe_load(open(f))
+                  print(f"  OK   {f}")
+              except Exception as e:
+                  print(f"  FAIL {f}: {e}"); bad = 1
+          sys.exit(bad)
+          PY
+
+      - name: 门禁（真实数据）
+        run: make lint PY=python
+
+      - name: 夹具（合规必过 / 违规必拒）
+        run: make test PY=python
+
+      - name: 解析器测试（不打网络）
+        run: make test-ingest PY=python
+
+      - name: 编译视图
+        run: make build PY=python
+
+      # 一手来源第三方核验不了，所以在 PR 里显式列出来，让它始终可见
+      - name: 列出一手来源事件
+        run: python scripts/lint.py --root . | grep -A50 "一手来源事件" || echo "（本次无一手来源事件）"
