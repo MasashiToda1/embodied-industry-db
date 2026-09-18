@@ -288,9 +288,14 @@ def index() -> str:
 
 
 def main() -> None:
+    import os
+
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8790)
+    # 默认只听本机。换机器或要从手机访问时用环境变量覆盖，不必改代码。
+    host = os.environ.get("EID_HOST", "127.0.0.1")
+    port = int(os.environ.get("EID_PORT", "8790"))
+    uvicorn.run(app, host=host, port=port)
 
 
 if __name__ == "__main__":

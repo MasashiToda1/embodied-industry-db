@@ -37,13 +37,27 @@
 ## 用法
 
 ```bash
+make setup         # 建 venv 装依赖，换机器后第一步
 make lint          # 门禁
 make lint-strict   # 发布前门禁，事件不足 3 条的主体也算失败
 make build         # 编译主体页与数据集页到 build/
 make test          # 合规夹具必须过，违规夹具必须被拒
+make test-ingest   # 微信解析器测试，不打网络
+make serve         # 入库后台，默认 http://127.0.0.1:8790
 ```
 
-依赖只有 `pyyaml`。
+需要 Python 3.11+ 和 `uv`。绑定地址可用 `EID_HOST` / `EID_PORT` 覆盖。
+
+## 换机器
+
+整个库是自包含的，没有写死任何机器相关路径。`.venv/`、`build/`、`drafts/` 都不进 git，可重建。
+
+```bash
+git clone <remote> && cd embodied-industry-db
+make setup && make lint && make serve
+```
+
+**快照进 git**，所以证据跟着数据一起走，换机器不丢。待审草稿不进 git——它们是临时状态，换机器前记得先审完或丢弃。
 
 ## 收录深度
 
