@@ -59,8 +59,12 @@
     <textarea id="src" placeholder="微信：粘链接或整页 HTML（Cmd+U 看源码后全选复制）&#10;招投标：粘公告正文或整页 HTML 均可&#10;论文：粘 arXiv 编号（2601.01234）、abs 链接，或标题加摘要"></textarea>
     <div class="actions">
       <button id="go">解析</button>
+      <button class="ghost" id="blank">手工新建事件</button>
       <button class="ghost" id="reload">刷新草稿</button>
       <span class="msg" id="msg"></span>
+    </div>
+    <div style="font-size:12px;color:var(--muted);margin-top:8px">
+      展会见闻、电话回访、访谈、群里听说的——这些没有页面可解析，用「手工新建事件」。
     </div>
     <details style="margin-top:14px">
       <summary>直取失败怎么办</summary>
@@ -177,6 +181,8 @@ function draftCard(d) {
     ${needUrl ? `<div class="row"><label>原文链接</label><input class="f" data-k="manual_url" value="${esc(d.manual_url)}" placeholder="粘贴 HTML 时必填"></div>` : ''}
     <div class="row"><label>来源等级</label><select class="f" data-k="tier">${opts(BOOT.source_tiers, d.tier)}</select></div>
     <div class="row"><label>一手渠道</label><select class="f" data-k="method">${opts(BOOT.first_party_methods, d.method, '—（仅 first-party 需填）')}</select></div>
+    <div class="row"><label>获取日期</label><input class="f" data-k="retrieved" value="${esc(d.retrieved)}" placeholder="YYYY-MM-DD，一手来源必填"></div>
+    <div class="row"><label>来源备注</label><input class="f" data-k="note" value="${esc(d.note)}" placeholder="可留空。别写个人姓名或可反推身份的细节"></div>
     <div class="row"><label>佐证状态</label><select class="f" data-k="corroboration">${opts(BOOT.corroboration, d.corroboration)}</select></div>
     <div class="row"><label>中文标题</label><input class="f" data-k="title_zh" value="${esc(d.title_zh)}"></div>
     <div class="row"><label>中文摘要</label><input class="f" data-k="summary_zh" value="${esc(d.summary_zh)}" placeholder="一句事实，别写判断（lint 会拦推断性措辞）"></div>
@@ -268,6 +274,14 @@ document.addEventListener('click', async e => {
       $('#msg').textContent = extract.warnings.length ? '已入草稿，但有告警' : '已入草稿';
       $('#msg').className = 'msg ' + (extract.warnings.length ? 'err' : 'ok');
       $('#src').value = '';
+      await render();
+    } catch (err) { $('#msg').textContent = err.message; $('#msg').className = 'msg err'; }
+    return;
+  }
+  if (e.target.id === 'blank') {
+    try {
+      await api('/api/drafts/blank', { method:'POST' });
+      $('#msg').textContent = '已建空白事件，在右边填'; $('#msg').className = 'msg ok';
       await render();
     } catch (err) { $('#msg').textContent = err.message; $('#msg').className = 'msg err'; }
     return;

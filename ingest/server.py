@@ -434,6 +434,55 @@ def api_bootstrap() -> dict:
     }
 
 
+@app.post("/api/drafts/blank")
+def api_blank_draft() -> dict:
+    """手工新建空白事件。
+
+    agent 抓不到的东西没有页面可解析——展会上看到的、电话里问到的、
+    群里听说的。这条路径不要求任何来料，字段全靠手填。
+
+    默认 tier 给 first-party：手工记的东西多数是一手获取、第三方核验不了，
+    与其让人记得去改，不如默认就诚实。确实有公开链接时自己改回去。
+    """
+    today = datetime.now(CST).strftime("%Y-%m-%d")
+    draft = {
+        "id": uuid.uuid4().hex[:12],
+        "created": datetime.now(CST).isoformat(timespec="seconds"),
+        "kind": "manual",
+        "article": {
+            "url": "",
+            "title": "",
+            "account": "",
+            "published": "",
+            "published_basis": "",
+            "body": "",
+            "images": [],
+            "warnings": [
+                "手工事件：标题、摘要、主体、日期都要自己填",
+                "默认 tier=first-party（需填 method 与 retrieved）；"
+                "若有公开链接与快照，改成 official / primary / media 并补齐 url",
+            ],
+        },
+        "snapshot": "",
+        "date": "",
+        "date_precision": "day",
+        "date_basis": "stated",
+        "title_zh": "",
+        "summary_zh": "",
+        "type": "statement",
+        "tier": "first-party",
+        "method": "",
+        "retrieved": today,
+        "corroboration": "single",
+        "orgs": [],
+        "counterparties": [],
+        "axes": {},
+        "status": "draft",
+    }
+    save_draft(draft)
+    return {"draft": draft}
+
+
 class NewOrg(BaseModel):
     id: str
     zh: str
