@@ -39,6 +39,7 @@ orgs:
   - { id: alphasquare,     zh: 智平方,        en: AlphaSquare,     layers: [foundation, embodiment],             upstream: alphasquare }
   - { id: beingbeyond,     zh: 超越智能,      en: BeingBeyond,     layers: [foundation],                         upstream: beingbeyond }
   - { id: tars-robotics,   zh: 它石智航,      en: TARS Robotics,   layers: [foundation, embodiment],             upstream: tars-robotics }
+  - { id: light-origins,   zh: 亮源新创,      en: Light Origins,   layers: [foundation, locomotion], aliases: [Light Origins, 光原点], upstream: light-origins }
   - { id: psibot,          zh: 灵初智能,      en: PsiBot,          layers: [foundation, embodiment], aliases: [PsiBot, 灵初, 灵巧智能], upstream: psibot }
 
   # ---------------- 运控与内容 ----------------

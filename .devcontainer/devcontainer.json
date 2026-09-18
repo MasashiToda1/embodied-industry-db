@@ -1,0 +1,30 @@
+{
+  "name": "具身产业库",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+
+  // 建 venv、装依赖。创建环境时跑一次，之后不用再管。
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  // 入库后台。Codespaces 会把它转成一个可在浏览器打开的地址。
+  "forwardPorts": [8790],
+  "portsAttributes": {
+    "8790": {
+      "label": "入库后台",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "files.eol": "\n"
+      }
+    }
+  },
+
+  "remoteUser": "vscode"
+}

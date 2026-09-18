@@ -13,6 +13,7 @@ URL 直取经常失败（微信有防抓、链接带时效参数），所以 HTM
 
 from __future__ import annotations
 
+import hashlib
 import re
 import unicodedata
 from dataclasses import dataclass, field
@@ -245,6 +246,19 @@ def save_snapshot(root: Path, art: Article, published: str, prefix: str = "wecha
     raw = art.account_id or art.account or ""
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", raw).strip("-").lower()[:24]
     stem = f"{prefix}-{date}-{slug or 'article'}"
+
+    # 同一篇反复解析很常见（调参数、改判断），内容一样就复用已有快照，
+    # 否则 snapshots/ 会被 -2 -3 -4 撑满。
+    #
+    # 指纹按「提取出的标题＋正文」算，不按原始 HTML：微信每次返回的页面都带
+    # 请求级 token，原始字节每次都变，拿它当指纹永远命不中。
+    digest = hashlib.sha256(
+        f"{art.title}\n{art.body}".encode("utf-8", "ignore")
+    ).hexdigest()[:12]
+    for existing in sorted(folder.glob(f"{stem}*.html")):
+        if f"sha256:{digest}" in existing.read_text(encoding="utf-8", errors="ignore")[:400]:
+            return str(existing.relative_to(root))
+
     path = folder / f"{stem}.html"
     n = 2
     while path.exists():
@@ -255,7 +269,8 @@ def save_snapshot(root: Path, art: Article, published: str, prefix: str = "wecha
         f"<!-- 抓取于 {datetime.now(CST).isoformat()}"
         f" | 原始链接 {art.url or '（粘贴）'}"
         f" | 公众号 {art.account or '未知'}"
-        f" | 标题 {art.title or '未知'} -->\n"
+        f" | 标题 {art.title or '未知'}"
+        f" | sha256:{digest} -->\n"
     )
     path.write_text(header + art.html, encoding="utf-8")
     return str(path.relative_to(root))

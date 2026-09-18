@@ -197,6 +197,28 @@ def api_parse(payload: ParseIn) -> JSONResponse:
     if art.html:
         snapshot = wechat.save_snapshot(ROOT, art, art.published)
 
+    orgs_all = load_orgs_full()
+    # 公众号名是最强的归属信号——官方号发的文章就是该主体自己发的，
+    # 比论文的作者匹配可靠得多，所以唯一命中时直接预填。
+    by_account = paper.match_orgs(art.account, orgs_all) if art.account else []
+    in_text = [
+        h for h in paper.match_orgs(f"{art.title} {art.body[:1200]}", orgs_all)
+        if h["id"] not in {x["id"] for x in by_account}
+    ]
+    candidates = paper.extract_axes(f"{art.title} {art.body}", paper.load_keywords(ROOT))
+
+    warnings = list(art.warnings)
+    if not by_account and art.account:
+        warnings.append(
+            f"公众号「{art.account}」在 registry 里没有对应主体。"
+            "先在下方「新建主体」建好再选，或确认它不在收录边界内"
+        )
+    if in_text:
+        names = "、".join(f"{h['zh']}（{h['matched']}）" for h in in_text)
+        warnings.append(f"正文还提到 {names}，如确实涉及可一并加为主体，注意区分「谁发的」和「提到谁」")
+    if candidates:
+        warnings.append("轴取值是关键词候选，不是结论，逐条看片段再确认")
+
     draft = {
         "id": uuid.uuid4().hex[:12],
         "created": datetime.now(CST).isoformat(timespec="seconds"),
@@ -209,7 +231,7 @@ def api_parse(payload: ParseIn) -> JSONResponse:
             "published_basis": art.published_basis,
             "body": art.body,
             "images": art.images,
-            "warnings": art.warnings,
+            "warnings": warnings,
         },
         "snapshot": snapshot,
         "date": art.published,
@@ -219,8 +241,11 @@ def api_parse(payload: ParseIn) -> JSONResponse:
         "type": "statement",
         "tier": "official",
         "corroboration": "single",
-        "orgs": [],
+        "orgs": [{"id": by_account[0]["id"], "role": "subject"}] if len(by_account) == 1 else [],
         "axes": {},
+        "axis_candidates": candidates,
+        "org_candidates": by_account,
+        "orgs_mentioned": in_text,
         "status": "draft",
     }
     save_draft(draft)
@@ -402,7 +427,57 @@ def api_bootstrap() -> dict:
         "corroboration": vocab["enums"]["corroboration"],
         "date_precision": vocab["enums"]["date_precision"],
         "date_basis": vocab["enums"]["date_basis"],
+        "layers": {
+            v["id"]: v["zh"]
+            for v in yaml.safe_load((ROOT / "vocab/layers.yaml").read_text())["values"]
+        },
     }
+
+
+class NewOrg(BaseModel):
+    id: str
+    zh: str
+    en: str = ""
+    aliases: list[str] = []
+    layers: list[str]
+
+
+@app.post("/api/orgs")
+def api_new_org(payload: NewOrg) -> dict:
+    """当场新建主体，省掉「发现没收录 → 去改种子文件 → 跑脚本 → 回来」这一圈。
+
+    但不绕过判断：layers 必填且必须命中词表。分不清位置的主体不该进库。
+    """
+    oid = payload.id.strip().lower()
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]{1,48}", oid):
+        raise HTTPException(400, "id 只能用小写字母、数字和连字符")
+    path = ROOT / "registry/orgs" / f"{oid}.yaml"
+    if path.exists():
+        raise HTTPException(409, f"主体「{oid}」已存在")
+
+    layers = [x for x in payload.layers if x]
+    known = {v["id"] for v in yaml.safe_load((ROOT / "vocab/layers.yaml").read_text())["values"]}
+    bad = [x for x in layers if x not in known]
+    if bad:
+        raise HTTPException(400, f"产业层不在词表内：{'、'.join(bad)}")
+    if not layers:
+        raise HTTPException(400, "必须至少选一个产业层——判不准就先别建条目")
+
+    doc: dict = {"id": oid, "names": {"zh": payload.zh.strip()}}
+    if payload.en.strip():
+        doc["names"]["en"] = payload.en.strip()
+    aliases = [a.strip() for a in payload.aliases if a.strip()]
+    if aliases:
+        doc["names"]["aliases"] = aliases
+    doc["status"] = "active"
+    doc["layers"] = layers
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        yaml.safe_dump(doc, allow_unicode=True, sort_keys=False, default_flow_style=False),
+        encoding="utf-8",
+    )
+    return {"created": oid, "path": str(path.relative_to(ROOT))}
 
 
 @app.get("/api/drafts")

@@ -8,6 +8,12 @@
 #
 # ⚠️ 论文的轴信号比产品发布弱：论文说明这个团队研究过什么，不说明产品里跑什么。
 #    入库时留意别把研究探索当成技术选型。
+#
+# 中英文都要给。主要来料是微信公众号，全中文，早期只配英文词导致大量漏命中。
+#
+# 宁缺勿滥：宽泛的词会让候选表变成噪音，人就懒得逐条看片段，整条管道的可靠性
+# 建立在「人真的看了片段」上。例如「开源」不映射到 data_openness——
+# 模型开源说的是代码和权重，本库的 data_openness 说的是数据，两回事。
 
 axes:
   control_route:
@@ -17,11 +23,11 @@ axes:
     hybrid: ["residual policy", "hybrid controller", "RL residual", "learning-augmented"]
 
   model_form:
-    end2end-vla: ["vision-language-action", "VLA", "end-to-end policy", "端到端"]
-    hierarchical: ["hierarchical policy", "high-level planner", "low-level tracker", "planner and tracker", "分层"]
-    motion-library: ["motion library", "motion retargeting", "reference motion", "动作库", "重定向"]
+    end2end-vla: ["vision-language-action", "VLA", "VLN", "end-to-end policy", "端到端", "视觉语言动作", "视觉语言导航"]
+    hierarchical: ["hierarchical policy", "high-level planner", "low-level tracker", "planner and tracker", "分层", "上层规划", "下层追踪"]
+    motion-library: ["motion library", "motion retargeting", "reference motion", "动作库", "重定向", "动作编排"]
     world-model: ["world model", "latent dynamics", "dynamics model learning", "世界模型"]
-    il: ["imitation learning", "behavior cloning", "behaviour cloning", "diffusion policy", "模仿学习"]
+    il: ["imitation learning", "behavior cloning", "behaviour cloning", "diffusion policy", "模仿学习", "行为克隆", "扩散策略"]
 
   sim_stack:
     isaac-lab: ["Isaac Lab", "IsaacLab", "Isaac Gym", "IsaacGym", "Orbit"]
@@ -39,18 +45,55 @@ axes:
     arm: ["robotic arm", "manipulator arm", "Franka", "UR5"]
 
   data_acquisition:
-    mocap: ["motion capture", "MoCap", "AMASS", "SMPL", "光学动捕"]
-    teleop: ["teleoperation", "teleoperated", "VR controller", "exoskeleton", "遥操作"]
-    real-robot: ["real-robot data", "real-world rollouts", "on-robot data", "真机数据"]
-    sim-generated: ["synthetic data", "simulation-generated", "domain randomization", "procedural generation"]
-    human-video: ["human video", "egocentric video", "internet video", "Ego4D", "人类视频"]
-    crowdsourced: ["crowdsourced", "crowd-sourced"]
+    mocap: ["motion capture", "MoCap", "AMASS", "SMPL", "光学动捕", "动作捕捉", "动捕"]
+    teleop: ["teleoperation", "teleoperated", "VR controller", "exoskeleton", "遥操作", "遥操", "主从臂", "动捕手套"]
+    real-robot: ["real-robot data", "real-world rollouts", "on-robot data", "真机数据", "实机数据", "真机采集"]
+    sim-generated: ["synthetic data", "simulation-generated", "domain randomization", "procedural generation",
+                    "合成数据", "仿真合成", "域随机化", "Real2Sim2Real", "real2sim", "sim2real 合成"]
+    human-video: ["human video", "egocentric video", "internet video", "Ego4D", "人类视频", "第一人称视频", "互联网视频"]
+    crowdsourced: ["crowdsourced", "crowd-sourced", "众包"]
 
   data_modality:
-    joint-trajectory: ["joint trajectories", "joint angles", "proprioception"]
-    rgb: ["RGB images", "monocular RGB"]
-    rgbd: ["RGB-D", "depth camera"]
-    pointcloud: ["point cloud", "point clouds", "LiDAR"]
+    joint-trajectory: ["joint trajectories", "joint angles", "proprioception", "关节轨迹", "本体感知"]
+    rgb: ["RGB images", "monocular RGB", "单目"]
+    rgbd: ["RGB-D", "depth camera", "深度相机"]
+    pointcloud: ["point cloud", "point clouds", "LiDAR", "点云", "激光雷达"]
     tactile: ["tactile", "touch sensing", "触觉"]
-    force-torque: ["force-torque", "force/torque", "wrench"]
-    language-annotated: ["language instructions", "language-annotated", "natural language instruction"]
+    force-torque: ["force-torque", "force/torque", "wrench", "六维力", "力矩传感"]
+    language-annotated: ["language instructions", "language-annotated", "natural language instruction",
+                         "语言指令", "语言标注"]
+
+  # 组织方式：判断「真在做数据」还是「只是提了数据」
+  data_sourcing:
+    in-house-factory: ["数据工厂", "自建采集", "自有采集场", "采集基地", "in-house data factory"]
+    outsourced: ["数据外包", "采购数据服务", "委托采集"]
+    gov-training-ground: ["训练场", "数据集基地", "共建", "公共数据集平台", "training ground"]
+    open-dataset: ["开源数据集", "开放数据集", "公开数据集", "open dataset", "open-source dataset"]
+    customer-feedback: ["客户现场", "运行数据回流", "数据回流", "失败案例回收"]
+    academic-partnership: ["高校合作", "联合实验室", "产学研"]
+
+  # 注意：不要把「模型开源 / 权重开源」映射到这里。
+  # 这条轴问的是数据开不开放，模型开源是另一件事。
+  data_openness:
+    fully-open: ["数据集开源", "数据开放下载", "开放数据集下载", "dataset released", "data released"]
+    partially-open: ["部分开放", "需申请获取", "申请后可用", "release a subset", "upon request"]
+
+  # ---------- 商业轴。「商业信号」是本库的立足点之一，关键词要跟上 ----------
+  delivery_model:
+    hardware-sale: ["整机销售", "售价", "开售", "预订", "出货", "对外销售"]
+    software-license: ["软件授权", "License", "授权费", "按台授权", "买断"]
+    subscription: ["订阅", "年费", "按年付", "维护订阅", "包年"]
+    project-based: ["项目制", "定制开发", "交付项目", "总包"]
+    service-delivery: ["服务交付", "驻场", "演出服务", "导览服务", "巡检服务", "代运营"]
+    rental: ["租赁", "出租", "日租", "按场次", "机时", "租金"]
+    revenue-share: ["分成", "营收分成", "按场次分成"]
+
+  target_scene:
+    industrial-manufacturing: ["工厂", "产线", "上下料", "装配", "工业制造", "质检"]
+    logistics-warehouse: ["仓储", "物流", "分拣", "装卸"]
+    inspection-hazardous: ["巡检", "电力巡检", "管廊", "消防", "高危", "特种作业"]
+    commercial-service: ["商场", "门店", "酒店", "政务大厅", "迎宾", "讲解", "导购"]
+    tourism-performance: ["文旅", "景区", "主题公园", "商演", "演出", "表演", "展会"]
+    education-research: ["科教", "实训", "职教", "高校教学", "科研平台", "教育版"]
+    home: ["家用", "家庭场景", "消费级"]
+    healthcare: ["康复", "护理", "陪护", "医疗"]

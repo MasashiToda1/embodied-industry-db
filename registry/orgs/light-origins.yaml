@@ -1,0 +1,13 @@
+id: light-origins
+names:
+  zh: 亮源新创
+  en: Light Origins
+  aliases:
+  - Light Origins
+  - 光原点
+status: active
+layers:
+- foundation
+- locomotion
+# 「光原点」是 Robotics_Notebooks institutions.json 的写法，
+# 公众号与官网自称「亮源新创」，以后者为准，前者留作别名。
