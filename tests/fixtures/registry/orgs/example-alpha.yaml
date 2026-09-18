@@ -1,0 +1,12 @@
+# 测试夹具，非真实主体。用于验证 schema 与编译器，不进正式数据集。
+id: example-alpha
+names:
+  zh: 示例甲公司
+  en: Example Alpha Robotics
+  aliases: [Alpha, 示例甲科技有限公司]
+founded: 2019
+hq:
+  country: CN
+  city: 深圳
+status: active
+layers: [embodiment, locomotion, data]

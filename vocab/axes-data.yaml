@@ -1,0 +1,125 @@
+# 数据轴
+# 四条轴挂在每一个主体上，不只挂在 layers 含 data 的主体上
+# 取值全部要求可由公开信息核查，核查路径写在每条轴的 evidence_hint 里
+
+axes:
+  - field: data_acquisition
+    zh: 采集方式
+    en: Data Acquisition
+    multi: true
+    evidence_hint: 论文与技术博客、动捕与遥操设备的采购招标、数采岗招聘描述
+    values:
+      - id: mocap
+        zh: 光学动捕
+        en: Optical Motion Capture
+        note: 棚内动捕人体再重定向到机器人。人形舞蹈与表演类的主力来源。
+      - id: teleop
+        zh: 遥操示教
+        en: Teleoperation
+        note: 人戴设备实时操控机器人并记录。含 VR 手柄、动捕手套、外骨骼、主从臂。
+      - id: real-robot
+        zh: 真机自采
+        en: Real-Robot Autonomous
+        note: 机器人自己运行中产生的数据，含客户现场回流与失败案例。
+      - id: sim-generated
+        zh: 仿真合成
+        en: Simulation-Generated
+        note: 在仿真里批量生成轨迹或渲染图像，含域随机化产出。
+      - id: human-video
+        zh: 人类视频
+        en: Human Video
+        note: 从互联网或自拍视频里学，不经过机器人本体。
+      - id: crowdsourced
+        zh: 众包
+        en: Crowdsourced
+        note: 把采集任务分发给外部人员或用户，非自有场地与自有人员。
+
+  - field: data_modality
+    zh: 数据模态
+    en: Data Modality
+    multi: true
+    evidence_hint: 数据集发布页的字段说明、论文的数据章节
+    values:
+      - id: joint-trajectory
+        zh: 关节轨迹
+        en: Joint Trajectory
+        note: 关节位置、速度、力矩序列。
+      - id: rgb
+        zh: RGB 图像
+        en: RGB
+        note: 仅彩色图像，无深度。
+      - id: rgbd
+        zh: RGB-D
+        en: RGB-D
+        note: 带深度的视觉数据。
+      - id: pointcloud
+        zh: 点云
+        en: Point Cloud
+        note: 激光或深度相机产出的点云。
+      - id: tactile
+        zh: 触觉
+        en: Tactile
+        note: 指尖或皮肤触觉阵列。灵巧操作类主体的关键区分项。
+      - id: force-torque
+        zh: 力与力矩
+        en: Force-Torque
+        note: 六维力传感或关节力矩反馈。
+      - id: language-annotated
+        zh: 语言标注
+        en: Language-Annotated
+        note: 带自然语言指令或描述的配对数据，VLA 训练的前提。
+      - id: audio
+        zh: 音频
+        en: Audio
+        note: 语音或环境声。
+
+  - field: data_sourcing
+    zh: 组织方式
+    en: Data Sourcing Model
+    multi: true
+    evidence_hint: 数采员招聘规模、训练场与数据服务招投标、共建合作公告
+    note: 这条轴最能区分「真在做数据」和「只是提了数据」。
+    values:
+      - id: in-house-factory
+        zh: 自建数据工厂
+        en: In-House Data Factory
+        note: 自有场地、自有采集人员、成规模。判据看数采岗招聘量与场地公开信息。
+      - id: outsourced
+        zh: 外包采购
+        en: Outsourced
+        note: 向数据服务商购买采集或标注。
+      - id: gov-training-ground
+        zh: 政府共建训练场
+        en: Government Training Ground
+        note: 与政府或国资共建的训练场、数据集基地。建设运营走公开招标。
+      - id: open-dataset
+        zh: 开源数据集
+        en: Open Dataset
+        note: 使用或发布公开数据集。发布方另见 Dataset 页。
+      - id: customer-feedback
+        zh: 客户现场回流
+        en: Customer Feedback Loop
+        note: 从已部署客户处回收运行数据。需有公开表述或产品文档支撑。
+      - id: academic-partnership
+        zh: 高校合作
+        en: Academic Partnership
+        note: 与高校或研究机构联合采集。
+
+  - field: data_openness
+    zh: 开放程度
+    en: Data Openness
+    multi: false
+    evidence_hint: 直接看有没有公开发布、许可协议写了什么
+    values:
+      - id: fully-open
+        zh: 完全开放
+        en: Fully Open
+        note: 数据可公开下载，许可明确。
+      - id: partially-open
+        zh: 部分开放
+        en: Partially Open
+        note: 只放子集、需申请、或仅发布处理脚本与基准。
+      - id: closed
+        zh: 未开放
+        en: Closed
+        note: 无公开发布。默认取值——没有证据表明开放时取这一项。

@@ -1,0 +1,25 @@
+id: evt-2026-02-example-alpha-beta-procurement
+date: 2026-02-11
+date_precision: day
+type: procurement
+orgs:
+  - id: example-beta
+    role: customer
+  - id: example-alpha
+    role: supplier
+title:
+  zh: 示例乙采购项目由示例甲中标
+  en: Example Beta procurement awarded to Example Alpha
+summary:
+  zh: 中标公告列明标的为文旅表演机器人部署服务，金额 480 万元。
+  en: Award notice lists tourism performance robot deployment, CNY 4.8M.
+axes:
+  delivery_model: [service-delivery, rental]
+  target_scene: tourism-performance
+evidence:
+  - url: https://example.com/gov/award/2026-0211
+    publisher: 示例公共资源交易中心
+    tier: primary
+    retrieved: 2026-09-18
+    snapshot: snapshots/2026/02/beta-award.html
+corroboration: single

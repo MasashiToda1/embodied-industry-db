@@ -1,0 +1,23 @@
+id: evt-2024-03-example-alpha-sim-stack
+date: 2024-03
+date_precision: month
+type: statement
+orgs:
+  - id: example-alpha
+    role: subject
+title:
+  zh: 示例甲公开技术栈选择
+  en: Example Alpha discloses its simulation stack
+summary:
+  zh: 技术博客称训练在 MuJoCo 完成，控制策略走强化学习。
+  en: Blog post states training runs in MuJoCo with an RL control policy.
+axes:
+  sim_stack: mujoco
+  control_route: rl
+evidence:
+  - url: https://example.com/alpha/blog/sim-stack
+    publisher: 示例甲官方博客
+    tier: official
+    retrieved: 2026-09-18
+    snapshot: snapshots/2024/03/alpha-sim-stack.html
+corroboration: single

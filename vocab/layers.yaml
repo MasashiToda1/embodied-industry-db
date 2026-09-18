@@ -1,0 +1,57 @@
+# 产业层：主体在产业里的位置
+# 一个主体可占多层（智元同时占 embodiment / foundation / data）
+# 边界规则：以通用机器人本体为最终载体的技术与商业主体
+
+field: layers
+multi: true
+
+values:
+  - id: embodiment
+    zh: 整机本体
+    en: Embodiment / Whole Robot
+    note: 自己出整机并对外售卖或交付的主体。只做上半身或只做轮式底盘也算。
+
+  - id: locomotion
+    zh: 运控与小脑
+    en: Locomotion & Motion Control
+    note: 卖运动控制能力本身——步态、平衡、全身控制、动作追踪。不含只做导航规划的。
+
+  - id: foundation
+    zh: 具身基础模型
+    en: Embodied Foundation Model
+    note: 做 VLA 或具身大模型，输出是策略或模型权重而不是单个动作。
+
+  - id: data
+    zh: 数据采集与供给
+    en: Data Acquisition & Supply
+    note: 采集、标注、合成数据，或运营训练场、数据集基地。包含本体厂商自建的数据工厂。
+
+  - id: simulation
+    zh: 仿真与工具链
+    en: Simulation & Toolchain
+    note: 仿真引擎、训练框架、评测平台、重定向工具这类开发者侧基础设施。
+
+  - id: components
+    zh: 关键部件
+    en: Key Components
+    note: 灵巧手、关节模组、减速器、力矩传感器、触觉皮肤。通用电子件不算。
+
+  - id: content
+    zh: 动作与节目内容
+    en: Motion & Performance Content
+    note: 把动作、舞蹈、节目、IP 角色当资产生产和分发的主体。运控是能力，内容是素材，两件事。
+
+  - id: integration
+    zh: 系统集成与方案交付
+    en: Integration & Solution Delivery
+    note: 不出核心技术，把本体加软件加场景打包交付给终端客户。
+
+  - id: operation
+    zh: 场景运营与租赁
+    en: Scene Operation & Rental
+    note: 自己持有机器人对外提供服务或出租，收入来自场次、工时或租金。
+
+# 刻意留在层外的：
+#   芯片与算力 —— 除非产品线明确以机器人为唯一载体，否则不收
+#   通用云服务、通用标注平台 —— 不满足「以通用机器人本体为最终载体」
+#   纯工业机械臂、AGV、无人机、扫地机 —— 边界规则已排除

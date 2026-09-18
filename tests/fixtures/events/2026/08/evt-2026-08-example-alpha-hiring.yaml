@@ -1,0 +1,23 @@
+id: evt-2026-08-example-alpha-hiring
+date: 2026-Q3
+date_precision: quarter
+type: hiring_signal
+orgs:
+  - id: example-alpha
+    role: subject
+title:
+  zh: 示例甲扩招数据采集员与仿真工程师
+  en: Example Alpha hiring data collectors and simulation engineers
+summary:
+  zh: 招聘页同期挂出 40 个数据采集员岗与 6 个 Isaac Lab 方向岗，工作地写明自有采集场地。
+  en: 40 data collector roles and 6 Isaac Lab roles posted, listing an in-house capture site.
+axes:
+  sim_stack: isaac-lab
+  data_sourcing: in-house-factory
+evidence:
+  - url: https://example.com/jobs/alpha
+    publisher: 示例招聘平台
+    tier: aggregator
+    retrieved: 2026-09-18
+    snapshot: snapshots/2026/08/alpha-jobs.html
+corroboration: single

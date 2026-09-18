@@ -1,0 +1,15 @@
+# 测试夹具，非真实数据集。
+id: example-motion-set
+names:
+  zh: 示例动作数据集
+  en: Example Motion Set
+publisher: example-alpha
+released: 2025-06
+scale:
+  episodes: 120000
+  hours:
+  robots: [example-alpha-h1]
+modality: [joint-trajectory, rgbd, language-annotated]
+acquisition: [mocap, teleop]
+license: cc-by-nc-4.0
+openness: partially-open

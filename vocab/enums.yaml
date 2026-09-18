@@ -1,0 +1,66 @@
+# 全库共用枚举
+# 与 axes-*.yaml 分开：这些不是「主体的属性」，是数据结构本身的取值
+
+event_types:
+  funding:         融资、并购
+  corporate:       成立、改名、注册变更、关停
+  product_launch:  产品发布、版本迭代
+  deployment:      落地部署、客户签约
+  procurement:     招投标中标
+  partnership:     合作、生态、联盟
+  personnel:       关键人事
+  patent:          专利
+  publication:     论文、开源发布
+  hiring_signal:   招聘信号
+  statement:       官方表态
+  pricing:         公开价格
+  dataset_release: 数据集发布
+
+org_roles:
+  subject:      事件的主角
+  counterparty: 对手方、合作方
+  investor:     出资方
+  customer:     买方、客户
+  supplier:     供应方、承接方
+
+source_tiers:
+  official:   主体自己发布的（官网、公众号、官方博客、发布会）
+  primary:    一手文件（招标公告、专利、SEC filing、工商登记、论文）
+  media:      媒体报道
+  aggregator: 二手聚合（榜单、数据库、转载）
+
+corroboration:
+  single:      仅一个来源
+  multi:       多个独立来源互相印证
+  conflicting: 存在互相矛盾的来源，全部保留不裁决
+
+date_precision:
+  day:     YYYY-MM-DD
+  month:   YYYY-MM
+  quarter: YYYY-Qn
+  year:    YYYY
+
+coverage:
+  stub:     仅身份信息，事件不足 3 条
+  draft:    有 3 条以上带源事件
+  complete: 主要轴有取值且事件覆盖近 12 个月
+
+org_status:
+  active:   正常经营
+  acquired: 已被收购
+  defunct:  已关停或注销
+  pivoted:  已转出本库边界
+
+# 推断性措辞黑名单，lint 命中即拒
+# 中立不靠自觉，靠机器强制
+inference_phrases:
+  - 我认为
+  - 我判断
+  - 预计
+  - 有望
+  - 可能是因为
+  - 大概率
+  - 说明其
+  - 意味着
+  - 显然
+  - 值得注意的是

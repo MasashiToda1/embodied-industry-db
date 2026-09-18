@@ -1,0 +1,142 @@
+# 技术轴
+# 取值的技术定义在 Robotics_Notebooks，本库只引用不复制
+# ref 为仓库相对路径，拼接基址见 README
+
+axes:
+  - field: control_route
+    zh: 运控路线
+    en: Control Route
+    multi: true
+    note: 底层怎么让机器人动起来。一家公司常同时用两条，所以允许多值。
+    values:
+      - id: rl
+        zh: 强化学习
+        en: Reinforcement Learning
+        ref: wiki/methods/reinforcement-learning.md
+        note: 策略在仿真里训出来再上真机，当前人形运控主流。
+      - id: mpc
+        zh: 模型预测控制
+        en: Model Predictive Control
+        ref: wiki/methods/model-predictive-control.md
+        note: 在线求解优化问题，依赖动力学模型。
+      - id: wbc
+        zh: 全身控制
+        en: Whole-Body Control
+        ref: wiki/concepts/whole-body-control.md
+        note: 传统全身力矩分配，常与 MPC 叠成一栈。
+      - id: hybrid
+        zh: 混合
+        en: Hybrid
+        ref: wiki/concepts/whole-body-control.md
+        note: 学习策略与模型控制叠加，例如 RL 输出残差叠在 WBC 上。
+
+  - field: model_form
+    zh: 模型形态
+    en: Model Architecture
+    multi: true
+    note: 从意图到关节指令这一段怎么组织。这条轴是当前分歧最大的一条。
+    values:
+      - id: end2end-vla
+        zh: 端到端 VLA
+        en: End-to-End VLA
+        ref: wiki/methods/vla.md
+        note: 视觉语言直接出动作，中间不显式分层。
+      - id: hierarchical
+        zh: 分层
+        en: Hierarchical
+        ref: wiki/concepts/whole-body-control.md
+        note: 上层规划加下层追踪两段式，planner 与 tracker 分开训练和部署。
+      - id: motion-library
+        zh: 动作库
+        en: Motion Library
+        ref: wiki/tasks/teleoperation.md
+        note: 预先制作动作并按需回放或编排，不在线生成新动作。
+      - id: world-model
+        zh: 世界模型
+        en: World Model
+        ref: wiki/methods/generative-world-models.md
+        note: 先学环境动力学再在其中做规划或生成训练数据。
+      - id: il
+        zh: 模仿学习
+        en: Imitation Learning
+        ref: wiki/methods/imitation-learning.md
+        note: 从示教数据直接学策略。与 end2end-vla 常同时成立，按公开表述取值。
+
+  - field: sim_stack
+    zh: 仿真栈
+    en: Simulation Stack
+    multi: true
+    note: 训练和验收各用什么仿真器。两者不同是常态，不是矛盾，分别记事件。
+    values:
+      - id: isaac-lab
+        zh: Isaac Lab
+        en: Isaac Lab
+        ref: wiki/entities/isaac-lab.md
+        note: NVIDIA 的机器人学习框架，GPU 大规模并行训练。
+      - id: isaac-sim
+        zh: Isaac Sim
+        en: Isaac Sim
+        ref: wiki/entities/isaac-sim.md
+        note: Omniverse 仿真与渲染平台，Isaac Lab 跑在它上面。
+      - id: mujoco
+        zh: MuJoCo
+        en: MuJoCo
+        ref: wiki/entities/mujoco.md
+        note: DeepMind 的物理引擎，接触求解强、单机快，常用于评测与 sim2sim 对齐。
+      - id: genesis
+        zh: Genesis
+        en: Genesis
+        ref: wiki/entities/genesis-sim.md
+        note: 新兴 GPU 仿真器，生态尚未稳定。
+      - id: sapien
+        zh: SAPIEN
+        en: SAPIEN
+        ref: wiki/entities/sapien.md
+        note: 偏操作任务的仿真环境。
+      - id: embodichain
+        zh: EmbodiChain
+        en: EmbodiChain
+        ref:
+        note: 跨维智能的端到端具身平台，上游暂无页面。
+      - id: in-house
+        zh: 自研
+        en: In-House
+        ref:
+        note: 自建仿真器或深度魔改到不宜归入以上任一项。
+
+  - field: embodiment_form
+    zh: 本体形态
+    en: Embodiment Form
+    multi: true
+    note: 按实际出货或公开演示的形态取值，不按 PPT 规划。
+    values:
+      - id: humanoid-biped
+        zh: 双足人形
+        en: Biped Humanoid
+        ref: wiki/overview/humanoid-robot-history.md
+        note: 全尺寸或小型双足，靠腿移动。
+      - id: humanoid-wheeled
+        zh: 轮式人形
+        en: Wheeled Humanoid
+        ref: wiki/overview/humanoid-robot-history.md
+        note: 人形上身配轮式底盘，牺牲通过性换续航与稳定。
+      - id: quadruped
+        zh: 四足
+        en: Quadruped
+        ref: wiki/concepts/wheel-legged-quadruped.md
+        note: 含轮腿复合四足。
+      - id: mobile-manipulator
+        zh: 复合移动操作
+        en: Mobile Manipulator
+        ref:
+        note: 移动平台加机械臂，形态上不做人形外观。
+      - id: dual-arm-stationary
+        zh: 固定双臂
+        en: Stationary Dual-Arm
+        ref:
+        note: 不移动的双臂操作平台，常见于数据采集与实验室。
+      - id: arm
+        zh: 单臂
+        en: Single Arm
+        ref:
+        note: 仅当它是该主体面向通用具身的载体时才记，纯工业臂不收。

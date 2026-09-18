@@ -1,0 +1,25 @@
+# 违规夹具：一条事件里塞满错误，用于验证每道门禁都会开火。
+# 预期报：date 与 precision 不符、type 不在枚举、orgs 引用不存在、role 不在枚举、
+#        evidence 缺 snapshot、tier 不在枚举、axes 轴不存在、axes 取值不在词表、
+#        单值轴给了多值、推断性措辞。
+id: evt-bad-everything
+date: 2026-09
+date_precision: day
+type: rumour
+orgs:
+  - id: nonexistent-org
+    role: mastermind
+title:
+  zh: 违规事件示例
+summary:
+  zh: 该公司预计明年会转向端到端路线，大概率是因为数据不足。
+axes:
+  fantasy_axis: whatever
+  sim_stack: quake-engine
+  data_openness: [fully-open, closed]
+evidence:
+  - url: https://example.com/rumour
+    publisher: 某处
+    tier: hearsay
+    retrieved: 2026-09-18
+corroboration: vibes

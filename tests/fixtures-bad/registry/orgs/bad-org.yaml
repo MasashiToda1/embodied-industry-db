@@ -1,0 +1,7 @@
+# 违规夹具：故意犯错，用于验证 lint 会报错。
+# 预期报 2 条：status 不在枚举、layers 取值不在词表。
+id: bad-org
+names:
+  zh: 违规示例公司
+status: zombie
+layers: [embodiment, chipmaking]

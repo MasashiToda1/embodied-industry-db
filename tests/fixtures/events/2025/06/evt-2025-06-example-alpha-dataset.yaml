@@ -1,0 +1,31 @@
+id: evt-2025-06-example-alpha-dataset
+date: 2025-06-18
+date_precision: day
+type: dataset_release
+orgs:
+  - id: example-alpha
+    role: subject
+datasets:
+  - example-motion-set
+title:
+  zh: 示例甲发布示例动作数据集
+  en: Example Alpha releases Example Motion Set
+summary:
+  zh: 发布 12 万条动作片段，需申请获取，许可为 CC BY-NC 4.0。
+  en: 120k motion clips released under CC BY-NC 4.0, access on request.
+axes:
+  data_acquisition: [mocap, teleop]
+  data_openness: partially-open
+  data_sourcing: in-house-factory
+evidence:
+  - url: https://example.com/alpha/dataset
+    publisher: 示例甲官网
+    tier: official
+    retrieved: 2026-09-18
+    snapshot: snapshots/2025/06/alpha-dataset.html
+  - url: https://example.com/media/alpha-dataset-report
+    publisher: 示例媒体
+    tier: media
+    retrieved: 2026-09-18
+    snapshot: snapshots/2025/06/alpha-dataset-media.html
+corroboration: multi

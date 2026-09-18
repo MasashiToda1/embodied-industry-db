@@ -1,0 +1,99 @@
+# 商业轴
+# 本库自有词表，不指向上游
+# 取值按公开可核查的实际动作定，不按官网自我定位
+
+axes:
+  - field: hardware_strategy
+    zh: 本体策略
+    en: Hardware Strategy
+    multi: true
+    evidence_hint: 产品页、出货与部署事件、适配公告
+    values:
+      - id: in-house
+        zh: 自研整机
+        en: In-House Hardware
+        note: 自己出本体。含自研加代工。
+      - id: adapt-others
+        zh: 适配他人本体
+        en: Adapt Third-Party
+        note: 不出本体，把自己的能力适配到别家机型上。
+      - id: software-only
+        zh: 纯软件
+        en: Software Only
+        note: 完全不碰硬件，交付物只有软件或模型。
+
+  - field: delivery_model
+    zh: 交付形态
+    en: Delivery Model
+    multi: true
+    evidence_hint: 公开报价、招投标中标内容、官网购买页、客户签约公告
+    note: 一家公司常同时跑两三种，允许多值。这条轴变动频繁，务必带 as_of。
+    values:
+      - id: hardware-sale
+        zh: 卖整机
+        en: Hardware Sale
+        note: 收入主要来自机器人本体销售。
+      - id: software-license
+        zh: 卖软件授权
+        en: Software License
+        note: 按套、按台、按机型收授权费，一次性或买断。
+      - id: subscription
+        zh: 订阅
+        en: Subscription
+        note: 按周期持续收费，含维护订阅。与 software-license 的区别在付费节奏。
+      - id: project-based
+        zh: 项目制
+        en: Project-Based
+        note: 按单个项目定制开发与交付，常见于国内政企客户。
+      - id: service-delivery
+        zh: 服务交付
+        en: Service Delivery
+        note: 卖现场执行——演出、导览、巡检、数据采集服务。客户买结果不买工具。
+      - id: rental
+        zh: 租赁
+        en: Rental
+        note: 按天、按场、按工时出租机器人。
+      - id: revenue-share
+        zh: 分成
+        en: Revenue Share
+        note: 按客户营收或场次分成。公开案例少，有明确表述才记。
+
+  - field: target_scene
+    zh: 目标场景
+    en: Target Scene
+    multi: true
+    evidence_hint: 客户与部署事件、招投标标的、官网案例页
+    note: 按已落地的场景取值。只在官网列为「规划中」的不取。
+    values:
+      - id: industrial-manufacturing
+        zh: 工业制造
+        en: Industrial Manufacturing
+        note: 工厂内的上下料、装配、搬运、质检。
+      - id: logistics-warehouse
+        zh: 物流仓储
+        en: Logistics & Warehouse
+        note: 仓内分拣、装卸、搬运。
+      - id: inspection-hazardous
+        zh: 巡检与特种作业
+        en: Inspection & Hazardous Work
+        note: 电力与管廊巡检、消防、高危环境替代作业。
+      - id: commercial-service
+        zh: 商业服务
+        en: Commercial Service
+        note: 商场、门店、酒店、政务大厅的迎宾、讲解、引导。
+      - id: tourism-performance
+        zh: 文旅与表演
+        en: Tourism & Performance
+        note: 景区、主题公园、商演、展会的表演与导览。动作内容需求集中在这里。
+      - id: education-research
+        zh: 科教与科研
+        en: Education & Research
+        note: 高校实训、职教实训基地、科研平台采购。国内出货量被低估的一块。
+      - id: home
+        zh: 家庭
+        en: Home
+        note: 面向消费者的家用场景。已交付才取，Beta 预售不取。
+      - id: healthcare
+        zh: 医疗与康养
+        en: Healthcare & Eldercare
+        note: 康复、护理、陪护。
