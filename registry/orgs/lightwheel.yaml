@@ -1,10 +1,12 @@
 id: lightwheel
 names:
-  zh: 光轮科技
+  zh: 光轮智能
   en: Lightwheel
+  aliases: [Lightwheel, 光轮科技, 光轮]
 status: active
 layers:
 - data
 - simulation
 upstream:
   robotics_notebooks_institution: lightwheel
+# 两个上游对中文名写法不一致（光轮科技 / 光轮智能），后者更常用，前者留作别名。

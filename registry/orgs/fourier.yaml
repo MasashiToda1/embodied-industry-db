@@ -2,6 +2,10 @@ id: fourier
 names:
   zh: 傅利叶
   en: Fourier
+  aliases:
+  - Fourier
+  - 傅利叶智能
+  - 傅利叶
 status: active
 layers:
 - embodiment

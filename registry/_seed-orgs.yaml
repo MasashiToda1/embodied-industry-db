@@ -39,7 +39,7 @@ orgs:
   - { id: alphasquare,     zh: 智平方,        en: AlphaSquare,     layers: [foundation, embodiment],             upstream: alphasquare }
   - { id: beingbeyond,     zh: 超越智能,      en: BeingBeyond,     layers: [foundation],                         upstream: beingbeyond }
   - { id: tars-robotics,   zh: 它石智航,      en: TARS Robotics,   layers: [foundation, embodiment],             upstream: tars-robotics }
-  - { id: psibot,          zh: 灵巧智能,      en: PsiBot,          layers: [foundation, embodiment],             upstream: psibot }
+  - { id: psibot,          zh: 灵初智能,      en: PsiBot,          layers: [foundation, embodiment], aliases: [PsiBot, 灵初, 灵巧智能], upstream: psibot }
 
   # ---------------- 运控与内容 ----------------
   - { id: bridgedp,        zh: 桥介数物,      en: BridgeDP,        layers: [locomotion, content, simulation],    upstream: bridgedp }
@@ -56,7 +56,7 @@ orgs:
   - { id: hightorque,      zh: 高擎机电,      en: HighTorque Robotics, layers: [components, embodiment],         upstream: hightorque }
 
   # ---------------- 数据采集与供给 ----------------
-  - { id: lightwheel,      zh: 光轮科技,      en: Lightwheel,      layers: [data, simulation],                   upstream: lightwheel }
+  - { id: lightwheel,      zh: 光轮智能,      en: Lightwheel,      layers: [data, simulation], aliases: [Lightwheel, 光轮科技, 光轮], upstream: lightwheel }
   - { id: scale-ai,        zh: Scale AI,      en: Scale AI,        layers: [data],                               upstream: scale-ai }
   - { id: unidata,         zh: 优数数据,      en: Unidata,         layers: [data],                               upstream: unidata }
   - { id: chingmu,         zh: 青瞳视觉,      en: CHINGMU Vision,  layers: [data, components],                   upstream: chingmu }

@@ -2,6 +2,10 @@ id: paxini
 names:
   zh: 帕西尼
   en: Paxini Tech
+  aliases:
+  - Paxini
+  - 帕西尼感知科技
+  - 帕西尼
 status: active
 layers:
 - components

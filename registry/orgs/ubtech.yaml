@@ -2,6 +2,10 @@ id: ubtech
 names:
   zh: 优必选
   en: UBTECH
+  aliases:
+  - UBTECH
+  - 优必选科技
+  - 优必选
 status: active
 layers:
 - embodiment
