@@ -1,0 +1,9 @@
+id: crrc-shenyang
+names:
+  zh: 国家机器人检测与评定中心
+  en: National Robot Testing and Evaluation Center
+  aliases:
+  - 国家机器人检测与评定中心（沈阳）
+status: active
+layers:
+- standards

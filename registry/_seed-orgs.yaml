@@ -62,6 +62,24 @@ orgs:
   - { id: chingmu,         zh: 青瞳视觉,      en: CHINGMU Vision,  layers: [data, components],                   upstream: chingmu }
   - { id: noitom,          zh: 诺亦腾,        en: Noitom,          layers: [data, components],                   upstream: noitom }
 
+  # ---------------- 场景运营与租赁 ----------------
+  # 这一层不发论文、不办发布会，所以任何以论文或产品为线索的名录都收不到。
+  # 只记公开可查的主体与业务形态；具体报价、客户关系不在此处。
+  - { id: jushen,          zh: 具深科技,      en: Jushen,          layers: [operation, locomotion], aliases: [机时租, 具深] }
+  - { id: qingtianzu,      zh: 擎天租,        en: Qingtianzu,      layers: [operation] }
+  - { id: changjishe,      zh: 畅机社,        en: Changjishe,      layers: [operation] }
+  - { id: wanjiyizu,       zh: 万机易租,      en: Wanjiyizu,       layers: [operation] }
+  - { id: wangxingren,     zh: 汪星人,        en: Wangxingren,     layers: [operation] }
+  - { id: pudu,            zh: 普渡机器人,    en: Pudu Robotics,   layers: [embodiment, operation] }
+  - { id: keenon,          zh: 擎朗智能,      en: KEENON Robotics, layers: [embodiment, operation], upstream: keenon }
+
+  # ---------------- 系统集成与方案交付 ----------------
+  - { id: yuhetian,        zh: 玉禾田,        en: Yuhetian,        layers: [integration] }
+
+  # ---------------- 标准与检测评测 ----------------
+  - { id: crrc-shenyang,   zh: 国家机器人检测与评定中心, en: National Robot Testing and Evaluation Center, layers: [standards], aliases: [国家机器人检测与评定中心（沈阳）] }
+  - { id: cie,             zh: 中国电子学会,  en: Chinese Institute of Electronics, layers: [standards] }
+
   # ---------------- 仿真与工具链 ----------------
   - { id: genesis-ai,      zh: 创世纪 AI,     en: Genesis AI,      layers: [simulation, foundation],             upstream: genesis-ai }
   - { id: motphys,         zh: 莫特菲斯,      en: Motphys,         layers: [simulation],                         upstream: motphys }

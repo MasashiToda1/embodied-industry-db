@@ -1,0 +1,11 @@
+id: jushen
+names:
+  zh: 具深科技
+  en: Jushen
+  aliases:
+  - 机时租
+  - 具深
+status: active
+layers:
+- operation
+- locomotion

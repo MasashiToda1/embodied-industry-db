@@ -1,0 +1,8 @@
+id: pudu
+names:
+  zh: 普渡机器人
+  en: Pudu Robotics
+status: active
+layers:
+- embodiment
+- operation

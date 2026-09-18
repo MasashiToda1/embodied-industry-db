@@ -1,0 +1,10 @@
+id: keenon
+names:
+  zh: 擎朗智能
+  en: KEENON Robotics
+status: active
+layers:
+- embodiment
+- operation
+upstream:
+  robotics_notebooks_institution: keenon

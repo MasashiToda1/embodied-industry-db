@@ -16,11 +16,16 @@ event_types:
   pricing:         公开价格
   dataset_release: 数据集发布
 
+# orgs[].role 只用于 registry 里的产业主体。
+# 非具身产业的买方（景区、工厂、医院、政府部门）不进 registry——
+# 它们是长尾且无边界的，做成实体只会塞满没有产业层、也不会有自身事件的空壳。
+# 这类买方写进事件的 counterparties 纯文本字段，只作溯源记录，不做可查询维度。
+# 真正要查的不是「哪个买家」，是「什么场景、多少钱」，那两项由 target_scene 轴和 amount 承担。
 org_roles:
   subject:      事件的主角
-  counterparty: 对手方、合作方
-  investor:     出资方
-  customer:     买方、客户
+  counterparty: 对手方、合作方（仍须是产业主体）
+  investor:     出资方（仍须是产业主体）
+  customer:     买方（仅当买方本身是产业主体，如本体厂商采购灵巧手）
   supplier:     供应方、承接方
 
 source_tiers:

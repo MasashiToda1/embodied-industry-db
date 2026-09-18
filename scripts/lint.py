@@ -158,6 +158,21 @@ class Linter:
             if did not in self.dataset_ids:
                 self.err(where, f"datasets 引用的「{did}」不在 registry/datasets 内")
 
+        # 非产业买方走纯文本，不进 registry。这里只防手滑写成结构体。
+        for i, name in enumerate(doc.get("counterparties") or []):
+            if not isinstance(name, str) or not name.strip():
+                self.err(where, f"counterparties[{i}] 必须是非空字符串（买方只作文本记录）")
+
+        amount = doc.get("amount")
+        if amount is not None:
+            if not isinstance(amount, dict):
+                self.err(where, "amount 必须是 {value, currency} 结构")
+            else:
+                if not isinstance(amount.get("value"), (int, float)):
+                    self.err(where, "amount.value 必须是数字，写不准就整个字段留空")
+                if not amount.get("currency"):
+                    self.err(where, "amount 必须带 currency，跨国比价没有币种无意义")
+
         # 门禁 1：evidence 完整性
         for i, ev in enumerate(doc.get("evidence") or []):
             tag = f"evidence[{i}]"
