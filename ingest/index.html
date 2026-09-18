@@ -48,7 +48,14 @@
 <main>
   <div class="card">
     <h2>投料</h2>
-    <textarea id="src" placeholder="粘微信文章链接，或整页 HTML（Cmd+U 查看源代码后全选复制）"></textarea>
+    <div class="row" style="grid-template-columns:96px 1fr">
+      <label>来料类型</label>
+      <select id="kind">
+        <option value="wechat">微信文章 / 官方消息</option>
+        <option value="tender">招投标公告</option>
+      </select>
+    </div>
+    <textarea id="src" placeholder="微信：粘链接或整页 HTML（Cmd+U 看源码后全选复制）&#10;招投标：粘公告正文或整页 HTML 均可"></textarea>
     <div class="actions">
       <button id="go">解析</button>
       <button class="ghost" id="reload">刷新草稿</button>
@@ -141,6 +148,9 @@ function draftCard(d) {
     <div class="row"><label>佐证状态</label><select class="f" data-k="corroboration">${opts(BOOT.corroboration, d.corroboration)}</select></div>
     <div class="row"><label>中文标题</label><input class="f" data-k="title_zh" value="${esc(d.title_zh)}"></div>
     <div class="row"><label>中文摘要</label><input class="f" data-k="summary_zh" value="${esc(d.summary_zh)}" placeholder="一句事实，别写判断（lint 会拦推断性措辞）"></div>
+    <div class="row"><label>买方（文本）</label><input class="f" data-k="counterparties_raw" value="${esc((d.counterparties||[]).join('；'))}" placeholder="非具身产业的买方，分号隔开，只作记录不建实体"></div>
+    <div class="row"><label>金额</label><input class="f" data-k="amount_raw_input" value="${d.amount ? d.amount.value : ''}" placeholder="数字，拿不准就留空"></div>
+    <div class="row"><label>币种</label><input class="f" data-k="amount_currency" value="${esc(d.amount ? d.amount.currency : '')}" placeholder="CNY / USD / EUR，填了金额就必须填"></div>
 
     <h2 style="margin-top:14px">涉及主体</h2>
     <div class="orgs">${(d.orgs||[]).map(orgRow).join('') || ''}</div>
@@ -166,6 +176,15 @@ function collect(card) {
   out.orgs = [...card.querySelectorAll('.orgline')].map(r => ({
     id: $('.o-id', r).value, role: $('.o-role', r).value
   })).filter(o => o.id);
+
+  // 买方是纯文本列表，不进 registry
+  out.counterparties = (out.counterparties_raw || '').split(/[；;]/).map(s => s.trim()).filter(Boolean);
+  delete out.counterparties_raw;
+
+  // 金额留空就整个不带，避免写出 0 这种假数据
+  const v = (out.amount_raw_input || '').trim();
+  out.amount = v ? { value: parseFloat(v), currency: (out.amount_currency || '').trim() } : null;
+  delete out.amount_raw_input; delete out.amount_currency;
   const axes = {};
   card.querySelectorAll('.ax').forEach(el => {
     if (el.dataset.multi) {
@@ -193,7 +212,9 @@ document.addEventListener('click', async e => {
     if (!src) return;
     $('#msg').textContent = '解析中…'; $('#msg').className = 'msg';
     try {
-      const { extract } = await api('/api/parse', { method:'POST', body: JSON.stringify({ source: src }) });
+      const { extract } = await api('/api/parse', {
+        method:'POST', body: JSON.stringify({ source: src, kind: $('#kind').value })
+      });
       $('#msg').textContent = extract.warnings.length ? '已入草稿，但有告警' : '已入草稿';
       $('#msg').className = 'msg ' + (extract.warnings.length ? 'err' : 'ok');
       $('#src').value = '';

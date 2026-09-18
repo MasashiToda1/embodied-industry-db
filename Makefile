@@ -34,6 +34,8 @@ test:
 
 test-ingest:
 	.venv/bin/python tests/test_wechat.py
+	@echo
+	.venv/bin/python tests/test_tender.py
 
 clean:
 	rm -rf build tests/.build

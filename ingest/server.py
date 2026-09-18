@@ -20,7 +20,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
 
-from . import wechat
+from . import tender, wechat
 
 ROOT = Path(__file__).resolve().parent.parent
 DRAFTS = ROOT / "drafts"
@@ -147,6 +147,10 @@ def build_event(draft: dict) -> dict:
         event["summary"]["en"] = draft["summary_en"]
     if draft.get("datasets"):
         event["datasets"] = draft["datasets"]
+    if draft.get("counterparties"):
+        event["counterparties"] = [c for c in draft["counterparties"] if str(c).strip()]
+    if draft.get("amount"):
+        event["amount"] = draft["amount"]
 
     axes = {k: v for k, v in (draft.get("axes") or {}).items() if v}
     if axes:
@@ -175,6 +179,7 @@ def write_event(event: dict) -> str:
 class ParseIn(BaseModel):
     source: str
     is_url: bool | None = None
+    kind: str = "wechat"          # wechat | tender
 
 
 @app.post("/api/parse")
@@ -182,6 +187,8 @@ def api_parse(payload: ParseIn) -> JSONResponse:
     source = payload.source.strip()
     if not source:
         raise HTTPException(400, "内容为空")
+    if payload.kind == "tender":
+        return _parse_tender(source)
 
     art = wechat.load(source, payload.is_url)
     snapshot = ""
@@ -216,6 +223,94 @@ def api_parse(payload: ParseIn) -> JSONResponse:
     }
     save_draft(draft)
     return JSONResponse({"draft": draft, "extract": art.summary_dict()})
+
+
+def _parse_tender(source: str) -> JSONResponse:
+    """招投标公告转草稿。
+
+    中标人自动匹配到 registry 只给候选、不自动绑定——认错主体比没认出来更糟。
+    采购人按约定进 counterparties 纯文本，不建实体。
+    """
+    t = tender.parse(source)
+    art = wechat.Article(title=t.project or "招投标公告", html=source)
+    snapshot = (
+        wechat.save_snapshot(ROOT, art, t.date, prefix="tender")
+        if source.lstrip().startswith("<")
+        else ""
+    )
+
+    candidates = tender.match_orgs(t.winner, load_orgs_full())
+    orgs = [{"id": candidates[0]["id"], "role": "supplier"}] if len(candidates) == 1 else []
+
+    draft = {
+        "id": uuid.uuid4().hex[:12],
+        "created": datetime.now(CST).isoformat(timespec="seconds"),
+        "kind": "tender",
+        "article": {
+            "url": "",
+            "title": t.project or "招投标公告",
+            "account": t.agent or "",
+            "published": t.date,
+            "published_basis": "stated" if t.date else "",
+            "body": t.text,
+            "images": [],
+            "warnings": t.warnings
+            + ([f"中标人「{t.winner}」匹配到多个主体，需人工选定" ] if len(candidates) > 1 else [])
+            + ([f"中标人「{t.winner}」在 registry 里没有对应主体，需先建条目" ]
+               if t.winner and not candidates else []),
+        },
+        "snapshot": snapshot,
+        "date": t.date,
+        "date_precision": t.date_precision or "day",
+        "date_basis": "stated",
+        "title_zh": t.project or "",
+        "summary_zh": _tender_summary(t),
+        "type": "procurement",
+        "tier": "primary",           # 招标公告是一手文件
+        "corroboration": "single",
+        "orgs": orgs,
+        "counterparties": [t.buyer] if t.buyer else [],
+        "axes": {},
+        "status": "draft",
+        "org_candidates": candidates,
+        "winner_raw": t.winner,
+    }
+    if t.amount_value is not None:
+        draft["amount"] = {"value": t.amount_value, "currency": t.amount_currency}
+        draft["amount_raw"] = t.amount_raw
+    save_draft(draft)
+    return JSONResponse({"draft": draft, "extract": t.summary_dict()})
+
+
+def _tender_summary(t: tender.Tender) -> str:
+    """只陈述公告写了什么，不加判断。"""
+    parts = []
+    if t.winner:
+        parts.append(f"{t.winner}中标")
+    if t.project:
+        parts.append(t.project)
+    if t.amount_value is not None:
+        parts.append(f"金额 {t.amount_raw}")
+    if t.project_no:
+        parts.append(f"项目编号 {t.project_no}")
+    return "，".join(parts) + ("。" if parts else "")
+
+
+def load_orgs_full() -> list[dict]:
+    """带别名的主体名单，供中标人匹配用。"""
+    folder = ROOT / "registry/orgs"
+    out = []
+    if folder.exists():
+        for path in sorted(folder.glob("*.yaml")):
+            doc = yaml.safe_load(path.read_text()) or {}
+            names = doc.get("names") or {}
+            out.append({
+                "id": doc.get("id"),
+                "zh": names.get("zh"),
+                "en": names.get("en"),
+                "aliases": names.get("aliases") or [],
+            })
+    return out
 
 
 @app.get("/api/bootstrap")

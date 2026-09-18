@@ -233,7 +233,7 @@ def load(source: str, is_url: bool | None = None) -> Article:
     return parse(source, "")
 
 
-def save_snapshot(root: Path, art: Article, published: str) -> str:
+def save_snapshot(root: Path, art: Article, published: str, prefix: str = "wechat") -> str:
     """把原始 HTML 落盘。没有快照的事件进不了库，所以这一步不可跳过。"""
     date = published or datetime.now(CST).strftime("%Y-%m-%d")
     year, month = date[:4], date[5:7]
@@ -244,7 +244,7 @@ def save_snapshot(root: Path, art: Article, published: str) -> str:
     # 公众号名基本都是中文，所以优先用 ASCII 的公众号 id（gh_xxx）做辨识。
     raw = art.account_id or art.account or ""
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", raw).strip("-").lower()[:24]
-    stem = f"wechat-{date}-{slug or 'article'}"
+    stem = f"{prefix}-{date}-{slug or 'article'}"
     path = folder / f"{stem}.html"
     n = 2
     while path.exists():
