@@ -51,6 +51,11 @@ axes:
         en: Motion Library
         ref: wiki/tasks/teleoperation.md
         note: 预先制作动作并按需回放或编排，不在线生成新动作。
+      - id: motion-generation
+        zh: 动作生成
+        en: Motion Generation
+        ref:
+        note: 由文本或其他条件在线生成动作序列。与动作库相反——动作库回放已有的，这个现场生成新的。
       - id: world-model
         zh: 世界模型
         en: World Model

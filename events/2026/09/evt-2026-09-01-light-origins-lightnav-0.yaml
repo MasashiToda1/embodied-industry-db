@@ -1,0 +1,36 @@
+id: evt-2026-09-01-light-origins-lightnav-0
+date: '2026-09-01'
+date_precision: day
+type: publication
+orgs:
+- id: light-origins
+  role: subject
+title:
+  zh: 亮源新创发布并开源通用导航大脑 LightNav-0
+  en: Light Origins releases and open-sources LightNav-0 navigation model
+summary:
+  zh: 官方稿称使用 2000 多个真实室内外场景、以 Real2Sim2Real 合成 4000 多小时后训练数据，在公开视觉语言导航评测基准上报告
+    SOTA，并称可在不使用目标机器人、目标环境或特定任务训练数据的情况下零样本泛化。模型已发布在 Hugging Face。
+  en: Official post states 4000+ hours of post-training data synthesized via Real2Sim2Real
+    from 2000+ real indoor and outdoor scenes, reports SOTA on public VLN benchmarks,
+    and claims zero-shot transfer without target-robot, target-environment or task-specific
+    training data. Model published on Hugging Face.
+axes:
+  model_form:
+  - end2end-vla
+  data_acquisition:
+  - sim-generated
+  data_modality:
+  - language-annotated
+evidence:
+- url: https://mp.weixin.qq.com/s/ShDScXyoObLbBFlSoR3pJg
+  publisher: 亮源新创公众号
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/wechat-2026-09-01-gh-e5900a36fd8a.html
+- url: https://huggingface.co/LightOriginsHQ/LightNav-0
+  publisher: Hugging Face · LightOriginsHQ
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/hf-2026-09-01-hf-lightnav0.html
+corroboration: multi

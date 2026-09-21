@@ -26,6 +26,8 @@ axes:
     end2end-vla: ["vision-language-action", "VLA", "VLN", "end-to-end policy", "端到端", "视觉语言动作", "视觉语言导航"]
     hierarchical: ["hierarchical policy", "high-level planner", "low-level tracker", "planner and tracker", "分层", "上层规划", "下层追踪"]
     motion-library: ["motion library", "motion retargeting", "reference motion", "动作库", "重定向", "动作编排"]
+    motion-generation: ["text-to-action", "text-to-motion", "motion generation", "motion-generation",
+                        "动作生成", "文本生成动作", "文生动作"]
     world-model: ["world model", "latent dynamics", "dynamics model learning", "世界模型"]
     il: ["imitation learning", "behavior cloning", "behaviour cloning", "diffusion policy", "模仿学习", "行为克隆", "扩散策略"]
 
