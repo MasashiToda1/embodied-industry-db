@@ -184,6 +184,10 @@ make preview ORG=unitree
 
 **微信公众号自动不了。** 需要反检测浏览器，GitHub Actions 里跑不现实。这条长期手工。
 
+**上游只盯两件事，不全量接。** Robotics_Notebooks 一天几十个提交全是技术知识 ingest，全量接进来就是噪音，而且我们定过不重建技术知识、只引用。只看：`schema/institutions.json` 的**新增**条目（他策展过的机构，候选主体的好来源；只报增量，全量对比出来一百多条大厂噪音），以及我们 `ref` 留空的轴取值上游是否已有页面可指。
+
+**页面匹配按连字符分词，不用裸子串。** 裸子串会让 `arm` 命中 `armature-modeling`、`harmonic-drive`、`leftarmmotionsolver` 一堆无关页。
+
 ## issue 随手记：最低摩擦的入口
 
 **GitHub 就是后台**，不用启服务、不用开 Codespaces，手机上打开仓库就能填。

@@ -101,8 +101,8 @@ axes:
       - id: embodichain
         zh: EmbodiChain
         en: EmbodiChain
-        ref:
-        note: 跨维智能的端到端具身平台，上游暂无页面。
+        ref: wiki/entities/embodichain.md
+        note: 跨维智能（DexForce）的端到端具身平台，GPU 仿真加模仿学习与强化学习工具链。
       - id: in-house
         zh: 自研
         en: In-House

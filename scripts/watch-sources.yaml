@@ -21,6 +21,12 @@ arxiv:
   query: 'cat:cs.RO AND (abs:"humanoid" OR abs:"loco-manipulation" OR abs:"vision-language-action" OR abs:"whole-body")'
   max_results: 40
 
+# 盯 Robotics_Notebooks，但只盯两件事：新增机构、能补上我们空着的 ref。
+# 他一天几十个提交全是技术知识 ingest，全量接进来就是噪音，
+# 而且我们定过不重建技术知识、只引用。
+upstream:
+  enabled: true
+
 huggingface:
   enabled: true
   # 扫 registry/orgs/*.yaml 里 accounts.huggingface 填了的主体，

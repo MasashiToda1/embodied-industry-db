@@ -65,16 +65,20 @@ def ingested_urls() -> set[str]:
     return out
 
 
-def load_state() -> set[str]:
-    seen: set[str] = set()
+def load_state() -> tuple[set[str], set[str]]:
+    """返回（已报过的条目键, 上次见到的上游机构 id）。"""
     if STATE.exists():
-        seen = set(json.loads(STATE.read_text()).get("seen", []))
-    return seen
+        d = json.loads(STATE.read_text())
+        return set(d.get("seen", [])), set(d.get("upstream_institutions", []))
+    return set(), set()
 
 
-def save_state(seen: set[str]) -> None:
-    # 只留最近的，否则文件无限长
-    STATE.write_text(json.dumps({"seen": sorted(seen)[-4000:]}, indent=0))
+def save_state(seen: set[str], insts: set[str]) -> None:
+    # seen 只留最近的，否则文件无限长；机构表要全存，它是拿来做差集的
+    STATE.write_text(json.dumps(
+        {"seen": sorted(seen)[-4000:], "upstream_institutions": sorted(insts)},
+        ensure_ascii=False, indent=0,
+    ))
 
 
 def load_orgs() -> list[dict]:
@@ -212,6 +216,112 @@ def fetch_huggingface(orgs: list[dict], days: int = 14) -> list[dict]:
     return out
 
 
+def match_pages(vid: str, paths: list[str], limit: int = 3) -> list[str]:
+    """把取值 id 匹配到上游页面。
+
+    按连字符分词做**连续子序列**匹配，不做裸子串——裸子串会让 `arm`
+    命中 armature-modeling、harmonic-drive、leftarmmotionsolver 一堆无关页。
+
+    排序上让 concepts / methods / 非 paper 的 entities 靠前：
+    那些是规范页，paper-* 是具体论文，不适合当轴取值的定义锚点。
+    """
+    want = [t for t in vid.split("-") if t]
+    scored: list[tuple[int, str]] = []
+    for p in paths:
+        stem = Path(p).stem.lower()
+        toks = [t for t in re.split(r"[-_]", stem) if t]
+        hit = any(toks[i:i + len(want)] == want for i in range(len(toks) - len(want) + 1))
+        if not hit:
+            continue
+        if stem == vid:
+            rank = 0
+        elif "/concepts/" in p or "/methods/" in p:
+            rank = 1
+        elif "paper-" in stem:
+            rank = 3
+        else:
+            rank = 2
+        scored.append((rank, p))
+    return [p for _, p in sorted(scored)[:limit]]
+
+
+def fetch_upstream(known_insts: set[str]) -> tuple[list[dict], set[str]]:
+    """盯 Robotics_Notebooks 的两件事，只盯这两件。
+
+    他一天几十个提交全是技术知识 ingest，全量接进来就是噪音，
+    而且我们明确定过不重建技术知识、只引用。所以只看：
+
+      1. institutions.json 的**新增条目** —— 他策展过的机构，是候选主体的好来源。
+         只报增量，全量对比出来一百多条大厂噪音，没意义。
+      2. 我们 ref 留空的轴取值，上游是否已经有页面可指。
+    """
+    out: list[dict] = []
+    seen_insts = set(known_insts)
+
+    try:
+        r = httpx.get(
+            "https://raw.githubusercontent.com/ImChong/Robotics_Notebooks"
+            "/main/schema/institutions.json",
+            timeout=25, headers=UA, follow_redirects=True,
+        )
+        r.raise_for_status()
+        reg = json.loads(r.text).get("registry", {})
+    except Exception as exc:  # noqa: BLE001
+        print(f"  ! 上游机构表取不到：{type(exc).__name__}", file=sys.stderr)
+        return out, seen_insts
+
+    if known_insts:
+        added = [(k, v.get("label", k)) for k, v in reg.items() if k not in known_insts]
+        for k, label in added[:20]:
+            out.append({
+                "source": "Robotics_Notebooks · institutions",
+                "tier": "aggregator",
+                "title": f"上游新增机构：{label}",
+                "url": f"https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#{k}",
+                "date": datetime.now(CST).strftime("%Y-%m-%d"),
+                "summary": f"上游 institutions.json 新增 `{k}`。判断是否在本库边界内，在就建条目。",
+                "kind": "upstream-org",
+            })
+        if len(added) > 20:
+            print(f"  · 上游新增机构 {len(added)} 家，只报前 20", file=sys.stderr)
+    else:
+        print(f"  · 首次记录上游机构表（{len(reg)} 家），本轮不报增量", file=sys.stderr)
+    seen_insts = set(reg)
+
+    # 我们 ref 留空的取值，上游是否已经有页面了
+    blanks: list[tuple[str, str, str]] = []
+    doc = yaml.safe_load((ROOT / "vocab/axes-tech.yaml").read_text())
+    for ax in doc["axes"]:
+        for v in ax["values"]:
+            if not v.get("ref"):
+                blanks.append((ax["field"], v["id"], v["zh"]))
+    if blanks:
+        try:
+            t = httpx.get(
+                "https://api.github.com/repos/ImChong/Robotics_Notebooks"
+                "/git/trees/main?recursive=1", timeout=30, headers=UA,
+            ).json()
+            paths = [x["path"] for x in t.get("tree", []) if x["path"].startswith("wiki/")]
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! 上游文件树取不到：{type(exc).__name__}", file=sys.stderr)
+            paths = []
+        for field, vid, zh in blanks:
+            cands = match_pages(vid, paths)
+            if cands:
+                out.append({
+                    "source": "Robotics_Notebooks · wiki",
+                    "tier": "aggregator",
+                    "title": f"可补引用：{zh}（{field}.{vid}）",
+                    "url": f"https://github.com/ImChong/Robotics_Notebooks/blob/main/{cands[0]}",
+                    "date": datetime.now(CST).strftime("%Y-%m-%d"),
+                    "summary": "上游出现了可能对应的页面："
+                               + "、".join(f"`{c}`" for c in cands)
+                               + f"。核对后把 ref 填进 vocab/axes-tech.yaml 的 {vid}。",
+                    "kind": "upstream-ref",
+                })
+    return out, seen_insts
+
+
 # ----------------------------------------------------------------- 产出
 
 def issue_body(item: dict) -> str:
@@ -242,7 +352,9 @@ def main() -> int:
 
     conf = yaml.safe_load(CONF.read_text())
     orgs = load_orgs()
-    seen = set() if args.no_state else load_state()
+    seen, insts = load_state()
+    if args.no_state:
+        seen = set()
     kw = re.compile("|".join(map(re.escape, conf["keywords"])))
 
     items: list[dict] = []
@@ -252,6 +364,9 @@ def main() -> int:
         items += fetch_arxiv(conf["arxiv"]["query"], conf["arxiv"].get("max_results", 40))
     if (conf.get("huggingface") or {}).get("enabled"):
         items += fetch_huggingface(orgs)
+    if (conf.get("upstream") or {}).get("enabled"):
+        up_items, insts = fetch_upstream(insts)
+        items += up_items
 
     already = ingested_urls()
     hits, digest, skipped = [], [], 0
@@ -266,6 +381,9 @@ def main() -> int:
         if org:
             it["org"] = org
             hits.append((k, it))
+        elif it["kind"].startswith("upstream-"):
+            # 上游线索天然没有主体可匹配，直接进 digest
+            digest.append((k, it))
         elif it["kind"] == "paper":
             # 论文没匹配到产业主体就丢弃，不进 digest。
             # 本库只收产业主体，而 cs.RO 每天几十篇绝大多数是纯高校成果；
@@ -302,7 +420,7 @@ def main() -> int:
                 encoding="utf-8")
 
     if not args.no_state:
-        save_state(seen | {k for k, _ in hits} | {k for k, _ in digest})
+        save_state(seen | {k for k, _ in hits} | {k for k, _ in digest}, insts)
     return 0
 
 
