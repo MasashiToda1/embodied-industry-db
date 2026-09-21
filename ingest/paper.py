@@ -19,8 +19,10 @@ import httpx
 import yaml
 from bs4 import BeautifulSoup
 
-ARXIV_API = "http://export.arxiv.org/api/query"
+# 必须用 https：arXiv 对 http 返回 301，且要跟随重定向
+ARXIV_API = "https://export.arxiv.org/api/query"
 ATOM = "{http://www.w3.org/2005/Atom}"
+UA = {"User-Agent": "Mozilla/5.0 (compatible; embodied-industry-db)"}
 
 RE_ARXIV_ID = re.compile(r"(?:arxiv\.org/(?:abs|pdf)/)?(\d{4}\.\d{4,5})(?:v\d+)?")
 
@@ -64,8 +66,12 @@ def normalize(text: str) -> str:
 
 def fetch_arxiv(arxiv_id: str, timeout: float = 20.0) -> Paper:
     """走 arXiv 官方 API。免费、无需 key，返回 Atom XML。"""
-    with httpx.Client(timeout=timeout, follow_redirects=True) as client:
-        resp = client.get(ARXIV_API, params={"id_list": arxiv_id, "max_results": 1})
+    # ⚠️ arXiv 限流紧且返回 406 而不是 429，很容易被当成参数错。
+    # 官方要求请求间隔 ≥3 秒，密集调用会被挡一段时间。
+    with httpx.Client(timeout=timeout, follow_redirects=True, headers=UA) as client:
+        resp = client.get(f"{ARXIV_API}?id_list={arxiv_id}&max_results=1")
+        if resp.status_code == 406:
+            raise RuntimeError("arXiv 返回 406＝被限流，等几分钟再试，或改用粘贴 abs 页面")
         resp.raise_for_status()
         return parse_atom(resp.text, arxiv_id)
 

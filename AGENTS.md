@@ -5,6 +5,7 @@
 | 路径 | 谁在做 | 适合什么 |
 |---|---|---|
 | **agent 批量** | Cursor agent，开 PR | 有页面可解析的：公众号、招投标公告、论文、官网 |
+| **自动盯梢** | `Watch` workflow 每天跑，开成 issue | 有公开 feed 或 API 的源：媒体 RSS、arXiv、HF |
 | **issue 随手记** | 开一条 issue，手机上也能填 | **想到就记**，不用启服务、不用开 Codespaces |
 | **人工手填** | `make serve` 界面上「手工新建事件」 | 一次录好几条、要同时补轴和金额时 |
 
@@ -160,6 +161,27 @@ make preview ORG=unitree
 `Gate` workflow 全绿。词表自检、真实数据门禁、夹具、解析器测试、编译，五步都过。
 
 ---
+
+## 自动盯梢：只发现，不入库
+
+`Watch` workflow 每天北京时间 09:00 扫一遍源，也可以在 Actions 页面手动触发（带 dry-run 选项）。
+
+**它绝不写 `events/`。** 抓到的是候选不是事实，自动写库等于把所有门禁绕过去。产出分两档：
+
+- **命中 registry 主体** → 单开一条 issue，字段按「手工事件」模板预填，`make intake N=xx` 直接可用
+- **只命中关键词** → 汇总成一条 digest，多半是还没收录的公司，逐条判
+
+源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
+
+去重状态存在 `.watch-state.json` 并回写仓库（CI 每次都是全新环境，不回写就会天天重报）。另外还会拿已入库事件的 evidence URL 做一道过滤，已经收过的不再报。
+
+### 踩过的坑
+
+**arXiv 限流很紧**，官方要求请求间隔 ≥3 秒，密集调用会被整个挡掉，而且**返回 406 不是 429**——非常容易误判成参数写错。代码里已经单独识别这个码。每天跑一次不会碰到，调试时记得加 sleep。
+
+**以下源试过不行，别再加**：36氪 `/feed` 与 `/feed-newsflash` 返回 HTML 不是 RSS，机器之心 `/rss` 同样，IT桔子 412 反爬。免费新闻 API（NewsAPI / GNews / NewsData）额度小、中文覆盖一般，而且是二手聚合，在本库 tier 里属最低一档——**媒体自己的 RSS 更实在**。
+
+**微信公众号自动不了。** 需要反检测浏览器，GitHub Actions 里跑不现实。这条长期手工。
 
 ## issue 随手记：最低摩擦的入口
 

@@ -9,5 +9,7 @@ status: active
 layers:
 - foundation
 - locomotion
+accounts:
+  huggingface: LightOriginsHQ
 # 「光原点」是 Robotics_Notebooks institutions.json 的写法，
 # 公众号与官网自称「亮源新创」，以后者为准，前者留作别名。

@@ -1,0 +1,63 @@
+name: Watch
+
+# 每天北京时间 09:00 跑一次；也可以手动触发先看看出来什么。
+# 它只负责发现，开成 issue 等人判——绝不写 events/。
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "只打印不开 issue"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write      # 回写 .watch-state.json 去重状态
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install --quiet pyyaml httpx
+
+      - name: 扫源
+        run: python scripts/watch.py --emit /tmp/watch-out
+
+      - name: 开 issue
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          for body in /tmp/watch-out/*.md; do
+            stem="${body%.md}"
+            title=$(cat "$stem.title")
+            case "$(basename "$stem")" in
+              digest) labels="intake,新主体" ;;
+              *)      labels="intake,手工事件" ;;
+            esac
+            echo "开 issue：$title"
+            gh issue create --title "$title" --body-file "$body" --label "$labels"
+          done
+
+      # 去重状态要回写，否则明天把今天报过的再报一遍
+      - name: 回写去重状态
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [[ -n "$(git status --porcelain .watch-state.json)" ]]; then
+            git config user.name "watch-bot"
+            git config user.email "watch-bot@users.noreply.github.com"
+            git add .watch-state.json
+            git commit -m "chore: 更新盯梢去重状态 [skip ci]"
+            git push
+          else
+            echo "状态无变化"
+          fi

@@ -1,0 +1,42 @@
+# 自动盯梢的源清单。改这里不用动代码。
+#
+# 只收实测能用的。以下几个试过不行，别再加回来：
+#   36氪 /feed 与 /feed-newsflash —— 返回 HTML 不是 RSS
+#   机器之心 /rss —— 同上
+#   IT桔子 —— 412 反爬
+#   免费新闻 API（NewsAPI / GNews / NewsData）—— 额度小、中文覆盖一般，
+#     而且是二手聚合，在本库的 tier 里属最低一档；媒体自己的 RSS 更实在
+
+rss:
+  - name: 雷峰网
+    url: https://www.leiphone.com/feed
+    tier: media
+  - name: 量子位
+    url: https://www.qbitai.com/feed
+    tier: media
+
+arxiv:
+  enabled: true
+  # cs.RO 全量太多，用这几个词收一收
+  query: 'cat:cs.RO AND (abs:"humanoid" OR abs:"loco-manipulation" OR abs:"vision-language-action" OR abs:"whole-body")'
+  max_results: 40
+
+huggingface:
+  enabled: true
+  # 扫 registry/orgs/*.yaml 里 accounts.huggingface 填了的主体，
+  # 所以想让哪家被自动盯上，就去把它的 accounts 补上
+
+# 新闻正文里命中这些词才进候选。宁可漏不可滥——
+# 候选表一变噪音，人就懒得看，整条链路就废了。
+keywords:
+  - 具身
+  - 人形机器人
+  - 灵巧手
+  - 遥操作
+  - 机器人本体
+  - 运动控制
+  - 关节模组
+  - 动作捕捉
+  - 机器人租赁
+  - 训练场
+  - 数据采集

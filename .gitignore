@@ -11,4 +11,7 @@ venv/
 # 系统
 .DS_Store
 ._*
+
+# .watch-state.json 刻意不忽略：去重状态要跟着仓库走，
+# 否则每次 CI 跑都是全新环境，会把昨天报过的再报一遍。
 drafts/

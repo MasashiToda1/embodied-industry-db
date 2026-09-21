@@ -16,12 +16,18 @@ founded: 2016
 hq: { country: CN, city: 杭州 }
 status: active                 # 见 vocab/enums.yaml
 layers: [embodiment, locomotion]   # 必填，见 vocab/layers.yaml
+accounts:                      # 可选。自动盯梢要靠它，填了才会被 watch 扫到
+  huggingface: LightOriginsHQ
+  github: LightOriginsHQ
+  site: https://...
 sources:                       # 填了 founded / hq 就该有来源
   - url: https://...
     tier: primary
     retrieved: 2026-09-18
     note: 工商登记信息
 ```
+
+`accounts` 决定 `scripts/watch.py` 能不能自动发现这家的新发布。没填就只能靠名字在新闻里被提到时才命中——**填一次，之后它的模型、数据集、开源发布就自动进候选**。
 
 `aliases` 很重要。多源自动采集会撞上同一主体多个名字——宇树 / Unitree / 杭州宇树科技股份有限公司，还有改名和子公司。别名不全会导致同一家公司被建成两条。
 
