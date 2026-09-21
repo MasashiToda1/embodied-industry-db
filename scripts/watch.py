@@ -266,10 +266,17 @@ def main() -> int:
         if org:
             it["org"] = org
             hits.append((k, it))
+        elif it["kind"] == "paper":
+            # 论文没匹配到产业主体就丢弃，不进 digest。
+            # 本库只收产业主体，而 cs.RO 每天几十篇绝大多数是纯高校成果；
+            # 全放进来候选表立刻变噪音，人就不看了。
+            # 关键词也不用在这儿过一遍——arXiv 查询本身已经过滤过。
+            continue
         elif kw.search(blob):
             digest.append((k, it))
 
-    print(f"抓到 {len(items)} 条，去重跳过 {skipped}，"
+    papers = sum(1 for it in items if it["kind"] == "paper")
+    print(f"抓到 {len(items)} 条（其中论文 {papers}），去重跳过 {skipped}，"
           f"命中主体 {len(hits)}，仅命中关键词 {len(digest)}")
 
     for _, it in hits:

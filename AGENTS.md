@@ -169,7 +169,8 @@ make preview ORG=unitree
 **它绝不写 `events/`。** 抓到的是候选不是事实，自动写库等于把所有门禁绕过去。产出分两档：
 
 - **命中 registry 主体** → 单开一条 issue，字段按「手工事件」模板预填，`make intake N=xx` 直接可用
-- **只命中关键词** → 汇总成一条 digest，多半是还没收录的公司，逐条判
+- **新闻只命中关键词** → 汇总成一条 digest，多半是还没收录的公司，逐条判
+- **论文没命中主体** → 直接丢弃，连 digest 都不进。本库只收产业主体，而 cs.RO 每天几十篇绝大多数是纯高校成果，全放进来候选表立刻变噪音
 
 源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
 
