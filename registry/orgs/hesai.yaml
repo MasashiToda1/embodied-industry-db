@@ -1,0 +1,9 @@
+id: hesai
+names:
+  zh: 禾赛科技
+  en: Hesai
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: hesai

@@ -1,0 +1,13 @@
+id: seer-robotics
+names:
+  zh: 仙工智能
+  en: SEER Robotics
+  aliases:
+  - SEER
+  - 仙工
+status: active
+layers:
+- locomotion
+- embodiment
+upstream:
+  robotics_notebooks_institution: seer

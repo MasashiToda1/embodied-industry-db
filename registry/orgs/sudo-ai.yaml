@@ -1,0 +1,9 @@
+id: sudo-ai
+names:
+  zh: 苏度科技
+  en: sudo AI
+status: active
+layers:
+- foundation
+accounts:
+  huggingface: sudo-ai

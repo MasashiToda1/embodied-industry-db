@@ -1,0 +1,8 @@
+id: lingtong
+names:
+  zh: 灵童机器人
+  en: Lingtong Robotics
+status: active
+layers:
+- embodiment
+- content

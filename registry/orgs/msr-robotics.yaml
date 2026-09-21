@@ -1,0 +1,9 @@
+id: msr-robotics
+names:
+  zh: 微软研究院机器人团队
+  en: Microsoft Research Robotics
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: microsoft

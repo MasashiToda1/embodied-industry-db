@@ -1,0 +1,10 @@
+id: original-intelligence
+names:
+  zh: 原力灵机
+  en: Original Intelligence
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: original-intelligence

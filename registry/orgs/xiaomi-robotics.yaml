@@ -1,0 +1,11 @@
+id: xiaomi-robotics
+names:
+  zh: 小米机器人
+  en: Xiaomi Robotics
+  aliases:
+  - 小米集团
+  - Xiaomi
+status: active
+layers:
+- embodiment
+- foundation

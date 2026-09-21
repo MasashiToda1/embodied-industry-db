@@ -1,0 +1,10 @@
+id: agilex-ai
+names:
+  zh: 智在无界
+  en: AgileX AI
+status: active
+layers:
+- foundation
+- data
+upstream:
+  robotics_notebooks_institution: agilex-ai

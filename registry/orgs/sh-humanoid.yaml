@@ -1,0 +1,12 @@
+id: sh-humanoid
+names:
+  zh: 上海人形机器人创新中心
+  en: Shanghai Humanoid Robot Innovation Center
+  aliases:
+  - 国家地方共建人形机器人创新中心
+  - OpenLoong
+status: active
+layers:
+- embodiment
+- data
+- simulation

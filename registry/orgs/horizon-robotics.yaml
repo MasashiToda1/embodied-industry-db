@@ -1,0 +1,10 @@
+id: horizon-robotics
+names:
+  zh: 地平线
+  en: Horizon Robotics
+status: active
+layers:
+- foundation
+- simulation
+upstream:
+  robotics_notebooks_institution: horizon-robotics

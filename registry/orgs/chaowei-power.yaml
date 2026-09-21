@@ -1,0 +1,10 @@
+id: chaowei-power
+names:
+  zh: 超维动力
+  en: Kinetix AI
+status: active
+layers:
+- data
+- embodiment
+upstream:
+  robotics_notebooks_institution: kinetix-ai

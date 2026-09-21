@@ -1,0 +1,12 @@
+id: robotis
+names:
+  zh: ROBOTIS
+  en: ROBOTIS
+status: active
+layers:
+- embodiment
+- components
+upstream:
+  robotics_notebooks_institution: robotis
+accounts:
+  huggingface: ROBOTIS

@@ -1,0 +1,10 @@
+id: mirros
+names:
+  zh: 镜识科技
+  en: MirroS
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: mirros

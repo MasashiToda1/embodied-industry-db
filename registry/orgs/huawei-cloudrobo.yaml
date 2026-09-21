@@ -1,0 +1,13 @@
+id: huawei-cloudrobo
+names:
+  zh: 华为 CloudRobo
+  en: Huawei CloudRobo
+  aliases:
+  - 华为
+  - Huawei
+status: active
+layers:
+- foundation
+- simulation
+upstream:
+  robotics_notebooks_institution: huawei

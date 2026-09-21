@@ -81,7 +81,140 @@ orgs:
   - { id: crrc-shenyang,   zh: 国家机器人检测与评定中心, en: National Robot Testing and Evaluation Center, layers: [standards], aliases: [国家机器人检测与评定中心（沈阳）] }
   - { id: cie,             zh: 中国电子学会,  en: Chinese Institute of Electronics, layers: [standards] }
 
+  # ================ 第二批：从 _triage-orgs.yaml 分类而来 ================
+  # layers 依据是上游公司表里的产品线，不是猜的。判不准的没建，留在 triage 里。
+
+  # ---------------- 整机本体（含大厂新入局）----------------
+  - { id: kepler,          zh: 开普勒机器人,  en: Kepler Robotics,   layers: [embodiment] }
+  - { id: xpeng-robotics,  zh: 小鹏机器人,    en: XPeng Robotics,    layers: [embodiment], aliases: [小鹏, XPeng] }
+  - { id: xiaomi-robotics, zh: 小米机器人,    en: Xiaomi Robotics,   layers: [embodiment, foundation], aliases: [小米集团, Xiaomi] }
+  - { id: honor-robotics,  zh: 荣耀机器人,    en: HONOR Robotics,    layers: [embodiment], aliases: [荣耀, HONOR] }
+  - { id: magiclab,        zh: 魔法原子,      en: MagicLab,          layers: [embodiment] }
+  - { id: casbot,          zh: 中科慧灵,      en: CASBOT,            layers: [embodiment, foundation] }
+  - { id: dobot,           zh: 越疆科技,      en: Dobot,             layers: [embodiment], aliases: [越疆, Dobot], upstream: dobot }
+  - { id: flexiv,          zh: 非夕科技,      en: Flexiv,            layers: [embodiment], aliases: [非夕], upstream: flexiv }
+  - { id: realman,         zh: 睿尔曼智能,    en: RealMan Robotics,  layers: [embodiment, components], aliases: [睿尔曼], upstream: realman }
+  - { id: elephant-robotics, zh: 大象机器人,  en: Elephant Robotics, layers: [embodiment], upstream: elephant-robotics }
+  - { id: huilun,          zh: 慧仑科技,      en: Huilun,            layers: [embodiment] }
+  - { id: youyi,           zh: 有怡科技,      en: Youyi Tech,        layers: [embodiment] }
+  - { id: sentigent,       zh: 深庭纪,        en: Sentigent,         layers: [embodiment] }
+  - { id: vita-power,      zh: 维他动力,      en: Vita Power,        layers: [embodiment] }
+  - { id: lumos-robotics,  zh: 鹿明机器人,    en: Lumos Robotics,    layers: [embodiment, data], upstream: lumos }
+  - { id: estun-codroid,   zh: 埃斯顿酷卓,    en: Estun Codroid,     layers: [embodiment, components] }
+  - { id: robbyant,        zh: 蚂蚁灵波,      en: Robbyant,          layers: [embodiment, foundation], upstream: robbyant }
+  - { id: cloudminds,      zh: 达闼机器人,    en: CloudMinds,        layers: [embodiment, foundation] }
+  - { id: phybot,          zh: 动易科技,      en: PhyBot,            layers: [embodiment, components] }
+  - { id: zerith,          zh: 零次方机器人,  en: Zerith,            layers: [embodiment, foundation] }
+  - { id: sh-humanoid,     zh: 上海人形机器人创新中心, en: Shanghai Humanoid Robot Innovation Center, layers: [embodiment, data, simulation], aliases: [国家地方共建人形机器人创新中心, OpenLoong] }
+  - { id: no16-robot,      zh: 十六号机器人,  en: No.16 Robot,       layers: [embodiment, foundation] }
+  - { id: original-intelligence, zh: 原力灵机, en: Original Intelligence, layers: [embodiment, foundation], upstream: original-intelligence }
+  - { id: zsibot,          zh: 智身科技,      en: ZSibot,            layers: [embodiment, simulation], upstream: zsibot }
+  - { id: uniq-robot,      zh: 优理奇机器人,  en: Uniq Robot,        layers: [embodiment] }
+  - { id: moon-bionic,     zh: 月泉仿生,      en: Moon Bionic,       layers: [embodiment, components] }
+  - { id: shouxing,        zh: 首形科技,      en: Shouxing Tech,     layers: [embodiment] }
+  - { id: mojia,           zh: 墨甲机器人,    en: Mojia Robotics,    layers: [embodiment] }
+  - { id: zhuoyide,        zh: 卓益得机器人,  en: Zhuoyide,          layers: [embodiment] }
+  - { id: digital-china-humanoid, zh: 数字华夏, en: Digital China Humanoid, layers: [embodiment, content] }
+  - { id: qingzhuo,        zh: 清卓动力,      en: Qingzhuo Power,    layers: [embodiment, components] }
+  - { id: lingtong,        zh: 灵童机器人,    en: Lingtong Robotics, layers: [embodiment, content] }
+  - { id: prometheus-universe, zh: 普罗宇宙,  en: Prometheus Universe, layers: [embodiment, components] }
+  - { id: topstar,         zh: 拓斯达,        en: Topstar,           layers: [embodiment, integration] }
+  - { id: siasun,          zh: 新松机器人,    en: SIASUN,            layers: [embodiment, integration] }
+  - { id: wujie-power,     zh: 无界动力,      en: Wujie Power,       layers: [embodiment] }
+  - { id: tesla,           zh: 特斯拉,        en: Tesla,             layers: [embodiment, foundation] }
+  - { id: agility,         zh: Agility Robotics, en: Agility Robotics, layers: [embodiment] }
+  - { id: apptronik,       zh: Apptronik,     en: Apptronik,         layers: [embodiment] }
+  - { id: foundation-robotics, zh: Foundation, en: Foundation Future Industries, layers: [embodiment] }
+  - { id: k-scale-labs,    zh: K-Scale Labs,  en: K-Scale Labs,      layers: [embodiment, simulation] }
+  - { id: dexmate,         zh: Dexmate,       en: Dexmate,           layers: [embodiment, foundation], upstream: dexmate }
+  - { id: sunday-robotics, zh: Sunday Robotics, en: Sunday Robotics, layers: [embodiment, data], upstream: sunday-robotics }
+  - { id: sanctuary-ai,    zh: Sanctuary AI,  en: Sanctuary AI,      layers: [embodiment] }
+  - { id: humanoid-ai,     zh: Humanoid,      en: Humanoid,          layers: [embodiment], upstream: humanoid-ai }
+  - { id: neura-robotics,  zh: NEURA Robotics, en: NEURA Robotics,   layers: [embodiment] }
+  - { id: agile-robots,    zh: 思灵机器人,    en: Agile Robots,      layers: [embodiment, components] }
+  - { id: wandercraft,     zh: Wandercraft,   en: Wandercraft,       layers: [embodiment] }
+  - { id: hexagon-robotics, zh: Hexagon Robotics, en: Hexagon Robotics, layers: [embodiment] }
+  - { id: mentee-robotics, zh: Mentee Robotics, en: Mentee Robotics, layers: [embodiment] }
+  - { id: robotis,         zh: ROBOTIS,       en: ROBOTIS,           layers: [embodiment, components], upstream: robotis }
+  - { id: rlwrld,          zh: RLWRLD,        en: RLWRLD,            layers: [embodiment, foundation], upstream: rlwrld }
+  - { id: honda,           zh: 本田,          en: Honda,             layers: [embodiment] }
+
+  # ---------------- 具身基础模型 ----------------
+  - { id: tencent-robotics, zh: 腾讯机器人实验室, en: Tencent Robotics X, layers: [foundation, simulation], aliases: [腾讯, Tencent], upstream: tencent }
+  - { id: huawei-cloudrobo, zh: 华为 CloudRobo, en: Huawei CloudRobo, layers: [foundation, simulation], aliases: [华为, Huawei], upstream: huawei }
+  - { id: alibaba-robotics, zh: 阿里巴巴,     en: Alibaba,           layers: [foundation], upstream: alibaba }
+  - { id: bytedance-seed,  zh: 字节跳动 Seed, en: ByteDance Seed,    layers: [foundation, components], aliases: [字节跳动, ByteDance], upstream: bytedance }
+  - { id: baidu-cloud,     zh: 百度智能云,    en: Baidu AI Cloud,    layers: [foundation, data], aliases: [百度, Baidu], upstream: baidu }
+  - { id: noematrix,       zh: 穹彻智能,      en: Noematrix,         layers: [foundation], upstream: noematrix }
+  - { id: simplexity-robotics, zh: 至简动力,  en: Simplexity Robotics, layers: [foundation, embodiment] }
+  - { id: delta-intelligence, zh: 德塔智能,   en: Delta Intelligence, layers: [foundation, locomotion] }
+  - { id: sudo-ai,         zh: 苏度科技,      en: sudo AI,           layers: [foundation] }
+  - { id: force-infinity,  zh: 原力无限,      en: Force Infinity,    layers: [foundation, embodiment, data] }
+  - { id: horizon-robotics, zh: 地平线,       en: Horizon Robotics,  layers: [foundation, simulation], upstream: horizon-robotics }
+  - { id: gigaai,          zh: 极佳视界,      en: GigaAI,            layers: [foundation, embodiment], upstream: gigaai }
+  - { id: ace-robotics,    zh: 大晓机器人,    en: Ace Robotics,      layers: [foundation, data], upstream: ace-robotics }
+  - { id: shengshu,        zh: 生数科技,      en: Shengshu,          layers: [foundation], upstream: shengshu }
+  - { id: agilex-ai,       zh: 智在无界,      en: AgileX AI,         layers: [foundation, data], upstream: agilex-ai }
+  - { id: modelbest,       zh: 面壁智能,      en: ModelBest,         layers: [foundation], upstream: modelbest }
+  - { id: miaodong,        zh: 妙动科技,      en: Miaodong,          layers: [foundation, embodiment], upstream: miaodong }
+  - { id: mirros,          zh: 镜识科技,      en: MirroS,            layers: [foundation, embodiment], upstream: mirros }
+  - { id: westlake-robotics, zh: 西湖机器人,  en: Westlake Robotics, layers: [foundation, data] }
+  - { id: roboscience,     zh: 机科未来,      en: RoboScience,       layers: [foundation, embodiment], upstream: roboscience }
+  - { id: deep-leap,       zh: 深度跃迁,      en: Deep Leap,         layers: [foundation] }
+  - { id: dexforce,        zh: 跨维智能,      en: DexForce,          layers: [foundation, simulation], aliases: [DexForce, EmbodiChain] }
+  - { id: tri,             zh: 丰田研究院,    en: Toyota Research Institute, layers: [foundation], aliases: [TRI] }
+  - { id: meta-fair-robotics, zh: Meta FAIR Robotics, en: Meta FAIR Robotics, layers: [foundation], upstream: meta }
+  - { id: msr-robotics,    zh: 微软研究院机器人团队, en: Microsoft Research Robotics, layers: [foundation], upstream: microsoft }
+  - { id: gdm-robotics,    zh: Google DeepMind Robotics, en: Google DeepMind Robotics, layers: [foundation], upstream: google-deepmind }
+  - { id: field-ai,        zh: Field AI,      en: Field AI,          layers: [foundation] }
+
+  # ---------------- 关键部件 ----------------
+  - { id: robosense,       zh: 速腾聚创,      en: RoboSense,         layers: [components], upstream: robosense }
+  - { id: hesai,           zh: 禾赛科技,      en: Hesai,             layers: [components], upstream: hesai }
+  - { id: orbbec,          zh: 奥比中光,      en: Orbbec,            layers: [components, data], upstream: orbbec }
+  - { id: inovance,        zh: 汇川技术,      en: Inovance,          layers: [components] }
+  - { id: d-robotics,      zh: 地瓜机器人,    en: D-Robotics,        layers: [components, simulation], upstream: d-robotics }
+  - { id: leaderdrive,     zh: 绿的谐波,      en: Leaderdrive,       layers: [components] }
+  - { id: yiyou,           zh: 意优科技,      en: Yiyou Tech,        layers: [components] }
+  - { id: keli-sensing,    zh: 柯力传感,      en: Keli Sensing,      layers: [components] }
+  - { id: zhaowei,         zh: 兆威机电,      en: Zhaowei,           layers: [components], aliases: [兆威灵巧手, ZWHAND] }
+  - { id: inspire-robots,  zh: 因时机器人,    en: Inspire Robots,    layers: [components] }
+  - { id: weitai,          zh: 纬钛机器人,    en: Weitai Robotics,   layers: [components] }
+  - { id: brainco,         zh: 强脑科技,      en: BrainCo,           layers: [components] }
+  - { id: lingzhang,       zh: 灵掌机器人,    en: Lingzhang,         layers: [components] }
+  - { id: leadshine,       zh: 雷赛智能,      en: Leadshine,         layers: [components] }
+  - { id: dh-robotics,     zh: 大寰机器人,    en: DH-Robotics,       layers: [components] }
+  - { id: wuji-tech,       zh: 舞肌科技,      en: Wuji Technology,   layers: [components], upstream: wuji-robotics }
+  - { id: harmonic-drive,  zh: 哈默纳科,      en: Harmonic Drive,    layers: [components] }
+  - { id: nabtesco,        zh: 纳博特斯克,    en: Nabtesco,          layers: [components] }
+  - { id: schaeffler,      zh: 舍弗勒,        en: Schaeffler,        layers: [components] }
+  - { id: ati-automation,  zh: ATI Industrial Automation, en: ATI Industrial Automation, layers: [components] }
+  - { id: duatic,          zh: Duatic,        en: Duatic,            layers: [components] }
+
+  # ---------------- 数据采集与供给 ----------------
+  - { id: daka-robot,      zh: 大咖机器人,    en: Daka Robot,        layers: [data, embodiment] }
+  - { id: jianzhi-robot,   zh: 简智机器人,    en: JZ Robot,          layers: [data, components], upstream: jzrobot }
+  - { id: chaowei-power,   zh: 超维动力,      en: Kinetix AI,        layers: [data, embodiment], upstream: kinetix-ai }
+  - { id: qiuzhi-tech,     zh: 求之科技,      en: QZTech,            layers: [data, embodiment], upstream: qztech }
+  - { id: spacetime-var,   zh: 时空变量,      en: Spacetime Variable, layers: [data, components] }
+  - { id: agilex,          zh: 松灵机器人,    en: AgileX Robotics,   layers: [data, components, embodiment], aliases: [AgileX, 松灵, Pika, ALOHA], upstream: agilex }
+
+  # ---------------- 第三批：原判边界外，用户 9/21 拍板收进来 ----------------
+  # 共同点是都有工业根基但已经开出具身产品线，不是纯 AGV 或纯协作臂。
+  - { id: standard-robots, zh: 斯坦德机器人,  en: Standard Robots,   layers: [embodiment, integration], aliases: [Standard Robots, SROS] }
+  - { id: rokae,           zh: 珞石机器人,    en: ROKAE,             layers: [embodiment], aliases: [ROKAE, xMate] }
+  - { id: mech-mind,       zh: 梅卡曼德,      en: Mech-Mind Robotics, layers: [components, integration], aliases: [Mech-Mind, 梅卡曼德机器人], upstream: mech-mind }
+  - { id: seer-robotics,   zh: 仙工智能,      en: SEER Robotics,     layers: [locomotion, embodiment], aliases: [SEER, 仙工], upstream: seer }
+
+  # ---------------- 标准与检测评测 ----------------
+  - { id: ul-solutions,    zh: UL Solutions,  en: UL Solutions,      layers: [standards] }
+  - { id: iso-tc299,       zh: ISO/TC 299 机器人技术委员会, en: ISO/TC 299, layers: [standards] }
+
   # ---------------- 仿真与工具链 ----------------
+  - { id: hf-robotics,     zh: Hugging Face Robotics, en: Hugging Face Robotics, layers: [simulation, data], aliases: [LeRobot], upstream: huggingface }
+  - { id: roboparty,       zh: 萝博派对,      en: RoboParty,         layers: [simulation, content], upstream: roboparty }
+
+  # ---------------- 原有仿真与工具链 ----------------
   - { id: genesis-ai,      zh: 创世纪 AI,     en: Genesis AI,      layers: [simulation, foundation],             upstream: genesis-ai }
   - { id: motphys,         zh: 莫特菲斯,      en: Motphys,         layers: [simulation],                         upstream: motphys }
   - { id: nvidia,          zh: 英伟达,        en: NVIDIA,          layers: [simulation, foundation],             upstream: nvidia }

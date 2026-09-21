@@ -1,0 +1,9 @@
+id: noematrix
+names:
+  zh: 穹彻智能
+  en: Noematrix
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: noematrix

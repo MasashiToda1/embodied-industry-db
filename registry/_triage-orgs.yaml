@@ -1,150 +1,33 @@
-# 待分类主体（线索清单）
+# 待定主体：判在边界外，暂不收录
 
-# 尚未进入 registry/orgs/ 的主体，只记名字和地区两项事实，**不含任何编排或评价**。
-# 线索来源：humanoid-motion-intelligence 的公司与产品主表（CC BY-NC-SA 4.0，内容未导入）。
-# 处理方式：挑一家 → 打开官网核实名称与定位 → 判定 layers → 写进 _seed-orgs.yaml → 跑 bootstrap_orgs.py。
+# 边界规则：以通用机器人本体为最终载体的技术与商业主体。
 #
-# layers 判不准就先别建条目。空 layers 进不了库（lint 报错），这是刻意的：
-# 宁可少一家，不要一堆分不清位置的壳。
+# 排除理由分三类：
+#   买方 —— 汽车厂、电商、物流，机器人是他们采购的东西，不是他们的产品
+#   AGV / 仓储 —— 边界规则明确排除
+#   纯工业臂 / 工业视觉 —— 没有通用本体产品线
 #
-# ⚠️ 建条目前先在已有主体里搜一遍别名。同一家公司常有多个中文写法
-#    （傅利叶／傅利叶智能、光轮科技／光轮智能、灵初智能／灵巧智能），漏查会建出重复。
+# 要收哪家就移到 _seed-orgs.yaml 补上 layers，再跑 scripts/bootstrap_orgs.py。
+#
+# 📌 2026-09-21 用户拍板：斯坦德、珞石、梅卡曼德、仙工智能收进来（都有工业根基
+#    但已开出具身产品线，不是纯 AGV 或纯协作臂）；上汽集团不收。
 
-pending:
-  - { zh: "开普勒机器人", region: "中国" }
-  - { zh: "小鹏机器人", region: "中国" }
-  - { zh: "小米集团", region: "中国" }
-  - { zh: "腾讯机器人实验室", region: "中国" }
-  - { zh: "华为", region: "中国" }
-  - { zh: "阿里巴巴", region: "中国" }
-  - { zh: "字节跳动机器人团队", region: "中国" }
-  - { zh: "京东物流", region: "中国" }
-  - { zh: "速腾聚创", region: "中国" }
-  - { zh: "禾赛科技", region: "中国" }
-  - { zh: "奥比中光", region: "中国" }
-  - { zh: "汇川技术", region: "中国" }
-  - { zh: "国家机器人检测与评定中心（沈阳）", region: "中国" }
-  - { zh: "中科慧灵", region: "中国" }
-  - { zh: "穹彻智能", region: "中国" }
-  - { zh: "越疆科技", region: "中国" }
-  - { zh: "戴盟机器人", region: "中国" }
-  - { zh: "魔法原子", region: "中国" }
-  - { zh: "至简动力", region: "中国" }
-  - { zh: "慧仑科技", region: "中国" }
-  - { zh: "上汽集团", region: "中国" }
-  - { zh: "美团", region: "中国" }
-  - { zh: "蚂蚁集团", region: "中国" }
-  - { zh: "百度智能云", region: "中国" }
-  - { zh: "地瓜机器人", region: "中国" }
-  - { zh: "绿的谐波", region: "中国" }
-  - { zh: "意优科技", region: "中国" }
-  - { zh: "柯力传感", region: "中国" }
-  - { zh: "兆威灵巧手", region: "中国" }
-  - { zh: "因时机器人", region: "中国" }
-  - { zh: "纬钛机器人", region: "中国" }
-  - { zh: "中国电子学会", region: "中国" }
-  - { zh: "大咖机器人", region: "中国" }
-  - { zh: "有怡科技", region: "中国" }
-  - { zh: "德塔智能", region: "中国" }
-  - { zh: "深庭纪", region: "中国" }
-  - { zh: "苏度科技", region: "中国" }
-  - { zh: "亮源新创", region: "中国" }
-  - { zh: "原力无限", region: "中国" }
-  - { zh: "维他动力", region: "中国" }
-  - { zh: "鹿明机器人", region: "中国" }
-  - { zh: "埃斯顿酷卓", region: "中国" }
-  - { zh: "蚂蚁灵波", region: "中国" }
-  - { zh: "达闼机器人", region: "中国" }
-  - { zh: "动易科技", region: "中国" }
-  - { zh: "零次方机器人", region: "中国" }
-  - { zh: "上海人形机器人创新中心", region: "中国" }
-  - { zh: "十六号机器人", region: "中国" }
-  - { zh: "地平线", region: "中国" }
-  - { zh: "原力灵机", region: "中国" }
-  - { zh: "极佳视界", region: "中国" }
-  - { zh: "大晓机器人", region: "中国" }
-  - { zh: "生数科技", region: "中国" }
-  - { zh: "智在无界", region: "中国" }
-  - { zh: "面壁智能", region: "中国" }
-  - { zh: "智身科技", region: "中国" }
-  - { zh: "松灵机器人", region: "中国" }
-  - { zh: "非夕科技", region: "中国" }
-  - { zh: "睿尔曼智能", region: "中国" }
-  - { zh: "法奥意威", region: "中国" }
-  - { zh: "节卡机器人", region: "中国" }
-  - { zh: "艾利特机器人", region: "中国" }
-  - { zh: "遨博智能", region: "中国" }
-  - { zh: "妙动科技", region: "中国" }
-  - { zh: "仙工智能", region: "中国" }
-  - { zh: "大象机器人", region: "中国" }
-  - { zh: "众为创造", region: "中国" }
-  - { zh: "梅卡曼德", region: "中国" }
-  - { zh: "普渡机器人", region: "中国" }
-  - { zh: "擎朗智能", region: "中国" }
-  - { zh: "舞肌科技", region: "中国" }
-  - { zh: "强脑科技", region: "中国" }
-  - { zh: "灵掌机器人", region: "中国" }
-  - { zh: "雷赛智能", region: "中国" }
-  - { zh: "大寰机器人", region: "中国" }
-  - { zh: "荣耀", region: "中国" }
-  - { zh: "简智机器人", region: "中国" }
-  - { zh: "诺亦腾机器人", region: "中国" }
-  - { zh: "求之科技", region: "中国" }
-  - { zh: "跨维智能", region: "中国" }
-  - { zh: "超维动力", region: "中国" }
-  - { zh: "萝博派对", region: "中国" }
-  - { zh: "珞石机器人", region: "中国" }
-  - { zh: "镜识科技", region: "中国" }
-  - { zh: "西湖机器人", region: "中国" }
-  - { zh: "优理奇机器人", region: "中国" }
-  - { zh: "月泉仿生", region: "中国" }
-  - { zh: "机科未来", region: "中国" }
-  - { zh: "优艾智合", region: "中国" }
-  - { zh: "首形科技", region: "中国" }
-  - { zh: "墨甲机器人", region: "中国" }
-  - { zh: "卓益得机器人", region: "中国" }
-  - { zh: "数字华夏", region: "中国" }
-  - { zh: "清卓动力", region: "中国" }
-  - { zh: "灵童机器人", region: "中国" }
-  - { zh: "普罗宇宙", region: "中国" }
-  - { zh: "时空变量", region: "中国" }
-  - { zh: "斯坦德机器人", region: "中国" }
-  - { zh: "新松机器人", region: "中国" }
-  - { zh: "拓斯达", region: "中国" }
-  - { zh: "埃夫特", region: "中国" }
-  - { zh: "无界动力", region: "中国" }
-  - { zh: "深度跃迁", region: "中国" }
-  - { zh: "特斯拉", region: "美国" }
-  - { zh: "丰田研究院", region: "美国" }
-  - { zh: "Agility Robotics", region: "美国" }
-  - { zh: "Apptronik", region: "美国" }
-  - { zh: "Hugging Face Robotics", region: "美国" }
-  - { zh: "亚马逊机器人", region: "美国" }
-  - { zh: "Meta FAIR Robotics", region: "美国" }
-  - { zh: "微软研究院机器人团队", region: "美国" }
-  - { zh: "ATI Industrial Automation", region: "美国" }
-  - { zh: "Field AI", region: "美国" }
-  - { zh: "Foundation Future Industries", region: "美国" }
-  - { zh: "UL Solutions", region: "美国" }
-  - { zh: "K-Scale Labs", region: "美国" }
-  - { zh: "Dexmate", region: "美国" }
-  - { zh: "Sunday Robotics", region: "美国" }
-  - { zh: "本田", region: "日本" }
-  - { zh: "哈默纳科", region: "日本" }
-  - { zh: "纳博特斯克", region: "日本" }
-  - { zh: "RLWRLD", region: "韩国" }
-  - { zh: "ROBOTIS", region: "韩国" }
-  - { zh: "Sanctuary AI", region: "加拿大" }
-  - { zh: "Humanoid", region: "英国" }
-  - { zh: "Google DeepMind Robotics", region: "英国" }
-  - { zh: "Shadow Robot", region: "英国" }
-  - { zh: "NEURA Robotics", region: "德国" }
-  - { zh: "舍弗勒", region: "德国" }
-  - { zh: "宝马集团", region: "德国" }
-  - { zh: "梅赛德斯-奔驰集团", region: "德国" }
-  - { zh: "思灵机器人", region: "德国" }
-  - { zh: "Wandercraft", region: "法国" }
-  - { zh: "国际标准化组织机器人技术委员会", region: "瑞士" }
-  - { zh: "Duatic", region: "瑞士" }
-  - { zh: "Hexagon Robotics", region: "瑞士" }
-  - { zh: "Mentee Robotics", region: "以色列" }
+excluded:
+  # 买方：机器人是他们买的，不是他们的产品
+  - { zh: "上汽集团", region: "中国", why: "与智元联合研发能仔1号，但最终载体是汽车；2026-09-21 明确不收" }
+  - { zh: "宝马集团", region: "德国", why: "Figure 02 与 AEON 生产试点，本体均为合作方的" }
+  - { zh: "梅赛德斯-奔驰集团", region: "德国", why: "Apollo 制造试点，本体为合作方的" }
+
+  # AGV / 仓储：边界规则明确排除
+  - { zh: "京东物流", region: "中国", why: "货到人系统与飞梯机器人属仓储物流设备" }
+  - { zh: "亚马逊机器人", region: "美国", why: "仓储机器人" }
+  - { zh: "美团", region: "中国", why: "无人机、无人车、配送机器人，均在边界外" }
+  - { zh: "优艾智合", region: "中国", why: "工业移动机器人为主" }
+
+  # 纯工业臂 / 工业视觉：没有通用本体产品线
+  - { zh: "法奥意威", region: "中国", why: "FR 系列协作机器人" }
+  - { zh: "节卡机器人", region: "中国", why: "JAKA 系列协作机器人" }
+  - { zh: "艾利特机器人", region: "中国", why: "CS / EC 系列协作机器人" }
+  - { zh: "遨博智能", region: "中国", why: "AUBO i 系列协作机器人" }
+  - { zh: "众为创造", region: "中国", why: "xArm 与 UFACTORY 系列机械臂" }
+  - { zh: "埃夫特", region: "中国", why: "工业机器人产线；写了具身研发平台但未见产品，先不收" }

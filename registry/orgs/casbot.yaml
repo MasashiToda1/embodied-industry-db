@@ -1,0 +1,8 @@
+id: casbot
+names:
+  zh: 中科慧灵
+  en: CASBOT
+status: active
+layers:
+- embodiment
+- foundation

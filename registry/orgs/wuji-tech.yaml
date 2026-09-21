@@ -1,0 +1,9 @@
+id: wuji-tech
+names:
+  zh: 舞肌科技
+  en: Wuji Technology
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: wuji-robotics

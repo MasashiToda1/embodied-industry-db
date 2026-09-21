@@ -1,0 +1,13 @@
+id: dexmate
+names:
+  zh: 戴盟机器人
+  en: Dexmate
+  aliases:
+  - Dexmate
+  - 戴盟
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: dexmate

@@ -1,0 +1,12 @@
+id: xpeng-robotics
+names:
+  zh: 小鹏机器人
+  en: XPeng Robotics
+  aliases:
+  - 小鹏
+  - XPeng
+status: active
+layers:
+- embodiment
+accounts:
+  huggingface: xpeng-robotics

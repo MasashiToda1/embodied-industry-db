@@ -1,0 +1,10 @@
+id: orbbec
+names:
+  zh: 奥比中光
+  en: Orbbec
+status: active
+layers:
+- components
+- data
+upstream:
+  robotics_notebooks_institution: orbbec

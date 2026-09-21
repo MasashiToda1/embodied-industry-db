@@ -1,0 +1,10 @@
+id: iso-tc299
+names:
+  zh: ISO/TC 299 机器人技术委员会
+  en: ISO/TC 299
+  aliases:
+  - ISO/TC 299
+  - 国际标准化组织机器人技术委员会
+status: active
+layers:
+- standards

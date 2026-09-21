@@ -1,0 +1,7 @@
+id: ati-automation
+names:
+  zh: ATI Industrial Automation
+  en: ATI Industrial Automation
+status: active
+layers:
+- components

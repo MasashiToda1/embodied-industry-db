@@ -1,0 +1,13 @@
+id: baidu-cloud
+names:
+  zh: 百度智能云
+  en: Baidu AI Cloud
+  aliases:
+  - 百度
+  - Baidu
+status: active
+layers:
+- foundation
+- data
+upstream:
+  robotics_notebooks_institution: baidu

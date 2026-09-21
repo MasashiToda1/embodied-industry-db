@@ -1,0 +1,7 @@
+id: uniq-robot
+names:
+  zh: 优理奇机器人
+  en: Uniq Robot
+status: active
+layers:
+- embodiment

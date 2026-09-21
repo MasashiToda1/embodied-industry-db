@@ -1,0 +1,9 @@
+id: humanoid-ai
+names:
+  zh: Humanoid
+  en: Humanoid
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: humanoid-ai

@@ -1,0 +1,12 @@
+id: gigaai
+names:
+  zh: 极佳视界
+  en: GigaAI
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: gigaai
+accounts:
+  huggingface: GigaAI-Research

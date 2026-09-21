@@ -1,0 +1,7 @@
+id: kepler
+names:
+  zh: 开普勒机器人
+  en: Kepler Robotics
+status: active
+layers:
+- embodiment

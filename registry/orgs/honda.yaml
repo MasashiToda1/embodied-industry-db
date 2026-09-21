@@ -1,0 +1,7 @@
+id: honda
+names:
+  zh: 本田
+  en: Honda
+status: active
+layers:
+- embodiment

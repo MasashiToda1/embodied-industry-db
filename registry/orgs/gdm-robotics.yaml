@@ -1,0 +1,9 @@
+id: gdm-robotics
+names:
+  zh: Google DeepMind Robotics
+  en: Google DeepMind Robotics
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: google-deepmind

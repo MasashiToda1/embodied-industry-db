@@ -1,0 +1,16 @@
+id: agilex
+names:
+  zh: 松灵机器人
+  en: AgileX Robotics
+  aliases:
+  - AgileX
+  - 松灵
+  - Pika
+  - ALOHA
+status: active
+layers:
+- data
+- components
+- embodiment
+upstream:
+  robotics_notebooks_institution: agilex

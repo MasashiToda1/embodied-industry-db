@@ -2,13 +2,15 @@ id: psibot
 names:
   zh: 灵初智能
   en: PsiBot
-  aliases: [PsiBot, 灵初, 灵巧智能]
+  aliases:
+  - PsiBot
+  - 灵初
+  - 灵巧智能
 status: active
 layers:
 - foundation
 - embodiment
 upstream:
   robotics_notebooks_institution: psibot
-# 「灵巧智能」是 Robotics_Notebooks institutions.json 里的写法，
-# 与 humanoid-motion-intelligence 公司表的「灵初智能」不一致。
-# 按产品线（Psi-R / Psi-W0）判定后者为准，前者留作别名。
+accounts:
+  huggingface: PsiBotAI

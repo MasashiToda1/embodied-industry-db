@@ -1,0 +1,8 @@
+id: phybot
+names:
+  zh: 动易科技
+  en: PhyBot
+status: active
+layers:
+- embodiment
+- components

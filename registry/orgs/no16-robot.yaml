@@ -1,0 +1,8 @@
+id: no16-robot
+names:
+  zh: 十六号机器人
+  en: No.16 Robot
+status: active
+layers:
+- embodiment
+- foundation

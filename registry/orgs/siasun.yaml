@@ -1,0 +1,8 @@
+id: siasun
+names:
+  zh: 新松机器人
+  en: SIASUN
+status: active
+layers:
+- embodiment
+- integration

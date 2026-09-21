@@ -1,0 +1,8 @@
+id: agile-robots
+names:
+  zh: 思灵机器人
+  en: Agile Robots
+status: active
+layers:
+- embodiment
+- components

@@ -1,0 +1,9 @@
+id: meta-fair-robotics
+names:
+  zh: Meta FAIR Robotics
+  en: Meta FAIR Robotics
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: meta

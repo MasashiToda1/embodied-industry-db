@@ -1,0 +1,13 @@
+id: mech-mind
+names:
+  zh: 梅卡曼德
+  en: Mech-Mind Robotics
+  aliases:
+  - Mech-Mind
+  - 梅卡曼德机器人
+status: active
+layers:
+- components
+- integration
+upstream:
+  robotics_notebooks_institution: mech-mind

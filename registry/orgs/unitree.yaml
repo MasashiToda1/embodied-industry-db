@@ -2,10 +2,16 @@ id: unitree
 names:
   zh: 宇树科技
   en: Unitree Robotics
-  aliases: [Unitree, 杭州宇树科技股份有限公司]
+  aliases:
+  - Unitree
+  - 杭州宇树科技股份有限公司
 founded: 2016
 hq:
   country: CN
   city: 杭州
 status: active
-layers: [embodiment, locomotion]
+layers:
+- embodiment
+- locomotion
+accounts:
+  huggingface: unitreerobotics

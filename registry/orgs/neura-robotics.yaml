@@ -1,0 +1,7 @@
+id: neura-robotics
+names:
+  zh: NEURA Robotics
+  en: NEURA Robotics
+status: active
+layers:
+- embodiment
