@@ -421,22 +421,33 @@ def fetch_exa(queries: list[str], num_results: int) -> list[dict]:
         print("  · mcporter 未安装，跳过 Exa（npm install -g mcporter）", file=sys.stderr)
         return []
 
+    def call(q: str) -> str:
+        r = subprocess.run(
+            ["mcporter", "call", "exa.web_search_exa",
+             f"query={q}", f"numResults={num_results}", "--output", "json"],
+            capture_output=True, text=True, timeout=60,
+        )
+        if r.returncode != 0:
+            raise RuntimeError(r.stderr.strip()[:80])
+        payload = json.loads(r.stdout)
+        return "\n".join(c.get("text", "") for c in payload.get("content", []))
+
     out: list[dict] = []
     for q in queries:
-        try:
-            r = subprocess.run(
-                ["mcporter", "call", "exa.web_search_exa",
-                 f"query={q}", f"numResults={num_results}", "--output", "json"],
-                capture_output=True, text=True, timeout=60,
-            )
-            if r.returncode != 0:
-                print(f"  ! Exa「{q}」失败：{r.stderr.strip()[:80]}", file=sys.stderr)
-                continue
-            payload = json.loads(r.stdout)
-            text = "\n".join(c.get("text", "") for c in payload.get("content", []))
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! Exa「{q}」异常：{type(exc).__name__}", file=sys.stderr)
-            continue
+        # ⚠️ Exa 结果不稳定：同一条查询两次运行相差可以很大（实测 dry-run 10 条、
+        # 真跑 1 条，且不报错）。所以每条都记返回数，空了重试一次；
+        # 今天漏的明天可能又出来——它是发现渠道，不是权威索引。
+        text = ""
+        for attempt in (1, 2):
+            try:
+                text = call(q)
+            except Exception as exc:  # noqa: BLE001
+                print(f"  ! Exa「{q}」第 {attempt} 次失败：{exc}", file=sys.stderr)
+                text = ""
+            if text.strip():
+                break
+            time.sleep(2)
+        n_before = len(out)
 
         # 返回体是固定格式的文本块：Title / URL / Published / Author / Highlights，块间用 --- 分隔
         for block in re.split(r"\n---\n", text):
@@ -461,6 +472,7 @@ def fetch_exa(queries: list[str], num_results: int) -> list[dict]:
                 "summary": summary,
                 "kind": "news",
             })
+        print(f"  · Exa「{q}」返回 {len(out) - n_before} 条（30 天内）", file=sys.stderr)
         time.sleep(1)
     return out
 
@@ -602,11 +614,28 @@ def cluster_hits(hits: list[tuple[str, dict]]) -> list[list[dict]]:
         key = (it["org"]["id"], it.get("kind", "news"), day_bucket)
         buckets.setdefault(key, []).append(it)
     groups = list(buckets.values())
-    # 每组按来源等级排：official > primary > media > aggregator，取最好的当头条
+    # 每组内按来源等级排：official > primary > media > aggregator，取最好的当头条
     rank = {"official": 0, "primary": 1, "media": 2, "aggregator": 3}
     for g in groups:
         g.sort(key=lambda x: (rank.get(x.get("tier"), 9), x.get("date", "")))
-    groups.sort(key=lambda g: g[0].get("date", ""), reverse=True)
+
+    # 组间排序决定谁能进每轮 15 个的名额。不能只按日期——第一次实跑时
+    # 一笔 4 亿美元融资被 robopi_analyze v1.0.9 这种补丁版本挤进了 digest。
+    # 商业信号是本库的立足点，新闻类命中比日常推送稀有得多，排前面；
+    # 多个独立来源印证的再往前；同级才看日期。
+    def source_class(g: list[dict]) -> int:
+        src = g[0].get("source", "")
+        if g[0].get("kind") == "news":
+            return 0
+        if src.startswith("Hugging Face"):
+            return 1
+        if src.startswith("GitHub"):
+            return 2
+        return 3
+
+    # 稳定排序两遍：先按日期倒序，再按（来源类别，来源数）——同级内自然保持日期新的在前
+    groups.sort(key=lambda g: _day(g[0].get("date", "")), reverse=True)
+    groups.sort(key=lambda g: (source_class(g), -len(g)))
     return groups
 
 
