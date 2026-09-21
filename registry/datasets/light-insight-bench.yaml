@@ -1,0 +1,16 @@
+id: light-insight-bench
+names:
+  zh: Light-INSIGHT-Bench
+  en: Light-INSIGHT-Bench
+publisher: light-origins
+released: 2026-09
+scale:
+  episodes:
+  hours:
+  robots:
+# Hugging Face 标的是 size_categories:1K<n<10K，不是确切条数，所以 scale 留空。
+# 留空好过把区间当成数字写进去。
+modality:
+- language-annotated
+license: cc-by-4.0
+openness: fully-open

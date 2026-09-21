@@ -1,0 +1,27 @@
+id: evt-2026-09-20-light-origins-light-o1-preview
+date: '2026-09-20'
+date_precision: day
+type: publication
+orgs:
+- id: light-origins
+  role: subject
+title:
+  zh: 亮源新创发布 Light-O1-Preview 动作生成模型
+  en: Light Origins releases Light-O1-Preview motion generation model
+summary:
+  zh: 在 Hugging Face 发布 Light-O1-Preview，基于 Qwen3.5-4B 微调，标注为 text-to-action
+    与 motion-generation，许可 Apache-2.0，同时上线运行在 L40S 上的 playground Space。
+  en: Released Light-O1-Preview on Hugging Face, fine-tuned from Qwen3.5-4B, tagged
+    text-to-action and motion-generation, Apache-2.0, with a playground Space on L40S.
+axes:
+  model_form:
+  - motion-generation
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://huggingface.co/LightOriginsHQ/Light-O1-Preview
+  publisher: Hugging Face · LightOriginsHQ
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/hf-2026-09-20-hf-light-o1.html
+corroboration: single

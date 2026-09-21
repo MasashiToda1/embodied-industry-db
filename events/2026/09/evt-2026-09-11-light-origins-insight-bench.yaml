@@ -1,0 +1,27 @@
+id: evt-2026-09-11-light-origins-insight-bench
+date: '2026-09-11'
+date_precision: day
+type: dataset_release
+orgs:
+- id: light-origins
+  role: subject
+datasets:
+- light-insight-bench
+title:
+  zh: 亮源新创发布 Light-INSIGHT-Bench 数据集
+  en: Light Origins releases Light-INSIGHT-Bench dataset
+summary:
+  zh: 在 Hugging Face 发布 Light-INSIGHT-Bench，许可 CC BY 4.0，标注任务类别为 robotics，规模区间标为 1K–10K，含
+    3D 与文本两种模态，格式为 JSON。9 月 9 日创建，9 月 11 日更新。
+  en: Released Light-INSIGHT-Bench on Hugging Face under CC BY 4.0, task category
+    robotics, size bucket 1K-10K, 3D and text modalities, JSON format. Created Sep
+    9, updated Sep 11.
+axes:
+  data_openness: fully-open
+evidence:
+- url: https://huggingface.co/datasets/LightOriginsHQ/Light-INSIGHT-Bench
+  publisher: Hugging Face · LightOriginsHQ
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/hf-2026-09-11-hf-insight-bench.html
+corroboration: single
