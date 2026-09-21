@@ -1,0 +1,8 @@
+id: cloudminds
+names:
+  zh: 达闼机器人
+  en: CloudMinds
+status: active
+layers:
+- embodiment
+- foundation

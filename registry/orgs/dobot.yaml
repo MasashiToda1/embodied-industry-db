@@ -1,0 +1,12 @@
+id: dobot
+names:
+  zh: 越疆科技
+  en: Dobot
+  aliases:
+  - 越疆
+  - Dobot
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: dobot

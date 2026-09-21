@@ -1,0 +1,10 @@
+id: d-robotics
+names:
+  zh: 地瓜机器人
+  en: D-Robotics
+status: active
+layers:
+- components
+- simulation
+upstream:
+  robotics_notebooks_institution: d-robotics

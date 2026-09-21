@@ -1,0 +1,9 @@
+id: alibaba-robotics
+names:
+  zh: 阿里巴巴
+  en: Alibaba
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: alibaba

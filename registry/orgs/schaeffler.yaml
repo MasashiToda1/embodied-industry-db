@@ -1,0 +1,7 @@
+id: schaeffler
+names:
+  zh: 舍弗勒
+  en: Schaeffler
+status: active
+layers:
+- components

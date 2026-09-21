@@ -1,0 +1,11 @@
+id: dexforce
+names:
+  zh: 跨维智能
+  en: DexForce
+  aliases:
+  - DexForce
+  - EmbodiChain
+status: active
+layers:
+- foundation
+- simulation

@@ -1,0 +1,7 @@
+id: lingzhang
+names:
+  zh: 灵掌机器人
+  en: Lingzhang
+status: active
+layers:
+- components

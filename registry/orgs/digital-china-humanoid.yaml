@@ -1,0 +1,8 @@
+id: digital-china-humanoid
+names:
+  zh: 数字华夏
+  en: Digital China Humanoid
+status: active
+layers:
+- embodiment
+- content

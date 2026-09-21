@@ -1,0 +1,8 @@
+id: daka-robot
+names:
+  zh: 大咖机器人
+  en: Daka Robot
+status: active
+layers:
+- data
+- embodiment

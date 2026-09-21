@@ -1,0 +1,8 @@
+id: delta-intelligence
+names:
+  zh: 德塔智能
+  en: Delta Intelligence
+status: active
+layers:
+- foundation
+- locomotion

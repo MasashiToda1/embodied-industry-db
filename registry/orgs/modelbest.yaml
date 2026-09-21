@@ -1,0 +1,9 @@
+id: modelbest
+names:
+  zh: 面壁智能
+  en: ModelBest
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: modelbest

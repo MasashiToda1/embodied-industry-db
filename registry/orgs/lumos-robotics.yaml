@@ -1,0 +1,10 @@
+id: lumos-robotics
+names:
+  zh: 鹿明机器人
+  en: Lumos Robotics
+status: active
+layers:
+- embodiment
+- data
+upstream:
+  robotics_notebooks_institution: lumos

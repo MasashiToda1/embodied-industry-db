@@ -1,0 +1,10 @@
+id: roboparty
+names:
+  zh: 萝博派对
+  en: RoboParty
+status: active
+layers:
+- simulation
+- content
+upstream:
+  robotics_notebooks_institution: roboparty

@@ -1,0 +1,9 @@
+id: tri
+names:
+  zh: 丰田研究院
+  en: Toyota Research Institute
+  aliases:
+  - TRI
+status: active
+layers:
+- foundation

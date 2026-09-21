@@ -1,0 +1,10 @@
+id: rlwrld
+names:
+  zh: RLWRLD
+  en: RLWRLD
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: rlwrld

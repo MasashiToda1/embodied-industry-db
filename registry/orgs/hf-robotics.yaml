@@ -1,0 +1,12 @@
+id: hf-robotics
+names:
+  zh: Hugging Face Robotics
+  en: Hugging Face Robotics
+  aliases:
+  - LeRobot
+status: active
+layers:
+- simulation
+- data
+upstream:
+  robotics_notebooks_institution: huggingface

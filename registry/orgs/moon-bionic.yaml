@@ -1,0 +1,8 @@
+id: moon-bionic
+names:
+  zh: 月泉仿生
+  en: Moon Bionic
+status: active
+layers:
+- embodiment
+- components

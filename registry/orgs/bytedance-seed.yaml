@@ -1,0 +1,15 @@
+id: bytedance-seed
+names:
+  zh: 字节跳动 Seed
+  en: ByteDance Seed
+  aliases:
+  - 字节跳动
+  - ByteDance
+  - 字节跳动机器人团队
+  - Seed Robotics
+status: active
+layers:
+- foundation
+- components
+upstream:
+  robotics_notebooks_institution: bytedance

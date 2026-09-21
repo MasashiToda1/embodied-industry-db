@@ -1,0 +1,8 @@
+id: spacetime-var
+names:
+  zh: 时空变量
+  en: Spacetime Variable
+status: active
+layers:
+- data
+- components

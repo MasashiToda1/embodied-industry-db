@@ -1,0 +1,10 @@
+id: jianzhi-robot
+names:
+  zh: 简智机器人
+  en: JZ Robot
+status: active
+layers:
+- data
+- components
+upstream:
+  robotics_notebooks_institution: jzrobot

@@ -1,0 +1,9 @@
+id: shengshu
+names:
+  zh: 生数科技
+  en: Shengshu
+status: active
+layers:
+- foundation
+upstream:
+  robotics_notebooks_institution: shengshu

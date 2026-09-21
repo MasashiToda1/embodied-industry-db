@@ -1,0 +1,10 @@
+id: sunday-robotics
+names:
+  zh: Sunday Robotics
+  en: Sunday Robotics
+status: active
+layers:
+- embodiment
+- data
+upstream:
+  robotics_notebooks_institution: sunday-robotics

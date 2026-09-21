@@ -1,0 +1,14 @@
+id: robbyant
+names:
+  zh: 蚂蚁灵波
+  en: Robbyant
+  aliases:
+  - Robbyant
+  - 蚂蚁集团          # 母公司，机器人业务由灵波承载，不另建主体
+  - LingBot
+status: active
+layers:
+- embodiment
+- foundation
+upstream:
+  robotics_notebooks_institution: robbyant

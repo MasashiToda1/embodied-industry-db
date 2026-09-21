@@ -1,0 +1,10 @@
+id: roboscience
+names:
+  zh: 机科未来
+  en: RoboScience
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: roboscience

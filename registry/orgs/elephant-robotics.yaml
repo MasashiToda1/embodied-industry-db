@@ -1,0 +1,9 @@
+id: elephant-robotics
+names:
+  zh: 大象机器人
+  en: Elephant Robotics
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: elephant-robotics

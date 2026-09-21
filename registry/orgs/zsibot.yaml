@@ -1,0 +1,10 @@
+id: zsibot
+names:
+  zh: 智身科技
+  en: ZSibot
+status: active
+layers:
+- embodiment
+- simulation
+upstream:
+  robotics_notebooks_institution: zsibot

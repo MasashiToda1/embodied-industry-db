@@ -1,0 +1,13 @@
+id: tencent-robotics
+names:
+  zh: 腾讯机器人实验室
+  en: Tencent Robotics X
+  aliases:
+  - 腾讯
+  - Tencent
+status: active
+layers:
+- foundation
+- simulation
+upstream:
+  robotics_notebooks_institution: tencent

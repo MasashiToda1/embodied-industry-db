@@ -1,0 +1,10 @@
+id: honor-robotics
+names:
+  zh: 荣耀机器人
+  en: HONOR Robotics
+  aliases:
+  - 荣耀
+  - HONOR
+status: active
+layers:
+- embodiment

@@ -1,0 +1,10 @@
+id: miaodong
+names:
+  zh: 妙动科技
+  en: Miaodong
+status: active
+layers:
+- foundation
+- embodiment
+upstream:
+  robotics_notebooks_institution: miaodong

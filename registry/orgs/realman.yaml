@@ -1,0 +1,12 @@
+id: realman
+names:
+  zh: 睿尔曼智能
+  en: RealMan Robotics
+  aliases:
+  - 睿尔曼
+status: active
+layers:
+- embodiment
+- components
+upstream:
+  robotics_notebooks_institution: realman

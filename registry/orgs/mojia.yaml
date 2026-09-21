@@ -1,0 +1,7 @@
+id: mojia
+names:
+  zh: 墨甲机器人
+  en: Mojia Robotics
+status: active
+layers:
+- embodiment

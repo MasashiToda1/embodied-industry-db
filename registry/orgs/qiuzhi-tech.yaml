@@ -1,0 +1,10 @@
+id: qiuzhi-tech
+names:
+  zh: 求之科技
+  en: QZTech
+status: active
+layers:
+- data
+- embodiment
+upstream:
+  robotics_notebooks_institution: qztech

@@ -1,0 +1,11 @@
+id: flexiv
+names:
+  zh: 非夕科技
+  en: Flexiv
+  aliases:
+  - 非夕
+status: active
+layers:
+- embodiment
+upstream:
+  robotics_notebooks_institution: flexiv

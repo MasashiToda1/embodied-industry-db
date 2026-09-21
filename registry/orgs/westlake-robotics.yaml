@@ -1,0 +1,8 @@
+id: westlake-robotics
+names:
+  zh: 西湖机器人
+  en: Westlake Robotics
+status: active
+layers:
+- foundation
+- data

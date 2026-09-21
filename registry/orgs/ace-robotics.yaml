@@ -1,0 +1,10 @@
+id: ace-robotics
+names:
+  zh: 大晓机器人
+  en: Ace Robotics
+status: active
+layers:
+- foundation
+- data
+upstream:
+  robotics_notebooks_institution: ace-robotics

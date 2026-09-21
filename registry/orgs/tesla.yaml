@@ -1,0 +1,8 @@
+id: tesla
+names:
+  zh: 特斯拉
+  en: Tesla
+status: active
+layers:
+- embodiment
+- foundation

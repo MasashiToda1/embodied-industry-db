@@ -1,0 +1,7 @@
+id: agility
+names:
+  zh: Agility Robotics
+  en: Agility Robotics
+status: active
+layers:
+- embodiment

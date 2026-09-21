@@ -1,0 +1,9 @@
+id: robosense
+names:
+  zh: 速腾聚创
+  en: RoboSense
+status: active
+layers:
+- components
+upstream:
+  robotics_notebooks_institution: robosense

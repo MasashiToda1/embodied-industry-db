@@ -1,0 +1,8 @@
+id: k-scale-labs
+names:
+  zh: K-Scale Labs
+  en: K-Scale Labs
+status: active
+layers:
+- embodiment
+- simulation
