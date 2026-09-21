@@ -1,0 +1,102 @@
+name: 手工事件（agent 抓不到的）
+description: 展会见闻、电话回访、访谈、以买方身份询价、自己实测——这些没有页面可解析，从这里记
+title: "[事件] "
+labels: ["intake", "手工事件"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        随手记，不用填全。**最少给四项：谁、什么时候发生、什么事、怎么知道的。**
+        其余留空，后面在 `make serve` 里补轴和金额。
+
+        ⚠️ 这个仓库是公开的。**不要写当事人姓名、不要写能反推身份的获取细节。**
+        渠道只记类型（下面的下拉），不记怎么开的口。
+
+  - type: input
+    id: org
+    attributes:
+      label: 主体
+      description: 公司名。不确定 registry 里有没有就照常写，入库时会查别名
+      placeholder: 例如 具深科技 / 亮源新创
+    validations:
+      required: true
+
+  - type: input
+    id: happened
+    attributes:
+      label: 什么时候发生
+      description: 能精确到哪天就写哪天；只知道大概就写「2025 下半年」这种，入库时会标成 estimated 并保留你的原话
+      placeholder: 2026-09-10 / 2026-09 / 2026-Q3 / 2025 下半年
+    validations:
+      required: true
+
+  - type: textarea
+    id: fact
+    attributes:
+      label: 什么事
+      description: 一句事实，不要写判断。「预计」「意味着」「大概率」这类词会被门禁拦下
+      placeholder: 硬件群控模块按台买断，软件授权首年随附、次年起按台年付
+    validations:
+      required: true
+
+  - type: dropdown
+    id: method
+    attributes:
+      label: 怎么知道的
+      options:
+        - interview — 与从业者聊到
+        - customer-review — 客户回访或使用反馈
+        - vendor-inquiry — 以买方身份向厂商询价
+        - field-observation — 展会、现场、门店看到
+        - hands-on-test — 自己实测
+        - 有公开链接（不是一手信息）
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: 公开链接
+      description: 只在上一项选「有公开链接」时填。填了会存页面快照，来源等级也相应提高
+      placeholder: https://...
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 事件类型
+      description: 不确定就留空，入库时判
+      options:
+        - ""
+        - pricing — 公开价格
+        - product_launch — 产品发布
+        - deployment — 落地部署、客户签约
+        - procurement — 招投标中标
+        - partnership — 合作
+        - statement — 官方表态
+        - hiring_signal — 招聘信号
+        - funding — 融资、并购
+        - corporate — 成立、改名、关停
+        - personnel — 关键人事
+        - dataset_release — 数据集发布
+        - publication — 论文、开源发布
+        - patent — 专利
+
+  - type: input
+    id: amount
+    attributes:
+      label: 金额
+      description: 带上单位和币种。⚠️「元」和「万元」差一万倍，拿不准就留空
+      placeholder: 1000 元/台 / 480 万元 / 不确定就空着
+
+  - type: input
+    id: counterparty
+    attributes:
+      label: 买方或对方
+      description: 非具身产业的买方（景区、工厂、医院）只作文本记录，不会建成实体
+      placeholder: 例如 某文旅集团
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充
+      description: 想到什么写什么。涉及技术栈、交付形态、目标场景的细节写在这里，入库时会对应到轴

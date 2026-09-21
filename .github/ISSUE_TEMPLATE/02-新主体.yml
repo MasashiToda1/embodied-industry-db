@@ -1,0 +1,63 @@
+name: 新主体（registry 里还没有）
+description: 发现一家该收录但库里没有的公司
+title: "[主体] "
+labels: ["intake", "新主体"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        收录边界：**以通用机器人本体为最终载体的技术与商业主体**。
+        纯工业机械臂、AGV、无人机、扫地机不收。
+
+        ⚠️ 提之前先在 [registry/orgs](../../tree/main/registry/orgs) 里搜一遍。
+        同一家公司常有多个中文写法（傅利叶／傅利叶智能、光轮科技／光轮智能、
+        灵初智能／灵巧智能、亮源新创／光原点），漏查会建出重复条目。
+
+  - type: input
+    id: zh
+    attributes:
+      label: 中文名
+      description: 以公司官网或公众号的自称为准
+    validations:
+      required: true
+
+  - type: input
+    id: en
+    attributes:
+      label: 英文名
+
+  - type: input
+    id: aliases
+    attributes:
+      label: 别名
+      description: 分号隔开。工商全名、简称、别的库里的写法都写上——别名不全会建出重复
+      placeholder: Jushen；机时租；深圳市具深科技有限公司
+
+  - type: checkboxes
+    id: layers
+    attributes:
+      label: 产业层（至少选一个）
+      description: 判不准就先别提——宁可少一家，不要一堆分不清位置的壳
+      options:
+        - label: "embodiment 整机本体"
+        - label: "locomotion 运控与小脑"
+        - label: "foundation 具身基础模型"
+        - label: "data 数据采集与供给"
+        - label: "simulation 仿真与工具链"
+        - label: "components 关键部件"
+        - label: "content 动作与节目内容"
+        - label: "integration 系统集成与方案交付"
+        - label: "operation 场景运营与租赁"
+        - label: "standards 标准与检测评测"
+
+  - type: input
+    id: site
+    attributes:
+      label: 官网
+      description: 用来核实名称与定位
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么该收
+      description: 它在产业里做什么。一两句就行

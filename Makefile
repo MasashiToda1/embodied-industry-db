@@ -1,4 +1,4 @@
-.PHONY: lint lint-strict build test test-ingest preflight serve setup clean preview
+.PHONY: lint lint-strict build test test-ingest preflight serve setup clean preview intake
 
 # CI 里没有 .venv，用 PY=python3 覆盖
 PY ?= .venv/bin/python
@@ -47,6 +47,14 @@ test-ingest:
 	$(PY) tests/test_tender.py
 	@echo
 	$(PY) tests/test_paper.py
+	@echo
+	$(PY) tests/test_intake.py
+
+# 把 issue 表单转成事件。先不写盘，看清缺什么再加 --write
+#   make intake N=12
+#   make intake N=12 WRITE=--write
+intake:
+	$(PY) scripts/intake.py --issue $(N) $(WRITE)
 
 # 推送前跑这一条。但它不能替代 PR 上的 Actions——
 # 本地环境和 CI 不一定一致，最终以 PR Checks 为准。

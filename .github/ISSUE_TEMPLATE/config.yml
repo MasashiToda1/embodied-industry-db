@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 入库规则
+    url: https://github.com/MasashiToda1/embodied-industry-db/blob/main/AGENTS.md
+    about: 七步入库流程、禁止事项、来源等级怎么判
+  - name: 已收录主体
+    url: https://github.com/MasashiToda1/embodied-industry-db/tree/main/registry/orgs
+    about: 提新主体前先来这里搜一遍别名
