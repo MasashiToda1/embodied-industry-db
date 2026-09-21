@@ -13,3 +13,4 @@ upstream:
   robotics_notebooks_institution: noitom
 accounts:
   huggingface: noitomrobotics
+  github: noitom-robotics

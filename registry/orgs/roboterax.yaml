@@ -8,3 +8,5 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: roboterax
+accounts:
+  github: roboterax

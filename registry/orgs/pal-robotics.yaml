@@ -7,3 +7,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: pal-robotics
+accounts:
+  github: pal-robotics

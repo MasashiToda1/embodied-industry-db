@@ -17,3 +17,4 @@ layers:
 - data
 accounts:
   huggingface: agibot-world
+  github: AgibotTech

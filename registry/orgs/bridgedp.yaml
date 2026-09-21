@@ -9,3 +9,5 @@ layers:
 - simulation
 upstream:
   robotics_notebooks_institution: bridgedp
+accounts:
+  github: bridgedp

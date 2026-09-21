@@ -7,3 +7,5 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: shengshu
+accounts:
+  github: shengshu-ai

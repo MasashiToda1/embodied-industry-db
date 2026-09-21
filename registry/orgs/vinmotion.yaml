@@ -9,3 +9,4 @@ upstream:
   robotics_notebooks_institution: vinmotion
 accounts:
   huggingface: vinmotion
+  github: VinMotion-public

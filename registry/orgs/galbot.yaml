@@ -8,3 +8,5 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: galbot
+accounts:
+  github: GalaxyGeneralRobotics

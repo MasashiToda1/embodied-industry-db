@@ -8,3 +8,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: tars-robotics
+accounts:
+  github: tars-robotics

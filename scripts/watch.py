@@ -272,6 +272,140 @@ def fetch_huggingface(orgs: list[dict], days: int = 14) -> list[dict]:
     return out
 
 
+def _gh_headers() -> dict:
+    """GitHub 未认证只有 60 次/小时，跑不完；CI 里用 github.token，本地用 gh 的。"""
+    import os
+    import subprocess
+
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not tok:
+        try:
+            tok = subprocess.run(["gh", "auth", "token"], capture_output=True,
+                                 text=True, check=True).stdout.strip()
+        except Exception:  # noqa: BLE001
+            tok = ""
+    h = {"User-Agent": "embodied-industry-db", "Accept": "application/vnd.github+json"}
+    if tok:
+        h["Authorization"] = f"Bearer {tok}"
+    return h
+
+
+# 这些仓不是发布：组织配置、主页、fork、归档
+RE_GH_SKIP = re.compile(r"^(\.github|.*\.github\.io|profile)$", re.I)
+GH_BATCH_MIN = 3
+GH_RELEASE_REPOS = 8      # 每个主体查最近推送的这么多仓的 release；再多调用量上去意义不大
+MAX_ISSUES_PER_RUN = 15   # 每轮最多开的 issue 数，溢出进 digest
+
+
+def fetch_github(orgs: list[dict], days: int = 14) -> list[dict]:
+    """盯 registry 里填了 accounts.github 的主体：新建的仓、新发的 release。
+
+    GitHub 比 HF 宽：除模型外还有 SDK、部署工具、仿真环境、URDF。
+    LightwheelAI/usd2mjcf 这种仓直接暴露技术栈（在用 MuJoCo），HF 上看不出来。
+
+    只看新仓和 release，不看 commit——commit 是噪音。
+    每个主体两次调用：repos?sort=created 拿新仓，orgs/{o}/events 拿 ReleaseEvent。
+    """
+    h = _gh_headers()
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    out: list[dict] = []
+
+    for org in orgs:
+        login = (org.get("accounts") or {}).get("github")
+        if not login:
+            continue
+
+        # ① 新建的仓
+        try:
+            r = httpx.get(f"https://api.github.com/orgs/{login}/repos",
+                          params={"sort": "created", "direction": "desc", "per_page": 30},
+                          timeout=20, headers=h)
+            repos = r.json() if r.status_code == 200 else []
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! GitHub {login}/repos 取不到：{type(exc).__name__}", file=sys.stderr)
+            repos = []
+        if not isinstance(repos, list):
+            repos = []
+
+        fresh = []
+        for rp in repos:
+            if rp.get("fork") or rp.get("archived") or RE_GH_SKIP.match(rp.get("name", "")):
+                continue
+            if (rp.get("created_at") or "") < cutoff:
+                continue
+            fresh.append(rp)
+
+        if len(fresh) > GH_BATCH_MIN:
+            dates = sorted(rp["created_at"][:10] for rp in fresh)
+            out.append({
+                "source": f"GitHub · {login}",
+                "tier": "official",
+                "title": f"{org['zh']}新建 {len(fresh)} 个仓库（{dates[0]}～{dates[-1]}）",
+                "url": f"https://github.com/{login}",
+                "date": dates[-1],
+                "summary": "含：" + "、".join(rp["name"] for rp in fresh[:8]),
+                "kind": "publication",
+                "org": {"id": org["id"], "zh": org["zh"], "matched": login},
+            })
+        else:
+            for rp in fresh:
+                desc = (rp.get("description") or "").strip()
+                out.append({
+                    "source": f"GitHub · {login}",
+                    "tier": "official",
+                    "title": f"{org['zh']}新建仓库 {rp['name']}",
+                    "url": rp.get("html_url", ""),
+                    "date": rp["created_at"][:10],
+                    "summary": (desc[:200] + ("；" if desc else "")
+                                + f"语言 {rp.get('language') or '—'}；★{rp.get('stargazers_count', 0)}"),
+                    "kind": "publication",
+                    "org": {"id": org["id"], "zh": org["zh"], "matched": login},
+                })
+
+        # ② release。不能用 orgs/{o}/events —— 它被 star 和 push 事件淹掉，
+        # 宇树 100 条事件只覆盖 3 天，EmbodiChain 9/10 的 release 根本进不来。
+        # 改成：取最近推送的仓，逐个查 /releases。多几次调用，但准。
+        try:
+            r = httpx.get(f"https://api.github.com/orgs/{login}/repos",
+                          params={"sort": "pushed", "direction": "desc", "per_page": GH_RELEASE_REPOS},
+                          timeout=20, headers=h)
+            active = r.json() if r.status_code == 200 else []
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! GitHub {login}/repos(pushed) 取不到：{type(exc).__name__}", file=sys.stderr)
+            active = []
+        for rp in active if isinstance(active, list) else []:
+            if rp.get("fork") or rp.get("archived") or RE_GH_SKIP.match(rp.get("name", "")):
+                continue
+            if (rp.get("pushed_at") or "") < cutoff:
+                continue          # 窗口内没推送，不可能有新 release
+            full = rp.get("full_name", "")
+            try:
+                rr = httpx.get(f"https://api.github.com/repos/{full}/releases",
+                               params={"per_page": 3}, timeout=20, headers=h)
+                rels = rr.json() if rr.status_code == 200 else []
+            except Exception:  # noqa: BLE001
+                rels = []
+            for rel in rels if isinstance(rels, list) else []:
+                pub = rel.get("published_at") or ""
+                if rel.get("draft") or pub < cutoff:
+                    continue
+                tag = rel.get("tag_name", "")
+                body = re.sub(r"\s+", " ", rel.get("body") or "")[:200]
+                out.append({
+                    "source": f"GitHub · {login}",
+                    "tier": "official",
+                    "title": f"{org['zh']}发布 {rp['name']} {tag}",
+                    "url": rel.get("html_url") or f"https://github.com/{full}/releases/tag/{tag}",
+                    "date": pub[:10],
+                    "summary": (rel.get("name") or "") + ("：" + body if body else ""),
+                    "kind": "publication",
+                    "org": {"id": org["id"], "zh": org["zh"], "matched": login},
+                })
+            time.sleep(0.1)
+        time.sleep(0.2)
+    return out
+
+
 def fetch_exa(queries: list[str], num_results: int) -> list[dict]:
     """Exa 语义搜索，Agent-Reach 的搜索渠道。
 
@@ -527,6 +661,8 @@ def main() -> int:
         items += fetch_arxiv(conf["arxiv"]["query"], conf["arxiv"].get("max_results", 40))
     if (conf.get("huggingface") or {}).get("enabled"):
         items += fetch_huggingface(orgs)
+    if (conf.get("github") or {}).get("enabled"):
+        items += fetch_github(orgs)
     if (conf.get("exa") or {}).get("enabled"):
         items += fetch_exa(conf["exa"].get("queries") or [], conf["exa"].get("num_results", 8))
     if (conf.get("upstream") or {}).get("enabled"):
@@ -581,10 +717,17 @@ def main() -> int:
     if args.emit:
         out = Path(args.emit)
         out.mkdir(parents=True, exist_ok=True)
-        for i, g in enumerate(groups):
+        # 每轮最多开这么多 issue。第一次实跑会把两周存量全倒出来（实测 41 件），
+        # 一天 41 个 issue 没人看；溢出的放进 digest 让人扫一眼，明天再来。
+        head_groups, overflow = groups[:MAX_ISSUES_PER_RUN], groups[MAX_ISSUES_PER_RUN:]
+        for i, g in enumerate(head_groups):
             (out / f"hit-{i:02d}.md").write_text(issue_body_group(g), encoding="utf-8")
             (out / f"hit-{i:02d}.title").write_text(
                 f"[事件] {g[0]['org']['zh']}：{g[0]['title'][:40]}", encoding="utf-8")
+        for g in overflow:
+            it = dict(g[0])
+            it["title"] = f"[{it['org']['zh']}] {it['title']}"
+            digest.append(("", it))
         if digest:
             lines = ["以下线索命中了关键词但**没匹配到 registry 主体**，多半是还没收录的公司。",
                      "逐条判断：该收的用「新主体」模板建条目，不该收的直接忽略。", ""]

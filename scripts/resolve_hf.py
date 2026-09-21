@@ -107,6 +107,34 @@ def judge(org: dict, names: list[str]) -> tuple[bool, str]:
     return (True, why) if ok else (False, f"名字对不上（HF: {full or slug}）")
 
 
+# 前缀匹配后允许出现的剩余部分。机构名 = 公司名 + 这些后缀的组合：
+# AgiBot World / Astribot Developers / Fourier Co Ltd / PAL Robotics SL / Harmonic Drive LLC
+BENIGN_SUFFIXES = (
+    "robotics", "robots", "robot", "developers", "developer", "dev", "labs", "lab",
+    "research", "official", "hq", "inc", "llc", "ltd", "sl", "se", "ag", "gmbh", "co",
+    "corp", "technologies", "technology", "tech", "ai", "group", "world", "open", "oss",
+    "org", "team", "community", "embodied", "intelligence", "git", "opensource",
+    "machinelearning", "ml",      # Toyota Research Institute Machine Learning（TRI-ML）
+)
+
+
+def _benign_remainder(rest: str) -> bool:
+    """剩余部分能不能全部由公司后缀拼出来。CJK 全放行（psibot灵初智能）。"""
+    if not rest:
+        return True
+    if re.fullmatch(r"[\u4e00-\u9fff]+", rest):
+        return True
+    changed = True
+    while rest and changed:
+        changed = False
+        for s in BENIGN_SUFFIXES:
+            if rest.startswith(s):
+                rest = rest[len(s):]
+                changed = True
+                break
+    return rest == ""
+
+
 def name_matches(target: str, names: list[str]) -> tuple[bool, str]:
     """比对归一化后的名字。resolve_github 也用这个。
 
@@ -115,8 +143,10 @@ def name_matches(target: str, names: list[str]) -> tuple[bool, str]:
     任意子串会出事——「Booster Robotics」剥掉后缀剩 booster，
     嵌进「Rock 'Em Robotics Booster Club」（一个中学社团）就匹上了。
 
-    已知软肋：「X for Y」形态的衍生组织会过前缀（Generalist-AI-for-Healthcare）。
-    靠下一道「组织没发过东西不填」和 --write 前的人工过目兜住，不再加规则。
+    前缀之后的**剩余部分必须是公司后缀**。否则 jushen 会匹上 jushenzhidao
+    （具身智道，另一家）、magiclab 匹上 magiclabnyc（纽约的）、
+    original 匹上 originalvoices、pudu 匹上 puduroboticstürkiye（经销商）。
+    这条同时堵住了 Generalist-AI-for-Healthcare 这类「X for Y」衍生组织。
     """
     for n in names:
         cn = canon(n)
@@ -124,8 +154,7 @@ def name_matches(target: str, names: list[str]) -> tuple[bool, str]:
             continue
         if cn == target:
             return True, f"精确匹配 {n}"
-        short, long = (cn, target) if len(cn) <= len(target) else (target, cn)
-        if len(short) >= MIN_STEM and long.startswith(short):
+        if len(cn) >= MIN_STEM and target.startswith(cn) and _benign_remainder(target[len(cn):]):
             return True, f"前缀匹配 {n} ↔ {target}"
     return False, "名字对不上"
 

@@ -8,3 +8,5 @@ layers:
 - content
 upstream:
   robotics_notebooks_institution: roboparty
+accounts:
+  github: Roboparty

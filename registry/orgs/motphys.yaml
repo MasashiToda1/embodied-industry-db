@@ -7,3 +7,5 @@ layers:
 - simulation
 upstream:
   robotics_notebooks_institution: motphys
+accounts:
+  github: Motphys

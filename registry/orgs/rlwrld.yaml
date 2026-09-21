@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: rlwrld
 accounts:
   huggingface: RLWRLD
+  github: RLWRLD

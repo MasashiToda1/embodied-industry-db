@@ -9,3 +9,4 @@ layers:
 - foundation
 accounts:
   huggingface: TRI-ML
+  github: TRI-ML

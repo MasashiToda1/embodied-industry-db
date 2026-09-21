@@ -9,3 +9,4 @@ upstream:
   robotics_notebooks_institution: physical-intelligence
 accounts:
   huggingface: physical-intelligence
+  github: Physical-Intelligence

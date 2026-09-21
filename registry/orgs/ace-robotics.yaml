@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: ace-robotics
 accounts:
   huggingface: ACERobotics
+  github: DAXIAORobotics

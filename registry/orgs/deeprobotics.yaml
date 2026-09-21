@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: deeprobotics
 accounts:
   huggingface: deeproboticslab
+  github: DeepRoboticsResearch

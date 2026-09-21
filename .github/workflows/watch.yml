@@ -37,6 +37,8 @@ jobs:
           mcporter config add exa https://mcp.exa.ai/mcp --scope home
 
       - name: 扫源
+        env:
+          GITHUB_TOKEN: ${{ github.token }}   # GitHub 源要认证，否则 60 次/小时跑不完
         run: python scripts/watch.py --emit /tmp/watch-out
 
       - name: 开 issue

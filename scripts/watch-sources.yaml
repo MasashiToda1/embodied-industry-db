@@ -52,6 +52,14 @@ huggingface:
   # 扫 registry/orgs/*.yaml 里 accounts.huggingface 填了的主体，
   # 所以想让哪家被自动盯上，就去把它的 accounts 补上
 
+# GitHub：新建的仓 + 新发的 release，不看 commit。
+# 比 HF 宽——SDK、部署工具、仿真环境、URDF 都在这儿。
+# LightwheelAI/usd2mjcf 这种仓直接暴露技术栈（在用 MuJoCo），HF 上看不出来。
+# 同样按 accounts.github 扫；账号用 scripts/resolve_github.py 填。
+# ⚠️ 未认证 60 次/小时跑不完，CI 里用 github.token，本地读 gh auth token。
+github:
+  enabled: true
+
 # 新闻正文里命中这些词才进候选。宁可漏不可滥——
 # 候选表一变噪音，人就懒得看，整条链路就废了。
 #

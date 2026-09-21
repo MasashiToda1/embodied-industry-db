@@ -9,3 +9,4 @@ upstream:
   robotics_notebooks_institution: beingbeyond
 accounts:
   huggingface: BeingBeyond
+  github: BeingBeyond

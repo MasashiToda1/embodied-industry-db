@@ -14,3 +14,4 @@ upstream:
   robotics_notebooks_institution: lightwheel
 accounts:
   huggingface: LightwheelAI
+  github: LightwheelAI

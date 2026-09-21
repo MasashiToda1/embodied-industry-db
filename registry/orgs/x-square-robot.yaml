@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: x-square-robot
 accounts:
   huggingface: x-square-robot
+  github: X-Square-Robot

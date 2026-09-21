@@ -8,3 +8,5 @@ layers:
 - locomotion
 upstream:
   robotics_notebooks_institution: boston-dynamics
+accounts:
+  github: boston-dynamics

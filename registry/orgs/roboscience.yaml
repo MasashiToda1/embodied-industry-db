@@ -8,3 +8,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: roboscience
+accounts:
+  github: roboscienceorg

@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: robotis
 accounts:
   huggingface: ROBOTIS
+  github: ROBOTIS-GIT

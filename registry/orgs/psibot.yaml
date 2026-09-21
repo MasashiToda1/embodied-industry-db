@@ -14,3 +14,4 @@ upstream:
   robotics_notebooks_institution: psibot
 accounts:
   huggingface: PsiBotAI
+  github: Psi-Robot

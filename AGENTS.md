@@ -172,7 +172,11 @@ make preview ORG=unitree
 - **新闻只命中关键词** → 汇总成一条 digest，多半是还没收录的公司，逐条判
 - **论文没命中主体** → 直接丢弃，连 digest 都不进。本库只收产业主体，而 cs.RO 每天几十篇绝大多数是纯高校成果，全放进来候选表立刻变噪音
 
-源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。当前五类源：媒体 RSS、arXiv、Hugging Face（按主体账号）、Exa 语义搜索、上游 Robotics_Notebooks。
+源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。当前六类源：媒体 RSS、arXiv、Hugging Face（按主体账号）、**GitHub（按主体账号，新仓 + release）**、Exa 语义搜索、上游 Robotics_Notebooks。
+
+**GitHub 比 HF 宽**：除模型外还有 SDK、部署工具、仿真环境、URDF。`LightwheelAI/usd2mjcf` 这种仓直接暴露技术栈（在用 MuJoCo），HF 上看不出来。只看新仓和 release，不看 commit。账号用 `scripts/resolve_github.py` 填，与 `resolve_hf.py` 共用同一套匹配规则。
+
+release 不能走 `orgs/{o}/events` 接口——它被 star 和 push 事件淹掉，宇树 100 条事件只覆盖 3 天。改成取最近推送的仓逐个查 `/releases`，多几次调用但准。63 家一轮约 5 分钟，每天一次没问题。
 
 **Exa 来自 [Agent-Reach](https://github.com/Panniantong/Agent-Reach)。** 那个项目是路由器不是抓取器——每个渠道底下是一个现成工具，它只检查装了没、教 agent 怎么调。评估过它全部 16 个渠道，对本库有增量价值的只有 Exa 搜索（底下是 `mcporter` + Exa MCP，免费无 key）；GitHub 渠道就是 `gh CLI`、RSS 就是 `feedparser`、网页就是 Jina Reader，都不是新能力。Boss直聘 和 LinkedIn 渠道能拿招聘 JD，但要真 Chrome 加登录态，进不了 Actions，只能给人工入库提效。
 
@@ -187,7 +191,10 @@ Exa 补的是 RSS 的盲区：媒体 feed 只有两家，一条「具身智能 �
 - **普通词公司名不参与文本匹配**：Humanoid、Figure、Foundation 这类名字出现在任何标题里都不能当归属，只能靠 `accounts` 结构化命中
 - **长名优先**：「UBTECH Walker」要认成优必选，不能被别的短词抢走
 - **早报串烧进 digest 不进候选**：一条标题提七八家公司的，命中任何一家都没意义
-- **搜索结果只留 30 天内**：Exa 会翻出半年前的旧闻**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
+- **搜索结果只留 30 天内**：Exa 会翻出半年前的旧闻
+- **每轮最多 15 个 issue**，溢出进 digest：第一次实跑会把两周存量全倒出来（实测 41 件），一天 41 个 issue 没人看
+
+**账号匹配规则**（`resolve_hf.py` / `resolve_github.py` 共用）踩出来三条：以显示名为准不看 slug（`brainco` 会匹上 `braincode`）；包含匹配只认前缀（`booster` 会嵌进「Rock 'Em Robotics Booster Club」）；**前缀之后的剩余部分必须是公司后缀**（`jushen` 会匹上 `jushenzhidao` 具身智道、`magiclab` 匹上纽约的 `magiclabnyc`、`pudu` 匹上土耳其经销商）。大厂在两个平台上都有一堆组织，不自动填，留人工。**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
 
 去重状态存在 `.watch-state.json` 并回写仓库（CI 每次都是全新环境，不回写就会天天重报）。另外还会拿已入库事件的 evidence URL 做一道过滤，已经收过的不再报。
 

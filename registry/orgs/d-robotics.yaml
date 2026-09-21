@@ -10,3 +10,4 @@ upstream:
   robotics_notebooks_institution: d-robotics
 accounts:
   huggingface: D-Robotics
+  github: D-Robotics

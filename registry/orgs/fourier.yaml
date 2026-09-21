@@ -13,3 +13,4 @@ upstream:
   robotics_notebooks_institution: fourier
 accounts:
   huggingface: FourierIntelligence
+  github: FFTAI

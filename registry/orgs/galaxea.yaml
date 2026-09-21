@@ -8,3 +8,5 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: galaxea
+accounts:
+  github: OpenGalaxea

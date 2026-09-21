@@ -7,3 +7,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: noetix
+accounts:
+  github: Noetix-Robotics

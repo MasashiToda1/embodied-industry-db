@@ -8,3 +8,5 @@ layers:
 - data
 upstream:
   robotics_notebooks_institution: sunday-robotics
+accounts:
+  github: sunday-robotics

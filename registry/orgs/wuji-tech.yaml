@@ -7,3 +7,5 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: wuji-robotics
+accounts:
+  github: wuji-technology

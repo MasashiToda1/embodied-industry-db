@@ -9,3 +9,4 @@ upstream:
   robotics_notebooks_institution: rainbow-robotics
 accounts:
   huggingface: rainbowrobotics
+  github: RainbowRobotics
