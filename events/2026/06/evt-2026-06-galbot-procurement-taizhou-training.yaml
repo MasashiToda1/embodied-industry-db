@@ -1,0 +1,30 @@
+id: evt-2026-06-galbot-procurement-taizhou-training
+date: 2026-06
+date_precision: month
+type: procurement
+title:
+  zh: 银河通用中标台州具身机器人实训研创中心（二期）设备采购
+summary:
+  zh: 中标价 3917.37 万元，采购全套人形、四足机器人实训设备与仿真训练平台，面向产业人才培训。
+counterparties:
+- 台州具身机器人实训研创中心
+amount:
+  value: 39173700
+  currency: CNY
+axes:
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+orgs:
+- id: galbot
+  role: subject
+evidence:
+- url: https://zhidx.com/p/568369.html
+  publisher: 智东西 · 机器人前瞻
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/06/zhidx-2026-06-23-galbot.html
+corroboration: single
+date_basis: derived
+date_as_stated: 文中表述「今年 6 月」/「去年 8 月」，按发稿日 2026-06-23 推算

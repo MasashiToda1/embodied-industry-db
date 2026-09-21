@@ -1,0 +1,18 @@
+id: evt-2026-09-09-linkerbot-publication-v1-0-0
+date: '2026-09-09'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手发布 linkerhand-o30-ros2 v1.0.0
+summary:
+  zh: 灵心巧手发布 linkerhand-o30-ros2 v1.0.0。来源：GitHub · linker-bot
+evidence:
+- url: https://github.com/linker-bot/linkerhand-o30-ros2/releases/tag/v1.0.0
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-09-linkerbot.html
+corroboration: single

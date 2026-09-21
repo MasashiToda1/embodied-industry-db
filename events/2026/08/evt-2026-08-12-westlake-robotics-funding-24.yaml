@@ -1,0 +1,28 @@
+id: evt-2026-08-12-westlake-robotics-funding-24
+date: '2026-08-12'
+date_precision: day
+type: funding
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: A 轮融资落地，金额过亿元；报道称半年内完成四轮累计 5 亿元融资，方向为人形机器人全身统一大模型
+summary:
+  zh: A 轮融资落地，金额过亿元；报道称半年内完成四轮累计 5 亿元融资，方向为人形机器人全身统一大模型。
+evidence:
+- url: https://www.nbd.com.cn/articles/2026-08-12/4539536.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/08/nbd-2026-08-12-westlake-robotics.html
+- url: https://c.m.163.com/news/a/L44E68A605118DFD.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/08/c-2026-08-12-westlake-robotics.html
+- url: https://www.cjcn.com.cn/news/show-482694.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/08/cjcn-2026-08-12-westlake-robotics.html
+corroboration: multi

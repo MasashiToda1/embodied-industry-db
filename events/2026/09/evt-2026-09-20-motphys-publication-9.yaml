@@ -1,0 +1,20 @@
+id: evt-2026-09-20-motphys-publication-9
+date: '2026-09-20'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 UniLab v1.3.1
+summary:
+  zh: '莫特菲斯发布 UniLab v1.3.1。unilab 1.3.1：## What''s Changed * feat: integrate IsaacGym
+    fixed model variants (#1577) by @TATP-233 in https://github.com/Motphys/UniLab/pull/1582
+    * feat!: move Unitree production tasks downstream by @TATP-233 in'
+evidence:
+- url: https://github.com/Motphys/UniLab/releases/tag/v1.3.1
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-20-motphys.html
+corroboration: single

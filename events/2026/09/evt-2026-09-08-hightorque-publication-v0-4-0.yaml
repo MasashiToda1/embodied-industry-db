@@ -1,0 +1,18 @@
+id: evt-2026-09-08-hightorque-publication-v0-4-0
+date: '2026-09-08'
+date_precision: day
+type: publication
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎机电发布 ht_motor_debug v0.4.0
+summary:
+  zh: 高擎机电发布 ht_motor_debug v0.4.0。来源：GitHub · HighTorque-Robotics
+evidence:
+- url: https://github.com/HighTorque-Robotics/ht_motor_debug/releases/tag/v0.4.0
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-08-hightorque.html
+corroboration: single

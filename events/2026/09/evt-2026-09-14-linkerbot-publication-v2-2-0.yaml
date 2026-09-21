@@ -1,0 +1,18 @@
+id: evt-2026-09-14-linkerbot-publication-v2-2-0
+date: '2026-09-14'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手发布 linkerhand-cpp-sdk v2.2.0
+summary:
+  zh: 灵心巧手发布 linkerhand-cpp-sdk v2.2.0。来源：GitHub · linker-bot
+evidence:
+- url: https://github.com/linker-bot/linkerhand-cpp-sdk/releases/tag/v2.2.0
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-14-linkerbot.html
+corroboration: single

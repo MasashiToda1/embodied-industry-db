@@ -1,0 +1,18 @@
+id: evt-2026-09-17-rainbow-robotics-dataset_release-14
+date: '2026-09-17'
+date_precision: day
+type: dataset_release
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人发布数据集 rb10_iros_0917
+summary:
+  zh: 彩虹机器人发布数据集 rb10_iros_0917。许可 未标；标签 task_categories:robotics、license:apache-2.0、size_categories:100K<n<1M、format:parquet、modality:tabular、modality:timeseries
+evidence:
+- url: https://huggingface.co/datasets/rainbowrobotics/rb10_iros_0917
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-17-rainbow-robotics.html
+corroboration: single

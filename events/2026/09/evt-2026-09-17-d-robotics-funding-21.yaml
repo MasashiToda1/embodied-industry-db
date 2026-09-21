@@ -1,0 +1,21 @@
+id: evt-2026-09-17-d-robotics-funding-21
+date: '2026-09-17'
+date_precision: day
+type: funding
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 宣布完成 4 亿美元 C 轮融资，未来资产领投，美团参与战略投资，合肥国投、南山战新投等地方国资跟投，高瓴、五源、线性、
+summary:
+  zh: 宣布完成 4 亿美元 C 轮融资，未来资产领投，美团参与战略投资，合肥国投、南山战新投等地方国资跟投，高瓴、五源、线性、Vertex Growth 追加。资金用于旭日芯片多算力等级产品矩阵，以及贯通数据采集、模型训练、仿真验证、推理部署的软件平台。
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/finance-2026-09-17-d-robotics.html
+corroboration: single
+amount:
+  value: 400000000.0
+  currency: USD

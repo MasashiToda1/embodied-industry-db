@@ -1,0 +1,33 @@
+id: evt-2026-06-23-galbot-procurement-yibin-500
+date: '2026-06-23'
+date_precision: day
+type: procurement
+title:
+  zh: 银河通用以 2.3592 亿元位列宜宾具身智能本体采购项目第一中标候选人
+summary:
+  zh: 宜宾某能源管理公司公示《具身智能本体及相关设备采购项目》候选人结果，银河通用以 2.3592 亿元报价位列第一中标候选人。项目预算约 2.57 亿元，采购
+    500 台具身智能机器人（狗）本体及相关设施，含轮式机器人 380 台、重载机器人 80 台、机器狗 10 台等。报道称这是 2026 年以来国内单笔候选金额最高的具身智能机器人采购项目。注意：公示的是候选人结果，非最终中标公告。
+counterparties:
+- 宜宾某能源管理有限公司（采购方）
+amount:
+  value: 235920000
+  currency: CNY
+axes:
+  target_scene:
+  - inspection-hazardous
+  - industrial-manufacturing
+  delivery_model:
+  - hardware-sale
+  embodiment_form:
+  - humanoid-wheeled
+  - quadruped
+orgs:
+- id: galbot
+  role: subject
+evidence:
+- url: https://zhidx.com/p/568369.html
+  publisher: 智东西 · 机器人前瞻
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/06/zhidx-2026-06-23-galbot.html
+corroboration: single

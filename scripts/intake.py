@@ -27,6 +27,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))          # 让 snapshot() 能 import ingest.wechat
 NO_RESPONSE = {"_no response_", "_No response_", "无", ""}
 
 # 表单标签 → 内部字段
@@ -173,8 +174,48 @@ def match_org(name: str, orgs: list[dict]) -> list[dict]:
     return hits
 
 
-def build(fields: dict, issue_no: str = "") -> tuple[dict, list[str]]:
-    """字段字典 → 事件结构 + 缺项清单。"""
+RE_URL = re.compile(r"https?://[^\s;；)）\]]+")
+OFFICIAL_HOSTS = ("huggingface.co", "github.com", "arxiv.org")
+
+# 从标题推事件类型。watch.py 生成的 issue 标题格式固定，推得准；手填的留空就默认 statement。
+TYPE_HINTS = [
+    (re.compile(r"发布数据集|批量发布 \d+ 个数据集|dataset"), "dataset_release"),
+    (re.compile(r"发布模型|新建仓库|新建 \d+ 个仓库|发布 \S+ v?\d|开源|release"), "publication"),
+    (re.compile(r"融资|轮|raises|funding"), "funding"),
+    (re.compile(r"中标|采购|成交"), "procurement"),
+    (re.compile(r"部署|落地|签约|deploy"), "deployment"),
+    (re.compile(r"发布会|新品|上市|开售"), "product_launch"),
+]
+
+
+def infer_type(text: str) -> str:
+    for rx, t in TYPE_HINTS:
+        if rx.search(text):
+            return t
+    return "statement"
+
+
+def tier_for(url: str) -> str:
+    """官方托管页（HF / GitHub / arXiv）是主体自己发的，算 official；其余算 media。"""
+    return "official" if any(h in url for h in OFFICIAL_HOSTS) else "media"
+
+
+def snapshot(url: str, date: str, tag: str) -> str:
+    """抓原页面落盘。公开来源没有快照进不了库，这一步不能省。"""
+    import httpx
+
+    from ingest import wechat
+
+    r = httpx.get(url, timeout=30, follow_redirects=True,
+                  headers={"User-Agent": "Mozilla/5.0 (compatible; embodied-industry-db)"})
+    r.raise_for_status()
+    art = wechat.Article(title=tag, html=r.text, url=url, account_id=tag)
+    host = re.sub(r"^www\.", "", re.sub(r"^https?://", "", url).split("/")[0]).split(".")[0]
+    return wechat.save_snapshot(ROOT, art, date, prefix=host[:12])
+
+
+def build(fields: dict, issue_no: str = "", fetch: bool = False) -> tuple[dict, list[str]]:
+    """字段字典 → 事件结构 + 缺项清单。fetch=True 时抓页面存快照。"""
     missing: list[str] = []
     orgs = load_orgs()
     hits = match_org(fields.get("org", ""), orgs)
@@ -189,32 +230,42 @@ def build(fields: dict, issue_no: str = "") -> tuple[dict, list[str]]:
         "interview", "customer-review", "vendor-inquiry", "field-observation", "hands-on-test"
     }
 
+    # 「其他来源」写在补充里，一条 URL 一个 evidence；多个独立来源就是 corroboration=multi
+    extra_urls = [u for u in RE_URL.findall(fields.get("extra", "")) if u != url]
+    evidences: list[dict] = []
+
     if first_party:
-        evidence = {
+        evidences.append({
             "tier": "first-party",
             "method": method,
             "retrieved": date_cls.today().isoformat(),
-        }
+        })
     else:
-        evidence = {
-            "url": url,
-            "publisher": "",
-            "tier": "official" if url else "",
-            "retrieved": date_cls.today().isoformat(),
-            "snapshot": "",
-        }
         if not url:
             missing.append("选了「有公开链接」但没填链接")
-        else:
-            missing.append("公开来源需存页面快照：用 make serve 粘链接走解析路径，会自动存")
+        for u in ([url] if url else []) + extra_urls:
+            ev = {"url": u, "publisher": "", "tier": tier_for(u),
+                  "retrieved": date_cls.today().isoformat(), "snapshot": ""}
+            if fetch and date:
+                try:
+                    ev["snapshot"] = snapshot(u, date, (hits[0]["id"] if hits else "src"))
+                except Exception as exc:  # noqa: BLE001
+                    missing.append(f"快照抓取失败 {u[:60]}：{type(exc).__name__}")
+            elif not fetch:
+                missing.append("公开来源需存页面快照（加 --fetch 自动抓）")
+            evidences.append(ev)
 
     if not hits:
         missing.append(f"主体「{fields.get('org','')}」在 registry 里没有对应条目，需先建（注意先搜别名）")
     elif len(hits) > 1:
         missing.append(f"主体匹配到多个：{'、'.join(h['id'] for h in hits)}，需人工选定")
 
-    etype = parse_choice(fields.get("type", "")) or "statement"
+    etype = parse_choice(fields.get("type", "")) or infer_type(fields.get("fact", ""))
     primary = hits[0]["id"] if len(hits) == 1 else "TODO"
+
+    fact = fields.get("fact", "").strip()
+    # watch.py 生成的 fact 形如「标题。摘要」，标题就是句号前那段
+    title_zh = fact.split("。")[0][:60]
 
     event: dict = {
         "id": f"evt-{date or 'TODO'}-{primary}-{etype}-{issue_no or 'x'}",
@@ -222,11 +273,17 @@ def build(fields: dict, issue_no: str = "") -> tuple[dict, list[str]]:
         "date_precision": precision or "day",
         "type": etype,
         "orgs": [{"id": primary, "role": "subject"}],
-        "title": {"zh": (fields.get("fact") or "").split("。")[0][:60]},
-        "summary": {"zh": fields.get("fact", "")},
-        "evidence": [evidence],
-        "corroboration": "single",
+        "title": {"zh": title_zh},
+        "summary": {"zh": fact},
+        "evidence": evidences,
+        "corroboration": "multi" if len(evidences) > 1 else "single",
     }
+
+    # 数据集发布：许可写在摘要里，能直接给 data_openness。模型开源不算——那是权重不是数据。
+    if etype == "dataset_release":
+        lic = re.search(r"许可\s*([\w.\-]+)", fact)
+        if lic and lic.group(1).lower() not in ("未标", "none", "unknown", "other"):
+            event["axes"] = {"data_openness": "fully-open"}
     if basis and basis != "stated":
         event["date_basis"] = basis
         event["date_as_stated"] = as_stated
@@ -255,12 +312,86 @@ def fetch_issue(number: int) -> tuple[str, str]:
     return d.get("body") or "", d.get("title") or ""
 
 
+def is_blocking(event: dict, missing: list[str]) -> bool:
+    return ("TODO" in str(event)
+            or any("registry 里没有" in m or "无法解析" in m or "快照抓取失败" in m for m in missing))
+
+
+def write_event(event: dict) -> Path:
+    year, month = str(event["date"])[:4], str(event["date"])[5:7]
+    folder = ROOT / "events" / year / (month if month.isdigit() else "00")
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / f"{event['id']}.yaml"
+    if path.exists():
+        raise FileExistsError(str(path.relative_to(ROOT)))
+    path.write_text(yaml.safe_dump(event, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    return path
+
+
+def process_one(body: str, issue_no: str, fetch: bool, write: bool, quiet: bool) -> tuple[bool, str]:
+    """处理一条。返回（是否写入, 一行摘要）。"""
+    fields = parse_body(body)
+    if not fields:
+        return False, f"#{issue_no}: 解析不到表单字段，不是「手工事件」模板"
+    event, missing = build(fields, issue_no, fetch=fetch)
+    if not quiet:
+        print("── 解析出的事件 ──")
+        print(yaml.safe_dump(event, allow_unicode=True, sort_keys=False).rstrip())
+        if missing:
+            print("\n── 还缺 / 需人工确认 ──")
+            for m in missing:
+                print(f"  · {m}")
+    blocking = is_blocking(event, missing)
+    label = f"#{issue_no} {event['orgs'][0]['id']:<16} {event['title']['zh'][:40]}"
+    if blocking:
+        why = "；".join(m for m in missing if "registry" in m or "无法解析" in m or "快照" in m)[:80]
+        return False, f"✗ {label}  阻塞：{why}"
+    if not write:
+        return False, f"· {label}  （未写盘）"
+    try:
+        path = write_event(event)
+    except FileExistsError as exc:
+        return False, f"= {label}  已存在 {exc}"
+    return True, f"✓ {label}  → {path.relative_to(ROOT)}"
+
+
+def parse_issue_range(spec: str) -> list[int]:
+    out: list[int] = []
+    for part in spec.split(","):
+        part = part.strip()
+        if "-" in part:
+            a, b = part.split("-", 1)
+            out.extend(range(int(a), int(b) + 1))
+        elif part:
+            out.append(int(part))
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--issue", type=int)
+    ap.add_argument("--issues", help="批量，如 6-24 或 6,7,21-24")
     ap.add_argument("--file")
+    ap.add_argument("--fetch", action="store_true", help="抓原页面存快照（公开来源入库必需）")
     ap.add_argument("--write", action="store_true", help="确认无误后写入 events/")
     args = ap.parse_args()
+
+    if args.issues:
+        results = []
+        for n in parse_issue_range(args.issues):
+            try:
+                body, _ = fetch_issue(n)
+            except Exception as exc:  # noqa: BLE001
+                results.append((False, f"✗ #{n} 取不到 issue：{type(exc).__name__}"))
+                continue
+            results.append(process_one(body, str(n), args.fetch, args.write, quiet=True))
+        ok = sum(1 for w, _ in results if w)
+        for _, line in results:
+            print(line)
+        print(f"\n{len(results)} 条：写入 {ok}，未写 {len(results) - ok}")
+        if args.write and ok:
+            print("跑一次 make preflight。")
+        return 0
 
     issue_no = ""
     if args.issue:
@@ -272,40 +403,11 @@ def main() -> int:
     else:
         body = sys.stdin.read()
 
-    fields = parse_body(body)
-    if not fields:
-        print("解析不到任何表单字段，确认这条 issue 是用「手工事件」模板提的")
-        return 1
-
-    event, missing = build(fields, issue_no)
-
-    print("── 解析出的事件 ──")
-    print(yaml.safe_dump(event, allow_unicode=True, sort_keys=False).rstrip())
-
-    if missing:
-        print("\n── 还缺 / 需人工确认 ──")
-        for m in missing:
-            print(f"  · {m}")
-
-    blocking = [m for m in missing if "TODO" in str(event) or "registry 里没有" in m or "无法解析" in m]
-    if args.write:
-        if blocking:
-            print("\n有阻塞项，拒绝写入。先补齐再来。")
-            return 1
-        year, month = str(event["date"])[:4], str(event["date"])[5:7]
-        folder = ROOT / "events" / year / (month if month.isdigit() else "00")
-        folder.mkdir(parents=True, exist_ok=True)
-        path = folder / f"{event['id']}.yaml"
-        if path.exists():
-            print(f"\n已存在：{path.relative_to(ROOT)}")
-            return 1
-        path.write_text(
-            yaml.safe_dump(event, allow_unicode=True, sort_keys=False), encoding="utf-8"
-        )
-        print(f"\n已写入 {path.relative_to(ROOT)}。跑一次 make preflight。")
-    else:
-        print("\n（未写盘。确认无误后加 --write）")
-    return 0
+    wrote, line = process_one(body, issue_no, args.fetch, args.write, quiet=False)
+    print("\n" + line)
+    if not args.write:
+        print("（未写盘。确认无误后加 --write，公开来源再加 --fetch 抓快照）")
+    return 0 if (wrote or not args.write) else 1
 
 
 if __name__ == "__main__":

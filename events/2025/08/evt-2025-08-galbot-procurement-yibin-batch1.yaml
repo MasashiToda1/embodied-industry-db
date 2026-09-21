@@ -1,0 +1,30 @@
+id: evt-2025-08-galbot-procurement-yibin-batch1
+date: 2025-08
+date_precision: month
+type: procurement
+title:
+  zh: 银河通用中标宜宾叙州区第一批人形智能机器人采购项目
+summary:
+  zh: 中标金额 1008.35 万元，采购人形机器人、机器狗、机械臂及配套系统，为宜宾片区首批小型智能设备集采。
+counterparties:
+- 宜宾市叙州区
+amount:
+  value: 10083500
+  currency: CNY
+axes:
+  target_scene:
+  - commercial-service
+  delivery_model:
+  - hardware-sale
+orgs:
+- id: galbot
+  role: subject
+evidence:
+- url: https://zhidx.com/p/568369.html
+  publisher: 智东西 · 机器人前瞻
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/06/zhidx-2026-06-23-galbot.html
+corroboration: single
+date_basis: derived
+date_as_stated: 文中表述「今年 6 月」/「去年 8 月」，按发稿日 2026-06-23 推算

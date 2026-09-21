@@ -1,0 +1,43 @@
+id: evt-2026-09-20-zsibot-funding-22
+date: '2026-09-20'
+date_precision: day
+type: funding
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 宣布完成数亿元人民币 B 轮融资，阿联酋 Stone Venture（磊石资本）领投
+summary:
+  zh: 宣布完成数亿元人民币 B 轮融资，阿联酋 Stone Venture（磊石资本）领投。披露截至 2026 年 6 月累计量产突破 15000 台，产品进入电力、石化、消防、安防、应急、教育等行业，与
+    500 余家生态伙伴合作。资金投向本体、具身大脑与小脑（GSD 自主导航）、任务作业能力。
+evidence:
+- url: https://www.cs.com.cn/ssgs/01/2026/09/20/detail_2026092010040494.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/cs-2026-09-20-zsibot.html
+- url: https://finance.sina.com.cn/jjxw/2026-09-21/doc-inisqriw8862824.shtml
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/finance-2026-09-20-zsibot.html
+- url: https://tech.china.com/article/20260920/202609201960983.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/tech-2026-09-20-zsibot.html
+- url: https://www.21jingji.com/article/20260920/herald/f62e934ccb8e0c4934c30fbc2a6e9559.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/21jingji-2026-09-20-zsibot.html
+corroboration: multi
+# 轴取值依据官方稿原文「产品已进入电力、石化、消防、安防、应急、教育等多个行业」，
+# 以及「四足和人形」两条产品线的表述。
+axes:
+  target_scene:
+  - inspection-hazardous
+  - education-research
+  embodiment_form:
+  - quadruped
+  - humanoid-biped

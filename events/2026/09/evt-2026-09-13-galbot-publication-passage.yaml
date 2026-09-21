@@ -1,0 +1,18 @@
+id: evt-2026-09-13-galbot-publication-passage
+date: '2026-09-13'
+date_precision: day
+type: publication
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用新建仓库 PASSAGE
+summary:
+  zh: 银河通用新建仓库 PASSAGE。来源：GitHub · GalaxyGeneralRobotics
+evidence:
+- url: https://github.com/GalaxyGeneralRobotics/PASSAGE
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-13-galbot.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-09-15-roboparty-publication-roboparty
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对新建 4 个仓库（2026-09-10～2026-09-15）
+summary:
+  zh: 萝博派对新建 4 个仓库（2026-09-10～2026-09-15）。来源：GitHub · Roboparty
+evidence:
+- url: https://github.com/Roboparty
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-15-roboparty.html
+corroboration: single

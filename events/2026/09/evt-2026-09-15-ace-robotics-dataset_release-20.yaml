@@ -1,0 +1,18 @@
+id: evt-2026-09-15-ace-robotics-dataset_release-20
+date: '2026-09-15'
+date_precision: day
+type: dataset_release
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人发布数据集 arx_dual_arm_data
+summary:
+  zh: 大晓机器人发布数据集 arx_dual_arm_data。许可 未标；标签 task_categories:robotics、language:en、license:apache-2.0、size_categories:n<1K、modality:video、library:datasets
+evidence:
+- url: https://huggingface.co/datasets/ACERobotics/arx_dual_arm_data
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-15-ace-robotics.html
+corroboration: single

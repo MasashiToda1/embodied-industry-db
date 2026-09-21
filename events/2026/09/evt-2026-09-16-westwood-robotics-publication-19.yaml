@@ -1,0 +1,21 @@
+id: evt-2026-09-16-westwood-robotics-publication-19
+date: '2026-09-16'
+date_precision: day
+type: publication
+orgs:
+- id: westwood-robotics
+  role: subject
+title:
+  zh: 韦斯特伍德机器人发布 BEAR_Calibration_Tool v3.2
+summary:
+  zh: '韦斯特伍德机器人发布 BEAR_Calibration_Tool v3.2。BCT v3.2：# BEAR Calibration Tool v3.2
+    BEAR Calibration Tool v3.2 is a maintenance release that corrects the initial
+    Flash sequencing for all supported BEAR products. ## Critical safety warning >
+    [!WARNING] > B'
+evidence:
+- url: https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.2
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-16-westwood-robotics.html
+corroboration: single

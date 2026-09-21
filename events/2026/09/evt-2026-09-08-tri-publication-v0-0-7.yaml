@@ -1,0 +1,18 @@
+id: evt-2026-09-08-tri-publication-v0-0-7
+date: '2026-09-08'
+date_precision: day
+type: publication
+orgs:
+- id: tri
+  role: subject
+title:
+  zh: 丰田研究院发布 sequentialized_barnard_tests v0.0.7
+summary:
+  zh: 丰田研究院发布 sequentialized_barnard_tests v0.0.7。来源：GitHub · TRI-ML
+evidence:
+- url: https://github.com/TRI-ML/sequentialized_barnard_tests/releases/tag/v0.0.7
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-08-tri.html
+corroboration: single
