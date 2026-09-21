@@ -1,0 +1,10 @@
+id: rokae
+names:
+  zh: 珞石机器人
+  en: ROKAE
+  aliases:
+  - ROKAE
+  - xMate
+status: active
+layers:
+- embodiment

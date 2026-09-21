@@ -199,6 +199,13 @@ orgs:
   - { id: spacetime-var,   zh: 时空变量,      en: Spacetime Variable, layers: [data, components] }
   - { id: agilex,          zh: 松灵机器人,    en: AgileX Robotics,   layers: [data, components, embodiment], aliases: [AgileX, 松灵, Pika, ALOHA], upstream: agilex }
 
+  # ---------------- 第三批：原判边界外，用户 9/21 拍板收进来 ----------------
+  # 共同点是都有工业根基但已经开出具身产品线，不是纯 AGV 或纯协作臂。
+  - { id: standard-robots, zh: 斯坦德机器人,  en: Standard Robots,   layers: [embodiment, integration], aliases: [Standard Robots, SROS] }
+  - { id: rokae,           zh: 珞石机器人,    en: ROKAE,             layers: [embodiment], aliases: [ROKAE, xMate] }
+  - { id: mech-mind,       zh: 梅卡曼德,      en: Mech-Mind Robotics, layers: [components, integration], aliases: [Mech-Mind, 梅卡曼德机器人], upstream: mech-mind }
+  - { id: seer-robotics,   zh: 仙工智能,      en: SEER Robotics,     layers: [locomotion, embodiment], aliases: [SEER, 仙工], upstream: seer }
+
   # ---------------- 标准与检测评测 ----------------
   - { id: ul-solutions,    zh: UL Solutions,  en: UL Solutions,      layers: [standards] }
   - { id: iso-tc299,       zh: ISO/TC 299 机器人技术委员会, en: ISO/TC 299, layers: [standards] }

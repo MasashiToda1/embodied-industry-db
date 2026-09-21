@@ -1,0 +1,11 @@
+id: standard-robots
+names:
+  zh: 斯坦德机器人
+  en: Standard Robots
+  aliases:
+  - Standard Robots
+  - SROS
+status: active
+layers:
+- embodiment
+- integration
