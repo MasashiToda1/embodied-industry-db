@@ -1,0 +1,21 @@
+id: evt-2026-09-21-wuji-tech-publication-7
+date: '2026-09-21'
+date_precision: day
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技发布 wuji-studio v2026.9.21
+summary:
+  zh: '舞肌科技发布 wuji-studio v2026.9.21。Wuji Studio v2026.9.21： ### Important notice
+    - **Wuji Studio is no longer maintained.** Wuji Studio no longer receives feature
+    updates or device support. Use [Wuji CLI](https://docs.wuji.tech/docs/en/wuji-cli/latest/)
+    or [W'
+evidence:
+- url: https://github.com/wuji-technology/wuji-studio/releases/tag/v2026.9.21
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-21-wuji-tech.html
+corroboration: single

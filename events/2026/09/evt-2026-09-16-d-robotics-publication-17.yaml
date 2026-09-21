@@ -1,0 +1,19 @@
+id: evt-2026-09-16-d-robotics-publication-17
+date: '2026-09-16'
+date_precision: day
+type: publication
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人新建仓库 time_synchronization_installer
+summary:
+  zh: 地瓜机器人新建仓库 time_synchronization_installer。PTP slave/master provisioning and switching
+    tool for X5 boards；语言 Shell；★0
+evidence:
+- url: https://github.com/D-Robotics/time_synchronization_installer
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-16-d-robotics.html
+corroboration: single

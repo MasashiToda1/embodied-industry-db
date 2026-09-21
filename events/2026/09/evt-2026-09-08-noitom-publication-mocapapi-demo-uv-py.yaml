@@ -1,0 +1,18 @@
+id: evt-2026-09-08-noitom-publication-mocapapi-demo-uv-py
+date: '2026-09-08'
+date_precision: day
+type: publication
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾新建仓库 mocapapi-demo-uv-py
+summary:
+  zh: 诺亦腾新建仓库 mocapapi-demo-uv-py。来源：GitHub · noitom-robotics
+evidence:
+- url: https://github.com/noitom-robotics/mocapapi-demo-uv-py
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-08-noitom.html
+corroboration: single

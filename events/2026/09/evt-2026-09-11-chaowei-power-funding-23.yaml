@@ -1,0 +1,31 @@
+id: evt-2026-09-11-chaowei-power-funding-23
+date: '2026-09-11'
+date_precision: day
+type: funding
+orgs:
+- id: chaowei-power
+  role: subject
+title:
+  zh: 宣布完成超 5 亿元天使+轮系列融资，华兴资本担任独家财务顾问
+summary:
+  zh: 宣布完成超 5 亿元天使+轮系列融资，华兴资本担任独家财务顾问。
+evidence:
+- url: https://www.jiemian.com/article/15083510.html
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/jiemian-2026-09-11-chaowei-power.html
+- url: https://tech.cnr.cn/techph/20260911/t20260911_527810845.shtml
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/tech-2026-09-11-chaowei-power.html
+- url: https://tech.gmw.cn/2026-09/11/content_38996268.htm
+  publisher: ''
+  tier: media
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/tech-2026-09-11-chaowei-power.html
+corroboration: multi
+amount:
+  value: 500000000.0
+  currency: CNY

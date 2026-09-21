@@ -1,0 +1,20 @@
+id: evt-2026-09-16-motphys-publication-18
+date: '2026-09-16'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 UniLab v1.3.0
+summary:
+  zh: '莫特菲斯发布 UniLab v1.3.0。unilab 1.3.0：## What''s Changed * feat: mujoco 后端执行器切换到
+    mjbatch-uni(roadmap #1552) by @TATP-233 in https://github.com/Motphys/UniLab/pull/1562
+    * feat: complete per-env fixed model variant roadmap by @TATP-233 in ht'
+evidence:
+- url: https://github.com/Motphys/UniLab/releases/tag/v1.3.0
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-16-motphys.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-09-10-x-square-robot-publication-x2streaming-tts-1-7b
+date: '2026-09-10'
+date_precision: day
+type: publication
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人发布模型 X2Streaming-TTS-1.7B
+summary:
+  zh: 自变量机器人发布模型 X2Streaming-TTS-1.7B。来源：Hugging Face · x-square-robot
+evidence:
+- url: https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-10-x-square-robot.html
+corroboration: single

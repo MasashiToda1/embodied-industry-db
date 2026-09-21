@@ -1,0 +1,18 @@
+id: evt-2026-09-07-robotis-publication-0-2-1
+date: '2026-09-07'
+date_precision: day
+type: publication
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS发布 ai_sapiens 0.2.1
+summary:
+  zh: ROBOTIS发布 ai_sapiens 0.2.1。来源：GitHub · ROBOTIS-GIT
+evidence:
+- url: https://github.com/ROBOTIS-GIT/ai_sapiens/releases/tag/0.2.1
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-07-robotis.html
+corroboration: single

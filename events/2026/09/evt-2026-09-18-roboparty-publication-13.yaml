@@ -1,0 +1,19 @@
+id: evt-2026-09-18-roboparty-publication-13
+date: '2026-09-18'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对发布 robopi_analyze v1.0.9
+summary:
+  zh: '萝博派对发布 robopi_analyze v1.0.9。v1.0.9：## What''s Changed * fix analyzer by @MsFANRUI
+    in https://github.com/Roboparty/robopi_analyze/pull/5 **Full Changelog**: https://github.com/Roboparty/robopi_analyze/compare/v1.0.7...v1.0.9'
+evidence:
+- url: https://github.com/Roboparty/robopi_analyze/releases/tag/v1.0.9
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-18-roboparty.html
+corroboration: single

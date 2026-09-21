@@ -1,0 +1,18 @@
+id: evt-2026-09-14-roboparty-publication-v1-7-18
+date: '2026-09-14'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对发布 robopi_addon v1.7.18
+summary:
+  zh: 萝博派对发布 robopi_addon v1.7.18。来源：GitHub · Roboparty
+evidence:
+- url: https://github.com/Roboparty/robopi_addon/releases/tag/v1.7.18
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-14-roboparty.html
+corroboration: single

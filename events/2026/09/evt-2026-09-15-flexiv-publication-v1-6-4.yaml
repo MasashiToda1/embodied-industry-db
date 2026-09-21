@@ -1,0 +1,18 @@
+id: evt-2026-09-15-flexiv-publication-v1-6-4
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技发布 flexiv_tdk v1.6.4
+summary:
+  zh: 非夕科技发布 flexiv_tdk v1.6.4。来源：GitHub · flexivrobotics
+evidence:
+- url: https://github.com/flexivrobotics/flexiv_tdk/releases/tag/v1.6.4
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-15-flexiv.html
+corroboration: single

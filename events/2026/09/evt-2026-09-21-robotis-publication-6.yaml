@@ -1,0 +1,20 @@
+id: evt-2026-09-21-robotis-publication-6
+date: '2026-09-21'
+date_precision: day
+type: publication
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS发布 cyclo_control 0.4.1
+summary:
+  zh: ROBOTIS发布 cyclo_control 0.4.1。0.4.1：0.4.1 (2026-09-21) ------------------ *
+    Hardened teleoperation input and follower-feedback recovery handling * Preserved
+    safe slow-start and pose-sequence behavior across follower restarts * Contribut
+evidence:
+- url: https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.4.1
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-21-robotis.html
+corroboration: single

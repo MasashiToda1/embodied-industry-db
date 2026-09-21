@@ -1,0 +1,18 @@
+id: evt-2026-09-16-x-square-robot-publication-15
+date: '2026-09-16'
+date_precision: day
+type: publication
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人发布模型 X-Planner-9B-0916
+summary:
+  zh: 自变量机器人发布模型 X-Planner-9B-0916。许可 未标；标签 transformers、safetensors、qwen3_5、image-text-to-text、robotics、embodied-ai
+evidence:
+- url: https://huggingface.co/x-square-robot/X-Planner-9B-0916
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-16-x-square-robot.html
+corroboration: single

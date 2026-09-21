@@ -1,0 +1,18 @@
+id: evt-2026-09-18-d-robotics-publication-11
+date: '2026-09-18'
+date_precision: day
+type: publication
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人发布模型 Uranus-1.3B-Distillation
+summary:
+  zh: 地瓜机器人发布模型 Uranus-1.3B-Distillation。许可 未标；标签 license:apache-2.0、region:us
+evidence:
+- url: https://huggingface.co/D-Robotics/Uranus-1.3B-Distillation
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-18-d-robotics.html
+corroboration: single

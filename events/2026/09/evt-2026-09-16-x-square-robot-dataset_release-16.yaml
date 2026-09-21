@@ -1,0 +1,18 @@
+id: evt-2026-09-16-x-square-robot-dataset_release-16
+date: '2026-09-16'
+date_precision: day
+type: dataset_release
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人发布数据集 xplanner-benchmark
+summary:
+  zh: 自变量机器人发布数据集 xplanner-benchmark。许可 未标；标签 task_categories:robotics、task_categories:video-classification、size_categories:1K<n<10K、format:parquet、modality:tabular、modality:text
+evidence:
+- url: https://huggingface.co/datasets/x-square-robot/xplanner-benchmark
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-16-x-square-robot.html
+corroboration: single

@@ -753,18 +753,26 @@ def main() -> int:
             (out / f"hit-{i:02d}.md").write_text(issue_body_group(g), encoding="utf-8")
             (out / f"hit-{i:02d}.title").write_text(
                 f"[事件] {g[0]['org']['zh']}：{g[0]['title'][:40]}", encoding="utf-8")
-        for g in overflow:
-            it = dict(g[0])
-            it["title"] = f"[{it['org']['zh']}] {it['title']}"
-            digest.append(("", it))
-        if digest:
-            lines = ["以下线索命中了关键词但**没匹配到 registry 主体**，多半是还没收录的公司。",
-                     "逐条判断：该收的用「新主体」模板建条目，不该收的直接忽略。", ""]
-            for _, it in digest:
-                lines.append(f"- [{it['date']}] [{it['title']}]({it['url']}) — {it['source']}")
+        # 溢出和「未匹配主体」是两码事，分开写，别再混进一条里当「新主体」——
+        # 第一次实跑就把 20 条已收录主体的事件标成了「未匹配」。
+        if overflow or digest:
+            lines: list[str] = []
+            if overflow:
+                lines += [f"## 已收录主体的事件（{len(overflow)} 件，超出本轮 {MAX_ISSUES_PER_RUN} 个名额）", "",
+                          "这些主体都在 registry 里，只是本轮名额满了。要收的直接说，或明天等它们再冒出来。", ""]
+                for g in overflow:
+                    it = g[0]
+                    more = f"（＋{len(g) - 1} 个来源）" if len(g) > 1 else ""
+                    lines.append(f"- [{it['org']['zh']}] [{it['date']}] [{it['title']}]({it['url']}){more} — {it['source']}")
+                lines.append("")
+            if digest:
+                lines += [f"## 没匹配到主体的线索（{len(digest)} 条）", "",
+                          "命中了关键词但 registry 里没有对应主体，多半是还没收录的公司。该收的用「新主体」模板建条目。", ""]
+                for _, it in digest:
+                    lines.append(f"- [{it['date']}] [{it['title']}]({it['url']}) — {it['source']}")
             (out / "digest.md").write_text("\n".join(lines), encoding="utf-8")
             (out / "digest.title").write_text(
-                f"[线索] 未匹配主体的候选 {len(digest)} 条 · {datetime.now(CST):%Y-%m-%d}",
+                f"[线索] 溢出 {len(overflow)} 件 · 未匹配 {len(digest)} 条 · {datetime.now(CST):%Y-%m-%d}",
                 encoding="utf-8")
 
     if not args.no_state:

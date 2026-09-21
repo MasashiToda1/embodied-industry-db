@@ -1,0 +1,18 @@
+id: evt-2026-09-10-roboparty-publication-v1-5-0
+date: '2026-09-10'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对发布 roboparty_bms v1.5.0
+summary:
+  zh: 萝博派对发布 roboparty_bms v1.5.0。来源：GitHub · Roboparty
+evidence:
+- url: https://github.com/Roboparty/roboparty_bms/releases/tag/v1.5.0
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-10-roboparty.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-09-15-robotis-publication-2-2-7
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS发布 ai_worker 2.2.7
+summary:
+  zh: ROBOTIS发布 ai_worker 2.2.7。来源：GitHub · ROBOTIS-GIT
+evidence:
+- url: https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.2.7
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-15-robotis.html
+corroboration: single

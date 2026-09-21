@@ -1,0 +1,18 @@
+id: evt-2026-09-19-rainbow-robotics-publication-10
+date: '2026-09-19'
+date_precision: day
+type: publication
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人发布模型 rb10_iros_0917_pi05
+summary:
+  zh: 彩虹机器人发布模型 rb10_iros_0917_pi05。许可 未标；标签 lerobot、safetensors、robotics、pi05、dataset:rainbowrobotics/rb10_iros_0917、base_model:lerobot/pi05_base
+evidence:
+- url: https://huggingface.co/rainbowrobotics/rb10_iros_0917_pi05
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-19-rainbow-robotics.html
+corroboration: single

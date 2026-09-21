@@ -1,0 +1,18 @@
+id: evt-2026-09-11-unitree-publication-unifolm-er-flow
+date: '2026-09-11'
+date_precision: day
+type: publication
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技发布模型 UnifoLM-ER-Flow
+summary:
+  zh: 宇树科技发布模型 UnifoLM-ER-Flow。来源：Hugging Face · unitreerobotics
+evidence:
+- url: https://huggingface.co/unitreerobotics/UnifoLM-ER-Flow
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-11-unitree.html
+corroboration: single

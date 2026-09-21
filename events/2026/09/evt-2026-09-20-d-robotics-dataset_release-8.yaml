@@ -1,0 +1,18 @@
+id: evt-2026-09-20-d-robotics-dataset_release-8
+date: '2026-09-20'
+date_precision: day
+type: dataset_release
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人发布数据集 Uranus-Demo-Data
+summary:
+  zh: 地瓜机器人发布数据集 Uranus-Demo-Data。许可 未标；标签 license:apache-2.0、size_categories:1K<n<10K、format:imagefolder、modality:image、modality:video、library:datasets
+evidence:
+- url: https://huggingface.co/datasets/D-Robotics/Uranus-Demo-Data
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-20-d-robotics.html
+corroboration: single

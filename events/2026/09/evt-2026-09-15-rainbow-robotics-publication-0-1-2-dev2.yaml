@@ -1,0 +1,18 @@
+id: evt-2026-09-15-rainbow-robotics-publication-0-1-2-dev2
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人发布 rb-sdk 0.1.2.dev2
+summary:
+  zh: 彩虹机器人发布 rb-sdk 0.1.2.dev2。来源：GitHub · RainbowRobotics
+evidence:
+- url: https://github.com/RainbowRobotics/rb-sdk/releases/tag/0.1.2.dev2
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/github-2026-09-15-rainbow-robotics.html
+corroboration: single

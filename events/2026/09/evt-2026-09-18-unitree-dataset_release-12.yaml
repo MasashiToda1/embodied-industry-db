@@ -1,0 +1,18 @@
+id: evt-2026-09-18-unitree-dataset_release-12
+date: '2026-09-18'
+date_precision: day
+type: dataset_release
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技批量发布 63 个数据集（2026-09-13～2026-09-18）
+summary:
+  zh: 宇树科技批量发布 63 个数据集（2026-09-13～2026-09-18）。含：G1_WBT_Inspire_Put_Sink_Towel、G1_WBT_Inspire_Pick_Up_Basket_And_Put_Vegetables_Into_Basket、G1_WBT_Brainco_Tidy_The_Bed_And_Pick_Cloth_On_Bed_And_Put_In_Laundry、G1_WBT_Brainco_Clean_Tea_Table_Garbage、G1_Dex1_Wipe_Board、G1_Dex1_Take_Food_Out_Oven、G1_Dex1_Tableware_Storage、G1_Dex1_Switch_Lamp_On…
+evidence:
+- url: https://huggingface.co/unitreerobotics
+  publisher: ''
+  tier: official
+  retrieved: '2026-09-21'
+  snapshot: snapshots/2026/09/huggingface-2026-09-18-unitree.html
+corroboration: single
