@@ -98,12 +98,34 @@ def load_orgs() -> list[dict]:
     return out
 
 
+# 这些公司名本身是普通词，出现在任何标题里都不能当归属依据。
+# 它们只能靠 accounts（HF / GitHub）这种结构化归属命中。
+GENERIC_NAMES = {"humanoid", "figure", "foundation", "genesis", "apollo", "atlas",
+                 "optimus", "digit", "phoenix", "carbon", "field ai", "sunday"}
+
+# 早报串烧：一条标题里塞七八家公司，命中任何一家都没意义
+RE_ROUNDUP = re.compile(r"[;；]")
+
+
+def is_roundup(title: str) -> bool:
+    return len(RE_ROUNDUP.findall(title)) >= 2
+
+
 def match_org(text: str, orgs: list[dict]) -> dict | None:
-    """命中 registry 主体。短名不参与，避免 1X 这类误命中。"""
+    """命中 registry 主体。
+
+    先按候选名长度降序，长名优先——「UBTECH Walker」里既有 UBTECH 又有普通词，
+    要认成优必选而不是别的。普通词公司名不参与文本匹配。
+    """
+    cands: list[tuple[str, dict]] = []
     for org in orgs:
         for cand in [org["zh"], org["en"], *org["aliases"]]:
-            if len(cand) >= 3 and cand in text:
-                return {"id": org["id"], "zh": org["zh"], "matched": cand}
+            if len(cand) >= 3 and cand.lower() not in GENERIC_NAMES:
+                cands.append((cand, org))
+    cands.sort(key=lambda x: -len(x[0]))
+    for cand, org in cands:
+        if cand in text:
+            return {"id": org["id"], "zh": org["zh"], "matched": cand}
     return None
 
 
@@ -175,6 +197,16 @@ def fetch_arxiv(query: str, max_results: int) -> list[dict]:
     return out
 
 
+# 实验日志的命名特征：_test_、纯时间戳、debug/tmp、纯数字 id
+RE_HF_JUNK = re.compile(r"(_test_|_test$|\d{8}_\d{6}|debug|tmp|scratch|^\d+$)", re.I)
+
+# 搜索结果只要最近这些天的。Exa 会翻出半年前的旧闻，每日盯梢报旧闻就是噪音。
+# 没日期的保留——招投标公告页常不带日期，宁可多看一眼。
+SEARCH_MAX_AGE_DAYS = 30
+# 同一主体同类超过这个数就聚成一条「批量发布」
+HF_BATCH_MIN = 3
+
+
 def fetch_huggingface(orgs: list[dict], days: int = 14) -> list[dict]:
     """盯 registry 里填了 accounts.huggingface 的主体。
 
@@ -196,23 +228,106 @@ def fetch_huggingface(orgs: list[dict], days: int = 14) -> list[dict]:
             except Exception as exc:  # noqa: BLE001
                 print(f"  ! HF {slug}/{kind} 取不到：{type(exc).__name__}", file=sys.stderr)
                 continue
+            fresh = []
             for it in items if isinstance(items, list) else []:
                 created = (it.get("createdAt") or "")[:19]
                 if created and created < cutoff[:19]:
                     continue
-                rid = it.get("id", "")
-                path = "datasets/" if kind == "datasets" else ""
+                name = it.get("id", "").split("/")[-1]
+                # 实验日志不是发布：带 _test_ 或 20260921_194739 这种时间戳的名字直接丢
+                if RE_HF_JUNK.search(name):
+                    continue
+                fresh.append((created[:10], name, it))
+
+            path = "datasets/" if kind == "datasets" else ""
+            # 批量上传聚成一条。宇树一周推 58 个数据集，一条一个 issue 就是垃圾；
+            # 而「批量发布 N 个数据集」本身才是那个值得记的事件。
+            if len(fresh) > HF_BATCH_MIN:
+                dates = sorted(d for d, _, _ in fresh)
+                names = [n for _, n, _ in fresh]
                 out.append({
                     "source": f"Hugging Face · {slug}",
                     "tier": "official",
-                    "title": f"{org['zh']}发布{label} {rid.split('/')[-1]}",
+                    "title": f"{org['zh']}批量发布 {len(fresh)} 个{label}（{dates[0]}～{dates[-1]}）",
+                    "url": f"https://huggingface.co/{slug}",
+                    "date": dates[-1],
+                    "summary": "含：" + "、".join(names[:8]) + ("…" if len(names) > 8 else ""),
+                    "kind": "dataset_release" if kind == "datasets" else "publication",
+                    "org": {"id": org["id"], "zh": org["zh"], "matched": slug},
+                })
+                continue
+            for created, name, it in fresh:
+                rid = it.get("id", "")
+                out.append({
+                    "source": f"Hugging Face · {slug}",
+                    "tier": "official",
+                    "title": f"{org['zh']}发布{label} {name}",
                     "url": f"https://huggingface.co/{path}{rid}",
-                    "date": created[:10],
+                    "date": created,
                     "summary": f"许可 {(it.get('cardData') or {}).get('license', '未标')}；"
                                f"标签 {'、'.join((it.get('tags') or [])[:6])}",
                     "kind": "dataset_release" if kind == "datasets" else "publication",
                     "org": {"id": org["id"], "zh": org["zh"], "matched": slug},
                 })
+    return out
+
+
+def fetch_exa(queries: list[str], num_results: int) -> list[dict]:
+    """Exa 语义搜索，Agent-Reach 的搜索渠道。
+
+    调用方式就是 Agent-Reach 的 SKILL 教 agent 用的那条命令，不绕过它。
+    补的是 RSS 的盲区：媒体 feed 只覆盖两家，搜索能扫到全网。
+
+    没装 mcporter 就静默跳过——它是可选源，缺了不该让整轮盯梢失败。
+    """
+    import shutil
+    import subprocess
+
+    if not shutil.which("mcporter"):
+        print("  · mcporter 未安装，跳过 Exa（npm install -g mcporter）", file=sys.stderr)
+        return []
+
+    out: list[dict] = []
+    for q in queries:
+        try:
+            r = subprocess.run(
+                ["mcporter", "call", "exa.web_search_exa",
+                 f"query={q}", f"numResults={num_results}", "--output", "json"],
+                capture_output=True, text=True, timeout=60,
+            )
+            if r.returncode != 0:
+                print(f"  ! Exa「{q}」失败：{r.stderr.strip()[:80]}", file=sys.stderr)
+                continue
+            payload = json.loads(r.stdout)
+            text = "\n".join(c.get("text", "") for c in payload.get("content", []))
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! Exa「{q}」异常：{type(exc).__name__}", file=sys.stderr)
+            continue
+
+        # 返回体是固定格式的文本块：Title / URL / Published / Author / Highlights，块间用 --- 分隔
+        for block in re.split(r"\n---\n", text):
+            title = re.search(r"^Title:\s*(.+)$", block, re.M)
+            url = re.search(r"^URL:\s*(\S+)$", block, re.M)
+            pub = re.search(r"^Published:\s*(\d{4}-\d{2}-\d{2})", block, re.M)
+            hl = re.search(r"Highlights:\s*\n(.*)", block, re.S)
+            if not (title and url):
+                continue
+            summary = re.sub(r"\s+", " ", (hl.group(1) if hl else ""))[:300]
+            if pub:
+                age = (datetime.now(timezone.utc).date()
+                       - datetime.strptime(pub.group(1), "%Y-%m-%d").date()).days
+                if age > SEARCH_MAX_AGE_DAYS:
+                    continue
+            out.append({
+                "source": f"Exa · {q}",
+                "tier": "media",
+                "title": norm(title.group(1)).lstrip("# ").strip(),
+                "url": url.group(1),
+                "date": pub.group(1) if pub else "",
+                "summary": summary,
+                "kind": "news",
+            })
+        time.sleep(1)
     return out
 
 
@@ -324,6 +439,54 @@ def fetch_upstream(known_insts: set[str]) -> tuple[list[dict], set[str]]:
 
 # ----------------------------------------------------------------- 产出
 
+def _day(date: str) -> str:
+    """把各种日期写法压成 YYYY-MM-DD 或空，供聚类用。"""
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", date or "")
+    if m:
+        return m.group(0)
+    m = re.search(r"(\d{1,2}) (\w{3}) (\d{4})", date or "")   # RSS 的 "21 Sep 2026"
+    if m:
+        months = {n: i for i, n in enumerate(
+            ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
+        mo = months.get(m.group(2)[:3].title())
+        if mo:
+            return f"{int(m.group(3)):04d}-{mo:02d}-{int(m.group(1)):02d}"
+    return ""
+
+
+def cluster_hits(hits: list[tuple[str, dict]]) -> list[list[dict]]:
+    """同主体、同事件类型、发生日期相差 ≤3 天的合成一件事。
+
+    Humanoid 融资被 8 家媒体报了 8 遍，超维动力 2 遍——那是一件事不是八件。
+    HF 的批量发布已经在源头聚过，这里主要合新闻。
+    """
+    buckets: dict[tuple, list[dict]] = {}
+    for _, it in hits:
+        d = _day(it.get("date", ""))
+        # 日期粗到 3 天桶，同一件事不同媒体发稿日差一两天很常见
+        day_bucket = d[:8] + str(int(d[8:10]) // 3) if d else "?"
+        key = (it["org"]["id"], it.get("kind", "news"), day_bucket)
+        buckets.setdefault(key, []).append(it)
+    groups = list(buckets.values())
+    # 每组按来源等级排：official > primary > media > aggregator，取最好的当头条
+    rank = {"official": 0, "primary": 1, "media": 2, "aggregator": 3}
+    for g in groups:
+        g.sort(key=lambda x: (rank.get(x.get("tier"), 9), x.get("date", "")))
+    groups.sort(key=lambda g: g[0].get("date", ""), reverse=True)
+    return groups
+
+
+def issue_body_group(group: list[dict]) -> str:
+    """一件事多个来源 → 一条 issue。头条填表单字段，其余来源附在补充里。"""
+    head = group[0]
+    body = issue_body(head)
+    if len(group) > 1:
+        others = "\n".join(f"- [{x['title'][:70]}]({x['url']}) — {x['source']}" for x in group[1:])
+        body += (f"\n\n### 其他来源（{len(group) - 1} 个，同一件事）\n\n{others}\n\n"
+                 "多个独立来源报了同一件事，入库时 corroboration 可填 multi。")
+    return body
+
+
 def issue_body(item: dict) -> str:
     """按「手工事件」表单格式产出，这样 make intake 能直接解析。"""
     org = (item.get("org") or {}).get("zh", "")
@@ -364,6 +527,8 @@ def main() -> int:
         items += fetch_arxiv(conf["arxiv"]["query"], conf["arxiv"].get("max_results", 40))
     if (conf.get("huggingface") or {}).get("enabled"):
         items += fetch_huggingface(orgs)
+    if (conf.get("exa") or {}).get("enabled"):
+        items += fetch_exa(conf["exa"].get("queries") or [], conf["exa"].get("num_results", 8))
     if (conf.get("upstream") or {}).get("enabled"):
         up_items, insts = fetch_upstream(insts)
         items += up_items
@@ -377,6 +542,11 @@ def main() -> int:
             skipped += 1
             continue
         blob = f"{it['title']} {it.get('summary','')}"
+        # 早报串烧提到七八家公司，命中任何一家都没意义，直接进 digest 让人扫一眼
+        if is_roundup(it["title"]) and not it.get("org"):
+            if kw.search(blob):
+                digest.append((k, it))
+            continue
         org = it.get("org") or match_org(blob, orgs)
         if org:
             it["org"] = org
@@ -393,22 +563,28 @@ def main() -> int:
         elif kw.search(blob):
             digest.append((k, it))
 
+    # 同一件事常被多家媒体报，聚成一条：一个 issue、多个来源 URL。
+    # 多个独立来源正是 corroboration=multi 的依据，聚合是加分不是妥协。
+    groups = cluster_hits(hits)
+
     papers = sum(1 for it in items if it["kind"] == "paper")
     print(f"抓到 {len(items)} 条（其中论文 {papers}），去重跳过 {skipped}，"
-          f"命中主体 {len(hits)}，仅命中关键词 {len(digest)}")
+          f"命中主体 {len(hits)} 条 → 聚成 {len(groups)} 件事，仅命中关键词 {len(digest)}")
 
-    for _, it in hits:
-        print(f"  ◆ [{it['org']['zh']}] {it['date']}  {it['title'][:52]}  ({it['source']})")
+    for g in groups:
+        head = g[0]
+        extra = f"  ＋{len(g) - 1} 个来源" if len(g) > 1 else ""
+        print(f"  ◆ [{head['org']['zh']}] {head['date']}  {head['title'][:50]}{extra}")
     for _, it in digest:
         print(f"  · {it['date']}  {it['title'][:52]}  ({it['source']})")
 
     if args.emit:
         out = Path(args.emit)
         out.mkdir(parents=True, exist_ok=True)
-        for i, (_, it) in enumerate(hits):
-            (out / f"hit-{i:02d}.md").write_text(issue_body(it), encoding="utf-8")
+        for i, g in enumerate(groups):
+            (out / f"hit-{i:02d}.md").write_text(issue_body_group(g), encoding="utf-8")
             (out / f"hit-{i:02d}.title").write_text(
-                f"[事件] {it['org']['zh']}：{it['title'][:40]}", encoding="utf-8")
+                f"[事件] {g[0]['org']['zh']}：{g[0]['title'][:40]}", encoding="utf-8")
         if digest:
             lines = ["以下线索命中了关键词但**没匹配到 registry 主体**，多半是还没收录的公司。",
                      "逐条判断：该收的用「新主体」模板建条目，不该收的直接忽略。", ""]

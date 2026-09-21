@@ -103,6 +103,21 @@ def judge(org: dict, names: list[str]) -> tuple[bool, str]:
     if not target:
         return False, "HF 组织没有可比对的名字"
 
+    ok, why = name_matches(target, names)
+    return (True, why) if ok else (False, f"名字对不上（HF: {full or slug}）")
+
+
+def name_matches(target: str, names: list[str]) -> tuple[bool, str]:
+    """比对归一化后的名字。resolve_github 也用这个。
+
+    包含匹配要求是**前缀**而不是任意子串：机构显示名通常以公司名开头
+    （AgiBot World、Astribot Developers、Cloudminds Robot Inc）。
+    任意子串会出事——「Booster Robotics」剥掉后缀剩 booster，
+    嵌进「Rock 'Em Robotics Booster Club」（一个中学社团）就匹上了。
+
+    已知软肋：「X for Y」形态的衍生组织会过前缀（Generalist-AI-for-Healthcare）。
+    靠下一道「组织没发过东西不填」和 --write 前的人工过目兜住，不再加规则。
+    """
     for n in names:
         cn = canon(n)
         if len(cn) < 3:
@@ -110,9 +125,9 @@ def judge(org: dict, names: list[str]) -> tuple[bool, str]:
         if cn == target:
             return True, f"精确匹配 {n}"
         short, long = (cn, target) if len(cn) <= len(target) else (target, cn)
-        if len(short) >= MIN_STEM and short in long:
-            return True, f"包含匹配 {n} ↔ {full or slug}"
-    return False, f"名字对不上（HF: {full or slug}）"
+        if len(short) >= MIN_STEM and long.startswith(short):
+            return True, f"前缀匹配 {n} ↔ {target}"
+    return False, "名字对不上"
 
 
 def main() -> int:

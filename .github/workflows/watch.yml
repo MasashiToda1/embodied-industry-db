@@ -28,6 +28,14 @@ jobs:
 
       - run: pip install --quiet pyyaml httpx
 
+      # Exa 语义搜索，来自 Agent-Reach 的搜索渠道（mcporter + Exa MCP，免费无 key）。
+      # 装不上也不阻塞——watch.py 里它是可选源，缺了会跳过。
+      - name: 装 Exa 搜索（mcporter）
+        continue-on-error: true
+        run: |
+          npm install -g mcporter
+          mcporter config add exa https://mcp.exa.ai/mcp --scope home
+
       - name: 扫源
         run: python scripts/watch.py --emit /tmp/watch-out
 

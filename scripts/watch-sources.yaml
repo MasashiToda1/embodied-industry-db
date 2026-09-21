@@ -21,6 +21,26 @@ arxiv:
   query: 'cat:cs.RO AND (abs:"humanoid" OR abs:"loco-manipulation" OR abs:"vision-language-action" OR abs:"whole-body")'
   max_results: 40
 
+# Exa 语义搜索。来自 Agent-Reach（https://github.com/Panniantong/Agent-Reach）的搜索渠道，
+# 底下是 mcporter + Exa MCP，免费无 key。调用方式就是 Agent-Reach 的 SKILL 教 agent 用的那条：
+#   mcporter call exa.web_search_exa query="..." numResults=N
+#
+# 它补的是 RSS 的盲区：首次实测一条「具身智能 融资」就命中了智身科技 B 轮、地瓜 4 亿美元 C 轮，
+# 两家都在 registry 里，两条都没出现在雷峰网和量子位的 feed 里。
+#
+# 需要：npm install -g mcporter && mcporter config add exa https://mcp.exa.ai/mcp --scope home
+exa:
+  enabled: true
+  num_results: 8
+  # 每天跑这几条。宁少勿多——每条返回 8 个结果，查询越多噪音越多。
+  queries:
+    - 具身智能 人形机器人 融资
+    - 人形机器人 发布 新品
+    - 具身智能 中标 采购
+    - 机器人 数据采集 训练场
+    - humanoid robot funding round
+    - humanoid robot deployment customer
+
 # 盯 Robotics_Notebooks，但只盯两件事：新增机构、能补上我们空着的 ref。
 # 他一天几十个提交全是技术知识 ingest，全量接进来就是噪音，
 # 而且我们定过不重建技术知识、只引用。

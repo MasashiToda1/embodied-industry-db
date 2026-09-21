@@ -172,7 +172,22 @@ make preview ORG=unitree
 - **新闻只命中关键词** → 汇总成一条 digest，多半是还没收录的公司，逐条判
 - **论文没命中主体** → 直接丢弃，连 digest 都不进。本库只收产业主体，而 cs.RO 每天几十篇绝大多数是纯高校成果，全放进来候选表立刻变噪音
 
-源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
+源清单在 [`scripts/watch-sources.yaml`](scripts/watch-sources.yaml)，改它不用动代码。当前五类源：媒体 RSS、arXiv、Hugging Face（按主体账号）、Exa 语义搜索、上游 Robotics_Notebooks。
+
+**Exa 来自 [Agent-Reach](https://github.com/Panniantong/Agent-Reach)。** 那个项目是路由器不是抓取器——每个渠道底下是一个现成工具，它只检查装了没、教 agent 怎么调。评估过它全部 16 个渠道，对本库有增量价值的只有 Exa 搜索（底下是 `mcporter` + Exa MCP，免费无 key）；GitHub 渠道就是 `gh CLI`、RSS 就是 `feedparser`、网页就是 Jina Reader，都不是新能力。Boss直聘 和 LinkedIn 渠道能拿招聘 JD，但要真 Chrome 加登录态，进不了 Actions，只能给人工入库提效。
+
+Exa 补的是 RSS 的盲区：媒体 feed 只有两家，一条「具身智能 融资」搜索首次实测就命中了智身科技 B 轮和地瓜 4 亿美元 C 轮，两条都没出现在 feed 里。
+
+### 噪音控制
+
+第一版 Exa 上线时一轮命中 131 条，全是垃圾的话人就不看了。现在的规则：
+
+- **HF 批量上传聚成一条**：宇树一周推 63 个数据集，报成「批量发布 63 个数据集」一件事；带 `_test_`、时间戳、纯数字 id 的实验日志直接丢
+- **同一件事多来源聚成一条 issue**：主体相同、类型相同、日期相差 ≤3 天的合并，其他来源附在补充里——多源正是 `corroboration: multi` 的依据
+- **普通词公司名不参与文本匹配**：Humanoid、Figure、Foundation 这类名字出现在任何标题里都不能当归属，只能靠 `accounts` 结构化命中
+- **长名优先**：「UBTECH Walker」要认成优必选，不能被别的短词抢走
+- **早报串烧进 digest 不进候选**：一条标题提七八家公司的，命中任何一家都没意义
+- **搜索结果只留 30 天内**：Exa 会翻出半年前的旧闻**想让某家公司被自动盯上，就去把它 registry 条目的 `accounts.huggingface` 补上**——HF 是精度最高的源，许可、模态、标签全是结构化字段，发布方就是主体本身，不存在归属歧义。
 
 去重状态存在 `.watch-state.json` 并回写仓库（CI 每次都是全新环境，不回写就会天天重报）。另外还会拿已入库事件的 evidence URL 做一道过滤，已经收过的不再报。
 
