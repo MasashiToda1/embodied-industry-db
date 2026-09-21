@@ -10,3 +10,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: dobot
+accounts:
+  huggingface: Dobot-robot

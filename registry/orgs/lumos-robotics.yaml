@@ -8,3 +8,5 @@ layers:
 - data
 upstream:
   robotics_notebooks_institution: lumos
+accounts:
+  huggingface: LumosRobotics-FastUMIPro

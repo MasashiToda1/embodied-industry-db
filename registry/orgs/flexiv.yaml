@@ -9,3 +9,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: flexiv
+accounts:
+  huggingface: flexivrobotics

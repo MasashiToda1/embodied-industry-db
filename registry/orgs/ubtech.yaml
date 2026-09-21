@@ -12,3 +12,5 @@ layers:
 - integration
 upstream:
   robotics_notebooks_institution: ubtech
+accounts:
+  huggingface: UBTECH-Robotics

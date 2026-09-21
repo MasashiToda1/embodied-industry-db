@@ -2,10 +2,18 @@ id: agibot
 names:
   zh: 智元机器人
   en: AgiBot
-  aliases: [AgiBot, 上海智元新创技术有限公司, 智元]
+  aliases:
+  - AgiBot
+  - 上海智元新创技术有限公司
+  - 智元
 founded: 2023
 hq:
   country: CN
   city: 上海
 status: active
-layers: [embodiment, foundation, data]
+layers:
+- embodiment
+- foundation
+- data
+accounts:
+  huggingface: agibot-world

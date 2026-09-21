@@ -8,3 +8,5 @@ names:
 status: active
 layers:
 - embodiment
+accounts:
+  huggingface: xpeng-robotics

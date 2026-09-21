@@ -8,3 +8,5 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: robotis
+accounts:
+  huggingface: ROBOTIS

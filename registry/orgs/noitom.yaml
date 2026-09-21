@@ -11,3 +11,5 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: noitom
+accounts:
+  huggingface: noitomrobotics

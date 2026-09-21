@@ -5,3 +5,5 @@ names:
 status: active
 layers:
 - foundation
+accounts:
+  huggingface: sudo-ai

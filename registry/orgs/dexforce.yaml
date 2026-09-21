@@ -9,3 +9,5 @@ status: active
 layers:
 - foundation
 - simulation
+accounts:
+  huggingface: DexForceAI

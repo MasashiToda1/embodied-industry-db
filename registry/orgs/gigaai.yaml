@@ -8,3 +8,5 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: gigaai
+accounts:
+  huggingface: GigaAI-Research
