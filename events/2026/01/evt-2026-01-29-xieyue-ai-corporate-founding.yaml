@@ -1,0 +1,18 @@
+id: evt-2026-01-29-xieyue-ai-corporate-founding
+date: '2026-01-29'
+date_precision: day
+type: corporate
+orgs:
+- id: xieyue-ai
+  role: subject
+title:
+  zh: 杭州斜跃智能科技有限公司成立
+summary:
+  zh: 雷峰网报道，理想汽车前 AI 首席科学家陈伟与理想汽车前产品线总裁张骁创办的杭州斜跃智能科技有限公司成立于 2026 年 1 月 29 日，聚焦家庭具身智能机器人。陈伟任董事长兼 CTO，张骁任 CEO。
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2026-05-06/doc-inhwxnuk8393542.shtml
+  publisher: 新浪科技（转载雷峰网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/finance-2026-01-29-xieyue-ai-founding-angel.html
+corroboration: single

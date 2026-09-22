@@ -1,0 +1,21 @@
+id: evt-2025-11-03-gigaai-funding-a1-round
+date: '2025-11-03'
+date_precision: day
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成亿元级 A1 轮融资，华为哈勃、华控基金联合投资
+summary:
+  zh: 证券时报网 11 月 3 日报道，具身智能基础模型企业极佳视界近日完成新一轮亿元级 A1 轮融资，由华为哈勃、华控基金联合投资。此前 8 月底公司宣布完成 Pre-A 与 Pre-A+ 连续两轮数亿元融资。
+counterparties:
+- 华为哈勃
+- 华控基金
+evidence:
+- url: https://www.stcn.com/article/detail/3476346.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-03-gigaai-a1-round.html
+corroboration: single

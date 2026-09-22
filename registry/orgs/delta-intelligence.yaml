@@ -2,9 +2,29 @@ id: delta-intelligence
 names:
   zh: 德塔智能
   en: Delta Intelligence
+  aliases:
+  - 北京德塔源创智能科技有限公司
 status: active
 layers:
 - foundation
 - locomotion
 accounts:
   github: Delta-Intelligence-AI
+founded: 2026-01
+hq:
+  country: CN
+  city: 北京
+description: 孵化自北京通用人工智能研究院的人形机器人基础模型公司，做跨本体全身协同操作模型与头戴式数采设备 Delta D1，主体为北京德塔源创智能科技有限公司。
+sources:
+- url: https://www.bjnews.com.cn/detail/1785246449129444.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新京报 2026-07-28 报道，2026 年 1 月成立，创始人马晓健
+- url: https://www.gkzhan.com/news/detail/195721.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 转载德塔智能公众号 2026-09-18，主体名称「北京德塔源创智能科技有限公司」
+- url: https://auto.ifeng.com/c/8wWaZoXYSdm
+  tier: media
+  retrieved: '2026-09-22'
+  note: 网通社 2026-09-18，孵化自北京通用人工智能研究院；官网未查到

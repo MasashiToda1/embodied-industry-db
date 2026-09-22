@@ -1,0 +1,24 @@
+id: evt-2025-12-23-modelbest-funding-2025-12-round
+date: '2025-12-23'
+date_precision: day
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能完成数亿元融资，京国瑞、国科投资等参与
+summary:
+  zh: 12 月 23 日，面壁智能宣布已于近期完成数亿元融资，本次融资由京国瑞、国科投资、中金保时捷基金、米聚资本与和基投资共同参与，募集资金用于端侧高效大模型研发与商业化。
+counterparties:
+- 京国瑞
+- 国科投资
+- 中金保时捷基金
+- 米聚资本
+- 和基投资
+evidence:
+- url: https://stcn.com/article/detail/3553818.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/stcn-2025-12-23-modelbest-2025-12-round.html
+corroboration: single

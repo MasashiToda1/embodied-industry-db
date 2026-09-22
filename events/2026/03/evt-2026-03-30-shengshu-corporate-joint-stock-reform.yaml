@@ -1,0 +1,18 @@
+id: evt-2026-03-30-shengshu-corporate-joint-stock-reform
+date: '2026-03-30'
+date_precision: day
+type: corporate
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技完成股份制改造，更名为北京生数科技股份有限公司
+summary:
+  zh: 36 氪报道，2026 年 3 月 30 日生数科技公司主体完成股份制改造，由「北京生数科技有限公司」变更为「北京生数科技股份有限公司（未上市）」。
+evidence:
+- url: https://www.36kr.com/p/3947480095430272
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/36kr-2026-03-30-shengshu-joint-stock-ref.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2026-02-05-shengshu-funding-a-plus-round
+date: '2026-02-05'
+date_precision: day
+type: funding
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技完成超 6 亿元 A+ 轮融资
+summary:
+  zh: 2 月 5 日，北京生数科技有限公司宣布完成超过 6 亿元人民币 A+ 轮融资，由中关村科学城公司和星连资本领投，万兴科技、视觉中国、拓尔思战略投资，启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等老股东跟投。
+counterparties:
+- 中关村科学城公司
+- 星连资本
+- 万兴科技
+- 视觉中国
+- 拓尔思
+- 启明创投
+- 北京市人工智能产业投资基金
+- 卓源亚洲
+- 建发新兴投资
+- 淮海投资
+evidence:
+- url: https://www.ncsti.gov.cn/kjdt/xwjj/202602/t20260208_237672.html
+  publisher: 北京市科委·中关村管委会网站（转载生数科技公众号）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/ncsti-2026-02-05-shengshu-a-plus-round.html
+corroboration: single

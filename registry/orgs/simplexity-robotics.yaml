@@ -6,3 +6,19 @@ status: active
 layers:
 - foundation
 - embodiment
+accounts:
+  site: https://www.simplexityrobotics.com
+founded: 2025-07
+hq:
+  country: CN
+  city: 杭州
+description: 理想汽车前智驾团队创立的具身智能公司，做世界模型与 VLA 一体化的自研基座模型 LaST 系列和全场景机器人 i7 Pro，主体为杭州至简动力科技有限公司。
+sources:
+- url: https://www.simplexityrobotics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网「公司概况」，2025 年 7 月底成立；办公地北京·上海·苏州
+- url: https://www.jiemian.com/article/14088655.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 界面新闻 2026-03-09 报道，主体「杭州至简动力科技有限公司」成立于 2025 年 7 月，法定代表人贾鹏

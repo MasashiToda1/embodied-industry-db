@@ -1,0 +1,22 @@
+id: evt-2026-09-deep-leap-funding-angel-round
+date: 2026-09
+date_precision: month
+type: funding
+orgs:
+- id: deep-leap
+  role: subject
+title:
+  zh: 深度跃迁完成复星创富独家投资的天使轮融资
+summary:
+  zh: 腾讯新闻 9 月 4 日刊发的 DELE-w0.5 发布稿中称，深度跃迁已完成由复星创富独家投资的天使轮融资，金额与时间未披露。
+counterparties:
+- 复星创富
+date_basis: derived
+date_as_stated: 腾讯新闻（2026-09-04）原文「已完成由复星创富独家投资的天使轮融资」，融资时间未写
+evidence:
+- url: https://news.qq.com/rain/a/20260904A06UMA00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/news-2026-09-04-deep-leap-dele-w05.html
+corroboration: single

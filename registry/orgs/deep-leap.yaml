@@ -2,6 +2,23 @@ id: deep-leap
 names:
   zh: 深度跃迁
   en: Deep Leap
+  aliases:
+  - DeepLeap
 status: active
 layers:
 - foundation
+accounts:
+  site: https://deepleap-x.com
+hq:
+  country: CN
+  city: 深圳
+description: 跨本体具身大脑平台公司，研发 DELE 系列世界表征模型，主体为深圳市深度跃迁科技有限公司。
+sources:
+- url: https://deepleap-x.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，地址深圳市宝安区前海科兴科学园 9 栋 701，产品 DELE
+- url: https://news.qq.com/rain/a/20260904A06UMA00
+  tier: media
+  retrieved: '2026-09-22'
+  note: 腾讯新闻 2026-09-04，公司定位与天使轮融资；成立时间未见公开来源，未填

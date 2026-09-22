@@ -1,0 +1,23 @@
+id: evt-2026-07-08-miaodong-product-launch-beni-kickstarter
+date: '2026-07-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: miaodong
+  role: subject
+title:
+  zh: 妙动科技首款消费级跟拍机器人 Beni 在 Kickstarter 上线众筹
+summary:
+  zh: 7 月 8 日，深圳妙动科技（Mondo Robotics）首款消费级产品 Beni 在 Kickstarter 上线众筹，上线不到一天金额达 122 万美元、支持者近 2000 人。Beni 是一款自主跟随的轮式摄影机器人，可自动识别并跟随人或狗进行追踪拍摄。
+axes:
+  target_scene:
+  - home
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.baijing.cn/article/55952
+  publisher: 白鲸出海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/baijing-2026-07-08-miaodong-beni-kickstarte.html
+corroboration: single

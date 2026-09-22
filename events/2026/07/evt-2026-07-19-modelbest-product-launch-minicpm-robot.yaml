@@ -1,0 +1,28 @@
+id: evt-2026-07-19-modelbest-product-launch-minicpm-robot
+date: '2026-07-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: modelbest
+  role: subject
+- id: unitree
+  role: supplier
+title:
+  zh: 面壁智能在 WAIC 2026 发布首个具身智能模型系列 MiniCPM-Robot
+summary:
+  zh: WAIC 2026 期间，面壁智能发布并开源首个具身智能系列成果 MiniCPM-Robot，包括面向机器人操作的通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）和面向移动机器人跟踪导航的 MiniCPM-RobotTrack（与南京大学合作，适配宇树 Go2 Edu，支持本地断网部署）。
+counterparties:
+- 南京大学
+- OpenBMB
+axes:
+  model_form:
+  - end2end-vla
+  hardware_strategy:
+  - software-only
+evidence:
+- url: https://www.zhidx.com/p/577495.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zhidx-2026-07-19-modelbest-minicpm-robot.html
+corroboration: single

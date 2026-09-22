@@ -1,0 +1,40 @@
+id: evt-2026-06-gigaai-funding-b2-round
+date: 2026-06
+date_precision: month
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成 10 亿元 B2 轮融资，狮城资本领投
+summary:
+  zh: 网易科技 6 月 15 日报道，极佳视界近日完成 10 亿元 B2 轮融资，由狮城资本领投，中比基金、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等跟投，老股东国中资本、达晨财智、图灵资管追加投资。2026 年 3 月至 6 月三轮累计融资 35 亿元。
+counterparties:
+- 狮城资本
+- 中比基金
+- 建投投资
+- 万向钱潮
+- 复星锐正
+- 华盖创赢
+- 金创投
+- 德屹资本
+- 华仓资本
+- 元石基金
+- 国中资本
+- 达晨财智
+- 图灵资管
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.163.com/tech/article/KVF97C0R00097U7T.html
+  publisher: 网易科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/163-2026-06-gigaai-b2-round-163.html
+- url: https://news.pedaily.cn/202606/565201.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-gigaai-three-rounds.html
+corroboration: multi

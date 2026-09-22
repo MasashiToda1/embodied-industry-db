@@ -1,0 +1,30 @@
+id: evt-2026-09-18-delta-intelligence-partnership-changan-tianshu
+date: '2026-09-18'
+date_precision: day
+type: partnership
+orgs:
+- id: delta-intelligence
+  role: subject
+title:
+  zh: 德塔智能与长安天枢智能机器人签署战略合作备忘录，面向汽车制造场景
+summary:
+  zh: 北京德塔源创智能科技有限公司与长安天枢智能机器人公司签署战略合作备忘录（MOU），面向汽车制造工业场景打通「场景需求—数据采集—模型训练端侧部署—真机验证—数据回流—持续优化」研发闭环，推进人形机器人在汽车总装、物流转运、现场巡检、装配作业、上下料、质量检验等场景的 PoC 验证与示范应用。
+counterparties:
+- 长安天枢智能机器人公司
+axes:
+  target_scene:
+  - industrial-manufacturing
+date_basis: derived
+date_as_stated: 智能制造网转载稿（2026-09-18）与网通社（2026-09-18）原文均为「近日」签署，取报道日
+evidence:
+- url: https://www.gkzhan.com/news/detail/195721.html
+  publisher: 智能制造网（转载德塔智能公众号）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/gkzhan-2026-09-18-delta-intelligence-chang.html
+- url: https://auto.ifeng.com/c/8wWaZoXYSdm
+  publisher: 凤凰网汽车（网通社）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/auto-2026-09-18-delta-intelligence-chang.html
+corroboration: multi

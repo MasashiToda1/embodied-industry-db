@@ -7,3 +7,21 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: modelbest
+accounts:
+  site: https://www.modelbest.cn
+  github: OpenBMB
+  huggingface: openbmb
+founded: 2022-08
+hq:
+  country: CN
+  city: 北京
+description: 端侧大模型公司，主体为北京面壁智能科技有限责任公司，做 MiniCPM 系列模型，2026 年 7 月起推出具身模型系列 MiniCPM-Robot。
+sources:
+- url: https://www.modelbest.cn/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，公司地址北京市海淀区清华科技园科建大厦 3 层，产品线含 MiniCPM-Robot
+- url: https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpkaqh5968732.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 澎湃新闻 2026-02-28 报道，成立于 2022 年 8 月，主体名称

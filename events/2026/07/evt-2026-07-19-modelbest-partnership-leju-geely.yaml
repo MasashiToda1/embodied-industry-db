@@ -1,0 +1,26 @@
+id: evt-2026-07-19-modelbest-partnership-leju-geely
+date: '2026-07-19'
+date_precision: day
+type: partnership
+orgs:
+- id: modelbest
+  role: subject
+- id: leju
+  role: counterparty
+title:
+  zh: 面壁智能与乐聚机器人、吉利汽车推出具身智能落地方案
+summary:
+  zh: WAIC 2026 期间面壁智能披露：与吉利汽车合作，将其 VLM 多模态模型与吉利机器人本体、VLA 模型及导航系统集成，落地生产仓储场景；与乐聚机器人联合推出展厅导览 Agent 方案（无网络环境纯端侧运行）和园区巡检方案（识别车辆违停、路面与公共设施异常）。
+counterparties:
+- 吉利汽车
+axes:
+  target_scene:
+  - industrial-manufacturing
+  - commercial-service
+evidence:
+- url: https://finance.sina.com.cn/stock/t/2026-07-23/doc-iniiusma7781160.shtml
+  publisher: 新浪财经（转载智东西）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-19-modelbest-leju-geely.html
+corroboration: single

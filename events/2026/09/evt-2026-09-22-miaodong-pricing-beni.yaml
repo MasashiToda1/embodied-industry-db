@@ -1,0 +1,26 @@
+id: evt-2026-09-22-miaodong-pricing-beni
+date: '2026-09-22'
+date_precision: day
+type: pricing
+orgs:
+- id: miaodong
+  role: subject
+title:
+  zh: 妙动科技官网 Beni 标准套装标价 799 美元，页面显示折扣价 599 美元
+summary:
+  zh: 妙动科技官网 Beni 商品页显示「Beni 标准套装 599.00 美元 799.00 美元」，会员可额外享 20 美元折扣，页面标注交付时间 2026 年 11 月。
+amount:
+  value: 799
+  currency: USD
+axes:
+  delivery_model:
+  - hardware-sale
+date_basis: derived
+date_as_stated: 官网商品页 2026-09-22 抓取时显示「599.00 美元 799.00 美元」，页面未写定价生效日期
+evidence:
+- url: https://www.mondorobotics.com/zh/products/mondo-robotics-beni
+  publisher: 妙动科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/mondorobotic-2026-09-22-miaodong-beni-price.html
+corroboration: single

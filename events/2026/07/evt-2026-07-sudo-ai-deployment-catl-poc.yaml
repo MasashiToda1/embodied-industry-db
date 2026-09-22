@@ -1,0 +1,25 @@
+id: evt-2026-07-sudo-ai-deployment-catl-poc
+date: 2026-07
+date_precision: month
+type: deployment
+orgs:
+- id: sudo-ai
+  role: subject
+title:
+  zh: 苏度科技与宁德时代推进多工位合作，首个工位完成 POC 验证
+summary:
+  zh: 机器之心在 WAIC 2026 期间报道，苏度科技与宁德时代推进多工位合作，覆盖产线中多个操作任务；苏度称项目首个工位已完成 POC 验证，工业抓放成功率达 99.5% 以上。WAIC 工业展区演示的电池组装示例产线来自该合作。
+counterparties:
+- 宁德时代
+axes:
+  target_scene:
+  - industrial-manufacturing
+date_basis: derived
+date_as_stated: 机器之心 WAIC 2026 报道原文「苏度已与宁德时代推进多工位合作……目前项目首个工位已成功完成 POC 验证」，未写具体日期
+evidence:
+- url: https://www.x-techcon.com/article/166309.html
+  publisher: 科技区角（转载机器之心）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/x-techcon-2026-07-sudo-ai-catl-poc.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2026-04-shengshu-funding-b-round
+date: 2026-04
+date_precision: month
+type: funding
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技完成近 20 亿元 B 轮融资，阿里云领投
+summary:
+  zh: 科技日报 4 月 14 日报道，北京生数科技有限公司近日宣布完成近 20 亿元人民币 B 轮融资，由阿里云领投，中网投、九安海棠、好未来、光合创投等战略投资，星连资本、达泰资本、建发新兴投资、BV 百度风投、卓源亚洲等老股东追加投资。
+counterparties:
+- 阿里云
+- 中网投
+- 九安海棠
+- 好未来
+- 光合创投
+- 星连资本
+- 达泰资本
+- 建发新兴投资
+- BV 百度风投
+- 卓源亚洲
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-04/14/content_501842.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stdaily-2026-04-shengshu-b-round.html
+corroboration: single

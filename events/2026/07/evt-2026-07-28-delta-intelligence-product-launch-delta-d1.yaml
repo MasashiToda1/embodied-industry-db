@@ -1,0 +1,25 @@
+id: evt-2026-07-28-delta-intelligence-product-launch-delta-d1
+date: '2026-07-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: delta-intelligence
+  role: subject
+title:
+  zh: 德塔智能发布头戴式全身全景数据采集设备 Delta D1
+summary:
+  zh: 与天使++ 轮融资同期，德塔智能发布头戴式全身全景数据采集设备 Delta D1：佩戴者正常作业时同步采集第一人称全景视觉与全身关节运动轨迹，不依赖机器人本体。新京报报道称德塔智能已与智元、乐聚、星海图、宇树等人形机器人厂商建立合作。
+axes:
+  data_acquisition:
+  - human-video
+  - mocap
+  data_modality:
+  - rgb
+  - joint-trajectory
+evidence:
+- url: https://www.bjnews.com.cn/detail/1785246449129444.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/bjnews-2026-07-28-delta-intelligence-angel.html
+corroboration: single

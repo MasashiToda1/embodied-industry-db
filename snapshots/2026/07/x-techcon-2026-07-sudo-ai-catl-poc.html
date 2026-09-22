@@ -1,0 +1,600 @@
+<!-- 抓取于 2026-09-22T15:41:54.001655+08:00 | 原始链接 https://www.x-techcon.com/article/166309.html | 公众号 未知 | 标题 sudo-ai-catl-poc | sha256:24b59caead1b -->
+<!DOCTYPE html>
+<html lang="zh-cn" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度 - 科技区角</title>
+    <meta name="keywords" content="AI,检验">
+    <meta name="description" content="编辑｜Youli2026 年的 WAIC 已经落幕，具身智能毫无悬念地成为全场最高频、最热闹的关键词">
+    <meta name="author" content="科技区角" />
+    <meta name="SiteName" content="科技区角" />
+    <meta name="SiteDomain" content="www.x-techcon.com" />
+    <meta name="csrf-token" content="DlCilyKIPul43ST7eZdn8CiECdipDluPBjKs82oY">
+
+    <link rel="preload" as="style" href="https://www.x-techcon.com/build/assets/app-C-2EJKFR.css" /><link rel="stylesheet" href="https://www.x-techcon.com/build/assets/app-C-2EJKFR.css" />    <link href="https://www.x-techcon.com/fonts/remixicon.css" rel="stylesheet">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.x-techcon.com/article/166309.html">
+    <script src="https://www.x-techcon.com/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?df567a9d705e4fc2a94072efee13368c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <!--百度自动推送代码开始-->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <!--百度自动推送代码结束-->
+
+</head>
+<body class="flex flex-col min-h-screen">
+<div class="container-main min-w-[1340px] flex-1 flex flex-col">
+<!--导航开始-->
+
+<div class="container-header w-full min-w-[1340px] h-auto bg-[var(--theme-color)] bg-[url(/image/frontend/header-bgs.png)] bg-center bg-auto bg-no-repeat flex justify-center top-0 sticky overscroll-none box-border z-[999]">
+    <header class="nav w-[1280px] h-[100px] flex items-center justify-between">
+        <div class="nav-content h-full flex items-center">
+            <a class="web-logo w-[200px] h-auto" href="https://www.x-techcon.com" target="_blank" rel="noopener noreferrer">
+                <img src="/image/frontend/x-logo.svg" alt="logo" class="logo w-full h-full object-cover overflow-hidden">
+            </a>
+            <ul class="nav-menus flex items-center ml-[20px] h-full">
+                <li class="nav-item mx-[8px] text-white text-base font-medium static">
+                    <a href="https://www.x-techcon.com" target="_blank" rel="noopener noreferrer">首页</a>
+                </li>
+                <li class="nav-item mx-[8px] text-white text-base font-medium static group">
+                    <a class="flex items-center" href="https://www.x-techcon.com/article" target="_blank" rel="noopener noreferrer">资讯<i class="block ri-arrow-down-s-line text-lg ml-[3px] text-white rotate-0 transition-all duration-300 ease-in-out group-hover:-rotate-90 group-hover:text-[var(--theme-blue)]"></i></a>
+                    <div class="nav-dropdown text-base font-normal text-slate-950 p-[30px] absolute top-full left-0 w-full bg-white invisible opacity-0 translate-y-[10px] transition-all duration-300 ease-in-out shadow-[0_2px_50px_-10px_rgba(0,0,0,0.05)] z-[99] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                        <div class="nav-dropdown-inner w-[1280px] m-auto">
+                            <ul class="nav-times-list flex items-center text-base text-slate-900 font-bold">
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/14" target="_blank" rel="noopener noreferrer">展会展览</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/1" target="_blank" rel="noopener noreferrer">低空经济</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/2" target="_blank" rel="noopener noreferrer">人工智能</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/4" target="_blank" rel="noopener noreferrer">机器人</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/5" target="_blank" rel="noopener noreferrer">汽车</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/6" target="_blank" rel="noopener noreferrer">脑机技术</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/7" target="_blank" rel="noopener noreferrer">数码</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/8" target="_blank" rel="noopener noreferrer">集成电路</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/9" target="_blank" rel="noopener noreferrer">航空航天</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/10" target="_blank" rel="noopener noreferrer">产业研究</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/11" target="_blank" rel="noopener noreferrer">互联网</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/12" target="_blank" rel="noopener noreferrer">计量测试</a>
+                                    </li>
+                                                                    <li class="nav-times-item mr-8">
+                                        <a href="https://www.x-techcon.com/article/category/13" target="_blank" rel="noopener noreferrer">RISC-V</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item mx-[8px] text-white text-base font-medium static group">
+                    <a class="flex items-center" href="#" target="_blank" rel="noopener noreferrer">区角策划<i class="block ri-arrow-down-s-line text-lg ml-[3px] text-white rotate-0 transition-all duration-300 ease-in-out group-hover:-rotate-90 group-hover:text-[var(--theme-blue)]"></i></a >
+                    <div class="nav-dropdown text-base font-normal text-slate-950 p-[30px] absolute top-full left-0 w-full bg-white invisible opacity-0 translate-y-[10px] transition-all duration-300 ease-in-out shadow-[0_2px_50px_-10px_rgba(0,0,0,0.05)] z-[99] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                        <div class="nav-dropdown-inner w-[1280px] m-auto">
+                            <ul class="nav-new-list -mx-[10px] grid grid-cols-3 gap-5">
+                                <li class="nav-new-item grid-cols-1 flex items-center gap-3">
+                                    <span class="block w-[6px] h-[6px] bg-[var(--theme-blue)]"></span>
+                                    <a class="text-base font-bold text-slate-900 leading-4 h-x" href="https://www.x-techcon.com/2026lae/index.html" target="_blank" rel="noopener noreferrer">2026（第三届）低空经济产业创新与生态发展大会</a >
+                                </li>
+                                <li class="nav-new-item grid-cols-1 flex items-center gap-3">
+                                    <span class="block w-[6px] h-[6px] bg-[var(--theme-blue)]"></span>
+                                    <a class="text-base font-bold text-slate-900 leading-4 h-x" href="https://www.x-techcon.com/aiar/index.html" target="_blank" rel="noopener noreferrer">2026深圳国际AI+AR智能眼镜产业展</a >
+                                </li>
+                                <li class="nav-new-item grid-cols-1 flex items-center gap-3">
+                                    <span class="block w-[6px] h-[6px] bg-[var(--theme-blue)]"></span>
+                                    <a class="text-base font-bold text-slate-900 leading-4 h-x" href="https://www.x-techcon.com/lasi/index.html" target="_blank" rel="noopener noreferrer">2026低空空间智能与时空信息技术创新发展交流会</a >
+                                </li>
+                                <li class="nav-new-item grid-cols-1 flex items-center gap-3">
+                                    <span class="block w-[6px] h-[6px] bg-[var(--theme-blue)]"></span>
+                                    <a class="text-base font-bold text-slate-900 leading-4 h-x" href="https://www.eet-china.com/events/LAE2025/index.html" target="_blank" rel="noopener noreferrer">2025中国国际低空经济产业创新发展大会</a >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item mx-[8px] text-white text-base font-medium static">
+                    <a href="https://www.x-techcon.com/events" target="_blank" rel="noopener noreferrer">科技展会</a>
+                </li>
+                <li class="nav-item mx-[8px] text-white text-base font-medium static">
+                    <a href="https://www.x-techcon.com/demand-pool" target="_blank" rel="noopener noreferrer">需求池</a>
+                </li>
+                <li class="nav-item mx-[8px] text-white text-base font-medium static">
+                    <a href="https://www.x-techcon.com/meterage" target="_blank" rel="noopener noreferrer">计量查询</a>
+                </li>
+                <li class="nav-item mx-[8px] text-[#11edeb] text-base font-medium static">
+                    <a href="https://www.x-techcon.com/aiar/index.html" target="_blank" rel="noopener noreferrer">RISC-V与智慧可穿戴趋势大会</a>
+                </li>
+                <li class="nav-item mx-[8px] text-[#11edeb] text-base font-medium static">
+                    <a href="https://www.x-techcon.com/2026lae/index.html" target="_blank" rel="noopener noreferrer">低空产业大会</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right flex items-center">
+            <a href="https://www.x-techcon.com/search" target="_blank"><i class="text-white text-lg mr-4 ri-search-2-line"></i></a>
+            <div class="nav-company px-[12px] py-[2px] bg-[var(--theme-blue)] text-white rounded-sm transition-all duration-300 ease-in-out hover:bg-gradient-to-tr hover:from-[var(--theme-blue)] hover:to-[var(--theme-sky)]">
+                <a class="flex items-center text-sm text-white hover:!text-white" href="https://www.x-techcon.com/enterprise/apply_host" target="_blank" rel="noopener noreferrer"><i class="ri-building-2-fill text-lg mr-[3px]"></i>展会论坛合作</a>
+            </div>
+            <div class="nav-company flex items-center ml-[8px] ">
+                                    <!-- 用户未登录时显示的内容 -->
+                    <a class="flex items-center text-sm text-white" href="https://www.x-techcon.com/login?redirect=https%3A%2F%2Fwww.x-techcon.com%2Farticle%2F166309.html" rel="noopener noreferrer">登录丨注册</a>
+                            </div>
+        </div>
+
+    </header>
+</div>
+<!--导航结束-->
+<!--底部通栏广告-->
+    <div id="ad-container">
+    <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 -->
+    <ins data-revive-zoneid="3" data-revive-id="6ad7733efb941e0129dc826bdffb49e3"></ins>
+    <script async src="//ad.x-techcon.com/delivery/asyncjs.php"></script>
+    </div>
+<script src="https://www.x-techcon.com/js/ad.js"></script>
+
+
+<!--内容开始-->
+<div class="container-content w-[1280px] m-auto relative">
+    <div class="breadcrumb my-6">
+        <ul class="text-[var(--theme-gary-200)] flex text-[12px] font-normal">
+            <li>
+                <a target="_blank" href="https://www.x-techcon.com" rel="noopener noreferrer">首页</a>
+                <i class="ri-arrow-right-s-line mx-1"></i>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.x-techcon.com/article" rel="noopener noreferrer">资讯</a>
+                <i class="ri-arrow-right-s-line mx-1"></i>
+            </li>
+            <li class="text-slate-950">
+                <a target="_blank" rel="noopener noreferrer">经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content w-[1280px] m-auto flex justify-between mb-[30px]">
+        <!--左侧内容开始-->
+        <div class="content-main w-[965px] relative">
+            <!--资讯内容开始-->
+            <div class="article-container bg-white p-[30px] rounded-lg">
+                <div class="article-content">
+                    <div class="article-title">
+                        <p class="text-3xl text-slate-950 font-bold leading-[42px]">经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度</p>
+                    </div>
+                    <ul class="article-info flex items-center py-[30px]">
+                        <li class="article-author mr-[30px]">
+                            <a class="text-[var(--theme-gary)] text-sm" href="https://www.x-techcon.com/author/91.html" target="_blank" rel="noopener noreferrer">机器之心</a>
+                        </li>
+                        <li class="article-time">
+                            <span class="text-[var(--theme-gary)] text-sm" >2026-07-21 15:06:29</span>
+                        </li>
+                    </ul>
+                    <div  id="article-body"     class="article-body relative overflow-hidden">
+                        <section style="text-align: center;margin-bottom: 0px;" nodeleaf data-pm-slice="0 0 []" data-nest-level="2"><img class="rich_pages wxw-img js_insertlocalimg" data-ratio="0.04259259259259259" data-s="300,640" data-type="png" data-w="1080" type="block" data-imgfileid="503523662" data-aistatus="1" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9ca6d8b.png" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图1"></section><section style="text-align: center;margin-bottom: 0px;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 12px;color: rgb(153, 153, 153);">编辑｜Youli</span></span></section><section style="text-align: center;margin-bottom: 0px;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></section><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">2026 年的 WAIC 已经落幕，具身智能毫无悬念地成为全场最高频、最热闹的关键词。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">但与往年不同，业界的评判标准正发生微妙变化。人们不再满足于那些在特定布光、固定场景下剪辑出来的炫酷 Demo，转而回归最本质的拷问：当机器人走进现实，能不能稳定、可靠地干活？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">对这个问题，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度科技的回答方式很直接：把展台变成「开放考场」，让观众随便考。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">在苏度的生活展区里，最「忙」的往往不是机器人，而是观众。有人把随手拿着的水杯、钥匙串放上台面，考机器人「会不会抓」；有人趁机器人夹爪关合前一秒，把目标物体挪开半个身位；还有的小朋友干脆把几样东西进行精心组装刁难，看它如何下手。机器人停顿、重新定位、调整姿态 —— 照样把东西稳稳拿起、放好。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">没有固定剧本，没有后期剪辑，也没有封闭物体集合和「请勿触摸」的提示牌。生活展区是整个展台上完全向观众开放交互的区域，「出题权」被交到了每一位路过的人手里。观众出的难题五花八门，机器人的成功率却始终保持在高位。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">这样的展区，在今年的 WAIC 现场并不多见。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><iframe class="video_iframe rich_pages" data-src="https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;action=mpvideo&amp;auto=0&amp;vid=wxv_4614060764935438338" data-mpvid="wxv_4614060764935438338" data-vidtype="2" data-cover="http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F5L8bhP5dIqFwGw5vcQVqicY4XQeeSicoUPI90DibVlyLL71NibjhmDxO5MaA68eLhN4JBvfrEuibVPGIFgONK5KuwuNsvOfxVKxYlJ3hjYiawTfcM%2F0%3Fwx_fmt%3Djpeg" data-ratio="0.5625" data-w="1080"></iframe></section><p style="text-align: left;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 12px;color: rgb(136, 136, 136);font-style: italic;">视频中片段来自小红书网友</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">一旁的工业展区，画风截然不同：这里搭起的是一条锂电池模组组装的示例产线，演示的正是面向工业场景、接近真实生产流程的长程复合任务：</span></span><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">箱体上料、电芯装配、除尘扫码、成品下料</span></span><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">，多台机器人在不同工位之间的协同，整套操作行云流水。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><iframe class="video_iframe rich_pages" data-src="https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;action=mpvideo&amp;auto=0&amp;vid=wxv_4614061498804584450" data-mpvid="wxv_4614061498804584450" data-vidtype="2" data-cover="http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F5L8bhP5dIqHia9DSzeibnt6puNcp1MCm5IibVxAlBCqiavwXEZicLUDXbZS3jZ2jn7ibVlA2aX5wO5E5jUCuTxxTPg7JuMjc8I6rTnTpRrJQPia3R0%2F0%3Fwx_fmt%3Djpeg" data-ratio="1.7648148148148148" data-w="1906"></iframe></section><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">如果只看这些动作，很容易将其理解为单纯的 Demo 演示，但深入了解后会发现，没那么简单。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">这个一分为二的展台，恰好对应着苏度在这个 7 月同时作答的两张考卷：生活展区里，观众现场出题，考的是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">开放环境下的泛化；</span><span textstyle style="font-size: 15px;">而工业展区里那条电池组装产线，并不是为展会凭空搭出来的 —— 它示例的，正是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度与宁德时代合作产线上的真实流程。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">展台上跑的是「样题」，真题在展馆之外的产线上：那里没有观众的掌声与宽容，只有工业级的「验收」标准。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">外界第一次认识苏度，是在今年 4 月。彼时，sudo R1 的开放物体抓取能力给行业留下深刻印象：</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">在开放环境中面对随机物体，机器人能够稳定完成抓取。</span><span textstyle style="font-size: 15px;">抓取，这是一个足够基础、又足够难的技能。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">仅仅 3 个月后，到 WAIC，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度已从单一抓取技能，「泛化」出一套覆盖抓放、插接、装配、柔性操作、移动操作和多机协作的 10 + 技能体系。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><img class="rich_pages wxw-img js_insertlocalimg" data-ratio="0.8814814814814815" data-s="300,640" data-type="jpeg" data-w="1080" type="block" data-imgfileid="503562012" data-aistatus="1" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9d49d09.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图2"></section><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">即便在技术迭代日新月异的具身智能行业，这样的「进化」速度依然惊人。而这背后，指向的是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度坚持的通用具身智能范式：用多元全链路数据和全栈系统，生成高成功率、可复用、可调度、可扩展的通用技能，并把它们推向真实场景。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">过去，外界赋予苏度的标签很多 —— 单一抓取技能惊艳、仿真数据路线独特、科学家创业、成立时间短、融资速度快…… 这些标签有助于认识苏度，却无法勾勒出这家公司的完整轮廓。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">为此，趁此次 WAIC，也是苏度成立一年后首次国内参展之际，机器之心与</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度科技研发副总裁徐泽祥、商业副总裁张校珩</span><span textstyle style="font-size: 15px;">聊了聊，试图更全面解读这家公司：为什么两张维度完全不同的考卷 —— 一张考开放环境下的泛化，一张考工业现场的鲁棒性 —— </span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">能被同一套系统答好？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: center;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">第一张考卷：观众出题，没有剧本</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">展台开放的几天里，生活展区的「考题」几乎没有重样的。没有剧本，也意味着失败无法被剪掉。几天里，机器人偶尔也会抓空、放偏 —— 但它会当场重新识别、重新规划、再试一次，没有工作人员上前「救场」。对一场 Demo 来说，敢把失败和恢复的全过程一起亮出来，比一段完美循环的视频更能说明问题。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「我们敢把生活展区完全开放给观众，是因为这些技能本来就是在开放、随机的条件下训练和评测出来的。观众的『刁难』，不过是把我们内部评测的一部分搬到了台前。」</span><span textstyle style="font-size: 15px;">苏度科技研发副总裁徐泽祥说道。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">这句话背后，是苏度的评测习惯：在内部，一项技能要「出师」，先要通过大规模随机化评测 —— 物体、位姿、光照、背景都会被系统性地打乱。从这个意义上说，观众的「刁难」并没有超纲，它只是这套评测体系的一个公开子集。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">观众考的是临场发挥，而临场发挥的背后，是一整套技能储备。细看之下，此次 WAIC 上，苏度展示的 10 + 技能大致可以分成几类。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;margin-left: 8px;margin-right: 8px;" class="list-paddingleft-1"><li><p style="text-align: justify;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;">复杂场景下，完成对不同形态、材质、尺寸和摆放状态物体的抓取和放置；</span></span></p><p style="text-align: justify;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><br></span></p></li></ul><section style="box-sizing: border-box;font-style: normal;font-weight: 400;text-align: justify;font-size: 16px;color: rgb(62, 62, 62);" data-nest-level="2" data-pm-slice="0 0 []"><section style="display: inline-block;width: 100%;vertical-align: top;overflow-x: auto;box-sizing: border-box;" data-nest-level="3"><section style="width: 400%;overflow-x: hidden;max-width: 400% !important;box-sizing: border-box;" data-nest-level="4"><section style="display: inline-block;vertical-align: middle;width: 25%;box-sizing: border-box;" data-nest-level="5"><section style="text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;" data-nest-level="6"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 94%;height: auto;box-sizing: border-box;margin-left: 8px;margin-right: 8px;" data-nest-level="7" nodeleaf><img class="rich_pages wxw-img" data-ratio="0.6666666666666666" data-s="300,640" data-type="jpeg" data-w="1080" style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-imgfileid="503562054" data-aistatus="2" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9d976f1.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图3"></section></section></section><section style="display: inline-block;vertical-align: top;width: 25%;box-sizing: border-box;" data-nest-level="5"><section style="text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;" data-nest-level="6"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 94%;height: auto;box-sizing: border-box;margin-left: 8px;margin-right: 8px;" data-nest-level="7" nodeleaf><img class="rich_pages wxw-img" data-ratio="0.6666666666666666" data-s="300,640" data-type="jpeg" data-w="1080" style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-imgfileid="503562055" data-aistatus="2" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9df2109.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图4"></section></section></section><section style="display: inline-block;vertical-align: top;width: 25%;box-sizing: border-box;" data-nest-level="5"><section style="text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;" data-nest-level="6"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 94%;height: auto;box-sizing: border-box;margin-left: 8px;margin-right: 8px;" data-nest-level="7" nodeleaf><img class="rich_pages wxw-img" data-ratio="0.6666666666666666" data-s="300,640" data-type="jpeg" data-w="1080" style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-imgfileid="503562056" data-aistatus="2" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9e41d4d.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图5"></section></section></section><section style="display: inline-block;vertical-align: top;width: 25%;box-sizing: border-box;" data-nest-level="5"><section style="text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;" data-nest-level="6"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 94%;height: auto;box-sizing: border-box;margin-left: 8px;margin-right: 8px;" data-nest-level="7" nodeleaf><img class="rich_pages wxw-img" data-ratio="0.6666666666666666" data-s="300,640" data-type="jpeg" data-w="1080" style="vertical-align: middle;max-width: 100%;width: 100%;box-sizing: border-box;" data-imgfileid="503562053" data-aistatus="2" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9e855fa.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图6"></section></section></section></section></section></section><p style="text-align: left;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 12px;color: rgb(136, 136, 136);font-style: italic;">左右滑动解锁更多示例</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;margin-left: 8px;margin-right: 8px;" class="list-paddingleft-1"><li><p style="text-align: justify;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;">双手协作，完成柔性布料打包；</span></span></p></li></ul><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><img class="rich_pages wxw-img js_insertlocalimg" data-ratio="0.6666666666666666" data-s="300,640" data-type="jpeg" data-w="1080" type="block" data-imgfileid="503562014" data-aistatus="1" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9ecfbeb.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图7"></section><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;margin-left: 8px;margin-right: 8px;" class="list-paddingleft-1"><li><p data-nest-level="4" style="text-align: justify;"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;">亚毫米级精度玩具组装和装箱递送；</span></span></p></li></ul><p data-nest-level="2" style="text-align:justify;"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><iframe class="video_iframe rich_pages" data-src="https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;action=mpvideo&amp;auto=0&amp;vid=wxv_4613803828415397892" data-mpvid="wxv_4613803828415397892" data-vidtype="2" data-cover="http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F5L8bhP5dIqH7OuA12UKhEnE3yibQ56egiaczz09oermWS6MnEcjice9tGvlkU3MzARVP86YBM2pHANmrwqTbdLwYY8OPQ3guUS6Xibic9RtGZIzw%2F0%3Fwx_fmt%3Djpeg" data-ratio="1.7777777777777777" data-w="960"></iframe></section><p data-nest-level="2" style="text-align:justify;"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;margin-left: 8px;margin-right: 8px;" class="list-paddingleft-1"><li><p data-nest-level="4" style="text-align: justify;"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;">在空间中一边移动到合适位置，一边完成抓取、放置或整理动作；</span></span></p></li></ul><p data-nest-level="2" style="text-align:justify;"><span leaf data-nest-level="3"><br></span></p><section style="margin-left: 8px;margin-right: 8px;text-align: justify;" nodeleaf data-nest-level="2"><iframe class="video_iframe rich_pages" data-src="https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;action=mpvideo&amp;auto=0&amp;vid=wxv_4613624522841784320" data-mpvid="wxv_4613624522841784320" data-vidtype="2" data-cover="http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F5L8bhP5dIqGmogcy5tZpg2j4rON0JrJDUOyYCTbJvib2sIjMe2OY1g4jfPzZzq9go0fx27IJrU6tA9E9n3q6zzf45VIsdYqWVia7nUIPFWUN8%2F0%3Fwx_fmt%3Djpeg" data-ratio="1.7777777777777777" data-w="1280"></iframe></section><p data-nest-level="2" style="text-align: center;margin-left: 8px;margin-right: 8px;"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;margin-left: 8px;margin-right: 8px;" class="list-paddingleft-1"><li><p data-nest-level="4" style="text-align: justify;"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;">制造业场景中的精密工业操作，以及多台机器人跨工位配合，完成锂电池模组装配等流程型任务的多机协同等。</span></span></p></li></ul><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">不难发现，这些能力差异极大，一边是双手叠放柔性布料，另一边是协同装配极度刚性的锂电池模组，而生活展区里的技能，还要在现场经受观众的随机干扰。一个问题随之出现：</span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">短时间内实现数量如此之多、且差异如此巨大、还要扛得住现场「刁难」的动作技能，是否靠团队逐一「手搓」、一行行写代码调出来的？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「完全不是。」</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">徐泽祥否定了这一猜想，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「这 10 + 种技能在短时间内的集体亮相，其实是苏度底层范式在打通后的『复用』与『量产』。」</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">他告诉机器之心，4 月 R1 的推出，表面上展示的是抓取这一单点技能，实质上是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">对一整套系统与范式的初步验证 —— 从仿真、数据、模型到硬件部署、运控再到评测，初步形成了完整闭环。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">选择「抓取」作为起点，是因为它最基本：无论是装配、分拣、整理，还是服务类任务，几乎所有操作都要先从「拿起一个物体」开始。同时，抓取考验视觉理解、空间定位、接触判断、运动控制和泛化能力，这个技能跑通，意味着整条技术链路有了首个验证点。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">于是，在 R1 的「抓取」技能充分验证之后，团队要做的就是在同一体系下反复验证：</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">这套已经打通的范式能否复用、扩展、在更多技能上产生效果。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">那么，这套被反复验证的范式究竟是什么？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">在苏度看来，当前具身智能领域最缺的，并不是某一个单点能力，而是一套能够把完整链路打通的系统范式。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">机器人要在真实世界中稳定完成任务，不能只依赖一个模型、一种数据、一台硬件，或一套运动控制算法。真正关键的是，仿真、数据、模型、本体、运控、评测和真实部署这些环节，能否被放在同一个系统中协同设计、训练和迭代。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">这也是为什么苏度一直在强调</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「全栈」</span><span textstyle style="font-size: 15px;">能力。在 Sim-to-Real 路径下，一个机器人技能的形成，其实从仿真器就已经开始。首先，要在仿真环境中构造任务、物体、空间关系和物理状态；接着，生成可用于训练的仿真数据；然后，用这些数据训练模型；模型训练完成后，需要部署到真实机器人本体上；部署之后，还要通过运动控制算法完成动作执行；执行结果再进入评测系统，判断技能是否可靠、是否泛化、失败原因在哪里；最终，这套能力还要走向真实场景落地…… 而每一环都必须彼此紧紧咬合。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">为此，苏度采用软硬一体、虚实融合、全栈自研的技术架构，将机器人本体、仿真系统、数据闭环、运动控制、世界模型、操作技能模型和任务 Agent 纳入同一个系统中协同设计、训练、评测和迭代。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">核心思路是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">先形成可泛化、可组合的底层操作能力，再通过技能组合与任务规划，使机器人在不同场景中具备可部署的任务执行能力。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">换句话说，苏度并不希望每一个任务都从头定制，而要让机器人技能从同一条系统链路中持续「生成」。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: center;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">解题：三层技术底座的深度耦合</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">无论是展台上的随机「刁难」，还是产线上的严苛环境，能跑通这样一套极具泛化能力的范式，底层必然需要扎实的系统工程能力。具体来看，支撑苏度技能高速演进的底座主要有三层：</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">虚实融合的数据链路系统，世界模型与强化学习一体化，以及软硬一体的全栈开发。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;font-weight: bold;">虚实融合的数据链路系统</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">说到数据，首先要打破外界对苏度的一个误解：只做仿真数据。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">R1 发布后，苏度在仿真数据上的成功实践深入人心，也因此被误读为「只做仿真」。实则不然，苏度的数据优势从不是押注某一种数据，而在于把互联网视频数据、真机遥操数据、UMI 数据、Ego-centric 数据和仿真数据进行多元融合，组织成一条虚实融合的数据链。仿真提供规模和全模态物理信息，真机数据提供真实世界校准，两者共同支撑机器人技能从单点能力走向持续扩展……</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">数据，可谓是具身智能的「第一性」问题。过去两年多，许多具身智能公司都会将焦点放在模型架构上，但徐泽祥认为，在具身智能领域，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">如果数据没有准备好，谈架构很容易变成空中楼阁 </span><span textstyle style="font-size: 15px;">—— 机器人真正需要的不只是视觉和语言数据，还包括 Action Data（动作数据） ，以及关于物理交互的数据。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">商业副总裁张校珩分析，当前具身智能领域的五类数据：互联网视频数据、真机遥操数据、UMI 数据、Ego-centric 数据和仿真数据，各有优劣 ——</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><ul style="list-style-type: disc;" class="list-paddingleft-1"><li><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">互联网视频数据：</span><span textstyle style="font-size: 15px;">包含丰富的场景语义和任务逻辑，但缺少精细动作、力觉和可执行轨迹；</span></span></p></li><li><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">真机遥操数据：</span><span textstyle style="font-size: 15px;">相对干净、信息维度更完整，但成本极高，规模化采集需要大量机器人、场地和人力；</span></span></p></li><li><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">UMI 数据：</span><span textstyle style="font-size: 15px;">降低了采集成本，但信息更集中在末端，面对避障、移动、全身控制等任务时模态并不完整；</span></span></p></li><li><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">Ego-centric 数据：</span><span textstyle style="font-size: 15px;">进一步降低成本，但通常缺少明确的末端与动作信号，需要更复杂的算法来补足；</span></span></p></li><li><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="4"><span leaf data-nest-level="5"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">仿真数据：</span><span textstyle style="font-size: 15px;">成本低、还能提供全模态信息，但门槛同样存在 —— 它不是去现实里抓取现成的物理信号，而是在虚拟世界中凭空重建一套符合真实物理法则的系统，技术门槛极高。</span></span></p></li></ul><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">「相比其他四类数据，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">仿真数据的技术门槛是一个纯科学和技术问题，不是靠商业模式能搞定的，</span><span textstyle style="font-size: 15px;">需要有足够强的技术团队，把物理引擎的参数设置、接触力学模拟、渲染引擎的视觉真实度等都做好，才能把这件事情做成。」张校珩说道。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">苏度决定先啃下仿真这个最难也最具差异化的「硬骨头」。这也解释了为什么 R1 阶段，苏度的「仿真数据」路线如此深入人心。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">正如徐泽祥总结的：「它向外界证明了，过去很难规模化、很难跨越虚实鸿沟 (Sim2Real gap) 的 仿真数据，已经可以被苏度用于训练高泛化操作技能。」</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">也就是说，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度从来没有「只做仿真」，而是把仿真作为最难的「杠杆」，再通过多元数据融合支撑技能持续扩展。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;font-weight: bold;">世界模型与强化学习一体化</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">数据路线决定模型路线。</span><span textstyle style="font-size: 15px;">在具身智能领域，VLA、WAM、VLM、视频模型等路线往往是讨论的焦点，共同价值是把视觉、语言、视频模型的能力引入机器人系统。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">可苏度的判断是，底层操作能力不能完全依赖其他模态迁移。因为机器人最终要在真实世界中行动，它真正需要的是 Action Data 和 Physical Data，也就是说，模型要看到动作、接触、几何、空间和物理状态，而这些并不能靠语言或视频模态自然补齐。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">因此，在模型架构的选择上，苏度的做法是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">先判断具身智能到底需要什么数据，再围绕这些数据设计模型，也就是「从数据出发，思考整个技术架构」。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">正因如此，对于行业内频频提出的世界模型概念，苏度强调其内部的世界模型更应该预测的是 「Next Physical Dynamics」（下一步物理动态），相较于预测下一个像素，苏度更关注下一步动作在物理交互上是否可行、稳定。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">基于此，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">世界模型与强化学习也不是两个孤立模块：</span><span textstyle style="font-size: 15px;">世界模型帮助机器人预测物理状态变化，强化学习则在仿真及真实环境中不断优化动作策略，两者共同服务于高成功率和强泛化技能的形成。而两者深度融合的一体化系统设计，让模型能够真正习得可泛化的物理规律，而非记住单一动作。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;font-weight: bold;">软硬一体全栈开发</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">具身智能从来都不是纯软件问题。机器人本体、传感器布局、运动控制、仿真环境和模型训练彼此影响。尤其是在 Sim-to-Real 路径下，往往横亘着高精度的鸿沟，如果仿真中的机器人行为与真实本体存在偏差，模型从虚拟环境迁移到真实世界时，就会遇到更多不确定性。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">苏度坚持软硬一体全栈开发，自研机器人本体，核心原因也在这里。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">在徐泽祥看来，如果机器人硬件来自外部，真实本体的结构、控制特性、执行误差和动态行为都会成为系统里的「黑箱」—— 仿真中训练出的策略，即使在虚拟环境里表现很好，也很难保证迁移到真实机器人后仍然保持一致行为。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">为此，苏度做硬件，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">要保证造出来的硬件「能仿」，也要保证仿真里的机器人与真实机器人行为一致。</span><span textstyle style="font-size: 15px;">换句话说，仿真环境中的本体参数、运动边界、控制响应和真实机器人之间，需要尽可能一一对应。只有这样，模型在仿真里学到的结论，才有机会在真实场景中复现、迁移和继续迭代。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">换句话说，苏度的软硬一体并不是简单同时做硬件和软件，核心是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">让本体、仿真、模型和运控形成闭环：</span><span textstyle style="font-size: 15px;">真实机器人能够被准确仿真，仿真结论能够迁移到真机，真机反馈又能反过来校准仿真和模型。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: center;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">第二张考卷：宁德产线的「</span></span><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">检验</span></span><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">」</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">如果说生活展区的考题来自观众的即兴发挥，那么工业展区那条电池组装示例产线，对应的则是一张更严苛的考卷 —— </span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">同样的流程，在展台上跑是「随堂测验」，在宁德时代的产线上跑，才是真正的大考。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">技术范式最终要进入真实场景。目前，苏度正在制造业、零售商超、餐饮门店等多个真实场景中推进通用具身智能的落地验证。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">制造业是其中最关键的场景之一。苏度已与宁德时代推进多工位合作，一次性覆盖产线中多个具有代表性的操作任务。</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">这是该客户体系内首次以同一具身智能平台验证「一机多能」的合作案例。</span><span textstyle style="font-size: 15px;">而 WAIC 工业展区里演示的那条电池组装示例产线，正是这一合作的缩影 —— 观众在展馆里看到的流程，正在真实产线上接受检验。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><section style="text-align: center;margin-left: 8px;margin-right: 8px;" nodeleaf data-nest-level="2"><img class="rich_pages wxw-img js_insertlocalimg" data-ratio="1.5" data-s="300,640" data-type="jpeg" data-w="1080" type="block" data-imgfileid="503562051" data-aistatus="1" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-07-21/6a5f1b9f2b19e.jpeg" alt="经得起观众「刁难」，扛得住宁德「检验」：WAIC后重新认识苏度图8"></section><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">与展台不同，产线上的「干扰」不来自观众的好奇心，而来自真实生产环境本身：来料位姿的随机变化、不同批次工件的公差、现场光照与反光、连续运行的节拍压力…… 这些变量不会配合演示，也不会给机器人「再来一次」的机会。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">如何理解</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「一机多能」？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">它是指同一台机器人系统可面向不同工位进行快速开发与适配 —— 这正是理解苏度商业化逻辑的关键。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">传统工业机器人可以通过换夹具、换程序完成不同任务，但每个工位仍需专门配置。一旦任务、产品、产线有了变化后，往往需要重新调试、部署，甚至重新设计方案。而苏度的「一机多能」是用同一套底层技能体系覆盖多个工位、多类任务。客户可以基于这些通用技能叠加自己的业务逻辑，完成装配、插接、整理、检测等不同流程。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">张校珩从</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;"> </span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">ROI 角度</span><span textstyle style="font-size: 15px;">解释了这件事。工业客户不会只为 Demo 买单，机器人能否规模化进入产线，最终要看经济账，如果一台高成本机器人只能替代一个工位，客户很难大规模采购。只有当一套系统能够覆盖多个工位，机器人价格被多个任务分摊，规模化采购才有机会成立。所以，「一机多能」的价值不在于机器人会做更多动作，而在于一套系统能否覆盖多个工位，让客户真正算得过来 ROI。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">而从客户视角来看，「一机多能」的好处</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">不仅在成本上，还在于数据安全上。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">常规情况下，如果机器人方案高度依赖场景现场 Post-Training，厂商需要进入客户产线采集数据、调试流程，那么客户的工艺顺序、商品细节，甚至供应链信息等都将被暴露，客户难免担心。而苏度的做法是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「通用技能与客户工艺解耦、工艺不出厂」。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">也就是说，苏度提供抓取、放置、插接、移动等通用技能，而客户掌握具体的工艺流程与业务逻辑，通过技能调用完成产线任务。让客户在「工艺不出厂」的前提下调用机器人能力。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">苏度透露，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">目前项目首个工位已成功完成 POC 验证，且工业抓放达 99.5% 以上的高成功率。</span><span textstyle style="font-size: 15px;">而对一条真实产线来说，POC 只是拿到「准考证」—— 真正的「验收」，是此后每一天的稳定运行。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">而除了制造业，苏度也在零售商超和餐饮门店等场景中推进验证。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">在</span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">零售商超场景，</span><span textstyle style="font-size: 15px;">苏度正与全球领先零售企业规划技术方案，在盘点、补货、货架巡检等任务中探索应用，核心价值在于验证一套能力在首批门店验证后，客户可基于同一平台跨区域、跨门店快速自主复制，极大降低边际部署成本。  </span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">在</span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">餐饮门店场景，</span><span textstyle style="font-size: 15px;">苏度与头部连锁餐饮品牌推进门店服务机器人项目，在非结构化高频服务环境中验证物品整理、清洁、传递等多类任务的组合能力，这不仅是商业场景验证，更是未来走向千家万户家庭场景的关键技术预演。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: center;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 16px;font-weight: bold;">通往具身智能 AGI 的路径哲学：通用是终点，可靠性才是起点</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">虽然苏度已经进入了丰富的真实场景，但它有着极其清晰的战略定力，正如张校珩所言</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「战不重要，关键在略。」</span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">即明确什么不做。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度不希望成为一家传统意义上的行业方案公司，</span><span textstyle style="font-size: 15px;">因为如果每进入一个行业，都重新做一套定制方案，具身智能公司很快会被具体项目吞没。短期收入可能增长，长期利润结构和技术复用却难以成立。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">为此，苏度选择的是另一条路：</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">从不同行业需求中抽象共性技能。</span><span textstyle style="font-size: 15px;">制造业、零售商超、餐饮等场景，看起来差异很大，但底层任务几乎共享相似能力：抓取、放置、插接、开合、移动、整理、补给……</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">苏度要做的，就是先把这些底层技能做到足够可靠，再通过任务 Agent 和开发者生态持续扩展能力边界。也就是说，先解决「能不能稳定操作」再解决「能不能组合任务」，最后走向「能不能在开放世界中自主完成目标」。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">而这也对应</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度通往具身智能 AGI 的路径哲学：「通用是终点，但可靠性才是起点。」</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">相较于直接「无脑上」端到端大模型、试图一步跨向通用能力的路线，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度更倾向于从底层物理能力出发，采用「渐进式」路线，先将每一个底层基础技能打磨到绝对可靠，再通过高可靠性技能的叠加，让通用能力在真实世界的持续反馈中逐步「生长」出来。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">看到这，或许很多人会感慨，具身智能无疑是一场极度跨学科的系统战 ——3D 视觉、空间智能、物理仿真、机器人本体、运动控制、多模态模型、强化学习、世界模型、工程交付和商业场景理解…… 对各个环节的技术和组织都有着非常高的要求。那么，苏度如何在不到一年的时间进入第一梯队？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">其实关于这一点，可以从以下几个方面来看。</span><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">首先是</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">前面提到的全栈系统能力，</span><span textstyle style="font-size: 15px;">从仿真器、数据生成、模型训练，到自研本体、运动控制、评测体系和真实部署，苏度试图把完整链路纳入同一个系统中协同设计。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 0, 0);font-weight: normal;">其次，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">「技术之战的背后是人才之战」，苏度有着「世界级人才密度」。</span><span textstyle style="font-size: 15px;">创始团队汇聚了多位行业顶尖人物。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度科技联合创始人、董事长兼 CTO 苏昊</span><span textstyle style="font-size: 15px;">长期深耕 3D 视觉、空间智能、具身智能与世界模型，是全球物理智能方向最具代表性的学者之一，为苏度确立了从仿真、虚实融合、世界模型到通用操作能力的底层技术路线。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">联合创始人兼 CEO 韩铮</span><span textstyle style="font-size: 15px;">兼具 AI 技术背景和连续创业经验，能够把前沿技术转化为产品形态、商业路径和规模化组织能力，承担从 0 到 1 再到产业落地的关键角色。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">研发副总裁徐泽祥</span><span textstyle style="font-size: 15px;">则连接 3D 生成、空间智能、神经表征、多模态基础模型与机器人操作模型，是苏度打通具身智能核心研发链路的重要负责人。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">再往深处看，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度的壁垒还来自系统 Know-How。</span><span textstyle style="font-size: 15px;">比如，如何大规模生成模拟场景并解决Sim2Real gap、软硬件本体如何极致服务于算法模型、真实场景的反馈如何高效回流训练系统…… 这些经验无法通过复制某个模型结构或某篇论文快速获得。它需要长期实验、工程迭代和真实客户场景共同沉淀，而这些硬核经验，构成了同行短期内无法跨越的鸿沟。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">最后，想说的是，在 WAIC 现场，一个绕不开的问题仍在被业界追问：哪一条路线最可能通向具身智能的 AGI？属于机器人的「ChatGPT 时刻」又将何时到来？</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">现在给出答案还太早，具身智能仍处在早期阶段。端到端大模型、分层技能体系、仿真数据、真机数据、世界模型、强化学习，每一条路线都还在被验证、交叉、融合…… 但在这个充满不确定性的周期里，那些愿意把物理世界的通用底座做深做透，把可靠性、可复用性和真实部署放在第一位的团队，或将真正穿越周期。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><span textstyle style="font-size: 15px;">而在这条奔向终局的道路上，</span><span textstyle style="font-size: 15px;color: rgb(0, 66, 123);font-weight: bold;">苏度先是「抓起了一个物体」，继而在生活展区接住了观众的一道道考题，现在又「拉起了一条产线」。</span><span textstyle style="font-size: 15px;">展台上的考卷已随观众散场而交卷，产线上的考卷，每天都在重考。至于接下来又将攀登哪一座雪山，值得期待。</span></span></p><p style="text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;" data-nest-level="2"><span leaf data-nest-level="3"><br></span></p><p style="text-align: center;line-height: 1.5em;margin-bottom: 0px;" data-nest-level="2"><span style="font-size: 12px;color: rgb(136, 136, 136);" data-nest-level="3"><span leaf data-nest-level="4">© THE END</span></span></p><p style="text-align: center;line-height: 1.5em;margin-bottom: 0px;" data-nest-level="2"><span style="font-size: 12px;color: rgb(136, 136, 136);" data-nest-level="3"><span leaf data-nest-level="4">转载请联系本公众号获得授权</span></span></p><p style="text-align: center;line-height: 1.5em;margin-bottom: 0px;" data-nest-level="2"><span style="font-size: 12px;color: rgb(136, 136, 136);" data-nest-level="3"><span leaf data-nest-level="4">投稿或寻求报道：liyazhou@jiqizhixin.com</span></span></p><p style="display: none;"><mp-style-type data-value="10000"></mp-style-type></p>
+                    </div>
+                                                                <div id="button-container" class="text-center relative">
+                        <button id="expand-btn" class="expand-button text-sm z-[9] relative inline-flex items-center justify-center px-5 py-[6px] rounded-sm border-solid border border-[var(--theme-blue)] cursor-pointer text-[var(--theme-blue)] transition-all duration-300 ease-in-out hover:bg-[var(--theme-blue)] hover:text-white">
+                            阅读全文<i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div id="gradient" class="content-gradient absolute left-0 bottom-0 w-full h-[280px] bg-gradient-to-b from-transparent from-0% to-white to-85% pointer-events-none"></div>
+                    </div>
+                                            
+                    <div class="article-copyright bg-[#FBFBFB] p-5 rounded-md mt-[30px]">
+                        <div class="text-xs text-[var(--theme-color)] text-justify block leading-5 relative">关于科技区角：国内科技展会垂直内容策划服务商，提供从论坛内容全案策划、会展市场化IP打造到精准专业观众一站式邀约服务，以产业内容吸引高质量B端人群，打通展会从议题设计、演讲嘉宾邀约、宣传预热、精准邀观到供需对接全链路。</div>
+                        <br>
+                        <div class="text-xs text-[var(--theme-gary)] text-justify block leading-5 relative">声明：本文内容及配图由入驻作者撰写或合作网站授权转载。文章观点仅代表作者本人，不代表科技区角网立场。仅供工程师学习之用，如有内容侵权或者其他违规问题，请联系本站处理。
+                            <a class="cursor-pointer group">点击这里
+                                <div class="article-popover bg-white p-[5px] rounded-md inline-block absolute left-[95px] bottom-[30px] shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] invisible opacity-0 translate-y-[5px] transition-all duration-300 ease group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                                    <img class="size-[120px]" src="/image/frontend/x-wechat.png" alt="">
+                                    <span class="text-xs text-[var(--theme-gary-200)] flex items-center justify-center"><i class="ri-wechat-fill text-lg text-[var(--theme-green)] text-center mr-1"></i>扫码添加微信</span>
+                                    <span class="popover-right block size-[10px] bg-white absolute -bottom-[3px] left-[calc(50%-5px)] rotate-45"></span>
+                                </div>
+                            </a >
+                        </div>
+                    </div>
+                    <div class="article-function-box flex justify-between items-center mt-10">
+                        <div class="article-tags">
+                            <ul class="article-tags-list flex items-center">
+                                                                <li class="article-tags-item bg-[var(--theme-gary-300)] h-8 inline-flex px-[10px] py-1 mr-2 rounded-sm items-center">
+                                    <img class="w-[18px] mr-1" src="/image/frontend/tag.svg" alt="" srcset="">
+                                    <a class="text-[13px] text-[var(--theme-gary)]" href="https://www.x-techcon.com/tag/12.html" target="_blank" rel="noopener noreferrer">AI</a>
+                                </li>
+                                                                <li class="article-tags-item bg-[var(--theme-gary-300)] h-8 inline-flex px-[10px] py-1 mr-2 rounded-sm items-center">
+                                    <img class="w-[18px] mr-1" src="/image/frontend/tag.svg" alt="" srcset="">
+                                    <a class="text-[13px] text-[var(--theme-gary)]" href="https://www.x-techcon.com/tag/207.html" target="_blank" rel="noopener noreferrer">检验</a>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="article-function">
+                            <ul class="article-function-list flex items-center justify-center">
+                                <li id="like-bottom" class="article-item inline-flex items-center bg-[#E01C1C]/5 px-[10px] py-1 ml-2 rounded-sm relative cursor-pointer translate-y-0 duration-500 ease-in-out hover:-translate-y-1">
+                                    <i class="ri-thumb-up-fill text-base text-[var(--theme-red)] mr-1"></i>
+                                    <span class="text-[13px] text-[var(--theme-red)]" data-xtimes-id="166309" id="like-botton-bottom">点赞 <span id="like-count-bottom">(0)</span></span>
+                                </li>
+                                <li class="article-item inline-flex items-center bg-[#07c160]/5 px-[10px] py-1 ml-2 rounded-sm relative cursor-pointer group translate-y-0 duration-500 ease-in-out hover:-translate-y-1">
+                                    <i class="ri-share-forward-fill text-base text-[var(--theme-green)] mr-1"></i>
+                                    <span class="text-[13px] text-[var(--theme-green)]">分享</span>
+                                    <div class="article-popover w-[130px] bg-white p-[5px] rounded-md inline-block absolute left-[calc(50%-65px)] bottom-[60px] shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] invisible opacity-0 translate-y-[5px] transition-all duration-300 ease group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewBox="0 0 120 120"><rect x="0" y="0" width="120" height="120" fill="#ffffff"/><g transform="scale(4.138)"><g transform="translate(0,0)"><path fill-rule="evenodd" d="M9 0L9 1L8 1L8 2L9 2L9 3L8 3L8 4L10 4L10 7L11 7L11 4L12 4L12 5L13 5L13 6L12 6L12 9L14 9L14 10L15 10L15 11L16 11L16 12L17 12L17 14L15 14L15 13L14 13L14 12L13 12L13 13L12 13L12 11L13 11L13 10L11 10L11 11L10 11L10 9L11 9L11 8L6 8L6 9L5 9L5 8L0 8L0 9L3 9L3 12L4 12L4 13L2 13L2 10L0 10L0 21L1 21L1 17L2 17L2 18L3 18L3 19L2 19L2 21L4 21L4 19L7 19L7 18L4 18L4 17L2 17L2 16L5 16L5 17L8 17L8 18L9 18L9 19L8 19L8 20L10 20L10 21L12 21L12 23L13 23L13 22L14 22L14 21L15 21L15 20L17 20L17 21L16 21L16 22L15 22L15 23L18 23L18 24L17 24L17 25L16 25L16 24L11 24L11 25L10 25L10 26L12 26L12 25L14 25L14 27L15 27L15 28L11 28L11 27L10 27L10 28L9 28L9 24L10 24L10 23L11 23L11 22L10 22L10 23L9 23L9 21L8 21L8 23L9 23L9 24L8 24L8 29L15 29L15 28L16 28L16 27L17 27L17 25L18 25L18 24L20 24L20 25L19 25L19 26L21 26L21 27L20 27L20 28L19 28L19 27L18 27L18 28L17 28L17 29L18 29L18 28L19 28L19 29L20 29L20 28L21 28L21 27L23 27L23 29L27 29L27 28L28 28L28 26L29 26L29 24L28 24L28 25L27 25L27 24L26 24L26 25L25 25L25 23L27 23L27 22L29 22L29 20L28 20L28 19L27 19L27 16L28 16L28 15L27 15L27 14L25 14L25 13L27 13L27 12L28 12L28 11L27 11L27 12L26 12L26 11L25 11L25 13L24 13L24 14L23 14L23 13L22 13L22 11L23 11L23 12L24 12L24 11L23 11L23 10L25 10L25 9L26 9L26 8L25 8L25 9L24 9L24 8L23 8L23 9L22 9L22 8L21 8L21 6L20 6L20 7L19 7L19 6L18 6L18 5L20 5L20 3L21 3L21 2L19 2L19 1L21 1L21 0L18 0L18 1L17 1L17 2L16 2L16 1L15 1L15 0L14 0L14 1L11 1L11 2L10 2L10 0ZM12 2L12 4L13 4L13 5L14 5L14 6L13 6L13 8L14 8L14 9L15 9L15 10L17 10L17 12L19 12L19 11L20 11L20 10L17 10L17 9L15 9L15 8L14 8L14 6L15 6L15 7L16 7L16 8L18 8L18 9L19 9L19 7L18 7L18 6L17 6L17 7L16 7L16 6L15 6L15 5L17 5L17 4L15 4L15 3L16 3L16 2ZM17 2L17 3L18 3L18 4L19 4L19 2ZM10 3L10 4L11 4L11 3ZM13 3L13 4L14 4L14 5L15 5L15 4L14 4L14 3ZM8 5L8 7L9 7L9 5ZM20 8L20 9L21 9L21 10L22 10L22 9L21 9L21 8ZM27 8L27 9L28 9L28 10L29 10L29 9L28 9L28 8ZM6 9L6 10L5 10L5 11L4 11L4 12L5 12L5 13L6 13L6 14L5 14L5 16L7 16L7 15L8 15L8 14L10 14L10 13L11 13L11 15L10 15L10 17L9 17L9 18L10 18L10 19L11 19L11 18L13 18L13 17L12 17L12 15L13 15L13 16L14 16L14 18L16 18L16 19L17 19L17 20L18 20L18 21L17 21L17 22L20 22L20 21L19 21L19 20L21 20L21 19L22 19L22 20L23 20L23 18L22 18L22 17L23 17L23 15L22 15L22 14L21 14L21 15L20 15L20 14L18 14L18 15L17 15L17 16L16 16L16 17L15 17L15 16L14 16L14 15L15 15L15 14L12 14L12 13L11 13L11 12L10 12L10 13L8 13L8 12L7 12L7 11L8 11L8 9ZM6 10L6 11L7 11L7 10ZM6 12L6 13L7 13L7 14L6 14L6 15L7 15L7 14L8 14L8 13L7 13L7 12ZM20 12L20 13L21 13L21 12ZM28 13L28 14L29 14L29 13ZM1 14L1 16L2 16L2 15L3 15L3 14ZM24 14L24 15L25 15L25 16L24 16L24 17L25 17L25 18L24 18L24 19L25 19L25 21L26 21L26 20L27 20L27 19L26 19L26 17L25 17L25 16L27 16L27 15L25 15L25 14ZM19 15L19 16L20 16L20 15ZM17 16L17 17L16 17L16 18L17 18L17 17L18 17L18 19L19 19L19 18L21 18L21 17L18 17L18 16ZM10 17L10 18L11 18L11 17ZM28 17L28 18L29 18L29 17ZM12 19L12 20L15 20L15 19ZM5 20L5 21L7 21L7 20ZM21 21L21 24L24 24L24 21ZM22 22L22 23L23 23L23 22ZM15 25L15 26L16 26L16 25ZM21 25L21 26L23 26L23 25ZM24 25L24 26L25 26L25 25ZM24 27L24 28L25 28L25 27ZM26 27L26 28L27 28L27 27ZM0 0L0 7L7 7L7 0ZM1 1L1 6L6 6L6 1ZM2 2L2 5L5 5L5 2ZM22 0L22 7L29 7L29 0ZM23 1L23 6L28 6L28 1ZM24 2L24 5L27 5L27 2ZM0 22L0 29L7 29L7 22ZM1 23L1 28L6 28L6 23ZM2 24L2 27L5 27L5 24Z" fill="#000000"/></g></g></svg>
+
+                                        <span class="text-xs text-[var(--theme-gary-200)] flex items-center justify-center"><i class="ri-wechat-fill text-lg text-[var(--theme-green)] text-center mr-1"></i>微信扫一扫</span>
+                                        <span class="popover-right block size-[10px] bg-white absolute -bottom-[3px] left-[calc(50%-5px)] rotate-45"></span>
+                                    </div>
+                                </li>
+                                <li class="article-item inline-flex items-center bg-[#4E71D6]/5 px-[10px] py-1 ml-2 rounded-sm relative cursor-pointer group translate-y-0 duration-500 ease-in-out hover:-translate-y-1">
+                                    <i class="ri-wechat-fill text-base text-[var(--theme-blue)] mr-1"></i>
+                                    <span class="text-[13px] text-[var(--theme-blue)]">加入群聊</span>
+                                    <div class="article-popover w-[130px] bg-white p-[5px] rounded-md inline-block absolute left-[calc(50%-65px)] bottom-[60px] shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] invisible opacity-0 translate-y-[5px] transition-all duration-300 ease group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                                        <img class="size-[120px]" src="/image/frontend/x-wechat.png" alt="">
+                                        <span class="text-xs text-[var(--theme-gary-200)] flex items-center justify-center"><i class="ri-wechat-fill text-lg text-[var(--theme-green)] text-center mr-1"></i>扫码加入群聊</span>
+                                        <span class="popover-right block size-[10px] bg-white absolute -bottom-[3px] left-[calc(50%-5px)] rotate-45"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--资讯内容结束-->
+            <div class="page-next-previous mt-4 flex justify-between items-center">
+                                <a class="ppage-preveious-link bg-white w-[calc(50%-8px)] px-8 py-5 rounded-md cursor-pointer transition-all duration-1000 ease-in-out shadow-none group hover:shadow-[0_0_30px_-10px_rgba(0,0,0,0.05)]" href="https://www.x-techcon.com/article/166308.html" rel="noopener noreferrer">
+                    <p class="page-previous text-base text-slate-600 font-bold transition-all duration-1000 ease-in-out h-x group-hover:text-[var(--theme-blue)]">模拟设计、模拟版图 EDA有奖知识问卷</p>
+                    <div class="page-previous-footer flex justify-between pt-5">
+                        <span class="text-xs text-[var(--theme-gary)] flex items-center"><i class="ri-arrow-left-s-line text-base"></i>上一篇</span>
+                        <span class="text-xs text-[var(--theme-gary)]">2个月前</span>
+                    </div>
+                </a>
+                                                <a class="page-next-link bg-white w-[calc(50%-8px)] px-8 py-5 rounded-md cursor-pointer transition-all duration-1000 ease-in-out shadow-none group hover:shadow-[0_0_30px_-10px_rgba(0,0,0,0.05)]" href="https://www.x-techcon.com/article/189980.html" rel="noopener noreferrer">
+                    <p class="page-next text-base text-slate-600 font-bold transition-all duration-1000 ease-in-out h-x group-hover:text-[var(--theme-blue)]">L4赛道频现“闯入者”，谁在引领规模化商业落地？</p>
+                    <div class="page-next-footer flex justify-between pt-5">
+                        <span class="text-xs text-[var(--theme-gary)]">7分钟前</span>
+                        <span class="text-xs text-[var(--theme-gary)] flex items-center">下一篇 <i class="ri-arrow-right-s-line text-base"></i></span>
+                    </div>
+                </a>
+                            </div>
+        </div>
+        <!--左侧内容结束-->
+        <!--右侧内容开始-->
+        <div class="content-sidebar relative w-[300px] ml-[15px]">
+            <!--广告开始-->
+            <div class="container-ad mt-[15px] rounded relative">
+                <!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.5.2 -->
+                <ins data-revive-zoneid="1" data-revive-id="6ad7733efb941e0129dc826bdffb49e3"></ins>
+                <script async src="//ad.x-techcon.com/delivery/asyncjs.php"></script>
+            </div>
+            <!--广告结束-->
+            <!--作者相关开始-->
+            <div class="author-container mt-[15px] bg-white rounded-md p-5">
+                <div class="author-header flex items-center justify-between w-full mb-5">
+                    <div class="area-title w-[calc(100%-40px)] h-auto">
+                        <img class="w-full h-full overflow-hidden" src="/image/frontend/author.svg" alt="作者相关">
+                    </div>
+                    <a class="text-xs text-[var(--theme-gary)] font-light px-[12px] py-[6px] bg-gray-50 inline-block whitespace-nowrap w-auto" href="https://www.x-techcon.com/author/91.html" target="_blank" rel="noopener noreferrer">更多</a>
+                </div>
+                <ul class="author-info flex justify-center flex-col items-center">
+                    <li class="author-avatar size-[72px] m-auto">
+                        <img class="author-avatar-img w-full h-full overflow-hidden object-contain" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/covers/91png" alt="机器之心">
+                    </li>
+                    <li class="author-name text-base text-slate-900 font-bold my-4"> <a  href="https://www.x-techcon.com/author/91.html" target="_blank" rel="noopener noreferrer">机器之心</a></li>
+                    <li class="author-intru text-xs text-[var(--theme-gary)] text-justify h-2x">专业的人工智能媒体和产业服务平台</li>
+                </ul>
+                <div class="author-about my-8 relative ">
+                    <span class="author-line block bg-[linear-gradient(to_right,transparent,var(--theme-bg-100),transparent)] w-full h-px"></span>
+                    <span class="block bg-white text-[var(--theme-gary-200)] text-sm px-2 absolute top-[-10px] left-[calc(50%-37px)]">与TA相关</span>
+                </div>
+                <ul class="author-article-list">
+                                            <li class="author-article-item flex items-center justify-between mt-[15px]">
+                            <a href="https://www.x-techcon.com/article/189931.html" target="_blank">
+                                <div class="article-item-img w-[80px] h-[60px] mr-[15px]">
+                                    <img class="article-item-bg w-full h-full overflow-hidden object-cover rounded" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-22/6ab205641146e.jpeg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.x-techcon.com/article/189931.html" target="_blank" class="author-article-link block w-[calc(100%-95px)] h-2x">Agent版Hugging Face来了，openJiuwen发布首个开源智能体资产平台</a>
+                        </li>
+                                            <li class="author-article-item flex items-center justify-between mt-[15px]">
+                            <a href="https://www.x-techcon.com/article/189930.html" target="_blank">
+                                <div class="article-item-img w-[80px] h-[60px] mr-[15px]">
+                                    <img class="article-item-bg w-full h-full overflow-hidden object-cover rounded" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-22/6ab2055863859.jpeg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.x-techcon.com/article/189930.html" target="_blank" class="author-article-link block w-[calc(100%-95px)] h-2x">用GPT-6 Astra就能直接控制机器人？可具身真机没那么简单</a>
+                        </li>
+                                            <li class="author-article-item flex items-center justify-between mt-[15px]">
+                            <a href="https://www.x-techcon.com/article/189886.html" target="_blank">
+                                <div class="article-item-img w-[80px] h-[60px] mr-[15px]">
+                                    <img class="article-item-bg w-full h-full overflow-hidden object-cover rounded" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-22/6ab1e96a4c6ab.jpeg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.x-techcon.com/article/189886.html" target="_blank" class="author-article-link block w-[calc(100%-95px)] h-2x">假如有一万张卡，RL训练该怎么扩大规模？十万张呢？</a>
+                        </li>
+                                            <li class="author-article-item flex items-center justify-between mt-[15px]">
+                            <a href="https://www.x-techcon.com/article/189885.html" target="_blank">
+                                <div class="article-item-img w-[80px] h-[60px] mr-[15px]">
+                                    <img class="article-item-bg w-full h-full overflow-hidden object-cover rounded" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-22/6ab1e95ca972d.jpeg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.x-techcon.com/article/189885.html" target="_blank" class="author-article-link block w-[calc(100%-95px)] h-2x">全球唯一非侵入穿颅读脑突破！这家中国公司想成为脑科学的“英伟达”</a>
+                        </li>
+                                            <li class="author-article-item flex items-center justify-between mt-[15px]">
+                            <a href="https://www.x-techcon.com/article/189798.html" target="_blank">
+                                <div class="article-item-img w-[80px] h-[60px] mr-[15px]">
+                                    <img class="article-item-bg w-full h-full overflow-hidden object-cover rounded" src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-22/6ab1c6f924890.jpeg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.x-techcon.com/article/189798.html" target="_blank" class="author-article-link block w-[calc(100%-95px)] h-2x">迎接生成范式革命！复旦和Wan团队发布首篇Agentic视觉生成综述</a>
+                        </li>
+                    
+
+                </ul>
+            </div>
+            <!--作者相关结束-->
+            <!--相关推荐开始-->
+                            <div class="related-container mt-[15px] bg-white p-5 rounded-md">
+                <div class="author-header flex items-center justify-between w-full">
+                    <div class="area-title w-[calc(100%-40px)] h-auto">
+                        <img class="w-full h-full overflow-hidden" src="/image/frontend/related.svg" alt="作者相关">
+                    </div>
+                </div>
+                <ul class="related-list text-justify">
+                                                                        <li class="related-item mt-[15px]">
+                            <div class="related-item-inner relative pb-10">
+                                <div class="related-article-img w-full h-[160px]">
+                                    <a target="_blank" href="https://www.x-techcon.com/article/189633.html">
+                                        <img src="https://xtechcon-static.oss-cn-chengdu.aliyuncs.com/xtimes/xtimes/images/2026-09-21/6ab103dcf390f.jpeg" alt="" class="related-bg w-full h-full overflow-hidden object-cover rounded-md">
+                                    </a>
+                                </div>
+                                <div class="related-title w-full h-[70px] bg-white/40 backdrop-blur-sm p-[15px] rounded-b-md absolute left-0 bottom-0 shadow-[0_0_50px_-10px_rgba(0,0,0,0.05)]">
+                                    <a class="related-title-link text-slate-900 text-base font-medium leading-5 h-2x" href="https://www.x-techcon.com/article/189633.html" target="_blank" rel="noopener noreferrer">芯片巨头，纷纷加速AI芯片布局</a>
+                                </div>
+                            </div>
+                        </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189647.html" target="_blank" rel="noopener noreferre">阿里达摩院医疗 AI，十年拼出一张图</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189661.html" target="_blank" rel="noopener noreferre">AI时代，我们需要什么样的学术规范</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189747.html" target="_blank" rel="noopener noreferre">狐讯 | Kimi Code 桌面端发布；支付宝推出鱼来 AI 系统</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189512.html" target="_blank" rel="noopener noreferre">IBS CEO预测：2030年FD-SOI将拿下38.6%代工市场，成为物理AI理想技术选择</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189526.html" target="_blank" rel="noopener noreferre">七彩虹橘宝X16 Pro发布：纯白高颜值与AI智控生态的双重突破</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189548.html" target="_blank" rel="noopener noreferre">华为昇腾950超节点亮相：千卡合一，重塑AI算力边界</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189566.html" target="_blank" rel="noopener noreferre">FAA为特斯拉Roadster发布会划设禁飞区，马斯克称需现场见证以证非AI生成</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189678.html" target="_blank" rel="noopener noreferre">剪映，杀入 AI 互动影游</a>
+                            </li>
+                                                                                                <li class="related-item mt-[15px] flex items-center">
+                                <span class="related-circle block size-3 border-[2px] border-[var(--theme-blue)] rounded-[50%] mr-2"></span>
+                                <a class="related-title-link w-[calc(100%-22px)] text-slate-900 text-base h-x" href="https://www.x-techcon.com/article/189554.html" target="_blank" rel="noopener noreferre">AI 正在制造 App 过剩时代</a>
+                            </li>
+                                                            </ul>
+            </div>
+                        <!--相关推荐结束-->
+        </div>
+        <!--右侧内容结束-->
+    </div>
+    <!--侧边功能开始-->
+    <div id="funation-sidebar" class="funation-sidebar fixed top-[165px] left-[50%] -translate-x-[720px] invisible opacity-0 transition-all duration-300 ease-in-out">
+        <ul class="funation-sidebar-list inline-flex items-center flex-col">
+            <li class="funation-sidebar-item inline-block mb-5 cursor-pointer" id="like-container" >
+                        <span class="funation-best block size-12 bg-[var(--theme-gary-300)] rounded-[50%] flex items-center justify-center mb-2" id="like-button" data-xtimes-id="166309">
+                            <i class="ri-thumb-up-fill text-lg  text-[var(--theme-gary)] "></i>
+                        </span>
+                <span class="funation-best-number block text-sm text-center  text-[var(--theme-gary)] " id="likes-count">0</span>
+            </li>
+
+            <li class="funation-sidebar-item inline-block mb-5 cursor-pointer group">
+                        <span class="funation-best block size-12 bg-[var(--theme-gary-300)] rounded-[50%] flex items-center justify-center mb-2">
+                            <i class="ri-share-forward-fill text-lg text-[var(--theme-gary)]"></i>
+                        </span>
+                <div class="article-popover w-[140px] bg-white p-[10px] rounded-md inline-block absolute top-[50%] left-[70px] shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] invisible opacity-0 translate-x-[5px] transition-all duration-300 ease group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
+                    <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewBox="0 0 120 120"><rect x="0" y="0" width="120" height="120" fill="#ffffff"/><g transform="scale(4.138)"><g transform="translate(0,0)"><path fill-rule="evenodd" d="M9 0L9 1L8 1L8 2L9 2L9 3L8 3L8 4L10 4L10 7L11 7L11 4L12 4L12 5L13 5L13 6L12 6L12 9L14 9L14 10L15 10L15 11L16 11L16 12L17 12L17 14L15 14L15 13L14 13L14 12L13 12L13 13L12 13L12 11L13 11L13 10L11 10L11 11L10 11L10 9L11 9L11 8L6 8L6 9L5 9L5 8L0 8L0 9L3 9L3 12L4 12L4 13L2 13L2 10L0 10L0 21L1 21L1 17L2 17L2 18L3 18L3 19L2 19L2 21L4 21L4 19L7 19L7 18L4 18L4 17L2 17L2 16L5 16L5 17L8 17L8 18L9 18L9 19L8 19L8 20L10 20L10 21L12 21L12 23L13 23L13 22L14 22L14 21L15 21L15 20L17 20L17 21L16 21L16 22L15 22L15 23L18 23L18 24L17 24L17 25L16 25L16 24L11 24L11 25L10 25L10 26L12 26L12 25L14 25L14 27L15 27L15 28L11 28L11 27L10 27L10 28L9 28L9 24L10 24L10 23L11 23L11 22L10 22L10 23L9 23L9 21L8 21L8 23L9 23L9 24L8 24L8 29L15 29L15 28L16 28L16 27L17 27L17 25L18 25L18 24L20 24L20 25L19 25L19 26L21 26L21 27L20 27L20 28L19 28L19 27L18 27L18 28L17 28L17 29L18 29L18 28L19 28L19 29L20 29L20 28L21 28L21 27L23 27L23 29L27 29L27 28L28 28L28 26L29 26L29 24L28 24L28 25L27 25L27 24L26 24L26 25L25 25L25 23L27 23L27 22L29 22L29 20L28 20L28 19L27 19L27 16L28 16L28 15L27 15L27 14L25 14L25 13L27 13L27 12L28 12L28 11L27 11L27 12L26 12L26 11L25 11L25 13L24 13L24 14L23 14L23 13L22 13L22 11L23 11L23 12L24 12L24 11L23 11L23 10L25 10L25 9L26 9L26 8L25 8L25 9L24 9L24 8L23 8L23 9L22 9L22 8L21 8L21 6L20 6L20 7L19 7L19 6L18 6L18 5L20 5L20 3L21 3L21 2L19 2L19 1L21 1L21 0L18 0L18 1L17 1L17 2L16 2L16 1L15 1L15 0L14 0L14 1L11 1L11 2L10 2L10 0ZM12 2L12 4L13 4L13 5L14 5L14 6L13 6L13 8L14 8L14 9L15 9L15 10L17 10L17 12L19 12L19 11L20 11L20 10L17 10L17 9L15 9L15 8L14 8L14 6L15 6L15 7L16 7L16 8L18 8L18 9L19 9L19 7L18 7L18 6L17 6L17 7L16 7L16 6L15 6L15 5L17 5L17 4L15 4L15 3L16 3L16 2ZM17 2L17 3L18 3L18 4L19 4L19 2ZM10 3L10 4L11 4L11 3ZM13 3L13 4L14 4L14 5L15 5L15 4L14 4L14 3ZM8 5L8 7L9 7L9 5ZM20 8L20 9L21 9L21 10L22 10L22 9L21 9L21 8ZM27 8L27 9L28 9L28 10L29 10L29 9L28 9L28 8ZM6 9L6 10L5 10L5 11L4 11L4 12L5 12L5 13L6 13L6 14L5 14L5 16L7 16L7 15L8 15L8 14L10 14L10 13L11 13L11 15L10 15L10 17L9 17L9 18L10 18L10 19L11 19L11 18L13 18L13 17L12 17L12 15L13 15L13 16L14 16L14 18L16 18L16 19L17 19L17 20L18 20L18 21L17 21L17 22L20 22L20 21L19 21L19 20L21 20L21 19L22 19L22 20L23 20L23 18L22 18L22 17L23 17L23 15L22 15L22 14L21 14L21 15L20 15L20 14L18 14L18 15L17 15L17 16L16 16L16 17L15 17L15 16L14 16L14 15L15 15L15 14L12 14L12 13L11 13L11 12L10 12L10 13L8 13L8 12L7 12L7 11L8 11L8 9ZM6 10L6 11L7 11L7 10ZM6 12L6 13L7 13L7 14L6 14L6 15L7 15L7 14L8 14L8 13L7 13L7 12ZM20 12L20 13L21 13L21 12ZM28 13L28 14L29 14L29 13ZM1 14L1 16L2 16L2 15L3 15L3 14ZM24 14L24 15L25 15L25 16L24 16L24 17L25 17L25 18L24 18L24 19L25 19L25 21L26 21L26 20L27 20L27 19L26 19L26 17L25 17L25 16L27 16L27 15L25 15L25 14ZM19 15L19 16L20 16L20 15ZM17 16L17 17L16 17L16 18L17 18L17 17L18 17L18 19L19 19L19 18L21 18L21 17L18 17L18 16ZM10 17L10 18L11 18L11 17ZM28 17L28 18L29 18L29 17ZM12 19L12 20L15 20L15 19ZM5 20L5 21L7 21L7 20ZM21 21L21 24L24 24L24 21ZM22 22L22 23L23 23L23 22ZM15 25L15 26L16 26L16 25ZM21 25L21 26L23 26L23 25ZM24 25L24 26L25 26L25 25ZM24 27L24 28L25 28L25 27ZM26 27L26 28L27 28L27 27ZM0 0L0 7L7 7L7 0ZM1 1L1 6L6 6L6 1ZM2 2L2 5L5 5L5 2ZM22 0L22 7L29 7L29 0ZM23 1L23 6L28 6L28 1ZM24 2L24 5L27 5L27 2ZM0 22L0 29L7 29L7 22ZM1 23L1 28L6 28L6 23ZM2 24L2 27L5 27L5 24Z" fill="#000000"/></g></g></svg>
+
+                    <span class="text-xs text-[var(--theme-gary-200)] flex items-center justify-center"><i class="ri-wechat-fill text-lg text-[var(--theme-green)] text-center mr-1"></i>微信扫一扫</span>
+                    <span class="popover-right block size-[10px] bg-white absolute -left-[3px] top-[calc(50%-5px)] rotate-45"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--侧边功能结束-->
+</div>
+<!--内容结束-->
+
+<!--侧边栏开始-->
+<div class="sidebar-btn fixed right-[50px] bottom-[100px] z-[99]">
+    <ul id="sidebar-inner" class="sidebar-inner cursor-pointer">
+        <li class="wechat group size-[42px] relative bg-white rounded-md flex items-center justify-center shadow-[0_0_50px_-10px_rgba(0,0,0,0.2)]">
+            <i class="ri-wechat-fill block text-2xl text-slate-800 group-hover:text-[var(--theme-blue)]"></i>
+            <div class="sidebar-popover p-[5px] bg-white rounded-md w-auto h-auto -left-[150px] invisible opacity-0 translate-x-[5px] transition-all duration-300 ease shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] absolute group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
+                <img class="size-[120px] overflow-hidden" src="/image/frontend/x-wechat.png" alt="微信公众号" srcset="">
+                <span class="text-sm text-slate-800 flex items-center justify-center"><i class="ri-wechat-fill text-[var(--theme-green)] text-xl mr-[3px]"></i>微信公众号</span>
+                <span class="popover-right block size-[10px] bg-white absolute -right-[3px] top-[calc(50%-5px)] rotate-45"></span>
+            </div>
+        </li>
+        <li id="back-to-top" class="back-top group size-[42px] rounded-b-md flex items-center justify-center shadow-[0_0_50px_-10px_rgba(0,0,0,0.2)] opacity-0 transition-all duration-300 ease-in-out">
+            <i class="ri-skip-up-line block text-3xl text-slate-800 group-hover:text-[var(--theme-blue)]"></i>
+            <div class="sidebar-popover p-[10px] bg-white rounded-md w-auto h-auto -left-[95px] invisible opacity-0 translate-x-[5px] transition-all duration-300 ease shadow-[0_0_50px_-10px_rgba(0,0,0,0.1)] absolute group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
+                <span class="text-sm text-slate-800 flex items-center justify-center">返回顶部</span>
+                <span class="popover-right block size-[10px] bg-white absolute -right-[3px] top-[calc(50%-5px)] rotate-45"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--侧边栏结束-->
+<!--页脚开始-->
+<footer class=" container-footer w-full bg-slate-950">
+    <div class="flex justify-center min-w-[1340px] h-auto">
+        <div class="footer-top w-[1280px] py-[60px] flex justify-between">
+            <div class="footer-left flex items-start">
+                <div class="footer-item pr-[180px]">
+                    <div class="footer-title inline-block">
+                        <p class="text-white text-base font-medium mb-[10px]">关于我们</p>
+                        <span class="block w-full h-px bg-white mb-[30px]">
+                            <span class="block w-[20px] h-px bg-[var(--theme-blue)]"></span>
+                        </span>
+                    </div>
+                    <ul class="text-gray-100">
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/about-us" target="_blank" rel="noopener noreferrer">关于我们</a></li>
+
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/cooperation" target="_blank" rel="noopener noreferrer">合作内容</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/user_agreement" target="_blank" rel="noopener noreferrer">使用协议</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/privacy_policy" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item pr-[180px]">
+                    <div class="footer-title inline-block">
+                        <p class="text-white text-base font-medium mb-[10px]">服务支持</p>
+                        <span class="block w-full h-px bg-white mb-[30px]">
+                            <span class="block w-[20px] h-px bg-[var(--theme-blue)]"></span>
+                        </span>
+                    </div>
+                    <ul class="text-gray-100">
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/enterprise/apply" target="_blank" rel="noopener noreferrer">企业入驻</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/cooperation" target="_blank" rel="noopener noreferrer">内容合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-title inline-block">
+                        <p class="text-white text-base font-medium mb-[10px]">友情链接</p>
+                        <span class="block w-full h-px bg-white mb-[30px]">
+                            <span class="block w-[20px] h-px bg-[var(--theme-blue)]"></span>
+                        </span>
+                    </div>
+                    <ul class="text-gray-100">
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/meterage" target="_blank">计量工具</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/tag/201.html" target="_blank">机器人</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/tag/12.html" target="_blank">AI</a></li>
+                        <li class="text-sm pb-[10px]"><a href="https://www.x-techcon.com/tag/91.html" target="_blank">低空经济</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-right flex items-start">
+                <div class="footer-item">
+                    <div class="footer-title inline-block">
+                        <p class="text-white text-base font-medium mb-[10px]">联系我们</p>
+                        <span class="block w-full h-px bg-white mb-[30px]">
+                            <span class="block w-[20px] h-px bg-[var(--theme-blue)]"></span>
+                        </span>
+                    </div>
+                    <ul class="text-gray-100">
+                        <li class="text-sm pb-[10px]">
+                            <a class="email-link flex items-center" href="mailto:service@x-techcon.com"><i class="ri-mail-fill text-lg text-white leading-none mr-[5px]"></i>邮箱：service@x-techcon.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-item pl-[100px]">
+                    <div class="footer-title inline-block">
+                        <p class="text-white text-base font-medium mb-[10px]">关注我们</p>
+                        <span class="block w-full h-px bg-white mb-[30px]">
+                            <span class="block w-[20px] h-px bg-[var(--theme-blue)]"></span>
+                        </span>
+                    </div>
+                    <ul class="text-gray-100 flex items-center justify-center gap-[10px] relative">
+                        <li class="cursor-pointer footer-item-wechat">
+                            <span class="tel-link flex items-center justify-center bg-[rgba(255,255,255,0.1)] rounded p-[10px]"><i class="ri-wechat-fill text-xl text-white leading-none"></i></span>
+                        </li>
+                        <div class="footer-popover-wechat">
+                            <img class="w-full h-full bg-white p-[4px] rounded-md" src="/image/frontend/x-wechat.png" alt="wechat">
+                        </div>
+                        <li class="cursor-pointer footer-item-wechat-channel">
+                            <span class="tel-link flex items-center justify-center bg-[rgba(255,255,255,0.1)] rounded p-[10px]"><i class="ri-wechat-channels-line text-xl text-white leading-none"></i></span>
+                        </li>
+                        <div class="footer-popover-wechat-channel">
+                            <img class="w-full h-full bg-white p-[4px] rounded-md" src="/image/frontend/wechat-channel.png" alt="wechat-channel">
+                        </div>
+                        <li class="cursor-pointer footer-item-tiktok">
+                            <span class="tel-link flex items-center justify-center bg-[rgba(255,255,255,0.1)] rounded p-[10px]"><i class="ri-tiktok-fill text-xl text-white leading-none"></i></span>
+                        </li>
+                        <div class="footer-popover-tiktok">
+                            <img class="w-full h-full bg-white p-[4px] rounded-md" src="/image/frontend/tiktok.png" alt="tiktok">
+                        </div>
+                        <li class="cursor-pointer footer-item-kuaishou">
+                            <span class="tel-link flex items-center justify-center bg-[rgba(255,255,255,0.1)] rounded p-[8px]"><img class="w-[20px] h-[20px]" src="/image/frontend/kuaishou.svg" alt="kuaishou"></span>
+                        </li>
+                        <div class="footer-popover-kuaishou">
+                            <img class="w-full h-full bg-white p-[4px] rounded-md" src="/image/frontend/kuaishou.png" alt="kuaishou">
+                        </div>
+                        <li class="cursor-pointer footer-item-xhs">
+                            <span class="tel-link flex items-center justify-center bg-[rgba(255,255,255,0.1)] rounded p-[8px]"><img class="w-[20px] h-[20px]" src="/image/frontend/xhs.svg" alt="xiaohongshu"></span>
+                        </li>
+                        <div class="footer-popover-xhs">
+                            <img class="w-full h-full bg-white p-[4px] rounded-md" src="/image/frontend/xhs.png" alt="xiaohongshu">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-white text-xs flex justify-center py-[20px]">
+        <span>Copyright &copy; 2025-<script>document.write((new Date()).getFullYear());</script>成都区角科技有限公司</span>&nbsp;
+        <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="noopener noreferrer nofollow">蜀ICP备2025143415号-1</a>&nbsp;
+        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51015602001305" rel="noopener noreferrer nofollow" target="_blank">川公网安备51015602001305号</a>
+    </div>
+</footer>
+<!--页脚结束-->
+
+<script src="https://www.x-techcon.com/js/page.js"></script>
+<script src="https://www.x-techcon.com/js/sticky-sidebar.js"></script>
+</div>
+</body>
+</html>

@@ -2,6 +2,9 @@ id: roboscience
 names:
   zh: 机科未来
   en: RoboScience
+  aliases:
+  - RoboScience 机器科学
+  - 机器科学
 status: active
 layers:
 - foundation
@@ -10,3 +13,18 @@ upstream:
   robotics_notebooks_institution: roboscience
 accounts:
   github: roboscienceorg
+  site: https://www.roboscience.co
+founded: 2024-12
+hq:
+  country: CN
+  city: 北京
+description: 通用具身智能公司，做 VLOA 架构具身大模型 Visics、物理仿真引擎 RoboMirage 与轮式仿人形机器人 REX G1，主体为北京机科未来科技有限公司。
+sources:
+- url: https://www.roboscience.co/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，成立于 2024 年 12 月；办公地址列出深圳、苏州、北京、杭州
+- url: https://en.roboscience.co/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 英文官网，主体名称「北京机科未来科技有限公司」

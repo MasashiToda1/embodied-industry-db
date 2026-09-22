@@ -1,0 +1,25 @@
+id: evt-2026-05-20-gigaai-product-launch-seelight-s1
+date: '2026-05-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界发布家庭通用机器人拾光 S1，与湖北科投达成百台订单
+summary:
+  zh: 5 月 20 日，湖北极佳视界机器人科技有限公司联合湖北人形机器人产业联盟、湖北人形机器人创新中心在武汉发布家庭通用机器人「拾光 S1」，现场演示做饭、洗衣服、叠衣服、桌面整理等家务任务。发布会上公司宣布与湖北科投达成百台订单合作，5 月 31 日起首批机器人进入光谷人才公寓开展场景测试。
+counterparties:
+- 湖北省科技投资集团有限公司
+- 湖北人形机器人产业联盟
+- 湖北人形机器人创新中心
+axes:
+  target_scene:
+  - home
+evidence:
+- url: https://m.cls.cn/detail/2377373
+  publisher: 财联社（转载长江日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/m-2026-05-20-gigaai-hubei-100-order.html
+corroboration: single

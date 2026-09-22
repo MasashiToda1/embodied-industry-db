@@ -1,0 +1,31 @@
+id: evt-2026-02-roboscience-funding-pre-a-round
+date: 2026-02
+date_precision: month
+type: funding
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: RoboScience 机器科学完成数亿元 Pre-A 轮融资，普华资本领投
+summary:
+  zh: 智东西 5 月 6 日报道回顾，RoboScience 机器科学 2026 年 2 月完成数亿元 Pre-A 轮融资，投资方包括普华资本、达晨财智、长石资本、香港慧科科创、天启资本、招商局创投、零一创投等。财经天下报道称本轮由普华资本领投。
+counterparties:
+- 普华资本
+- 达晨财智
+- 长石资本
+- 香港慧科科创
+- 天启资本
+- 招商局创投
+- 零一创投
+evidence:
+- url: https://zhidx.com/p/555152.html
+  publisher: 智东西（机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/zhidx-2026-05-roboscience-a-round.html
+- url: http://www.caijingtx.com/cjnews/2026/010329529.html
+  publisher: 财经天下
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/caijingtx-2026-08-17-roboscience-rex-g1-wrc.html
+corroboration: multi

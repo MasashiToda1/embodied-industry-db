@@ -1,0 +1,40 @@
+id: evt-2026-04-20-sudo-ai-funding-pre-a-round
+date: '2026-04-20'
+date_precision: day
+type: funding
+orgs:
+- id: sudo-ai
+  role: subject
+title:
+  zh: 苏度科技完成 5 亿美元 Pre-A 轮融资，估值突破 20 亿美元
+summary:
+  zh: 机器人前瞻 4 月 22 日报道，4 月 20 日苏度科技宣布完成 5 亿美元 Pre-A 轮融资，估值突破 20 亿美元，投资方包括宁德时代、阿里巴巴、高瓴创投、腾讯投资、蚂蚁集团、IDG 资本、蓝驰创投、孚腾资本、复旦科创、云晖资本、绿洲资本、国寿股权以及君联资本。苏度官方技术博客同日称公司近期完成新一轮融资，估值突破 20 亿美元，高鹄资本担任独家财务顾问。
+counterparties:
+- 宁德时代
+- 阿里巴巴
+- 高瓴创投
+- 腾讯投资
+- 蚂蚁集团
+- IDG 资本
+- 蓝驰创投
+- 孚腾资本
+- 复旦科创
+- 云晖资本
+- 绿洲资本
+- 国寿股权
+- 君联资本
+amount:
+  value: 500000000
+  currency: USD
+evidence:
+- url: https://zhidx.com/p/551689.html
+  publisher: 智东西（机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/zhidx-2026-04-20-sudo-ai-pre-a-round.html
+- url: https://finance.sina.com.cn/cj/2026-04-21/doc-inhvfivk6379690.shtml
+  publisher: 新浪财经（融资速递）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-20-sudo-ai-pre-a-round-sina.html
+corroboration: multi

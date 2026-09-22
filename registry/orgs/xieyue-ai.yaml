@@ -7,3 +7,17 @@ names:
 status: active
 layers:
 - foundation
+founded: 2026-01
+hq:
+  country: CN
+  city: 杭州
+description: 以家庭为第一落地场景的具身基础模型公司，提出 Duplex Reasoning 范式，由理想汽车前高管陈伟、张骁创立，主体为杭州斜跃智能科技有限公司。
+sources:
+- url: https://finance.sina.com.cn/tech/roll/2026-05-06/doc-inhwxnuk8393542.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 雷峰网 2026-05-06 报道，主体「杭州斜跃智能科技有限公司」成立于 2026-01-29；公司官宣稿称「成立于 2026 年 2 月」，此处取工商日期
+- url: https://www.chinaventure.com.cn/news/114-20260914-393235.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 投中网 2026-09-14 报道，业务定位与创始团队

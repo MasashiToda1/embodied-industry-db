@@ -1,0 +1,29 @@
+id: evt-2026-07-28-delta-intelligence-funding-angel-plus-plus
+date: '2026-07-28'
+date_precision: day
+type: funding
+orgs:
+- id: delta-intelligence
+  role: subject
+- id: agibot
+  role: investor
+- id: leju
+  role: investor
+- id: galaxea
+  role: investor
+title:
+  zh: 德塔智能完成近 5 亿元天使++ 轮融资
+summary:
+  zh: 新京报 7 月 28 日报道，人形机器人基础模型公司德塔智能近日完成近 5 亿元天使++ 轮融资，投资方包括多家上市公司产业方和头部财务投资机构，为公司成立半年内的第六轮融资。此前投资方包括智元机器人、乐聚机器人、星海图等主机厂，以及元禾控股、复星锐正、华映资本、联想创投等机构。
+counterparties:
+- 元禾控股
+- 复星锐正
+- 华映资本
+- 联想创投
+evidence:
+- url: https://www.bjnews.com.cn/detail/1785246449129444.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/bjnews-2026-07-28-delta-intelligence-angel.html
+corroboration: single

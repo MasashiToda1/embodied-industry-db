@@ -1,0 +1,20 @@
+id: evt-2026-05-no16-robot-funding-seed-round
+date: 2026-05
+date_precision: month
+type: funding
+orgs:
+- id: no16-robot
+  role: subject
+title:
+  zh: 十六号机器人（XVI Robotics）获知名机构种子轮融资
+summary:
+  zh: 腾讯新闻 5 月 22 日报道，宋鸿涌创办的北京十六号机器人科技有限公司（XVI Robotics）团队仍在早期组建阶段，已获得知名机构种子轮融资，投资方、金额、产品形态与商业化路径均未披露。
+date_basis: derived
+date_as_stated: 腾讯新闻（2026-05-22）原文「已获得知名机构种子轮融资」，未写融资时间
+evidence:
+- url: https://news.qq.com/rain/a/20260522A08XJW00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/news-2026-05-no16-robot-seed-round.html
+corroboration: single

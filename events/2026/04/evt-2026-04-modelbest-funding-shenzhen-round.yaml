@@ -1,0 +1,24 @@
+id: evt-2026-04-modelbest-funding-shenzhen-round
+date: 2026-04
+date_precision: month
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能完成数亿元融资，深创投、汇川产投联合领投
+summary:
+  zh: 科创板日报 4 月 9 日报道，面壁智能近日宣布完成新一轮数亿元人民币融资，由深创投、汇川技术旗下汇川产投联合领投，道禾长期投资、国泰海通创新投、武岳峰科创等跟投。报道称这是公司 2026 年完成的第二笔融资，一季度累计融资规模超 10 亿元。
+counterparties:
+- 深创投
+- 汇川产投
+- 道禾长期投资
+- 国泰海通创新投
+- 武岳峰科创
+evidence:
+- url: https://news.qq.com/rain/a/20260409A035TD00
+  publisher: 腾讯新闻（转载科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-modelbest-shenzhen-round.html
+corroboration: single

@@ -1,0 +1,30 @@
+id: evt-2026-04-gigaai-funding-b1-round
+date: 2026-04
+date_precision: month
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成近 15 亿元 B1 轮融资
+summary:
+  zh: 腾讯新闻 2026 年 4 月 16 日报道，极佳视界近日完成近 15 亿元 B1 轮融资，投资方包括某科技巨头、伊利集团 CVC 健瓴资本、普华资本、华福投资、毅达资本、新型工业化基金、盛景嘉成、图灵资管、凯洋资本、武汉高科、贵阳金投、山东产投等，老股东华控基金、华民投、一村资本、领阳投资加注。
+counterparties:
+- 健瓴资本
+- 普华资本
+- 华福投资
+- 毅达资本
+- 新型工业化基金
+- 盛景嘉成
+- 图灵资管
+- 凯洋资本
+- 武汉高科
+- 贵阳金投
+- 山东产投
+evidence:
+- url: https://news.qq.com/rain/a/20260416A05J0800
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-gigaai-b1-round.html
+corroboration: single
