@@ -1,0 +1,28 @@
+id: evt-2026-09-02-hf-robotics-funding-nvidia-acquires-hugging-face
+date: 2026-09-02
+date_precision: day
+type: funding
+orgs:
+- id: hf-robotics
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: 英伟达签署最终协议以 129.3 亿美元收购 Hugging Face（含机器人团队 Pollen Robotics 与 LeRobot），公司给出的完成时间为 2027 年上半年
+summary:
+  zh: 9 月 2 日，英伟达与 Hugging Face, Inc. 签署最终收购协议，英伟达 9 月 3 日博客称收购对价为 129.303 亿美元。英伟达向 SEC 提交的 8-K 称交易包含向 Hugging Face 股东支付约 119 亿美元（可调整）及最高约 10 亿美元的员工股权留任计划，8-K 写明的完成时间为 2027 年上半年，须满足监管审批等惯常条件；英伟达承诺保持 Hugging Face 平台开放、继续支持其他芯片厂商。Hugging Face 的机器人业务（LeRobot 库、2025 年 4 月收购的 Pollen Robotics 及其 Reachy 2 / Reachy Mini / Microduck 产品）随交易并入。
+amount:
+  value: 12930300000
+  currency: USD
+evidence:
+- url: https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/
+  publisher: NVIDIA Blog
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/blogs-2026-09-02-hf-robotics-nvidia-acqui.html
+- url: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm
+  publisher: SEC EDGAR（NVIDIA 8-K）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/sec-2026-09-02-hf-robotics-nvidia-acqui.html
+corroboration: multi

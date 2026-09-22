@@ -1,0 +1,25 @@
+id: evt-2026-06-shadow-robotics-partnership-touchlab-tacto-icra-2026
+date: 2026-06
+date_precision: month
+type: partnership
+orgs:
+- id: shadow-robotics
+  role: subject
+title:
+  zh: Shadow Robot 在 ICRA 2026 展示集成 Touchlab TACTO 触觉传感器的 Shadow Hand，并用 MANUS 手套遥操作 Shadow Hand 与 DEX-EE Chiral
+summary:
+  zh: 2026 年 6 月在维也纳举行的 ICRA 2026 上，Shadow Robot 展位的重点之一是将 Touchlab 新款 TACTO 触觉传感器集成到 Shadow Hand，用于滑移检测与更可靠的抓取；同时用 MANUS Metagloves Pro Haptic 遥操作五指 Shadow Hand（20 自由度）与三指 DEX-EE Chiral（12 自由度、4.1 kg，带类人拇指偏置，各指节配多触元磁式触觉传感器）。公司 6 月 25 日发布的回顾称 ICRA 2026 有近 9000 名代表与 196 家展商。
+counterparties:
+- Touchlab
+- MANUS
+axes:
+  data_modality: [tactile]
+  data_acquisition: [teleop]
+  target_scene: [education-research]
+evidence:
+- url: https://shadowrobot.com/icra-2026-recap/
+  publisher: Shadow Robot 官网博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/shadowrobot-2026-06-shadow-robotics-icra-202.html
+corroboration: single

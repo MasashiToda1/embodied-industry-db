@@ -1,0 +1,22 @@
+id: evt-2025-10-24-rainbow-robotics-partnership-samsung-heavy-shipbuilding-robots
+date: 2025-10-24
+date_precision: day
+type: partnership
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: Rainbow Robotics 与三星重工合作开发船厂 AI 焊接机器人：三星重工提供数据与测试环境，Rainbow 负责硬件
+summary:
+  zh: 10 月 24 日，三星重工宣布与 Rainbow Robotics 合作开发 AI 焊接机器人，用于船体分段焊接。协议下三星重工提供作业数据与测试环境，Rainbow Robotics 负责硬件开发与技术支持，目标是做出可在狭窄空间与斜面作业的轻量化移动焊接机器人（含移动双臂与四足形态）。
+counterparties:
+- 三星重工
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.ajupress.com/view/20251024142000329
+  publisher: Aju Press
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/ajupress-2025-10-24-rainbow-robotics-samsung.html
+corroboration: single

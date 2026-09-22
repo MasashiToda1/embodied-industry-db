@@ -1,0 +1,25 @@
+id: evt-2026-09-03-robotis-deployment-cj-logistics-olive-young-ai-worker
+date: 2026-09-03
+date_precision: day
+type: deployment
+orgs:
+- id: robotis
+  role: subject
+- id: rlwrld
+  role: counterparty
+title:
+  zh: CJ 大韩通运在 Olive Young 龙仁物流中心包装线上线两台 ROBOTIS 双臂人形机器人，模型由 RLWRLD 提供
+summary:
+  zh: 9 月 3 日，CJ 大韩通运宣布在京畿道龙仁市杨智 Olive Young 物流中心部署两台双臂人形机器人，用于包装工序中向纸箱内放入缓冲材料，公司称这是韩国首次在实际运营的物流流程中使用人形机器人。此前 2025 年在军浦履约中心完成现场测试。硬件由 ROBOTIS 提供，机器人手由 Aidin Robotics 提供，机器人基础模型（RFM）由 RealWorld AI（RLWRLD）提供。
+counterparties:
+- CJ 大韩通运
+- Aidin Robotics
+axes:
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://en.sedaily.com/finance/2026/09/03/cj-logistics-deploys-humanoid-robots-at-warehouse-in-korean
+  publisher: Seoul Economic Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/en-2026-09-03-robotis-cj-logistics-dep.html
+corroboration: single

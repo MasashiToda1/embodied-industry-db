@@ -1,0 +1,20 @@
+id: evt-2026-06-22-robotis-partnership-lg-electronics-uzbek-plant-equity-mou
+date: 2026-06-22
+date_precision: day
+type: partnership
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: LG 电子与 ROBOTIS 签署 MOU：LG 拟入股 ROBOTIS 乌兹别克斯坦执行器工厂，并在 AI Sapiens 人形平台上联合研发
+summary:
+  zh: 6 月 22 日，LG 电子与 ROBOTIS 签署关于 LG 电子对 ROBOTIS 乌兹别克斯坦生产工厂进行股权投资的谅解备忘录。协议内容为 LG 电子审议投资 ROBOTIS 正在乌兹别克斯坦建设的机器人执行器工厂，双方同时在包括人形平台「AI Sapiens」在内的机器人技术上开展联合研发。LG 电子 2017 年 12 月曾参与 ROBOTIS 增资、投资约 90 亿韩元，截至 2026 年 3 月持股 6.56%。
+counterparties:
+- LG 电子
+evidence:
+- url: https://en.edaily.co.kr/news/eda202606225886/
+  publisher: Edaily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/en-2026-06-22-robotis-lg-mou-uzbek-pla.html
+corroboration: single

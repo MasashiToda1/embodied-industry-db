@@ -1,0 +1,23 @@
+id: evt-2024-06-25-duatic-funding-venture-kick-stage1-40k-chf
+date: 2024-06-25
+date_precision: day
+type: funding
+orgs:
+- id: duatic
+  role: subject
+title:
+  zh: Duatic 入选 Venture Kick 第一阶段，获 4 万瑞士法郎早期资助
+summary:
+  zh: 6 月 25 日，瑞士早期创业资助机构 Venture Kick 宣布 Duatic、Grensol 与 SecondWave Photonics 入选其第一阶段财务与创业支持，Duatic 获 4 万瑞士法郎。Venture Kick 称 Duatic 提供全栈机器人移动操作方案，团队来自 ETH 机器人研究，自研机械臂与机器学习技术紧密集成。这是 Duatic 目前唯一公开的融资信息。
+counterparties:
+- Venture Kick
+amount:
+  value: 40000
+  currency: CHF
+evidence:
+- url: https://www.venturekick.ch/CHF-40000-for-fullstack-robotic-mobile-manipulation-solutions-recycling-with-lightpowered-material-recovery-and-nextgen-light-analysis-sensors
+  publisher: Venture Kick 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/06/venturekick-2024-06-25-duatic-venture-kick-40k.html
+corroboration: single

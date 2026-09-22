@@ -1,0 +1,25 @@
+id: evt-2026-08-19-hexagon-robotics-deployment-aeon-schaeffler-humanoid-gym
+date: 2026-08-19
+date_precision: day
+type: deployment
+orgs:
+- id: hexagon-robotics
+  role: subject
+- id: schaeffler
+  role: customer
+title:
+  zh: AEON 进入舍弗勒德国「Humanoid Gym」按训练—验证—部署流程做工厂前训练，未来六个月加速多用例部署
+summary:
+  zh: 8 月 19 日，Hexagon Robotics 与舍弗勒宣布 AEON 人形机器人进入舍弗勒在德国的 Humanoid Gym。该设施提供「训练—验证—部署」模式的专用工业环境，双方在其中教 AEON 新的工业能力并培养舍弗勒运营、训练与集成人形机器人的能力。公司称训练将在未来六个月内加速 AEON 在舍弗勒制造流程多个用例中的部署，支撑此前宣布的至少 1000 台 AEON 部署计划；舍弗勒同时向 AEON 供应执行器技术。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+  model_form: [il]
+  data_acquisition: [real-robot]
+evidence:
+- url: https://robotics.hexagon.com/aeon-trains-at-schaeffler-humanoid-gym/
+  publisher: Hexagon Robotics 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/robotics-2026-08-19-hexagon-robotics-schaeff.html
+corroboration: single

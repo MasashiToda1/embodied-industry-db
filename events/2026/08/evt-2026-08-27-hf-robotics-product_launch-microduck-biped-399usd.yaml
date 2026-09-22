@@ -1,0 +1,32 @@
+id: evt-2026-08-27-hf-robotics-product_launch-microduck-biped-399usd
+date: 2026-08-27
+date_precision: day
+type: product_launch
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 旗下 Pollen Robotics 发布 25 cm 双足小机器人 Microduck，开源、预售价 399 美元，一周售出逾 1 万台
+summary:
+  zh: 8 月 27 日，Hugging Face 机器人团队 Pollen Robotics 发布双足机器人 Microduck：身高 25 cm、重量不到 800 g、15 个电机，配相机、小型深度传感器、两个 IMU 与可抓物的可动鸟嘴，能行走、蹲坐、摔倒后起身与滑轮滑行；软件栈开源，可在仿真中用强化学习训练新行为后部署到实机。当日开放预售，起售价 399 美元（不含税与运费），四种配色，首批交付目标为 2026 年圣诞节前（北美、欧洲、英国）。CNBC 9 月 1 日援引 Hugging Face 称上市后售出逾 1 万台、销售额超 500 万美元，新订单交付期已推迟到圣诞节之后。
+amount:
+  value: 399
+  currency: USD
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research, home]
+  delivery_model: [hardware-sale]
+  control_route: [rl]
+  data_acquisition: [sim-generated]
+evidence:
+- url: https://pollen-robotics.com/microduck/blog/introducing-microduck/
+  publisher: Pollen Robotics 官网博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/pollen-robot-2026-08-27-hf-robotics-microduck-la.html
+- url: https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html
+  publisher: CNBC
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/cnbc-2026-08-27-hf-robotics-microduck-sa.html
+corroboration: multi

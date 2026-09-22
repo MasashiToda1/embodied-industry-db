@@ -1,0 +1,20 @@
+id: evt-2025-12-09-robotis-partnership-uzbekistan-uzeltechsanoat-production-mou
+date: 2025-12-09
+date_precision: day
+type: partnership
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 与乌兹别克斯坦 UzElTechSanoat 签署合作协议，在当地扩建机器人生产基地并获政府用地与税收支持
+summary:
+  zh: 12 月 9 日，ROBOTIS 宣布与乌兹别克斯坦政府下属机构 UzElTechSanoat 举行合作签约，扩建当地机器人产业设施。ROBOTIS 称该项目被乌方副总理指定为国家战略项目，政府承诺提供约 6.6 万平方米用地、政府激励与税收优惠，并优先办理行政手续；公司计划在乌兹别克斯坦基地整合自产电机、QDD 量产、人形机器人产线与数据工厂。
+counterparties:
+- UzElTechSanoat
+evidence:
+- url: https://www.asiae.co.kr/en/article/2025120914313940141
+  publisher: The Asia Business Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/asiae-2025-12-09-robotis-uzbekistan-mou.html
+corroboration: single

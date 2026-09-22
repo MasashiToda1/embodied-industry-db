@@ -2,8 +2,26 @@ id: humanoid-ai
 names:
   zh: Humanoid
   en: Humanoid
+  aliases:
+  - SKL Robotics
 status: active
 layers:
 - embodiment
+founded: 2024
+hq:
+  country: GB
+  city: 伦敦
+description: 英国工业人形机器人公司，产品为 HMND 01 平台（轮式 Alpha Wheeled 与双足 Alpha Bipedal），自研 KinetIQ AI 框架；博世为其欧洲代工制造伙伴。
 upstream:
   robotics_notebooks_institution: humanoid-ai
+accounts:
+  site: https://thehumanoid.ai
+sources:
+- url: https://thehumanoid.ai/humanoid-raises-152-million-at-1-35-billion-post-money-valuation-becoming-europes-first-pure-play-humanoid-robotics-unicorn/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿公司简介：UK-based，2024 年成立，办公室在伦敦、波士顿、温哥华、圣迭戈
+- url: https://thehumanoid.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，核心产品 HMND 01 Alpha Wheeled 与 KinetIQ

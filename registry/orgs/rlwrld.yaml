@@ -2,12 +2,34 @@ id: rlwrld
 names:
   zh: RLWRLD
   en: RLWRLD
+  aliases:
+  - RealWorld AI
+  - 리얼월드
 status: active
 layers:
 - embodiment
 - foundation
+founded: 2024
+hq:
+  country: KR
+  city: 首尔
+description: 韩国 Physical AI 公司，做面向工业现场灵巧操作的机器人基础模型 RLDX，首个模型 RLDX-1；在首尔、旧金山、东京设办公室。
 upstream:
   robotics_notebooks_institution: rlwrld
 accounts:
   huggingface: RLWRLD
   github: RLWRLD
+  site: https://www.rlwrld.ai
+sources:
+- url: https://www.rlwrld.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，韩国办公室地址（首尔江南区德黑兰路 415）及旧金山、东京办公室
+- url: https://aws.amazon.com/blogs/physical-ai/putting-dexterous-robots-to-work-how-rlwrld-builds-physical-ai-with-aws/
+  tier: media
+  retrieved: '2026-09-22'
+  note: AWS Physical AI 博客，「founded in 2024」
+- url: https://www.therobotreport.com/physical-ai-startup-rlwrld-raises-26m/
+  tier: media
+  retrieved: '2026-09-22'
+  note: The Robot Report，「Seoul-based company」

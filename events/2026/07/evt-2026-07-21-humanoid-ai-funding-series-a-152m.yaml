@@ -1,0 +1,28 @@
+id: evt-2026-07-21-humanoid-ai-funding-series-a-152m
+date: 2026-07-21
+date_precision: day
+type: funding
+orgs:
+- id: humanoid-ai
+  role: subject
+- id: schaeffler
+  role: investor
+title:
+  zh: Humanoid 完成 1.52 亿美元 A 轮融资，投后估值 13.5 亿美元，Prime Movers Lab 领投，舍弗勒与博世参投
+summary:
+  zh: 7 月 21 日，英国 Humanoid 宣布完成 1.52 亿美元 A 轮融资，投后估值 13.5 亿美元，累计融资达 2.7 亿美元。本轮由 Prime Movers Lab 领投，Schaeffler、Bosch、Fubon Financial Holding Venture Capital 与 Aglaé Ventures 参投。公司称资金用于加速商业部署与 KinetIQ AI 平台演进；公司 2024 年成立，团队逾 250 人，在伦敦、波士顿、温哥华与圣迭戈设办公室。
+counterparties:
+- Prime Movers Lab
+- 博世（Bosch）
+- Fubon Financial Holding Venture Capital
+- Aglaé Ventures
+amount:
+  value: 152000000
+  currency: USD
+evidence:
+- url: https://thehumanoid.ai/humanoid-raises-152-million-at-1-35-billion-post-money-valuation-becoming-europes-first-pure-play-humanoid-robotics-unicorn/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/thehumanoid-2026-07-21-humanoid-ai-series-a-152.html
+corroboration: single

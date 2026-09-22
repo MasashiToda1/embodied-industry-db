@@ -1,0 +1,31 @@
+id: evt-2026-05-28-honda-product_launch-avatar-robot-multi-fingered-hand-humanoids-summit
+date: 2026-05-28
+date_precision: day
+type: product_launch
+orgs:
+- id: honda
+  role: subject
+title:
+  zh: 本田在 Humanoids Summit 2026 展出 Avatar Robot 与人手尺寸多指灵巧手：16 个主动关节、50 N 指尖力、288 通道触觉传感
+summary:
+  zh: 本田 R&D 在 Humanoids Summit 2026 展出可遥操作的 Avatar Robot 与多指灵巧手，观众可现场遥操作体验，5 月 28 日由 Honda R&D Frontier Robotics 执行首席工程师做「Honda's New Multi-Fingered Hand」演讲。官网公布该手的参数：16 个主动关节、最大持续关节速度 180 deg/s、最大持续指尖力 50 N（可持续 150 秒）、指尖六轴力传感器加 288 通道触觉传感器、完成 45 万次以上耐久测试（含 2.4 万次提起 5 kg 重物），演示穿针、拧小螺钉、用剪刀等作业。共同社 8 月 6 日报道称本田计划 2030 年代初将该多指手商用化用于制造业。
+axes:
+  data_modality: [tactile, force-torque]
+  data_acquisition: [teleop]
+evidence:
+- url: https://global.honda/en/RandD/field/hgrx/honda-multi-fingered-hand/humanoids-summit.html
+  publisher: Honda R&D 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/global-2026-05-28-honda-humanoids-summit-a.html
+- url: https://global.honda/en/RandD/field/hgrx/honda-multi-fingered-hand/
+  publisher: Honda R&D 官网（多指手产品页）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/global-2026-05-28-honda-multi-fingered-han.html
+- url: https://english.kyodonews.net/articles/-/81336
+  publisher: Kyodo News
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/english-2026-05-28-honda-multi-fingered-han.html
+corroboration: multi

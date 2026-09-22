@@ -2,8 +2,29 @@ id: duatic
 names:
   zh: Duatic
   en: Duatic
+  aliases:
+  - Duatic AG
 status: active
 layers:
 - components
+founded: 2024
+hq:
+  country: CH
+  city: 苏黎世
+description: 2024 年成立于苏黎世的 ETH 衍生公司，做准直驱执行器与轻量机械臂 DynaArm（6 kg 持续负载、9.2 kg 自重、IP66），并组合成双臂上身 DuaTorso、移动底盘 DuaRover 与双臂移动操作机 DXTR / Alpha。
 accounts:
   github: Duatic
+  site: https://www.duatic.com
+sources:
+- url: https://www.duatic.com/about-us
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About us：2024 年成立于苏黎世，源自 ETH Zurich 研究；地址 Affolternstrasse 42, 8050 Zürich
+- url: https://www.duatic.com/dynaarm
+  tier: official
+  retrieved: '2026-09-22'
+  note: DynaArm 参数页
+- url: https://www.venturekick.ch/duatic
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: Venture Kick 公司页，注册日期 2024-04-26，总部苏黎世

@@ -1,0 +1,21 @@
+id: evt-2026-07-22-shadow-robotics-pricing-access-rental-model
+date: 2026-07-22
+date_precision: day
+type: pricing
+orgs:
+- id: shadow-robotics
+  role: subject
+title:
+  zh: Shadow Robot 宣布下调 Shadow Hand 与 DEX-EE 系列售价，并推出租赁等灵活获取模式、打包方案与更短交付周期
+summary:
+  zh: 7 月 22 日，Shadow Robot 发布公司公告称将扩大其灵巧手技术的获取方式，包括：机器人手平台「更具竞争力的定价」；含租赁在内的灵活获取模式以降低前期投入；通过制造与运营效率改进缩短交付周期；简化部署与集成的打包方案；以及年内多次促销。涉及产品为旗舰研究平台 Shadow Hand 与面向 Physical AI 的 DEX-EE 系列。公告未给出具体价格数字。
+axes:
+  delivery_model: [hardware-sale, rental]
+  target_scene: [education-research]
+evidence:
+- url: https://shadowrobot.com/expanding-access-to-the-future-of-dexterous-robotics/
+  publisher: Shadow Robot 官网公司新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/shadowrobot-2026-07-22-shadow-robotics-access-p.html
+corroboration: single

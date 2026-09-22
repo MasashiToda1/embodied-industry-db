@@ -1,0 +1,24 @@
+id: evt-2026-03-30-humanoid-ai-deployment-sap-martur-fompak-automotive-logistics-poc
+date: 2026-03-30
+date_precision: day
+type: deployment
+orgs:
+- id: humanoid-ai
+  role: subject
+title:
+  zh: Humanoid 与 SAP、Martur Fompak 完成汽车制造物流 PoC：HMND 01 Alpha 轮式机在生产现场接收 SAP Joule 代理下发任务搬运料箱
+summary:
+  zh: 3 月 30 日，Humanoid 宣布与 SAP 及汽车零部件商 Martur Fompak 在实际生产物流环境完成概念验证。项目 2026 年 1 月至 2 月进行，流程包括物理孪生开发、内部测试、现场准备与现场部署；HMND 01 Alpha 轮式机通过 SAP Joule 代理层经互联网接收任务并管理作业，无需专门定制控制系统。机器人处理三种料箱类型，双臂负载上限 8 kg。三方计划进入下一阶段现场验证，并评估在 Martur Fompak 工厂部署的路径。
+counterparties:
+- SAP
+- Martur Fompak
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://thehumanoid.ai/hmnd-01-alpha-goes-to-work-humanoid-completes-automotive-manufacturing-logistics-poc-with-sap-and-martur-fompak/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/thehumanoid-2026-03-30-humanoid-ai-sap-martur-f.html
+corroboration: single

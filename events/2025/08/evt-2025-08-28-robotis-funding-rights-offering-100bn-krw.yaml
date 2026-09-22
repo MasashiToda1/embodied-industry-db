@@ -1,0 +1,21 @@
+id: evt-2025-08-28-robotis-funding-rights-offering-100bn-krw
+date: 2025-08-28
+date_precision: day
+type: funding
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 公告 1000 亿韩元股东配售增资，用于乌兹别克斯坦工厂、精密加工与 QDD 电机产线
+summary:
+  zh: 8 月 28 日，ROBOTIS 公告实施 1000 亿韩元规模的有偿增资（先向股东配售，失权股再公开募集），发行普通股 134 万 9528 股，预期发行价 7 万 4100 韩元，11 月 17 日缴款，新股 12 月 1 日上市。募资中 600 亿韩元用于设施投资（数据工厂 25 亿、精密加工设施 350 亿、电机产线 75 亿、零部件与整机产线 150 亿），400 亿韩元用于运营（QDD 执行器研发、新电机开发、数据工厂运营等）；生产基地选址乌兹别克斯坦塔什干。
+amount:
+  value: 100000000000
+  currency: KRW
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250828170335
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/zdnet-2025-08-28-robotis-rights-offering-.html
+corroboration: single

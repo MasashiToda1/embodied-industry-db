@@ -1,0 +1,23 @@
+id: evt-2026-05-29-vinmotion-corporate-vinmotion-usa-12-75m-investment
+date: 2026-05-29
+date_precision: day
+type: corporate
+orgs:
+- id: vinmotion
+  role: subject
+title:
+  zh: Vingroup 批准以 1275 万美元收购 VinMotion USA, Inc. 股权，在美国设人形机器人研发中心
+summary:
+  zh: 据 Vingroup 5 月 29 日董事会决议及公司公告，Vingroup 将向特拉华州注册的 VinMotion USA, Inc. 投资 1275 万美元，方式为从子公司 VinMotion 手中收购其股份或出资额，目的为优化海外投资架构。项目名为「设立 VinMotion USA, Inc. 项目」，内容为人形机器人与技术方案研发，并在美国建立研发中心以吸引全球人才、与高校和研究机构合作；VinMotion USA 总部继续设在特拉华州。
+counterparties:
+- Vingroup
+amount:
+  value: 12750000
+  currency: USD
+evidence:
+- url: https://news.tuoitre.vn/vietnams-vingroup-to-invest-1275mn-in-vinmotion-usa-to-boost-robotics-expansion-in-us-103260601163733699.htm
+  publisher: Tuoi Tre News
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/news-2026-05-29-vinmotion-usa-investment.html
+corroboration: single

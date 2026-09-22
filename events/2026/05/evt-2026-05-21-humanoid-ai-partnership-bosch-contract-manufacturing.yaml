@@ -1,0 +1,24 @@
+id: evt-2026-05-21-humanoid-ai-partnership-bosch-contract-manufacturing
+date: 2026-05-21
+date_precision: day
+type: partnership
+orgs:
+- id: humanoid-ai
+  role: subject
+title:
+  zh: Humanoid 与博世签署制造协议：博世成为 HMND 01 面向欧洲市场的代工制造伙伴，此前在比尔厂完成传送带到料车的 PoC
+summary:
+  zh: 5 月 21 日，Humanoid 宣布与博世达成合作，双方签署制造协议，由博世作为 HMND 01 人形机器人面向欧洲市场的代工制造伙伴，并通过 Design for Excellence（DfX）框架在硬件设计、生产、供应链与成本优化上提供技术支持。协议基于 2026 年 3 月在德国比尔博世物流现场完成的 PoC：HMND 01 自主将 5 种不同尺寸与重量的箱子从传送带转移到料车，由 KinetIQ 框架编排。双方还将探索在后续 HMND 01 版本中集成博世技术与零部件。
+counterparties:
+- 博世（Robert Bosch GmbH）
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [logistics-warehouse]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://thehumanoid.ai/humanoid-secures-partnership-with-bosch-following-a-successful-poc/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/thehumanoid-2026-05-21-humanoid-ai-bosch-manufa.html
+corroboration: single
