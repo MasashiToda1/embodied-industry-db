@@ -94,36 +94,68 @@ function bindExpand(root) {
 }
 
 /* ---------- ① 时间线 ---------- */
+// 筛选条：三个下拉多选，选项只在点开时出现；选中的条件变成 chips 挂在下面
+function facetMenu(id, title, options, selected, onChange, { search = false } = {}) {
+  // options: [{k, zh, n, group?}]，n＝全库里有多少条事件命中
+  const el = document.createElement('div'); el.className = 'facet'; el.dataset.facet = id;
+  el.innerHTML = `<button class="fbtn"></button><div class="fpop">${search ? `<input class="fsearch" placeholder="搜取值…" autocomplete="off">` : ''}<div class="flist"></div></div>`;
+  const btn = $('.fbtn', el), list = $('.flist', el), s = $('.fsearch', el);
+  const paintBtn = () => { const n = selected.size; btn.classList.toggle('on', !!n); btn.innerHTML = `${title}${n ? ` <b>${n}</b>` : ''} <span class="caret">▾</span>`; };
+  const paintList = (q = '') => {
+    const t = q.toLowerCase(); let lastGroup = null;
+    list.innerHTML = options.filter(o => !t || (o.zh + ' ' + (o.group || '')).toLowerCase().includes(t)).map(o => {
+      const g = o.group && o.group !== lastGroup ? `<div class="fgroup">${esc(o.group)}</div>` : ''; if (o.group) lastGroup = o.group;
+      return g + `<label class="fopt ${selected.has(o.k) ? 'on' : ''} ${o.n ? '' : 'zero'}"><input type="checkbox" data-k="${o.k}" ${selected.has(o.k) ? 'checked' : ''}><span>${esc(o.zh)}</span><em>${o.n}</em></label>`;
+    }).join('') || '<div class="empty" style="padding:10px">没有匹配</div>';
+    $$('input[type=checkbox]', list).forEach(cb => cb.onchange = () => { cb.checked ? selected.add(cb.dataset.k) : selected.delete(cb.dataset.k); cb.closest('.fopt').classList.toggle('on', cb.checked); paintBtn(); onChange(); });
+  };
+  if (s) s.oninput = () => paintList(s.value.trim());
+  btn.onclick = e => { e.stopPropagation(); const open = el.classList.contains('open'); $$('.facet.open').forEach(f => f.classList.remove('open')); if (!open) { el.classList.add('open'); if (s) { s.value = ''; paintList(); s.focus(); } } };
+  $('.fpop', el).onclick = e => e.stopPropagation();
+  el.redraw = () => { paintBtn(); paintList(s ? s.value.trim() : ''); };
+  el.redraw(); return el;
+}
+document.addEventListener('click', () => $$('.facet.open').forEach(f => f.classList.remove('open')));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $$('.facet.open').forEach(f => f.classList.remove('open')); });
+
 async function pageIndex() {
   await load(); nav('index');
-  const F = { type: new Set(), layer: new Set(), axis: qs.get('axis') || '' };
-  const types = Object.entries(D.event_types);
-  const axisValues = [...new Set(D.events.flatMap(e => Object.entries(e.axes || {}).flatMap(([f, v]) => (Array.isArray(v) ? v : [v]).map(x => f + ':' + x))))].sort();
+  const F = { type: new Set(), layer: new Set(), axis: new Set(qs.get('axis') ? [qs.get('axis')] : []) };
+  const count = fn => { const m = {}; D.events.forEach(e => fn(e).forEach(k => m[k] = (m[k] || 0) + 1)); return m; };
+  const nType = count(e => [e.type]);
+  const nLayer = count(e => [...new Set((e.orgs || []).flatMap(o => orgById[o.id]?.layers || []))]);
+  const nAxis = count(e => Object.entries(e.axes || {}).flatMap(([f, v]) => (Array.isArray(v) ? v : [v]).map(x => f + ':' + x)));
+  const typeOpts = Object.entries(D.event_types).map(([k, zh]) => ({ k, zh, n: nType[k] || 0 })).sort((a, b) => b.n - a.n);
+  const layerOpts = Object.entries(D.layers).map(([k, zh]) => ({ k, zh, n: nLayer[k] || 0 })).sort((a, b) => b.n - a.n);
+  const axisOpts = Object.keys(nAxis).sort().map(k => ({ k, zh: label(k, k.split(':')[1]), group: label(k.split(':')[0]), n: nAxis[k] }));
+  const zh = { type: k => D.event_types[k] || k, layer: k => D.layers[k] || k, axis: k => `${label(k.split(':')[0])}: ${label(k, k.split(':')[1])}` };
+
   $('main').innerHTML = `<div class="wrap">
-    <h1>时间线</h1><div class="sub">${D.events.length} 条事件 · ${D.orgs.length} 家主体 · 每条都能点回原始来源与快照。点行展开。</div>
-    <div class="grid2">
-      <div class="card filters">
-        <h4>事件类型</h4><div id="f-type">${types.map(([k, z]) => `<span class="tag" data-k="${k}">${z}</span>`).join('')}</div>
-        <h4>产业层</h4><div id="f-layer">${Object.entries(D.layers).map(([k, z]) => `<span class="tag" data-k="${k}">${z}</span>`).join('')}</div>
-        <h4>轴取值</h4><select id="f-axis" style="width:100%;font:inherit;font-size:12px;padding:4px"><option value="">（全部）</option>${axisValues.map(v => `<option value="${v}" ${v === F.axis ? 'selected' : ''}>${label(v.split(':')[0])}: ${label(v, v.split(':')[1])}</option>`).join('')}</select>
-        <h4>&nbsp;</h4><span class="tag soft" id="f-clear">清除筛选</span>
-      </div>
-      <div class="card"><table><thead><tr><th>日期</th><th>主体</th><th>类型</th><th>事件</th><th class="right">来源</th></tr></thead><tbody id="rows"></tbody></table></div>
-    </div></div>`;
+    <h1>时间线</h1><div class="sub"></div>
+    <div class="fbar" id="fbar"></div><div class="fchips" id="fchips"></div>
+    <div class="card"><table><thead><tr><th>日期</th><th>主体</th><th>类型</th><th>事件</th><th class="right">来源</th></tr></thead><tbody id="rows"></tbody></table></div>
+  </div>`;
   const rows = $('#rows'); bindExpand(rows);
+  const menus = [
+    facetMenu('type', '类型', typeOpts, F.type, () => render()),
+    facetMenu('layer', '产业层', layerOpts, F.layer, () => render()),
+    facetMenu('axis', '轴取值', axisOpts, F.axis, () => render(), { search: true }),
+  ];
+  menus.forEach(m => $('#fbar').appendChild(m));
+
   const render = () => {
     const list = D.events.filter(e =>
       (!F.type.size || F.type.has(e.type)) &&
       (!F.layer.size || (e.orgs || []).some(o => (orgById[o.id]?.layers || []).some(l => F.layer.has(l)))) &&
-      (!F.axis || Object.entries(e.axes || {}).some(([f, v]) => (Array.isArray(v) ? v : [v]).some(x => f + ':' + x === F.axis))));
+      (!F.axis.size || Object.entries(e.axes || {}).some(([f, v]) => (Array.isArray(v) ? v : [v]).some(x => F.axis.has(f + ':' + x)))));
     rows.innerHTML = list.length ? list.map(e => eventRow(e)).join('') : `<tr><td colspan="5" class="empty">没有匹配的事件</td></tr>`;
     $('.sub').textContent = `${list.length} / ${D.events.length} 条事件 · ${D.orgs.length} 家主体 · 每条都能点回原始来源与快照。点行展开。`;
+    const chips = ['type', 'layer', 'axis'].flatMap(f => [...F[f]].map(k => `<span class="fchip" data-f="${f}" data-k="${k}">${esc(zh[f](k))}<i>×</i></span>`));
+    $('#fchips').innerHTML = chips.length ? chips.join('') + `<span class="fchip clear" id="f-clear">清除全部</span>` : '';
+    $$('.fchip:not(.clear)').forEach(c => $('i', c).onclick = () => { F[c.dataset.f].delete(c.dataset.k); menus.forEach(m => m.redraw()); render(); });
+    const cl = $('#f-clear'); if (cl) cl.onclick = () => { Object.values(F).forEach(s => s.clear()); menus.forEach(m => m.redraw()); render(); };
     const want = qs.get('ev'); if (want) { const d = rows.querySelector(`tr.detail[data-for="${want}"]`); if (d) { d.style.display = ''; d.previousElementSibling.scrollIntoView({ block: 'center' }); } }
   };
-  $$('#f-type .tag').forEach(t => t.onclick = () => { t.classList.toggle('on'); F.type.has(t.dataset.k) ? F.type.delete(t.dataset.k) : F.type.add(t.dataset.k); render(); });
-  $$('#f-layer .tag').forEach(t => t.onclick = () => { t.classList.toggle('on'); F.layer.has(t.dataset.k) ? F.layer.delete(t.dataset.k) : F.layer.add(t.dataset.k); render(); });
-  $('#f-axis').onchange = e => { F.axis = e.target.value; render(); };
-  $('#f-clear').onclick = () => { F.type.clear(); F.layer.clear(); F.axis = ''; $$('.tag.on').forEach(t => t.classList.remove('on')); $('#f-axis').value = ''; render(); };
   render();
 }
 

@@ -15,9 +15,6 @@ main{padding:20px 0 60px}
 h1{font-size:20px;margin:0 0 4px}
 .sub{color:var(--muted);font-size:13px;margin-bottom:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
-.grid2{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:start}
-.filters h4{margin:12px 0 6px;font-size:12px;color:var(--muted);font-weight:600}
-.filters h4:first-child{margin-top:0}
 .tag{display:inline-block;border:1px solid var(--ink);border-radius:20px;padding:1px 10px;font-size:12px;margin:0 4px 4px 0;cursor:pointer;user-select:none}
 .tag.on{background:var(--ink);color:#fff}
 .tag.soft{border-color:var(--line);color:var(--muted)}
@@ -36,7 +33,7 @@ tr.detail td{background:#fbfbfc;padding:12px 16px 14px}
 .muted{color:var(--muted)}
 .right{text-align:right}
 .mono{font-family:ui-monospace,Menlo,monospace;font-size:12px}
-td.mono,td.right{white-space:nowrap}
+td.mono,td.right,td>.chip{white-space:nowrap}
 .empty{color:var(--muted);text-align:center;padding:36px 0}
 .kv{display:grid;grid-template-columns:90px 1fr;gap:6px 10px;font-size:13px}
 .kv b{color:var(--muted);font-weight:600}
@@ -44,6 +41,31 @@ td.mono,td.right{white-space:nowrap}
 .notice{border-left:4px solid var(--warn);background:#fffbeb;padding:10px 14px;font-size:13px;margin:0 0 16px;border-radius:0 6px 6px 0}
 .legend{font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px 0 10px;vertical-align:-1px}
+/* 筛选条：下拉多选 */
+.fbar{display:flex;gap:8px;margin-bottom:8px}
+.facet{position:relative}
+.fbtn{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);cursor:pointer;color:var(--ink)}
+.fbtn:hover{border-color:#bbb}
+.fbtn.on{border-color:var(--ink)}
+.fbtn b{background:var(--ink);color:#fff;border-radius:10px;padding:0 6px;font-size:11px;margin-left:2px}
+.fbtn .caret{color:var(--muted);font-size:11px;margin-left:2px}
+.fpop{display:none;position:absolute;left:0;top:calc(100% + 6px);min-width:240px;max-height:380px;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.08);z-index:8;padding:6px}
+.facet.open .fpop{display:block}
+.fsearch{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:12px;margin-bottom:6px}
+.fgroup{font-size:11px;color:var(--muted);padding:8px 8px 3px;font-weight:600}
+.fopt{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;cursor:pointer;font-size:13px}
+.fopt:hover{background:#f6f7fa}
+.fopt.on{background:#eef3fd}
+.fopt.zero{color:#aaa}
+.fopt input{margin:0}
+.fopt span{flex:1}
+.fopt em{font-style:normal;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.fchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;min-height:0}
+.fchip{display:inline-flex;align-items:center;gap:5px;background:var(--ink);color:#fff;border-radius:20px;padding:2px 6px 2px 10px;font-size:12px}
+.fchip i{font-style:normal;cursor:pointer;background:rgba(255,255,255,.2);border-radius:50%;width:16px;height:16px;line-height:16px;text-align:center;font-size:11px}
+.fchip i:hover{background:rgba(255,255,255,.4)}
+.fchip.clear{background:none;color:var(--muted);cursor:pointer;padding:2px 6px}
+.fchip.clear:hover{color:var(--ink)}
 /* 搜索浮层 */
 #search-pop{position:absolute;right:20px;top:54px;width:420px;max-height:70vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.08);display:none;z-index:9}
 #search-pop h5{margin:10px 12px 4px;font-size:11px;color:var(--muted);font-weight:600}
@@ -59,4 +81,4 @@ td.mono,td.right{white-space:nowrap}
 .heat .h{background:none;color:var(--muted);font-weight:600}
 .heat .v{background:#e6effc;color:#1f4fa8}
 footer{color:var(--muted);font-size:12px;padding:20px 0;border-top:1px solid var(--line);margin-top:30px}
-@media (max-width:860px){.grid2,.two{grid-template-columns:1fr}nav input{width:120px}}
+@media (max-width:860px){.two{grid-template-columns:1fr}nav input{width:120px}.fbar{flex-wrap:wrap}}
