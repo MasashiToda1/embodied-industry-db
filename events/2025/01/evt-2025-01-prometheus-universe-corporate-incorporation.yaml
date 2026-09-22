@@ -1,0 +1,18 @@
+id: evt-2025-01-prometheus-universe-corporate-incorporation
+date: '2025-01'
+date_precision: month
+type: corporate
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙机器人在苏州工业园成立
+summary:
+  zh: 普罗宇宙官网公司介绍页称，普罗宇宙机器人成立于 2025 年 1 月，总部位于苏州工业园，专注具身智能机器人研发与场景落地。官网发展历程栏目将「普罗宇宙机器人 苏州工业园正式成立」标注在 2025.1。
+evidence:
+- url: https://pl-universe.com/about/10
+  publisher: 普罗宇宙官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/pl-universe-2025-01-prometheus-universe-foun.html
+corroboration: single

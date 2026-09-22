@@ -1,0 +1,23 @@
+id: evt-2025-08-19-agilex-publication-openpi-agilex
+date: 2025-08-19
+date_precision: day
+type: publication
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人开源 openpi-agilex，适配自家硬件的 openpi 发行版
+summary:
+  zh: 松灵机器人在自有 GitHub 组织 agilexrobotics 下建立 openpi-agilex 仓库，许可证为 Apache-2.0。README 写明该仓库是 Physical Intelligence 团队开源的 openpi 的 AgileX Robotics 发行版，针对松灵自家硬件做集成，数据采集方式参考其 data_tools 仓库；仓库提供多个基座 VLA 模型 checkpoint（含 π0.5），说明这些 checkpoint 在 1 万小时以上机器人数据上预训练，可用于微调，并给出推理需 8 GB 以上、LoRA 微调需 22.5 GB 以上、全量微调需 70 GB 以上显存的要求，测试环境为 Ubuntu 22.04。
+counterparties:
+- Physical Intelligence
+axes:
+  model_form: [end2end-vla]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/agilexrobotics/openpi-agilex
+  publisher: AgileX Robotics（agilexrobotics GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-19-agilex-openpi-agilex.html
+corroboration: single

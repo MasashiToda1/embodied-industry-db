@@ -1,0 +1,23 @@
+id: evt-2025-04-11-fourier-publication-n1-opensource
+date: 2025-04-11
+date_precision: day
+type: publication
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶发布首款开源人形机器人 Fourier N1 并开放完整本体资源包
+summary:
+  zh: 4 月 11 日，傅利叶正式发布首款开源人形机器人 Fourier N1，同步开放涵盖物料清单、设计图纸、装配指南、基础操作软件在内的完整本体资源包。首批开源材料包括完整物料清单（BOM）、可直接加工的结构图纸、装配指南与操作演示视频，以及已开放在 GitHub 上的基础操作软件代码与通讯接口封装。报道称 N1 是傅利叶「Nexus 开源生态矩阵」的首个落地项目。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.cnfin.com/gs-lb/detail/20250411/4216053_1.html
+  publisher: 新华财经·中国金融信息网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/cnfin-2025-04-11-fourier-n1-opensource.html
+corroboration: single

@@ -1,0 +1,32 @@
+id: evt-2025-08-25-nvidia-product_launch-jetson-agx-thor
+date: 2025-08-25
+date_precision: day
+type: product_launch
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: 英伟达 Jetson AGX Thor 开发者套件正式上市，售价 3,499 美元起
+summary:
+  zh: 8 月 25 日，英伟达宣布 Jetson AGX Thor 开发者套件与量产模组正式上市，新闻稿写明开发者套件售价 3,499 美元起，Jetson T5000 量产模组由全球分销伙伴提供。该平台基于 Blackwell GPU，技术博客写明配 128GB 内存、最高 2070 FP4 TFLOPS 算力、130W 功耗，相比 Jetson AGX Orin 算力提升最高 7.5 倍、能效提升 3.5 倍，面向人形机器人与手术机器人这类复杂机器人系统。新闻稿列出的早期采用方包括 Agility Robotics、Amazon Robotics、Boston Dynamics、Caterpillar、Figure、Hexagon、Medtronic 与 Meta。
+counterparties:
+- Agility Robotics
+- Amazon Robotics
+- Caterpillar
+- Hexagon
+- Medtronic
+amount:
+  value: 3499
+  currency: USD
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics
+  publisher: NVIDIA 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/nvidianews-2025-08-25-nvidia-jetson-thor.html
+- url: https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/
+  publisher: NVIDIA 技术博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/developer-2025-08-25-nvidia-jetson-thor-devbl.html
+corroboration: single

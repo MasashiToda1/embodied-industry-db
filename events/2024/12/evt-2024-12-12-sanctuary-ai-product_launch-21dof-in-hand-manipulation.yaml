@@ -1,0 +1,22 @@
+id: evt-2024-12-12-sanctuary-ai-product_launch-21dof-in-hand-manipulation
+date: 2024-12-12
+date_precision: day
+type: product_launch
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 公布 21 自由度液压灵巧手可做手内操作
+summary:
+  zh: 12 月 12 日，Sanctuary AI 宣布其 21 自由度灵巧机械手可完成手内操作（in-hand manipulation）。公司称这套手依靠自研的微型液压阀实现驱动，比线缆与机电方案的功率密度高一个数量级，在速度、力量、可控性、循环寿命、抗冲击与散热上有优势。公告称液压阀执行器已完成超过 20 亿次循环测试，未出现泄漏或性能衰减。新增的灵巧能力产生的行为数据用于训练其 AI 控制系统 Carbon；Carbon 与灵巧手均按模块化设计，可与非人形与人形通用机器人集成。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  data_modality: [tactile, joint-trajectory]
+evidence:
+- url: https://sanctuary.ai/news/sanctuary-ai-demonstrates-in-hand-manipulation-capabilities-for-improved-general-purpose-robot-dexterity/
+  publisher: Sanctuary AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/sanctuary-2024-12-12-sanctuary-ai-in-hand-man.html
+corroboration: single

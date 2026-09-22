@@ -1,0 +1,24 @@
+id: evt-2025-04-22-physical-intelligence-publication-pi05
+date: 2025-04-22
+date_precision: day
+type: publication
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: "物理智能发布 π0.5，目标是开放世界泛化的 VLA"
+summary:
+  zh: "4 月 22 日，物理智能发布基于 π0 的新模型 π0.5。博客写明核心做法是异构数据共训练：把多种机器人的演示数据、带高层语义标注的观测、人类逐步口头指导的演示与网络多模态数据（图像描述、视觉问答、目标检测）混在一起训练。推理时模型先以离散自回归解码输出一条语言表述的高层动作，再用 flow matching 动作专家输出 50 步（1 秒）的低层关节动作块。评测在训练数据中未出现过的新家庭里做，任务为放碗碟、铺床、清理卧室地面，博客给出 OOD 条件下成功率 94%，去掉网络数据的消融版本 74%，去掉跨具身数据的版本 49%。"
+axes:
+  model_form: [end2end-vla, hierarchical]
+  embodiment_form: [mobile-manipulator]
+  target_scene: [home]
+  data_acquisition: [real-robot, teleop, human-video]
+  data_modality: [rgb, joint-trajectory, language-annotated]
+evidence:
+- url: https://www.pi.website/blog/pi05
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/pi-2025-04-22-physical-intelligence-pi.html
+corroboration: single

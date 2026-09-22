@@ -1,0 +1,21 @@
+id: evt-2025-03-31-keenon-product_launch-xman-r1
+date: 2025-03-31
+date_precision: day
+type: product_launch
+orgs:
+- id: keenon
+  role: subject
+title:
+  zh: 擎朗智能发布首款人形具身服务机器人 XMAN-R1
+summary:
+  zh: 3 月 31 日，擎朗智能发布首款人形具身服务机器人 XMAN-R1，设计理念为「岗位化、亲和力、安全性」。官方介绍该机型参考人体比例，配备大语言模型与表情反馈等交互功能，搭载 11 项多模态传感器并结合自研三维重建技术实现 360 度感知；目前已完成服务场景内「点单 - 配餐 - 送餐 - 收餐」长任务闭环，可与配送机器人 T10、清洁机器人 C30、大载重配送机器人 S100 等实现数据共享与任务协同。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [commercial-service]
+evidence:
+- url: https://mp.weixin.qq.com/s/GmH6ru3OGrMpgc6rUo_T2g
+  publisher: 擎朗智能微信公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/mp-2025-03-31-keenon-xman-r1.html
+corroboration: single

@@ -1,0 +1,22 @@
+id: evt-2024-11-05-moon-bionic-funding-pre-a-round
+date: '2024-11-05'
+date_precision: day
+type: funding
+orgs:
+- id: moon-bionic
+  role: subject
+title:
+  zh: 月泉仿生完成近亿元 Pre-A 轮融资
+summary:
+  zh: 11 月 5 日，36 氪报道人形机器人企业月泉仿生近期完成近亿元 Pre-A 轮融资，由洪泰基金领投，长兴基金、中关村启航基金跟投，浪潮资本担任独家财务顾问。报道称募集资金主要用于人形机器人研发投入、人才与技术壁垒构建以及商业化交付落地。
+counterparties:
+- 洪泰基金
+- 长兴基金
+- 中关村启航基金
+evidence:
+- url: https://m.36kr.com/p/3022212992869895
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/m-2024-11-05-moon-bionic-pre-a-round.html
+corroboration: single

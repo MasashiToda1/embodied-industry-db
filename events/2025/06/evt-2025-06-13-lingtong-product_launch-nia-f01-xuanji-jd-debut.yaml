@@ -1,0 +1,30 @@
+id: evt-2025-06-13-lingtong-product_launch-nia-f01-xuanji-jd-debut
+date: '2025-06-13'
+date_precision: day
+type: product_launch
+orgs:
+- id: lingtong
+  role: subject
+title:
+  zh: 灵童机器人「念 NIA-F01」桌面人形机器人与「璇玑」蛋形机器人首发上线京东
+summary:
+  zh: 6 月 13 日，灵童念 NIA-F01 人形机器人与「璇玑」蛋形机器人首发上线京东并正式开售。念 NIA-F01 为桌面尺寸人形机器人，约为人类三分之一大小，首发期间限时到手价 9999 元；「璇玑」蛋形机器人到手价 99 元，用于孵化与迁移机器人的「灵魂」。两款产品均接入京东 Joy Inside 对话智能体，支持角色定制与性格设定。
+counterparties:
+- 京东
+amount:
+  value: 9999
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - home
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2025-06-16/doc-infaftuk3320243.shtml
+  publisher: 新浪科技（转飞象网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/finance-2025-06-13-lingtong-nia-f01-jd-laun.html
+corroboration: single

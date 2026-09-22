@@ -1,0 +1,25 @@
+id: evt-2025-03-09-direct-drive-tech-publication-tita-rl
+date: 2025-03-09
+date_precision: day
+type: publication
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末科技开源 TITA 轮足机器人强化学习训练环境 tita_rl
+summary:
+  zh: 本末科技机器人团队 GitHub 组织 DDTRobot 的 README 更新记录写明，2025 年 3 月 9 日新增「official TITA Reinforcement Learning Sample based on Isaacgym and Webots 2023b」。对应仓库 DDTRobot/tita_rl 自述为 TITA 官方强化学习仓库，内含训练环境、推理环境，并另附 titatit 四足模式与四轮足模式训练环境，以及 sim2sim 与实机部署仓库 tita_rl_sim2sim2real。
+axes:
+  control_route: [rl]
+evidence:
+- url: https://github.com/DDTRobot/tita_rl
+  publisher: GitHub · DDTRobot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-09-direct-drive-tech-tita-r.html
+- url: https://github.com/DDTRobot
+  publisher: GitHub · DDTRobot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-09-direct-drive-tech-ddtrob.html
+corroboration: single

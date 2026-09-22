@@ -1,0 +1,25 @@
+id: evt-2025-08-08-dh-robotics-product-launch-dh-5-6-tactile-hand
+date: 2025-08-08
+date_precision: day
+type: product_launch
+orgs:
+- id: dh-robotics
+  role: subject
+title:
+  zh: 大寰机器人在 2025 世界机器人大会发布第二代灵巧手 DH-5-6 触觉灵巧手
+summary:
+  zh: 8 月 8 日，2025 世界机器人大会在北京开幕，大寰机器人联合南方科技大学机器人研究院参展，正式发布第二代灵巧手 DH-5-6 触觉灵巧手。证券时报报道称该灵巧手可选配阵列高灵敏触觉传感器，布设于指腹、手掌等接触区域，可感知物体材质、纹理、形状、软硬程度、滑动状态及压力变化；经驱动传动结构升级，可靠作业次数提升至 100 万次以上。报道称大寰机器人已完成超 20 万套电动夹爪、伺服电缸、音圈执行器、仿人灵巧手、iFM 智能柔性运动系统及驱动器等产品交付。
+counterparties:
+- 南方科技大学机器人研究院
+axes:
+  target_scene: [industrial-manufacturing]
+  data_modality: [tactile, force-torque]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.stcn.com/article/detail/3003607.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-08-dh-robotics-dh-5-6-launc.html
+corroboration: single

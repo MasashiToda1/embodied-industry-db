@@ -1,0 +1,26 @@
+id: evt-2024-12-10-direct-drive-tech-deployment-m0603a-1-5m-units
+date: 2024-12-10
+date_precision: day
+type: deployment
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末科技宣布 M0603A 系列直驱电机累计交付量达 150 万台
+summary:
+  zh: 12 月 10 日，当代商业网刊发稿件称本末科技制造部宣布 M0603A 系列直驱电机自 2023 年发布以来累计交付量达 1500000 台。21 财经 12 月 20 日的报道称这是公司首个超百万级工业产品，公司 5 条标准产线每日交付能力突破 20000 台，并建立 2 条柔性生产线保障 30 至 45 天的小批量快速交付；产品已出口至欧盟、北美、中东等全球 50 多个国家和地区。
+axes:
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: http://www.cbnn.com.cn/zixun/28279.html
+  publisher: 当代商业网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/cbnn-2024-12-10-direct-drive-tech-m0603a.html
+- url: https://m.21jingji.com/article/20241220/herald/d2801f1ef3982bf3795efa8180a96dd9.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/m-2024-12-10-direct-drive-tech-m0603a.html
+corroboration: multi

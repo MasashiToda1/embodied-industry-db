@@ -1,0 +1,26 @@
+id: evt-2024-10-16-galaxea-product_launch-r1
+date: 2024-10-16
+date_precision: day
+type: product_launch
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图发布新一代具身智能本体星海图 R1
+summary:
+  zh: 10 月 16 日，星海图（苏州）人工智能科技有限公司发布新一代具身智能本体星海图 R1，用于具身智能产品的研发。R1 拥有 20 个以上独立自由度，配备全铝合金骨架与机翼式底盘，双臂峰值负载 10 千克，搭载 500 TOPS 处理器与工控平台，配备双目立体相机、腕部相机、环视相机与 360° 激光雷达，支持 Isaac Sim、MuJoCo 等仿真平台。
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  sim_stack:
+  - isaac-sim
+  - mujoco
+  target_scene:
+  - education-research
+evidence:
+- url: https://news.qq.com/rain/a/20241016A04N7300
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/news-2024-10-16-galaxea-r1-launch.html
+corroboration: single

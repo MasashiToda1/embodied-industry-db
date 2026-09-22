@@ -15,7 +15,8 @@ layers:
 upstream:
   robotics_notebooks_institution: agilex
 accounts:
-  github: agilex
+  github: agilexrobotics   # 订正：原填 agilex 是同名英国公司（blog agilex.co.uk，5 个仓），
+                           # 松灵的组织是 agilexrobotics（blog www.agilex.ai，98 个仓，pika_ros 等官方仓在此）
   site: https://www.agilex.ai
 founded: 2016
 hq:

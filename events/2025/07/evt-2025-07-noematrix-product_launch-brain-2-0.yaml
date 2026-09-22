@@ -1,0 +1,23 @@
+id: evt-2025-07-noematrix-product_launch-brain-2-0
+date: '2025-07'
+date_precision: month
+date_basis: derived
+date_as_stated: 官网原文「7 月 26-29 日，2025 世界人工智能大会（WAIC）在上海举办……同时正式发布穹彻具身大脑升级版，Noematrix Brain 2.0」
+type: product_launch
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能在 WAIC 2025 发布穹彻具身大脑升级版 Noematrix Brain 2.0
+summary:
+  zh: 2025 年 7 月 26 至 29 日世界人工智能大会期间，穹彻智能发布穹彻具身大脑升级版 Noematrix Brain 2.0，官方称在大模型能力迭代、决策空间压缩和实用特征优化等层面做了升级。同期穹彻展示具身工具链 Noematrix Toolchain 与自研伴随式数采套件 CoMiner，CoMiner 支持仿真或真实环境遥操作与野外采集两种模式。
+axes:
+  data_acquisition:
+  - teleop
+evidence:
+- url: https://www.noematrix.ai/news/Noematrix-WAIC-2025
+  publisher: 穹彻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/noematrix-2025-07-noematrix-brain-2.html
+corroboration: single

@@ -1,0 +1,30 @@
+id: evt-2024-09-12-deeprobotics-publication-lite3-rl-stack
+date: '2024-09-12'
+date_precision: day
+type: publication
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处开源 Lite3 四足机器人强化学习训练与部署两个仓库
+summary:
+  zh: 9 月 12 日，云深处在 GitHub 组织 DeepRoboticsLab 下创建并公开 Lite3_rl_deploy 与 Lite3_rl_training 两个仓库。Lite3_rl_deploy 面向 Lite3 的仿真到仿真与仿真到实机部署，README 的仿真流程使用 MuJoCo 与 PyBullet；Lite3_rl_training 为四足机器人运动控制的学习型控制器，包含训练与硬件部署所需组件，依赖 Isaac Gym、legged_gym 与 rsl_rl。两个仓库均为 BSD-3-Clause 许可。
+axes:
+  embodiment_form:
+  - quadruped
+  control_route:
+  - rl
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://github.com/DeepRoboticsLab/Lite3_rl_deploy
+  publisher: 云深处 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-12-deeprobotics-lite3-rl-de.html
+- url: https://github.com/DeepRoboticsLab/Lite3_rl_training
+  publisher: 云深处 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-12-deeprobotics-lite3-rl-tr.html
+corroboration: single

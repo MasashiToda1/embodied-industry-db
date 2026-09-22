@@ -10,7 +10,7 @@ upstream:
   robotics_notebooks_institution: gigaai
 accounts:
   huggingface: GigaAI-Research
-  github: gigaai
+  github: GigaAI-research
   site: https://gigaai.cc
 founded: 2023
 hq:
@@ -30,3 +30,9 @@ sources:
   tier: official
   retrieved: '2026-09-22'
   note: Hugging Face 主页链接到官网 gigaai.cc（站名「极佳科技」）
+- url: https://github.com/GigaAI-research
+  tier: official
+  retrieved: '2026-09-22'
+  note: GitHub 账号更正。原填的 github.com/gigaai 是美国特拉华州 Newark 的 Giga AI（官网 giga.ai，Messenger
+    Bot 框架，2016 年注册），与本主体无关；极佳视界的账号是 GigaAI-research（Company 栏 GigaAI、Location 北京、Blog
+    gigaai.cc），DriveDreamer、ReconDreamer、GigaBrain 系列均在此账号下

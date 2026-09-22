@@ -1,0 +1,27 @@
+id: evt-2025-07-07-roboterax-funding-a-round
+date: 2025-07-07
+date_precision: day
+type: funding
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元完成 A 轮融资
+summary:
+  zh: 7 月 7 日，星动纪元宣布完成 A 轮融资，报道称金额「近 5 亿元」。本轮融资由鼎晖 VGC 和海尔资本联合领投，厚雪资本、华映资本、襄禾资本、丰立智能等财务机构及产业资本跟投，老股东清流资本、清控基金等机构追加投资，资金用于人形机器人软硬技术的研发与量产落地。
+counterparties:
+- 鼎晖 VGC
+- 海尔资本
+- 厚雪资本
+- 华映资本
+- 襄禾资本
+- 丰立智能
+- 清流资本
+- 清控基金
+evidence:
+- url: https://companies.caixin.com/2025-07-07/102338941.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/companies-2025-07-07-roboterax-a-round.html
+corroboration: single

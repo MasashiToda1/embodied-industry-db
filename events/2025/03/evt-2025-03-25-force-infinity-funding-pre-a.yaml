@@ -1,0 +1,28 @@
+id: evt-2025-03-25-force-infinity-funding-pre-a
+date: 2025-03-25
+date_precision: day
+type: funding
+orgs:
+- id: force-infinity
+  role: subject
+title:
+  zh: 原力无限完成 Pre-A 轮融资，原话为「数亿元」
+summary:
+  zh: 3 月 25 日，ELU.AI（原力无限机器人）宣布完成 Pre-A 轮融资，报道原话为「数亿元人民币」，未披露确定金额。投资方为力鼎资本、杭实产投、兴泰资本等，天使轮投资方创世伙伴创投持续追投。报道写明资金重点投向强化 AI 决策系统、推进下一代智能机器人研发、加速全球市场布局。
+counterparties:
+- 力鼎资本
+- 杭实产投
+- 兴泰资本
+- 创世伙伴创投
+evidence:
+- url: https://www.tmtpost.com/7507888.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/tmtpost-2025-03-25-force-infinity-pre-a.html
+- url: https://m.bkeconomy.com/detail/1742878323129456.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/m-2025-03-25-force-infinity-pre-a-bk.html
+corroboration: multi

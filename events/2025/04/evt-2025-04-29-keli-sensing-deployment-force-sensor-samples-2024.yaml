@@ -1,0 +1,20 @@
+id: evt-2025-04-29-keli-sensing-deployment-force-sensor-samples-2024
+date: '2025-04-29'
+date_precision: day
+type: deployment
+orgs:
+- id: keli-sensing
+  role: subject
+title:
+  zh: 柯力传感 2024 年年报称六维力传感器已向 50 多家机器人客户送样
+summary:
+  zh: 柯力传感 2024 年年度报告披露，报告期内公司六维力 / 力矩传感器已完成人形机器人手腕、脚腕，工业臂、协作臂末端的产品系列开发，掌握结构解耦、算法解耦、高速采样通讯等技术要点，已给 50 多家国内人形机器人、协作机器人、工业机器人客户送样，部分客户已进入批量订单阶段。2025 年 4 月公司购置并启用六维力自动化测试设备及机加工设备，对六维力传感器实现全自动化标定检测。
+axes:
+  data_modality: [force-torque]
+evidence:
+- url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=11027744&stockid=603662
+  publisher: 新浪财经 · 柯力传感 2024 年年度报告摘要
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/Q1/vip-2025-Q1-keli-sensing-2024-annual.html
+corroboration: single

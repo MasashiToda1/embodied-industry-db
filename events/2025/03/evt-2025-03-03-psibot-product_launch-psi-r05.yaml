@@ -1,0 +1,24 @@
+id: evt-2025-03-03-psibot-product_launch-psi-r05
+date: '2025-03-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能发布端到端 VLA 模型 Psi R0.5
+summary:
+  zh: 灵初智能官网 2025 年 3 月 3 日发文，宣布发布基于强化学习的增强版分层架构端到端 VLA 模型 Psi R0.5。官方称该模型在复杂场景泛化性、灵巧性、CoT 与长程任务能力上均有提升，泛化抓取训练使用约 2 小时灵巧手抓取数据（2094 条轨迹），并同时公开四篇论文。
+axes:
+  model_form:
+  - end2end-vla
+  - hierarchical
+  control_route:
+  - rl
+evidence:
+- url: https://www.psibot.ai/005_zh/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/psibot-2025-03-psibot-psi-r05.html
+corroboration: single

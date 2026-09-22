@@ -1,0 +1,34 @@
+id: evt-2025-07-08-magiclab-product-launch-magicbot-z1
+date: '2025-07-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子发布双足人形机器人 MagicBot Z1
+summary:
+  zh: 7 月 8 日，魔法原子发布新款双足人形机器人 MagicBot Z1，具备 24 个基础自由度、最多可扩展至 49 个自由度，结合视觉与触觉感知构建交互系统。产品提供标准版和开发版两个系列，开发版可选装灵巧手、高性能算力包、增加手臂自由度，官方稿写明发布即发售，购买渠道为官网与邮件咨询。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  - tourism-performance
+  delivery_model:
+  - hardware-sale
+  data_modality:
+  - rgb
+  - tactile
+evidence:
+- url: https://www.magiclab.top/news/50
+  publisher: 魔法原子官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/magiclab-2025-07-08-magiclab-z1-launch.html
+- url: https://m.bjnews.com.cn/detail/1751975544168214.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/m-2025-07-08-magiclab-z1-bjnews.html
+corroboration: multi

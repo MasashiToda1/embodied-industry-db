@@ -1,0 +1,26 @@
+id: evt-2025-07-11-hightorque-pricing-mini-pi-v6-jd
+date: 2025-07-11
+date_precision: day
+type: pricing
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎机电双足机器人 Mini Pi V6 版本在京东上线开售，售价 26800 元
+summary:
+  zh: 7 月 11 日，新京报企业资讯刊发稿件，称高擎机电自主研发的双足机器人 Mini Pi（中文名小派）最新 V6 版本正式在京东上线开售，售价 26800 元。稿件称 Mini Pi 向开发者开放底层软硬件架构及接口协议，预留相机、激光雷达、语音模组、机械臂等模块接口，已服务于清华大学、北京理工大学、香港科技大学等高校及企业科研团队，并与深蓝学院联动开发课程。
+amount:
+  value: 26800
+  currency: CNY
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.bjnews.com.cn/detail/1752218662129982.html
+  publisher: 新京报企业资讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/bjnews-2025-07-11-hightorque-minipi-jd-pri.html
+corroboration: single

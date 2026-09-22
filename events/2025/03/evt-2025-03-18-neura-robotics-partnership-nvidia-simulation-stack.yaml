@@ -1,0 +1,24 @@
+id: evt-2025-03-18-neura-robotics-partnership-nvidia-simulation-stack
+date: 2025-03-18
+date_precision: day
+type: partnership
+orgs:
+- id: neura-robotics
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: NEURA Robotics 公布与 NVIDIA 的合作，采用 Omniverse / Isaac / GR00T / Jetson 栈
+summary:
+  zh: 3 月 18 日，NEURA Robotics 公布与 NVIDIA 的合作内容：使用 NVIDIA Omniverse、Isaac Sim、Isaac Lab 与 Cosmos 做物理 AI 仿真，使用 Isaac GR00T 基础模型，并用 NVIDIA Jetson AGX 平台做机上推理。公司称把 NVIDIA 的仿真环境与自有的真实世界数据结合，能更快开发焊接等复杂工业技能，并为进入医疗与家用等新领域做准备——先是服务机器人 MiPA，最终是全尺寸人形 4NE-1。
+axes:
+  sim_stack: [isaac-lab, isaac-sim]
+  data_acquisition: [sim-generated, real-robot]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://neura-robotics.com/combining-neuras-unique-real-world-data-and-ai-enabled-neuraverse-platform-with-nvidias-advanced-simulation-and-computing-platform-is-accelerating-the-development-of-cognitive-robots/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/neura-roboti-2025-03-18-neura-robotics-nvidia.html
+corroboration: single

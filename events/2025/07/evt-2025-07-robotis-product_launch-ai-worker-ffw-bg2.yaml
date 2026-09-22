@@ -1,0 +1,30 @@
+id: evt-2025-07-robotis-product_launch-ai-worker-ffw-bg2
+date: 2025-07
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「7월 공식 출시한 피지컬 AI 기반 작업형 휴머노이드 로봇 'AI 워커'」
+type: product_launch
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 作业型半人形机器人 AI Worker 于 7 月正式发售
+summary:
+  zh: ROBOTIS 的 Physical AI 作业型半人形机器人 AI Worker 于 2025 年 7 月正式发售，固定型 FFW-BG2 先上市，随后移动型上市。AI Worker 由操作装置「leader」与跟随其动作的本体「follower」组成，用于物流与制造自动化、非定型物体应对以及模仿学习与强化学习平台。ZDNet Korea 报道公司自研自产全系产品的执行器与减速机，产品价格降到固定型 4000 万韩元区间、移动型 7000 万韩元区间，并称扩大量产数量后固定型可降到 3000 万韩元水平；公司方面表示现场投入仍处于研发阶段，正与大企业物流中心与工厂合作验证。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [logistics-warehouse, industrial-manufacturing]
+  delivery_model: [hardware-sale]
+  data_acquisition: [teleop]
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250815011258
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/zdnet-2025-08-15-robotis-ai-worker-ecosys.html
+- url: https://www.irobotnews.com/news/articleView.html?idxno=41086
+  publisher: 로봇신문（机器人新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/irobotnews-2025-08-07-robotis-tomorrow-robotic.html
+corroboration: multi

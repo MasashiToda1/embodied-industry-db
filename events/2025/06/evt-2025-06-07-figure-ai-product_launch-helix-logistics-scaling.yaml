@@ -1,0 +1,24 @@
+id: evt-2025-06-07-figure-ai-product_launch-helix-logistics-scaling
+date: 2025-06-07
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure AI 公布 Helix 物流策略升级，单件包裹处理时间降至 4.05 秒
+summary:
+  zh: 6 月 7 日，Figure AI 公布 Helix 在物流分拣上的升级：可处理可变形塑料袋与扁平信封，单件包裹平均处理时间从约 5.0 秒降到 4.05 秒（约快 20%），面单朝向正确率从约 70% 提升到约 95%，并出现拍平褶皱包装等从演示数据里学到的行为。官方把增益归因于演示训练数据从 10 小时扩到 60 小时，以及 System 1 新增视觉记忆模块（用近期视频帧序列构成短时视觉记忆与状态历史）和力反馈输入。同期公司发布了一段 60 分钟不间断作业的视频。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [teleop]
+  data_modality: [rgb, force-torque, joint-trajectory]
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://www.figure.ai/news/scaling-helix-logistics
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/figure-2025-06-07-figure-ai-scaling-helix-.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2025-04-27-psibot-product_launch-psi-r1
+date: '2025-04-27'
+date_precision: day
+type: product_launch
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能发布分层端到端 VLA 加强化学习模型 Psi R1
+summary:
+  zh: 灵初智能官网 2025 年 4 月 27 日发文，宣布发布分层端到端 VLA 加强化学习算法模型 Psi-R1。官方以打麻将为验证场景，称模型达成 30 分钟以上持续 CoAT（Chain of Action Thought）任务时长，并验证人机、机机、机环境三重复合交互能力。
+axes:
+  model_form:
+  - end2end-vla
+  - hierarchical
+  control_route:
+  - rl
+evidence:
+- url: https://www.psibot.ai/007_zh/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/psibot-2025-04-psibot-psi-r1.html
+corroboration: single

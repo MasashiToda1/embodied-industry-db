@@ -1,0 +1,27 @@
+id: evt-2025-08-07-linkerbot-funding-angel-round
+date: '2025-08-07'
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成数亿元天使轮融资
+summary:
+  zh: 8 月 7 日，灵心巧手完成数亿元天使轮融资，由蚂蚁集团领投，中金资本、首发展创投、上海半导体装备基金、澄凯基金、德同资本、可可资本跟投，老股东红杉中国种子基金继续加注。融资将用于公司的技术储备提升和具身智能数据采集场建设。
+counterparties:
+- 蚂蚁集团
+- 中金资本
+- 首发展创投
+- 上海半导体装备基金
+- 澄凯基金
+- 德同资本
+- 可可资本
+- 红杉中国种子基金
+evidence:
+- url: https://m.bjnews.com.cn/detail/1754571161168596.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/m-2025-08-07-linkerbot-angel-round.html
+corroboration: single

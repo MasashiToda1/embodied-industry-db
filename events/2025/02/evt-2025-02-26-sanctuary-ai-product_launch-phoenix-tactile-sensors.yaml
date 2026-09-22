@@ -1,0 +1,22 @@
+id: evt-2025-02-26-sanctuary-ai-product_launch-phoenix-tactile-sensors
+date: 2025-02-26
+date_precision: day
+type: product_launch
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 把新触觉传感器集成进 Phoenix 通用机器人
+summary:
+  zh: 2 月 26 日，Sanctuary AI 宣布把新的触觉传感技术集成进 Phoenix 通用机器人。公告称这项集成让遥操作的操作员能更好地用上机器人的灵巧能力，完成需要触觉的复杂任务；触觉传感器采到的更丰富行为数据也用于让具身物理 AI 模型更稳健。公告称这次发布紧接在公司首次公开其触觉传感器之后，目标行业包括汽车、配送、能源、物流、零售、电信与公用事业等。
+axes:
+  embodiment_form: [humanoid-biped]
+  data_acquisition: [teleop]
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://sanctuary.ai/news/sanctuary-ai-equips-general-purpose-robots/
+  publisher: Sanctuary AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/sanctuary-2025-02-26-sanctuary-ai-tactile-sen.html
+corroboration: single

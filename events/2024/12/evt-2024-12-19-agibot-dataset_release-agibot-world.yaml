@@ -1,0 +1,27 @@
+id: evt-2024-12-19-agibot-dataset_release-agibot-world
+date: 2024-12-19
+date_precision: day
+date_basis: derived
+date_as_stated: 'Hugging Face 数据集页元数据 createdAt 为 2024-12-19T09:37:11.000Z，数据集许可文件写「AgiBot World Alpha Release Date: December 30, 2024」'
+type: dataset_release
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人开源真机操作数据集 AgiBot World（Alpha）
+summary:
+  zh: 智元机器人在 Hugging Face 发布 AgiBot World Alpha 数据集，数据与代码采用 CC BY-NC-SA 4.0 许可，下载需填写机构与用途信息并接受 AgiBot World 社区许可协议。数据集页说明 Alpha 版本后续做过丢帧数据剔除等更新；同一数据集的 Beta 版本于 2025-02-11 在同一账号下发布。
+axes:
+  data_acquisition:
+  - teleop
+  - real-robot
+  data_openness: partially-open
+  data_sourcing:
+  - in-house-factory
+evidence:
+- url: https://huggingface.co/datasets/agibot-world/AgiBotWorld-Alpha
+  publisher: AgiBot（Hugging Face）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/huggingface-2024-12-19-agibot-world-alpha.html
+corroboration: single

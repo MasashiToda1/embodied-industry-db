@@ -1,0 +1,24 @@
+id: evt-2024-10-16-boston-dynamics-partnership-toyota-research-institute
+date: 2024-10-16
+date_precision: day
+type: partnership
+orgs:
+- id: boston-dynamics
+  role: subject
+- id: tri
+  role: counterparty
+title:
+  zh: 波士顿动力与丰田研究院（TRI）成立联合研究合作，用大行为模型驱动电动 Atlas
+summary:
+  zh: 10 月 16 日，波士顿动力与丰田研究院（TRI）宣布成立研究合作，把 TRI 的大行为模型（Large Behavior Models）与波士顿动力的 Atlas 机器人结合。公告称电动 Atlas 的物理能力加上可编程指令与遥操作全身双臂操作行为的能力，让研究团队能在多种任务上部署机器人并采集数据，这些数据再用于训练 LBM，并用硬件与仿真评测验证大规模预训练模型能否让机器人快速获得稳健的全身灵巧技能。TRI 此前在 diffusion policy 与开源机器人 AI 模型与数据集上的工作被写进公告。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla]
+  data_acquisition: [teleop, real-robot, sim-generated]
+evidence:
+- url: https://bostondynamics.com/news/boston-dynamics-toyota-research-institute-announce-partnership-to-advance-robotics-research/
+  publisher: 波士顿动力官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/bostondynami-2024-10-16-boston-dynamics-tri-part.html
+corroboration: single

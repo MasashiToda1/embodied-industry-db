@@ -1,0 +1,22 @@
+id: evt-2025-03-31-schaeffler-product-launch-humanoid-key-components-hannover
+date: 2025-03-31
+date_precision: day
+type: product_launch
+orgs:
+- id: schaeffler
+  role: subject
+title:
+  zh: 舍弗勒在汉诺威工业博览会 2025 展出面向人形机器人的关键部件，含旋转减速器与滚柱丝杠直线执行器
+summary:
+  zh: 3 月 31 日，舍弗勒发布新闻稿称在汉诺威工业博览会展出面向人形机器人产业化的产品能力。公司称基于八大产品家族提供轴承与执行器等关键部件，其旋转减速器与滚珠、行星滚柱丝杠等直线执行器可用于人形机器人的多种关节；新闻稿称人形机器人平均有 25 至 30 个关节。展期为 2025 年 3 月 31 日至 4 月 4 日，展位在 5 号馆 D18。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88086592
+  publisher: 舍弗勒官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/schaeffler-2025-03-31-schaeffler-hannover-2025.html
+corroboration: single

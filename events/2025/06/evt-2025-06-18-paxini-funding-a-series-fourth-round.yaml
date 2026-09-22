@@ -1,0 +1,27 @@
+id: evt-2025-06-18-paxini-funding-a-series-fourth-round
+date: '2025-06-18'
+date_precision: day
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼完成新一轮 A 系列融资
+summary:
+  zh: 6 月 18 日消息，帕西尼感知科技已于近日完成新一轮 A 系列融资，为其 A 系列的第四轮融资。投资方包括 TCL 创投、毅达资本、尚颀资本、基石资本、商汤国香、中信里昂、湖南财信产业基金、钧犀资本等，累计融资金额为数亿元人民币，庚辛资本中国担任独家战略财务顾问。募资用途为触觉感知核心技术迭代、具身智能多模态数据规模化采集、具身智能大模型研发以及产线扩张。
+counterparties:
+- TCL创投
+- 毅达资本
+- 尚颀资本
+- 基石资本
+- 商汤国香
+- 中信里昂
+- 湖南财信产业基金
+- 钧犀资本
+evidence:
+- url: https://www.21jingji.com/article/20250618/herald/66082f57dc07b7e7773563b977c9db78.html
+  publisher: 21世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/21jingji-2025-06-18-paxini-a4-round.html
+corroboration: single

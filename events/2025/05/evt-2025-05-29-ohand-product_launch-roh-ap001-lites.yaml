@@ -1,0 +1,20 @@
+id: evt-2025-05-29-ohand-product_launch-roh-ap001-lites
+date: '2025-05-29'
+date_precision: day
+type: product_launch
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技发布第二代触觉力控灵巧手 ROH-AP001 等四款新品
+summary:
+  zh: 5 月 29 日，傲意科技在 2025 张江具身智能开发者大会上举办新品发布会，推出 4 款产品，涵盖智能仿生手 OHand 系列与机器人灵巧手 ROHand 系列。其中第二代触觉力控灵巧手 ROH-AP001 重 640 克、高 184 毫米，搭载高密度点阵触觉传感器，可感知 0.1N 至 25N 的压力变化，提供 UART、RS485、CAN 等通讯接口；小型机器人专用灵巧手 ROH-LiteS 从指尖到手腕纵向尺寸 169 毫米，含手腕重量 457 克以内，整手负载 25KG。
+axes:
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://www.zidonghua.com.cn/news/newproduct/72475.html
+  publisher: 自动化网（来源 OYMotion）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/zidonghua-2025-05-29-ohand-roh-ap001-launch.html
+corroboration: single

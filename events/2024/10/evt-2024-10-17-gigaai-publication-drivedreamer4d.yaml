@@ -1,0 +1,22 @@
+id: evt-2024-10-17-gigaai-publication-drivedreamer4d
+date: '2024-10-17'
+date_precision: day
+type: publication
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: "极佳视界开源 DriveDreamer4D：用世界模型先验做 4D 驾驶场景表征"
+summary:
+  zh: 极佳视界 GitHub 账号 GigaAI-research 于 2024 年 10 月 17 日建立 DriveDreamer4D 仓库（README
+    的 News 一栏记为「Repository Initialization」）。该工作把世界模型作为数据机器合成新轨迹视频，用于优化 4D 高斯的驾驶场景重建，论文为
+    arXiv 2410.13571，后被 CVPR 2025 收录。
+axes:
+  model_form: [world-model]
+evidence:
+- url: https://github.com/GigaAI-research/DriveDreamer4D
+  publisher: GitHub · GigaAI-research
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-17-gigaai-drivedreamer4d.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2025-07-18-ubtech-procurement-miyi-auto-90m
+date: 2025-07-18
+date_precision: day
+type: procurement
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选中标觅亿（上海）汽车科技 9051.15 万元机器人设备采购项目
+summary:
+  zh: 中国招标投标公共服务平台 7 月 18 日发布的《机器人设备采购项目中标公示》显示，深圳市优必选科技股份有限公司中标觅亿（上海）汽车科技有限公司机器人设备采购项目，合同金额 9051.15 万元。报道称觅亿汽车由十堰林安国际、十堰经开建投集团及上海联高集团合资成立，以汽车出口贸易为核心业务。
+counterparties:
+- 觅亿（上海）汽车科技有限公司
+amount:
+  value: 90511500
+  currency: CNY
+axes:
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.chnfund.com/article/AR0f4cfc36-d317-03bc-d084-3a1b39b801a8
+  publisher: 中国基金报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/chnfund-2025-07-18-ubtech-miyi-bid.html
+corroboration: single

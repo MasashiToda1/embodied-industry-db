@@ -1,0 +1,24 @@
+id: evt-2024-10-31-meta-fair-robotics-partnership-gelsight-wonik-digit360
+date: 2024-10-31
+date_precision: day
+type: partnership
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: Meta FAIR 与 GelSight、Wonik Robotics 合作商业化 Digit 360 触觉指尖与新一代 Allegro Hand
+summary:
+  zh: 10 月 31 日，Meta FAIR 发布触觉指尖传感器 Meta Digit 360，并宣布与 GelSight 和 Wonik Robotics 两家公司合作把触觉传感硬件推向研究市场。Digit 360 为指尖形状，配面向触觉感知设计的广视场光学系统，可捕捉指尖表面的全向形变，具备 18 项以上感知能力，可感知振动、温度乃至气味，并带片上 AI 神经网络加速器做实时处理；论文写明其分辨率约 830 万 taxel，可分辨小至 7 微米的空间特征，法向力与切向力分辨率分别为 1.01 mN 与 1.27 mN。GelSight 负责生产与分发 Digit 360，Wonik Robotics 基于 Meta 的 Digit Plexus 平台开发下一代带触觉传感的 Allegro Hand，两者均计划于次年上市，研究者可通过征集提案申请早期使用。
+counterparties:
+- GelSight
+- Wonik Robotics
+axes:
+  data_modality: [tactile]
+  embodiment_form: [arm]
+evidence:
+- url: https://ai.meta.com/blog/fair-robotics-open-source/
+  publisher: Meta AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/ai-2024-10-31-meta-fair-robotics-touch.html
+corroboration: single

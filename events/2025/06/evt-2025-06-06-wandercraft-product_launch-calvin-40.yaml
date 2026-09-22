@@ -1,0 +1,23 @@
+id: evt-2025-06-06-wandercraft-product_launch-calvin-40
+date: 2025-06-06
+date_precision: day
+type: product_launch
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Wandercraft 发布首款工业人形机器人 Calvin-40
+summary:
+  zh: 6 月 6 日，Wandercraft 公布 Calvin 系列的第一款机器人 Calvin-40，官方称其开发周期为 40 天，技术平台与公司的自平衡外骨骼同源。公告的公司介绍段落写道：Wandercraft 成立于 2012 年，持有 30 多项专利，有 100 台 Atalante 外骨骼在四大洲的医院运行；其人形外骨骼每月合计走出超过一百万步，这些真实运动数据用于训练公司自有的神经网络，该数据集也用于驱动下一代外骨骼与机器人，Calvin-40 即为起点。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+  data_acquisition: [real-robot]
+  data_modality: [joint-trajectory]
+evidence:
+- url: https://www.wandercraft.eu/articles/renault-group-finalises-a-strategic-partnership-with-wandercraft
+  publisher: Wandercraft 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/wandercraft-2025-06-06-wandercraft-renault-calv.html
+corroboration: single

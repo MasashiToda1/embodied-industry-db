@@ -1,0 +1,23 @@
+id: evt-2025-04-26-rokae-product_launch-humanoid-debut
+date: 2025-04-26
+date_precision: day
+type: product_launch
+orgs:
+- id: rokae
+  role: subject
+title:
+  zh: 珞石机器人全新一代人形机器人在山东省机器人大会首次公开亮相
+summary:
+  zh: 4 月 26 日，2025 山东省机器人大会在邹城启幕，珞石机器人全新一代人形机器人首次公开亮相，并在开幕式上发布《2025 机器人山东宣言》。官网介绍该人形机器人依托全栈自研核心技术与全力控关节协作机器人产品，融合多模态感知融合技术与 VLA 大模型智能中枢，结合模仿学习与强化学习算法；同场展出焊接、打磨、码垛、力控装配等 15 项以上应用方案。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla]
+  control_route: [rl]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.rokae.com/cn/news/show/2179/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%A6%96%E7%A7%80%E3%80%8115+%E5%85%A8%E5%9C%BA%E6%99%AF%E6%96%B9%E6%A1%88%E4%BA%AE%E7%9B%B8%EF%BC%8C%E7%8F%9E%E7%9F%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%97%AA%E8%80%80%E5%B1%B1%E4%B8%9C%E7%9C%81%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E4%BC%9A%EF%BC%81.html
+  publisher: 珞石机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/rokae-2025-04-26-rokae-xiaoluo-debut.html
+corroboration: single

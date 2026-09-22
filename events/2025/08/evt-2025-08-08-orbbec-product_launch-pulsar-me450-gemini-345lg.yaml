@@ -1,0 +1,26 @@
+id: evt-2025-08-08-orbbec-product_launch-pulsar-me450-gemini-345lg
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: orbbec
+  role: subject
+title:
+  zh: 奥比中光在 2025 WRC 发布 3D 激光雷达 Pulsar ME450 与双目 3D 相机 Gemini 345Lg
+summary:
+  zh: 8 月 8 日，在北京举办的 2025 世界机器人大会上，奥比中光发布面向机器人领域的感知产品矩阵。Pulsar ME450 为国内首款支持多种扫描模式的 dToF 3D 激光雷达，可用于智能叉车、物流车、割草机等机器人导航避障与测绘；Gemini 345Lg 为面向户外机器人的双目 3D 相机，支持 -20°C 至 65°C 运行，具备 IP67 防护，深度双模视场角 104°×87°/91°×78°。发布会同时展出此前在美国上市的双目 3D 相机 Gemini 435Le。
+axes:
+  target_scene: [inspection-hazardous, logistics-warehouse]
+  data_modality: [rgbd, pointcloud]
+evidence:
+- url: https://www.orbbec.com.cn/index/News/info.html?cate=31&id=328
+  publisher: 奥比中光官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/orbbec-2025-08-08-orbbec-wrc2025-launch.html
+- url: https://www.stcn.com/article/detail/3018915.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-08-orbbec-wrc2025-stcn.html
+corroboration: multi

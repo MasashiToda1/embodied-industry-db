@@ -1,0 +1,18 @@
+id: evt-2025-06-06-tesla-personnel-optimus-vp-departure
+date: 2025-06-06
+date_precision: day
+type: personnel
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉 Optimus 项目负责人离职，AI 软件副总裁接管该项目
+summary:
+  zh: 6 月 6 日，特斯拉 Optimus 人形机器人项目负责人 Milan Kovac 在 X 上宣布离职，称原因是「离家太久，需要回到海外陪家人」，并称这是唯一原因。他在特斯拉工作近十年，2022 年起参与领导 Optimus 研发，2024 年底升任分管该项目的副总裁。特斯拉 AI 软件副总裁 Ashok Elluswamy 接手 Optimus 项目。
+evidence:
+- url: https://techcrunch.com/2025/06/06/teslas-optimus-robot-vp-is-reportedly-leaving-the-company/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/techcrunch-2025-06-06-tesla-optimus-vp-departu.html
+corroboration: single

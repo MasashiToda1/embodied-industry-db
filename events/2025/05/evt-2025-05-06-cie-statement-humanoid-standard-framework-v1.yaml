@@ -1,0 +1,23 @@
+id: evt-2025-05-06-cie-statement-humanoid-standard-framework-v1
+date: '2025-05-06'
+date_precision: day
+type: statement
+orgs:
+- id: cie
+  role: subject
+title:
+  zh: 中国电子学会牵头编制的《人形机器人标准体系框架（V1.0 版）》发布
+summary:
+  zh: 中国电子学会官网稿件载，在工业和信息化部领导下，学会组织机器人企业、科研院所、高校等 120 余家单位编制完成《人形机器人标准体系框架（V1.0 版）》，并在「人形机器人百人会会议暨人工智能赋能新型工业化深度行（无锡站）」活动上正式发布。框架从基础共性、关键技术、部组件、整机与系统、应用等 5 个方面建立全链条标准体系，并梳理了行业急需标准项目清单。
+date_basis: derived
+date_as_stated: 官网稿件日期 2025-05-06，原文「于近日举办的……活动上正式发布」
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.cie.org.cn/list_42/14587.html
+  publisher: 中国电子学会官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/cie-2025-05-06-cie-humanoid-standard-fr.html
+corroboration: single

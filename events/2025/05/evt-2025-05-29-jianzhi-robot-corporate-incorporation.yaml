@@ -1,0 +1,23 @@
+id: evt-2025-05-29-jianzhi-robot-corporate-incorporation
+date: '2025-05-29'
+date_precision: day
+type: corporate
+orgs:
+- id: jianzhi-robot
+  role: subject
+title:
+  zh: 简智新创（北京）机器人科技有限公司成立
+summary:
+  zh: 投资界公司页载工商信息：简智新创（北京）机器人科技有限公司成立于 2025 年 5 月 29 日，所属行业为软件和信息技术服务业，注册地址为北京市海淀区中关村东路 1 号院 7 号楼 3 层 301。OFweek 报道亦载该公司「2025 年 5 月正式成立」。公司主营具身智能多模态数据采集与治理，产品为 DAS 数据采集系统及配套数据治理平台。
+evidence:
+- url: https://vc.pedaily.cn/company/822267.html
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/vc-2025-05-29-jianzhi-robot-incorporat.html
+- url: https://robot.ofweek.com/2026-08/ART-8321201-8140-30700216.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/robot-2025-05-jianzhi-robot-founded-ma.html
+corroboration: multi

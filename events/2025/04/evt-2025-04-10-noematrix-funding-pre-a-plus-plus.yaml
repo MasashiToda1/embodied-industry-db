@@ -1,0 +1,28 @@
+id: evt-2025-04-10-noematrix-funding-pre-a-plus-plus
+date: '2025-04-10'
+date_precision: day
+type: funding
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能完成 Pre-A++ 轮融资
+summary:
+  zh: 2025 年 4 月 10 日，穹彻智能宣布完成 Pre-A++ 轮融资，官网表述为「数亿元」。本轮新增盛宇投资、清科创投、嘉御资本、云启资本、上海科创集团等机构，老股东 Prosperity7、红杉中国、小苗朗程、璞跃中国持续追投。融资用于具身智能基础模型、数据采集与评价等方向，并推动零售履约、家庭服务、食品加工等场景的商业化应用探索。
+counterparties:
+- 盛宇投资
+- 清科创投
+- 嘉御资本
+- 云启资本
+- 上海科创集团
+- Prosperity7 Ventures
+- 红杉中国
+- 小苗朗程
+- 璞跃中国
+evidence:
+- url: https://www.noematrix.ai/news/noematrix-pre-a++
+  publisher: 穹彻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/noematrix-2025-04-noematrix-pre-a-plus-plu.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2025-08-08-x-humanoid-product_launch-tiangong-2
+date: 2025-08-08
+date_precision: day
+type: product_launch
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心在 2025 世界机器人大会发布天工、天轶 2.0 产品矩阵
+summary:
+  zh: 8 月 8 日，2025 世界机器人大会在北京开幕，北京人形机器人创新中心（国地共建具身智能机器人创新中心）携天工、天轶系列 2.0 产品矩阵亮相，并在大会上发布具身世界模型体系、具身多模态大模型、人形机器人全自主导航系统、跨本体 VLA 模型等技术，演示了工业场景下异构多本体协同工作。开幕式上天工 2.0 作为主持人登台。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  model_form:
+  - end2end-vla
+  - world-model
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: http://bj.people.com.cn/n2/2025/0810/c14540-41317847.html
+  publisher: 人民网北京频道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/bj-2025-08-08-x-humanoid-tiangong-2.html
+corroboration: single

@@ -5,6 +5,7 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2018
 hq:
   country: CA
   city: Vancouver
@@ -15,7 +16,11 @@ sources:
 - url: https://sanctuary.ai/about-us/
   tier: official
   retrieved: '2026-09-22'
-  note: 官网 About 页：Headquartered in Vancouver, Canada；成立年份未在官网读到，不填
+  note: 官网 About 页：Headquartered in Vancouver, Canada
+- url: https://sanctuary.ai/news/sanctuary-ai-controlling-advanced-hydraulic-hands/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网文章 About Sanctuary AI 段：「Founded in 2018」，补成立年份
 - url: https://sanctuary.ai/news/sanctuary-ai-expands-physical-ai-strategy-to-industrial-robotics-demonstrating-production-ready-ai-performance/
   tier: official
   retrieved: '2026-09-22'

@@ -1,0 +1,20 @@
+id: evt-2025-01-07-mojia-corporate-incorporation
+date: '2025-01-07'
+date_precision: day
+type: corporate
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 奇瑞汽车全资成立安徽墨甲智创机器人科技有限公司
+summary:
+  zh: 1 月 7 日，安徽墨甲智创机器人科技有限公司成立，注册资本 1 亿元人民币，由奇瑞汽车股份有限公司全资持股，经营范围包含智能机器人销售与研发、工业机器人销售、智能基础制造装备制造、人工智能应用软件与基础软件开发、信息系统集成服务、智能控制系统集成等。
+counterparties:
+- 奇瑞汽车股份有限公司
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-01-09/doc-ineekeau9550589.shtml
+  publisher: 新浪财经（转载 IT之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/finance-2025-01-07-mojia-incorporation.html
+corroboration: single

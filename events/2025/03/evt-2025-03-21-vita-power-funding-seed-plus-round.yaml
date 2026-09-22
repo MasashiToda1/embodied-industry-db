@@ -1,0 +1,27 @@
+id: evt-2025-03-21-vita-power-funding-seed-plus-round
+date: '2025-03-21'
+date_precision: day
+type: funding
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力完成种子+轮融资
+summary:
+  zh: 3 月 21 日，维他动力（Vita Dynamics）宣布完成种子+轮融资，稿件称成立三个月内累计完成 2 亿元种子轮融资。本轮由今日资本、凯辉基金领投，雅瑞资本参与投资，高瓴创投、元璟资本、初心资本、柏睿资本及 BV 百度风投等首轮投资方持续跟投，高鹄资本担任独家财务顾问。
+counterparties:
+- 今日资本
+- 凯辉基金
+- 雅瑞资本
+- 高瓴创投
+- 元璟资本
+- 初心资本
+- 柏睿资本
+- BV 百度风投
+evidence:
+- url: https://www.36kr.com/p/3215650996784008
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/36kr-2025-03-21-vita-power-seed-plus-rou.html
+corroboration: single

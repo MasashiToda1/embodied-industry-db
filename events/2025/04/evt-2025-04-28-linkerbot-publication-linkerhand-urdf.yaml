@@ -1,0 +1,18 @@
+id: evt-2025-04-28-linkerbot-publication-linkerhand-urdf
+date: '2025-04-28'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手开源 LinkerHand 灵巧手 URDF 模型仓库
+summary:
+  zh: 灵心巧手在 GitHub 组织 linker-bot 下创建并开源 linkerhand-urdf 仓库，发布 Linker Hand 系列灵巧手的 URDF 模型文件，采用 Apache-2.0 许可证。
+evidence:
+- url: https://github.com/linker-bot/linkerhand-urdf
+  publisher: GitHub · linker-bot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/github-2025-04-28-linkerbot-linkerhand-urd.html
+corroboration: single

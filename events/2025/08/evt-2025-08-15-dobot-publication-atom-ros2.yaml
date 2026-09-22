@@ -1,0 +1,20 @@
+id: evt-2025-08-15-dobot-publication-atom-ros2
+date: 2025-08-15
+date_precision: day
+type: publication
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技开源 Atom 人形机器人 ROS2 支持包 dobot_atom_ros2
+summary:
+  zh: 8 月 15 日，越疆科技在其 GitHub 账号 Dobot-Arm（资料页注明所属公司 SHENZHEN DOBOT CORP LTD）下创建开源仓库 dobot_atom_ros2。仓库 README 写明该项目为 Dobot Atom 人形机器人提供 ROS2 支持，含机器人模型、仿真环境、控制接口与示例程序，支持 Ubuntu 20.04 / Foxy 与 Ubuntu 22.04 / Humble。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://github.com/Dobot-Arm/dobot_atom_ros2
+  publisher: GitHub · Dobot-Arm
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-15-dobot-atom-ros2.html
+corroboration: single

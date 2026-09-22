@@ -1,0 +1,23 @@
+id: evt-2025-07-17-chaowei-power-corporate-founded
+date: '2025-07-17'
+date_precision: day
+type: corporate
+orgs:
+- id: chaowei-power
+  role: subject
+title:
+  zh: 深圳超维动力智能科技有限公司成立
+summary:
+  zh: 超维动力（Kinetix AI）官网介绍公司成立于 2025 年 7 月，定位全栈具身智能大模型企业，选择高拟人人形路线，围绕本体、大脑、灵巧操作与数据闭环搭建能力。亿欧报道写明深圳超维动力智能科技有限公司成立于 2025 年 7 月 17 日，总部位于深圳，在香港设有研发中心。
+evidence:
+- url: https://www.kinetixai.tech/zh/about
+  publisher: 超维动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/kinetixai-2025-07-17-chaowei-power-founded.html
+- url: https://www.163.com/dy/article/KHVRI09C05118K7K.html
+  publisher: 网易号转载亿欧
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/163-2025-07-17-chaowei-power-founded-16.html
+corroboration: multi

@@ -1,0 +1,20 @@
+id: evt-2025-04-11-huawei-cloudrobo-partnership-efort-mou
+date: 2025-04-11
+date_precision: day
+type: partnership
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+title:
+  zh: 华为云与埃夫特在华为云生态大会 2025 签署具身智能合作备忘录
+summary:
+  zh: 4 月 10 日至 11 日，华为云生态大会 2025 在安徽芜湖举办，埃夫特智能机器人与华为云在现场签署合作备忘录。合作内容为三项：共同开展具身智能底层技术研发，结合埃夫特的机器人本体研发与应用场景和华为云的人工智能算法与云计算平台；推动智能机器人产品升级；加强产业生态合作。埃夫特称此前已与华为云和华为（深圳）全球具身智能产业创新中心在相关领域展开合作。
+counterparties:
+- 埃夫特智能机器人股份有限公司
+evidence:
+- url: https://www.efort.com.cn/index.php/news/newsdetail/517.html
+  publisher: 埃夫特智能机器人
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/efort-2025-04-11-huawei-cloudrobo-efort-m.html
+corroboration: single

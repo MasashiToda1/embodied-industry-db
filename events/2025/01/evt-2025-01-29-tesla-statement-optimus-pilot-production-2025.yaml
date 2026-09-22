@@ -1,0 +1,20 @@
+id: evt-2025-01-29-tesla-statement-optimus-pilot-production-2025
+date: 2025-01-29
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉在 2024 年四季度股东信中披露 Optimus 进展，并称 2025 年计划试产
+summary:
+  zh: 1 月 29 日，特斯拉发布 2024 年第四季度股东更新文件，其中写道：Optimus 的硬件与软件在四季度继续推进，包括最新一代手、稳健的行走能力以及在更多任务上的训练，为 2025 年计划中的试产（pilot production）做准备。同一份文件披露公司在得州超级工厂完成部署约 5 万张 H100 规模的训练集群 Cortex。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q4-2024-Update.pdf
+  publisher: 特斯拉 2024 年第四季度股东更新文件
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/digitalasset-2025-01-29-tesla-q4-2024-update.html
+corroboration: single

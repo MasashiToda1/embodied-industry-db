@@ -1,0 +1,25 @@
+id: evt-2025-07-21-beingbeyond-publication-being-h0
+date: '2025-07-21'
+date_precision: day
+date_basis: derived
+date_as_stated: 仓库 README 的 News 条目「[2025-07-21]：We publish Being-H0」；仓库本身创建于 2025-07-17
+type: publication
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: BeingBeyond 发布 Being-H0 并开源 Being-H 仓库
+summary:
+  zh: 2025 年 7 月，BeingBeyond 建立 Being-H 仓库并公布 Being-H0。README 称 Being-H 是 BeingBeyond 面向人类中心具身基础模型的系列，Being-H0 为该系列首个版本，走人类视频 VLA 预训练路线；2025 年 8 月 2 日团队通过 Hugging Face 发布 Being-H0 代码库与预训练模型。该仓库截至抓取时 star 数为 1145。
+axes:
+  model_form:
+  - end2end-vla
+  data_acquisition:
+  - human-video
+evidence:
+- url: https://github.com/BeingBeyond/Being-H
+  publisher: BeingBeyond GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-beingbeyond-being-h.html
+corroboration: single

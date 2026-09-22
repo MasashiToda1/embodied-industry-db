@@ -1,0 +1,18 @@
+id: evt-2025-08-27-youyi-corporate-jinhua-headquarters
+date: '2025-08-27'
+date_precision: day
+type: corporate
+orgs:
+- id: youyi
+  role: subject
+title:
+  zh: 金华有怡科技有限公司总部在金东金漪湖开业
+summary:
+  zh: 今日金东稿件称，金华有怡科技有限公司总部开业，为金东区首个人形机器人产业化项目落地。稿件称公司已将大部分研发和生产环节布局在金华，并计划未来三年内实现整机 90% 以上关键零部件的本地化。
+evidence:
+- url: https://jdnews.zjol.com.cn/jdnews/system/2025/08/27/035036047.shtml
+  publisher: 金义新区新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/jdnews-2025-08-27-youyi-jinhua-hq-opening.html
+corroboration: single

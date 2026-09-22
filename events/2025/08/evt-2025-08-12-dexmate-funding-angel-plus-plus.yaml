@@ -1,0 +1,27 @@
+id: evt-2025-08-12-dexmate-funding-angel-plus-plus
+date: '2025-08-12'
+date_precision: day
+type: funding
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人完成亿元级天使 ++ 轮融资，招商局创投领投
+summary:
+  zh: 8 月 12 日，戴盟机器人宣布完成亿元级天使 ++ 轮融资，由招商局创投领投，东方嘉富、架桥资本跟投，资金用于视触觉感知与灵巧操作技术的落地应用。报道写明此前公司完成了昆仲资本独投的天使轮融资，以及国中资本、金鼎资本、联想创投和招银国际联合投资的天使 + 轮融资，三轮累计融资金额达数亿元。
+counterparties:
+- 招商局创投
+- 东方嘉富
+- 架桥资本
+evidence:
+- url: https://www.stcn.com/article/detail/3049769.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-12-dexmate-angel-pp.html
+- url: https://www.chinaventure.com.cn/news/114-20250812-387556.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/chinaventure-2025-08-12-dexmate-angel-pp-cv.html
+corroboration: multi

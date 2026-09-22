@@ -11,6 +11,7 @@ upstream:
 founded: 1992
 hq:
   country: US
+  city: Waltham
 description: Hyundai Motor Group 旗下移动机器人公司，产品有四足机器人 Spot、仓储机器人 Stretch 与人形机器人 Atlas，1992 年自 MIT Leg Lab 分拆。
 accounts:
   github: boston-dynamics
@@ -23,4 +24,8 @@ sources:
 - url: https://bostondynamics.com/blog/boston-dynamics-google-deepmind-form-new-ai-partnership/
   tier: official
   retrieved: '2026-09-22'
-  note: 「Hyundai Motor Group is the majority shareholder of Boston Dynamics」；总部城市未在官网读到，只填国家
+  note: 「Hyundai Motor Group is the majority shareholder of Boston Dynamics」
+- url: https://bostondynamics.com/news/boston-dynamics-hyundai-motor-group-expand-collaboration-drive-mobility-manufacturing-innovation/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿落款「Waltham, Massachusetts, April 3, 2025」，补 hq 城市

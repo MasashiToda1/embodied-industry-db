@@ -1,0 +1,23 @@
+id: evt-2025-06-13-beingbeyond-publication-bumblebee
+date: '2025-06-13'
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 BeingBeyond/BumbleBee 创建时间 2025-06-13
+type: publication
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: BeingBeyond 发布人形机器人全身控制框架 BumbleBee
+summary:
+  zh: "2025 年 6 月 13 日，BeingBeyond 在 GitHub 组织下建立 BumbleBee 仓库。README 称 BumbleBee 是面向人形机器人通用敏捷全身控制的「专家—通才」学习框架，先用基于自编码器的聚类方法把行为相近的动作分组并在各簇内训练专家策略，再以真实世界数据通过迭代 delta action 建模弥合 sim-to-real 差距，最后把专家策略蒸馏为统一的通才控制器。对应论文《From Experts to a Generalist: Toward General Whole-Body Control for Humanoid Robots》收录于 NeurIPS 2025（Spotlight）。"
+axes:
+  control_route:
+  - wbc
+evidence:
+- url: https://github.com/BeingBeyond/BumbleBee
+  publisher: BeingBeyond GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-beingbeyond-bumblebee.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2025-06-10-1x-technologies-product_launch-redwood-ai
+date: 2025-06-10
+date_precision: day
+type: product_launch
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X Technologies 发布视觉-语言-动作模型 Redwood AI
+summary:
+  zh: 6 月 10 日，1X Technologies 发布 Redwood——一个面向人形形态的视觉-语言 transformer 模型，参数 160M，完全跑在 NEO 的机载嵌入式 GPU 上，用于端到端移动操作任务（为用户取物、开门、在家中导航）。模型融合预训练语言嵌入、预训练视觉 transformer 的视觉 token 与关节位置和关节受力序列的本体感知嵌入，经若干 transformer 块得到隐表示，再用 diffusion policy 解码为 EVE 或 NEO 的动作，支持跨本体。训练数据来自 EVE 与 NEO 上采集的遥操作与自主运行片段，包括 1X 办公室与员工家中采的数据；除动作预测外还训练「认知」预测目标（如估计手与相关物体在图像空间的位置）来改善泛化。官方称 Redwood 是最早把行走与操作联合控制的 VLA 之一，可做出撑墙、倚靠等多点接触动作。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [home]
+  model_form: [end2end-vla]
+  data_acquisition: [teleop, real-robot]
+  data_modality: [rgb, joint-trajectory, force-torque, language-annotated]
+evidence:
+- url: https://www.1x.tech/discover/redwood-ai
+  publisher: 1X Technologies 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/1x-2025-06-10-1x-technologies-redwood-.html
+corroboration: single

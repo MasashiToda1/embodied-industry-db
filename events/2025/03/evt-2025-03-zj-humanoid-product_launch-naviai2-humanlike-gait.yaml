@@ -1,0 +1,32 @@
+id: evt-2025-03-zj-humanoid-product_launch-naviai2-humanlike-gait
+date: '2025-03'
+date_precision: month
+date_basis: derived
+date_as_stated: 中控技术稿件写「3 月 10 日，……浙江人形机器人创新中心发布了其全尺寸人形机器人『领航者 2 号 NAVIAI』的最新升级视频」，中国宁波网稿件发布于 2025-03-11
+type: product_launch
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形机器人创新中心发布「领航者 2 号 NAVIAI」升级，实现 7 自由度作业臂下的全身拟人化行走
+summary:
+  zh: 3 月 10 日，浙江人形机器人创新中心发布全尺寸人形机器人「领航者 2 号 NAVIAI」的最新升级视频，本次升级实现 7 自由度精准作业臂下的全身人机映射拟人化行走。稿件写明该机型单臂 7 自由度、负载 5 公斤、操作精度 0.1 毫米，自重 4.2 公斤；中国宁波网稿件写明其在身高体重与成年人相仿的前提下实现拟人姿态的稳步行走，可在水泥路、柏油路、塑胶跑道等多种路面平稳行走，最快步行速度每秒 1.5 米。中心相关人员表示正在让该机型进入科研教育、智慧零售、智能制造等行业，包括与宁波本地高校合作提供科研设备、参与商超货物分拣与搬运、在中控技术富阳工厂用刷子蘸取涂料覆在印制电路板上。
+counterparties:
+- 中控技术
+axes:
+  embodiment_form: [humanoid-biped]
+  control_route: [rl]
+  data_acquisition: [mocap]
+  target_scene: [industrial-manufacturing, commercial-service, education-research]
+evidence:
+- url: https://www.zidonghua.com.cn/news/tech/69033.html
+  publisher: 自动化网（来源中控技术）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/zidonghua-2025-03-10-zj-humanoid-supcon-upgra.html
+- url: http://news.cnnb.com.cn/system/2025/03/11/030654442.shtml
+  publisher: 中国宁波网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-11-zj-humanoid-naviai2-walk.html
+corroboration: multi

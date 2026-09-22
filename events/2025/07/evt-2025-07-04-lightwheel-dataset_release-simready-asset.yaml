@@ -1,0 +1,20 @@
+id: evt-2025-07-04-lightwheel-dataset_release-simready-asset
+date: '2025-07-04'
+date_precision: day
+type: dataset_release
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能开源 SimReady 仿真资产库 Lightwheel-simready-asset
+summary:
+  zh: 7 月 4 日，光轮智能在 GitHub 的 LightwheelAI 组织下开源 Lightwheel-simready-asset 资产库，面向仿真与机器人训练提供 259 个 USD 格式 3D 资产，其中 251 个用于操作训练、8 个用于运动导航训练，资产在 Isaac Lab、遥操作与强化学习流程中做过验证。仓库声明资产免费用于非商业用途，使用时需以 lightwheel_ 前缀命名标注来源。
+axes:
+  data_openness: partially-open
+evidence:
+- url: https://github.com/LightwheelAI/Lightwheel-simready-asset
+  publisher: 光轮智能 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-04-lightwheel-simready-asse.html
+corroboration: single

@@ -13,6 +13,7 @@ hq:
   city: 无锡
 description: 追觅科技生态孵化的机器人公司，做全尺寸人形 MagicBot Gen1 / X1、双足 MagicBot Z1、四足 MagicDog 及灵巧手、关节模组。
 accounts:
+  github: MagiclabRobotics   # GitHub 组织显示名 Magiclab Robotics，仓库 README 写明由 Magiclab Robotics 开发
   site: https://www.magiclab.top
 sources:
 - url: https://www.magiclab.top/news/29

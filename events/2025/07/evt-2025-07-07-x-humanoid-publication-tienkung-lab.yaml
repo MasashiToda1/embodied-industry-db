@@ -1,0 +1,30 @@
+id: evt-2025-07-07-x-humanoid-publication-tienkung-lab
+date: 2025-07-07
+date_precision: day
+type: publication
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心开源运动控制框架 Tien Kung-Lab
+summary:
+  zh: 7 月 7 日，北京人形机器人创新中心正式发布开源运动控制框架 Tien Kung-Lab，将天工 Ultra 在人形机器人半程马拉松夺冠所用的运控算法面向行业开源。官方介绍该框架基于 Isaac Lab 开发，融合强化学习与人体运动数据，采用 Adversarial Motion Prior（AMP）风格化奖励机制并引入动作捕捉数据作为先验，开源了针对人形机器人的步态奖励，可训练走路与跑步策略；框架已在天工 2.0 全尺寸人形机器人上实现行走与奔跑，并在 Open X-Humanoid 开源社区、GitHub 与 Gitee 开放下载。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  sim_stack:
+  - isaac-lab
+  - mujoco
+  control_route:
+  - rl
+  model_form:
+  - il
+  data_acquisition:
+  - mocap
+evidence:
+- url: https://www.x-humanoid.com/news-view-215.html
+  publisher: 北京人形机器人创新中心（官网）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/x-humanoid-2025-07-07-x-humanoid-tienkung-lab.html
+corroboration: single

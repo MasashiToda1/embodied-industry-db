@@ -1,0 +1,22 @@
+id: evt-2025-05-vita-power-funding-angel-round
+date: '2025-05'
+date_precision: month
+type: funding
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力完成天使轮融资，达晨创投领投
+summary:
+  zh: 2025 世界机器人大会首日，Vbot 维他动力宣布已于 2025 年 5 月完成天使轮融资，由达晨创投领投，联想创投、渶策资本跟投，高鹄资本担任独家财务顾问。稿件称成立半年融资规模达 3 亿元。
+counterparties:
+- 达晨创投
+- 联想创投
+- 渶策资本
+evidence:
+- url: https://news.qq.com/rain/a/20250811A034UA00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-vita-power-angel-round.html
+corroboration: single

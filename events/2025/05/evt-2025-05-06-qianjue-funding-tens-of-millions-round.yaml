@@ -1,0 +1,22 @@
+id: evt-2025-05-06-qianjue-funding-tens-of-millions-round
+date: '2025-05-06'
+date_precision: day
+type: funding
+orgs:
+- id: qianjue
+  role: subject
+title:
+  zh: 千觉机器人完成数千万元新一轮融资
+summary:
+  zh: 5 月 6 日消息，千觉机器人科技（上海）有限公司近日完成数千万元融资，最新一轮由元禾原点、戈壁创投、小苗朗程投资，资金将用于技术研发投入和产品迭代、加快量产交付速度。
+counterparties:
+- 元禾原点
+- 戈壁创投
+- 小苗朗程
+evidence:
+- url: https://news.qq.com/rain/a/20250506A0277G00
+  publisher: 硬氪（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-06-qianjue-round-36kr.html
+corroboration: single

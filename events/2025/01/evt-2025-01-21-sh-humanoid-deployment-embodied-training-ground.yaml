@@ -1,0 +1,26 @@
+id: evt-2025-01-21-sh-humanoid-deployment-embodied-training-ground
+date: 2025-01-21
+date_precision: day
+type: deployment
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 国地中心具身智能训练场在浦东张江启用，首期部署超 100 台异构人形机器人
+summary:
+  zh: 1 月 21 日，由上海市经济和信息化委员会、浦东新区人民政府共同指导，国家地方共建人形机器人创新中心的具身智能训练场在浦东张江模力社区举行启用仪式。训练场面积超 5000 平方米，首期部署超过 100 台异构人形机器人，可容纳 100 台以上机器人同时训练；报道称训练场已实现单台机器人每日采集轨迹数据 500 条以上，并打通数据采集、审核、存储、模型训练、推理验证、真机部署的流程。
+counterparties:
+- 上海市经济和信息化委员会
+- 上海市浦东新区人民政府
+- 张江集团
+axes:
+  data_sourcing: [gov-training-ground, in-house-factory]
+  data_acquisition: [teleop, real-robot]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2025-01/22/content_289587.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/stdaily-2025-01-21-sh-humanoid-training-gro.html
+corroboration: single

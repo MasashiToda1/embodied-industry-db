@@ -1,0 +1,22 @@
+id: evt-2024-10-13-rainbow-robotics-deployment-toyota-rb-y1
+date: 2024-10-13
+date_precision: day
+type: deployment
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 电子新闻报道彩虹机器人向丰田供应移动双臂机器人 RB-Y1
+summary:
+  zh: 10 月 13 日，韩国《电子新闻》报道彩虹机器人向日本丰田供应移动双臂机器人 RB-Y1，丰田此前一直在评估采购、此次最终确定导入。报道称具体数量未获确认，丰田为验证与汽车生产结合的可能性而购买。彩虹机器人方面对是否供货丰田回应「客户相关内容无法具体确认」。
+counterparties:
+- Toyota
+axes:
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://www.etnews.com/20241011000228
+  publisher: 电子新闻（etnews）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/etnews-2024-10-13-rainbow-robotics-toyota-.html
+corroboration: single

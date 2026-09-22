@@ -1,0 +1,21 @@
+id: evt-2024-10-31-meta-fair-robotics-publication-sparsh
+date: 2024-10-31
+date_precision: day
+type: publication
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: Meta FAIR 开源通用触觉表征模型 Sparsh 与触觉传感集成平台 Digit Plexus
+summary:
+  zh: 10 月 31 日，Meta FAIR 在官方博客发布触觉方向的一批研究成果并开源。Meta Sparsh 是面向视觉式触觉传感器的通用触觉表征模型族，用自监督学习在 46 万张以上触觉图像上做掩码与自蒸馏预训练，不依赖针对任务与传感器的人工标注。团队同时发布评测基准 TacBench，含六项触觉任务，覆盖从理解触觉属性到物理感知与灵巧规划；博客称 Sparsh 在该基准上平均比针对特定任务与特定传感器训练的模型高出 95% 以上。同日发布的 Meta Digit Plexus 是标准化软硬件平台，用于把不同的指尖与皮肤触觉传感器集成到同一只机器手上。
+axes:
+  data_modality: [tactile, rgb]
+  embodiment_form: [arm]
+evidence:
+- url: https://ai.meta.com/blog/fair-robotics-open-source/
+  publisher: Meta AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/ai-2024-10-31-meta-fair-robotics-touch.html
+corroboration: single

@@ -1,0 +1,30 @@
+id: evt-2024-10-22-fourier-publication-teleoperation-farts
+date: 2024-10-22
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 FFTAI/teleoperation 的 created_at 为 2024-10-22
+type: publication
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶开源遥操作系统 teleoperation（F.A.R.T.S.）
+summary:
+  zh: 傅利叶在 GitHub 开源 teleoperation 仓库（Fourier Advanced Robot Teleoperation System，F.A.R.T.S.）。README 说明该系统用 VR 头显与手部追踪实时控制人形机器人，主要面向傅利叶 GRX 系列（GR1T1、GR1T2、GR2），也可适配其他机器人，支持 Depthai Oak、Intel RealSense D435 与通用 USB 相机，头显支持 Apple Vision Pro 与 Meta Quest 3，并包含面向模仿学习与 VLA 的数据采集功能。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_acquisition:
+  - teleop
+  data_modality:
+  - rgb
+  - rgbd
+  model_form:
+  - il
+evidence:
+- url: https://github.com/FFTAI/teleoperation
+  publisher: Fourier（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-22-fourier-teleoperation-fa.html
+corroboration: single

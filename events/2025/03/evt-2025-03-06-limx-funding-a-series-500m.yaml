@@ -1,0 +1,41 @@
+id: evt-2025-03-06-limx-funding-a-series-500m
+date: '2025-03-06'
+date_precision: day
+type: funding
+orgs:
+- id: limx
+  role: subject
+- id: alibaba-robotics
+  role: investor
+title:
+  zh: 逐际动力完成 A+ 轮融资，半年累计完成 5 亿元 A 轮系列融资
+summary:
+  zh: 3 月 6 日，逐际动力宣布近期完成 A+ 轮融资，半年累计完成 5 亿元 A 轮系列融资。战略产业投资人包括阿里巴巴集团、招商局创投、尚颀资本、蔚来资本、联想创投、彼岸时代、纳爱斯集团，财务投资人包括高捷资本、绿洲资本、明势创投、峰瑞资本、南山战新投，多家老股东持续跟投。金额 5 亿元为 A 轮系列累计口径，本轮 A+ 单独金额未披露。
+counterparties:
+- 阿里巴巴集团
+- 招商局创投
+- 尚颀资本
+- 蔚来资本
+- 联想创投
+- 彼岸时代
+- 纳爱斯集团
+- 高捷资本
+- 绿洲资本
+- 明势创投
+- 峰瑞资本
+- 南山战新投
+amount:
+  value: 500000000
+  currency: CNY
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000018
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/limxdynamics-2025-03-06-limx-a-series.html
+- url: https://stcn.com/article/detail/1565362.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/stcn-2025-03-06-limx-a-series-stcn.html
+corroboration: multi

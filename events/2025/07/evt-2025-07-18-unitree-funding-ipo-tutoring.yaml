@@ -1,0 +1,21 @@
+id: evt-2025-07-18-unitree-funding-ipo-tutoring
+date: 2025-07-18
+date_precision: day
+type: funding
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技在浙江证监局办理 IPO 辅导备案
+summary:
+  zh: 7 月 18 日，中国证监会官网显示杭州宇树科技股份有限公司已在浙江证监局办理辅导备案。辅导机构为中信证券，律师事务所为北京德恒，会计师事务所为容诚，辅导协议签署时间为 7 月 7 日。辅导工作安排为 2025 年 10 月至 12 月对公司是否达到发行上市条件进行综合评估。
+counterparties:
+- 中信证券
+- 浙江证监局
+evidence:
+- url: https://stcn.com/article/detail/2657492.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stcn-2025-07-18-unitree-ipo-tutoring.html
+corroboration: single

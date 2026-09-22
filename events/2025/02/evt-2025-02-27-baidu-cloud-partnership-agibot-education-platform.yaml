@@ -1,0 +1,27 @@
+id: evt-2025-02-27-baidu-cloud-partnership-agibot-education-platform
+date: 2025-02-27
+date_precision: day
+type: partnership
+orgs:
+- id: baidu-cloud
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 百度智能云与智元机器人签署战略合作协议，共建可二次开发的人形机器人平台
+summary:
+  zh: 2 月 27 日，百度智能云与智元机器人签署战略合作协议，围绕具身生态解决方案建设、关键技术与产品研发、生态协同合作。首期落地阶段聚焦教育市场，依托百度智能云「视觉大模型 + 边缘计算」软硬一体方案，结合智元远征系列数采与交互服务机器人、灵犀全栈开源机器人、AIDEA 全栈数采方案，共建可二次开发的人形机器人平台，师生可在平台内置的行业模型库与算法产线上训练物品分拣、环境巡检等任务模型。
+axes:
+  target_scene: [education-research]
+evidence:
+- url: https://news.zol.com.cn/954/9543459.html
+  publisher: 中关村在线
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/news-2025-02-27-baidu-cloud-agibot-signi.html
+- url: https://news.qq.com/rain/a/20250303A0470C00
+  publisher: 腾讯新闻（转载 IT之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-03-baidu-cloud-agibot-partn.html
+corroboration: multi

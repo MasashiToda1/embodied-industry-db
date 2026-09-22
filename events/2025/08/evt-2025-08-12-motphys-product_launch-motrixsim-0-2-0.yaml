@@ -1,0 +1,21 @@
+id: evt-2025-08-12-motphys-product_launch-motrixsim-0-2-0
+date: '2025-08-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯物理仿真引擎 MotrixSim 发布 0.2.0 版本
+summary:
+  zh: 8 月 12 日，署名 Motphys 的物理仿真引擎 MotrixSim 在 PyPI 发布 0.2.0 版本，采用 Apache-2.0 许可。MotrixSim 面向多体动力学与机器人仿真，采用广义坐标建模与自研约束模型和求解器，CPU 版本基于 Rust 开发，提供 Python 接口，兼容 MJCF 模型格式，适用场景包括机器人控制算法开发、强化学习环境构建与工业实时物理仿真。
+axes:
+  sim_stack:
+  - in-house
+evidence:
+- url: https://pypi.org/project/motrixsim/0.2.0/
+  publisher: PyPI
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/pypi-2025-08-12-motphys-motrixsim-020.html
+corroboration: single

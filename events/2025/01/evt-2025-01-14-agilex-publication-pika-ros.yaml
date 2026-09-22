@@ -1,0 +1,22 @@
+id: evt-2025-01-14-agilex-publication-pika-ros
+date: 2025-01-14
+date_precision: day
+type: publication
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人开源 Pika 数采套件的 ROS 工作空间 pika_ros
+summary:
+  zh: 松灵机器人在自有 GitHub 组织 agilexrobotics 下建立 pika_ros 仓库，开源 Pika 数据采集套件的 ROS 工作空间，许可证为 BSD-3-Clause。README 写明 Pika 数采套件由采集设备、模型推理执行器、定位基站与数据背包组成，提供毫米级空间感知，覆盖 6 自由度位姿、深度、超广角 RGB 与夹爪状态；运行环境为 x86_64、Ubuntu 20.04、ROS Noetic。
+axes:
+  data_acquisition: [teleop]
+  data_modality: [rgbd, rgb, joint-trajectory]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/agilexrobotics/pika_ros
+  publisher: AgileX Robotics（agilexrobotics GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/github-2025-01-14-agilex-pika-ros.html
+corroboration: single

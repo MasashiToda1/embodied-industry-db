@@ -1,0 +1,25 @@
+id: evt-2024-12-02-ti5robot-funding-pre-a-plus-rounds
+date: '2024-12-02'
+date_precision: day
+type: funding
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人连续完成 Pre-A+ 与 Pre-A++ 两轮融资
+summary:
+  zh: 12 月 2 日，钛虎机器人科技（上海）有限公司宣布连续完成 Pre-A+ 和 Pre-A++ 两轮融资，Pre-A 系列合计融资金额超过一亿元人民币。Pre-A+ 轮由凡创资本和锦冠资本投资，Pre-A++ 轮由毅达资本、商汤国香资本和江阴人才基金联合投资，老股东经纬创投连续两轮跟投。
+counterparties:
+- 凡创资本
+- 锦冠资本
+- 毅达资本
+- 商汤国香资本
+- 江阴人才基金
+- 经纬创投
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2024-12-02/doc-incxzzsq5525893.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/finance-2024-12-02-ti5robot-prea-plus-plus.html
+corroboration: single

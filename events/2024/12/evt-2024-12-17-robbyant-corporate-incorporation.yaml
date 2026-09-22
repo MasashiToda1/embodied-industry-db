@@ -1,0 +1,23 @@
+id: evt-2024-12-17-robbyant-corporate-incorporation
+date: '2024-12-17'
+date_precision: day
+type: corporate
+orgs:
+- id: robbyant
+  role: subject
+title:
+  zh: 上海蚂蚁灵波科技有限公司成立
+summary:
+  zh: 财经网 2024 年 12 月 17 日报道，上海蚂蚁灵波科技有限公司成立，注册资本 1 亿元人民币，由蚂蚁集团旗下蚂蚁智能（杭州）科技有限公司全资持股，经营范围含软件开发、智能机器人研发与销售、人工智能基础软件与应用软件开发等。2025 年 2 月蚂蚁官方回应称「蚂蚁集团去年注册成立了蚂蚁灵波，聚焦具身智能技术和产品研发」。
+evidence:
+- url: https://stock.caijing.com.cn/20241217/5058353.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/stock-2024-12-robbyant-founded.html
+- url: https://finance.sina.com.cn/jjxw/2025-02-19/doc-inekzcyh5703039.shtml
+  publisher: 新浪财经（转科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/finance-2025-02-robbyant-confirm.html
+corroboration: multi

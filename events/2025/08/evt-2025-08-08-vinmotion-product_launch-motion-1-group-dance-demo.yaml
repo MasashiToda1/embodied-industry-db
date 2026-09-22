@@ -1,0 +1,22 @@
+id: evt-2025-08-08-vinmotion-product_launch-motion-1-group-dance-demo
+date: 2025-08-08
+date_precision: day
+type: product_launch
+orgs:
+- id: vinmotion
+  role: subject
+title:
+  zh: VinMotion 人形机器人在 Vingroup 成立 32 周年活动上做多机同步舞蹈演示
+summary:
+  zh: 8 月 8 日，VinMotion 的人形机器人在 Vingroup 成立 32 周年庆典上、面向 1000 多名观众做多台同步舞蹈演示。VnExpress 8 月 13 日报道称 VinMotion 表示机器人的机械、电子与软件系统全部由自有工程师开发，公司董事长称这场现场同步演示对稳定性要求高、演示过程未受现场大量观众带来的 Wi-Fi 干扰影响，并称这让团队有信心在实际应用中同时部署多台机器人。公司计划把机器人用于工厂、仓库、接待服务以及超出现有人形机器人物理能力的危险环境。
+counterparties:
+- Vingroup
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://e.vnexpress.net/news/tech/vietnam-innovation/vietnam-s-vinmotion-unveils-dancing-humanoid-robots-just-7-months-after-founding-4926410.html
+  publisher: VnExpress International
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/e-2025-08-13-vinmotion-motion1-dance-.html
+corroboration: single

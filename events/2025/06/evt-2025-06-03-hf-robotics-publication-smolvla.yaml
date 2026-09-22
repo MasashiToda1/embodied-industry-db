@@ -1,0 +1,29 @@
+id: evt-2025-06-03-hf-robotics-publication-smolvla
+date: 2025-06-03
+date_precision: day
+type: publication
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: "Hugging Face 发布视觉—语言—动作模型 SmolVLA：4.5 亿参数，只用 LeRobot 社区共享数据集预训练"
+summary:
+  zh: 6 月 3 日，Hugging Face 在官方博客与 arXiv 发布 SmolVLA，一个 450M 参数的开源视觉—语言—动作（VLA）模型，可在消费级硬件上运行。博客写明其预训练数据只用带 lerobot 标签、在 Hugging Face Hub 上以兼容许可共享的社区数据集，这些数据来自实验室到居家的各种场景，团队还做了任务标注改写与相机视角标准化。博客给出的结果是 SmolVLA-450M 在仿真与真机基准上优于参数量大得多的模型。
+axes:
+  model_form: [end2end-vla]
+  data_acquisition: [teleop, real-robot, crowdsourced]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+  data_openness: fully-open
+  data_sourcing: [open-dataset]
+evidence:
+- url: https://huggingface.co/blog/smolvla
+  publisher: Hugging Face 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/huggingface-2025-06-03-hf-robotics-smolvla.html
+- url: https://arxiv.org/abs/2506.01844
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-03-hf-robotics-smolvla-arxi.html
+corroboration: multi

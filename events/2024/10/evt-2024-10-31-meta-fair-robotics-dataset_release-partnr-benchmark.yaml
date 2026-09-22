@@ -1,0 +1,25 @@
+id: evt-2024-10-31-meta-fair-robotics-dataset_release-partnr-benchmark
+date: 2024-10-31
+date_precision: day
+type: dataset_release
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: "Meta FAIR 发布人机协作规划与推理基准 PARTNR"
+summary:
+  zh: "10 月 31 日，Meta FAIR 发布 PARTNR 基准，用于评测人机协作场景下的规划与推理，配套论文《PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks》（arXiv:2411.00081）同日公开。论文写明任务由大语言模型半自动生成，并在仿真中做落地与校验，基准含 10 万条自然语言任务，覆盖 60 个住宅场景与 5819 个物体，任务带空间、时间与异构智能体能力约束。论文给出的评测结论：现有大模型在协作、任务跟踪与错误恢复上存在明显不足，与真人配合时所需步数是两名真人协作的 1.5 倍、单个真人的 1.1 倍；用规划数据微调较小的模型，性能可与大 9 倍的模型相当，推理快 8.6 倍。"
+axes:
+  target_scene: [home]
+evidence:
+- url: https://ai.meta.com/blog/fair-robotics-open-source/
+  publisher: Meta AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/ai-2024-10-31-meta-fair-robotics-touch.html
+- url: https://arxiv.org/abs/2411.00081
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/arxiv-2024-10-31-meta-fair-robotics-partn.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2025-03-12-x-humanoid-product_launch-huisikaiwu
+date: 2025-03-12
+date_precision: day
+type: product_launch
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心发布通用具身智能平台「慧思开物」
+summary:
+  zh: 3 月 12 日，北京人形机器人创新中心研发的通用具身智能平台「慧思开物」在京发布。平台由人工智能大模型驱动的任务规划具身「大脑」与数据驱动的端到端技能执行具身「小脑」构成，实现单个软件系统在机械臂、轮式机器人、人形机器人等多构型本体上的兼容。发布会现场演示了工业分拣、积木搭建、桌面清理和物流打包四个场景的真机操作。
+axes:
+  model_form:
+  - hierarchical
+  - end2end-vla
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+  - arm
+evidence:
+- url: http://www.news.cn/20250313/5083d83510b74bf283088abf06c6b198/c.html
+  publisher: 新华社
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-12-x-humanoid-huisikaiwu.html
+corroboration: single

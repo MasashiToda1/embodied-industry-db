@@ -1,0 +1,31 @@
+id: evt-2025-08-05-paxini-funding-jd-led-round
+date: '2025-08-05'
+date_precision: day
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼完成京东战略领投的新一轮 A 轮融资
+summary:
+  zh: 8 月 5 日，帕西尼宣布完成新一轮 A 轮融资，由京东战略领投，浦耀信晔、宏兆基金、张科垚坤、新国都、北京昌平先进能源制造产业直投基金、财鑫资本、复琢投资跟投，老股东湖南财信产业基金、钧犀资本、TCL 创投、毅达资本加码，庚辛资本中国担任独家战略财务顾问。帕西尼表示其在 4 个月内已完成 10 亿元人民币融资。
+counterparties:
+- 京东
+- 浦耀信晔
+- 宏兆基金
+- 张科垚坤
+- 新国都
+- 北京昌平先进能源制造产业直投基金
+- 财鑫资本
+- 复琢投资
+- 湖南财信产业基金
+- 钧犀资本
+- TCL创投
+- 毅达资本
+evidence:
+- url: https://www.163.com/dy/article/K66LQJ8F05118O92.html
+  publisher: 网易科技（智东西）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/163-2025-08-05-paxini-jd-round.html
+corroboration: single

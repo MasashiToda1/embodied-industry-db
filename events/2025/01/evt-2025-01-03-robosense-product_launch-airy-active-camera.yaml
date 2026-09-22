@@ -1,0 +1,20 @@
+id: evt-2025-01-03-robosense-product_launch-airy-active-camera
+date: '2025-01-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: robosense
+  role: subject
+title:
+  zh: 速腾聚创发布机器人激光雷达 Airy、E1R 与机器人视觉品类 Active Camera
+summary:
+  zh: 1 月 3 日，速腾聚创在「Hello Robot」2025 AI 机器人全球线上发布会上公开机器人技术平台公司战略，发布三款数字化激光雷达新品，其中 EM4 面向车载市场，E1R 与 Airy 面向智能机器人市场，并推出机器人视觉新品类 Active Camera 解决方案。Airy 为 192 线半球形数字化激光雷达，提供水平 360°、垂直 90° 视场角，覆盖 120m 直径范围，每秒 172 万出点数，探测精度 ±1cm。上述新品于 1 月 7 日开幕的 CES 2025 上亮相。
+axes:
+  data_modality: [pointcloud, rgbd]
+evidence:
+- url: https://www.zhidx.com/p/461999.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/zhidx-2025-01-03-robosense-hello-robot.html
+corroboration: single

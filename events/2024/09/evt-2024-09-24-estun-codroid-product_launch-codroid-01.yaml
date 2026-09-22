@@ -1,0 +1,24 @@
+id: evt-2024-09-24-estun-codroid-product_launch-codroid-01
+date: 2024-09-24
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2024 年第二十四届中国国际工业博览会（以下简称「工博会」）已于 24 日在上海开幕。埃斯顿酷卓凭借首发人形机器人 CODROID 01、高防护、大负载等机器人新品和行业解决方案……」
+type: product_launch
+orgs:
+- id: estun-codroid
+  role: subject
+title:
+  zh: 埃斯顿酷卓在上海工博会首发人形机器人 CODROID 01
+summary:
+  zh: 埃斯顿酷卓在 2024 年第二十四届中国国际工业博览会上首发人形机器人 CODROID 01，现场展示手部动作与工件抓取、转移动作。官方介绍该机型身高 170cm、重量小于 80kg、单臂负载 5kg、步速 3km/h，单臂自由度 7、单腿自由度 6、全身最大自由度 44、灵巧手自由度 6—7，采用一体化关节模组，核心部件全自研。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://mp.weixin.qq.com/s/l2S9xAR0HyDCsoI_B5YdZQ
+  publisher: 埃斯顿酷卓微信公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/mp-2024-09-24-estun-codroid-codroid01.html
+corroboration: single

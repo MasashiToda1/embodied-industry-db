@@ -1,0 +1,26 @@
+id: evt-2025-07-14-limx-publication-tron1-rl-isaaclab
+date: '2025-07-14'
+date_precision: day
+type: publication
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力开源基于 Isaac Lab 的 TRON1 强化学习训练栈
+summary:
+  zh: 7 月 14 日，逐际动力在 GitHub 账号 limxdynamics 下创建并公开 tron1-rl-isaaclab 仓库。README 写明这是面向 TRON1 双足机器人的强化学习训练栈，基于 Isaac Lab 并使用 PPO 训练运动策略，扩展 Isaac Lab 模板以支持 TRON1 多个变体的仿真到实机训练，运行要求为 Isaac Sim 与 Isaac Lab、Python 3.10 及 12GB 以上显存。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  sim_stack:
+  - isaac-lab
+  - isaac-sim
+evidence:
+- url: https://github.com/limxdynamics/tron1-rl-isaaclab
+  publisher: 逐际动力 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-14-limx-tron1-rl-isaaclab.html
+corroboration: single

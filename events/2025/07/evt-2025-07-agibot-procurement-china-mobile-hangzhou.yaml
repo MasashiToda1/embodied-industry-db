@@ -1,0 +1,27 @@
+id: evt-2025-07-agibot-procurement-china-mobile-hangzhou
+date: 2025-07
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「近期公布的结果显示，智元机器人中标标包 1，宇树科技中标标包 2」，报道日期 2025-07-14
+type: procurement
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人中标中移（杭州）人形双足机器人代工服务采购项目标包 1
+summary:
+  zh: 中移（杭州）信息技术有限公司 2025—2027 年人形双足机器人代工服务采购项目总预算 1.2405 亿元（含税），分两个标包。标包 1 为全尺寸双足人形机器人，预算金额 7800 万元（含税），中标人为智元机器人；标包 2 为小尺寸人形机器人、算力背包及五指灵巧手，中标人为宇树科技。
+counterparties:
+- 中移（杭州）信息技术有限公司
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.c114.com.cn/news/118/a1292870.html
+  publisher: C114 通信网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/c114-2025-07-unitree-china-mobile-bid.html
+corroboration: single

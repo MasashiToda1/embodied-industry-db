@@ -1,0 +1,23 @@
+id: evt-2025-07-26-phybot-product_launch-waic2025-m1-c1-phyarc
+date: '2025-07-26'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「7月26日-29日，2025世界人工智能大会（WAIC 2025）在上海举行」
+type: product_launch
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技在 WAIC 2025 展出 PHYBOT M1、PHYBOT C1 与 PhyArc 关节模组
+summary:
+  zh: 2025 世界人工智能大会期间，动易科技携高性能通用人形机器人 PHYBOT M1、具身智能伙伴 PHYBOT C1 以及全栈自研一体化摆线关节模组 PhyArc 系列亮相。报道称 PHYBOT M1 采用 172cm 仿人构型，整机重量 60kg，整机超过 32 个自由度，单关节最大扭矩超 530N·m。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.pingwest.com/a/306516
+  publisher: 品玩
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/pingwest-2025-07-26-phybot-waic2025-m1-c1-ph.html
+corroboration: single

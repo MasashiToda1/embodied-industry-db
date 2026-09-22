@@ -1,0 +1,31 @@
+id: evt-2025-01-15-neura-robotics-funding-series-b
+date: 2025-01-15
+date_precision: day
+type: funding
+orgs:
+- id: neura-robotics
+  role: subject
+title:
+  zh: NEURA Robotics 完成 1.2 亿欧元 B 轮融资
+summary:
+  zh: 1 月 15 日，NEURA Robotics 宣布完成 1.2 亿欧元 B 轮融资。本轮由 Lingotto Investment Management 领投，参投方包括 BlueCrest Capital Management、Volvo Cars Tech Fund、InterAlpen Partners、Vsquared Ventures、HV Capital、Delta Electronics、C4 Ventures、L-Bank 与创始人 David Reger 等。公告落款为德国 Metzingen。
+counterparties:
+- Lingotto Investment Management
+- BlueCrest Capital Management
+- Volvo Cars Tech Fund
+- InterAlpen Partners
+- Vsquared Ventures
+- HV Capital
+- Delta Electronics
+- C4 Ventures
+- L-Bank
+amount:
+  value: 120000000
+  currency: EUR
+evidence:
+- url: https://neura-robotics.com/neura-robotics-secures-euro-120-million-series-b/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/neura-roboti-2025-01-15-neura-robotics-series-b.html
+corroboration: single

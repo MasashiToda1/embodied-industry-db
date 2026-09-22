@@ -1,0 +1,30 @@
+id: evt-2025-06-spirit-ai-product_launch-moz1
+date: '2025-06'
+date_precision: month
+type: product_launch
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能正式发布全身力控人形机器人 Moz1
+summary:
+  zh: 2025 年 6 月，千寻智能正式发布首款商用级人形机器人 Moz1。报道称 Moz1 全身配置 26 个自由度，搭载一体化力控关节与高精高速 WBC 算法，负载自重比达 1:1，可实现全身零延时遥操作，并搭载公司自研 VLA 模型 Spirit v1。
+axes:
+  model_form:
+  - end2end-vla
+  control_route:
+  - wbc
+  data_acquisition:
+  - teleop
+evidence:
+- url: https://www.stcn.com/article/detail/2763729.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/stcn-2025-06-spirit-ai-moz1-launch.html
+- url: https://spirit-ai.com/news/8
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/spirit-ai-2025-03-spirit-ai-spirit-v1.html
+corroboration: multi

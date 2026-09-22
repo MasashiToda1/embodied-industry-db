@@ -1,0 +1,23 @@
+id: evt-2025-08-12-orbbec-deployment-tiangong-pro-gemini330
+date: '2025-08-12'
+date_precision: day
+type: deployment
+orgs:
+- id: orbbec
+  role: subject
+- id: x-humanoid
+  role: customer
+title:
+  zh: 奥比中光 2025 年半年报披露天工 Pro 机器人搭载 Gemini 330 系列深度相机
+summary:
+  zh: 奥比中光 2025 年半年度报告披露，报告期内搭载公司 3D 视觉传感器的「天工」机器人夺得全球首个人形机器人马拉松赛事的冠军；天工 Pro 机器人在头部、胸部、腰部和后背各配置一款公司 Gemini 330 系列深度相机，用于复杂环境中的环境感知和自主导航。报告同时称公司已就 Femto 系列 iToF 深度相机、Gemini335 系列、Gemini336 系列 3D 结构光深度相机与部分人形机器人客户进行适配。报告期内公司营业收入 43546.93 万元，同比增长 104.14%。
+axes:
+  data_modality: [rgbd]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: http://static.cninfo.com.cn/finalpage/2025-08-12/1224444650.PDF
+  publisher: 巨潮资讯网 · 奥比中光 2025 年半年度报告
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/static-2025-08-12-orbbec-h1-2025-report.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2025-03-04-dmbots-publication-open-source-bipedal-robot
+date: 2025-03-04
+date_precision: day
+type: publication
+orgs:
+- id: dmbots
+  role: subject
+title:
+  zh: 达妙科技公布开源小人形双足机器人，代码与硬件资料放在 Gitee
+summary:
+  zh: 3 月 4 日，达妙科技官方哔哩哔哩账号「达妙科技-dmbot」发布视频《达妙人形开源了》，简介称「达妙科技开源系列-双足机器人」电机组合为 4340 电机 x 10，开源计划已开源，后续安排为添加上半身，并给出开源仓地址 gitee.com/kit-miao/bipedal-robot。Gitee 仓库说明称该开源小人形机器人下肢 10 自由度、腰部 1 自由度、两手臂共 8 自由度，开源程序分 RL 与 MPC 两套方案，硬件由 10 个 DM4340 电机、1 个 DM6006 电机、4 个 DM4310 电机、4 个 DM3507 电机、DM-MC02 开发板与达妙 IMU 模块组成。
+axes:
+  embodiment_form: [humanoid-biped]
+  control_route: [hybrid]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.bilibili.com/video/BV1yN9nYBEAm/
+  publisher: 哔哩哔哩 · 达妙科技-dmbot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/bilibili-2025-03-04-dmbots-bipedal-open-sour.html
+- url: https://gitee.com/kit-miao/bipedal-robot
+  publisher: Gitee · kit-miao
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/gitee-2024-12-16-dmbots-open-source-biped.html
+corroboration: single

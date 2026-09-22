@@ -1,0 +1,21 @@
+id: evt-2024-12-26-uniq-robot-product_launch-wanda-2
+date: 2024-12-26
+date_precision: day
+type: product_launch
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇发布通用人形机器人 Wanda 2.0
+summary:
+  zh: 12 月 26 日，优理奇科技在北京经开区机器人大世界举办全新通用人形机器人 Wanda 2.0 发布会。官网稿件写明 Wanda 2.0 身高 170 厘米、最低可降至 140 厘米，臂展 982 毫米，单臂负载提升至 6 千克，行走速度最高 1 米每秒；底盘配备可拆卸高密度电池，可连续工作 16 小时，待机 30 小时。机械臂从 7 个自由度升级为 8 自由度设计，搭载自适应二指夹爪，采用指尖欠驱技术，末端定位精度 2 毫米。稿件写明该机型于 2025 年初开始交付。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.unix-group.ai/cn/article/196/detail/14
+  publisher: 优理奇机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/unix-group-2024-12-26-uniq-robot-wanda2-launch.html
+corroboration: single

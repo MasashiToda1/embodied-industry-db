@@ -1,0 +1,21 @@
+id: evt-2024-09-24-seer-robotics-product_launch-src-5000-ciif2024
+date: 2024-09-24
+date_precision: day
+type: product_launch
+orgs:
+- id: seer-robotics
+  role: subject
+title:
+  zh: 仙工智能在 2024 工博会首发通用智能机器人控制器 SRC-5000 并同步亮相轮式人形机器人
+summary:
+  zh: 9 月 24 日，第 24 届中国国际工业博览会在上海国家会展中心开幕，仙工智能首发通用智能机器人控制器 SRC-5000，并称正式进军具身智能领域。公司称 SRC-5000 采用新的硬件架构与分布式机器人系统软件，具备 AI 算力与浮点算力，可实现高精度实时 3D 物体识别，配备实时操作系统与时间敏感网络，导航支持 VSLAM 与激光 SLAM 混合导航。搭载 SRC-5000 的轮式人形机器人及配套工具在现场首发展出。公司称从工业场景需求出发，轮式人形机器人比足式成本更低、稳定性更好。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://seer-robotics.ai/zh/media/196
+  publisher: 仙工智能
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/seer-robotic-2024-09-24-seer-robotics-src5000-ci.html
+corroboration: single

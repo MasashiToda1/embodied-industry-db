@@ -1,0 +1,25 @@
+id: evt-2024-12-18-elephant-robotics-product_launch-mycontroller-s570
+date: 2024-12-18
+date_precision: day
+type: product_launch
+orgs:
+- id: elephant-robotics
+  role: subject
+title:
+  zh: 大象机器人发布穿戴式数据采集外骨骼 myController S570
+summary:
+  zh: 大象机器人发布首款便携外骨骼数据采集设备 myController S570，用于遥操作控制与实时数据采集，涵盖数据采集、遥操作与端到端应用开发场景。官方介绍该设备提供标准 Python 驱动库与 ROS1 / ROS2 支持，可采集机器人动作数据并做远程遥操作；零售价 9999 元，前 20 套早鸟价 7999 元，日前已实现批量生产。
+amount:
+  value: 9999
+  currency: CNY
+axes:
+  data_acquisition: [teleop]
+  data_modality: [joint-trajectory]
+  target_scene: [education-research]
+evidence:
+- url: https://mp.weixin.qq.com/s/wWmhGOF5i0DtqMFss_UcGQ
+  publisher: 大象机器人微信公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/mp-2024-12-18-elephant-robotics-s570.html
+corroboration: single

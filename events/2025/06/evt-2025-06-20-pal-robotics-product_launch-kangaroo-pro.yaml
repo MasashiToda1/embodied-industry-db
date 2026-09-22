@@ -1,0 +1,22 @@
+id: evt-2025-06-20-pal-robotics-product_launch-kangaroo-pro
+date: 2025-06-20
+date_precision: day
+type: product_launch
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: 帕尔机器人推出面向工业自动化的双足机器人 KANGAROO Pro
+summary:
+  zh: 6 月 20 日，帕尔机器人（PAL Robotics）发布文章介绍其最新产品 KANGAROO Pro：一款面向工业自动化的轻量机器人，配可处理复杂任务的机械臂，没有头部——公司称这台机器人不是为了像人，而是作为可靠工具融入既有流程。文章同时介绍移动操作机器人 TIAGo Pro（全向底盘、双高负载臂、集成感知系统），并称这些产品会在 6 月 24 日至 27 日慕尼黑 Automatica 2025 上展出，现场有 TIAGo Pro 的遥操作试用演示。公司在文中称已做腿式与人形机器人系统二十多年。
+axes:
+  embodiment_form: [humanoid-biped, mobile-manipulator]
+  target_scene: [industrial-manufacturing, education-research]
+  data_acquisition: [teleop]
+evidence:
+- url: https://pal-robotics.com/blog/smarter-automation-for-human-workspaces/
+  publisher: 帕尔机器人官网博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/pal-robotics-2025-06-20-pal-robotics-kangaroo-pr.html
+corroboration: single

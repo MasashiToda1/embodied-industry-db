@@ -1,0 +1,20 @@
+id: evt-2025-05-06-realman-publication-rm-api2-1-1-0
+date: 2025-05-06
+date_precision: day
+type: publication
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼开源机械臂开发包 RM_API2 发布 1.1.0
+summary:
+  zh: 睿尔曼在 GitHub 账号 RealManRobot（账号主页链接公司官网 realman-robotics.com，仓库 README 写明本开发包用于睿尔曼机械臂的二次开发）发布 RM_API2 1.1.0。发布说明列出适配四代控制器 1.0.3 版本，新增偏移运动接口 rm_movel_offset、流程图编程状态查询、拖动示教轨迹列表相关接口、四代控制器 Modbus 功能接口与急停状态设置接口，并重构机械臂软件版本与信息结构体。
+axes:
+  embodiment_form: [arm]
+evidence:
+- url: https://github.com/RealManRobot/RM_API2/releases/tag/1.1.0
+  publisher: GitHub · RealManRobot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-06-realman-rm-api2-1-1-0.html
+corroboration: single

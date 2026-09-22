@@ -1,0 +1,24 @@
+id: evt-2025-07-30-roboscience-funding-angel
+date: '2025-07-30'
+date_precision: day
+type: funding
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: RoboScience 完成近 2 亿元天使轮融资，京东领投
+summary:
+  zh: RoboScience 官网 2025 年 7 月 30 日公告，公司完成近 2 亿元天使轮融资，由京东领投，招商局创投、商汤国香资本跟投，老股东零一创投继续追投，慕石资本担任本轮独家财务顾问。公告同时说明公司注册成立于
+    2024 年 12 月底，本轮融资前已完成数千万元种子轮融资。
+counterparties:
+- 京东
+- 招商局创投
+- 商汤国香资本
+- 零一创投
+evidence:
+- url: https://www.roboscience.co/jishu_detail/5.html
+  publisher: RoboScience 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/roboscience-2025-07-30-roboscience-angel.html
+corroboration: single

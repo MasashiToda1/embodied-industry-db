@@ -1,0 +1,21 @@
+id: evt-2025-08-12-paxini-publication-omnivtla
+date: '2025-08-12'
+date_precision: day
+type: publication
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: "论文《OmniVTLA: Vision-Tactile-Language-Action Models with Semantic-Aligned Tactile Sensing》发布"
+summary:
+  zh: 帕西尼与上海交通大学合作的论文在 arXiv 发布（arXiv:2508.08706），提出面向接触密集操作的视觉—触觉—语言—动作模型 OmniVTLA，采用双路触觉编码器架构，并发布 ObjTac 触觉数据集，覆盖 10 类共 56 个物体的文本、视觉与触觉三模态样本 13.5 万条。论文中使用的触觉传感器为 Paxini Gen2，数据集入口由帕西尼域名提供。
+axes:
+  model_form: [end2end-vla]
+  data_modality: [tactile, rgb, force-torque, language-annotated]
+evidence:
+- url: https://arxiv.org/abs/2508.08706
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/arxiv-2025-08-12-paxini-omnivtla.html
+corroboration: single

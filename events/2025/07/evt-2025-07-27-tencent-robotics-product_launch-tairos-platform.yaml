@@ -1,0 +1,23 @@
+id: evt-2025-07-27-tencent-robotics-product_launch-tairos-platform
+date: 2025-07-27
+date_precision: day
+type: product_launch
+orgs:
+- id: tencent-robotics
+  role: subject
+title:
+  zh: 腾讯 Robotics X 与福田实验室在 WAIC 2025 发布具身智能开放平台 Tairos（钛螺丝）
+summary:
+  zh: 7 月 27 日，2025 世界人工智能大会腾讯论坛期间，腾讯 Robotics X 实验室与福田实验室联合发布具身智能平台 Tairos（钛螺丝）。平台由模型算法与云服务两部分组成，模型层包含多模态感知模型、规划大模型与感知行动联合大模型，云服务层包含仿真平台、数据平台与开发工具，通过标准化接口与 SDK 对外开放。首批合作伙伴包括越疆科技、乐聚机器人、帕西尼感知科技、擎朗智能、众擎机器人、宇树科技。
+counterparties:
+- 深圳市福田区福田实验室
+axes:
+  delivery_model: [software-license, subscription]
+  model_form: [hierarchical]
+evidence:
+- url: https://www.leiphone.com/category/ai/v8PzHAaFLk0FdX63.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/leiphone-2025-07-27-tencent-robotics-tairos-.html
+corroboration: single

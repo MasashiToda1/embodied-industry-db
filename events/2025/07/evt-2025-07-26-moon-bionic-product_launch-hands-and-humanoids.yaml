@@ -1,0 +1,21 @@
+id: evt-2025-07-26-moon-bionic-product_launch-hands-and-humanoids
+date: '2025-07-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: moon-bionic
+  role: subject
+title:
+  zh: 月泉仿生在仿生机器人与仿生智能大会发布四款产品
+summary:
+  zh: 7 月 26 日，2025 仿生机器人与仿生智能大会暨国际仿生科学院成立大会在北京昌平未来科学城开幕。开幕式的月泉仿生科技产品发布环节推出 11 自由度灵敏触觉感知仿生手信手 X-Hand M1、仿生灵巧手应手 Y-Hand M1、全尺寸通用人形机器人博行 X-Bot 及轮式人形机器人博文 W-Bot。
+axes:
+  embodiment_form: [humanoid-biped, humanoid-wheeled]
+  data_modality: [tactile]
+evidence:
+- url: https://www.cnr.cn/bj/jcsy/20250727/t20250727_527285342.shtml
+  publisher: 央广网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/cnr-2025-07-26-moon-bionic-four-product.html
+corroboration: single

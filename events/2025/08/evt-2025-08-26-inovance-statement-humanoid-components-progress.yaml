@@ -1,0 +1,26 @@
+id: evt-2025-08-26-inovance-statement-humanoid-components-progress
+date: 2025-08-26
+date_precision: day
+type: statement
+orgs:
+- id: inovance
+  role: subject
+title:
+  zh: 汇川技术称人形机器人用行星滚柱丝杠已进入客户端送样阶段，直线模组与旋转关节模组在开发中
+summary:
+  zh: 汇川技术在 8 月 26 日的业绩说明会上回答投资者提问，称目前研发的人形机器人核心零部件包括驱动器和电机，重点通过提升电机的扭矩密度和控制温升来解决行业痛点，会把电机在工业领域大批量应用的经验和技术积累应用于人形机器人；行星滚柱丝杠产品已进入客户端送样阶段，尚未实现量产；直线模组和旋转关节模组等产品在开发中，待产品发布后会在客户端推广。公司还称人形机器人零部件开发主要基于自身技术积累，先搭建基础平台并开发标准化产品，随后根据客户需求定制。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: http://static.cninfo.com.cn/finalpage/2025-08-28/1224601133.PDF
+  publisher: 巨潮资讯 · 深圳市汇川技术股份有限公司投资者关系活动记录表（编号 2025-11）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/static-2025-08-26-inovance-ir-record-2025-.html
+- url: https://www.stcn.com/article/detail/3290929.html
+  publisher: 证券时报网（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-26-inovance-roller-screw-sa.html
+corroboration: multi

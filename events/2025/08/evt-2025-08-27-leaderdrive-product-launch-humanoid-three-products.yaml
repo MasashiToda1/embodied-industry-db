@@ -1,0 +1,21 @@
+id: evt-2025-08-27-leaderdrive-product-launch-humanoid-three-products
+date: 2025-08-27
+date_precision: day
+type: product_launch
+orgs:
+- id: leaderdrive
+  role: subject
+title:
+  zh: 绿的谐波推出面向人形机器人的微型谐波减速机、KGU 关节减速模组与反向行星滚柱丝杠
+summary:
+  zh: 8 月 27 日，工商时报报道称绿的谐波针对人形机器人关节与运动控制领域推出三款新品。微型谐波减速机面向人形机器人手部与腕部，外径最小 13 毫米、重量低至 8 公克；KGU 系列关节减速模组把谐波减速机、无框力矩电机与内建伺服驱动器整合为模块化方案，可用于肩、肘、腕与髖关节；反向行星滚柱丝杠用于上下肢驱动与精密位移控制，公司自行研发专用螺纹磨床以解决内螺纹加工难题。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.ctee.com.tw/news/20250827701003-431203
+  publisher: 工商时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/ctee-2025-08-27-leaderdrive-humanoid-thr.html
+corroboration: single

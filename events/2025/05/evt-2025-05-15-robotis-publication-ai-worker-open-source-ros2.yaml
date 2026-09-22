@@ -1,0 +1,28 @@
+id: evt-2025-05-15-robotis-publication-ai-worker-open-source-ros2
+date: 2025-05-15
+date_precision: day
+type: publication
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 开源 AI Worker 平台与 Physical AI Tools 工具链
+summary:
+  zh: "5 月 15 日，ROBOTIS 在 Open Robotics Discourse 发帖介绍 AI Worker，称其为基于 ROS 2 的开源移动人形机器人，用遥操作与基于 Transformer 的模仿学习完成真实世界的操作任务，并演示了从遥操作数据采集、数据可视化到模型推理的完整模仿学习流程（示例任务为取放）。帖子给出两个开源仓库：ROBOTIS-GIT/ai_worker（AI Worker: FFW，Freedom From Work）与 ROBOTIS-GIT/physical_ai_tools（配合 LeRobot 与 ROS 2 的 Physical AI 开发界面），并致谢 ROS 与 Hugging Face LeRobot 的开源资源。"
+axes:
+  embodiment_form: [humanoid-wheeled]
+  model_form: [il]
+  data_acquisition: [teleop, real-robot]
+  data_openness: fully-open
+evidence:
+- url: https://discourse.openrobotics.org/t/introduction-to-robotis-ai-worker/43780
+  publisher: Open Robotics Discourse / ROBOTIS
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/discourse-2025-05-15-robotis-ai-worker-openso.html
+- url: https://github.com/ROBOTIS-GIT/ai_worker
+  publisher: GitHub / ROBOTIS-GIT
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-15-robotis-ai-worker-repo.html
+corroboration: single

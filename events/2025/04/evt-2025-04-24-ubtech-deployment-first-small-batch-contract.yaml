@@ -1,0 +1,26 @@
+id: evt-2025-04-24-ubtech-deployment-first-small-batch-contract
+date: 2025-04-24
+date_precision: day
+type: deployment
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选签订首份小批量工业制造场景人形机器人采购合同
+summary:
+  zh: 港交所自愿性公告称，优必选于 2025 年 4 月 24 日与采购方签订大型双足仿人机器人采购合同，采购产品为 Walker S1 和 Walker C，主要用于汽车工厂的生产制造和商用接待，公司已收到对方支付的采购预付款。公告未披露合同金额与采购数量。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+  - commercial-service
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0427/2025042700002_c.pdf
+  publisher: 香港交易所披露易
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/www1-2025-04-24-ubtech-purchase-contract.html
+corroboration: single

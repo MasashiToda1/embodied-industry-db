@@ -1,0 +1,22 @@
+id: evt-2025-02-12-mentee-robotics-product_launch-menteebot-v3
+date: 2025-02-12
+date_precision: day
+type: product_launch
+orgs:
+- id: mentee-robotics
+  role: subject
+title:
+  zh: Mentee Robotics 公布人形机器人 MenteeBot V3.0
+summary:
+  zh: 2 月 12 日，Mentee Robotics 公布新一代人形机器人 MenteeBot V3.0。据公司在社交平台发布的说明：机器人身高 1.75 米，主要面向搬运重物等重体力劳动；采用可热插拔的电池系统（一块背包大小的电池，可快速更换）以支持不间断运行；负载上限 25 公斤；手部每根手指的捏合力为 30 N；执行器为自研定制，功率是外购方案的三倍，整机为垂直整合。Globes 同时指出，公司未公布电池续航时长、未发布机器人实际作业的图片、也未给出价格。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://en.globes.co.il/en/article-amnon-shashuas-mentee-mobotics-launches-new-robot-1001501983
+  publisher: Globes
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/en-2025-02-12-mentee-robotics-menteebo.html
+corroboration: single

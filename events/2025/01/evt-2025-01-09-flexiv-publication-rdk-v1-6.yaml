@@ -1,0 +1,18 @@
+id: evt-2025-01-09-flexiv-publication-rdk-v1-6
+date: 2025-01-09
+date_precision: day
+type: publication
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技发布机器人开发套件 Flexiv RDK v1.6
+summary:
+  zh: 非夕科技在 GitHub 发布 flexiv_rdk v1.6，兼容 Flexiv 软件包 v3.8。发布说明列出新增 rdk::Maintenance 与 rdk::Safety 接口、夹爪与外设参数接口等；同时从 CMakeLists.txt 移除 Python 库相关内容，Python 包 flexivrdk 改为通过 pip 从 PyPI 安装。
+evidence:
+- url: https://github.com/flexivrobotics/flexiv_rdk/releases/tag/v1.6
+  publisher: GitHub · Flexiv Robotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/github-2025-01-09-flexiv-rdk-v1-6.html
+corroboration: single

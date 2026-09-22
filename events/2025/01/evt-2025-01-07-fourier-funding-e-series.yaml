@@ -1,0 +1,25 @@
+id: evt-2025-01-07-fourier-funding-e-series
+date: 2025-01-07
+date_precision: day
+type: funding
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶完成 E 系列融资
+summary:
+  zh: 1 月 7 日，上海傅利叶智能科技有限公司宣布已完成新一轮融资。据傅利叶披露，E 系列融资共进行了两轮，金额合计「近 8 亿元」。本轮融资由国鑫投资、浦东创投、张江科投、张科垚坤基金、Prosperity7、钧山资本等机构共同参与。
+counterparties:
+- 国鑫投资
+- 浦东创投
+- 张江科投
+- 张科垚坤基金
+- Prosperity7 Ventures
+- 钧山资本
+evidence:
+- url: https://www.yicai.com/news/102430454.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/yicai-2025-01-07-fourier-e-round.html
+corroboration: single

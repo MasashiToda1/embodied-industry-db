@@ -1,0 +1,24 @@
+id: evt-2025-02-zj-humanoid-corporate-haishu-production-line
+date: '2025-02'
+date_precision: month
+date_basis: stated
+type: corporate
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形机器人创新中心在宁波海曙筹建人形机器人生产工厂，为量产做准备
+summary:
+  zh: 2025 年 2 月 6 日，浙江日报记者走访位于宁波市海曙区的浙江人形机器人创新中心，稿件写明春节假期后中心正在为开启人形机器人量产做各项准备工作。在海曙区，一个人形机器人生产工厂正在加快建设，当年即可投产，一条流水线可年产 100 台人形机器人。中心技术总监表示当时的机器人都是纯手工装配，已有不少被订购；中心与宁波一家精密减速器领域企业合作，提升减速器核心零部件加工精度。
+counterparties:
+- 宁波市海曙区人民政府
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.haishu.gov.cn/art/2025/2/7/art_1229100495_59101749.html
+  publisher: 宁波市海曙区人民政府（转载《浙江日报》）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/haishu-2025-02-zj-humanoid-haishu-facto.html
+corroboration: single

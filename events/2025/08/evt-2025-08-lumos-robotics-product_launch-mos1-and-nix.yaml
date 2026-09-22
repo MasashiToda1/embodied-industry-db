@@ -1,0 +1,22 @@
+id: evt-2025-08-lumos-robotics-product_launch-mos1-and-nix
+date: '2025-08'
+date_precision: month
+date_basis: stated
+type: product_launch
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人发布重载轮式双臂机器人 Lumos MOS 1 与迷你双足人形机器人 Lumos NIX
+summary:
+  zh: 鹿明机器人官网里程碑写明 2025 年 8 月发布两款产品：Lumos MOS 1，官网称其为全球首款双臂负载 50 公斤的重载轮式双臂具身机器人；以及 Lumos NIX，一款迷你双足人形机器人。同月官网记录 Lumos LUS2 在首届世界人形机器人运动会团体舞比赛中获得银牌。
+axes:
+  embodiment_form: [humanoid-wheeled, dual-arm-stationary, humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.lumosbot.tech/about/
+  publisher: 鹿明机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/lumosbot-2025-08-lumos-robotics-milestone.html
+corroboration: single

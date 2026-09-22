@@ -1,0 +1,22 @@
+id: evt-2025-01-06-agibot-deployment-1000th-unit
+date: 2025-01-06
+date_precision: day
+type: deployment
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人量产第 1000 台通用具身机器人下线
+summary:
+  zh: 智元机器人官宣，其量产的第 1000 台通用具身机器人于 2025 年 1 月 6 日正式下线，其中双足人形机器人远征 A2 与灵犀 X1 为 731 套，轮式通用机器人远征 A2-D 与 A2-W 为 269 套，这些机器人正在陆续交付客户。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+evidence:
+- url: https://www.techsir.com/a/202501/90070.html
+  publisher: 科技先生
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/techsir-2025-01-06-agibot-1000th-unit.html
+corroboration: single

@@ -1,0 +1,22 @@
+id: evt-2025-01-21-ohand-funding-b-plus-round
+date: '2025-01-21'
+date_precision: day
+type: funding
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技完成近亿元 B+ 轮融资
+summary:
+  zh: 1 月 21 日，傲意科技宣布完成近亿元 B+ 轮融资，由华发集团领投，广大汇通、合盈资本跟投，升氪剂资本担任本次交易的财务顾问。本轮融资资金将用于建成高标准生产体系、提高产能。
+counterparties:
+- 华发集团
+- 广大汇通
+- 合盈资本
+evidence:
+- url: https://news.qq.com/rain/a/20250121A01BN300
+  publisher: 36氪（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-21-ohand-b-plus-round.html
+corroboration: single

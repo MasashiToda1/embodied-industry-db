@@ -1,0 +1,18 @@
+id: evt-2024-09-09-ohand-publication-roh-demos
+date: '2024-09-09'
+date_precision: day
+type: publication
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技开源 ROHand 演示工程仓库
+summary:
+  zh: 傲意科技在 GitHub 组织 oymotion 下创建并开源 roh_demos 仓库，发布 ROHand 灵巧手的演示工程。该组织主页登记的网站为 oymotion.com、所在地为上海。
+evidence:
+- url: https://github.com/oymotion/roh_demos
+  publisher: GitHub · oymotion
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-09-ohand-roh-demos.html
+corroboration: single

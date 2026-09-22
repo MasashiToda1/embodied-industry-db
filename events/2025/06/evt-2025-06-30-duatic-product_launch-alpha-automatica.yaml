@@ -1,0 +1,20 @@
+id: evt-2025-06-30-duatic-product_launch-alpha-automatica
+date: 2025-06-30
+date_precision: day
+type: product_launch
+orgs:
+- id: duatic
+  role: subject
+title:
+  zh: Duatic 在 automatica 2025 推出服务机器人 Alpha
+summary:
+  zh: 6 月 30 日，Duatic 在其领英账号发布 automatica 2025（慕尼黑）参展回顾，称本届展会上推出了新的服务机器人 Alpha，定位为把先进自动化带到多个行业的模块化平台，在展台做了现场演示与多场洽谈。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://www.linkedin.com/posts/duatic_duatic-automatica2025-robotics-activity-7345517814079758337-EgR4
+  publisher: Duatic 官方领英账号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/linkedin-2025-06-30-duatic-alpha-automatica.html
+corroboration: single

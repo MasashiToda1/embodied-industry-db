@@ -19,6 +19,7 @@ hq:
   city: 北京
 description: 以直驱技术为核心做机器人动力模组与轮足机器人的公司，产品有直驱动力模组、HMC / HMD 具身关节模组与刑天、TITA、D1 轮足机器人；2020 年成立于东莞，2025 年总部迁至北京，2026 年 9 月港股招股。
 accounts:
+  github: DDTRobot   # GitHub 组织显示名 Direct Drive Technology，tita_rl 等官方仓在此
   site: https://directdrive.com
 sources:
 - url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf

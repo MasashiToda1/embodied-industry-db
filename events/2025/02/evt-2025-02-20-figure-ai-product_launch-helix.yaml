@@ -1,0 +1,24 @@
+id: evt-2025-02-20-figure-ai-product_launch-helix
+date: 2025-02-20
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure AI 发布通用视觉-语言-动作模型 Helix
+summary:
+  zh: 2 月 20 日，Figure AI 发布自研通用视觉-语言-动作（VLA）模型 Helix，采用「System 1 / System 2」双系统架构：System 2 为互联网预训练的 7B 参数视觉语言模型，以 7—9 Hz 做场景理解与语言理解；System 1 为 80M 参数视觉运动策略，以 200 Hz 输出人形机器人上半身（含手腕、躯干、头部与单指）的连续控制。官方称 Helix 用约 500 小时高质量多机器人多操作者遥操作数据训练，可零样本抓取训练中未见过的家居物品，并支持两台机器人用同一套权重通过自然语言协作完成任务，模型完全跑在机器人机载 GPU 上。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [teleop]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+  target_scene: [home]
+evidence:
+- url: https://www.figure.ai/news/helix
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/figure-2025-02-20-figure-ai-helix.html
+corroboration: single

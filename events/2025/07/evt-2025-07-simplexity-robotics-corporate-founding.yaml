@@ -1,0 +1,18 @@
+id: evt-2025-07-simplexity-robotics-corporate-founding
+date: '2025-07'
+date_precision: month
+type: corporate
+orgs:
+- id: simplexity-robotics
+  role: subject
+title:
+  zh: 至简动力成立
+summary:
+  zh: 至简动力官网「公司概况」写明，至简动力 Simplexity Robotics 于 2025 年 7 月底成立，方向是大一统具身基座模型、数据闭环与机器人硬件。
+evidence:
+- url: https://www.simplexityrobotics.com/
+  publisher: 至简动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/simplexityro-2025-07-simplexity-robotics-foun.html
+corroboration: single

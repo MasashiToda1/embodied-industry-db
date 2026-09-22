@@ -1,0 +1,32 @@
+id: evt-2025-08-05-noetix-funding-a-plus-plus
+date: '2025-08-05'
+date_precision: day
+type: funding
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力完成数亿元 A++ 轮融资
+summary:
+  zh: 8 月 5 日，松延动力宣布完成数亿元 A++ 轮融资，由金浦资本领投，北汽产投、中金资本、晶科能源、赟汇资本、优山资本、卓源资本、元智未来等机构跟投。这是公司 2025 年上半年以来连续完成的第三轮融资，累计融资六轮。每日经济新闻报道称，松延动力上半年已获涉及超 2000 台产品的商业化订单，报道给出的合同总额口径为超 1 亿元；新京报报道称公司 7 月量产交付 105 台人形机器人，其中 N2 交付 92 台、E1 交付 13 台，环比增长 176%。
+counterparties:
+- 金浦资本
+- 北汽产投
+- 中金资本
+- 晶科能源
+- 赟汇资本
+- 优山资本
+- 卓源资本
+- 元智未来
+evidence:
+- url: https://www.bjnews.com.cn/detail/1754385295168483.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/bjnews-2025-08-05-noetix-a-plus-plus.html
+- url: https://www.nbd.com.cn/articles/2025-08-05/4001291.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/nbd-2025-08-05-noetix-a-plus-plus-nbd.html
+corroboration: multi

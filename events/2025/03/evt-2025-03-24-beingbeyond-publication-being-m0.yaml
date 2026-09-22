@@ -1,0 +1,23 @@
+id: evt-2025-03-24-beingbeyond-publication-being-m0
+date: '2025-03-24'
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 BeingBeyond/Being-M0 创建时间 2025-03-24
+type: publication
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: BeingBeyond 开源动作生成模型 Being-M0 与 MotionLib 数据集
+summary:
+  zh: 2025 年 3 月 24 日，BeingBeyond 在 GitHub 组织下建立 Being-M0 仓库。README 称团队构建了 MotionLib——面向动作生成的百万级数据集，规模至少为已有同类数据集的 15 倍，并带分层文本描述；基于 MotionLib 训练出大型动作模型 Being-M0。对应论文《Scaling Motion Generation Models with Million-Level Human Motions》收录于 ICML 2025。
+axes:
+  model_form:
+  - motion-generation
+evidence:
+- url: https://github.com/BeingBeyond/Being-M0
+  publisher: BeingBeyond GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-beingbeyond-being-m0.html
+corroboration: single

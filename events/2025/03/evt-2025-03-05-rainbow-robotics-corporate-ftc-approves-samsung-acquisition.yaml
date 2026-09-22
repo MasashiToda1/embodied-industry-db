@@ -1,0 +1,21 @@
+id: evt-2025-03-05-rainbow-robotics-corporate-ftc-approves-samsung-acquisition
+date: 2025-03-05
+date_precision: day
+type: corporate
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 韩国公平交易委员会批准三星电子收购彩虹机器人
+summary:
+  zh: 3 月 5 日，韩联社报道韩国公平交易委员会（FTC）批准三星电子对彩虹机器人的收购，距三星提交审查约两个月，理由是该交易形成垄断的可能性很小。三星电子目前持有彩虹机器人 35% 股份，2023 年曾向其投资 868 亿韩元。
+counterparties:
+- Samsung Electronics
+- 韩国公平交易委员会
+evidence:
+- url: https://en.yna.co.kr/view/AEN20250305003500320
+  publisher: Yonhap News Agency
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/en-2025-03-05-rainbow-robotics-ftc-app.html
+corroboration: single

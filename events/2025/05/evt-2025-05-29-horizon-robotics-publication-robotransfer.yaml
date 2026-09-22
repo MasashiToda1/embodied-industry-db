@@ -1,0 +1,18 @@
+id: evt-2025-05-29-horizon-robotics-publication-robotransfer
+date: '2025-05-29'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: "地平线发布机器人数据合成框架论文《RoboTransfer: Controllable Geometry-Consistent Video Diffusion for Manipulation Policy Transfer》"
+summary:
+  zh: 5 月 29 日，地平线团队将 RoboTransfer 论文提交至 arXiv。RoboTransfer 是面向机器人数据合成的扩散式视频生成框架，用跨视角特征交互与全局一致的 3D 几何约束保证多视角几何一致性，并支持背景编辑、物体替换等场景要素的细粒度控制，用于缓解仿真到真实的迁移差距。
+evidence:
+- url: https://arxiv.org/abs/2505.23171
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/arxiv-2025-05-29-horizon-robotics-robotra.html
+corroboration: single

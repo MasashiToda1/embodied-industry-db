@@ -1,0 +1,23 @@
+id: evt-2024-12-30-psibot-product_launch-psi-r0
+date: '2024-12-30'
+date_precision: day
+type: product_launch
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能发布端到端具身模型 Psi R0
+summary:
+  zh: 灵初智能官网 2024 年 12 月 30 日发文，宣布发布基于强化学习的端到端具身模型 Psi R0。官方称该模型支持双灵巧手协同进行复杂操作，将多个技能串联混训，完成并闭环长程灵巧操作任务，并可实现跨物品、跨场景级别的泛化。
+axes:
+  model_form:
+  - end2end-vla
+  control_route:
+  - rl
+evidence:
+- url: https://www.psibot.ai/002_zh/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/psibot-2024-12-psibot-psi-r0.html
+corroboration: single

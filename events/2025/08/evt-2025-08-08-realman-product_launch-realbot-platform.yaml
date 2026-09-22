@@ -1,0 +1,25 @@
+id: evt-2025-08-08-realman-product_launch-realbot-platform
+date: 2025-08-08
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「8 月 8 日，全球顶级机器人盛会——2025 世界机器人大会（WRC）在北京经济技术开发区北人亦创国际会展中心正式启幕……睿尔曼携全产品矩阵和新品亮相」
+type: product_launch
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼在 2025 世界机器人大会发布 RealBOT 具身开源平台
+summary:
+  zh: 2025 世界机器人大会期间，睿尔曼以「具身智能基座」为核心理念携全产品矩阵亮相，并在京东主展区发布新品 RealBOT 具身开源平台。报道称该平台面向机器人高质量数据采集，基于石景山区人形机器人数据训练中心十大应用场景的百万条数据构建，并与远程打工仔平台整合。
+counterparties:
+- 京东机器人
+axes:
+  data_acquisition: [teleop, real-robot]
+  data_sourcing: [gov-training-ground]
+evidence:
+- url: https://www.qbitai.com/2025/08/321183.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/qbitai-2025-08-08-realman-realbot-platform.html
+corroboration: single

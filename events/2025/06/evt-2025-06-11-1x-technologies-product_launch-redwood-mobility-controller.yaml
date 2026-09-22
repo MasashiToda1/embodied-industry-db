@@ -1,0 +1,23 @@
+id: evt-2025-06-11-1x-technologies-product_launch-redwood-mobility-controller
+date: 2025-06-11
+date_precision: day
+type: product_launch
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: "1X Technologies 公布 NEO 的统一强化学习运动控制器 Redwood AI: Mobility"
+summary:
+  zh: 6 月 11 日，1X Technologies 公布配合 Redwood AI 的新一代强化学习运动控制器，把任意方向自然行走、坐、站、跪、从地面起身、借双目视觉上下楼梯这些能力放进同一个统一控制器里。官方称该控制器为遥操作与 Redwood AI 提供统一的「动作接口」，Redwood 从视觉预测全身关节目标与骨盆行走速度，控制器再把这些意图翻译成腿部实际施加的力。演示中 1X 把 Redwood 微调到足球盘带任务来验证行走行为的可控性。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [home]
+  control_route: [rl]
+  data_modality: [rgb, joint-trajectory]
+evidence:
+- url: https://www.1x.tech/discover/redwood-mobility
+  publisher: 1X Technologies 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/1x-2025-06-11-1x-technologies-redwood-.html
+corroboration: single

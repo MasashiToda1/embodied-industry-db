@@ -1,0 +1,23 @@
+id: evt-2025-01-20-chingmu-product_launch-rigor
+date: '2025-01-20'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「行业动捕领军品牌青瞳视觉（CHINGMU）推出了全新双目相机——Rigor」（报道发布于 2025-01-20）
+type: product_launch
+orgs:
+- id: chingmu
+  role: subject
+title:
+  zh: 青瞳视觉发布高精度双目定位相机 Rigor
+summary:
+  zh: 青瞳视觉推出双目定位相机 Rigor，分辨率 2680×2080，帧率最高 140fps，捕捉精度达亚毫米级，可实现对主动 / 被动 marker 球的追踪，面向手术导航、工业机器人定位、医疗康复等定位导航需求。
+axes:
+  data_acquisition: [mocap]
+  target_scene: [industrial-manufacturing, healthcare]
+evidence:
+- url: https://news.pedaily.cn/20250120/101245.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-20-chingmu-rigor-launch.html
+corroboration: single

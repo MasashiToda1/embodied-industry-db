@@ -1,0 +1,20 @@
+id: evt-2025-06-16-robotis-partnership-lg-electronics-humanoid-mou
+date: 2025-06-16
+date_precision: day
+type: partnership
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 与 LG 电子签署人形机器人共同研究与事业化协议
+summary:
+  zh: 6 月 16 日，ROBOTIS 宣布与 LG 电子签署「人形机器人领域共同研究及事业化业务协约（MOU）」，双方在机器人技术升级、产品化到市场扩散的全过程合作。ROBOTIS 以自有的执行器 DYNAMIXEL 与减速机 DYD 技术为基础，共同研发并提供高精度、高效率机器人零部件；LG 电子提供全球事业化能力与技术嫁接经验支持市场扩大与产品落地。此前 5 月 29 日 ROBOTIS 已向 LG 电子交付研究用途的 AI Worker。
+counterparties:
+- LG Electronics
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250617085154
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/zdnet-2025-06-16-robotis-lg-humanoid-mou.html
+corroboration: single

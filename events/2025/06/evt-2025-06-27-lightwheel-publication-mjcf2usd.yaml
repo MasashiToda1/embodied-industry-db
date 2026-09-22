@@ -1,0 +1,22 @@
+id: evt-2025-06-27-lightwheel-publication-mjcf2usd
+date: '2025-06-27'
+date_precision: day
+type: publication
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能开源 MJCF 转 USD 工具 mjcf2usd
+summary:
+  zh: 6 月 27 日，光轮智能在 GitHub 的 LightwheelAI 组织下开源 mjcf2usd。这是一个 Isaac Sim 扩展，把 MuJoCo 的 MJCF 模型文件批量转换为 USD 格式，便于将 MuJoCo 模型接入 Omniverse 与其他兼容 USD 的流程，提供图形界面、批量转换与转换进度追踪。
+axes:
+  sim_stack:
+  - isaac-sim
+  - mujoco
+evidence:
+- url: https://github.com/LightwheelAI/mjcf2usd
+  publisher: 光轮智能 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-27-lightwheel-mjcf2usd.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2024-12-15-leaderdrive-deployment-roller-screw-humanoid-lower-limb
+date: 2024-12-15
+date_precision: day
+type: deployment
+orgs:
+- id: leaderdrive
+  role: subject
+title:
+  zh: 绿的谐波称首批行星滚柱丝杠已交付客户并用于人形机器人下肢关节，通过测试验收
+summary:
+  zh: 12 月 15 日，机器人大讲堂发文称绿的谐波在采访中透露，公司首批行星滚柱丝杠产品已交付客户，用于人形机器人的下肢关节，顺利通过测试验收，目前已接受大规模定制需求。文中称公司加工人形机器人用反向行星滚柱丝杠中难度最大的螺母仅需 1 小时，加工效率是常规螺母加工的 3 至 4 倍，良品率与装配一致性超 95%；公司还参与国家重点研发计划「智能机器人」2024 年度重点专项中「大力重比一体化直线伺服关节」项目，并正筹划成立子公司承接正向 / 反向行星滚柱丝杠成果转化。
+axes:
+  embodiment_form: [humanoid-biped]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://news.qq.com/rain/a/20241215A03NNX00
+  publisher: 机器人大讲堂（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/news-2024-12-15-leaderdrive-roller-screw.html
+corroboration: single

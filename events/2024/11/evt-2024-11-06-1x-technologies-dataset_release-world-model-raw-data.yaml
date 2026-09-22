@@ -1,0 +1,23 @@
+id: evt-2024-11-06-1x-technologies-dataset_release-world-model-raw-data
+date: 2024-11-06
+date_precision: day
+type: dataset_release
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X Technologies 在 Hugging Face 发布 World Model Challenge 的原始视频数据集
+summary:
+  zh: 11 月 6 日，1X Technologies 在 Hugging Face 上建立数据集仓库 world_model_raw_data，页面写明这是 1X World Model Sampling Challenge 的原始数据集，规模区间为 1000 万至 1 亿条，许可为 cc-by-nc-sa-4.0。Train/Val v2.0 部分切分成 100 个独立分片，每个分片含 512×512 分辨率的原始视频 video_{shard}.mp4、把每帧映射到所属视频段的 segment_idx_{shard}.bin、以 np.float32 存储的状态数组 states_{shard}.bin，以及整体与分片两级 metadata.json；状态数组按索引对应机器人关节（HIP_YAW、HIP_ROLL、HIP_PITCH、KNEE_PITCH、ANKLE_ROLL、ANKLE_PITCH、LEFT_SHOULDER_PITCH 等）。另提供 250 条样本的 test_v2.0 子集用于 World Model Compression Challenge。此前该组织已发布经 token 化处理的 world_model_tokenized_data（建于 2024 年 6 月，窗口外）。
+axes:
+  embodiment_form: [humanoid-biped]
+  data_modality: [rgb, joint-trajectory]
+  data_openness: fully-open
+  model_form: [world-model]
+evidence:
+- url: https://huggingface.co/datasets/1x-technologies/world_model_raw_data
+  publisher: Hugging Face（1x-technologies）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/huggingface-2024-11-06-1x-technologies-world-mo.html
+corroboration: single

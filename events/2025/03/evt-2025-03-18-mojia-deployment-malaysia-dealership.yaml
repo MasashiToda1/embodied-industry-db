@@ -1,0 +1,28 @@
+id: evt-2025-03-18-mojia-deployment-malaysia-dealership
+date: '2025-03-18'
+date_precision: day
+type: deployment
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 奇瑞智能化战略发布会披露墨甲人形机器人墨茵已在马来西亚 4S 店上岗
+summary:
+  zh: 3 月 18 日，奇瑞汽车在芜湖奇瑞智造一工厂举办「油电同智 全球同行」智能化战略发布会，披露墨甲机器人开发的人形机器人墨茵（Mornine）已在马来西亚的汽车 4S 店投入使用。该机器人身高 167cm、体重 65kg，41 个自由度、单手 12 自由度，最大行走速度 1m/s，最大关节扭矩 512N·m，电池容量 0.7kWh、续航 2 小时，配备 3D 激光雷达、2 个深度相机、1 个全景相机、4 颗超声雷达和 6 麦克风阵列，可用于汽车销售咨询、商场导购、娱乐表演等场景，并已将 DeepSeek 模型部署到机器人云平台。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - commercial-service
+evidence:
+- url: https://www.ithome.com/0/838/943.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/ithome-2025-03-18-mojia-malaysia-4s.html
+- url: https://m.thepaper.cn/newsDetail_forward_30436413
+  publisher: 澎湃新闻（大江资讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/m-2025-03-18-mojia-malaysia-4s-paper.html
+corroboration: multi

@@ -1,0 +1,26 @@
+id: evt-2025-08-08-zsibot-product_launch-wrc2025-tongchui-m1
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 智身科技首次参展 WRC2025，推出钢镚 ZSL-1、ZSL-1W 与铜锤 M1 三款新品
+summary:
+  zh: 8 月 8 日 WRC2025 世界机器人博览会在北京启幕，智身科技首次参展并推出三款新品：15 公斤级仿生四足机器人钢镚 ZSL-1（最高速度 3.7m/s、40° 爬坡、IP54）、轮足版钢镚 ZSL-1W（噪音 55 分贝、速度 5m/s、续航 9 公里、越障 65 厘米，现场另展出导盲版），以及轮足一体化产品铜锤 M1（自重约 30 公斤、持续负载 30 公斤、速度 8m/s、越障 80 厘米、IP67、双电池热插拔与自主充电）。现场还展示了自研一体化关节模组，并以 50 台机器狗完成集群特技表演。
+axes:
+  embodiment_form:
+  - quadruped
+  control_route:
+  - rl
+  target_scene:
+  - inspection-hazardous
+  - logistics-warehouse
+evidence:
+- url: https://www.geekpark.net/news/352725
+  publisher: 极客公园
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/geekpark-2025-08-08-zsibot-wrc2025-debut-m1.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2025-04-15-spacetime-var-corporate-founded
+date: '2025-04-15'
+date_precision: day
+type: corporate
+orgs:
+- id: spacetime-var
+  role: subject
+title:
+  zh: 杭州时空变量科技有限公司成立
+summary:
+  zh: 泰伯网企业库显示，杭州时空变量科技有限公司成立时间为 2025 年 4 月 15 日，所在地浙江，业务方向为时空智能。
+evidence:
+- url: https://www.taibo.cn/company/120881
+  publisher: 泰伯网
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/taibo-2025-04-15-spacetime-var-founded.html
+corroboration: single

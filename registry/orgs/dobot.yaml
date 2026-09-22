@@ -17,6 +17,7 @@ layers:
 upstream:
   robotics_notebooks_institution: dobot
 accounts:
+  github: Dobot-Arm   # GitHub 资料页公司写 SHENZHEN DOBOT CORP LTD、站点 dobot-robots.com
   huggingface: Dobot-robot
   site: https://www.dobot-robots.com
 sources:

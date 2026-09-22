@@ -1,0 +1,23 @@
+id: evt-2025-06-19-roboterax-product_launch-q5
+date: 2025-06-19
+date_precision: day
+type: product_launch
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元推出超拟人服务机器人星动 Q5
+summary:
+  zh: 6 月 19 日，星动纪元推出超拟人服务机器人星动 Q5。报道称该机器人搭载仿生 7 轴高精度机械臂及星动「精灵手」，每秒能完成 10 次点击动作，单手可拿起 10 千克重物，腿部 3 个自由度可弯曲升降；搭配拟人化语音引擎与大模型技术，可理解 37 种以上语言指令。
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  target_scene:
+  - commercial-service
+evidence:
+- url: https://www.cs.com.cn/ssgs/gsxw/202506/t20250620_6497349.html
+  publisher: 中国证券报·中证网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/cs-2025-06-19-roboterax-q5-launch.html
+corroboration: single

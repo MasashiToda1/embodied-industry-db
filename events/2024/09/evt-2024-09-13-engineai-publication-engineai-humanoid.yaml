@@ -1,0 +1,26 @@
+id: evt-2024-09-13-engineai-publication-engineai-humanoid
+date: 2024-09-13
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 engineai-robotics/engineai_humanoid 的 created_at 为 2024-09-13
+type: publication
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人开源双足运动控制仓库 engineai_humanoid
+summary:
+  zh: 众擎机器人在 GitHub 开源 engineai_humanoid。README 写明这是深圳市众擎机器人科技有限公司双足机器人的运动控制算法，基于 MIT 的 Cheetah Software 运动控制算法，包含机器人建模与闭链映射算法、参数配置、LCM 日志调试类型、强化学习部署算法（已完成）以及基于模型的规划与控制模块（进行中）；sim2sim 仿真环境当时由其强化学习训练仓库 engineai_legged_gym 提供。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  - hybrid
+evidence:
+- url: https://github.com/engineai-robotics/engineai_humanoid
+  publisher: EngineAI（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-13-engineai-humanoid-openso.html
+corroboration: single

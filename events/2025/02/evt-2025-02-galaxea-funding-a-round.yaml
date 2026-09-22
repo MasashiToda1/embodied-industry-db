@@ -1,0 +1,27 @@
+id: evt-2025-02-galaxea-funding-a-round
+date: 2025-02
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「近日，专注于打造『一脑多形』具身智能机器人的人工智能公司『星海图』完成新一轮 A 轮融资」，发稿日 2025-02-21
+type: funding
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图完成 A 轮融资，蚂蚁集团独家领投
+summary:
+  zh: 星海图完成新一轮 A 轮融资，报道称总融资额「近 3 亿元人民币」。本轮融资由蚂蚁集团独家领投，高瓴创投、IDG 资本、北京机器人产业基金、百度风投、同歌创投等老股东持续加码，华兴资本担任独家财务顾问。资金将用于加速具身基础模型的研发和验证。
+counterparties:
+- 蚂蚁集团
+- 高瓴创投
+- IDG 资本
+- 北京机器人产业基金
+- 百度风投
+- 同歌创投
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2025-02-21/doc-inemffqf2913760.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/finance-2025-02-galaxea-a-round.html
+corroboration: single

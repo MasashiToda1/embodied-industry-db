@@ -1,0 +1,29 @@
+id: evt-2025-07-11-zsibot-product_launch-gangbeng-zsl1-partner-conference
+date: '2025-07-11'
+date_precision: day
+type: product_launch
+orgs:
+- id: zsibot
+  role: subject
+- id: wangxingren
+  role: counterparty
+title:
+  zh: 智身科技首届合作伙伴大会发布钢镚 ZSL-1 与轮足版 ZSL-1W
+summary:
+  zh: 7 月 11 日，智身科技首届合作伙伴大会在北京举行，会上发布两款行业级机器人：小型四足机器人钢镚 ZSL-1，以及新增轮足功能的钢镚 ZSL-1W。大会现场，智身科技与联想（上海）信息技术有限公司、四川九洲投资控股集团有限公司、汪星人科技、数字华夏（深圳）科技有限公司签署战略合作协议，启动覆盖工业巡检、智慧城市、应急救援等领域的「千业赋能计划」。
+counterparties:
+- 联想（上海）信息技术有限公司
+- 四川九洲投资控股集团有限公司
+- 数字华夏（深圳）科技有限公司
+axes:
+  embodiment_form:
+  - quadruped
+  target_scene:
+  - inspection-hazardous
+evidence:
+- url: https://m.36kr.com/p/3382425224427529
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/m-2025-07-11-zsibot-partner-conferenc.html
+corroboration: single

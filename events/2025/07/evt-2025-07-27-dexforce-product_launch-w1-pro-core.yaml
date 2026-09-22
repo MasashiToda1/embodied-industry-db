@@ -1,0 +1,29 @@
+id: evt-2025-07-27-dexforce-product_launch-w1-pro-core
+date: 2025-07-27
+date_precision: day
+type: product_launch
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能在 WAIC 2025 发布第二代人形机器人 DexForce W1 Pro 与无底盘版 W1 Core，开启预售
+summary:
+  zh: 7 月 27 日，跨维智能在 2025 世界人工智能大会举行 DexForce W1 Pro 线下发布会。W1 Pro 为 W1 的迭代升级款，可选配差速或全向移动底盘，全身 34 或 40 个自由度；同时推出无底盘的 W1 Core 版本，保留双臂、躯干、头部核心模块，专注原地作业，两者腿部以上的感知、执行、控制与软件平台一致。稿件写明头部自研纯视觉双目仿人传感器帧率由初代 15Hz 提升至 60Hz，双目标定误差控制在 ±0.05 像素以内，立体匹配精度不超过 0.1 像素，物体三维轮廓还原误差不超过 1mm；双臂工作空间与可达性扩展 75%，重复定位精度提升至 0.5mm 以内，并引入自动手眼标定功能。两个版本已同步开启预售。
+axes:
+  embodiment_form: [humanoid-wheeled, dual-arm-stationary]
+  hardware_strategy: [in-house]
+  data_acquisition: [sim-generated]
+  model_form: [end2end-vla]
+  target_scene: [industrial-manufacturing, commercial-service, education-research, home]
+evidence:
+- url: https://www.pingwest.com/a/306441
+  publisher: 品玩
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/pingwest-2025-07-27-dexforce-embodichain.html
+- url: https://www.stcn.com/article/detail/2763737.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stcn-2025-07-27-dexforce-w1-pro.html
+corroboration: multi

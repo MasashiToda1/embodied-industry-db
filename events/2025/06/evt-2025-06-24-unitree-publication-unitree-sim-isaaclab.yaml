@@ -1,0 +1,26 @@
+id: evt-2025-06-24-unitree-publication-unitree-sim-isaaclab
+date: 2025-06-24
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 unitreerobotics/unitree_sim_isaaclab 的 created_at 为 2025-06-24
+type: publication
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技开源基于 Isaac Lab 的仿真环境 unitree_sim_isaaclab
+summary:
+  zh: 宇树科技在 GitHub 开源 unitree_sim_isaaclab，README 说明该仿真环境基于 Isaac Lab 构建，运行后收发与实机相同的 DDS 话题，可按 G1 控制与 Dex3 灵巧手控制的接口使用，项目内提供的权重文件仅用于仿真环境测试。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  sim_stack:
+  - isaac-lab
+  - isaac-sim
+evidence:
+- url: https://github.com/unitreerobotics/unitree_sim_isaaclab
+  publisher: Unitree Robotics（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-24-unitree-sim-isaaclab.html
+corroboration: single

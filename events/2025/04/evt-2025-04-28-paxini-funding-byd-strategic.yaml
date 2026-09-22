@@ -1,0 +1,20 @@
+id: evt-2025-04-28-paxini-funding-byd-strategic
+date: '2025-04-28'
+date_precision: day
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼获比亚迪超亿元战略投资
+summary:
+  zh: 4 月 28 日消息，比亚迪股份有限公司近日完成对帕西尼感知科技（深圳）有限公司的战略投资，金额超亿元人民币，为比亚迪在具身智能领域当时最大单笔投资。报道称企查查显示比亚迪在帕西尼股东信息中占股 13.3738%。比亚迪技术评估团队在比对视触觉、电容式等触觉感知方案后选择帕西尼的 6D 霍尔阵列式触觉传感技术方案。
+counterparties:
+- 比亚迪
+evidence:
+- url: https://www.21jingji.com/article/20250428/herald/b9d66dd873ed5e23e2bde9d09715b6c5.html
+  publisher: 21世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/21jingji-2025-04-28-paxini-byd-strategic.html
+corroboration: single

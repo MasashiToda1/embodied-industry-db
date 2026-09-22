@@ -1,0 +1,21 @@
+id: evt-2025-07-gigaai-publication-embodiedreamer
+date: '2025-07'
+date_precision: month
+type: publication
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: "极佳视界开源 EmbodieDreamer：面向策略训练的 Real2Sim2Real 具身世界模型框架"
+summary:
+  zh: 极佳视界 GitHub 账号 GigaAI-research 的 EmbodieDreamer 仓库 README 记录仓库于 2025 年 7 月初始化。该框架包含从真实观测优化物理参数的
+    PhysAligner 与生成真实感场景的 VisAligner，支持基于轨迹评估的偏好学习做 RL 训练，论文为 arXiv 2507.05198。
+axes:
+  model_form: [world-model]
+evidence:
+- url: https://github.com/GigaAI-research/EmbodieDreamer
+  publisher: GitHub · GigaAI-research
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-08-gigaai-embodiedreamer.html
+corroboration: single

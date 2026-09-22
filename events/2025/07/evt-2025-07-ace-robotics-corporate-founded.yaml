@@ -1,0 +1,23 @@
+id: evt-2025-07-ace-robotics-corporate-founded
+date: '2025-07'
+date_precision: month
+type: corporate
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人成立
+summary:
+  zh: 据瑞财经报道，公开资料显示大晓机器人成立于 2025 年 7 月，是商汤科技旗下专注具身智能的新业务公司，聚焦机器人自主决策能力，推出 ACE 技术范式与开悟世界模型 3.0。
+counterparties:
+- 商汤科技
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://news.qq.com/rain/a/20260210A05WW500
+  publisher: 腾讯新闻转载瑞财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-ace-robotics-founded.html
+corroboration: single

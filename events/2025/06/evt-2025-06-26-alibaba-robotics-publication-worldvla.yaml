@@ -1,0 +1,23 @@
+id: evt-2025-06-26-alibaba-robotics-publication-worldvla
+date: 2025-06-26
+date_precision: day
+type: publication
+orgs:
+- id: alibaba-robotics
+  role: subject
+title:
+  zh: "阿里达摩院发布并开源论文《WorldVLA: Towards Autoregressive Action World Model》"
+summary:
+  zh: 6 月 26 日，阿里巴巴达摩院联合湖畔实验室、浙江大学在 arXiv 提交 WorldVLA，将视觉 - 语言 - 动作模型与世界模型统一在一个自回归框架内，用同一套词表编码图像、文本与动作。论文称在 LIBERO 基准上抓取成功率比同骨干的动作模型高 4%，视频生成 FVD 比单独世界模型降低 10%，并提出在生成当前动作时屏蔽此前动作的注意力掩码策略。代码开源在 alibaba-damo-academy/WorldVLA。
+counterparties:
+- 湖畔实验室
+- 浙江大学
+axes:
+  model_form: [end2end-vla, world-model]
+evidence:
+- url: https://arxiv.org/abs/2506.21539
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-26-alibaba-robotics-worldvl.html
+corroboration: single

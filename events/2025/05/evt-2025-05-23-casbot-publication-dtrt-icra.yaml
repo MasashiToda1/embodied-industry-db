@@ -1,0 +1,27 @@
+id: evt-2025-05-23-casbot-publication-dtrt-icra
+date: '2025-05-23'
+date_precision: day
+type: publication
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 中科慧灵与中科院自动化所合作论文 DTRT 发布于 arXiv，获 ICRA 2025 录用
+summary:
+  zh: "5 月 23 日，论文《DTRT: Enhancing Human Intent Estimation and Role Allocation for Physical Human-Robot Collaboration》发布于 arXiv（2505.17490），作者单位包括中国科学院自动化研究所智能工业视觉工程实验室、中国科学院大学人工智能学院与北京中科慧灵机器人技术有限公司。论文提出基于双 Transformer 的机器人轨迹预测框架 DTRT，用两个基于 Transformer 的条件变分自编码器结合人引导的运动与力数据估计人类意图，并用微分合作博弈论综合预测结果实现人机角色分配。国内报道称该方法获 ICRA 2025 录用。"
+axes:
+  data_modality:
+  - force-torque
+  - joint-trajectory
+evidence:
+- url: https://arxiv.org/abs/2505.17490
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/arxiv-2025-05-23-casbot-dtrt-arxiv.html
+- url: https://www.robotsky.cc/news/2025052113699.html
+  publisher: 机器人天空
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/robotsky-2025-05-23-casbot-dtrt-icra-news.html
+corroboration: multi

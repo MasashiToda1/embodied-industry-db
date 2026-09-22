@@ -1,0 +1,25 @@
+id: evt-2025-07-31-zerith-funding-angel-plus-rounds
+date: '2025-07-31'
+date_precision: day
+type: funding
+orgs:
+- id: zerith
+  role: subject
+title:
+  zh: 零次方机器人完成天使+与天使++两轮融资
+summary:
+  zh: 2025 年 7 月 31 日消息，零次方机器人宣布完成天使+和天使++轮融资，原文表述为「亿元级」。天使+轮由包河创投、同创伟业、力合科创出资；天使++轮由水木基金、包河创投、瑞穗力合、拉尔夫创投出资。资金用于专项场景大模型算法研发、柔性产线建设（目标年底 500 台多型号机器人量产交付）与具身智能数据枢纽建设。
+counterparties:
+- 包河创投
+- 同创伟业
+- 力合科创
+- 水木基金
+- 瑞穗力合
+- 拉尔夫创投
+evidence:
+- url: https://news.pedaily.cn/202507/553006.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-zerith-angel-plus.html
+corroboration: single

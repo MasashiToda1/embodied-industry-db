@@ -1,0 +1,24 @@
+id: evt-2024-10-westlake-robotics-product_launch-xiaoxi-quadruped
+date: '2024-10'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「在『傲天』问世前，其于去年 10 月推出了第一个商业化产品『小西』，并启用量产计划」，每日商报稿件发布于 2025-05-08
+type: product_launch
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人推出首个商业化产品四足机器人「小西」并启用量产计划
+summary:
+  zh: 每日商报稿件写明西湖机器人于 2024 年 10 月推出第一个商业化产品「小西」并启用量产计划，这是该公司对外正式交付的第一台四足机器人。稿件写明「小西」体重 14 公斤，采用航天级碳纤维骨架，体形比市面上已有的最小款机器人再缩小 30%，可承载 5 公斤物品；搭载高精度激光雷达和摄像头，能自主规划路线、避开障碍物，并通过语音与老人互动，实现递送物品、陪伴散步等功能。
+axes:
+  embodiment_form: [quadruped]
+  target_scene: [healthcare, commercial-service]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://hzdaily.hangzhou.com.cn/mrsb/2025/05/08/article_detail_3_20250508A168.html
+  publisher: 每日商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/hzdaily-2025-05-08-westlake-robotics-xiaoxi.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2025-05-22-leadshine-corporate-dongguan-south-china-hq-plan
+date: 2025-05-22
+date_precision: day
+type: corporate
+orgs:
+- id: leadshine
+  role: subject
+title:
+  zh: 雷赛智能称拟在东莞滨海湾新区建华南区域总部及人形机器人核心零部件研发智造基地，并已成立东莞雷赛机器人科技
+summary:
+  zh: 5 月 22 日，雷赛智能接受特定对象调研时称，公司拟在东莞滨海湾新区投资建设华南区域总部及人形机器人核心零部件研发智造基地，项目按计划有序推进，公司为此已成立全资子公司东莞雷赛机器人科技有限公司。同次调研中公司称已成立子公司上海雷赛机器人科技有限公司聚焦超高密度无框电机与关节模组、深圳市灵巧驱控技术有限公司聚焦空心杯电机与灵巧手，通用机器人运动控制系统相关产品进入研发阶段；已有数百家机器人公司与模组厂家测试试用其产品，无框力矩电机、空心杯电机等组件已取得若干较大规模商业订单。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.stcn.com/article/detail/1842920.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/stcn-2025-05-22-leadshine-dongguan-hq-hu.html
+corroboration: single

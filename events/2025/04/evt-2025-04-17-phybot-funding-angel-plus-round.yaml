@@ -1,0 +1,27 @@
+id: evt-2025-04-17-phybot-funding-angel-plus-round
+date: '2025-04-17'
+date_precision: day
+type: funding
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技完成天使+轮融资，天使轮累计融资额超亿元
+summary:
+  zh: 4 月 17 日，通用人形机器人公司动易科技宣布完成天使+轮融资，天使轮累计融资额超亿元。本轮由清智资本领投，普超资本跟投，老股东峰瑞资本、Z 基金（智谱生态基金）追投，麟阁创投、信雅达、银杏谷资本、水木清华校友种子基金持续加码。报道称资金主要用于技术研发、团队扩充及产品商业化落地。
+counterparties:
+- 清智资本
+- 普超资本
+- 峰瑞资本
+- Z 基金（智谱生态基金）
+- 麟阁创投
+- 信雅达
+- 银杏谷资本
+- 水木清华校友种子基金
+evidence:
+- url: https://www.chinaventure.com.cn/news/114-20250417-385921.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/chinaventure-2025-04-17-phybot-angel-plus-round.html
+corroboration: single

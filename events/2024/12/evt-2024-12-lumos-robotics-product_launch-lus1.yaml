@@ -1,0 +1,22 @@
+id: evt-2024-12-lumos-robotics-product_launch-lus1
+date: '2024-12'
+date_precision: month
+date_basis: stated
+type: product_launch
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人发布全尺寸双足人形机器人 Lumos LUS1
+summary:
+  zh: 鹿明机器人官网里程碑写明 2024 年 12 月发布全尺寸双足人形机器人 Lumos LUS1，官网称这是其人形机器人平台研发的第一个重要里程碑。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.lumosbot.tech/about/
+  publisher: 鹿明机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/lumosbot-2024-12-lumos-robotics-milestone.html
+corroboration: single

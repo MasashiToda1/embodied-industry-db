@@ -1,0 +1,21 @@
+id: evt-2025-05-22-agibot-funding-jd-round
+date: 2025-05-22
+date_precision: day
+type: funding
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 京东科技与上海具身智创基金入股智元机器人
+summary:
+  zh: 国家企业信用信息公示系统显示，上海智元新创技术有限公司于 2025 年 5 月 22 日发生投资人变更，京东科技信息技术有限公司与上海具身智创创业投资合伙企业（有限合伙）成为新进股东。变更前注册资本为 8045.8159 万元，变更后增至 8263.6718 万元，京东科技与上海具身智创基金各获 61.8909 万元注册资本。
+counterparties:
+- 京东科技信息技术有限公司
+- 上海具身智创创业投资合伙企业（有限合伙）
+evidence:
+- url: https://cd.nbd.com.cn/articles/2025-05-24/3886882.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/cd-2025-05-22-agibot-jd-round.html
+corroboration: single

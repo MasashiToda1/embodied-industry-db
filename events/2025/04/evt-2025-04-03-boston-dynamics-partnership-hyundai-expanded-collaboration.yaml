@@ -1,0 +1,23 @@
+id: evt-2025-04-03-boston-dynamics-partnership-hyundai-expanded-collaboration
+date: 2025-04-03
+date_precision: day
+type: partnership
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: 波士顿动力与 Hyundai Motor Group 扩大合作，后者未来几年将采购数万台机器人
+summary:
+  zh: 4 月 3 日，波士顿动力宣布与 Hyundai Motor Group 扩大合作。公告称 Hyundai Motor Group 上周宣布在美国投资 210 亿美元，其中 60 亿美元用于创新与扩大与美国公司的战略合作；作为这笔投资的一部分，集团将在未来几年采购数万台机器人，并整合其制造能力来支持波士顿动力的产能。公告还称 Hyundai Motor Group 已在其厂区部署 Spot 做工业巡检与预测性维护；在上周佐治亚州 Bryan County 的 Hyundai Motor Group Metaplant America（HMGMA）开业典礼上，Spot 做了演示，将用于 HMGMA 焊装车间的外观质量检测，电动人形机器人 Atlas 也将在未来部署到 HMGMA。
+counterparties:
+- Hyundai Motor Group
+axes:
+  embodiment_form: [humanoid-biped, quadruped]
+  target_scene: [industrial-manufacturing, inspection-hazardous]
+evidence:
+- url: https://bostondynamics.com/news/boston-dynamics-hyundai-motor-group-expand-collaboration-drive-mobility-manufacturing-innovation/
+  publisher: 波士顿动力官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/bostondynami-2025-04-03-boston-dynamics-hyundai-.html
+corroboration: single

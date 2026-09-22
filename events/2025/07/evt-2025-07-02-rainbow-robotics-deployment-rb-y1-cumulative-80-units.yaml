@@ -1,0 +1,24 @@
+id: evt-2025-07-02-rainbow-robotics-deployment-rb-y1-cumulative-80-units
+date: 2025-07-02
+date_precision: day
+type: deployment
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人移动双臂机器人 RB-Y1 上市一年累计交付约 80 台
+summary:
+  zh: 7 月 2 日，ZDNet Korea 报道彩虹机器人的移动双臂机器人 RB-Y1 上市一年累计交付约 80 台：2024 年 9 至 12 月供应初批 30 台，2025 年上半年又售出 50 余台，目前每月产量约 10 至 20 台、投入生产人力 14 人。客户中三星电子累计购买 35 台，MIT 购买 3 台、加州大学伯克利分校 2 台。按国别计算美国占 45%、韩国占 41%。公司方面表示下半年还有约 40 至 50 台销售计划，其中 20 余台已签订供货合同。
+counterparties:
+- Samsung Electronics
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [education-research]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250702145450
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/zdnet-2025-07-02-rainbow-robotics-rby1-80.html
+corroboration: single

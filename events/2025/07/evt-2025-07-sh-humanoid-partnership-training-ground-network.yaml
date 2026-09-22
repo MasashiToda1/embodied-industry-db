@@ -1,0 +1,37 @@
+id: evt-2025-07-sh-humanoid-partnership-training-ground-network
+date: '2025-07'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，在 2025 世界人工智能大会（WAIC 2025）期间，人形机器人与具身智能创新发展论坛成功举行」，上海证券报稿件发布于 2025-07-28
+type: partnership
+orgs:
+- id: sh-humanoid
+  role: subject
+- id: baidu-cloud
+  role: counterparty
+title:
+  zh: 国地中心签约共建人形机器人训练场合作生态，在江苏、河南建设训练场分中心
+summary:
+  zh: 在 2025 世界人工智能大会期间的人形机器人与具身智能创新发展论坛上，国家地方共建人形机器人创新中心与河南分训练场、常熟分训练场，以及中国联通、上海人工智能实验室、百度智能云、华为云等核心单位共同参与训练场合作生态签约。报道写明双方将在江苏、河南建设人形机器人训练场分中心。同场由中国人形机器人百人会发起，国地中心与国家地方共建具身智能机器人创新中心共同发布《人形机器人与具身智能数据采集合作倡议书》，内容包括数据标准互认、数据与工具链共享、数据训练场开放。
+counterparties:
+- 河南投资集团
+- 常熟城投集团
+- 中国联通（上海联通）
+- 上海人工智能实验室
+- 华为云
+- 中国人形机器人百人会
+- 国家地方共建具身智能机器人创新中心
+axes:
+  data_sourcing: [gov-training-ground, academic-partnership]
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-07-28/doc-infhywqz5774422.shtml
+  publisher: 上海证券报·中国证券网（新浪财经转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/finance-2025-07-28-sh-humanoid-training-gro.html
+- url: https://news.qq.com/rain/a/20250728A09SQI00
+  publisher: 文汇报（上观新闻，腾讯新闻转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-28-sh-humanoid-qinglong-mat.html
+corroboration: multi

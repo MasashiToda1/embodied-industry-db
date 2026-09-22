@@ -1,0 +1,22 @@
+id: evt-2024-10-30-boston-dynamics-product_launch-atlas-autonomous-part-sequencing
+date: 2024-10-30
+date_precision: day
+type: product_launch
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: 波士顿动力公布电动 Atlas 全自主搬运发动机罩盖
+summary:
+  zh: 10 月 30 日，波士顿动力发布视频「Atlas Goes Hands On」，展示电动 Atlas 在供应商料箱与移动排序台车之间自主搬运发动机罩盖。机器人的输入只是一份料箱位置清单，用机器学习视觉模型检测并定位环境工装与各个料箱，用专门的抓取策略并持续估计被操作物体的状态。官方称视频中没有任何预设或遥操作动作，全部动作在线自主生成；机器人能用视觉、力与本体感知传感器检测并应对环境变化（如工装移动）和动作失败（如罩盖没插进去、绊到、与环境碰撞）。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+  data_modality: [rgb, force-torque, joint-trajectory]
+evidence:
+- url: https://bostondynamics.com/video/atlas-goes-hands-on/
+  publisher: 波士顿动力官网视频页
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/bostondynami-2024-10-30-boston-dynamics-atlas-ha.html
+corroboration: single

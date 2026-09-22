@@ -1,0 +1,18 @@
+id: evt-2025-07-30-horizon-robotics-publication-roboorchardcore
+date: '2025-07-30'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线开源机器人运行时底座 RoboOrchardCore 并发布 v0.1.0
+summary:
+  zh: 7 月 30 日，地平线在 GitHub 的 HorizonRobotics 组织下发布 RoboOrchardCore v0.1.0。RoboOrchardCore 是 RoboOrchard 系列软件包的运行时底座，提供类型化配置、张量化数据类型、管理器驱动的环境循环与命令行工具，让仿真、训练与部署代码共用同一套接口约定。
+evidence:
+- url: https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.1.0-release
+  publisher: 地平线 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-30-horizon-robotics-roboorc.html
+corroboration: single

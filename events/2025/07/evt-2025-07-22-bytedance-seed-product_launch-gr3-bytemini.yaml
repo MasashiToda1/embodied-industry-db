@@ -1,0 +1,23 @@
+id: evt-2025-07-22-bytedance-seed-product_launch-gr3-bytemini
+date: 2025-07-22
+date_precision: day
+type: product_launch
+orgs:
+- id: bytedance-seed
+  role: subject
+title:
+  zh: 字节跳动 Seed 发布通用机器人模型 GR-3 与双臂移动机器人 ByteMini
+summary:
+  zh: 7 月 22 日，字节跳动 Seed 团队发布视觉 - 语言 - 动作模型 GR-3，称其可泛化到新物体与新环境、理解含抽象概念的指令并操作柔性物体，支持用少量人类轨迹数据微调。同时发布配套的双臂移动机器人 ByteMini，全身 22 个自由度、无偏置 7 自由度机械臂与球形手腕设计，搭载全身运动控制（WBC）系统。
+axes:
+  embodiment_form: [mobile-manipulator]
+  model_form: [end2end-vla]
+  control_route: [wbc]
+  data_acquisition: [teleop]
+evidence:
+- url: https://seed.bytedance.com/zh/blog/seed-research-gr-3-released-a-generalist-robot-model-for-generalization-long-horizon-tasks-and-bi-manual-deformable-object-manipulation
+  publisher: 字节跳动 Seed
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/seed-2025-07-22-bytedance-seed-gr3.html
+corroboration: single

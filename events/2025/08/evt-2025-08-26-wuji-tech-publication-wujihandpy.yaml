@@ -1,0 +1,18 @@
+id: evt-2025-08-26-wuji-tech-publication-wujihandpy
+date: '2025-08-26'
+date_precision: day
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技开源 Wuji Hand SDK（wujihandpy）
+summary:
+  zh: 舞肌科技在 GitHub 组织 wuji-technology 下创建并开源 wujihandpy 仓库，发布 Wuji Hand 灵巧手的 SDK，由 C++ 核心与 Python 绑定组成，支持同步、异步与实时控制，采用 MIT 许可证，可通过 pip 安装。
+evidence:
+- url: https://github.com/wuji-technology/wujihandpy
+  publisher: GitHub · wuji-technology
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-26-wuji-tech-wujihandpy.html
+corroboration: single

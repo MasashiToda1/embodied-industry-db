@@ -1,0 +1,23 @@
+id: evt-2025-02-25-apptronik-partnership-jabil-apollo-manufacturing
+date: 2025-02-25
+date_precision: day
+type: partnership
+orgs:
+- id: apptronik
+  role: subject
+title:
+  zh: Apptronik 与 Jabil 合作：Apollo 进 Jabil 工厂试点，Jabil 后续代工 Apollo
+summary:
+  zh: 2 月 25 日，Apptronik 宣布与制造与供应链公司 Jabil 达成试点与战略合作。数量未披露的 Apollo 机器人将进入 Jabil 的工厂，执行分拣、搬运零件等简单重复的厂内物流与制造任务；Jabil 同时成为 Apptronik 的制造伙伴，待 Apollo 被判定具备商业可行性后，由 Jabil 在自有工厂生产 Apollo，包括生产 Apollo 的产线本身。此前 Apptronik 于 2024 年 3 月宣布与 Mercedes-Benz 的合作，公司向 TechCrunch 表示该合作仍在进行，但尚未走出试点阶段。
+counterparties:
+- Jabil
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://techcrunch.com/2025/02/25/apptroniks-humanoid-robots-take-the-first-steps-toward-building-themselves/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/techcrunch-2025-02-25-apptronik-jabil-collabor.html
+corroboration: single

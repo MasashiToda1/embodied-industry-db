@@ -1,0 +1,22 @@
+id: evt-2025-02-qianjue-funding-angel-plus-round
+date: '2025-02'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「2025 年 2 月，公司又完成了天使 + 轮融资，投资人为智元机器人」（报道发布于 2025-05-07）
+type: funding
+orgs:
+- id: qianjue
+  role: subject
+- id: agibot
+  role: investor
+title:
+  zh: 千觉机器人完成天使 + 轮融资，智元机器人入股
+summary:
+  zh: 千觉机器人于 2025 年 2 月完成天使 + 轮融资，投资人为智元机器人。报道引用企查查数据称，智元机器人持有千觉机器人约 1.45% 股权。
+evidence:
+- url: https://news.qq.com/rain/a/20250507A068DO00
+  publisher: 瑞财经（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-06-qianjue-seed-rounds.html
+corroboration: single

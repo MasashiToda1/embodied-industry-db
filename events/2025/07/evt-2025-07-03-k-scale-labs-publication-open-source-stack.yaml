@@ -1,0 +1,26 @@
+id: evt-2025-07-03-k-scale-labs-publication-open-source-stack
+date: 2025-07-03
+date_precision: day
+type: publication
+orgs:
+- id: k-scale-labs
+  role: subject
+title:
+  zh: K-Scale Labs 公开 K-Bot 的开源硬件与软件栈
+summary:
+  zh: 7 月 3 日，K-Scale Labs 在 Hacker News 的 Launch HN 帖中写明，公司的做法是把硬件与软件都开源，仓库集中在 github.com/kscalelabs，文档在 docs.kscale.dev。帖子给出的理由有两条：把参考设计公开后，供应商更容易给出有竞争力的方案，制造伙伴也更容易按自己的产线调整设计，从而绕开关税与制造上的困难；另一条是面向想上手折腾人形机器人的开发者客户群，开源软硬件本身就是卖点。GitHub 上的 kbot 仓库写明 K-Bot 是 K-Scale Labs 的开源人形机器人，处于 public alpha 阶段，硬件部分按 CERN-OHL-S 授权，软件部分按 GPL v3 授权。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://news.ycombinator.com/item?id=44456904
+  publisher: Hacker News · K-Scale Labs Launch HN 帖
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-03-k-scale-labs-launch-hn.html
+- url: https://github.com/kscalelabs/kbot
+  publisher: GitHub · kscalelabs
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-03-k-scale-labs-kbot-repo.html
+corroboration: single

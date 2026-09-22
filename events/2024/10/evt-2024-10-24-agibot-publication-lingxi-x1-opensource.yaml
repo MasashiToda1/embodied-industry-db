@@ -1,0 +1,27 @@
+id: evt-2024-10-24-agibot-publication-lingxi-x1-opensource
+date: 2024-10-24
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 AgibotTech/agibot_x1_infer 与 agibot_x1_train 的 created_at 为 2024-10-23，agibot_x1_hardware 为 2024-10-24
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人开源灵犀 X1 的软硬件全栈资料
+summary:
+  zh: 智元机器人在 GitHub 开源灵犀 X1 的推理模块（agibot_x1_infer）、强化学习训练代码（agibot_x1_train）与硬件设计（agibot_x1_hardware）。README 写明 AgiBot X1 是智元自研并开源的模块化高自由度人形机器人，以智元开源框架 AimRT 作为中间件，运动控制采用强化学习，配套软件包含模型推理、平台驱动与软件仿真等模块。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://github.com/AgibotTech/agibot_x1_infer
+  publisher: AgiBot（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-24-agibot-x1-opensource.html
+corroboration: single

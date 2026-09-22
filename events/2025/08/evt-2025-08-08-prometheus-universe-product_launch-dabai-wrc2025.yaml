@@ -1,0 +1,21 @@
+id: evt-2025-08-08-prometheus-universe-product_launch-dabai-wrc2025
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙在 2025 世界机器人大会首发大白机器人
+summary:
+  zh: 8 月 8 日，世界机器人大会在北京开幕，普罗宇宙携旗下新品大白机器人首发亮相。官网新闻称该产品为工业级具身智能机器人，面向工业场景智能制造领域。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.pl-universe.com/article/8/detail/10
+  publisher: 普罗宇宙官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/pl-universe-2025-08-08-prometheus-universe-daba.html
+corroboration: single

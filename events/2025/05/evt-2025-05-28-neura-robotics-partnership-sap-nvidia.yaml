@@ -1,0 +1,25 @@
+id: evt-2025-05-28-neura-robotics-partnership-sap-nvidia
+date: 2025-05-28
+date_precision: day
+type: partnership
+orgs:
+- id: neura-robotics
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: NEURA Robotics 与 SAP、NVIDIA 达成战略合作，把企业系统接到机器人执行端
+summary:
+  zh: 5 月 28 日，NEURA Robotics 宣布与 SAP 和 NVIDIA 达成战略合作。公告给出的四步流程是：在 NVIDIA Isaac Sim 里用 SAP 的应用数据与 AI 模型训练新的机器人用例；在 NVIDIA Omniverse 里结合 SAP 的业务上下文与数字孪生做验证；验证通过后把 AI 模型与 SAP agent 部署到 Neuraverse 生态或直接部署到机器人上；机器人执行任务时把反馈数据回传给 SAP 与 NVIDIA，闭合学习回路。
+counterparties:
+- SAP
+axes:
+  sim_stack: [isaac-sim]
+  data_sourcing: [customer-feedback]
+evidence:
+- url: https://neura-robotics.com/strategic-collaboration-with-sap-and-nvidia/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/neura-roboti-2025-05-28-neura-robotics-sap-nvidi.html
+corroboration: single

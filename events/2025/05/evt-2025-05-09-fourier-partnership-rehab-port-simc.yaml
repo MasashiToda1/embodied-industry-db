@@ -1,0 +1,23 @@
+id: evt-2025-05-09-fourier-partnership-rehab-port-simc
+date: 2025-05-09
+date_precision: day
+type: partnership
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶与上海国际医学中心共建「具身智能康复港」
+summary:
+  zh: 5 月 9 日，傅利叶与上海国际医学中心举行「具身智能康复港」揭牌仪式。双方将围绕具身智能机器人在康复医疗场景的应用标准建设、康复方案共创、科研攻关等展开合作，共同打造国内首个具身智能康复示范基地。
+counterparties:
+- 上海国际医学中心
+axes:
+  target_scene:
+  - healthcare
+evidence:
+- url: https://www.yicai.com/news/102607558.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/yicai-2025-05-09-fourier-rehab-port.html
+corroboration: single

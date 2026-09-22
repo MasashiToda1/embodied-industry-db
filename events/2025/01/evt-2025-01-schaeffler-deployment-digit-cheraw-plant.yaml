@@ -1,0 +1,25 @@
+id: evt-2025-01-schaeffler-deployment-digit-cheraw-plant
+date: 2025-01
+date_precision: month
+date_basis: derived
+date_as_stated: 舍弗勒官方内容平台 tomorrow 原文「since the beginning of 2025, Digit has been loading and unloading a washing machine at Schaeffler's American plant in Cheraw (South Carolina)」
+type: deployment
+orgs:
+- id: schaeffler
+  role: subject
+- id: agility
+  role: supplier
+title:
+  zh: 舍弗勒美国 Cheraw 工厂启用 Agility Robotics 的 Digit 人形机器人上下料
+summary:
+  zh: 舍弗勒官方内容平台 tomorrow 刊发的文章称，自 2025 年初起 Digit 在舍弗勒位于美国南卡罗来纳州 Cheraw 的工厂承担清洗机的上下料工作。文章称 Digit 由 Agility Robotics 开发和生产，身高 1.75 米、重量略低于 65 公斤；舍弗勒既是 Agility Robotics 的客户，也持有其少数股权，并已与对方约定在舍弗勒全球制造基地部署人形机器人。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://schaeffler-tomorrow.com/en/article/welcome-aboard-robo
+  publisher: 舍弗勒官网 tomorrow
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/schaeffler-t-2025-01-schaeffler-digit-cheraw-.html
+corroboration: single

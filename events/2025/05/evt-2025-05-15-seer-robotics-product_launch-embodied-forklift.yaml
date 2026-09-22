@@ -1,0 +1,24 @@
+id: evt-2025-05-15-seer-robotics-product_launch-embodied-forklift
+date: 2025-05-15
+date_precision: day
+type: product_launch
+orgs:
+- id: seer-robotics
+  role: subject
+title:
+  zh: 仙工智能发布具身智能叉车，并推出支持机器狗开发的 SRC-1000 系列控制器
+summary:
+  zh: 5 月 15 日，仙工智能发布具身智能叉车，称其以「大脑 + 小脑」感知决策体系为核心，融合多层语义地图、端到端导航与 VLA／强化学习：多层语义地图包含 3D 点云层与环境语义层，端到端导航从原始传感器数据直接映射到叉车控制指令，VLA 与强化学习框架用工业场景人工叉车真实数据训练。同期公司控制器系列新增 SRC-1000 与双舵轮控制器 SRC-1100，支持 EtherCAT、多核异构架构与 Codesys 插件，SRC-1100 可支持四足、六足机器狗的定制化开发。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  embodiment_form: [quadruped]
+  model_form: [end2end-vla]
+  control_route: [rl]
+  data_acquisition: [real-robot]
+evidence:
+- url: https://seer-robotics.ai/zh/media/252
+  publisher: 仙工智能
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/seer-robotic-2025-05-15-seer-robotics-embodied-f.html
+corroboration: single

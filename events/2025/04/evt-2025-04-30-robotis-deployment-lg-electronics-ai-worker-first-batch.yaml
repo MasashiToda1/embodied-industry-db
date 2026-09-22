@@ -1,0 +1,24 @@
+id: evt-2025-04-30-robotis-deployment-lg-electronics-ai-worker-first-batch
+date: 2025-04-30
+date_precision: day
+type: deployment
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 向 LG 电子交付首批作业型半人形机器人 AI Worker
+summary:
+  zh: 4 月 30 日，ROBOTIS 代表在 Eugene 投资证券「Robotics Day」研讨会上表示，已完成向 LG 电子的 AI Worker 首批交付，并在准备下个月的第二批交付。ZDNet Korea 报道供给 LG 电子的 AI Worker 为研究用产品，具体交付数量未公开。ROBOTIS 计划 7 月正式发售 AI Worker，2025 年下半年在韩国国内供应 100 余台，2026 年销售目标为 200 台以上。
+counterparties:
+- LG Electronics
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [education-research]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250430162916
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/zdnet-2025-04-30-robotis-lg-ai-worker-fir.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2025-07-23-limx-partnership-saic-beijing-lab
+date: '2025-07-23'
+date_precision: day
+type: partnership
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 上汽北京与逐际动力签署战略合作备忘录，共建具身智能联合实验室
+summary:
+  zh: 7 月 23 日，上海汽车集团（北京）有限公司与逐际动力在北京签署战略合作备忘录，成立具身智能联合实验室，围绕汽车场景开展具身机器人算法研发、系统开发与工具链部署，并在汽车制造场景开展人形机器人数据采集、训练与测评。逐际动力为合作提供机器人本体、全身运控算法、VLA 模型框架、数据引擎与工具链平台。同一公告称逐际动力与上海机器人产业技术研究院达成合作意向，在机器人检测认证、标准制定及数据采集体系方面提供支持。
+counterparties:
+- 上海汽车集团（北京）有限公司
+- 上海机器人产业技术研究院
+axes:
+  target_scene:
+  - industrial-manufacturing
+  data_acquisition:
+  - real-robot
+  - teleop
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000023
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/limxdynamics-2025-07-23-limx-saic-beijing-lab.html
+corroboration: single

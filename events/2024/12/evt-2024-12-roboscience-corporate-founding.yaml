@@ -1,0 +1,18 @@
+id: evt-2024-12-roboscience-corporate-founding
+date: '2024-12'
+date_precision: month
+type: corporate
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: 北京机科未来科技有限公司注册成立
+summary:
+  zh: RoboScience 官网公司新闻写明，公司注册成立于 2024 年 12 月底，自 2025 年 3 月开始正式运营。公司由前苹果设备端机器学习平台技术负责人田野与新加坡国立大学计算机系助理教授邵林共同创立。
+evidence:
+- url: https://www.roboscience.co/jishu_detail/5.html
+  publisher: RoboScience 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/roboscience-2024-12-roboscience-founding.html
+corroboration: single

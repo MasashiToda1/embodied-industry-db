@@ -1,0 +1,36 @@
+id: evt-2025-04-14-rlwrld-funding-seed-15m
+date: 2025-04-14
+date_precision: day
+type: funding
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: RLWRLD 完成 1500 万美元种子轮，韩日产业方与风投共同参与
+summary:
+  zh: 4 月 14 日，RLWRLD 发布公告宣布完成 1500 万美元种子轮融资，投资方包括 LG Electronics、SK Telecom、KDDI、ANA Holdings、Mitsui Chemicals、Shimadzu Corporation 等韩日产业公司，以及 Hashed、Mirae Asset、Global Brain 等风险投资机构。公司称资金用于扩展产业伙伴现场的数据管线、推进机器人基础模型技术栈、加深与亚洲及北美机器人与传感器公司的集成，并与 KAIST、首尔大学、POSTECH 及 WIRobotics、Rainbow Robotics、Wonik Robotics、ROBOTIS 等机器人厂商建立合作生态。TechCrunch 同日报道该轮为 210 亿韩元、由 Hashed 领投。
+counterparties:
+- LG Electronics
+- SK Telecom
+- KDDI
+- ANA Holdings
+- Mitsui Chemicals
+- Shimadzu Corporation
+- Hashed
+- Mirae Asset Venture Investment
+- Global Brain
+amount:
+  value: 15000000
+  currency: USD
+evidence:
+- url: https://www.prnewswire.com/news-releases/rlwrld-raises-15m-to-build-gpt-for-robots-backed-by-asias-industrial-giants-302427574.html
+  publisher: RLWRLD（PR Newswire 发布）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/prnewswire-2025-04-14-rlwrld-seed-15m.html
+- url: https://techcrunch.com/2025/04/14/rlwrld-raises-14-4m-to-build-foundation-model-for-robotics/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/techcrunch-2025-04-14-rlwrld-seed-techcrunch.html
+corroboration: multi

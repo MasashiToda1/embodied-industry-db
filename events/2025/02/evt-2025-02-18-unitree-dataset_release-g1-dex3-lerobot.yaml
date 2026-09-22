@@ -1,0 +1,35 @@
+id: evt-2025-02-18-unitree-dataset_release-g1-dex3-lerobot
+date: 2025-02-18
+date_precision: day
+date_basis: derived
+date_as_stated: Hugging Face 数据集 API 元数据中 createdAt 为 2025-02-18T09:36:00.000Z
+type: dataset_release
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技在 Hugging Face 发布 G1 Dex3 操作数据集系列
+summary:
+  zh: 宇树科技在 Hugging Face 以 LeRobot 格式发布 G1 搭配 Dex3 灵巧手的操作数据集系列，首个数据集 G1_Dex3_BlockStacking_Dataset 含 281k 行、300 个 episode，采用 Apache-2.0 许可，标注任务类别为 Robotics，模态包含 tabular、time-series 与 video。同期发布的还有 G1_Dex3_CameraPackaging、G1_Dex3_GraspSquare、G1_Dex3_ObjectPlacement 等同系列数据集。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_acquisition:
+  - teleop
+  - real-robot
+  data_modality:
+  - joint-trajectory
+  - rgb
+  data_openness: fully-open
+evidence:
+- url: https://huggingface.co/datasets/unitreerobotics/G1_Dex3_BlockStacking_Dataset
+  publisher: Unitree Robotics（Hugging Face）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/huggingface-2025-02-unitree-g1-dex3-datasets.html
+- url: https://huggingface.co/api/datasets/unitreerobotics/G1_Dex3_BlockStacking_Dataset
+  publisher: Hugging Face API
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/huggingface-2025-02-18-unitree-g1-dex3-api.html
+corroboration: single

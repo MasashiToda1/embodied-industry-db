@@ -1,0 +1,30 @@
+id: evt-2025-04-28-hf-robotics-product_launch-so-101-arm
+date: 2025-04-28
+date_precision: day
+type: product_launch
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 推出可 3D 打印的开源机械臂 SO-101，基础价 100 美元
+summary:
+  zh: 4 月 28 日，Hugging Face 推出可编程、可 3D 打印的机械臂 SO-101，是 2024 年 10 月与法国 The Robot Studio 合作推出的 SO-100 的后续型号。TechCrunch 报道 SO-101 基础价同为 100 美元，组装更快，电机改进后摩擦更小、机械臂可支撑自身重量，配相机后可用强化学习训练完成把乐高块放进箱子这类任务。这次合作方除 The Robot Studio 外还有机器人商店 WowRobo、IoT 硬件供应商 Seeed Studio 与零件商 PartaBot。报道说明 100 美元是基础价，整机组装件与关税会让实际价格从 100 美元到约 500 美元不等。
+counterparties:
+- The Robot Studio
+- WowRobo
+- Seeed Studio
+- PartaBot
+amount:
+  value: 100
+  currency: USD
+axes:
+  embodiment_form: [arm]
+  delivery_model: [hardware-sale]
+  data_openness: fully-open
+evidence:
+- url: https://techcrunch.com/2025/04/28/hugging-face-releases-a-3d-printed-robotic-arm-starting-at-100/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/techcrunch-2025-04-28-hf-robotics-so101.html
+corroboration: single

@@ -15,6 +15,7 @@ hq:
   city: 上海
 description: 做多模态视触觉传感器与触觉数采、仿真的公司，产品有精灵指尖触觉传感器、XTac 数采夹爪与 Xense Sim。
 accounts:
+  github: XenseRobotics   # GitHub 组织显示名「千觉机器人｜Xense Robotics」，登记站点 xenserobotics.com
   site: https://www.xenserobotics.com
 sources:
 - url: https://www.xenserobotics.com/aboutus/38

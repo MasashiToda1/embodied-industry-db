@@ -1,0 +1,22 @@
+id: evt-2025-07-mech-mind-product_launch-eye-brain-hand-waic2025
+date: 2025-07
+date_precision: month
+type: product_launch
+orgs:
+- id: mech-mind
+  role: subject
+title:
+  zh: 梅卡曼德在 WAIC 2025 展出具身智能「眼脑手」全栈产品 Mech-Eye、Mech-GPT 与 Mech-Hand
+summary:
+  zh: 在 2025 世界人工智能大会现场，梅卡曼德展出自研 Mech-Eye 高精度 3D 相机、Mech-GPT 多模态大模型与 Mech-Hand 五指灵巧手。公司称 Mech-Eye 精度最高可达微米级；Mech-GPT 使机器人仅凭自然语言指令即可自主执行抓取、上料、分拣等任务；Mech-Hand 设计紧凑，搭配泛化 AI 抓取算法操作多种物品。现场还展示了深框无序上料与高速小零件无序上料应用，公司称小零件抓取每件时间小于 1.9 秒。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  embodiment_form: [arm]
+  data_modality: [rgbd, pointcloud]
+evidence:
+- url: https://engineering-china.com/news/98942-waic-2025-mech-mind-%E5%B1%95%E7%8E%B0%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E7%9A%84%E2%80%9C%E7%9C%BC%E8%84%91%E6%89%8B%E2%80%9D%E8%83%BD%E5%8A%9B
+  publisher: 工程中国
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/engineering--2025-07-mech-mind-waic2025-eye-b.html
+corroboration: single

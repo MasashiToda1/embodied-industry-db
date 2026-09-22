@@ -13,6 +13,7 @@ layers:
 upstream:
   robotics_notebooks_institution: leju
 accounts:
+  github: LejuRobotics   # GitHub 组织显示名 Leju Robotics，blog 指向官网 lejurobot.com
   site: https://www.lejurobot.com
 sources:
 - url: https://www.cls.cn/detail/2176420

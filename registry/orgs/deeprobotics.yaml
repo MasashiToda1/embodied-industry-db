@@ -18,7 +18,8 @@ upstream:
   robotics_notebooks_institution: deeprobotics
 accounts:
   huggingface: deeproboticslab
-  github: DeepRoboticsResearch
+  github: DeepRoboticsLab   # 订正：原填 DeepRoboticsResearch 是同名学术组（blog deeprobo.github.io，末次提交 2019），
+                            # 云深处官方组织是 DeepRoboticsLab（blog 指向官网 deeprobotics.us）
   site: https://www.deeprobotics.cn
 sources:
 - url: https://www.deeprobotics.cn/robot/index/company.html

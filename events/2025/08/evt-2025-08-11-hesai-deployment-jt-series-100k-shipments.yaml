@@ -1,0 +1,20 @@
+id: evt-2025-08-11-hesai-deployment-jt-series-100k-shipments
+date: '2025-08-11'
+date_precision: day
+type: deployment
+orgs:
+- id: hesai
+  role: subject
+title:
+  zh: 禾赛称机器人激光雷达 JT 系列出货量达 10 万台
+summary:
+  zh: 8 月 11 日刊发的访谈报道称，禾赛科技在 2025 世界机器人大会现场展出用于机器人领域的 JT 系列激光雷达，该系列产品发布时间不足 5 个月、出货量已达到 10 万台。公司方面称面向割草机出货的激光雷达价格为千元级，机器人激光雷达的价格区间为千元到万元。
+axes:
+  data_modality: [pointcloud]
+evidence:
+- url: https://www.laserfair.com/news/202508/11/88861.html
+  publisher: 激光制造网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/laserfair-2025-08-11-hesai-jt-100k.html
+corroboration: single

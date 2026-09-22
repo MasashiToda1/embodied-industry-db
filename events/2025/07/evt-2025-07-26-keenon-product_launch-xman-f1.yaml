@@ -1,0 +1,21 @@
+id: evt-2025-07-26-keenon-product_launch-xman-f1
+date: 2025-07-26
+date_precision: day
+type: product_launch
+orgs:
+- id: keenon
+  role: subject
+title:
+  zh: 擎朗智能推出双足人形具身服务机器人 XMAN-F1
+summary:
+  zh: 7 月 26 日，擎朗智能宣布推出双足人形具身服务机器人 XMAN-F1，并在 2025 世界人工智能大会上首秀。官方介绍该机型通过仿生运动控制与双足动态平衡技术，在餐厅酒店、医疗零售场景内的台阶、斜坡、楼梯等场景执行任务，可胜任餐食制作、配餐收台、房间整理等岗位操作，并可与擎朗其他形态服务机器人协作，配送由专用机器人 T10 / W3 承担。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [commercial-service]
+evidence:
+- url: https://www.ithome.com/0/870/910.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ithome-2025-07-26-keenon-xman-f1.html
+corroboration: single

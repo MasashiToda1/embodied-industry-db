@@ -1,0 +1,24 @@
+id: evt-2025-05-uniq-robot-funding-angel-and-angel-plus
+date: '2025-05'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「日前，苏州优理奇机器人（UniXAI）公司宣布完成数亿元天使轮及天使+轮融资」，新华日报财经稿件发布于 2025-05-30
+type: funding
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇机器人完成天使轮及天使+轮融资，原话为「数亿元」
+summary:
+  zh: 新华日报财经稿件写明苏州优理奇机器人宣布完成天使轮及天使+轮融资，原话为「数亿元」，未披露确定金额。投资方为中关村前沿基金、赛纳资本及长安私人资本。稿件写明资金用于加速研发多模态具身智能大模型与通用机器人本体的同步演进，以及面向泛商业服务和 C 端场景的落地与交付。
+counterparties:
+- 中关村前沿基金
+- 赛纳资本
+- 长安私人资本
+evidence:
+- url: https://www.xhby.net/content/s683955f9e4b0cade5e5bc73a.html
+  publisher: 新华日报财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/xhby-2025-05-30-uniq-robot-angel-funding.html
+corroboration: single

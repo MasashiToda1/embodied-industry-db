@@ -1,0 +1,26 @@
+id: evt-2025-06-09-zhuoyide-pricing-xingzhe2-jd
+date: '2025-06-09'
+date_precision: day
+type: pricing
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得「行者二号」在京东商城上线，售价 16.98 万元起
+summary:
+  zh: 6 月 9 日，卓益得「行者二号」人形机器人在京东商城正式上线，售价 16.98 万元起。每日经济新闻 6 月 18 日报道，公司创始人称上线当晚即产生订单，正在准备产能交付。行者二号由上海卓益得机器人有限公司与中豫具身智能实验室联合研发，采用仿人肌腱驱动、以绳驱技术作为腿部驱动核心，曾在 2025 年 4 月北京亦庄人形机器人半程马拉松中获季军。
+amount:
+  value: 169800
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: http://m.nbd.com.cn/articles/2025-06-19/3914792.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/m-2025-06-09-zhuoyide-xingzhe2-jd-pri.html
+corroboration: single

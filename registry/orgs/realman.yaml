@@ -17,6 +17,7 @@ layers:
 upstream:
   robotics_notebooks_institution: realman
 accounts:
+  github: RealManRobot   # RM_API2 仓库描述写「developed for Realman Robot (realman-robotics.com)」，README 为睿尔曼机械臂二次开发
   site: https://www.realman-robotics.com
 sources:
 - url: https://www.36kr.com/p/3944696405572742

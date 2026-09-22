@@ -1,0 +1,39 @@
+id: evt-2024-10-16-limx-product-launch-tron1
+date: '2024-10-16'
+date_precision: day
+type: product_launch
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力发售首款多形态双足机器人 TRON 1，标准版早鸟价 6.98 万元起
+summary:
+  zh: 10 月 16 日，逐际动力正式对外发售首款多形态双足机器人 TRON 1，中国和海外同步上架，标准版早鸟价 6.98 万元起，早鸟折扣期至 2024 年 12 月 31 日。TRON 1 采用「三合一」模块化足端设计，配备双点足、双足、双轮足三种可快拆足端，支持足端自适应识别与运控模式自动切换，开放底层硬件接口与 SDK，支持 Python 全流程开发、Sim2Real 一键部署，兼容 Isaac、Mujoco、Gazebo 等仿真平台。
+amount:
+  value: 69800
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+  sim_stack:
+  - isaac-sim
+  - mujoco
+  control_route:
+  - rl
+  - mpc
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000014
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/limxdynamics-2024-10-16-limx-tron1-launch.html
+- url: https://www.ithome.com/0/802/665.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/ithome-2024-10-16-limx-tron1-ithome.html
+corroboration: multi

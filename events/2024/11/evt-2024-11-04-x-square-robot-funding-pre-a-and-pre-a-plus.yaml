@@ -1,0 +1,26 @@
+id: evt-2024-11-04-x-square-robot-funding-pre-a-and-pre-a-plus
+date: '2024-11-04'
+date_precision: day
+date_basis: derived
+date_as_stated: 投资界 2024 年 11 月 4 日消息，原文「据《智能涌现》报道……连续完成 Pre-A 与 Pre-A+ 轮融资」
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人连续完成 Pre-A 与 Pre-A+ 两轮融资
+summary:
+  zh: 2024 年 11 月 4 日消息，自变量机器人连续完成 Pre-A 与 Pre-A+ 轮融资，原文称总金额达到亿元级。投资方包括德联资本、基石资本、啟赋资本、南山战新投，老股东九合创投持续加注。融资用于下一代统一具身智能大模型的训练与场景落地。
+counterparties:
+- 德联资本
+- 基石资本
+- 啟赋资本
+- 南山战新投
+- 九合创投
+evidence:
+- url: https://news.pedaily.cn/202411/542429.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/news-2024-11-x-square-robot-pre-a-plu.html
+corroboration: single

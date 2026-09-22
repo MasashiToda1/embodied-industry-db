@@ -1,0 +1,22 @@
+id: evt-2025-01-20-linkerbot-product_launch-titanium-t10-t20
+date: '2025-01-20'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近期，专注于具身智能灵巧手和云端智能的灵心巧手（Linkerbot）全新发布了其自主研发的 Linker Hand 灵巧手钛金版 T10、T20」
+type: product_launch
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手发布 Linker Hand 灵巧手钛金版 T10、T20
+summary:
+  zh: 灵心巧手发布自主研发的 Linker Hand 灵巧手钛金版 T10、T20，售价分别为 19999 元和 49999 元。钛金版采用单指模块化设计和连杆驱动，工业版自由度 25—30 个，科研版最高自由度 42 个，最大负载 5kg，配备摄像头与电子皮肤的视触觉感知系统，支持 ROS 插件与 CAN 总线连接。
+axes:
+  data_modality: [tactile, rgb]
+evidence:
+- url: https://news.qq.com/rain/a/20250120A08BVH00
+  publisher: 机器人大讲堂（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-20-linkerbot-titanium-t10-t.html
+corroboration: single

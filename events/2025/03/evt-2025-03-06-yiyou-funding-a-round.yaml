@@ -1,0 +1,27 @@
+id: evt-2025-03-06-yiyou-funding-a-round
+date: '2025-03-06'
+date_precision: day
+type: funding
+orgs:
+- id: yiyou
+  role: subject
+title:
+  zh: 意优科技完成五千万元 A 轮融资
+summary:
+  zh: 3 月 6 日，人形机器人核心关节模组制造商意优科技宣布完成五千万元人民币 A 轮融资，由浦东创投集团旗下浦东天使基金、张江科投旗下张科垚坤基金联合领投，TCL 创投、道生资本、锡创投旗下金投致源跟投，资金用于核心技术研发与生产产能扩张。报道称本轮融资后公司主体将变更为上海意优智控科技有限公司并迁入上海张江机器人谷。
+counterparties:
+- 浦东天使基金
+- 张科垚坤基金
+- TCL 创投
+- 道生资本
+- 金投致源
+amount:
+  value: 50000000
+  currency: CNY
+evidence:
+- url: https://news.qq.com/rain/a/20250306A02AWY00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-06-yiyou-a-round.html
+corroboration: single

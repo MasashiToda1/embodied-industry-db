@@ -1,0 +1,29 @@
+id: evt-2025-04-28-digital-china-humanoid-product-launch-xingxingxia-p01
+date: '2025-04-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏发布双形态人形机器人星行侠 P01
+summary:
+  zh: 4 月 28 日，数字华夏（深圳）科技有限公司正式发布 IP 系列机器人星行侠 P01，官方称其为全球首款双形态人形机器人。产品支持「本体模式」与搭载「风火轮」自适应底盘的「飞兵模式」自由切换，具备双足行走、轮式移动、导航避障、自动充电和电梯联动跨楼层能力，续航超过 10 小时，面向商场、展馆、办公楼等场景。星行侠是继夏澜、夏起之后的第三款重点人形机器人产品，发布即开启预售、招募 100 名创始版用户，价格未公布。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+  target_scene:
+  - commercial-service
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/117.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/digit-2025-04-28-dch-xingxingxia-launch.html
+- url: http://chinaaet.com/article/3000171415
+  publisher: 电子技术应用（转载 IT之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/chinaaet-2025-04-28-dch-xingxingxia-aet.html
+corroboration: multi

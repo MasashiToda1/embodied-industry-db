@@ -12,7 +12,6 @@ layers:
 upstream:
   robotics_notebooks_institution: roboscience
 accounts:
-  github: roboscienceorg
   site: https://www.roboscience.co
 founded: 2024-12
 hq:
@@ -28,3 +27,9 @@ sources:
   tier: official
   retrieved: '2026-09-22'
   note: 英文官网，主体名称「北京机科未来科技有限公司」
+- url: https://github.com/roboscienceorg
+  tier: official
+  retrieved: '2026-09-22'
+  note: 已删除原填的 github 账号 roboscienceorg。该组织显示名 RoboScience、简介「Open Source Robotics
+    Education Project」、站点 roboscience.org，2018 年创建，仓库为机器人教材与二维仿真器，与北京机科未来科技有限公司无关；未查到本主体的
+    GitHub 账号，故留空

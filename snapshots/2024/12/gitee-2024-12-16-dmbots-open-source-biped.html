@@ -1,0 +1,3911 @@
+<!-- 抓取于 2026-09-22T21:24:31.648974+08:00 | 原始链接 https://gitee.com/kit-miao/bipedal-robot | 公众号 未知 | 标题 dmbots-open-source-bipedal | sha256:05cc958da57c -->
+<!DOCTYPE html>
+<html lang="zh-CN"><head><style type="text/css">.tippy-iOS{cursor:pointer!important}.tippy-notransition{transition:none}.tippy-popper{transition-timing-function:cubic-bezier(.165,.84,.44,1);max-width:calc(100% - 10px);pointer-events:none;outline:0}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 25%;transform-origin:0 25%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%)}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%,-45%);transform:scale(.2) translate(-50%,-45%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(-10px) rotateX(0);transform:perspective(700px) translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) translateY(0) rotateX(60deg);transform:perspective(700px) translateY(0) rotateX(60deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px) scale(.5);transform:translateY(-10px) scale(.5)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%)}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%);transform:scale(.2) translate(-50%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(10px) rotateX(0);transform:perspective(700px) translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) translateY(0) rotateX(-60deg);transform:perspective(700px) translateY(0) rotateX(-60deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px) scale(.5);transform:translateY(10px) scale(.5)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-75%,-50%);transform:scale(.2) translate(-75%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(-10px) rotateY(0);transform:perspective(700px) translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) translateX(0) rotateY(-60deg);transform:perspective(700px) translateX(0) rotateY(-60deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px) scale(.5);transform:translateX(-10px) scale(.5)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-25%,-50%);transform:scale(.2) translate(-25%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(10px) rotateY(0);transform:perspective(700px) translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) translateX(0) rotateY(60deg);transform:perspective(700px) translateX(0) rotateY(60deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px) scale(.5);transform:translateX(10px) scale(.5)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;line-height:1.4;text-align:center;will-change:transform;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}.tippy-backdrop+.tippy-content{transition-property:opacity;will-change:opacity}.tippy-backdrop+.tippy-content[data-state=visible]{opacity:1}.tippy-backdrop+.tippy-content[data-state=hidden]{opacity:0}</style>
+<script charset="utf-8" src="https://hmcdn.baidu.com/static/tongji/plugins/UrlChangeTracker.js"></script><script src="https://hm.baidu.com/hm.js?24f17767262929947cc3631f99bfd274"></script><script>
+  // 立即应用主题，避免页面闪烁 (FOUC)
+  (function() {
+    function getCookieTheme() {
+      var match = document.cookie.match(/theme=(light|dark|system)/);
+      return match ? match[1] : null;
+    }
+  
+    function getCurrentTheme() {
+      var cookieTheme = getCookieTheme();
+      var savedTheme = localStorage.getItem('theme');
+  
+      // 优先使用 cookie 中的 theme
+      if (cookieTheme) {
+        // 如果 localStorage 里没有，就补回去
+        if (!savedTheme) {
+          localStorage.setItem('theme', cookieTheme);
+        }
+        return cookieTheme;
+      }
+  
+      // 如果 cookie 中没有 theme，则使用 localStorage 中的 theme
+      savedTheme = savedTheme && ['light', 'dark', 'system'].includes(savedTheme) ? savedTheme : 'system'; // 默认跟随系统
+  
+      return savedTheme;
+    }
+  
+    var savedTheme = getCurrentTheme();
+  
+    // 检测系统是否为暗黑模式
+    function isSystemDarkMode() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+  
+    if (savedTheme === 'system') {
+      // 系统模式：移除覆盖类，让CSS媒体查询自动处理
+      document.documentElement.classList.remove('dark-mode-override');
+      document.documentElement.classList.remove('dark-mode');
+    } else {
+      // 手动模式：添加覆盖类，禁用媒体查询
+      document.documentElement.classList.add('dark-mode-override');
+  
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.remove('dark-mode');
+      }
+    }
+  })();
+</script>
+
+<title>bipedal-robot: 达妙科技开源双足
+交流群428064389 </title>
+<meta content="on" http-equiv="x-dns-prefetch-control">
+<link href="//e.gitee.com" rel="dns-prefetch">
+<link href="//files.gitee.com" rel="dns-prefetch">
+<link href="//toscode.gitee.com" rel="dns-prefetch">
+<link href="https://cn-assets.gitee.com" rel="dns-prefetch">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://cn-assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico">
+<link rel="canonical" href="https://gitee.com/kit-miao/bipedal-robot">
+<meta content="gitee.com/kit-miao/bipedal-robot git https://gitee.com/kit-miao/bipedal-robot.git" name="go-import">
+<meta charset="utf-8">
+<meta content="always" name="referrer">
+<meta content="Gitee" property="og:site_name">
+<meta content="Object" property="og:type">
+<meta content="https://gitee.com/kit-miao/bipedal-robot" property="og:url">
+<meta content="no_portrait.png#kit-kit-miao" itemprop="image" property="og:image">
+<meta content="kit/bipedal-robot: 达妙科技开源双足
+交流群428064389 " itemprop="name" property="og:title">
+<meta content="kit/bipedal-robot: 达妙科技开源双足
+交流群428064389 " property="og:description">
+<meta content="bipedal-robot" name="Keywords">
+<meta content="kit/bipedal-robot: 达妙科技开源双足
+交流群428064389 " itemprop="description" name="Description">
+<meta content="pc,mobile" name="applicable-device">
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="62UG9tPe9k22gHvHOD4JruTX7FC2BcRXCaLtEQGl5tvMX3EcSctNckcbCYG5322EUtbZG3DbT6nGfuPY8+s5CQ==">
+
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/assets/application-ebb1aecafb03680ce93e0d86930d8bec.css">
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"projects","action_name":"show","current_user":false};gon.tour_env={"current_user":null,"action_name":"show","original_url":"https://gitee.com/kit-miao/bipedal-robot","controller_path":"projects"};gon.http_clone="https://gitee.com/kit-miao/bipedal-robot.git";gon.user_project="kit-miao/bipedal-robot";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/kit-miao/bipedal-robot/reactions";gon.ipipe_base_url="https://go-api.gitee.com";gon.artifact_base_url="https://go-repo.gitee.com";gon.gitee_go_remote_url="https://go.gitee.com/assets";gon.gitee_go_active=false;gon.current_project_is_mirror=false;gon.show_repo_comment=false;gon.diagram_viewer_path="https://diagram-viewer.giteeusercontent.com";gon.ent_host="e.gitee.com";gon.encrypt={"enabled":true,"separator":"$gitee$","password_key":"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIrn+WB2Yi4ABAL5Tq6E09tumY\nqVTFdpU01kCDUmClczJOCGZriLNMrshmN9NJxazpqizPthwS1OIK3HwRLEP9D3GL\n7gCnvN6lpIpoVwppWd65f/rK2ewv6dstN0fCmtVj4WsLUchWlgNuVTfWljiBK/Dc\nYkfslRZzCq5Fl3ooowIDAQAB\n-----END PUBLIC KEY-----\n"};gon.cp="点击复制";gon.aready_cp="已复制";gon.is_fork=false;gon.is_admin_domain=false;gon.ref="master";
+//]]>
+</script>
+<script src="https://cn-assets.gitee.com/assets/application-5c77afcf3ed0a8c6875a5dea669d78e0.js"></script>
+<script src="https://cn-assets.gitee.com/assets/lib/jquery.timeago.zh-CN-4a4818e98c1978d2419ab19fabcba740.js"></script>
+
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/assets/projects/application-46b94c31ba11ae8c37eacce2bdb5603e.css">
+<script src="https://cn-assets.gitee.com/assets/projects/app-3a6a71314c93e4f2eb97cd349f81b72f.js"></script>
+
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://cn-assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+  (function () {
+    var messages = {
+      'zh-CN': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已选择 {count}',
+        maxSelections: '最多 {maxCount} 个选择',
+        noResults: '未找到结果',
+        serverError: '连接服务器时发生错误'
+      },
+      'zh-TW': {
+        addResult: '增加 <b>{term}</b>',
+        count: '已選擇 {count}',
+        maxSelections: '最多 {maxCount} 個選擇',
+        noResults: '未找到結果',
+        serverError: '連接服務器時發生錯誤'
+      }
+    }
+  
+    if (messages[gon.locale]) {
+      $.fn.dropdown.settings.message = messages[gon.locale]
+    }
+  }());
+</script>
+
+<script>
+  var userAgent = navigator.userAgent;
+  var isLessIE11 = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1;
+  if(isLessIE11){
+    var can_access = ""
+    if (can_access != "true"){
+      window.location.href = "/incompatible.html";
+    }
+  }
+  document.addEventListener("error", function (ev) {
+    var elem = ev.target;
+    if (elem.tagName.toLowerCase() === 'img') {
+      elem.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAAAAACIM/FCAAACh0lEQVR4Ae3ch5W0OgyG4dt/mQJ2xgQPzJoM1m3AbALrxzrf28FzsoP0HykJEEAAAUQTBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEkKK0789+GK/I2ezfQB522PnS1qc8pGgXvr4tE4aY0XOUWlGImThWgyCk6DleixzE7qwBkg/MGiDPlVVAyp1VQGrPKiACDhFI6VkF5LmzCki+sg7IwDoglnVAil0IMkeG9CyUiwsxLFUVFzJJOQaKCjFCDN9RXMjIX7W6ztZXZDKKCyn8sWJvH+nca7WHDN9lROlAliPH9iRKCPI4cswFJQWxB46toLQgQ9jhn5QYZA9DOkoMUoQde5YapAxDWkoNYsOQR3KQd9CxUnIQF4S49CB9ENKlBxmDEKsFUgMCCCCAAHIrSF61f6153Ajy8nyiPr8L5MXnmm4CyT2fzN4DUvHZ+ntA2tOQBRBAAAEEEEAAAQQQ7ZBaC6TwSiDUaYHQ2yuB0MN+ft+43whyrs4rgVCjBUKTFshLC6TUAjGA3AxSaYFYLZBOC2RUAsk8h5qTg9QcbEoOsoQhQ2qQhsO5xCD5dgB5JQaZ+KBKGtKecvR81Ic0ZDjByKdDx0rSEDZ/djQbH+bkIdvfJFm98BfV8hD2zprfVdlu9PxVeyYAkciREohRAplJCaRSAplJCcQogTjSAdlyHRBvSAekJR0QRzogA+mADJkOiCPSAPEtqYBshlRAXC43hxix2QiOuEZkVERykGyNo9idIZKE0HO7XrG6OiMShlDWjstVzdPgXtUH9v0CEidAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQP4HgjZxTpdEii0AAAAASUVORK5CYII=";
+    }
+  }, true);
+</script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script><script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content');
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor_circle.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wx74f3fbb24061d30a",
+      timestamp: "1790083470",
+      nonceStr: "c0eb50d4dd0b36319891aa7e3ac1305d",
+      signature: "ed3975fe8da9a83c46387647256d4d3d94085858",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/kit-miao/bipedal-robot", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/kit-miao/bipedal-robot", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+
+
+
+<body class="git-project lang-zh-CN projects-site-content projects_show dimmable webkit" style=""><div id="MathJax_Message" style="display: none;"></div>
+<header class="common-header fixed noborder" id="git-header-nav">
+<div class="ui container">
+<div class="ui menu header-menu header-container">
+<div class="git-nav-expand-bar">
+<i class="iconfont icon-mode-table"></i>
+</div>
+<div class="gitee-nav__sidebar">
+<div class="gitee-nav__sidebar-container">
+<div class="gitee-nav__sidebar-top">
+<div class="gitee-nav__avatar-box"></div>
+<div class="gitee-nav__buttons-box">
+<a class="ui button small fluid orange" href="/login">登录</a>
+<a class="ui button small fluid basic is-register" href="/signup">注册</a>
+</div>
+</div>
+<div class="gitee-nav__sidebar-middle">
+<div class="gitee-nav__sidebar-list">
+<ul>
+<li class="gitee-nav__sidebar-item">
+<a href="/explore"><i class="iconfont icon-ic-discover"></i>
+<span class="gitee-nav__sidebar-name">开源</span>
+</a></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/enterprises"><i class="iconfont icon-ic-enterprise"></i>
+<span class="gitee-nav__sidebar-name">企业版</span>
+</a></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/education"><i class="iconfont icon-ic-education"></i>
+<span class="gitee-nav__sidebar-name">高校版</span>
+</a></li>
+<li class="gitee-nav__sidebar-item split-line"></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/search"><i class="iconfont icon-ic-search"></i>
+<span class="gitee-nav__sidebar-name">搜索</span>
+</a></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/help"><i class="iconfont icon-help-circle"></i>
+<span class="gitee-nav__sidebar-name">帮助中心</span>
+</a></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/terms"><i class="iconfont icon-file"></i>
+<span class="gitee-nav__sidebar-name">使用条款</span>
+</a></li>
+<li class="gitee-nav__sidebar-item">
+<a href="/about_us"><i class="iconfont icon-issuepx"></i>
+<span class="gitee-nav__sidebar-name">关于我们</span>
+</a></li>
+</ul>
+</div>
+</div>
+<div class="gitee-nav__sidebar-bottom">
+<div class="gitee-nav__sidebar-close-button">
+<i class="fa fa-angle-double-left"></i>
+</div>
+</div>
+</div>
+</div>
+
+<!-- /todo 10周年活动结束后 恢复 -->
+<div class="item gitosc-logo">
+<a href="https://gitee.com"><img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="ui inline image light-mode-img" height="28" src="/static/images/logo-black.svg?t=158106664" title="Gitee - 基于 Git 的代码托管和研发协作平台" width="95">
+<img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="ui inline image dark-mode-img" height="28" src="/static/images/logo.svg?t=158106664" title="Gitee - 基于 Git 的代码托管和研发协作平台" width="95">
+</a></div>
+<a title="开源" class="item " href="/explore">开源
+</a><a title="企业版" class="item " href="/enterprises">企业版
+</a><a title="高校版" class="item " href="/education">高校版
+</a><a title="私有云" class="item" target="_blank" href="https://gitee.cn?utm_source=giteecom">私有云
+</a><a title="模力方舟" class="item" id="gitee-blog" target="_blank" href="https://moark.com/serverless-api/?utm_sources=site_nav"><span>
+模力方舟
+</span>
+<img alt="模力方舟" class="ui inline image" src="/static/images/notification-star.svg" style="transform: translate(-4.6px, -8.8px)" title="模力方舟">
+</a><a title="AI 队友" class="item" id="gitee-ai-bot" target="_blank" href="https://gitee.com/ai-teammates"><span>AI 队友</span>
+</a><div class="center responsive-logo">
+<a href="https://gitee.com"><img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="ui inline image" height="24" src="/static/images/logo.svg?t=158106664" title="Gitee - 基于 Git 的代码托管和研发协作平台" width="85">
+<img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="ui inline black image" height="24" src="/static/images/logo-black.svg?t=158106664" title="Gitee - 基于 Git 的代码托管和研发协作平台" width="85">
+</a></div>
+<div class="right menu userbar right-header" id="git-nav-user-bar">
+<form class="ui item" id="navbar-search-form" data-text-require="搜索关键字不能少于1个" data-text-filter="搜索格式不正确" data-text-search-site-projects="在全站搜索 %{query} 相关项目" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<input type="hidden" name="type" id="navbar-search-type">
+<input type="hidden" name="fork_filter" id="fork_filter" value="on">
+<div class="ui search header-search" style="position: relative;">
+<input type="text" name="q" id="navbar-search-input" value="" class="prompt" placeholder="搜开源" style="width: 100%; padding-right: 32px; box-sizing: border-box;" autocomplete="off">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px; color: rgba(0, 0, 0, 0.88); pointer-events: none;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M7 1a6 6 0 014.582 9.874l3.272 3.272a.5.5 0 01-.708.708l-3.272-3.272A6 6 0 117 1zm0 1a5 5 0 100 10A5 5 0 007 2z"></path></g></svg>
+<div class="results"></div></div>
+</form>
+
+<script>
+  var can_search_in_repo = 1,
+      repo = "VFhwbk5VOVVTWGhQVkVKb1RucFplbHBuUFQxaE56WXpaZz09YTc2M2Y=",
+      reponame = "kit-miao/bipedal-robot";
+  
+  $(function() {
+    var $search = $('#navbar-search-form .ui.search');
+    var $form = $('#navbar-search-form');
+    var searchSiteProjectsText = $form.data('text-search-site-projects');
+  
+    $form.on('submit', function(e) {
+      e.preventDefault(); // 防止默认提交
+      var query = $('#navbar-search-input').val();
+      if (query) {
+        window.location = '/search?fork_filter=on&q=' + encodeURIComponent(query);
+      }
+    });
+  
+    // 原有的搜索逻辑保持不变
+    $search.search({
+      apiSettings: {
+        url: '/search/relative_project?q=' + encodeURIComponent('{query}'),
+        onResponse: function (res) {
+          if (res && res.status === 200 && res.data) {
+            var query = htmlSafe($search.search('get value'));
+  
+            res.data.map(function (item) {
+              item.path_ns = '/' + item.path_ns;
+              item.icon = 'iconfont icon-project-public';
+            });
+            res.data.unshift({
+              name_ns: searchSiteProjectsText.replace('%{query}', "<b class='hl'>" + query + "</b>"),
+              path_ns: '/search?fork_filter=on&q=' + encodeURIComponent(query),
+              icon: 'iconfont icon-search'
+            });
+            return res;
+          } else {
+            return { data: [] };
+          }
+        }
+      },
+      fields: {
+        results: 'data',
+        description: 'name_ns',
+        url: 'path_ns',
+      },
+      minCharacters: 1,
+      maxResults: 10,
+      searchDelay: 250,
+      showNoResults: false,
+      transition: 'fade'
+    });
+  });
+</script>
+
+<script src="https://cn-assets.gitee.com/webpacks/gitee_icons-db24f196ed7cfb3a6136.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/assets/theme_toggle-0c8215e3e0cd891c42ea4226ae882bfb.js"></script>
+<link rel="stylesheet" media="screen" href="https://cn-assets.gitee.com/assets/fonts/font-awesome-febf886370cf750ab95af17cede1d51f.css">
+<a class="item git-nav-user__login-item" href="/login">登录
+</a><a class="item git-nav-user__register-item" href="/signup">注册
+</a><script>
+  $('.destroy-user-session').on('click', function() {
+    localStorage.setItem('theme', 'system');
+    $.cookie('access_token', null, { path: '/' });
+  })
+</script>
+
+</div>
+</div>
+</div>
+</header>
+<script>
+  Gitee.initNavbar()
+  Gitee.initRepoRemoteWay()
+  $.cookie('user_locale',null)
+</script>
+
+<script>
+  var userAgent = navigator.userAgent;
+  var isLessIE11 = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1;
+  if(isLessIE11){
+    var can_access = ""
+    if (can_access != "true"){
+      window.location.href = "/incompatible.html";
+    }
+  }
+</script>
+
+<div class="fixed-notice-infos">
+<div class="all-messages">
+<div class="ui info message" id="git-bulletin">
+<a href="https://www.oschina.net/os2026/" target="_blank" rel="noopener noreferrer">【大赛通知】开源中国「2026上海开源软件应用创新大赛」火热报名中，百万奖池等你的项目</a>
+<i class="icon remove" id="remove-bulletin"></i>
+</div>
+</div>
+<div class="ui container">
+<div class="flash-messages" id="messages-container"></div>
+</div>
+<script>
+  (function() {
+    $(function() {
+      var $error_box, alertTip, notify_content, notify_options, template;
+      template = '<div data-notify="container" class="ui {0} message" role="alert">' + '<i data-notify="dismiss" class="close icon"></i>' + '<span data-notify="message">{2}</span>' + '</div>';
+      notify_content = null;
+      notify_options = {};
+      alertTip = '';
+      $error_box = $(".flash_error.flash_error_box");
+      if (notify_options.type === 'error' && $error_box.length > 0 && !$.isEmptyObject(notify_content.message)) {
+        if (notify_content.message === 'captcha_fail') {
+          alertTip = "验证码不正确";
+        } else if (notify_content.message === 'captcha_expired') {
+          alertTip = "验证码已过期，请点击刷新";
+        } else if (notify_content.message === 'not_found_in_database') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'not_found_and_show_captcha') {
+          alertTip = "帐号或者密码错误";
+        } else if (notify_content.message === 'phone_captcha_fail') {
+          alertTip = "手机验证码不通过";
+        } else {
+          alertTip = notify_content.message;
+        }
+        return $error_box.html(alertTip).show();
+      } else if (notify_content) {
+        if ("show" === 'third_party_binding') {
+          return $('#third_party_binding-message').html(notify_content.message).addClass('ui message red');
+        }
+        notify_options.delay = 3000;
+        notify_options.template = template;
+        notify_options.offset = {
+          x: 10,
+          y: 30
+        };
+        notify_options.element = '#messages-container';
+        return $.notify(notify_content, notify_options);
+      }
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      var setCookie;
+      setCookie = function(name, value) {
+        $.cookie(name, value, {
+          path: '/',
+          expires: 365
+        });
+      };
+      $('#remove-bulletin, #remove-bulletin-dashboard').on('click', function() {
+        setCookie('remove_bulletin', "gitee-maintain-1787630215");
+        $('#git-bulletin').hide();
+      });
+      $('#remove-member-bulletin').on('click', function() {
+        setCookie('remove_member_bulletin', "gitee_member_bulletin");
+        $(this).parent().hide();
+      });
+      return $('#remove-gift-bulletin').on('click', function() {
+        setCookie('remove_gift_bulletin', "gitee-gift-bulletin");
+        $(this).parent().hide();
+      });
+    });
+  
+  }).call(this);
+</script>
+<script>
+  function closeMessageBanner(pthis, type, val) {
+    var json = {}
+  
+    val = typeof val === 'undefined' ? null : val
+    $(pthis).parent().remove()
+    if (type === 'out_of_enterprise_member') {
+      json = {type: type, data: val}
+    } else if (type === 'enterprise_overdue') {
+      json = {type: type, data: val}
+    }
+    $.post('/profile/close_flash_tip', json)
+  }
+</script>
+
+<div class="site-content">
+<div class="git-project-header">
+<div class="fixed-notice-infos">
+<div class="ui info icon floating message green" id="fetch-ok" style="display: none">
+<div class="content">
+<div class="header status-title">
+<i class="info icon status-icon"></i>
+代码拉取完成，页面将自动刷新
+</div>
+</div>
+</div>
+<div class="ui info icon floating message error" id="fetch-error" style="display: none">
+<div class="content">
+<div class="header status-title">
+<i class="info icon status-icon"></i>
+<span class="error_msg"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="ui container">
+
+<div class="git-project-header-details">
+<div class="git-project-header-container">
+<div class="git-project-header-actions">
+<div class="tootip no-arrow" data-position="bottom center" data-tooltip="试试让马建仓 AI 助手来解读仓库吧～">
+<div class="chat-button">
+<a target="_blank" class="d-align-center" href="https://chat.gitee.com?repo_owner=kit-miao&amp;repo_path=bipedal-robot"><img alt="richgiteeai" style="width:14px; height:14px;" src="https://cn-assets.gitee.com/assets/rich_giteeai-78477b2d4703c69031f90ac6a524c3e3.svg">
+</a></div>
+</div>
+<span class="ui buttons basic watch-container">
+<div class="ui dropdown button js-project-watch" data-watch-type="unwatch" tabindex="0">
+<input type="hidden" value="unwatch">
+<i class="iconfont icon-watch"></i>
+<div class="text">Watch</div>
+<i class="dropdown icon"></i>
+<div class="menu" tabindex="-1">
+<a data-value="unwatch" class="item active selected" rel="nofollow" data-method="post" href="/kit-miao/bipedal-robot/unwatch"><i class="iconfont icon-msg-read"></i>
+不关注
+</a><a data-value="watching" class="item" rel="nofollow" data-method="post" href="/kit-miao/bipedal-robot/watch"><i class="iconfont icon-msg-read"></i>
+关注所有动态
+</a><a data-value="releases_only" class="disabled item" rel="nofollow" data-method="post" href="/kit-miao/bipedal-robot/release_only_watch"><i class="iconfont icon-msg-read"></i>
+仅关注版本发行动态
+</a><a data-value="ignoring" class="item" rel="nofollow" data-method="post" href="/kit-miao/bipedal-robot/ignoring_watch"><i class="iconfont icon-msg-read"></i>
+关注但不提醒动态
+</a></div>
+</div>
+<style>
+  .js-project-watch .text .iconfont {
+    display: none; }
+  .js-project-watch a, .js-project-watch a:hover {
+    color: #000; }
+  .js-project-watch .item > .iconfont {
+    visibility: hidden;
+    margin-left: -10px; }
+  .js-project-watch .selected .iconfont {
+    visibility: visible; }
+  .js-project-watch .menu {
+    margin-top: 4px !important; }
+</style>
+<script>
+  $('.js-project-watch').dropdown({
+    action: 'select',
+    onChange: function(value, text, $selectedItem) {
+      var type = value === 'unwatch' ? 'Watch' : 'Watching';
+      $(this).children('.text').text(type);
+      $(this).dropdown('set selected', value)
+    }
+  });
+</script>
+
+<a class="ui button action-social-count" title="6" href="/kit-miao/bipedal-robot/watchers">6
+</a></span>
+<span class="basic buttons star-container ui">
+<a class="ui button star" href="/login"><i class="iconfont icon-star"></i>
+Star
+</a><a class="ui button action-social-count " title="79" href="/kit-miao/bipedal-robot/stargazers">79
+</a></span>
+<span class="ui basic buttons fork-container" title="无权 Fork 此仓库">
+<a class="ui button fork" title="你必须登录后才可以fork一个仓库" href="/login"><i class="iconfont icon-fork"></i>
+Fork
+</a><a class="ui button action-social-count disabled-style" title="26" href="/kit-miao/bipedal-robot/members">26
+</a></span>
+</div>
+<h2 class="git-project-title mt-0 mb-0">
+<span class="project-title"><i class="project-icon iconfont icon-project-public" style="margin-right: 4px" title="这是一个公开仓库"></i> <a title="kit" class="author" href="/kit-miao">kit</a> / <a title="bipedal-robot" class="repository" target="" style="padding-bottom: 0px; margin-right: 4px" href="/kit-miao/bipedal-robot">bipedal-robot</a></span><span class="project-badges"><style>
+  .gitee-modal {
+    width: 500px !important; }
+</style>
+</span>
+<input type="hidden" name="project_title" id="project_title" value="kit/bipedal-robot">
+</h2>
+</div>
+</div>
+</div>
+<script>
+  var title_import_url = "false";
+  var title_post_url = "/kit-miao/bipedal-robot/update_import";
+  var title_fork_url = "/kit-miao/bipedal-robot/sync_fork";
+  var title_project_path = "bipedal-robot";
+  var title_p_name = "bipedal-robot";
+  var title_p_id= "38992190";
+  var title_description = "达妙科技开源双足\r\n交流群428064389 ";
+  var title_form_authenticity_token = "eGrAo/KaE/faeiymi0pK/sFF3mqxpTi4LOyraIShdxRfULdJaI+oyCvhXuAKqy7Ud0TrIXd7s0bjMKWhdu+oxg==";
+  var watch_type = "unwatch";
+  var checkFirst = false;
+  
+  $('.js-project-watch').dropdown('set selected', watch_type);
+  $('.checkbox.sync-wiki').checkbox();
+  $('.checkbox.sync-prune').checkbox();
+  $('.checkbox.team-member-checkbox').checkbox();
+  $('.project-closed-label').popup({ 
+    popup: '.project-closed-popup', 
+    position: 'top center', 
+    hoverable: true,
+  });
+</script>
+<style>
+  i.loading, .icon-sync.loading {
+    -webkit-animation: icon-loading 1.2s linear infinite;
+    animation: icon-loading 1.2s linear infinite;
+  }
+  .qrcode_cs {
+    float: left;
+  }
+  .check-sync-wiki {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+  }
+  .sync-wiki-warn {
+    color: #e28560;
+  }
+</style>
+
+<div class="git-project-nav">
+<div class="ui container">
+<div class="ui secondary pointing menu">
+<a class="item active " href="/kit-miao/bipedal-robot"><i class="iconfont icon-code"></i>
+代码
+</a><a class="item " href="/kit-miao/bipedal-robot/issues"><i class="iconfont icon-task"></i>
+Issues
+<span class="ui mini circular label">
+0
+</span>
+</a><a class="item " href="/kit-miao/bipedal-robot/pulls"><i class="iconfont icon-pull-request"></i>
+Pull Requests
+<span class="ui mini circular label">
+1
+</span>
+</a><a class="item " href="/kit-miao/bipedal-robot/wikis"><i class="iconfont icon-wiki"></i>
+Wiki
+</a><a class="item  " href="/kit-miao/bipedal-robot/graph/master"><i class="iconfont icon-statistics"></i>
+统计
+</a><a class="item " href="/kit-miao/bipedal-robot/gitee_go"><i class="iconfont icon-workflow"></i>
+流水线
+</a><div class="item">
+<div class="ui pointing top right dropdown git-project-service" tabindex="0">
+<div>
+<i class="iconfont icon-service"></i>
+服务
+<i class="dropdown icon"></i>
+</div>
+<div class="menu transition hidden" tabindex="-1">
+<a class="item" href="/kit-miao/bipedal-robot/javadoc"><img src="https://cn-assets.gitee.com/assets/maven-bd58aee84f266d64d4b8ce5b006a9fcf.png" alt="Maven">
+<div class="item-title">
+JavaDoc
+</div>
+</a><a class="item" href="/kit-miao/bipedal-robot/phpdoc"><img src="https://cn-assets.gitee.com/assets/phpdoc-a99f87c2feaa2fd99e5065377a39487e.png" alt="Phpdoc">
+<div class="item-title">
+PHPDoc
+</div>
+</a><a class="item" href="/kit-miao/bipedal-robot/quality_analyses?platform=sonar_qube"><img src="https://cn-assets.gitee.com/assets/sonar_mini-5e1b54bb9f6c951d97fb778ef623afea.png" alt="Sonar mini">
+<div class="item-title">
+质量分析
+</div>
+</a><a class="item" target="_blank" href="https://gitee.com/help/articles/4193"><img src="https://cn-assets.gitee.com/assets/jenkins_for_gitee-554ec65c490d0f1f18de632c48acc4e7.png" alt="Jenkins for gitee">
+<div class="item-title">
+Jenkins for Gitee
+</div>
+</a><a class="item" target="_blank" href="https://gitee.com/help/articles/4318"><img src="https://cn-assets.gitee.com/assets/cloudbase-1197b95ea3398aff1df7fe17c65a6d42.png?20200925" alt="Cloudbase">
+<div class="item-title">
+腾讯云托管
+</div>
+</a><a class="item" target="_blank" href="https://gitee.com/help/articles/4330"><img src="https://cn-assets.gitee.com/assets/cloud_serverless-686cf926ced5d6d2f1d6e606d270b81e.png" alt="Cloud serverless">
+<div class="item-title">
+腾讯云 Serverless
+</div>
+</a><a class="item" href="/kit-miao/bipedal-robot/open_sca"><img src="https://cn-assets.gitee.com/assets/open_sca/logo-9049ced662b2f9936b8001e6f9cc4952.png" alt="Logo">
+<div class="item-title">
+悬镜安全
+</div>
+</a><a class="item" target="_blank" href="https://help.gitee.com/devops/connect/Aliyun-SAE"><img src="https://cn-assets.gitee.com/assets/SAE-f3aa9366a1e2b7fff4747402eb8f10c3.png" alt="Sae">
+<div class="item-title">
+阿里云 SAE
+</div>
+</a><a class="item" id="update-codeblitz-link" target="_blank" href="https://gitee.com/link?target=https%3A%2F%2Fcodeblitz.cloud.alipay.com%2Fgitee%2Fkit-miao%2Fbipedal-robot%2Ftree%2Fmaster"><img style="width:100px;margin-top:4px" src="https://cn-assets.gitee.com/assets/Codeblitz-8824e38875a106e16e29ff57ec977b08.png" alt="Codeblitz">
+<div class="item-title">
+Codeblitz
+</div>
+</a><a class="item" id="update-codeblitz-link" target="_blank" href="/kit-miao/bipedal-robot/sbom"><img style="width:30px;margin-top:4px" src="https://cn-assets.gitee.com/assets/SBOM-36dbd3141411c5c1e9095e8d1d21baf0.png" alt="Sbom">
+<div class="item-title">
+SBOM
+</div>
+</a><a class="item" href="/kit-miao/bipedal-robot/qilin_profile"><img class="qilin-profile-nav-logo" src="https://cn-assets.gitee.com/assets/qilin_profile-a1a9c6fee979fdf21e79f25c1f1c18b2.png" alt="Qilin profile">
+<div class="item-title">
+开发画像分析
+</div>
+</a><button class="ui orange basic button quit-button" id="quiting-button" style="display: inline-block;">
+我知道了，不再自动展开
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $('.git-project-nav .ui.dropdown').dropdown({ action: 'nothing' });
+  $('.git-project-service').dropdown({
+    on: 'click',
+    action: 'nothing',
+    onShow: function () {
+      const branch = 'master'
+      let newUrl = `https://codeblitz.cloud.alipay.com/gitee/kit-miao/bipedal-robot/tree/`
+      const url = decodeURIComponent(window.location.pathname);
+      const startIndex = url.indexOf('master');
+      if (startIndex !== -1) {
+        newUrl = newUrl + url.substring(startIndex); // 从分支名开始截取
+      }else{
+        newUrl = newUrl + branch
+      }
+      const linkElement = document.getElementById("update-codeblitz-link");
+      linkElement.setAttribute("href", window.location.origin + "/link?target=" + encodeURIComponent(newUrl));
+    },
+  })
+</script>
+<style>
+  .git-project-nav i.checkmark.icon {
+    color: green;
+  }
+  #quiting-button {
+    display: none;
+  }
+  
+  .git-project-nav .dropdown .menu.hidden:after {
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  isSignIn = false
+  isClickGuide = false
+  $('#git-versions.dropdown').dropdown();
+  $.ajax({
+    url:"/kit-miao/bipedal-robot/access/add_access_log",
+    type:"GET"
+  });
+  $('#quiting-button').on('click',function() {
+    $('.git-project-service').click();
+    if (isSignIn) {
+      $.post("/projects/set_service_guide")
+    }
+    $.cookie("Serve_State", true, { expires: 3650, path: '/'})
+    $('#quiting-button').hide();
+  });
+  if (!(isClickGuide || $.cookie("Serve_State") == 'true')) {
+    $('.git-project-service').click()
+    $('#quiting-button').show()
+  }
+</script>
+
+</div>
+<div class="ui container">
+<div class="register-guide">
+<div class="register-container">
+<div class="regist">
+加入 Gitee
+</div>
+<div class="description">
+与超过 1400万 开发者一起发现、参与优秀开源项目，私有仓库也完全免费 ：）
+</div>
+<a class="ui orange button free-registion" href="/signup?from=project-guide">免费加入</a>
+<div class="login">
+已有帐号？
+<a href="/login?from=project-guide">立即登录</a>
+</div>
+</div>
+</div>
+
+<div class="git-project-content-wrapper">
+
+<div class="ui grid tree-bbb" id="project-wrapper">
+<div class="project-left-side-contaner wide column" id="project-left-side-contaner" style="display: none;">
+<script src="https://cn-assets.gitee.com/webpacks/vendors_lib-7ff466a6da368d391eda.js" defer="defer"></script>
+</div>
+<div class="twelve wide column right-wrapper">
+<div id="git-project-search-panel" style="display: none;">
+<a href="javascript: void(0);" id="back-to-list">
+<i class="angle left icon"></i>
+返回
+</a>
+<div class="ui icon input search-input">
+<i class="iconfont icon-search icon"></i>
+<input id="search-name" maxlength="40" placeholder="搜索文件" type="text">
+</div>
+</div>
+<div class="git-project-content" id="git-project-content">
+<div class="git-project-desc-wrapper">
+<div class="ui yellow message no-license" id="user-no-license-message">
+<div class="float-left" style="width: 95%;">
+该仓库未声明开源许可证文件（LICENSE），使用请关注具体项目描述及其代码上游依赖。
+<i class="help circle icon"></i>
+<div class="ui popup dark">
+项目仓库所选许可证以仓库主分支所使用许可证为准
+</div>
+</div>
+<i class="remove icon" id="remove-no-license-message"></i>
+<div class="clearfix"></div>
+</div>
+<script>
+  $('.git-project-desc-wrapper .ui.dropdown').dropdown();
+  if (false) {
+    gon.project_new_blob_path = "/kit-miao/bipedal-robot/new/master"
+    bindShowModal({
+      el: $('.no-license .project-license__create'),
+      complete: function(data, modal) {
+        if (!data.haveNoChoice && !data.data) {
+          Flash.show('请选择一项开源许可证')
+        } else {
+          location.href = gon.project_new_blob_path + '?license=' + data.data
+        }
+      },
+      skip: function () {
+        location.href = gon.project_new_blob_path + '?license'
+      }
+    });
+  }
+  
+  $(".project-admin-action-box .reject").click(function() {
+    var reason = $('[name=review-reject-reason]').val();
+    if (!reason) {
+      Flash.error('请选择不通过理由')
+      return
+    }
+    $.ajax({
+      type: 'POST',
+      url: "/admin/shumei_content/shumei_check/reject_project_public",
+      data: {
+        reason: reason,
+        status: 'rejected',
+        project_id: 38992190
+      },
+      success: function(result){
+        if(result.status == 'success'){
+          window.location.reload();
+        }else{
+          Flash.error(result.message)
+        }
+      }
+    })
+  })
+  
+  $(".project-admin-action-box .approve").click(function(){
+  
+    $.ajax({
+      type: 'POST',
+      url: "/admin/shumei_content/shumei_check/reject_project_public",
+      data: {
+        status: 'approved',
+        project_id: 38992190
+      },
+      success: function(result){
+        if(result.status == 'success'){
+          window.location.reload();
+        }else{
+          Flash.error(result.message)
+        }
+      }
+    })
+  })
+  
+  $(".project-admin-action-box .waiting").click(function(){
+  
+    $.ajax({
+      type: 'POST',
+      url: "/admin/shumei_content/shumei_check/reject_project_public",
+      data: {
+        status: 'waiting',
+        project_id: 38992190
+      },
+      success: function(result){
+        if(result.status == 'success'){
+          window.location.reload();
+        }else{
+          Flash.error(result.message)
+        }
+      }
+    })
+  })
+  
+  $('i.help.circle.icon').popup({
+    popup: '.no-license .ui.popup',
+    position: 'right center'
+  });
+  
+  $('#remove-no-license-message').on('click', function() {
+    $.cookie("skip_repo_no_license_message_38992190", 'hide', { expires: 365 });
+    $('#user-no-license-message').hide();
+    return;
+  });
+</script>
+</div>
+
+<div class="git-project-bread" id="git-project-bread">
+<div class="ui horizontal list mr-1" id="git-branch-dropdown" style="">
+<div class="item git-project-branch-item">
+<input type="hidden" name="path" id="path" value="">
+<div class="ui top left pointing dropdown gradient button dropdown-has-tabs" id="git-project-branch" tabindex="0">
+<input type="hidden" name="ref" id="ref" value="master">
+<div class="text"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:branch" style="font-size: 13px; margin-right: 4px; color: rgb(140, 146, 164);"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M11.75 1a2.25 2.25 0 01.55 4.432V6a2.5 2.5 0 01-2.336 2.495L9.8 8.5H6.2l-.144.007A1.5 1.5 0 004.7 10v.545a2.25 2.25 0 11-1.042.034.36.36 0 01-.008-.079v-5l.008-.079a2.251 2.251 0 11.989.044.14.14 0 01.003.035v2.539A2.49 2.49 0 016.2 7.5h3.6a1.5 1.5 0 001.493-1.356L11.3 6v-.545A2.25 2.25 0 0111.75 1zm-7.5 10.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm0-9.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm7.5 0a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"></path></g></svg> <span>master</span></div>
+<i class="dropdown icon"></i>
+<div class="menu" tabindex="-1">
+<div class="ui left icon input">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee dropdown-search-icon" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:search" style="font-size: 14px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M7 1a6 6 0 014.582 9.874l3.272 3.272a.5.5 0 01-.708.708l-3.272-3.272A6 6 0 117 1zm0 1a5 5 0 100 10A5 5 0 007 2z"></path></g></svg>
+<input class="search-branch" placeholder="搜索分支" type="text">
+</div>
+<div class="tab-menu project-branch-tab-menu d-flex">
+<div class="tab-menu-item active" data-placeholder="搜索分支" data-tab="branches">
+分支 (1)
+</div>
+<div class="d-align-center" style="flex:1;justify-content:end;">
+<div class="tab-menu-action active" data-tab="branches">
+<a class="ui link button" href="/kit-miao/bipedal-robot/branches">管理</a>
+</div>
+<div class="tab-menu-action" data-tab="tags">
+<a class="ui link button" href="/kit-miao/bipedal-robot/tags">管理</a>
+</div>
+</div>
+</div>
+<div class="tab scrolling menu active" data-tab="branches" id="branches_panel">
+<div data-value="master" class="item active selected" title="master"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:branch" style="font-size: 13px; margin-right: 4px; color: rgb(140, 146, 164);"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M11.75 1a2.25 2.25 0 01.55 4.432V6a2.5 2.5 0 01-2.336 2.495L9.8 8.5H6.2l-.144.007A1.5 1.5 0 004.7 10v.545a2.25 2.25 0 11-1.042.034.36.36 0 01-.008-.079v-5l.008-.079a2.251 2.251 0 11.989.044.14.14 0 01.003.035v2.539A2.49 2.49 0 016.2 7.5h3.6a1.5 1.5 0 001.493-1.356L11.3 6v-.545A2.25 2.25 0 0111.75 1zm-7.5 10.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm0-9.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zm7.5 0a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"></path></g></svg> <span>master</span></div>
+</div>
+</div>
+</div>
+<style>
+  .iconfont.icon-shieldlock {
+    color: #8c92a4;
+  }
+  .dropdown-search-icon {
+    position: absolute;
+    top: 8px;
+    left: 11px;
+  }
+</style>
+<style>
+  #git-project-branch .project-branch-tab-menu, .project-branch-item .project-branch-tab-menu {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0 11px !important;
+    border-bottom: 1px solid #dfe3e9 !important; }
+  #git-project-branch .ui.dropdown .menu, .project-branch-item .ui.dropdown .menu {
+    width: 360px !important; }
+    #git-project-branch .ui.dropdown .menu .item, .project-branch-item .ui.dropdown .menu .item {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  #git-project-branch .tab-menu-actions, .project-branch-item .tab-menu-actions {
+    position: absolute;
+    right: 0px !important;
+    bottom: 0.357em; }
+  #git-project-branch .tab-menu-action, .project-branch-item .tab-menu-action {
+    position: relative !important;
+    right: 0px !important;
+    bottom: 0px !important; }
+  #git-project-branch .menu::after, .project-branch-item .menu::after {
+    display: none !important; }
+</style>
+<script>
+  var $branchesDropdown = $('#branches_panel');
+  var $tagsDropdown = $('#tags_panel');
+  var $searchNameInput = $('.search-branch');
+  var concurrentRequestLock = false;
+  var filterXSS = window.filterXSS;
+  var search_text = "";
+  var branch_page_number = 1;
+  var branch_total_pager = Math.ceil(1 / 20) || 1
+  
+  var flag_is_loading = false;
+  var flag_page_number = 1;
+  var flag_total_pager = Math.ceil(0 / 20) || 1
+  
+  $branchesDropdown.scroll(function() {
+    var branchesPanel = document.getElementById('branches_panel');
+    var numOfBranches = $branchesDropdown.children().length;
+    if (branchesPanel.clientHeight + branchesPanel.scrollTop + 37 > branchesPanel.scrollHeight && numOfBranches < 1) {
+      debounceLoadMoreBranches.call();
+    }
+  });
+  function resetFlagVal() {
+    flag_is_loading = false;
+    flag_page_number = 1;
+    flag_total_pager = 1;
+  
+    concurrentRequestLock = false
+    search_text = "";
+    branch_page_number = 1;
+    branch_total_pager = 1
+  }
+  $searchNameInput.on('input', window.globalUtils.debouce(function (e) {
+    resetFlagVal()
+    var $currentTab = $('.tab-menu-action.active');
+    var numOfBranches = $branchesDropdown.children().length;
+    var searchWord = $searchNameInput.val().trim();
+    search_text = searchWord
+    if($currentTab.data('tab') === 'branches') {
+      if (searchWord !== "") {
+        loadData(searchWord,1);
+      } else {
+        loadData();
+      }
+    }
+    var numOfTags = $tagsDropdown.children().length;
+    if($currentTab.data('tab') === 'tags') {
+      if (searchWord !== "") {
+        fetchTags(searchWord,1);
+      } else {
+        fetchTags();
+      }
+    }
+  }, 500));
+  
+  function toggleNoResultView($popPanel) {
+    let no_data_html= `<div class='mt-1 mb-1 d-flex-center'> <span>暂无数据</span> </div>`
+    $popPanel.append(no_data_html)
+  }
+  var debounceLoadMoreBranches = window.globalUtils.debouce(function () {
+    if (concurrentRequestLock) return;
+    branch_page_number += 1;
+    if (branch_page_number > branch_total_pager) return;
+    loadData(search_text, branch_page_number);
+  }, 350);
+  
+  function loadData(search, page) {
+    if (concurrentRequestLock) { return; }
+    concurrentRequestLock = true;
+  
+    var searchParams = search || "";
+    var pageParams = page || 1;
+    $.ajax({
+      url: "/" + gon.user_project + "/branches/names.json",
+      type: 'GET',
+      data: {
+        search: searchParams,
+        page: pageParams,
+      },
+      dataType: 'json',
+      success: function (data) {
+        branch_total_pager = data.total_pages;
+        var html = '';
+  
+        if (pageParams === 1) {
+          $branchesDropdown.empty();
+        }
+        data.branches.forEach(function (branch) {
+          var protectRule = '';
+          var branchName = filterXSS(branch.name);
+          var icon = 'gitee:branch'
+          if(branch.branch_type.value === 1) {
+            var rule = filterXSS(branch.protection_rule.wildcard);
+            protectRule = `<i
+                class="iconfont icon-shieldlock protected-branch-popup"
+                data-title="受保护分支"
+                data-content='保护规则： ${rule}'
+              >
+              </i>`
+            icon ='gitee:pen-lock'
+          }else if(branch.branch_type.value === 2) {
+            icon ='gitee:pen-ban'
+          }
+          var branchIcon = `<span class="iconify" data-icon=${icon} style="font-size: 13px; margin-right:4px; color:#8C92A4"></span>`
+          html += `<div data-value='${branchName}' class="item">
+                    ${branchIcon} 
+                    <span>${branchName}</span> ${protectRule}
+                    </div>`
+        });
+        $branchesDropdown.append(html);
+        $('.protected-branch-popup').popup()
+        if (pageParams === 1 && data.count === 0) {
+          toggleNoResultView($branchesDropdown);
+        }
+      },
+      complete: function () {
+        concurrentRequestLock = false;
+      }
+    });
+  }
+  
+  
+  
+  $tagsDropdown.scroll(function() {
+    var tagsPanel = document.getElementById('tags_panel');
+    var numOfTags = $tagsDropdown.children().length;
+    if (tagsPanel.clientHeight + tagsPanel.scrollTop + 37 > tagsPanel.scrollHeight && numOfTags < 0) {
+      debounceLoadMore.call();
+    }
+  });
+  var debounceLoadMore = window.globalUtils.debouce(function () {
+    if (flag_is_loading) return;
+    flag_page_number += 1;
+    if (flag_page_number > flag_total_pager) return;
+    fetchTags(search_text, flag_page_number);
+  }, 350);
+  
+  function fetchTags(search, page) {
+    var searchParams = search || "";
+    var pageParams = page || 1;
+  
+    if (flag_is_loading) return;
+    flag_is_loading = true;
+  
+    $.ajax({
+      url: "/" + gon.user_project + "/tags/names.json",
+      data: {
+        search: searchParams,
+        page: pageParams,
+      },
+      type: "GET",
+      xhrFields: {
+        withCredentials: true,
+      },
+      success: function (data) {
+        flag_total_pager = data.total_pages;
+        if (pageParams === 1) {
+          $tagsDropdown.html('');
+        }
+        data.tags.forEach((tag) => {
+          const itemDiv = document.createElement('div');
+          itemDiv.classList.add('item');
+          itemDiv.setAttribute('data-value', tag.name);
+          itemDiv.innerText = window.filterXSS(tag.name);
+          $tagsDropdown.append(itemDiv)
+        });
+        if (pageParams === 1 && data.count === 0) {
+          toggleNoResultView($tagsDropdown);
+        }
+      },
+      error: function () {
+      },
+      complete: function () {
+        flag_is_loading = false;
+      },
+    });
+  }
+  $('.project-branch-tab-menu').on('click','.tab-menu-item', function (e) {
+    var $currentTab = $(this).data('tab')
+    if($currentTab === 'branches') {
+      $searchNameInput.val('')
+      search_text = '';
+      loadData()
+    }
+    if($currentTab === 'tags') {
+      $searchNameInput.val('')
+      search_text = '';
+      fetchTags();
+    }
+  })
+</script>
+
+<script>
+  $(function () {
+    var curNode = $('.git-project-branch-item')
+    if (false ){
+      curNode = $('.left-project-branch-item')
+    }else {
+      curNode = $('.git-project-branch-item')
+    }
+    Gitee.initTabsInDropdown(curNode.find('#git-project-branch').dropdown({
+      fullTextSearch: true,
+      selectOnKeydown: false,
+      direction: 'downward',
+      action: function (text,value,el) {
+        var oItemOrInitObject = el[0] || el
+        var isNotSelect = oItemOrInitObject.dataset.tab && oItemOrInitObject.dataset.tab === 'branches'
+        if(isNotSelect){
+          console.warn("You didn't choose a branch")
+          return
+        }
+        var path = $('#path').val();
+        var href = ['/kit-miao/bipedal-robot/tree', encodeURIComponent(value), path].join('/');
+        window.location.href = href;
+        return true
+      },
+      onNoResults: function (searchTerm) {
+        //未找到结果
+        return true
+      },
+    }));
+    $('.protected-branch-popup').popup()
+  })
+</script>
+
+</div>
+</div>
+<div class="git-project-right-actions pull-right">
+<div class="ui basic orange button" id="btn-dl-or-clone">
+克隆/下载
+<i class="dropdown icon"></i>
+</div>
+<div class="ui small modal" id="git-project-download-panel">
+<i class="iconfont icon-close close"></i>
+<div class="header">
+克隆/下载
+</div>
+<div class="content">
+<div class="ui secondary pointing menu mb-2 menu-container">
+<a class="item active" data-text="" data-type="http" data-url="https://gitee.com/kit-miao/bipedal-robot.git">HTTPS</a>
+<a class="item" data-text="" data-type="ssh" data-url="git@gitee.com:kit-miao/bipedal-robot.git">SSH</a>
+<a class="item" data-text="该仓库未启用SVN访问，请仓库管理员前往【&lt;a target='_blank' href=/kit-miao/bipedal-robot/settings#function&gt;仓库设置&lt;/a&gt;】开启。" data-type="svn" data-url="">SVN</a>
+<a class="item" data-text="该仓库未启用SVN访问，请仓库管理员前往【&lt;a target='_blank' href=/kit-miao/bipedal-robot/settings#function&gt;仓库设置&lt;/a&gt;】开启。" data-type="svn_ssh" data-url="">SVN+SSH</a>
+<a class="button-box ui basic orange button" href="/kit-miao/bipedal-robot/repository/archive/master.zip"><i class="icon download"></i>
+下载ZIP
+</a></div>
+<div class="ui fluid right labeled small input download-url-panel mb-2">
+<input type="text" name="project_url_clone" id="project_url_clone" value="https://gitee.com/kit-miao/bipedal-robot.git" onclick="focus();select()" readonly="readonly">
+<div class="ui basic label copy-icon-box">
+<i class="icon iconfont icon-clone mr-0 btn-copy-clone" data-clipboard-target="#project_url_clone" id="btn-copy-project_clone_url1"></i>
+</div>
+</div>
+<div class="tip-box mb-2">
+提示
+</div>
+<div class="mb-1 clone-url-title">
+下载代码请复制以下命令到终端执行
+</div>
+<div class="ui fluid right labeled small input download-url-panel mb-2">
+<input type="text" name="project_clone_url" id="project_clone_url" value="https://gitee.com/kit-miao/bipedal-robot.git" onclick="focus();select()" readonly="readonly">
+<div class="ui basic label copy-icon-box">
+<i class="icon iconfont icon-clone mr-0 btn-copy-clone" data-clipboard-target="#project_clone_url" id="btn-copy-project_clone_url"></i>
+</div>
+</div>
+<div class="ui fluid right labeled warning-text forbid-warning-text"></div>
+<div class="http-ssh-item mb-2">
+<div>
+为确保你提交的代码身份被 Gitee 正确识别，请执行以下命令完成配置
+</div>
+<div class="textarea-box mt-2">
+<textarea class="textarea-content-box" id="global-config-clone" readonly="">git config --global user.name userName 
+git config --global user.email userEmail</textarea>
+<i class="icon iconfont icon-clone mr-2 btn-copy-clone text-dark" data-clipboard-target="#global-config-clone" id="btn-copy-global-config"></i>
+</div>
+</div>
+<div class="ssh-item item-panel-box" style="display: none;">
+<div class="mb-2">
+初次使用 SSH 协议进行代码克隆、推送等操作时，需按下述提示完成 SSH 配置
+</div>
+<div class="mb-1">
+<span>1</span>
+生成 RSA 密钥
+</div>
+<div class="ui fluid right labeled small input mb-2">
+<input type="text" name="ssh_keygen_clone" id="ssh_keygen_clone" value="ssh-keygen -t rsa" onclick="focus();select()" readonly="readonly">
+<div class="ui basic label copy-icon-box">
+<i class="icon iconfont icon-clone mr-0 btn-copy-clone" data-clipboard-target="#ssh_keygen_clone" id="btn-copy-ssh_keygen"></i>
+</div>
+</div>
+<div class="mb-1">
+<span>2</span>
+获取 RSA 公钥内容，并配置到<a href="/profile/sshkeys" target="_blank"> SSH公钥 </a> 中
+</div>
+<div class="ui fluid right labeled small input mb-2">
+<input type="text" name="id_rsa_clone" id="id_rsa_clone" value="cat ~/.ssh/id_rsa.pub" onclick="focus();select()" readonly="readonly">
+<div class="ui basic label copy-icon-box">
+<i class="icon iconfont icon-clone mr-0 btn-copy-clone" data-clipboard-target="#id_rsa_clone" id="btn-copy-d_rsa"></i>
+</div>
+</div>
+</div>
+<div class="svn-item item-panel-box" style="display: none;">
+<div class="mb-1 mt-2">
+在 Gitee 上使用 SVN，请访问<a href="https://help.gitee.com/enterprise/code-manage/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93/Gitee%20SVN%E6%94%AF%E6%8C%81" target="_blank"> 使用指南 </a>
+</div>
+</div>
+<div class="http-item item-panel-box">
+<div class="mb-2 mt-2">
+使用 HTTPS 协议时，命令行会出现如下账号密码验证步骤。基于安全考虑，Gitee 建议<a href="/profile/personal_access_tokens" target="_blank"> 配置并使用私人令牌 </a>替代登录密码进行克隆、推送等操作
+</div>
+<div>Username for 'https://gitee.com': userName</div>
+<div class="mb-1">
+<span>Password for 'https://userName@gitee.com':</span>
+<span>#</span>
+<span>
+私人令牌
+</span>
+</div>
+</div>
+</div>
+</div>
+<style>
+  #git-project-download-panel {
+    top: 90px !important; }
+    #git-project-download-panel input {
+      color: #40485b !important; }
+    #git-project-download-panel .textarea-box {
+      width: 100%;
+      height: 60px;
+      color: #9d9d9d;
+      border-radius: 2px;
+      background-color: #F5F5F5 !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #git-project-download-panel .menu-container {
+      font-weight: bold;
+      border-color: rgba(0, 0, 0, 0.1) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; }
+      #git-project-download-panel .menu-container .item {
+        padding: 7px 12px !important; }
+    #git-project-download-panel .hr-item {
+      color: rgba(39, 41, 43, 0.15) !important; }
+    #git-project-download-panel .textarea-content-box {
+      width: 100%;
+      height: 60px;
+      resize: none;
+      border: 0px !important;
+      background-color: #F5F5F5 !important;
+      color: #40485b !important; }
+    #git-project-download-panel .btn-copy-clone {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.87) !important; }
+    #git-project-download-panel .copy-icon-box {
+      background-color: #F5F5F5 !important;
+      border-left: 0px !important; }
+    #git-project-download-panel .button-box {
+      border: 0px !important;
+      float: right !important;
+      padding-right: 0 !important; }
+    #git-project-download-panel .tip-box {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+      padding-bottom: 4px;
+      font-weight: 700; }
+    #git-project-download-panel .popup-container {
+      padding: 8px 12px 4px 12px;
+      text-align: center;
+      font-size: 14px; }
+      #git-project-download-panel .popup-container .ok {
+        margin: 12px auto;
+        width: 25%;
+        min-width: 125px;
+        display: block; }
+      #git-project-download-panel .popup-container .cancel {
+        margin-left: 0; }
+</style>
+<script>
+  $(function () {
+    var $btnClone = $('#btn-dl-or-clone')
+    var $modalDownload = $('#git-project-download-panel');
+    var $input = $('#project_clone_url')
+    var $inputUrl = $('#project_url_clone')
+    var cloneUrlTitle= $('.clone-url-title')
+  
+    $('#btn-dl-or-clone').on('click', function (e) {
+      e.preventDefault();
+      $modalDownload.modal('show');
+    })
+  
+    $modalDownload.find('.menu > .item').on('click', function(e) {
+      var $item = $(this).addClass('active');
+      $item.siblings().removeClass('active');
+      var dataUrl = $item.attr('data-url');
+      var cloneUrl = $item.attr('data-url');
+      var dataType = $item.attr('data-type')
+      var cloneToLocal = '下载代码请复制以下命令到终端执行'
+      if(dataType=='http'){
+        $modalDownload.find('.http-item').show();
+        $('.content > .item-panel-box:not(.http-item)').hide();
+        $modalDownload.find('.http-ssh-item').show();
+        cloneUrl = 'git clone '+dataUrl
+      }else if(dataType=='ssh'){
+        $modalDownload.find('.ssh-item').show();
+        $('.content > .item-panel-box:not(.ssh-item)').hide();
+        $modalDownload.find('.http-ssh-item').show();
+        cloneUrl = 'git clone '+dataUrl
+      }else if(dataType=='svn') {
+        $('.content > .item-panel-box:not(.svn-item)').hide();
+        $modalDownload.find('.svn-item').show();
+        $modalDownload.find('.http-ssh-item').hide();
+        cloneUrl = 'svn checkout '+dataUrl
+      }else {
+        $('.content > .item-panel-box:not(.svn-item)').hide();
+        $modalDownload.find('.svn-item').show();
+        $modalDownload.find('.http-ssh-item').hide();
+        cloneUrl = 'svn checkout '+dataUrl
+      }
+      if (dataUrl) {
+        $modalDownload.find('.download-url-panel').show();
+        $input.val(cloneUrl);
+        $inputUrl.val(dataUrl)
+        cloneUrlTitle.show();
+        $modalDownload.find('.forbid-warning-text').html('');
+      } else {
+        $modalDownload.find('.download-url-panel').hide();
+        //$modalDownload.find('.svn-item').hide();
+        cloneUrlTitle.hide();
+        $modalDownload.find('.forbid-warning-text').html($item.attr('data-text') || '');
+      }
+      $.cookie('remote_way', $item.attr('data-type'), { expires: 365, path: '/' });
+    }).filter('[data-type="' + ($.cookie('remote_way') || 'http') + '"]').trigger('click');
+  
+    $('.btn-copy-clone').popup({
+      content: '点击复制',
+    }).on('click', function(e) {
+      e.stopPropagation();
+      return false;
+    }).each(function(_, btnCopy) {
+      var $btnCopy = $(btnCopy);
+      new Clipboard(btnCopy).on('success', function() {
+        $btnCopy.popup('destroy').popup({
+          content: '已复制',
+          on: 'manual'
+        }).popup('show');
+        setTimeout(function() {
+          $btnCopy.popup('destroy').popup({
+            content: '点击复制'
+          });
+        }, 2000);
+      });
+    });
+    var $downloadBtn= $('.unlogin-download-btn')
+    var $popupContainer = $('.popup-container')
+    $downloadBtn.popup({
+      popup : $('.custom.popup'),
+      position   : 'bottom right',
+    }).on('click', function(e) {
+      $downloadBtn.popup('destroy').popup({
+        popup : $('.custom.popup'),
+        on: 'manual',
+        position   : 'bottom right',
+      }).popup('show');
+      setTimeout(function() {
+        $downloadBtn.popup('hide');
+      }, 2000);
+  
+    })
+  })
+</script>
+
+</div>
+<div class="d-inline pull-right" id="git-project-root-actions">
+<div class="ui horizontal list repo-action-list d-flex d-align-center repo-action-list-right">
+<div class="item search-box-container">
+<div class="ui icon input search-input" id="search-box">
+<input class="search-file-name" maxlength="40" placeholder="搜索文件" type="text">
+</div>
+<a class="d-flex d-align-center head-search-file-btn" id="search-file-btn">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:search" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 10px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M7 1a6 6 0 014.582 9.874l3.272 3.272a.5.5 0 01-.708.708l-3.272-3.272A6 6 0 117 1zm0 1a5 5 0 100 10A5 5 0 007 2z"></path></g></svg>
+</a>
+<div class="filter-file-container" style="display: none;"></div>
+</div>
+<div class="item plus-box">
+<div class="ui pointing right top dropdown git-project-file" id="git-project-file" tabindex="0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:plus" style="font-size: 16px; color: rgb(151, 156, 172);"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M8 1a.5.5 0 01.5.5v6h6a.5.5 0 110 1h-6v6a.5.5 0 11-1 0v-6h-6a.5.5 0 010-1h6v-6A.5.5 0 018 1z"></path></g></svg>
+<div class="menu repo-dropdown-box pt-1 pb-1" tabindex="-1">
+<a title="新建文件" id="new_file_bread" class="item repo-action d-flex d-align-center" href="/kit-miao/bipedal-robot/new/master"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:file" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 12px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M13 1a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V2a1 1 0 011-1zm-.25 1h-9.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V2.25a.25.25 0 00-.25-.25zM8.5 9a.5.5 0 010 1h-3a.5.5 0 010-1zm2-2.5a.5.5 0 110 1h-5a.5.5 0 010-1zm0-2.5a.5.5 0 110 1h-5a.5.5 0 010-1z"></path></g></svg>
+<span>
+新建文件
+</span>
+</a><a title="新建 Diagram 文件" class="item repo-action d-flex d-align-center" href="/kit-miao/bipedal-robot/new/master?ext=drawio"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:lan" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 12px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M10 1.5a.25.25 0 01.25.25v4A.25.25 0 0110 6H8.5v1.5h2.75a1.5 1.5 0 011.493 1.356L12.75 9v1h1.5a.25.25 0 01.25.25v4a.25.25 0 01-.25.25h-4a.25.25 0 01-.25-.25v-4a.25.25 0 01.25-.25h1.5V9a.5.5 0 00-.41-.492l-.09-.008h-6.5a.5.5 0 00-.492.41L4.25 9v1h1.5a.25.25 0 01.25.25v4a.25.25 0 01-.25.25h-4a.25.25 0 01-.25-.25v-4a.25.25 0 01.25-.25h1.5V9a1.5 1.5 0 011.356-1.493L4.75 7.5H7.5V6H6a.25.25 0 01-.25-.25v-4A.25.25 0 016 1.5zM5 11H2.5v2.5H5zm8.5 0H11v2.5h2.5zM9.25 2.5h-2.5V5h1.24A.51.51 0 018 5h1.25z"></path></g></svg>
+<span>
+新建 Diagram 文件
+</span>
+</a><div class="disabled item d-flex d-align-center">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:folder-sub" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 12px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M6.345 2c.427 0 .82.217 1.049.569l.07.122L8.118 4h5.632a1.25 1.25 0 011.225.998l.019.124.006.128v.25a.5.5 0 11-1 0v-.25a.25.25 0 00-.193-.243L13.75 5H7.5l-.93-1.862a.25.25 0 00-.169-.132L6.345 3H2.25a.25.25 0 00-.243.193L2 3.25v9.5a.25.25 0 00.193.243L2.25 13H4.5a.5.5 0 110 1H2.25a1.25 1.25 0 01-1.244-1.122L1 12.75v-9.5c0-.647.492-1.18 1.122-1.244L2.25 2zm3.837 4.5a1.5 1.5 0 011.359.866l.296.634H14.5a1.5 1.5 0 011.493 1.356L16 9.5v3a1.5 1.5 0 01-1.5 1.5h-6A1.5 1.5 0 017 12.5V8a1.5 1.5 0 011.5-1.5zm0 1H8.5A.5.5 0 008 8v4.5a.5.5 0 00.5.5h6a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3.3l-.565-1.211a.5.5 0 00-.453-.289z"></path></g></svg>
+<span>
+新建子模块
+</span>
+</div>
+<div class="disabled item d-flex d-align-center">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:upload" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 12px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M14.5 8a.5.5 0 01.492.41L15 8.5V13a1 1 0 01-1 1H2a1 1 0 01-1-1V8.5l.008-.09a.5.5 0 01.984 0L2 8.5v4.25a.25.25 0 00.193.243L2.25 13h11.5a.25.25 0 00.243-.193L14 12.75V8.5l.008-.09A.5.5 0 0114.5 8zM8 2h.012l.03.002a.502.502 0 01.036.004l.012.002.016.003a.5.5 0 01.068.02l.015.006.02.008a.496.496 0 01.145.101l2.12 2.122a.5.5 0 11-.706.707L8.5 3.707V9.5a.5.5 0 01-1 0V3.706L6.232 4.975a.5.5 0 11-.707-.707l2.121-2.122.013-.011a.503.503 0 01.039-.033l-.052.044a.502.502 0 01.146-.1l.019-.01a.497.497 0 01.015-.005l.018-.006a.5.5 0 01.066-.017l.012-.002a.502.502 0 01.035-.004L7.99 2A.51.51 0 018 2z"></path></g></svg>
+<span>
+上传文件
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="item toschina-content__hidden webIDE-box" data-content="Web IDE">
+<a class="ui d-flex d-align-center webide" target="_blank" href="/-/ide/project/kit-miao/bipedal-robot/edit/master/-/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:computer" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 10px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M2 11.5a1 1 0 01-1-1V3a1 1 0 011-1h12a1 1 0 011 1v7.5a1 1 0 01-1 1H8.5V13h2a.5.5 0 110 1h-5a.5.5 0 110-1h2v-1.5zM13.75 3H2.25a.25.25 0 00-.243.193L2 3.25v7a.25.25 0 00.193.243l.057.007h11.5a.25.25 0 00.243-.193L14 10.25v-7a.25.25 0 00-.25-.25z"></path></g></svg>
+</a></div>
+<div class="item compare-box" data-content="对比视图">
+<a class="ui d-flex d-align-center webide" target="_blank" href="/kit-miao/bipedal-robot/compare/master...master"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gitee" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="gitee:diff" style="font-size: 16px; color: rgb(151, 156, 172); margin-right: 12px;"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v16H0z"></path><path fill="currentColor" d="M14 2.5a1 1 0 011 1V12a1 1 0 01-1 1h-4l-1.823 1.823a.25.25 0 01-.354 0l-1.75-1.75A.25.25 0 005.896 13H2a1 1 0 01-1-1V3.5a1 1 0 011-1zm-.5 1h-11a.5.5 0 00-.492.41L2 4v7.5a.5.5 0 00.41.492L2.5 12h3.896a.25.25 0 01.177.073L8 13.5l1.427-1.427A.25.25 0 019.604 12H13.5a.5.5 0 00.492-.41L14 11.5V4a.5.5 0 00-.5-.5zM5.2 6a.5.5 0 01.5.5v1h1a.5.5 0 010 1h-1v1a.5.5 0 01-1 0l-.001-1H3.7a.5.5 0 010-1h1v-1a.5.5 0 01.5-.5zm7.1 1.5a.5.5 0 110 1h-3a.5.5 0 010-1z"></path></g></svg>
+</a></div>
+</div>
+<script>
+  $('.git-project-file').dropdown({
+    action: 'hide',
+    onHide: function () {
+      $('.plus-box').removeClass('click-active')
+    },
+    onShow: function () {
+      $('.plus-box').addClass('click-active')
+    }
+  });
+</script>
+<script>
+  $('.webIDE-box').popup()
+  $('.compare-box').popup()
+</script>
+<script src="https://cn-assets.gitee.com/assets/file_search/app-21e8df8af6aa09b8995390509269205b.js"></script>
+<style>
+  .filter-file-container-hide {
+    display: none !important; }
+</style>
+
+</div>
+<div class="breadcrumb_path path-breadcrumb-contrainer" id="git-project-breadcrumb">
+
+</div>
+<div class="ui horizontal list repo-action-list branches-tags" style="">
+<div class="item">
+<a class="ui blank button" href="/kit-miao/bipedal-robot/branches"><i class="iconfont icon-branches"></i>
+分支 1
+</a></div>
+<div class="item mr-3">
+<a class="ui blank button" href="/kit-miao/bipedal-robot/tags"><i class="iconfont icon-tag"></i>
+标签 0
+</a></div>
+</div>
+</div>
+<script src="https://cn-assets.gitee.com/webpacks/parse_blob_form_scheme-f8071962be0eddc2e320.bundle.js"></script>
+<script>
+  if(window.gon.locale == 'en')
+    $('.branches-tags').css('margin-top', '12px')
+   // 仓库页面切换路径时: 刷新 yaml 错误检查
+  $(window).on('pjax-complete:file-show', function () {
+    window.parseBlobFormScheme && window.parseBlobFormScheme($('.js-blob-data').data('blob'));
+  });
+</script>
+
+<style>
+  .ui.dropdown .menu > .header {
+    text-transform: none; }
+</style>
+<script>
+  $(function () {
+    var $tip = $('#apk-download-tip');
+    if (!$tip.length) {
+      return;
+    }
+    $tip.find('.btn-close').on('click', function () {
+      $tip.hide();
+    });
+  });
+  (function(){
+    function pathAutoRender() {
+      var $parent = $('#git-project-bread'),
+          $child = $('#git-project-bread').children('.ui.horizontal.list'),
+          mainWidth = 0;
+      $child.each(function (i,item) {
+        mainWidth += $(item).width()
+      });
+      $('.breadcrumb.path.fork-path').remove();
+      if (mainWidth > 995) {
+        $('#path-breadcrumb').hide();
+        $parent.append('<div class="ui breadcrumb path fork-path">' + $('#path-breadcrumb').html() + '<div/>')
+      } else {
+        $('#path-breadcrumb').show();
+      }
+    }
+    window.pathAutoRender = pathAutoRender;
+    pathAutoRender();
+  })();
+</script>
+
+<div class="branch-diff-notice-bar hide">
+<div class="left-section"></div>
+<div class="right-section">
+<div class="ui button gradient contribute">
+贡献代码
+<i class="dropdown icon"></i>
+</div>
+<div class="ui button gradient branch-sync hide">
+同步代码
+<i class="dropdown icon"></i>
+</div>
+</div>
+</div>
+<div class="ui popup contribute branch-diff-pop-panel contribute-pop">
+<div class="notice-title"></div>
+<div class="notice-sub-title"></div>
+<div class="notice-content"></div>
+<a class="ui button orange fluid disabled create-pr" href="/" target="_blank">
+创建 Pull Request
+</a>
+</div>
+<div class="ui popup branch-diff-pop-panel branch-sync-pop">
+<div class="notice-title"></div>
+<div class="notice-content"></div>
+<div class="known-more">
+<a href="/help/articles/4395" target="_blank">
+了解更多
+</a>
+</div>
+<div class="btn-group">
+<div class="ui button basic red discard-btn hide"></div>
+<a class="ui button orange basic diff-btn hide" href="/" target="_blank">
+对比差异
+</a>
+<a class="ui button gradient pr-sync-btn hide" href="/" target="_blank">
+通过 Pull Request 同步
+</a>
+<div class="ui buttons basic dropdown-group-btn hide">
+<div class="ui button branch-sync-btn">
+同步更新到分支
+</div>
+<div class="ui button dropdown dropdown-create-pr">
+<i class="icon dropdown"></i>
+<div class="menu">
+<div class="disabled item">
+<div>
+通过 Pull Request 同步
+<div class="text-muted fs-12 mt-1">
+将会在向当前分支创建一个 Pull <br>Request，合入后将完成同步
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const i18_compare_current_branch = `当前分支与 <a href="URL">BRANCH</a> 相比`
+    const i18_branch_ahead_commit = `，领先 <a href="URL">NUM 个 Commit</a>`
+    const i18_branch_behind_commit = `，落后 <a href="URL">NUM 个 Commit</a>`
+  
+    const i18_contribute_ahead_title = `当前分支比 BRANCH 领先了 NUM 次提交。`
+    const i18_contribute_pr_create = `创建一个 Pull Request 贡献代码。`
+    const i18_contribute_has_pr = `已创建了 Pull Request`
+    const i18_contribute_no_ahead = `这个分支没有领先于 BRANCH 的代码提交。`
+  
+    const i18_branch_sync_behind  = `这个分支已落后于 BRANCH 分支`
+    const i18_branch_sync_behind_desc = `从 BRANCH 分支同步 NUM 个提交来更新分支以保持当前分支代码是最新的。`
+    const i18_branch_sync_out_of_date = `此分支已过时`
+    const i18_branch_sync_out_of_date_desc = `你可以将 BRANCH 分支中的最新更改合并到此分支中。或丢弃当前分支上的提交以使当前分支与 BRANCH 分支匹配。这将从当前分支中删除 NUM 个提交。`
+    const i18_branch_discard_diff = `丢弃 NUM 个提交`
+  
+    const i18_branch_sync_success = `同步成功`
+    const i18_branch_sync_fail = `同步失败`
+    const i18_branch_discard_success = `丢弃成功`
+    const i18_branch_discard_fail = `丢弃失败`
+  
+    window.locale_temple_branch_diff = {
+      i18_compare_current_branch,
+      i18_branch_ahead_commit,
+      i18_branch_behind_commit,
+  
+      i18_contribute_ahead_title,
+      i18_contribute_pr_create,
+      i18_contribute_has_pr,
+      i18_contribute_no_ahead,
+  
+      i18_branch_sync_behind,
+      i18_branch_sync_behind_desc,
+      i18_branch_sync_out_of_date,
+      i18_branch_sync_out_of_date_desc,
+      i18_branch_discard_diff,
+  
+      i18_branch_sync_success,
+      i18_branch_sync_fail,
+      i18_branch_discard_success,
+      i18_branch_discard_fail
+    }
+  })();
+</script>
+
+<div class="row column tree-holder" id="tree-holder">
+<div class="tree-content-holder" id="tree-content-holder">
+<div class="ui flat nopadding segment tree-content">
+<div class="git-project-recent-commit" id="git-project-info">
+<div class="recent-commit">
+<a class="commit-author-link  js-popover-card " data-username="disnox" href="/disnox"><img class="avatar circular ui image 20 mini" width="20" alt="" src="https://foruda.gitee.com/avatar/1769047544782270869/13481590_disnox_1769047544.png!avatar30"> <span class="commit-author-name">尚宇沐风</span></a>
+<span>
+<a class="repo-index-commit-msg" title="chore: sync public materials from governed source" href="/kit-miao/bipedal-robot/commit/f9b23d9497ebc3c969576e7b195ef1bafd7e514a">chore: sync public materials from governed...</a>
+</span>
+<span>f9b23d9</span>
+<span class="timeago" datetime="2026-07-01 07:05" title="2026-07-01 07:05:02 +0800">3个月前</span>
+<check-runs branch="master" commit-id="f9b23d9497ebc3c969576e7b195ef1bafd7e514a" project-path="kit-miao/bipedal-robot" checkruns="[object Object]"></check-runs>
+
+</div>
+<div class="all-commits">
+<a href="/kit-miao/bipedal-robot/commits/master"><i class="iconfont icon-commit"></i>
+92 次提交
+</a></div>
+</div>
+
+<div class="grid list selection table_da39a3ee5e6b4b0d3255bfef95601890afd80709 tree-table ui" id="tree-slider">
+<div class="create-folder-form form ui">
+<form id="folder_form-edit" action="/kit-miao/bipedal-robot/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="62UG9tPe9k22gHvHOD4JruTX7FC2BcRXCaLtEQGl5tvMX3EcSctNckcbCYG5322EUtbZG3DbT6nGfuPY8+s5CQ==">
+<div class="fields">
+<div class="field">
+<input type="hidden" name="new_file_path" id="new_file_path">
+<input type="hidden" name="content" id="content">
+<input id="new_folder_path" name="new_folder_path" placeholder="新建文件夹" type="text">
+</div>
+<div class="field">
+<button name="button" type="submit" class="ui primary button orange submit field-init-btn js-submit-btn">提交</button>
+<a class="ui basic white button cancel field-init-btn" href="javascript:void(0)">取消</a>
+</div>
+<div class="ui mid-center small message notice">
+<strong>提示:</strong>
+由于 Git 不支持空文件夾，创建文件夹后会生成空的 .keep 文件
+</div>
+</div>
+</form>
+
+</div>
+<div class="file_f27fede2220bcd326aee3e86ddfd4ebd0fe58cb9 row tree-item" data-branch="master" data-type="folder" file_hex="file_f27fede2220bcd326aee3e86ddfd4ebd0fe58cb9">
+<div class="five wide column tree-item-file-name tree-folder tree-list-item d-align-center" data-path="src/代码" data-type="folder">
+<i class="iconfont icon-folders file-icon-item"></i>
+<a class="tree-folder-item" title="src/代码" data-path="src/代码" href="/kit-miao/bipedal-robot/tree/master/src/%E4%BB%A3%E7%A0%81"><span class="simplified-path">src/</span>代码
+<div class="js-tree-row-lfs"></div>
+</a></div>
+<div class="nine wide column tree_author">
+<div class="commit-details">
+<a title="chore: align public materials source
+" class="tree-commit-link" href="/kit-miao/bipedal-robot/commit/967db577cc66f49592098e27078da23febdd2567">chore: align public materials source</a>
+</div>
+</div>
+<div class="two wide column right aligned tree_time_ago">
+<span class="timeago" datetime="2026-06-30 11:34" title="2026-06-30 11:34:52 +0800">3个月前</span>
+</div>
+</div>
+<div class="rename-file_f27fede2220bcd326aee3e86ddfd4ebd0fe58cb9 row tree-item tree-item-rename" file_hex="file_f27fede2220bcd326aee3e86ddfd4ebd0fe58cb9" style="display:none">
+<div class="ui column form" path="tree/master/src/%E4%BB%A3%E7%A0%81">
+<div class="two fields">
+<div class="five wide field">
+<input class="ui input" name="new_filename" type="text" value="代码">
+</div>
+<div class="five wide field">
+<button class="ui blue button popup-save" type="submit">保存</button>
+<button class="ui basic button popup-close">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="file_b4cd99b8d4f100d77c3f9631be499aa06f9e8178 row tree-item" data-branch="master" data-type="folder" file_hex="file_b4cd99b8d4f100d77c3f9631be499aa06f9e8178">
+<div class="five wide column tree-item-file-name tree-folder tree-list-item d-align-center" data-path="硬件" data-type="folder">
+<i class="iconfont icon-folders file-icon-item"></i>
+<a class="tree-folder-item" title="硬件" data-path="硬件" href="/kit-miao/bipedal-robot/tree/master/%E7%A1%AC%E4%BB%B6"><span class="simplified-path"></span>硬件
+<div class="js-tree-row-lfs"></div>
+</a></div>
+<div class="nine wide column tree_author">
+<div class="commit-details">
+<a title="chore: align public materials source
+" class="tree-commit-link" href="/kit-miao/bipedal-robot/commit/967db577cc66f49592098e27078da23febdd2567">chore: align public materials source</a>
+</div>
+</div>
+<div class="two wide column right aligned tree_time_ago">
+<span class="timeago" datetime="2026-06-30 11:34" title="2026-06-30 11:34:52 +0800">3个月前</span>
+</div>
+</div>
+<div class="rename-file_b4cd99b8d4f100d77c3f9631be499aa06f9e8178 row tree-item tree-item-rename" file_hex="file_b4cd99b8d4f100d77c3f9631be499aa06f9e8178" style="display:none">
+<div class="ui column form" path="tree/master/%E7%A1%AC%E4%BB%B6">
+<div class="two fields">
+<div class="five wide field">
+<input class="ui input" name="new_filename" type="text" value="硬件">
+</div>
+<div class="five wide field">
+<button class="ui blue button popup-save" type="submit">保存</button>
+<button class="ui basic button popup-close">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="file_aa5e4056296d0afdf1ef1b9e5e2e766134a0fc6e row tree-item" data-branch="master" data-type="file" file_hex="file_aa5e4056296d0afdf1ef1b9e5e2e766134a0fc6e">
+<div class="five wide column tree-item-file-name tree-list-item d-align-center" data-path="README.en.md" data-type="file">
+<i class="iconfont icon-file"></i>
+<a class="tree-folder-item" title="README.en.md" data-path="README.en.md" href="/kit-miao/bipedal-robot/blob/master/README.en.md">README.en.md</a>
+<div class="js-tree-row-lfs"></div>
+</div>
+<div class="nine wide column tree_author">
+<div class="commit-details">
+<a title="chore: sync public materials from governed source
+" class="tree-commit-link" href="/kit-miao/bipedal-robot/commit/f9b23d9497ebc3c969576e7b195ef1bafd7e514a">chore: sync public materials from governed source</a>
+</div>
+</div>
+<div class="two wide column right aligned tree_time_ago">
+<span class="timeago" datetime="2026-07-01 07:05" title="2026-07-01 07:05:02 +0800">3个月前</span>
+</div>
+</div>
+<div class="rename-file_aa5e4056296d0afdf1ef1b9e5e2e766134a0fc6e row tree-item tree-item-rename" file_hex="file_aa5e4056296d0afdf1ef1b9e5e2e766134a0fc6e" style="display:none">
+<div class="ui column form" path="blob/master/README.en.md">
+<div class="two fields">
+<div class="five wide field">
+<input class="ui input" name="new_filename" type="text" value="README.en.md">
+</div>
+<div class="five wide field">
+<button class="ui blue button popup-save" type="submit">保存</button>
+<button class="ui basic button popup-close">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="file_8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d row tree-item" data-branch="master" data-type="file" file_hex="file_8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d">
+<div class="five wide column tree-item-file-name tree-list-item d-align-center" data-path="README.md" data-type="file">
+<i class="iconfont icon-file"></i>
+<a class="tree-folder-item" title="README.md" data-path="README.md" href="/kit-miao/bipedal-robot/blob/master/README.md">README.md</a>
+<div class="js-tree-row-lfs"></div>
+</div>
+<div class="nine wide column tree_author">
+<div class="commit-details">
+<a title="chore: sync public materials from governed source
+" class="tree-commit-link" href="/kit-miao/bipedal-robot/commit/f9b23d9497ebc3c969576e7b195ef1bafd7e514a">chore: sync public materials from governed source</a>
+</div>
+</div>
+<div class="two wide column right aligned tree_time_ago">
+<span class="timeago" datetime="2026-07-01 07:05" title="2026-07-01 07:05:02 +0800">3个月前</span>
+</div>
+</div>
+<div class="rename-file_8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d row tree-item tree-item-rename" file_hex="file_8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" style="display:none">
+<div class="ui column form" path="blob/master/README.md">
+<div class="two fields">
+<div class="five wide field">
+<input class="ui input" name="new_filename" type="text" value="README.md">
+</div>
+<div class="five wide field">
+<button class="ui blue button popup-save" type="submit">保存</button>
+<button class="ui basic button popup-close">取消</button>
+</div>
+</div>
+</div>
+</div>
+<div class="file_933d13cc88d25497145c0e69aa345dbd2174041c row tree-item" data-branch="master" data-type="file" file_hex="file_933d13cc88d25497145c0e69aa345dbd2174041c">
+<div class="five wide column tree-item-file-name tree-list-item d-align-center" data-path="README.zh.md" data-type="file">
+<i class="iconfont icon-file"></i>
+<a class="tree-folder-item" title="README.zh.md" data-path="README.zh.md" href="/kit-miao/bipedal-robot/blob/master/README.zh.md">README.zh.md</a>
+<div class="js-tree-row-lfs"></div>
+</div>
+<div class="nine wide column tree_author">
+<div class="commit-details">
+<a title="chore: align public materials source
+" class="tree-commit-link" href="/kit-miao/bipedal-robot/commit/967db577cc66f49592098e27078da23febdd2567">chore: align public materials source</a>
+</div>
+</div>
+<div class="two wide column right aligned tree_time_ago">
+<span class="timeago" datetime="2026-06-30 11:34" title="2026-06-30 11:34:52 +0800">3个月前</span>
+</div>
+</div>
+<div class="rename-file_933d13cc88d25497145c0e69aa345dbd2174041c row tree-item tree-item-rename" file_hex="file_933d13cc88d25497145c0e69aa345dbd2174041c" style="display:none">
+<div class="ui column form" path="blob/master/README.zh.md">
+<div class="two fields">
+<div class="five wide field">
+<input class="ui input" name="new_filename" type="text" value="README.zh.md">
+</div>
+<div class="five wide field">
+<button class="ui blue button popup-save" type="submit">保存</button>
+<button class="ui basic button popup-close">取消</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="ui tree_progress" data-logs-path="/kit-miao/bipedal-robot/refs/master/logs_tree/">
+<div class="ui active inverted dimmer">
+<div class="ui small text loader">Loading...</div>
+</div>
+</div>
+<div class="readme-box" id="git-readme">
+<div class="ui flat nopadding segment file_holder">
+<div class="file_title d-flex-between file_readme_title">
+<div class="left-box">
+<div class="file_title_readme mr-1 pb-1 active-title pr-1 pl-1">
+<i class="iconfont icon-readme mr-05"></i>
+<span class="file_name">README</span>
+</div>
+</div>
+<div class="box-border d-align-center pb-1 flex-shrink-0 ml-2">
+<div class="readme-edit d-align-center gap-2">
+</div>
+</div>
+</div>
+<div class="readme-content">
+<div class="file-markdown-layout">
+<div class="file_catalog">
+<div class="toggle collapse" title="收起">
+<i class="icon angle left"></i>
+</div>
+<div class="file_catalog_resizer"></div>
+<div class="scroll-container" style="width: 200px;">
+<div class="container"><ul class="catalog-ul" level="1"><li class="catalog-li active"><a href="#bipedal-robot" class="anchor" title="bipedal-robot">bipedal-robot</a></li><li><ul class="catalog-ul" level="2"><li class="catalog-li"><a href="#%E4%BB%8B%E7%BB%8D" class="anchor" title="介绍">介绍</a></li><li class="catalog-li"><a href="#%E5%AE%9E%E7%89%A9%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA" class="anchor" title="实物视频演示">实物视频演示</a></li></ul></li></ul></div>
+</div>
+</div>
+<div class="file_content markdown-body">
+<blob-markdown-renderer data-dir="" data-path-with-namespace="/kit-miao/bipedal-robot"><h1><a class="anchor" href="#bipedal-robot" id="user-content-bipedal-robot"></a>bipedal-robot</h1>
+<h2><a class="anchor" href="#%E4%BB%8B%E7%BB%8D" id="user-content-介绍"></a>介绍</h2>
+<p>达妙科技开源小人形机器人，下肢10自由度，腰部1自由度，两手臂共8自由度</p>
+<p>开源程序分RL和MPC两套方案，<strong>推荐用RL</strong></p>
+<p>硬件组成10个DM4340电机（左右两腿）+一个DM6006电机（腰）+4个DM4310电机+4个DM3507电机（左右手臂）+DM-MC02开发板+达妙IMU模块+主控</p>
+<p>主控支持下面两种其中一个：</p>
+<p>达妙orin载板+orin核心板、NUC</p>
+<p>交流群428064389</p>
+<p>关于代码的说明，<strong>文件夹</strong>里的readme.md有详细的介绍，包括安装教程等</p>
+<h2><a class="anchor" href="#%E5%AE%9E%E7%89%A9%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA" id="user-content-实物视频演示"></a>实物视频演示</h2>
+<p>(<a href="https://gitee.com/link?target=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2FBV14NC5BtEoV%2F%3Fspm_id_from%3D333.337.search-card.all.click" target="_blank" rel="nofollow noreferrer noopener">https://www.bilibili.com/video/BV14NC5BtEoV/?spm_id_from=333.337.search-card.all.click</a>)</p>
+</blob-markdown-renderer>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  "use strict";
+  
+  if ($('.markdown-body').children("style").length != 0) {
+    var i, array = $('.markdown-body').children("style");
+    array.first().attr('scoped','');
+    $.scoped();
+  }
+  
+  $('.appeal_message').removeClass('text-center')
+  
+  $(".file_title_readme").click(function(event) {
+    $('.lisence-content').hide()
+    $('.readme-content').show()
+    $('.lisence-edit').hide()
+    $('.readme-edit').show()
+    $('.file_title_readme').addClass('active-title')
+    $('.file_title_license').removeClass('active-title')
+  });
+  
+  $(".file_title_license").click(function(event) {
+    var licenseIndex = $(this).data('license-index');
+    $('.readme-content').hide()
+    $('.lisence-edit').hide()
+    $('.readme-edit').hide()
+    
+    // 移除所有license标题的active-title类，然后为当前点击的标题添加active-title类
+    $('.file_title_license').removeClass('active-title');
+    $(this).addClass('active-title');
+    $('.file_title_readme').removeClass('active-title');
+    // 隐藏所有license内容，然后只显示选中的license内容
+    $('.lisence-content').hide();
+    $('#license-content-' + licenseIndex).show();
+    $('#license-edit-' + licenseIndex).show();
+  });
+  try {
+    if((gon.wait_fork!=undefined && gon.wait_fork==true) || (gon.wait_fetch!=undefined && gon.wait_fetch==true)){
+      $('.edit-blob').popup({content:"当前仓库正在后台处理中,暂时无法编辑", on: 'hover', delay: { show: 200, hide: 200 }});
+      $('.edit-blob').click(function(e){
+        e.preventDefault();
+      })
+    }
+  }catch (error) {}
+  $('.disabled-edit-readonly').popup({
+    content: "只读文件不可编辑",
+    className: {
+      popup: 'ui popup',
+    },
+    position: 'bottom center',
+  })
+  $('.disabled-edit-readonly, .disabled-edit-status').click(function() {
+    return false
+  })
+  $('.has_tooltip').popup({
+    position: 'top center'
+  });
+  
+  $('.ai-readme-dropdown-btn').dropdown({
+    on: 'hover',
+    action: 'hide',
+  })
+</script>
+<style>
+  @charset "UTF-8";
+  .txt-style {
+    background: #FFF !important;
+    padding: 0 !important; }
+  
+  .file_readme_title {
+    padding-bottom: 0 !important;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .file_readme_title .left-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-width: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      /* 自定义滚动条样式 */
+      /* 确保license标题不会被压缩 */
+      /* README标题也不被压缩 */ }
+      .file_readme_title .left-box::-webkit-scrollbar {
+        height: 4px; }
+      .file_readme_title .left-box::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 2px; }
+      .file_readme_title .left-box::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 2px; }
+      .file_readme_title .left-box::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8; }
+      .file_readme_title .left-box .file_title_license {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content; }
+      .file_readme_title .left-box .file_title_readme {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        min-width: -webkit-fit-content;
+        min-width: -moz-fit-content;
+        min-width: fit-content; }
+  
+  .active-title {
+    border-bottom: 2px solid #fe7300; }
+  
+  .preformatted {
+    font-family: monospace;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: keep-all; }
+  
+  .disabled-edit-readonly,
+  .has_tooltip {
+    color: #40485b !important;
+    cursor: default !important;
+    opacity: 0.3 !important; }
+  
+  .ai-btn {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
+    border-radius: 4px !important;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(44, 126, 248, 0.15)), to(rgba(195, 73, 232, 0.15))) !important;
+    background: linear-gradient(270deg, rgba(44, 126, 248, 0.15) 0%, rgba(195, 73, 232, 0.15) 100%) !important; }
+    .ai-btn:before {
+      content: '';
+      pointer-events: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: -webkit-gradient(linear, right top, left top, from(#2c7ef8), to(#b752eb));
+      background: linear-gradient(270deg, #2c7ef8 0%, #b752eb 100%);
+      -webkit-mask: -webkit-gradient(linear, left top, left bottom, from(black), to(black)) content-box content-box, -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+      -webkit-mask: linear-gradient(black, black) content-box content-box, linear-gradient(black, black);
+      -webkit-mask-composite: xor;
+      mask: -webkit-gradient(linear, left top, left bottom, from(black), to(black)) content-box content-box, -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+      mask: linear-gradient(black, black) content-box content-box, linear-gradient(black, black);
+      -webkit-mask-composite: subtract;
+              mask-composite: subtract; }
+    .ai-btn.optimize-readme {
+      height: 26px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px; }
+    .ai-btn .ai-img {
+      width: 18px;
+      height: 12px; }
+  
+  .p-rel {
+    position: relative; }
+  
+  .gen-free-label {
+    background: -webkit-gradient(linear, right top, left top, color-stop(-2.78%, #367bf7), to(#c064fb));
+    background: linear-gradient(270deg, #367bf7 -2.78%, #c064fb 100%);
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding: 0px 2px 0px 6px;
+    border-radius: 16px 12px 0px 16px; }
+  
+  .gen-dropdown-free-label {
+    background: -webkit-gradient(linear, right top, left top, color-stop(-2.78%, #367bf7), to(#c064fb));
+    background: linear-gradient(270deg, #367bf7 -2.78%, #c064fb 100%);
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 16px; }
+  
+  .gen-readme-tip {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 8px 12px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(148, 112, 255, 0.0507)), to(rgba(255, 167, 118, 0.07481)));
+    background: linear-gradient(270deg, rgba(148, 112, 255, 0.0507) 0%, rgba(255, 167, 118, 0.07481) 100%);
+    border-bottom: 1px solid #E3E9ED; }
+  
+  .text-wrap-auto {
+    text-wrap: auto; }
+  
+  .ai-readme-dropdown-box .item {
+    max-width: 264px; }
+  
+  .translate-hover-text:hover {
+    color: #8c919c !important; }
+  
+  .text-hover-underline:hover {
+    text-decoration: underline; }
+</style>
+
+</div>
+<script id="tree-item-context-menu-template" type="text/plain">
+<div class='ui menu compact vertical tree-context'>
+<a class='btn-open-new-tab item tree-operation'>
+<i class='file outline icon'></i>
+新标签打开
+</a>
+<a class='btn-copy item tree-operation'>
+<i class='copy icon'></i>
+复制
+</a>
+<a class='btn-rename item tree-operation'>
+<i class='edit icon'></i>
+重命名
+</a>
+<a class='btn-delete item tree-operation'>
+<i class='trash icon'></i>
+删除
+</a>
+</div>
+</script>
+<script id="tree-item-submodule-context-menu-template" type="text/plain">
+<div class='ui menu compact vertical tree-context'>
+<a class='btn-copy item tree-operation'>
+<i class='copy icon'></i>
+复制
+</a>
+<a class='btn-compact-edit item tree-operation submodule_item'>
+<i class='edit icon'></i>
+编辑
+</a>
+<a class='btn-submodule-delete item tree-operation submodule_item'>
+<i class='trash icon'></i>
+删除
+</a>
+</div>
+</script>
+<script src="/static/javascripts/file-icons.js"></script>
+<script>
+  $(function() {
+    /*$(".tree-list-item").each(function(){
+      $this = $(this)
+      var path = $this.attr('data-path')
+      var type = $this.attr('data-type')
+      $icon = $this.find('i')
+      if(type==='file'){
+        let iconClass='';
+        try {
+          iconClass =
+            FileIcons.getClassWithColor(path) || 'file-generic';
+        } catch (err) {}
+        if(iconClass)
+          $icon.attr('class', "file-icon-item iconfont icon-file ".concat(iconClass));
+      }
+    })*/
+    var $createFolderForm = $('.create-folder-form'),
+        $createFolderSubmitBtn = $('.create-folder-form .js-submit-btn')
+        $folderPath = $('#new_folder_path'),
+        $message = $('.create-folder-form .notice'),
+        folders = ["src","硬件"],
+        folderReg = new RegExp(/\/+/);
+  
+    var INDEX_BEGIN_WITH_READONLY_DIR = 0
+    var gitGCModal = new GiteeModalHelper({
+        approveText: "确认",
+        cancelText: "取消",
+        okText: "确认",
+    })
+    function checkFolder(folder) {
+      var i, itemArr;
+      if (folder == '') {
+        return false;
+      }
+      for (i = 0; i< folders.length; i++) {
+        itemArr = folders[i].split('/');
+        if (itemArr[0] == folder){
+          return true
+        }
+      }
+      return false;
+    }
+    function createFolderShow () {
+      $createFolderForm.show();
+      $folderPath.focus();
+    }
+  
+    $('.create-folder-form .cancel').click(function () {
+      $createFolderForm.hide();
+    })
+  
+    $folderPath.on('input', function (e) {
+      if($(this).parent().hasClass('error')) {
+        $message.removeClass('warn').html("<strong>提示:</strong> 由于 Git 不支持空文件夾，创建文件夹后会生成空的 .keep 文件");
+        $(this).parent().removeClass('error');
+      }
+      $createFolderSubmitBtn.removeClass('disabled');
+    })
+  
+    $createFolderForm.submit(function (e) {
+      var value = $folderPath.val();
+      if (!folderReg.test(value) && !checkFolder(value) && value) {
+        $('#new_file_path').val(value + '/.keep');
+      } else {
+        $message.addClass('warn').html("文件夹名不为空，不含有字符（／）且不能与当前目录文件夹同名");
+        $folderPath.parent().addClass('error');
+        e.preventDefault();
+      }
+      $createFolderSubmitBtn.addClass('disabled');
+    })
+  
+    $('.create-folder').click(createFolderShow)
+    $('#create-folder').click(createFolderShow);
+    window.createFolderShow = createFolderShow;
+  
+    window.hasTreeContextMenu = false;
+    var contextMenuTemplate = $('#tree-item-context-menu-template').html();
+    var submoduleContextMenuTemplate = $("#tree-item-submodule-context-menu-template").html();
+    if ("true" == "false" || "true" == "false" || "false" == "false") {
+      return;
+    }
+  
+    function createContextMenu($item, x, y) {
+      if (hasTreeContextMenu) {
+        $('.tree-context').remove();
+        hasTreeContextMenu = false;
+        return;
+      }
+      hasTreeContextMenu = true;
+      var isSubmodule = $item.hasClass('tree-item-submodule-name')
+      var path = $item.parent().find('a').attr('href');
+      var $menu = isSubmodule ? $(submoduleContextMenuTemplate).appendTo('body') : $(contextMenuTemplate).appendTo('body');
+      var readonly = $item.attr('data-readonly') !== undefined
+      var submoduleEditUrl = $item.closest('.tree-item').attr('edit_url')
+      var submoduleDeleteUrl = $item.closest('.tree-item').attr('delete_url')
+      var hasNormal = $item.closest('.tree-item')[0].hasAttribute('normal')
+      if ($('.btn-readonly')[0]) {
+        if (readonly) {
+          $('.btn-readonly')[0].children[0].className = 'icon unlock'
+          $('.btn-readonly')[0].lastChild.data = "取消只读"
+        } else {
+          $('.btn-readonly')[0].lastChild.data = "标记为只读"
+        }
+      }
+      $menu.css({ left: x, top: y , 'min-width': '90px'});
+      $menu.find('.btn-open-new-tab').attr({
+        href: path,
+        target: '_blank'
+      });
+      window.Clipboard && new Clipboard('.btn-copy', {
+        text: function () {
+          return $item.text().trim();
+        }
+      });
+      // submodule 菜单事件
+      // 编辑子模块
+      if (!hasNormal) {
+        $menu.find('.btn-compact-edit').addClass('disabled')
+      }
+      $menu.find('.btn-compact-edit').on('click', function(event) {
+        if (!hasNormal) {
+          return
+        }
+        window.location.href = submoduleEditUrl
+      });
+      // 删除子模块
+      $menu.find('.btn-submodule-delete').on('click', function(event) {
+        removeSubmodule(submoduleDeleteUrl, $item)
+      });
+      // 普通文件 菜单事件
+      $menu.find('.btn-rename').on('click', function(event) {
+        rename($item.parent().attr('file_hex'));
+      });
+      $menu.find('.btn-delete').on('click', function(event) {
+        removeFile($item.parent().next().find('.ui.form').attr('path').replace(/\+/g, '%20'), $item.find('a').text());
+      })
+      $menu.find('.btn-readonly').on('click', function(event) {
+        var obj = $item.parent().next().find('.ui.form').attr('path').replace(/\+/g, '%20')
+        var readonly = $item.attr('data-readonly') !== undefined
+        if (readonly) {
+          removeReadonlyMark(obj, $item)
+        } else {
+          addReadonlyMark(obj, $item)
+        }
+      })
+      $menu.find('.btn-readonly-is-uncharged-enterprise').popup({
+        content: "仅付费企业版可使用文件只读功能",
+        className: {
+          popup: 'ui popup',
+        },
+        position: 'bottom center'
+      })
+      $menu.find('.btn-readonly-is-open-svn').popup({
+        content: "仓库已开启 SVN 支持，无法标记只读文件/目录",
+        className: {
+          popup: 'ui popup',
+        },
+        position: 'bottom center'
+      })
+    }
+    // submodule 右键菜单事件
+  
+    var editing = false
+  
+    $(document).on('click',function(event){
+      if (hasTreeContextMenu && event.button !== 2) {
+        setTimeout(function () {
+          $('.tree-context').remove();
+          hasTreeContextMenu = false;
+        }, 200);
+      }
+    })
+  
+    $('.tree-item').on('click',function(event){
+      if (hasTreeContextMenu) {
+        event.preventDefault();
+      }
+    })
+  
+    function isReadonly(path) {
+      if (!gon.readonlyItems) {
+        return false
+      } else {
+        var item_path = getItemPath(path, 'folder')
+        return isTreeItemReadonly(item_path, gon.readonlyItems)
+      }
+    }
+  
+    function isParentsReadonly(path) {
+      var self_path = path.replace(/\/$/, '')
+      var parentPathArray = self_path.split('/')
+      if (parentPathArray.length < 2) {
+        return false
+      }
+      parentPathArray.pop()
+      var parentPath = parentPathArray.join('/') + '/'
+      return isReadonly(parentPath)
+    }
+  
+    // 删除只读标记
+    function removeReadonlyMark(path, $item) {
+      var $icon = $($item.context.children[0])
+      var $parent = $item.parent('.tree-item')
+      var type = $parent.data('type')
+      var branch = $parent.data('branch')
+      var readonly_item = $item.data('path')
+      if (type !== 'file') {
+        readonly_item += "/"
+      }
+  
+      var confirmString = "\n      <p>所属分支: <code class=\"readonly-branch\">".concat(htmlSafe(branch), "</code></p>      <p>文件路径: <code class=\"readonly-path\">").concat(htmlSafe(readonly_item), "</code></p>      <strong>确认取消分支上这个路径的只读标记？</strong>\n      ");
+  
+      gitGCModal.confirm("取消只读", confirmString, function() {
+        var parentsReadonly = isParentsReadonly(readonly_item)
+        if (parentsReadonly) {
+          return gitGCModal.alert('提示', '只读记录不存在，或父级目录为只读',function () {
+            location.reload()
+          })
+        }
+        $.ajax({
+          url: "/kit-miao/bipedal-robot/readonly",
+          type: 'DELETE',
+          data: {
+            branch: branch,
+            path: readonly_item
+          },
+          success: function(res) {
+            if (res.code !== 0) {
+              gitGCModal.alert("提示", res.msg, function() {
+                location.reload();
+              })
+            }else {
+              $parent.removeClass('readonly-item')
+              if (gon.readonlyItems) {
+                gon.readonlyItems.splice(gon.readonlyItems.indexOf(readonly_item), 1)
+              }
+              if (type === 'file') {
+                $icon.removeClass('icon-file-readonly readonly-icon')
+                $icon.addClass('icon-file')
+              } else {
+                $icon.removeClass('icon-folder-readonly readonly-icon')
+                $icon.addClass('icon-folders')
+              }
+              $icon.popup('destroy')
+              $item.removeAttr('data-readonly')
+              location.reload();
+            }
+          }
+        })
+      })
+    }
+  
+    // 只读过滤
+    function isTreeItemReadonly(path, readonlyItems) {
+      var item = readonlyItems.find(function(item) {
+        if (item.slice(-1) === '/') {
+          return path.indexOf(item) === INDEX_BEGIN_WITH_READONLY_DIR
+        } else {
+          return path === item
+        }
+      })
+      return item !== undefined
+    }
+  
+    function getItemPath(path) {
+      var path_type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'file';
+      return path_type === 'file' ? path : "".concat(path, "/");
+    }
+  
+    // 启用异步只读差异化的次数
+    var is_can_readonly = false
+    // 异步对文件树进行只读差异化显示
+    function markTree() {
+      $.ajax({
+        url: "/kit-miao/bipedal-robot/readonly",
+        method: 'get',
+        data: {
+          "branch": "master"
+        },
+        success:function(result) {
+          var readonlyItems = result.readonly_items
+          gon.readonlyItems = readonlyItems
+          $(".tree-list-item").each(function(){
+            $this = $(this)
+            var path = $this.attr('data-path')
+            var type = $this.attr('data-type')
+            var item_path = getItemPath(path, type)
+            var readonly = isTreeItemReadonly(item_path, readonlyItems)
+            $icon = $this.find('i')
+            $parent = $this.parent('.tree-item')
+            if (readonly) {
+              $parent.addClass('readonly-item')
+              $this.attr('data-readonly', '')
+              $icon.attr('class', "iconfont icon-".concat(type, "-readonly readonly-icon"));
+              $icon.attr('data-readonly', '')
+              $icon.popup({
+                content: "只读",
+                className   : {
+                  popup: 'ui popup dark',
+                },
+                position: 'top center'
+              })
+            } else {
+              var className =  type === 'file' ? 'file' : 'folders'
+              $this.removeAttr('data-readonly')
+              $icon.attr('class', "iconfont icon-".concat(className));
+              $icon.removeAttr('data-readonly')
+            }
+          })
+        }
+      })
+    }
+  
+    // 若已开启只读功能，对目录进行只读差异化标记
+    if (is_can_readonly) {
+      markTree()
+    }
+  
+    // 添加只读标记
+    function addReadonlyMark(path, $item) {
+      var $icon = $($item.context.children[0])
+      var $parent = $item.parent('.tree-item')
+      var type = $parent.data('type')
+      var branch = $parent.data('branch')
+      var readonly_item = $item.data('path')
+      if (type !== 'file') {
+        readonly_item += "/"
+      }
+  
+      var confirmString = "\n      <p>所属分支: <code class=\"readonly-branch\">".concat(htmlSafe(branch), "</code></p>      <p>文件路径: <code class=\"readonly-path\">").concat(htmlSafe(readonly_item), "</code></p>      <strong>确认将分支上的这个路径标记为只读？</strong>\n      ");
+      gitGCModal.confirm("标记只读", confirmString,function (){
+        $.ajax({
+          url: "/kit-miao/bipedal-robot/readonly",
+          type: 'POST',
+          data: {
+            branch: branch,
+            path: readonly_item,
+          },
+          success: function(res) {
+            if (res.code !== 0) {
+              gitGCModal.alert("提示", res.msg,function (){
+                location.reload();
+              })
+            } else {
+              // 之前未开启只读功能
+              if (!is_can_readonly) {
+                is_can_readonly = true
+                return markTree()
+              }
+              $parent.addClass('readonly-item')
+              var existReadonlyItems = gon.readonlyItems || []
+              existReadonlyItems.push(readonly_item)
+              gon.readonlyItems = existReadonlyItems
+              $icon.popup({
+                content: "只读",
+                className   : {
+                  popup: 'ui popup dark',
+                },
+                position: 'top center'
+              })
+              if (type === 'file') {
+                $icon.removeClass('icon-file')
+                $icon.addClass('icon-file-readonly readonly-icon')
+              } else {
+                $icon.removeClass('icon-folders')
+                $icon.addClass('icon-folder-readonly readonly-icon')
+              }
+              $item.attr('data-readonly', '')
+              location.reload();
+            }
+          }
+        })
+      })
+    }
+  
+    function removeFile(path, file_name) {
+      var file_name = file_name || path
+      var content = "确定要删除 %{name} 吗？".replace('%{name}', htmlSafe(file_name));
+      gitGCModal.confirm("删除", content, function() {
+        $.ajax({
+          type: "DELETE",
+          dataType: "JSON",
+          url: "/kit-miao/bipedal-robot/delete/" + path,
+          success: function(res) {
+            if (res.status != 1) {
+              var alert_message = res.message || "删除失败"
+              return gitGCModal.alert("提示", alert_message)
+            }
+            if ($('.tree-item-file-name').length == 2) {
+              window.location.href = '/' + gon.user_project;
+              if(file_name.toUpperCase()==='LICENSE'){
+                window.location.reload();
+              }
+            } else {
+              window.location.href = window.location.pathname;
+              if(file_name.toUpperCase()==='LICENSE'){
+                window.location.reload();
+              }
+            }
+          }
+        });
+      })
+    }
+    // 删除子模块
+    function removeSubmodule(deleteUrl, $item) {
+      if (!deleteUrl) return
+      var file_name = $item.text().trim()
+      var content = "此操作无法恢复，确定要删除子模块%{name}？".replace('%{name}', htmlSafe(file_name));
+      new GiteeModalHelper({
+        approveText: "删除并提交推送",
+        cancelText: "取消",
+        okText: "删除并提交推送",
+      }).confirm("删除", content, function() {
+        $.ajax({
+          type: "DELETE",
+          dataType: "JSON",
+          url: deleteUrl,
+          success: function(res) {
+            if (res.status == 200) {
+              $item.closest('.row.tree-item').remove();
+              window.location.reload();
+            } else {
+              Flash.error(res.message, 5000)
+            }
+          },
+          error: function (err) {
+            err.responseJSON && Flash.error(err.responseJSON.message);
+          },
+        });
+      })
+    }
+  
+    function rename(file_hex) {
+      $(".row.tree-item").show();
+      $(".tree-item-rename").hide();
+  
+      if($("."+file_hex).is(':hidden') == true) return;
+  
+      $("."+file_hex).hide();
+      var _t = $(".rename-"+file_hex);
+      src = _t.attr('src_text')
+      if(src==undefined){
+         newName = _t.find("[name='new_filename']").val()
+        _t.attr('src_text',newName)
+      }else{
+        _t.find("[name='new_filename']").val(_t.attr('src_text'))
+      }
+      $(".rename-"+file_hex).css("display","");
+    }
+  
+    setTimeout(function(){
+      $(".popup-save").click(function(){
+        form = $(this).parents(".ui.form")
+        file_hex = $(this).parents(".row.tree-item").attr("file_hex");
+        new_filename = $.trim(form.find("[name='new_filename']").val())
+        overwrite = false
+        $('.tree-item-file-name').find('a').each(function(a){
+          title = $(this).attr('title');
+          if(title != undefined){
+            if (title.split('/')[0] == new_filename) {
+              overwrite = true;
+            }
+          }
+        });
+        if(overwrite){
+          form.find("[name='new_filename']").focus();
+          gitGCModal.alert("提示", "存在相同的文件名,请修改后重试")
+          return;
+        }
+        $.ajax({
+          type: 'POST',
+          url: "/kit-miao/bipedal-robot/rename/"+ form.attr('path').replace(/\+/g, '%20'),
+          data:
+          {
+            new_filename: new_filename
+          },
+          success: function(o){
+            if(o.status == 1){
+              href = window.location.href.split('?')[0]
+              window.location.href = href;
+            }else {
+              var alert_message = o.message || "重命名失败"
+              gitGCModal.alert("提示", alert_message)
+            }
+          },
+          dataType: "json"
+        });
+      })
+  
+      $(".popup-close").click(function(){
+        $(".row.tree-item").show();
+        $(".tree-item-rename").hide();
+      })
+      $('.tree-item-file-name, .tree-item-submodule-name').each(function() {
+        var $this = $(this);
+        if (typeof $this.parent().attr('file_hex') === 'undefined') {
+          return;
+        }
+        $this.on('contextmenu', function(event) {
+          event.preventDefault();
+          createContextMenu($this, event.pageX, event.pageY);
+        })
+      })
+    },1000)
+  })
+</script>
+<style>
+  .readonly-item {
+    background-color: #FBFBFB !important;
+  }
+  .readonly-path,.readonly-branch {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.8;
+    margin-top: 1em;
+  }
+  .btn-readonly-is-uncharged-enterprise, .btn-readonly-is-open-svn {
+    background-color: #f5f5f5 !important;
+    color: #757575 !important;
+  }
+</style>
+
+<div class="complaint">
+<div class="ui modal small form" id="landing-comments-complaint-modal">
+<i class="iconfont icon-close close"></i>
+<div class="header">
+举报
+</div>
+<div class="content">
+<div class="appeal-success-tip hide">
+<i class="iconfont icon-ic_msg_success"></i>
+<div class="appeal-success-text">
+举报成功
+</div>
+<span>
+我们将于2个工作日内通过站内信反馈结果给你！
+</span>
+</div>
+<div class="appeal-tip">
+请认真填写举报原因，尽可能描述详细。
+</div>
+<div class="ui form appeal-form">
+<div class="inline field">
+<label class="left-part appeal-type-wrap">
+举报类型
+</label>
+<div class="ui dropdown selection" id="appeal-comments-types" tabindex="0">
+<div class="text default">
+请选择举报类型
+</div>
+<i class="dropdown icon"></i>
+<div class="menu" tabindex="-1"></div>
+</div>
+</div>
+<div class="inline field">
+<label class="left-part">
+举报原因
+</label>
+<textarea class="appeal-reason" id="appeal-comment-reason" name="msg" placeholder="请说明举报原因" rows="3"></textarea>
+</div>
+<div class="ui message callback-msg hide"></div>
+<div class="ui small error text message exceeded-size-tip"></div>
+</div>
+</div>
+<div class="actions">
+<div class="ui button blank cancel">
+取消
+</div>
+<div class="ui orange icon button disabled ok" id="complaint-comment-confirm">
+发送
+</div>
+</div>
+</div>
+<script>
+  var $complaintCommentsModal = $('#landing-comments-complaint-modal'),
+      $complainCommentType = $complaintCommentsModal.find('#appeal-comments-types'),
+      $complaintModalTip = $complaintCommentsModal.find('.callback-msg'),
+      $complaintCommentsContent = $complaintCommentsModal.find('.appeal-reason'),
+      $complaintCommentBtn = $complaintCommentsModal.find('#complaint-comment-confirm'),
+      complaintSending = false,
+      initedCommentsType = false;
+  
+  function initCommentsTypeList() {
+    if (!initedCommentsType) {
+      $.ajax({
+        url: "/appeals/fetch_types",
+        method: 'get',
+        data: {'type': 'comment'},
+        success: function (data) {
+          var result = '';
+          for (var i = 0; i < data.length; i++) {
+            result = result + "<div class='item' data-value='" + data[i].id + "'>" + data[i].name + "</div>";
+          }
+          $complainCommentType.find('.menu').html(result);
+        }
+      });
+      $complainCommentType.dropdown({showOnFocus: false});
+      initedCommentsType = true;
+    }
+  }
+  $complainCommentType.on('click', function() {
+    $complaintCommentsModal.modal({
+      autofocus: false,
+      onApprove: function() {
+        return false;
+      },
+      onHidden: function() {
+        restoreCommonentDefault();
+      }
+    }).modal('show');
+  });
+  
+  $complaintCommentsContent.on('change keyup', function(e) {
+    var content = $(this).val();
+    if ($.trim(content).length > 0 && $complainCommentType.dropdown('get value').length > 0 ) {
+      $complaintCommentBtn.removeClass('disabled');
+      return;
+    }
+    $complaintCommentBtn.addClass('disabled');
+  });
+  
+  
+  $complainCommentType.dropdown({
+    showOnFocus: false,
+    onChange: function(value, text, $selectedItem) {
+      if (value.length > 0 && $.trim($complaintCommentsContent.val()).length > 0) {
+        $complaintCommentBtn.removeClass('disabled');
+        return
+      }
+      $complaintCommentBtn.addClass('disabled');
+    }
+  });
+  
+  function restoreCommonentDefault() {
+    $complainCommentType.dropdown('restore defaults');
+    $complaintCommentsContent.val('');
+    $('.exceeded-size-tip').text('').hide();
+    $complaintModalTip.text('').hide();
+    setTimeout(function() {
+      setCommentSendTip(false);
+    }, 1500);
+  }
+  
+  $complaintCommentBtn.on('click',function(e){
+    var reason = $complaintCommentsContent.val();
+    var appealableId = $('#landing-comments-complaint-modal').attr('data-id');
+    if (complaintSending) {
+      return;
+    }
+    var appealType = $complainCommentType.dropdown('get value');
+    var formData = new FormData();
+    formData.append('appeal_type_id', appealType);
+    formData.append('reason', reason);
+    formData.append('appeal_type','Note');
+    formData.append('target_id',appealableId);
+    $.ajax({
+      type: 'POST',
+      url: "/appeals",
+      cache: false,
+      contentType: false,
+      processData: false,
+      data: formData,
+      beforeSend: function() {
+        setCommentSendStatus(true);
+      },
+      success: function(res) {
+        if (res.status == 200) {
+          setCommentSendTip(true);
+          setTimeout(function() {
+            $complaintCommentsModal.modal('hide');
+            restoreCommonentDefault();
+          }, 3000);
+        }
+        setCommentSendStatus(false);
+      },
+      error: function(err) {
+        showCommonTips(err.responseJSON.message, 'error');
+        setCommentSendStatus(false);
+      }
+    })
+  });
+  
+  function showCommonTips(text, type) {
+    $complaintModalTip.text(text).show();
+    if (type == 'error') {
+      $complaintModalTip.removeClass('success').addClass('error');
+    } else {
+      $complaintModalTip.removeClass('error').addClass('success');
+    }
+  }
+  
+  function setCommentSendStatus(value) {
+    complaintSending = value;
+    if (complaintSending) {
+      $complaintCommentBtn.addClass('loading');
+      $complaintCommentsContent.attr('readonly', true);
+      $complainCommentType.attr('readonly', true);
+    } else {
+      $complaintCommentBtn.removeClass('loading');
+      $complaintCommentsContent.attr('readonly', false);
+      $complainCommentType.attr('readonly', false);
+    }
+  }
+  
+  function setCommentSendTip(value) {
+    if (value) {
+      $('.appeal-success-tip').removeClass('hide');
+      $('.appeal-tip').addClass('hide');
+      $('.appeal-form').addClass('hide');
+      $('#landing-comments-complaint-modal .actions').addClass('hide');
+    } else {
+      $('.appeal-success-tip').addClass('hide');
+      $('.appeal-tip').removeClass('hide');
+      $('.appeal-form').removeClass('hide');
+      $('#landing-comments-complaint-modal .actions').removeClass('hide');
+    }
+  }
+</script>
+
+<div class="ui small modal" id="misjudgment_appeal_modal">
+<i class="close icon"></i>
+<div class="header dividing ui">
+误判申诉
+</div>
+<div class="content">
+<p>此处可能存在不合适展示的内容，页面不予展示。您可通过相关编辑功能自查并修改。</p>
+<p>如您确认内容无涉及 不当用语 / 纯广告导流 / 暴力 / 低俗色情 / 侵权 / 盗版 / 虚假 / 无价值内容或违法国家有关法律法规的内容，可点击提交进行申诉，我们将尽快为您处理。</p>
+<div class="buttons">
+<div class="ui button blank cancel">取消</div>
+<div class="ui button orange submit">提交</div>
+</div>
+</div>
+</div>
+<style>
+  #misjudgment_appeal_modal .buttons {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    #misjudgment_appeal_modal .buttons .cancel {
+      margin-right: 20px; }
+</style>
+<script>
+  var $misjudgmentAppealModal = $('#misjudgment_appeal_modal');
+  $('.cancel').on('click',function(){
+    $misjudgmentAppealModal.modal('hide');
+  });
+  var $jsSubmitAppeal = $misjudgmentAppealModal.find('.submit')
+  $jsSubmitAppeal.on('click', function(e) {
+    e.preventDefault();
+    $(this).addClass('loading').addClass('disabled');
+    var type = $(this).attr('data-type');
+    var id = $(this).attr('data-id');
+    var projectId = $(this).attr('data-project-id');
+    var appealType = $(this).attr('data-appeal-type');
+    $.ajax({
+      type: "PUT",
+      url: "/misjudgment_appeal",
+      data: {
+        type: type,
+        id: id,
+        project_id: projectId,
+        appeal_type: appealType
+      },
+      success: function(data) {
+        Flash.info('提交成功');
+        $jsSubmitAppeal.removeClass('loading');
+        $misjudgmentAppealModal.modal('hide');
+        location.reload()
+      },
+      error: function(e) {
+        Flash.error('提交失败:'+e.responseText);
+        $jsSubmitAppeal.removeClass('loading').removeClass('disabled');
+        location.reload()
+      }
+    });
+  })
+</script>
+
+</div>
+<script>
+  "use strict";
+  $('.js-check-star').checkbox('set unchecked')
+</script>
+
+</div>
+<script>
+  (function() {
+    $(function() {
+      Tree.init();
+      return TreeCommentActions.init();
+    });
+  
+  }).call(this);
+</script>
+</div>
+</div>
+<div class="four wide column" style="">
+<div class="project__right-side">
+<div class="side-item intro">
+<div class="header">
+<h4>简介</h4>
+</div>
+<div class="content">
+<span class="git-project-desc-text">达妙科技开源双足
+交流群428064389 </span>
+<a class="hide spread" href="javascript:void(0);">
+展开
+<i class="caret down icon"></i>
+</a>
+<a class="retract hide" href="javascript:void(0);">
+收起
+<i class="caret up icon"></i>
+</a>
+<div class="intro-list">
+<div class="blank d-flex d-flex-between dropdown item js-project-label_show label-list-line-feed project-label-list ui" data-labels="[]" data-url="/kit-miao/bipedal-robot/update_description">
+<div class="mixed-label">
+</div>
+
+<div class="default">暂无标签</div>
+<div class="menu"></div></div>
+<div class="hide item">
+<i class="iconfont icon-link"></i>
+<span class="git-project-homepage">
+<a rel="nofollow" id="homepage" target="_blank" href="/kit-miao/bipedal-robot">/kit-miao/bipedal-robot</a>
+</span>
+</div>
+<div class="item box-readme">
+<i class="iconfont icon-readme"></i>
+<span class="file_name" id="readme-name">README</span>
+</div>
+<!-- - page = @project.page -->
+<!-- - if page&.status? -->
+<!-- .item -->
+<!-- %i.iconfont.icon-giteepage -->
+<!-- Pages： -->
+<!-- = link_to page.domain_url, page.domain_url, target: '_blank' -->
+<div class="item star-item">
+<i class="iconfont icon-star"></i>
+<a class="action-social-count " title="79" href="/kit-miao/bipedal-robot/stargazers"><span class="text-bold">
+79
+</span>
+Stars
+</a></div>
+<div class="item watch-item">
+<i class="iconfont icon-watch"></i>
+<a class="action-social-count" title="6" href="/kit-miao/bipedal-robot/watchers"><span class="text-bold">
+6
+</span>
+Watching
+</a></div>
+<div class="item">
+<i class="iconfont icon-fork"></i>
+<a class="action-social-count disabled-style" title="26" href="/kit-miao/bipedal-robot/members"><span class="text-bold">
+26
+</span>
+Forks
+</a></div>
+</div>
+</div>
+<div class="content intro-form">
+<div class="ui small input">
+<textarea name="project[description]" placeholder="描述" rows="5"></textarea>
+</div>
+<div class="ui small input">
+<input data-regex-value="(^$)|(^(http|https):\/\/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).*)|(^(http|https):\/\/[a-zA-Z0-9]+([_\-\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,10}(:[0-9]{1,10})?(\?.*)?(\/.*)?$)" name="project[homepage]" placeholder="主页(eg: https://gitee.com)" type="text">
+</div>
+<button class="ui orange button mt-1 btn-save">
+保存更改
+</button>
+<div class="ui blank button btn-cancel-edit">
+取消
+</div>
+</div>
+</div>
+<div class="side-item release">
+<div class="header">
+<h4>发行版</h4>
+</div>
+<div class="content">
+<span class="text-muted">
+暂无发行版
+</span>
+</div>
+</div>
+<div class="side-item contrib" data-url="/kit-miao/bipedal-robot/contributors_count?ref=master" id="contributor">
+<div class="header">
+<h4>
+贡献者
+<span class="text-muted" id="contributor-count">(5)</span>
+</h4>
+<a class="ui link button pull-right" href="/kit-miao/bipedal-robot/contributors?ref=master">全部</a>
+</div>
+<div class="content" id="contributor-list"><a href="/xauter" class="js-popover-card" data-username="xauter">
+  <img class="ui avatar image" alt="seek" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAD8UlEQVR4AexYCVPTQBT+ktIWyiFQLoEByzGg3FdBwEH93yoqIjdyw1AoFFru+5CjFPdlJjGhLbaSZaZpOt3J25eX3fftt8d7K376/vM+mYqIJPuZgI1OuMmwybDBRsCc0gYjNAyOyXDYkBhMYTJsMELD4JgMhw2JwRQmwwYj9CEcmAyHDYnOClEQkPMiC6l2u84tx9bcszBc5SpDZ2sT+rrdeN/TiZaGN+juaMEHJve626R6njMnNo+faMUVcIbDgb63bpSVFCPdkQaLqO1OEATYbFaJ8cbXNehoboAgCE+E9Pjn4uOv//+t1ZqC9uZ6WCzaLkKhEG5ubxEMBnF/f6/pIDMjXQKtUepc0XqjY+O1lRUQVYweHZ9gcHQS/YMjGBgex7ehMXz5MYxFzyru7kJKzxnpDhTl5yl1vQVugJ252YqvxyenmJxdwNX1taKThcD2LoYnpjRsu8pL5de6P7kBVrPrC2w96jgNxO7+oWJj57iDcwOsXp+0eSloogiB7R1pXV9d3+Di8jKK1dPV3ABfXP5WvHOVlaKkqFCpRxKO2LSndT04OoHRyZlIJrrouAHe3t1THBQEATVVLnZEdaCprhaF+U7ux4/S+QOBG2Cffwu0Ian7s1gscOZko66mWgo6etytkkyRl9qOp8wNMDlNR47Hu05ixGK32SS2KfKiKIymfkRDHZVcAZOfxHQ/O2+9vk1cqtY1vVMXiyiCAHd3tGrOb7WNHjJ3wORkiEVUBHiInbefB4bwi53JWzt7Ec/lVLsN7pZG+oxLeRbADz0/ZFHXwvKKFHl9ZZHX7v6BxsSRliqtdY1SpwoXwAV5uahylaOuthpZmRl47HfHYuvZxWVMzMxrzIoLCzR1fSrgcwFQW1XBMqSXKMxzovJVWUy+Uvh5fXOj2Kam8cmXRaUHHQWKluTmsrMyZTGuZzB4F5d9rMZcAO8d/I2LBUGQEvx/OURZEh1Tst3Z+bks6vrkAph2ZHUsTYFFb2db1PVMx9HDndnr8+sKVG6MC2BqfG5pmR5KsVmtaG+qx8feLhB4d2sj3nW1S3UCrBgyYW3Dz3LkBJrSzGdQure04tXkuaSnQuApg7KmpFBVU/wsa1pd39Do9KxwY5ic9G/tYGBkHAdHx6CrHdJFKxcsJRybmsWSxxvNRBc9V8Dk4e1tEFNzi9LVDkVaNNU9Xh98mwEsr65jen5JuuoZnpjG6RmfjYr8kAt3wHJH9KRYemfvAD5/AJ41HzbYTcj+4VHEaU/2PMqzAuYBIN42TcDxjlii2ZsMJxpj8fprMhzviCWafXIxzNgxAbNBMPTfZNjQ9DJwJsNsEAz9Nxk2NL0MXNIx/AcAAP//DAkZxQAAAAZJREFUAwBCRurw6kTj0AAAAABJRU5ErkJggg==">
+  
+</a><a href="mailto:1617303110@qq.com" class="js-popover-card" data-username="">
+  <img class="ui avatar image" alt="seek66" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAD8UlEQVR4AexYCVPTQBT+ktIWyiFQLoEByzGg3FdBwEH93yoqIjdyw1AoFFru+5CjFPdlJjGhLbaSZaZpOt3J25eX3fftt8d7K376/vM+mYqIJPuZgI1OuMmwybDBRsCc0gYjNAyOyXDYkBhMYTJsMELD4JgMhw2JwRQmwwYj9CEcmAyHDYnOClEQkPMiC6l2u84tx9bcszBc5SpDZ2sT+rrdeN/TiZaGN+juaMEHJve626R6njMnNo+faMUVcIbDgb63bpSVFCPdkQaLqO1OEATYbFaJ8cbXNehoboAgCE+E9Pjn4uOv//+t1ZqC9uZ6WCzaLkKhEG5ubxEMBnF/f6/pIDMjXQKtUepc0XqjY+O1lRUQVYweHZ9gcHQS/YMjGBgex7ehMXz5MYxFzyru7kJKzxnpDhTl5yl1vQVugJ252YqvxyenmJxdwNX1taKThcD2LoYnpjRsu8pL5de6P7kBVrPrC2w96jgNxO7+oWJj57iDcwOsXp+0eSloogiB7R1pXV9d3+Di8jKK1dPV3ABfXP5WvHOVlaKkqFCpRxKO2LSndT04OoHRyZlIJrrouAHe3t1THBQEATVVLnZEdaCprhaF+U7ux4/S+QOBG2Cffwu0Ian7s1gscOZko66mWgo6etytkkyRl9qOp8wNMDlNR47Hu05ixGK32SS2KfKiKIymfkRDHZVcAZOfxHQ/O2+9vk1cqtY1vVMXiyiCAHd3tGrOb7WNHjJ3wORkiEVUBHiInbefB4bwi53JWzt7Ec/lVLsN7pZG+oxLeRbADz0/ZFHXwvKKFHl9ZZHX7v6BxsSRliqtdY1SpwoXwAV5uahylaOuthpZmRl47HfHYuvZxWVMzMxrzIoLCzR1fSrgcwFQW1XBMqSXKMxzovJVWUy+Uvh5fXOj2Kam8cmXRaUHHQWKluTmsrMyZTGuZzB4F5d9rMZcAO8d/I2LBUGQEvx/OURZEh1Tst3Z+bks6vrkAph2ZHUsTYFFb2db1PVMx9HDndnr8+sKVG6MC2BqfG5pmR5KsVmtaG+qx8feLhB4d2sj3nW1S3UCrBgyYW3Dz3LkBJrSzGdQure04tXkuaSnQuApg7KmpFBVU/wsa1pd39Do9KxwY5ic9G/tYGBkHAdHx6CrHdJFKxcsJRybmsWSxxvNRBc9V8Dk4e1tEFNzi9LVDkVaNNU9Xh98mwEsr65jen5JuuoZnpjG6RmfjYr8kAt3wHJH9KRYemfvAD5/AJ41HzbYTcj+4VHEaU/2PMqzAuYBIN42TcDxjlii2ZsMJxpj8fprMhzviCWafXIxzNgxAbNBMPTfZNjQ9DJwJsNsEAz9Nxk2NL0MXNIx/AcAAP//DAkZxQAAAAZJREFUAwBCRurw6kTj0AAAAABJRU5ErkJggg==">
+  
+</a><a href="/kit-miao" class="js-popover-card" data-username="kit-miao">
+  <img class="ui avatar image" alt="kit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAC6ElEQVR4AeyYTWgTQRTH/5ukSdqkaat4ULCgPRTEL0wPFdSLR/WiV48eFDzqxbOKSsGjF0GPKggeKnjSS/UgpKi1iBWlJFCxQqhpttvNx66zG7IfbtqsduetbCbMJO+9zMvM7/2zH7OxXzNDei/1GHrsJYCjLrhQWCgcsQqIv3TEBPXgCIU9JYlYQCgcMUE9OEJhT0kiFhAKR0zQP3EgFPaUJGIBbgrnJkvIHV0ye3zoRNeySYkRDE58MMe38/rHH3TN+9sB3IARHwRiA2aP9W3fdF0GbDZfgJQaNccbeXq9DOXL5U3z/uVLfsA+V2PBJrZZGbq6iNVCHtBkKxaUESpwJ1hNWWCwE4CuBsXo+p3QgFuws5AcymryR1RnJxlsw7XIIJ1QgG3YEYulWS2g+u448zXW+TVy4I6wlRnI708ySp11vo0UuBNsY+Ul5LnTfCkdv04GbByr2bxxzNp/40Z5GmvzZx3L4W+SAEuJYZjXWXZz4USqLT9xuiQ2CXB67C47G9vKtskGxu9D6tvRdkk+SYCdJNr6ou1KSWQOvrB9AosUWC1NoVo4DG39m4UWS48hvXfK8nkbZMBq8SbU4nWTR5475bq5SO68AD8bDDN5i28kwLWle1BLd6yl6rXvUL5esXzDyOx7BHPDYTjcOmgeADRX33oQ6j8eoll5Y8fZzip7YNr2OVkkCm+0dnn+HJw7oljmEFKj1zYaHkg8VGBoCtY+nXeBpHZfRTx7xBUL0gkXmJE0Vl6h/vMxs9pNQmb/M7CnAeDxCh3YgFIWLkKvLxtmq8dzDPppyw74/b8ABnS2gTjD0OzdUjx3DMldl1gs2EYCrGu1rqvWlM9Qi7dc49J7brDrSL8rtlWHG3Dl9TDavVF+7mudaum2ldPKZc+52InNV7LPQdyAfc5PPkwAk5eceEKhMHHByacTCpOXnHhCoTBxwWmnY7MJhVkRIt2EwpGWl8EJhVkRIt2EwpGWl8H1nMK/AQAA//9knsWGAAAABklEQVQDAPLhTjxzuBHZAAAAAElFTkSuQmCC">
+  
+</a><a href="/disnox" class="js-popover-card" data-username="disnox">
+  <img class="ui avatar image" alt="尚宇沐风" src="https://foruda.gitee.com/avatar/1769047544782270869/13481590_disnox_1769047544.png!avatar30">
+  
+</a><a href="/su-shangyu" class="js-popover-card" data-username="su-shangyu">
+  <img class="ui avatar image" alt="disnox" src="https://foruda.gitee.com/avatar/1670289244968041409/8422878_su-shangyu_1670289244.png!avatar30">
+  
+</a></div>
+<div class="ui centered inline loader" id="contributor-loader"></div>
+</div>
+<div class="side-item" id="languages">
+<div class="header">
+<h4>
+语言
+</h4>
+</div>
+<div class="content">
+<div class="lang-bar-container mb-2">
+<div class="lang-bar">
+<div class="bar" style="width: 91.1%;background:#3572A5"></div>
+<div class="bar" style="width: 8.9%;background:#89e051"></div>
+</div>
+</div>
+<div class="lang-legend">
+<span class="d-align-center">
+<span class="lang-dot" style="background:#3572A5"></span>
+<a class="lang-text" href="/explore/all?lang=Python">Python</a>
+<a class="percentage ml-1 text-muted" href="/explore/all?lang=Python">91.1%</a>
+</span>
+<span class="d-align-center">
+<span class="lang-dot" style="background:#89e051"></span>
+<a class="lang-text" href="/explore/all?lang=Shell">Shell</a>
+<a class="percentage ml-1 text-muted" href="/explore/all?lang=Shell">8.9%</a>
+</span>
+</div>
+</div>
+</div>
+
+<div class="side-item events" data-url="/kit-miao/bipedal-robot/events.json" id="proj-events">
+<div class="header">
+<h4>近期动态</h4>
+</div>
+<div class="content">
+<div class="ui comments" id="event-list"><div class="comment">
+  <div class="avatar"><a href="/kit-miao" class="js-popover-card" data-username="kit-miao">
+  <img class="ui avatar image" alt="kit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAC6ElEQVR4AeyYTWgTQRTH/5ukSdqkaat4ULCgPRTEL0wPFdSLR/WiV48eFDzqxbOKSsGjF0GPKggeKnjSS/UgpKi1iBWlJFCxQqhpttvNx66zG7IfbtqsduetbCbMJO+9zMvM7/2zH7OxXzNDei/1GHrsJYCjLrhQWCgcsQqIv3TEBPXgCIU9JYlYQCgcMUE9OEJhT0kiFhAKR0zQP3EgFPaUJGIBbgrnJkvIHV0ye3zoRNeySYkRDE58MMe38/rHH3TN+9sB3IARHwRiA2aP9W3fdF0GbDZfgJQaNccbeXq9DOXL5U3z/uVLfsA+V2PBJrZZGbq6iNVCHtBkKxaUESpwJ1hNWWCwE4CuBsXo+p3QgFuws5AcymryR1RnJxlsw7XIIJ1QgG3YEYulWS2g+u448zXW+TVy4I6wlRnI708ySp11vo0UuBNsY+Ul5LnTfCkdv04GbByr2bxxzNp/40Z5GmvzZx3L4W+SAEuJYZjXWXZz4USqLT9xuiQ2CXB67C47G9vKtskGxu9D6tvRdkk+SYCdJNr6ou1KSWQOvrB9AosUWC1NoVo4DG39m4UWS48hvXfK8nkbZMBq8SbU4nWTR5475bq5SO68AD8bDDN5i28kwLWle1BLd6yl6rXvUL5esXzDyOx7BHPDYTjcOmgeADRX33oQ6j8eoll5Y8fZzip7YNr2OVkkCm+0dnn+HJw7oljmEFKj1zYaHkg8VGBoCtY+nXeBpHZfRTx7xBUL0gkXmJE0Vl6h/vMxs9pNQmb/M7CnAeDxCh3YgFIWLkKvLxtmq8dzDPppyw74/b8ABnS2gTjD0OzdUjx3DMldl1gs2EYCrGu1rqvWlM9Qi7dc49J7brDrSL8rtlWHG3Dl9TDavVF+7mudaum2ldPKZc+52InNV7LPQdyAfc5PPkwAk5eceEKhMHHByacTCpOXnHhCoTBxwWmnY7MJhVkRIt2EwpGWl8EJhVkRIt2EwpGWl8H1nMK/AQAA//9knsWGAAAABklEQVQDAPLhTjxzuBHZAAAAAElFTkSuQmCC">
+  
+</a></div>
+  <div class="content">3个月前推送了新的提交到 <a href="/kit-miao/bipedal-robot/tree/master">master</a> 分支，<a href="/kit-miao/bipedal-robot/compare/967db577cc66f49592098e27078da23febdd2567...f9b23d9497ebc3c969576e7b195ef1bafd7e514a">967db57...f9b23d9</a></div>
+</div><div class="comment">
+  <div class="avatar"><a href="/kit-miao" class="js-popover-card" data-username="kit-miao">
+  <img class="ui avatar image" alt="kit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAC6ElEQVR4AeyYTWgTQRTH/5ukSdqkaat4ULCgPRTEL0wPFdSLR/WiV48eFDzqxbOKSsGjF0GPKggeKnjSS/UgpKi1iBWlJFCxQqhpttvNx66zG7IfbtqsduetbCbMJO+9zMvM7/2zH7OxXzNDei/1GHrsJYCjLrhQWCgcsQqIv3TEBPXgCIU9JYlYQCgcMUE9OEJhT0kiFhAKR0zQP3EgFPaUJGIBbgrnJkvIHV0ye3zoRNeySYkRDE58MMe38/rHH3TN+9sB3IARHwRiA2aP9W3fdF0GbDZfgJQaNccbeXq9DOXL5U3z/uVLfsA+V2PBJrZZGbq6iNVCHtBkKxaUESpwJ1hNWWCwE4CuBsXo+p3QgFuws5AcymryR1RnJxlsw7XIIJ1QgG3YEYulWS2g+u448zXW+TVy4I6wlRnI708ySp11vo0UuBNsY+Ul5LnTfCkdv04GbByr2bxxzNp/40Z5GmvzZx3L4W+SAEuJYZjXWXZz4USqLT9xuiQ2CXB67C47G9vKtskGxu9D6tvRdkk+SYCdJNr6ou1KSWQOvrB9AosUWC1NoVo4DG39m4UWS48hvXfK8nkbZMBq8SbU4nWTR5475bq5SO68AD8bDDN5i28kwLWle1BLd6yl6rXvUL5esXzDyOx7BHPDYTjcOmgeADRX33oQ6j8eoll5Y8fZzip7YNr2OVkkCm+0dnn+HJw7oljmEFKj1zYaHkg8VGBoCtY+nXeBpHZfRTx7xBUL0gkXmJE0Vl6h/vMxs9pNQmb/M7CnAeDxCh3YgFIWLkKvLxtmq8dzDPppyw74/b8ABnS2gTjD0OzdUjx3DMldl1gs2EYCrGu1rqvWlM9Qi7dc49J7brDrSL8rtlWHG3Dl9TDavVF+7mudaum2ldPKZc+52InNV7LPQdyAfc5PPkwAk5eceEKhMHHByacTCpOXnHhCoTBxwWmnY7MJhVkRIt2EwpGWl8EJhVkRIt2EwpGWl8H1nMK/AQAA//9knsWGAAAABklEQVQDAPLhTjxzuBHZAAAAAElFTkSuQmCC">
+  
+</a></div>
+  <div class="content">3个月前推送了新的提交到 <a href="/kit-miao/bipedal-robot/tree/master">master</a> 分支，<a href="/kit-miao/bipedal-robot/compare/6e1352328b2c4260b22765ee9488ec0cd2f852a6...967db577cc66f49592098e27078da23febdd2567">6e13523...967db57</a></div>
+</div><div class="comment">
+  <div class="avatar"><a href="/kit-miao" class="js-popover-card" data-username="kit-miao">
+  <img class="ui avatar image" alt="kit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAC6ElEQVR4AeyYTWgTQRTH/5ukSdqkaat4ULCgPRTEL0wPFdSLR/WiV48eFDzqxbOKSsGjF0GPKggeKnjSS/UgpKi1iBWlJFCxQqhpttvNx66zG7IfbtqsduetbCbMJO+9zMvM7/2zH7OxXzNDei/1GHrsJYCjLrhQWCgcsQqIv3TEBPXgCIU9JYlYQCgcMUE9OEJhT0kiFhAKR0zQP3EgFPaUJGIBbgrnJkvIHV0ye3zoRNeySYkRDE58MMe38/rHH3TN+9sB3IARHwRiA2aP9W3fdF0GbDZfgJQaNccbeXq9DOXL5U3z/uVLfsA+V2PBJrZZGbq6iNVCHtBkKxaUESpwJ1hNWWCwE4CuBsXo+p3QgFuws5AcymryR1RnJxlsw7XIIJ1QgG3YEYulWS2g+u448zXW+TVy4I6wlRnI708ySp11vo0UuBNsY+Ul5LnTfCkdv04GbByr2bxxzNp/40Z5GmvzZx3L4W+SAEuJYZjXWXZz4USqLT9xuiQ2CXB67C47G9vKtskGxu9D6tvRdkk+SYCdJNr6ou1KSWQOvrB9AosUWC1NoVo4DG39m4UWS48hvXfK8nkbZMBq8SbU4nWTR5475bq5SO68AD8bDDN5i28kwLWle1BLd6yl6rXvUL5esXzDyOx7BHPDYTjcOmgeADRX33oQ6j8eoll5Y8fZzip7YNr2OVkkCm+0dnn+HJw7oljmEFKj1zYaHkg8VGBoCtY+nXeBpHZfRTx7xBUL0gkXmJE0Vl6h/vMxs9pNQmb/M7CnAeDxCh3YgFIWLkKvLxtmq8dzDPppyw74/b8ABnS2gTjD0OzdUjx3DMldl1gs2EYCrGu1rqvWlM9Qi7dc49J7brDrSL8rtlWHG3Dl9TDavVF+7mudaum2ldPKZc+52InNV7LPQdyAfc5PPkwAk5eceEKhMHHByacTCpOXnHhCoTBxwWmnY7MJhVkRIt2EwpGWl8EJhVkRIt2EwpGWl8H1nMK/AQAA//9knsWGAAAABklEQVQDAPLhTjxzuBHZAAAAAElFTkSuQmCC">
+  
+</a></div>
+  <div class="content">4个月前推送了新的提交到 <a href="/kit-miao/bipedal-robot/tree/master">master</a> 分支，<a href="/kit-miao/bipedal-robot/compare/53937154d75ec7faa10b8199bb40bf9f89808307...6e1352328b2c4260b22765ee9488ec0cd2f852a6">5393715...6e13523</a></div>
+</div><div class="comment">
+  <div class="avatar"><a href="/xauter" class="js-popover-card" data-username="xauter">
+  <img class="ui avatar image" alt="seek" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAD8UlEQVR4AexYCVPTQBT+ktIWyiFQLoEByzGg3FdBwEH93yoqIjdyw1AoFFru+5CjFPdlJjGhLbaSZaZpOt3J25eX3fftt8d7K376/vM+mYqIJPuZgI1OuMmwybDBRsCc0gYjNAyOyXDYkBhMYTJsMELD4JgMhw2JwRQmwwYj9CEcmAyHDYnOClEQkPMiC6l2u84tx9bcszBc5SpDZ2sT+rrdeN/TiZaGN+juaMEHJve626R6njMnNo+faMUVcIbDgb63bpSVFCPdkQaLqO1OEATYbFaJ8cbXNehoboAgCE+E9Pjn4uOv//+t1ZqC9uZ6WCzaLkKhEG5ubxEMBnF/f6/pIDMjXQKtUepc0XqjY+O1lRUQVYweHZ9gcHQS/YMjGBgex7ehMXz5MYxFzyru7kJKzxnpDhTl5yl1vQVugJ252YqvxyenmJxdwNX1taKThcD2LoYnpjRsu8pL5de6P7kBVrPrC2w96jgNxO7+oWJj57iDcwOsXp+0eSloogiB7R1pXV9d3+Di8jKK1dPV3ABfXP5WvHOVlaKkqFCpRxKO2LSndT04OoHRyZlIJrrouAHe3t1THBQEATVVLnZEdaCprhaF+U7ux4/S+QOBG2Cffwu0Ian7s1gscOZko66mWgo6etytkkyRl9qOp8wNMDlNR47Hu05ixGK32SS2KfKiKIymfkRDHZVcAZOfxHQ/O2+9vk1cqtY1vVMXiyiCAHd3tGrOb7WNHjJ3wORkiEVUBHiInbefB4bwi53JWzt7Ec/lVLsN7pZG+oxLeRbADz0/ZFHXwvKKFHl9ZZHX7v6BxsSRliqtdY1SpwoXwAV5uahylaOuthpZmRl47HfHYuvZxWVMzMxrzIoLCzR1fSrgcwFQW1XBMqSXKMxzovJVWUy+Uvh5fXOj2Kam8cmXRaUHHQWKluTmsrMyZTGuZzB4F5d9rMZcAO8d/I2LBUGQEvx/OURZEh1Tst3Z+bks6vrkAph2ZHUsTYFFb2db1PVMx9HDndnr8+sKVG6MC2BqfG5pmR5KsVmtaG+qx8feLhB4d2sj3nW1S3UCrBgyYW3Dz3LkBJrSzGdQure04tXkuaSnQuApg7KmpFBVU/wsa1pd39Do9KxwY5ic9G/tYGBkHAdHx6CrHdJFKxcsJRybmsWSxxvNRBc9V8Dk4e1tEFNzi9LVDkVaNNU9Xh98mwEsr65jen5JuuoZnpjG6RmfjYr8kAt3wHJH9KRYemfvAD5/AJ41HzbYTcj+4VHEaU/2PMqzAuYBIN42TcDxjlii2ZsMJxpj8fprMhzviCWafXIxzNgxAbNBMPTfZNjQ9DJwJsNsEAz9Nxk2NL0MXNIx/AcAAP//DAkZxQAAAAZJREFUAwBCRurw6kTj0AAAAABJRU5ErkJggg==">
+  
+</a></div>
+  <div class="content">10个月前推送了新的提交到 <a href="/kit-miao/bipedal-robot/tree/master">master</a> 分支，<a href="/kit-miao/bipedal-robot/compare/43f465b5f85388f6c2f7c69cefc4ab913bdf6753...53937154d75ec7faa10b8199bb40bf9f89808307">43f465b...5393715</a></div>
+</div><div class="comment">
+  <div class="avatar"><a href="/xauter" class="js-popover-card" data-username="xauter">
+  <img class="ui avatar image" alt="seek" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAD8UlEQVR4AexYCVPTQBT+ktIWyiFQLoEByzGg3FdBwEH93yoqIjdyw1AoFFru+5CjFPdlJjGhLbaSZaZpOt3J25eX3fftt8d7K376/vM+mYqIJPuZgI1OuMmwybDBRsCc0gYjNAyOyXDYkBhMYTJsMELD4JgMhw2JwRQmwwYj9CEcmAyHDYnOClEQkPMiC6l2u84tx9bcszBc5SpDZ2sT+rrdeN/TiZaGN+juaMEHJve626R6njMnNo+faMUVcIbDgb63bpSVFCPdkQaLqO1OEATYbFaJ8cbXNehoboAgCE+E9Pjn4uOv//+t1ZqC9uZ6WCzaLkKhEG5ubxEMBnF/f6/pIDMjXQKtUepc0XqjY+O1lRUQVYweHZ9gcHQS/YMjGBgex7ehMXz5MYxFzyru7kJKzxnpDhTl5yl1vQVugJ252YqvxyenmJxdwNX1taKThcD2LoYnpjRsu8pL5de6P7kBVrPrC2w96jgNxO7+oWJj57iDcwOsXp+0eSloogiB7R1pXV9d3+Di8jKK1dPV3ABfXP5WvHOVlaKkqFCpRxKO2LSndT04OoHRyZlIJrrouAHe3t1THBQEATVVLnZEdaCprhaF+U7ux4/S+QOBG2Cffwu0Ian7s1gscOZko66mWgo6etytkkyRl9qOp8wNMDlNR47Hu05ixGK32SS2KfKiKIymfkRDHZVcAZOfxHQ/O2+9vk1cqtY1vVMXiyiCAHd3tGrOb7WNHjJ3wORkiEVUBHiInbefB4bwi53JWzt7Ec/lVLsN7pZG+oxLeRbADz0/ZFHXwvKKFHl9ZZHX7v6BxsSRliqtdY1SpwoXwAV5uahylaOuthpZmRl47HfHYuvZxWVMzMxrzIoLCzR1fSrgcwFQW1XBMqSXKMxzovJVWUy+Uvh5fXOj2Kam8cmXRaUHHQWKluTmsrMyZTGuZzB4F5d9rMZcAO8d/I2LBUGQEvx/OURZEh1Tst3Z+bks6vrkAph2ZHUsTYFFb2db1PVMx9HDndnr8+sKVG6MC2BqfG5pmR5KsVmtaG+qx8feLhB4d2sj3nW1S3UCrBgyYW3Dz3LkBJrSzGdQure04tXkuaSnQuApg7KmpFBVU/wsa1pd39Do9KxwY5ic9G/tYGBkHAdHx6CrHdJFKxcsJRybmsWSxxvNRBc9V8Dk4e1tEFNzi9LVDkVaNNU9Xh98mwEsr65jen5JuuoZnpjG6RmfjYr8kAt3wHJH9KRYemfvAD5/AJ41HzbYTcj+4VHEaU/2PMqzAuYBIN42TcDxjlii2ZsMJxpj8fprMhzviCWafXIxzNgxAbNBMPTfZNjQ9DJwJsNsEAz9Nxk2NL0MXNIx/AcAAP//DAkZxQAAAAZJREFUAwBCRurw6kTj0AAAAABJRU5ErkJggg==">
+  
+</a></div>
+  <div class="content">10个月前推送了新的提交到 <a href="/kit-miao/bipedal-robot/tree/master">master</a> 分支，<a href="/kit-miao/bipedal-robot/compare/dc2e55b3eb1b6a76d6fb8d2219e98040fc39253f...43f465b5f85388f6c2f7c69cefc4ab913bdf6753">dc2e55b...43f465b</a></div>
+</div></div>
+<a class="loadmore hide" href="javascript:void(0);" style="display: inline;">加载更多
+<i class="icon dropdown"></i>
+</a><center>
+<div class="text-muted nomore hide">不能加载更多了</div>
+<div class="ui inline loader"></div>
+</center>
+</div>
+</div>
+</div>
+
+
+<style>
+  #readme-name,
+  .license-popup {
+    color: #005980;
+    cursor: pointer; }
+  
+  .license-clickable {
+    color: #005980;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease; }
+</style>
+<script>
+  // 公共函数：平滑滚动到指定的license标题
+  function scrollToLicenseTitle(licenseIndex) {
+    var container = $('.file_readme_title')[0];
+    
+    if (!container) return;
+    
+    if (licenseIndex === undefined || licenseIndex === null) {
+      // 如果没有licenseIndex，滚动到最左侧
+      container.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
+      return;
+    }
+    
+    var selectedElement = $('#license-title-' + licenseIndex)[0];
+    
+    if (selectedElement) {
+      // 计算目标位置（元素相对于容器的位置）
+      var containerRect = container.getBoundingClientRect();
+      var elementRect = selectedElement.getBoundingClientRect();
+      var scrollLeft = container.scrollLeft;
+      var targetScrollLeft = scrollLeft + (elementRect.left - containerRect.left) - 20; // 留20px边距
+      
+      // 平滑滚动到目标位置
+      container.scrollTo({
+        left: targetScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  }
+  
+  function scrollToReadmeBox() {
+    var readmeBox = document.getElementById('git-readme');
+    if (readmeBox) {
+      const topPos = readmeBox.offsetTop;
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+    }
+  }
+  
+  window.gon.projectRightSide = {
+    homepage: null,
+    description: "达妙科技开源双足\r\n交流群428064389 ",
+    url: '/kit-miao/bipedal-robot/update_description',
+    i18n: {
+      invalidHomepage: '不是有效的 http 地址',
+      descriptionLimitExceeded: '简介长度不得超过%{limit}个字符',
+      noDescription: '暂无描述',
+      noPermission: '无权限操作！',
+      requestError: '修改发生错误，请稍后重试！'
+    }
+  }
+  window.gon.cloneArrSelectedLabel = [] || []
+  $(function () {
+    var $editModal = $('#edit-project-description')
+    $editModal.modal({
+      onShow: function () {
+        window.globalUtils.getFocus($editModal.find('textarea'))
+      }
+    })
+    $('.project__right-side').on('click', '.header .btn-edit', function () {
+      $editModal.modal('show')
+    })
+    $('.license-popup').popup({ position: 'bottom center', lastResort: 'bottom center' })
+  
+    // 处理每个license的点击事件
+    $('.license-clickable').click(function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      
+      var licenseName = $(this).data('license-name');
+      var licenseIndex = $(this).data('license-index');
+      var licenseFilename = $(this).data('license-filename');
+      
+      // 如果license文件名是README.md，则跳转到readme tab
+      if (licenseFilename === 'README.md') {
+        // 显示readme内容区域
+        $('.readme-content').show()
+        $('.readme-edit').show()
+        $('.lisence-content').hide()
+        $('.lisence-edit').hide()
+        
+        // 移除所有license标题的active-title类，然后为readme标题添加active-title类
+        $('.file_title_license').removeClass('active-title');
+        $('.file_title_readme').addClass('active-title');
+        
+        // 滚动到最左侧
+        scrollToLicenseTitle();
+      } else {
+        // 显示license内容区域
+        $('.lisence-edit').hide()
+        $('.readme-content').hide()
+        $('.readme-edit').hide()
+        
+        // 移除所有license标题的active-title类，然后为对应的标题添加active-title类
+        $('.file_title_license').removeClass('active-title');
+        $('#license-title-' + licenseIndex).addClass('active-title');
+        $('.file_title_readme').removeClass('active-title');
+        
+        // 隐藏所有license内容，然后只显示选中的license内容
+        $('.lisence-content').hide()
+        $('#license-content-' + licenseIndex).show();
+        $('#license-edit-' + licenseIndex).show();
+        
+        // 平滑滚动到对应的license标题
+        scrollToLicenseTitle(licenseIndex);
+      }
+      
+      scrollToReadmeBox()
+    });
+    
+    $(".box-readme").click(function(event) {
+      $('.lisence-content').hide()
+      $('.lisence-edit').hide()
+      $('.readme-content').show()
+      $('.readme-edit').show()
+      $('.file_title_license').removeClass('active-title')
+      $('.file_title_readme').addClass('active-title')
+      scrollToLicenseTitle()
+      scrollToReadmeBox()
+    });
+  
+    $('.js-project-label_show').projectLabel({
+      i18n: {
+        empty: "标签名不能为空",
+        verify: "标签名只允许包含中文、字母、数字或者中划线(-)，不能以中划线开头，且长度少于35个字符",
+        max: "最多选择 5 个标签"
+      }
+    })
+  })
+</script>
+
+</div>
+<div class="project-right-side-contaner ui-resizable" id="code-parsing">
+<div class="d-flex-between mb-2">
+<div class="title fs-16 d-align-center">
+<img class="mr-1" height="32" src="/static/images/mjc_icon@2x.png" width="32">
+<span class="ai-file-name">马建仓 AI 助手</span>
+</div>
+<div>
+<i class="iconfont icon-close close gitee-icon-close"></i>
+</div>
+</div>
+<div class="code-parsing-content">
+<div class="sub_title"></div>
+<div class="markdown-body"></div>
+<div class="bottom-content">
+<div class="js-code-parsing-img"></div>
+<div class="ai_code_btns_simple">
+<div class="ai_code_btns_simple_container">
+<div class="mr-1 test-more">尝试更多</div>
+<div class="btn_box" data-content="帮我解读代码" data-text="代码解读" data-value="code_explain">
+<div class="btn_box_title">代码解读</div>
+</div>
+<div class="btn_box" data-content="帮我代码找茬" data-text="代码找茬" data-value="code_review">
+<div class="btn_box_title">代码找茬</div>
+</div>
+<div class="btn_box" data-content="帮我优化代码" data-text="代码优化" data-value="code_improve">
+<div class="btn_box_title">代码优化</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="skeleton">
+<div class="line line1"></div>
+<div class="line line2"></div>
+<div class="line line3"></div>
+<div class="line line4"></div>
+<div class="line line1"></div>
+<div class="line line2"></div>
+<div class="line line3"></div>
+<div class="line line4"></div>
+<div class="line line1"></div>
+<div class="line line2"></div>
+<div class="line line3"></div>
+<div class="line line4"></div>
+</div>
+<div class="resize-handle">
+<div class="resize-handle-line"></div>
+</div>
+<script src="/static/javascripts/markdown-it.min.js"></script>
+<script src="https://cn-assets.gitee.com/assets/ai_code_parsing/app-f83eb69e2ecd107b1a533333dea1f4eb.js"></script>
+<script>
+  $(function() {
+    var maxWidthPercentage = 0.5;
+    $("#code-parsing").resizable({
+      handles: 'e, w', // 通过左边调整大小
+      minWidth: 350, // 设置 代码解析框 的最小宽度
+      resize: function(event, ui) {
+        var parentWidth = $(this).parent().width();
+        var newWidthDiv2 = ui.size.width;
+        var newWidthDiv1 = parentWidth - newWidthDiv2;
+        // 计算最大宽度
+        var maxWidthDiv2 = parentWidth * maxWidthPercentage;
+        // 确保 代码解析框 不超过最大宽度
+        newWidthDiv2 = Math.min(newWidthDiv2, maxWidthDiv2);
+        // 确保 文件详情 至少有最小宽度
+        newWidthDiv1 = Math.max(parentWidth - newWidthDiv2, 750);
+  
+        var percentageCode = (newWidthDiv2 / parentWidth) * 100;
+        var percentageProject = (newWidthDiv1 / parentWidth) * 100;
+  
+        $('#code-parsing').css('width',percentageCode+"%")
+        $('.git-project-content-wrapper').find('#sixteen').attr('style', 'width: ' + percentageProject + '% !important;');
+        $('.right-wrapper').attr('style', 'width: ' + percentageProject + '% !important;');
+        $('.project-conter-container').attr('style', 'width: ' + percentageProject + '% !important;');
+      }
+    });
+  })
+</script>
+
+<div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div></div>
+</div>
+</div>
+<style>
+  .team-member-checkbox .ui.radio.checkbox.checked label:after {
+    top: 7px !important; }
+</style>
+<script>
+  function scrollToReadmeBox() {
+    var readmeBox = document.getElementById('git-readme');
+    if (readmeBox) {
+      const topPos = readmeBox.offsetTop;
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+    }
+  }
+  
+  $(".box-readme").click(function(event) {
+    $('.lisence-content').hide()
+    $('.lisence-edit').hide()
+    $('.readme-content').show()
+    $('.readme-edit').show()
+    $('.file_title_license').removeClass('active-title')
+    $('.file_title_readme').addClass('active-title')
+    scrollToReadmeBox()
+  });
+  
+  // 防止二次挂载
+  if (false) {
+    window.gon.tree_left_side_loaded = true;
+  }
+</script>
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/assets/markdown_preview-001478f1b12f2725f1b1f76f36b9ce4e.css">
+<script src="https://cn-assets.gitee.com/assets/markdown_preview-efa1eb7480096c6e1a1264d57dbea013.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/markdown_render-991d086461ec7c8beb5b.bundle.js" defer="defer"></script>
+
+</div>
+<script>
+  (function() {
+    Gitee.modalHelper = new GiteeModalHelper({
+      alertText: '提示',
+      okText: '确定'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Tree.initHighlightTheme('white')
+</script>
+
+
+</div>
+<div class="gitee-project-extension">
+<div class="extension public">1</div>
+<div class="extension https">https://gitee.com/kit-miao/bipedal-robot.git</div>
+<div class="extension ssh">git@gitee.com:kit-miao/bipedal-robot.git</div>
+<div class="extension namespace">kit-miao</div>
+<div class="extension repo">bipedal-robot</div>
+<div class="extension name">bipedal-robot</div>
+<div class="extension branch">master</div>
+</div>
+
+<script>
+  $(function() {
+    GitLab.GfmAutoComplete.dataSource = "/kit-miao/bipedal-robot/autocomplete_sources"
+    GitLab.GfmAutoComplete.Emoji.assetBase = '/assets/emoji'
+    GitLab.GfmAutoComplete.setup();
+  });
+</script>
+
+<footer id="git-footer-main">
+<div class="ui container">
+<div class="logo-row">
+<a href="https://gitee.com"><img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="logo-img logo-light" src="/static/images/logo-black.svg?t=158106666">
+<img alt="Gitee - 基于 Git 的代码托管和研发协作平台" class="logo-img logo-dark" src="/static/images/logo-white-next.svg?t=158106666">
+</a></div>
+<div class="name-important">
+北京奥思研工智能科技有限公司版权所有
+</div>
+<div class="ui two column grid d-flex-center">
+<div class="eight wide column git-footer-left">
+<div class="ui four column grid" id="footer-left">
+<div class="column">
+<div class="ui link list">
+<div class="item">
+<a class="item" href="/all-about-git">Git 大全</a>
+</div>
+<div class="item">
+<a class="item" rel="nofollow" href="https://help.gitee.com/learn-Git-Branching/">Git 命令学习</a>
+</div>
+<div class="item">
+<a class="item" rel="nofollow" href="https://copycat.gitee.com/">CopyCat 代码克隆检测</a>
+</div>
+<div class="item">
+<a class="item" href="/appclient">APP与插件下载</a>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="ui link list">
+<div class="item">
+<a class="item" href="/gitee-stars">Gitee 封面人物</a>
+</div>
+<div class="item">
+<a class="item" href="/gvp">GVP 项目</a>
+</div>
+<div class="item">
+<a class="item" rel="nofollow" href="https://blog.gitee.com/">Gitee 博客</a>
+</div>
+<div class="item">
+<a class="item" href="/enterprises#nonprofit-plan">Gitee 公益计划</a>
+</div>
+<div class="item">
+<a class="item" href="https://gitee.com/features/gitee-go">Gitee 持续集成</a>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="ui link list">
+<div class="item">
+<a class="item" href="/api/v5/swagger">OpenAPI</a>
+</div>
+<div class="item">
+<a class="item" href="https://gitee.com/oschina/mcp-gitee">MCP Server</a>
+</div>
+<div class="item">
+<a class="item" href="https://help.gitee.com">帮助文档</a>
+</div>
+<div class="item">
+<a class="item" href="/self_services">在线自助服务</a>
+</div>
+<div class="item">
+<a class="item" href="/help/articles/4378">更新日志</a>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="ui link list">
+<div class="item">
+<a class="item" href="/about_us">关于我们</a>
+</div>
+<div class="item">
+<a class="item" rel="nofollow" href=" https://gitee.com/oschina/jobs">加入我们</a>
+</div>
+<div class="item">
+<a class="item" href="/terms">使用条款</a>
+</div>
+<div class="item">
+<a class="item" href="/oschina/git-osc/issues">意见建议</a>
+</div>
+<div class="item">
+<a class="item" href="/links.html">合作伙伴</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="eight wide column right aligned followus git-footer-right">
+<div class="qrcode mr-1">
+<div class="qrcode-box">
+<img alt="技术交流QQ群" src="https://cn-assets.gitee.com/assets/communication_QR-3b8de44bedfd3cf6c52c96b1a05771c6.png">
+</div>
+<p class="mt-1 mini_app-text">技术交流QQ群</p>
+</div>
+<div class="qrcode">
+<div class="qrcode-box">
+<img alt="微信服务号" class="weixin-qr" src="https://cn-assets.gitee.com/assets/qrcode-weixin-260803-3cfc55f0e5e92feab6cf176e2d5df4b3.jpg">
+</div>
+<p class="mt-1 weixin-text">微信服务号</p>
+</div>
+<div class="phone-and-qq column">
+<div class="ui list official-support-container">
+<div class="item"></div>
+<div class="item mail-and-zhihu">
+<a rel="nofollow" href="mailto: client@oschina.cn"><i class="iconfont icon-msg-mail"></i>
+<span id="git-footer-email">client@oschina.cn</span>
+</a></div>
+<div class="item tel">
+<a>
+<i class="iconfont icon-tel"></i>
+<span>企业版在线使用：400-606-0201</span>
+</a>
+</div>
+<div class="item tel">
+<a class="d-flex">
+<i class="iconfont icon-tel mt-05 mr-05"></i>
+<span>专业版私有部署：</span>
+<div>
+赖经理 13058176526
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bottombar">
+<div class="ui container">
+<div class="ui d-flex d-flex-between">
+<div class="seven wide column partner d-flex">
+<div class="open-atom d-flex-center">
+<img class="logo-openatom mr-1" alt="开放原子开源基金会" src="https://cn-assets.gitee.com/assets/logo-openatom-new-955174a984c899d2e230d052bdc237cf.svg">
+<a target="_blank" rel="nofollow" href="https://www.openatom.org/">开放原子开源基金会</a>
+<div class="sub-title ml-1">合作代码托管平台</div>
+</div>
+<div class="report-12377 d-flex-center ml-3">
+<img class="report-12377__logo mr-1" alt="违法和不良信息举报中心" src="https://cn-assets.gitee.com/assets/12377@2x-1aa42ed2d2256f82a61ecf57be1ec244.png">
+<a target="_blank" rel="nofollow" href="https://www.12377.cn">违法和不良信息举报中心</a>
+</div>
+<div class="copyright ml-3">
+<a rel="nofollow" href="http://beian.miit.gov.cn/">京ICP备2025119063号</a>
+</div>
+<div class="beian d-flex-center ml-2">
+<img class="report-12377__logo ml-1" alt="京公网安备11011502039387号" src="https://cn-assets.gitee.com/assets/beian-30b2e25c5da148efae50f89073b26816.png">
+<a target="_blank" rel="nofollow" href="https://beian.mps.gov.cn/#/query/webSearch?code=11011502039387">京公网安备11011502039387号</a>
+</div>
+</div>
+<div class="nine wide column right aligned">
+<i class="icon world"></i>
+<a href="/language/zh-CN">简 体</a>
+/
+<a href="/language/zh-TW">繁 體</a>
+/
+<a href="/language/en">English</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+  var officialEmail = $('#git-footer-email').text()
+  $('#git-footer-main .icon-popup').popup({ position: 'bottom center' })
+  $('#git-footer-email').text(officialEmail.replace('#', '@'))
+  window.gon.popover_card_locale = {
+    follow:"关注",
+    unfollow:"已关注",
+    gvp_title: "GVP - Gitee 最有价值开源项目",
+    project: "项目",
+    org: "开源组织",
+    member: "",
+    author: "作者",
+    user_blocked: "该用户已被屏蔽或已注销",
+    net_error: "网络错误",
+    unknown_exception: "未知异常"
+  }
+  window.gon.select_message = {
+    placeholder: "请输入个人空间地址或完整的邮箱地址"
+  }
+</script>
+<script src="https://cn-assets.gitee.com/webpacks/popover_card-bfd9ff90603e23ef133f.bundle.js"></script>
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/webpacks/css/gitee_nps-ae0dbee40f6ddc72015a.css">
+<script src="https://cn-assets.gitee.com/webpacks/gitee_nps-3da0deab0b59d5e7f7a4.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/gitee_icons-db24f196ed7cfb3a6136.bundle.js"></script>
+
+
+
+<div class="side-toolbar">
+<div class="button toolbar-help">
+<i class="iconfont icon-help"></i>
+</div>
+<div class="ui popup dark left center transition hidden" style="inset: 1.5px 40px auto auto;">点此查找更多帮助</div>
+<div class="toolbar-help-dialog">
+<div class="toolbar-dialog-header">
+<h3 class="toolbar-dialog-title">搜索帮助</h3>
+<form class="toolbar-help-search-form" action="/help/load_keywords_data" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="ui icon input fluid toolbar-help-search">
+<input name="keywords" placeholder="请输入产品名称或问题" type="text">
+<i class="icon search"></i>
+</div>
+</form>
+
+<i class="iconfont icon-close toolbar-dialog-close-icon"></i>
+</div>
+<div class="toolbar-dialog-content">
+<div class="toolbar-help-hot-search">
+<div class="toolbar-roll">
+<a class="" title="Git 命令在线学习" href="https://help.gitee.com/learn-git-branching/?utm_source==gitee-help-widget"><i class="Blue icon icon-command iconfont"></i>
+<span>Git 命令在线学习</span>
+</a><a class="active" title="如何在 Gitee 导入 GitHub 仓库" href="https://gitee.com/help/articles/4261?utm_source==gitee-help-widget"><i class="icon icon-clipboard iconfont orange"></i>
+<span>如何在 Gitee 导入 GitHub 仓库</span>
+</a></div>
+<div class="toolbar-list">
+<div class="toolbar-list-item">
+<a href="/help/articles/4114">Git 仓库基础操作</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4166">企业版和社区版功能对比</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4191">SSH 公钥设置</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4194">如何处理代码冲突</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4232">仓库体积过大，如何减小？</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4279">如何找回被删除的仓库数据</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4283">Gitee 产品配额说明</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4284">GitHub仓库快速导入Gitee及同步更新</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4328">什么是 Release（发行版）</a>
+</div>
+<div class="toolbar-list-item">
+<a href="/help/articles/4354">将 PHP 项目自动发布到 packagist.org</a>
+</div>
+</div>
+</div>
+<div class="toolbar-help-search-reseult"></div>
+</div>
+</div>
+<script>
+  var opt = { position: 'left center'};
+  var $helpSideToolbar = $('.button.toolbar-help');
+  var $toolbarRoll = $('.toolbar-roll');
+  
+  $(function() {
+    if (false) {
+      $helpSideToolbar.popup(opt).popup({lastResort:'left center'})
+    } else {
+      $helpSideToolbar.popup({lastResort:'left center'}).popup('show', opt);
+      setTimeout(function() {
+        $helpSideToolbar.popup('hide', opt);
+      }, 3000);
+    }
+  
+    if ($toolbarRoll.length) {
+      setInterval(function() {
+        var $nextActiveLink = $toolbarRoll.find('a.active').next();
+        if (!$nextActiveLink.length) {
+          $nextActiveLink = $toolbarRoll.find('a:first-child');
+        }
+        $nextActiveLink.attr('class', 'active').siblings().removeClass('active init');
+      }, 5000);
+    }
+  })
+</script>
+
+<div class="toolbar-appeal popup button">
+<i class="iconfont icon-report"></i>
+</div>
+<div class="ui popup dark">
+仓库举报
+</div>
+<script>
+  $('.toolbar-appeal').popup({ position: 'left center' });
+</script>
+
+<div class="button gotop popup" id="gotop">
+<i class="iconfont icon-top"></i>
+</div>
+<div class="ui popup dark">回到顶部</div>
+</div>
+
+<script>
+  var $elm = $('.toolbar-appeal');
+  
+  $elm.on('click', function() {
+    var modals = $("#unlanding-complaint-modal.normal-modal");
+    if (modals.length > 1) {
+      modals.eq(0).modal('show');
+    } else {
+      modals.modal('show');
+    }
+  })
+  $("#unlanding-complaint-modal.normal-modal").modal({
+    onDeny: function() {
+      window.location.href = "/signup?from=";
+    },
+    onApprove: function() {
+      window.location.href = "/login?from=";
+    }
+  })
+</script><div class="ui dimmer modals page"><div class="form modal normal-modal tiny ui" id="unlanding-complaint-modal">
+<i class="iconfont icon-close close"></i>
+<div class="header">
+登录提示
+</div>
+<div class="container actions">
+<div class="content">
+该操作需登录 Gitee 帐号，请先登录后再操作。
+</div>
+<div class="ui orange icon large button ok">
+立即登录
+</div>
+<div class="ui button blank cancel">
+没有帐号，去注册
+</div>
+</div>
+</div><div class="ui modal tiny" id="edit-project-description">
+<i class="iconfont icon-close close"></i>
+<div class="header">编辑仓库简介</div>
+<div class="content">
+<div class="item mb-2">
+<div class="title label">简介内容</div>
+<div class="ui small input">
+<textarea maxlength="200" name="project[description]" placeholder="描述" rows="5">达妙科技开源双足
+交流群428064389</textarea>
+</div>
+</div>
+<div class="item mb-2">
+<div class="title label">主页</div>
+<div class="ui small input">
+<input data-regex-value="(^$)|(^(http|https):\/\/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).*)|(^(http|https):\/\/[a-zA-Z0-9]+([_\-\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,10}(:[0-9]{1,10})?(\?.*)?(\/.*)?$)" name="project[homepage]" placeholder="主页(eg: https://gitee.com)" type="text">
+</div>
+</div>
+</div>
+<div class="actions">
+<button class="ui button blank cancel">取消</button>
+<button class="ui button orange btn-save">保存更改</button>
+</div>
+</div></div>
+
+<style>
+  .side-toolbar .bdsharebuttonbox a {
+    font-size: 24px;
+    color: white !important;
+    opacity: 0.9;
+    margin: 6px 6px 0px 6px;
+    background-image: none;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+</style>
+<style>
+  #udesk_btn a {
+    margin: 0px 20px 167px 0px !important;
+  }
+</style>
+<script>
+  (function() {
+    $('#project-user-message').popup({
+      position: 'left center'
+    });
+  
+  }).call(this);
+</script>
+<script>
+  Gitee.initSideToolbar()
+</script>
+
+
+
+
+
+<script>
+  (function() {
+    this.__gac = {
+      domain: 'www.oschina.net'
+    };
+  
+  }).call(this);
+</script>
+
+<script src="https://cn-assets.gitee.com/webpacks/build_status-0282307d33ff78a2a8f2.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/scan_status-194728acd3e61212dfe7.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/mermaid_render-6cc4f65d3aef3eb03851.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/check_runs-dac90373fa1dd8492e27.bundle.js"></script>
+
+
+</body></html>

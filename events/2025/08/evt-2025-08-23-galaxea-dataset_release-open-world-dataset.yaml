@@ -1,0 +1,28 @@
+id: evt-2025-08-23-galaxea-dataset_release-open-world-dataset
+date: 2025-08-23
+date_precision: day
+date_basis: derived
+date_as_stated: Hugging Face 数据集 OpenGalaxea/Galaxea-Open-World-Dataset 的 createdAt 为 2025-08-23
+type: dataset_release
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图发布真实世界移动操作数据集 Galaxea Open-World Dataset
+summary:
+  zh: 星海图在 Hugging Face 发布 Galaxea Open-World Dataset。数据集页写明包含 500 小时以上真实世界移动操作数据，采用 LeRobot 数据集结构，标签为 robotics、real-world、dual-arm、whole body control、manipulation、lerobot；数据与代码采用 CC BY-NC-SA 4.0 许可，访问需接受 Galaxea 社区许可协议并提供联系信息。
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  - mobile-manipulator
+  data_acquisition:
+  - teleop
+  - real-robot
+  data_openness: partially-open
+evidence:
+- url: https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset
+  publisher: Galaxea（Hugging Face）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/huggingface-2025-08-23-galaxea-open-world-datas.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2025-06-23-galbot-funding-catl-led-1100m
+date: 2025-06-23
+date_precision: day
+type: funding
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用完成由宁德时代领投的 11 亿元新一轮融资
+summary:
+  zh: 6 月 23 日，北京银河通用机器人有限公司宣布已于 6 月正式完成由宁德时代领投的 11 亿元人民币新一轮融资，两年累计融资超 24 亿元。本轮投资方包括宁德时代上市公司战投、溥泉资本（CATL Capital）、国家开发银行国开科创、北京机器人产业基金、纪源资本等。
+counterparties:
+- 宁德时代
+- 溥泉资本（CATL Capital）
+- 国家开发银行国开科创
+- 北京机器人产业基金
+- 纪源资本
+amount:
+  value: 1100000000
+  currency: CNY
+evidence:
+- url: https://www.nbd.com.cn/articles/2025-06-23/3917796.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/nbd-2025-06-23-galbot-1100m-round.html
+corroboration: single

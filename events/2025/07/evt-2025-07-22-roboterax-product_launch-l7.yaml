@@ -1,0 +1,25 @@
+id: evt-2025-07-22-roboterax-product_launch-l7
+date: 2025-07-22
+date_precision: day
+type: product_launch
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元发布全尺寸双足人形机器人星动 L7 并开始发售
+summary:
+  zh: 7 月 22 日，星动纪元发布全尺寸双足人形机器人星动 L7 并开始发售。公司表示，这款身高 171 厘米的双足机器人是国内首个同时实现「大运动 + 巧操作」的全尺寸双足人形机器人，也是国内首个由 VLA 大模型驱动、具备全身 55 个自由度的双足人形机器人。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  model_form:
+  - end2end-vla
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.bjnews.com.cn/detail/1753191627168875.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/bjnews-2025-07-22-roboterax-l7-launch.html
+corroboration: single

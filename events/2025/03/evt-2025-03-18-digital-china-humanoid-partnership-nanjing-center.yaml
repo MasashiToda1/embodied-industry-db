@@ -1,0 +1,31 @@
+id: evt-2025-03-18-digital-china-humanoid-partnership-nanjing-center
+date: '2025-03-18'
+date_precision: day
+type: partnership
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏在南京软件谷成立具身智能机器人应用中心，并与江苏移动、科大讯飞签署合作协议
+summary:
+  zh: 3 月 18 日上午，具身智能机器人应用中心在中国（南京）软件谷成立，由数字华夏旗下华夏机器人（南京）有限公司建设，定位为基于真实交互场景的人形机器人数据采集及应用中心，覆盖家庭服务、康养陪护等场景，建立包含动作、语音、表情的多模态数据库。同日，华夏机器人（南京）有限公司与江苏移动信息系统集成有限公司、科大讯飞股份有限公司举行合作协议签署仪式。通用人形机器人「夏起」在成立仪式上首次公开亮相，10 台夏起同步群舞。
+counterparties:
+- 江苏移动信息系统集成有限公司
+- 科大讯飞股份有限公司
+- 中国（南京）软件谷
+axes:
+  data_acquisition:
+  - real-robot
+  - sim-generated
+  data_modality:
+  - joint-trajectory
+  - audio
+  data_sourcing:
+  - in-house-factory
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/104.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/digit-2025-03-18-dch-nanjing-center.html
+corroboration: single

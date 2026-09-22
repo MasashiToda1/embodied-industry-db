@@ -1,0 +1,26 @@
+id: evt-2024-11-estun-codroid-funding-pre-a
+date: 2024-11
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，江苏南京软件和信息服务产业专项母基金直投项目投决会审议通过了南京埃斯顿酷卓科技有限公司投资项目（以下简称埃斯顿酷卓）并完成投资协议签署」（南京市国资委 2024 年 11 月 21 日发布）
+type: funding
+orgs:
+- id: estun-codroid
+  role: subject
+title:
+  zh: 埃斯顿酷卓完成 1.3 亿元融资，首次引入外部投资人
+summary:
+  zh: 南京市国资委发布消息，江苏南京软件和信息服务产业专项母基金直投项目投决会审议通过南京埃斯顿酷卓科技有限公司投资项目并完成投资协议签署。这是埃斯顿酷卓首次引入外部投资人，专项母基金投资 3000 万元，撬动国家先进制造业基金 1 亿元，共同助力企业完成 1.3 亿元融资目标。
+counterparties:
+- 江苏南京软件和信息服务产业专项母基金
+- 国家先进制造业基金
+amount:
+  value: 130000000
+  currency: CNY
+evidence:
+- url: http://gzw.nanjing.gov.cn/gzdt/202411/t20241121_5015627.html
+  publisher: 南京市人民政府国有资产监督管理委员会
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/gzw-2024-11-estun-codroid-pre-a.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2024-10-22-booster-publication-robotics-sdk
+date: '2024-10-22'
+date_precision: day
+type: publication
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化开源 Booster Robotics SDK
+summary:
+  zh: 10 月 22 日，加速进化在 GitHub 账号 BoosterRobotics 下创建并公开 booster_robotics_sdk 仓库。README 写明该 SDK 面向开发者控制加速进化的机器人产品，发布包提供 C++ SDK，Python SDK 通过 pip 包 booster_robotics_sdk_python 交付，预编译环境为 Ubuntu 22.04、aarch64 与 x86_64、gcc 11.4.0，示例包含运控客户端与底层状态订阅。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+evidence:
+- url: https://github.com/BoosterRobotics/booster_robotics_sdk
+  publisher: 加速进化 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-22-booster-sdk-repo.html
+corroboration: single

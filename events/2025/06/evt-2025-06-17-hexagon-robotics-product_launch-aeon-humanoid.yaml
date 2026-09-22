@@ -1,0 +1,30 @@
+id: evt-2025-06-17-hexagon-robotics-product_launch-aeon-humanoid
+date: 2025-06-17
+date_precision: day
+type: product_launch
+orgs:
+- id: hexagon-robotics
+  role: subject
+- id: schaeffler
+  role: counterparty
+- id: nvidia
+  role: supplier
+title:
+  zh: Hexagon 在 Hexagon LIVE Global 发布工业人形机器人 AEON
+summary:
+  zh: 6 月 17 日，Hexagon 在斯德哥尔摩举行的 Hexagon LIVE Global 大会上发布人形机器人 AEON，由其 Robotics 部门推出。新闻稿列出的能力包括：结合灵巧操作与移动的敏捷性、融合多模态传感器数据的空间智能、从抓取特定物体、扫描工业部件做检测到通过数字现实捕捉与遥操作生成数字孪生的多任务通用性，以及用电池热插拔机制实现不停机续航。应用场景覆盖操作、资产巡检、现实捕捉与操作员辅助，行业包括汽车、航空航天、交通运输、制造、仓储与物流。Schaeffler 与 Pilatus 将在操作、机床上下料、部件检测与现实捕捉等用例上试点 AEON。部门表示未来六个月内将在生产环境部署 AEON，之后再扩大商业化推广。AEON 由 NVIDIA 加速计算、NVIDIA Omniverse 与 NVIDIA Jetson 驱动，微软 Azure 提供可扩展开发与按需训练，maxon 的新一代执行器驱动其运动。
+counterparties:
+- Pilatus
+- Microsoft
+- maxon
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse, inspection-hazardous]
+  data_acquisition: [teleop]
+  data_modality: [rgb, pointcloud]
+evidence:
+- url: https://hexagon.com/company/newsroom/press-releases/2025/hexagon-launches-aeon-a-humanoid-built-for-industry
+  publisher: Hexagon AB 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/hexagon-2025-06-17-hexagon-robotics-aeon-la.html
+corroboration: single

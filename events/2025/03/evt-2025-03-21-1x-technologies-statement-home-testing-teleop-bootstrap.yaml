@@ -1,0 +1,23 @@
+id: evt-2025-03-21-1x-technologies-statement-home-testing-teleop-bootstrap
+date: 2025-03-21
+date_precision: day
+type: statement
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X Technologies 称 2025 年内把 NEO Gamma 放进「数百到数千」个家庭，用遥操作起步采数据
+summary:
+  zh: 3 月 21 日，1X Technologies CEO 在 NVIDIA GTC 2025 接受 TechCrunch 采访时说，公司计划在 2025 年底前把 NEO Gamma 放进「数百到数千」个家庭做早期测试，邀请早期用户一起开发这套系统。他说 NEO Gamma 目前还不能完全自主行动，公司靠遥操作「给这个过程起步」——远端的操作员实时看机器人的摄像头与传感器并接管其肢体动作，由此采集家庭场景数据来训练自研模型。1X 当时尚未公布 NEO Gamma 的销售策略，官网设有等候名单。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [home]
+  data_acquisition: [teleop, real-robot]
+  data_sourcing: [customer-feedback]
+evidence:
+- url: https://techcrunch.com/2025/03/21/1x-will-test-humanoid-robots-in-a-few-hundred-homes-in-2025/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/techcrunch-2025-03-21-1x-technologies-home-tes.html
+corroboration: single

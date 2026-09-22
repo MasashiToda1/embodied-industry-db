@@ -1,0 +1,23 @@
+id: evt-2025-02-04-figure-ai-statement-exit-openai-collaboration
+date: 2025-02-04
+date_precision: day
+type: statement
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure AI 宣布退出与 OpenAI 的合作协议，转向全自研端到端机器人 AI
+summary:
+  zh: 2 月 4 日，Figure AI 在 X 上宣布退出与 OpenAI 的 Collaboration Agreement，理由是公司在完全自研的端到端机器人 AI 上取得突破。公司对 TechCrunch 表示「要在真实世界规模化解决具身 AI，就必须把机器人 AI 垂直整合」，并称会在 30 天内展示人形机器人上前所未见的成果。双方此前于 2024 年宣布合作开发人形机器人下一代 AI 模型，Figure 02 曾计划使用 OpenAI 模型做自然语言交互。
+counterparties:
+- OpenAI
+axes:
+  hardware_strategy: [in-house]
+  model_form: [end2end-vla]
+evidence:
+- url: https://techcrunch.com/2025/02/04/figure-drops-openai-in-favor-of-in-house-models/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/techcrunch-2025-02-04-figure-ai-exit-openai.html
+corroboration: single

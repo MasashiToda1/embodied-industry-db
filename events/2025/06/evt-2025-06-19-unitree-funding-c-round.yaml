@@ -1,0 +1,29 @@
+id: evt-2025-06-19-unitree-funding-c-round
+date: 2025-06-19
+date_precision: day
+type: funding
+orgs:
+- id: unitree
+  role: subject
+- id: alibaba-robotics
+  role: investor
+- id: tencent-robotics
+  role: investor
+title:
+  zh: 宇树科技确认完成 C 轮融资交割
+summary:
+  zh: 6 月 19 日，市场消息称宇树科技已完成始于 2024 年 9 月的 C 轮融资交割，由中国移动旗下基金、腾讯、锦秋、阿里、蚂蚁、吉利资本共同领投，绝大部分老股东跟投。宇树科技向证券时报记者表示「我们最近确实完成了 C 轮融资，但其他信息暂时不清楚」；报道称其投前估值已超过 100 亿元人民币。
+counterparties:
+- 中国移动旗下基金
+- 腾讯
+- 锦秋基金
+- 阿里巴巴
+- 蚂蚁集团
+- 吉利资本
+evidence:
+- url: https://www.stcn.com/article/detail/2155160.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/stcn-2025-06-19-unitree-c-round.html
+corroboration: single

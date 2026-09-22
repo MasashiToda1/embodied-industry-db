@@ -1,0 +1,29 @@
+id: evt-2025-03-18-nvidia-publication-isaac-groot-n1
+date: 2025-03-18
+date_precision: day
+type: publication
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: "英伟达在 GTC 发布开放人形机器人基础模型 Isaac GR00T N1 与论文"
+summary:
+  zh: "3 月 18 日 GTC，英伟达发布 Isaac GR00T N1，新闻稿称其为面向通用人形机器人推理与技能的首个开放且可完全定制的基础模型，即日可用。模型采用双系统架构：System 2 是由视觉语言模型驱动的慢思考模块，负责理解环境与指令并规划动作；System 1 是快思考动作模型，把规划转成连续动作，训练数据为人类演示数据加 Omniverse 生成的合成数据。新闻稿写明 GR00T N1 的训练数据与任务评测场景可从 Hugging Face 与 GitHub 下载，GR00T N1 数据集作为更大的开源 physical AI 数据集的一部分在 Hugging Face 发布；英伟达用 Isaac GR00T Blueprint 在 11 小时内生成 78 万条合成轨迹（相当于 6500 小时人类演示），与真实数据混合后使 GR00T N1 表现较仅用真实数据提升 40%。同日 arXiv 论文《GR00T N1: An Open Foundation Model for Generalist Humanoid Robots》（arXiv:2503.14734）公开，作者署名 NVIDIA，论文写明模型在 Fourier GR-1 人形机器人上做了语言条件双臂操作的部署验证。"
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [real-robot, teleop, human-video, sim-generated]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+  sim_stack: [isaac-sim]
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks
+  publisher: NVIDIA 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/nvidianews-2025-03-18-nvidia-groot-n1.html
+- url: https://arxiv.org/abs/2503.14734
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/arxiv-2025-03-18-nvidia-groot-n1-arxiv.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2025-07-25-shengshu-product-launch-vidar
+date: '2025-07-25'
+date_precision: day
+type: product_launch
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技联合清华大学发布具身基座模型 Vidar
+summary:
+  zh: 新华网 2025 年 7 月 26 日报道，生数科技携手清华大学于 7 月 25 日发布具身基座模型 Vidar。该模型构建支持机器人双臂协同任务的多视角视频预测框架，并搭配高精度预测逆动力学模型完成动作预测；公司称仅用
+    20 分钟机器人真机数据即可泛化到新机器人，所需数据量约为行业均值的千分之一。
+counterparties:
+- 清华大学
+evidence:
+- url: http://www.bj.xinhuanet.com/20250726/e751d0aa02064e0f98c64137b22550bd/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/bj-2025-07-25-shengshu-vidar.html
+corroboration: single

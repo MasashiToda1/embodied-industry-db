@@ -1,0 +1,26 @@
+id: evt-2025-04-15-weitai-funding-angel-and-angel-plus
+date: '2025-04-15'
+date_precision: day
+type: funding
+orgs:
+- id: weitai
+  role: subject
+title:
+  zh: 纬钛机器人完成近亿元天使轮及天使+轮融资
+summary:
+  zh: 4 月 15 日，上海纬钛科技有限公司（纬钛机器人，ViTai Robotics）宣布连续完成近亿元天使及天使+轮融资。天使轮由小米战投领投，宽桥恒松、雅瑞资本、iCANX Fund、梅花创投、微光创投及老股东跟投；天使+轮由祥峰投资、雅瑞资本、iCANX Fund、梅花创投、微光创投联合投资，万甲资本担任独家财务顾问。融资用于推进基于视觉的触觉传感技术、手眼协同算法研发及商业化落地。
+counterparties:
+- 小米战投
+- 宽桥恒松
+- 雅瑞资本
+- iCANX Fund
+- 梅花创投
+- 微光创投
+- 祥峰投资
+evidence:
+- url: https://m.bjnews.com.cn/detail/1744725950168547.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/m-2025-04-15-weitai-angel-rounds.html
+corroboration: single

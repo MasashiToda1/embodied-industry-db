@@ -1,0 +1,20 @@
+id: evt-2025-03-31-roboscience-funding-seed
+date: '2025-03-31'
+date_precision: day
+type: funding
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: RoboScience 完成数千万元种子轮融资
+summary:
+  zh: 钛媒体 2025 年 3 月 31 日报道，具身智能公司 RoboScience（北京机科未来科技有限公司）宣布完成数千万元种子轮融资，由零一创投独家投资，资金用于产品研发和团队搭建。
+counterparties:
+- 零一创投
+evidence:
+- url: https://news.qq.com/rain/a/20250331A02HVN00
+  publisher: 腾讯新闻（钛媒体 APP）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-31-roboscience-seed.html
+corroboration: single

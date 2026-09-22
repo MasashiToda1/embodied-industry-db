@@ -1,0 +1,25 @@
+id: evt-2024-10-shouxing-funding-angel
+date: '2024-10'
+date_precision: month
+date_basis: stated
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+- id: agibot
+  role: investor
+title:
+  zh: 首形科技获天使轮投资，投资方含智元机器人
+summary:
+  zh: 凤凰网稿件写明「2024 年 10 月，首形科技曾获德迅投资、奇绩创坛、Taihill、智元机器人天使投资」，未披露金额。
+counterparties:
+- 德迅投资
+- 奇绩创坛
+- Taihill
+evidence:
+- url: https://finance.ifeng.com/c/8kWQoPlTKzP
+  publisher: 凤凰网财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/finance-2024-10-shouxing-angel-2024.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2025-05-29-hf-robotics-product_launch-hopejr-reachy-mini
+date: 2025-05-29
+date_precision: day
+type: product_launch
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 公开两款开源机器人 HopeJR 与 Reachy Mini
+summary:
+  zh: 5 月 29 日，Hugging Face 公开两款开源机器人。HopeJR 是全尺寸人形机器人，有 66 个驱动自由度，可行走并移动手臂，与法国 The Robot Studio 共同设计。Reachy Mini 是桌面机型，可转头、说话、听声，用于测试 AI 应用。TechCrunch 报道公司估计 HopeJR 单台约 3000 美元、Reachy Mini 约 250 至 300 美元，具体取决于关税；公司没有给出确切发货时间表，称预期年内先发出前几台，等待名单已开放。
+counterparties:
+- The Robot Studio
+axes:
+  embodiment_form: [humanoid-biped]
+  delivery_model: [hardware-sale]
+  data_openness: fully-open
+evidence:
+- url: https://techcrunch.com/2025/05/29/hugging-face-unveils-two-new-humanoid-robots/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/techcrunch-2025-05-29-hf-robotics-hopejr-reach.html
+corroboration: single

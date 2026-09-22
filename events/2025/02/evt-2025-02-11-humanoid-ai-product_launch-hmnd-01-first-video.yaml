@@ -1,0 +1,20 @@
+id: evt-2025-02-11-humanoid-ai-product_launch-hmnd-01-first-video
+date: 2025-02-11
+date_precision: day
+type: product_launch
+orgs:
+- id: humanoid-ai
+  role: subject
+title:
+  zh: Humanoid 首次公开通用人形机器人 HMND 01 的产品视频与规格
+summary:
+  zh: 2 月 11 日，英国 Humanoid 在官网发布新的产品视频，首次公开通用人形机器人 HMND 01 的实机画面，内容涉及机械设计、运动控制与 AI 集成。公告给出的规格为身高 175 cm、体重 70 kg、行走速度 1.5 m/s、平均续航 4 小时、负载 15 kg。公司称 2025 年计划开发并测试轮式与双足两个平台的 Alpha 原型，并在与零售企业讨论试点项目。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://thehumanoid.ai/3599-2/
+  publisher: Humanoid 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/thehumanoid-2025-02-11-humanoid-ai-hmnd-01-firs.html
+corroboration: single

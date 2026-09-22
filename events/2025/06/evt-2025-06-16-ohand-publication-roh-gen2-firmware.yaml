@@ -1,0 +1,18 @@
+id: evt-2025-06-16-ohand-publication-roh-gen2-firmware
+date: '2025-06-16'
+date_precision: day
+type: publication
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技开源 ROHand Gen2 固件与文档仓库
+summary:
+  zh: 傲意科技在 GitHub 组织 oymotion 下创建并开源 roh_gen2_firmware 仓库，发布第二代 ROHand 灵巧手的固件与文档。
+evidence:
+- url: https://github.com/oymotion/roh_gen2_firmware
+  publisher: GitHub · oymotion
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-16-ohand-roh-gen2-firmware.html
+corroboration: single

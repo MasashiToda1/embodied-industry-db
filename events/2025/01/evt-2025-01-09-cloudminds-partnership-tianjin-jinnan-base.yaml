@@ -1,0 +1,24 @@
+id: evt-2025-01-09-cloudminds-partnership-tianjin-jinnan-base
+date: 2025-01-09
+date_precision: day
+type: partnership
+orgs:
+- id: cloudminds
+  role: subject
+title:
+  zh: 达闼与天津津南区签署投资落地协议，建设具身智能机器人智能制造北方基地
+summary:
+  zh: 1 月 9 日，津南区与达闼机器人股份有限公司、天津开发区光荣实业发展有限公司、国科开研资本有限公司举行投资落地协议签约仪式。津南国投集团与达闼机器人签署投资合作意向协议，天津市津南创腾经济开发有限公司与达闼机器人签署落地协议。按协议，达闼机器人将在津南区投资兴办具身智能机器人智能制造北方基地项目，从事智能机器人研发生产销售、服务消费机器人销售、智能家庭消费设备销售等；津南区将与签约企业合作设立产业引导基金，投向「具身通用人工智能 + 人形机器人」等领域。
+counterparties:
+- 天津市津南区
+- 津南国投集团
+- 天津开发区光荣实业发展有限公司
+- 国科开研资本有限公司
+- 天津市津南创腾经济开发有限公司
+evidence:
+- url: https://www.tjjn.gov.cn/xwzx/zwyw/202501/t20250109_6829499.html
+  publisher: 津南政务网
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/tjjn-2025-01-09-cloudminds-jinnan-base.html
+corroboration: single

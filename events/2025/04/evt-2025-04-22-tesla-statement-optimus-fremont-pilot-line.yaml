@@ -1,0 +1,21 @@
+id: evt-2025-04-22-tesla-statement-optimus-fremont-pilot-line
+date: 2025-04-22
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉在 2025 年一季度股东信中称 Optimus 将在弗里蒙特试产线上生产
+summary:
+  zh: 4 月 22 日，特斯拉发布 2025 年第一季度股东更新文件，其中写道公司「仍按计划在 2025 年于弗里蒙特试产线（Fremont pilot production line）上制造 Optimus，并在自家工厂里更大范围部署机器人做有用的工作」。同一份文件的图片页标注为「OPTIMUS - FREMONT PILOT PRODUCTION LINE」。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://digitalassets.tesla.com/tesla-contents/image/upload/IR/TSLA-Q1-2025-Update.pdf
+  publisher: 特斯拉 2025 年第一季度股东更新文件
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/digitalasset-2025-04-22-tesla-q1-2025-update.html
+corroboration: single

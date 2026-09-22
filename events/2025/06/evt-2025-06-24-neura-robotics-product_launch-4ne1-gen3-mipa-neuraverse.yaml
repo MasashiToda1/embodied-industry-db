@@ -1,0 +1,22 @@
+id: evt-2025-06-24-neura-robotics-product_launch-4ne1-gen3-mipa-neuraverse
+date: 2025-06-24
+date_precision: day
+type: product_launch
+orgs:
+- id: neura-robotics
+  role: subject
+title:
+  zh: NEURA Robotics 在 Automatica 2025 首发第三代 4NE1，同时推出 MiPA 与 Neuraverse
+summary:
+  zh: 6 月 24 日，NEURA Robotics 在慕尼黑 Automatica 2025 上全球首发第三代人形机器人 4NE1（「For Anyone」），同时宣布家用与服务机器人 MiPA 上市、开放机器人生态 Neuraverse 发布。官方称 4NE1 可在真实环境中不用防护围栏与人一起自主工作，自有专利的 NEURA Omnisensor 让机器人能可靠区分人与物体并相应调整行为。Neuraverse 以应用商店的方式连接机器人，让不同型号之间共享技能：公司在自建的物理 AI 训练场「NEURA Gym」里采真实场景数据，与 Neuraverse 的合成数据结合训练模型，训练好的技能可迁移到其他机器人。展位面积约 800 平方米，展期 6 月 24 日至 27 日。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, commercial-service, home]
+  data_acquisition: [real-robot, sim-generated]
+evidence:
+- url: https://neura-robotics.com/neura-robotics-launches-technological-revolution/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/neura-roboti-2025-06-24-neura-robotics-automatic.html
+corroboration: single

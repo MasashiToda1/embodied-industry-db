@@ -1,0 +1,32 @@
+id: evt-2024-09-29-inspire-robots-deployment-customer-coverage
+date: '2024-09-29'
+date_precision: day
+type: deployment
+orgs:
+- id: inspire-robots
+  role: subject
+- id: ubtech
+  role: customer
+- id: agibot
+  role: customer
+- id: galbot
+  role: customer
+- id: unitree
+  role: customer
+- id: skild-ai
+  role: customer
+title:
+  zh: 因时机器人披露微型伺服电缸与灵巧手已服务的客户范围
+summary:
+  zh: 9 月 29 日报道，因时机器人自 2016 年开始研发微型伺服电缸与仿人五指灵巧手，是国内第一家推出商业化灵巧手、也是当时唯一已大批量交付的厂商，服务客户包括 CATL、ATL、BYD、SKILD AI、优必选、智元、银河通用、宇树科技等企业。
+counterparties:
+- CATL
+- ATL
+- BYD
+evidence:
+- url: https://news.pedaily.cn/202409/540834.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/news-2024-09-27-inspire-robots-b2-round.html
+corroboration: single

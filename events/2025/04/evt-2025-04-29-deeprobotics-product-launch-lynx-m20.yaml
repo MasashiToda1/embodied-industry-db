@@ -1,0 +1,28 @@
+id: evt-2025-04-29-deeprobotics-product-launch-lynx-m20
+date: '2025-04-29'
+date_precision: day
+type: product_launch
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处发布山猫 M20 行业级全地形轮足机器人
+summary:
+  zh: 4 月 29 日，云深处科技发布山猫 M20 轮足机器人，官方称这是面向复杂地形和危险环境打造的中型行业级全地形轮足机器人。整机有效负载 15 公斤、负载续航 12 公里，配 96 线激光雷达，支持全向避障，工业级 IP66 防护，可选自主导航与自主充电的 Pro 版本。官网产品页列出的应用场景为电力巡检、消防应急、物流配送与科研探索，发布时开启全球预售，未公布售价。
+axes:
+  embodiment_form:
+  - quadruped
+  target_scene:
+  - inspection-hazardous
+evidence:
+- url: https://www.ithome.com/0/849/905.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/ithome-2025-04-29-deeprobotics-lynx-m20.html
+- url: https://finance.sina.com.cn/tech/roll/2025-04-30/doc-ineuxfic4358377.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/finance-2025-04-29-deeprobotics-lynx-m20-si.html
+corroboration: multi

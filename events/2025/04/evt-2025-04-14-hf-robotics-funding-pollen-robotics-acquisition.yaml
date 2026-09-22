@@ -1,0 +1,29 @@
+id: evt-2025-04-14-hf-robotics-funding-pollen-robotics-acquisition
+date: 2025-04-14
+date_precision: day
+type: funding
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 收购法国开源机器人公司 Pollen Robotics
+summary:
+  zh: 4 月 14 日，Hugging Face 在官方博客宣布 Pollen Robotics 加入 Hugging Face，并开始销售开源机器人。博客写明首款对外销售的机型是人形机器人 Reachy 2，开源且支持 VR，面向研究、教育与具身智能实验，已在康奈尔、卡内基梅隆等实验室使用，可通过邮件以 70000 美元下单。Pollen Robotics 成立于 2016 年，位于法国波尔多，团队此前与 Hugging Face 在 Reachy 2 上有开源合作。TechCrunch 报道交易金额未披露，Pollen Robotics 此前累计融资 250 万欧元。
+counterparties:
+- Pollen Robotics
+axes:
+  embodiment_form: [humanoid-wheeled]
+  delivery_model: [hardware-sale]
+  target_scene: [education-research]
+evidence:
+- url: https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition
+  publisher: Hugging Face 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/huggingface-2025-04-14-hf-robotics-pollen-acqui.html
+- url: https://techcrunch.com/2025/04/14/hugging-face-buys-a-humanoid-robotics-startup/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/techcrunch-2025-04-14-hf-robotics-pollen-acqui.html
+corroboration: multi

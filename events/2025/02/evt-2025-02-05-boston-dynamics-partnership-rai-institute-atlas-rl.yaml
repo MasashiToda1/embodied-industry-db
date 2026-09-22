@@ -1,0 +1,23 @@
+id: evt-2025-02-05-boston-dynamics-partnership-rai-institute-atlas-rl
+date: 2025-02-05
+date_precision: day
+type: partnership
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: 波士顿动力与 Robotics & AI Institute 合作，用强化学习开发 Atlas 能力
+summary:
+  zh: 2 月 5 日，波士顿动力与 Robotics & AI Institute（前身 The AI Institute）宣布合作，共同为新的电动 Atlas 建立一条共享的强化学习训练流水线，做动态且可泛化的移动操作行为，工作于当月启动。公告称该合作是双方在 Spot 强化学习研究者套件（Reinforcement Learning Researcher Kit）上此前合作的延伸——该套件用于在四足机器人上训练特殊行为与运动方式，曾实现 11.5 英里/小时（5.2 米/秒）的跑速记录。
+counterparties:
+- Robotics & AI Institute
+axes:
+  embodiment_form: [humanoid-biped]
+  control_route: [rl]
+evidence:
+- url: https://bostondynamics.com/news/boston-dynamics-and-the-robotics-ai-institute-partner/
+  publisher: 波士顿动力官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/bostondynami-2025-02-05-boston-dynamics-rai-inst.html
+corroboration: single

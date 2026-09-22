@@ -1,0 +1,25 @@
+id: evt-2025-03-22-rainbow-robotics-procurement-samsung-2024-1-45bn-krw
+date: 2025-03-22
+date_precision: day
+type: procurement
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 年报披露三星电子 2024 年向彩虹机器人采购 14.5 亿韩元产品
+summary:
+  zh: 3 月 22 日，ZDNet Korea 依据彩虹机器人事业报告报道，2024 年彩虹机器人向三星电子供货 8 次，合计 14.5 亿韩元，其中 4 月 1 次、9 月 2 次，其余 5 次集中在第四季度，10 月至 12 月售出约 10 亿韩元产品。报道称三星电子以研究为目的购买了 RB-Y1 等产品。三星电子副会长韩宗熙在第 56 届股东大会上表示，彩虹机器人的协作机器人已投入公司部分制造产线使用。
+counterparties:
+- Samsung Electronics
+amount:
+  value: 1450000000
+  currency: KRW
+axes:
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://zdnet.co.kr/view/?no=20250322011853
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/zdnet-2025-03-22-rainbow-robotics-samsung.html
+corroboration: single

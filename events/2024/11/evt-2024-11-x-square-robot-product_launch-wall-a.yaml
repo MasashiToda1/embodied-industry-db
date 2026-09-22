@@ -1,0 +1,23 @@
+id: evt-2024-11-x-square-robot-product_launch-wall-a
+date: '2024-11'
+date_precision: month
+date_basis: derived
+date_as_stated: 机器之心 2024 年 11 月 7 日报道，原文「目前，这家成立不到一年的中国初创企业，已经做出了世界上最大规模的端到端统一具身大模型「WALL-A」」
+type: product_launch
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人对外披露 Great Wall 系列端到端统一具身大模型 WALL-A
+summary:
+  zh: 2024 年 11 月，自变量机器人对外披露其 Great Wall 操作大模型系列的 WALL-A 模型。公司在采访中称该模型从最原始的视频与传感器信号直接输出机器人的速度、位姿、力矩，中间不做分层切分，并且所有操作任务在同一个模型中训练和推理。
+axes:
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://news.qq.com/rain/a/20241107A07Z7400
+  publisher: 机器之心
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/news-2024-11-x-square-robot-wall-a.html
+corroboration: single

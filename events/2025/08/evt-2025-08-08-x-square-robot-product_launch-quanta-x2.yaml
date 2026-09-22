@@ -1,0 +1,23 @@
+id: evt-2025-08-08-x-square-robot-product_launch-quanta-x2
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人在 2025 世界机器人大会首发轮式双臂仿人形机器人量子 2 号
+summary:
+  zh: 8 月 8 日，2025 世界机器人大会在北京开幕，自变量机器人在大会上首发全自研轮式双臂仿人形机器人「量子 2 号（Quanta X2）」。报道称该机型采用轮式底盘与仿人形 7 自由度手臂设计，全身最多 62 个自由度，搭载公司自研端到端具身基座大模型 WALL-A，分灵巧手版本与夹爪版本。
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://stcn.com/article/detail/3020500.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-x-square-robot-quanta-x2.html
+corroboration: single

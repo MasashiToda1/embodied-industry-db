@@ -1,0 +1,24 @@
+id: evt-2025-05-westlake-robotics-product_launch-aotian-quadruped
+date: '2025-05'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「在前不久结束的最新一届广交会上，西湖机器人展台一款高性能小型四足机器人大方地和宾客亲切互动」「『傲天』是我们最新研发的四足机器人」，每日商报稿件发布于 2025-05-08
+type: product_launch
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人推出小型四足机器人「傲天」，在广交会展出
+summary:
+  zh: 每日商报稿件写明西湖机器人最新研发的高性能小型四足机器人「傲天」在最新一届广交会上展出并与宾客互动。稿件写明该机型借助企业自研的多模态大模型实现语音交互、指令下达、危险预警、环境探测；两大特点为预置图像检测定位系统（使用者只需添加传感器即可投入使用）与内置「大脑+小脑」系统，面向养老、医疗、安防、巡检等场景。
+axes:
+  embodiment_form: [quadruped]
+  target_scene: [healthcare, inspection-hazardous, commercial-service]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://hzdaily.hangzhou.com.cn/mrsb/2025/05/08/article_detail_3_20250508A168.html
+  publisher: 每日商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/hzdaily-2025-05-08-westlake-robotics-xiaoxi.html
+corroboration: single

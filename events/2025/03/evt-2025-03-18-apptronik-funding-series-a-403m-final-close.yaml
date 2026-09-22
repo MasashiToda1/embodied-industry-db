@@ -1,0 +1,34 @@
+id: evt-2025-03-18-apptronik-funding-series-a-403m-final-close
+date: 2025-03-18
+date_precision: day
+type: funding
+orgs:
+- id: apptronik
+  role: subject
+title:
+  zh: Apptronik A 轮超额认购完成，追加 5300 万美元至 4.03 亿美元
+summary:
+  zh: 3 月 18 日，Apptronik 宣布超额认购的 A 轮完成，在此前 3.5 亿美元的基础上追加 5300 万美元，总额 4.03 亿美元。本轮由 B Capital 与 Capital Factory 领投、Google 参投，新加入的投资方包括 Mercedes-Benz、Japan Post Capital、ARK Invest、Helium-3、Magnetar、RyderVentures（Ryder System 的企业风投），以及由 Korea Investment Partners 领投的一个联合体。公告称资金用于 Apollo 的生产与部署，覆盖汽车、电子制造、第三方物流、饮料灌装与履约、快消等行业的客户需求。
+counterparties:
+- B Capital
+- Capital Factory
+- Google
+- Mercedes-Benz
+- Japan Post Capital
+- ARK Invest
+- Helium-3
+- Magnetar
+- RyderVentures
+- Korea Investment Partners
+amount:
+  value: 403000000
+  currency: USD
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://apptronik.com/news-collection/apptronik-closes-additional-series-a-funding
+  publisher: Apptronik 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/apptronik-2025-03-18-apptronik-series-a-403m.html
+corroboration: single

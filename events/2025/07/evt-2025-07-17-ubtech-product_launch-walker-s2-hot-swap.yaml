@@ -1,0 +1,23 @@
+id: evt-2025-07-17-ubtech-product_launch-walker-s2-hot-swap
+date: 2025-07-17
+date_precision: day
+type: product_launch
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选在新一代工业人形机器人 Walker S2 上发布热插拔自主换电系统
+summary:
+  zh: 优必选宣布在全新一代工业人形机器人 Walker S2 上采用热插拔自主换电系统，可在无须人工干预或关机的情况下 3 分钟完成自主换电。该系统包含双电池动力平衡、标准化电池仓快换与双臂协同精准换电三项技术，机器人可根据任务优先级自主选择换电或充电。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2025-07/18/content_372094.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stdaily-2025-07-17-ubtech-walker-s2.html
+corroboration: single

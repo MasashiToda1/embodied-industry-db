@@ -1,0 +1,21 @@
+id: evt-2024-11-13-psibot-funding-angel-round
+date: '2024-11-13'
+date_precision: day
+type: funding
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能完成天使轮融资，高瓴创投与蓝驰创投领投
+summary:
+  zh: 灵初智能官网 2024 年 11 月 13 日发文，宣布完成天使轮融资，由高瓴创投（GL Ventures）和蓝驰创投（Lanchi Ventures）领投。文中称融资将用于推进基于强化学习算法的机器人技能集训练、场景化的数据生成及采集、端到端解决方案的研发及落地。金额未披露。
+counterparties:
+- 高瓴创投
+- 蓝驰创投
+evidence:
+- url: https://www.psibot.ai/001_zh/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/psibot-2024-11-psibot-angel-round.html
+corroboration: single

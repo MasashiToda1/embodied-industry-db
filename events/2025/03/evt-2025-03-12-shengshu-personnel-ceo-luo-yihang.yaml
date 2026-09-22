@@ -1,0 +1,18 @@
+id: evt-2025-03-12-shengshu-personnel-ceo-luo-yihang
+date: '2025-03-12'
+date_precision: day
+type: personnel
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 骆怡航出任生数科技 CEO
+summary:
+  zh: 观察者网 2025 年 3 月 12 日报道，原字节跳动火山引擎 AI 应用产品线负责人骆怡航于近日加入北京生数科技有限公司任 CEO，全面负责研发、产品、商业化及团队管理工作，生数科技方面向该媒体确认了这一任命。
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-03-12/doc-inepkvpf7673492.shtml
+  publisher: 新浪财经（转载观察者网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/finance-2025-03-12-shengshu-ceo-browser.html
+corroboration: single

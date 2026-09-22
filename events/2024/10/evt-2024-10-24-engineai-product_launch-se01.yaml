@@ -1,0 +1,23 @@
+id: evt-2024-10-24-engineai-product_launch-se01
+date: 2024-10-24
+date_precision: day
+type: product_launch
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人发布首款全尺寸人形机器人 SE01
+summary:
+  zh: 10 月 24 日，众擎机器人首款全尺寸大人形机器人 SE01 正式发布。SE01 采用自主研发的一体化谐波关节模组，整机共 32 个自由度，通过端到端神经网络模型实现自然步态；身高 170 厘米，重约 55 千克，关节最大扭矩 330 N·m，常态行走速度可达 2 米/秒。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+evidence:
+- url: https://www.cls.cn/detail/1836581
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/cls-2024-10-24-engineai-se01-launch.html
+corroboration: single

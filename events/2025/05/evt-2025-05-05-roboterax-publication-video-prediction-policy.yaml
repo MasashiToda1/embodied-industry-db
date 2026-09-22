@@ -1,0 +1,29 @@
+id: evt-2025-05-05-roboterax-publication-video-prediction-policy
+date: 2025-05-05
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 roboterax/video-prediction-policy 的 created_at 为 2025-05-05；配套论文 arXiv:2412.14803 于 2024-12-19 提交
+type: publication
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元参与开源通用机器人策略 Video Prediction Policy
+summary:
+  zh: 星动纪元在其 GitHub 组织下开源 Video Prediction Policy（VPP），以 MIT 许可发布，README 标注为 ICML Spotlight 论文的官方 PyTorch 实现，作者单位列出清华大学、UC Berkeley、RobotEra、上海人工智能实验室与上海期智研究院。VPP 分两部分：先把通用视频基础模型微调为面向操作的文本引导视频预测模型，再做动作学习。README 称其在 Calvin ABC benchmark 上取得 4.33 的平均长度，并以单一策略完成 100 多项真实世界灵巧手操作任务。
+counterparties:
+- 清华大学
+- UC Berkeley
+- 上海人工智能实验室
+- 上海期智研究院
+axes:
+  model_form:
+  - world-model
+  - il
+evidence:
+- url: https://github.com/roboterax/video-prediction-policy
+  publisher: RobotEra（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-05-roboterax-vpp.html
+corroboration: single

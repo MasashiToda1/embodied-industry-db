@@ -1,0 +1,25 @@
+id: evt-2025-04-08-linkerbot-funding-seed-round
+date: '2025-04-08'
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成超亿元种子轮融资
+summary:
+  zh: 4 月 8 日消息，灵心巧手（北京）科技有限公司完成超亿元种子轮融资，由红杉种子基金、万凯新材领投，力合资本、力合金融、华仓资本、鞍羽跟投，融资将用于底层技术研发和产品优化迭代。
+counterparties:
+- 红杉种子基金
+- 万凯新材
+- 力合资本
+- 力合金融
+- 华仓资本
+- 鞍羽
+evidence:
+- url: https://www.bjnews.com.cn/detail/1744119812168063.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/bjnews-2025-04-08-linkerbot-seed-round.html
+corroboration: single

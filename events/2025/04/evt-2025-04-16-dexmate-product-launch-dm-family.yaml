@@ -1,0 +1,33 @@
+id: evt-2025-04-16-dexmate-product-launch-dm-family
+date: '2025-04-16'
+date_precision: day
+type: product_launch
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人发布 DM-Tac W 视触觉传感器、DM-Hand1 灵巧手与 DM-EXton 数采系统
+summary:
+  zh: 4 月 16 日，戴盟机器人发布三款产品：多维高分辨率高频率视触觉传感器 DM-Tac W、多维触觉感知五指灵巧手 DM-Hand1、便携穿戴式遥操作数据采集系统 DM-EXton。官方稿称 DM-Tac W 每平方厘米覆盖 4 万个感知单元，基于单色光原理；DM-Hand1 在指尖集成毫米级厚度视触觉传感器，结合力位混合控制算法；DM-EXton 适配主流机器人本体。公司称系列产品已在具身智能、智慧物流、智能制造、实验室自动化等场景小规模应用并面向全球开发者公开销售，未公布售价。
+axes:
+  embodiment_form:
+  - arm
+  data_acquisition:
+  - teleop
+  data_modality:
+  - tactile
+  - force-torque
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.prnasia.com/story/485826-1.shtml
+  publisher: 美通社（戴盟机器人通稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/prnasia-2025-04-16-dexmate-family-launch.html
+- url: https://www.21jingji.com/article/20250416/herald/b1ce6ca6df64c2bb74681348abd6fbb4.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/21jingji-2025-04-16-dexmate-family-launch-21.html
+corroboration: multi

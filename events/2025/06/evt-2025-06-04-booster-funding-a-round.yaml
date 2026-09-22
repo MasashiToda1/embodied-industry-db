@@ -1,0 +1,30 @@
+id: evt-2025-06-04-booster-funding-a-round
+date: '2025-06-04'
+date_precision: day
+type: funding
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化完成 A 轮融资，深创投集团领投
+summary:
+  zh: 6 月 4 日，北京加速进化科技有限公司宣布完成 A 轮融资，由深创投集团领投，金鼎资本跟投，老股东源码资本、英诺天使基金、民银国际、彼岸时代持续加注，义柏资本担任长期独家财务顾问。资金主要用于产品迭代升级和规模化量产交付。南都湾财社报道称该轮融资金额超亿元人民币。
+counterparties:
+- 深创投集团
+- 金鼎资本
+- 源码资本
+- 英诺天使基金
+- 民银国际
+- 彼岸时代
+evidence:
+- url: https://www.bjnews.com.cn/detail/1749043435168493.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/bjnews-2025-06-04-booster-a-round.html
+- url: https://news.pedaily.cn/202506/550532.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/news-2025-06-04-booster-a-round-pedaily.html
+corroboration: multi

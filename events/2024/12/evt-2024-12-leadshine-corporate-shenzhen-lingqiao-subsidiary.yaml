@@ -1,0 +1,21 @@
+id: evt-2024-12-leadshine-corporate-shenzhen-lingqiao-subsidiary
+date: 2024-12
+date_precision: month
+type: corporate
+orgs:
+- id: leadshine
+  role: subject
+title:
+  zh: 雷赛智能设立全资子公司深圳市灵巧驱控技术，做无刷空心杯电机与灵巧手
+summary:
+  zh: 雷赛智能 2025 年 2 月披露的投资者关系活动记录表称，2024 年 12 月公司设立全资子公司深圳市灵巧驱控技术有限公司，重点研发、生产和销售无刷空心杯电机、驱动器、编码器和解决方案；公司空心杯电机采用马鞍型全自动绕线技术、一次成型，已成功量产，年产能 12 万台。同一记录表称公司 2024 年 2 月成立的上海雷赛机器人科技有限公司已实现 FM1、FM2 系列高密度无框力矩电机量产，年产能可达 30 万台。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://pdf.dfcfw.com/pdf/H2_AN202502271643567094_1.pdf
+  publisher: 东方财富（雷赛智能投资者关系活动记录表）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/pdf-2024-12-leadshine-lingqiao-qukon.html
+corroboration: single

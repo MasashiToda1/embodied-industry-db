@@ -1,0 +1,23 @@
+id: evt-2025-05-19-nvidia-publication-isaac-groot-n1-5
+date: 2025-05-19
+date_precision: day
+type: publication
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: 英伟达在 COMPUTEX 发布 Isaac GR00T N1.5 与 GR00T-Dreams 合成数据蓝图
+summary:
+  zh: 5 月 19 日 COMPUTEX，英伟达发布 Isaac GR00T N1.5，为其开放人形基础模型 GR00T N1 的首次更新，新闻稿写明模型将在 Hugging Face 提供下载。同时发布的 Isaac GR00T-Dreams 蓝图用于生成合成动作数据：开发者先针对自己的机器人对 Cosmos Predict 世界基础模型做后训练，再用单张图片作输入生成机器人在新环境执行新任务的视频，然后从视频中抽取 action token 用于训练。新闻稿写明 NVIDIA Research 用 GR00T-Dreams 生成的合成数据在 36 小时内做出 GR00T N1.5，而人工采集需要近三个月；N1.5 在适应新环境与新工位布局、按用户指令识别物体上有改进，分拣与收纳这类物料搬运与制造任务的成功率提升。新闻稿列出的 GR00T N 模型早期采用方包括 AeiRobot、Foxlink、Lightwheel 与 NEURA Robotics。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [sim-generated, real-robot]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+evidence:
+- url: https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Powers-Humanoid-Robot-Industry-With-Cloud-to-Robot-Computing-Platforms-for-Physical-AI/default.aspx
+  publisher: NVIDIA 投资者关系官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/investor-2025-05-19-nvidia-groot-n1-5.html
+corroboration: single

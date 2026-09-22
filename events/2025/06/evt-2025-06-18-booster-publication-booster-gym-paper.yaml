@@ -1,0 +1,25 @@
+id: evt-2025-06-18-booster-publication-booster-gym-paper
+date: '2025-06-18'
+date_precision: day
+type: publication
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化与清华合作论文《Booster Gym》发布于 arXiv
+summary:
+  zh: "6 月 18 日，论文《Booster Gym: An End-to-End Reinforcement Learning Framework for Humanoid Robot Locomotion》发布于 arXiv（2506.15132），五位作者中两位单位为 Booster Robotics Technology Co., Ltd，另三位为清华大学自动化系。论文介绍覆盖训练到部署全流程的代码框架，包含常用 RL 训练方法、域随机化、奖励函数设计与并联结构处理方案，在 Booster T1 机器人上验证零样本迁移，实现全向行走、抗扰动与地形适应；训练环境选用 Isaac Gym，并在 MuJoCo 与 Webots 中做跨仿真测试，代码地址为 github.com/BoosterRobotics/booster_gym。"
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://arxiv.org/abs/2506.15132
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-18-booster-gym-arxiv.html
+corroboration: single

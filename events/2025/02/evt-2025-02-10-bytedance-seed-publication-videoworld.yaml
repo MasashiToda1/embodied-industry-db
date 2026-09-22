@@ -1,0 +1,29 @@
+id: evt-2025-02-10-bytedance-seed-publication-videoworld
+date: 2025-02-10
+date_precision: day
+type: publication
+orgs:
+- id: bytedance-seed
+  role: subject
+title:
+  zh: 字节跳动 Seed 开源视频生成实验模型 VideoWorld
+summary:
+  zh: 2 月 10 日，字节跳动 Seed 发文介绍并开源视频生成实验模型 VideoWorld，该模型由豆包大模型团队与北京交通大学、中国科学技术大学联合提出，不依赖语言模型，仅通过浏览视频数据学习推理、规划与决策。团队称在 300M 参数量下达到专业 5 段 9x9 围棋水平，并可在多种环境中执行机器人任务。论文收录于 CVPR 2025。
+counterparties:
+- 北京交通大学
+- 中国科学技术大学
+axes:
+  model_form: [world-model]
+  data_openness: fully-open
+evidence:
+- url: https://seed.bytedance.com/zh/blog/seed-research-latest-breakthrough-in-video-generation-learning-to-understand-the-world-through-vision-alone-now-open-source
+  publisher: 字节跳动 Seed
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/seed-2025-02-10-bytedance-seed-videoworl.html
+- url: https://arxiv.org/abs/2501.09781
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/arxiv-2025-01-16-bytedance-seed-videoworl.html
+corroboration: single

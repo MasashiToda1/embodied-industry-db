@@ -1,0 +1,20 @@
+id: evt-2025-07-23-tesla-statement-optimus-3-design-production-plan
+date: 2025-07-23
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉在 2025 年二季度财报会上称 Optimus 3 设计定型，量产改用第三代设计
+summary:
+  zh: 7 月 23 日，特斯拉举行 2025 年第二季度财报电话会。Elon Musk 称公司当前处于 Optimus 第二代、大致「2.5 版」的阶段，Optimus 3 的设计已经是「正确的设计」，不需要根本性改动，会重新做一批产线工装；他说 Optimus 3 的原型会在 2025 年底出现，量产从 2026 年初开始。他说「我们会尽可能快地扩 Optimus 产能，争取尽快做到年产 100 万台」，并称这个目标用不到五年时间。TechCrunch 同时引述 The Information 报道称，截至 2025 年 7 月底，特斯拉当年已造出的 Optimus 数量仅为数百台，低于此前 5000 台的目标。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://techcrunch.com/2025/07/25/tesla-is-reportedly-behind-on-its-pledge-to-build-5000-optimus-bots-this-year/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/techcrunch-2025-07-23-tesla-optimus-q2-2025-ca.html
+corroboration: single

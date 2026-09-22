@@ -1,0 +1,22 @@
+id: evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025
+date: 2025-06-20
+date_precision: day
+type: product_launch
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+title:
+  zh: 华为云在 HDC 2025 发布 CloudRobo 具身智能平台与 R2C 联接协议
+summary:
+  zh: 6 月 20 日，华为开发者大会 2025 在东莞举办，华为云发布盘古大模型 5.5，并基于盘古大模型的多模态与思维能力正式发布 CloudRobo 具身智能平台。平台整合数据合成、数据标注、模型开发、仿真验证、云边协同部署与安全监管等端到端能力，提供具身多模态生成大模型、具身规划大模型、具身执行大模型三大核心模型。华为云同时提出机器人到云的联接协议 R2C（Robot to Cloud），并发布基于盘古多模态大模型的世界模型，用于为智能驾驶与具身智能机器人训练构建数字物理空间。
+axes:
+  model_form: [hierarchical, world-model]
+  delivery_model: [subscription, software-license]
+  data_acquisition: [sim-generated]
+evidence:
+- url: https://www.huaweicloud.com/news/2025/20250620101057482.html
+  publisher: 华为云
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/huaweicloud-2025-06-20-huawei-cloudrobo-hdc2025.html
+corroboration: single

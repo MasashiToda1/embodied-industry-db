@@ -1,0 +1,31 @@
+id: evt-2024-12-10-booster-partnership-robocup-federation
+date: '2024-12-10'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「Dec-10」，页面发布于 2025 年 1 月 6 日
+type: partnership
+orgs:
+- id: booster
+  role: subject
+- id: fourier
+  role: counterparty
+- id: unitree
+  role: counterparty
+title:
+  zh: RoboCup 联盟宣布与加速进化建立合作伙伴关系
+summary:
+  zh: RoboCup 联盟（RCF）发布公告，宣布与加速进化、傅利叶、宇树三家公司建立合作关系，目标是推动人形机器人研究与教育，并促成这些公司的人形机器人参与 RoboCup 赛事。公告写明三家公司承诺利用自身商业网络推动 RoboCup 相关项目研究与产品的资助或商业化，并共享传播渠道资源。加速进化官网新闻中心以「加速进化成为 Robocup 官方合作伙伴！」收录该消息。
+counterparties:
+- RoboCup Federation
+evidence:
+- url: https://www.robocup.org/news/172
+  publisher: RoboCup Federation
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/robocup-2024-12-10-booster-robocup-partners.html
+- url: https://www.booster.tech/cn/news/3/
+  publisher: 加速进化官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/booster-2024-10-13-booster-news-list.html
+corroboration: multi

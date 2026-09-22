@@ -1,0 +1,22 @@
+id: evt-2025-04-miaodong-funding-angel
+date: '2025-04'
+date_precision: month
+type: funding
+orgs:
+- id: miaodong
+  role: subject
+title:
+  zh: 妙动科技完成数千万美元天使轮融资
+summary:
+  zh: 36 氪 2025 年 8 月 13 日刊发的 IT 桔子统计稿写明，2025 年 4 月妙动科技天使轮获数千万美元融资，由红杉中国、经纬创投和美团龙珠领投。稿件称公司方向为娱乐机器人产品。
+counterparties:
+- 红杉中国
+- 经纬创投
+- 美团龙珠
+evidence:
+- url: https://www.36kr.com/p/3420971536420231
+  publisher: 36 氪（转载 IT 桔子）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/36kr-2025-04-miaodong-angel-36kr.html
+corroboration: single

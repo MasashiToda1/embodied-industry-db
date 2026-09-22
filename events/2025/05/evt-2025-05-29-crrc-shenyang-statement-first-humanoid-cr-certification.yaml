@@ -1,0 +1,28 @@
+id: evt-2025-05-29-crrc-shenyang-statement-first-humanoid-cr-certification
+date: '2025-05-29'
+date_precision: day
+type: statement
+orgs:
+- id: crrc-shenyang
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 国家机器人检测与评定中心颁出全球首张人形机器人 CR 认证「001」证书
+summary:
+  zh: 在 5 月 29 日于上海浦东张江科学会堂举行的 2025 张江具身智能开发者大会上，国家机器人检测与评定中心（总部）向上海智元新创技术有限公司颁发全球首张人形机器人 CR 认证「001」证书，受证产品为智元远征 A2。该产品通过机械电气安全、电磁兼容性、功能安全、智能化等检测评估。智元同日宣布远征 A2 另通过欧盟 CE-MD、CE-RED 与美国 FCC 认证。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.sri-robot.com/news/1222.html
+  publisher: 上海机器人产业技术研究院（国家机器人检测与评定中心总部承建单位）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/sri-robot-2025-05-29-crrc-shenyang-cr001-huma.html
+- url: https://www.agibot.com.cn/article/188/detail/69.html
+  publisher: 智元机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/agibot-2025-05-29-crrc-shenyang-agibot-a2-.html
+corroboration: multi

@@ -1,0 +1,21 @@
+id: evt-2024-10-14-zhuoyide-funding-angel-plus
+date: '2024-10-14'
+date_precision: day
+type: funding
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得机器人完成 1 亿元融资，投资方未披露
+summary:
+  zh: 10 月 14 日，艾媒网报道上海卓益得机器人有限公司完成 1 亿元人民币融资，本轮投资方未透露。报道称公司成立于 2021 年 5 月 13 日，位于上海市杨浦区，产品为小贝系列机器人。36 氪项目库将该轮记为 2024 年 10 月的天使 + 轮，金额 1 亿元人民币、投资方未披露。
+amount:
+  value: 100000000
+  currency: CNY
+evidence:
+- url: https://www.iimedia.cn/c1064/102538.html
+  publisher: 艾媒网
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/iimedia-2024-10-14-zhuoyide-angel-plus.html
+corroboration: single

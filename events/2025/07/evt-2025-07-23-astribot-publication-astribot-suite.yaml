@@ -1,0 +1,23 @@
+id: evt-2025-07-23-astribot-publication-astribot-suite
+date: 2025-07-23
+date_precision: day
+type: publication
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能发布全身操作机器人学习套件 Astribot Suite 论文
+summary:
+  zh: 7 月 23 日，论文《Towards Human-level Intelligence via Human-like Whole-Body Manipulation》在 arXiv 公开，提出 Astribot Suite——面向日常任务全身操作的机器人学习套件。论文把问题归结为三点并在统一框架内处理：设计具备人类级物理能力的安全机器人硬件、构建直观且可扩展的全身遥操作数据采集接口、以及从人类示范中学习全身视觉运动策略的算法。
+axes:
+  data_acquisition:
+  - teleop
+  model_form:
+  - il
+evidence:
+- url: https://arxiv.org/abs/2507.17141
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/arxiv-2025-07-23-astribot-suite-paper.html
+corroboration: single

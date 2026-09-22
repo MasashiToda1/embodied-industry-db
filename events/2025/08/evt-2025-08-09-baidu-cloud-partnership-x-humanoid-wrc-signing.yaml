@@ -1,0 +1,31 @@
+id: evt-2025-08-09-baidu-cloud-partnership-x-humanoid-wrc-signing
+date: 2025-08-09
+date_precision: day
+type: partnership
+orgs:
+- id: baidu-cloud
+  role: subject
+- id: x-humanoid
+  role: counterparty
+title:
+  zh: 百度智能云在 2025 世界机器人大会与北京人形机器人创新中心签约，提供百舸 GPU 云平台与具身数据采标服务
+summary:
+  zh: 8 月 9 日，2025 世界机器人大会期间，由北京人形机器人创新中心主办、百度智能云支持的「具身智能技术与应用论坛」举办，北京人形与百度智能云、中国电力科学院、奇安信集团、李宁公司等举行签约仪式。百度智能云提供百度百舸 GPU 云平台与具身数据采标服务，用于北京人形的具身模型开发与具身数据集建设。百度智能云称其是第一家全面适配 RDT、π0 和 GR00T N1.5 三款开源具身 VLA 模型的云厂商，世界模型推理加速 36% 以上、训练加速 20% 以上，视觉语言模型训练加速 40% 以上。
+counterparties:
+- 中国电力科学院
+- 奇安信集团
+- 李宁公司
+axes:
+  delivery_model: [subscription, service-delivery]
+evidence:
+- url: https://cloud.baidu.com/article/3548913
+  publisher: 百度智能云
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/cloud-2025-08-09-baidu-cloud-wrc-x-humano.html
+- url: https://qianfan.cloud.baidu.com/qianfandev/topic/686313
+  publisher: 百度智能云千帆社区
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/qianfan-2025-08-08-baidu-cloud-x-humanoid-w.html
+corroboration: single

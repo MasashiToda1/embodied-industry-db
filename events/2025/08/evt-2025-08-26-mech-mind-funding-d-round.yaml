@@ -1,0 +1,28 @@
+id: evt-2025-08-26-mech-mind-funding-d-round
+date: 2025-08-26
+date_precision: day
+type: funding
+orgs:
+- id: mech-mind
+  role: subject
+title:
+  zh: 梅卡曼德完成新一轮融资，报道称金额「近 5 亿元」
+summary:
+  zh: 8 月 26 日，蓝鲸新闻报道称梅卡曼德（雄安）机器人日前完成新一轮融资，金额「近 5 亿元」。本轮由雄安基金、大洋电机、华创资本、中金保时捷基金、上河动量基金、南翔创投、海河基金、河北结构调整基金、天创资本等投资。公司称资金将用于加速具身智能「眼脑手」全栈技术进化、拓展产品线与场景应用、提升全球商业化与客户服务能力。报道称公司累计融资额近 20 亿元。
+counterparties:
+- 雄安基金
+- 大洋电机
+- 华创资本
+- 中金保时捷基金
+- 上河动量基金
+- 南翔创投
+- 海河基金
+- 河北结构调整基金
+- 天创资本
+evidence:
+- url: https://finance.sina.com.cn/stock/t/2025-08-26/doc-infnhvhi6789463.shtml
+  publisher: 新浪财经（转载蓝鲸新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/finance-2025-08-26-mech-mind-d-round.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2024-11-04-physical-intelligence-funding-400m
+date: 2024-11-04
+date_precision: day
+type: funding
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: 物理智能完成 4 亿美元融资，投后估值 24 亿美元
+summary:
+  zh: 11 月 4 日，物理智能向 CNBC 确认完成 4 亿美元融资，投后估值 24 亿美元。CNBC 报道列出的投资方包括 Jeff Bezos、OpenAI、Thrive Capital、Lux Capital 与 Bond Capital，并称公司官网还列有 Khosla Ventures 与 Sequoia Capital。报道写明该估值约为公司当年 3 月种子轮估值的六倍。
+counterparties:
+- Jeff Bezos
+- OpenAI
+- Thrive Capital
+- Lux Capital
+- Bond Capital
+amount:
+  value: 400000000
+  currency: USD
+evidence:
+- url: https://www.cnbc.com/2024/11/04/jeff-bezos-and-openai-invest-in-robot-startup-physical-intelligence.html
+  publisher: CNBC
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/cnbc-2024-11-04-physical-intelligence-fu.html
+corroboration: single

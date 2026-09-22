@@ -1,0 +1,27 @@
+id: evt-2025-06-galbot-product_launch-groceryvla
+date: 2025-06
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「6 月 6 日-7 日，2025 北京智源大会召开」，Galbot 于主论坛完成全球直播发布
+type: product_launch
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用在 2025 北京智源大会发布端到端具身大模型 GroceryVLA
+summary:
+  zh: 在 2025 北京智源大会主论坛，银河通用发布面向零售行业的端到端具身 VLA 大模型 GroceryVLA，驱动 Galbot G1 在全程无遥操、无场景数据预采集的条件下完成货架取货与交付。报道称该模型无需针对每种商品包装单独调参，支持软包装、硬盒、塑料瓶、透明果冻杯等形态商品的抓取。同场银河通用联合清华大学团队发布全身遥操作系统 OpenWBT。
+axes:
+  model_form:
+  - end2end-vla
+  target_scene:
+  - commercial-service
+  data_acquisition:
+  - sim-generated
+evidence:
+- url: https://www.qbitai.com/2025/06/291904.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/qbitai-2025-06-galbot-groceryvla.html
+corroboration: single

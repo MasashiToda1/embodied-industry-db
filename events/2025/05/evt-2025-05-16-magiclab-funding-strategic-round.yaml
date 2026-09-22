@@ -1,0 +1,26 @@
+id: evt-2025-05-16-magiclab-funding-strategic-round
+date: '2025-05-16'
+date_precision: day
+type: funding
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子完成数亿元新一轮战略融资
+summary:
+  zh: 5 月 16 日消息，具身智能机器人公司魔法原子宣布完成数亿元新一轮战略融资。投资方包括战略产业资本禾创致远、芯联资本，财务投资人华映资本、晓池资本、元禾厚望，老股东追创创投和翼朴基金持续追加投资。报道称资金用于具身智能核心技术迭代研发、VLA 模型搭建与工业、商业场景落地，公司当年启动 400 台人形机器人生产。
+counterparties:
+- 禾创致远
+- 芯联资本
+- 华映资本
+- 晓池资本
+- 元禾厚望
+- 追创创投
+- 翼朴基金
+evidence:
+- url: https://news.pedaily.cn/202505/549757.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-16-magiclab-strategic-round.html
+corroboration: single

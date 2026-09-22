@@ -1,0 +1,18 @@
+id: evt-2024-09-13-lingzhang-corporate-incorporation
+date: '2024-09-13'
+date_precision: day
+type: corporate
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 无锡灵掌机器人科技有限公司成立
+summary:
+  zh: 凯龙高科对外投资暨关联交易公告披露的标的公司基本情况显示，无锡灵掌机器人科技有限公司成立日期为 2024 年 9 月 13 日，住所为江苏省无锡经济开发区华庄街道丰润道，统一社会信用代码 91320292MAE0T86N94。公告称该公司以场景驱动为导向，聚焦灵巧手领域的设计、研发及制造。
+evidence:
+- url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=11626602&stockid=300912
+  publisher: 凯龙高科
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/vip-2024-09-13-lingzhang-incorporation.html
+corroboration: single

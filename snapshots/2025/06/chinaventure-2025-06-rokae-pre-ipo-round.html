@@ -1,0 +1,544 @@
+<!-- 抓取于 2026-09-22T20:33:49.273160+08:00 | 原始链接 https://www.chinaventure.com.cn/news/80-20251030-388632.html | 公众号 未知 | 标题 rokae-pre-ipo-round | sha256:d05668546e9b -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>山东县城，即将冲出一个明星IPO | 投中网</title>
+    <!--SEO优化-->
+    <meta name="description" content="三年半入账超9亿元。">
+    <meta name="keywords" content="珞石机器人,IPO">
+    <link rel="icon" href="/images/logo/logo_tiny.png" sizes="30x30">
+    <!--css-->
+    <link rel="stylesheet" href="/css/reset.v1.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/inc_pc.css">
+    <link rel="stylesheet" href="/css/page/articledetail.css">
+    <!--js-->
+    <script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="/js/qrcode.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/TCaptcha.js"></script>
+<script type="text/javascript" src="/js/vue.min@2.5.16.js"></script>
+<script type="text/javascript" src="/js/seopush.js"></script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <header class="header_pc">
+    <div class="header_innner">
+        <a href="/index.html" class="logo_zone_pc">
+            <img alt="投中网" title="首页" src="/images/logo/logo_pc.png">
+        </a>
+        <nav class="nav_pc">
+            <ul class="nav_list">
+                <li :class="[activeUrl == 'index' ? 'active' : '']"><a class="level1" target="_blank" href="/index.html">首页</a></li>
+                <li :class="[activeUrl == 'institute' ? 'active' : '']"><a class="level1" target="_blank" href="/report/list.html">研究院</a></li>
+                <li :class="[activeUrl == 'ranklist' ? 'active' : '']"><a class="level1" target="_blank" href="/rank/list.html">榜单</a></li>
+                <li :class="[activeUrl == 'vtalk' ? 'active' : '']"><a class="level1" target="_blank" href="/vtalk/list.html">Vtalk</a></li>
+                <li :class="[activeUrl == 'meetinglist' ? 'active' : '']"><a class="level1" target="_blank" href="/meeting/list.html">会议</a></li>
+                <li :class="[activeUrl == 'community_introduce' ? 'active' : '']"><a class="level1" target="_blank" href="/community/community_introduce.html">投中社区</a></li>
+            </ul>
+        </nav>
+        <div class="userzone_pc">
+            <div class="search_all_btn" @click="openSearchZone()">搜索</div>
+            
+            <div class="userlogin_btn_box">
+                <div class="userlogin_btn"><span @click="openLoginZone(0)">登录</span>&nbsp;|&nbsp;<span @click="openLoginZone(2)">注册</span></div>
+                <div class="usercenter_drop">
+                    <div class="nav_userheadpic">
+                        <img src="/images/default_userheadpic.png" onerror="this.src='/images/default_userheadpic.png'" >
+                    </div>
+                    <ul>
+                        <li><a target="_blank" href="/usercenter/usercenter.html">个人中心</a></li>
+                        <li @click="toLogout">退出登录</li>
+                    </ul>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="search_content_pc">
+        <div class="search_content_pc_bg" @click="cancelSearch()"></div>
+        <div class="search_tiao_pc">
+            <div class="search_tiao_inner_pc">
+                <div class="searchinput_container clearfix">
+                    <input id="overallSearchInput" class="search_input" @keyup.enter="toSearchResultPage()" placeholder="在此输入您要查询的内容">
+                    <div class="to_search_btn" @click="toSearchResultPage()"></div>
+                </div>
+                <button class="cacelsearch_btn" @click="cancelSearch()"></button>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="login_warpper_pc">
+    <div class="login_box_pc">
+        <div class="close_login_btn" @click="closeLoginWrapper()"></div>
+        <div class="login_tab_zone clearfix">
+            <ul class="login_tablist">
+                <li class="active" @click="tabLoginType(0)">快捷登录</li>
+                <li @click="tabLoginType(1)">密码登录</li>
+                <li class="newuser" @click="tabLoginType(2)">新用户注册</li>
+            </ul>
+        </div>
+        <p class="login_text">
+            <span class="active">验证即登录，未注册则自动创建新账号</span>
+            <span>如果手机号已注册则自动登录</span>
+        </p>
+        <div id="fastlogin_phone" class="input_zone con_placeholder">
+            <input type="text" maxlength="11" placeholder="请输入手机号" >
+        </div>
+        <div id="fastlogin_phonetips" class="tips_label"></div>
+        <div id="fastlogin_code" class="input_zone con_placeholder">
+            <input type="text" maxlength="6" placeholder="短信验证码">
+            <button id="TencentCaptcha" data-appid="2027481577" data-cbfn="tencentTestCallback" type="button" class="commonlogin_sendcode_hook sendcode_btn" @click="sendMessageCode()">发送验证码</button>
+        </div>
+        <div id="fastlogin_codetips" class="tips_label"></div>
+        <div id="commonlogin_account" class="input_zone con_placeholder">
+            <input type="text" placeholder="手机号/邮箱地址">
+        </div>
+        <div id="commonlogin_accounttips" class="tips_label"></div>
+        <div id="commonlogin_password" class="input_zone con_placeholder">
+            <input type="password" maxlength="16" placeholder="请输入登录密码">
+            <button class="forget_password_btn" @click="toForgetPasswordPage">忘记密码</button>
+        </div>
+        <div id="commonlogin_passwordtips" class="tips_label"></div>
+        <div class="user_agreement">登录即代表您已同意投中网<a href="/usercenter/user_agreement.html" target="_blank">《用户注册服务协议》</a>与<a href="/usercenter/private_policy.html" target="_blank">《隐私政策》</a></div>
+        <button id="loginButton" class="login_btn button-base" @click="doWriteInTest()">登录</button>
+        <button id="registerButton" class="login_btn button-base" @click="doWriteInTest(vm)">立即注册</button>
+    </div>
+</div>
+        <!--主体1100-->
+        <div class="content_wrapper_min mrg_t80 clearfix">
+            <!--主体730-->
+            <div class="content_left_pc clearfix">
+                <div class="share_zone_pc">
+                    <ul>
+                        <li>
+                            <span class="wechat_share_pc" @click="showShareWXErcode"></span>
+                        </li>
+                        <li>
+                            <span class="sina_weibo_pc" @click="linkToSinaWeibo"></span>
+                        </li>
+                        <li>
+                            <span class="add_comment_pc" @click="scrollToComment"></span>
+                        </li>
+                        <li>
+                            <span class="shoucang_pc" @click="addToCollection" :class="{'active': isCollected}"></span>
+                        </li>
+                        <li>
+                            <span class="chenjin_pc" @click="openImmerseReading"></span>
+                        </li>
+                    </ul>
+                    <div class="ercode_showwarpper" :style="{display:showShareErcode}" @click="hideShareWXErcode">
+                        <div class="ercode_innerbox">
+                            <div class="close_btn"></div>
+                            <div class="title">打开微信扫码分享</div>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_comment_pc">
+                    <!--文章主体-->
+                    <div class="article_warpper_pc">
+                        <div class="breadcase">
+                            <a href="/index.html">投中网</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <a href="/news/80.html">资本市场</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <span>正文</span>
+                        </div>
+                        <h1 class="maintitle_pc">山东县城，即将冲出一个明星IPO</h1>
+                        <div class="author_keyword clearfix">
+                            <div class="source_author">                                
+                                <span>投中网</span>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
+                                <span>鲁智高</span>
+                            </div>
+                            <div class="releaseTime">
+                                <span>2025-10-30 10:38:48</span>
+                            </div>
+                            <input id="articleId" type="hidden" value="388632">
+                            <input id="keywords" type="hidden" value="珞石机器人,IPO">
+                            <input id="mUrl" type="hidden" value="/news/80-20251030-388632.html">
+                            <input id="coverimg" type="hidden" value="https://pic.chinaventure.com.cn/news/388632/7389490930778112.jpg">
+                        </div>
+                        <h2 class="describe_text">三年半入账超9亿元。</h2>
+                        <div class="article_slice_pc clearfix">
+                        	<p style="text-align: left;">一家山东县城的明星公司冲向港股。</p><p style="text-align: left;">在北大校友庹（tuǒ）华的带领下，珞石机器人已拥有工业机器人、柔性协作机器人、具身智能机器人等产品，不仅获得了小米、歌尔股份、智元机器人等全球超1000家客户的认可，还于近日从山东邹城来到港交所门前。</p><p style="text-align: left;">一路走来，除了在天使轮获得梅花创投独家投资，珞石机器人还得到德联资本、清控银杏、顺为资本、金沙江联合资本、襄禾资本、深创投、远翼投资、新希望集团、国家制造业转型升级基金、新业资本等支持，并在经过10轮融资后估值达到52.95亿元。</p><p style="text-align: left;"><strong>山东县城，冲出一家全球明星公司</strong></p><p style="text-align: left;">十年前，在国内机器人发展刚起步时，珞石机器人便成为最早一批入局的玩家。</p><p style="text-align: left;">那个时候，随着国家大力支持发展智能制造，机器人产业的发展成为国家战略。为了做出中国一流的机器人品牌，庹华与央企的同事在中关村创业大街3W咖啡决定创业，并于2014年12月在北京成立珞石机器人。</p><p style="text-align: left;">之所以坚定地选择踏上创业之路，也离不开庹华在机器人产业的长期深耕。从哈尔滨理工大学毕业后，他又拿到北京大学电子与通信工程硕士学位，并在工业机器人领域工作多年，早已拥有丰富的经验。</p><p style="text-align: left;">于是，他们决定从“老本行”做起，将被视为工业机器人“大脑”的控制系统作为切入口，并在创业之初重点突破控制系统的技术。当时，机器人控制系统长期被国外垄断，但这也正好成为珞石机器人的机会。</p><p style="text-align: left;">在政策大力支持、市场需求增加等因素影响下，产品备受认可的珞石机器人并不愁订单。不过意识到机器人控制系统市场空间有限后，他们凭借在该领域取得的优势杀入机器人本体市场，快速扩大公司的业务范围。</p><p style="text-align: left;">2016年5月，这家公司推出了第一款搭载自研控制器的XB-6机器人，成功从仅生产控制器转向打造工业机器人，并逐渐覆盖3C、物流、医疗等领域，最终驶入发展快车道。庹华曾透露，他们的收入在2016年仅为25万元，到了2017年则将超过2500万元。</p><p style="text-align: left;">完成控制系统的研发与工业机器人的本体验证后，需要实现产品量产和投放市场的珞石机器人来到山东邹城建厂。作为拥有雄厚传统产业基础的山东，具备区域产业变革的广阔空间，而传统资源型城市邹城也蕴含着自动化、智能化改造的巨大潜力。</p><p style="text-align: left;">自落户邹城以来，当地一直将他们作为链主来培育，为其发展提供服务保障。与此同时，珞石机器人一步步成长为当地机器人产业的领军企业，不仅扩大了生产基地的规模，同时还将总部迁到邹城。</p><p style="text-align: left;">邹城对珞石机器人寄予厚望，珞石机器人也没有辜负邹城的信任。按照灼识咨询的说法，珞石机器人是中国唯一一家能够同时量产工业机器人与协作机器人的企业，成为在全球都排得上号的多关节机器人制造商。</p><p style="text-align: left;"><strong>小米、智元为客户，三年半入账超9亿元</strong></p><p style="text-align: left;">时至今日，珞石机器人构建了丰富的机器人应用生态体系。</p><p style="text-align: left;">从工业机器人、柔性协作机器人、具身智能机器人，到相关机器人解决方案，这家公司的业务覆盖了工业、商业服务及医疗健康等领域，并取得一系列亮眼的成绩。</p><p style="text-align: left;">这也得益于他们在研发方面的长期投入。如果从2022年算起，珞石机器人三年半累计在研发上投入超过2亿元，最终拥有181项注册专利，并已提交38项待批准专利申请。</p><p style="text-align: left;">依托自研的xCore控制系统及具身智能模型训练平台，这家公司能为机器人产品赋予AI能力。同时，基于xCore控制系统提供的硬件及工艺包扩展的标准化接口，他们又能帮客户及合作伙伴部署定制化解决方案。</p><p style="text-align: left;">最终的结果是，珞石机器人成功赢得全球约40个国家和地区超1000家客户的认可。</p><p style="text-align: left;">除了小米、歌尔股份等消费电子企业，还有法雷奥及福田康明斯等汽车及汽车零部件制造商，以及智元机器人等人形机器人公司，他们的客户也覆盖了新能源、医疗及通用制造领域的玩家。</p><p style="text-align: left;">正是在这个过程中，这家公司的收入和毛利得以不断增加。</p><p style="text-align: left;">翻看招股书，在2022年至2025年6月，珞石机器人的收入分别达到约1.53亿元、2.67亿元、3.25亿元和1.76亿元。毛利率也从2022年的7%，变为2024年的21.9%。</p><p style="text-align: left;">不过在研发等因素的影响下，他们目前仍处于亏损状态，同期的净亏损分别约为2.38亿元、1.57亿元、1.92亿元和0.9亿元。</p><p style="text-align: left;">好消息是，由于人口老龄化加速、劳动力成本上升、下游应用场景拓展及政策支持力度加大，中国多关节机器人行业仍在持续增长。据灼识咨询预测，2029年中国多关节机器人市场规模将达到453亿元，2024年至2029年复合年增长率为15.7%。</p><p style="text-align: left;">除了深耕中国市场，扩大全球业务及增加海外销售也是珞石机器人未来增长的重要组成部分。在他们的规划中，会将通过上市募集到的部分资金用于发展全球销售网络，从而支持自身的国际业务增长。</p><p style="text-align: left;"><strong>10轮融资，梅花创投已小赚2.5亿元</strong></p><p style="text-align: left;">一路走来，珞石机器人共完成10轮融资。</p><p style="text-align: left;">在公司成立后，庹华等人拿着做好的PPT找到梅花创投创始合伙人吴世春，聊了差不多10分钟便拿到投资。完成梅花创投独家投资的190万元天使轮融资后，这家公司于2015年5月正式开始运营。</p><p style="text-align: left;">次年4月，他们从田争和焦少玲两位女士手中分别拿到40万元后，很快又获得德联资本1000万元投资。当时，经过长期观察的德联资本发现工业机器人正从“奢侈品”渐渐变成必需品，并在与庹华聊了不到两小时后于次日决定投资。</p><p style="text-align: left;">到了2017年9月，珞石机器人完成清控银杏投资的A+轮融资。不到一年时间，这家公司又完成顺为资本领投及金沙江联合资本、清控银杏、梅花创投跟投的B轮融资。</p><p style="text-align: left;">在投资他们前，顺为资本已在过去一年拜访了40多家工业机器人公司，同时深入走访了20多家工厂，“作为国内更重视技术积累，较早在控制算法上有深入布局的工业机器人公司，珞石完全有机会扛起新国产机器人的大旗。”</p><p style="text-align: left;">出于对珞石机器人在技术积累和产品打磨等方面的认可，判断国产机器人迎来巨大市场的襄禾资本，不仅于2020年8月投了他们1亿元，同时还买了部分老股。次年5月，深创投和远翼投资又联合领投了这家公司。</p><p style="text-align: left;">为了智能化升级和数字化转型，新希望集团于2021年12月成为珞石机器人的股东。到了2023年，国家制造业转型升级基金拿出4亿元与新业资本一起入股了他们，成为该基金在智能制造领域金额最大的一笔投资。</p><p style="text-align: left;">由于在建设位于山东的工业园时，珞石机器人欠了邹城国资山东正方8500万元。最终，通过债转股的方式，山东正方于2024年12月成为这家公司的股东。</p><p style="text-align: left;">当时间来到2025年6月，他们完成上市前最后一轮融资。从金沙江联合资本手中拿到1.95亿元后，珞石机器人的估值达到52.95亿元。</p><p style="text-align: left;">值得注意的是，看好这家公司的TR Capital、山东科创投资、鲁信创投、嘉兴天启资本、兖矿资本、光大控股等投资方，选择通过买老股的方式成为珞石机器人的股东。</p><p style="text-align: left;">上市前，国家制造业转型升级基金持股9.67%、新希望集团持股6.96%、顺为资本持股6.44%、金沙江联合资本持股5.82%、梅花创投持股4.94%。按照52.95亿元的估值粗略计算，他们对应的持股价值分别约为5.12亿元、3.69亿元、3.41亿元、3.08亿元、2.62亿元。</p><p style="text-align: left;">这也意味着，梅花创投经过十年的陪伴，用1190万元的投资获得了2.62亿元的回报，相当于已经小赚了2.5亿元。</p><p style="text-align: left;">参考资料：</p><p style="text-align: left;">1.《收入翻了100倍，工业机器人珞石做对了什么？》，甲子光年</p>
+                        </div>
+                   
+                        <div class="editor_zone_pc clearfix">                       	
+                            <span>网站编辑：</span>
+                            <span>小川</span>                            
+                        </div>
+                        
+                        <!--原创新闻才显示-->
+							<div class="reprint_zone">本文为投中网原创文章，转载或内容合作请点击<a target="_blank" href="/usercenter/reprint_agreement.html">转载说明</a>，违规转载法律必究</div>
+                   
+                   
+                    </div>
+                    <!--点赞区-->
+					<div id="articledetail_pointLike" class="thumbsup_zone_pc">
+    <div class="thumb_btn_pc" :class="{'active': isPointLike}" @click="addPointLike">
+        <div class="thumb_img"></div>
+        <p id="pointLikeNumber">0</p>
+    </div>
+</div>
+					
+                    <!--二维码区-->
+                    <div class="articledetail_ercode_pc">
+                        <img class="ercode" src="/images/article_ercode.png">
+                        <p>第一时间获取股权投资行业新鲜资讯和深度商业分析，请在微信公众账号中搜索投中网，或用手机扫描左侧二维码，即可获得投中网每日精华内容推送。</p>
+                    </div>
+                    
+                    <!--评论区-->
+                    <div class="comment_warpper_pc">
+                        <div class="submit_comment">
+                            <div id="comment_zone" class="comment_commontitle_pc">
+                                <h4>发表评论</h4>
+                                <span></span>
+                            </div>
+                            <div class="comment_textarea_box clearfix">
+                                <div class="headpic">
+                                    <img src="/images/default_userheadpic2.png" />
+                                </div>
+                                <textarea v-model="commentText" maxlength="200" placeholder="说点什么..."></textarea>
+                            </div>
+                            <div class="btn_zone">
+                                <div class="fontNum">
+                                    <span v-text="textNum"></span>
+                                    <span>&nbsp;/&nbsp;200</span>
+                                </div>
+                                <button class="submit_comment_btn" :class="{'disabled': submitDisabled}" @click="checkSensitiveWord">发表评论</button>
+                            </div>
+                        </div>
+                        <div class="all_comment_list">
+                            <div class="comment_commontitle_pc">
+                                <h4>全部评论</h4>
+                                <span></span>
+                            </div>
+                            <!--success insert-->
+                            <ul class="comment_floor_list" v-if="insertComment.length !== 0">
+                                <li class="comment_singlefloor" v-for="item in insertComment">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.commentText"></div>
+                                </li>
+                            </ul>
+                            
+                            <!--全部评论INC-->
+                           	<div id="articledetail_comment_all">
+
+	    <div class="no_morelist_inc" v-if="true">——&nbsp;没有更多评论了&nbsp;——</div>
+    
+</div>
+                           	
+                            <!--更多评论-->
+                            <ul class="comment_floor_list">
+                                <li class="comment_singlefloor" v-for="item in commentObj.showUserList">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.comment_custom_time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.content"></div>
+                                </li>
+                            </ul>
+                            <div class="controllzone_hook" v-if="needTorequest">
+                                <div v-show="commentObj.showLoading" class="common_loading_pc"></div>
+                                <button v-if="!commentObj.showNomore" v-show="!(commentObj.showLoading)" class="click_getmore_pc" @click="stepAddCommentList()">点击加载更多</button>
+                                <div class="no_morelist" v-if="commentObj.showNomore">——&nbsp;没有更多评论了&nbsp;——</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--侧边栏340-->
+            <div class="content_right_pc">
+                <!--广告图位-->
+                <aside id="articledetail_aside_advimg" class="aside_common_content">
+    <div class="articledetail_advpic_pc">
+    	        <a href="https://www.chinaventure.com.cn/meeting/live/6.html" target="_blank">
+            <img src="https://pic.chinaventure.com.cn/head/6800358722502656.jpg">
+        </a>
+        
+    </div>
+</aside>
+
+                <!--相关文章-->
+                <aside v-if="relevantList.length !== 0" class="aside_common_content">
+                    <div class="aside_commontitle_pc">
+                        <h4>相关文章</h4>
+                        <span></span>
+                        <a></a>
+                    </div>
+                    <ul class="common_relevantarticle_pc clearfix">
+                        <li class="clearfix" v-for="(item,index) in relevantList">
+                            <a target="_blank" :href="item.url">
+                                <img :src="item.headPic">
+                                <h1 v-text="item.title"></h1>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!--本周热文-->
+                <aside id="index_aside_weekhotarticle" class="aside_common_content">
+    <div class="aside_commontitle_pc">
+        <h4>本周热文</h4>
+        <span></span>
+        <a></a>
+    </div>
+    <ul class="common_weekhotarticle_pc clearfix">
+    
+    	        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260919-393346.html">
+                <img src="https://pic.chinaventure.com.cn//head/7357266361581568.png?x-image-process=image/quality,q_80" title="LP周报丨上海又落地了一只并购基金">
+                <h1>LP周报丨上海又落地了一只并购基金</h1>
+                <p>3天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">1</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260916-393294.html">
+                <img src="https://pic.chinaventure.com.cn/head/7472109521469440.png?x-image-process=image/quality,q_80" title="ExploMar擎波探索宣布完成近亿元A轮融资">
+                <h1>ExploMar擎波探索宣布完成近亿元A轮融资</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">2</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/78-20260917-393312.html">
+                <img src="https://pic.chinaventure.com.cn//head/7346465810677760.png?x-image-process=image/quality,q_80" title="日本年轻人，开始在小游戏里社交">
+                <h1>日本年轻人，开始在小游戏里社交</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">3</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393297.html">
+                <img src="https://pic.chinaventure.com.cn//head/7303692403343360.png?x-image-process=image/quality,q_80" title="350亿打水漂，中东土豪也栽了">
+                <h1>350亿打水漂，中东土豪也栽了</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">4</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260921-393375.html">
+                <img src="https://pic.chinaventure.com.cn/head/7426464467124224.png?x-image-process=image/quality,q_80" title="行云集成完成近8亿人民币融资">
+                <h1>行云集成完成近8亿人民币融资</h1>
+                <p>1天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">5</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393298.html">
+                <img src="https://pic.chinaventure.com.cn/head/7403981491929088.png?x-image-process=image/quality,q_80" title="9个月完成123笔融资，顶级VC正在悄悄押注这个赛道">
+                <h1>9个月完成123笔融资，顶级VC正在悄悄押注这个赛道</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">6</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260918-393343.html">
+                <img src="https://pic.chinaventure.com.cn/head/7506634137927680.jpg?x-image-process=image/quality,q_80" title="智谱下场，投资人抢投RSI｜Frontline">
+                <h1>智谱下场，投资人抢投RSI｜Frontline</h1>
+                <p>4天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">7</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/110-20260917-393305.html">
+                <img src="https://pic.chinaventure.com.cn//head/7239466691330048.png?x-image-process=image/quality,q_80" title="估值83亿，上海毫米波雷达芯片巨头冲刺IPO">
+                <h1>估值83亿，上海毫米波雷达芯片巨头冲刺IPO</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">8</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/111-20260917-393317.html">
+                <img src="https://pic.chinaventure.com.cn/head/7020581727764480.png?x-image-process=image/quality,q_80" title="思博慧医完成首期融资">
+                <h1>思博慧医完成首期融资</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">9</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/110-20260916-393290.html">
+                <img src="https://pic.chinaventure.com.cn/head/7455085118357504.jpg?x-image-process=image/quality,q_80" title="车企争夺动力电池话语权，宁德时代怕了吗？">
+                <h1>车企争夺动力电池话语权，宁德时代怕了吗？</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">10</div>
+            </a>
+        </li>
+
+    </ul>
+</aside>
+            </div>
+        </div>
+
+        <!--沉浸式阅读-->
+        <div class="immerse_reading_zone">
+            <div class="immerse_article_wrapper"></div>
+            <div class="backtopage_btn" @click="closeImmerseReading"></div>
+        </div>
+
+        <div class="common_asidefixed_tools">
+    <a class="guestsignup_btn" target="_blank" href="/signup/guestinfo_collection.html">联系我们</a>
+    <a class="contribute_btn" target="_blank" href="/contribute.html">欢迎投稿</a>
+    <div class="appdownload_btn">
+        <div class="ercode_box_bg">
+            <div class="ercode_box">
+                <ul class="appcode_tab">
+                    <li class="active">投中网</li>
+                    <li>CVS投中数据</li>
+                </ul>
+                <ol class="appcode_box">
+                    <li class="active">
+                        <img id="downloadCodepic" src="/images/chinaventure_downloadcode.png" />
+                        <p>创新经济的<br>智识、洞见和未来</p>
+                    </li>
+                    <li>
+                        <img src="/images/cvsercode.png" />
+                        <p>投资人都在用的<br>数据专家</p>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </div>
+    <div class="backtotop_btn">返回顶部</div>
+</div>
+        
+        <footer id="footer_pc" class="footer_pc">
+    <div class="footer_innner">
+        <div class="footer_coperator clearfix">
+            <div id="index_footer_sponsor" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>合作机构</span>
+                    <a href="/coperation.html?activeIndex=0" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img title="第一财经" src="/images/coperation/media/第一财经.png"></li>
+                    <li><img title="界面新闻" src="/images/coperation/media/界面新闻.png"></li>
+                    <li><img title="新浪科技" src="/images/coperation/media/新浪科技.png"></li>
+                    <li><img title="新浪财经客户端" src="/images/coperation/media/新浪财经客户端.png"></li>
+                    <li><img title="凤凰网财经" src="/images/coperation/media/凤凰网财经.png"></li>
+                    <li><img title="36kr" src="/images/coperation/media/36kr.png"></li>
+                    <li><img title="财联社" src="/images/coperation/media/财联社.png"></li>
+                    <li><img title="GEEKPARK" src="/images/coperation/media/GEEKPARK.png"></li>
+                    <li><img title="华夏时报" src="/images/coperation/media/华夏时报.png"></li>
+                    <li><img title="钛媒体" src="/images/coperation/media/钛媒体.png"></li>
+                    <li><img title="和讯" src="/images/coperation/media/和讯.png"></li>
+                    <li><img title="雪球" src="/images/coperation/media/雪球.png"></li>
+                </ul>
+            </div>
+            <div id="index_footer_customer" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>投中客户</span>
+                    <a href="/coperation.html?activeIndex=1" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951018487087104.png" title="深圳担保" alt="深圳担保"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951058941149184.png" title="联创资本" alt="联创资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019497914368.png" title="普罗资本" alt="普罗资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020231917568.png" title="钛信资本" alt="钛信资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019833458688.png" title="创东方" alt="创东方" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019636326400.png" title="基石资本" alt="基石资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020080922624.png" title="华平投资" alt="华平投资" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019938316288.png" title="澳银资本" alt="澳银资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019757961216.png" title="毅达资本" alt="毅达资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019686658048.png" title="高新投" alt="高新投" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020001230848.png" title="紫金港资本" alt="紫金港资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951022693974016.png" title="东方富海" alt="东方富海" /></li> 
+                </ul>
+            </div>
+            <div class="footer_linkzone_pc clearfix footer_link">
+                <h1 class="footer_title">
+                    <span>联系我们</span>
+                </h1>
+                <ul class="clearfix">
+                    <li><span>商务合作：sa@chinaventure.com.cn</span></li>
+                </ul>
+                <ul class="clearfix">
+                    <li class="m-t-10"><span>机构合作：md-pr@chinaventure.com.cn</span></li>
+                </ul>
+            </div>
+            <div id="index_footer_friendlink" class="footer_linkzone_pc clearfix">
+                <h1 class="footer_title">
+                    <span>友情链接</span>
+                </h1>
+                <ul class="clearfix"> 
+                    <li><a target="_blank" href="http://tech.qq.com">腾讯科技</a></li>
+                    <li><a target="_blank" href="http://www.caijing.com.cn">财经网</a></li>
+                    <li><a target="_blank" href="http://www.jrj.com.cn">金融界</a></li>
+                    <li><a target="_blank" href="http://capital.people.com.cn">人民创投</a></li>
+                    <li><a target="_blank" href="http://www.hexun.com">和讯</a></li>
+                    <li><a target="_blank" href="http://www.iresearch.cn">艾瑞网</a></li>
+                    <li><a target="_blank" href="https://www.youliancloud.cn/ ">有连云</a></li>
+                    <li><a target="_blank" href="http://www.easeye.com.cn/">亿业科技</a></li>
+                    <li><a target="_blank" href="https://www.catrust.cn/">国产SSL证书</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright_text">
+            <p><a href="https://www.12377.cn" target="_blank">违法和不良信息举报电话：(021)56790721</a>　<a href="https://www.chinaventure.com.cn/news/64-20260126-389940.html" target="_blank">举报邮箱：report2019@chinaventure.com.cn</a></p>
+            <p>Copyright &#169 2005-2023 ChinaVenture Investment Consulting Ltd. 投中网 <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2023019928号-1</a></p>
+            <p>本站带宽由 ChinaCache 提供&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902003027" style="display:inline-block;text-decoration:none;"><img style="width:20px;height:20px;position:relative;top:5px;" src="/images/gongan.png"/>&nbsp;沪公网安备 31010902003027号</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020200109105830000005532081-SAIC_SHOW_310000-2c9be8bd717d3562017198bf4d8c0ffb065&signData=MEQCIATlMt5wh1D4jG0Rzra+Eq/qT9fo4I2bhjHWs+VSiQacAiA16eKQi3fn2qiEdfEQQ+FkLu+myHa5XhS+WRNKyOBCGA==" style="display:inline-block;text-decoration:none;"><img style="width:16px;height:20px;position:relative;top:5px;" alt="投中网电子营业执照" title="投中网电子营业执照" src="/images/dianziyingyezhizhao.png"/></a></p>
+        </div>
+    </div>
+</footer>
+        
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/page/articledetail.js"></script>
+</html>

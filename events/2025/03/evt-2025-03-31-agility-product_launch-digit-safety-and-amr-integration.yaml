@@ -1,0 +1,25 @@
+id: evt-2025-03-31-agility-product_launch-digit-safety-and-amr-integration
+date: 2025-03-31
+date_precision: day
+type: product_launch
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility Robotics 公布 Digit 新版本能力：安全功能、四小时电池与 Arc 对接 AMR
+summary:
+  zh: 3 月 31 日，Agility Robotics 发布新闻稿，公布在 ProMat 展会上展出的 Digit 新能力：电池续航提升到最多四小时并可自主对接充电桩；简化了 Digit 的制造流程；新增 Category 1（CAT1）急停、安全 PLC、机器人本体急停、带急停的无线示教器与 Functional Safety over EtherCAT（FSoE）等安全功能；更换了肢体与末端执行器，扩大抓取角度范围。同时 Agility Arc 云平台可以调度与对接 AMR，Digit 可自主派单让 AMR 把物料送到下一个工位，公司称已与 MiR 与 Zebra Technologies 的 AMR 完成集成，在 GXO 亚特兰大附近的部署现场 Digit 已与 AMR 协同作业。
+counterparties:
+- MiR
+- Zebra Technologies
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [logistics-warehouse, industrial-manufacturing]
+  delivery_model: [hardware-sale, service-delivery]
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-announces-new-innovations-for-market-leading-humanoid-robot-digit
+  publisher: Agility Robotics 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/agilityrobot-2025-03-31-agility-digit-innovation.html
+corroboration: single

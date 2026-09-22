@@ -12,6 +12,7 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: robbyant
+founded: 2024-12
 hq:
   country: CN
   city: 上海
@@ -23,3 +24,7 @@ sources:
   tier: official
   retrieved: '2026-09-22'
   note: 官网关于页，版权方为 Shanghai Ant Robbyant Technology Co., Ltd.，自述为 Ant Group 旗下具身智能公司；成立年份未在官网给出
+- url: https://stock.caijing.com.cn/20241217/5058353.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 财经网 2024-12-17 报道「上海蚂蚁灵波科技有限公司成立，注册资本 1 亿人民币……由蚂蚁集团旗下蚂蚁智能（杭州）科技有限公司全资持股」，据此补 founded 为 2024-12

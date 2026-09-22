@@ -1,0 +1,23 @@
+id: evt-2025-06-rokae-funding-pre-ipo-round
+date: 2025-06
+date_precision: month
+type: funding
+orgs:
+- id: rokae
+  role: subject
+title:
+  zh: 珞石机器人完成上市前最后一轮融资
+summary:
+  zh: 投中网报道，2025 年 6 月珞石机器人完成上市前最后一轮融资，从金沙江联合资本处获得 1.95 亿元，估值达到 52.95 亿元。报道称珞石机器人自成立以来共经过 10 轮融资，股东包括梅花创投、德联资本、清控银杏、顺为资本、金沙江联合资本、襄禾资本、深创投、远翼投资、新希望集团、国家制造业转型升级基金、新业资本等。
+counterparties:
+- 金沙江联合资本
+amount:
+  value: 195000000
+  currency: CNY
+evidence:
+- url: https://www.chinaventure.com.cn/news/80-20251030-388632.html
+  publisher: 投中网
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/chinaventure-2025-06-rokae-pre-ipo-round.html
+corroboration: single

@@ -1,0 +1,28 @@
+id: evt-2025-02-18-msr-robotics-publication-magma
+date: 2025-02-18
+date_precision: day
+type: publication
+orgs:
+- id: msr-robotics
+  role: subject
+title:
+  zh: 微软研究院公开多模态智能体基础模型 Magma，模型与代码开源
+summary:
+  zh: 2 月 18 日，微软研究院在 arXiv 公开 Magma（arXiv:2502.13130），一个同时面向数字世界与物理世界的多模态智能体基础模型，既保留视觉语言模型的理解能力，也能在视觉空间中规划与行动，任务范围从界面导航到机器人操作。预训练数据混合图像、视频与机器人数据，两项标注方法是核心：Set-of-Mark（SoM）标出图像中可操作的视觉对象用于动作落地，Trace-of-Mark（ToM）标出视频中人手或机械臂的运动轨迹用于动作规划。论文写明 Magma 在界面导航与机器人操作上取得当时最好结果，模型与代码公开在 microsoft.github.io/Magma。微软研究院博客 2 月 25 日发文介绍该模型，写明在使用与 OpenVLA 相同数据量的情况下，Magma 在多个仿真环境中的表现接近翻倍。
+axes:
+  model_form: [end2end-vla]
+  embodiment_form: [arm]
+  data_acquisition: [human-video, real-robot]
+  data_modality: [rgb, language-annotated]
+evidence:
+- url: https://arxiv.org/abs/2502.13130
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/arxiv-2025-02-18-msr-robotics-magma-arxiv.html
+- url: https://www.microsoft.com/en-us/research/blog/magma-a-foundation-model-for-multimodal-ai-agents-across-digital-and-physical-worlds/
+  publisher: 微软研究院官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/microsoft-2025-02-25-msr-robotics-magma-blog.html
+corroboration: single

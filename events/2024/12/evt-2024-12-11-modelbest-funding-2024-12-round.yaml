@@ -1,0 +1,26 @@
+id: evt-2024-12-11-modelbest-funding-2024-12-round
+date: '2024-12-11'
+date_precision: day
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能完成新一轮数亿元融资
+summary:
+  zh: 21 世纪经济报道 2024 年 12 月 11 日报道，面壁智能当天宣布完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富投资基金联合领投，北京市人工智能产业投资基金与清科创投跟投。公司称融资后将提速以端侧
+    AI 为代表的高效大模型商业化布局。
+counterparties:
+- 龙芯创投
+- 鼎晖百孚
+- 中关村科学城基金
+- 赛富投资基金
+- 北京市人工智能产业投资基金
+- 清科创投
+evidence:
+- url: https://www.21jingji.com/article/20241211/herald/6f86bfc09bd1053c8ea23edfe9ae7a4f.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/21jingji-2024-12-11-modelbest-funding-2024-1.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2025-06-17-galbot-partnership-bosch-jv
+date: 2025-06-17
+date_precision: day
+type: partnership
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用与博世中国、博原资本联合成立合资公司博银合创
+summary:
+  zh: 6 月 17 日，在「Open Bosch：Embodied AI Day」活动现场，博世中国、博世集团旗下投资平台博原资本与北京银河通用机器人有限公司联合宣布共同成立合资公司「博银合创」。该合资公司将专注复杂装配、智能质检等制造场景，研发灵巧型机器人，并全面引入银河通用自研的仿真训练与合成数据技术管线。
+counterparties:
+- 博世中国
+- 博原资本
+axes:
+  target_scene:
+  - industrial-manufacturing
+  data_acquisition:
+  - sim-generated
+evidence:
+- url: https://www.nbd.com.cn/articles/2025-06-17/3911543.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/nbd-2025-06-17-galbot-bosch-jv.html
+corroboration: single

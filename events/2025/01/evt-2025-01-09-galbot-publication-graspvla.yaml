@@ -1,0 +1,27 @@
+id: evt-2025-01-09-galbot-publication-graspvla
+date: 2025-01-09
+date_precision: day
+type: publication
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用发布端到端具身抓取基础大模型 GraspVLA
+summary:
+  zh: 1 月 9 日，银河通用发布端到端具身抓取基础大模型 GraspVLA，由其联合北京智源人工智能研究院、北京大学和香港大学研究人员推出。银河通用介绍，GraspVLA 预训练完全基于合成大数据，训练数据达十亿帧「视觉-语言-动作」对，预训练后可在真实场景和物体上零样本测试；公司同时给出七项泛化标准：光照、背景、平面位置、空间高度、动作策略、动态干扰与物体类别泛化。论文于 2025 年 5 月 6 日在 arXiv 公开（arXiv:2505.03233），代码仓库托管在 PKU-EPIC 账号下。
+counterparties:
+- 北京智源人工智能研究院
+- 北京大学
+- 香港大学
+axes:
+  model_form:
+  - end2end-vla
+  data_acquisition:
+  - sim-generated
+evidence:
+- url: https://m.bjnews.com.cn/detail/1736425483129079.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/m-2025-01-09-galbot-graspvla-release.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2025-01-20-dexforce-product_launch-w1
+date: 2025-01-20
+date_precision: day
+type: product_launch
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能发布人形机器人 DexForce W1
+summary:
+  zh: 1 月 20 日，跨维智能通过官方公众号宣布基于 Sim2Real 具身智能引擎定义的人形机器人 DexForce W1 正式发布。报道写明 W1 采用轮足底盘与人形上半身，全身配备 34 个动力单元，每个动力单元通信带宽 100 Mbps；搭载 7 自由度仿人机械臂，单臂最大负载 10 公斤，配备 6 自由度灵巧手，力控制精度达 20 mA 级别；搭载跨维自研纯视觉空间智能传感器，采用多图像传感器模块化设计。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  hardware_strategy: [in-house]
+  data_acquisition: [sim-generated]
+  target_scene: [industrial-manufacturing, commercial-service, education-research]
+evidence:
+- url: https://www.ithome.com/0/826/024.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/ithome-2025-01-20-dexforce-w1-launch.html
+corroboration: single

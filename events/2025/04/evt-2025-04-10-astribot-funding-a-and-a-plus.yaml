@@ -1,0 +1,23 @@
+id: evt-2025-04-10-astribot-funding-a-and-a-plus
+date: 2025-04-10
+date_precision: day
+type: funding
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能连续完成 A 轮及 A+ 轮融资
+summary:
+  zh: 4 月 10 日消息，星尘智能连续完成 A 轮及 A+ 轮融资，报道称金额为「数亿元」，由锦秋基金、蚂蚁集团领投，云启资本、道彤资本等老股东跟投，华兴资本担任独家财务顾问。
+counterparties:
+- 锦秋基金
+- 蚂蚁集团
+- 云启资本
+- 道彤资本
+evidence:
+- url: https://news.pedaily.cn/202504/548164.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/news-2025-04-10-astribot-a-aplus-round.html
+corroboration: single

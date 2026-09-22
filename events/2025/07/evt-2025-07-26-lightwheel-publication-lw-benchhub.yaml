@@ -1,0 +1,23 @@
+id: evt-2025-07-26-lightwheel-publication-lw-benchhub
+date: '2025-07-26'
+date_precision: day
+type: publication
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能开源具身智能评测平台 LW-BenchHub
+summary:
+  zh: 7 月 26 日，光轮智能在 GitHub 的 LightwheelAI 组织下开源 LW-BenchHub。该平台构建在英伟达 Isaac Lab-Arena 之上，面向厨房操作与行走操作任务提供统一接口、多机器人支持与大规模评测，收录 Lightwheel-LIBERO-Tasks 与 Lightwheel-Robocasa-Tasks 共 268 个任务，并把遥操作数据采集与强化学习训练流程打通。
+axes:
+  sim_stack:
+  - isaac-lab
+  control_route:
+  - rl
+evidence:
+- url: https://github.com/LightwheelAI/LW-BenchHub
+  publisher: 光轮智能 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-26-lightwheel-lw-benchhub.html
+corroboration: single

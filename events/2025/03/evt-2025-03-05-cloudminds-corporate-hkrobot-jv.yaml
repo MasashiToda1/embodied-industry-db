@@ -1,0 +1,21 @@
+id: evt-2025-03-05-cloudminds-corporate-hkrobot-jv
+date: 2025-03-05
+date_precision: day
+type: corporate
+orgs:
+- id: cloudminds
+  role: subject
+title:
+  zh: 达闼与国华在香港合资成立香港仔机器人
+summary:
+  zh: 国华（00370.HK）公告称，2025 年 3 月 5 日其全资附属公司 AI 集团与达闼通过重组在香港合资成立香港仔机器人，在香港及海外发展人形机器人智能技术及产品相关业务，重组完成后香港仔机器人由 AI 集团间接持有 51%、达闼间接持有 49%。按协议，达闼将在五个月内组建覆盖产品规划、技术研发、生产管理、市场营销及售后服务的核心营运团队，并承诺香港仔机器人 2025 年、2026 年经审核收入分别不低于 5 亿元与 10 亿元。
+counterparties:
+- 国华集团控股有限公司（00370.HK）
+- 香港仔机器人
+evidence:
+- url: https://finance.sina.com.cn/stock/hkstock/ggscyd/2025-03-06/doc-inenswii7962429.shtml
+  publisher: 新浪财经转载智通财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/finance-2025-03-05-cloudminds-hkrobot-jv.html
+corroboration: single

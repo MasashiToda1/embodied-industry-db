@@ -1,0 +1,20 @@
+id: evt-2025-02-14-cloudminds-partnership-guohua-jv-framework
+date: 2025-02-14
+date_precision: day
+type: partnership
+orgs:
+- id: cloudminds
+  role: subject
+title:
+  zh: 达闼与国华集团签订在香港成立合资公司的框架协议
+summary:
+  zh: 2 月 14 日，国华集团控股有限公司（00370.HK）与达闼机器人股份有限公司签订合作框架协议，双方拟在香港成立合资公司，在人形机器人大脑的相关技术和产品方面展开合作，合资公司目标为开拓人形机器人操作系统的民用产品市场。国华与达闼分别持有合资公司 51% 与 49% 股权，合资公司董事会 3 名成员中国华委派 2 名、达闼委派 1 名。国华于 2 月 18 日就此发布自愿性公布。
+counterparties:
+- 国华集团控股有限公司（00370.HK）
+evidence:
+- url: https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0218/2025021800715_c.pdf
+  publisher: 香港交易所披露易 · 国华集团控股有限公司
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/www1-2025-02-14-cloudminds-guohua-jv.html
+corroboration: single

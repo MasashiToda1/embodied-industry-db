@@ -1,0 +1,27 @@
+id: evt-2025-05-standard-robots-product_launch-darwin-01
+date: 2025-05
+date_precision: month
+type: product_launch
+orgs:
+- id: standard-robots
+  role: subject
+title:
+  zh: 斯坦德机器人推出工业具身智能机器人 DARWIN-01
+summary:
+  zh: 2025 年 5 月，斯坦德机器人推出工业具身智能机器人 DARWIN-01。报道称该机具备 23 个以上整机自由度，双臂协同作业载重 10 公斤，通过关节设计实现折叠变形、可在蹲伏与站立双形态间切换，全身传感器矩阵实现 360°×360° 动态环境感知。公司介绍称 DARWIN-01 融合多模感知、超大作业范围、快拆灵巧手、全向移动底盘与 VR 遥操，面向复杂工业场景。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  data_acquisition: [teleop]
+evidence:
+- url: https://robot.ofweek.com/2025-06/ART-8321202-8120-30665418.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/robot-2025-06-23-standard-robots-hkex-fir.html
+- url: https://jp.standard-robots.com/blog-detail/id-22.html
+  publisher: 斯坦德机器人
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/jp-2025-05-29-standard-robots-darwin01.html
+corroboration: multi

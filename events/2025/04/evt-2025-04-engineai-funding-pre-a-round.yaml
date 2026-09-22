@@ -1,0 +1,26 @@
+id: evt-2025-04-engineai-funding-pre-a-round
+date: 2025-04
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「近日，据众擎机器人官微消息，众擎机器人完成新一轮 Pre-A 轮融资」，发稿日 2025-04-09
+type: funding
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人完成 Pre-A 轮融资
+summary:
+  zh: 据众擎机器人官方微信公众号消息，公司完成新一轮 Pre-A 轮融资，融资总额「近 2 亿元人民币」，由 Stone Venture 领投，商汤国香资本、弘晖基金、浔商创投、包河创投等老股东持续加码。资金将用于人形机器人本体、小脑以及具身智能的研发与升级，并推动大规模生产与国内外市场拓展。
+counterparties:
+- Stone Venture
+- 商汤国香资本
+- 弘晖基金
+- 浔商创投
+- 包河创投
+evidence:
+- url: https://news.qq.com/rain/a/20250409A08DA000
+  publisher: 瑞财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/news-2025-04-engineai-pre-a-round.html
+corroboration: single

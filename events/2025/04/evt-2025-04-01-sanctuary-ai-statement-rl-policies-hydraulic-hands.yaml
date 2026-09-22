@@ -1,0 +1,22 @@
+id: evt-2025-04-01-sanctuary-ai-statement-rl-policies-hydraulic-hands
+date: 2025-04-01
+date_precision: day
+type: statement
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 公布用强化学习训练液压灵巧手的手内重定向策略
+summary:
+  zh: 4 月 1 日，Sanctuary AI 发布技术文章，说明公司用仿真与强化学习训练液压灵巧手的操作策略，而不是手写代码。文中展示一个在仿真里训练的手内重定向策略在真实世界中执行：手在对抗重力、并额外负载 500 克的条件下抓住并转动圆柱体而不掉落。公司称自研机械手的差异点在于主动自由度数量多，可做手指外展与手内操作，这是其他市售机械手没有的，液压驱动则提供更高的强度、速度与控制能力。
+axes:
+  control_route: [rl]
+  data_acquisition: [sim-generated]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://sanctuary.ai/news/sanctuary-ai-controlling-advanced-hydraulic-hands/
+  publisher: Sanctuary AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/sanctuary-2025-04-01-sanctuary-ai-rl-hydrauli.html
+corroboration: single
