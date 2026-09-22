@@ -1,0 +1,35 @@
+id: evt-2025-03-26-tars-robotics-funding-angel-round
+date: '2025-03-26'
+date_precision: day
+type: funding
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航完成 1.2 亿美元天使轮融资
+summary:
+  zh: 3 月 26 日，它石智航（TARS）宣布完成天使轮 1.2 亿美元融资，由蓝驰创投、启明创投共同领投，线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投。报道称这创下中国具身智能行业天使轮最大融资额纪录，资金主要用于产品和技术研发、模型训练、场景拓展。
+counterparties:
+- 蓝驰创投
+- 启明创投
+- 线性资本
+- 恒旭资本
+- 洪泰基金
+- 联想创投
+- 襄禾资本
+- 高瓴创投
+amount:
+  value: 120000000
+  currency: USD
+evidence:
+- url: https://www.sh.chinanews.com.cn/kjjy/2025-03-26/134068.shtml
+  publisher: 中新网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/sh-2025-03-tars-robotics-angel.html
+- url: https://capital.lenovo.com/news/detail/id/1092/s/1.html
+  publisher: 联想创投
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/capital-2025-03-tars-robotics-angel-leno.html
+corroboration: multi

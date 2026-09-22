@@ -1,0 +1,26 @@
+id: evt-2025-06-02-alphasquare-publication-fast-in-slow
+date: '2025-06-02'
+date_precision: day
+type: publication
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: "论文《Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning》提交 arXiv"
+summary:
+  zh: 2025 年 6 月 2 日，论文《Fast-in-Slow》提交至 arXiv，作者单位包含香港中文大学、北京大学、AI²Robotics（智平方）与北京智源人工智能研究院。论文提出 FiS-VLA，把 System 1 执行模块嵌入基于视觉语言模型的 System 2 中并部分共享参数，真机实验在 AgileX 与 AlphaBot 双臂机器人上进行，报告的控制频率为 117.7 Hz。
+axes:
+  model_form:
+  - end2end-vla
+  - hierarchical
+  - il
+  data_modality:
+  - rgb
+  - pointcloud
+evidence:
+- url: https://arxiv.org/abs/2506.01953
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-alphasquare-fast-in-slow.html
+corroboration: single

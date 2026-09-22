@@ -1,0 +1,22 @@
+id: evt-2025-03-06-alphasquare-funding-pre-a-plus-round
+date: '2025-03-06'
+date_precision: day
+type: funding
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方完成 Pre A+ 轮融资
+summary:
+  zh: 2025 年 3 月 6 日，智平方宣布完成 Pre A+ 轮融资，官网表述为「过亿元」。投资方包括敦鸿资产、云启资本和国投创盈等，华兴资本担任独家财务顾问。官网称本轮融资用于加速端到端 VLA 模型迭代与具身智能机器人在规模化商业场景中的落地。
+counterparties:
+- 敦鸿资产
+- 云启资本
+- 国投创盈
+evidence:
+- url: https://ai2robotics.com/%E6%99%BA%E5%B9%B3%E6%96%B9-%E5%AE%8C%E6%88%90%E6%95%B0%E4%BA%BF%E5%85%83pre-a%E8%BD%AE%E8%9E%8D%E8%B5%84-%E6%8E%A8%E5%8A%A8%E6%90%AD%E8%BD%BD%E4%B8%96%E7%95%8C%E9%A2%86%E5%85%88%E6%B0%B4/
+  publisher: 智平方官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/ai2robotics-2025-03-alphasquare-pre-a-plus.html
+corroboration: single

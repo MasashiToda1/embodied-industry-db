@@ -1,0 +1,20 @@
+id: evt-2025-01-zerith-corporate-founded
+date: '2025-01'
+date_precision: month
+type: corporate
+orgs:
+- id: zerith
+  role: subject
+title:
+  zh: 合肥零次方机器人有限公司成立
+summary:
+  zh: 人民网安徽频道 2025 年 2 月 7 日报道，合肥零次方机器人有限公司于 2025 年 1 月成立，注册在合肥市包河区，由清华大学与江淮前沿技术协同创新中心联合孵化。公司研发、硬件与生产线集中在中国视界产业园内。
+date_basis: derived
+date_as_stated: 原文「今年 1 月，作为安徽省本土孵化的具身智能机器人公司，合肥零次方机器人有限公司已经成功完成数千万元的融资」
+evidence:
+- url: http://ah.people.com.cn/n2/2025/0207/c374164-41128552.html
+  publisher: 人民网安徽频道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/ah-2025-02-zerith-angel.html
+corroboration: single

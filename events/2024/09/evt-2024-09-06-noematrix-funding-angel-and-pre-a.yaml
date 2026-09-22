@@ -1,0 +1,29 @@
+id: evt-2024-09-06-noematrix-funding-angel-and-pre-a
+date: '2024-09-06'
+date_precision: day
+type: funding
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能宣布完成天使轮与 Pre-A 轮融资
+summary:
+  zh: 9 月 6 日，穹彻智能宣布完成天使轮和 Pre-A 轮两轮融资，官网表述为「累计数亿元人民币」。Pre-A 轮由 Prosperity7 Ventures 与广发信德联合领投，泽羽资本、创新工场、奇绩创坛、璞跃中国、MFund 魔量资本等参投；天使轮由小苗朗程领投，MFund 魔量资本、京海展悦、无限基金 SEE Fund 等参投。资金用于产品研发、商业化拓展与人才招募。
+counterparties:
+- Prosperity7 Ventures
+- 广发信德
+- 泽羽资本
+- 创新工场
+- 奇绩创坛
+- 璞跃中国
+- MFund 魔量资本
+- 小苗朗程
+- 京海展悦
+- 无限基金 SEE Fund
+evidence:
+- url: https://www.noematrix.ai/news/noematrix_pre-a
+  publisher: 穹彻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/noematrix-2024-09-noematrix-pre-a.html
+corroboration: single

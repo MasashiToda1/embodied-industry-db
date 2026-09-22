@@ -1,0 +1,25 @@
+id: evt-2025-03-original-intelligence-corporate-founded
+date: '2025-03'
+date_precision: month
+date_basis: derived
+date_as_stated: 亿欧稿件（36 氪转载，2025 年 11 月 14 日）原文「原力灵机成立于 2025 年 3 月，先后完成重庆、北京两地注册」
+type: corporate
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机（Dexmal）成立
+summary:
+  zh: 报道称原力灵机（Dexmal）成立于 2025 年 3 月，先后完成重庆、北京两地注册，专注具身智能软硬件技术研发与落地，核心创始团队源自旷视科技。
+evidence:
+- url: https://www.36kr.com/p/3552641065286528
+  publisher: 36 氪（转亿欧网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/36kr-2025-03-original-intelligence-an.html
+- url: https://news.qq.com/rain/a/20251114A061IS00
+  publisher: 瑞财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-original-intelligence-fo.html
+corroboration: multi

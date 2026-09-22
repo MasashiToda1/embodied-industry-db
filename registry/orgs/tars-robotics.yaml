@@ -9,6 +9,9 @@ layers:
 upstream:
   robotics_notebooks_institution: tars-robotics
 founded: 2025-02
+hq:
+  country: CN
+  city: 上海
 description: 研发通用具身大模型 AWE 系列与 A1 机器人的公司，董事长李震宇、CEO 陈亦伦、首席科学家丁文超。
 accounts:
   github: tars-robotics
@@ -17,4 +20,8 @@ sources:
 - url: https://www.mycaijing.com/article/detail/567247?source_id=40
   tier: media
   retrieved: '2026-09-22'
-  note: 《财经》报道（2026-04-16）写「它石成立于 2025 年 2 月」，并列出董事长、CEO、首席科学家；官网 about 页为 JS 渲染且返回 500，总部城市未能核实
+  note: 《财经》报道（2026-04-16）写「它石成立于 2025 年 2 月」，并列出董事长、CEO、首席科学家；官网 about 页为 JS 渲染且返回 500
+- url: https://www.cnfin.com/gs-lb/detail/20250326/4206491_1.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新华财经 2025-03-26 稿电头为「新华财经上海 3 月 26 日电」，正文写「它石智航核心团队已组建完毕，员工已正式入驻上海办公区」，据此补 hq 城市为上海

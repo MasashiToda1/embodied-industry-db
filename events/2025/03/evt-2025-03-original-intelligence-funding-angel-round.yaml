@@ -1,0 +1,27 @@
+id: evt-2025-03-original-intelligence-funding-angel-round
+date: '2025-03'
+date_precision: month
+date_basis: derived
+date_as_stated: 亿欧稿件（36 氪转载，2025 年 11 月 14 日）原文「2025 年 3 月完成 2 亿元天使轮融资」
+type: funding
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机完成 2 亿元天使轮融资
+summary:
+  zh: 报道称原力灵机（Dexmal）于 2025 年 3 月完成 2 亿元天使轮融资，投资方包括君联资本、九坤创投、启明创投等机构。
+counterparties:
+- 君联资本
+- 九坤创投
+- 启明创投
+amount:
+  value: 200000000
+  currency: CNY
+evidence:
+- url: https://www.36kr.com/p/3552641065286528
+  publisher: 36 氪（转亿欧网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/36kr-2025-03-original-intelligence-an.html
+corroboration: single

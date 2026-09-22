@@ -1,0 +1,20 @@
+id: evt-2025-06-26-beingbeyond-publication-being-vl-05
+date: '2025-06-26'
+date_precision: day
+date_basis: derived
+date_as_stated: 仓库 README 的 News 条目「[2025-06-26]：We publish Being-VL-0.5, which is accepted by ICCV 2025」
+type: publication
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: "BeingBeyond 发布多模态理解模型 Being-VL-0.5"
+summary:
+  zh: 2025 年 6 月 26 日，BeingBeyond 公布 Being-VL-0.5，并于 6 月 30 日在 GitHub 组织下建立同名仓库，7 月 12 日放出代码与训练脚本。README 称该模型把字节对编码（BPE）直接用于视觉 token，提出 Visual Byte-Pair Encoding（vBPE），以统一表示处理图文理解。对应论文《Unified Multimodal Understanding via Byte-Pair Visual Encoding》收录于 ICCV 2025，7 月 24 日入选 Highlight。
+evidence:
+- url: https://github.com/BeingBeyond/Being-VL-0.5
+  publisher: BeingBeyond GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-beingbeyond-being-vl-05.html
+corroboration: single

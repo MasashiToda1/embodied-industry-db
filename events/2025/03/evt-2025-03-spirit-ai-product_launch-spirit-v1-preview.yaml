@@ -1,0 +1,26 @@
+id: evt-2025-03-spirit-ai-product_launch-spirit-v1-preview
+date: '2025-03'
+date_precision: month
+type: product_launch
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能发布自研 VLA 模型 Spirit v1 抢先版
+summary:
+  zh: 官网产品进展写「2025 年 3 月，千寻智能发布 Spirit V1 VLA 模型抢先版」。同期官网融资稿称，抢先版演示视频中机器人已可实现叠衣服全流程顺畅操作，完成连续长程复杂任务，并称 Spirit v1 可根据自然语言指令完成多任务连续操作。
+axes:
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://spirit-ai.com/news/8
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/spirit-ai-2025-03-spirit-ai-spirit-v1.html
+- url: https://spirit-ai.com/news/6
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/spirit-ai-2025-03-spirit-ai-pre-a.html
+corroboration: single

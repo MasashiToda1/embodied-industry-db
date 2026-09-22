@@ -1,0 +1,22 @@
+id: evt-2025-01-07-alphasquare-funding-pre-a-round
+date: '2025-01-07'
+date_precision: day
+type: funding
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方完成 Pre-A 轮战略融资
+summary:
+  zh: 1 月 7 日，智平方宣布完成 Pre-A 轮战略融资，报道表述为「数亿元」。本轮由达晨财智与敦鸿资产联合领投，基石资本跟投。报道称公司历史投资人还包括 SEE Fund、清智资本及国投创盈。
+counterparties:
+- 达晨财智
+- 敦鸿资产
+- 基石资本
+evidence:
+- url: https://www.chinaventure.com.cn/news/80-20250107-384655.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/chinaventure-2025-01-alphasquare-pre-a.html
+corroboration: single

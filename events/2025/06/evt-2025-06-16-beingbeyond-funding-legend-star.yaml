@@ -1,0 +1,30 @@
+id: evt-2025-06-16-beingbeyond-funding-legend-star
+date: '2025-06-16'
+date_precision: day
+date_basis: derived
+date_as_stated: 投资界 2025 年 6 月 16 日消息，原文「据硬氪报道，北京智在无界科技有限公司……近日完成数千万元融资」
+type: funding
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 智在无界（BeingBeyond）完成融资，联想之星领投
+summary:
+  zh: 2025 年 6 月 16 日消息，北京智在无界科技有限公司（BeingBeyond）完成融资，原文表述为「数千万元」。联想之星领投，星连资本（智谱 Z 基金）、燕缘创投、彬复资本跟投，势能资本担任独家财务顾问。资金用于核心技术研发投入、现有模型迭代与产业化验证。
+counterparties:
+- 联想之星
+- 星连资本
+- 燕缘创投
+- 彬复资本
+evidence:
+- url: https://news.pedaily.cn/202506/551071.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/news-2025-06-beingbeyond-angel.html
+- url: https://www.legendstar.cn/news/469987746384504418
+  publisher: 联想之星
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/legendstar-2025-06-beingbeyond-angel-legend.html
+corroboration: multi

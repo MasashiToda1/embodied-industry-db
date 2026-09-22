@@ -1,0 +1,24 @@
+id: evt-2025-05-12-x-square-robot-funding-pre-a-plus-plus-plus-and-a
+date: '2025-05-12'
+date_precision: day
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人宣布完成 Pre-A+++ 轮与 A 轮两轮融资
+summary:
+  zh: 5 月 12 日，自变量机器人宣布完成 Pre-A+++ 轮与 A 轮融资，原文均表述为「数亿元」。Pre-A+++ 轮由华映资本领投，云启资本、广发信德跟投；A 轮由美团战投领投、美团龙珠跟投。报道称公司截至当时已完成 7 轮融资，累计融资金额超 10 亿元。
+counterparties:
+- 华映资本
+- 云启资本
+- 广发信德
+- 美团战投
+- 美团龙珠
+evidence:
+- url: https://www.tmtpost.com/7562506.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/tmtpost-2025-05-x-square-robot-a-round.html
+corroboration: single

@@ -1,0 +1,35 @@
+id: evt-2025-07-21-spirit-ai-funding-pre-a-plus-round
+date: '2025-07-21'
+date_precision: day
+type: funding
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能完成 PreA+ 轮融资，京东领投
+summary:
+  zh: 7 月 21 日，千寻智能披露完成 PreA+ 轮融资，原文表述为「近 6 亿元」。本轮由京东领投，中国互联网投资基金、浙江省科创母基金、华泰紫金、复星锐正等跟投，Prosperity7 Ventures、顺为资本、华控基金、千乘资本、靖亚资本、弘晖基金等老股东超额追加，高鹄资本担任独家财务顾问。
+counterparties:
+- 京东
+- 中国互联网投资基金
+- 浙江省科创母基金
+- 华泰紫金
+- 复星锐正
+- Prosperity7 Ventures
+- 顺为资本
+- 华控基金
+- 千乘资本
+- 靖亚资本
+- 弘晖基金
+evidence:
+- url: https://www.spirit-ai.com/news/11
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/spirit-ai-2025-07-spirit-ai-pre-a-plus.html
+- url: https://stcn.com/article/detail/2665886.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stcn-2025-07-spirit-ai-pre-a-plus-stc.html
+corroboration: multi

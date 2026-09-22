@@ -1,0 +1,27 @@
+id: evt-2025-02-28-psibot-publication-dexgraspvla
+date: '2025-02-28'
+date_precision: day
+type: publication
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: "论文《DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping》提交 arXiv"
+summary:
+  zh: 2025 年 2 月 28 日，论文《DexGraspVLA》提交至 arXiv，作者单位为北京大学人工智能研究院与 PKU-PsiBot 联合实验室。论文提出分层框架，用预训练视觉语言模型做高层规划、扩散式低层动作控制器做执行，实验平台为 7 自由度 RealMan RM75-6F 机械臂配 6 自由度 PsiBot G0-R 灵巧手。灵初智能官网将该论文列为随 Psi R0.5 公开的四篇论文之一。
+axes:
+  model_form:
+  - hierarchical
+  - il
+evidence:
+- url: https://arxiv.org/abs/2502.20900
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/arxiv-2025-02-psibot-dexgraspvla.html
+- url: https://www.psibot.ai/005_zh/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/psibot-2025-03-psibot-psi-r05.html
+corroboration: multi

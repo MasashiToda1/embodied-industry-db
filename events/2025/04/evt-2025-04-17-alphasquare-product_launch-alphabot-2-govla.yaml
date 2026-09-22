@@ -1,0 +1,22 @@
+id: evt-2025-04-17-alphasquare-product_launch-alphabot-2-govla
+date: '2025-04-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方发布通用智能机器人 AlphaBot 2 与全域全身 VLA 大模型 GOVLA
+summary:
+  zh: 2025 年 4 月 17 日，智平方在深圳发布新一代通用智能机器人 AlphaBot 2（爱宝 2），并将原具身大模型品牌 AI2R Brain 升级为 Alpha Brain。官网称 Alpha Brain 搭载自研全域全身 VLA 大模型 GOVLA（Global & Omni-body Vision-Language-Action），由空间交互基础模型、慢系统与快系统三部分组成，慢系统负责推理与任务拆解、快系统输出全身控制动作与移动轨迹。发布会同时宣布启动自有产线建设。
+axes:
+  model_form:
+  - end2end-vla
+  - hierarchical
+evidence:
+- url: https://ai2robotics.com/%E6%99%BA%E5%B9%B3%E6%96%B9%E5%8F%91%E5%B8%83%E5%85%A8%E6%96%B0%E4%B8%80%E4%BB%A3%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BAalphabot-2%E5%BC%80%E5%90%AFagi%E7%BB%88%E7%AB%AF%E6%96%B0/
+  publisher: 智平方官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/ai2robotics-2025-04-alphasquare-alphabot-2.html
+corroboration: single

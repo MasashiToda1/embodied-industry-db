@@ -1,0 +1,31 @@
+id: evt-2025-07-08-tars-robotics-funding-angel-plus-round
+date: '2025-07-08'
+date_precision: day
+type: funding
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航完成 1.22 亿美元天使+轮融资
+summary:
+  zh: 7 月 8 日，它石智航（TARS）宣布完成 1.22 亿美元天使+轮融资。本轮由美团战投领投，钧山投资、碧鸿投资、国汽投资、临港科创投、赛富投资基金、建发新兴投资共同跟投，老股东线性资本、襄禾资本等持续加码。报道称公司此时尚未推出产品。
+counterparties:
+- 美团战投
+- 钧山投资
+- 碧鸿投资
+- 国汽投资
+- 临港科创投
+- 赛富投资基金
+- 建发新兴投资
+- 线性资本
+- 襄禾资本
+amount:
+  value: 122000000
+  currency: USD
+evidence:
+- url: https://www.caixin.com/2025-07-08/102339254.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/caixin-2025-07-tars-robotics-angel-plus.html
+corroboration: single

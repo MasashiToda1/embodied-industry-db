@@ -1,0 +1,25 @@
+id: evt-2025-02-18-x-square-robot-funding-pre-a-plus-plus
+date: '2025-02-18'
+date_precision: day
+date_basis: derived
+date_as_stated: 上海证券报·中国证券网 2025 年 2 月 18 日稿件，原文「近日，具身智能创业公司自变量机器人（X Square Robot）完成数亿元 Pre-A++ 轮融资」
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人完成 Pre-A++ 轮融资
+summary:
+  zh: 2025 年 2 月，自变量机器人完成 Pre-A++ 轮融资，原文表述为「数亿元」。本轮由光速光合与君联资本领投，北京机器人产业基金、神骐资本跟投，资金用于下一代统一具身智能通用大模型的训练与场景落地。
+counterparties:
+- 光速光合
+- 君联资本
+- 北京机器人产业基金
+- 神骐资本
+evidence:
+- url: https://stock.caijing.com.cn/20250218/5071099.shtml
+  publisher: 财经网（转上海证券报·中国证券网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/stock-2025-02-x-square-robot-pre-a-plu.html
+corroboration: single

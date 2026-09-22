@@ -1,0 +1,25 @@
+id: evt-2025-02-07-zerith-funding-angel-round
+date: '2025-02-07'
+date_precision: day
+date_basis: derived
+date_as_stated: 人民网安徽频道 2025 年 2 月 7 日稿件，原文「今年 1 月……已经成功完成数千万元的融资，并获得了千万元级别的订单」
+type: funding
+orgs:
+- id: zerith
+  role: subject
+title:
+  zh: 零次方机器人完成天使轮融资并获千万元级订单
+summary:
+  zh: 人民网安徽频道 2025 年 2 月 7 日报道，合肥零次方机器人有限公司已完成融资，原文表述为「数千万元」，并获得千万元级别的订单。报道同时介绍其首款通用型人形机器人 ZERITH Z1，称其配备全身协调控制系统，将刚体动力学与浮动基动力学模型融合。公司计划 2025 年量产 200 余台人形机器人。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - wbc
+evidence:
+- url: http://ah.people.com.cn/n2/2025/0207/c374164-41128552.html
+  publisher: 人民网安徽频道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/ah-2025-02-zerith-angel.html
+corroboration: single

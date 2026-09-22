@@ -1,0 +1,20 @@
+id: evt-2025-02-05-tars-robotics-corporate-founded
+date: '2025-02-05'
+date_precision: day
+type: corporate
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航正式成立
+summary:
+  zh: 中新网上海 2025 年 3 月 26 日报道称「它石智航正式成立于 2025 年 2 月 5 日」。报道称公司同时具备具身智能大模型能力、本体研发能力和软硬一体产品量产能力，技术路线上开创 Human-Centric 具身数据引擎，并做空间感知与推理决策一体化的具身大模型。
+date_basis: derived
+date_as_stated: 原文「它石智航正式成立于 2025 年 2 月 5 日」
+evidence:
+- url: https://www.sh.chinanews.com.cn/kjjy/2025-03-26/134068.shtml
+  publisher: 中新网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/sh-2025-03-tars-robotics-angel.html
+corroboration: single

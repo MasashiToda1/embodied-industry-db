@@ -1,0 +1,22 @@
+id: evt-2024-11-11-spirit-ai-funding-angel-plus
+date: '2024-11-11'
+date_precision: day
+date_basis: derived
+date_as_stated: 证券时报网 2024 年 11 月 11 日稿件，原文「近日，千寻智能官宣完成天使+轮融资」
+type: funding
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能完成天使+轮融资
+summary:
+  zh: 2024 年 11 月 11 日，千寻智能官宣完成天使+轮融资，由柏睿资本独家注资。报道称公司自成立至今在半年多时间里已完成三轮融资，新融资将用于人才引进和商业化场景下的产品迭代及业务拓展。金额未在该稿中给出确定数字。
+counterparties:
+- 柏睿资本
+evidence:
+- url: https://www.stcn.com/article/detail/1407545.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/stcn-2024-11-spirit-ai-angel-plus.html
+corroboration: single
