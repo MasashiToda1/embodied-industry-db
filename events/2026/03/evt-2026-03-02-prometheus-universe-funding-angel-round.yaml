@@ -1,0 +1,20 @@
+id: evt-2026-03-02-prometheus-universe-funding-angel-round
+date: '2026-03-02'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「投资界 3 月 2 日消息，近日，普罗宇宙机器人已完成数千万天使轮融资」，取报道日
+type: funding
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙机器人完成数千万元天使轮融资
+summary:
+  zh: 投资界 3 月 2 日报道，普罗宇宙机器人完成数千万元天使轮融资，投资方未披露。报道称公司 2025 年 1 月成立于苏州，首款工业级通用轮式具身机器人大白 8 月发布初代、11 月发布二代并已小批量交付。
+evidence:
+- url: https://m.pedaily.cn/news/561291
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/m-2026-03-02-prometheus-universe-ange.html
+corroboration: single

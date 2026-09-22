@@ -1,0 +1,26 @@
+id: evt-2025-11-01-prometheus-universe-product_launch-dabai-2-0
+date: '2025-11-01'
+date_precision: day
+type: product_launch
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙发布工业级轮式具身机器人大白 2.0、四款末端执行器与灵巧手普罗小灵
+summary:
+  zh: 11 月 1 日，普罗宇宙机器人 2025 新品发布会在北京亦庄京东总部举办，发布工业级轮式具身机器人普罗宇宙大白 2.0 版、四款末端执行器（覆盖锁付、焊锡、点胶、涂油工艺）及灵巧手普罗小灵。大白 2.0 在 300 多个性能点升级，具备亚毫米级操作精度，可集成企业 MES 系统。
+axes:
+  target_scene: [industrial-manufacturing]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: http://www.news.cn/tech/20251102/cfe660f0d68444f4bc39b5af68317b26/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/news-2025-11-01-prometheus-universe-daba.html
+- url: https://pl-universe.com/article/7/detail/22
+  publisher: 普罗宇宙官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/pl-universe-2025-11-01-prometheus-universe-daba.html
+corroboration: multi

@@ -1,0 +1,22 @@
+id: evt-2025-12-23-vita-power-product_launch-vbot-datou-robot-dog
+date: '2025-12-23'
+date_precision: day
+type: product_launch
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力发布无需遥控的消费级机器狗「大头 BoBo」并开启预售
+summary:
+  zh: 12 月 23 日，维他动力发布消费级具身智能产品超能机器狗「大头 BoBo」，称其无需遥控即可在生活空间中完成随行、载物、跟拍等任务，定价 12988 元、创始权益价 9988 元；发布后 52 分钟订单突破 1000 台，计划 2026 年 1 月启动公测、3 月起进入批量交付。
+axes:
+  target_scene: [home]
+  embodiment_form: [quadruped]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.cnfin.com/gs-lb/detail/20251224/4355419_1.html
+  publisher: 新华财经（中国金融信息网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/cnfin-2025-12-23-vita-power-datou-launch-.html
+corroboration: single

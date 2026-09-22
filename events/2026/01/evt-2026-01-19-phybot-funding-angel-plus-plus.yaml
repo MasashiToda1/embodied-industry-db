@@ -1,0 +1,29 @@
+id: evt-2026-01-19-phybot-funding-angel-plus-plus
+date: '2026-01-19'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「投资界 1 月 19 日消息，近日，动易科技宣布完成亿元级天使++轮融资」，取报道日
+type: funding
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技完成亿元级天使++轮融资，天使轮累计超 2 亿元
+summary:
+  zh: 投资界 1 月 19 日报道，动易科技宣布完成亿元级天使++轮融资，天使轮累计融资额超 2 亿元。本轮投资方包括海珠城发、广州产投、金雨茂物、锡创投、金沙江联合、达泰资本、复琢投资，老股东普超资本超额追投。资金投向第三代 PhyArc 准直驱一体化摆线关节模组与端到端运动控制模型研发，以及 PHYBOT M1、C2、D1 三款机器人的批量交付。
+counterparties:
+- 海珠城发
+- 广州产投
+- 金雨茂物
+- 锡创投
+- 金沙江联合
+- 达泰资本
+- 复琢投资
+- 普超资本
+evidence:
+- url: https://m.pedaily.cn/news/560091
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/m-2026-01-19-phybot-angel-plus-plus.html
+corroboration: single

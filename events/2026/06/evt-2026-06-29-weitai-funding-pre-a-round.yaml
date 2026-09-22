@@ -1,0 +1,27 @@
+id: evt-2026-06-29-weitai-funding-pre-a-round
+date: '2026-06-29'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「DoNews 6 月 29 日消息……宣布完成新一轮 Pre-A 轮融资」，取报道当日
+type: funding
+orgs:
+- id: weitai
+  role: subject
+title:
+  zh: 纬钛机器人完成 Pre-A 轮融资，红鸟启航基金领投
+summary:
+  zh: 6 月 29 日，上海纬钛科技有限公司（纬钛机器人）宣布完成 Pre-A 轮融资，由红鸟启航基金领投，领屹投资、永鑫方舟、韦豪创芯、宁波吉德等产业投资方联合参投，上海天使会联合投资，多家老股东继续加持，投中资本担任独家财务顾问；金额未披露。资金用于视触觉感知技术迭代、执行器落地、视触觉数采和模型闭环、团队扩充与海外市场拓展。
+counterparties:
+- 红鸟启航基金
+- 领屹投资
+- 永鑫方舟
+- 韦豪创芯
+- 宁波吉德
+- 上海天使会
+evidence:
+- url: https://www.donews.com/news/detail/1/6613022.html
+  publisher: DoNews
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/donews-2026-06-29-weitai-pre-a-round.html
+corroboration: single

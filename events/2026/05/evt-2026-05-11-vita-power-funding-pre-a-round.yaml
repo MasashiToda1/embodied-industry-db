@@ -1,0 +1,30 @@
+id: evt-2026-05-11-vita-power-funding-pre-a-round
+date: '2026-05-11'
+date_precision: day
+type: funding
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力完成近 5 亿元 Pre-A 轮融资，东方嘉富、华泰紫金、复星锐正联合领投
+summary:
+  zh: 5 月 11 日，维他动力宣布完成 Pre-A 轮融资，金额近 5 亿元，由东方嘉富、华泰紫金、复星锐正联合领投，上汽集团旗下尚颀资本、明荟致远参与投资，凯辉基金、今日资本、高瓴创投、渶策资本、BV 百度风投、柏睿资本等老股东继续投资。资金用于大规模量产、销售网络建设和新一代人形机器人研发。
+counterparties:
+- 东方嘉富
+- 华泰紫金
+- 复星锐正
+- 尚颀资本
+- 明荟致远
+- 凯辉基金
+- 今日资本
+- 高瓴创投
+- 渶策资本
+- BV 百度风投
+- 柏睿资本
+evidence:
+- url: https://www.21jingji.com/article/20260511/herald/0c58c15718ec59e13c082b3feaf3f934.html
+  publisher: 上海证券报（21 经济网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/21jingji-2026-05-11-vita-power-pre-a-round.html
+corroboration: single

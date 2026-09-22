@@ -8,3 +8,19 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: ti5robot
+founded: 2020-08
+hq:
+  country: CN
+  city: 上海
+description: 做轻量化一体化关节模组、协作机器人与人形机器人硬件平台的公司，产品有 PRO-3 系列关节模组与 T170 系列人形机器人。
+accounts:
+  site: https://www.ti5robot.com
+sources:
+- url: https://www.ti5robot.com/h-col-107.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，成立于 2020 年 8 月，公司地址上海市闵行区
+- url: https://www.ti5robot.com/h-nd-45.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网五周年新品发布会新闻，PRO-3 系列关节模组

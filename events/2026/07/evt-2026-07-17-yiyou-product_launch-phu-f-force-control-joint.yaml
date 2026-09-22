@@ -1,0 +1,20 @@
+id: evt-2026-07-17-yiyou-product_launch-phu-f-force-control-joint
+date: '2026-07-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: yiyou
+  role: subject
+title:
+  zh: 意优科技在 WAIC 2026 首次公开展示 PHU-F 力控关节，展出 33 款关节模组
+summary:
+  zh: 7 月 17 日 WAIC 2026 在上海开幕，意优科技展出全系 33 款关节模组，并首次公开演示 PHU-F 力控关节：搭载该关节的机械摆臂单指轻推可带动 2.5 公斤负载，关节以 8kHz 检测频率捕捉低至 0.01Nm 的力矩变化，力控响应带宽 100Hz 以上；产品支持 EtherCAT、CANopen、CAN FD 通信协议。
+axes:
+  data_modality: [force-torque]
+evidence:
+- url: https://auto.gasgoo.com/news/202607/18I70466398C601.shtml
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/auto-2026-07-17-yiyou-phu-f-waic2026.html
+corroboration: single

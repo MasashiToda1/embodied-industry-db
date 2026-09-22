@@ -1,0 +1,20 @@
+id: evt-2026-07-31-ti5robot-partnership-casmt-joint-lines
+date: '2026-07-31'
+date_precision: day
+type: partnership
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人与中科摩通达成战略合作，敲定多条关节模组一体化智能产线
+summary:
+  zh: 7 月 31 日，中科摩通（常州）智能制造股份有限公司发布消息，与钛虎机器人科技（上海）有限公司达成战略合作，敲定多条关节模组一体化智能产线整体交付项目，用于减速机、机器人总装等核心部件的自动化生产；钛虎方称产线落地后核心零部件自研产能将数倍扩容，支撑数千台级人形机器人整机年度交付目标。
+counterparties:
+- 中科摩通
+evidence:
+- url: https://www.casmt.com/newsinfo/384.html
+  publisher: 中科摩通官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/casmt-2026-07-31-ti5robot-casmt-joint-lin.html
+corroboration: single

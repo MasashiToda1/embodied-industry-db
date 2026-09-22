@@ -2,7 +2,26 @@ id: prometheus-universe
 names:
   zh: 普罗宇宙
   en: Prometheus Universe
+  aliases:
+  - 普罗宇宙机器人
+  - 普罗宇宙机器人科技（苏州）有限公司
 status: active
 layers:
 - embodiment
 - components
+founded: 2025-01
+hq:
+  country: CN
+  city: 苏州
+description: 做工业级轮式具身机器人的公司，产品有普罗宇宙大白 2.0（轮式底盘 + 6 轴机械臂 + 可换末端执行器）与灵巧手普罗小灵。
+accounts:
+  site: https://www.pl-universe.com
+sources:
+- url: https://pl-universe.com/article/7/detail/22
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司新闻，发布大白 2.0 与普罗小灵灵巧手
+- url: https://www.pl-universe.com/article/8/detail/9
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网转载稿件公司简介，成立于 2025 年 1 月，总部位于苏州工业园

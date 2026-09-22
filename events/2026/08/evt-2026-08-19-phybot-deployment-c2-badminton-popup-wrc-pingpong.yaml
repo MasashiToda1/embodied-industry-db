@@ -1,0 +1,21 @@
+id: evt-2026-08-19-phybot-deployment-c2-badminton-popup-wrc-pingpong
+date: '2026-08-19'
+date_precision: day
+type: deployment
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技 PHYBOT C2 在广州商场羽球馆快闪店接待近万名市民，WRC 2026 展示人机乒乓球对打
+summary:
+  zh: 21 财经 8 月 21 日报道，动易科技携 PHYBOT M 系列、C 系列亮相 8 月 19 日开幕的 2026 世界机器人大会，带来双足人形机器人自主与人对打乒乓球实景演示。报道称同一套 PhyAgents 技术底座此前于 4 月广交会完成羽毛球自主对战公开首秀，7 至 8 月在广州「够 C 羽球馆」商业快闪店于开放商场环境累计接待近万名市民体验。
+axes:
+  target_scene: [commercial-service]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://m.21jingji.com/article/20260821/herald/1b1db2ff6503d4c7d44a27415aa563cd.html
+  publisher: 21 财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/m-2026-08-19-phybot-wrc2026-pingpong.html
+corroboration: single

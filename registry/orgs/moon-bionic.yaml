@@ -2,7 +2,26 @@ id: moon-bionic
 names:
   zh: 月泉仿生
   en: Moon Bionic
+  aliases:
+  - 北京达奇月泉仿生科技有限公司
+  - YQ Bionics
 status: active
 layers:
 - embodiment
 - components
+founded: 2022-11
+hq:
+  country: CN
+  city: 北京
+description: 做仿生拉压体灵巧手与人形机器人整机的公司，产品有应手 Y-Hand、信手 X-Hand 灵巧手、YQ Motors 电机、博行 X-Bot 双足与博文 W-Bot 轮式人形机器人。
+accounts:
+  site: https://www.yqbionics.com
+sources:
+- url: https://auto.gasgoo.com/news/202607/20I70466584C601.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 盖世汽车报道，北京达奇月泉仿生科技有限公司成立于 2022 年 11 月
+- url: https://kw.beijing.gov.cn/xwdt/kcyx/xwdtyqqy/202607/t20260723_4780608.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 北京市科委中关村管委会网站转载北京经信稿件，成立于 2022 年 11 月，北京企业

@@ -1,0 +1,25 @@
+id: evt-2026-09-08-moon-bionic-deployment-wbot2-state-grid-hefei
+date: '2026-09-08'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，月泉仿生自研轮式人形机器人博文 W-Bot 2.0 于合肥国家电网实现带电作业场景落地应用」，取盖世汽车 2026-09-08 报道日
+type: deployment
+orgs:
+- id: moon-bionic
+  role: subject
+title:
+  zh: 月泉仿生博文 W-Bot 2.0 在合肥国家电网完成带电作业电缆剥线实景验证
+summary:
+  zh: 月泉仿生轮式人形机器人博文 W-Bot 2.0 在合肥国家电网实现带电作业场景落地，面向城市配网不停电运维开展实景验证，完成电缆剥线全流程作业。机器人采用绝缘斗臂车载式部署，搭载信手 X-Hand M1 仿生灵巧手与 7 自由度仿人臂，单臂负载 10kg、双臂 20kg，操作高度覆盖 0–2.2m。
+counterparties:
+- 合肥国家电网
+axes:
+  target_scene: [inspection-hazardous]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://www.d1ev.com/news/shichang/312274
+  publisher: 第一电动网（转载盖世汽车）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/d1ev-2026-09-08-moon-bionic-wbot2-state-.html
+corroboration: single

@@ -1,0 +1,33 @@
+id: evt-2026-08-13-yiyou-funding-b-round
+date: '2026-08-13'
+date_precision: day
+type: funding
+orgs:
+- id: yiyou
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 意优科技宣布完成超 2 亿元 B 轮融资，三星风险投资等 12 家机构参投
+summary:
+  zh: 8 月 13 日，上海意优智控科技有限公司宣布完成超 2 亿元 B 轮融资，投资方为三星风险投资、国方创投、架桥资本、华安嘉业、华义创投、嘉佑基金、南通投管、福达股份、锡山国投、锡东产业投资基金、宁德智创、国兴投资等 12 家机构，架桥资本、福达股份、华义创投、嘉祐基金、锡山国投、锡东产业投资基金等老股东加注。资金用于关节核心技术研发与自动化生产设施建设。报道称其 2025 年关节出货 9.5 万套、营收突破 1 亿元，2026 年在手订单突破 150 万套，为智元 A2 系列量产机型定点供货。
+counterparties:
+- 三星风险投资
+- 国方创投
+- 架桥资本
+- 华安嘉业
+- 华义创投
+- 嘉佑基金
+- 南通投管
+- 福达股份
+- 锡山国投
+- 锡东产业投资基金
+- 宁德智创
+- 国兴投资
+evidence:
+- url: https://www.zhidx.com/p/584691.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/zhidx-2026-08-13-yiyou-b-round.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-07-09-wujie-power-deployment-k15-ce-europe-delivery
+date: '2026-07-09'
+date_precision: day
+type: deployment
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力 K15 通过欧盟 CE 认证，首批机器人发往远景法国工厂开启全球交付
+summary:
+  zh: 7 月 9 日，无界动力宣布第二代机器人 K15 通过欧盟 CE-MD、CE-RED、CE-EMC 及 EN ISO 13849 认证并通过 EN 18031 网络安全标准认证，近 1 亿美元全球订单全面开启交付，首批 K15 发往欧洲，交付远景科技集团法国工厂。报道称无界动力与远景于 4 月底签署超 5 亿元海外部署与联合研发合作。
+counterparties:
+- 远景科技集团
+axes:
+  target_scene: [industrial-manufacturing]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://d1ev.com/news/shichang/306302
+  publisher: 第一电动网（转载盖世汽车）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/d1ev-2026-07-09-wujie-power-k15-ce-deliv.html
+corroboration: single

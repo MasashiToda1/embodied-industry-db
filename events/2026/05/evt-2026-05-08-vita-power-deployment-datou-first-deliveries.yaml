@@ -1,0 +1,21 @@
+id: evt-2026-05-08-vita-power-deployment-datou-first-deliveries
+date: '2026-05-08'
+date_precision: day
+type: deployment
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: Vbot 超能机器狗「大头」5 月 8 日启动交付，首批 500 台量产下线
+summary:
+  zh: 上海证券报 5 月 11 日报道，维他动力首款产品 Vbot 超能机器狗「大头」已于 5 月 8 日正式启动交付，首批 500 台产品完成量产下线；公司称 5 月将完成超过 1500 名用户的交付，6 月产能提升到 2500 台以上。
+axes:
+  target_scene: [home]
+  embodiment_form: [quadruped]
+evidence:
+- url: https://www.21jingji.com/article/20260511/herald/0c58c15718ec59e13c082b3feaf3f934.html
+  publisher: 上海证券报（21 经济网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/21jingji-2026-05-11-vita-power-pre-a-round.html
+corroboration: single

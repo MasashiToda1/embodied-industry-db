@@ -5,7 +5,25 @@ names:
   aliases:
   - 机时租
   - 具深
+  - 上海具深科技有限公司
+  - RoboNow
 status: active
 layers:
 - operation
 - locomotion
+founded: 2025-05
+hq:
+  country: CN
+  city: 上海
+description: 做机器人劳动力调度与技能服务的公司，运营机器人租赁平台「机时租 RoboNow」，自研通用机器人小脑 CereBase 与纯视觉数采模型 VisWDC，为宇树生态合作伙伴。
+accounts:
+  site: https://www.ju-shen.com
+sources:
+- url: https://www.ju-shen.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网，定位机器人劳动力调度与技能服务平台
+- url: https://www.gasgoo.com/robot/data/1214-%E4%B8%8A%E6%B5%B7%E5%85%B7%E6%B7%B1%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 盖世具身智能企业资料，上海具深科技有限公司成立日期 2025-05-27，地址上海市徐汇区

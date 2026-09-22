@@ -1,0 +1,25 @@
+id: evt-2026-07-15-lingzhang-deployment-wuxi-police-eod
+date: '2026-07-15'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，无锡灵掌机器人联合无锡公安『智甲战队』完成防爆实战演习」，取全球 TMT 2026-07-15 报道日
+type: deployment
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 灵掌机器人联合无锡公安完成防爆实战演习，LZ-Pro 灵巧手承担抓取转移任务
+summary:
+  zh: 无锡灵掌机器人联合无锡公安「智甲战队」完成防爆实战演习，机器狗搭载机械臂与灵掌 LZ-Pro 灵巧手远程进入风险区执行可疑危险品夹持转运。LZ-Pro 为 11 自由度，指尖力 30N，最高负载 30 公斤，循环寿命 300 万次以上。
+counterparties:
+- 无锡公安
+axes:
+  target_scene: [inspection-hazardous]
+  embodiment_form: [quadruped]
+evidence:
+- url: https://www.tmtnews.tech/archives/57341
+  publisher: 全球 TMT
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/tmtnews-2026-07-15-lingzhang-wuxi-police-eo.html
+corroboration: single

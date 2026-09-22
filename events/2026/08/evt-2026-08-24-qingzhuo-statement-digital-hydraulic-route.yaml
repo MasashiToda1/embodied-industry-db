@@ -1,0 +1,20 @@
+id: evt-2026-08-24-qingzhuo-statement-digital-hydraulic-route
+date: '2026-08-24'
+date_precision: day
+type: statement
+orgs:
+- id: qingzhuo
+  role: subject
+title:
+  zh: 清卓动力称选择液电混驱路线：小功率精细关节用电驱，大功率关节用数字液压
+summary:
+  zh: 机器人大讲堂 8 月 24 日刊发的报道中，清卓动力创始人称公司不排斥电驱，将电驱用于前臂转动、腕部旋动等小功率精细关节，臂展伸展、腰部驱动、腿部承载、灵巧手主驱动等大输出力部位全部搭载数字液压执行器；数字液压执行器由步进电机、丝杠机械反馈机构、液压控制元件和液压缸组成，位置闭环在机械侧完成。报道称其微型数字液压线性执行器本体约 1 公斤，额定工况输出吨级推力；公司计划向行业开放核心部件供应，计划 9 月启动新一轮融资。
+axes:
+  hardware_strategy: [in-house]
+evidence:
+- url: https://leaderobot.com/news/9305
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/leaderobot-2026-08-24-qingzhuo-hydraulic-route.html
+corroboration: single

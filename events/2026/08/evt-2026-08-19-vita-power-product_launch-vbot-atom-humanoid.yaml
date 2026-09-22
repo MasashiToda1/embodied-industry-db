@@ -1,0 +1,25 @@
+id: evt-2026-08-19-vita-power-product_launch-vbot-atom-humanoid
+date: '2026-08-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力在 WRC 2026 发布人形机器人 Vbot ATOM 并开放预订，大头 EDU-W 轮足版上市售 49,988 元
+summary:
+  zh: 8 月 19 日，维他动力在 2026 世界机器人大会举办全家族产品发布会，人形具身智能终端 Vbot ATOM 首次亮相并开放预订；「大头 EDU-W 轮足版」上市，官方指导价 49,988 元；同时发布 Vbot Embodied Genome 具身基因组技术体系及三大核心模型。报道称「大头」首销 6,540 台、订单金额近亿元，于 2026 年 5 月量产交付。
+amount:
+  value: 49988
+  currency: CNY
+axes:
+  target_scene: [home]
+  embodiment_form: [humanoid-biped, quadruped]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.xinhuanet.com/auto/20260822/552eab20bbfb45aab48880b1878f7938/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/xinhuanet-2026-08-19-vita-power-atom-launch.html
+corroboration: single

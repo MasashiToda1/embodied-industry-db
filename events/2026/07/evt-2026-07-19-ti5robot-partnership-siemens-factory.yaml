@@ -1,0 +1,22 @@
+id: evt-2026-07-19-ti5robot-partnership-siemens-factory
+date: '2026-07-19'
+date_precision: day
+type: partnership
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人与西门子签约共建具身智能标杆工厂
+summary:
+  zh: 7 月 19 日，在 WAIC 2026 期间，钛虎机器人科技（上海）有限公司与西门子签署项目合作协议，围绕研发数字化升级、无人黑灯工厂搭建、轻量化关节联合实验室、产业生态赋能、行业标准联合共建五个板块合作；西门子以产品生命周期管理、自动化产线能力支持钛虎贯通设计、仿真、精密加工和智能装配的数据链路。
+counterparties:
+- 西门子
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.ti5robot.com/h-nd-59.html
+  publisher: 钛虎机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/ti5robot-2026-07-19-ti5robot-siemens-factory.html
+corroboration: single

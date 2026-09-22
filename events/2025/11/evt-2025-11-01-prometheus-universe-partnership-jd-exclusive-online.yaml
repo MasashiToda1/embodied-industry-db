@@ -1,0 +1,22 @@
+id: evt-2025-11-01-prometheus-universe-partnership-jd-exclusive-online
+date: '2025-11-01'
+date_precision: day
+type: partnership
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙与京东达成全球线上独家销售合作
+summary:
+  zh: 11 月 1 日，普罗宇宙机器人在北京亦庄京东总部宣布与京东达成全球线上独家销售合作，京东成为普罗宇宙全球线上独家销售渠道，双方在产品销售、出海、技术支持、服务体系搭建、营销活动等方面合作。
+counterparties:
+- 京东
+axes:
+  delivery_model: [hardware-sale]
+evidence:
+- url: http://www.news.cn/tech/20251102/cfe660f0d68444f4bc39b5af68317b26/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/news-2025-11-01-prometheus-universe-daba.html
+corroboration: single

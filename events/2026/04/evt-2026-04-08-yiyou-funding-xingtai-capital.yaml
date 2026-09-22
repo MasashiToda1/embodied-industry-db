@@ -1,0 +1,23 @@
+id: evt-2026-04-08-yiyou-funding-xingtai-capital
+date: '2026-04-08'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，兴泰资本完成对……意优科技的投资交割」，取合肥在线报道日 2026-04-08
+type: funding
+orgs:
+- id: yiyou
+  role: subject
+title:
+  zh: 兴泰资本完成对意优科技投资交割，推动其在合肥落地子公司
+summary:
+  zh: 合肥在线 4 月 8 日报道，兴泰资本完成对上海意优智控科技有限公司的投资交割，并携手合肥高投推动意优科技在合肥落地子公司，建设人形机器人模组研发生产中心；金额未披露。报道称意优科技为智元机器人、卓益得机器人等人形机器人企业的关节定点供应商。
+counterparties:
+- 兴泰资本
+- 合肥高投
+evidence:
+- url: http://www.hfbb.com/hfcynews/plus/view.php?aid=50836
+  publisher: 合肥在线（合肥创业网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/hfbb-2026-04-08-yiyou-xingtai-hefei.html
+corroboration: single

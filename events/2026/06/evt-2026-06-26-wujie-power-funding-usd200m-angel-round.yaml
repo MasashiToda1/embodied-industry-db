@@ -1,0 +1,27 @@
+id: evt-2026-06-26-wujie-power-funding-usd200m-angel-round
+date: '2026-06-26'
+date_precision: day
+type: funding
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力宣布完成超 2 亿美元天使轮融资，京东关联基金等参投
+summary:
+  zh: 6 月 26 日，无界动力宣布完成超 2 亿美元天使轮融资，由京东关联基金、C 资本、弘毅投资、盛宇投资等联合投资，老股东线性资本、红杉中国、华业天成、雅瑞资本等跟投，近 2 亿美元 Pre-A 轮融资接近收官。公司称已签署总额近 1 亿美元的全球订单，其中与远景科技集团签署超 5 亿元海外部署合作，并与 ZF LIFETEC、欧摩威集团达成战略合作；第二代机器人 K15 已开启批量投产。
+counterparties:
+- 京东关联基金
+- C 资本
+- 弘毅投资
+- 盛宇投资
+- 线性资本
+- 红杉中国
+- 华业天成
+- 雅瑞资本
+evidence:
+- url: https://www.nbd.com.cn/articles/2026-06-26/4439245.html
+  publisher: 每经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/nbd-2026-06-26-wujie-power-usd200m-roun.html
+corroboration: single

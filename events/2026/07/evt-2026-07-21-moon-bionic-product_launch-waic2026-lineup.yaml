@@ -1,0 +1,23 @@
+id: evt-2026-07-21-moon-bionic-product_launch-waic2026-lineup
+date: '2026-07-21'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「已推出四大核心产品线，并于近日的 2026 世界人工智能大会（WAIC）上亮相」，取 36 氪 2026-07-21 报道日
+type: product_launch
+orgs:
+- id: moon-bionic
+  role: subject
+title:
+  zh: 月泉仿生在 WAIC 2026 展出 Y-Hand M2 38 自由度灵巧手、X-Hand M1 与博文 W-Bot 2.0 轮式人形
+summary:
+  zh: 36 氪报道，月泉仿生在 WAIC 2026 展出四大产品线：应手 Y-Hand M1 灵巧手掌部重 299.7g、26 自由度、五指抓握力 200N（7 月初发布），Y-Hand M2 具备 38 个自由度；信手 X-Hand M1 为面向工业场景的刚性灵巧手，最大负重 50kg；YQ Motors 系列电机覆盖 4–22mm 七个系列；轮式人形整机博文 W-Bot 2.0 底盘 0.238㎡，工作空间覆盖离地 0–2.2m。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.36kr.com/p/3899174356387718
+  publisher: 36 氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/36kr-2026-07-21-moon-bionic-waic2026-lin.html
+corroboration: single

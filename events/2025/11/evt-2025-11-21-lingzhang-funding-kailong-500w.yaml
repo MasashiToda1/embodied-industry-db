@@ -1,0 +1,23 @@
+id: evt-2025-11-21-lingzhang-funding-kailong-500w
+date: '2025-11-21'
+date_precision: day
+type: funding
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 凯龙高科拟以 500 万元增资灵掌机器人，投后估值 2 亿元
+summary:
+  zh: 11 月 21 日，凯龙高科技股份有限公司公告，拟以货币方式对无锡灵掌机器人科技有限公司增资 500 万元，按增资后整体估值 2 亿元定价，增资完成后持有灵掌机器人 2.50% 股权；本次增资前凯龙高科实际控制人已参股灵掌机器人 2%，构成关联交易。
+counterparties:
+- 凯龙高科
+amount:
+  value: 5000000
+  currency: CNY
+evidence:
+- url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=11626602&stockid=300912
+  publisher: 凯龙高科公告（新浪财经转载）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/vip-2025-11-21-lingzhang-kailong-500w.html
+corroboration: single

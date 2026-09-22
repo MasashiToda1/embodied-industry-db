@@ -1,0 +1,20 @@
+id: evt-2026-06-13-lingzhang-statement-tendon-hybrid-industrial
+date: '2026-06-13'
+date_precision: day
+type: statement
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 灵掌机器人 CTO 称采用仿生腱绳混合驱动灵巧手路线，聚焦工业场景
+summary:
+  zh: 6 月 13 日发布的访谈中，灵掌机器人 CTO 称公司定位为「垂类场景 + 全栈自研 + 灵巧操作模型」，技术路线上采用仿生腱绳混合驱动灵巧手，聚焦工业场景并结合垂直场景专用操作模型；主力产品 LZ-Pro 为 11 自由度、动态负载 15 公斤，LZ-Explore 为 23 自由度、动态负载 30 公斤，指尖力 40N、200 万次循环寿命；2025 年实现样品及小批量销售。
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-06-13/doc-inicfkwz1791391.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/finance-2026-06-13-lingzhang-cto-interview.html
+corroboration: single

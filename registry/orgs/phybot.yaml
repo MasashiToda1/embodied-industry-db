@@ -2,7 +2,26 @@ id: phybot
 names:
   zh: 动易科技
   en: PhyBot
+  aliases:
+  - PHYBOT
+  - 北京动易科技
 status: active
 layers:
 - embodiment
 - components
+founded: 2024-09
+hq:
+  country: CN
+  city: 北京
+description: 做人形机器人整机与摆线关节模组的公司，产品有 PHYBOT M1 全尺寸人形、PHYBOT C2 服务人形、PHYBOT D1 四足与第三代 PhyArc 关节模组，广州设智造中心。
+accounts:
+  site: https://www.phybot.tech
+sources:
+- url: https://www.leiphone.com/category/robot/TloGQaOctENasvyL.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 雷峰网报道，动易科技成立于 2024 年 9 月，广州智造中心于 2026 年 2 月落地
+- url: https://m.zhidx.com/p/533960.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 智东西报道，北京具身创企，广州智造中心年产整机超 400 台
