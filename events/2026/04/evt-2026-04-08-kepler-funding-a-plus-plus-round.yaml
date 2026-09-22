@@ -1,0 +1,22 @@
+id: evt-2026-04-08-kepler-funding-a-plus-plus-round
+date: '2026-04-08'
+date_precision: day
+type: funding
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒机器人完成亿元级 A++ 轮融资，赛富投资基金领投
+summary:
+  zh: 4 月 8 日晚间，开普勒机器人宣布完成亿元级 A++ 轮融资，由赛富投资基金领投，诺力股份（603611）、民爆光电（301362）战略入股。公司称将聚焦具身智能大脑建设与力触觉数据采集，并将发布适配 VTLA 全感知模型的力触觉全栈数采解决方案。
+counterparties:
+- 赛富投资基金（领投）
+- 诺力股份（603611.SH）
+- 民爆光电（301362.SZ）
+evidence:
+- url: https://finance.ifeng.com/c/8sAHIG9n22E
+  publisher: 凤凰网财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-08-kepler-a-plus-plus-round.html
+corroboration: single

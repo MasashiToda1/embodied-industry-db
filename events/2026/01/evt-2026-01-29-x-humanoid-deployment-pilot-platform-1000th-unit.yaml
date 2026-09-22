@@ -1,0 +1,18 @@
+id: evt-2026-01-29-x-humanoid-deployment-pilot-platform-1000th-unit
+date: '2026-01-29'
+date_precision: day
+type: deployment
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心中试验证平台启动，第 1000 台客户定制化样机下线
+summary:
+  zh: 1 月 29 日，北京人形机器人创新中心中试验证平台在北京亦庄正式启动，现场下线第 1000 台客户定制化人形机器人样机。平台占地 9700 平米，2025 年建成投产，拥有 500 台套试制生产和测试设备，具备具身智能机器人年产能 5000 台套的能力，面向产业链企业、高校、科研院所开放试制打样、工艺验证、装调与测试服务。
+evidence:
+- url: https://kw.beijing.gov.cn/xwdt/kcyx/xwdtscyqld/202601/t20260130_4477386.html
+  publisher: 北京市科委·中关村管委会（转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/kw-2026-01-29-x-humanoid-pilot-platfor.html
+corroboration: single

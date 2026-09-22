@@ -1,0 +1,22 @@
+id: evt-2025-09-rokae-deployment-agibot-humanoid-arms
+date: 2025-09
+date_precision: month
+type: deployment
+orgs:
+- id: rokae
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 珞石与智元签订协议，供应仿人机械臂
+summary:
+  zh: 2025 年 9 月，珞石机器人与智元签订协议，为其提供仿人机械臂，集成到智元的人形产品中。
+axes:
+  embodiment_form: [arm]
+evidence:
+- url: https://m.gelonghui.com/p/5510236
+  publisher: 格隆汇
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/m-2026-07-09-rokae-hk-ipo.html
+corroboration: single

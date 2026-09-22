@@ -1,0 +1,38 @@
+id: evt-2026-04-02-galaxea-funding-b-plus-round-2b
+date: '2026-04-02'
+date_precision: day
+type: funding
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图完成 20 亿元 B+ 轮融资
+summary:
+  zh: 4 月 2 日，星海图宣布完成 20 亿元 B+ 轮融资，投资方包括华登科技、蓝思科技、矽芯投资、时代伯乐、航发基金、修远资本、弘章投资、御海资本、金融街资本、金浦投资、北京科创、国元股权、中金资本旗下基金、普华资本、洪泰基金、广发乾和等。报道称本轮距上轮融资 1 个月，估值突破 200 亿元。另有媒体报道称本轮金额为「近 20 亿元」。
+counterparties:
+- 华登科技
+- 蓝思科技
+- 矽芯投资
+- 时代伯乐
+- 航发基金
+- 修远资本
+- 弘章投资
+- 御海资本
+- 金融街资本
+- 金浦投资
+- 北京科创
+- 国元股权
+- 中金资本
+- 普华资本
+- 洪泰基金
+- 广发乾和
+amount:
+  value: 2000000000
+  currency: CNY
+evidence:
+- url: https://tech.caijing.com.cn/20260402/5151629.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/tech-2026-04-02-galaxea-b-plus-round.html
+corroboration: single

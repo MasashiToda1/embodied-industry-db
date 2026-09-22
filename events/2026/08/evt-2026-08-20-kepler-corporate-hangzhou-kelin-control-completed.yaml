@@ -1,0 +1,20 @@
+id: evt-2026-08-20-kepler-corporate-hangzhou-kelin-control-completed
+date: '2026-08-20'
+date_precision: day
+type: corporate
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒完成工商变更登记，成为杭州柯林控股子公司
+summary:
+  zh: 8 月 20 日，杭州柯林公告称，收购开普勒 41.57% 股权事项已于 2026 年 6 月 5 日经 2026 年第一次临时股东会审议通过，开普勒近日完成工商变更登记并换发《营业执照》。变更完成后杭州柯林持有开普勒 51.00% 股权，开普勒成为其控股子公司并纳入合并报表。公告载明开普勒成立日期为 2023 年 8 月 15 日，注册资本 410.5661 万元，法定代表人杨华。
+counterparties:
+- 杭州柯林电气股份有限公司（688611.SH，控股方）
+evidence:
+- url: https://paper.cnstock.com/html/2026-08/20/content_2256617.htm
+  publisher: 上海证券报（杭州柯林公告 2026-018）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/paper-2026-08-20-kepler-kelin-completed.html
+corroboration: single

@@ -1,0 +1,35 @@
+id: evt-2026-07-06-roboterax-funding-1b-round
+date: '2026-07-06'
+date_precision: day
+type: funding
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元完成新一轮 10 亿元融资，诚通基金领投
+summary:
+  zh: 7 月 6 日，星动纪元宣布完成新一轮 10 亿元融资，由诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等国资参与，中金雷诺、九坤创投、弘毅投资、君泰资本、盛赫资本跟投，老股东厚雪资本、清控天诚、千山资本追加投资。报道称公司 2026 年以来累计融资接近 50 亿元。
+counterparties:
+- 诚通基金（领投）
+- 江西国控
+- 国元股权
+- 渝富中新基金
+- 杭州资本
+- 中金雷诺
+- 九坤创投
+- 弘毅投资
+- 君泰资本
+- 盛赫资本
+- 厚雪资本
+- 清控天诚
+- 千山资本
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://wallstreetcn.com/articles/3776271
+  publisher: 华尔街见闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/wallstreetcn-2026-07-06-roboterax-1b-round.html
+corroboration: single

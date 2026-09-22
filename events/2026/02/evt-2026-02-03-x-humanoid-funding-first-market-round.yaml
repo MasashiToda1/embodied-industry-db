@@ -1,0 +1,25 @@
+id: evt-2026-02-03-x-humanoid-funding-first-market-round
+date: '2026-02-03'
+date_precision: day
+type: funding
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心完成首轮超 7 亿元市场化融资
+summary:
+  zh: 2 月 3 日，北京人形机器人创新中心完成首轮超 7 亿元市场化融资，投资方包括北京市人工智能产业投资基金、亦庄国投、北京高精尖基金、华控基金，并获得百度、东土科技等产业方战略投资。资金重点投入「具身天工」与「慧思开物」两大平台的技术迭代与规模化推广。
+counterparties:
+- 北京市人工智能产业投资基金
+- 亦庄国投
+- 北京高精尖基金
+- 华控基金
+- 百度
+- 东土科技
+evidence:
+- url: http://jjckb.xinhuanet.com/20260203/4004edaf36254db98159bab1fc57764d/c.html
+  publisher: 经济参考网（新华社）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/jjckb-2026-02-03-x-humanoid-first-round.html
+corroboration: single

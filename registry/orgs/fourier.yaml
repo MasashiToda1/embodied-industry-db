@@ -6,6 +6,11 @@ names:
   - Fourier
   - 傅利叶智能
   - 傅利叶
+founded: 2015
+hq:
+  country: CN
+  city: 上海
+description: 从康复机器人起家的人形机器人公司，产品有 GR-1、GR-2、GR-3 系列人形机器人、开源人形 N1 与轮式双臂 GRW。
 status: active
 layers:
 - embodiment
@@ -14,3 +19,13 @@ upstream:
 accounts:
   huggingface: FourierIntelligence
   github: FFTAI
+  site: https://www.fftai.com
+sources:
+- url: https://www.stcn.com/article/detail/2975614.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报：傅利叶由顾捷创立于 2015 年，总部位于上海；公司主体上海傅利叶智能科技有限公司
+- url: https://www.fftai.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网（前端渲染，未取到文本，仅作站点来源）

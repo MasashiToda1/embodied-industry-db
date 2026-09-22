@@ -1,0 +1,28 @@
+id: evt-2025-11-28-ubtech-procurement-jiujiang-143m
+date: '2025-11-28'
+date_precision: day
+type: procurement
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选中标九江市人形机器人数据采集与训练中心项目，金额 1.43 亿元
+summary:
+  zh: 11 月 28 日，优必选中标江西九江市人形机器人数据采集与训练中心项目，中标金额 1.43 亿元，项目采用可自主换电的工业人形机器人 Walker S2。报道称截至当时优必选 Walker 系列人形机器人 2025 年全年订单总金额达 13 亿元。
+counterparties:
+- 九江市人形机器人数据采集与训练中心项目（采购方）
+amount:
+  value: 143000000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.cls.cn/detail/2213431
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/cls-2025-11-28-ubtech-jiujiang-143m.html
+corroboration: single

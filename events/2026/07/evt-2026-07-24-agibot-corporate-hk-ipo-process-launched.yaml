@@ -1,0 +1,18 @@
+id: evt-2026-07-24-agibot-corporate-hk-ipo-process-launched
+date: '2026-07-24'
+date_precision: day
+type: corporate
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元创新宣布启动赴港上市流程
+summary:
+  zh: 7 月 24 日，智元创新（上海）科技股份有限公司表示已启动赴港上市流程，暂未披露保荐机构、递表时间及募资规模。智元官方披露 2025 年营收 10.5 亿元；报道称智元已完成 10 轮融资，投资方超过 50 家。
+evidence:
+- url: https://finance.sina.com.cn/wm/2026-07-25/doc-iniiyptt1420151.shtml
+  publisher: 新浪财经（转载《财经》）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-24-agibot-hk-ipo-launch.html
+corroboration: single

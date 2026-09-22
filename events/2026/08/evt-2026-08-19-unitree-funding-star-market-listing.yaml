@@ -1,0 +1,18 @@
+id: evt-2026-08-19-unitree-funding-star-market-listing
+date: '2026-08-19'
+date_precision: day
+type: funding
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技在上交所科创板挂牌上市，证券代码 688836
+summary:
+  zh: 8 月 17 日晚间，宇树科技发布上市公告书，股票于 8 月 19 日在上交所科创板挂牌交易，证券代码 688836.SH，发行价 150.8 元/股，本次公开发行 4044.64 万股，占发行后总股本的 10%。报道称从 3 月 20 日受理到 7 月 2 日注册生效全程 104 天，网上发行中签率 0.01809759%。
+evidence:
+- url: https://www.36kr.com/p/3943674198218376
+  publisher: 36氪（转载 ZAKER 财经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/36kr-2026-08-19-unitree-star-listing.html
+corroboration: single

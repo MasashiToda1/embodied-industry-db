@@ -1,0 +1,25 @@
+id: evt-2026-08-fourier-product_launch-gr3c-wrc
+date: 2026-08
+date_precision: month
+type: product_launch
+orgs:
+- id: fourier
+  role: subject
+- id: robosense
+  role: supplier
+title:
+  zh: 傅利叶在 WRC 2026 推出 GR-3C，Ultra 版搭载速腾聚创 Airy 激光雷达
+summary:
+  zh: 2026 世界机器人大会（WRC）期间，傅利叶携第三代人形机器人 GR-3 系列亮相，推出以交互服务为主导的 GR-3 和以功能服务为主导的 GR-3C 两款产品，其中 GR-3C「宇航员」Ultra 版本搭载速腾聚创半球形数字化激光雷达 Airy。现场展示「具身之家」方案，多台 GR-3 在模拟居家场景中完成安防、物品取送、访客接待等任务。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - home
+evidence:
+- url: https://www.ne-time.cn/web/article/39527
+  publisher: NE 时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/ne-time-2026-08-fourier-gr3c-wrc.html
+corroboration: single

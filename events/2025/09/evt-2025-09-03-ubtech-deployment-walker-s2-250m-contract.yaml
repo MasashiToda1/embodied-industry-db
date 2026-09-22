@@ -1,0 +1,28 @@
+id: evt-2025-09-03-ubtech-deployment-walker-s2-250m-contract
+date: '2025-09-03'
+date_precision: day
+type: deployment
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选获 2.5 亿元人形机器人采购合同，以 Walker S2 为主
+summary:
+  zh: 9 月 3 日晚间，优必选宣布获得某国内知名企业 2.5 亿元具身智能人形机器人产品及解决方案采购合同，合同以人形机器人 Walker S2（具备自主热插拔换电系统）为主，年内启动交付。报道称截至当时 Walker 系列人形机器人已获得近 4 亿元合同。
+counterparties:
+- 某国内知名企业（采购方，未披露名称）
+amount:
+  value: 250000000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.stcn.com/article/detail/3322201.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/stcn-2025-09-03-ubtech-250m-contract.html
+corroboration: single

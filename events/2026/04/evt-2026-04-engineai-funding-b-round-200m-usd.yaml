@@ -1,0 +1,32 @@
+id: evt-2026-04-engineai-funding-b-round-200m-usd
+date: 2026-04
+date_precision: month
+type: funding
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人完成 2 亿美元 B 轮融资，估值突破百亿元
+summary:
+  zh: 2026 年 4 月 10 日报道，近日众擎机器人完成总额 2 亿美元的 B 轮融资，融资后估值突破百亿元人民币。本轮由河南投资集团汇融基金再度领投，立讯精密联合领投，中创智领战投、基石资本、龙岗金控、金谷资本、财通资本、多伦科技战投等参与，黄浦江资本、星航资本等老股东跟投。
+counterparties:
+- 河南投资集团汇融基金（领投）
+- 立讯精密（联合领投）
+- 中创智领
+- 基石资本
+- 龙岗金控
+- 金谷资本
+- 财通资本
+- 多伦科技
+- 黄浦江资本
+- 星航资本
+amount:
+  value: 200000000
+  currency: USD
+evidence:
+- url: https://finance.sina.com.cn/wm/2026-04-10/doc-inhtywee0331497.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-engineai-b-round.html
+corroboration: single

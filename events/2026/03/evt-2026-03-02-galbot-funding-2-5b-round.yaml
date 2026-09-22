@@ -1,0 +1,33 @@
+id: evt-2026-03-02-galbot-funding-2-5b-round
+date: '2026-03-02'
+date_precision: day
+type: funding
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用宣布完成 25 亿元新一轮融资
+summary:
+  zh: 3 月 2 日，银河通用机器人宣布完成 25 亿元新一轮融资，投资方包括国家人工智能产业投资基金、中国石化、中信投资控股、中银资产、上汽金控、中芯聚源、亦庄国投、鲲鹏基金、无锡创投、福建产投、成都科创投等，多家老股东追加投资。银河通用称本轮融资后公司累计融资额为中国具身智能领域首位。
+counterparties:
+- 国家人工智能产业投资基金
+- 中国石化
+- 中信投资控股
+- 中银资产
+- 上汽金控
+- 中芯聚源
+- 亦庄国投
+- 鲲鹏基金
+- 无锡创投
+- 福建产投
+- 成都科创投
+amount:
+  value: 2500000000
+  currency: CNY
+evidence:
+- url: https://www.caixin.com/2026-03-02/102418619.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/caixin-2026-03-02-galbot-2-5b-round.html
+corroboration: single

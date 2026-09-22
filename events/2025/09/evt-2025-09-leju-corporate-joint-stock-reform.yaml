@@ -1,0 +1,18 @@
+id: evt-2025-09-leju-corporate-joint-stock-reform
+date: 2025-09
+date_precision: month
+type: corporate
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚机器人完成股改，更名为乐聚智能（深圳）股份有限公司
+summary:
+  zh: 2025 年 9 月，乐聚机器人发生市场主体类型变更，从有限责任公司变更为股份有限公司（非上市、自然人投资或控股），工商注册名称从乐聚（深圳）机器人技术有限公司变更为乐聚智能（深圳）股份有限公司。公司负责人称 IPO 计划在推进中。
+evidence:
+- url: https://www.chnfund.com/article/AR5ea79dfd-bd7b-0bf5-c728-3a1d1eaf3087
+  publisher: 中国基金报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/chnfund-2025-09-leju-joint-stock.html
+corroboration: single

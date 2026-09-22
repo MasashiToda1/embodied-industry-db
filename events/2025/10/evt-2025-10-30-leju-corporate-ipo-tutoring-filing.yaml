@@ -1,0 +1,20 @@
+id: evt-2025-10-30-leju-corporate-ipo-tutoring-filing
+date: '2025-10-30'
+date_precision: day
+type: corporate
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚智能在深圳证监局办理 A 股上市辅导备案，辅导券商为东方证券
+summary:
+  zh: 10 月 30 日，乐聚智能（深圳）股份有限公司在深圳证监局办理辅导备案登记，辅导券商为东方证券，备案报告称将于 2026 年 3 月至 6 月完成辅导工作。
+counterparties:
+- 东方证券（辅导机构）
+evidence:
+- url: https://news.cnr.cn/native/gd/kx/20251103/t20251103_527417303.shtml
+  publisher: 央广网（转载证券时报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/news-2025-10-30-leju-ipo-tutoring.html
+corroboration: single

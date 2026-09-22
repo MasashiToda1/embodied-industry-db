@@ -1,0 +1,22 @@
+id: evt-2025-09-23-agibot-corporate-swancor-share-transfer
+date: '2025-09-23'
+date_precision: day
+type: corporate
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 上纬新材协议转让股份完成过户，智元恒岳成为控股股东
+summary:
+  zh: 9 月 23 日晚间，上纬新材公告，股东 SWANCOR 萨摩亚、STRATEGIC 萨摩亚及金风投控协议转让公司股份事宜已完成过户登记手续。权益变动后，智元恒岳和致远新创合伙合计持有上市公司 29.99% 的股份，控股股东变更为智元恒岳，邓泰华成为实际控制人。智元恒岳是智元机器人关联公司上海智元新创技术有限公司及其核心团队共同出资设立的持股平台。
+counterparties:
+- 上纬新材（688585.SH，被收购方）
+- SWANCOR 萨摩亚（转让方）
+- 金风投控（转让方）
+evidence:
+- url: https://www.cls.cn/detail/2153787
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/cls-2025-09-23-agibot-swancor-transfer.html
+corroboration: single

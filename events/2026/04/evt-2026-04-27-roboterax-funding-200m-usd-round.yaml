@@ -1,0 +1,30 @@
+id: evt-2026-04-27-roboterax-funding-200m-usd-round
+date: '2026-04-27'
+date_precision: day
+type: funding
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元完成超 2 亿美元新一轮融资，顺丰集团领投
+summary:
+  zh: 4 月 27 日，星动纪元宣布完成超 2 亿美元新一轮融资，由顺丰集团领投，红杉中国、IDG 资本、中金资本、京铭资本等联合注资，科捷智能、东风产投、工银资本、联通旗下基金等产业方参与，老股东清控天诚、鸿瑞达增持。公司称已与中国邮政、顺丰集团等合作落地 10 余个物流中心，并在 2026 年第二季度开启千台级机器人批量交付。
+counterparties:
+- 顺丰集团（领投）
+- 红杉中国
+- IDG 资本
+- 中金资本
+- 京铭资本
+- 科捷智能
+- 东风产投
+- 工银资本
+- 联通旗下基金
+- 清控天诚
+- 鸿瑞达
+evidence:
+- url: https://stcn.com/article/detail/3821910.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stcn-2026-04-27-roboterax-200m-usd-round.html
+corroboration: single

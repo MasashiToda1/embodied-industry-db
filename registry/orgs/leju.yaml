@@ -2,8 +2,28 @@ id: leju
 names:
   zh: 乐聚机器人
   en: Leju
+founded: 2016
+hq:
+  country: CN
+  city: 深圳
+description: 做人形机器人整机的公司，公司主体乐聚智能（深圳）股份有限公司，产品有全尺寸夸父（Kuavo）、鲁班（Roban）与 Aelos 系列。
 status: active
 layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: leju
+accounts:
+  site: https://www.lejurobot.com
+sources:
+- url: https://www.cls.cn/detail/2176420
+  tier: media
+  retrieved: '2026-09-22'
+  note: 科创板日报：乐聚机器人成立于 2016 年，2025 年 9 月更名为乐聚智能（深圳）股份有限公司
+- url: https://www.thepaper.cn/newsDetail_forward_33200994
+  tier: media
+  retrieved: '2026-09-22'
+  note: 澎湃新闻（引招股书）：主要产品夸父、鲁班、Aelos 系列
+- url: https://www.chnfund.com/article/AR5ea79dfd-bd7b-0bf5-c728-3a1d1eaf3087
+  tier: media
+  retrieved: '2026-09-22'
+  note: 中国基金报：总部位于深圳机器人谷

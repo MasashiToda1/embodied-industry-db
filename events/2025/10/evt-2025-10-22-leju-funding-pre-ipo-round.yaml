@@ -1,0 +1,34 @@
+id: evt-2025-10-22-leju-funding-pre-ipo-round
+date: '2025-10-22'
+date_precision: day
+type: funding
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚机器人完成 Pre-IPO 轮融资，深投控资本等联合投资
+summary:
+  zh: 10 月 22 日报道，乐聚机器人于近日完成 Pre-IPO 轮融资，金额规模 15 亿元（另有报道为「近 15 亿元」），由深投控资本、深圳龙华资本、前海基础投资、石景山产业基金、东方精工、拓普集团、中信金石、中证投资、道禾长期投资、盛奕资本、联新资本、探针创投、合肥产投、玖兆投资及中美绿色基金联合投资。
+counterparties:
+- 深投控资本
+- 深圳龙华资本
+- 前海基础投资
+- 石景山产业基金
+- 东方精工
+- 拓普集团
+- 中信金石
+- 中证投资
+- 道禾长期投资
+- 盛奕资本
+- 联新资本
+- 探针创投
+- 合肥产投
+- 玖兆投资
+- 中美绿色基金
+evidence:
+- url: https://www.cls.cn/detail/2176420
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/cls-2025-10-22-leju-pre-ipo-round.html
+corroboration: single

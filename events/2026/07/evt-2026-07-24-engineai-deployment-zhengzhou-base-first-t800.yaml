@@ -1,0 +1,26 @@
+id: evt-2026-07-24-engineai-deployment-zhengzhou-base-first-t800
+date: '2026-07-24'
+date_precision: day
+type: deployment
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 首批「河南造」众擎 T800 在郑州云智基地下线
+summary:
+  zh: 7 月 24 日，首批「河南造」众擎 T800 人形机器人在郑州高新区的众擎智能制造（郑州云智）基地下线，将陆续发往中国、北美、欧洲及东南亚市场。基地一期建筑面积约 8000 平方米。河南投资集团联合郑州产投、郑州高新产投、洛阳工控集团战略投资众擎机器人。
+counterparties:
+- 河南投资集团
+- 郑州产投
+- 郑州高新产投
+- 洛阳工控集团
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.gasgoo.com/robot/news/70467259-%E9%A6%96%E6%89%B9-%E6%B2%B3%E5%8D%97%E9%80%A0-%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA-%E6%AD%A3%E5%BC%8F%E4%B8%8B%E7%BA%BF%E4%BA%86/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/gasgoo-2026-07-24-engineai-zhengzhou-base.html
+corroboration: single

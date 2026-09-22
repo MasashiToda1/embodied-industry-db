@@ -1,0 +1,25 @@
+id: evt-2025-11-18-astribot-funding-a-plus-plus-round
+date: '2025-11-18'
+date_precision: day
+type: funding
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能完成数亿元 A++ 轮融资，国科投资与蚂蚁集团联合领投
+summary:
+  zh: 11 月 18 日，星尘智能（Astribot）完成数亿元 A++ 轮融资，由国科投资和蚂蚁集团联合领投，Bloom Advance Capital、时代伯乐、南山战新投跟投，老股东锦秋基金追投。资金用于研发人才梯队建设、绳驱本体规模化制造准备及多场景解决方案深化。公司称已在 10 月 IROS 展示半身商用机器人 Astribot S1-U。
+counterparties:
+- 国科投资（联合领投）
+- 蚂蚁集团（联合领投）
+- Bloom Advance Capital
+- 时代伯乐
+- 南山战新投
+- 锦秋基金
+evidence:
+- url: https://stcn.com/article/detail/3499749.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-18-astribot-a-plus-plus-rou.html
+corroboration: single

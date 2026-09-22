@@ -1,0 +1,26 @@
+id: evt-2026-06-03-astribot-funding-b-round-series
+date: '2026-06-03'
+date_precision: day
+type: funding
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能完成 B 轮系列融资，三个月内三轮融资总额超 10 亿元，估值突破百亿元
+summary:
+  zh: 6 月 3 日，星尘智能宣布完成 B 轮系列融资，三个月内连续完成 3 轮融资，融资总额超 10 亿元，估值突破百亿元。投资方包括梁溪科创产业二期母基金（博华资本管理）、扬州龙投芯粒、中博聚力，中科创达、科德教育等产业投资方，以及国科投资等老股东追投，华兴资本担任独家财务顾问。公司称于 2025 年底开启千台级交付。
+counterparties:
+- 梁溪科创产业二期母基金（博华资本管理）
+- 扬州龙投芯粒
+- 中博聚力
+- 中科创达
+- 科德教育
+- 国科投资
+- 华兴资本（财务顾问）
+evidence:
+- url: https://www.bbtnews.com.cn/2026/0603/595200.shtml
+  publisher: 北京商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/bbtnews-2026-06-03-astribot-b-round.html
+corroboration: single

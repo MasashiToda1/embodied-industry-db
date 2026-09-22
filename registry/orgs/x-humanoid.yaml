@@ -2,6 +2,11 @@ id: x-humanoid
 names:
   zh: 北京人形机器人创新中心
   en: X-Humanoid
+founded: 2023-11
+hq:
+  country: CN
+  city: 北京
+description: 国家地方共建具身智能机器人创新中心，公司主体北京人形机器人创新中心有限公司，做通用机器人平台「具身天工」与具身智能平台「慧思开物」。
 status: active
 layers:
 - embodiment
@@ -10,3 +15,13 @@ upstream:
   robotics_notebooks_institution: x-humanoid
 accounts:
   huggingface: X-Humanoid
+  site: https://www.x-humanoid.com
+sources:
+- url: https://www.x-humanoid.com/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介：2023 年 11 月成立，2024 年 10 月挂牌国家地方共建具身智能机器人创新中心
+- url: https://kw.beijing.gov.cn/xwdt/kcyx/xwdtyqqy/202602/t20260204_4489952.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 北京市科委：2023 年在北京亦庄注册成立，由京城机电、优必选、亦庄机器人、首程资本等发起

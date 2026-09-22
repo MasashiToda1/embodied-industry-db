@@ -1,0 +1,20 @@
+id: evt-2026-06-28-agibot-deployment-15000th-unit
+date: '2026-06-28'
+date_precision: day
+type: deployment
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人第 1.5 万台通用具身机器人（精灵 G2）下线
+summary:
+  zh: 6 月 28 日下午，上海智元机器人精灵 G2 正式下线，这是智元量产的第 1.5 万台通用具身机器人，距第 1 万台下线不到三个月。报道称第 5000 台为灵犀 X2，第 1 万台为远征 A3，第 1.5 万台为精灵 G2。
+date_basis: derived
+date_as_stated: 人民网 2026-06-29 报道原文「昨天下午」
+evidence:
+- url: http://sh.people.com.cn/n2/2026/0629/c138654-41623829.html
+  publisher: 人民网上海频道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/sh-2026-06-28-agibot-15000th-unit.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-02-10-x-humanoid-product_launch-tiangong-3
+date: '2026-02-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心发布通用机器人平台具身天工 3.0
+summary:
+  zh: 2 月 10 日，北京人形机器人创新中心发布新一代通用机器人平台具身天工 3.0，身高约 1.69 米、体重 62 千克、全身 43 个自由度，现场演示单手支撑翻越约 1 米高障碍。硬件预留多类型拓展接口，软件基于「慧思开物」平台提供开发文档、工具链及低代码开发平台。
+axes:
+  embodiment_form:
+  - humanoid-biped
+date_basis: derived
+date_as_stated: 北京日报 2026-02-11 报道原文「昨天」
+evidence:
+- url: https://www.beijing.gov.cn/ywdt/gzdt/202602/t20260211_4507573.html
+  publisher: 首都之窗（转载北京日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/beijing-2026-02-10-x-humanoid-tiangong-3.html
+corroboration: single

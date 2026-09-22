@@ -1,0 +1,21 @@
+id: evt-2025-10-20-unitree-product_launch-h2
+date: '2025-10-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技发布全尺寸人形机器人 Unitree H2
+summary:
+  zh: 10 月 20 日，宇树科技通过视频发布身高 180cm 的人形机器人 Unitree H2，全身自由度 31 个，视频中完成芭蕾、武术等动作。这是继 H1、G1 和 R1 之后宇树公开的第四款人形机器人产品，发布时未公布速度、负载等完整性能参数。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://wallstreetcn.com/articles/3757489
+  publisher: 华尔街见闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/wallstreetcn-2025-10-20-unitree-h2-launch.html
+corroboration: single

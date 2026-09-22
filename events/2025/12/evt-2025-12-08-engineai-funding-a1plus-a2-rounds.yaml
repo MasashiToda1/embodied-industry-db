@@ -1,0 +1,22 @@
+id: evt-2025-12-08-engineai-funding-a1plus-a2-rounds
+date: '2025-12-08'
+date_precision: day
+type: funding
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人完成 A1+ 轮与 A2 轮融资
+summary:
+  zh: 12 月 8 日，众擎机器人通过 GlobeNewswire 发布新闻稿，宣布在 Pre-A++ 与 A1 轮累计 10 亿元融资之后，完成 A1+ 轮与 A2 轮融资。A2 轮由黄浦江资本领投，河南投资集团汇融基金、TH Capital 跟投。新闻稿未披露本轮金额。
+counterparties:
+- 黄浦江资本（领投）
+- 河南投资集团汇融基金
+- TH Capital
+evidence:
+- url: https://www.globenewswire.com/news-release/2025/12/08/3201421/0/en/1-billion-financing-empowers-engineai-t800-comes-out-in-a-big-way-accelerating-industrialization-process.html
+  publisher: GlobeNewswire（众擎机器人新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/globenewswir-2025-12-08-engineai-a1plus-a2-round.html
+corroboration: single

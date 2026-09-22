@@ -1,0 +1,21 @@
+id: evt-2025-11-12-ubtech-deployment-walker-s2-mass-delivery
+date: '2025-11-12'
+date_precision: day
+type: deployment
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选首批数百台 Walker S2 开启量产交付
+summary:
+  zh: 11 月 12 日，优必选首批数百台全尺寸工业人形机器人 Walker S2 正式开启量产交付，将分批投入产业一线应用，官方同步发布交付视频「亮剑集结，全力以付」。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.ithome.com/0/897/076.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/ithome-2025-11-12-ubtech-walker-s2-deliver.html
+corroboration: single

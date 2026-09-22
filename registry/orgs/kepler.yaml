@@ -2,6 +2,22 @@ id: kepler
 names:
   zh: 开普勒机器人
   en: Kepler Robotics
+founded: 2023-08
+hq:
+  country: CN
+  city: 上海
+description: 做工业级人形机器人的公司，公司主体上海开普勒机器人有限公司，产品有先行者 K1、K2 大黄蜂；2026 年成为杭州柯林（688611）控股子公司。
 status: active
 layers:
 - embodiment
+accounts:
+  site: https://www.gotokepler.com
+sources:
+- url: https://paper.cnstock.com/html/2026-08/20/content_2256617.htm
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 杭州柯林公告（上海证券报刊载）：开普勒成立日期 2023 年 8 月 15 日，注册地址中国（上海）自由贸易试验区，法定代表人杨华
+- url: https://www.prnasia.com/story/505189-1.shtml
+  tier: official
+  retrieved: '2026-09-22'
+  note: 开普勒新闻稿：产品 K2 大黄蜂

@@ -1,0 +1,23 @@
+id: evt-2025-11-20-roboterax-funding-a-plus-round
+date: '2025-11-20'
+date_precision: day
+type: funding
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元完成近 10 亿元 A+ 轮融资，吉利资本领投
+summary:
+  zh: 11 月 20 日，星动纪元完成近 10 亿元 A+ 轮融资，由吉利资本领投，北汽产投战略投资，北京市人工智能产业投资基金及北京机器人产业发展投资基金联合注资。资金用于端到端 VLA 具身大模型 ERA-42 的技术迭代及落地应用。
+counterparties:
+- 吉利资本（领投）
+- 北汽产投
+- 北京市人工智能产业投资基金
+- 北京机器人产业发展投资基金
+evidence:
+- url: https://www.qbitai.com/2025/11/354404.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/qbitai-2025-11-20-roboterax-a-plus-round.html
+corroboration: single

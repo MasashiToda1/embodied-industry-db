@@ -1,0 +1,21 @@
+id: evt-2026-05-27-astribot-product_launch-t1
+date: '2026-05-27'
+date_precision: day
+type: product_launch
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能发布绳驱 AI 机器人 T1，起售价 8.99 万元
+summary:
+  zh: 5 月 27 日，深圳具身智能企业星尘智能发布新一代绳驱 AI 机器人 T1，起售价 8.99 万元，于 6 月 1 日启动发货。
+axes:
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: http://www.sznews.com/news/content/mb/2026-05/27/content_32067943.htm
+  publisher: 深圳新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/sznews-2026-05-27-astribot-t1-launch.html
+corroboration: single
