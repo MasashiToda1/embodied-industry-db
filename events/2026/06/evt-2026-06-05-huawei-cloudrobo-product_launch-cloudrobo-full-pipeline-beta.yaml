@@ -1,0 +1,26 @@
+id: evt-2026-06-05-huawei-cloudrobo-product_launch-cloudrobo-full-pipeline-beta
+date: 2026-06-05
+date_precision: day
+type: product_launch
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+title:
+  zh: 华为云发布全流程具身智能开发平台 CloudRobo，宣布 6 月 30 日开启公测
+summary:
+  zh: 6 月 5 日，在 2026 华为云 INSPIRE 创想者大会上，华为云发布「行业 AI 梦工厂·具身智能专区」，并发布全流程具身智能开发平台 CloudRobo，提供 PB 级数据底座及开发管线、云原生具身模型生产引擎和 Real-Sim 数据生产及模型评测体系，宣布该平台于 6 月 30 日公测。华为云称已与 30 多家行业伙伴、20 多家本体伙伴及 10 多家高校建立合作。
+axes:
+  hardware_strategy: [software-only]
+  data_acquisition: [sim-generated]
+evidence:
+- url: https://finance.sina.com.cn/tech/shenji/2026-06-05/doc-iniaikay8695810.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/finance-2026-06-05-huawei-cloudrobo-inspire.html
+- url: https://www.cinn.cn/rdzt/zghjs/2026/06-08/vrdLdqEr.html
+  publisher: 中国工业新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/cinn-2026-06-05-huawei-cloudrobo-inspire.html
+corroboration: multi

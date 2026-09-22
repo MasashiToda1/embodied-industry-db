@@ -1,0 +1,24 @@
+id: evt-2026-02-06-shengshu-product-launch-motus
+date: '2026-02-06'
+date_precision: day
+type: product_launch
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技联合清华大学发布统一世界模型 Motus
+summary:
+  zh: 2 月 6 日，生数科技联合清华大学正式开源统一世界模型 Motus。该模型基于视频大模型构建，面向具身智能任务，代码、论文与权重在 GitHub、Hugging Face 公开。报道称 Motus 于 2025 年 12 月完成论文发布并开源。
+counterparties:
+- 清华大学
+axes:
+  model_form:
+  - world-model
+  data_openness: fully-open
+evidence:
+- url: https://www.itbear.com.cn/html/2026-02/1135316.html
+  publisher: ITBear（转载鞭牛士）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/itbear-2026-02-06-shengshu-motus-release.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2025-01-10-vinmotion-funding-vingroup-establishment-charter-capital
+date: 2025-01-10
+date_precision: day
+type: funding
+orgs:
+- id: vinmotion
+  role: subject
+title:
+  zh: Vingroup 董事会批准出资设立通用人形机器人公司 VinMotion，注册资本 1 万亿越南盾，Vingroup 持股 51%
+summary:
+  zh: 1 月 10 日，Vingroup 董事会批准出资设立子公司 VinMotion General Purpose Humanoid Robots Application, Development and Research JSC（VinMotion），注册资本 1 万亿越南盾（约 4000 万美元），Vingroup 出资占 51%。Vingroup 2024 年 11 月已另设机器人公司 VinRobotics。
+counterparties:
+- Vingroup
+amount:
+  value: 1000000000000
+  currency: VND
+evidence:
+- url: https://vir.com.vn/vingroup-to-set-up-robotics-firm-vinmotion-121182.html
+  publisher: Vietnam Investment Review
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/vir-2025-01-10-vinmotion-establishment-.html
+corroboration: single

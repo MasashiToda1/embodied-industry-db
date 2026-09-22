@@ -1,0 +1,25 @@
+id: evt-2026-07-20-moon-bionic-funding-pre-a-plus
+date: '2026-07-20'
+date_precision: day
+type: funding
+orgs:
+- id: moon-bionic
+  role: subject
+title:
+  zh: 月泉仿生宣布完成数亿元 Pre-A+ 轮融资
+summary:
+  zh: 7 月 20 日，北京达奇月泉仿生科技有限公司宣布完成数亿元 Pre-A+ 轮融资，由长发基金、华控基金、华夏基金、国力民生、星科创投基金等联合投资，老股东中关村启航投资跟投；资金用于团队建设、核心技术研发及产能提升。报道称公司已累计取得过亿元订单。
+counterparties:
+- 长发基金
+- 华控基金
+- 华夏基金
+- 国力民生
+- 星科创投基金
+- 中关村启航投资
+evidence:
+- url: https://auto.gasgoo.com/news/202607/20I70466584C601.shtml
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/auto-2026-07-20-moon-bionic-pre-a-plus.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2026-08-17-unitree-product_launch-superman
+date: '2026-08-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技发布人形机器人新品「超人」
+summary:
+  zh: 8 月 17 日，宇树科技发布人形机器人新品「超人」。据宇树科技介绍，该机器人腿长 0.85m，原地跳高 2m，极限速度 12.66m/s，整机用 3 个多月研发出来。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_33798806
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/thepaper-2026-08-17-unitree-superman-launch.html
+corroboration: single

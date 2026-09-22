@@ -88,8 +88,19 @@ class Compiler:
 
     # -- stack 推导 -------------------------------------------------------
 
-    def derive_stack(self, events: list[dict]) -> dict[str, list[dict]]:
-        """从事件的 axes 推导技术栈，历史取值全部保留。"""
+    def derive_stack(self, events: list[dict], org_id: str | None = None) -> dict[str, list[dict]]:
+        """从事件的 axes 推导技术栈，历史取值全部保留。
+
+        给了 org_id 时只算它是 subject 的事件：一条「腾讯 Tairos 部署宇树 G1」事件里
+        hardware_strategy=software-only 说的是腾讯，不能算到宇树头上。
+        事件没有任何 subject 角色时（老数据）退回全部计入。
+        """
+        if org_id is not None:
+            def is_mine(ev: dict) -> bool:
+                orgs = ev.get("orgs") or []
+                subjects = [o for o in orgs if o.get("role", "subject") == "subject"]
+                return any(o["id"] == org_id for o in (subjects or orgs))
+            events = [ev for ev in events if is_mine(ev)]
         stack: dict[str, dict[str, dict]] = defaultdict(dict)
         for ev in events:
             for field, value in (ev.get("axes") or {}).items():
@@ -126,7 +137,7 @@ class Compiler:
 
     def render_org(self, oid: str, seed: dict) -> str:
         events = self.by_org.get(oid, [])
-        stack = self.derive_stack(events)
+        stack = self.derive_stack(events, oid)
         names = seed.get("names") or {}
         lines = [
             "<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->",
@@ -222,7 +233,7 @@ class Compiler:
                 {
                     **seed,
                     "event_count": len(self.by_org.get(oid, [])),
-                    "stack": self.derive_stack(self.by_org.get(oid, [])),
+                    "stack": self.derive_stack(self.by_org.get(oid, []), oid),
                 }
                 for oid, seed in sorted(self.orgs.items())
             ],

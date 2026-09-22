@@ -1,0 +1,26 @@
+id: evt-2026-04-29-qingtianzu-funding-pre-a-round
+date: '2026-04-29'
+date_precision: day
+type: funding
+orgs:
+- id: qingtianzu
+  role: subject
+title:
+  zh: 擎天租完成数亿元 Pre-A 轮融资，正大机器人、蓝思科技等参与
+summary:
+  zh: 4 月 29 日，擎天租宣布完成 Pre-A 轮融资，金额「数亿元」，投资方有正大集团旗下正大机器人、长信股份等产业方，以及美格智能、蓝思科技等上市公司，老股东明嘉资本、知行投资、睿资创投超额认购。报道称截至 4 月中旬平台接入且可调度的机器人超过 4000 台。
+counterparties:
+- 正大机器人
+- 长信股份
+- 美格智能
+- 蓝思科技
+- 明嘉资本
+- 知行投资
+- 睿资创投
+evidence:
+- url: https://www.stcn.com/article/detail/3879338.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stcn-2026-04-29-qingtianzu-pre-a-round.html
+corroboration: single

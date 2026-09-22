@@ -1,0 +1,25 @@
+id: evt-2026-06-01-pudu-product_launch-d7
+date: 2026-06-01
+date_precision: day
+type: product_launch
+orgs:
+- id: pudu
+  role: subject
+title:
+  zh: 普渡机器人发布新一代工业级类人形机器人 PUDU D7
+summary:
+  zh: 6 月 1 日，普渡机器人发布新一代工业级类人形机器人 PUDU D7，面向工厂制造与仓储物流场景。整机最高承重 14kg，作业高度可达 2 米，依托双臂微力控制实现重物轻拿轻放，可自主完成推车放置与场内输送。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://www.pudutech.com/zh-CN/news/pudu-d7-industrial-humanoid-robot-launch
+  publisher: 普渡机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/pudutech-2026-06-01-pudu-d7.html
+- url: https://www.ithome.com/0/958/380.htm
+  publisher: IT 之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/ithome-2026-06-01-pudu-d7-ithome.html
+corroboration: multi

@@ -1,0 +1,21 @@
+id: evt-2026-09-21-light-origins-product_launch-light-o1
+date: '2026-09-21'
+date_precision: day
+type: product_launch
+orgs:
+- id: light-origins
+  role: subject
+title:
+  zh: 亮源新创发布全身智能基础模型 Light-O1
+summary:
+  zh: 9 月 21 日，亮源新创发布全身智能基础模型 Light-O1，官方称模型通过学习互联网视频中的人类动作并结合语言与视觉信息，将人类动作知识迁移到机器人。搭载该模型的自研小型人形机器人 LightBot 演示了递毛巾、归置拖鞋、捡垃圾等任务。
+axes:
+  data_acquisition:
+  - human-video
+evidence:
+- url: https://www.163.com/digi/article/L7C0NCCA001680P9.html
+  publisher: 网易数码
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/163-2026-09-21-light-origins-light-o1.html
+corroboration: single

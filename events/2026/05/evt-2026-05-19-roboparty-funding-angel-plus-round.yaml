@@ -1,0 +1,27 @@
+id: evt-2026-05-19-roboparty-funding-angel-plus-round
+date: '2026-05-19'
+date_precision: day
+type: funding
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: RoboParty 萝博派对完成数千万美元天使+轮融资，顺为资本领投、小米战投追加
+summary:
+  zh: 5 月 19 日消息，「RoboParty 萝博派对」宣布完成数千万美元天使+轮融资，由顺为资本领投，小米战投追加投资，光源资本担任孵化方和独家财务顾问，距上一轮完成不到一个月，为公司自 2025 年 2 月成立以来的第四轮融资。报道称首款产品 RPO 及开源平台已进入首批数百台交付阶段，GitHub 项目 1.7K Star，开发者社区人数突破 5000 人。
+counterparties:
+- 顺为资本
+- 小米战投
+- 光源资本（财务顾问）
+evidence:
+- url: https://news.pedaily.cn/202605/564040.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/news-2026-05-19-roboparty-angel-plus-rou.html
+- url: https://finance.sina.com.cn/wm/2026-05-20/doc-inhyqqhf8552209.shtml
+  publisher: 新浪财经（转载第一机器人）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/finance-2026-05-19-roboparty-angel-plus-rou.html
+corroboration: multi

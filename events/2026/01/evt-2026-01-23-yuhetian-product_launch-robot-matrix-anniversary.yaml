@@ -1,0 +1,26 @@
+id: evt-2026-01-23-yuhetian-product_launch-robot-matrix-anniversary
+date: 2026-01-23
+date_precision: day
+type: product_launch
+orgs:
+- id: yuhetian
+  role: subject
+title:
+  zh: 玉禾田在二十九周年战略转型大会发布玉树智能机器人矩阵，含天禾 T2、灵玉 L3 具身机器人
+summary:
+  zh: 1 月 23 日，玉禾田携旗下玉树智能机器人举办「数智创新发展·机器人战略转型」二十九周年战略转型发展大会，发布户外清扫机器人阳光 S200 Ultra、阳光 S300，室内清洁机器人闪光 M50，以及天禾 T2、灵玉 L3 等具身交互服务机器人，并发布数智城市大管家 CIM 平台与智能体系统。阳光 S300 清扫宽度 2.2 米、作业速度 10 公里/小时，支持人工驾驶与无人驾驶两种模式。
+axes:
+  target_scene: [commercial-service]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.stcn.com/article/detail/3610400.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/stcn-2026-01-23-yuhetian-robot-matrix-an.html
+- url: http://www.zqrb.cn/gscy/qiyexinxi/2026-01-23/A1769164166236.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/zqrb-2026-01-23-yuhetian-robot-matrix-zq.html
+corroboration: multi

@@ -2,6 +2,22 @@ id: nabtesco
 names:
   zh: 纳博特斯克
   en: Nabtesco
+  aliases:
+  - Nabtesco Corporation
+  - ナブテスコ株式会社
+  - 6268.T
 status: active
 layers:
 - components
+founded: 2003-09
+hq:
+  country: JP
+  city: 东京
+description: 做精密减速机 RV（RV 摆线针轮减速器）与液压设备、铁路 / 航空机电部件的日本上市公司（东证 6268），2025 年新增面向小扭矩关节的 RVmini 与 Monocrank 系列。
+accounts:
+  site: https://www.nabtesco.com
+sources:
+- url: https://www.nabtesco.com/about/company/overview/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网会社概要：设立 2003 年 9 月 29 日，所在地东京都千代田区

@@ -1,0 +1,23 @@
+id: evt-2025-12-engineai-product_launch-t800
+date: 2025-12
+date_precision: month
+type: product_launch
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人发布全尺寸通用人形机器人 T800，定价 18 万元起
+summary:
+  zh: 2025 年 12 月，众擎机器人正式发布全尺寸通用人形机器人 T800，产品定价 18 万元起，同步推出基础版、生态版（开源版）、锐化版（Pro 版）、旗舰版（Max 版）四款配置，发售进程同步启动。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.engineai.com.cn/about-news-media/41.html
+  publisher: 众擎机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/engineai-2025-12-engineai-t800-launch.html
+corroboration: single

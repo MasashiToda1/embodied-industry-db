@@ -1,0 +1,27 @@
+id: evt-2026-04-27-wujie-power-funding-angel-plus-plus-envision-order
+date: '2026-04-27'
+date_precision: day
+type: funding
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力完成天使++轮融资，远景科技集团领投并签署超 5 亿元全球订单
+summary:
+  zh: 4 月 27 日，无界动力宣布完成天使++轮融资，由远景科技集团、北京市人工智能产业投资基金联合投资，红杉中国、线性资本、高瓴创投、BV 百度风投、华业天成、钧山资本等老股东跟投，天使轮累计融资超 2 亿美元。同时远景与无界动力签署超 5 亿元面向海外市场的全球规模化部署与联合研发合作，覆盖欧洲、亚洲等地区，涉及风光储智能化升级与 AIDC 场景。
+counterparties:
+- 远景科技集团
+- 北京市人工智能产业投资基金
+- 红杉中国
+- 线性资本
+- 高瓴创投
+- BV 百度风投
+- 华业天成
+- 钧山资本
+evidence:
+- url: https://www.donews.com/news/detail/1/6530934.html
+  publisher: DoNews
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/donews-2026-04-27-wujie-power-angel-plus-p.html
+corroboration: single

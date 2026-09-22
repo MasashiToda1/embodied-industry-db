@@ -1,0 +1,21 @@
+id: evt-2026-08-16-mech-mind-funding-hkex-hearing-passed
+date: 2026-08-16
+date_precision: day
+type: funding
+orgs:
+- id: mech-mind
+  role: subject
+title:
+  zh: 梅卡曼德通过港交所上市聆讯并披露聆讯后资料集
+summary:
+  zh: 8 月 16 日，梅卡曼德（雄安）机器人科技股份有限公司通过港交所聆讯并披露聆讯后资料集，中信建投国际和中信证券担任联席保荐人。招股书称 IPO 募资将用于产品与技术研发、丰富产品组合、扩大全球影响力并加速商业化、扩大产能及营运资金；2023 至 2025 年海外收入分别为 0.59 亿元、0.98 亿元和 1.96 亿元，2025 年海外收入占比 50.3%。
+counterparties:
+- 中信建投国际
+- 中信证券
+evidence:
+- url: https://finance.sina.com.cn/stock/hkstock/hkzmt/2026-08-16/doc-ininpmth0836107.shtml
+  publisher: 新浪财经（转载 IPO早知道）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-16-mech-mind-hkex-hearing.html
+corroboration: single

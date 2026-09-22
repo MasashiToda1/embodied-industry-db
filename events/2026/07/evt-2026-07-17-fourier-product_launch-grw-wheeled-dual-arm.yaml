@@ -1,0 +1,23 @@
+id: evt-2026-07-17-fourier-product_launch-grw-wheeled-dual-arm
+date: '2026-07-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶在 WAIC 2026 发布首款轮式双臂机器人 GRW
+summary:
+  zh: 7 月 17 日，2026 世界人工智能大会在上海开幕，傅利叶发布首款自主研发的辅助型交互轮式机器人 GRW，采用轮式移动平台与双臂协同架构，面向康复训练、养老照护、仓储物流和轻工制造等场景，可完成定位导航、物品搬运、递送及移载。同期展示 GR-3「居家助手」技术 Demo 及 GR Mini、GR Nano 两款 IP 产品。
+axes:
+  target_scene:
+  - healthcare
+  - logistics-warehouse
+  - industrial-manufacturing
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-07-18/doc-iniieweh1549509.shtml
+  publisher: 新浪财经（转载证券日报网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-17-fourier-grw-launch.html
+corroboration: single

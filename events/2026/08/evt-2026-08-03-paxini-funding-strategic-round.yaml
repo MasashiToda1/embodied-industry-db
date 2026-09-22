@@ -1,0 +1,32 @@
+id: evt-2026-08-03-paxini-funding-strategic-round
+date: 2026-08-03
+date_precision: day
+date_basis: derived
+date_as_stated: 36氪产业创新 2026-08-03 发布「帕西尼再获 10 亿元战略轮融资」，原文未写具体宣布日期
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼完成 10 亿元战略轮融资，累计融资 35 亿元
+summary:
+  zh: 帕西尼宣布再获 10 亿元人民币战略轮融资，截至第三季度累计融资 35 亿元。本轮由一家全球消费电子与半导体巨头、中银国际投资、鲲鹏基金、合信方册联合领投，鼎晖百孚、成都交子人工智能基金、京铭资本、津融国盛联合投资，老股东知来资本等加码。
+counterparties:
+- 中银国际投资
+- 鲲鹏基金
+- 合信方册
+- 鼎晖百孚
+- 成都交子人工智能基金
+- 京铭资本
+- 津融国盛
+- 知来资本
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.36kr.com/p/3923645916409479
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/36kr-2026-08-03-paxini-strategic-round.html
+corroboration: single

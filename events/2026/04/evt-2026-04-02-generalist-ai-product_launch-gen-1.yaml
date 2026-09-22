@@ -1,0 +1,18 @@
+id: evt-2026-04-02-generalist-ai-product_launch-gen-1
+date: 2026-04-02
+date_precision: day
+type: product_launch
+orgs:
+- id: generalist-ai
+  role: subject
+title:
+  zh: Generalist AI 发布 GEN-1，称简单物理任务成功率达 99%，向早期访问合作方开放
+summary:
+  zh: 4 月 2 日，Generalist AI 在官方博客发布 GEN-1。公司称这是第一个跨过「简单物理任务熟练掌握」门槛的通用 AI 模型：在此前模型成功率 64% 的任务上平均成功率提升到 99%，完成速度约为现有最优水平的 3 倍，每项结果只需约 1 小时机器人数据。博客称 GEN-1 在 GEN-0 基础上进一步扩大规模并叠加算法改进，早期访问合作方当天起可使用该模型。
+evidence:
+- url: https://generalistai.com/blog/gen-1
+  publisher: Generalist AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/generalistai-2026-04-02-generalist-ai-gen-1.html
+corroboration: single

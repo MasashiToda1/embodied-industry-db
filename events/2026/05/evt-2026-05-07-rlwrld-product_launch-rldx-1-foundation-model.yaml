@@ -1,0 +1,21 @@
+id: evt-2026-05-07-rlwrld-product_launch-rldx-1-foundation-model
+date: 2026-05-07
+date_precision: day
+type: product_launch
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: RLWRLD 发布面向高自由度灵巧手的机器人基础模型 RLDX-1，提供 PT / MT-ALLEX / MT-DROID 三个检查点
+summary:
+  zh: 5 月 7 日，RLWRLD 在官网技术博客发布机器人基础模型 RLDX-1，定位为「以灵巧为先」的模型，覆盖单臂、双臂与人形本体上的高自由度机器人手。模型以三个检查点发布：预训练检查点 RLDX-1-PT，以及分别针对 ALLEX 人形与 DROID 单臂平台中训练的 RLDX-1-MT-ALLEX、RLDX-1-MT-DROID（各 8.1B 参数）；技术报告、代码与检查点同步放在 arXiv、GitHub 与 Hugging Face。
+axes:
+  model_form: [end2end-vla]
+  data_modality: [rgb, tactile, force-torque, language-annotated]
+evidence:
+- url: https://www.rlwrld.ai/en/rldx-1
+  publisher: RLWRLD 官网技术博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/rlwrld-2026-05-07-rlwrld-rldx-1-launch.html
+corroboration: single

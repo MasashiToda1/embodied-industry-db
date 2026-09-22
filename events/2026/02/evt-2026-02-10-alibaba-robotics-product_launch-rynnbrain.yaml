@@ -1,0 +1,21 @@
+id: evt-2026-02-10-alibaba-robotics-product_launch-rynnbrain
+date: 2026-02-10
+date_precision: day
+type: product_launch
+orgs:
+- id: alibaba-robotics
+  role: subject
+title:
+  zh: 阿里达摩院发布并开源具身智能大脑基础模型 RynnBrain
+summary:
+  zh: 2 月 10 日，阿里巴巴达摩院发布具身智能大脑基础模型 RynnBrain，一次性开源包括 30B MoE 在内的 7 个全系列模型，并开源评测基准 RynnBrain-Bench。达摩院称该模型基于 Qwen3-VL 训练，引入时空记忆与物理世界推理，在 16 项具身开源评测榜单上刷新纪录。
+axes:
+  model_form: [hierarchical]
+  data_openness: [fully-open]
+evidence:
+- url: https://finance.sina.com.cn/tech/digi/2026-02-10/doc-inhmihnp5577461.shtml
+  publisher: 新浪科技（转载 IT之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/finance-2026-02-10-alibaba-robotics-rynnbra.html
+corroboration: single

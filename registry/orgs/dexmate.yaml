@@ -5,9 +5,23 @@ names:
   aliases:
   - Dexmate
   - 戴盟
+  - Daimon Robotics
+  - 戴盟（深圳）机器人科技有限公司
 status: active
 layers:
 - embodiment
 - foundation
+founded: 2023
+hq:
+  country: CN
+  city: 深圳
+description: 港科大孵化的触觉感知与灵巧操作公司，产品有视触觉传感器 DM-Tac 系列、遥操作数采系统、触觉数据集 Daimon-Infinity 和世界模型 Daimon-TWM。
 upstream:
   robotics_notebooks_institution: dexmate
+accounts:
+  site: https://www.dmrobot.com
+sources:
+- url: https://www.dmrobot.com/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍，「孵化于香港科技大学研究团队，2023 年正式运营，总部位于深圳市宝安区」；官网英文名为 Daimon Robotics

@@ -5,7 +5,24 @@ names:
   aliases:
   - Standard Robots
   - SROS
+  - 斯坦德机器人（无锡）股份有限公司
 status: active
 layers:
 - embodiment
 - integration
+founded: 2016
+hq:
+  country: CN
+  city: 无锡
+description: 2016 年成立的工业智能移动机器人解决方案提供商，2025 年推出轮式具身机器人 DARWIN，2026 年三次向港交所递表。
+accounts:
+  site: https://www.standard-robots.com
+sources:
+- url: https://finance.sina.com.cn/wm/2026-07-28/doc-inikiewh8140675.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新浪财经 2026-07-28，总部无锡、业务定位、港交所递表
+- url: https://robot.ofweek.com/2026-08/ART-8321202-12003-30697487.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: OFweek 2026-08，2016 年在深圳注册成立、2025 年推出 DARWIN

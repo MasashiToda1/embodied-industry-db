@@ -1,0 +1,30 @@
+id: evt-2026-07-dh-robotics-deployment-udh-3-7-geekplus-humanoids-waic
+date: 2026-07
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「在刚刚结束的 WAIC 2026 上」「此次大会期间」；WAIC 2026 于 2026 年 7 月 17 日开幕
+type: deployment
+orgs:
+- id: dh-robotics
+  role: subject
+title:
+  zh: 大寰机器人 UDH-3-7 三指灵巧手搭载于 7 台极智嘉通用人形机器人，在 WAIC 2026 完成仓储物流料框搬运与异形物品分拣
+summary:
+  zh: 大寰机器人发文称，WAIC 2026 期间其 UDH-3-7 三指灵巧手搭载于 7 台极智嘉通用人形机器人，完成仓储物流场景下的料框搬运、多类型异形物品（香蕉、毛绒玩偶、毛巾、袋装面包、袋装薯片等）分拣任务，并出现在央视新闻报道中。文中称 UDH-3-7 整手重 900g，7 个自由度，指尖力 50N，最大提拉负载 15kg，大拇指支持 0—180° 平行侧摆。2026 世界机器人大会展商产品页称 UDH-3-7-50 基于柔性可反驱微型直驱关节模组构建，指尖重复定位精度 ±0.02mm。
+counterparties:
+- 极智嘉（Geek+）
+axes:
+  target_scene: [logistics-warehouse]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.zhineng518.com/page119?article_id=14618
+  publisher: 智能518（转载大寰机器人文章）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zhineng518-2026-07-dh-robotics-udh-3-7-geek.html
+- url: https://www.worldrobotconference.com/expo/product/1283.html
+  publisher: 2026 世界机器人大会官网展商产品页
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/worldrobotco-2026-07-dh-robotics-udh-3-7-50-s.html
+corroboration: single

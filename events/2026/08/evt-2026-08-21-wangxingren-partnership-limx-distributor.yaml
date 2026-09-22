@@ -1,0 +1,26 @@
+id: evt-2026-08-21-wangxingren-partnership-limx-distributor
+date: '2026-08-21'
+date_precision: day
+type: partnership
+orgs:
+- id: wangxingren
+  role: subject
+- id: limx
+  role: supplier
+title:
+  zh: 汪星人科技以逐际动力金牌经销商身份参加 2026 世界机器人大会
+summary:
+  zh: 8 月 21 日报道，汪星人科技作为逐际动力的金牌经销商与金牌合作伙伴参加 2026 世界机器人大会并在论坛分享场景应用成果。公司聚焦机器人二次开发与行业定制方案，覆盖工业巡检、物业安防、文旅研学等场景，销售整机之外延伸至选品、定制、应用落地和售后。
+date_basis: derived
+date_as_stated: 报道日期 2026-08-21，原文「作为逐际动力的金牌经销商」，未给出经销关系起始日期
+axes:
+  target_scene:
+  - inspection-hazardous
+  - tourism-performance
+evidence:
+- url: https://m.21jingji.com/article/20260821/herald/4afabd1f6589c0b3e6d16faaf4475469.html
+  publisher: 21 财经 · 转载羊城派
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/m-2026-08-21-wangxingren-limx-distrib.html
+corroboration: single

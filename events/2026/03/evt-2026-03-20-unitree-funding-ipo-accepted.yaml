@@ -1,0 +1,18 @@
+id: evt-2026-03-20-unitree-funding-ipo-accepted
+date: '2026-03-20'
+date_precision: day
+type: funding
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 上交所受理宇树科技科创板 IPO 申请
+summary:
+  zh: 3 月 20 日，上海证券交易所正式受理宇树科技股份有限公司科创板首次公开发行股票申请，这是科创板发行上市预先审阅机制落地后的第 2 单申报企业。
+evidence:
+- url: https://www.yicai.com/news/103096915.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/yicai-2026-03-20-unitree-ipo-accepted.html
+corroboration: single

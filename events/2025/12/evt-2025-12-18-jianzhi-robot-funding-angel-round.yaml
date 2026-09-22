@@ -1,0 +1,28 @@
+id: evt-2025-12-18-jianzhi-robot-funding-angel-round
+date: '2025-12-18'
+date_precision: day
+type: funding
+orgs:
+- id: jianzhi-robot
+  role: subject
+- id: robosense
+  role: investor
+- id: galaxea
+  role: investor
+title:
+  zh: 简智机器人完成第三轮（天使轮）融资，顺为资本领投；成立 4 个月三轮融资总额超 2 亿元
+summary:
+  zh: 12 月 18 日，据顺为资本官微消息，简智机器人完成第三轮融资，为公司成立 4 个月内的第 3 轮，三轮总额「超 2 亿元」。种子轮由 BV 百度风投领投，Momenta、九识、星海图跟投；种子 + 轮由速腾聚创领投，BV 百度风投跟投；天使轮由顺为领投，初心资本、BV 百度风投超额跟投。
+counterparties:
+- 顺为资本
+- 初心资本
+- BV 百度风投
+- Momenta
+- 九识智能
+evidence:
+- url: https://www.nbd.com.cn/articles/2025-12-19/4186954.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/nbd-2025-12-18-jianzhi-robot-angel-roun.html
+corroboration: single

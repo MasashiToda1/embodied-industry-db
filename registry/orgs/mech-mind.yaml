@@ -5,9 +5,26 @@ names:
   aliases:
   - Mech-Mind
   - 梅卡曼德机器人
+  - 梅卡曼德（雄安）机器人科技股份有限公司
 status: active
 layers:
 - components
 - integration
 upstream:
   robotics_notebooks_institution: mech-mind
+founded: 2016
+hq:
+  country: CN
+  city: 雄安
+description: 2016 年成立的机器人智能组件供应商，提供 Mech-Eye 3D 相机、Mech-GPT 具身大模型与 Mech-Hand 灵巧手，2026 年 9 月港交所上市（09615.HK）。
+accounts:
+  site: https://www.mech-mind.com.cn
+sources:
+- url: https://www.tmtpost.com/8124357.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 钛媒体 2026-09-01，成立于 2016 年、公司全称「梅卡曼德（雄安）机器人科技股份有限公司」、上市信息
+- url: https://www.gelonghui.com/live/2644100
+  tier: media
+  retrieved: '2026-09-22'
+  note: 格隆汇 2026-09-01，业务定位与股票代码

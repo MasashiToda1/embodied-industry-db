@@ -1,0 +1,26 @@
+id: evt-2026-03-29-jushen-deployment-birds-nest-concerts
+date: '2026-03-29'
+date_precision: day
+type: deployment
+orgs:
+- id: jushen
+  role: subject
+title:
+  zh: 具深科技为鸟巢十六场演唱会提供 32 台机器人表演保障
+summary:
+  zh: 上海具深科技有限公司联合北京天九领航、北京亦庄未来机域开发者社区、山东金锐等为北京鸟巢十六场演唱会提供机器人表演保障，前三场于 3 月 29 日晚落幕，28 台伴舞机器人、4 台互动机器人参演；公司称此前春节期间完成 6 台以上大型晚会的机器人表演保障任务。
+counterparties:
+- 北京天九领航
+- 北京亦庄未来机域开发者社区
+- 山东金锐
+axes:
+  target_scene: [tourism-performance]
+  delivery_model: [rental, service-delivery]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.icloudnews.net/a/115426.html
+  publisher: AI 云资讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/icloudnews-2026-03-29-jushen-birds-nest-concer.html
+corroboration: single

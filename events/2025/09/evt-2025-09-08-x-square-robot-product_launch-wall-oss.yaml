@@ -1,0 +1,21 @@
+id: evt-2025-09-08-x-square-robot-product_launch-wall-oss
+date: '2025-09-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人发布并开源端到端具身基础模型 WALL-OSS
+summary:
+  zh: 9 月 8 日，自变量机器人宣布 WALL-OSS 正式开源。该模型参数规模 4.2B，报道称其为具备语言、视觉、动作多模态端到端统一输出能力的开源具身模型，开放内容包括预训练模型权重、训练代码、数据集接口与部署文档。
+axes:
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://www.qbitai.com/2025/09/329142.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/qbitai-2025-09-08-x-square-robot-wall-oss.html
+corroboration: single

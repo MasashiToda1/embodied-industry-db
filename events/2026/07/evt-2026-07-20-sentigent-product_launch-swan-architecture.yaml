@@ -1,0 +1,23 @@
+id: evt-2026-07-20-sentigent-product_launch-swan-architecture
+date: '2026-07-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: sentigent
+  role: subject
+title:
+  zh: 深庭纪发布户外伴随机器人具身智能架构 SWAN
+summary:
+  zh: 7 月 20 日，深庭纪发布户外伴随机器人专属具身智能架构 SWAN，部署于端侧实时运行，由模型推理主链、混合记忆身份数据库、安全数据飞轮系统三大模块组成，支持跟随、守护、自主表达与意图响应。SWAN 将率先落地 Rovar 机器人，公司称产品计划年底上市，并已完成 Pre-A 轮融资。
+evidence:
+- url: http://www.chinaups.com/news/20260721/127127.html
+  publisher: UPS 科技网（来源：证券时报网人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/chinaups-2026-07-20-sentigent-swan.html
+- url: https://www.yfchuhai.com/news/10234608.html
+  publisher: 扬帆出海（转载 36 氪）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/yfchuhai-2026-07-20-sentigent-swan-36kr.html
+corroboration: multi

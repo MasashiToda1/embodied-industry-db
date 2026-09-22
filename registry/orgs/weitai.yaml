@@ -2,6 +2,25 @@ id: weitai
 names:
   zh: 纬钛机器人
   en: Weitai Robotics
+  aliases:
+  - ViTai Robotics
+  - 上海纬钛科技有限公司
 status: active
 layers:
 - components
+founded: 2024-01
+hq:
+  country: CN
+  city: 上海
+description: 做视触觉传感器、视触觉夹爪与视触觉数据采集设备的公司，产品有 GF515 仿生指尖、GF225、VT-TacGripper-90 夹爪与 VT-UMI85 数采系统。
+accounts:
+  site: https://vit.ai
+sources:
+- url: https://vit.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，产品线与上海市徐汇区、苏州工业园区两地地址
+- url: https://www.donews.com/news/detail/1/6613022.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: DoNews 报道，成立于 2024 年 1 月，主体上海纬钛科技有限公司

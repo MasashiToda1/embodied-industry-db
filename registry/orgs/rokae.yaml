@@ -5,6 +5,19 @@ names:
   aliases:
   - ROKAE
   - xMate
+  - 珞石（山东）机器人集团股份有限公司
+founded: 2015
+hq:
+  country: CN
+  city: 邹城
+description: 工业、协作与具身智能机器人公司，港股上市（3752.HK），产品有 xMate 柔性协作臂、人形机械臂与集成式力控关节。
 status: active
 layers:
 - embodiment
+accounts:
+  site: https://www.rokae.com
+sources:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0630/2026063000034_c.pdf
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 港交所招股章程，「自 2015 年成立以来」；中国总部及主要营业地点为山东省济宁市邹城市中心店镇华润路 888 号；具身智能机器人产品线

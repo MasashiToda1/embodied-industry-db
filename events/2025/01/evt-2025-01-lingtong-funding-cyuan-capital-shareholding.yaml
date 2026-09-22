@@ -1,0 +1,24 @@
+id: evt-2025-01-lingtong-funding-cyuan-capital-shareholding
+date: 2025-01
+date_precision: month
+type: funding
+orgs:
+- id: lingtong
+  role: subject
+title:
+  zh: 灵童机器人工商变更新增策源资本旗下两只基金为股东
+summary:
+  zh: 2025 年 1 月 26 日报道，灵童机器人（上海）有限公司发生工商变更，新增成都策源广益数字经济股权投资基金合伙企业（有限合伙）、成都高新策源共创企业管理咨询合伙企业（有限合伙）为股东，注册资本由 103 万元增至约 115.9 万元。创始人对记者称，策源资本与 2024 年 9 月入股的科大讯飞同为首轮股东，只是近期才完成工商变更。金额未披露。
+counterparties:
+- 策源资本
+- 科大讯飞
+date_basis: derived
+date_as_stated: 报道（2025-01-26）原文「近日」
+evidence:
+- url: https://www.cls.cn/detail/1930741
+  publisher: 财联社 · 科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/cls-2025-01-lingtong-a-plus-round-cy.html
+corroboration: single
+# 窗口外事件：该主体成立以来最近一次公开报道的融资 / 股权变动，库内此前无记录，按简报例外规则补录。

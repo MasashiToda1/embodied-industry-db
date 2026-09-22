@@ -7,3 +7,15 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: noematrix
+founded: 2023-11
+hq:
+  country: CN
+  city: 上海
+description: 上海穹彻智能科技有限公司，由非夕科技孵化，研发「力为中心」的具身基础模型与 Noe 系列世界模型，配套 RoboPocket 无本体数采设备。
+accounts:
+  site: https://www.noematrix.ai
+sources:
+- url: https://www.noematrix.ai/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于公司页与新闻列表，2024 年 9 月融资新闻写「上海穹彻智能科技有限公司，成立于 2023 年 11 月，由非夕科技集团战略孵化」

@@ -1,0 +1,26 @@
+id: evt-2025-11-10-wujie-power-funding-angel-round
+date: '2025-11-10'
+date_precision: day
+type: funding
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力完成约 3 亿元天使轮融资，红杉中国、线性资本领投
+summary:
+  zh: 11 月 10 日，无界动力宣布完成首轮约 3 亿元人民币天使融资，由红杉中国、线性资本领投，高瓴创投、地平线、华业天成、钟鼎资本、BV 百度风投、同歌创投等跟投；公司称天使+轮融资即将完成，累计融资额已突破 5 亿元。
+counterparties:
+- 红杉中国
+- 线性资本
+- 高瓴创投
+- 华业天成
+- 钟鼎资本
+- BV 百度风投
+- 同歌创投
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-11-12/doc-infxcuqx3455336.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/finance-2025-11-10-wujie-power-angel-round.html
+corroboration: single

@@ -1,0 +1,30 @@
+id: evt-2026-03-31-roboparty-funding-angel-round
+date: '2026-03-31'
+date_precision: day
+type: funding
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: RoboParty 萝博派对完成 2000 万美元天使轮融资，商汤国香资本、经纬创投联合领投
+summary:
+  zh: 3 月 31 日消息，「RoboParty 萝博派对」宣布完成 2000 万美元天使轮融资，由商汤国香资本、经纬创投超额加注并联合领投，浦东创投、上海未来产业基金、安创资本、赛纳资本、百川资本等跟投，光源资本担任孵化方和独家财务顾问，为半年内官宣的第三轮融资。资金用于本体、运控、软硬件系统协同及开发者生态投入；文中提到 2026 年 1 月 15 日开源的双足人形机器人萝博头原型机（ROBOTO Origin）。
+counterparties:
+- 商汤国香资本
+- 经纬创投
+- 浦东创投
+- 上海未来产业基金
+- 安创资本
+- 赛纳资本
+- 百川资本
+- 光源资本（财务顾问）
+amount:
+  value: 20000000
+  currency: USD
+evidence:
+- url: https://news.pedaily.cn/202603/562269.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/news-2026-03-31-roboparty-angel-round.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2026-03-ti5robot-funding-c-round
+date: '2026-03'
+date_precision: month
+type: funding
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人完成 C 轮融资，投资方为安元天云与东土科技
+summary:
+  zh: 36 氪创投平台融资历史页记录，钛虎机器人于 2026 年 3 月完成 C 轮融资，金额未透露，投资方为安元天云、东土科技。
+counterparties:
+- 安元天云
+- 东土科技
+evidence:
+- url: https://pitchhub.36kr.com/project/2036217425107591
+  publisher: 36 氪创投平台
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/pitchhub-2026-03-ti5robot-c-round-pitchhu.html
+corroboration: single

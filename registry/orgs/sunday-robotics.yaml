@@ -6,7 +6,17 @@ status: active
 layers:
 - embodiment
 - data
+hq:
+  country: US
+  city: Mountain View
+description: 做家用机器人 Memo 的公司，用 Skill Capture Glove 在真实家庭采集人类家务数据训练 ACT 系列模型。
 upstream:
   robotics_notebooks_institution: sunday-robotics
 accounts:
   github: sunday-robotics
+  site: https://www.sunday.ai
+sources:
+- url: https://www.globenewswire.com/news-release/2025/11/19/3191274/0/en/Sunday-Launches-Memo-the-Robot-That-Actually-Learns-Your-Home.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 公司新闻稿，发稿地 MOUNTAIN VIEW, Calif.，创始人与产品自述；成立年份未写明，故不填 founded

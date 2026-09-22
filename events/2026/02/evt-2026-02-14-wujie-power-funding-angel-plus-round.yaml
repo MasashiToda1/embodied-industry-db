@@ -1,0 +1,30 @@
+id: evt-2026-02-14-wujie-power-funding-angel-plus-round
+date: '2026-02-14'
+date_precision: day
+type: funding
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力完成超 2 亿元天使+轮融资，深创投、创新工场等新股东加入
+summary:
+  zh: 2 月 14 日，无界动力宣布完成超 2 亿元天使+轮融资，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等股东，老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV 百度风投持续追投；资金用于机器人「通用大脑」与硬件本体迭代及全球场景规模化部署。
+counterparties:
+- 深创投
+- 创新工场
+- 普华资本
+- 钧山资本
+- 雅瑞资本
+- 红杉中国
+- 线性资本
+- 高瓴创投
+- 华业天成
+- 中金资本
+- BV 百度风投
+evidence:
+- url: https://news.pedaily.cn/202602/561044.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/news-2026-02-14-wujie-power-angel-plus.html
+corroboration: single

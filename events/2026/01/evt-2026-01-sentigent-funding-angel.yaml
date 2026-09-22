@@ -1,0 +1,28 @@
+id: evt-2026-01-sentigent-funding-angel
+date: '2026-01'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日宣布完成」（2026-01-05 稿）与「近期完成」（2026-01-14 稿），取 2026-01
+type: funding
+orgs:
+- id: sentigent
+  role: subject
+title:
+  zh: 深庭纪完成亿元天使轮融资，蓝驰创投领投
+summary:
+  zh: 苏州深庭纪智能科技有限公司宣布完成亿元天使轮融资，由蓝驰创投领投，老股东 Particle Future（粒子未来基金）加投，距 2025 年 7 月的数千万元种子+轮半年。资金用于研发、产品创新与团队建设，推进 2026 年下半年产品量产。
+counterparties:
+- 蓝驰创投
+- Particle Future（粒子未来基金）
+evidence:
+- url: https://www.xhby.net/content/s695b1eece4b05fbb22fdf527.html
+  publisher: 新华报业网（新华日报财经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/xhby-2026-01-sentigent-angel-round.html
+- url: https://eu.36kr.com/zh/p/3638686789454983
+  publisher: 36 氪出海（智能涌现）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/eu-2026-01-sentigent-angel-round-36.html
+corroboration: multi

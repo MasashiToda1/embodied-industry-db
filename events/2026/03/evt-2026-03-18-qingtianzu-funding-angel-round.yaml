@@ -1,0 +1,30 @@
+id: evt-2026-03-18-qingtianzu-funding-angel-round
+date: '2026-03-18'
+date_precision: day
+type: funding
+orgs:
+- id: qingtianzu
+  role: subject
+title:
+  zh: 擎天租完成天使轮及天使 + 轮融资，累计亿元级
+summary:
+  zh: 3 月 18 日，擎天租宣布完成天使轮及天使 + 轮两轮融资，累计融资金额「亿元级别」，由大洋电机、慕华科创、敏卓机电等领投，乐华娱乐、复琢投资、明嘉资本、睿资创投、天季投资、嘉兴南投、知行投资等跟投，老股东大丰实业超额认购。公司披露平台订单已超 5500 单，可调度机器人设备超 3000 台。
+counterparties:
+- 大洋电机
+- 慕华科创
+- 敏卓机电
+- 乐华娱乐
+- 复琢投资
+- 明嘉资本
+- 睿资创投
+- 天季投资
+- 嘉兴南投
+- 知行投资
+- 大丰实业
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-03-18/doc-inhrkskx9420832.shtml
+  publisher: 新浪财经 · 转载澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/finance-2026-03-18-qingtianzu-angel-round.html
+corroboration: single

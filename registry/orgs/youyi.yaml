@@ -2,6 +2,23 @@ id: youyi
 names:
   zh: 有怡科技
   en: Youyi Tech
+  aliases:
+  - 北京有怡科技有限公司
+  - 金华有怡科技有限公司
 status: active
 layers:
 - embodiment
+founded: 2024-02
+hq:
+  country: CN
+  city: 北京
+description: 做人形机器人整机的公司，产品有全尺寸人形 BlackT-H1 / GEN-HM01、轮式人形与可变形「本质人形」机器人 T01，2025 年在浙江金华设生产基地。
+sources:
+- url: https://www.gasgoo.com/robot/data/5718-%E5%8C%97%E4%BA%AC%E6%9C%89%E6%80%A1%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 盖世具身智能企业资料，北京有怡科技有限公司成立日期 2024-02-23，地址北京市大兴区
+- url: http://www.zj.xinhuanet.com/20260820/347a6b85deb24747a2eb7583ad2b3530/c.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新华网浙江频道，金华有怡科技有限公司发布 T01，为金华市金东区招引的人形机器人产业化项目

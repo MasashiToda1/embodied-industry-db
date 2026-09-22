@@ -1,0 +1,35 @@
+id: evt-2026-03-10-psibot-funding-angel-pre-a-rounds
+date: '2026-03-10'
+date_precision: day
+type: funding
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能宣布完成天使轮及 Pre-A 轮共计 20 亿元融资
+summary:
+  zh: 2026 年 3 月 10 日，灵初智能宣布已完成天使轮及 Pre-A 轮共计 20 亿元人民币融资。天使轮由国开金融、国中资本、央视融媒体产业投资基金、长飞光纤旗下基金、沃德尔、元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本等投资；Pre-A 轮由上海国资徐汇资本等领投，梁溪科创产业二期母基金、锡创投、普丰资本、钛铭资本跟投，华兴资本担任财务顾问。
+counterparties:
+- 国开金融
+- 国中资本
+- 央视融媒体产业投资基金
+- 长飞光纤
+- 元生创投
+- 珠海科技产业集团
+- 钧山投资
+- 燕缘创投
+- 徐汇资本
+- 梁溪科创产业二期母基金
+- 锡创投
+- 普丰资本
+- 钛铭资本
+amount:
+  value: 2000000000
+  currency: CNY
+evidence:
+- url: https://www.psibot.ai/%E7%81%B5%E5%88%9D%E6%99%BA%E8%83%BD%E5%B7%B2%E5%AE%8C%E6%88%9020%E4%BA%BF%E8%9E%8D%E8%B5%84%EF%BC%8C%E8%8E%B7%E5%9B%BD%E5%AE%B6%E9%98%9F%E8%B5%84%E6%9C%AC%E9%87%8D%E7%A3%85%E6%8A%95/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/psibot-2026-03-10-psibot-angel-pre-a-round.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2026-06-24-unitree-pricing-r1-price-cut
+date: '2026-06-24'
+date_precision: day
+type: pricing
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树 R1 人形机器人官方售价由 3.99 万元下调至 2.99 万元起
+summary:
+  zh: 6 月 24 日，宇树科技官宣调价，双足人形机器人 R1 官方售价由 3.99 万元下调至 2.99 万元起，并从即日起开放现货销售。4 月上线的双臂固定底座版本维持 2.69 万元原价不变，高端工业人形机器人定价与供货政策无调整。
+amount:
+  value: 29900
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://m.21jingji.com/article/20260626/herald/7f0f65c1dd637d9fb0f80cd2bf877a17.html
+  publisher: 21 财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/m-2026-06-24-unitree-r1-price-cut.html
+corroboration: single

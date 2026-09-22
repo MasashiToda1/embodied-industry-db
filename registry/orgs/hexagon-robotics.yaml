@@ -2,6 +2,28 @@ id: hexagon-robotics
 names:
   zh: Hexagon Robotics
   en: Hexagon Robotics
+  aliases:
+  - Hexagon Robotics Division
 status: active
 layers:
 - embodiment
+founded: 2025-03
+hq:
+  country: SE
+  city: 斯德哥尔摩
+description: 瑞典测量技术集团 Hexagon AB 于 2025 年 3 月设立的机器人部门，团队在瑞士苏黎世，产品为工业用轮式人形 AEON，合作方有 NVIDIA、微软、maxon、舍弗勒。
+accounts:
+  site: https://robotics.hexagon.com
+sources:
+- url: https://hexagon.com/company/newsroom/press-releases/2025/hexagon-launches-new-robotics-division-to-drive-next-generation-autonomy
+  tier: official
+  retrieved: '2026-09-22'
+  note: Hexagon 官网新闻稿，2025 年 3 月 31 日于斯德哥尔摩宣布设立 Robotics 部门
+- url: https://hexagon.com/company/newsroom/press-releases/2025/hexagon-launches-aeon-a-humanoid-built-for-industry
+  tier: official
+  retrieved: '2026-09-22'
+  note: 2025 年 6 月 17 日 AEON 发布新闻稿，合作方 NVIDIA、Microsoft、maxon，试点客户 Schaeffler 与 Pilatus
+- url: https://robotics.hexagon.com/aeon-trains-at-schaeffler-humanoid-gym/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 部门新闻稿电头为 Zurich, Switzerland

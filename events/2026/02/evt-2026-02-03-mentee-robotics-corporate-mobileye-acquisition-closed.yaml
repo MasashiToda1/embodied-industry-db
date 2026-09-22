@@ -1,0 +1,23 @@
+id: evt-2026-02-03-mentee-robotics-corporate-mobileye-acquisition-closed
+date: 2026-02-03
+date_precision: day
+type: corporate
+orgs:
+- id: mentee-robotics
+  role: subject
+title:
+  zh: Mobileye 完成对 Mentee Robotics 的收购，支付 9 亿美元对价
+summary:
+  zh: 据 Mobileye 2026 年 2 月 5 日提交的 Form 8-K，Mobileye Global Inc. 与其子公司 Mobileye Vision Technologies Ltd. 于 2026 年 2 月 3 日完成对 Mentee Robotics Ltd. 100% 股权的收购，支付总对价 9 亿美元，由 611914666 美元现金和 26279824 股 A 类普通股构成；股数依签约日前 30 个交易日成交量加权均价重新计算，协议条款不变。
+counterparties:
+- Mobileye
+amount:
+  value: 900000000
+  currency: USD
+evidence:
+- url: https://www.sec.gov/Archives/edgar/data/1910139/000110465926010947/tm265388d1_8k.htm
+  publisher: SEC EDGAR · Mobileye Global Inc. Form 8-K
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/sec-2026-02-03-mentee-robotics-mobileye.html
+corroboration: single

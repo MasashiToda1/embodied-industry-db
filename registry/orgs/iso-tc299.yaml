@@ -8,3 +8,12 @@ names:
 status: active
 layers:
 - standards
+founded: 2015
+description: 国际标准化组织下属机器人技术委员会，2015 年设立，秘书处由瑞典标准协会（SIS）承担，负责机器人领域国际标准，不含玩具与军用。
+accounts:
+  site: https://www.iso.org/committee/5915511.html
+sources:
+- url: https://www.iso.org/committee/5915511.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: ISO 官网委员会页，载「Creation date 2015」、秘书处 SIS（Sweden）与工作范围

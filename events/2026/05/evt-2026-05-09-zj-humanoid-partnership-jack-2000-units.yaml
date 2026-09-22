@@ -1,0 +1,29 @@
+id: evt-2026-05-09-zj-humanoid-partnership-jack-2000-units
+date: '2026-05-09'
+date_precision: day
+date_basis: derived
+date_as_stated: 科技日报原文「近日……现场签约」，稿件发布于 2026-05-09
+type: partnership
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形与杰克科技签约 2000 台服装场景定制人形机器人；杰克科技称属战略框架目标
+summary:
+  zh: 在杰克科技主办的机器人战略转型峰会上，浙江人形机器人创新中心与杰克科技达成战略合作，现场签约 2000 台服装场景定制人形机器人。杰克科技 5 月 19 日在投资者互动平台表示，2000 台为双方联合开发规划数量，属战略合作框架目标，并非已签订的确定性销售订单，相关产品仍处于研发与联合验证阶段。
+counterparties:
+- 杰克科技
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-05/09/content_514005.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/stdaily-2026-05-09-zj-humanoid-jack-2000.html
+- url: https://www.nbd.com.cn/articles/2026-05-19/4398856.html
+  publisher: 每经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/nbd-2026-05-19-zj-humanoid-jack-clarify.html
+corroboration: multi

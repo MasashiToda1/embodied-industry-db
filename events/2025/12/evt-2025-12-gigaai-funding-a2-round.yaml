@@ -1,0 +1,32 @@
+id: evt-2025-12-gigaai-funding-a2-round
+date: 2025-12
+date_precision: month
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成 2 亿元 A2 轮融资，达晨财智领投
+summary:
+  zh: 投资界 2026 年 6 月 15 日报道回顾，极佳视界在 2025 年 11 月 A1 轮后一个月完成 2 亿元 A2 轮融资，由达晨财智领投，老股东华控基金联合领投，首发展创投、浦耀信晔、财鑫资本、华金资本、张科垚坤、复琢创投等跟投。
+counterparties:
+- 达晨财智
+- 华控基金
+- 首发展创投
+- 浦耀信晔
+- 财鑫资本
+- 华金资本
+- 张科垚坤
+- 复琢创投
+amount:
+  value: 200000000
+  currency: CNY
+date_basis: derived
+date_as_stated: 投资界（2026-06-15）原文「同年 11 月，极佳视界完成新一轮亿元级 A1 轮融资……一个月后，公司完成 2 亿元 A2 轮融资」
+evidence:
+- url: https://news.pedaily.cn/202606/565201.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-gigaai-three-rounds.html
+corroboration: single

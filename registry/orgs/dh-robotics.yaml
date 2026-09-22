@@ -2,6 +2,26 @@ id: dh-robotics
 names:
   zh: 大寰机器人
   en: DH-Robotics
+  aliases:
+  - 大寰机器人科技股份有限公司
+  - 深圳市大寰机器人科技有限公司
+  - DH-Robotics Technology Co., Ltd.
 status: active
 layers:
 - components
+founded: 2016-12
+hq:
+  country: CN
+  city: 深圳
+description: 做电动夹爪、伺服电缸、音圈执行器与灵巧手的公司，灵巧手产品有 DH-5-6 五指灵巧手与 UDH-3-7 三指灵巧手。
+accounts:
+  site: https://www.dh-robotics.com
+sources:
+- url: https://www.dh-robotics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页：公司定位与产品线，页脚公司名「大寰机器人科技股份有限公司」
+- url: https://www.stcn.com/article/detail/3003607.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 2025-08 报道，公司成立年份与总部（深圳）；成立月份 2016 年 12 月见自动化网转载的公司介绍

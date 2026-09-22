@@ -7,3 +7,23 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: zj-humanoid
+accounts:
+  site: https://www.zj-humanoid.com
+founded: 2023-12
+hq:
+  country: CN
+  city: 宁波
+description: 浙江大学熊蓉团队与多家产业方共建的人形机器人公司，产品为「领航者 NAVIAI」系列（双足 I 系列、双臂 U 系列、轮臂 WA 系列）。
+sources:
+- url: https://www.zj-humanoid.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介：创立于 2023 年底，熊蓉教授及团队联合多家产业方共建
+- url: https://www.zj-humanoid.com/contact
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网联系我们：公司地址浙江省宁波市海曙区甬水桥科创中心
+- url: http://jjckb.xinhuanet.com/20260123/db7e1207902344a0800570141d46eeb2/c.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 经济参考网写「成立于 2023 年 12 月」

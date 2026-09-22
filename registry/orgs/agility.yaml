@@ -5,5 +5,20 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2015
+hq:
+  country: US
+  city: Salem
+description: 做人形机器人 Digit 与机队管理平台 Agility Arc 的公司，面向物流与制造场景，2015 年自 Oregon State University 分拆。
 accounts:
   github: agilityrobotics
+  site: https://www.agilityrobotics.com
+sources:
+- url: https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿落款 SALEM, Ore.，产品 Digit 与 Agility Arc
+- url: https://en.wikipedia.org/wiki/Agility_Robotics
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: Founded 2015，Headquarters Salem, Oregon，自 Oregon State University 分拆

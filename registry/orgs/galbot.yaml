@@ -2,6 +2,11 @@ id: galbot
 names:
   zh: 银河通用
   en: Galbot
+founded: 2023
+hq:
+  country: CN
+  city: 北京
+description: 以具身大模型为核心的通用机器人公司，产品有轮式双臂人形 Galbot G1、S1 与小型双足 ET1，落地零售、工业、医疗等场景。
 status: active
 layers:
 - embodiment
@@ -10,3 +15,13 @@ upstream:
   robotics_notebooks_institution: galbot
 accounts:
   github: GalaxyGeneralRobotics
+  site: https://www.galbot.com
+sources:
+- url: https://www.galbot.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍：成立于 2023 年，产品 Galbot G1、S1
+- url: https://www.cls.cn/detail/2223766
+  tier: media
+  retrieved: '2026-09-22'
+  note: 公司全称北京银河通用机器人股份有限公司（2025-11-27 股改后）

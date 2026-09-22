@@ -1,0 +1,29 @@
+id: evt-2026-07-19-zhuoyide-partnership-pilot-platform-1000-units
+date: '2026-07-19'
+date_precision: day
+type: partnership
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得与上海人形机器人中试服务平台签订千台量产战略合作协议
+summary:
+  zh: 7 月 19 日，在 2026 WAIC 期间举办的人形机器人与具身智能创新发展论坛上，卓益得与上海人形机器人中试服务平台签订千台量产战略合作协议，双方打通研发试制、标准化中试、批量生产、终端交付环节。卓益得现场称已手握千台级商用订单，覆盖康养、汽车、美业等场景。
+counterparties:
+- 上海人形机器人中试服务平台
+axes:
+  target_scene:
+  - healthcare
+  - commercial-service
+evidence:
+- url: https://sz.ifeng.com/c/8uuIIHYJ5Z5
+  publisher: 凤凰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/sz-2026-07-19-zhuoyide-pilot-platform-.html
+- url: https://news.ikanchai.com/2026/0720/663054.shtml
+  publisher: 砍柴网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/news-2026-07-19-zhuoyide-pilot-platform-.html
+corroboration: multi

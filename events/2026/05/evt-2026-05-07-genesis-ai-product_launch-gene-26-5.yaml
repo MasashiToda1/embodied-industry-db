@@ -1,0 +1,20 @@
+id: evt-2026-05-07-genesis-ai-product_launch-gene-26-5
+date: 2026-05-07
+date_precision: day
+type: product_launch
+orgs:
+- id: genesis-ai
+  role: subject
+title:
+  zh: Genesis AI 发布首个机器人基础模型系统 GENE-26.5 与自研灵巧手 Genesis Hand 1.0
+summary:
+  zh: 5 月 7 日，Genesis AI 在官方博客发布 GENE-26.5，称其为公司首个机器人基础模型系统、GENE 家族的首次公开发布，命名中的 26.5 指 2026 年 5 月。博客称该系统用同一模型、硬件平台、数据策略与控制栈完成烹饪、实验室自动化、还原魔方、做冰沙、线束装配、多物体抓取、弹钢琴等长时程接触密集任务，运行在公司自研的灵巧手 Genesis Hand 1.0 上。同日新闻稿（落款 5 月 6 日）称公司还推出了配套的数据引擎。
+axes:
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.genesis.ai/blog/gene-26-5-advancing-robotic-manipulation-to-human-level
+  publisher: Genesis AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/genesis-2026-05-07-genesis-ai-gene-26-5.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2026-07-17-motphys-partnership-d-robotics-hyper3d-sim-loop
+date: '2026-07-17'
+date_precision: day
+type: partnership
+orgs:
+- id: motphys
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 谋先飞（Motphys）联合地瓜机器人、影眸科技发布「具身智能可训练仿真闭环联合解决方案」
+summary:
+  zh: 7 月 17 日，2026 世界人工智能大会开幕当天，地瓜机器人联合北京谋先飞技术有限公司（Motphys）、影眸科技（Hyper3D）三方发布「具身智能可训练仿真闭环联合解决方案」：影眸科技 Hyper3D WorldGen 从单张照片还原出带物理属性的可交互三维场景；谋先飞基于自研物理引擎 MotrixSim 将这些资产接入仿真环境，同一场景可复制多份并行运行；地瓜机器人提供算力底座与开发工具链，把场景生成、仿真运行、数据采集和模型训练整合到同一平台。
+counterparties:
+- 影眸科技（Hyper3D）
+axes:
+  sim_stack:
+  - in-house
+  data_acquisition:
+  - sim-generated
+evidence:
+- url: https://www.ne-time.cn/web/article/39201
+  publisher: NE时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/ne-time-2026-07-17-d-robotics-motphys-hyper.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2026-07-14-lumos-robotics-partnership-jd
+date: '2026-07-14'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日签署」，两篇稿件均发布于 2026-07-14
+type: partnership
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人与京东签署战略合作，目标三年内京东平台累计销售额突破 10 亿元
+summary:
+  zh: 鹿明机器人与京东签署战略合作协议，以产品共创、技术协同、场景拓展、渠道共建为核心，未来三年共同投入产品、供应链及生态资源，目标实现鹿明全系列产品在京东平台累计销售额突破 10 亿元；双方围绕 JoyInside、JoyAI 等能力协同研发，并联合打造面向工业制造、数据采集、智慧巡检的一体化方案。
+counterparties:
+- 京东
+evidence:
+- url: https://www.gasgoo.com/robot/news/70465668-3%E5%B9%B410%E4%BA%BF%E9%94%80%E5%94%AE%E9%A2%9D-%E9%B9%BF%E6%98%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8E%E4%BA%AC%E4%B8%9C%E8%BE%BE%E6%88%90%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/gasgoo-2026-07-14-lumos-robotics-jd-partne.html
+- url: https://www.pai.com.cn/p/01kxfnk8r40wj822rfg4kjqr7c
+  publisher: 电商派
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/pai-2026-07-14-lumos-robotics-jd-partne.html
+corroboration: multi

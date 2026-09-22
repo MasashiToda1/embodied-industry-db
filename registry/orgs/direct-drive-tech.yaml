@@ -2,8 +2,30 @@ id: direct-drive-tech
 names:
   zh: 直驱科技
   en: Direct Drive Tech
+  aliases:
+  - 本末科技
+  - 本末动力
+  - 本末动力（北京）科技股份有限公司
+  - Direct Drive Tech Limited
+  - 06731.HK
 status: active
 layers:
 - components
 upstream:
   robotics_notebooks_institution: direct-drive-tech
+founded: 2020-03
+hq:
+  country: CN
+  city: 北京
+description: 以直驱技术为核心做机器人动力模组与轮足机器人的公司，产品有直驱动力模组、HMC / HMD 具身关节模组与刑天、TITA、D1 轮足机器人；2020 年成立于东莞，2025 年总部迁至北京，2026 年 9 月港股招股。
+accounts:
+  site: https://directdrive.com
+sources:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 港交所招股书：公司 2020 年 3 月 17 日于东莞成立，2025 年总部迁至北京并更名 Direct Drive Tech Limited（本末动力（北京）科技股份有限公司）
+- url: https://www.directdrive.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于本末页，东莞松山湖研发中心与工厂，产品线

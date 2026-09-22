@@ -1,0 +1,27 @@
+id: evt-2025-09-24-scale-ai-product_launch-physical-ai-data-engine-update
+date: 2025-09-24
+date_precision: day
+type: product_launch
+orgs:
+- id: scale-ai
+  role: subject
+- id: physical-intelligence
+  role: customer
+title:
+  zh: Scale AI 公布面向 Physical AI 的 Data Engine 进展：旧金山原型实验室完成逾 10 万小时生产采集，客户含 Physical Intelligence、Generalist AI、Cobot
+summary:
+  zh: 9 月 24 日，Scale AI 在官方博客公布其 Data Engine for Physical AI 的进展。该方案覆盖机器人数据采集与标注，公司称已在旧金山原型实验室完成逾 10 万小时生产采集，并借助全球贡献者为 Physical Intelligence、Generalist AI、Cobot 等公司提供与增强数据；数据来源包括专用数据采集机器人与人类演示，服务包括面向多种本体的定制采集、基于模型与规则的标注，以及预置数据集库。博客称现有开源数据集 DROID 与 Open X-Embodiment 合计仅约 5000 小时交互数据。
+counterparties:
+- Generalist AI
+- Cobot
+axes:
+  data_acquisition: [teleop, real-robot, human-video]
+  data_sourcing: [in-house-factory, outsourced]
+  data_openness: closed
+evidence:
+- url: https://scale.com/blog/physical-ai
+  publisher: Scale AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/scale-2025-09-24-scale-ai-physical-ai-dat.html
+corroboration: single

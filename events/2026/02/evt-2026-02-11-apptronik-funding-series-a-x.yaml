@@ -1,0 +1,34 @@
+id: evt-2026-02-11-apptronik-funding-series-a-x
+date: 2026-02-11
+date_precision: day
+type: funding
+orgs:
+- id: apptronik
+  role: subject
+title:
+  zh: Apptronik 完成 5.2 亿美元 A 轮扩展（Series A-X），A 轮累计超 9.35 亿美元
+summary:
+  zh: 2 月 11 日，Apptronik 宣布完成 5.2 亿美元 Series A-X 扩展轮，老股东 B Capital、Google、Mercedes-Benz、PEAK6 及新投资方 AT&T Ventures、John Deere、Qatar Investment Authority 参投。加上 2025 年 4.15 亿美元的首次 A 轮，A 轮累计超 9.35 亿美元，公司累计融资接近 10 亿美元；公司称扩展轮估值为首次 A 轮的 3 倍。资金用于扩大 Apollo 产量、扩展商业与试点部署、建设机器人训练与数据采集设施。
+counterparties:
+- B Capital
+- Google
+- Mercedes-Benz
+- PEAK6
+- AT&T Ventures
+- John Deere
+- Qatar Investment Authority
+amount:
+  value: 520000000
+  currency: USD
+evidence:
+- url: https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a
+  publisher: Apptronik 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/apptronik-2026-02-11-apptronik-series-a-x.html
+- url: https://news.crunchbase.com/venture/ai-humanoid-robot-funding-apptronik/
+  publisher: Crunchbase News
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/news-2026-02-11-apptronik-series-a-x-cbn.html
+corroboration: multi

@@ -1,0 +1,29 @@
+id: evt-2026-08-chingmu-product_launch-optiumi-wrc
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「8 月 19 日至 23 日，2026 世界机器人大会（WRC）……大会期间，CHINGMU 青瞳视觉联合灵巧智能正式发布高精度便携式多模态数据采集系统 OptiUMI」
+type: product_launch
+orgs:
+- id: chingmu
+  role: subject
+title:
+  zh: 青瞳视觉联合灵巧智能在 WRC 2026 发布 OptiUMI 光学动捕便携式多模态数据采集系统
+summary:
+  zh: 2026 世界机器人大会（8 月 19 日至 23 日）期间，青瞳视觉联合灵巧智能发布高精度便携式多模态数据采集系统 OptiUMI，由两支 OptiUMI 手持夹爪与一台 P3H 头戴动捕相机组成，以头戴式红外光学追踪实现亚毫米级三维定位，同步采集 RGB、6DoF 位姿与力觉数据，硬件同步误差 ≤50μs，6DoF 位姿输出 120fps。
+counterparties:
+- 灵巧智能
+axes:
+  data_acquisition:
+  - mocap
+  - teleop
+  data_modality:
+  - rgb
+  - tactile
+evidence:
+- url: https://www.icloudnews.net/a/121617.html
+  publisher: AI 云资讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/icloudnews-2026-08-chingmu-optiumi-wrc-laun.html
+corroboration: single

@@ -2,7 +2,31 @@ id: spacetime-var
 names:
   zh: 时空变量
   en: Spacetime Variable
+  aliases:
+  - SVT Robot
+  - 杭州时空变量科技有限公司
+  - 时空变量（杭州）科技有限公司
 status: active
 layers:
 - data
 - components
+accounts:
+  site: https://svtrobot.com
+founded: 2025-04
+hq:
+  country: CN
+  city: 杭州
+description: 杭州的机器人公司，做四足机器人、SmartWheel 轮式复合机器人平台与 VLA 数据采集、多传感器融合算法。
+sources:
+- url: https://svtrobot.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，四足机器人产品与杭州市西湖区办公地址
+- url: https://www.taibo.cn/company/120881
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 泰伯网公司页，杭州时空变量科技有限公司成立于 2025 年 4 月 15 日
+- url: https://theroboradar.com/products/smartwheel
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: RoboRadar 产品页，SmartWheel 轮式平台面向遥操作、模仿学习与真实世界数据收集

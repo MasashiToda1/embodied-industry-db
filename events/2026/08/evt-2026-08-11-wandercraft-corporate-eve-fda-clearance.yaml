@@ -1,0 +1,25 @@
+id: evt-2026-08-11-wandercraft-corporate-eve-fda-clearance
+date: 2026-08-11
+date_precision: day
+type: corporate
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Wandercraft 个人自平衡外骨骼 Eve 获美国 FDA 510(k) 许可（K260381），适用于任何损伤节段的脊髓损伤成人
+summary:
+  zh: 8 月 11 日，Wandercraft 宣布其个人自平衡外骨骼 Eve 获得美国 FDA 许可。FDA 510(k) 数据库记录为 K260381，申请人 Wandercraft SAS（巴黎），受理日期 2026 年 2 月 5 日，决定日期 2026 年 8 月 3 日，结论为实质等同（SESE），适用于任何神经损伤节段的脊髓损伤成人。许可依据为三家机构参与的临床试验（James J. Peters VA 医疗中心、Kessler Foundation、Walk in New York）。公司计划 2026 年 9 月 17 日在美国商业上市。
+axes:
+  target_scene: [healthcare]
+evidence:
+- url: https://www.wandercraft.eu/articles/wandercraft-receives-fda-clearance-for-eve-the-worlds-first-self-balancing-personal-exoskeleton-for-eligible-wheelchair-users-living-with-spinal-cord-injuries-at-any-level
+  publisher: Wandercraft 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/wandercraft-2026-08-11-wandercraft-eve-fda.html
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260381
+  publisher: FDA 510(k) Premarket Notification 数据库
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/accessdata-2026-08-11-wandercraft-eve-fda-510k.html
+corroboration: multi

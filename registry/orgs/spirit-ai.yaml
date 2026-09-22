@@ -8,3 +8,15 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: spirit-ai
+founded: 2024-01
+hq:
+  country: CN
+  city: 杭州
+description: 研发具身大模型 Spirit 系列与人形机器人 Moz 系列的公司，在杭州、北京、深圳设有办公点。
+accounts:
+  site: https://www.spirit-ai.com
+sources:
+- url: https://www.spirit-ai.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介，成立于 2024 年 1 月；办公地址列表首位为杭州（余杭区）。媒体报道多写「成立于 2024 年 2 月，总部杭州」，以官网为准

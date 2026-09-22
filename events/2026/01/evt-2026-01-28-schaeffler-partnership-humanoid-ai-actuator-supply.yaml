@@ -1,0 +1,23 @@
+id: evt-2026-01-28-schaeffler-partnership-humanoid-ai-actuator-supply
+date: 2026-01-28
+date_precision: day
+type: partnership
+orgs:
+- id: schaeffler
+  role: subject
+- id: humanoid-ai
+  role: counterparty
+title:
+  zh: 舍弗勒与英国 Humanoid 建立战略技术合作：舍弗勒成为其轮式人形执行器首选供应商，并计划五年内在生产网络部署数百台人形机器人
+summary:
+  zh: 1 月 28 日，舍弗勒发布新闻稿称与英国科技公司 Humanoid 建立战略技术合作，双方在 CES 期间签署。合作聚焦开发并供应用于轮式与双足人形机器人的关键部件（含执行器），舍弗勒成为轮式系统执行器的首选供应商；合作还包含人形机器人采购协议，舍弗勒计划未来五年在全球生产网络整合数百台人形机器人。合作重点之一是舍弗勒谐波（strain wave）齿轮执行器的开发与供应，主要用于人形机器人上半身、肩与臂。
+axes:
+  embodiment_form: [humanoid-wheeled, humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.schaeffler.co.uk/en/news_media/press_releases/press_releases_detail.jsp?id=88164993
+  publisher: 舍弗勒（英国）官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/schaeffler-2026-01-28-schaeffler-humanoid-uk-p.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2026-01-28-tesla-corporate-fremont-optimus-factory
+date: 2026-01-28
+date_precision: day
+type: corporate
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉宣布停产 Model S / X，将弗里蒙特工厂该产线空间改为 Optimus 工厂，长期目标年产 100 万台
+summary:
+  zh: 1 月 28 日，特斯拉在 2025 年第四季度财报电话会上宣布下一季度基本停止 Model S 和 Model X 生产，将弗里蒙特工厂 S / X 产线空间改造为 Optimus 工厂，长期目标为年产 100 万台 Optimus。Elon Musk 同时称「几个月内」发布 Optimus 3，并称 Optimus 目前仍处于研发阶段，在工厂内没有实质性投入使用，年底前不会有显著产量。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.fool.com/earnings/call-transcripts/2026/01/28/tesla-tsla-q4-2025-earnings-call-transcript/
+  publisher: The Motley Fool · 财报电话会文字记录
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/fool-2026-01-28-tesla-q4-2025-optimus-fr.html
+corroboration: single

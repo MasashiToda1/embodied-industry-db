@@ -1,0 +1,30 @@
+id: evt-2025-10-24-booster-product-launch-k1
+date: '2025-10-24'
+date_precision: day
+type: product_launch
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化生态大会发布具身开发入门级平台 Booster K1
+summary:
+  zh: 2025 年 10 月 24 日，加速进化首次举办生态大会，发布具身开发入门级平台 Booster K1、Booster Agents、面向开发者的「起航计划」和面向教育市场的「百城万校」计划。钛媒体报道，Booster K1 当日在淘宝天猫等平台首发，首批全款订单 20 分钟售罄，发布会现场经销商签约订单突破千台。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.booster.tech/zh/about-us/
+  publisher: 加速进化官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/booster-2025-10-24-booster-k1-launch-offici.html
+- url: https://www.tmtpost.com/7838341.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/tmtpost-2025-11-17-booster-funding-idg-tmt.html
+corroboration: multi

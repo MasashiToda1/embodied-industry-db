@@ -1,0 +1,21 @@
+id: evt-2026-08-03-qiuzhi-tech-product_launch-orion-0
+date: '2026-08-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: qiuzhi-tech
+  role: subject
+title:
+  zh: 求之科技在官网上线具身智能基础模型 ORION-0，采用 S3-S2-S1-S0 四层分级架构
+summary:
+  zh: 8 月 3 日，求之科技在官网正式上线具身智能基础模型 ORION-0。ORION 采用 S3-S2-S1-S0 四层分级架构：S3 慢脑负责非实时深度思考与长时记忆，S2 快脑负责实时空间感知与动作预测，S1 小脑负责实时感知与控制执行，S0 末梢层以最高优先级兜底碰撞避免、力矩限制、紧急制动等安全。训练采用「双轨制」：S0 与 S3 独立迭代，S1+S2 端侧具身基座可用少量数据分层微调，也可通过大规模多源数据端到端训练。
+axes:
+  model_form:
+  - hierarchical
+evidence:
+- url: https://www.163.com/dy/article/L3D73L4J05569K8R.html
+  publisher: 网易号（机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/163-2026-08-03-qiuzhi-tech-orion-0-laun.html
+corroboration: single

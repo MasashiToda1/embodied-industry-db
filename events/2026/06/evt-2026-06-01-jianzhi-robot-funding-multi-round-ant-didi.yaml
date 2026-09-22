@@ -1,0 +1,25 @@
+id: evt-2026-06-01-jianzhi-robot-funding-multi-round-ant-didi
+date: '2026-06-01'
+date_precision: day
+type: funding
+orgs:
+- id: jianzhi-robot
+  role: subject
+title:
+  zh: 简智机器人完成连续多轮共数亿元融资，蚂蚁集团、滴滴、德联资本分别领投
+summary:
+  zh: 6 月 1 日，简智机器人宣布完成连续多轮共「数亿元」融资，分别由蚂蚁集团、滴滴、德联资本领投，顺为资本、BV 百度风投、九识智能等老股东跟投。资金用于人类行为数据的多模态采集矩阵、数据治理与效果评测全链路建设。
+counterparties:
+- 蚂蚁集团
+- 滴滴
+- 德联资本
+- 顺为资本
+- BV 百度风投
+- 九识智能
+evidence:
+- url: https://www.36kr.com/p/3834105574270600
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/36kr-2026-06-01-jianzhi-robot-multi-roun.html
+corroboration: single

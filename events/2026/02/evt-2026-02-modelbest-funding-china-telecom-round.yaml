@@ -1,0 +1,22 @@
+id: evt-2026-02-modelbest-funding-china-telecom-round
+date: 2026-02
+date_precision: month
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能完成数亿元融资，中国电信领投
+summary:
+  zh: 澎湃新闻 2026 年 2 月 28 日报道，北京面壁智能科技有限责任公司日前完成春节后新一轮融资，规模为数亿元，由中国电信领投，中信金石、中信私募跟投。
+counterparties:
+- 中国电信
+- 中信金石
+- 中信私募
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-02-28/doc-inhpkaqh5968732.shtml
+  publisher: 新浪财经（转载澎湃新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/finance-2026-02-modelbest-china-telecom-.html
+corroboration: single

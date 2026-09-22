@@ -8,5 +8,19 @@ layers:
 - locomotion
 upstream:
   robotics_notebooks_institution: boston-dynamics
+founded: 1992
+hq:
+  country: US
+description: Hyundai Motor Group 旗下移动机器人公司，产品有四足机器人 Spot、仓储机器人 Stretch 与人形机器人 Atlas，1992 年自 MIT Leg Lab 分拆。
 accounts:
   github: boston-dynamics
+  site: https://bostondynamics.com
+sources:
+- url: https://bostondynamics.com/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页时间线：1992 年 Marc Raibert 自 MIT Leg Lab 分拆创立；产品 Spot / Stretch / Atlas
+- url: https://bostondynamics.com/blog/boston-dynamics-google-deepmind-form-new-ai-partnership/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 「Hyundai Motor Group is the majority shareholder of Boston Dynamics」；总部城市未在官网读到，只填国家

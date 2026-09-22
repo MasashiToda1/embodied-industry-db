@@ -2,6 +2,13 @@ id: elephant-robotics
 names:
   zh: 大象机器人
   en: Elephant Robotics
+  aliases:
+  - 深圳市大象机器人科技有限公司
+founded: 2016
+hq:
+  country: CN
+  city: 深圳
+description: 轻量机械臂与人形机器人公司，产品有 myCobot 系列协作臂与水星 Mercury A1 / B1 / X1 人形系列。
 status: active
 layers:
 - embodiment
@@ -9,3 +16,9 @@ upstream:
   robotics_notebooks_institution: elephant-robotics
 accounts:
   github: elephantrobotics
+  site: https://www.elephantrobotics.com
+sources:
+- url: https://news.qq.com/rain/a/20240520A028EY00
+  tier: media
+  retrieved: '2026-09-22'
+  note: 腾讯新闻，载有「大象机器人成立于 2016 年」、公司全称与深圳、Mercury 三款产品

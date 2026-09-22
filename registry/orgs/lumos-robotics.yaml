@@ -12,3 +12,18 @@ upstream:
 accounts:
   huggingface: LumosRobotics-FastUMIPro
   github: LumosRobot
+  site: https://lumosbot.tech
+founded: 2024-09
+hq:
+  country: CN
+  city: 深圳
+description: 深圳的具身智能机器人公司，产品有全尺寸双足 Lumos LUS、重载轮臂 Lumos MOS、迷你双足 NIX、轮足 LUD，以及 NexCore 技能引擎与 FastUMI 数据采集工具。
+sources:
+- url: https://m.pedaily.cn/vc/company/711597.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 投资界公司页：鹿明机器人科技（深圳）有限公司成立于 2024-09-06，注册地深圳市宝安区
+- url: https://www.gasgoo.com/robot/news/70465668-3%E5%B9%B410%E4%BA%BF%E9%94%80%E5%94%AE%E9%A2%9D-%E9%B9%BF%E6%98%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8E%E4%BA%AC%E4%B8%9C%E8%BE%BE%E6%88%90%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 盖世汽车稿列出 LUS、MOS、鹿小明、LUD 产品线；官网域名见 LinkedIn 公司页 lumosbot.tech

@@ -1,0 +1,18 @@
+id: evt-2026-07-22-dobot-funding-a-share-ipo-approved
+date: 2026-07-22
+date_precision: day
+type: funding
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技创业板 IPO 获深交所上市委审议通过
+summary:
+  zh: 7 月 22 日，深交所上市审核委员会审议通过深圳市越疆科技股份有限公司创业板首发申请。此次 A 股 IPO 从受理到上会 86 天，拟募集资金约 12 亿元，其中约 5.5 亿元用于多足机器人项目、2.5 亿元用于人形机器人项目；发行尚需中国证监会批准。
+evidence:
+- url: http://jjckb.xinhuanet.com/20260723/5db85818881043db87786555c2d0183b/c.html
+  publisher: 经济参考网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/jjckb-2026-07-22-dobot-a-share-approval.html
+corroboration: single

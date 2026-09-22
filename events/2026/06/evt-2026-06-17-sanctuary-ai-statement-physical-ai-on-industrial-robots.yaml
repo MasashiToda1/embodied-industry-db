@@ -1,0 +1,21 @@
+id: evt-2026-06-17-sanctuary-ai-statement-physical-ai-on-industrial-robots
+date: 2026-06-17
+date_precision: day
+type: statement
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 调整路线：将 Physical AI 部署到现有工业机器人，不再等待人形硬件商业化
+summary:
+  zh: 6 月 17 日，Sanctuary AI 宣布其 Physical AI 在一家全球 Tier 1 汽车零部件供应商的线束插接（wire plugging）生产任务上达到 99.5% 以上成功率、2.54 秒节拍，并以客户实际生产基准验证。公司称这是策略调整的结果：不再等待人形机器人硬件规模商业化，而是把 Physical AI 部署到现有及下一代工业机器人系统上，采取硬件无关（hardware-agnostic）路线，同时为后续工业人形机器人打基础。
+axes:
+  hardware_strategy: [adapt-others, software-only]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://sanctuary.ai/news/sanctuary-ai-expands-physical-ai-strategy-to-industrial-robotics-demonstrating-production-ready-ai-performance/
+  publisher: Sanctuary AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/sanctuary-2026-06-17-sanctuary-ai-industrial-.html
+corroboration: single

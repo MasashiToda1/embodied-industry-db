@@ -1,0 +1,38 @@
+id: evt-2026-06-22-daka-robot-funding-jinshajiang-round
+date: '2026-06-22'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日宣布完成」，报道发布于 2026 年 6 月 22 日至 23 日
+type: funding
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人完成新一轮融资，金沙江创投、云时资本、盛世投资等领衔，成立首年累计四轮数亿元
+summary:
+  zh: 2026 年 6 月，大咖机器人（DaxAI Robot）宣布完成新一轮融资，由金沙江创投、云时资本、盛世投资等领衔，灵心巧手/灵澄未来及上市公司 CVC 等产业资本加持；公司称成立首年内完成四轮数亿元融资。资金用于具身世界模型 DaxBrain-WM 与「手脑一体」平台研发，依托现有年产千台产线冲刺万台级产能。文中称已推出起售价 6.98 万元的双臂灵巧手轮式人形机器人和吨级重载机器马。
+counterparties:
+- 金沙江创投
+- 云时资本
+- 盛世投资
+- 灵心巧手
+- 灵澄未来
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  - quadruped
+  target_scene:
+  - logistics-warehouse
+  - commercial-service
+evidence:
+- url: https://www.gkzhan.com/news/detail/192586.html
+  publisher: 智能制造网（转载盖世汽车）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/gkzhan-2026-06-22-daka-robot-new-round.html
+- url: https://m.rccaijing.com/news-7474624733096113256.html
+  publisher: 瑞财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/m-2026-06-22-daka-robot-new-round-rcc.html
+corroboration: multi

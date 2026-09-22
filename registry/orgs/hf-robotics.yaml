@@ -4,9 +4,31 @@ names:
   en: Hugging Face Robotics
   aliases:
   - LeRobot
+  - Pollen Robotics
 status: active
 layers:
 - simulation
 - data
+founded: 2024
+hq:
+  country: FR
+  city: 波尔多
+description: Hugging Face 的机器人业务：2024 年起的开源机器人学习库 LeRobot，加 2025 年 4 月并入的法国波尔多团队 Pollen Robotics（Reachy 2、Reachy Mini、Microduck）。hq 为机器人团队所在地。
 upstream:
   robotics_notebooks_institution: huggingface
+accounts:
+  github: huggingface/lerobot
+  site: https://huggingface.co/lerobot
+sources:
+- url: https://pollen-robotics.com/microduck/press-kit/
+  tier: official
+  retrieved: '2026-09-22'
+  note: Pollen Robotics 官网新闻资料：位于法国波尔多，2016 年成立，2025 年 4 月加入 Hugging Face 成为其机器人团队
+- url: https://github.com/huggingface/lerobot/
+  tier: official
+  retrieved: '2026-09-22'
+  note: LeRobot 仓库 2024 年 1 月创建，支持 SO100 / HopeJR / Reachy2 等硬件
+- url: https://huggingface.co/blog/reachy-mini
+  tier: official
+  retrieved: '2026-09-22'
+  note: Reachy Mini 官方博客与售价

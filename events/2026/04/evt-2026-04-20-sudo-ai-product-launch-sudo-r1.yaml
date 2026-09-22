@@ -1,0 +1,23 @@
+id: evt-2026-04-20-sudo-ai-product-launch-sudo-r1
+date: '2026-04-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: sudo-ai
+  role: subject
+title:
+  zh: '苏度科技发布软硬件全栈自研机器人系统 #sudo R1'
+summary:
+  zh: '4 月 20 日，苏度科技在官网发布首篇技术博客，介绍软硬件全栈自研的机器人系统 #sudo R1：面向物体抓取的操作基础模型，仅用仿真数据训练、不使用真机数据，对未见过的物体首次抓取成功率约 98%，闭环控制频率 15—25 Hz，并公开 60 分钟不剪辑真机评测视频。'
+axes:
+  data_acquisition:
+  - sim-generated
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.sudo.ai/
+  publisher: 苏度科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/sudo-2026-04-20-sudo-ai-r1-blog.html
+corroboration: single

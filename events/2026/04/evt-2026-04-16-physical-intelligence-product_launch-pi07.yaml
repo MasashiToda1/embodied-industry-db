@@ -1,0 +1,20 @@
+id: evt-2026-04-16-physical-intelligence-product_launch-pi07
+date: 2026-04-16
+date_precision: day
+type: product_launch
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: Physical Intelligence 发布通用机器人基础模型 π0.7，称出现组合式泛化
+summary:
+  zh: 4 月 16 日，Physical Intelligence 在官方博客发布新模型 π0.7。公司称这是一个可被引导（steerable）的通用 VLA 模型，无需针对任务微调即可以与微调专用模型相同的速度和稳健性完成多种灵巧操作任务，并能执行训练数据中未出现的语言指令，例如使用没见过的厨房电器，以及让一台没有叠衣数据的新机器人完成叠衣。博客将其描述为组合式泛化的首批迹象。
+axes:
+  model_form: [end2end-vla]
+evidence:
+- url: https://www.pi.website/blog/pi07
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/pi-2026-04-16-physical-intelligence-pi.html
+corroboration: single

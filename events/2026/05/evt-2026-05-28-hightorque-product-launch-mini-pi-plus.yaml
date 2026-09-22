@@ -1,0 +1,27 @@
+id: evt-2026-05-28-hightorque-product-launch-mini-pi-plus
+date: 2026-05-28
+date_precision: day
+type: product_launch
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎动力在 ICRA 2026 全球首发 Mini Pi plus 小型人形机器人平台
+summary:
+  zh: 5 月 28 日，高擎动力官网发文《ICRA 2026丨Mini Pi plus 人形机器人平台全球首发，轻量化高性能加速科研！》（正文为图片）。官网产品页显示 Mini Pi plus 站立高度 680mm，重 15.15kg（含电池），22 自由度，负载 10kg，关节最大扭矩 21Nm，工作电压 24V，搭载自研一体化伺服关节模组与 NVIDIA Jetson Orin NX，开放 SDK，面向科研开发、教学实践与机器人竞赛场景。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.hightorque.cn/icra-2026%e4%b8%a8mini-pi-plus%e4%ba%ba%e5%bd%a2%e6%9c%ba%e5%99%a8%e4%ba%ba%e5%b9%b3%e5%8f%b0%e5%85%a8%e7%90%83%e9%a6%96%e5%8f%91%ef%bc%8c%e8%bd%bb%e9%87%8f%e5%8c%96%e9%ab%98%e6%80%a7%e8%83%bd
+  publisher: 高擎动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/hightorque-2026-05-28-hightorque-mini-pi-plus-.html
+- url: https://www.hightorque.cn/pi-plus/
+  publisher: 高擎动力官网产品页
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/hightorque-2026-05-28-hightorque-mini-pi-plus--2.html
+corroboration: single

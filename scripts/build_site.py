@@ -72,7 +72,7 @@ def build_graph(c: Compiler) -> dict:
     # 共享技术栈（可开关的叠加层）：同一轴同一取值的主体两两相连
     by_value: dict[tuple, list[str]] = defaultdict(list)
     for oid in nodes:
-        stack = c.derive_stack(c.by_org.get(oid, []))
+        stack = c.derive_stack(c.by_org.get(oid, []), oid)
         for field, items in stack.items():
             for it in items:
                 by_value[(field, it["value"])].append(oid)
@@ -108,7 +108,7 @@ def build_axes(c: Compiler) -> dict:
     """每条轴：{value: [{org, first_seen}, ...]}。前端据此算「各取值主体数随时间」。"""
     out: dict[str, dict] = {}
     for oid in c.orgs:
-        stack = c.derive_stack(c.by_org.get(oid, []))
+        stack = c.derive_stack(c.by_org.get(oid, []), oid)
         for field, items in stack.items():
             ax = out.setdefault(field, {"zh": c.vocab["labels"].get(field, field), "values": {}})
             for it in items:

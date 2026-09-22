@@ -1,0 +1,24 @@
+id: evt-2026-01-07-hexagon-robotics-partnership-microsoft-azure-humanoid
+date: 2026-01-07
+date_precision: day
+type: partnership
+orgs:
+- id: hexagon-robotics
+  role: subject
+title:
+  zh: Hexagon Robotics 在 CES 宣布与微软战略合作：基于 Azure 与 Microsoft Fabric 扩展 AEON 的模仿学习、强化学习与 VLA 训练，面向操作与检测场景
+summary:
+  zh: 1 月 7 日，Hexagon Robotics 在 CES 宣布与微软建立战略合作，内容包括：以深度技术合作推动数据驱动的自适应制造；在模仿学习、强化学习与多模态视觉—语言—动作模型上扩展 Physical AI 框架；联合客户部署基于 Microsoft Azure 的 AI 机器人。双方将结合 Hexagon Robotics 的传感器融合与空间智能同微软的 Fabric Real-Time Intelligence、Azure IoT Operations 与 Azure App Service，提供面向操作与检测用例的可投产人形方案，首先面向汽车、航空航天、制造与物流行业。
+counterparties:
+- 微软（Microsoft）
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  model_form: [end2end-vla, il]
+  control_route: [rl]
+evidence:
+- url: https://hexagon.com/company/newsroom/press-releases/2026/hexagon-robotics-collaborates-with-microsoft-to-advance-the-field-of-humanoid-robots
+  publisher: Hexagon 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/hexagon-2026-01-07-hexagon-robotics-microso.html
+corroboration: single

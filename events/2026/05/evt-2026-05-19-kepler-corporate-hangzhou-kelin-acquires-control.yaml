@@ -1,0 +1,21 @@
+id: evt-2026-05-19-kepler-corporate-hangzhou-kelin-acquires-control
+date: '2026-05-19'
+date_precision: day
+type: corporate
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 杭州柯林拟以不超过 3 亿元收购开普勒 41.57% 股权，取得控制权
+summary:
+  zh: 5 月 19 日，杭州柯林（688611）董事会审议通过，拟使用自筹资金不超过 3 亿元向杨华及其他股东购买其合计持有的上海开普勒机器人有限公司 41.57% 股权。此前杭州柯林已于 2025 年 12 月 31 日与开普勒创始人杨华签订《股权转让协议》取得开普勒 9.43% 股权。交易完成后杭州柯林将持有开普勒 51.00% 股权，开普勒纳入其合并报表范围。议案尚需提交股东会审议。
+counterparties:
+- 杭州柯林电气股份有限公司（688611.SH，收购方）
+- 杨华（开普勒创始人，转让方）
+evidence:
+- url: http://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260519/ee0f8c2d97f948b4b6fa15ca5a219b02.PDF
+  publisher: 巨潮资讯网（杭州柯林公告 2026-013，PDF 原件）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/dataclouds-2026-05-19-kepler-kelin-acquisition.html
+corroboration: single

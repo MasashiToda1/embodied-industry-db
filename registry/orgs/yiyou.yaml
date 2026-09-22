@@ -2,6 +2,22 @@ id: yiyou
 names:
   zh: 意优科技
   en: Yiyou Tech
+  aliases:
+  - 意优机器人
+  - 上海意优智控科技有限公司
+  - Eyou Robotics
 status: active
 layers:
 - components
+founded: 2018
+hq:
+  country: CN
+  city: 上海
+description: 做一体化伺服关节模组的公司，产品有谐波、行星、直线三大系列关节模组与 PHU-F 力控关节，总部上海张江，运营中心无锡。
+accounts:
+  site: https://eyoubot.com
+sources:
+- url: https://eyoubot.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于意优页，成立于 2018 年，总部上海张江机器人谷，运营中心江苏无锡

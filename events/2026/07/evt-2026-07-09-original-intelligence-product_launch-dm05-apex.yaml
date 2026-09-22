@@ -1,0 +1,21 @@
+id: evt-2026-07-09-original-intelligence-product_launch-dm05-apex
+date: '2026-07-09'
+date_precision: day
+type: product_launch
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机开发者大会发布 DM0.5 模型、通用机器人 Apex 与开发者平台 DexDev
+summary:
+  zh: 7 月 9 日，原力灵机在 2026 开发者大会上发布通用具身基础模型 DM0.5、通用机器人本体 Apex，以及开发者平台 DexDev（DFOL2.0、MaaS、DexOS），并展示面向仓储物流拆零拣选的多智能体作业系统 Ferrata。官方称 Ferrata 已在真实仓库完成测试，覆盖超 10 万 SKU。
+axes:
+  target_scene:
+  - logistics-warehouse
+evidence:
+- url: http://www.xinhuanet.com/tech/20260710/01f997d814a6480290cf828a36d565e5/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/xinhuanet-2026-07-09-original-intelligence-ap.html
+corroboration: single

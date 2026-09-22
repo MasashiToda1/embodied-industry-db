@@ -1,0 +1,30 @@
+id: evt-2026-07-19-lightwheel-partnership-siemens-simfoundry
+date: '2026-07-19'
+date_precision: day
+type: partnership
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能与西门子达成合作，基于 SimFoundry 打通工业仿真与具身仿真
+summary:
+  zh: 7 月 19 日，WAIC 2026 现场，光轮智能与西门子正式达成合作。双方以光轮智能「求解—测量—生成」三位一体自研仿真平台 SimFoundry 为核心，将西门子工业设计与仿真分析中的材料属性、摩擦参数、形变规律、装配公差和工艺约束等工程信息转化为带物理属性的 SimReady 仿真资产与交互环境，并延伸到 RoboFinals 工业级评测与 RoboStack 部署平台；重点方向为高精度工业具身仿真、工业级具身评测和真实部署反馈。
+counterparties:
+- 西门子
+axes:
+  target_scene:
+  - industrial-manufacturing
+  sim_stack:
+  - in-house
+evidence:
+- url: https://www.stcn.com/article/detail/4030687.html
+  publisher: 证券时报网（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/stcn-2026-07-19-lightwheel-siemens.html
+- url: https://tech.gmw.cn/2026-08/03/content_38924442.htm
+  publisher: 光明网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/tech-2026-07-19-lightwheel-siemens-gmw.html
+corroboration: multi

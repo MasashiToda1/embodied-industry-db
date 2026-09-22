@@ -1,0 +1,18 @@
+id: evt-2025-11-03-deeprobotics-corporate-joint-stock-reform
+date: '2025-11-03'
+date_precision: day
+type: corporate
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技完成股改，更名为杭州云深处科技股份有限公司
+summary:
+  zh: 证券时报报道，11 月 3 日，公司由「杭州云深处科技有限公司」更名为「杭州云深处科技股份有限公司」，企业类型从「其他有限责任公司」变更为「其他股份有限公司（非上市）」。
+evidence:
+- url: https://www.stcn.com/article/detail/3558169.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-03-deeprobotics-reorg.html
+corroboration: single

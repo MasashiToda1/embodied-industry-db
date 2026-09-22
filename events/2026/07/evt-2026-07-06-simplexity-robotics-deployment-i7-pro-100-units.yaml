@@ -1,0 +1,23 @@
+id: evt-2026-07-06-simplexity-robotics-deployment-i7-pro-100-units
+date: '2026-07-06'
+date_precision: day
+type: deployment
+orgs:
+- id: simplexity-robotics
+  role: subject
+title:
+  zh: 至简动力首款机器人 i7 Pro 完成首批百台交付，CNC 具身机器人产线落成
+summary:
+  zh: 7 月 6 日，至简动力在苏州吴中区举行场景落地暨百台交付仪式，宣布首款全场景机器人 i7 Pro 完成首批百台交付，并落成 CNC 智能化具身机器人产线。i7 Pro 搭载七自由度力控人形臂，先落地 CNC 上下料场景，已拓展柔性 PCB、光电模组等工业赛道。
+axes:
+  target_scene:
+  - industrial-manufacturing
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.163.com/dy/article/L18H7AUS0514R9KE.html
+  publisher: 网易号
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/163-2026-07-06-simplexity-robotics-i7pr.html
+corroboration: single

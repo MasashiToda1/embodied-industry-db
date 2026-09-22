@@ -1,0 +1,20 @@
+id: evt-2026-03-19-horizon-robotics-corporate-d-robotics-deconsolidation
+date: '2026-03-19'
+date_precision: day
+type: corporate
+orgs:
+- id: horizon-robotics
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 地平线年度业绩公告披露：不再拥有地瓜机器人控制权，地瓜机器人取消入账转为联营公司
+summary:
+  zh: 3 月 19 日，地平线（9660.HK）在截至 2025 年 12 月 31 日止年度的业绩公告「报告期间后事项及内幕消息」中披露：因地瓜机器人（D-Robotics）持续融资，地平线持有其已发行股本从上市时近 70% 被动稀释至约 40%；地瓜机器人员工持股平台拟终止与地平线全资附属公司的一致行动协议，地平线创始人拟撤回董事会成员任命授权书。相关文件签署后，地平线不再拥有对地瓜机器人的控制权，地瓜机器人不再作为附属公司入账，改作联营公司入账，地平线保持第一大股东地位，并继续向其提供产品解决方案及研发服务。
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900928_c.pdf
+  publisher: 香港交易所披露易
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/hkexnews-2026-03-19-horizon-robotics-droboti.html
+corroboration: single

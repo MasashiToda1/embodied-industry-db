@@ -1,0 +1,31 @@
+id: evt-2026-08-12-bridgedp-funding-pre-a-plus3-round
+date: 2026-08-12
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，……宣布完成新一轮融资」（智东西 / 环球网 2026-08-12 报道）
+type: funding
+orgs:
+- id: bridgedp
+  role: subject
+title:
+  zh: 桥介数物完成亿元级 Pre-A+++ 轮融资，中国移动链长基金领投
+summary:
+  zh: 8 月 12 日，深圳通用机器人操作系统研发商桥介数物（BridgeDP Robotics）宣布完成 Pre-A+++ 轮融资，由中国移动链长基金领投，老股东复星创富、深创投追加投资，融资规模达亿元级。公司称资金用于 RoboCraft AI 运动能力开发平台生态建设、跨本体全身运动数据工厂产能提升、运动控制模型迭代以及海外技术服务体系布局。
+axes:
+  hardware_strategy: [software-only]
+counterparties:
+- 中国移动链长基金
+- 复星创富
+- 深创投
+evidence:
+- url: https://www.zhidx.com/p/584179.html
+  publisher: 智东西（机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/zhidx-2026-08-12-bridgedp-pre-a-plus3-rou.html
+- url: https://finance.sina.com.cn/jjxw/2026-08-12/doc-inimzqcs5351017.shtml
+  publisher: 新浪财经（转载环球网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-12-bridgedp-pre-a-plus3-sin.html
+corroboration: multi

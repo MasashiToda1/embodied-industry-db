@@ -16,3 +16,18 @@ upstream:
   robotics_notebooks_institution: agilex
 accounts:
   github: agilex
+  site: https://www.agilex.ai
+founded: 2016
+hq:
+  country: CN
+  city: 深圳
+description: 移动机器人底盘厂商，产品有 SCOUT、BUNKER 等底盘，PiPER、NERO 机械臂，以及 COBOT MAGIC、Pika 具身数据采集方案。
+sources:
+- url: https://www.agilex.ai/about-us
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们：成立于 2016 年，联想之星与 XBOTPARK 基金天使轮
+- url: https://cn.linkedin.com/company/agilexrobotics
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: LinkedIn 写总部深圳、办公室东莞；36 氪项目库写工商主体为松灵机器人（东莞）有限公司、注册地东莞松山湖。此处取深圳，注册地为东莞

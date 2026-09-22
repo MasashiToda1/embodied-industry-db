@@ -1,0 +1,32 @@
+id: evt-2026-07-19-ace-robotics-product_launch-kairos-3-1-waic
+date: '2026-07-19'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2026WAIC 期间……世界模型『六小龙』巅峰论坛」，报道发布于 2026 年 7 月 20 日；WAIC 2026 于 7 月 17 日至 20 日举办
+type: product_launch
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人在 WAIC 2026 发布开悟世界模型 3.1、环境式数据采集方案 2.0 与三套行业解决方案
+summary:
+  zh: WAIC 2026 期间，大晓机器人在世界模型「六小龙」巅峰论坛发布三项成果：开悟世界模型 3.1（Kairos 3.1，混合 Transformer 架构，将视觉观测、语言指令、力触状态纳入统一隐空间，8B 模型在 NVIDIA Jetson Thor 上 BF16 推理延迟 125 毫秒）；环境式数据采集方案 2.0（分体轻量化「头-手-胸」采集套件，力触手套灵敏度 0.01N，20 余种传感器同步误差 1 毫秒内），并宣布开源家居任务数据集 ACE-Data-0；面向即时零售的「晓满」（配履约机器人 W1，已在多家便利店、前置仓落地，计划一年内铺设 1000 家）、面向酒店的「晓新」与面向开放场景的「晓途」四足方案。同期 PHYSICAL IQ 物智评测平台发布。
+axes:
+  model_form:
+  - world-model
+  data_acquisition:
+  - human-video
+  data_modality:
+  - tactile
+  - force-torque
+  - rgb
+  target_scene:
+  - commercial-service
+  - inspection-hazardous
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-07-20/doc-iniimqsf3047935.shtml
+  publisher: 新浪财经（转载劳动报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-19-ace-robotics-waic-kairos.html
+corroboration: single

@@ -1,0 +1,25 @@
+id: evt-2025-10-16-agibot-product_launch-lingling-g2
+date: '2025-10-16'
+date_precision: day
+type: product_launch
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人发布工业级具身作业机器人精灵 G2，已获龙旗科技、均胜电子过亿元订单
+summary:
+  zh: 10 月 16 日，智元机器人举行线上直播发布会，正式发布新一代工业级交互式具身作业机器人智元精灵 G2。发布前精灵 G2 已获龙旗科技近千台订单，同日与均普智能联合举办线下全球首发暨投产仪式，完成与均胜电子签订的过亿元采购合同的首批交付。精灵 G2 由宁波普智未来机器人有限公司（均普智能子公司与智元机器人共同投资设立）研发并生产。
+counterparties:
+- 龙旗科技（客户）
+- 均胜电子（客户）
+- 均普智能（合作方）
+axes:
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.cls.cn/detail/2171827
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/cls-2025-10-16-agibot-g2-launch.html
+corroboration: single

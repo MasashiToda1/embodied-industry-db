@@ -1,0 +1,25 @@
+id: evt-2025-12-galbot-funding-c-round-300m-usd
+date: 2025-12
+date_precision: month
+type: funding
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用完成超 3 亿美元新一轮融资，中国移动链长基金领投
+summary:
+  zh: 2025 年 12 月 19 日新闻稿称，近日银河通用官宣完成新一轮超 3 亿美元融资，由中国移动链长基金领投，中金资本、中科院基金、苏创投、央视融媒体基金、天奇股份等联合注资，并获得新加坡、中东的国际投资机构及老股东加注。新闻稿称累计融资额约 8 亿美元，估值达 30 亿美元。
+counterparties:
+- 中国移动链长基金（领投）
+- 中金资本
+- 中科院基金
+- 苏创投
+- 央视融媒体基金
+- 天奇股份
+evidence:
+- url: https://www.prnasia.com/story/516737-1.shtml
+  publisher: 美通社（银河通用新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/prnasia-2025-12-galbot-c-round.html
+corroboration: single

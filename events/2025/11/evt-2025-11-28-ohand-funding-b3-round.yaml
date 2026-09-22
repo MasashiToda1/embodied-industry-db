@@ -1,0 +1,30 @@
+id: evt-2025-11-28-ohand-funding-b3-round
+date: 2025-11-28
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……宣布完成亿元 B3 轮战略融资」（投中网稿件经新浪科技 2025-11-28 发布）
+type: funding
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技完成 B3 轮战略融资，由雷迪克独家投资 1.6 亿元
+summary:
+  zh: 上海傲意信息科技有限公司宣布完成亿元 B3 轮战略融资，由创业板上市公司雷迪克（300652）独家投资，为公司 2025 年内第三轮过亿元融资。雷迪克在 2026 年 1 月 5 日发布的投资者关系活动记录表中称，本次投资 1.6 亿元参与傲意科技 B3 轮融资。公司称融资用于量产能力升级、全场景技术研发与全球化布局。
+counterparties:
+- 雷迪克
+amount:
+  value: 160000000
+  currency: CNY
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2025-11-28/doc-infyxrxk7485011.shtml
+  publisher: 新浪科技 · 来源投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/finance-2025-11-28-ohand-b3-round.html
+- url: https://finance.sina.com.cn/jjxw/2026-01-05/doc-inhfhavm2089000.shtml
+  publisher: 新浪财经 · 雷迪克投资者关系活动记录
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/finance-2025-11-28-ohand-b3-round-leadrick-.html
+corroboration: multi

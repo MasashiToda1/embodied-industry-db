@@ -8,5 +8,29 @@ names:
 status: active
 layers:
 - components
+founded: 1987
+hq:
+  country: GB
+  city: 伦敦
+description: 英国灵巧手公司，产品为五指 20 自由度 Shadow Hand 与三指 12 自由度 DEX-EE / DEX-EE Chiral（与 Google DeepMind 合作开发），另提供遥操作系统与租赁服务。
 upstream:
   robotics_notebooks_institution: shadow-robotics
+accounts:
+  site: https://shadowrobot.com
+sources:
+- url: https://shadowrobot.com/our-story/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 Our Story，「Britain's longest running robot company」
+- url: https://shadowrobot.com/aria-announces-funded-projects-with-shadow-robot-company/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿电头 London, England
+- url: https://shadowrobot.com/dex-ee_series/
+  tier: official
+  retrieved: '2026-09-22'
+  note: DEX-EE 系列产品页
+- url: https://www.linkedin.com/company/shadowrobot
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: LinkedIn 公司页，1987 年成立

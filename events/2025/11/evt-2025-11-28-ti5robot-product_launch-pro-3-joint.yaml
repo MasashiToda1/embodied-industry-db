@@ -1,0 +1,20 @@
+id: evt-2025-11-28-ti5robot-product_launch-pro-3-joint
+date: '2025-11-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人五周年发布会首发 PRO-3 系列轻量化关节模组
+summary:
+  zh: 11 月 28 日，钛虎机器人科技五周年活动暨新品发布会在上海举办，多款新品全球首发，其中 PRO-3 系列轻量化关节模组为一体化行星减速机关节模组，面向人形机器人关节，搭载自研 24bit 双编码器，全系列中孔走线，中空比超 11%。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.ti5robot.com/h-nd-45.html
+  publisher: 钛虎机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/ti5robot-2025-11-28-ti5robot-pro3-joint-laun.html
+corroboration: single

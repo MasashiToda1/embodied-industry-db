@@ -5,3 +5,19 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2016
+hq:
+  country: US
+  city: Austin
+description: 做人形机器人 Apollo 的公司，源自 University of Texas at Austin 的 Human Centered Robotics Lab，在奥斯汀运营 Robot Park 训练基地。
+accounts:
+  site: https://apptronik.com
+sources:
+- url: https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿落款 Austin, Texas；公司源自 UT Austin 的 Human Centered Robotics Lab
+- url: https://news.crunchbase.com/venture/ai-humanoid-robot-funding-apptronik/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「since its 2016 inception」

@@ -1,0 +1,23 @@
+id: evt-2026-07-02-leaderdrive-partnership-skf-humanoid-joint-bearing-jv
+date: 2026-07-02
+date_precision: day
+type: partnership
+orgs:
+- id: leaderdrive
+  role: subject
+title:
+  zh: 斯凯孚（SKF）与绿的谐波签署协议在中国成立合资公司，聚焦人形机器人关节高精密传动部件，SKF 持股 60%
+summary:
+  zh: 7 月 2 日，斯凯孚（SKF）在官网发布新闻稿称已与绿的谐波（Leaderdrive）签署协议，宣布在中国成立合资公司，新公司聚焦机器人关节高精密传动部件的研发与供应，面向具身智能技术赋能的人形机器人在工业场景中的应用；斯凯孚持有合资公司 60% 股份。合资公司总部设在中国，除服务中国市场外将依托斯凯孚全球销售网络拓展欧洲、日本、美国等市场，新闻稿给出的投入运营时间为 2026 年底。
+counterparties:
+- 斯凯孚（SKF）
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.skf.com/cn/news-and-events/news/2026/2026-Jul-02-skf-and-leaderdrive-form-a-venture-for-precision-components-in-humanoids
+  publisher: 斯凯孚（SKF）官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/skf-2026-07-02-leaderdrive-skf-jv.html
+corroboration: single

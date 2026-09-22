@@ -1,0 +1,21 @@
+id: evt-2025-10-30-chaowei-power-funding-angel-round
+date: '2025-10-30'
+date_precision: day
+type: funding
+orgs:
+- id: chaowei-power
+  role: subject
+title:
+  zh: 超维动力完成天使轮融资，分享投资与青鸟消防共同投资
+summary:
+  zh: 2025 年 10 月 30 日，深圳超维动力智能科技有限公司宣布完成天使轮融资，由分享投资和青鸟消防共同投资，金额未披露，资金用于具身智能机器人技术研发及团队建设。文中称公司成立于 2025 年 7 月 17 日，总部位于深圳和香港。
+counterparties:
+- 分享投资
+- 青鸟消防
+evidence:
+- url: https://www.163.com/dy/article/KD609UOO05118K7K.html
+  publisher: 网易号（亿欧）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/163-2025-10-30-chaowei-power-angel-roun.html
+corroboration: single

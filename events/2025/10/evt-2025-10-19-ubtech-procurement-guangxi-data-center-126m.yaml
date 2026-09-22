@@ -1,0 +1,28 @@
+id: evt-2025-10-19-ubtech-procurement-guangxi-data-center-126m
+date: '2025-10-19'
+date_precision: day
+type: procurement
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选中标广西具身智能数据采集及测试中心设备采购项目，金额 1.26 亿元
+summary:
+  zh: 10 月 19 日，优必选中标「广西具身智能数据采集及测试中心设备采购及安装」项目，订单金额 1.26 亿元，采购涵盖可自主换电的人形机器人 Walker S2，计划于 2025 年内完成交付。
+counterparties:
+- 广西具身智能数据采集及测试中心项目（采购方）
+amount:
+  value: 126000000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://i.ifeng.com/c/8nZxnYEqJWH
+  publisher: 凤凰网（转载 IT之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/i-2025-10-19-ubtech-guangxi-126m.html
+corroboration: single

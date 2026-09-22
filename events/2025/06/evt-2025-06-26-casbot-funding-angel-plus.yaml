@@ -1,0 +1,23 @@
+id: evt-2025-06-26-casbot-funding-angel-plus
+date: '2025-06-26'
+date_precision: day
+type: funding
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 灵宝 CASBOT 完成近亿元天使+轮融资，蓝思科技领投
+summary:
+  zh: 6 月 26 日，北京中科慧灵机器人技术有限公司旗下人形机器人品牌灵宝 CASBOT 完成近亿元天使+轮融资，由蓝思科技领投，天津佳益以及老股东国投创合、河南资产跟投。资金用于产品量产、技术研发迭代与市场拓展。蓝思科技称将为其量产提供关键零部件和整机组装。截至 2026 年 9 月未见公开的后续融资，此为库内窗口外的最近一轮。
+counterparties:
+- 蓝思科技
+- 天津佳益
+- 国投创合
+- 河南资产
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2025-06/26/content_360833.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/stdaily-2025-06-26-casbot-angel-plus.html
+corroboration: single

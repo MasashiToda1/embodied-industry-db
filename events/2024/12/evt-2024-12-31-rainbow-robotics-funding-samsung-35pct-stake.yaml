@@ -1,0 +1,25 @@
+id: evt-2024-12-31-rainbow-robotics-funding-samsung-35pct-stake
+date: 2024-12-31
+date_precision: day
+type: funding
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 三星电子行使认购期权将 Rainbow Robotics 持股增至 35%，成为最大股东并将其并为子公司
+summary:
+  zh: 12 月 31 日，三星电子宣布行使认购期权，将对 Rainbow Robotics 的持股从 14.7% 增至 35%，成为其最大股东，Rainbow Robotics 并入三星电子合并财务报表成为子公司。三星电子 2023 年首次以 868 亿韩元取得 14.7% 股份；韩国媒体报道此次增持 20.29% 股份的对价「约 2674 亿韩元」。三星同时设立直属 CEO 的未来机器人推进团。
+counterparties:
+- 三星电子
+evidence:
+- url: https://news.samsung.com/global/samsung-electronics-to-become-largest-shareholder-in-rainbow-robotics-accelerating-future-robot-development
+  publisher: Samsung Global Newsroom
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/news-2024-12-31-rainbow-robotics-samsung.html
+- url: https://www.asiae.co.kr/en/article/2024123109125960726
+  publisher: The Asia Business Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/asiae-2024-12-31-rainbow-robotics-samsung.html
+corroboration: multi

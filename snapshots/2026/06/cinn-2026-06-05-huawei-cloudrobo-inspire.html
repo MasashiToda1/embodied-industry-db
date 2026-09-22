@@ -1,0 +1,1625 @@
+<!-- 抓取于 2026-09-22T16:31:25.740805+08:00 | 原始链接 https://www.cinn.cn/rdzt/zghjs/2026/06-08/vrdLdqEr.html | 公众号 未知 | 标题 huawei-cloudrobo-inspire-beta-cinn | sha256:13bad2344e6d -->
+<!-- 正常页布局layout -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>    华为云“行业AI梦工厂·具身智能专区”上线 CloudRobo平台即将公测 - 中国工业新闻网
+</title>
+    <link rel="shortcut icon" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/css/layout.css?t=1234">
+    <link type="text/css" rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/css/swiper.css">
+    <link type="text/css" rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/css/custom.css"/>
+    <script src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/swiper.js"></script>
+    <script src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/tailwindcss.js"></script>
+    <script type="text/javascript" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/jquery.js"></script>
+    <script>
+      let __global = { activeNavId: "VnDMY9D4" }
+    </script>
+    <!-- 公共脚本逻辑部分会在head中加载（注意不要写太多js逻辑，会阻塞渲染，只放必要脚本） -->
+        <script src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/staticPoint.js"></script>
+<script src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/agentCheck.js"></script>
+<script src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/crypto.min.js"></script>
+<script>
+    // 埋点
+    console.log('//////////')
+    window.globConfig = {"basic":{"copyright":"\u4e2d\u56fd\u5de5\u4e1a\u62a5\u793e \u7248\u6743\u6240\u6709 \u672a\u7ecf\u4e66\u9762\u5141\u8bb8 \u4e0d\u5f97\u590d\u5236\u6216\u5efa\u7acb\u955c\u50cf Copyright \u00a9 China Industry News, All Rights Reserved","site_name":"\u4e2d\u56fd\u5de5\u4e1a\u65b0\u95fb\u7f51","site_host":"https:\/\/www.cinn.cn","site_logo":"https:\/\/rmt.cinn.cn\/poplar\/v2\/media\/static\/91052\/20250902_018bb11c0f937bab4f3b05dc98ef550632.png","record_information":"\u4e92\u8054\u7f51\u65b0\u95fb\u4fe1\u606f\u670d\u52a1\u8bb8\u53ef\u8bc1\u7f16\u53f7\uff1a10120240011 \u4eac\u516c\u7f51\u5b89\u5907 11010702002509\u53f7 \u4eacICP\u590712018842\u53f7-2","mp_site_host":"","tracker_host":"https:\/\/stat.cinn.cn"}}?.basic || {};
+    // ************ 图片加载失败 *******************************************************************
+    // 监听全局图片加载失败事件，将破图替换为默认图片
+    let defult_img = "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/err_img.png"
+    let selection_icon = "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/head1-selection.png"
+    window.addEventListener('error', function(event) {
+        try{
+            if (event.target.tagName && event.target.tagName.toLowerCase() === 'img' && !event.target.dataset.isReplaced) {
+                event.target.src = defult_img; // 将 'default.jpg' 替换为你的默认图片的 URL
+                event.target.dataset.isReplaced = 'true';
+            }
+        } catch (err) {
+            console.log(err)
+        }
+    }, true);
+    // ************** 图片加载失败 end *****************************************************************
+
+
+    // 时间处理
+    function formatTimestamp(timestamp, format = "YYYY-MM-DD HH:mm") {
+        if (!timestamp) {
+            return "";
+        }
+
+        if(timestamp < 100000000000) timestamp *= 1000
+
+        const date = new Date(timestamp);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        const seconds = String(date.getSeconds()).padStart(2, "0");
+        return format
+            .replace("YYYY", year)
+            .replace("MM", month)
+            .replace("DD", day)
+            .replace("HH", hours)
+            .replace("mm", minutes)
+            .replace("ss", seconds);
+    }
+</script>
+<script>
+    const showToast = (function() {
+                let toastElem = null;
+                let isShowing = false;
+                let timer = null;
+                let lastShownTime = 0;
+
+                // 注入动画样式（只执行一次）
+                if (!document.getElementById('toast-style')) {
+                    const style = document.createElement('style');
+                    style.id = 'toast-style';
+                    style.textContent = `
+        @keyframes toastIn {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+        @keyframes toastOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }`;
+                    document.head.appendChild(style);
+                }
+
+                return function({icon='', message='', top=100, duration=2000, throttle=3000}) {
+                    const now = Date.now();
+
+                    // 节流处理：已有提示且在节流时间内，直接跳过
+                    if (isShowing || (now - lastShownTime < throttle))
+                        return;
+
+                    lastShownTime = now;
+                    isShowing = true;
+
+                    // 创建提示框
+                    toastElem = document.createElement('div');
+                    toastElem.style.cssText = `
+            position: fixed;
+            top: ${top}px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            color: #1d2129;
+            padding: 8px 14px;
+            font-size: 14px;
+            border-radius: 4px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            z-index: 9999;
+            animation: toastIn 0.3s ease forwards;
+        `;
+
+                    const iconElem = document.createElement('img');
+                    iconElem.src = icon;
+                    iconElem.alt = 'icon';
+                    iconElem.style.cssText = `
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        `;
+                    toastElem.appendChild(iconElem);
+
+                    const textElem = document.createElement('span');
+                    textElem.textContent = message;
+                    toastElem.appendChild(textElem);
+
+                    document.body.appendChild(toastElem);
+
+                    // 设置消失定时器
+                    timer = setTimeout( () => {
+                        toastElem.style.animation = 'toastOut 0.3s ease forwards';
+                        setTimeout( () => {
+                            toastElem.remove();
+                            toastElem = null;
+                            isShowing = false;
+                        }
+                        , 300);
+                    }
+                    , duration);
+                }
+                ;
+            }
+            )();
+</script>
+    <link rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/css/doc-content.css">
+<style>
+    #search-nav {
+        display: none
+    }
+    .imagetext-content img {
+        text-align: center;
+    }
+</style>
+<style>
+    .container-crumbs a {
+        color: #3D3D3D;
+        font-size: 18px;
+    }
+
+    .container-crumbs a:after {
+        content: '/';
+        display: inline-block;
+        margin: 0 8px;
+
+    }
+
+    .container-crumbs a:last-child:after {
+        content: '';
+    }
+</style>
+<style>
+    .imagetext-module-detail .title {
+        font-family: 'PingFang SC';
+        font-size: 37px;
+        font-weight: normal;
+        line-height: 1.5;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .imagetext-module-detail .infos {
+        color: #3D3D3D;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .imagetext-module-detail .share-icon {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: 12px;
+
+    }
+
+    .imagetext-module-detail .share-icon .wx-qrcode-box {
+        position: absolute;
+        top: 100%;
+        left: -52px;
+        width: 132px;
+        z-index: 1;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.8s;
+    }
+
+    .imagetext-module-detail .share-icon .wx-qrcode-box img {
+        border: 9px solid #F33030;
+        padding: 8px;
+        background: #fff;
+        margin-top: 11px;
+        border-radius: 4px;
+    }
+
+    .imagetext-module-detail .share-icon:hover .wx-qrcode-box {
+        height: 144px;
+    }
+
+    .imagetext-module-detail .reporter {
+        font-size: 18px;
+        color: var(--cinn-text-color);
+    }
+
+    .imagetext-module-detail .imagetext-content {
+        color: var(--cinn-text-color);
+    }
+</style>
+  </head>
+
+  <body>
+
+    <!--头部-->
+<div class="bg-[#E60012]">
+    <div class="common-width m-auto relative">
+        <div class="flex">
+            <div class="mt-[38px]">
+                <a href="/" target="_blank">
+                    <img alt="中国工业报" class="h-[55px]" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/logo.png" />
+                </a>
+                <img alt="" class="w-[254px] mt-[18px]" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/logotext.png" />
+            </div>
+            <img alt="" class="h-[112px] mt-[49px] ml-[69px]" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/datebase.png" />
+            <img alt="" class="w-[210px] mt-[22px]" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/xjp.png" />
+        </div>
+        <div class="userInfo absolute top-4 right-0 hidden">
+            <div class="h-5 -translate-x-1 text-white"></div>
+            <div class="relative inline-block;">
+                <img class="w-8 h-8  translate-x-2.5 -translate-y-2.5 cursor-pointer rounded-full object-cover" id="avatarImg">
+                <!-- 悬浮框 -->
+                <div class="hover-menu hidden" id="hoverMenu">
+                    <!-- 向上的小三角 -->
+                    <div class="hover-arrow"></div>
+                    <div class="menu-item" onclick="openTouGao()">投稿</div>
+                    <div class="menu-item" onclick="logout()">退出登录</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部end-->
+<!-- 搜索+导航 -->
+<style>
+    .nav-search-box button {
+        line-height: 40px;
+    }
+
+    .nav-box a {
+        width: calc(100% / 14);
+        display: inline-block;
+    }
+
+    .child-nav a {
+        margin: 6px 0;
+        color: #86909c;
+    }
+</style>
+
+<div class="relative">
+    <div class="flex pt-3 mb-3 common-width m-auto justify-center items-center" id="search-nav">
+        <form action="" class="nav-search-box flex" id="kw">
+            <div class="flex border-[#E60012] border rounded-lg items-center pl-3 pr-3 mr-2">
+                <img alt="" class="w-5 h-5" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/nav-search.png" />
+                <input class="h-10 w-51 search-input" id="" name="" type="text" />
+            </div>
+            <button type="submit" class="leading-10 border border-[#E60012] pl-3 pr-3 rounded-lg text-[#E60012] cursor-pointer">
+                搜索
+            </button>
+        </form>
+        <div class="ml-3 flex gap-x-4">
+            <span class="h-login-btn cursor-pointer rounded-[437px] bg-[#E60012] text-[#fff] pl-4 pr-4 pt-2 pb-2" onclick="showModal()">登录</span>
+            <a class="flex flex-col items-center" href="https://h5.cinn.cn/appdown" target="_blank">
+                <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/recording.png" alt="">
+                <i class="not-italic text-[10px] text-[#1D2129]">客户端</i>
+            </a>
+            <a class="flex flex-col items-center">
+                <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/apps.png" alt="">
+                <i class="not-italic text-[10px] text-[#1D2129]">媒体矩阵</i>
+            </a>
+            <a class="flex flex-col items-center">
+                <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/letter.png" alt="">
+                <i class="not-italic text-[10px] text-[#1D2129]">企业邮箱</i>
+            </a>
+            <a class="flex flex-col items-center" href="https://ugc.cinn.cn/#/applyfor" target="_blank">
+                <img style="width:24px;padding:2px" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/gjh_icon.png" alt="">
+                <i class="not-italic text-[10px] text-[#1D2129]">工经号</i>
+            </a>
+            <!-- <a class="flex flex-col items-center" href="https://rmt.cinn.cn/poplar/v2/media/static/102964/20251111_01c082e9f2689bb48204547c74b04b8e32.pdf" target="_blank">
+                <img style="width:24px;padding:2px" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/xtsj_icon.png" alt="">
+                <i class="not-italic text-[10px] text-[#1D2129]">升级公告</i>
+            </a> -->
+        </div>
+    </div>
+    <div class="bg-[#F5F5F7]">
+        <div class="common-width m-auto pt-[18px] pb-[18px] relative">
+             <!-- pr-[50px]  -->
+            <div class="grid grid-cols-14 gap-x-1 gap-y-5 text-center text-lg">
+                 <li>
+                    <a href="//www.cinn.cn/index.html" target="_blank" >首页</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/yc/index.html" target="_blank" >原创</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/yw/index.html" target="_blank" >要闻</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/bw/index.html" target="_blank" >部委</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/zb/index.html" target="_blank" >装备</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/qc/index.html" target="_blank" >汽车</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/ny/index.html" target="_blank" >能源</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/hg/index.html" target="_blank" >化工</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/cl/index.html" target="_blank" >材料</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/wh/index.html" target="_blank" >文化</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/sp/index.html" target="_blank" >视频</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/qy/index.html" target="_blank" >新产城</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/xsn/index.html" target="_blank" >新三农</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/gywl/index.html" target="_blank" >工业文旅</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/tt/index.html" target="_blank" >头条</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/caijing/index.html" target="_blank" >财经</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/sz/index.html" target="_blank" >数智</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/sj/index.html" target="_blank" >数据</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/xf/index.html" target="_blank" >消费</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/yjglyaq/index.html" target="_blank" >应急</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/tanfang/index.html" target="_blank" >碳访</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/rw/index.html" target="_blank" >人物</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/hz/index.html" target="_blank" >会展</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/lingtan/index.html" target="_blank" >零碳</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/newzt/index.html" target="_blank" >专题</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/dajiankang/index.html" target="_blank" >大健康</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/xyx/index.html" target="_blank" >新营销</a>
+                    </li>
+                                                            <li>
+                    <a href="//www.cinn.cn/gyxz/index.html" target="_blank" >工业小镇</a>
+                    </li> 
+            </div>
+            <!--            导航定位-->
+            <!-- <div class="absolute top-4 right-0">
+                <img onclick="toggleMenu('#more-menu-box')" alt="" class="cursor-pointer" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/menu.png"  />
+                <img onmouseenter="toggleMenu('#child-menu', '.child-menu-xl')" class="child-menu-xl mt-3 cursor-pointer" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/caret-down.png" />
+            </div> -->
+        </div>
+    </div>
+    <!-- 更多菜单 -->
+    <div id="more-menu-box" class="more-menu-box absolute bg-[#fff] top-0 left-0 right-0 hidden">
+        <div class="more-menu-main">
+            <!-- 菜单 -->
+            <div class="more-menu-list flex flex-wrap justify-between ">
+                  
+            </div>
+            <div class="menu-close mt-6" onclick="toggleMenu('#more-menu-box')">
+                <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/close.png" alt="">
+            </div>
+
+            <!-- ssi组件引入 组件名称：首页-导航合作伙伴, 组件hashid：J1VYbnk7, 引入时间：2025/07/25 09:36:53 -->
+              
+            <!-- 组件 end -->
+
+        </div>
+    </div>
+</div>
+<!--    更多导航-->
+<div class="bg-[#F2F3F5] hidden" id="child-menu" onmouseleave="toggleMenu('#child-menu', '.child-menu-xl')">
+    <div class="common-width m-auto text-[#1D2129] flex flex-wrap gap-x-8 child-nav">
+          
+    </div>
+</div>
+<script>
+    function toggleMenu(element, rotate) {
+        var menu = document.querySelector(element);
+        menu.classList.toggle("hidden");
+        if (rotate) {
+            document.querySelector(rotate).classList.toggle("rotate-[180deg]");
+        }
+    }
+        $('#kw').on('submit', function (event) {
+        event.preventDefault();
+
+        const kw = $('.search-input').val().trim();
+        const size = 10;
+        const p = 1;
+
+        openSearch(kw, size, p);
+    });
+    function openSearch(kw) {
+        if(!kw) {
+            window.alert('请输入搜索关键词');
+            return
+        }
+        window.open(`/search?wd=${kw}`, '_blank')
+    }
+</script>
+<!-- 搜索+导航end -->
+
+<!-- 登录 -->
+<link type="text/css" rel="stylesheet" href="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/gocaptcha.global.css">
+<script type="text/javascript" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/gocaptcha.global.js"></script>
+<script type="text/javascript" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/captch-sdk1.js"></script>
+<!-- 遮罩层 -->
+<div class="mask"></div>
+
+<!-- 登录弹框 -->
+<div class="modal" id="modal">
+  <div class="close" onclick="hideModal()"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-close.svg"/></div>
+
+  <!-- 验证码登录 -->
+  <div class="panel" id="code-login">
+    <h3>登录中国工业报新闻网</h3>
+    <div class="tip">未注册用户手机号验证码通过后会自动注册</div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-phone.svg" style="transform: translate(-5px, 2px);"/></span>
+      <!-- <input type="text" id="phone1" placeholder="请输入手机号码" oninput="this.value=this.value.replace(/[^0-9]/g,'');">  -->
+      <input type="number" id="phone1" placeholder="请输入手机号码" onkeydown="return event.key !== 'e' && event.key !== '-' && event.key !== '.' && event.key !== '+'">
+    </div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-code.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input type="number" placeholder="请输入验证码" style="padding: 16px 115px 16px 35px;" onkeydown="return event.key !== 'e' && event.key !== '-' && event.key !== '.' && event.key !== '+'">
+      <span class="get-code gray" id="getCodeBtn" onclick="getCode()">获取验证码</span>
+    </div>
+    <button onclick="codeLogin()" style="margin-top: 7px;">登录/注册</button>
+    <div style="overflow: hidden">
+      <span class="switch" onclick="switchPanel('pwd-login')" style="float: right;margin-top: 20px;border: 1px solid #EEE;">密码登录</span>
+    </div>
+    <div style='width:100%;height:1px;background: #F5F5F5;margin-top: 11px;'></div>
+    <div class="xieyi">注册登录即代表同意<a href="https://h5.cinn.cn/davmu/agreement/user_agreement" target="_blank">《用户协议》</a><a href="https://h5.cinn.cn/davmu/agreement/privacy_policy" target="_blank">《隐私政策》</a></div>
+  </div>
+
+  <!-- 密码登录 -->
+  <div class="panel" id="pwd-login" style="display:none">
+    <h3>登录中国工业新闻网</h3>
+    <div class="tip" style="margin-bottom: 25px;">账号密码登录</div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-phone.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input  type="number" placeholder="请输入手机号码" id="phone3" onkeydown="return event.key !== 'e' && event.key !== '-' && event.key !== '.' && event.key !== '+'"/>
+    </div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-code.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input type="password" id="pwdInput" placeholder="请输入密码"  oninput="this.value=this.value.replace(/[\u4e00-\u9fa5]/g, '');" oncompositionstart="this.value=''" oncompositionend="this.value=this.value.replace(/[\u4e00-\u9fa5]/g, '')">
+      <span class="eye" onclick="togglePwdVisibility('pwdInput', this)"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-closedeye.svg" style="transform: translate(0px, 0px);"/></span>
+    </div>
+    <div style="overflow: hidden">
+      <span class="switch" onclick="switchPanel('find-pwd')" style="padding: 3px 15px;">忘记密码?</span>
+    </div>
+    <button onclick="pwdLogin()">登录</button>
+    <div style="overflow: hidden">
+      <span class="back" onclick="switchPanel('code-login')">验证码登录</span>
+    </div>
+    <div style='width:100%;height:1px;background: #F5F5F5;margin-top: 12px;'></div>
+    <div class="xieyi">注册登录即代表同意<a href="https://h5.cinn.cn/davmu/agreement/user_agreement" target="_blank">《用户协议》</a><a href="https://h5.cinn.cn/davmu/agreement/privacy_policy" target="_blank">《隐私政策》</a></div>
+  </div>
+
+  <!-- 找回密码 -->
+  <div class="panel" id="find-pwd" style="display:none">
+    <div style="height: 0;overflow: visible;transform: translate(-30px, -35px);cursor:pointer">
+      <span class="" onclick="switchPanel('pwd-login')"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-back.svg" </span>
+    </div>
+    <h3>找回密码</h3>
+    <div class="tip" style="margin-bottom:25px">验证手机号并输入新密码</div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-phone.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input type="number" id="phone2" placeholder="请输入手机号码" onkeydown="return event.key !== 'e' && event.key !== '-' && event.key !== '.' && event.key !== '+'">
+    </div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-code.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input type="number" placeholder="请输入验证码" onkeydown="return event.key !== 'e' && event.key !== '-' && event.key !== '.' && event.key !== '+'">
+      <span class="get-code gray" id="getCodeBtn2" onclick="getCode(true)">获取验证码</span>
+    </div>
+    <div class="input-group">
+      <span class="icon"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-suo.svg" style="transform: translate(-5px, 2px);"/></span>
+      <input type="password" id="newPwd" placeholder="请输入新密码" oninput="this.value=this.value.replace(/[\u4e00-\u9fa5]/g, '');" oncompositionstart="this.value=''" oncompositionend="this.value=this.value.replace(/[\u4e00-\u9fa5]/g, '')">
+      <span class="eye" onclick="togglePwdVisibility('newPwd', this)"><img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-closedeye.svg"/></span>
+    </div>
+    <button style="margin-bottom: 17px;margin-top: 15.5px;" onclick="findPwd()">登录</button>
+
+  </div>
+</div>
+
+<script>
+    // ==================== 配置 ====================
+    var API_BASE_URL = 'https://svc.cinn.cn';  // API 地址
+
+    // 初始化 CaptchaSDK
+    CaptchaSDK.init({
+      apiBaseUrl: API_BASE_URL,
+      vcodeBaseUrl: API_BASE_URL,
+      width: 300,
+      height: 220,
+      goCaptchaVersion: '1.0.9'  // 与 cmstop-core-utils 保持一致
+    });
+  </script>
+<script>
+  let pollingTimer = null;
+  let loginToken = '';
+  let codeStr=''
+  function guidID() {
+    let d = new Date().getTime();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+      let r = (d + Math.random() * 16) % 16 | 0;
+      d = Math.floor(d / 16);
+      return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
+    });
+  }
+  function entry(name,image){
+    document.querySelector('.mask').classList.remove('active');
+    document.querySelector('#modal').classList.remove('active');
+    if(document.querySelector('.userInfo')){
+      document.querySelector('.userInfo').style.display='flex'
+      document.querySelector('.userInfo div').innerHTML= name
+      document.querySelector('.userInfo img').src= image
+    }
+
+    document.querySelector('.h-login-btn').style.display='none'
+  }
+
+  function fetchTicket() {
+    const id = guidID()
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/account/third/login`,
+      method: 'POST',
+      data: JSON.stringify({
+        third:'avic',
+        code:codeStr
+      }),
+      headers: {
+        'X-Request-Id' : id
+      },
+      contentType: 'application/json',
+      success: function (data) {
+        if(data.code==0){
+          $.ajax({
+            url: `https://svc.cinn.cn/peony/v1/user/info`,
+            method: 'GET',
+            headers: {
+              'Authorization': data.data.token, // 加上 token
+              'X-Request-Id' : id
+            },
+            success: function (data) {
+              if (data.code === 0) {
+                // 用户登录成功
+                const avatar = data.data.avatar || "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/user-image02.png"
+                entry(data.data.alias,avatar)
+                closeLogin();
+                localStorage.setItem('username', data.data.alias)
+                localStorage.setItem('avatar', avatar)
+                const cinn_auth = {
+                  ...data.data,
+                  requestId: guidID()
+                }
+                localStorage.setItem('cinn_auth', JSON.stringify(cinn_auth))
+                showToast({
+                  icon: "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/toast-info.svg", // 图标 URL
+                  message: '用户登录成功',
+                  top: 56,
+                  duration: 2000,
+                  throttle: 2000 // 几秒内只能显示一次
+                });
+              }else{
+                document.getElementById('qrStatus').innerText = '登录失败，请重试！';
+              }
+            },
+            error: function () {
+              document.getElementById('qrStatus').innerText = '登录失败，请重试！';
+            }
+          });
+
+
+        }else{
+          document.getElementById('qrStatus').innerText = '登录失败，请重试！';
+        }
+
+      },
+      error: function () {
+        document.getElementById('qrStatus').innerText = '登录失败，请重试！';
+      }
+    });
+  }
+</script>
+<script>
+  let currentToast = null;
+
+  function loginToast(message, position = 'center', bgColor = '#333',timer = 1000) {
+    // 如果已有提示，先移除
+    if (currentToast) {
+      currentToast.remove();
+      currentToast = null;
+    }
+
+    const toast = document.createElement('div');
+    toast.className = 'custom-toast';
+    toast.innerText = message;
+    toast.style.background = bgColor;
+
+    // 设置位置
+    if (position === 'top') toast.style.top = '60px';
+    else if (position === 'bottom') toast.style.bottom = '60px';
+    else toast.style.top = '50%';
+
+    document.body.appendChild(toast);
+    currentToast = toast;
+
+    // 强制触发 reflow
+    window.getComputedStyle(toast).opacity;
+    toast.classList.add('show');
+
+    // 自动关闭
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => {
+        toast.remove();
+        if (currentToast === toast) currentToast = null;
+      }, 300);
+    }, timer);
+  }
+</script>
+<script>
+  // 密码加密密钥
+  var secret='MEgCQQDJw3rgyWSkImlP0aPOKTNmSZQOzQhT1ihQzeXGH7VH8IfP0aOvGEThF6XoXkCm4rxrLQUAX4TxdbI3K+lG1LFlAgMBAAE='
+  // 生成一个唯一 id（假装标识一个用户）
+  function guidID() {
+    let d = new Date().getTime();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+      let r = (d + Math.random() * 16) % 16 | 0;
+      d = Math.floor(d / 16);
+      return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
+    });
+  }
+  if(localStorage.getItem('username') || localStorage.getItem('avatar') || localStorage.getItem('cinn_auth')){
+    entry(localStorage.getItem('username'),localStorage.getItem('avatar'))
+  }
+  const phoneRegex = /^1[3-9]\d{9}$/;
+
+
+  function showModal() {
+    document.querySelector('.mask').classList.add('active');
+    document.querySelector('#modal').classList.add('active');
+  }
+
+  function hideModal() {
+    document.querySelector('.mask').classList.remove('active');
+    document.querySelector('#modal').classList.remove('active');
+    // 清空所有 input 内容
+    // document.querySelectorAll('#modal input').forEach(input => {
+    //   input.value = '';
+    // });
+
+    // 可选：如果有验证码倒计时等状态，也一并清理
+    // document.querySelectorAll('.get-code').forEach(btn => {
+    //   btn.innerText = '获取验证码';
+    //   btn.classList.add('gray'); // 重置为置灰状态
+    // });
+
+    // 可选：切换回默认面板（如验证码登录）
+    switchPanel('code-login');
+  }
+
+  function switchPanel(id) {
+    document.querySelectorAll('.panel').forEach((p,index) => {
+      if(index!=3){
+        p.style.display = 'none'
+      }
+    });
+    document.getElementById(id).style.display = 'block';
+
+  }
+
+  function togglePwdVisibility(inputId, el) {
+    const input = document.getElementById(inputId);
+    if (input.type === 'password') {
+      input.type = 'text';
+      el.innerHTML = `<img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-openeye.svg"/>`;
+    } else {
+      input.type = 'password';
+      el.innerHTML = `<img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/login-closedeye.svg"/>`;
+    }
+  }
+  function entry(name,image){
+    document.querySelector('.mask').classList.remove('active');
+    document.querySelector('#modal').classList.remove('active');
+    if(document.querySelector('.userInfo')){
+      document.querySelector('.userInfo').style.display='flex'
+
+      document.querySelector('.userInfo div').innerHTML= name
+      document.querySelector('.userInfo img').src= image
+
+      document.querySelector('.h-login-btn').style.display='none'
+    }
+  }
+  // 验证码登录
+  function codeLogin(){
+    if(!document.querySelectorAll('#code-login input')[0].value){
+      loginToast('手机号码为空', 'center', '#000',1000);
+      return
+    }
+
+    if (!phoneRegex.test(document.getElementById('phone1').value.trim())) {
+      loginToast('请输入正确的手机号码', 'center', '#000',1000);
+      return;
+    }
+
+    if(!document.querySelectorAll('#code-login input')[1].value){
+      loginToast('验证码为空', 'center', '#000',1000);
+      return
+    }
+    const deviceId = guidID()
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/auth`,
+      method: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify({
+        account:document.getElementById('phone1').value.trim(),
+        appid: 1,
+        device_id: deviceId,
+        platform: "mobile",
+        verify_code: document.querySelectorAll('#code-login input')[1].value
+      }),
+      headers: {
+        'X-Request-Id' : deviceId
+      },
+      success: function (data) {
+        if(data.code==0){
+          // 用户登录成功
+          const avatar = data.data.avatar || "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/user-image02.png"
+          entry(data.data.alias,avatar)
+          localStorage.setItem('username', data.data.alias)
+          localStorage.setItem('avatar', "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/user-image02.png")
+          const cinn_auth = {
+            ...data.data,
+            requestId: deviceId
+          }
+          localStorage.setItem('cinn_auth', JSON.stringify(cinn_auth))
+          showToast({
+            icon: "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/toast-info.svg", // 图标 URL
+            message: '用户登录成功',
+            top: 56,
+            duration: 2000,
+            throttle: 2000 // 几秒内只能显示一次
+          });
+        }else{
+          loginToast(data.message, 'center', '#000', 2000);
+        }
+
+      },
+      error: function () {
+        loginToast('登录失败', 'center', '#000',2000);
+      }
+    });
+
+  }
+  //密码登录
+  function pwdLogin(){
+    if(!document.querySelectorAll('#pwd-login input')[0].value){
+      loginToast('手机号码为空', 'center', '#000',1000);
+      return
+    }
+    if (!phoneRegex.test(document.getElementById('phone3').value.trim())) {
+      loginToast('请输入正确的手机号码', 'center', '#000',1000);
+      return;
+    }
+    if(!document.querySelectorAll('#pwd-login input')[1].value){
+      loginToast('密码为空', 'center', '#000',1000);
+      return
+    }
+
+    const deviceId = guidID()
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/auth`,
+      method: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify({
+        account:document.getElementById('phone3').value.trim(),
+        appid: 1,
+        device_id: deviceId,
+        platform: "pc",
+        password:CryptoJS.HmacSHA256(document.querySelectorAll('#pwd-login input')[1].value, secret).toString(CryptoJS.enc.Hex)
+
+      }),
+       headers: {
+        'X-Request-Id' : deviceId
+      },
+      success: function (data) {
+        if(data.code==0){
+          // 用户登录成功
+          const avatar = data.data.avatar || "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/user-image02.png"
+          entry(data.data.alias,avatar)
+          localStorage.setItem('username', data.data.alias)
+          localStorage.setItem('avatar', avatar)
+          const cinn_auth = {
+            ...data.data,
+            requestId: deviceId
+          }
+          localStorage.setItem('cinn_auth', JSON.stringify(cinn_auth))
+          showToast({
+            icon: "https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/toast-info.svg", // 图标 URL
+            message: '用户登录成功',
+            top: 56,
+            duration: 2000,
+            throttle: 2000 // 几秒内只能显示一次
+          });
+        }else{
+          loginToast(data.message, 'center', '#000', 2000);
+        }
+
+      },
+      error: function () {
+        loginToast('登录失败', 'center', '#000',2000);
+      }
+    });
+  }
+  function findPwd(){
+    if(!document.querySelectorAll('#find-pwd input')[0].value){
+      loginToast('手机号码为空', 'center', '#000',1000);
+      return
+    }
+    if (!phoneRegex.test(document.getElementById('phone2').value.trim())) {
+      loginToast('请输入正确的手机号码', 'center', '#000',1000);
+      return;
+    }
+    if(!document.querySelectorAll('#find-pwd input')[1].value){
+      loginToast('验证码为空', 'center', '#000',1000);
+      return
+    }
+    if(!document.querySelectorAll('#find-pwd input')[2].value){
+      loginToast('密码为空', 'center', '#000',1000);
+      return
+    }
+    const deviceId = guidID()
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/account/password/find`,
+      method: 'POST',
+      contentType: 'application/json',
+      data: JSON.stringify({
+        tel:document.querySelectorAll('#find-pwd input')[0].value,
+        uid:deviceId,
+        verify_code:document.querySelectorAll('#find-pwd input')[1].value,
+        new_password:CryptoJS.HmacSHA256(document.querySelectorAll('#find-pwd input')[2].value, secret).toString(CryptoJS.enc.Hex),
+        verify_password:CryptoJS.HmacSHA256(document.querySelectorAll('#find-pwd input')[2].value, secret).toString(CryptoJS.enc.Hex)
+      }),
+      success: function (data) {
+        if(data.code==0){
+          switchPanel('code-login');
+          loginToast('密码修改成功', 'center', '#000',1000);
+        }else{
+          loginToast(data.message, 'center', '#000', 2000);
+        }
+
+      },
+      error: function () {
+        loginToast('修改失败', 'center', '#000',2000);
+      }
+    });
+  }
+  // 获取验证码（支持图形验证码）
+  function getCode(isFindPwd = false) {
+    const phoneInput = isFindPwd ? document.getElementById('phone2') : document.getElementById('phone1');
+    const codeBtn = isFindPwd ? document.getElementById('getCodeBtn2') : document.getElementById('getCodeBtn');
+    const phone = phoneInput.value.trim();
+    const type = isFindPwd ? 1 : 6;
+
+    // 先调用 vcode 接口检测是否需要图形验证码
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/vcode?tel=${phone}&type=${type}`,
+      method: 'GET',
+      success: function (data) {
+        // code === 22000 表示需要图形验证码
+        if (data.code === 22000) {
+          console.log('需要图形验证码，弹出验证窗口...');
+          // 调用 CaptchaSDK 进行图形验证
+          CaptchaSDK.verify({
+            tel: phone,
+            type: type,
+            onSuccess: function(ticket) {
+              // 图形验证成功，ticket 为验证票据
+              console.log('图形验证成功，ticket:', ticket);
+              // 带上 ticket 重新请求发送短信验证码
+              sendVcodeWithTicket(phone, type, ticket, codeBtn);
+            },
+            onFail: function(error) {
+              console.error('图形验证失败:', error);
+              loginToast('图形验证失败，请重试', 'center', '#000', 2000);
+            },
+            onCancel: function() {
+              console.log('用户取消验证');
+            }
+          });
+        } else if (data.code === 0) {
+          // 不需要图形验证码，直接发送成功
+          startCountdown(codeBtn);
+          loginToast('验证码发送成功', 'center', '#000', 2000);
+        } else {
+          loginToast(data.message, 'center', '#000', 2000);
+        }
+      },
+      error: function () {
+        loginToast('验证码获取失败', 'center', '#000', 2000);
+      }
+    });
+  }
+
+  // 带 ticket 发送短信验证码
+  function sendVcodeWithTicket(phone, type, ticket, codeBtn) {
+    $.ajax({
+      url: `https://svc.cinn.cn/peony/v1/vcode?tel=${phone}&type=${type}&ticket=${ticket}`,
+      method: 'GET',
+      success: function (data) {
+        if (data.code === 0) {
+          startCountdown(codeBtn);
+          loginToast('验证码发送成功', 'center', '#000', 2000);
+        } else {
+          loginToast(data.message, 'center', '#000', 2000);
+        }
+      },
+      error: function () {
+        loginToast('验证码发送失败', 'center', '#000', 2000);
+      }
+    });
+  }
+
+  // 开始倒计时
+  function startCountdown(codeBtn) {
+    codeBtn.classList.add('gray');
+    let sec = 60;
+    codeBtn.innerText = `${sec}s`;
+    const timer = setInterval(() => {
+      sec--;
+      codeBtn.innerText = `${sec}s`;
+      if (sec <= 0) {
+        clearInterval(timer);
+        codeBtn.innerText = '重新获取';
+        codeBtn.classList.remove('gray');
+      }
+    }, 1000);
+  }
+
+  document.getElementById('phone1').addEventListener('input', function() {
+    const btn = document.getElementById('getCodeBtn');
+    if (phoneRegex.test(this.value.trim())) {
+      btn.classList.remove('gray');
+    } else {
+      btn.classList.add('gray');
+    }
+  });
+  document.getElementById('phone2').addEventListener('input', function() {
+    const btn = document.getElementById('getCodeBtn2');
+    if (phoneRegex.test(this.value.trim())) {
+      btn.classList.remove('gray');
+    } else {
+      btn.classList.add('gray');
+    }
+  });
+</script>
+
+<script>
+  const avatar = document.getElementById('avatarImg');
+  const hoverMenu = document.getElementById('hoverMenu');
+  avatar.addEventListener('mouseenter', () => {
+    hoverMenu.style.display = 'block';
+  });
+  avatar.addEventListener('mouseleave', () => {
+    setTimeout(() => {
+      if (!hoverMenu.matches(':hover')) {
+        hoverMenu.style.display = 'none';
+      }
+    }, 200);
+  });
+
+  hoverMenu.addEventListener('mouseleave', () => {
+    hoverMenu.style.display = 'none';
+  });
+  hoverMenu.addEventListener('mouseenter', () => {
+    hoverMenu.style.display = 'block';
+  });
+
+  function logout() {
+    if (!localStorage.getItem('cinn_auth')){
+      clearCinnAuth()
+      return
+    }
+    const cinn_auth = JSON.parse(localStorage.getItem('cinn_auth'))
+    $.ajax({
+      url: 'https://svc.cinn.cn/peony/v1/account/logout',
+      method: 'POST',
+      headers: {
+        'Authorization': cinn_auth.token
+      },
+      success: function (data) {
+        if (data.code === 0) {
+          clearCinnAuth()
+        }
+      },
+    })
+
+  }
+  function clearCinnAuth() {
+    localStorage.clear();
+    document.querySelector('.userInfo') && (document.querySelector('.userInfo').style.display='none')
+    document.querySelector('.h-login-btn') && (document.querySelector('.h-login-btn').style.display='inline-block')
+  }
+  function openTouGao() {
+    if (localStorage.getItem('cinn_auth')) {
+      window.open(`https://www.cinn.cn/damin-pro-template/#/home?cinn_auth=${localStorage.getItem('cinn_auth')}`, '_blank');
+    }
+  }
+  function checkLoginState() {
+    if (localStorage.getItem('cinn_auth')) {
+      const cinn_auth = JSON.parse(localStorage.getItem('cinn_auth'))
+      $.ajax({
+        url: 'https://svc.cinn.cn/peony/v1/account/login_state',
+        method: 'post',
+        headers: {
+          'Authorization': cinn_auth.token
+        },
+        success: function ({code, data}) {
+          if (code === 0) {
+            if (data.online != 1) logout()
+          }
+        }
+      })
+    } else clearCinnAuth()
+  }
+  document.addEventListener('visibilitychange', function() {
+    if (typeof document.hidden !== 'undefined' && !document.hidden) {
+      // 页面切换回来了
+      if(!localStorage.getItem('cinn_auth')) {
+        clearCinnAuth()
+      }
+    }
+  });
+  checkLoginState()
+</script>
+<style>
+  .mask {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); display: none; z-index: 1000;
+  }
+  .modal {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff; border-radius: 10px;
+    width: 480px; padding: 50px 50px 30px 50px;
+    display: none; z-index: 1001;
+  }
+  .modal.active, .mask.active { display: block; }
+  .modal h3 , .QRcode-modal h3 { text-align: center; margin: 0px 0 15px;font-size: 24px;font-weight: 400;line-height: 34px; }
+  .modal .input-group {
+    position: relative; margin-bottom: 12px;
+  }
+  .modal .input-group input {
+    width: 100%; padding: 16px 38px 16px 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #F5F5F6;
+    font-size: 16px;
+  }
+  .modal .input-group .icon {
+    position: absolute; left: 10px; top: 50%;
+    transform: translateY(-50%); color: #999;
+  }
+  .modal .input-group .eye {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%); cursor: pointer;
+  }
+  .modal .input-group .get-code {
+    position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+    font-size: 16px; cursor: pointer; color: #E60012;
+  }
+  .modal .input-group .get-code.gray { color: #f2747d; pointer-events: none; }
+  .modal button {
+    width: 100%; padding: 10px;
+    background-color: #E60012; color: white;
+    border: none; border-radius: 5px;
+    margin-top: 10px;
+    cursor:pointer;
+    font-size:14px;
+  }
+  .switch, .back { color: #222426; cursor: pointer; font-size: 14px;padding: 8px 15px;width: 116px;text-align: center; }
+  .switch { float: right; margin-top: 0px; }
+  .back { float: right;margin-top: 20px;border: 1px solid #EEE; }
+  .close { position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 18px; }
+  #code-login .tip , .QRcode-modal .tip{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16.38px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #858687;
+    margin-bottom: 25px;
+  }
+  .panel .tip , .xieyi{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16.38px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #858687;
+  }
+  .xieyi{
+    margin:21px 0 0 0;
+  }
+  .xieyi a{
+    color: #E60012;
+    text-decoration: none;
+  }
+</style>
+<style>
+  .custom-toast {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 14px;
+    background: #333;
+    color: white;
+    font-size: 11px;
+    border-radius: 6px;
+    opacity: 0;
+    z-index: 2000;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .custom-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+</style>
+<style>
+
+
+  /* 悬浮框 */
+  .hover-menu {
+    position: absolute;
+    top: 28px; /* 离头像下方距离 */
+    left: 85%;
+    transform: translateX(-50%);
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+    min-width: 90px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* 三角形外边框（灰色边） */
+  .hover-menu::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid #ddd;
+    z-index: 1;
+  }
+
+  /* 三角形本体（白色） */
+  .hover-arrow {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 7px solid #fff;
+    z-index: 2;
+  }
+
+  /* 悬浮内容 */
+  .hover-menu .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hover-menu .menu-item:hover {
+    background: #f2f3f5;
+    color: #E60012 !important;
+    border-radius: 4px;
+  }
+</style>
+    
+    
+    
+    <div style="display:none;" id="track-text" class="track-id-xdoqbSpOGMSjhohqCQhmhn"></div>
+<div class="layout-content">
+    <div class="common-width container-crumbs row mt-8 mb-10">
+     <a class="breadcrumb-item" href="//www.cinn.cn/index.html" >
+        首页
+        </a>
+            <a class="breadcrumb-item" href="//www.cinn.cn/rdzt/index.html" >
+        热点专题
+        </a>
+            <a class="breadcrumb-item" href="//www.cinn.cn/rdzt/zghjs/index.html" >
+        中国好技术
+        </a>
+        <a class="breadcrumb-item" >正文</a> 
+</div>    <div class="row space-between imagetext-module-detail">
+        <div class="w-[935px]">
+
+            <div class="title">
+    华为云“行业AI梦工厂·具身智能专区”上线 CloudRobo平台即将公测
+</div>
+<div class="infos flex justify-between mt-6 items-center">
+    <div>
+        
+        <span class="mr-5 source">
+            来源:
+                        中国工业新闻网
+                    </span>
+        <span class="mr-5 publish_at_str">2026-06-08 09:22</span>
+    </div>
+    <div class="flex items-center">
+        分享到：
+        <div class="share-icon">
+            <img class="s_icon" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/shareWechat.png" alt=""/>
+            <div class="wx-qrcode-box"></div>
+        </div>
+        <div class="share-icon">
+            <a href="http://service.weibo.com/share/share.php?title=华为云“行业AI梦工厂·具身智能专区”上线 CloudRobo平台即将公测&url=//www.cinn.cn/rdzt/zghjs/2026/06-08/vrdLdqEr.html">
+                <img class="s_icon" src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/shareWeiBo.png" alt=""/>
+            </a>
+        </div>
+    </div>
+</div>
+
+            
+<div class="imagetext-content mt-8">
+    <p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;"><!-- [if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"> <v:stroke joinstyle="miter"/> <v:formulas>  <v:f eqn="if lineDrawn pixelLineWidth 0"/>  <v:f eqn="sum @0 1 0"/>  <v:f eqn="sum 0 0 @1"/>  <v:f eqn="prod @2 1 2"/>  <v:f eqn="prod @3 21600 pixelWidth"/>  <v:f eqn="prod @3 21600 pixelHeight"/>  <v:f eqn="sum @0 0 1"/>  <v:f eqn="prod @6 1 2"/>  <v:f eqn="prod @7 21600 pixelWidth"/>  <v:f eqn="sum @8 21600 0"/>  <v:f eqn="prod @7 21600 pixelHeight"/>  <v:f eqn="sum @10 21600 0"/> </v:formulas> <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/> <o:lock v:ext="edit" aspectratio="t"/></v:shapetype><v:shape id="图片_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:415.5pt;height:277pt;visibility:visible;mso-wrap-style:square'> <v:imagedata src="file:///C:/Users/40877/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"  o:title=""/></v:shape><![endif]--><!-- [if !vml]--></p>
+<figure class="image align-center" style="margin-block-start: 0; margin-block-end: 0; margin-inline-start: 0; margin-inline-end: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;"><img style="max-width: 100%;" src="https://oss.cinn.cn/media/20260605/01cda3455f4c3568252c423580c00e3434.jpg">
+<figcaption style="text-align: center !important; font-size: 12px !important; color: #86909c !important; cursor: text !important; min-width: 20px !important; outline: none !important; line-height: 1.5 !important;"></figcaption>
+</figure>
+<p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;"><!--[endif]--></p>
+<p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;">6月5日，在2026华为云INSPIRE创想者大会上，华为云正式发布“行业AI梦工厂·具身智能专区”，同时宣布全球首个全流程具身智能开发平台——CloudRobo将在月内开启公测。</p>
+<p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;">专区提供一站式具身智能数据合成、模型开发、仿真验证平台，提供面向具身智能开发者提供百万级开箱即用的数据资产与20+昇腾亲和的模型资产，助力具身智能应用开发。</p>
+<p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;">同时，华为云发布全球首个全流程具身智能开发平台CloudRobo，提供安全可信的PB级数据底座及开发管线、业界首个云原生具身模型生产引擎及首个全国产Real-Sim数据生产及模型评测体系，帮助机器人小时级上云，模型分钟级部署。该平台将于6月30日公测。</p>
+<p style="display: block; text-align: justify; font-size: 18px; line-height: 2.0; text-indent: 2em; margin: 0; margin-bottom: 1.5em;">目前，华为云已与30多家行业伙伴、20多家本体伙伴及10多家985高校建立合作，面向工业、应急、生活服务、医疗康养、教育教学等20多个行业场景提供业界实践与场景方案，帮助具身智能企业加速场景落地。（曹雅丽）</p>
+</div>
+
+            <!--            作者-->
+                        <!--            编辑-->
+            <div class="reporter mt-8 text-right">
+                                                        【编辑：龚忻】
+                                                </div>
+        </div>
+        <div class="w-[300px]">
+
+            <!-- ssi组件引入 组件名称：推荐阅读, 组件hashid：9xDL6o1z, 引入时间：2025/10/16 15:42:21 -->
+             <div class="">
+    <div class="cate-title-style-bottom">
+        <div class="tit">推荐阅读</div>
+    </div>
+    <div class="">
+                <a href="//www.cinn.cn/xyx/2026/01-15/3DlV83d1.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            寻找新质生产力领跑者案例调研行3.0专题
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-01-15 17:16
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/05-31/VDpBm8Q1.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            上汽大众反攻新能源车主战场：从“跟随”到“建规”
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-05-31 12:52
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-30/01qaAbL1.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            中国工业报社入选全国性行业类媒体2026年“新春走基层”活动推荐案例
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-30 15:04
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-30/o1X0Ae01.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            一季度全社会用电量增长5.2%，数字经济与制造业成主要动力
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-30 18:01
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-30/xDLeQdyk.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            A股交易规则系统性优化落地：盘后定价扩围、ST股涨跌幅上调、创业板引入做市商
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-30 15:29
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-21/Qr2wK5jD.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            20.4万亿！179家国家高新区撑起全国14.5%GDP的底气
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-21 10:28
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-29/PDAaB06D.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            自贸试验区又落新子 畅通向北开放国际大通道
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-29 15:50
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-29/xDLez0gk.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            冠军热度下的冷思考：中国摩托车产业的底气与制约
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-29 14:26
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-29/jk3wBp6k.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            “十五五”零碳园区三项关口待突破
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-29 14:42
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-29/8DgvznYr.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            确定性信号照亮“十五五”经济蓝图
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-29 14:41
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yw/2026/04-28/V1QPYa8k.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            科技成果转化找到新空间：天津加快导入新质产业、新功能、新要素、新业态
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-28 13:06
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-27/GDBjB2VD.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            2030年规模破百万亿  国务院发布服务业扩能提质路线图
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-27 17:41
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-26/9kwN7zpD.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            “物理AI”重构护城河：上汽大众“合资2.0”的反攻逻辑
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-26 13:01
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-20/W1OPzVmr.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            以战略定力穿越工程机械行业周期——对话柳工集团党委书记、董事长郑津
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-20 19:24
+                    </div>
+                </div>
+            </div>
+        </a>
+
+                <a href="//www.cinn.cn/yc/2026/04-24/9kwN7yJD.html" target="_blank">
+            <div class="mt-4 space-y-3">
+                <div class="text-sm">
+                    <div class="line-clamp-2 overflow-hidden text-ellipsis">
+                            领航汽车产业，2026北京车展启幕！
+                    </div>
+                    <div class="text-[#1D2129] mt-2 text-sm">
+                        2026-04-24 20:20
+                    </div>
+                </div>
+            </div>
+        </a>
+
+            </div>
+</div> 
+            <!-- 组件 end -->
+
+        </div>
+    </div>
+
+</div>
+
+    <!-- 底部 -->
+  <footer class="footer">
+    <div class="footer-account" style="font-weight:bold">
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_wechat.jpg"
+          alt="">
+        <p>微信</p>
+      </div>
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_weibo.png"
+          alt="">
+        <p>微博</p>
+      </div>
+
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_top.png" alt="">
+        <p>头条</p>
+      </div>
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_live.png"
+          alt="">
+        <p>直播</p>
+      </div>
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_douyin.png"
+          alt="">
+        <p>抖音</p>
+      </div>
+      <div class="item">
+        <img src="https://static.cinn.cn/canna/custom/pc/1750735520//assets/images/qr_kuaishou.png"
+          alt="">
+        <p>快手</p>
+      </div>
+    </div>
+<div class="part footer-con">
+        <div class="footer-nav">
+            <div class="list" style="font-weight:bold">
+                <a href="/2025/02-18/gDa0wopr.html" target="_blank" class="item">中国工业报社简介</a>
+                <a href="/2024/04-10/XkJOxVv1.html" target="_blank" class="item">合作</a>
+                <a href="/2024/02-21/nDMVxVBk.html" target="_blank" class="item">招聘</a>
+            </div>
+        </div>
+        <div class="footer-info" style="font-weight:bold">
+            <p>举报邮箱：jubao@cinn.cn   投稿邮箱：zbs@cinn.cn   服务邮箱：fuwu@cinn.cn</p>
+            <p>新闻热线电话：010-67410661  违法和不良信息举报电话：010-67410661   广告招商电话：010-67410642   行政热线：010-67410602</p>
+            <p><a href="https://rmt.cinn.cn/poplar/v2/media/static/91669/20251110_01889a36f22600909a2084363d46c794c1.jpeg" style="color: #FFFFFF;" target="_blank">互联网新闻信息服务许可证编号：10120240011</a> <a href="https://beian.mps.gov.cn/#/query/webSearch" style="color: #FFFFFF;" target="_blank">京公网安备 11010702002509号</a> <a href="https://beian.miit.gov.cn/#/Integrated/index" style="color: #FFFFFF;" target="_blank">京ICP备12018842号-2</a></p>
+            <p>中国工业报社 版权所有 未经书面允许 不得复制或建立镜像 Copyright © China Industry News, All Rights Reserved</p>
+        </div>
+    </div>
+  </footer>
+    <script>
+    window.detailPush("doc");
+</script>
+    <script src='https://static.cinn.cn/canna/custom/pc/1750735520//assets/js/qrcode.min.js'></script>
+<script>
+    // 文章详情页微信二维码分享 代码
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取用于显示二维码的容器
+        const qrcodeContainer = document.querySelector('.wx-qrcode-box');
+
+        // 确保容器存在
+        if (qrcodeContainer) {
+            // 创建一个新的 QRCode 实例
+            new QRCode(qrcodeContainer, {
+                text: window.location.href,   // 使用当前页面 URL 作为二维码内容
+                width: 113,                   // 二维码宽度
+                height: 113,                  // 二维码高度
+                colorDark: "#000000",         // 二维码前景色
+                colorLight: "#ffffff",        // 二维码背景色
+                correctLevel: QRCode.CorrectLevel.H  // 容错级别
+            });
+        }
+    });
+</script>    <script>
+    // 埋点
+    window.onload = function() {
+        window.detailAction()
+    }
+    </script>
+  </body>
+</html>

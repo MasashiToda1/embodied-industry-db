@@ -1,0 +1,33 @@
+id: evt-2026-08-17-roboscience-product-launch-rex-g1
+date: '2026-08-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: RoboScience 机器科学发布轮式仿人形通用操作机器人 REX G1
+summary:
+  zh: 8 月 17 日，RoboScience 机器科学发布首款产品——轮式仿人形通用操作机器人 REX G1，搭载自研 VLOA 架构通用具身大模型 Visics，面向物流、工厂、零售及家庭场景。财经天下报道其全身 22 个关节自由度，双臂负载 10 公斤，端侧算力 2070 TFLOPS，续航最长 4 小时并支持热插拔换电，在 WRC 2026 首秀。
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  target_scene:
+  - logistics-warehouse
+  - industrial-manufacturing
+  - commercial-service
+  - home
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.gasgoo.com/robot/news/70469349-roboscience%E5%8F%91%E5%B8%83rex/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/gasgoo-2026-08-17-roboscience-rex-g1.html
+- url: http://www.caijingtx.com/cjnews/2026/010329529.html
+  publisher: 财经天下
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/caijingtx-2026-08-17-roboscience-rex-g1-wrc.html
+corroboration: multi

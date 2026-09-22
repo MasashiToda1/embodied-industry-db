@@ -2,6 +2,23 @@ id: wujie-power
 names:
   zh: 无界动力
   en: Wujie Power
+  aliases:
+  - 无界动力（北京）技术研发有限公司
+  - Anyverse Dynamics
 status: active
 layers:
 - embodiment
+founded: 2025-03
+hq:
+  country: CN
+  city: 北京
+description: 做具身「通用大脑」与轮式双臂机器人本体的公司，产品有通用机器人 K15 与具身大脑 MWA，面向工业与商业场景。
+sources:
+- url: https://finance.sina.com.cn/roll/2025-11-12/doc-infxcuqx3455336.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新浪财经报道，无界动力（北京）技术研发有限公司成立于 2025 年 3 月 21 日
+- url: https://news.pedaily.cn/202602/561044.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 投资界报道，2025 年 3 月创立于北京

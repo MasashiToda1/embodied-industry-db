@@ -1,0 +1,20 @@
+id: evt-2025-11-06-agibot-corporate-swancor-tender-offer-completed
+date: '2025-11-06'
+date_precision: day
+type: corporate
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元恒岳对上纬新材的要约收购完成股份交割，合计持股 63.6232%
+summary:
+  zh: 11 月 6 日晚间，上纬新材公告，智元机器人旗下上海智元恒岳科技合伙企业（有限合伙）对其发起的要约收购已完成股份交割，智元恒岳持有上纬新材 2.36 亿股（占总股本 58.6232%），智元恒岳及其一致行动人合计持有 2.57 亿股（占总股本 63.6232%）。彭志辉等 8 人被提名为上纬新材第四届董事会董事候选人。
+counterparties:
+- 上纬新材（688585.SH，被收购方）
+evidence:
+- url: https://www.cls.cn/detail/2193496
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/cls-2025-11-06-agibot-swancor-tender-co.html
+corroboration: single

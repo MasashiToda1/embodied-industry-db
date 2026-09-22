@@ -1,0 +1,21 @@
+id: evt-2026-03-18-jushen-product_launch-robonow-rental-platform
+date: '2026-03-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: jushen
+  role: subject
+title:
+  zh: 具深科技旗下机器人租赁平台「机时租」在上海发布
+summary:
+  zh: 3 月 18 日，机时租平台发布会在上海举行。平台以「硬件 + 平台运营 + 场景定制 + 本地化服务」一站式方案向中小企业提供具身机器人按需租赁与调度，宣布全国服务网络建成，场景从商业演出向工业、教育、康养、应急等领域拓展。
+axes:
+  delivery_model: [rental, service-delivery]
+  target_scene: [tourism-performance, commercial-service]
+evidence:
+- url: https://www.robot-china.com/news/202603/19/95234.html
+  publisher: 中国机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/robot-china-2026-03-18-jushen-robonow-launch.html
+corroboration: single

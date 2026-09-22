@@ -1,0 +1,30 @@
+id: evt-2025-12-17-spirit-ai-deployment-catl-pack-line
+date: '2025-12-17'
+date_precision: day
+type: deployment
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能人形机器人「小墨」在宁德时代中州基地电池 PACK 产线规模化上岗
+summary:
+  zh: 12 月 17 日，千寻智能宣布其人形机器人「小墨」正式在宁德时代中州基地新能源动力电池 PACK 生产线上岗，承担电池包下线前 EOL 与 DCR 工序的高压测试插头插接作业。官方称机器人搭载端到端视觉-语言-动作（VLA）模型，插接成功率稳定在 99% 以上，单日工作量较人工提升三倍。
+counterparties:
+- 宁德时代
+axes:
+  target_scene:
+  - industrial-manufacturing
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://www.ncsti.gov.cn/kjdt/xwjj/202512/t20251219_232737.html
+  publisher: 北京市科学技术委员会网站 · 转载北京海淀公众号
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/ncsti-2025-12-17-spirit-ai-catl-deploymen.html
+- url: https://www.spirit-ai.com/news/22
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/spirit-ai-2025-12-17-spirit-ai-catl-deploymen.html
+corroboration: multi

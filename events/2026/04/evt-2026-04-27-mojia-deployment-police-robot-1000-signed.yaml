@@ -1,0 +1,24 @@
+id: evt-2026-04-27-mojia-deployment-police-robot-1000-signed
+date: '2026-04-27'
+date_precision: day
+type: deployment
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 奇瑞墨甲全球发布会：智警机器人千台签约、百台集中交付，发布机器人租赁平台
+summary:
+  zh: 4 月 27 日，奇瑞墨甲全球发布会在安徽芜湖举行，人形机器人墨茵、智警机器人、导医机器人、机器狗集体亮相，现场完成智警机器人千台签约与百台集中交付，越南合作伙伴代表出席签约；同时发布机器人租赁平台，并与百家高校启动人才培养合作。
+axes:
+  target_scene:
+  - commercial-service
+  delivery_model:
+  - hardware-sale
+  - rental
+evidence:
+- url: https://www.dtm.com.cn/news/202604/242198.html
+  publisher: 天脉财经（转载美通社）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/dtm-2026-04-27-mojia-police-robot-1000.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-05-18-cie-statement-humanoid-team-standards-released
+date: '2026-05-18'
+date_precision: day
+type: statement
+orgs:
+- id: cie
+  role: subject
+title:
+  zh: 中国电子学会公告发布 T/CIE 387、388、404、405 等人形机器人与具身智能团体标准
+summary:
+  zh: 5 月 18 日，中国电子学会公告批准发布 30 项学会标准，其中含 T/CIE 387-2026《人形机器人 灵巧手通用技术要求》、T/CIE 388-2026《人形机器人 运动能力分级》、T/CIE 404-2026《具身智能从业人员能力要求》、T/CIE 405-2026《人形机器人 全生命周期管理规范》。
+evidence:
+- url: https://www.cie.org.cn/list_53/15940.html
+  publisher: 中国电子学会官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/cie-2026-05-18-cie-tcie-387-388-humanoi.html
+corroboration: single

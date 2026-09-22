@@ -1,0 +1,28 @@
+id: evt-2026-03-02-noetix-funding-b-round
+date: '2026-03-02'
+date_precision: day
+type: funding
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力完成近 10 亿元 B 轮融资，宁德时代系晨道资本领投
+summary:
+  zh: 3 月 2 日，北京松延动力科技集团股份有限公司宣布完成 B 轮融资，B 轮累计规模近 10 亿元，由宁德时代系产业投资平台晨道资本领投，国科投资、京国盛基金、九合创投等跟投。公司称累计已完成 9 轮融资。
+counterparties:
+- 晨道资本
+- 国科投资
+- 京国盛基金
+- 九合创投
+evidence:
+- url: https://www.stcn.com/article/detail/3656889.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/stcn-2026-03-02-noetix-b-round.html
+- url: https://www.bjnews.com.cn/detail/1772414188129618.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/bjnews-2026-03-02-noetix-b-round-bjnews.html
+corroboration: multi

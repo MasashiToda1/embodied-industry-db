@@ -1,0 +1,25 @@
+id: evt-2026-04-brainco-product_launch-revo-3
+date: 2026-04
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，强脑科技全新发布 BrainCo Revo 3 智能灵巧手」（人民财讯 2026-04-08 电）
+type: product_launch
+orgs:
+- id: brainco
+  role: subject
+title:
+  zh: 强脑科技发布 21 自由度灵巧手 BrainCo Revo 3
+summary:
+  zh: 强脑科技发布 BrainCo Revo 3 智能灵巧手。官方视频显示 Revo 3 具备 21 个主动自由度，采用「全直驱 + 可反驱」架构与自研驱控一体化微型关节，覆盖 33 种抓握手势，3Hz 开合、20N 指尖捏力、70N 五指握力，全掌触觉阵列与指尖视触觉融合，面向人形机器人、工业协作、医疗康复场景。
+axes:
+  hardware_strategy:
+  - in-house
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.stcn.com/article/detail/3732136.html
+  publisher: 证券时报网 · 来源人民财讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stcn-2026-04-07-brainco-revo-3-launch.html
+corroboration: single

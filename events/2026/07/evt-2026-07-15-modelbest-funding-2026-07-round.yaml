@@ -1,0 +1,18 @@
+id: evt-2026-07-15-modelbest-funding-2026-07-round
+date: '2026-07-15'
+date_precision: day
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能宣布完成新一轮融资，2026 年上半年累计融资超 50 亿元
+summary:
+  zh: 智东西 7 月 15 日报道，面壁智能当日宣布完成新一轮融资，投资方包括国家级基金、央企、汽车制造商等产业方与财务投资机构，具体名单与金额未公开。报道称公司 2026 年上半年累计融资金额超 50 亿元，估值超 200 亿元。
+evidence:
+- url: https://zhidx.com/p/575756.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zhidx-2026-07-15-modelbest-2026-07-round.html
+corroboration: single

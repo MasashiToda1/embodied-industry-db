@@ -1,0 +1,28 @@
+id: evt-2026-08-19-baidu-cloud-partnership-wrc-four-signings
+date: 2026-08-19
+date_precision: day
+type: partnership
+orgs:
+- id: baidu-cloud
+  role: subject
+title:
+  zh: 百度智能云在 2026 世界机器人大会与贝塔无限、中亿具身、拓元智慧、超脑未来签署具身智能合作协议
+summary:
+  zh: 8 月 19 日，2026 世界机器人大会首日，百度智能云与贝塔无限、中亿具身、拓元智慧、超脑未来签署合作协议：与贝塔无限共建通用具身智能技术支撑平台，与中亿具身建设群体智能云端大脑、云端仿真平台与专业数据集，与拓元智慧围绕 VWA 世界动作模型、云端训练和具身数据闭环合作，与超脑未来共建群体智能 AI Infra。文中引用 IDC 报告称百度智能云以 29.55% 份额位居中国具身智能云市场第一。
+counterparties:
+- 贝塔无限
+- 中亿具身
+- 拓元智慧
+- 超脑未来
+evidence:
+- url: https://www.keji100.com.cn/news/202608/9840.html
+  publisher: 未来科技范
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/keji100-2026-08-19-baidu-cloud-wrc-signings.html
+- url: http://paper.people.com.cn/rmrb/pc/content/202609/09/content_30179989.html
+  publisher: 人民日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/paper-2026-08-19-baidu-cloud-wrc-signings.html
+corroboration: multi

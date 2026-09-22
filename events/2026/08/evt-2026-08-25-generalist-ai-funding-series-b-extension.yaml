@@ -1,0 +1,20 @@
+id: evt-2026-08-25-generalist-ai-funding-series-b-extension
+date: 2026-08-25
+date_precision: day
+type: funding
+orgs:
+- id: generalist-ai
+  role: subject
+title:
+  zh: TechCrunch 报道 Generalist AI 获 8VC 领投的 B 轮扩展融资，估值 30 亿美元
+summary:
+  zh: 8 月 25 日，TechCrunch 援引两位知情人士与一份监管文件报道，Generalist AI 完成由 8VC 领投的追加融资，估值达到 30 亿美元；新资金「接近 2 亿美元」，是 6 月宣布的 4 亿美元 B 轮（Radical Ventures 领投）的扩展，使该轮总额达到 6 亿美元。报道称 6 月那轮的估值为 20 亿美元。公司未对此置评。
+counterparties:
+- 8VC
+evidence:
+- url: https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/techcrunch-2026-08-25-generalist-ai-series-b-e.html
+corroboration: single

@@ -1,0 +1,36 @@
+id: evt-2026-07-17-daka-robot-product_launch-daxbrain-wm-dualis-qiji
+date: '2026-07-17'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「7 月 17 日至 20 日……亮相 WAIC 2026，举办品牌战略暨新品发布会」
+type: product_launch
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人在 WAIC 2026 发布 DaxBrain-WM（Dualis）两仪具身世界模型与骐骥 X1 / XS 机器马
+summary:
+  zh: WAIC 2026 期间（7 月 17 日至 20 日），大咖机器人举办品牌战略暨新品发布会，发布自研 DaxBrain-WM（Dualis）两仪具身世界模型：阴模型为多模态 MoE 类 VA 模型，融合视觉、触觉、力觉与本体感知，端到端运动规划响应延迟低于 50ms；阳模型负责任务分解、调度与多机协同，端侧推理。同场首发骐骥 X1 全地形四足机器马（整机 300 公斤，续航 40 公里，最高时速 10 公里/小时）与骐骥 XS 轮足机器马（整机 320 公斤，续航 100 公里，极速 40 公里/小时），在京东平台开启预约。数据侧，公司通过第一人称视角头环、全掌触觉手套采集操作数据，称已积累数万小时真机操作数据。
+axes:
+  embodiment_form:
+  - quadruped
+  model_form:
+  - world-model
+  data_acquisition:
+  - human-video
+  - real-robot
+  data_modality:
+  - tactile
+  - rgb
+evidence:
+- url: https://leaderobot.com/news/8555
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/leaderobot-2026-07-17-daka-robot-waic-launch.html
+- url: http://www.zqrb.cn/tmt/tmthangye/2026-07-19/A1784465194227.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zqrb-2026-07-17-daka-robot-waic-zqrb.html
+corroboration: multi

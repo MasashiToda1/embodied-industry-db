@@ -1,0 +1,30 @@
+id: evt-2026-07-16-robbyant-deployment-guoda-pharmacy
+date: '2026-07-16'
+date_precision: day
+type: deployment
+orgs:
+- id: robbyant
+  role: subject
+- id: leju
+  role: supplier
+- id: galaxea
+  role: supplier
+title:
+  zh: 蚂蚁灵波与国大药房的「机器人智慧药房」在上海门店投入运营，入选 WAIC 2026 镇馆之宝
+summary:
+  zh: 中国日报网 7 月 16 日报道，蚂蚁灵波与国大药房打造的「机器人智慧药房」已在国大药房上海门店投入实际运营，由具身基座模型 LingBot-VLA 2.0 驱动乐聚、星海图和蚂蚁灵波自研 R-2 三种机器人协同完成接单、分拣与交付，门店无需空间改造。该方案入选 WAIC 2026 十大「镇馆之宝」。官方称 LingBot-VLA 2.0 预训练融入 6 万小时真实数据，已适配 17 家厂商 20 余种机器人构型。
+counterparties:
+- 国大药房
+axes:
+  target_scene:
+  - commercial-service
+  hardware_strategy:
+  - adapt-others
+  - in-house
+evidence:
+- url: https://cn.chinadaily.com.cn/a/202607/16/WS6a587c38a310d709c2fbdd76.html
+  publisher: 中国日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/cn-2026-07-16-robbyant-pharmacy-deploy.html
+corroboration: single

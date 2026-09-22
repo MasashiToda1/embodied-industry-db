@@ -1,0 +1,28 @@
+id: evt-2025-10-24-linkerbot-funding-a-round
+date: 2025-10-24
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成数亿元 A 轮融资，京国瑞管理公司与博佳资本领投
+summary:
+  zh: 10 月 24 日，灵心巧手（北京）科技有限公司宣布完成数亿元 A 轮融资。本轮由京国瑞管理公司和博佳资本领投，国中资本、帝奥微、紫峰资本、山证投资、江金卓越基金、弘颐基金等联合投资，老股东蚂蚁集团继续加注。公司称融资用于量产能力升级、全场景技术研发与全球化布局。
+counterparties:
+- 京国瑞管理公司
+- 博佳资本
+- 国中资本
+- 帝奥微
+- 紫峰资本
+- 山证投资
+- 江金卓越基金
+- 弘颐基金
+- 蚂蚁集团
+evidence:
+- url: https://www.stcn.com/article/detail/3404786.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/stcn-2025-10-24-linkerbot-a-round.html
+corroboration: single

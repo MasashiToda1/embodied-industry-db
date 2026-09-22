@@ -5,7 +5,26 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2018
+hq:
+  country: US
+  city: Los Angeles
+description: 由 UCLA RoMeLa 实验室成员 2018 年创立的美国人形机器人与执行器公司，产品有全尺寸人形 THEMIS、儿童尺寸开放平台 BRUCE 与 BEAR 系列本体感知执行器。
 upstream:
   robotics_notebooks_institution: westwood-robotics
 accounts:
   github: Westwood-Robotics
+  site: https://www.westwoodrobotics.io
+sources:
+- url: https://www.westwoodrobotics.io/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，产品线 THEMIS / BRUCE / BEAR 系列执行器
+- url: https://www.roboticssummit.com/westwood-robotics-debuting-next-gen-themis-humanoid/
+  tier: media
+  retrieved: '2026-09-22'
+  note: Robotics Summit 展商稿引用公司简介：2018 年由 UCLA RoMeLa 核心成员创立
+- url: https://www.linkedin.com/company/westwoodrobotics
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: LinkedIn 公司页，总部洛杉矶

@@ -252,7 +252,7 @@ async function pageOrg(id) {
   const kv = (k, v, sub = '') => `<div class="stat"><div class="stat-zh">${k}</div><div class="stat-v">${v}</div>${sub ? `<div class="stat-x">${sub}</div>` : ''}</div>`;
   const linkOf = { github: v => `https://github.com/${v}`, huggingface: v => `https://huggingface.co/${v}`, website: v => v };
   const links = Object.entries(o.accounts || {}).concat(o.website ? [['website', o.website]] : [])
-    .map(([k, v]) => `<a class="olink" href="${esc(linkOf[k] ? linkOf[k](v) : v)}" target="_blank" rel="noopener">${k === 'huggingface' ? 'Hugging Face' : k === 'github' ? 'GitHub' : k === 'website' ? '官网' : esc(k)}</a>`).join('');
+    .map(([k, v]) => `<a class="olink" href="${esc(linkOf[k] ? linkOf[k](v) : v)}" target="_blank" rel="noopener">${k === 'huggingface' ? 'Hugging Face' : k === 'github' ? 'GitHub' : (k === 'website' || k === 'site') ? '官网' : esc(k)}</a>`).join('');
 
   // 技术栈：按轴一行，取值做 chip，首次可见与来源放在 chip 里
   const axisRow = f => stack[f] ? `<div class="ax-row"><div class="ax-k">${label(f)}</div><div class="ax-v">${stack[f].map(x =>
@@ -365,33 +365,35 @@ function drawHeat(el, ax) {
 async function pageGraph() {
   await load(); nav('graph');
   const G = await (await fetch('data/graph.json')).json();
-  let showShared = false, showAll = false;
+  let showShared = false, showAll = false, allText = false;
+  const nText = G.nodes.filter(n => n.text).length, nTextRepeat = G.nodes.filter(n => n.text && n.events >= 2).length;
   $('main').innerHTML = `<div class="wrap"><h1>图谱</h1>
-    <div class="sub">节点＝主体，大小＝事件数。<b>实线＝事件里的关系</b>（投资 / 客户 / 供应），每条能点回事件。灰点＝文本对手方，不在 registry。</div>
-    <div class="card" style="margin-bottom:12px"><span class="tag on" id="t-event">事件关系（实线）</span><span class="tag" id="t-shared">共享技术栈（虚线）</span><span class="tag soft" id="t-all">显示无事件的主体</span>
+    <div class="sub">节点＝主体，大小＝事件数。<b>实线＝事件里的关系</b>（投资 / 客户 / 供应），每条能点回事件。灰点＝文本对手方（投资机构、买方），不在 registry。</div>
+    <div class="card" style="margin-bottom:12px"><span class="tag on" id="t-event">事件关系（实线）</span><span class="tag" id="t-shared">共享技术栈（虚线）</span><span class="tag soft" id="t-all">显示无事件的主体</span><span class="tag soft" id="t-text">显示只出现 1 次的对手方（${nText - nTextRepeat}）</span>
       <span class="legend" style="float:right">拖动节点 · 滚轮缩放 · 点节点进主体页</span></div>
     <div id="graph"></div><div class="tip" id="tip"></div>
-    <div class="notice" style="margin-top:12px">图很稀是实况：事件里带主体间关系的还不多。它不会用共享技术栈的虚线填满来显得热闹——那种边任何人拿论文库都能画，投资和采购关系只有事件层里有。</div></div>`;
+    <div class="notice" style="margin-top:12px">默认只画事件里的关系，对手方只显示出现 ≥2 次的（${nTextRepeat} 个）——只投过一家的机构在图上是孤枝，打开开关才显示。共享技术栈的虚线也默认关：技术选择相同不等于有关系。</div></div>`;
   const draw = () => {
-    const nodes = (showAll ? G.all_nodes.concat(G.nodes.filter(n => n.text)) : G.nodes).map(n => ({ ...n }));
+    const base = showAll ? G.all_nodes.concat(G.nodes.filter(n => n.text)) : G.nodes;
+    const nodes = base.filter(n => !n.text || allText || n.events >= 2).map(n => ({ ...n }));
     const ids = new Set(nodes.map(n => n.id));
     const edges = G.edges.filter(e => (e.kind === 'event' || showShared) && ids.has(e.source) && ids.has(e.target)).map(e => ({ ...e }));
     const el = $('#graph'); el.innerHTML = ''; const W = el.clientWidth, H = el.clientHeight;
     const svg = d3.select(el).append('svg').attr('width', W).attr('height', H);
     const g = svg.append('g');
     svg.call(d3.zoom().scaleExtent([.3, 4]).on('zoom', e => g.attr('transform', e.transform)));
-    const r = n => n.text ? 7 : 8 + Math.sqrt(n.events || 0) * 5;
-    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(edges).id(d => d.id).distance(d => d.kind === 'shared' ? 140 : 90))
-      .force('charge', d3.forceManyBody().strength(-260).distanceMax(420)).force('center', d3.forceCenter(W / 2, H / 2))
+    const r = n => n.text ? 4 + Math.min(n.events, 8) : 6 + Math.sqrt(n.events || 0) * 3;
+    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(edges).id(d => d.id).distance(d => d.kind === 'shared' ? 140 : (nodes.length > 200 ? 40 : 90)))
+      .force('charge', d3.forceManyBody().strength(nodes.length > 200 ? -60 : -260).distanceMax(nodes.length > 200 ? 200 : 420)).force('center', d3.forceCenter(W / 2, H / 2))
       .force('x', d3.forceX(W / 2).strength(.02)).force('y', d3.forceY(H / 2).strength(.03))   // 把孤点拉回画布
-      .force('collide', d3.forceCollide(d => r(d) + 14));
+      .force('collide', d3.forceCollide(d => r(d) + (nodes.length > 200 ? 3 : 14)));
     const link = g.append('g').selectAll('line').data(edges).join('line')
-      .attr('stroke', d => d.kind === 'shared' ? '#bbb' : '#1a1a1c').attr('stroke-width', d => d.kind === 'shared' ? 1 : 2)
+      .attr('stroke', d => d.kind === 'shared' ? '#bbb' : '#1a1a1c').attr('stroke-width', d => d.kind === 'shared' ? 1 : 1.2).attr('stroke-opacity', d => d.kind === 'shared' ? .5 : .35)
       .attr('stroke-dasharray', d => d.kind === 'shared' ? '4 4' : null).style('cursor', 'pointer');
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', d => d.text ? 'default' : 'pointer')
       .call(d3.drag().on('start', (e, d) => { d.fx = d.x; d.fy = d.y; }).on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; sim.alpha(.3).restart(); }).on('end', (e, d) => { d.fx = d.fy = null; }));
     node.append('circle').attr('r', r).attr('fill', d => d.text ? '#c8c8cc' : (d.events ? '#1a1a1c' : '#9a9a9e'));
-    node.append('text').text(d => d.zh).attr('x', d => r(d) + 4).attr('y', 4).style('font-size', '11px').style('fill', '#1a1a1c');
+    node.append('text').text(d => (d.text ? d.events >= 4 : d.events >= 5 || nodes.length < 80) ? d.zh : '').attr('x', d => r(d) + 4).attr('y', 4).style('font-size', '11px').style('fill', '#1a1a1c');
     const tip = $('#tip');
     link.on('mousemove', (e, d) => { tip.style.display = 'block'; tip.style.left = e.clientX + 12 + 'px'; tip.style.top = e.clientY + 12 + 'px';
       tip.innerHTML = d.kind === 'shared' ? `共享：${d.values.map(v => label(v, v)).join('、')}` : `${(d.roles || []).map(x => D.roles[x] || x).join('、')} · ${d.events.length} 条事件<br><span class="mono">${d.events.slice(0, 3).join('<br>')}</span>`; })
@@ -403,6 +405,7 @@ async function pageGraph() {
   };
   $('#t-shared').onclick = e => { showShared = !showShared; e.target.classList.toggle('on', showShared); draw(); };
   $('#t-all').onclick = e => { showAll = !showAll; e.target.classList.toggle('on', showAll); e.target.classList.toggle('soft', !showAll); draw(); };
+  $('#t-text').onclick = e => { allText = !allText; e.target.classList.toggle('on', allText); e.target.classList.toggle('soft', !allText); draw(); };
   draw();
 }
 

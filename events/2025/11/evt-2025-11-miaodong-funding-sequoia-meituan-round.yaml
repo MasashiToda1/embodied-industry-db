@@ -1,0 +1,23 @@
+id: evt-2025-11-miaodong-funding-sequoia-meituan-round
+date: 2025-11
+date_precision: month
+type: funding
+orgs:
+- id: miaodong
+  role: subject
+title:
+  zh: 妙动科技完成新一轮融资，红杉中国与美团再次投资
+summary:
+  zh: 虎嗅 2025 年 11 月 4 日报道，深圳市妙动科技有限公司再次完成新一轮融资，投资方为老股东红杉中国与美团；报道称首轮融资金额 5—6 千万美元，本轮据说为 2—3 亿美元，公司未官宣。
+counterparties:
+- 红杉中国
+- 美团
+date_basis: derived
+date_as_stated: 虎嗅（2025-11-04）原文「时隔半年，消费级机器人初创企业深圳市妙动科技有限公司再次完成新一轮融资」，未写具体日期
+evidence:
+- url: https://www.n315.com/hongsan/2025/1104/9641.html
+  publisher: 融资界（转载虎嗅）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/n315-2025-11-miaodong-2025-11-round-n.html
+corroboration: single

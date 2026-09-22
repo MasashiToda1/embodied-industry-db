@@ -1,0 +1,22 @@
+id: evt-2026-02-04-dobot-deployment-atom-third-batch
+date: 2026-02-04
+date_precision: day
+type: deployment
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆开启第三批全尺寸工业人形机器人 ATOM 量产交付
+summary:
+  zh: 2 月 4 日，深圳新闻网报道越疆科技已开启第三批全尺寸工业人形机器人 ATOM 的 2026 年量产交付，并分批投入产业一线应用。ATOM 搭载越疆自研 DOBOT-VLA 模型，将抽象指令转化为结构化任务链并输出动作轨迹；此前越疆机器人已在深圳电影院全自主上岗。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.sznews.com/news/content/2026-02/04/content_31934792.htm
+  publisher: 深圳新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/sznews-2026-02-04-dobot-atom-third-batch.html
+corroboration: single

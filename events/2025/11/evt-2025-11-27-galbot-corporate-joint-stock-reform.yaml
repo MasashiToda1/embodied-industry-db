@@ -1,0 +1,18 @@
+id: evt-2025-11-27-galbot-corporate-joint-stock-reform
+date: '2025-11-27'
+date_precision: day
+type: corporate
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用完成股改，更名为北京银河通用机器人股份有限公司
+summary:
+  zh: 11 月 27 日，银河通用完成股改，公司名称从「北京银河通用机器人有限公司」变更为「北京银河通用机器人股份有限公司」，市场主体类型从有限责任公司（外商投资、非独资）变更为股份有限公司（外商投资、非上市）。12 月 9 日公司回应赴港上市传闻称信息不属实，股改是为满足后续融资需求。
+evidence:
+- url: https://www.cls.cn/detail/2223766
+  publisher: 财联社（转载每经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/cls-2025-11-27-galbot-joint-stock.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2026-05-19-leju-funding-chinext-ipo-accepted
+date: '2026-05-19'
+date_precision: day
+type: funding
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚智能创业板 IPO 申请获深交所受理，拟募资 26 亿元
+summary:
+  zh: 5 月 19 日，乐聚智能（深圳）股份有限公司创业板 IPO 申请获深交所受理，保荐人为东方证券。招股书显示公司拟发行不超过 2000 万股，募资 26 亿元，用于人形机器人产业化基地、具身智能研发中心、大规模数据集建设、营销网络及补充流动资金。公司最近一次融资投后估值 43.27 亿元，2025 年营业收入 2.58 亿元；2025 年 Kuavo 系列人形机器人销售 577 台，平均单价 30.81 万元。
+counterparties:
+- 东方证券（保荐人）
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_33200994
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/thepaper-2026-05-19-leju-chinext-accepted.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-02-14-wuji-tech-product_launch-wuji-glove-1
+date: 2026-02-14
+date_precision: day
+type: product_launch
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技发布第一代 Wuji Glove 智能数据手套
+summary:
+  zh: 2 月 14 日，舞肌科技发布第一代 Wuji Glove 智能数据手套，面向机器人遥操作与触觉数据采集。手套掌心覆盖 526 个有效压力传感器（24×32 矩阵），空间分辨率 4mm，压力量程 0—20N，120FPS 输出；手背 5 个指尖电磁接收模块与手腕 6 轴 IMU 实现 6D 位姿追踪，位置误差 ≤2mm。净重 67.5g。
+axes:
+  data_acquisition:
+  - teleop
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.ne-time.cn/web/article/38662
+  publisher: NE 时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/ne-time-2026-02-14-wuji-tech-wuji-glove-lau.html
+corroboration: single

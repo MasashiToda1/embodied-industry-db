@@ -1,0 +1,25 @@
+id: evt-2026-09-03-galbot-product_launch-et1-preorder
+date: '2026-09-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: galbot
+  role: subject
+- id: unitree
+  role: supplier
+title:
+  zh: 银河通用小型双足人形机器人银河星仔 GALBOT ET1 开启预订
+summary:
+  zh: 9 月 3 日，银河通用发布的小型双足人形机器人银河星仔 GALBOT ET1 正式开启预订。ET1 由银河通用与清华大学团队联合研发，于 2026 世界机器人大会（WRC）首发，身高 1230mm，整机重量 30kg，外观采用柔性材质包裹，采用宇树科技股份有限公司的电机方案。
+counterparties:
+- 清华大学团队（联合研发）
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: http://www.zqrb.cn/tmt/tmthangye/2026-09-03/A1788425656665.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/zqrb-2026-09-03-galbot-et1-preorder.html
+corroboration: single

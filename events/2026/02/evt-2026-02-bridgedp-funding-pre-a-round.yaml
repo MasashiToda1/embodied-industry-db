@@ -1,0 +1,22 @@
+id: evt-2026-02-bridgedp-funding-pre-a-round
+date: 2026-02
+date_precision: month
+type: funding
+orgs:
+- id: bridgedp
+  role: subject
+title:
+  zh: 桥介数物完成数千万元 Pre-A 轮融资
+summary:
+  zh: 据科创板日报 8 月 13 日报道，桥介数物（深圳）科技有限公司于 2026 年 2 月完成数千万元 Pre-A 轮融资，参投方包括瑞丞投资、沂景资本以及深圳天使母基金。报道引用企查查信息。
+counterparties:
+- 瑞丞投资
+- 沂景资本
+- 深圳天使母基金
+evidence:
+- url: https://www.163.com/dy/article/L480NP400550B1DU.html
+  publisher: 网易（转载科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/163-2026-02-bridgedp-pre-a-round-163.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-05-20-roboterax-deployment-china-post-guangzhou
+date: '2026-05-20'
+date_precision: day
+type: deployment
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元 M7 机器人在中国邮政广州邮区中心上岗分拣供件
+summary:
+  zh: 5 月 20 日新华网报道，星动纪元自研人形机器人星动 M7 在中国邮政广州邮区中心正式上岗承担分拣供包工作。M7 搭载全直驱五指灵巧手星动 XHAND1 和具身大脑 ERA-42，作业效率达到人工的 85% 以上，每小时最高供件量 1200 件。
+counterparties:
+- 中国邮政（客户）
+axes:
+  target_scene:
+  - logistics-warehouse
+evidence:
+- url: https://www.xinhuanet.com/auto/20260520/956452f4df2849f382429141780b2ecd/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/xinhuanet-2026-05-20-roboterax-china-post-dep.html
+corroboration: single

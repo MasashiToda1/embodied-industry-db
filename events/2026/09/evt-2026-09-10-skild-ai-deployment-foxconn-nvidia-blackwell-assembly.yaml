@@ -1,0 +1,24 @@
+id: evt-2026-09-10-skild-ai-deployment-foxconn-nvidia-blackwell-assembly
+date: 2026-09-10
+date_precision: day
+type: deployment
+orgs:
+- id: skild-ai
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: Skild AI 与 NVIDIA、Foxconn 将 Skild Brain 部署到双臂机械臂上做 Blackwell 系统装配，年化收入达 1 亿美元
+summary:
+  zh: 9 月 10 日，NVIDIA 官方博客称 Skild AI、NVIDIA 与 Foxconn 正在把 Skild Brain 部署到双臂机械臂上，用于 NVIDIA Blackwell 系统的高精度装配，演示的工作流中机器人安装母排与限位块、拧紧 16 颗螺丝并在多步任务中应对扰动。博客同时披露 Skild 在首次商业部署 10 个月后年化收入达到 1 亿美元，已建立 60 多个部署合作，覆盖制造、物流、巡检、安防、食品制备等场景；S1 模型在 NVIDIA AI 基础设施上训练，使用 Cosmos、Isaac Sim、Omniverse 等工具。
+counterparties:
+- Foxconn
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/
+  publisher: NVIDIA 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/blogs-2026-09-10-skild-ai-nvidia-foxconn.html
+corroboration: single

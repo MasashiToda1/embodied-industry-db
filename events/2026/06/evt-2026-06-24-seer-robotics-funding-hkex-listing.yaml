@@ -1,0 +1,28 @@
+id: evt-2026-06-24-seer-robotics-funding-hkex-listing
+date: 2026-06-24
+date_precision: day
+type: funding
+orgs:
+- id: seer-robotics
+  role: subject
+title:
+  zh: 仙工智能登陆港交所主板（06106.HK），发行价 101.6 港元
+summary:
+  zh: 6 月 24 日，上海仙工智能科技股份有限公司在港交所主板挂牌，股票代码 06106.HK。全球发售 10,497,300 股（绿鞋前），每股定价 101.6 港元，绿鞋前发行规模 10.67 亿港元，IPO 市值 112.27 亿港元；8 家基石投资人合计认购 4.62 亿港元，其中高瓴 HHLRA 认购 1.18 亿港元。公司称 2025 年出货量超过 12,000 台，控制器毛利率超 80%。
+counterparties:
+- 高瓴（HHLRA）
+- 广发基金
+- 瑞华投资
+- 中和资本
+evidence:
+- url: https://seer-robotics.ai/zh/media/333
+  publisher: 仙工智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/seer-robotic-2026-06-24-seer-robotics-hkex-listi.html
+- url: https://egs.stcn.com/news/detail/2306036.html
+  publisher: 证券时报 e 公司
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/egs-2026-06-24-seer-robotics-hkex-listi.html
+corroboration: multi

@@ -2,6 +2,25 @@ id: zhuoyide
 names:
   zh: 卓益得机器人
   en: Zhuoyide
+  aliases:
+  - 上海卓益得机器人有限公司
+  - DroidUp
 status: active
 layers:
 - embodiment
+founded: 2021
+hq:
+  country: CN
+  city: 上海
+description: 做肌腱驱动双足人形机器人（行者系列、小贝）与完全仿生表情机器人（Moya、Rena）的公司。
+accounts:
+  site: https://www.droidup.com
+sources:
+- url: https://www.droidup.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，公司全称「上海卓益得机器人有限公司（DroidUp）」，产品与技术路线
+- url: https://www.bjnews.com.cn/detail/1770256053129901.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新京报 2026-02-05 报道，「卓益得机器人成立于 2021 年」，总部位于上海张江

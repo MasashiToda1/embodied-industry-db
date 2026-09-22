@@ -1,0 +1,31 @@
+id: evt-2026-07-03-hf-robotics-pricing-reachy-mini-399-499usd
+date: 2026-07-03
+date_precision: day
+date_basis: derived
+date_as_stated: Hugging Face 官方博客 huggingface/blog 仓库 PR #3442「Update Reachy Mini pricing」于 2026-07-03 合并，将 Lite 从 $299 改为 $399、无线版从 $449 改为 $499；博客页面本身未标注改价日期
+type: pricing
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 桌面机器人 Reachy Mini 公开售价上调：Lite 版 399 美元、无线版 499 美元（不含税与运费），交付周期约 90 天
+summary:
+  zh: Hugging Face 官方博客 Reachy Mini 页面列出当前售价：Reachy Mini Lite（需连接 Mac / Linux 电脑，有线供电）399 美元，Reachy Mini 无线版（内置 Raspberry Pi 4、Wi-Fi、电池、加速度计）499 美元，均不含税与运费，交付约 90 天；所有订单按 DAP 发货，运费与进口关税由买方承担，10 台以上联系 Pollen Robotics 销售。该页面 2026 年 7 月 3 日合并的更新将 Lite 从 299 美元改为 399 美元、无线版从 449 美元改为 499 美元，并把下单链接从 Stripe 换到 Shopify 商店。
+amount:
+  value: 399
+  currency: USD
+axes:
+  delivery_model: [hardware-sale]
+  target_scene: [education-research, home]
+evidence:
+- url: https://huggingface.co/blog/reachy-mini
+  publisher: Hugging Face 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/huggingface-2026-07-03-hf-robotics-reachy-mini-.html
+- url: https://github.com/huggingface/blog/pull/3442
+  publisher: GitHub huggingface/blog PR #3442
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/github-2026-07-03-hf-robotics-reachy-mini-.html
+corroboration: multi

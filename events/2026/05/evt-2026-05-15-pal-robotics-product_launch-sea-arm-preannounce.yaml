@@ -1,0 +1,21 @@
+id: evt-2026-05-15-pal-robotics-product_launch-sea-arm-preannounce
+date: 2026-05-15
+date_precision: day
+type: product_launch
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: PAL Robotics 预告新款 7 自由度机械臂平台，ICRA 2026 正式发布并开售
+summary:
+  zh: 5 月 15 日，PAL Robotics 公布新款机械臂平台的首批细节：基于其自研串联弹性驱动器（SEA Arms，与 TIAGo Pro、KANGAROO 同源），面向高级操作、机器人学习与 AI 研究；完整名称、规格与现场演示在 6 月 1 至 5 日维也纳 ICRA 2026 展位揭晓，发布即开售并对首批买家提供早鸟优惠。
+axes:
+  embodiment_form: [arm]
+  target_scene: [education-research]
+evidence:
+- url: https://pal-robotics.com/news/pal-robotics-releases-a-new-robot-for-advanced-manipulation/
+  publisher: PAL Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/pal-robotics-2026-05-15-pal-robotics-new-arm-pre.html
+corroboration: single

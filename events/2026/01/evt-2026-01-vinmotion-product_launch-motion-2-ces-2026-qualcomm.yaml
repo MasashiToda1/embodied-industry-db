@@ -1,0 +1,22 @@
+id: evt-2026-01-vinmotion-product_launch-motion-2-ces-2026-qualcomm
+date: 2026-01
+date_precision: month
+type: product_launch
+orgs:
+- id: vinmotion
+  role: subject
+title:
+  zh: VinMotion 第二代人形机器人 Motion 2 在 CES 2026 高通展台展出，搭载 Qualcomm Dragonwing IQ9 处理器
+summary:
+  zh: 2026 年 1 月 CES 期间，高通发布面向机器人的全栈架构与 Dragonwing IQ10 处理器，并在展台展出 VinMotion 的人形机器人 Motion 2（搭载 Dragonwing IQ9 系列），同台展出的还有 Booster K1 Geek 与 Advantech 开发套件。高通称其 Dragonwing 工业处理器路线图已为 Booster、VinMotion 等公司的人形机器人供电，并将 VinMotion 列为合作伙伴之一。
+counterparties:
+- 高通（Qualcomm）
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.eenewseurope.com/en/qualcomm-introduces-full-stack-robotics-platform-for-physical-ai/
+  publisher: eeNews Europe
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/eenewseurope-2026-01-05-vinmotion-motion-2-ces-q.html
+corroboration: single

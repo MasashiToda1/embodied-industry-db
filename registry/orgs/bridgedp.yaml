@@ -2,6 +2,9 @@ id: bridgedp
 names:
   zh: 桥介数物
   en: BridgeDP
+  aliases:
+  - BridgeDP Robotics
+  - 桥介数物（深圳）科技有限公司
 status: active
 layers:
 - locomotion
@@ -11,3 +14,18 @@ upstream:
   robotics_notebooks_institution: bridgedp
 accounts:
   github: bridgedp
+  site: https://www.bridgedp.com
+founded: 2023-05
+hq:
+  country: CN
+  city: 深圳
+description: 2023 年 5 月成立的通用机器人运动控制与操作系统研发商，产品为 RoboCraft AI 运动能力开发平台，面向双足、四足与轮足机器人。
+sources:
+- url: https://www.bridgedp.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 桥介数物官网，成立于 2023 年 5 月、深圳、RoboCraft AI 平台
+- url: https://www.zhidx.com/p/584179.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 智东西 2026-08-12，公司全称与业务定位

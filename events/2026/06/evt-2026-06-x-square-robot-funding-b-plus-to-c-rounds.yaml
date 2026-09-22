@@ -1,0 +1,29 @@
+id: evt-2026-06-x-square-robot-funding-b-plus-to-c-rounds
+date: '2026-06'
+date_precision: month
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人连续完成 B+、B++ 和 C 轮融资，投中网称估值超 200 亿元
+summary:
+  zh: 投中网 6 月 29 日报道，自变量机器人在 4 月下旬宣布 B 轮融资后，又连续完成 B+、B++ 和 C 轮融资并全部交割，已确定的投资方包括中国移动、中保投资、红杉中国、IDG 资本、源码资本、达晨财智、中金资本等 30 多家机构，小米战投连续参与三轮。报道称其投后估值超过 200 亿元。
+counterparties:
+- 中国移动
+- 中保投资
+- 红杉中国
+- IDG 资本
+- 源码资本
+- 达晨财智
+- 中金资本
+- 小米战投
+date_basis: derived
+date_as_stated: 报道（2026-06-29）原文「继 4 月下旬发布会宣布完成 B 轮融资后，又连续完成 B+、B++ 和 C 轮融资，2 个多月时间连续完成 4 轮重磅融资并全部完成交割」
+evidence:
+- url: https://www.chinaventure.com.cn/news/80-20260629-392068.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/chinaventure-2026-06-29-x-square-robot-b-plus-c-.html
+corroboration: single

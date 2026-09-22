@@ -2,8 +2,26 @@ id: sudo-ai
 names:
   zh: 苏度科技
   en: sudo AI
+  aliases:
+  - Sudo
+  - 上海苏度科技有限公司
 status: active
 layers:
 - foundation
 accounts:
   huggingface: sudo-ai
+  site: https://www.sudo.ai
+founded: 2025-05
+hq:
+  country: CN
+  city: 上海
+description: 具身智能公司，做仅用仿真数据训练的机器人操作基础模型与全栈自研机器人系统 sudo R1，主体为上海苏度科技有限公司。
+sources:
+- url: https://zhidx.com/p/551689.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 机器人前瞻 2026-04-22 报道，2025 年 5 月成立于上海，CEO 韩铮
+- url: https://www.sudo.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网技术博客，#sudo R1 系统与技术路线

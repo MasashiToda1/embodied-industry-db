@@ -1,0 +1,26 @@
+id: evt-2025-11-agilex-product_launch-nero-7dof-arm
+date: '2025-11'
+date_precision: month
+type: product_launch
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人推出科研级七轴机械臂 NERO，定价 14999 元
+summary:
+  zh: 松灵机器人推出科研级七轴仿人机械臂 NERO，面向具身智能科研与人形机器人开发，支持 CAN、TCP、HTTP 通信与 Python SDK，兼容 ROS1/ROS2，可与松灵全系列移动底盘集成。报道称 NERO 定价 14999 元，重复定位精度 ±0.1mm，综合功耗 ≤60W。
+axes:
+  embodiment_form: [arm]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://robot.ofweek.com/2025-11/ART-8321202-8120-30675090.html
+  publisher: OFweek 机器人网（来源：松灵机器人）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/robot-2025-11-27-agilex-nero-launch.html
+- url: https://www.dtm.com.cn/news/202511/139032.html
+  publisher: 天脉财经（作者：机器人大讲堂）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/dtm-2025-11-agilex-nero-price.html
+corroboration: multi

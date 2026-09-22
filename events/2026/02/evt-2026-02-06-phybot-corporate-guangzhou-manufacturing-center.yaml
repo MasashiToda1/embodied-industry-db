@@ -1,0 +1,18 @@
+id: evt-2026-02-06-phybot-corporate-guangzhou-manufacturing-center
+date: '2026-02-06'
+date_precision: day
+type: corporate
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技广州智造中心开业，年产整机超 400 台、关节模组数万台
+summary:
+  zh: 2 月 6 日，动易科技智造中心在广州海珠创意产业园开业。报道称该中心已建成规模化交付制造体系，全年可保障各类机器人整机超 400 台、关节模组数万台产出；北京侧负责前沿技术与算法研发，广州侧承担产品化与规模交付。
+evidence:
+- url: https://m.zhidx.com/p/533960.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/m-2026-02-06-phybot-guangzhou-center-.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-05-30-foundation-robotics-deployment-ukraine-phantom-pilot
+date: 2026-05-30
+date_precision: day
+type: deployment
+orgs:
+- id: foundation-robotics
+  role: subject
+title:
+  zh: Foundation 将两台 Phantom MK-1 人形机器人送往乌克兰做试点演示，测试危险区域物流
+summary:
+  zh: 据 CNBC 2026 年 5 月 30 日报道，Foundation Future Industries 于 2026 年早些时候将两台 Phantom MK-1 人形机器人送往乌克兰进行试点演示，公司称这是已知首次人形机器人进入交战区；测试由美国政府支持、与乌克兰官员共同进行，聚焦危险区域的物流任务。CEO Sankaet Pathak 称计划年内向乌克兰送去载荷翻倍的 Phantom 2。公司近期聘请 Eric Trump 为首席战略顾问。
+date_basis: estimated
+date_as_stated: CNBC 报道（2026-05-30）原文「earlier this year when it sent two of its Phantom MK-1 units to Ukraine for a pilot demonstration」，事件日期取报道日
+axes:
+  target_scene: [inspection-hazardous]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html
+  publisher: CNBC
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/cnbc-2026-05-30-foundation-robotics-ukra.html
+corroboration: single

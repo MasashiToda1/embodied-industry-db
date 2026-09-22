@@ -1,0 +1,23 @@
+id: evt-2026-08-19-mojia-corporate-ipo-preparation
+date: '2026-08-19'
+date_precision: day
+type: corporate
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 奇瑞旗下墨甲机器人启动 IPO 筹备，称全球累计交付超 3000 台
+summary:
+  zh: 8 月 19 日，奇瑞国际业务总裁兼墨甲机器人总经理张贵兵在 2026 世界机器人大会期间向路透社等媒体表示，墨甲机器人（AiMOGA Robotics）正式启动 IPO 筹备，正与多个潜在上市地点磋商。张贵兵称公司全球累计交付超 3000 台机器人，其中海外 2000 台，覆盖 60 多个国家和地区，计划 2027 年全球交付 1 万台。
+evidence:
+- url: https://www.penghoo.cn/a/11153.html
+  publisher: 朋湖科创
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/penghoo-2026-08-19-mojia-ipo-prep-penghoo.html
+- url: https://robot.ofweek.com/2026-08/ART-898890-12003-30699528.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/robot-2026-08-19-mojia-ipo-prep-ofweek.html
+corroboration: multi

@@ -5,8 +5,23 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2025-01
+hq:
+  country: VN
+  city: 河内
+description: 越南 Vingroup 旗下（持股 51%）通用人形机器人公司，产品为双足人形 Motion 1 与 Motion 2，面向工厂搬运与检测；在加州设 VinMotion USA 研发点。
 upstream:
   robotics_notebooks_institution: vinmotion
 accounts:
   huggingface: vinmotion
   github: VinMotion-public
+  site: https://vinmotion.net
+sources:
+- url: https://vinmotion.net/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，河内 Technopark Tower（Vinhomes Ocean Park, Gia Lam）地址与 Motion 1 介绍
+- url: https://vir.com.vn/vingroup-to-set-up-robotics-firm-vinmotion-121182.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 2025 年 1 月 10 日 Vingroup 董事会批准设立，注册资本 1 万亿越南盾，Vingroup 持股 51%

@@ -1,0 +1,21 @@
+id: evt-2026-08-26-noematrix-product_launch-noe-0
+date: '2026-08-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能发布具身世界动作模型 Noe-0 技术预览，训练全链路使用无本体数据
+summary:
+  zh: 8 月 26 日，穹彻智能发布具身智能预训练模型 Noe-0，官方称其为训练全链路采用无本体采集数据的世界动作模型，不依赖传统遥操作数据，完成从预训练、后训练到真实机器人执行的闭环。数据来自其 RoboPocket 采集设备，报道称已覆盖 50 余个城市、累计采集数十万小时。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://c.m.163.com/news/a/L59B6HVH0511AQHO.html
+  publisher: 网易新闻 · 机器之心
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/c-2026-08-26-noematrix-noe-0.html
+corroboration: single

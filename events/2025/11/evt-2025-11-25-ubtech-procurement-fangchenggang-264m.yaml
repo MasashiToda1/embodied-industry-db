@@ -1,0 +1,28 @@
+id: evt-2025-11-25-ubtech-procurement-fangchenggang-264m
+date: '2025-11-25'
+date_precision: day
+type: procurement
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选中标防城港人形机器人数据采集与测试中心项目，金额 2.64 亿元
+summary:
+  zh: 11 月 25 日，优必选发布消息称中标广西防城港市人形机器人数据采集与测试中心和人工智能科创教育示范项目，中标金额 2.64 亿元，产品以可自主换电的工业人形机器人 Walker S2 为主。项目聚焦边境口岸旅客疏导、岗哨巡检、物流、商业服务及钢铜铝生产制造基地设施巡检。报道称 2025 年优必选 Walker 系列全年订单总金额达 11 亿元。
+counterparties:
+- 防城港市人形机器人数据采集与测试中心和人工智能科创教育示范项目（采购方）
+amount:
+  value: 264000000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.jiemian.com/article/13677481.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/jiemian-2025-11-25-ubtech-fangchenggang-264.html
+corroboration: single

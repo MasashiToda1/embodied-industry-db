@@ -1,0 +1,18 @@
+id: evt-2026-03-09-zhaowei-funding-h-share-listing
+date: 2026-03-09
+date_precision: day
+type: funding
+orgs:
+- id: zhaowei
+  role: subject
+title:
+  zh: 兆威机电 H 股在香港联交所主板挂牌（02692.HK），发售 26,748,300 股、每股 71.28 港元，所得款项净额约 18.28 亿港元
+summary:
+  zh: 据兆威机电 3 月 10 日在巨潮资讯网披露的公告（编号 2026-007），公司本次全球发售 H 股 26,748,300 股，其中香港公开发售 2,674,900 股、国际发售 24,073,400 股，不行使超额配售权，发售价每股 71.28 港元，扣除承销佣金及其他估计费用后所得款项净额估计约 18.28 亿港元；H 股于 2026 年 3 月 9 日在香港联交所主板挂牌上市，中文简称「兆威機電」、股份代号 02692。
+evidence:
+- url: http://static.cninfo.com.cn/finalpage/2026-03-10/1225001012.PDF
+  publisher: 巨潮资讯网（兆威机电公告）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/static-2026-03-09-zhaowei-h-share-listing.html
+corroboration: single

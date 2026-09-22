@@ -1,0 +1,22 @@
+id: evt-2026-07-06-rainbow-robotics-deployment-toyota-rb-y1-cumulative-25-units
+date: 2026-07-06
+date_precision: day
+type: deployment
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: Rainbow Robotics 向丰田累计供应约 25 台 RB-Y1，较 2024 年首批 5—6 台扩大约五倍
+summary:
+  zh: 据韩国电子新闻 7 月 6 日援引业界消息报道，Rainbow Robotics 自 2024 年向丰田首批交付移动双臂机器人 RB-Y1 以来持续扩大供货，丰田累计采购 RB-Y1 约 25 台；2024 年首批约 5—6 台，两年内供货规模扩大约五倍。
+counterparties:
+- 丰田
+axes:
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://en.etnews.com/20260707200002
+  publisher: Electronic Times（ETNews）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/en-2026-07-06-rainbow-robotics-toyota-.html
+corroboration: single

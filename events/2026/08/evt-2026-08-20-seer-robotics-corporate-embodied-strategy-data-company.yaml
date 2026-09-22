@@ -1,0 +1,20 @@
+id: evt-2026-08-20-seer-robotics-corporate-embodied-strategy-data-company
+date: 2026-08-20
+date_precision: day
+type: corporate
+orgs:
+- id: seer-robotics
+  role: subject
+title:
+  zh: 仙工智能在 2026 世界机器人大会发布三大具身智能战略方向，宣布成立具身智能数据公司
+summary:
+  zh: 8 月 20 日，仙工智能在 2026 世界机器人大会期间举办发布会，公布三大具身智能战略方向：推进机器人大脑通用化，成立具身智能数据公司建设真机数据基础设施，以及通过「阶梯计划」与生态伙伴推动 100 万台具身机器人进入真实世界。公司称计划于 2026 年第四季度开源具身数据集和自研评测基准。
+axes:
+  data_acquisition: [real-robot, sim-generated, human-video]
+evidence:
+- url: https://seer-robotics.ai/zh/media/350
+  publisher: 仙工智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/seer-robotic-2026-08-20-seer-robotics-wrc-strate.html
+corroboration: single

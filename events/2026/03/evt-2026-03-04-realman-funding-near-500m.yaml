@@ -1,0 +1,20 @@
+id: evt-2026-03-04-realman-funding-near-500m
+date: 2026-03-04
+date_precision: day
+date_basis: derived
+date_as_stated: 报道（2026-03-04）原文「近日，‘睿尔曼智能’正式宣布完成近5亿元融资」
+type: funding
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼智能完成近 5 亿元融资
+summary:
+  zh: 3 月 4 日，新浪证券报道睿尔曼智能宣布完成近 5 亿元人民币融资，由多家上市公司产业方联合战略投资，跃为资本担任财务顾问。资金重点投入产品研发迭代、AUTRON 奥创产线超级工厂建设，以及「硬件 + 数据 + 远程作业网络」生态布局。
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-03-04/doc-inhpvpqk3879613.shtml
+  publisher: 新浪证券
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/finance-2026-03-04-realman-funding.html
+corroboration: single

@@ -6,5 +6,20 @@ status: active
 layers:
 - simulation
 - foundation
+hq:
+  country: FR
+  city: Paris
+description: 全栈机器人公司，做机器人基础模型 GENE、自研灵巧手与轮式通用机器人 Eno，总部列为巴黎与美国 San Carlos 两地。
 upstream:
   robotics_notebooks_institution: genesis-ai
+accounts:
+  site: https://www.genesis.ai
+sources:
+- url: https://www.prnewswire.com/news-releases/introducing-eno-genesis-ais-first-general-purpose-robot-is-challenging-traditional-humanoid-design-302801103.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 公司新闻稿，发稿地 PARIS and SAN CARLOS, Calif.，公司自述
+- url: https://www.prnewswire.com/news-releases/genesis-ai-emerges-from-stealth-with-105m-to-build-universal-robotics-foundation-model-and-horizontal-platform-for-general-purpose-physical-ai-302495016.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 2025 年 7 月出 stealth 新闻稿，成立年份未写明，故不填 founded

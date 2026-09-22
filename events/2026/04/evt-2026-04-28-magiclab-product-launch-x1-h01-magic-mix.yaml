@@ -1,0 +1,30 @@
+id: evt-2026-04-28-magiclab-product-launch-x1-h01-magic-mix
+date: '2026-04-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子硅谷发布旗舰人形机器人 MagicBot X1、灵巧手 MagicHand H01 与世界模型 Magic-Mix
+summary:
+  zh: 当地时间 4 月 28 日，魔法原子在硅谷举办全球具身智能创新大会（GEIS），发布旗舰级人形机器人 MagicBot X1（身高 180cm、体重 70kg、31 个主动自由度、极限关节扭矩 450N·m、双电池热插拔）、灵巧手 MagicHand H01（20 个自由度、44 个三维触觉传感器）和自研世界模型 Magic-Mix（由 Magic-Mix WAM 与离线数据生成引擎 Magic-Mix Creator 构成）。公司披露业务覆盖 50 国，海外收入占比超 60%。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  model_form:
+  - world-model
+  data_acquisition:
+  - sim-generated
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_33077829
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/thepaper-2026-04-28-magiclab-x1-launch.html
+- url: https://www.tmtpost.com/nictation/7973598.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/tmtpost-2026-04-28-magiclab-x1-launch-tmt.html
+corroboration: multi

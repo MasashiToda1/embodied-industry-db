@@ -1,0 +1,29 @@
+id: evt-2026-05-18-deeprobotics-funding-star-ipo-accepted
+date: '2026-05-18'
+date_precision: day
+type: funding
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技科创板 IPO 获上交所受理，拟募资 25.03 亿元
+summary:
+  zh: 5 月 18 日，上交所网站显示杭州云深处科技股份有限公司科创板 IPO 审核状态变更为「已受理」，拟募集资金 25.0251 亿元，保荐机构为中信建投证券。证券时报 IPO 页面显示，公司 2026 年 5 月 27 日收到审核问询，8 月 7 日状态更新为「已问询」。
+counterparties:
+- 上海证券交易所
+- 中信建投证券
+amount:
+  value: 2502510000
+  currency: CNY
+evidence:
+- url: https://tech.caijing.com.cn/20260519/5160392.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/tech-2026-05-18-deeprobotics-ipo-accepte.html
+- url: https://www.stcn.com/ipo/detail/3659.html
+  publisher: 证券时报 IPO 信息披露
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/stcn-2026-05-18-deeprobotics-ipo-stcn.html
+corroboration: multi

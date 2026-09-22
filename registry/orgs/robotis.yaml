@@ -6,8 +6,27 @@ status: active
 layers:
 - embodiment
 - components
+founded: 1999
+hq:
+  country: KR
+  city: 首尔
+description: 韩国 KOSDAQ 上市机器人公司，主营 DYNAMIXEL 智能执行器，整机有半人形 AI Worker、开源人形 AI Sapiens K0、机械臂 OMX / OMY 与配送机器人 GAEMI。
 upstream:
   robotics_notebooks_institution: robotis
 accounts:
   huggingface: ROBOTIS
   github: ROBOTIS-GIT
+  site: https://robotis.com
+sources:
+- url: https://robotis.com/en/about.php
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About Us 页与产品导航（DYNAMIXEL Q / Y / P / X、AI Sapiens、AI Worker、OMX / OMY、GAEMI）
+- url: https://www.theguru.co.kr/news/article.html?no=103402
+  tier: media
+  retrieved: '2026-09-22'
+  note: 더구루报道，1999 年成立
+- url: https://www.mk.co.kr/en/business/11362492
+  tier: media
+  retrieved: '2026-09-22'
+  note: 每日经济英文版，总部位于首尔江西区

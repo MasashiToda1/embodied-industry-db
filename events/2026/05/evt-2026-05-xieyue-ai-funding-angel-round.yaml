@@ -1,0 +1,23 @@
+id: evt-2026-05-xieyue-ai-funding-angel-round
+date: 2026-05
+date_precision: month
+type: funding
+orgs:
+- id: xieyue-ai
+  role: subject
+title:
+  zh: 斜跃智能完成天使轮融资，元璟资本与理想汽车联合投资
+summary:
+  zh: 雷峰网 5 月 6 日报道，斜跃智能已获天使轮融资并完成首轮融资工商变更，由元璟资本和理想汽车联合投资，金额未披露。
+counterparties:
+- 元璟资本
+- 理想汽车
+date_basis: derived
+date_as_stated: 雷峰网（2026-05-06）原文「已获天使轮融资……目前已完成首轮融资工商变更，由元璟资本和理想汽车联合投资」
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2026-05-06/doc-inhwxnuk8393542.shtml
+  publisher: 新浪科技（转载雷峰网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/finance-2026-01-29-xieyue-ai-founding-angel.html
+corroboration: single

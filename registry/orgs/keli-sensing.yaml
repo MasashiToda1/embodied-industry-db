@@ -5,3 +5,15 @@ names:
 status: active
 layers:
 - components
+founded: 1995
+hq:
+  country: CN
+  city: 宁波
+description: A 股上市（603662）的应变式称重 / 测力传感器公司，机器人业务为六维力 / 力矩与关节力矩传感器，并投资具身智能企业。
+accounts:
+  site: https://www.kelichina.com
+sources:
+- url: https://www.kelichina.com/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于柯力页，成立于 1995 年，总部浙江宁波；股份公司注册主体 2002-12-30 登记，2019-08-06 上交所上市

@@ -1,0 +1,27 @@
+id: evt-2026-02-13-horizon-robotics-product_launch-holobrain-0
+date: '2026-02-13'
+date_precision: day
+type: product_launch
+orgs:
+- id: horizon-robotics
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 地平线发布并开源 HoloBrain-0 具身智能 VLA 基座模型及 RoboOrchard 基础设施
+summary:
+  zh: 2 月 13 日，地平线宣布其机器人实验室的 HoloBrain-0 基座模型及框架全面开源，同步开放数据采集、训练、真机部署的全栈基础设施 RoboOrchard。HoloBrain-0 是面向具身智能的 Vision-Language-Action 框架，在架构中显式注入多视角相机参数与机器人运动学结构等具身先验，预训练融合多本体遥操作数据、人类视频数据与仿真数据；同时发布 0.2B 参数的端侧版本，可适配地瓜机器人 RDK S100 开发者套件。
+axes:
+  model_form:
+  - end2end-vla
+  data_acquisition:
+  - teleop
+  - human-video
+  - sim-generated
+evidence:
+- url: https://www.horizon.auto/news/technology/435
+  publisher: 地平线官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/horizon-2026-02-13-horizon-holobrain0.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-08-10-limx-deployment-orders-apac
+date: '2026-08-10'
+date_precision: day
+type: deployment
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力称全系列机器人在手订单数千台，过半来自海外
+summary:
+  zh: 新浪财经 8 月 10 日报道，逐际动力沟通与传播负责人称公司全系列机器人已拿到数千台订单，其中过半来自海外，不少来自亚太市场，产品将在 2026—2027 年陆续交付；韩国电视台采购 Luna 用于节目表演，多台机器人通过群控同步演出。
+axes:
+  target_scene:
+  - tourism-performance
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-08-10/doc-inimvxcf2749632.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-10-limx-orders-apac.html
+corroboration: single

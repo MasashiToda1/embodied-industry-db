@@ -1,0 +1,21 @@
+id: evt-2025-09-08-fourier-product_launch-gr3-presale
+date: '2025-09-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶人形机器人 GR-3 开启预售，10 月上市交付
+summary:
+  zh: 9 月 8 日，傅利叶宣布其首款搭载全感交互系统的「Carebot」人形机器人 GR-3 正式开启预售，GR-3 于 2025 年 10 月正式上市并开启交付。GR-3 身高 165cm、体重 71kg，全身 55 个自由度，双电池热插拔架构，续航 3 小时。前 30 名预订客户可享低至八折折扣。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.cls.cn/detail/2138111
+  publisher: 财联社
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/cls-2025-09-08-fourier-gr3-presale.html
+corroboration: single

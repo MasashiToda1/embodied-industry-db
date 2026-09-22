@@ -1,0 +1,29 @@
+id: evt-2025-12-31-qiyuan-robotics-product-launch-q1-reveal
+date: '2025-12-31'
+date_precision: day
+type: product_launch
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 上纬新材以「上纬启元」品牌发布小尺寸全身力控人形机器人启元 Q1
+summary:
+  zh: 12 月 31 日，上纬新材董事长彭志辉（稚晖君）发布全身力控小尺寸人形机器人「启元 Q1」，并宣布公司以「上纬启元」品牌进军个人机器人赛道。第一财经报道该机身高不足 1 米，可折叠装入双肩背包；官方称将 QDD 准直驱关节压缩至「比鸡蛋还小」，面向极客玩家、科研人员和家庭用户。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - home
+  - education-research
+evidence:
+- url: https://www.yicai.com/news/102983441.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/yicai-2025-12-31-qiyuan-robotics-q1-revea.html
+- url: https://www.163.com/tech/article/KI49S0JP00098IEO.html
+  publisher: 网易科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/163-2025-12-31-qiyuan-robotics-q1-revea.html
+corroboration: multi

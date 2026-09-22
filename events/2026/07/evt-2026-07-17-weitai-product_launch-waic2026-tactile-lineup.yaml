@@ -1,0 +1,20 @@
+id: evt-2026-07-17-weitai-product_launch-waic2026-tactile-lineup
+date: '2026-07-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: weitai
+  role: subject
+title:
+  zh: 纬钛机器人在 WAIC 2026 发布三款视触觉数采设备与两款视触觉夹爪
+summary:
+  zh: 7 月 17 日 WAIC 2026 开幕，纬钛机器人在展台带来五款新品，含三款视触觉数采设备和两款视触觉夹爪，与此前发布的 VT-TacUMI-85 数采设备、VT-TacGripper-90 夹爪及 GF225、GF220、GF515 传感器构成覆盖感知、执行、学习三层的产品矩阵。
+axes:
+  data_modality: [tactile]
+evidence:
+- url: https://www.aibangbots.com/a/11040
+  publisher: 艾邦机器人
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/aibangbots-2026-07-17-weitai-waic2026-new-prod.html
+corroboration: single

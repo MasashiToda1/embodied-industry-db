@@ -5,6 +5,7 @@ names:
   aliases:
   - SEER
   - 仙工
+  - 上海仙工智能科技股份有限公司
 status: active
 layers:
 - locomotion
@@ -13,3 +14,18 @@ upstream:
   robotics_notebooks_institution: seer
 accounts:
   github: seer-robotics
+  site: https://seer-robotics.ai
+founded: 2020
+hq:
+  country: CN
+  city: 上海
+description: 2020 年创立、以 SRC 系列机器人控制器为核心的智能机器人公司，销售控制器、软件与机器人，2026 年 6 月港交所上市（06106.HK）。
+sources:
+- url: https://seer-robotics.ai/zh/media/333
+  tier: official
+  retrieved: '2026-09-22'
+  note: 仙工智能官网 2026-06-24 上市新闻，公司全称、2020 年创立、业务定位
+- url: https://egs.stcn.com/news/detail/2306036.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 e 公司 2026-06-24，上市与业务描述

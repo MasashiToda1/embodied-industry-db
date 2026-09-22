@@ -2,6 +2,24 @@ id: vita-power
 names:
   zh: 维他动力
   en: Vita Power
+  aliases:
+  - Vbot
+  - Vbot 维他动力
+  - 维他动力（北京）科技有限公司
 status: active
 layers:
 - embodiment
+founded: 2024-12
+hq:
+  country: CN
+  city: 北京
+description: 做消费级机器人的公司，产品有 Vbot 超能机器狗「大头」、大头 EDU-W 轮足版与人形机器人 Vbot ATOM。
+sources:
+- url: https://www.21jingji.com/article/20260511/herald/0c58c15718ec59e13c082b3feaf3f934.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 上海证券报报道，维他动力成立于 2024 年 12 月，专注消费级机器人
+- url: https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202605/t20260514_246650.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 中关村科学城公众号稿件，主体为 Vbot 维他动力（北京）科技有限公司

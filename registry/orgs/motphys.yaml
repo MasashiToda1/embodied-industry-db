@@ -2,6 +2,9 @@ id: motphys
 names:
   zh: 莫特菲斯
   en: Motphys
+  aliases:
+  - 谋先飞
+  - 北京谋先飞技术有限公司
 status: active
 layers:
 - simulation
@@ -9,3 +12,18 @@ upstream:
   robotics_notebooks_institution: motphys
 accounts:
   github: Motphys
+  site: https://www.motphys.com
+founded: 2020
+hq:
+  country: CN
+  city: 北京
+description: 自研实时物理引擎的具身仿真基础设施公司，产品有 MotrixSim、MotrixLab 与 MotrixGen。
+sources:
+- url: https://www.motphys.com/zh/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，公司定位、产品线；联系地址首列北京市朝阳区，页脚主体为北京谋先飞技术有限公司
+- url: https://www.ikanchai.com/article/20240401/581877.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 砍柴网转载铅笔道，关联公司北京谋先飞科技有限公司成立于 2020 年 10 月

@@ -1,0 +1,18 @@
+id: evt-2026-07-22-tesla-corporate-optimus-first-gen-lines
+date: 2026-07-22
+date_precision: day
+type: corporate
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉称已拆除弗里蒙特 Model S / X 产线并在安装第一代 Optimus 产线，首批机器人用于内部 Optimus Academy
+summary:
+  zh: 7 月 22 日，特斯拉在 2026 年第二季度股东信中称，已拆除弗里蒙特工厂 Model S 和 X 的生产线，正在安装第一代 Optimus 产线，「即将开始生产」；首批 Optimus 将用于公司内部的 Optimus Academy，做训练数据采集和功能开发，而非交付客户。股东信同时称 Giga Texas 的 Optimus 厂房建设全面展开。
+evidence:
+- url: https://eletric-vehicles.com/tesla/tesla-to-send-first-optimus-builds-to-academy-says-production-begins-this-year/
+  publisher: eletric-vehicles.com
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/eletric-vehi-2026-07-22-tesla-q2-2026-optimus-ac.html
+corroboration: single

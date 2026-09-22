@@ -6,10 +6,11 @@ names:
   - AgiBot
   - 上海智元新创技术有限公司
   - 智元
-founded: 2023
+founded: 2023-02
 hq:
   country: CN
   city: 上海
+description: 做通用人形与具身机器人整机及模型的公司，产品有远征、精灵、灵犀三大系列；2025 年通过持股平台控股上纬新材（688585）。
 status: active
 layers:
 - embodiment
@@ -18,3 +19,13 @@ layers:
 accounts:
   huggingface: agibot-world
   github: AgibotTech
+  site: https://www.agibot.com
+sources:
+- url: https://www.agibot.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网：公司主体智元创新（上海）科技股份有限公司，产品 G2、X2 等
+- url: https://www.cls.cn/detail/2153787
+  tier: media
+  retrieved: '2026-09-22'
+  note: 科创板日报：智元机器人成立于 2023 年 2 月，远征 / 精灵 / 灵犀三大机器人家族

@@ -1,0 +1,21 @@
+id: evt-2025-11-11-ohand-partnership-leadrick-joint-venture
+date: 2025-11-11
+date_precision: day
+type: partnership
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技与雷迪克签署战略合作协议，合资设立浙江雷傲机器人研发灵巧手部件
+summary:
+  zh: 11 月 11 日，雷迪克公告与关联方傲意科技签署《战略合作协议》，双方拟合资设立浙江雷傲机器人有限公司，开展机器人灵巧手相关部件、灵巧手模组、机器人关节执行器等技术的研发与应用。合资公司注册资本 1 亿元，雷迪克出资 9000 万元占 90%，傲意科技出资 1000 万元占 10%。此前 11 月 4 日雷迪克公告拟以约 1.6 亿元取得傲意科技 20.41% 股权。
+counterparties:
+- 雷迪克
+- 浙江雷傲机器人有限公司
+evidence:
+- url: https://stcn.com/article/detail/3489980.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-11-ohand-leadrick-jv.html
+corroboration: single

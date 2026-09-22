@@ -1,0 +1,22 @@
+id: evt-2026-03-09-flexiv-funding-invus-round
+date: 2026-03-09
+date_precision: day
+type: funding
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技完成新一轮融资，Invus 领投
+summary:
+  zh: 3 月 9 日，非夕科技宣布完成新一轮融资，由 Invus 领投，Atma Capital、奥飞集团等机构及产业投资方参与，现有老股东继续跟投。资金用于通用智能基座平台建设与核心技术研发、通用机器人产品规模化、全球销售与服务体系完善及重点行业场景拓展。
+counterparties:
+- Invus
+- Atma Capital
+- 奥飞集团
+evidence:
+- url: https://www.flexiv.cn/news/Flexiv_Thelatestfundinground
+  publisher: 非夕科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/flexiv-2026-03-09-flexiv-funding.html
+corroboration: single

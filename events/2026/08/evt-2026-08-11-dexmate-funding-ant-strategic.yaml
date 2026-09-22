@@ -1,0 +1,32 @@
+id: evt-2026-08-11-dexmate-funding-ant-strategic
+date: '2026-08-11'
+date_precision: day
+type: funding
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人完成数亿元战略融资，蚂蚁集团领投
+summary:
+  zh: 2026 年 8 月 11 日，戴盟机器人宣布完成数亿元融资，由蚂蚁集团领投，老股东超额跟投加注。公司称自研视触觉传感器已实现万片级出货，累计服务全球 200 余家客户，近期向 OpenAI、Figure、Physical Intelligence、Skild AI、Meta、BMW、Google DeepMind 等交付；并与中国移动共建「数采进家庭」采集网络，首期投放 1000 套设备。
+counterparties:
+- 蚂蚁集团
+- 中国移动
+axes:
+  data_modality:
+  - tactile
+  data_acquisition:
+  - crowdsourced
+  - teleop
+evidence:
+- url: https://www.36kr.com/p/3935107450125442
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/36kr-2026-08-11-dexmate-ant-round.html
+- url: https://m.21jingji.com/article/20260811/herald/cb391d5afca50c997e0e54571f7bb0ec.html
+  publisher: 21世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/m-2026-08-11-dexmate-ant-round-21.html
+corroboration: multi

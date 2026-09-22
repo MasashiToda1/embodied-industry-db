@@ -1,0 +1,26 @@
+id: evt-2026-05-roboscience-funding-a-round
+date: 2026-05
+date_precision: month
+type: funding
+orgs:
+- id: roboscience
+  role: subject
+title:
+  zh: RoboScience 机器科学完成 10 亿元 A 轮融资
+summary:
+  zh: AI 科技评论 5 月 6 日报道，RoboScience 机器科学近日完成十亿元 A 轮融资，投资方包含多家国内外产业巨头及一线财务机构，资金用于 VLOA 大模型研发、自研机器人本体工程化与量产。
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.163.com/dy/article/KS7VMOJM0511DPVD.html
+  publisher: 网易号（AI 科技评论）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/163-2026-05-roboscience-a-round-163.html
+- url: https://zhidx.com/p/555152.html
+  publisher: 智东西（机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/zhidx-2026-05-roboscience-a-round.html
+corroboration: multi

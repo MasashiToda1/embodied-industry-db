@@ -1,0 +1,27 @@
+id: evt-2026-09-20-zsibot-product_launch-pita-multi-legged-collaborative-transport
+date: '2026-09-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 智身科技旗下 PITA 发布「多足联运」多机器人协同搬运系统
+summary:
+  zh: 智身科技旗下通用智能模型品牌 PITA（Physics InTeraction AI）发布「多足联运」（Multi-Legged Collaborative Transport）系统：多台钢镚 L1-W EDU 四足机器人在无预先建图、无 GPS 的环境中共同承载同一物体并自主完成运输，操作者通过 VR 指定目标位置。官方稿称 PITA 于 2026 年推出，核心产品含通用机器人模型、可微物理引擎、视频世界模型与跨本体算力终端。
+date_basis: derived
+date_as_stated: 官网资讯列表标注 2026-09-20，公众号正文未写日期
+axes:
+  embodiment_form:
+  - quadruped
+  model_form:
+  - world-model
+  target_scene:
+  - inspection-hazardous
+evidence:
+- url: https://mp.weixin.qq.com/s/hvxHUHl72obO9cvIJaCJag
+  publisher: 智身科技公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/mp-2026-09-20-zsibot-multi-legged-coop.html
+corroboration: single

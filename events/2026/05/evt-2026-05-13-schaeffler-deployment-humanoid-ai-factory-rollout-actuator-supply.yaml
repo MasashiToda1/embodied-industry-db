@@ -1,0 +1,23 @@
+id: evt-2026-05-13-schaeffler-deployment-humanoid-ai-factory-rollout-actuator-supply
+date: 2026-05-13
+date_precision: day
+type: deployment
+orgs:
+- id: schaeffler
+  role: subject
+- id: humanoid-ai
+  role: counterparty
+title:
+  zh: Humanoid 与舍弗勒签署分阶段部署与供应协议：2026 年 12 月起在德国两座工厂部署人形机器人，舍弗勒成为其轮式平台关节执行器五年首选供应商
+summary:
+  zh: 5 月 13 日，英国 Humanoid 发布新闻稿称已与舍弗勒签署具约束力的分阶段部署与供应协议，将人形机器人整合进舍弗勒的实际生产运营，首批系统 2026 年底前在德国上线。首阶段部署 2026 年 12 月至 2027 年 6 月在 Herzogenaurach（箱体搬运）与 Schweinfurt（三个月能力演示与集成测试，随后三个月接近满产规模的连续运行验证）两地进行。Humanoid 同时与舍弗勒签署五年执行器供应协议：到 2031 年舍弗勒作为首选供应商覆盖其轮式平台关节执行器需求的 50% 以上，公司称该协议对应「七位数」数量的执行器供应。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://thehumanoid.ai/humanoid-secures-landmark-deal-with-schaeffler-to-deploy-thousands-of-humanoid-robots/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/thehumanoid-2026-05-13-schaeffler-humanoid-depl.html
+corroboration: single

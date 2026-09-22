@@ -1,0 +1,30 @@
+id: evt-2026-02-25-rlwrld-funding-seed2-26m
+date: 2026-02-25
+date_precision: day
+type: funding
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: RLWRLD 完成约 2600 万美元 Seed 2 轮融资，Headline Asia 与 Z Venture Capital 领投，累计种子融资约 4100 万美元
+summary:
+  zh: 2 月 25 日，RLWRLD 发布新闻稿称已完成 Seed 2 轮融资，本轮募资「约 2600 万美元」，此前 Seed 1 轮为 1500 万美元，累计种子投资约 4100 万美元。财务投资方为 Headline Asia 与 LY Corporation 旗下 Z Venture Capital；战略投资方包括 CJ Logistics、Kakao Investment、Lotte Ventures、Hanwha Asset Management、Mirae Asset – Emart Investment Fund I、Hyosung Ventures、Smilegate Investment 与 T Investment，Seed 1 领投方 Hashed Ventures 跟投。公司称计划 2026 年上半年正式发布机器人基础模型。
+counterparties:
+- Headline Asia
+- Z Venture Capital
+- CJ Logistics
+- Kakao Investment
+- Lotte Ventures
+- Hanwha Asset Management
+- Mirae Asset – Emart Investment Fund I
+- Hyosung Ventures
+- Smilegate Investment
+- T Investment
+- Hashed Ventures
+evidence:
+- url: https://www.globenewswire.com/news-release/2026/02/26/3245146/0/en/RLWRLD-Raises-26M-Seed-2-Bringing-Total-Funding-to-41M-to-Scale-Industrial-Robotics-AI.html
+  publisher: GlobeNewswire（RLWRLD 新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/globenewswir-2026-02-25-rlwrld-seed2-26m.html
+corroboration: single

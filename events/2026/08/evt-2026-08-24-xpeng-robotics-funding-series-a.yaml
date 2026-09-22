@@ -1,0 +1,23 @@
+id: evt-2026-08-24-xpeng-robotics-funding-series-a
+date: 2026-08-24
+date_precision: day
+type: funding
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏机器人业务首轮融资超 9 亿美元
+summary:
+  zh: 8 月 24 日，小鹏集团宣布旗下人形机器人业务已与多家投资者签署股权融资协议。本轮为小鹏机器人业务首轮融资，融资金额超 9 亿美元，投后估值超 63 亿美元；由 IDG 资本领投，高榕创投参投，腾讯和阿里巴巴作为战略投资者参与。交割完成后小鹏集团继续控股机器人业务并合并报表。
+counterparties:
+- IDG 资本
+- 高榕创投
+- 腾讯
+- 阿里巴巴
+evidence:
+- url: https://www.xiaopeng.com/news/company_news/5585.html
+  publisher: 小鹏汽车官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/xiaopeng-2026-08-24-xpeng-robotics-series-a.html
+corroboration: single

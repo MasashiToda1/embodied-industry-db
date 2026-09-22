@@ -1,0 +1,31 @@
+id: evt-2026-06-10-neura-robotics-funding-series-c
+date: 2026-06-10
+date_precision: day
+type: funding
+orgs:
+- id: neura-robotics
+  role: subject
+- id: nvidia
+  role: investor
+- id: schaeffler
+  role: investor
+title:
+  zh: NEURA Robotics 宣布最高 14 亿美元的 C 轮融资，Tether、Qualcomm、Amazon、NVIDIA、Bosch、Schaeffler、欧洲投资银行等参与
+summary:
+  zh: 6 月 10 日，NEURA Robotics 宣布 C 轮融资，公司称总规模最高达 14 亿美元（up to $1.4 billion），参与方包括 Tether、Qualcomm Technologies、Amazon、NVIDIA、imec.xpand、Bosch、Schaeffler、European Investment Bank、Lingotto Horizon、InterAlpen Partners 等。资金用于将认知机器人与人形机器人从欧洲推向美国、中国与日本，扩展 Neuraverse 平台，推出 NEURA Gym 训练场，扩大德国与印度的制造与部署基础设施，公司目标 2030 年前生产数百万台机器人。公司称现有订单与战略部署管线超 10 亿美元。原文为「up to」上限，未给确定到账金额。
+counterparties:
+- Tether
+- Qualcomm Technologies
+- Amazon
+- imec.xpand
+- Bosch
+- European Investment Bank
+- Lingotto Horizon
+- InterAlpen Partners
+evidence:
+- url: https://neura-robotics.com/record-series-c/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/neura-roboti-2026-06-10-neura-robotics-series-c.html
+corroboration: single

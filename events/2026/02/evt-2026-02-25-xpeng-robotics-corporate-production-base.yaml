@@ -1,0 +1,20 @@
+id: evt-2026-02-25-xpeng-robotics-corporate-production-base
+date: 2026-02-25
+date_precision: day
+type: corporate
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏布局人形机器人全链条量产基地
+summary:
+  zh: 2 月 25 日，广州市高质量发展大会上，小鹏人形机器人全链条量产基地作为天河区重点「开门红」项目正式提报。基地将落地广棠科创城具身智能产业园，园区总建筑面积约 11 万平方米，一期建设机器人厂房、动力站房及配套设施。
+counterparties:
+- 广州市天河区人民政府
+evidence:
+- url: https://www.xiaopeng.com/news/company_news/5537.html
+  publisher: 小鹏汽车官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/xiaopeng-2026-02-25-xpeng-robotics-factory-b.html
+corroboration: single

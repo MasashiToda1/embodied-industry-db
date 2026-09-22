@@ -1,0 +1,18 @@
+id: evt-2026-01-12-brainco-funding-hk-ipo-confidential-filing
+date: 2026-01-12
+date_precision: day
+type: funding
+orgs:
+- id: brainco
+  role: subject
+title:
+  zh: 强脑科技以保密形式提交港股 IPO 申请
+summary:
+  zh: 1 月 12 日，有消息称强脑科技以保密形式提交港股 IPO 申请，上海证券报记者从接近公司的人士处了解到消息属实。报道称公司此前完成约 20 亿元融资，由 IDG、华登国际领衔，并引入蓝思科技、韦尔股份等产业链战略投资者；蓝思科技称其独家承接强脑科技核心硬件模组的量产。
+evidence:
+- url: https://finance.sina.com.cn/stock/relnews/cn/2026-01-13/doc-inhhcntt7625389.shtml
+  publisher: 新浪财经 · 来源上海证券报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/finance-2026-01-12-brainco-hk-ipo-filing.html
+corroboration: single

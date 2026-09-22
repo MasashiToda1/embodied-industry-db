@@ -7,3 +7,18 @@ layers:
 - embodiment
 accounts:
   github: uniqrobot
+  site: https://www.unix-group.ai
+founded: 2024-04
+hq:
+  country: CN
+  city: 苏州
+description: 轮式双臂与双足通用人形机器人公司，产品有 Wanda 2.0、Panther、Martian，自研 Unitouch 视触觉大模型。
+sources:
+- url: https://www.unix-group.ai/article/196/detail/136.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻页；官网联系地址为苏州市工业园区九章路 69 号
+- url: https://news.qq.com/rain/a/20260305A027CW00
+  tier: media
+  retrieved: '2026-09-22'
+  note: 中国机器人网融资稿写「成立于 2024 年 4 月，总部位于江苏苏州」；36 氪出海稿写「总部设于上海」，取融资稿口径

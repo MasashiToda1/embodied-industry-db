@@ -1,0 +1,28 @@
+id: evt-2026-06-30-figure-ai-deployment-bmw-figure-03
+date: 2026-06-30
+date_precision: day
+type: deployment
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure 03 进入 BMW Spartanburg 工厂物流车间，承担零件排序（sequencing）任务
+summary:
+  zh: 6 月 30 日，Figure 与 BMW Group 分别宣布 Figure 03 进入 BMW Group Plant Spartanburg 的 Hall 52 装配与物流车间，由 Helix 02 驱动执行零件排序（sequencing）工作流，包括双手取放零件、边走边调整站位、拉动带脚轮的重型料车。BMW 方面称，此前 Figure 02 在该厂车身车间的部署为期 11 个月、支撑了 3 万余辆 X3 生产。
+counterparties:
+- BMW Group
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.figure.ai/news/f-03-at-bmw
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/figure-2026-06-30-figure-ai-f03-bmw.html
+- url: https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en
+  publisher: BMW Group PressClub
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/press-2026-06-30-figure-ai-f03-bmw-press.html
+corroboration: multi

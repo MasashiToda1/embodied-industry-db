@@ -1,0 +1,25 @@
+id: evt-2025-11-10-prometheus-universe-pricing-dabai-360k
+date: '2025-11-10'
+date_precision: day
+type: pricing
+orgs:
+- id: prometheus-universe
+  role: subject
+title:
+  zh: 普罗宇宙大白机器人售价 36 万元，累计订单达百台
+summary:
+  zh: 星河频率 11 月 10 日刊发的报道（普罗宇宙官网转载）称，普罗宇宙大白机器人售价 36 万元，全向移动速度 2.5m/s；公司累计订单量已达到百台，在 3C 电子、汽车制造、半导体等工业场景与头部客户合作并启动批量交付。
+amount:
+  value: 360000
+  currency: CNY
+axes:
+  target_scene: [industrial-manufacturing]
+  delivery_model: [hardware-sale]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://www.pl-universe.com/article/8/detail/33
+  publisher: 星河频率（普罗宇宙官网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/pl-universe-2025-11-10-prometheus-universe-daba.html
+corroboration: single

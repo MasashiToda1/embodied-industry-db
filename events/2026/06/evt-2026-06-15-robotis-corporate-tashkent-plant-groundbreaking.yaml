@@ -1,0 +1,22 @@
+id: evt-2026-06-15-robotis-corporate-tashkent-plant-groundbreaking
+date: 2026-06-15
+date_precision: day
+date_basis: derived
+date_as_stated: UzDaily 报道发布于 2026 年 6 月 16 日 09:10，称奠基仪式「已举行」；韩媒 The Guru 援引乌方投资产业贸易部称仪式于当地时间 15 日举行
+type: corporate
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 塔什干人形机器人及零部件工厂在 Yangi Avlod 特别工业区奠基，项目投资额 1 亿美元
+summary:
+  zh: ROBOTIS 在乌兹别克斯坦塔什干 Yangi Avlod 特别工业区举行人形机器人及零部件生产项目奠基仪式，项目由 O‘zeltexsanoat 协会发起。报道称项目计划吸引约 7000 万美元投资、创造 2000 余个岗位，在 10 公顷用地上建设生产综合体；项目介绍材料中的投资额为 1 亿美元。合作协议于 2025 年 12 月在韩国达成。
+counterparties:
+- O‘zeltexsanoat（UzElTechSanoat）协会
+evidence:
+- url: https://www.uzdaily.uz/en/robotis-to-launch-humanoid-robot-production-in-tashkent/
+  publisher: UzDaily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/uzdaily-2026-06-15-robotis-tashkent-groundb.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-02-06-wuji-tech-funding-a-round
+date: 2026-02-06
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「天眼查 App 显示，近日，上海舞肌科技有限公司发生工商变更」（雷达财经 2026-02-06 报道）；投资界等聚合库记为 2026-02-06 A 轮
+type: funding
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技工商变更新增中移数字转型产业基金、Alphaist Partners 等股东（A 轮）
+summary:
+  zh: 天眼查显示，上海舞肌科技有限公司发生工商变更，新增中国移动旗下上海中移数字转型产业私募基金合伙企业（有限合伙）、Alphaist Partners Limited 等为股东，注册资本由约 180.3 万元增至约 204.2 万元。融资金额未披露。
+counterparties:
+- 上海中移数字转型产业私募基金（中移和创）
+- Alphaist Partners
+evidence:
+- url: https://news.qq.com/rain/a/20260206A04KXB00
+  publisher: 腾讯新闻 · 雷达财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/news-2026-02-06-wuji-tech-a-round.html
+corroboration: single

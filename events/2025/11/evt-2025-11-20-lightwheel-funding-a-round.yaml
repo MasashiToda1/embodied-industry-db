@@ -1,0 +1,25 @@
+id: evt-2025-11-20-lightwheel-funding-a-round
+date: '2025-11-20'
+date_precision: day
+type: funding
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能宣布完成数亿元 A 轮及 A+ 轮融资
+summary:
+  zh: 11 月 20 日，仿真合成数据公司光轮智能宣布完成数亿元 A 轮及 A+ 轮融资，由东方富海、三七互娱、琥珀资本、九派资本等机构联合投资，老股东辰韬资本持续加注，华兴资本担任独家财务顾问。资金用于规模化交付能力建设、技术研发投入和人才引入。
+counterparties:
+- 东方富海
+- 三七互娱
+- 琥珀资本
+- 九派资本
+- 辰韬资本
+- 华兴资本（财务顾问）
+evidence:
+- url: https://www.chinaventure.com.cn/news/113-20251120-388944.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/chinaventure-2025-11-20-lightwheel-a-round.html
+corroboration: single

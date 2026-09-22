@@ -1,0 +1,34 @@
+id: evt-2025-10-30-motphys-deployment-wuhan-sim-training-ground
+date: '2025-10-30'
+date_precision: day
+type: deployment
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 谋先飞与武汉临空港经开区签约共建机器人仿真训练场，同日发布 MotrixLab 并设华中总部
+summary:
+  zh: 10 月 30 日，武汉临空港经济技术开发区管委会（东西湖区）与北京谋先飞技术有限公司在国家网络安全人才与创新基地签署合作协议，双方打造全国首个全链条自主可控的机器人仿真训练场并对外开放，东西湖区现代服务产业办和临空港网安运营公司以共建运营模式参与。活动现场谋先飞发布物理引擎平台 MotrixLab，与多家机器人公司及需求方完成业务签约，北京大学、哈尔滨工业大学等高校采购了其仿真训练场技术用于教学科研；谋先飞宣布在东西湖区设立华中总部及研发中心。
+counterparties:
+- 武汉临空港经济技术开发区管委会（东西湖区）
+- 北京大学
+- 哈尔滨工业大学
+axes:
+  sim_stack:
+  - in-house
+  data_acquisition:
+  - sim-generated
+  delivery_model:
+  - software-license
+evidence:
+- url: http://www.hb.xinhuanet.com/20251030/04f2e249f18f4554b3edae8f4243cb97/c.html
+  publisher: 新华网湖北频道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/hb-2025-10-30-motphys-wuhan-training-g.html
+- url: https://www.wuhan.gov.cn/sy/whyw/202510/t20251031_2669711.shtml
+  publisher: 武汉市人民政府门户网站（转载长江日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/wuhan-2025-10-30-motphys-wuhan-training-g.html
+corroboration: multi

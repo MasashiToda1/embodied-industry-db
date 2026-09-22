@@ -7,5 +7,20 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: wuji-robotics
+founded: 2019-03
+hq:
+  country: CN
+  city: 深圳
+description: 做高扭矩密度电机、全直驱灵巧手与数据手套的公司，产品有 Wuji Hand 2 与 Wuji Glove。
 accounts:
   github: wuji-technology
+  site: https://www.wuji.tech
+sources:
+- url: https://www.wuji.tech/zh/hand2
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网产品页，公司成立于 2019 年
+- url: https://docs.wuji.tech/docs/zh/wuji-hand/latest/overview/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官方文档中心版权方为深圳舞肌科技有限公司；工商登记主体为上海舞肌科技有限公司（2019-03 成立），团队 2024 年 10 月迁至深圳

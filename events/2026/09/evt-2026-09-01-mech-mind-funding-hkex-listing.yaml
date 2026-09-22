@@ -1,0 +1,29 @@
+id: evt-2026-09-01-mech-mind-funding-hkex-listing
+date: 2026-09-01
+date_precision: day
+type: funding
+orgs:
+- id: mech-mind
+  role: subject
+title:
+  zh: 梅卡曼德登陆港交所主板（09615.HK），发行价 101.70 港元
+summary:
+  zh: 2026 年 9 月 1 日，梅卡曼德（雄安）机器人科技股份有限公司在港交所主板挂牌，股票代码 09615.HK，发行 23,140,590 股 H 股，发行价每股 101.70 港元，募资总额约 23.53 亿港元。9 家基石投资者包括 Baillie Gifford、泰康人寿、Jane Street 等，合计认购 1.86 亿美元。公司称此前已获华创资本、红杉中国、IDG、美团、启明创投等机构多轮融资。
+counterparties:
+- Baillie Gifford
+- 泰康人寿
+- Jane Street
+- 中信建投国际
+- 中信证券
+evidence:
+- url: https://www.tmtpost.com/8124357.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/tmtpost-2026-09-01-mech-mind-hkex-listing.html
+- url: https://www.gelonghui.com/live/2644100
+  publisher: 格隆汇
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/gelonghui-2026-09-01-mech-mind-hkex-listing-g.html
+corroboration: multi

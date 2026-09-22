@@ -1,0 +1,27 @@
+id: evt-2026-01-12-x-square-robot-funding-a-plus-plus-round
+date: '2026-01-12'
+date_precision: day
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人完成 10 亿元 A++ 轮融资，字节跳动、红杉中国等参与
+summary:
+  zh: 1 月 12 日，深圳自变量机器人科技有限公司披露已完成 10 亿元人民币 A++ 轮融资，参与方包括字节跳动、红杉中国、深创投、南山战新投、北京信息产业发展基金等，报道称这是深创投旗下 AI 基金成立后的首笔投资。
+counterparties:
+- 字节跳动
+- 红杉中国
+- 深创投
+- 南山战新投
+- 北京信息产业发展基金
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://fgw.sz.gov.cn/ztzl/qtztzl/szscjmyjjfzzhfwpt/mqfc/myqyfzdt/content/post_12613417.html
+  publisher: 深圳市发展和改革委员会网站 · 转载深圳晚报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/fgw-2026-01-12-x-square-robot-a-plus-pl.html
+corroboration: single

@@ -2,8 +2,22 @@ id: ati-automation
 names:
   zh: ATI Industrial Automation
   en: ATI Industrial Automation
+  aliases:
+  - ATI
+  - ATI 工业自动化
 status: active
 layers:
 - components
+founded: 1989
+hq:
+  country: US
+  city: Apex
+description: 做机器人末端工具与配件的美国公司（Novanta 旗下），产品有六轴力 / 力矩传感器、工具快换、碰撞传感器与柔顺装置。
 accounts:
   github: ati-ia
+  site: https://ati.novanta.com
+sources:
+- url: https://ati.novanta.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页：Since 1989，地址 1041 Goodworth Drive, Apex, NC 27539 USA，产品线

@@ -1,0 +1,23 @@
+id: evt-2026-05-06-ti5robot-funding-strategic-round
+date: '2026-05-06'
+date_precision: day
+type: funding
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人获新一轮融资，金创投、泰中合投资、余杭国投集团、国舜投资参投
+summary:
+  zh: 5 月 6 日，投融湾报道钛虎机器人科技（上海）有限公司获得新一轮融资，投资方为金创投、泰中合投资、余杭国投集团和国舜投资，金额未披露。
+counterparties:
+- 金创投
+- 泰中合投资
+- 余杭国投集团
+- 国舜投资
+evidence:
+- url: https://www.163.com/dy/article/KS8QPTIV05119596.html
+  publisher: 网易号（投融湾）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/163-2026-05-06-ti5robot-strategic-round.html
+corroboration: single

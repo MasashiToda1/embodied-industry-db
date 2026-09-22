@@ -10,3 +10,14 @@ upstream:
   robotics_notebooks_institution: mirros
 accounts:
   github: MirroS-Lab
+  site: https://mirros.ai
+description: 做世界模型与 Physical RSI（物理递归自我改进）研究的公司，发布 Code-as-World 与 HarnessEval-W。
+sources:
+- url: https://mirros.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网，仅有定位语与联系邮箱；成立时间、总部未公开，未填
+- url: https://news.qq.com/rain/a/20260828A07M8T00
+  tier: media
+  retrieved: '2026-09-22'
+  note: 机器之心 2026-08-28 报道 Code-as-World，确认 GitHub mirros-lab 与官网 mirros.ai 属同一主体。注意：另有「镜识科技（上海）有限公司」（MirrorMe Technology，浙大系足式机器人公司，官网 mirrormetech.com），与 mirros.ai 非同一公司，本条按 GitHub 账号与层归属对应 mirros.ai

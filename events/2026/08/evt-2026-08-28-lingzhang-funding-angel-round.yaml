@@ -1,0 +1,25 @@
+id: evt-2026-08-28-lingzhang-funding-angel-round
+date: '2026-08-28'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「《科创板日报》8 月 28 日讯，近日……完成数千万元天使轮融资」，取报道日
+type: funding
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 灵掌机器人完成数千万元天使轮融资，凯龙高科、无锡未来天使基金等参投
+summary:
+  zh: 科创板日报 8 月 28 日报道，无锡灵掌机器人科技有限公司完成数千万元天使轮融资，投资方为凯龙高科、无锡未来天使基金、仁正基金以及遨博智能；资金用于工业产线、特种作业以及商业航天等场景的产品研发，以及营销体系与订单交付能力建设。
+counterparties:
+- 凯龙高科
+- 无锡未来天使基金
+- 仁正基金
+- 遨博智能
+evidence:
+- url: https://www.chinastarmarket.cn/detail/2468141
+  publisher: 科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/chinastarmar-2026-08-28-lingzhang-angel-round.html
+corroboration: single

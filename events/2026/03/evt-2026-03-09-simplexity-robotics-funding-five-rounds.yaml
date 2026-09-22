@@ -1,0 +1,27 @@
+id: evt-2026-03-09-simplexity-robotics-funding-five-rounds
+date: '2026-03-09'
+date_precision: day
+type: funding
+orgs:
+- id: simplexity-robotics
+  role: subject
+title:
+  zh: 至简动力官宣半年内完成 5 轮融资，累计 20 亿元
+summary:
+  zh: 3 月 9 日，至简动力首次正式官宣在半年不到的时间连续完成 5 轮融资，累计融资金额 20 亿元人民币。财务投资机构包括元璟资本、蓝驰创投、红杉中国、君联资本、中科创星、高榕创投，战略投资方为腾讯和阿里巴巴集团，光源资本担任最新一轮财务顾问。投中网称最后一轮投后估值超过 10 亿美元。
+counterparties:
+- 元璟资本
+- 蓝驰创投
+- 红杉中国
+- 君联资本
+- 中科创星
+- 高榕创投
+- 腾讯
+- 阿里巴巴集团
+evidence:
+- url: https://www.jiemian.com/article/14088655.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/jiemian-2026-03-09-simplexity-robotics-five.html
+corroboration: single

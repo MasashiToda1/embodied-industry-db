@@ -1,0 +1,18 @@
+id: evt-2026-03-18-beingbeyond-product_launch-u1
+date: '2026-03-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 智在无界发布无本体灵巧手数据采集设备 U1
+summary:
+  zh: 2026 年 3 月 18 日，智在无界（BeingBeyond）发布 U1，官方称其为面向灵巧手的无本体数据采集解决方案，用于替代真机遥操等高成本采集方式。
+evidence:
+- url: https://beingbeyond.com/newsInfo/1195.html
+  publisher: 智在无界官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/beingbeyond-2026-03-18-beingbeyond-u1-launch.html
+corroboration: single

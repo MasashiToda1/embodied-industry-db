@@ -1,0 +1,36 @@
+id: evt-2026-06-15-ace-robotics-funding-angel-plus-round
+date: '2026-06-15'
+date_precision: day
+type: funding
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人完成天使+轮融资，吉利资本、达晨财智、深创投等参投，上半年累计融资数亿美元
+summary:
+  zh: 6 月 15 日，大晓机器人宣布近日完成天使+轮融资，投资方包括吉利资本、达晨财智、深创投、上海科创基金、沐曦股份、盛宇投资、复星锐正、华控基金、临港新片区基金、豫资涨泉等，老股东商汤国香资本持续增资，告捷资本担任长期财务顾问；公司称 2026 年上半年累计融资数亿美元。资金投入世界模型及「软硬一体」商业解决方案，面向智慧零售、安防巡检、文旅、酒店等场景。
+counterparties:
+- 吉利资本
+- 达晨财智
+- 深创投
+- 上海科创基金
+- 沐曦股份
+- 盛宇投资
+- 复星锐正
+- 华控基金
+- 临港新片区基金
+- 豫资涨泉
+- 商汤国香资本
+- 告捷资本（财务顾问）
+evidence:
+- url: https://www.163.com/dy/article/KVF2UTAQ055040N3.html
+  publisher: 网易号（上观新闻 / 新民晚报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/163-2026-06-15-ace-robotics-angel-plus-.html
+- url: https://www.stcn.com/article/detail/3960808.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/stcn-2026-06-15-ace-robotics-angel-plus-.html
+corroboration: multi

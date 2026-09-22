@@ -1,0 +1,24 @@
+id: evt-2026-04-21-robotis-product_launch-ai-sapiens-k0-humanoid
+date: 2026-04-21
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「Published on Tuesday, April 21, 2026」，为媒体报道日期；ROBOTIS 在 X 上公开 AI Sapiens 的具体日期未在页面写明
+type: product_launch
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 公开开源人形平台 AI Sapiens 首款机型 K0：1.3 m、34 kg、23 自由度，搭载自研 DYNAMIXEL-Q 准直驱执行器
+summary:
+  zh: ROBOTIS 公开人形机器人平台 AI Sapiens 及首款机型 K0。K0 身高 1.3 m、重 34 kg、全身 23 个自由度（每腿 6、每臂 5、腰 1），单臂负载 3 kg，使用 14 个 QM-060 与 9 个 QM-080 DYNAMIXEL-Q 准直驱执行器，配 46.8 V / 9000 mAh 电池与 6 TOPS NPU。公司称硬件 BoM、CAD、源码与仿真资产将全部开源，DYNAMIXEL-Q 执行器计划 2026 年下半年发售；K0 整机售价未公布。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.humanoidsdaily.com/news/robotis-enters-the-open-source-humanoid-arena-with-ai-sapiens-k0-platform
+  publisher: Humanoids Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/humanoidsdai-2026-04-robotis-ai-sapiens-k0.html
+corroboration: single

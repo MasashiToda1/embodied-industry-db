@@ -8,3 +8,18 @@ layers:
 - data
 accounts:
   github: westlakerobotics
+  site: https://www.wlrobo.com
+founded: 2021-06
+hq:
+  country: CN
+  city: 杭州
+description: 西湖大学孵化的具身智能公司，研发通用具身基础大模型 WR1 与通用运动模型 GAE，并推出人形机器人整机泰坦 o1（西湖 o1）。
+sources:
+- url: https://wlrobo.com/module4
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍：西湖大学人工智能和机器人领域第一个成果转化项目，主攻端到端大小脑具身大模型
+- url: https://tech.ifeng.com/c/8wKpQvEjEwG
+  tier: media
+  retrieved: '2026-09-22'
+  note: 机器人前瞻报道写「成立于 2021 年 6 月」「杭州」；新浪财经 2026-02-14 转载亦写「成立于 2021 年」。另有报道写「业务始于 2024 年」，取工商成立时间

@@ -1,0 +1,26 @@
+id: evt-2025-06-11-wandercraft-funding-series-d
+date: 2025-06-11
+date_precision: day
+type: funding
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Wandercraft 宣布 D 轮融资，获得 7500 万美元资金与融资额度
+summary:
+  zh: 2025 年 6 月 11 日，Wandercraft 宣布在 D 轮中获得 7500 万美元的资金与融资（funding and financing），主要出资方为 Renault Group、由 Bpifrance 代法国政府管理的 PSIM 基金（France 2030 计划）、Teampact Ventures 与 Quadrant Management。资金用于推动个人外骨骼 Eve 最早于 2026 年上市、扩大康复外骨骼 Atalante X 的临床应用、开发并部署人形机器人 Calvin-40。该轮为库内该主体窗口期外最近一轮融资。
+counterparties:
+- Renault Group
+- Bpifrance（PSIM 基金）
+- Teampact Ventures
+- Quadrant Management
+amount:
+  value: 75000000
+  currency: USD
+evidence:
+- url: https://www.globenewswire.com/news-release/2025/06/11/3097632/0/en/wandercraft-announces-series-d-round-bringing-75m-in-total-funding-secured-for-global-acceleration-of-ai-powered-robotics.html
+  publisher: GlobeNewswire · Wandercraft 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/globenewswir-2025-06-11-wandercraft-series-d.html
+corroboration: single

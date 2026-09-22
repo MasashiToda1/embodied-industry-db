@@ -1,0 +1,23 @@
+id: evt-2026-08-04-estun-codroid-funding-estun-acquisition
+date: 2026-08-04
+date_precision: day
+type: funding
+orgs:
+- id: estun-codroid
+  role: subject
+title:
+  zh: 埃斯顿拟 4.87 亿元收购埃斯顿酷卓 100% 股权
+summary:
+  zh: 8 月 4 日，埃斯顿董事会审议通过全资子公司埃斯顿机器人、鼎通机电以现金收购埃斯顿酷卓股权的议案，交易总金额 4.87 亿元：收购 83.26% 股权作价 40555.96 万元，收购三个员工持股平台全体合伙人份额作价 8154.04 万元。交易完成后埃斯顿间接持有酷卓 100% 股权并纳入合并报表；业绩承诺方承诺酷卓 2026 年 5 月至 2029 年累计营业收入不低于 6.2 亿元。
+counterparties:
+- 南京埃斯顿自动化股份有限公司
+amount:
+  value: 487100000
+  currency: CNY
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimhtuc4381508.shtml
+  publisher: 新浪财经（转载证券日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-04-estun-codroid-acquisitio.html
+corroboration: single

@@ -2,9 +2,32 @@ id: miaodong
 names:
   zh: 妙动科技
   en: Miaodong
+  aliases:
+  - Mondo Robotics
+  - 深圳市妙动科技有限公司
 status: active
 layers:
 - foundation
 - embodiment
 upstream:
   robotics_notebooks_institution: miaodong
+accounts:
+  site: https://www.mondorobotics.com
+founded: 2025-01
+hq:
+  country: CN
+  city: 深圳
+description: 大疆系团队创立的消费级机器人公司，首款产品为跟拍机器人 Beni，同步研发人形机器人与世界模型 DiT4DiT，主体为深圳市妙动科技有限公司。
+sources:
+- url: https://www.baijing.cn/article/55952
+  tier: media
+  retrieved: '2026-09-22'
+  note: 白鲸出海 2026-07 报道，2025 年 1 月成立，深圳与 Palo Alto 两地团队
+- url: https://www.n315.com/hongsan/2025/1104/9641.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 转载虎嗅 2025-11-04 报道，主体「深圳市妙动科技有限公司」成立于 2025 年 1 月
+- url: https://www.mondorobotics.com/zh
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网（Mondo Robotics），产品 Beni

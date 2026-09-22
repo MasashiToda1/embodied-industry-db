@@ -1,0 +1,29 @@
+id: evt-2026-09-18-booster-pricing-k1-explorer
+date: '2026-09-18'
+date_precision: day
+type: pricing
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: Booster K1 探索版发售，京东标价 38999 元
+summary:
+  zh: 9 月 18 日，加速进化成长型人形机器人 Booster K1 探索版正式发售，京东标价 38999 元。该版本身高约 95cm、重量约 19.5kg、全身 22 个自由度，标配豆包大模型，48 TOPS 稠密算力，开放 API 并支持 OTA 升级。
+amount:
+  value: 38999
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+  target_scene:
+  - education-research
+  - home
+evidence:
+- url: https://www.ithome.com/1/003/924.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/ithome-2026-09-18-booster-k1-explorer-pric.html
+corroboration: single

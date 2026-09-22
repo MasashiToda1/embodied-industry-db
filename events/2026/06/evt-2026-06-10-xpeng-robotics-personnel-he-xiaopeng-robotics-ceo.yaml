@@ -1,0 +1,18 @@
+id: evt-2026-06-10-xpeng-robotics-personnel-he-xiaopeng-robotics-ceo
+date: 2026-06-10
+date_precision: day
+type: personnel
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 何小鹏兼任小鹏机器人业务 CEO
+summary:
+  zh: 6 月 10 日，何小鹏发出内部信，宣布除担任小鹏集团 CEO 外，亲自兼任机器人业务 CEO。内部信提出的节点为：2026 年第四季度实现人形机器人量产，2027 年一季度进入线下门店导购，2027 年二季度推向海外市场。
+evidence:
+- url: https://www.yicai.com/news/103223315.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/yicai-2026-06-10-xpeng-robotics-ceo.html
+corroboration: single

@@ -5,6 +5,23 @@ names:
   aliases:
   - 具脑
   - Cog-WM
+  - EBKernel
 status: active
 layers:
 - foundation
+founded: 2025
+hq:
+  country: CN
+  city: 上海
+description: 上海具脑磐石科技有限公司，以类脑智能范式研发认知世界模型（Cognitive World Model）具身大脑。
+accounts:
+  site: https://www.ebkernel.com
+sources:
+- url: https://www.36kr.com/p/3819931562414467
+  tier: media
+  retrieved: '2026-09-22'
+  note: 36 氪报道（2026-05-25）写「具脑磐石成立于 2025 年……由朱森华创立并担任 CEO」，构建认知世界模型
+- url: https://www.gasgoo.com/robot/data/1212-%E4%B8%8A%E6%B5%B7%E5%85%B7%E8%84%91%E7%A3%90%E7%9F%B3%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 盖世具身智能企业资料页，上海具脑磐石科技有限公司总部位于上海市，工商成立日期 2025-06-06；官网 ebkernel.com 首页自称「EBKernel 具脑磐石」

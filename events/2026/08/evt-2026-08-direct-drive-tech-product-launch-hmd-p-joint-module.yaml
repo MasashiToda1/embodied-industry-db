@@ -1,0 +1,22 @@
+id: evt-2026-08-direct-drive-tech-product-launch-hmd-p-joint-module
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「8月19日至23日……2026世界机器人大会（WRC）……现场发布新品HMD-P系列一体化机器人关节模组」，报道发布于 2026 年 8 月 24 日
+type: product_launch
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末科技在 WRC 2026 发布 HMD-P 系列一体化机器人关节模组，面向协作机器人与人形机器人
+summary:
+  zh: OFweek 机器人网报道，2026 世界机器人大会（8 月 19—23 日，北京）期间，本末科技核心部件事业部展出直驱动力模组、具身关节模组全系列产品，并现场发布新品 HMD-P 系列一体化机器人关节模组；该系列采用自研高扭矩密度无框力矩电机与精密行星减速器一体化集成设计，公司称可面向协作机器人、人形机器人及高端精密装备提供一体化执行方案。同场展示刑天、TITA、D1 等整机。
+axes:
+  hardware_strategy: [in-house]
+evidence:
+- url: https://robot.ofweek.com/2026-08/ART-8321201-8110-30699680.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/robot-2026-08-24-direct-drive-tech-hmd-p-.html
+corroboration: single

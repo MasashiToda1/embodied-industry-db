@@ -1,0 +1,33 @@
+id: evt-2026-04-29-linkerbot-funding-b-plus-round
+date: 2026-04-29
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成 B+ 轮融资，中关村科学城基金、中银资产、复星创富等投资
+summary:
+  zh: 2026 年 4 月 29 日，灵心巧手（北京）科技股份有限公司宣布完成 B+ 轮融资，金额未披露。本轮由中关村科学城基金、中银资产、复星创富、贝克资本、玖兆投资、弘章投资、元诺资本、中科英智、宇信科技等投资，老股东博佳资本、力合金融、力合资本、华福投资、德同资本持续加注。公司称目前单月出货超 4000 台，融资后推进产能爬坡，目标月交付能力过万。
+counterparties:
+- 中关村科学城基金
+- 中银资产
+- 复星创富
+- 贝克资本
+- 玖兆投资
+- 弘章投资
+- 元诺资本
+- 中科英智
+- 宇信科技
+- 博佳资本
+- 力合金融
+- 力合资本
+- 华福投资
+- 德同资本
+evidence:
+- url: https://tech.caijing.com.cn/20260430/5157315.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/tech-2026-04-29-linkerbot-b-plus-round.html
+corroboration: single

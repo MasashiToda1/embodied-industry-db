@@ -2,7 +2,26 @@ id: qingzhuo
 names:
   zh: 清卓动力
   en: Qingzhuo Power
+  aliases:
+  - 清卓动力机器人科技（北京）有限公司
+  - NeodraDynamics
 status: active
 layers:
 - embodiment
 - components
+founded: 2024-10
+hq:
+  country: CN
+  city: 北京
+description: 做液电混驱超人形机器人与数字液压线性执行器的公司，2026 年发布 4 米级液电混驱超人形机器人，并供应重载关节模组与灵巧手部件。
+accounts:
+  site: http://neodradynamics.com
+sources:
+- url: http://neodradynamics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网，公司地址北京市朝阳区望京 SOHO，液电混驱技术
+- url: https://www.gasgoo.com/robot/data/6074-%E6%B8%85%E5%8D%93%E5%8A%A8%E5%8A%9B%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E6%8A%80-%E5%8C%97%E4%BA%AC-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 盖世具身智能企业资料，成立日期 2024-10-08，注册地北京市朝阳区

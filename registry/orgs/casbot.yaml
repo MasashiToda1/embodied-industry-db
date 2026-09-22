@@ -2,7 +2,25 @@ id: casbot
 names:
   zh: 中科慧灵
   en: CASBOT
+  aliases:
+  - 北京中科慧灵机器人技术有限公司
+  - 灵宝CASBOT
+  - 灵宝
 status: active
 layers:
 - embodiment
 - foundation
+founded: 2023-08
+hq:
+  country: CN
+  city: 北京
+description: 中科院自动化所研究员张正涛创办的人形机器人公司，品牌灵宝 CASBOT，产品有双足人形 CASBOT 02、轮式双臂 W2、灵巧手，面向工业制造与矿山场景。
+sources:
+- url: https://kw.beijing.gov.cn/xwdt/kcyx/xwdtyqqy/202502/t20250219_4014578.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 北京市科委转载北京商报 2025-02-19 报道，「灵宝 CASBOT 成立于 2023 年 8 月」，公司全称北京中科慧灵机器人技术有限公司
+- url: https://www.worldrobotconference.com/expo/company/460.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商页，成立于 2023 年，三条产品线；官网 casbot.com 抓取时为维护页

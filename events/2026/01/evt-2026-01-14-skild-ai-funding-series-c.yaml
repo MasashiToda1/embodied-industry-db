@@ -1,0 +1,45 @@
+id: evt-2026-01-14-skild-ai-funding-series-c
+date: 2026-01-14
+date_precision: day
+type: funding
+orgs:
+- id: skild-ai
+  role: subject
+- id: nvidia
+  role: investor
+title:
+  zh: Skild AI 完成 SoftBank 领投的 C 轮融资，估值超 140 亿美元
+summary:
+  zh: 1 月 14 日，Skild AI 宣布完成 C 轮融资，由 SoftBank 领投，NVentures（NVIDIA 风投部门）、Macquarie Capital、Jeff Bezos（Bezos Expeditions）、Disruptive、1789 Capital 参投，Lightspeed、Felicis、Coatue、Sequoia Capital 追加投资，战略投资方包括 Samsung、LG、Schneider Electric、CommonSpirit、Salesforce Ventures，估值超过 140 亿美元。官方博客写融资额为 14 亿美元，Business Wire 新闻稿写「close to $1.4 billion」。
+counterparties:
+- SoftBank Group
+- Macquarie Capital
+- Bezos Expeditions
+- Disruptive
+- 1789 Capital
+- Lightspeed
+- Felicis
+- Coatue
+- Sequoia Capital
+- Samsung
+- LG
+- Schneider Electric
+- CommonSpirit
+- Salesforce Ventures
+evidence:
+- url: https://skild.ai/blogs/series-c
+  publisher: Skild AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/skild-2026-01-14-skild-ai-series-c.html
+- url: https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-%241.4B-Now-Valued-Over-%2414B
+  publisher: Business Wire · Skild AI 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/businesswire-2026-01-14-skild-ai-series-c-bw.html
+- url: https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/techcrunch-2026-01-14-skild-ai-series-c-tc.html
+corroboration: multi

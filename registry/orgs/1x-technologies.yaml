@@ -8,5 +8,20 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: 1x-technologies
+founded: 2014
+hq:
+  country: US
+  city: Palo Alto
+description: 做家用人形机器人 NEO 的公司，前身为挪威 Halodi Robotics，在加州 Hayward 自建工厂生产电机、电池等核心部件。
 accounts:
   github: 1x-technologies
+  site: https://www.1x.tech
+sources:
+- url: https://www.1x.tech/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页：based in Palo Alto, California；原名 Halodi Robotics
+- url: https://www.1x.tech/discover/neo-factory
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 NEO Factory 页：「since founding the company in 2014」，Hayward 工厂自产核心部件

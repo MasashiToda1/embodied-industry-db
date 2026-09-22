@@ -1,0 +1,21 @@
+id: evt-2025-11-17-physical-intelligence-product_launch-pistar06
+date: 2025-11-17
+date_precision: day
+type: product_launch
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: Physical Intelligence 发布 π*0.6，用 Recap 方法让 VLA 从自身经验中强化学习
+summary:
+  zh: 11 月 17 日，Physical Intelligence 在官方博客发布 π*0.6。该模型以 π0.6 VLA（基于 50 亿参数视觉语言模型加动作专家）为底座，用公司提出的 Recap 方法（RL with Experience & Corrections via Advantage-conditioned Policies）结合示教、人工纠正与机器人自主经验做强化学习训练。公司称在做浓缩咖啡、组装纸箱、折叠多样衣物三项任务上，加入自主经验训练后部分最难任务的吞吐量提高一倍以上，失败率下降一半以上，并在真实工厂完成 59 个巧克力包装盒的组装与贴标。
+axes:
+  model_form: [end2end-vla]
+  data_acquisition: [teleop, real-robot]
+evidence:
+- url: https://www.pi.website/blog/pistar06
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/pi-2025-11-17-physical-intelligence-pi.html
+corroboration: single

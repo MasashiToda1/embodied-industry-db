@@ -5,3 +5,19 @@ names:
 status: active
 layers:
 - embodiment
+accounts:
+  site: https://www.aheadform.com
+founded: 2024-06
+hq:
+  country: CN
+  city: 上海
+description: 上海的仿生机器人公司，研发超仿生人形机器人头部与情绪基座模型，产品有精灵系列与 Origin F1 桌面级仿生交互平台。
+sources:
+- url: https://www.aheadform.com/zh
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网：专注人形机器人头部、情绪基座模型与仿生驱动
+- url: https://m.thepaper.cn/newsDetail_forward_32915673
+  tier: media
+  retrieved: '2026-09-22'
+  note: 澎湃新闻写「首形科技 2024 年 6 月在上海成立」。创业邦公司页标注「北京」，以澎湃与智东西「上海仿生机器人创企」为准

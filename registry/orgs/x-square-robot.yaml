@@ -8,6 +8,17 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: x-square-robot
+founded: 2023-12
+hq:
+  country: CN
+  city: 深圳
+description: 自研端到端通用具身智能大模型（WALL 系列）并配套量子系列机器人本体的公司，2023 年 12 月在深圳启动运营。
 accounts:
   huggingface: x-square-robot
   github: X-Square-Robot
+  site: https://x2robot.com
+sources:
+- url: https://x2robot.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，成立于 2023 年 12 月、在深圳启动运营、端到端路径

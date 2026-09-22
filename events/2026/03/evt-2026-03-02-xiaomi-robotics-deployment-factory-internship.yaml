@@ -1,0 +1,20 @@
+id: evt-2026-03-02-xiaomi-robotics-deployment-factory-internship
+date: 2026-03-02
+date_precision: day
+type: deployment
+orgs:
+- id: xiaomi-robotics
+  role: subject
+title:
+  zh: 小米人形机器人进入汽车工厂「实习」
+summary:
+  zh: 3 月 2 日，雷军发文称小米机器人已开始在汽车工厂实习；「小米技术」同日发文称，机器人在压铸车间自攻螺母上件工站连续自主运行 3 小时，安装成功率 90.2%，同步满足 76 秒产线节拍。雷军称已在自攻螺母上件、料箱搬运等场景初步实现自主工作。
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.21jingji.com/article/20260302/herald/08affb6ec0392e8076bc491ca9056af1.html
+  publisher: 21 经济网（转载中国基金报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/21jingji-2026-03-02-xiaomi-robotics-factory-.html
+corroboration: single

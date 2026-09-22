@@ -1,0 +1,25 @@
+id: evt-2025-12-23-vita-power-pricing-vbot-datou-12988
+date: '2025-12-23'
+date_precision: day
+type: pricing
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: Vbot 超能机器狗「大头」定价 12988 元，创始权益价 9988 元
+summary:
+  zh: 12 月 23 日发布会公布，维他动力超能机器狗「大头 BoBo」定价 12988 元，创始权益价 9988 元，可通过官方小程序及京东自营旗舰店预订。
+amount:
+  value: 12988
+  currency: CNY
+axes:
+  target_scene: [home]
+  embodiment_form: [quadruped]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.cnfin.com/gs-lb/detail/20251224/4355419_1.html
+  publisher: 新华财经（中国金融信息网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/cnfin-2025-12-23-vita-power-datou-launch-.html
+corroboration: single

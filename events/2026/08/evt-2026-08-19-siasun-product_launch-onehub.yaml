@@ -1,0 +1,21 @@
+id: evt-2026-08-19-siasun-product_launch-onehub
+date: 2026-08-19
+date_precision: day
+type: product_launch
+orgs:
+- id: siasun
+  role: subject
+title:
+  zh: 新松发布 OneHub 羿枢多机器人协同系统
+summary:
+  zh: 8 月 19 日，新松在北京世界机器人大会发布 OneHub 羿枢多机器人协同系统，定位为面向具身智能规模化应用的异构机器人统一智能底座。系统采用大脑层、小脑层、执行层三级协同架构，将不同本体结构、控制方式与通信协议的机器人统一接入调度；现场调度多台松羿轮式人形机器人进行集群作业演示，面向柔性制造、智慧物流、智能巡检和复杂服务场景。
+axes:
+  model_form: [hierarchical]
+  target_scene: [industrial-manufacturing, logistics-warehouse, inspection-hazardous, commercial-service]
+evidence:
+- url: https://www.siasun.com/news-detail1011.html
+  publisher: 新松官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/siasun-2026-08-19-siasun-onehub.html
+corroboration: single

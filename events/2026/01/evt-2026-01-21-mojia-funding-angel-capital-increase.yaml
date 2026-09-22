@@ -1,0 +1,30 @@
+id: evt-2026-01-21-mojia-funding-angel-capital-increase
+date: '2026-01-21'
+date_precision: day
+type: funding
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 墨甲机器人完成天使轮外部增资，募资超 1 亿元，投后估值 25 亿元
+summary:
+  zh: 2026 年 1 月 21 日，奇瑞汽车旗下安徽墨甲智创机器人科技有限公司完成天使轮外部增资，总募资额超 1 亿元，投后估值 25 亿元。投资方包括伯特利（603596.SH）、富春染织（605189.SH）、智元机器人、IDG 资本、芜湖市科创集团、凤鸣创投等；报道称伯特利增资 3500 万元，奇瑞仍持股约 96%。
+counterparties:
+- 伯特利
+- 富春染织
+- 智元机器人
+- IDG 资本
+- 芜湖市科创集团
+- 凤鸣创投
+evidence:
+- url: http://ifengweekly.com/detil.php?id=27773
+  publisher: 凤凰周刊
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/ifengweekly-2026-01-21-mojia-angel-capital-incr.html
+- url: https://www.agentren.cn/2026/0114/5152.shtml
+  publisher: 爱力方（转载机器人大讲堂）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/agentren-2026-01-21-mojia-angel-capital-incr.html
+corroboration: multi

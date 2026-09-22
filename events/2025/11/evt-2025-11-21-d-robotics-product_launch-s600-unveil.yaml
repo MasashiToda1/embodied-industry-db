@@ -1,0 +1,29 @@
+id: evt-2025-11-21-d-robotics-product_launch-s600-unveil
+date: '2025-11-21'
+date_precision: day
+type: product_launch
+orgs:
+- id: d-robotics
+  role: subject
+- id: fourier
+  role: customer
+- id: booster
+  role: customer
+- id: x-square-robot
+  role: customer
+title:
+  zh: 地瓜机器人在 DDC2025 开发者大会揭晓具身智能大算力开发平台 S600
+summary:
+  zh: 11 月 21 日，DDC2025 地瓜机器人开发者大会在深圳举办，地瓜机器人揭晓具身智能机器人大算力开发平台 S600，560 TOPS（INT8）算力，大脑配置 18 核 A78AE CPU 与 BPU Nash，小脑配置 6 核 R52+ MCU，宣布将于 2026 年第一季度正式发布。傅利叶、加速进化、自变量机器人、星动纪元等成为 S600 全球首批战略客户；同期推出覆盖数据闭环系统、具身智能训练场、Agent 开发服务的「一站式开发平台」。
+counterparties:
+- 星动纪元
+- 知行科技
+- 天准星智
+- 华勤技术
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2025-11/21/content_435861.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stdaily-2025-11-21-d-robotics-s600-unveil.html
+corroboration: single

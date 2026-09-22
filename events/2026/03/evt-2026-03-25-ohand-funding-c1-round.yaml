@@ -1,0 +1,24 @@
+id: evt-2026-03-25-ohand-funding-c1-round
+date: 2026-03-25
+date_precision: day
+type: funding
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技完成 1.5 亿元 C1 轮融资，中金脑科学基金领投
+summary:
+  zh: 3 月 25 日，上海傲意信息科技有限公司宣布完成 C1 轮融资，融资规模 1.5 亿元，由中金资本旗下深圳市脑科学与类脑智能产业投资基金领投，多家老股东跟投。公司称 ROHand 系列灵巧手出货量实现 5 倍增长，已覆盖下游近百家人形机器人客户，海外业务体量与增速已超过国内。
+counterparties:
+- 中金资本
+- 深圳市脑科学与类脑智能产业投资基金
+amount:
+  value: 150000000
+  currency: CNY
+evidence:
+- url: https://zhidx.com/p/543031.html
+  publisher: 智东西 · 机器人前瞻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/zhidx-2026-03-25-ohand-c1-round.html
+corroboration: single

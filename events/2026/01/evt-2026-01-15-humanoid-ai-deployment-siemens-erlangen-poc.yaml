@@ -1,0 +1,23 @@
+id: evt-2026-01-15-humanoid-ai-deployment-siemens-erlangen-poc
+date: 2026-01-15
+date_precision: day
+type: deployment
+orgs:
+- id: humanoid-ai
+  role: subject
+title:
+  zh: Humanoid 与西门子完成工业物流 PoC：HMND 01 Alpha 轮式机在埃尔朗根电子工厂现场部署两周，每小时 60 次料箱搬运、抓放成功率超 90%
+summary:
+  zh: 1 月 15 日，Humanoid 与西门子宣布完成人形机器人工业物流概念验证。PoC 分两阶段：先在 Humanoid 内部以物理孪生完成开发与演示，再在西门子埃尔朗根电子工厂现场部署两周，评估自主运行下的性能与可靠性。公司称目标指标全部达成：每小时 60 次料箱搬运、处理两种料箱尺寸、连续自主执行任务超 30 分钟、正常运行时间超 8 小时，整体与自主抓放成功率均高于 90%。双方称此为长期战略合作的第一步，后续可扩大用例并在西门子更多工厂部署。
+counterparties:
+- 西门子（Siemens AG）
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://thehumanoid.ai/humanoid-and-siemens-completed-a-proof-of-concept-to-test-humanoidrobots-in-industrial-logistics/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/thehumanoid-2026-01-15-humanoid-ai-siemens-poc.html
+corroboration: single

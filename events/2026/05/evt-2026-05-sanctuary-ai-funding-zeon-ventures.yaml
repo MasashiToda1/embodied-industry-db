@@ -1,0 +1,28 @@
+id: evt-2026-05-sanctuary-ai-funding-zeon-ventures
+date: 2026-05
+date_precision: month
+type: funding
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: 日本 Zeon 通过 Zeon Ventures 投资 Sanctuary AI，并合作开发灵巧机器人专用材料
+summary:
+  zh: 2026 年 5 月，日本材料公司 Zeon Corporation 通过其风险投资部门 Zeon Ventures Inc.（加州）宣布投资 Sanctuary AI 并建立合作，Zeon 将以其弹性体材料与测试评估能力支持 Sanctuary AI 灵巧手（微型液压驱动加触觉传感）的产品开发。投资金额未披露。
+counterparties:
+- Zeon Corporation
+- Zeon Ventures
+date_basis: derived
+date_as_stated: Sanctuary AI 官网转载页面元数据 datePublished 为 2026-05-26；BetaKit 报道（2026-06-26）称「an undisclosed investment in May from the venture arm of Japan's Zeon Corporation」
+evidence:
+- url: https://sanctuary.ai/news/zeon-invests-in-sanctuary-ai-and-partners-to-advance-specialized-materials-for-dexterous-robotics/
+  publisher: Sanctuary AI 官网（转载 Zeon 新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/sanctuary-2026-05-sanctuary-ai-zeon.html
+- url: https://betakit.com/robotics-startup-sanctuary-ai-appoints-former-mda-exec-as-ceo/
+  publisher: BetaKit
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/betakit-2026-06-sanctuary-ai-ceo-betakit.html
+corroboration: multi

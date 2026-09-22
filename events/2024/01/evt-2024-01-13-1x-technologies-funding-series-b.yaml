@@ -1,0 +1,27 @@
+id: evt-2024-01-13-1x-technologies-funding-series-b
+date: 2024-01-13
+date_precision: day
+type: funding
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X 完成 1 亿美元 B 轮融资，EQT Ventures 参投
+summary:
+  zh: 2024 年 1 月 13 日，1X 宣布完成 1 亿美元 B 轮融资，EQT Ventures 等参投；公司称此前 2023 年 3 月由 OpenAI 与 Tiger Global 领投 A 轮，12 个月内累计融资超 1.25 亿美元。本轮同时包含老股转让，Sandwater 增持，Samsung NEXT、Skagerak Capital、Nistad group 参与。该轮为库内该主体窗口期外最近一轮已官方公告的融资。
+counterparties:
+- EQT Ventures
+- Sandwater
+- Samsung NEXT
+- Skagerak Capital
+- Nistad group
+amount:
+  value: 100000000
+  currency: USD
+evidence:
+- url: https://www.1x.tech/discover/1x-secures-100m-in-series-b-funding
+  publisher: 1X 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/01/1x-2024-01-13-1x-technologies-series-b.html
+corroboration: single

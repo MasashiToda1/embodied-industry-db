@@ -1,0 +1,23 @@
+id: evt-2026-06-26-wandercraft-deployment-calvin-renault-douai
+date: 2026-06-26
+date_precision: day
+type: deployment
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Renault 披露 Calvin 在 Douai 工厂测试搬运轮胎，计划 2026 年底约 10 台、2027 年底 350 台
+summary:
+  zh: 6 月 26 日，Renault Group 发布专题文章披露与 Wandercraft 共同开发的 Calvin 机器人正在 Douai 工厂测试，一次抓取两条轮胎、约 30 公斤，负载能力 40 至 50 公斤；开发流程从 Wandercraft 巴黎实验室到 Flins 创新中心（复刻 Douai 车轮车间）再到工厂。Renault 给出的路线为 2026 年底约 10 台机器人到位、2027 年底在法国与西班牙工厂部署 350 台。
+counterparties:
+- Renault Group
+axes:
+  target_scene: [industrial-manufacturing]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.renaultgroup.com/en/magazine/technology/calvin-a-new-generation-robot-is-born/
+  publisher: Renault Group 官网专题
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/renaultgroup-2026-06-26-wandercraft-calvin-douai.html
+corroboration: single

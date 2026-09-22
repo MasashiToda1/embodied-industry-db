@@ -1,0 +1,26 @@
+id: evt-2026-08-dexmate-product-launch-daimon-twm
+date: 2026-08
+date_precision: month
+type: product_launch
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人发布触觉锚定世界模型 Daimon-TWM
+summary:
+  zh: 2026 年 8 月，戴盟机器人发布触觉锚定世界模型 Daimon-TWM（Tactile-grounded World Model），官方称其将物理认知、推演决策与瞬时操控纳入统一模型框架，正与全球头部 3C 企业及特斯拉供应链企业开展模型落地验证。公司 2024 年提出在 VLA 架构中引入触觉的 VTLA 路线。
+axes:
+  model_form:
+  - world-model
+  - end2end-vla
+  data_modality:
+  - tactile
+  - rgb
+  - language-annotated
+evidence:
+- url: https://www.36kr.com/p/3935107450125442
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/36kr-2026-08-11-dexmate-ant-round.html
+corroboration: single

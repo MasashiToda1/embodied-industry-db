@@ -1,0 +1,18 @@
+id: evt-2026-09-08-xpeng-robotics-corporate-production-line-start
+date: 2026-09-08
+date_precision: day
+type: corporate
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏机器人生产线启用，首台 IRON 自主走下产线
+summary:
+  zh: 9 月 8 日，小鹏机器人生产线正式启用，首台高阶通用人形机器人完成自动化总装并自主走下产线。产线由小鹏自主设计，核心制程自动化率超过 80%，引入整车级质量管理体系。按规划，IRON 于 2026 年底进入规模量产，率先在小鹏门店和园区应用，2027 年面向中国及海外市场上市交付。
+evidence:
+- url: https://robot.ofweek.com/2026-09/ART-898890-8110-30702459.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/robot-2026-09-08-xpeng-robotics-productio.html
+corroboration: single

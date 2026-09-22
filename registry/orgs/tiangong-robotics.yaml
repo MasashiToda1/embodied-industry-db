@@ -5,6 +5,24 @@ names:
   aliases:
   - 北京天下先智创机器人技术有限责任公司
   - 天下先智创
+  - Tegene Robot
+  - Beijing Tegene Robots Co., Ltd.
 status: active
 layers:
 - embodiment
+founded: 2022
+hq:
+  country: CN
+  city: 北京
+description: 前京东副总裁肖军创办的物流分拣机器人公司，产品为木马系列 3D 分播系统，在研分拣类人形机器人。与北京人形机器人创新中心的「天工」人形机器人无关。
+accounts:
+  site: https://www.tgjqr.com
+sources:
+- url: https://www.tgjqr.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，「天工机器人成立于 2022 年」，公司地址北京市大兴区北京经济技术开发区，版权方为北京天下先智创机器人技术有限责任公司
+- url: https://zhidx.com/p/589680.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 智东西 2026-09-01 报道，创始人肖军为前京东集团副总裁、X 事业部总裁，公司成立于 2022 年

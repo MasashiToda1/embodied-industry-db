@@ -1,0 +1,21 @@
+id: evt-2025-09-26-cloudminds-partnership-patent-license-hkrobot
+date: 2025-09-26
+date_precision: day
+type: partnership
+orgs:
+- id: cloudminds
+  role: subject
+title:
+  zh: 达闼向香港仔机器人独家授权近 2000 项专利
+summary:
+  zh: 9 月 26 日，达闼与香港仔机器人共同举行专利授权媒体见面会，香港仔机器人获得达闼近 2000 项具身智能研发知识产权及专利的独家授权。香港仔机器人为达闼与港股公司国华集团（2025 年 6 月更名港仔机器人集团控股有限公司）的合资公司，国华持股 51%、达闼持股 49%。
+counterparties:
+- 香港仔机器人有限公司
+- 港仔机器人集团控股有限公司
+evidence:
+- url: https://www.leiphone.com/category/robot/Gya0eP56FU40RQeb.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/leiphone-2025-09-23-cloudminds-bankruptcy-re.html
+corroboration: single

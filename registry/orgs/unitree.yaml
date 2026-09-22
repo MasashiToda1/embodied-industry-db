@@ -9,6 +9,7 @@ founded: 2016
 hq:
   country: CN
   city: 杭州
+description: 做四足机器人、人形机器人与关节电机等零部件的整机公司，产品有 Go2、B2、G1、H1、H2、R1。2026 年 8 月在上交所科创板上市（688836）。
 status: active
 layers:
 - embodiment
@@ -16,3 +17,13 @@ layers:
 accounts:
   huggingface: unitreerobotics
   github: unitreerobotics
+  site: https://www.unitree.com
+sources:
+- url: https://www.unitree.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页：2016 年 6 月王兴兴创办公司；产品线与历程
+- url: https://www.unitree.com/disclosure/listedinfo/announcement/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%E4%B8%8A%E5%B8%82%E5%85%AC%E5%91%8A%E4%B9%A6.pdf
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 科创板上市公告书：注册地浙江省杭州市，证券代码 688836

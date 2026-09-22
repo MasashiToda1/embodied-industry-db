@@ -1,0 +1,20 @@
+id: evt-2026-04-alphasquare-corporate-joint-stock-reform
+date: '2026-04'
+date_precision: month
+type: corporate
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方完成股份制改造，更名为智平方（深圳）科技股份有限公司
+summary:
+  zh: 《科创板日报》4 月 11 日报道，智平方（深圳）科技有限公司近日完成股份制改造，公司名称变更为智平方（深圳）科技股份有限公司。智平方回应称目前没有可对外披露的资本路径安排。
+date_basis: derived
+date_as_stated: 报道（2026-04-11）原文「近日，智平方（深圳）科技有限公司正式完成股份制改造」
+evidence:
+- url: https://www.cls.cn/detail/2341170
+  publisher: 财联社 · 科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/cls-2026-04-alphasquare-joint-stock-.html
+corroboration: single

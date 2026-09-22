@@ -1,0 +1,23 @@
+id: evt-2026-07-shengshu-funding-b-plus-round
+date: 2026-07
+date_precision: month
+type: funding
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技完成 5 亿美元 B+ 轮融资
+summary:
+  zh: 智东西 8 月 19 日报道，生数科技投资方达泰 2026 年 7 月在其公众号发文，称生数科技已于近期完成一轮 5 亿美元 B+ 轮融资，投资方与投后估值未披露。同篇报道援引彭博社消息，生数科技正考虑赴港 IPO。
+amount:
+  value: 500000000
+  currency: USD
+date_basis: derived
+date_as_stated: 智东西（2026-08-19）原文「2026 年 7 月，生数科技投资方达泰在其公众号发文，称生数科技已于近期完成一轮 5 亿美元 B+ 轮融资」
+evidence:
+- url: https://www.zhidx.com/p/586199.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zhidx-2026-07-shengshu-b-plus-round.html
+corroboration: single

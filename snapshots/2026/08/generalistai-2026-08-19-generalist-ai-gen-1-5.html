@@ -1,0 +1,880 @@
+<!-- 抓取于 2026-09-22T15:41:21.700051+08:00 | 原始链接 https://generalistai.com/blog/gen-1.5 | 公众号 未知 | 标题 generalist-ai-gen-1-5 | sha256:5c032907e09b -->
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <script>history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7ZNP9LTG2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-D7ZNP9LTG2');
+    </script>
+    <script>
+      (function (ss, ex) {
+        window.ldfdr = window.ldfdr || function () { (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments)); };
+        (function (d, s) {
+          var fs = d.getElementsByTagName(s)[0];
+          function ce(src) {
+            var cs = d.createElement(s);
+            cs.src = src;
+            cs.async = 1;
+            fs.parentNode.insertBefore(cs, fs);
+          }
+          ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js');
+        })(document, 'script');
+      })('bElvO73gzbp7ZMqj');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generalist - GEN-1.5: Embodied Foundation Models are One-Shot Learners</title>
+    <meta name="description" content="GEN-1.5 can in-context learn a new task from as little as 3 to 12 seconds of demonstration data — or adapt with 1 to 10 gradient steps on minutes of data. These capabilities emerge from pretraining on large-scale physical experience." />
+    <link rel="canonical" href="https://generalistai.com/blog/gen-1.5" />
+    <meta property="og:site_name" content="Generalist AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://generalistai.com/blog/gen-1.5" />
+    <meta property="og:title" content="GEN-1.5: Embodied Foundation Models are One-Shot Learners - Generalist AI" />
+    <meta property="og:description" content="GEN-1.5 can in-context learn a new task from as little as 3 to 12 seconds of demonstration data — or adapt with 1 to 10 gradient steps on minutes of data. These capabilities emerge from pretraining on large-scale physical experience." />
+    <meta property="og:image" content="https://generalistai.com/assets/pages/blog/gen-1.5/assets/images/generalist-gen1p5-og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GEN-1.5: Embodied Foundation Models are One-Shot Learners - Generalist AI" />
+    <meta name="twitter:description" content="GEN-1.5 can in-context learn a new task from as little as 3 to 12 seconds of demonstration data — or adapt with 1 to 10 gradient steps on minutes of data. These capabilities emerge from pretraining on large-scale physical experience." />
+    <meta name="twitter:image" content="https://generalistai.com/assets/pages/blog/gen-1.5/assets/images/generalist-gen1p5-og.jpg" />
+    <meta name="twitter:site" content="@GeneralistAI" />
+    
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon-black.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon-white.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <link rel="stylesheet" href="/assets/css/custom-video-player.css" />
+
+    <link rel="stylesheet" href="/assets/pages/blog/gen-1.5/assets/gen-1.5.css" />
+
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+    <div class="mobile-header-background" aria-hidden="true"></div>
+    <a href="/" class="mobile-header-brand" aria-label="Generalist AI">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1395.82 192.99" fill="currentColor" class="wordmark-variant--dark mobile-header-lockup" aria-hidden="true"><path d="M144.66,79.8V28.65L100.36,3.07l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,104.53l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,107.64c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,101.12,0,121.69,0,147.06s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /><g><path d="M235.64,96.48c0-14.59,2.14-27.8,6.41-39.63,4.27-11.83,10.45-21.97,18.52-30.43,8.07-8.46,17.85-14.98,29.33-19.55,11.48-4.57,24.48-6.86,38.98-6.86,13.73,0,25.6,1.88,35.61,5.63,10.01,3.76,18.3,8.7,24.86,14.83,6.56,6.13,11.53,12.82,14.89,20.07,3.37,7.25,5.31,14.42,5.83,21.5v3.89h-37.68c-.69-5.18-2.44-10.51-5.24-15.99-2.81-5.48-7.21-10.08-13.21-13.79-6-3.71-14.1-5.57-24.28-5.57-8.46,0-16.02,1.58-22.66,4.73-6.65,3.15-12.24,7.64-16.77,13.47-4.53,5.83-8.01,12.8-10.42,20.91-2.42,8.12-3.63,17.18-3.63,27.19,0,13.21,2.07,24.71,6.22,34.51,4.14,9.8,10.14,17.38,18,22.73,7.85,5.35,17.35,8.03,28.49,8.03s20.48-2.16,27.26-6.48c6.78-4.32,11.76-9.84,14.96-16.58,3.19-6.73,5.05-13.68,5.57-20.85h-45.84v-28.49h81.2v99.84h-35.61v-19.04h-2.59c-1.73,2.07-3.93,4.34-6.6,6.8-2.68,2.46-6.07,4.79-10.17,6.99-4.1,2.2-8.98,4.01-14.63,5.44-5.66,1.42-12.41,2.14-20.27,2.14-17.27,0-32.4-3.95-45.39-11.85-12.99-7.9-23.1-18.99-30.3-33.28-7.21-14.29-10.81-31.06-10.81-50.31Z" /><path d="M420.31,121.6c0-11.83,1.64-22.17,4.92-31.02,3.28-8.85,7.94-16.21,13.99-22.08,6.04-5.87,13.32-10.3,21.82-13.27,8.5-2.98,17.94-4.47,28.3-4.47,13.81,0,25.62,2.61,35.42,7.83,9.8,5.22,17.31,12.74,22.53,22.53,5.22,9.8,7.83,21.69,7.83,35.68v14.37h-97.77c.17,6.73,1.49,12.65,3.95,17.74,2.46,5.1,6.04,9.13,10.75,12.11,4.7,2.98,10.42,4.47,17.16,4.47s12.15-1.04,16.25-3.11c4.1-2.07,7.19-4.6,9.26-7.58,2.07-2.98,3.37-5.94,3.88-8.87h33.8v3.89c-1.04,4.66-2.89,9.5-5.57,14.5-2.68,5.01-6.48,9.67-11.4,13.99-4.92,4.32-11.14,7.79-18.65,10.42-7.51,2.63-16.53,3.95-27.07,3.95-21.07,0-37.9-5.91-50.5-17.74-12.61-11.83-18.91-29.61-18.91-53.35ZM457.73,106.84h60.86c-.09-5.61-1.17-10.62-3.24-15.02s-5.29-7.88-9.65-10.42c-4.36-2.55-9.95-3.82-16.77-3.82s-12.2,1.29-16.64,3.89c-4.45,2.59-7.83,6.09-10.17,10.49s-3.8,9.37-4.4,14.89Z" /><path d="M565.73,53.87h37.17v15.67h2.59c1.55-2.33,3.88-4.92,6.99-7.77,3.11-2.85,7.36-5.33,12.76-7.45,5.39-2.11,12.28-3.17,20.66-3.17,15.54,0,27.82,4.21,36.84,12.63,9.02,8.42,13.53,20.66,13.53,36.71v89.1h-38.85v-86.89c0-7.6-2.07-13.29-6.22-17.09-4.14-3.8-9.76-5.7-16.83-5.7-5.35,0-10.3,1.04-14.83,3.11-4.53,2.07-8.16,5.44-10.88,10.1-2.72,4.66-4.08,10.75-4.08,18.26v78.22h-38.85V53.87Z" /><path d="M705.72,121.6c0-11.83,1.64-22.17,4.92-31.02,3.28-8.85,7.94-16.21,13.99-22.08,6.04-5.87,13.32-10.3,21.82-13.27,8.5-2.98,17.94-4.47,28.3-4.47,13.81,0,25.62,2.61,35.42,7.83,9.8,5.22,17.31,12.74,22.53,22.53,5.22,9.8,7.83,21.69,7.83,35.68v14.37h-97.77c.17,6.73,1.49,12.65,3.95,17.74,2.46,5.1,6.04,9.13,10.75,12.11,4.7,2.98,10.42,4.47,17.16,4.47s12.15-1.04,16.25-3.11c4.1-2.07,7.19-4.6,9.26-7.58,2.07-2.98,3.37-5.94,3.88-8.87h33.8v3.89c-1.04,4.66-2.89,9.5-5.57,14.5-2.68,5.01-6.48,9.67-11.4,13.99-4.92,4.32-11.14,7.79-18.65,10.42-7.51,2.63-16.53,3.95-27.07,3.95-21.07,0-37.9-5.91-50.5-17.74-12.61-11.83-18.91-29.61-18.91-53.35ZM743.15,106.84h60.86c-.09-5.61-1.17-10.62-3.24-15.02s-5.29-7.88-9.65-10.42c-4.36-2.55-9.95-3.82-16.77-3.82s-12.2,1.29-16.64,3.89c-4.45,2.59-7.83,6.09-10.17,10.49s-3.8,9.37-4.4,14.89Z" /><path d="M851.15,53.87h37.17v20.72h2.59c1.81-5.01,4.47-9.34,7.96-13.01,3.5-3.67,8.22-6.37,14.18-8.09,5.96-1.73,13.51-2.07,22.66-1.04v32.5c-8.89-1.38-16.77-1.29-23.63.26-6.86,1.55-12.26,5.14-16.19,10.75-3.93,5.61-5.89,13.9-5.89,24.86v68.76h-38.85V53.87Z" /><path d="M939.86,94.79v-3.89c1.55-12.26,7.73-22.01,18.52-29.27,10.79-7.25,24.95-10.88,42.48-10.88,11.74,0,22.04,1.79,30.89,5.37,8.85,3.58,15.75,9.22,20.72,16.9,4.96,7.69,7.45,17.53,7.45,29.53v53.48c0,6.56.24,12.22.71,16.96.47,4.75,1.57,8.94,3.3,12.56l-.13,3.89-15.54.13h-21.11c-.6-2.07-1.08-4.27-1.42-6.6-.35-2.33-.52-5.01-.52-8.03h-2.59c-2.07,2.85-4.79,5.57-8.16,8.16-3.37,2.59-7.58,4.68-12.63,6.28-5.05,1.6-11.46,2.4-19.23,2.4-9.5,0-18.09-1.64-25.77-4.92-7.69-3.28-13.73-8.05-18.13-14.31-4.4-6.26-6.6-13.66-6.6-22.21,0-9.07,2.09-16.51,6.28-22.34,4.19-5.83,9.84-10.27,16.96-13.34,7.12-3.06,15.09-4.99,23.89-5.76l30.82-2.98c4.49-.43,7.85-1.49,10.1-3.17,2.24-1.68,3.37-4.38,3.37-8.09,0-5.7-2.01-10.04-6.02-13.02s-9.78-4.47-17.29-4.47-13.1,1.49-17.81,4.47c-4.71,2.98-7.1,7.36-7.19,13.14h-35.35ZM969.9,148.28c0,5.35,1.96,9.56,5.89,12.63,3.93,3.07,9.39,4.6,16.38,4.6,4.66,0,9.39-.95,14.18-2.85,4.79-1.9,8.81-5.2,12.04-9.91,3.24-4.7,4.86-11.11,4.86-19.23v-8.16h-2.59c-2.16,1.21-4.49,2.14-6.99,2.78-2.5.65-5.87,1.19-10.1,1.62l-14.37,1.55c-5.44.52-10.02,2.09-13.73,4.73-3.71,2.63-5.57,6.71-5.57,12.24Z" /><path d="M1076.48,3.11h38.85v186.48h-38.85V3.11Z" /><path d="M1132.42,3.11h39.11v32.38h-39.11V3.11ZM1132.55,53.87h38.85v135.72h-38.85V53.87Z" /><path d="M1183.7,92.33c0-12.43,5.14-22.4,15.41-29.91,10.27-7.51,24.65-11.27,43.12-11.27s33.13,3.74,43.71,11.2c10.57,7.47,16.64,16.94,18.19,28.43v3.89h-35.09c-.61-6.3-3.22-10.83-7.83-13.6-4.62-2.76-10.6-4.14-17.94-4.14s-12.71,1.25-16.9,3.76c-4.19,2.51-6.28,5.91-6.28,10.23s1.66,7.73,4.99,9.71c3.32,1.99,7.36,3.37,12.11,4.14l25.64,4.14c9.15,1.47,17.2,3.71,24.15,6.73,6.95,3.02,12.37,7.19,16.25,12.5,3.89,5.31,5.83,12.24,5.83,20.78,0,13.12-5.16,23.7-15.48,31.73-10.32,8.03-25.66,12.04-46.04,12.04s-36.15-3.95-47.33-11.85c-11.18-7.9-17.59-17.81-19.23-29.72v-3.89h36c.78,6.91,4.04,11.91,9.78,15.02,5.74,3.11,12.67,4.66,20.79,4.66s14.55-1.34,18.78-4.01c4.23-2.68,6.35-6.43,6.35-11.27,0-4.49-1.75-7.68-5.25-9.58-3.5-1.9-8.18-3.32-14.05-4.27l-25.64-4.14c-8.72-1.47-16.38-3.91-22.99-7.32-6.6-3.41-11.76-7.92-15.48-13.53-3.71-5.61-5.57-12.43-5.57-20.46Z" /><path d="M1304.78,53.87h24.6V18h38.46v35.87h27.97v25.77h-27.97v72.52c0,3.28.88,5.83,2.65,7.64,1.77,1.81,4.34,2.72,7.71,2.72h16.96v27.07h-27.32c-12,0-21.41-3.09-28.23-9.26-6.82-6.17-10.23-15.17-10.23-27v-73.69h-24.6v-25.77Z" /></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1379.23 192.99" fill="currentColor" class="wordmark-variant--light mobile-header-lockup" aria-hidden="true"><path d="M144.66,79.8V28.65L100.36,3.07l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,104.53l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,107.64c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,101.12,0,121.69,0,147.06s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /><g><path d="M236.29,96.48c0-14.68,2.14-27.95,6.41-39.82,4.27-11.87,10.42-22.01,18.45-30.43,8.03-8.42,17.72-14.89,29.07-19.42,11.35-4.53,24.11-6.8,38.27-6.8,13.38,0,24.97,1.86,34.77,5.57,9.8,3.71,17.94,8.57,24.41,14.57,6.48,6,11.42,12.61,14.83,19.81,3.41,7.21,5.37,14.35,5.89,21.43v3.89h-34.19c-.69-5.52-2.55-11.18-5.57-16.96-3.02-5.78-7.71-10.64-14.05-14.57-6.35-3.93-14.83-5.89-25.45-5.89-8.81,0-16.69,1.64-23.63,4.92-6.95,3.28-12.84,7.94-17.68,13.99-4.84,6.04-8.5,13.3-11.01,21.76-2.5,8.46-3.76,17.92-3.76,28.36,0,13.81,2.2,25.81,6.6,36,4.4,10.19,10.73,18.07,18.97,23.63,8.24,5.57,18.11,8.35,29.59,8.35s21.19-2.31,28.36-6.93c7.17-4.62,12.43-10.55,15.8-17.81,3.37-7.25,5.31-14.93,5.83-23.05h-48.3v-26.16h80.42v98.68h-32.38v-20.59h-2.59c-1.64,2.16-3.82,4.55-6.54,7.19-2.72,2.63-6.17,5.16-10.36,7.58-4.19,2.42-9.22,4.4-15.09,5.96-5.87,1.55-12.87,2.33-20.98,2.33-17.09,0-32.1-3.91-45-11.72-12.91-7.81-22.99-18.86-30.24-33.15-7.25-14.29-10.88-31.19-10.88-50.7Z" /><path d="M420.31,122.12c0-11.74,1.6-22.01,4.79-30.82,3.19-8.81,7.73-16.14,13.6-22.02,5.87-5.87,12.99-10.27,21.37-13.21,8.37-2.93,17.7-4.4,27.97-4.4,13.55,0,25.14,2.61,34.77,7.83,9.63,5.22,16.96,12.69,22.01,22.4,5.05,9.71,7.58,21.43,7.58,35.16v13.6h-98.42c.17,7.43,1.57,13.9,4.21,19.42,2.63,5.53,6.45,9.86,11.46,13.01,5.01,3.15,11.05,4.73,18.13,4.73s12.8-1.12,17.16-3.37c4.36-2.24,7.64-5.01,9.84-8.29,2.2-3.28,3.65-6.52,4.34-9.71h30.69v3.88c-.95,4.58-2.74,9.32-5.37,14.25-2.63,4.92-6.37,9.52-11.2,13.79-4.84,4.27-10.92,7.73-18.26,10.36-7.34,2.63-16.23,3.95-26.68,3.95-20.64,0-37.12-5.91-49.47-17.74-12.35-11.83-18.52-29.44-18.52-52.84ZM454.37,107.74h64.88c-.09-6.04-1.25-11.44-3.5-16.19-2.25-4.75-5.68-8.5-10.3-11.27-4.62-2.76-10.55-4.14-17.81-4.14s-12.99,1.4-17.74,4.21c-4.75,2.81-8.4,6.6-10.94,11.4-2.55,4.79-4.08,10.12-4.6,15.99Z" /><path d="M564.57,54.78h33.67v16.32h2.59c1.55-2.42,3.89-5.12,6.99-8.09s7.42-5.55,12.95-7.71c5.52-2.16,12.52-3.24,20.98-3.24,15.28,0,27.41,4.14,36.39,12.43,8.98,8.29,13.47,20.33,13.47,36.13v88.97h-35.09v-86.89c0-8.29-2.25-14.46-6.73-18.52-4.49-4.06-10.53-6.09-18.13-6.09-5.7,0-10.99,1.17-15.86,3.5-4.88,2.33-8.79,5.98-11.72,10.94-2.94,4.96-4.4,11.42-4.4,19.36v77.7h-35.09V54.78Z" /><path d="M702.61,122.12c0-11.74,1.6-22.01,4.79-30.82,3.19-8.81,7.73-16.14,13.6-22.02,5.87-5.87,12.99-10.27,21.37-13.21,8.37-2.93,17.7-4.4,27.97-4.4,13.55,0,25.14,2.61,34.77,7.83,9.63,5.22,16.96,12.69,22.01,22.4,5.05,9.71,7.58,21.43,7.58,35.16v13.6h-98.42c.17,7.43,1.57,13.9,4.21,19.42,2.63,5.53,6.45,9.86,11.46,13.01,5.01,3.15,11.05,4.73,18.13,4.73s12.8-1.12,17.16-3.37c4.36-2.24,7.64-5.01,9.84-8.29,2.2-3.28,3.65-6.52,4.34-9.71h30.69v3.88c-.95,4.58-2.74,9.32-5.37,14.25-2.63,4.92-6.37,9.52-11.2,13.79-4.84,4.27-10.92,7.73-18.26,10.36-7.34,2.63-16.23,3.95-26.68,3.95-20.64,0-37.12-5.91-49.47-17.74-12.35-11.83-18.52-29.44-18.52-52.84ZM736.67,107.74h64.88c-.09-6.04-1.25-11.44-3.5-16.19-2.25-4.75-5.68-8.5-10.3-11.27-4.62-2.76-10.55-4.14-17.81-4.14s-12.99,1.4-17.74,4.21c-4.75,2.81-8.4,6.6-10.94,11.4-2.55,4.79-4.08,10.12-4.6,15.99Z" /><path d="M846.87,54.78h33.67v20.2h2.59c1.81-4.75,4.45-8.91,7.9-12.5,3.45-3.58,8.14-6.24,14.05-7.96,5.91-1.73,13.45-2.11,22.6-1.17v29.53c-8.98-1.21-16.9-.97-23.76.71-6.86,1.68-12.24,5.37-16.12,11.07-3.89,5.7-5.83,14.03-5.83,24.99v69.93h-35.09V54.78Z" /><path d="M932.73,94.92v-3.88c1.55-12.09,7.64-21.69,18.26-28.81,10.62-7.12,24.48-10.68,41.57-10.68,11.48,0,21.52,1.79,30.11,5.37,8.59,3.58,15.28,9.09,20.07,16.51,4.79,7.43,7.19,17.05,7.19,28.88v54.65c0,6.39.28,11.87.84,16.45.56,4.58,1.57,8.68,3.04,12.3v3.88h-33.02c-.69-2.16-1.19-4.51-1.49-7.06-.3-2.54-.54-5.37-.71-8.48h-2.59c-2.07,3.02-4.81,5.92-8.22,8.68-3.41,2.76-7.75,5.01-13.01,6.73-5.27,1.73-11.78,2.59-19.55,2.59-9.5,0-18.02-1.71-25.58-5.12-7.56-3.41-13.51-8.18-17.87-14.31-4.36-6.13-6.54-13.42-6.54-21.89,0-8.98,2.09-16.32,6.28-22.02,4.19-5.7,9.84-10.06,16.96-13.08,7.12-3.02,15-4.96,23.63-5.83l30.69-2.98c4.66-.43,8.18-1.51,10.55-3.24,2.37-1.73,3.56-4.62,3.56-8.68,0-6.13-2.16-10.81-6.48-14.05-4.32-3.24-10.49-4.86-18.52-4.86s-14.42,1.58-19.43,4.73c-5.01,3.15-7.6,7.88-7.77,14.18h-31.99ZM959.54,149.31c0,5.7,2.16,10.23,6.48,13.6,4.32,3.37,10.14,5.05,17.48,5.05,5.27,0,10.44-1.1,15.54-3.3,5.09-2.2,9.32-5.87,12.69-11.01,3.37-5.14,5.05-12.02,5.05-20.66v-8.16h-2.59c-2.07,1.21-4.43,2.16-7.06,2.85-2.63.69-6.15,1.25-10.55,1.68l-15.54,1.55c-6.39.69-11.57,2.42-15.54,5.18-3.97,2.76-5.96,7.17-5.96,13.21Z" /><path d="M1068.44,3.11h35.09v186.48h-35.09V3.11Z" /><path d="M1122.44,3.24h35.35v31.21h-35.35V3.24ZM1122.44,54.78h35.22v134.81h-35.22V54.78Z" /><path d="M1171.65,92.33c0-12.26,5.05-22.04,15.15-29.33,10.1-7.29,24.13-10.94,42.09-10.94s32.27,3.63,42.67,10.88c10.4,7.25,16.34,16.62,17.81,28.1v3.88h-31.86c-.52-6.82-3.28-11.74-8.29-14.76-5.01-3.02-11.48-4.53-19.42-4.53s-13.79,1.36-18.32,4.08c-4.53,2.72-6.8,6.54-6.8,11.46s1.83,8.46,5.5,10.62c3.67,2.16,8.14,3.67,13.4,4.53l24.6,4.01c9.06,1.47,17.05,3.67,23.96,6.6,6.91,2.94,12.28,7.04,16.12,12.3,3.84,5.27,5.76,12.09,5.76,20.46,0,13.04-5.05,23.46-15.15,31.27-10.1,7.81-25.04,11.72-44.81,11.72s-35.16-3.86-46.17-11.59c-11.01-7.72-17.33-17.55-18.97-29.46v-3.88h32.63c.78,7.34,4.19,12.71,10.23,16.12,6.04,3.41,13.47,5.12,22.27,5.12s15.62-1.49,20.2-4.47c4.58-2.98,6.86-7.1,6.86-12.37s-1.94-8.57-5.83-10.68c-3.89-2.11-9.07-3.69-15.54-4.73l-24.61-4.01c-8.55-1.38-16.08-3.73-22.6-7.06-6.52-3.32-11.63-7.73-15.35-13.21-3.71-5.48-5.57-12.19-5.57-20.14Z" /><path d="M1290.92,54.78h24.99V18.65h34.84v36.13h28.49v23.7h-28.49v75.63c0,3.37.88,5.98,2.65,7.83,1.77,1.86,4.42,2.79,7.96,2.79h17.22v24.86h-26.03c-11.48,0-20.46-2.93-26.94-8.81-6.48-5.87-9.71-14.42-9.71-25.64v-76.66h-24.99v-23.7Z" /></g></svg>
+    </a>
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <main class="post-layout gen-1-5-post">
+      
+<nav>
+  <div class="header">
+    <a href="/" class="nav-symbol-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.79 189.92" fill="currentColor" class="symbol" role="img" aria-label="Generalist AI"><path d="M144.66,76.73V25.58L100.36,0l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,101.45l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,104.57c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,98.05,0,118.62,0,143.98s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /></svg>
+    </a>
+    <ul>
+      
+        <li>
+          <a href="/">
+            <span>Index</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/blog" class="selected" aria-current="page">
+            <span>Blog</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <span>About</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/careers">
+            <span>Careers</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/contact" class="yellow">
+            <span>Contact</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="footer">
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://www.youtube.com/@Generalist_AI" aria-label="YouTube" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+            <span>YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.linkedin.com/company/generalistai/" aria-label="LinkedIn" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+            <span>LinkedIn</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://x.com/GeneralistAI" aria-label="x.com" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+            <span>x.com</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+    </ul>
+    <div class="copyright">
+      <span>&copy; 2026</span>
+      <span>Generalist AI, Inc.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="post-details">
+    <div class="post-details-header">
+      
+<a href="/blog/research" class="button button-optical-adjustment button-small button-category">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" class="button-category-icon" aria-hidden="true"><defs><clipPath id="icon-clip-269"><polygon points="27.62 1.85 0 49.7 55.25 49.7 27.62 1.85" /></clipPath></defs><g clip-path="url(#icon-clip-269)"><polygon points="27.62 1.85 0 49.7 55.25 49.7 27.62 1.85" /></g></svg>
+  Research
+</a>
+
+      <h2 class="post-date">August 19, 2026</h2>
+    </div>
+    <div class="post-byline">
+      <h1 class="post-author">Generalist Team</h1>
+      <div class="post-read-listen">
+        <div class="label">17 min read</div>
+        <a href="/blog" class="button button-xsmall">Listen</a>
+      </div>
+    </div>
+    <div class="table-of-contents">
+      <h3 class="table-of-contents-title">Table of Contents</h3>
+      <ol class="table-of-contents-list">
+        <li><a href="#introduction" data-toc-label="Introduction"><span class="toc-link-text">Introduction</span></a></li>
+        <li><a href="#introducing-gen-1-5" data-toc-label="Introducing GEN-1.5"><span class="toc-link-text">Introducing GEN-1.5</span></a></li>
+        <li><a href="#scaling-pretraining" data-toc-label="Scaling Pretraining for Robotics"><span class="toc-link-text">Scaling Pretraining for Robotics</span></a></li>
+        <li>
+          <a href="#one-shot-in-context" data-toc-label="One-Shot Learning In-Context"><span class="toc-link-text">One-Shot Learning In-Context</span></a>
+          <ol>
+            <li><a href="#compositional-generalization" data-toc-label="Compositional Generalization"><span class="toc-link-text">Compositional Generalization</span></a></li>
+            <li><a href="#sim2real" data-toc-label="Zero-Shot Sim-to-Real Transfer"><span class="toc-link-text">Zero-Shot Sim-to-Real Transfer</span></a></li>
+            <li><a href="#human-to-robot" data-toc-label="Human-to-Robot In-Context Learning"><span class="toc-link-text">Human-to-Robot In-Context Learning</span></a></li>
+          </ol>
+        </li>
+        <li><a href="#few-gradient-steps" data-toc-label="Few Gradient Step Adaptation"><span class="toc-link-text">Few Gradient Step Adaptation</span></a></li>
+        <li><a href="#physical-generalization" data-toc-label="Physical Generalization"><span class="toc-link-text">Physical Generalization</span></a></li>
+        <li><a href="#looking-ahead" data-toc-label="Looking Ahead"><span class="toc-link-text">Looking Ahead</span></a></li>
+        <li><a href="#citation" data-toc-label="Citation"><span class="toc-link-text">Citation</span></a></li>
+      </ol>
+    </div>
+    <div class="post-details-footer">
+      <a href="/blog" class="button button-optical-adjustment button-small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="button-icon button-icon-left" aria-hidden="true"><polygon points="10.67 29.05 23.16 41.54 25.99 38.71 17.4 30.12 44.58 30.12 44.58 25.12 17.42 25.12 26 16.54 23.17 13.71 10.67 26.22 10.67 29.05" /></svg><span>Back to Blog</span></a>
+    </div>
+  </section>
+  <section class="post-content">
+    <div class="post-full-width post-hero-media gen-1-5-title-hero">
+      <div id="gen1p5cover-hero" data-gen1p5cover data-gen1p5cover-hero>
+        <span id="gen1p5cover-label" class="gen-1">GEN-<span class="gen1p5cover-label-suffix">1.5</span></span>
+        <span id="gen1p5cover-subtitle">Embodied Foundation Models are One-Shot Learners</span>
+        <img
+          id="gen1p5cover-fallback"
+          src="/assets/pages/blog/gen-1.5/assets/images/generalist-gen1p5-cover-frame.png"
+          alt=""
+          aria-hidden="true" />
+        <canvas id="gen1p5cover-canvas" data-gen1p5cover-canvas aria-hidden="true"></canvas>
+      </div>
+    </div>
+
+    <p class="post-abstract" id="introduction">Humans have a remarkable ability to perform new physical skills from only one or a few examples. Our latest robot foundation model, <span class="gen-1">GEN-1.5</span>, exhibits the beginnings of that same ability: it can learn a new task in seconds, from a single example, without gradient updates or fine-tuning. It displays broad capabilities across one-shot and few-shot learning from demonstration, as well as zero-shot physical generalization. Although the tasks are simple and short-horizon, this is the first model we know for which one-shot and few-shot learning of physical skills have emerged at scale. We view these results as a significant step towards our mission of building general intelligence for the physical world.</p>
+
+    <div class="post-full-width">
+      <div class="post-video-embed">
+        <iframe src="https://www.youtube.com/embed/1cllCVK-9lo" title="GEN-1.5 hero video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <p>The promise of a robot foundation model is simple to state: walk up to a robot, and get it to do any task almost immediately. Whether zero-shot, one-shot, or few-shot, what matters from a capability standpoint is immediacy and generality: <em>can the model learn a new task quickly and generalize to new situations?</em> For physical tasks, this level of intelligence demands both broad abilities in comprehending task intent, as well as adapting in real time, closed-loop, to the unexpected variation of the real world.</p>
+
+    <p>For language models, the ability to quickly learn new tasks from just one or a few examples arrived as a hallmark capability of <a href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener">GPT-3</a>.<sup class="post-ref"><a href="#fn-1">1</a></sup> Across a broad suite of language tasks, it achieved roughly 45% average accuracy with one-shot in-context prompting without training, and up to ~65% with few-shot (~100 examples).<sup class="post-ref"><a href="#fn-1">1</a></sup> Models prior to GPT-3 had shown flashes of zero-shot ability and even initial few-shot results<sup class="post-ref"><a href="#fn-2">2</a></sup>, but GPT-3 achieved significantly broader few-shot performance, paired with what at the time was an immense step in generalization capabilities.</p>
+
+    <p>In robotics, the analogous pursuit of systems that could generalize a task from one or a few demonstrations, has persisted for decades &mdash; tracing back at least to the teach-by-guiding of the 1954 <a href="https://patents.google.com/patent/US2988237A/en" target="_blank" rel="noopener">Unimate patent</a><sup class="post-ref"><a href="#fn-3">3</a></sup> and MIT&rsquo;s 1970 <a href="https://people.csail.mit.edu/bkph/phw_copy_demo.shtml" target="_blank" rel="noopener">Copy Demo</a>.<sup class="post-ref"><a href="#fn-4">4</a></sup> A large number of prior works, including <a href="/blog/the-robots-build-now-too">our own</a>,<sup class="post-ref"><a href="#fn-5">5</a></sup> have shown various forms of in-context learning but over a limited set of task variations, or under restrictions to particular objects, task types, or sensing modalities.<sup class="post-ref"><a href="#fn-6">6</a>,<a href="#fn-7">7</a>,<a href="#fn-8">8</a>,<a href="#fn-9">9</a>,<a href="#fn-10">10</a>,<a href="#fn-11">11</a></sup> The ability to learn closed-loop physical skills from just one or a few demonstrations, and to do so across a broad range of tasks without such restrictions, has predominantly been considered out of reach. Such an ability may also likely be underpinned by a foundation that enables other broad generalization capabilities.</p>
+
+    <figure class="post-figure one-shot-compare-figure">
+      <div class="one-shot-compare" data-prompt-pair-switcher>
+        <div class="one-shot-compare-label"><strong>Language model</strong> one-shot example</div>
+        <div class="one-shot-compare-content">
+          <div class="one-shot-compare-textbox">
+            <p class="one-shot-compare-prompt monospace">Q: Who wrote Romeo and Juliet?<br />A: William Shakespeare<br /><br />Q: Who wrote War and Peace?<br />A: <span class="one-shot-compare-output">Leo Tolstoy</span></p>
+          </div>
+        </div>
+        <div class="one-shot-compare-label one-shot-compare-label-tabs">
+          <span class="one-shot-compare-label-text"><strong>Embodied model</strong> one-shot example</span>
+          <div class="prompt-pair-tabs" role="tablist" aria-label="Embodied one-shot example tasks">
+            <span class="prompt-pair-selection" data-prompt-pair-selection aria-hidden="true"></span>
+            <button
+              type="button"
+              class="prompt-pair-tab is-selected"
+              id="one-shot-tab-cup"
+              role="tab"
+              aria-selected="true"
+              aria-controls="one-shot-panel-cup"
+              data-prompt-pair-tab="0">Marker Into Cup</button>
+            <button
+              type="button"
+              class="prompt-pair-tab"
+              id="one-shot-tab-bolts"
+              role="tab"
+              aria-selected="false"
+              aria-controls="one-shot-panel-bolts"
+              data-prompt-pair-tab="1">Pour Bolts</button>
+            <button
+              type="button"
+              class="prompt-pair-tab"
+              id="one-shot-tab-zipper"
+              role="tab"
+              aria-selected="false"
+              aria-controls="one-shot-panel-zipper"
+              data-prompt-pair-tab="2">Zipper</button>
+          </div>
+        </div>
+        <div class="one-shot-compare-content">
+          <div
+            class="prompt-pair-panel"
+            id="one-shot-panel-cup"
+            role="tabpanel"
+            aria-labelledby="one-shot-tab-cup"
+            data-prompt-pair-panel="0">
+            <h4 class="prompt-pair-mobile-title">Marker Into Cup</h4>
+            <div class="prompt-pair-video">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/wired_hands_marker_cup_with_label_8x.mp4"
+                player-title="One-Shot Example: Marker Into Cup"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+
+          <div
+            class="prompt-pair-panel"
+            id="one-shot-panel-bolts"
+            role="tabpanel"
+            aria-labelledby="one-shot-tab-bolts"
+            data-prompt-pair-panel="1"
+            hidden>
+            <h4 class="prompt-pair-mobile-title">Pour Bolts</h4>
+            <div class="prompt-pair-video">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/wired_hands_pour_bolts_with_label_8x.mp4"
+                player-title="One-Shot Example: Pour Bolts"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+
+          <div
+            class="prompt-pair-panel"
+            id="one-shot-panel-zipper"
+            role="tabpanel"
+            aria-labelledby="one-shot-tab-zipper"
+            data-prompt-pair-panel="2"
+            hidden>
+            <h4 class="prompt-pair-mobile-title">Zipper</h4>
+            <div class="prompt-pair-video">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/wired_hands_zipper_8x_with_label.mp4"
+                player-title="One-Shot Example: Zipper"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption class="post-caption"><strong>Figure 1.</strong> One-shot learning in-context with language models and embodied models. In the language model example, the output of the model is highlighted in green. In our example, the prompt is a sensorimotor sequence from the human demonstration data, and GEN-1.5 controls the robot to accomplish the inferred task.</figcaption>
+    </figure>
+
+    <h2 class="post-heading" id="introducing-gen-1-5">Introducing <span class="gen-1">GEN-1.5</span></h2>
+
+    <p>We&rsquo;ve created <span class="gen-1">GEN-1.5</span>, our latest robot foundation model that exhibits broad one-shot and few-shot learning from demonstration capabilities, as well as zero-shot generalization, e.g. improvisation and novel tool use (e.g. brush, dustpan, etc.). <span class="gen-1">GEN-1.5</span> is a large multimodal model that processes video input (30 seconds of memory, alongside other sensor, language, and proprioceptive inputs) and produces 100 Hz action trajectories. Its capabilities include:</p>
+
+    <ul>
+      <li><strong>One-shot learning via in-context prompting.</strong> The model learns new tasks in seconds when prompted with 3 to 12 seconds of a single demonstration, no training required. We refer to the use of sensorimotor examples in the context window as &ldquo;physical prompting.&rdquo;
+        <ul>
+          <li><strong>Compositional generalization.</strong> Given two different physical prompts in context, the model chains them into a single longer-horizon behavior.</li>
+          <li><strong>Zero-shot sim-to-real transfer.</strong> A demonstration recorded in simulation works as a physical prompt for a real-world task, even though pretraining contains no simulation data.</li>
+          <li><strong>Human-to-robot imitation.</strong> In some cases a person can demonstrate a task with their own hands, in view of the robot&rsquo;s cameras, and the model reproduces it with the robot&rsquo;s hands.</li>
+        </ul>
+      </li>
+      <li><strong>Few-shot adaptation via gradient descent.</strong> The model can be fine-tuned to a new task in 1&ndash;10 gradient steps on 1&ndash;5 minutes of data (~10&ndash;50 demonstrations).</li>
+      <li><strong>Improvising new strategies and tool use.</strong> The model generalizes at the level of behavioral strategies: forming entirely new trajectories to reach a goal, using unseen tools (e.g. brush, dustpan, etc.) to create new solutions to tasks demonstrated with other tools, and working ambidextrously even when prompted or fine-tuned to perform the task with a specific hand.</li>
+    </ul>
+
+    <p>These capabilities appear to emerge directly from pretraining on large amounts of physical interaction data. We did not explicitly train for any of them: no architectural changes to promote in-context learning, no inner or outer <a href="https://arxiv.org/abs/1703.03400" target="_blank" rel="noopener">meta-learning loop</a><sup class="post-ref"><a href="#fn-12">12</a></sup> pressuring the model to adapt from minimal data, no <a href="https://arxiv.org/abs/1802.06070" target="_blank" rel="noopener">auxiliary objectives</a><sup class="post-ref"><a href="#fn-13">13</a></sup> encouraging improvisation. To our surprise, <span class="gen-1">GEN-1.5</span> does this across a broad range of physical tasks out of the box.</p>
+
+    <div class="post-full-width">
+      <figure class="post-figure prompt-pair-switcher" data-prompt-pair-switcher data-longest-play-count="3">
+        <div class="prompt-pair-tabs" role="tablist" aria-label="Prompted capability tasks">
+          <span class="prompt-pair-selection" data-prompt-pair-selection aria-hidden="true"></span>
+          <button
+            type="button"
+            class="prompt-pair-tab is-selected"
+            id="capability-tab-jar"
+            role="tab"
+            aria-selected="true"
+            aria-controls="capability-panel-jar"
+            data-prompt-pair-tab="0">Twist lid off glass jar</button>
+          <button
+            type="button"
+            class="prompt-pair-tab"
+            id="capability-tab-unzip"
+            role="tab"
+            aria-selected="false"
+            aria-controls="capability-panel-unzip"
+            data-prompt-pair-tab="1">Unzip pencil pouch</button>
+          <button
+            type="button"
+            class="prompt-pair-tab"
+            id="capability-tab-brush"
+            role="tab"
+            aria-selected="false"
+            aria-controls="capability-panel-brush"
+            data-prompt-pair-tab="2">Brush cube into bowl</button>
+          <button
+            type="button"
+            class="prompt-pair-tab"
+            id="capability-tab-vacuum"
+            role="tab"
+            aria-selected="false"
+            aria-controls="capability-panel-vacuum"
+            data-prompt-pair-tab="3">Remove vacuum pad</button>
+        </div>
+
+        <div
+          class="prompt-pair-panel"
+          id="capability-panel-jar"
+          role="tabpanel"
+          aria-labelledby="capability-tab-jar"
+          data-prompt-pair-panel="0">
+          <h4 class="prompt-pair-mobile-title">Twist lid off glass jar</h4>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Physical prompt</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_human_jar.mp4"
+              player-title="Physical Prompt: Twist Lid Off Glass Jar"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Model rollout</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_robot_jar.mp4"
+              player-title="Model Rollout: Twist Lid Off Glass Jar"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+        </div>
+
+        <div
+          class="prompt-pair-panel"
+          id="capability-panel-unzip"
+          role="tabpanel"
+          aria-labelledby="capability-tab-unzip"
+          data-prompt-pair-panel="1"
+          hidden>
+          <h4 class="prompt-pair-mobile-title">Unzip pencil pouch</h4>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Physical prompt</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_human_unzip.mp4"
+              player-title="Physical Prompt: Unzip Pencil Pouch"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Model rollout</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_robot_unzip.mp4"
+              player-title="Model Rollout: Unzip Pencil Pouch"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+        </div>
+
+        <div
+          class="prompt-pair-panel"
+          id="capability-panel-brush"
+          role="tabpanel"
+          aria-labelledby="capability-tab-brush"
+          data-prompt-pair-panel="2"
+          hidden>
+          <h4 class="prompt-pair-mobile-title">Brush cube into bowl</h4>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Physical prompt</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_human_brush.mp4"
+              player-title="Physical Prompt: Brush Cube Into Bowl"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Model rollout</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_robot_brush.mp4"
+              player-title="Model Rollout: Brush Cube Into Bowl"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+        </div>
+
+        <div
+          class="prompt-pair-panel"
+          id="capability-panel-vacuum"
+          role="tabpanel"
+          aria-labelledby="capability-tab-vacuum"
+          data-prompt-pair-panel="3"
+          hidden>
+          <h4 class="prompt-pair-mobile-title">Remove vacuum pad</h4>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Physical prompt</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_human_vacuum.mp4"
+              player-title="Physical Prompt: Remove Vacuum Pad"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+          <div class="prompt-pair-video">
+            <span class="video-composite-label">Model rollout</span>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/top_down_robot_vacuum.mp4"
+              player-title="Model Rollout: Remove Vacuum Pad"
+              autoplay loop has-audio="true"></video-player>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <p>Experiments across 10 diverse tasks show 59% (&plusmn;10% std. dev.) average success with one-shot in-context prompting, straight from the pretrained model. With few-shot learning, performance rises to 83% (&plusmn;9% std. dev.) via 10 gradient steps on 5 minutes of data per task (~50 demonstrations). In some cases, in-context learning a new task exceeds the performance of 1&ndash;5 gradient steps on the same demonstration data. Although the tasks are simple and short-horizon, and the success rates are modest, this is the first model we know of that has demonstrated the general ability to learn a wide range of dexterous closed-loop physical tasks from just one-shot or few-shot demonstrations.</p>
+
+    <figure class="post-figure">
+      <div class="results-chart" id="figure-results"></div>
+      <figcaption class="post-caption"><strong>Figure 2.</strong> <span class="gen-1">GEN-1.5</span> can learn short-horizon atomic manipulation tasks at 83% average success rate after 10 steps of gradient descent on 5 minutes of data per task, and 59% with zero gradient updates and 3 to 12 seconds of demonstration data using emergent in-context learning.</figcaption>
+    </figure>
+
+    <h2 class="post-heading" id="scaling-pretraining">Scaling Pretraining for Robotics</h2>
+
+    <p>Over the past two years, we&rsquo;ve been focused on building a pretraining engine for scaling embodied foundation models trained from the ground up on physical experience, alongside algorithmic improvements that have compounded the rate of progress. As we announced nine months ago, leading up to <a href="/blog/gen-0"><span class="gen-0">GEN-0</span></a><sup class="post-ref"><a href="#fn-14">14</a></sup> we started to see predictable scaling laws.<sup class="post-ref"><a href="#fn-15">15</a></sup> Five months later, we announced <a href="/blog/gen-1"><span class="gen-1">GEN-1</span></a>,<sup class="post-ref"><a href="#fn-16">16</a></sup> which demonstrated the ability to be post-trained for simple tasks to mastery at 99%+ success rates and showed initial signs of improvisational intelligence.</p>
+
+    <p><span class="gen-1">GEN-1.5</span>&rsquo;s initial pretraining began in parallel &mdash; it has now been training continuously for over eight months. We left it running because every metric we tracked kept improving with the engine: absorbing more data, scaling more efficiently with compute, and achieving step-change gains with successive surgical architectural and algorithmic changes. It was clear that the model was getting better, and the trend was consistent: new tasks were becoming more data-efficient, more compute-efficient, and more general.</p>
+
+    <figure class="post-figure">
+      <div class="training-plot" id="figure-training"></div>
+      <figcaption class="post-caption"><strong>Figure 3.</strong> <span class="gen-1">GEN-1.5</span> has been pretraining on our data engine for over 8 months, and continues to improve its next action prediction error on a held-out validation set across 3 training phases.</figcaption>
+    </figure>
+
+    <p>As the model continued to train, we began experimenting with how few finetuning steps we could use to adapt to new tasks, finding the model could learn new tasks from 100s, then 10s, then eventually, 1 gradient step on just one minute of data. As far as we know, the ability to learn skills with such few gradient steps had not been observed before. We then asked, can this model learn new tasks without training, purely in-context and with zero gradient steps? That this works at all changes how we think about how these models can be used, about their potential impact, and the road ahead for building general physical intelligence.</p>
+
+    <h2 class="post-heading" id="one-shot-in-context">One-Shot Learning In-Context</h2>
+    <p><span class="gen-1">GEN-1.5</span> can be prompted with a single demonstration inserted into its 30-second context window, and the remainder holds rolling observations. Physical prompts are sensorimotor examples (i.e. sensor data plus action trajectories), recorded either as human data (with a pair of handheld grippers) or as rollouts from the robot itself. Once the prompt is in context, the model performs the task immediately, with no training steps. The performance of one-shot learning in-context is modest (59% average success across diverse tasks including handling zippers, opening jars, grabbing money out of wallets, etc.), but the fact that inserting a single demonstration in the context buffer, without ever training for it, yields any measurable competence at all was unexpected. This drastically accelerates reaching a base level of performance that can be subsequently refined towards <a href="/blog/gen-1#mastery">mastery</a>.<sup class="post-ref"><a href="#fn-16">16</a></sup> Skills learned in-context are currently more brittle than finetuned models, but can generalize to some perturbations, improvise, and recover from mistakes.</p>
+
+    <figure class="post-figure post-figure-content-width">
+      <video-player
+        video-src="/assets/pages/blog/gen-1.5/assets/videos/two_task_in_context.mp4"
+        player-title="Physical Prompt Engineering Interface"
+        autoplay loop has-audio="true"></video-player>
+      <figcaption class="post-caption"><strong>Physical prompt engineering</strong> involves a drag and drop interface to select which demonstrations to be inserted into the model&rsquo;s context window. This live recording shows physical prompting the model to learn two different tasks back-to-back: (i) unzipping a pencil pouch, and (ii) retrieving money from the pouch.</figcaption>
+    </figure>
+
+    <p>We did not explicitly train <span class="gen-1">GEN-1.5</span> for in-context learning, and the tasks we tested were not engineered into the pretraining data beforehand. This is a general model which we are prompting without regard to the pretraining data distribution.</p>
+
+    <p>Why this capability emerges from pretraining is difficult to pinpoint. One hypothesis, by analogy to language, is that the distribution of physical observations and actions may exhibit &ldquo;burstiness&rdquo; and Zipfian structure of the kind that has been linked to in-context learning in language models.<sup class="post-ref"><a href="#fn-17">17</a></sup> It is also possible that physical work contains naturally repetitive cycles, and the model may have learned to detect and extend such patterns, as language models do with general sequences.<sup class="post-ref"><a href="#fn-18">18</a></sup> The model was pretrained on randomly sampled continuous spans from our data engine (activities captured in homes, warehouses, factories, and elsewhere) with no bespoke infrastructure for packing examples into context &mdash; physical prompts introduce discontinuous jumps in time that the model never saw in training.</p>
+    
+
+    <p>Robotics is inherently multimodal; and as in human learning, there are many ways to teach a robot something new &mdash; the two options of either (a) demonstrations or (b) language instructions are perhaps the most natural for having humans specify tasks.<sup class="post-ref"><a href="#fn-19">19</a></sup> While language suffices for some task specifications, many physical actions are difficult to <a href="/blog/physical-commonsense">precisely describe in language</a><sup class="post-ref"><a href="#fn-20">20</a></sup> (e.g. it is far easier to show exactly how to seat two Lego bricks than to say it). Prompting a task in native observations and actions is also a more comprehensive test of sensorimotor understanding: the model must infer the goal from the demonstration, repurpose existing knowledge, and improvise under new initial conditions.</p>
+
+    <h3 class="post-subheading" id="compositional-generalization">Compositional Generalization with Physical Prompt Engineering</h3>
+    <p>Physical prompts can also be composed. For example, if we place demonstrations of two different tasks in context (each recorded independently, with no transition between them), <span class="gen-1">GEN-1.5</span> can chain them into one continuous behavior, performing one task and then flowing into the next. The model bridges the two on its own, producing intermediate motions (repositioning, regrasping, error recovery) that appear in neither demonstration.</p>
+
+    <div class="post-full-width">
+      <div class="video-grid-2x2">
+        <figure class="post-figure video-composite-figure">
+          <div class="video-composite video-composite-wide-main">
+            <div class="video-composite-side">
+              <div class="video-composite-item">
+                <span class="video-composite-label">Physical prompt A</span>
+                <video-player
+                  video-src="/assets/pages/blog/gen-1.5/assets/videos/compose_prompt_a.mp4"
+                  player-title="Physical Prompt A"
+                  autoplay loop has-audio="true"></video-player>
+              </div>
+              <div class="video-composite-item">
+                <span class="video-composite-label">Physical prompt B</span>
+                <video-player
+                  video-src="/assets/pages/blog/gen-1.5/assets/videos/compose_prompt_b.mp4"
+                  player-title="Physical Prompt B"
+                  autoplay loop has-audio="true"></video-player>
+              </div>
+            </div>
+            <div class="video-composite-main">
+              <span class="video-composite-label">Model rollout of A + B</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/compose_prompt.mp4"
+                player-title="Model Rollout of A + B"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <figcaption class="post-caption"><strong>Composing physical prompts.</strong> Two demonstrations of different tasks: (a) unzip pencil pounch, and (b) retrieve money, are placed together in the model&rsquo;s context. The model chains them into one continuous behavior, bridging the two with intermediate motions, recoveries, and ambidexterity that appear in neither prompt.</figcaption>
+
+    <p>In practice, this opens up &ldquo;physical prompt engineering&rdquo;: rather than collecting a demonstration of a full compound task, one can assemble it from a small library of short, reusable physical prompts. As models improve, composing skills in context may become a practical way to program longer-horizon behaviors; the physical analogue of chaining instructions in a language prompt.</p>
+
+    <h3 class="post-subheading" id="sim2real">Zero-Shot Sim-to-Real Transfer with In-Context Learning</h3>
+    <p>In-context learning also crosses the sim-to-real gap. A prompt can be formed entirely from simulated experience (e.g., from a scripted policy, an RL agent, or a human teleoperating a simulated robot) and be used to prompt the real robot. To clarify, &ldquo;zero-shot sim2real transfer&rdquo; typically refers to training a policy in a simulator on a particular task, then running that policy in the real world without real-world data for that task. In the case we show here, however, the model was not trained on the task in either the simulator or the real world.</p>
+
+    <div class="post-full-width">
+      <div class="video-grid-2x2">
+        <figure class="post-figure video-composite-figure">
+          <div class="video-grid-2x2">
+            <div class="video-stack-item">
+              <span class="video-composite-label">Prompt from simulation</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/sim_to_real_sim.mp4"
+                player-title="Prompt From Simulation"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+            <div class="video-stack-item">
+              <span class="video-composite-label">Model rollouts in real world</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/sim_to_real_real.mp4"
+                player-title="Model Rollouts in Real World"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+
+    <figcaption class="post-caption"><strong>Zero-shot sim2real transfer.</strong> A demonstration recorded entirely in simulation (left) is placed in the model&rsquo;s context as a physical prompt, and the real robot performs the task (right) &mdash; despite zero simulation data in pretraining. The prompted behavior generalizes to different hands and new object positions and sizes.</figcaption>
+        </figure>
+
+    <p><span class="gen-1">GEN-1.5</span> pretraining contains no simulation data, neither rendered video nor simulated dynamics, yet the model can be effectively prompted by rollouts from the simulator. The prompted behaviors then generalize as other physically prompted behaviors do: to different hands, and to new object positions and sizes in the real scene. For a subset of tasks, this means demonstrations no longer need to be collected physically &mdash; they can instead be gathered by whichever means inside a simulator.</p>
+
+    <h3 class="post-subheading" id="human-to-robot">Human-to-Robot In-Context Learning</h3>
+    <p>In some cases, in-context learning transfers across the embodiment gap entirely: a human demonstrates a task with their own hands, observable through the robot&rsquo;s cameras, and the robot can reproduce it immediately afterward.</p>
+
+    <figure class="post-figure post-figure-content-width">
+      <div class="video-stack-item">
+        <video-player
+          video-src="/assets/pages/blog/gen-1.5/assets/videos/human_to_robot_in_context_learning.mp4"
+          player-title="Human-to-Robot In-Context Learning"
+          autoplay loop has-audio="true"></video-player>
+      </div>
+    </figure>
+
+    <h2 class="post-heading" id="few-gradient-steps">Few Gradient Step Adaptation</h2>
+    <p><span class="gen-1">GEN-1.5</span> can also adapt to new physical tasks in extremely few gradient steps, as few as 1 to 10. Typically, training previous robot models on a new task can take tens of thousands of gradient steps (sometimes orders of magnitude more), but a hallmark capability of <a href="https://arxiv.org/abs/2108.07258" target="_blank" rel="noopener">foundation models</a><sup class="post-ref"><a href="#fn-21">21</a></sup> is that they can be rapidly adapted to new tasks with a small amount of fine-tuning. While this mechanism can be built in explicitly e.g. with second order gradients encouraging fast adaptation,<sup class="post-ref"><a href="#fn-12">12</a></sup> we find that the pretrained base of <span class="gen-1">GEN-1.5</span> already adapts in very few steps without any such machinery.</p>
+
+    <figure class="post-figure post-figure-content-width">
+      <div class="ckpt-map" id="figure-ckpt-map"></div>
+      <figcaption class="post-caption"><strong>Figure 4.</strong> Few-step adaptation moves the pretrained weights in a different direction for each task, viewed as a classical MDS embedding with pairwise L2 distances between weights drawn radially logarithmic around the pretrained model.</figcaption>
+    </figure>
+
+    <p>Importantly, such an extremely small amount of training steps requires orders of magnitude less task-specific compute, and opens up a much more flexible view of task adaptation than heavy finetuning. It may be more apt to describe this as <a href="https://arxiv.org/abs/2411.07279" target="_blank" rel="noopener">test-time training</a><sup class="post-ref"><a href="#fn-22">22</a></sup> in an extremely low-data regime. Test-time training commonly uses tens of gradient steps; <span class="gen-1">GEN-1.5</span> learns a new physical task in 1&ndash;10 steps on 5 minutes of data. Ten steps change the model weights on held out tasks by less than 0.15%, suggesting that fine-tuning slightly reconfigures knowledge already present rather than building new representations.</p>
+
+    <p>In our experiments for 10-step adaptation, we sample sequences from 5 minutes of data and train with gradient descent using hyperparameters similar to pretraining. In the extreme one-step regime, sampling from one minute of data, success on a held-out task is 66.5%, and performance improves with larger batch sizes and higher learning rates. We did not tune this procedure or sweep adaptation-specific hyperparameters; these results come largely out of the box.</p>
+
+    <h2 class="post-heading" id="physical-generalization">Physical Generalization</h2>
+    <p>For every task above, fine-tuned models generalize well beyond their demonstrations &mdash; not only to new embodiments, object instances, and environments, but also to fundamentally different manipulation strategies for the same goal: alternative grasps and motions, clearing obstacles, and using tools absent from the fine-tuning data.</p>
+
+    <figcaption class="post-caption gen15-standalone-caption"><strong>Novel tool use improvisation.</strong> In one example, we demonstrated using a brush to sweep a block into a bowl, and fine-tuned the model on 5 minutes of human demonstrations. The model was able to figure out how to use a variety of other tool options besides the brush in order to accomplish the task. When presented with a banana, it used the banana as a makeshift brush. When presented with a dustpan, however, the model exhibited a larger strategic departure from its demonstrations, and through a variety of means would use the dustpan to lift up the block and dump it into the bowl. Neither the fine-tuning data nor, to the best of our knowledge, the pretraining data contains a dustpan used this way, and the nearest pretraining examples bear little resemblance to the task. Handed a dustpan, the model composed an entirely new contact sequence to complete the task out of the box, with no language guidance. Below are example rollouts from this model.</figcaption>
+
+    <div class="post-full-width">
+      <figure class="post-figure video-composite-figure">
+        
+        <div class="video-grid-3x2" style="row-gap: 40px;">
+          <figure class="post-figure">
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/wide_brush_block_bowl_1.mp4"
+              player-title="Brushing a Block Into a Bowl (Expected)"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+          <figure class="post-figure">
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/wide_brush_block_bowl_2.mp4"
+              player-title="Brushing a Block Into a Bowl (Improvisation)"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+          <figure class="post-figure">
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/wide_brush_block_bowl_3.mp4"
+              player-title="Brushing a Block Into a Bowl (Improvisation)"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+          <figure class="post-figure">
+            <figcaption class="post-caption"><strong>Banana as an impromptu brush.</strong> Improvising by using a banana to sweep the block into the bowl.</figcaption>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/banana_block_bowl_improv.mp4"
+              player-title="Banana, Block, and Bowl Improvisation"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+          <figure class="post-figure">
+            <figcaption class="post-caption"><strong>Multiple blocks.</strong> Brushing multiple blocks into the bowl.</figcaption>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/brush_many_blocks_bowl.mp4"
+              player-title="Brushing Multiple Blocks Into a Bowl"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+          <figure class="post-figure">
+            <figcaption class="post-caption"><strong>Ambidexterity.</strong> Brushing the block with either hand even though the demonstrations only use one.</figcaption>
+            <video-player
+              video-src="/assets/pages/blog/gen-1.5/assets/videos/ambidextrous_brush_block_bowl.mp4"
+              player-title="Ambidextrous Brushing"
+              autoplay loop has-audio="true"></video-player>
+          </figure>
+        </div>
+      </figure>
+    </div>
+
+    <div class="post-full-width" style="margin-top: 20px;">
+      <div class="video-split-1-4">
+        <div class="video-split-1-4-main">
+          <div class="post-caption"><strong>Fine-tuning data.</strong> Example human demonstration of brushing a block into a bowl (model view).</div>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/human_brush_block_bowl.mp4"
+            player-title="Human Demonstration"
+            autoplay loop has-audio="true"></video-player>
+        </div>
+        <div class="video-split-1-4-grid">
+          <div class="post-caption"><strong>Most similar tasks from pretraining.</strong> These are approximately the closest activities using nearest neighbor language search over 1,891,392 scenes.</div>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/brush_block_bowl_neighbor1.mp4"
+            player-title="Pretraining Nearest Neighbor 1"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/brush_block_bowl_neighbor2.mp4"
+            player-title="Pretraining Nearest Neighbor 2"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/brush_block_bowl_neighbor3.mp4"
+            player-title="Pretraining Nearest Neighbor 3"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/brush_block_bowl_neighbor4.mp4"
+            player-title="Pretraining Nearest Neighbor 4"
+            autoplay loop has-audio="true"></video-player>
+        </div>
+      </div>
+    </div>
+
+    <p>The ability to improvise under unexpected situations appears to be central to how the model masters new tasks: it can correct its own mistakes, sometimes before they occur. We first observed traces of this behavior in <a href="/blog/gen-1"><span class="gen-1">GEN-1</span></a>.<sup class="post-ref"><a href="#fn-16">16</a></sup> In <span class="gen-1">GEN-1.5</span> it is both more frequent and more sophisticated, and it strengthens as the number of fine-tuning gradient steps decreases, presumably because lightly adapted models stay closer to their pretrained priors and can draw on a broader repertoire of behaviors when the situation departs from the demonstrations.</p>
+
+    <figcaption class="post-caption gen15-standalone-caption"><strong>Handling obstacles.</strong> Although the model was only fine-tuned to put the block into a bowl, it appears to be able to remove obstacles (like a piece of paper covering the bowl) to complete the task, and sometimes place the paper back on top of the bowl. There was no paper covering the bowl in the 5 minutes of task-specific data (with which the model was fine-tuned for only 1 gradient step), and no such task in this setting (to the best of our knowledge) was in the pretraining data.</figcaption>
+
+    <div>
+      <div class="video-grid-2x2">
+        <figure class="post-figure video-composite-figure">
+          
+          <div class="video-composite video-composite-vertical">
+            <div class="video-composite-main">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/paper_cube_in_bowl.mp4"
+                player-title="Handling Obstacles"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+            <div class="video-composite-side">
+              <div class="video-composite-item">
+                <span class="video-composite-label">Fine-tuning data</span>
+                <video-player
+                  video-src="/assets/pages/blog/gen-1.5/assets/videos/cube_in_bowl_human.mp4"
+                  player-title="Fine-Tuning Data"
+                  autoplay loop has-audio="true"></video-player>
+              </div>
+              <div class="video-composite-item">
+                <span class="video-composite-label">Model rollouts</span>
+                <video-player
+                  video-src="/assets/pages/blog/gen-1.5/assets/videos/paper_cube_in_bowl_robot_view.mp4"
+                  player-title="Model Rollouts"
+                  autoplay loop has-audio="true"></video-player>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <p style="margin-top: 40px;">More examples of intriguing emergent improvisation behaviors:</p>
+
+
+    <div>
+      <div class="video-grid-3x1">
+        <figure class="post-figure video-stack-figure">
+          <figcaption class="post-caption"><strong>Removing obstructions.</strong> When a Lego brick gets unexpectedly stuck on the fingertips, the model uses the other hand to remove them.</figcaption>
+          <div class="video-stack">
+            <div class="video-stack-item">
+              <span class="video-composite-label">Model rollout</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/lego_stuck_robot.mp4"
+                player-title="Removing Obstructions"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+              <div class="video-stack-item">
+                <span class="video-composite-label">Fine-tuning data</span>
+                <video-player
+                  video-src="/assets/pages/blog/gen-1.5/assets/videos/lego_stuck_human.mp4"
+                  player-title="Fine-Tuning Data"
+                  autoplay loop has-audio="true"></video-player>
+              </div>
+          </div>
+        </figure>
+        <figure class="post-figure video-stack-figure">
+          <figcaption class="post-caption"><strong>Bimanual coordination.</strong> The model sometimes uses two hands to rotate a jar lid (with a fundamentally different contact and motion strategy), when the training data was only using one.</figcaption>
+          <div class="video-stack">
+            <div class="video-stack-item">
+              <span class="video-composite-label">Expected model rollout</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_expected.mp4"
+                player-title="Expected Model Rollout"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+            <div class="video-stack-item">
+              <span class="video-composite-label">Improvised model rollout</span>
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_bimanual.mp4"
+                player-title="Improvised Model Rollout"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+        </figure>
+        <figure class="post-figure video-stack-figure" id="sort-and-organize">
+          <figcaption class="post-caption"><strong>Tendency to organize.</strong> Models fine-tuned only to place a single block into a single bowl sometimes exhibit more general behaviors such as sorting blocks by color or category (a generalized form of <a href="/blog/physical-commonsense">physical commonsense</a><sup class="post-ref"><a href="#fn-20">20</a></sup>).</figcaption>
+          <div class="video-stack">
+            <div class="video-stack-item">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/cube_sorting_1.mp4"
+                player-title="Cube Sorting 1"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+            <div class="video-stack-item">
+              <video-player
+                video-src="/assets/pages/blog/gen-1.5/assets/videos/cube_sorting_2.mp4"
+                player-title="Cube Sorting 2"
+                autoplay loop has-audio="true"></video-player>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <div>
+      <figure class="post-figure video-composite-figure">
+        <figcaption class="post-caption"><strong>Generalizing to new objects.</strong> Models fine-tuned for 10 gradient steps on 5 minutes of data to to twist off a lid jar can generalize to cups and bottles it&rsquo;s never seen before, which requires reasoning over where to grasp with both hands, and how to uniquely rotate the wrist to twist each lid off.</figcaption>
+        <div class="video-row-4">
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_improv_jar.mp4"
+            player-title="New Object Generalization: Jar"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_improv_bottle.mp4"
+            player-title="New Object Generalization: Bottle"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_improv_togocup.mp4"
+            player-title="New Object Generalization: To-Go Cup"
+            autoplay loop has-audio="true"></video-player>
+          <video-player
+            video-src="/assets/pages/blog/gen-1.5/assets/videos/twist_lid_improv_container.mp4"
+            player-title="New Object Generalization: Container"
+            autoplay loop has-audio="true"></video-player>
+        </div>
+      </figure>
+    </div>
+
+    <h2 class="post-heading" id="looking-ahead">Looking Ahead</h2>
+    <p>When we started this journey, we did not set out to specifically build a one-shot learner. Much of our history as a team has been spent building the fundamental machinery required to iterate on the science of pretraining in robotics from first principles, beginning with a data engine that could fuel the model science with high-quality physical experience at scale.</p>
+    <p><span class="gen-1">GEN-1.5</span> is a milestone we believe to be profound scientifically, not because of higher success rates, but because it represents a new frontier of generality &mdash; one that challenges our own understanding of how these models behave when pretrained at a scale of physical interaction data few thought possible without shortcuts. <span class="gen-0">GEN-0</span> and <span class="gen-1">GEN-1</span> each gave us increasing confidence that more (and better) pretraining would make adaptation to new tasks more data-efficient. Every trend we measured pointed in the same direction: more pretraining makes adaptation faster, cheaper, and more general. We do not yet see where that curve asymptotes.</p>
+    <p>What is clear now, and perhaps obvious in hindsight, is that past a certain threshold of pretraining, the cost of adaptation becomes negligible. Emergent in-context learning from a few seconds of data, or one gradient step on one minute of demonstrations, is no longer task-specific training in the conventional sense. It is closer to reminding the model of something it nearly knows, with a tiny amount of compute. That this works at all, changes how we think about how these models can be used, about their potential impact, and the road ahead for building general physical intelligence.</p>
+    <p>For decades, robots have been marketed as &ldquo;general-purpose&rdquo; machines that could in principle do anything &mdash; a contrast to the single-purpose factory automation of the past. But that promise was always conditioned on an expert programming them, which took months of effort and specialized knowledge. If interacting with a robot reduces to simply showing it what to do, then two things change fundamentally: how quickly a robot becomes useful (seconds, not months), and who can work with one (anyone).</p>
+    <p>We are in the early days of our mission to build physical AGI and make it useful to everyone. If you are interested in joining us on this journey, reach out at <a href="/careers">generalistai.com/careers</a>.</p>
+
+    <h2 class="post-heading" id="citation">Citation</h2>
+    <p>Please cite this work as</p>
+    <div class="citation monospace">Generalist Team, &ldquo;<span class="gen-1">GEN-1.5</span>: Embodied Foundation Models are One-Shot Learners&rdquo;, Generalist AI Blog, Aug 2026.</div>
+    <p>Or use the BibTeX citation:</p>
+    <div class="citation monospace">
+      @article&lbrace;generalist2026gen15,<br />
+        <span class="citation-indent">author = &lbrace;Generalist Team&rbrace;,<br />
+        title = &lbrace;<span class="gen-1">GEN-1.5</span>: Embodied Foundation Models are One-Shot Learners&rbrace;,<br />
+        journal = &lbrace;Generalist AI Blog&rbrace;,<br />
+        year = &lbrace;2026&rbrace;,<br />
+        note = &lbrace;https://generalistai.com/blog/gen-1.5&rbrace;,</span><br />
+      &rbrace;
+    </div>
+  </section>
+  <div class="vertical-rule"></div>
+  <section class="post-footnotes">
+    <a class="post-footnote" id="fn-1" href="https://arxiv.org/abs/2005.14165" target="_blank" rel="noopener"><span class="post-footnote-marker">1</span><span class="post-footnote-body"><span class="post-footnote-title">Language Models are Few-Shot Learners</span><span class="post-footnote-source"> (Brown et al., 2020)</span></span></a>
+    <a class="post-footnote" id="fn-2" href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf" target="_blank" rel="noopener"><span class="post-footnote-marker">2</span><span class="post-footnote-body"><span class="post-footnote-title">Language Models are Unsupervised Multitask Learners</span><span class="post-footnote-source"> (Radford et al., 2019)</span></span></a>
+    <a class="post-footnote" id="fn-3" href="https://patents.google.com/patent/US2988237A/en" target="_blank" rel="noopener"><span class="post-footnote-marker">3</span><span class="post-footnote-body"><span class="post-footnote-title">Programmed Article Transfer, U.S. Patent 2,988,237</span><span class="post-footnote-source"> (Devol, filed 1954)</span></span></a>
+    <a class="post-footnote" id="fn-4" href="https://people.csail.mit.edu/bkph/phw_copy_demo.shtml" target="_blank" rel="noopener"><span class="post-footnote-marker">4</span><span class="post-footnote-body"><span class="post-footnote-title">The MIT AI Lab Copy Demo</span><span class="post-footnote-source"> (Winston et al., 1970)</span></span></a>
+    <a class="post-footnote" id="fn-5" href="/blog/the-robots-build-now-too"><span class="post-footnote-marker">5</span><span class="post-footnote-body"><span class="post-footnote-title">The Robots Build Now, Too</span><span class="post-footnote-source"> (Generalist, 2025)</span></span></a>
+    <a class="post-footnote" id="fn-6" href="https://arxiv.org/abs/2408.15980" target="_blank" rel="noopener"><span class="post-footnote-marker">6</span><span class="post-footnote-body"><span class="post-footnote-title">In-Context Imitation Learning via Next-Token Prediction</span><span class="post-footnote-source"> (Fu et al., 2024)</span></span></a>
+    <a class="post-footnote" id="fn-7" href="https://arxiv.org/abs/2606.30457" target="_blank" rel="noopener"><span class="post-footnote-marker">7</span><span class="post-footnote-body"><span class="post-footnote-title">Behavior Prompting Policy: Demonstrations as Prompts for Manipulation</span><span class="post-footnote-source"> (Patel et al., 2026)</span></span></a>
+    <a class="post-footnote" id="fn-8" href="https://arxiv.org/abs/2607.15275" target="_blank" rel="noopener"><span class="post-footnote-marker">8</span><span class="post-footnote-body"><span class="post-footnote-title">RoboTTT: Context Scaling for Robot Policies</span><span class="post-footnote-source"> (Jiang et al., 2026)</span></span></a>
+    <a class="post-footnote" id="fn-9" href="https://arxiv.org/abs/2411.12633" target="_blank" rel="noopener"><span class="post-footnote-marker">9</span><span class="post-footnote-body"><span class="post-footnote-title">Instant Policy: In-Context Imitation Learning via Graph Diffusion</span><span class="post-footnote-source"> (Vosylius &amp; Johns, 2024)</span></span></a>
+    <a class="post-footnote" id="fn-10" href="https://arxiv.org/abs/2607.08639" target="_blank" rel="noopener"><span class="post-footnote-marker">10</span><span class="post-footnote-body"><span class="post-footnote-title">Native Video-Action Pretraining for Generalizable Robot Control</span><span class="post-footnote-source"> (Zhang et al., 2026)</span></span></a>
+    <a class="post-footnote" id="fn-11" href="https://arxiv.org/abs/2105.06411" target="_blank" rel="noopener"><span class="post-footnote-marker">11</span><span class="post-footnote-body"><span class="post-footnote-title">Coarse-to-Fine Imitation Learning: Robot Manipulation from a Single Demonstration</span><span class="post-footnote-source"> (Johns, 2021)</span></span></a>
+    <a class="post-footnote" id="fn-12" data-footnote-offset="-64" href="https://arxiv.org/abs/1703.03400" target="_blank" rel="noopener"><span class="post-footnote-marker">12</span><span class="post-footnote-body"><span class="post-footnote-title">Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks</span><span class="post-footnote-source"> (Finn et al., 2017)</span></span></a>
+    <a class="post-footnote" id="fn-13" href="https://arxiv.org/abs/1802.06070" target="_blank" rel="noopener"><span class="post-footnote-marker">13</span><span class="post-footnote-body"><span class="post-footnote-title">Diversity is All You Need: Learning Skills without a Reward Function</span><span class="post-footnote-source"> (Eysenbach et al., 2018)</span></span></a>
+    <a class="post-footnote" id="fn-14" href="/blog/gen-0"><span class="post-footnote-marker">14</span><span class="post-footnote-body"><span class="post-footnote-title"><span class="gen-0">GEN-0</span>: Embodied Foundation Models That Scale with Physical Interaction</span><span class="post-footnote-source"> (Generalist, 2025)</span></span></a>
+    <a class="post-footnote" id="fn-15" href="https://arxiv.org/abs/2001.08361" target="_blank" rel="noopener"><span class="post-footnote-marker">15</span><span class="post-footnote-body"><span class="post-footnote-title">Scaling Laws for Neural Language Models</span><span class="post-footnote-source"> (Kaplan et al., 2020)</span></span></a>
+    <a class="post-footnote" id="fn-16" href="/blog/gen-1"><span class="post-footnote-marker">16</span><span class="post-footnote-body"><span class="post-footnote-title"><span class="gen-1">GEN-1</span>: Scaling Embodied Foundation Models to Mastery</span><span class="post-footnote-source"> (Generalist, 2026)</span></span></a>
+    <a class="post-footnote" id="fn-17" href="https://arxiv.org/abs/2205.05055" target="_blank" rel="noopener"><span class="post-footnote-marker">17</span><span class="post-footnote-body"><span class="post-footnote-title">Data Distributional Properties Drive Emergent In-Context Learning in Transformers</span><span class="post-footnote-source"> (Chan et al., 2022)</span></span></a>
+    <a class="post-footnote" id="fn-18" href="https://arxiv.org/abs/2307.04721" target="_blank" rel="noopener"><span class="post-footnote-marker">18</span><span class="post-footnote-body"><span class="post-footnote-title">Large Language Models as General Pattern Machines</span><span class="post-footnote-source"> (Mirchandani et al., 2023)</span></span></a>
+    <a class="post-footnote" id="fn-19" href="https://arxiv.org/abs/1703.07326" target="_blank" rel="noopener"><span class="post-footnote-marker">19</span><span class="post-footnote-body"><span class="post-footnote-title">One-Shot Imitation Learning</span><span class="post-footnote-source"> (Duan et al., 2017)</span></span></a>
+    <a class="post-footnote" id="fn-20" href="/blog/physical-commonsense"><span class="post-footnote-marker">20</span><span class="post-footnote-body"><span class="post-footnote-title">The Dark Matter of Robotics: Physical Commonsense</span><span class="post-footnote-source"> (Generalist, 2026)</span></span></a>
+    <a class="post-footnote" id="fn-21" href="https://arxiv.org/abs/2108.07258" target="_blank" rel="noopener"><span class="post-footnote-marker">21</span><span class="post-footnote-body"><span class="post-footnote-title">On the Opportunities and Risks of Foundation Models</span><span class="post-footnote-source"> (Bommasani et al., 2021)</span></span></a>
+    <a class="post-footnote" id="fn-22" href="https://arxiv.org/abs/2411.07279" target="_blank" rel="noopener"><span class="post-footnote-marker">22</span><span class="post-footnote-body"><span class="post-footnote-title">The Surprising Effectiveness of Test-Time Training for Abstract Reasoning</span><span class="post-footnote-source"> (Aky&uuml;rek et al., 2024)</span></span></a>
+  </section>
+  <div class="vertical-rule"></div>
+    </main>
+
+    <script src="/assets/pages/blog/gen-1.5/assets/cover.js" defer></script>
+
+    <script src="/assets/pages/blog/gen-1.5/assets/results-chart.js" defer></script>
+
+    <script src="/assets/pages/blog/gen-1.5/assets/checkpoint-map.js" defer></script>
+
+    <script src="/assets/pages/blog/gen-1.5/assets/training-plot.js" defer></script>
+
+    <script src="/assets/js/custom-video-player.js" defer></script>
+
+    <script src="/assets/pages/blog/gen-1.5/assets/prompt-pair-switcher.js" defer></script>
+
+    <script src="/assets/js/scroll-restore.js" defer></script>
+
+    <script src="/assets/js/heading-anchors.js" defer></script>
+
+    <script src="/assets/js/footnotes.js" defer></script>
+
+    <script src="/assets/js/scrollspy.js" defer></script>
+
+  </body>
+</html>
+

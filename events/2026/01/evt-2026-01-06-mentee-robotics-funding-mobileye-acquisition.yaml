@@ -1,0 +1,29 @@
+id: evt-2026-01-06-mentee-robotics-funding-mobileye-acquisition
+date: 2026-01-06
+date_precision: day
+type: funding
+orgs:
+- id: mentee-robotics
+  role: subject
+title:
+  zh: Mobileye 宣布以 9 亿美元收购 Mentee Robotics
+summary:
+  zh: 1 月 6 日，Mobileye 宣布签署最终协议收购以色列人形机器人公司 Mentee Robotics Ltd.，总对价 9 亿美元（含调整条款），由约 6.12 亿美元现金和最多约 2620 万股 Mobileye A 类普通股构成，计划 2026 年第一季度完成交割。Mentee 将作为 Mobileye 内部独立单元运营；Mobileye 称首批客户现场概念验证部署在 2026 年，量产与商业化目标为 2028 年。Ctech 报道称 Mentee 此前仅融资 1700 万美元，由 Ahren Innovation Capital 领投。
+counterparties:
+- Mobileye
+- Ahren Innovation Capital
+amount:
+  value: 900000000
+  currency: USD
+evidence:
+- url: https://ir.mobileye.com/news-releases/news-release-details/mobileye-acquire-mentee-robotics-accelerate-physical-ai
+  publisher: Mobileye 投资者关系网站（收购方新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/ir-2026-01-06-mentee-robotics-mobileye.html
+- url: https://www.calcalistech.com/ctechnews/article/hjgfeesnzx
+  publisher: Ctech（Calcalist）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/calcalistech-2026-01-06-mentee-robotics-mobileye.html
+corroboration: multi

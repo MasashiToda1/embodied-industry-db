@@ -1,0 +1,21 @@
+id: evt-2026-04-30-1x-technologies-corporate-neo-factory-hayward
+date: 2026-04-30
+date_precision: day
+type: corporate
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X 公布 Hayward NEO 工厂投产，年产能 1 万台；NEO 预订 5 天订满首年产能
+summary:
+  zh: 4 月 30 日，1X 发布 NEO 工厂说明：位于加州 Hayward 的 NEO Factory 面积 5.8 万平方英尺、员工 200 余人，已全面投产，正向年产 1 万台爬坡，电机、电池、结构件、传动、软质外覆件、传感器等核心部件自产；San Carlos 工厂将于 2026 年内投产，公司目标 2027 年底达到年产 10 万台以上。公司同时披露 2025 年 10 月 28 日 NEO 发布后 5 天内订满次年全部产能（1 万台），当前下线的 NEO 优先供内部团队做家庭测试。
+axes:
+  hardware_strategy: [in-house]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.1x.tech/discover/neo-factory
+  publisher: 1X 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/1x-2026-04-30-1x-technologies-neo-fact.html
+corroboration: single

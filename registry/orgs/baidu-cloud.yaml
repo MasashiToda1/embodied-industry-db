@@ -11,3 +11,18 @@ layers:
 - data
 upstream:
   robotics_notebooks_institution: baidu
+hq:
+  country: CN
+  city: 北京
+description: 百度旗下云服务业务，面向具身智能企业提供百舸 AI 算力、千帆模型平台、具身数据服务与「具身智能数据超市」。
+accounts:
+  site: https://cloud.baidu.com
+sources:
+- url: https://cloud.baidu.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 百度智能云官网；总部按百度集团填北京
+- url: https://www.stcn.com/article/detail/3741461.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 2026-04-10，百度智能云具身智能业务定位（百舸、千帆、数据超市）

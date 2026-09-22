@@ -5,7 +5,21 @@ names:
 status: active
 layers:
 - data
+hq:
+  country: US
+  city: San Francisco
+description: 美国 AI 数据公司 Scale AI 的 Physical AI 业务：为机器人公司提供数据采集（遥操作、人类演示、采集机器人）与标注的 Data Engine，旧金山设原型实验室。
 upstream:
   robotics_notebooks_institution: scale-ai
 accounts:
   huggingface: ScaleAI
+  site: https://scale.com/physical-ai
+sources:
+- url: https://scale.com/blog/physical-ai
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官方博客，Data Engine for Physical AI 与旧金山原型实验室
+- url: https://scale.com/physical-ai
+  tier: official
+  retrieved: '2026-09-22'
+  note: Physical AI 产品页，采集单元在旧金山研发实验室开发验证

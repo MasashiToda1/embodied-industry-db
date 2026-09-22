@@ -7,5 +7,20 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: linkerbot
+founded: 2023-07
+hq:
+  country: CN
+  city: 北京
+description: 做灵巧手及灵巧操作软硬件的公司，产品有 Linker Hand 系列灵巧手、Open TeleDex 数据采集系统与 Linker Genesis 模型。
 accounts:
   github: linker-bot
+  site: https://www.linkerbot.cn
+sources:
+- url: https://www.linkerbot.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，公司全称与产品体系
+- url: https://pitchhub.36kr.com/project/3220383134980225
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 36氪项目库工商信息，成立时间 2023-07-06，注册地北京市海淀区

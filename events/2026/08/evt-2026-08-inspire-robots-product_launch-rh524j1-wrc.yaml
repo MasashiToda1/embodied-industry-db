@@ -1,0 +1,23 @@
+id: evt-2026-08-inspire-robots-product_launch-rh524j1-wrc
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，2026 世界机器人大会于北京北人亦创国际会展中心举办」（经济观察网 2026-08-21 报道）
+type: product_launch
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人在 2026 世界机器人大会首发 RH524J1 系列 24 自由度腱绳混合驱动灵巧手
+summary:
+  zh: 2026 世界机器人大会期间，因时机器人在 B405 展位完成 RH524J1 系列 24 自由度腱绳混合驱动灵巧手全球首发。该产品手指 22 个、手腕 2 个合计 24 个主动自由度，采用腱绳与直驱混合驱动架构，集成接近觉、触觉、深度视觉多维度感知。公司称微型伺服电缸年产能达 50 万台。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: http://www.eeo.com.cn/2026/0821/1006890.shtml
+  publisher: 经济观察网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/eeo-2026-08-inspire-robots-rh524j1-w.html
+corroboration: single

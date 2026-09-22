@@ -1,0 +1,23 @@
+id: evt-2025-12-10-agility-deployment-mercado-libre
+date: 2025-12-10
+date_precision: day
+type: deployment
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Mercado Libre 与 Agility Robotics 签商业协议，在得州 San Antonio 履约中心部署 Digit
+summary:
+  zh: 12 月 10 日，拉美电商 Mercado Libre 宣布与 Agility Robotics 签署商业协议，将人形机器人 Digit 部署到其位于得州 San Antonio 的设施，初期承担支撑电商履约的任务，双方计划再探索在拉美仓库的更多用例。Agility 称 Digit 已在实际商业运营中搬运超过 10 万个料箱。
+counterparties:
+- Mercado Libre
+axes:
+  target_scene: [logistics-warehouse]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.agilityrobotics.com/content/mercado-libre-and-agility-robotics-announce-commercial-agreement
+  publisher: Agility Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/agilityrobot-2025-12-10-agility-mercado-libre.html
+corroboration: single

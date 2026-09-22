@@ -1,0 +1,27 @@
+id: evt-2026-08-18-digital-china-humanoid-funding-pre-a
+date: '2026-08-18'
+date_precision: day
+type: funding
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏完成亿元级 Pre-A 轮战略融资，同创伟业继续跟投
+summary:
+  zh: 数字华夏官网 8 月 18 日发文称，公司近日完成亿元级 Pre-A 轮战略融资，由多家产业资本联合投资，老股东同创伟业继续跟投加注；官方称本轮产业资本同时带来商业订单。资金用于仿生智能系列产品量产和场景大脑 RoboEase 生态建设。领投方名称未披露。
+date_basis: derived
+date_as_stated: 官网文章发布于 2026-08-18，正文写「近日……正式完成亿元级 Pre-A 轮战略融资」；证券时报 8 月 17 日已报道
+counterparties:
+- 同创伟业
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/240.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/digit-2026-08-18-digital-china-humanoid-p.html
+- url: https://www.stcn.com/article/detail/4080059.html
+  publisher: 证券时报（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/stcn-2026-08-17-digital-china-humanoid-p.html
+corroboration: multi

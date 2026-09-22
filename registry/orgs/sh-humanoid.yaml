@@ -10,3 +10,23 @@ layers:
 - embodiment
 - data
 - simulation
+accounts:
+  site: https://www.openloong.net
+founded: 2023-12
+hq:
+  country: CN
+  city: 上海
+description: 工信部与上海市共建的国家级人形机器人创新中心，公司主体为人形机器人（上海）有限公司，运营青龙公版机、麒麟训练场与 OpenLoong 开源社区。
+sources:
+- url: https://www.openloong.net/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 人形机器人（上海）有限公司官网，青龙公版机与白虎数据集
+- url: https://www.worldrobotconference.com/expo/company/395.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商介绍：人形机器人（上海）有限公司成立于 2023 年 12 月 28 日，2024 年 5 月工信部授牌国地中心
+- url: https://www.shanghai.gov.cn/nw15343/20260722/dc0b915f171c4ab5a52e495c3a2cc09e.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 浦东新区政府稿：2024 年 5 月在浦东张江揭牌，2025 年 1 月首个异构人形机器人训练场启用

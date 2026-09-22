@@ -1,0 +1,27 @@
+id: evt-2026-07-hightorque-deployment-xuchang-embodied-center
+date: 2026-07
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日」，文章发布于 2026 年 7 月 11 日
+type: deployment
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎动力参与共建河南省高职首个具身智能创新中心，捐赠课程体系与 Mini Pi 系列人形机器人开发平台
+summary:
+  zh: 高擎动力官网 7 月 11 日发文称，河南省首个高职院校具身智能创新中心政校企共建签约暨揭牌仪式在许昌职业技术学院举行，高擎作为具身智能机器人训练场设备和技术共建单位出席，向创新中心捐赠具身智能全阶段课程体系与基于 Mini Pi 系列的标准化人形机器人开发平台。文中称三家合作单位累计捐赠价值三百余万元的算力、设备与课程产教资源。
+counterparties:
+- 许昌职业技术学院
+- 许昌市市投数字经济产业集团
+- 北京赛思博通智能科技有限公司
+axes:
+  target_scene: [education-research]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.hightorque.cn/%e9%ab%98%e6%93%8e%e5%8a%a8%e5%8a%9b%e5%8a%a9%e5%8a%9b%e5%85%b1%e5%bb%ba%e6%b2%b3%e5%8d%97%e7%9c%81%e9%ab%98%e8%81%8c%e9%a6%96%e4%b8%aa%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd%e5%88%9b%e6%96%b0%e4%b8%ad
+  publisher: 高擎动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/hightorque-2026-07-hightorque-xuchang-embod.html
+corroboration: single

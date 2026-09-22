@@ -1,0 +1,21 @@
+id: evt-2025-11-25-ubtech-funding-h-share-placement
+date: '2025-11-25'
+date_precision: day
+type: funding
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选配售 3146.8 万股新 H 股，配售价 98.80 港元，募资总额约 31.09 亿港元
+summary:
+  zh: 11 月 25 日，优必选公告与配售代理订立配售协议，按每股 98.80 港元配售合共 31,468,000 股新 H 股，所得款项总额约 3,109.04 百万港元，净额约 3,055.71 百万港元。净额约 75% 用于未来两年投资或收购产业链上下游目标或成立合营实体，约 15% 用于业务运营及发展，约 10% 用于偿还金融机构授信款项。
+amount:
+  value: 3109040000
+  currency: HKD
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2025/1125/2025112500084_c.pdf
+  publisher: 香港交易所披露易（优必选公告）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/hkexnews-2025-11-25-ubtech-h-share-placement.html
+corroboration: single

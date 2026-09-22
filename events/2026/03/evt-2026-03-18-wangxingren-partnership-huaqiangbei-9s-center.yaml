@@ -1,0 +1,22 @@
+id: evt-2026-03-18-wangxingren-partnership-huaqiangbei-9s-center
+date: '2026-03-18'
+date_precision: day
+type: partnership
+orgs:
+- id: wangxingren
+  role: subject
+title:
+  zh: 汪星人科技联合组建的华强北全球 AI 场景落地应用 9S 服务中心揭牌
+summary:
+  zh: 3 月 18 日，华强北全球 AI 场景落地应用 9S 服务中心揭牌，由汪星人科技、银河领航、乐易收等企业联合组建，提供从产品销售到场景应用、技术支持、人才培养、创业孵化到供应链保障的服务。中心以城市合伙人模式运营，由华强北总部输出 9S 体系、供应链资源与培训，合伙人落地运营。
+counterparties:
+- 银河领航
+- 乐易收
+- 深圳市华航教育科技有限公司
+evidence:
+- url: https://www.szft.gov.cn/ftxx/xwdt/ftdt/content/post_12691328.html
+  publisher: 深圳市福田区政府在线
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/szft-2026-03-18-wangxingren-9s-center.html
+corroboration: single

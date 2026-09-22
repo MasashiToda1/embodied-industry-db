@@ -1,0 +1,28 @@
+id: evt-2025-05-29-shadow-robotics-funding-aria-ogres-upward-11m-gbp
+date: 2025-05-29
+date_precision: day
+type: funding
+orgs:
+- id: shadow-robotics
+  role: subject
+title:
+  zh: Shadow Robot 牵头英国 ARIA 资助的 OGRES 与 UPWARD 两项灵巧手研发项目，资助总额 1100 万英镑
+summary:
+  zh: 5 月 29 日，Shadow Robot Company 宣布牵头由英国高级研究与发明局（ARIA）资助的 OGRES 与 UPWARD 项目，ARIA 投入 1100 万英镑用于推进机器人手设计与动力分配研究。UPWARD 项目针对机器人手的动力分配问题，探索在不增加过多执行器、不牺牲手形的前提下驱动全部关节的方法，合作方包括西北大学、德州农工大学与英国制造技术中心（MTC）。该资助为公司近一年内唯一公开的资金事件。
+counterparties:
+- ARIA（Advanced Research and Invention Agency）
+- Northwestern University
+- Texas A&M University
+- Manufacturing Technology Centre
+amount:
+  value: 11000000
+  currency: GBP
+axes:
+  target_scene: [education-research]
+evidence:
+- url: https://shadowrobot.com/aria-announces-funded-projects-with-shadow-robot-company/
+  publisher: Shadow Robot 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/shadowrobot-2025-05-29-shadow-robotics-aria-11m.html
+corroboration: single

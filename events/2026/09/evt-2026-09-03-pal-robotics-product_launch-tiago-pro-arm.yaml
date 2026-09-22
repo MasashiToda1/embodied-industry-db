@@ -1,0 +1,21 @@
+id: evt-2026-09-03-pal-robotics-product_launch-tiago-pro-arm
+date: 2026-09-03
+date_precision: day
+type: product_launch
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: PAL Robotics 公布新平台名称 TIAGo Pro Arm，作为独立机械臂平台亮相 IROS 2026
+summary:
+  zh: 9 月 3 日，PAL Robotics 宣布其最新平台 TIAGo Pro Arm 将于 9 月 27 日至 10 月 1 日在匹兹堡 IROS 2026 的 1005 号展位展出，定位为面向操作、机器人学习、感知与 Physical AI 研究的独立机械臂平台，属 TIAGo Pro 生态的新成员，现场提供早鸟优惠条件。该平台即 5 月预告、6 月 ICRA 2026 揭晓的新款机械臂。
+axes:
+  embodiment_form: [arm]
+  target_scene: [education-research]
+evidence:
+- url: https://pal-robotics.com/news/pal-robotics-brings-its-newest-robotic-platform-to-iros-2026/
+  publisher: PAL Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/pal-robotics-2026-09-03-pal-robotics-tiago-pro-a.html
+corroboration: single

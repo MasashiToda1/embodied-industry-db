@@ -1,0 +1,31 @@
+id: evt-2025-11-25-linkerbot-funding-a-plus-round
+date: 2025-11-25
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+- id: leju
+  role: investor
+title:
+  zh: 灵心巧手完成数亿元 A+ 轮融资，乐聚机器人、奥克斯等参投
+summary:
+  zh: 11 月 25 日，据灵心巧手官方公众号消息，灵心巧手（北京）科技有限公司宣布完成数亿元人民币 A+ 轮融资。本轮由浙江创新投资、德清产投、乐聚机器人、鼎晖百孚、晶华新材、东方精工、奥克斯、华福投资、弘颐基金、洪山资本、祥源新材等共同参与。公司表示 2026 年计划交付 5 万至 10 万台灵巧手。
+counterparties:
+- 浙江创新投资
+- 德清产投
+- 鼎晖百孚
+- 晶华新材
+- 东方精工
+- 奥克斯
+- 华福投资
+- 弘颐基金
+- 洪山资本
+- 祥源新材
+evidence:
+- url: https://www.bjnews.com.cn/detail/1764057751169471.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/bjnews-2025-11-25-linkerbot-a-plus-round.html
+corroboration: single

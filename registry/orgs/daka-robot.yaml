@@ -2,7 +2,31 @@ id: daka-robot
 names:
   zh: 大咖机器人
   en: Daka Robot
+  aliases:
+  - DaxAI Robot
+  - Dax Robotics
+  - 大咖机器人（北京）有限公司
 status: active
 layers:
 - data
 - embodiment
+accounts:
+  site: https://www.daxrobotics.cn
+founded: 2025-05
+hq:
+  country: CN
+  city: 北京
+description: 北京的具身智能机器人公司，产品有 X7 系列轮式人形机器人、骐骥系列机器马与自研具身世界模型 DaxBrain-WM。
+sources:
+- url: https://www.daxrobotics.cn/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页
+- url: https://www.worldrobotconference.com/expo/company/642.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商页，大咖机器人（北京）有限公司 2025 年 5 月成立，业务定位
+- url: https://www.gasgoo.com/robot/news/70435085-%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA-%E4%BB%B7%E6%A0%BC%E5%B1%A0%E5%A4%AB-%E5%A4%A7%E5%92%96%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E5%B8%83%E6%96%B0%E5%93%81-6/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 盖世汽车报道，成立于 2025 年 5 月，北京、上海设研发中心

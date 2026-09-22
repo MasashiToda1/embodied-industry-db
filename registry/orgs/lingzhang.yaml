@@ -2,6 +2,25 @@ id: lingzhang
 names:
   zh: 灵掌机器人
   en: Lingzhang
+  aliases:
+  - 无锡灵掌机器人科技有限公司
+  - 灵掌科技
 status: active
 layers:
 - components
+founded: 2024-09
+hq:
+  country: CN
+  city: 无锡
+description: 做工业级灵巧手的公司，产品有 11 自由度的 LZ-Pro 与 23 自由度的 LZ-Explore，面向工业产线、特种作业等场景。
+accounts:
+  site: https://www.dextroushands.com
+sources:
+- url: https://www.chinastarmarket.cn/detail/2468141
+  tier: media
+  retrieved: '2026-09-22'
+  note: 科创板日报报道，成立于 2024 年，总部江苏省无锡市滨湖区，核心产品为工业灵巧手
+- url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=11626602&stockid=300912
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 凯龙高科对外投资公告，标的公司无锡灵掌机器人科技有限公司成立日期 2024 年 9 月 13 日

@@ -1,0 +1,21 @@
+id: evt-2025-09-17-wuji-tech-product_launch-wuji-hand-1
+date: 2025-09-17
+date_precision: day
+type: product_launch
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技发布 20 自由度全直驱灵巧手 Wuji Hand 1.0
+summary:
+  zh: 9 月 17 日，Wuji Hand 1.0 正式发布。该灵巧手采用 1:1 仿真人手形态与 20 个主动自由度的全直驱设计，单手重量 550g 以内。公司称其自研电机、减速器与控制器，已搭建可量产产线并完成多轮试产。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://c.m.163.com/news/a/KA23S7EO0511B6FU.html
+  publisher: 网易号 · 真格基金
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/c-2025-09-17-wuji-tech-wuji-hand-1-la.html
+corroboration: single

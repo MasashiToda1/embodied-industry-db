@@ -1,0 +1,20 @@
+id: evt-2026-04-20-schaeffler-product-launch-humanoid-actuator-platform-hermes-award
+date: 2026-04-20
+date_precision: day
+type: product_launch
+orgs:
+- id: schaeffler
+  role: subject
+title:
+  zh: 舍弗勒人形机器人执行器平台获汉诺威工博会 Hermes Award，公司称部件系列化生产 2026 年内启动
+summary:
+  zh: 4 月 20 日，舍弗勒发布新闻稿称其面向人形机器人关节的高集成执行器平台在 4 月 19 日汉诺威工博会开幕式上获得 Hermes Award。该平台包含用于肩、肘、膝等关节的旋转执行器，基于集成功率电子的电机与高精度编码器，可按客户需求配置两级行星齿轮或谐波齿轮；轴承集成于转子的架构使安装空间减少约 20%、重量最多减轻 500 克。公司称人形关节执行器需求增长，部件系列化生产将于今年启动；平台在 4 月 20—24 日汉诺威工博会 13 号馆 E60 展位展出。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88184513
+  publisher: 舍弗勒官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/schaeffler-2026-04-20-schaeffler-hermes-award-.html
+corroboration: single

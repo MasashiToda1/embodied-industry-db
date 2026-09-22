@@ -1,0 +1,22 @@
+id: evt-2026-05-lingzhang-product_launch-lz-explore-itof
+date: '2026-05'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「Robotics Summit & Expo 2026 在美国波士顿圆满落幕，展会期间……发布」，该展会于 2026 年 5 月 27 至 28 日举办
+type: product_launch
+orgs:
+- id: lingzhang
+  role: subject
+title:
+  zh: 灵掌机器人在 Robotics Summit & Expo 2026 发布搭载 iToF 深度视觉模组的新一代灵巧手 LZ-Explore
+summary:
+  zh: 在美国波士顿举办的 Robotics Summit & Expo 2026 期间，无锡灵掌机器人科技有限公司发布新一代智能灵巧手 LZ-Explore，掌心集成灵途科技 iToF 深度视觉模组（120° 视场角），用于目标识别、空间定位与抓取引导。
+counterparties:
+- 灵途科技
+evidence:
+- url: https://m.zaoche168.com/detail/_01-ABC00000000000372943.shtml
+  publisher: 造车网（转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/m-2026-05-lingzhang-lz-explore-ito.html
+corroboration: single

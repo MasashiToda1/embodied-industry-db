@@ -2,10 +2,28 @@ id: noetix
 names:
   zh: 松延动力
   en: Noetix Robotics
+  aliases:
+  - 北京松延动力科技集团股份有限公司
+  - 松延动力北京科技有限公司
 status: active
 layers:
 - embodiment
+founded: 2023-09
+hq:
+  country: CN
+  city: 北京
+description: 做双足人形机器人与仿生人脸机器人的公司，产品有 N2、E1、消费级「小布米」，2026 年推出具身模型品牌 Scalabot。
 upstream:
   robotics_notebooks_institution: noetix
 accounts:
   github: Noetix-Robotics
+  site: https://www.noetixrobotics.com
+sources:
+- url: https://www.noetixrobotics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页标题为「北京松延动力科技集团股份有限公司官网」，页面为前端渲染，无独立关于页
+- url: https://stcn.com/article/detail/2950948.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 2025-08 报道，「松延动力成立于 2023 年 9 月」，北京人形机器人企业

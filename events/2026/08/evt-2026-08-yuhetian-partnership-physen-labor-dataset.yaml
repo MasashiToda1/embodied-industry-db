@@ -1,0 +1,21 @@
+id: evt-2026-08-yuhetian-partnership-physen-labor-dataset
+date: 2026-08
+date_precision: month
+type: partnership
+orgs:
+- id: yuhetian
+  role: subject
+title:
+  zh: 玉禾田与真觉万象、晓润智科达成战略合作，共建千万小时级体力劳动物理交互数据集
+summary:
+  zh: 2026 年 8 月，物理交互数据基础设施企业真觉万象（Physen AI）宣布与玉禾田及其全资子公司深圳市晓润智慧科技有限公司达成战略合作，依托玉禾田覆盖全国 200 余座城市、近十万一线作业人员的作业网络，采用穿戴式数采技术联合打造千万小时级面向真实体力劳动的具身交互数据集，面向具身大模型企业与机器人厂商供给训练数据。晓润智科承担场景梳理、合规采集、数据治理与资产化运营；采集数据同时用于训练玉禾田自有环卫、市政机器人。
+counterparties:
+- 真觉万象（Physen AI）
+- 深圳市晓润智慧科技有限公司
+evidence:
+- url: https://finance.ifeng.com/c/8viehtMaJGw
+  publisher: 凤凰网财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-yuhetian-physen-data-par.html
+corroboration: single

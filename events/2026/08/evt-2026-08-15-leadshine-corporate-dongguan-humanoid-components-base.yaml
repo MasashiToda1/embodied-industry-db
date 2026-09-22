@@ -1,0 +1,23 @@
+id: evt-2026-08-15-leadshine-corporate-dongguan-humanoid-components-base
+date: 2026-08-15
+date_precision: day
+type: corporate
+orgs:
+- id: leadshine
+  role: subject
+title:
+  zh: 雷赛智能华南区域总部及人形机器人核心零部件研发智造基地在东莞滨海湾新区奠基，总投资约 5 亿元，计划 2028 年投产
+summary:
+  zh: 8 月 15 日，雷赛智能华南区域总部及人形机器人核心零部件研发智造基地项目奠基仪式在东莞滨海湾新区精密智造科创园举行，由全资子公司东莞雷赛机器人科技有限公司负责建设运营。项目总投资约 5 亿元，总建筑面积约 7.5 万平方米，计划 2026—2027 年建设、2027 年底完工、2028 年正式投产；公司称建成后将形成年产伺服电机 500 万台、驱动器 1000 万台、控制器 400 万台的产能，用于智能装备核心零部件与人形机器人核心零部件的研发生产。
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-08/16/content_564792.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/stdaily-2026-08-15-leadshine-dongguan-human.html
+- url: https://www.gkong.com/news/126895.html
+  publisher: 中华工控网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/gkong-2026-08-15-leadshine-dongguan-base-.html
+corroboration: multi

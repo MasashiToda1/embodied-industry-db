@@ -1,0 +1,23 @@
+id: evt-2025-06-26-fourier-funding-runyang-strategic-investment
+date: '2025-06-26'
+date_precision: day
+type: funding
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 润阳科技拟以 3 亿元增资傅利叶，增资后持股 3.5060%
+summary:
+  zh: 6 月 26 日，润阳科技（300920.SZ）公告，公司拟以自有资金 3 亿元认购上海傅利叶智能科技新增注册资本 141,972 元，增资完成后将持有其 3.5060% 股权，标的公司估值 80 亿元。标的公司主营人形机器人及智能康复解决方案。
+counterparties:
+- 润阳科技（300920.SZ，投资方）
+amount:
+  value: 300000000
+  currency: CNY
+evidence:
+- url: https://www.chnfund.com/article/7fbacafb-f3a1-c1da-ab78-3a1abdfd399e
+  publisher: 中国基金报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/chnfund-2025-06-26-fourier-runyang-investme.html
+corroboration: single

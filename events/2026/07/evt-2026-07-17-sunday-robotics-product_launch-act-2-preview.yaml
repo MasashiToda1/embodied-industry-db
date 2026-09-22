@@ -1,0 +1,20 @@
+id: evt-2026-07-17-sunday-robotics-product_launch-act-2-preview
+date: 2026-07-17
+date_precision: day
+type: product_launch
+orgs:
+- id: sunday-robotics
+  role: subject
+title:
+  zh: Sunday 预览机器人模型 ACT-2，称在未见过的家庭中叠衣零样本成功率 99.1%
+summary:
+  zh: 7 月 17 日，Sunday 在官方博客预览 ACT-2 模型。公司称其核心进展是可以用内部迭代闭环提升性能并把提升泛化到未见过的环境，原因是发现单个微调示例即可教会预训练模型一个可泛化的新行为；结果是在多样的未见过家庭环境中叠衣零样本成功率 99.1%。博客称 ACT-2 建立在 2025 年 11 月发布的 ACT-1 之上，预训练数据是用公司自有采集硬件收集的高质量、高多样性的带传感人类数据。
+axes:
+  target_scene: [home]
+evidence:
+- url: https://www.sunday.ai/blog/act-2-preview
+  publisher: Sunday 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/sunday-2026-07-17-sunday-robotics-act-2-pr.html
+corroboration: single

@@ -12,3 +12,14 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: robbyant
+hq:
+  country: CN
+  city: 上海
+description: 蚂蚁集团旗下具身智能公司（上海蚂蚁灵波科技有限公司），研发 LingBot 系列具身模型与 R 系列轮式人形机器人。
+accounts:
+  site: https://www.robbyant.com
+sources:
+- url: https://www.robbyant.com/about-robby
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页，版权方为 Shanghai Ant Robbyant Technology Co., Ltd.，自述为 Ant Group 旗下具身智能公司；成立年份未在官网给出

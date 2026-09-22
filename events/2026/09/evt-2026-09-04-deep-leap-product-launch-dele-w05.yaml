@@ -1,0 +1,21 @@
+id: evt-2026-09-04-deep-leap-product-launch-dele-w05
+date: '2026-09-04'
+date_precision: day
+type: product_launch
+orgs:
+- id: deep-leap
+  role: subject
+title:
+  zh: 深度跃迁发布世界动作模型 DELE-w0.5
+summary:
+  zh: 深度跃迁发布具身基座模型 DELE-w0.5。该模型在训练时联合学习机器人动作与动作完成后的未来世界表征，推理时仅由语言和当前视觉生成动作，采用双流 Transformer 架构，未使用开源机器人基础模型、VLA 或视频生成模型的既有权重。项目主页与论文同步公开。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://news.qq.com/rain/a/20260904A06UMA00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/news-2026-09-04-deep-leap-dele-w05.html
+corroboration: single

@@ -1,0 +1,25 @@
+id: evt-2026-08-12-westlake-robotics-partnership-longyou-training-base
+date: '2026-08-12'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……签订战略合作协议」，报道发布于 2026-08-12
+type: partnership
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人与衢州龙游县政府共建具身智能实景实训基地
+summary:
+  zh: 西湖机器人科技（杭州）有限公司与衢州市龙游县人民政府签订战略合作协议，共建具身智能实景实训基地。龙游全域开放工业制造、民生服务、特种作业等真实场景，供西湖 o1 真机实地训练并采集人形全身运动数据集。
+counterparties:
+- 衢州市龙游县人民政府
+axes:
+  data_acquisition: [real-robot]
+  data_sourcing: [gov-training-ground]
+evidence:
+- url: http://www.zj.xinhuanet.com/20260812/e66c903b2e50459ba19609733c0b58e5/c.html
+  publisher: 新华网浙江频道（来源：西湖机器人科技（杭州）有限公司）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/zj-2026-08-12-westlake-robotics-longyo.html
+corroboration: single

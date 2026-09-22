@@ -2,7 +2,26 @@ id: estun-codroid
 names:
   zh: 埃斯顿酷卓
   en: Estun Codroid
+  aliases:
+  - 酷卓
+  - 南京埃斯顿酷卓科技有限公司
+founded: 2022-07
+hq:
+  country: CN
+  city: 南京
+description: 埃斯顿孵化的协作与人形机器人公司，产品有 Codroid 02 人形机器人与一体化关节模组，2026 年 9 月成为埃斯顿全资子公司。
 status: active
 layers:
 - embodiment
 - components
+accounts:
+  site: https://www.codroid.ai
+sources:
+- url: https://www.chinaventure.com.cn/news/114-20241114-383840.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 投中网，「埃斯顿酷卓成立于 2022 年 7 月」、南京本土企业、埃斯顿孵化
+- url: https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimhtuc4381508.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券日报报道，公司全称南京埃斯顿酷卓科技有限公司及主营业务

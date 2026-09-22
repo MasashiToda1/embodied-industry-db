@@ -1,0 +1,18 @@
+id: evt-2026-01-04-standard-robots-funding-hkex-second-filing
+date: 2026-01-04
+date_precision: day
+type: funding
+orgs:
+- id: standard-robots
+  role: subject
+title:
+  zh: 斯坦德机器人第二次向港交所递交上市申请，定位改为「工业具身智能机器人解决方案先行者」
+summary:
+  zh: 2026 年 1 月 4 日，斯坦德机器人（无锡）股份有限公司第二次向港交所递交上市申请，按第 18C 章特专科技公司通道申请。此前公司于 2025 年 6 月首次递表并因 6 个月审核期满失效；本次招股书将公司定位从「工业智能移动机器人解决方案提供商」改为「工业具身智能机器人解决方案的先行者」。招股书披露 2025 年具身机器人解决方案收入 2873.6 万元，占总营收 9.5%。
+evidence:
+- url: https://robot.ofweek.com/2026-08/ART-8321202-12003-30697487.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/robot-2026-07-27-standard-robots-hkex-thi.html
+corroboration: single

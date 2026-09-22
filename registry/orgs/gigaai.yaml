@@ -11,3 +11,22 @@ upstream:
 accounts:
   huggingface: GigaAI-Research
   github: gigaai
+  site: https://gigaai.cc
+founded: 2023
+hq:
+  country: CN
+  city: 北京
+description: 物理 AI 公司，做世界模型平台 GigaWorld、具身基础模型 GigaBrain 与家庭轮臂机器人拾光 S1，主体为北京极佳视界科技有限公司。
+sources:
+- url: https://www.163.com/tech/article/KVF97C0R00097U7T.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 网易科技 2026-06-15 报道，成立于 2023 年，业务方向与产品
+- url: http://www.indunet.net.cn/staticpage/20251103/1103131947.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 上海证券报 2025-11-03 报道，主体名称「北京极佳视界科技有限公司」及产品线
+- url: https://huggingface.co/GigaAI-Research
+  tier: official
+  retrieved: '2026-09-22'
+  note: Hugging Face 主页链接到官网 gigaai.cc（站名「极佳科技」）

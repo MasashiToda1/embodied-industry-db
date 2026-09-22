@@ -1,0 +1,23 @@
+id: evt-2026-06-14-rainbow-robotics-deployment-coupang-rb-y1-pilot
+date: 2026-06-14
+date_precision: day
+type: deployment
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: Rainbow Robotics 移动双臂机器人 RB-Y1 进入 Coupang 物流中心做实证验证
+summary:
+  zh: 据韩国电子新闻 6 月 14 日援引业界消息报道，Coupang 已将 Rainbow Robotics 的移动双臂机器人 RB-Y1 引入其物流中心开展实证，验证内容为现场行驶稳定性与作业效率，用途为货物分拣与搬运。报道称此前三星电子与丰田已将 RB-Y1 引入制造工厂测试。三方均未公开确认该项目。
+counterparties:
+- Coupang
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://en.etnews.com/20260615200005
+  publisher: Electronic Times（ETNews）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/en-2026-06-14-rainbow-robotics-coupang.html
+corroboration: single

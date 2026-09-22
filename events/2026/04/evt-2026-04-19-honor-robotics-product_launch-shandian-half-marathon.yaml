@@ -1,0 +1,28 @@
+id: evt-2026-04-19-honor-robotics-product_launch-shandian-half-marathon
+date: 2026-04-19
+date_precision: day
+type: product_launch
+orgs:
+- id: honor-robotics
+  role: subject
+title:
+  zh: 荣耀人形机器人「闪电」以 50 分 26 秒夺得 2026 北京亦庄人形机器人半马冠军，荣耀称 2026 年小批量量产
+summary:
+  zh: 4 月 19 日，2026 北京亦庄半程马拉松暨人形机器人半程马拉松上，深圳荣耀智慧科技开发有限公司齐天大圣队的自主导航人形机器人「闪电」以 50 分 26 秒净用时夺冠，另两支荣耀队伍的「闪电」分别以 50 分 56 秒和 53 分 01 秒位列第二、第三。科创板日报称荣耀另一款机器人「元气仔」获最佳步态奖，蓝思科技为荣耀机器人供应 132 款金属结构件，荣耀推进 2026 年小批量量产计划。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+counterparties:
+- 蓝思科技
+evidence:
+- url: https://www.news.cn/sports/20260419/c91172da5ef84342b7b07fb3c2ef8f12/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-19-honor-robotics-half-mara.html
+- url: https://m.cls.cn/detail/2348432
+  publisher: 科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/m-2026-04-19-honor-robotics-half-mara.html
+corroboration: multi

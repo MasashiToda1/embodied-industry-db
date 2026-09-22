@@ -1,0 +1,32 @@
+id: evt-2026-04-21-magiclab-deployment-health-order-150m
+date: '2026-04-21'
+date_precision: day
+type: deployment
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子签订 1.5 亿元大健康行业机器人采购订单
+summary:
+  zh: 魔法原子官网 4 月 21 日发文称，公司日前签订一份 1.5 亿元机器人采购订单，订单聚焦家庭智慧健康领域，围绕居家健康管理、智能陪护等场景提供定制化智能硬件、家庭健康智能方案及场景体验展示的一体化服务，将链接 10000 名高净值家庭用户。买方名称未披露。
+date_basis: derived
+date_as_stated: 官网文章发布于 2026-04-21，正文写「日前……签订」
+amount:
+  value: 150000000
+  currency: CNY
+axes:
+  target_scene:
+  - healthcare
+  - home
+evidence:
+- url: https://www.magiclab.top/news/63
+  publisher: 魔法原子官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/magiclab-2026-04-21-magiclab-health-order-of.html
+- url: https://news.qq.com/rain/a/20260421A0624D00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-21-magiclab-health-order-qq.html
+corroboration: multi

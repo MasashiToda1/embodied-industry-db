@@ -1,0 +1,32 @@
+id: evt-2025-11-24-agile-robots-product_launch-agile-one-humanoid
+date: '2025-11-24'
+date_precision: day
+type: product_launch
+orgs:
+- id: agile-robots
+  role: subject
+title:
+  zh: 思灵机器人发布全尺寸工业级人形机器人 Agile ONE
+  en: Agile Robots launches full-size industrial humanoid Agile ONE
+summary:
+  zh: 11 月 24 日，思灵机器人官网发布全尺寸工业级人形机器人 Agile ONE，面向工业环境，通过 AgileCore AI 软件平台与公司灵巧手、力控机械臂、自主移动机器人协同。官网产品页给出参数：高 174 厘米、重 69 千克、行走速度 2.0 米 / 秒、负载 20 千克。公司同时披露累计向全球客户交付超过 20000 套机器人解决方案、员工 2500 人。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.agile-robots.cn/news/51
+  publisher: 思灵机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/agile-robots-2025-11-24-agile-robots-agile-one-l.html
+- url: https://www.agile-robots.cn/product/40
+  publisher: 思灵机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/agile-robots-2025-11-24-agile-robots-agile-one-p.html
+corroboration: single
+

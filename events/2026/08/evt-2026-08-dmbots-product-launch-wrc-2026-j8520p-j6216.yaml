@@ -1,0 +1,20 @@
+id: evt-2026-08-dmbots-product-launch-wrc-2026-j8520p-j6216
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「8月23日 2026世界机器人大会……圆满落幕」「展会期间……作为新品亮相」，展会为 2026 年 8 月 19—23 日
+type: product_launch
+orgs:
+- id: dmbots
+  role: subject
+title:
+  zh: 达妙科技在 WRC 2026 首次展出 DM-J8520P-2EC 中空大扭矩关节电机与 DM-J6216 系列关节模组
+summary:
+  zh: 达妙科技官网发文称，2026 世界机器人大会（8 月 19—23 日，北京）期间公司亮相 D505 展位，展出关节电机、谐波关节电机、分立电机、中空云台电机、轮毂电机及配套驱动器与开发套件；其中 DM-J8520P-2EC 中空大扭矩关节电机与 DM-J6216 系列关节模组作为新品亮相，J8520P 以大扭矩输出、中空走线为亮点，J6216 系列提供两种方案。
+evidence:
+- url: http://www.damiaokeji.com/index.php?c=show&id=140
+  publisher: 达妙科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/damiaokeji-2026-08-dmbots-wrc-2026-new-join.html
+corroboration: single

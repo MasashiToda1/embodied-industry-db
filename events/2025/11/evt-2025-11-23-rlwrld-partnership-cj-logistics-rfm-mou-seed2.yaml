@@ -1,0 +1,22 @@
+id: evt-2025-11-23-rlwrld-partnership-cj-logistics-rfm-mou-seed2
+date: 2025-11-23
+date_precision: day
+type: partnership
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: CJ 大韩通运与 RLWRLD 签署物流用机器人基础模型（RFM）共同开发 MOU，并参与其 Seed2 轮股权投资
+summary:
+  zh: 11 月 23 日，CJ 大韩通运宣布与 Physical AI 公司 RLWRLD 签署「物流用机器人基础模型（RFM）共同开发业务协约」，并参与 RLWRLD Seed2 轮股权投资；签约仪式 11 月 20 日在首尔钟路区 CJ 大韩通运总部举行。双方将共同开发充当机器人「大脑」的 RFM 方案并推进现场实证与商用化，CJ 大韩通运负责发掘物流中心内可机器人自动化的工序并提供分拣、包装等作业数据。CJ 大韩通运此前已与 Rainbow Robotics、ROBOTIS（硬件）及 Aidin Robotics（机器人手）建立合作。
+counterparties:
+- CJ 大韩通运
+axes:
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://www.cjlogistics.com/ko/newsroom/news/NR_00001303
+  publisher: CJ 大韩通运官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/cjlogistics-2025-11-23-rlwrld-cj-logistics-mou-.html
+corroboration: single

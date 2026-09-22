@@ -1,0 +1,22 @@
+id: evt-2026-09-17-figure-ai-product_launch-helix-2-5
+date: 2026-09-17
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure 发布 Helix 2.5，在 30 个未见过的家庭中零样本完成三类全身任务
+summary:
+  zh: 9 月 17 日，Figure 发布 Helix 2.5。公司称该模型在其人类行为数据集 Index 上预训练，由同一基础模型训练出整理客厅、叠毛巾、铺床三种行为，在 30 个未采集过数据的湾区家庭中零样本评测，Index 预训练使零样本成功率从 9% 提高到 56%。公司同时披露已承诺 35 亿美元算力用于训练 Helix。
+axes:
+  target_scene: [home]
+  data_acquisition: [human-video]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/figure-2026-09-17-figure-ai-helix-2-5.html
+corroboration: single

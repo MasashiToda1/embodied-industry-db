@@ -1,0 +1,37 @@
+id: evt-2026-03-02-uniq-robot-funding-new-round
+date: '2026-03-02'
+date_precision: day
+date_basis: derived
+date_as_stated: 官网稿件发布时间 2026-03-02，正文「近日……宣布完成」
+type: funding
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇机器人完成近 3 亿元新一轮股权融资
+summary:
+  zh: 优理奇机器人（UniX AI）宣布完成近 3 亿元新一轮股权融资，中金汇融、洪山资本、广州产投、谢诺投资参与，老股东吴中金控、涌铧投资追投。资金用于软硬件全栈自研体系、产品迭代及全球渠道网络建设。公司称 2025 年底起持续实现单月交付量破百台。
+counterparties:
+- 中金汇融
+- 洪山资本
+- 广州产投
+- 谢诺投资
+- 吴中金控
+- 涌铧投资
+evidence:
+- url: https://www.unix-group.ai/article/196/detail/137.html
+  publisher: 优理奇官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/unix-group-2026-03-uniq-robot-funding-offic.html
+- url: https://news.qq.com/rain/a/20260305A027CW00
+  publisher: 腾讯新闻（中国机器人网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/news-2026-03-05-uniq-robot-funding-qq.html
+- url: https://eu.36kr.com/zh/p/3711384836092289
+  publisher: 36 氪出海（转载铅笔道）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/eu-2026-03-uniq-robot-funding-36kr.html
+corroboration: multi

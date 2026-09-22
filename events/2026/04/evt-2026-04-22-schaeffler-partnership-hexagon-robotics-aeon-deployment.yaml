@@ -1,0 +1,23 @@
+id: evt-2026-04-22-schaeffler-partnership-hexagon-robotics-aeon-deployment
+date: 2026-04-22
+date_precision: day
+type: partnership
+orgs:
+- id: schaeffler
+  role: subject
+- id: hexagon-robotics
+  role: counterparty
+title:
+  zh: 舍弗勒与 Hexagon Robotics 建立战略技术合作：供应旋转执行器，并计划七年内在全球生产体系部署至少 1000 台 AEON 人形机器人
+summary:
+  zh: 4 月 22 日，舍弗勒在汉诺威工博会期间发布新闻稿称与瑞士 Hexagon Robotics 达成人形机器人领域战略技术合作，内容包括由舍弗勒执行器平台供应高精度谐波与行星齿轮执行器，以及舍弗勒计划在未来七年内于其全球生产体系部署至少 1000 台 Hexagon Robotics 的人形机器人 AEON。Hexagon 同日新闻稿称此为 2025 年联合试点（AEON 在多机工位完成上下料与零件检测）完成后的合作扩展，自动零件检测等应用计划 2026 年底起部署。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88184987
+  publisher: 舍弗勒官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/schaeffler-2026-04-22-schaeffler-hexagon-robot.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2025-10-29-dobot-deployment-ruidefeng-order
+date: 2025-10-29
+date_precision: day
+type: deployment
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 瑞德丰向越疆采购超 8050 万元具身智能机器人
+summary:
+  zh: 10 月 29 日，越疆机器人与瑞德丰精密技术股份有限公司签署具身智能机器人采购合同。瑞德丰采购总金额超 8050 万元，内容包含人形机器人及具身智能协作机器人在内的产品与解决方案，用于新能源精密制造产线的高精度组装、复杂物料流转与柔性产线协同。
+counterparties:
+- 瑞德丰精密技术股份有限公司
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://hkcd.com/hkcdweb/content/2025/10/30/content_8721941.html
+  publisher: 香港商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/hkcd-2025-10-29-dobot-ruidefeng-hkcd.html
+- url: http://jjckb.xinhuanet.com/20251030/63fa85e12de74ea3a77b67d5a082e198/c.html
+  publisher: 经济参考网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/jjckb-2025-10-29-dobot-ruidefeng-order.html
+corroboration: multi

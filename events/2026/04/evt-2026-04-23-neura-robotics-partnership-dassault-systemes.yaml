@@ -1,0 +1,22 @@
+id: evt-2026-04-23-neura-robotics-partnership-dassault-systemes
+date: 2026-04-23
+date_precision: day
+type: partnership
+orgs:
+- id: neura-robotics
+  role: subject
+title:
+  zh: NEURA Robotics 与 Dassault Systèmes 合作，以 3DEXPERIENCE 虚拟孪生镜像 NEURA Gym 训练单元与客户现场，首期接入 4NE1
+summary:
+  zh: 4 月 23 日，NEURA Robotics 与 Dassault Systèmes 在汉诺威宣布合作，将 NEURA 的 Physical AI 生态与 Dassault 的 3DEXPERIENCE 平台连接：每个实体 NEURA Gym 训练单元和已部署客户环境都可在该平台上建立 AI 驱动的虚拟孪生，用真实数据与合成数据生成、验证和优化机器人技能。首期将人形机器人 4NE1 接入该虚拟孪生生态，后续扩展到其他形态。
+counterparties:
+- Dassault Systèmes
+axes:
+  data_acquisition: [sim-generated]
+evidence:
+- url: https://neura-robotics.com/neura-robotics-and-dassault-systemes-announce-partnership/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/neura-roboti-2026-04-23-neura-robotics-dassault.html
+corroboration: single

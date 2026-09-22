@@ -2,8 +2,22 @@ id: booster
 names:
   zh: 加速进化
   en: Booster Robotics
+  aliases:
+  - 北京加速进化科技有限公司
 status: active
 layers:
 - embodiment
+founded: 2023-06
+hq:
+  country: CN
+  city: 北京
+description: 做双足人形机器人整机与开发平台的公司，产品有 Booster T1、K1、T2 和开发环境 Booster Studio。
 upstream:
   robotics_notebooks_institution: booster
+accounts:
+  site: https://www.booster.tech
+sources:
+- url: https://www.booster.tech/zh/about-us/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，2023 年 6 月北京加速进化科技有限公司成立，公司历史时间线

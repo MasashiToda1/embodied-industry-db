@@ -1,0 +1,31 @@
+id: evt-2026-05-30-foundation-robotics-procurement-us-military-research-contracts
+date: 2026-05-30
+date_precision: day
+type: procurement
+orgs:
+- id: foundation-robotics
+  role: subject
+title:
+  zh: Foundation 称已获美国陆海空三军合计 2400 万美元研究合同，用于 Phantom 在巡检、物流与武器搬运上的可行性测试
+summary:
+  zh: 据 CNBC 2026 年 5 月 30 日报道，Foundation Future Industries 称已获得美国陆军、海军与空军合计 2400 万美元的政府研究合同，用于人形机器人 Phantom 在巡检、物流与武器搬运方面的可行性测试。RobotsBeat 4 月 24 日报道称该合同为测试性质而非量产采购。合同签署日期与分项金额未在来源中给出，amount 不填。
+counterparties:
+- 美国陆军
+- 美国海军
+- 美国空军
+date_basis: estimated
+date_as_stated: CNBC 报道（2026-05-30）原文「has already received government research contracts totaling $24 million」，合同签署日未披露，事件日期取报道日
+axes:
+  target_scene: [inspection-hazardous, logistics-warehouse]
+evidence:
+- url: https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html
+  publisher: CNBC
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/cnbc-2026-05-30-foundation-robotics-ukra.html
+- url: https://robotsbeat.com/foundation-future-industries-pentagon-24-million-phantom-humanoid-robot/
+  publisher: RobotsBeat
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/robotsbeat-2026-04-24-foundation-robotics-pent.html
+corroboration: multi

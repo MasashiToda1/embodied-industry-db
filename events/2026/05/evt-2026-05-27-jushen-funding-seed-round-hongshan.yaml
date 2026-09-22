@@ -1,0 +1,26 @@
+id: evt-2026-05-27-jushen-funding-seed-round-hongshan
+date: '2026-05-27'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2026 年 5 月……正式完成数千万元人民币新一轮融资」，取新浪财经 2026-05-27 报道日
+type: funding
+orgs:
+- id: jushen
+  role: subject
+title:
+  zh: 具深科技完成数千万元融资，红杉中国种子基金等参投
+summary:
+  zh: 2026 年 5 月，上海具深科技有限公司完成数千万元人民币新一轮融资，由红杉中国种子基金、徐汇科创投、钧石创投、创源文化、深圳耀盈等联合参投；资金用于通用机器人小脑 CereBase 3.0 底层技术迭代、C 端机器人动作 UGC 内容生态建设、B 端 RaaS 服务全球化合规布局。报道称机时租 RoboNow 业务覆盖国内 15 个省份、全球 10 余个国家。
+counterparties:
+- 红杉中国种子基金
+- 徐汇科创投
+- 钧石创投
+- 创源文化
+- 深圳耀盈
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhzikrs9314933.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/finance-2026-05-27-jushen-seed-round.html
+corroboration: single

@@ -1,0 +1,28 @@
+id: evt-2026-03-01-honor-robotics-product_launch-mwc-humanoid-debut
+date: 2026-03-01
+date_precision: day
+type: product_launch
+orgs:
+- id: honor-robotics
+  role: subject
+- id: paxini
+  role: supplier
+title:
+  zh: 荣耀首款人形机器人在 MWC 2026 巴塞罗那发布会亮相，同步宣布成立新产业孵化部
+summary:
+  zh: 3 月 1 日，荣耀在 MWC 2026 全球发布会上展示首款人形机器人，现场完成舞蹈、握手与翻跟头等动作，荣耀未公布名称、价格与详细参数。会后荣耀透露已成立新产业孵化部，下设具身智能实验室、具身数据实验室、交互安全实验室、动力总成实验室和仿生本体研究实验室；同场亮相的灵巧手 DexH13 为帕西尼感知科技与荣耀合作产品。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://zhidx.com/p/537008.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/zhidx-2026-03-01-honor-robotics-mwc-human.html
+- url: https://www.gkong.com/news/125105.html
+  publisher: 中华工控网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/gkong-2026-03-01-honor-robotics-mwc-human.html
+corroboration: multi

@@ -5,5 +5,24 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2022
+hq:
+  country: IL
+  city: Herzliya
+description: 做人形机器人 MenteeBot 的以色列公司，由 Amnon Shashua 等创立，2026 年 2 月被 Mobileye 收购后作为其独立单元运营。
 accounts:
   github: mentee-robotics
+  site: https://www.menteebot.com
+sources:
+- url: https://www.ahreninnovationcapital.com/companies/mentee/
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 投资方页面：Mentee was founded in 2022 by Prof. Amnon Shashua、Prof. Lior Wolf、Prof. Shai Shalev-Shwartz
+- url: https://www.therobotreport.com/mentee-robotics-de-cloaks-launches-ai-driven-humanoid-robot/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「founded the Herzliya, Israel company in 2022」
+- url: https://ir.mobileye.com/news-releases/news-release-details/mobileye-acquire-mentee-robotics-accelerate-physical-ai
+  tier: official
+  retrieved: '2026-09-22'
+  note: Mobileye 收购公告，收购后作为独立单元运营

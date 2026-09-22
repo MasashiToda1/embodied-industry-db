@@ -1,0 +1,27 @@
+id: evt-2026-02-wanjiyizu-funding-angel-round
+date: 2026-02
+date_precision: month
+type: funding
+orgs:
+- id: wanjiyizu
+  role: subject
+title:
+  zh: 万机易租完成首轮天使轮融资，三位企业家联合战略投资
+summary:
+  zh: 2026 年 2 月，万机易租宣布完成首轮天使轮融资，由三位细分赛道头部企业家联合战略投资，金额未披露。资金用于城市网络扩张、AI 匹配与数字化运维平台升级、供应链绑定与团队扩张。公司称平台已覆盖全国 30 个核心城市、超 300 家服务商，全品类机器人租金从 100 元至数千元，并与捞王、卡通尼乐园达成合作。
+counterparties:
+- 德马科技
+- 捞王餐饮集团
+- 卡通尼乐园
+date_basis: derived
+date_as_stated: 报道（2026-02-11）原文「近日」
+axes:
+  delivery_model:
+  - rental
+evidence:
+- url: https://www.163.com/dy/article/KLGD6HCC053900WX.html
+  publisher: 网易号 · 转载 IPO 早知道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/163-2026-02-wanjiyizu-angel-round.html
+corroboration: single

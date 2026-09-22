@@ -8,3 +8,21 @@ layers:
 - simulation
 upstream:
   robotics_notebooks_institution: horizon-robotics
+accounts:
+  site: https://www.horizon.auto
+  github: HorizonRobotics
+  huggingface: HorizonRobotics
+founded: 2015-07
+hq:
+  country: CN
+  city: 北京
+description: 港股上市的乘用车辅助驾驶计算方案供应商，旗下机器人实验室做 HoloBrain、HoloMotion 具身模型。
+sources:
+- url: https://www.horizon.auto/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，2015 年 7 月正式成立，2024 年 10 月港交所上市，公司定位；页脚运营主体为北京地平线信息技术有限公司，办公地址首列北京市海淀区
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900928_c.pdf
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 港交所年度业绩公告，股份代号 9660，开曼群岛注册

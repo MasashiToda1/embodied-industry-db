@@ -5,3 +5,18 @@ names:
 status: active
 layers:
 - standards
+hq:
+  country: US
+  city: Northbrook
+description: 美国检测、检验与认证机构（纽交所代码 ULS），向服务机器人提供 UL 3300 等安全标准的测试与认证。
+accounts:
+  site: https://www.ul.com
+sources:
+- url: https://www.ul.com/news/ul-solutions-grants-its-first-global-certification-public-facing-robot-simbes-tally-autonomous
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿，电头「NORTHBROOK, Ill.」，载公司全称 UL Solutions Inc.（纽交所代码 ULS）与 UL 3300 认证业务
+- url: https://www.ul.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页，业务为测试、检验与认证服务

@@ -1,0 +1,24 @@
+id: evt-2026-08-23-qiyuan-robotics-product-launch-preorder
+date: '2026-08-23'
+date_precision: day
+type: product_launch
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 启元机器人开启启元 Q1、启元 T1 公开预订
+summary:
+  zh: 8 月 23 日，上纬新材旗下启元机器人正式开启启元 Q1、启元 T1 双产品公开预订。科技日报报道，启元 Q1 身高约 88cm、重约 15 公斤；启元 T1 站立身高约 100cm、重约 16 公斤，可在轮足人形与四足形态间切换。此前两款产品已在 WAIC 2026、ChinaJoy 2026 完成小范围预约。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+  target_scene:
+  - home
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-08/23/content_568520.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/stdaily-2026-08-23-qiyuan-robotics-preorder.html
+corroboration: single

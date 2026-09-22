@@ -1,0 +1,21 @@
+id: evt-2025-09-kepler-deployment-k2-mass-production-start
+date: 2025-09
+date_precision: month
+type: deployment
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒发布 K2 大黄蜂量产启动视频，开始交付商业订单
+summary:
+  zh: 2025 年 9 月 25 日新闻稿称，近日上海开普勒机器人有限公司发布 K2 大黄蜂量产启动视频，宣告混动架构人形机器人开始交付商业订单。公司称已达成框架协议下的明确意向订单数千台，交易金额数亿元，客户涉及工业贸易、数据采集、展厅、智能制造、特种作业等领域。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.prnasia.com/story/505189-1.shtml
+  publisher: 美通社（开普勒机器人新闻稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/prnasia-2025-09-kepler-k2-mass-productio.html
+corroboration: single

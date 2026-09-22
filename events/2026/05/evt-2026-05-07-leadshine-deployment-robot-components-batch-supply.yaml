@@ -1,0 +1,22 @@
+id: evt-2026-05-07-leadshine-deployment-robot-components-batch-supply
+date: 2026-05-07
+date_precision: day
+type: deployment
+orgs:
+- id: leadshine
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 雷赛智能称 2025 年无框力矩电机交付超 12 万台、获智元机器人「优秀供应商伙伴」，行星 / 谐波关节模组与 21 自由度灵巧手已批量供应数十家机器人客户
+summary:
+  zh: 5 月 7 日，雷赛智能（002979）在接受机构调研时表示，2025 年公司无框力矩电机产品交付超过 12 万台，取得 20 倍以上增长，获得智元机器人「优秀供应商伙伴」；根据国内外客户业务预期，正在建设年产 200 万台的自动化生产制造能力；公司的行星关节模组、谐波关节模组以及 21 自由度灵巧手研发成功并实现批量供应，已获得数十家主流机器人客户订单并开始规模化供货。
+axes:
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.stcn.com/article/detail/3898779.html
+  publisher: 证券时报网（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/stcn-2026-05-07-leadshine-robot-componen.html
+corroboration: single

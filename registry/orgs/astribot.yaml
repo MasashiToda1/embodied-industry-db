@@ -2,6 +2,11 @@ id: astribot
 names:
   zh: 星尘智能
   en: Astribot
+founded: 2022
+hq:
+  country: CN
+  city: 深圳
+description: 做绳驱 AI 机器人的公司，产品有 Astribot S1、半身商用 S1-U 与 T1，自研 Lumo 基座模型与 DuoCore 部署框架。
 status: active
 layers:
 - embodiment
@@ -9,3 +14,13 @@ upstream:
   robotics_notebooks_institution: astribot
 accounts:
   github: Astribot-Dev
+  site: https://www.astribot.com
+sources:
+- url: https://www.astribot.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于星尘：2022 年底在深圳成立
+- url: https://www.bbtnews.com.cn/2026/0603/595200.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 北京商报：产品 S 系列、T 系列，2025 年底开启千台级交付

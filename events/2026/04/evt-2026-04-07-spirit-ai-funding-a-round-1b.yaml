@@ -1,0 +1,29 @@
+id: evt-2026-04-07-spirit-ai-funding-a-round-1b
+date: '2026-04-07'
+date_precision: day
+type: funding
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能宣布获 10 亿元新融资，顺为资本、云锋基金联合领投
+summary:
+  zh: 4 月 7 日，千寻智能宣布再获 10 亿元人民币融资，由顺为资本、云锋基金联合领投，达晨财智、银河源汇、图灵基金、新鼎资本、庚辛资本等参与。报道称这距上一轮 20 亿元融资官宣仅一个多月。
+counterparties:
+- 顺为资本
+- 云锋基金
+- 达晨财智
+- 银河源汇
+- 图灵基金
+- 新鼎资本
+- 庚辛资本
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.36kr.com/p/3756015111291654
+  publisher: 36 氪 · 转载投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/36kr-2026-04-07-spirit-ai-a-round-www.html
+corroboration: single

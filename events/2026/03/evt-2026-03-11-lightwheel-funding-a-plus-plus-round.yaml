@@ -1,0 +1,35 @@
+id: evt-2026-03-11-lightwheel-funding-a-plus-plus-round
+date: '2026-03-11'
+date_precision: day
+type: funding
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能完成 10 亿元 A++ 及 A+++ 轮融资，称成为全球首个具身数据领域独角兽
+summary:
+  zh: 3 月 11 日，光轮智能在官方公众号宣布近日完成 10 亿元人民币 A++ 及 A+++ 轮融资，产业投资方包括新希望集团、鼎邦投资（三安光电董事长家族办公室）、奥克斯、鼎石资管等，财务投资机构包括建投华科、国方创新、道禾长期投资、清新资本等。公司称本轮完成后成为全球首个具身数据领域的独角兽企业；资金投入物理仿真引擎研发、规模化模型评测体系升级与全球交付及本地部署能力建设。
+counterparties:
+- 新希望集团
+- 鼎邦投资
+- 奥克斯
+- 鼎石资管
+- 建投华科
+- 国方创新
+- 道禾长期投资
+- 清新资本
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2026-03-11/doc-inhqqyvr9408334.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/finance-2026-03-11-lightwheel-a-plus-plus-r.html
+- url: https://www.bjnews.com.cn/detail/1773220226129690.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/bjnews-2026-03-11-lightwheel-a-plus-plus-r.html
+corroboration: multi

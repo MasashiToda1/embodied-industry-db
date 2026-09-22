@@ -7,3 +7,15 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: ohand
+founded: 2015
+hq:
+  country: CN
+  city: 上海
+description: 做肌电 / 脑电传感、智能仿生手与机器人灵巧手的公司，产品有 OHand 仿生手与 ROHand 系列灵巧手。
+accounts:
+  site: https://www.oymotion.com
+sources:
+- url: https://www.oymotion.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页公司简介，成立于 2015 年，总部上海张江

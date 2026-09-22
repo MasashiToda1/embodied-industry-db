@@ -1,0 +1,27 @@
+id: evt-2025-09-08-x-square-robot-funding-a-plus-round
+date: '2025-09-08'
+date_precision: day
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人宣布完成近 10 亿元 A+ 轮融资，阿里云、国科投资领投
+summary:
+  zh: 9 月 8 日，自变量机器人宣布完成近 10 亿元人民币 A+ 轮融资，由阿里云、国科投资领投，国开金融、红杉中国、渶策资本跟投，老股东美团战投超额跟投，联想之星、君联资本持续追投。资金用于通用具身智能基础模型训练和硬件产品研发。
+counterparties:
+- 阿里云
+- 国科投资
+- 国开金融
+- 红杉中国
+- 渶策资本
+- 美团战投
+- 联想之星
+- 君联资本
+evidence:
+- url: https://www.stcn.com/article/detail/3326996.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/stcn-2025-09-08-x-square-robot-a-plus-ro.html
+corroboration: single

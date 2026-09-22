@@ -1,0 +1,28 @@
+id: evt-2026-08-28-digital-china-humanoid-product-launch-p02-harmonyos
+date: '2026-08-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏联合深开鸿在数博会发布基于开源鸿蒙的全国产化人形机器人星行侠 P02
+summary:
+  zh: 8 月 28 日，数字华夏 CEO 沈健在贵阳数博会主会场发布全国产化双形态人形机器人星行侠 P02：支持双足行走与轮式移动切换，官方称核心零部件 100% 本土化配套，搭载 128 TOPS 推理算力「大脑」与 6 TOPS 异构「小脑」，25 个自研一体化关节，底层操作系统基于深开鸿 M-Robots OS 3.0（开源鸿蒙）。
+counterparties:
+- 深开鸿
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - commercial-service
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/245.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/digit-2026-08-27-digital-china-humanoid-p.html
+corroboration: single

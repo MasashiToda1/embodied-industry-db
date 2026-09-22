@@ -2,6 +2,24 @@ id: magiclab
 names:
   zh: 魔法原子
   en: MagicLab
+  aliases:
+  - 魔法原子机器人科技（无锡）有限公司
 status: active
 layers:
 - embodiment
+founded: 2024-01
+hq:
+  country: CN
+  city: 无锡
+description: 追觅科技生态孵化的机器人公司，做全尺寸人形 MagicBot Gen1 / X1、双足 MagicBot Z1、四足 MagicDog 及灵巧手、关节模组。
+accounts:
+  site: https://www.magiclab.top
+sources:
+- url: https://www.magiclab.top/news/29
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻「魔法原子完成 1.5 亿元天使轮融资」，写明「魔法原子成立于 2024 年 1 月」及产品线
+- url: https://www.worldrobotconference.com/expo/company/450.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商页，公司全称「魔法原子机器人科技（无锡）有限公司」，创立于 2024 年 1 月

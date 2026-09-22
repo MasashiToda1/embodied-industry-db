@@ -1,0 +1,29 @@
+id: evt-2026-07-20-sh-humanoid-partnership-huawei-training-ground-demo
+date: '2026-07-20'
+date_precision: day
+type: partnership
+orgs:
+- id: sh-humanoid
+  role: subject
+- id: huawei-cloudrobo
+  role: counterparty
+title:
+  zh: 国地中心联合华为发布具身智能实训场样板点并揭牌启用
+summary:
+  zh: 7 月 20 日，在 WAIC 2026「人形机器人与具身智能创新发展论坛」上，国家地方共建人形机器人创新中心与华为共同为「具身智能实训场样板点」揭牌。华为提供算力、存力、网络及 CloudRobo 具身智能仿训平台，国地中心提供本体、数据、模型、测评与部署方案；华为页面称搭载联创成果的「灵龙」系列机器人已进驻延锋完成实景数据采集与自主作业验证。
+counterparties:
+- 延锋
+axes:
+  data_sourcing: [gov-training-ground]
+evidence:
+- url: https://e.huawei.com/cn/news/2026/industries/manufacturing/national-geographic-center
+  publisher: 华为企业业务官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/e-2026-07-20-sh-humanoid-huawei-train.html
+- url: https://finance.sina.com.cn/roll/2026-07-20/doc-iniimqsk8240862.shtml
+  publisher: 新浪财经（转载证券时报 e 公司）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-20-sh-humanoid-waic-platfor.html
+corroboration: multi

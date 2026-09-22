@@ -1,0 +1,24 @@
+id: evt-2026-07-18-keli-sensing-funding-hengbot-strategic-investment
+date: 2026-07-18
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，柯力传感及其……宁波传感谷创业投资基金正式完成了对恒之未来（重庆）创新科技有限公司的数千万投资」（柯力传感官网 2026-07-18 发布）
+type: funding
+orgs:
+- id: keli-sensing
+  role: investor
+title:
+  zh: 柯力传感及旗下产业基金数千万元战略投资消费级具身智能机器人公司恒之未来
+summary:
+  zh: 柯力传感及其与时代伯乐、宁波市江北区国资共同组建的宁波传感谷创业投资基金完成对恒之未来（重庆）创新科技有限公司的数千万元投资。恒之未来成立于 2022 年 7 月，产品为 1.1kg、14 自由度的智能机器狗「哮天 Sirius」。双方称将围绕机器人执行器底层技术、运动控制与力觉 / 视觉 / 触觉感知融合展开合作。
+counterparties:
+- 恒之未来
+- 时代伯乐
+- 宁波传感谷创业投资基金
+evidence:
+- url: https://www.kelichina.com/news/keli_news/2812.html
+  publisher: 柯力传感官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/kelichina-2026-07-18-keli-sensing-hengbot-inv.html
+corroboration: single

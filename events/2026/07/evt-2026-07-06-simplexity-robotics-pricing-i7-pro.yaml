@@ -1,0 +1,23 @@
+id: evt-2026-07-06-simplexity-robotics-pricing-i7-pro
+date: '2026-07-06'
+date_precision: day
+type: pricing
+orgs:
+- id: simplexity-robotics
+  role: subject
+title:
+  zh: 至简动力 i7 Pro 最高配版本售价 22.98 万元
+summary:
+  zh: 量子位报道至简动力 7 月 6 日百台交付时称，i7 Pro 最高配版本售价 22.98 万元。
+amount:
+  value: 229800
+  currency: CNY
+date_basis: derived
+date_as_stated: 量子位报道原文「7 月 6 日，至简动力宣布……据悉，i7 Pro 最高配版本售价仅 22.98 万元」
+evidence:
+- url: https://www.qbitai.com/2026/07/445531.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/qbitai-2026-07-06-simplexity-robotics-i7pr.html
+corroboration: single

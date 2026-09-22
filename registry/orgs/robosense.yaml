@@ -7,5 +7,16 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: robosense
+founded: 2014-08
+hq:
+  country: CN
+  city: 深圳
+description: 港交所上市（2498）的激光雷达公司，机器人产品有 Airy 半球形数字化激光雷达、Active Camera 空间相机、Papert 灵巧手。
 accounts:
   github: robosense
+  site: https://www.robosense.cn
+sources:
+- url: https://www.robosense.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网企业介绍页，2014 年 8 月成立，总部深圳，2024-01-05 港交所上市

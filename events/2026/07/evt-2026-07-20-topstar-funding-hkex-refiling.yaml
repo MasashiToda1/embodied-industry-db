@@ -1,0 +1,20 @@
+id: evt-2026-07-20-topstar-funding-hkex-refiling
+date: 2026-07-20
+date_precision: day
+type: funding
+orgs:
+- id: topstar
+  role: subject
+title:
+  zh: 拓斯达再次向港交所提交上市申请书，此前 1 月递交的招股书已满 6 个月失效
+summary:
+  zh: 7 月 20 日，广东拓斯达科技股份有限公司再次向港交所提交上市申请书，独家保荐人为华泰国际。此前拓斯达于 2026 年 1 月 16 日递交的港股招股书满 6 个月，于 7 月 16 日失效。
+counterparties:
+- 华泰国际
+evidence:
+- url: https://www.tmtpost.com/nictation/8071380.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/tmtpost-2026-07-20-topstar-hkex-refiling.html
+corroboration: single

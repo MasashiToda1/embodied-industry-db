@@ -1,0 +1,24 @@
+id: evt-2026-08-20-agilex-product_launch-7dof-isomorphic-teach-arm
+date: '2026-08-20'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「本届展会……首次公开发布」（WRC 2026 于 8 月 19 日开幕），稿件发布于 2026-08-20
+type: product_launch
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人在 WRC 2026 首次公开发布七轴同构示教小臂，演示「一拖六」多臂遥操作
+summary:
+  zh: 松灵机器人在 2026 世界机器人大会首次公开发布七轴同构示教小臂，采用同构式主从设计，面向高精度遥操作与数据采集；现场以单台示教器同步遥操作六组双臂机器人完成击鼓演示。同场展出 NERO 双臂平台、PiPER 系列六轴机械臂与 UMR 通用底盘。
+axes:
+  embodiment_form: [arm]
+  data_acquisition: [teleop]
+  hardware_strategy: [in-house]
+evidence:
+- url: http://www.eeo.com.cn/2026/0820/1005362.shtml
+  publisher: 经济观察网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/eeo-2026-08-20-agilex-wrc-7dof-teach-ar.html
+corroboration: single

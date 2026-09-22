@@ -1,0 +1,18 @@
+id: evt-2026-08-14-realman-corporate-ipo-tutoring
+date: 2026-08-14
+date_precision: day
+type: corporate
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼智能提交上市辅导备案，拟登陆创业板
+summary:
+  zh: 8 月 14 日，睿尔曼智能科技（北京）股份有限公司向北京证监局提交上市辅导备案材料，拟在深交所创业板上市。报道称公司成立以来已完成 7 轮融资。
+evidence:
+- url: https://www.36kr.com/p/3944696405572742
+  publisher: 36 氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/36kr-2026-08-14-realman-ipo-tutoring.html
+corroboration: single

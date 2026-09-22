@@ -1,0 +1,20 @@
+id: evt-2026-08-03-wanjiyizu-funding-second-strategic-round
+date: '2026-08-03'
+date_precision: day
+type: funding
+orgs:
+- id: wanjiyizu
+  role: subject
+title:
+  zh: 万机易租完成第二轮战略融资，投后估值突破 10 亿元
+summary:
+  zh: 8 月 3 日报道，上海万机易租科技有限公司近日完成第二轮战略融资，引入头部生物产业企业家与文化传媒企业两类战略投资方，金额未披露，交割后投后估值突破 10 亿元。公司称将布局国内 30 座核心城市、落地超 300 家合作服务商。
+date_basis: derived
+date_as_stated: 报道（2026-08-03）原文「已于近日完成」
+evidence:
+- url: https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/gasgoo-2026-08-03-wanjiyizu-second-round.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2026-05-engineai-deployment-shenzhen-base-first-t800
+date: 2026-05
+date_precision: month
+type: deployment
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎智能制造（红花岭）基地启用，首批 T800 下线
+summary:
+  zh: 2026 年 5 月 26 日发布，近日众擎智能制造（红花岭）基地正式启用，首批 T800 人形机器人下线。基地建筑面积 12000 平方米，产线可实现每 15 分钟下线一台人形机器人，出厂前机器人需通过 79 项品质检验及 46 种工况模拟测试。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: http://sh.news.cn/20260526/9a376d856a794b2cba8eb94ed2d7057f/c.html
+  publisher: 新华网上海（来源：众擎机器人）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/sh-2026-05-engineai-shenzhen-base.html
+corroboration: single

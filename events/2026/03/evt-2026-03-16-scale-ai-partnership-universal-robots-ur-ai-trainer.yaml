@@ -1,0 +1,31 @@
+id: evt-2026-03-16-scale-ai-partnership-universal-robots-ur-ai-trainer
+date: 2026-03-16
+date_precision: day
+type: partnership
+orgs:
+- id: scale-ai
+  role: subject
+title:
+  zh: Scale AI 与 Universal Robots 在 GTC 2026 发布 UR AI Trainer：Scale 的 Physical AI Data Engine 嵌入 UR 主从示教单元，年内将发布大规模工业机器人数据集
+summary:
+  zh: 3 月 16 日，Scale AI 宣布与 Teradyne 旗下 Universal Robots 合作，在 NVIDIA GTC 2026 发布 UR AI Trainer：Scale 的 Physical AI Data Engine 软件嵌入该系统，操作员手动引导「主」UR 机械臂完成任务，同步的「从」机械臂实时镜像动作，系统记录同步的运动、力与视觉数据，用于训练 VLA 模型；数据直接在 UR 已有逾 10 万台工业部署的生产级硬件上采集。双方称将在 2026 年内发布一个在 UR 机器人上采集的大规模工业机器人数据集，Scale 软件还将在边缘侧持续采集微调与实际运行数据。
+counterparties:
+- Universal Robots（Teradyne Robotics）
+axes:
+  embodiment_form: [arm, dual-arm-stationary]
+  data_acquisition: [teleop, real-robot]
+  data_modality: [joint-trajectory, force-torque, rgb]
+  target_scene: [industrial-manufacturing]
+  model_form: [end2end-vla]
+evidence:
+- url: https://scale.com/blog/scale-ai-universal-robots-physical-ai
+  publisher: Scale AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/scale-2026-03-16-scale-ai-universal-robot.html
+- url: https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/
+  publisher: Universal Robots 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/universal-ro-2026-03-16-scale-ai-ur-ai-trainer-u.html
+corroboration: multi

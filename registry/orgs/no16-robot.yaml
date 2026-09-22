@@ -2,7 +2,24 @@ id: no16-robot
 names:
   zh: 十六号机器人
   en: No.16 Robot
+  aliases:
+  - XVI Robotics
+  - 北京十六号机器人科技有限公司
 status: active
 layers:
 - embodiment
 - foundation
+founded: 2025-12
+hq:
+  country: CN
+  city: 北京
+description: 前月之暗面后训练与强化学习负责人宋鸿涌创立的公司，做通用人形机器人基座模型，主体为北京十六号机器人科技有限公司。
+sources:
+- url: https://finance.sina.com.cn/wm/2026-05-24/doc-inhyzkka3079176.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 观点网 2026-05-24 报道，企查查信息成立于 2025-12-17，法定代表人宋鸿涌，注册资本 100 万元
+- url: https://news.qq.com/rain/a/20260522A08XJW00
+  tier: media
+  retrieved: '2026-09-22'
+  note: 腾讯新闻 2026-05-22，英文名 XVI Robotics，业务定位；官网未查到

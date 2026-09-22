@@ -1,0 +1,21 @@
+id: evt-2026-06-04-beingbeyond-product_launch-being-h-flash
+date: '2026-06-04'
+date_precision: day
+type: product_launch
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 智在无界发布 Being-H-Flash，称完成世界模型端侧实时部署
+summary:
+  zh: 2026 年 6 月 4 日，智在无界发布模型产品 Being-H-Flash，官方称其为首个支持端侧运行的具身世界模型产品，完成了世界模型在机器人本体端侧芯片上的实时部署。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://beingbeyond.com/newsInfo/1213.html
+  publisher: 智在无界官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/beingbeyond-2026-06-04-beingbeyond-being-h-flas.html
+corroboration: single

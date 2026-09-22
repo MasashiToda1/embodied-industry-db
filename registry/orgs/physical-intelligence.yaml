@@ -5,8 +5,31 @@ names:
 status: active
 layers:
 - foundation
+founded: 2024
+hq:
+  country: US
+  city: San Francisco
+description: 做机器人基础模型（π 系列 VLA）的公司，不做本体，模型有 π0、π0.5、π*0.6、π0.7，π0 已开源权重。
 upstream:
   robotics_notebooks_institution: physical-intelligence
 accounts:
   huggingface: physical-intelligence
   github: Physical-Intelligence
+  site: https://www.pi.website
+sources:
+- url: https://www.pi.website/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，公司自述与投资方名单
+- url: https://www.pi.website/blog
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官方博客列表，π0 到 π0.7 各模型发布时间
+- url: https://techcrunch.com/2026/03/27/physical-intelligence-is-reportedly-in-talks-to-raise-1-billion-again/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「the two-year-old San Francisco robotics startup」，总部旧金山
+- url: https://www.therobotreport.com/physical-intelligence-raises-600m-advance-robot-foundation-models/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「The San Francisco-based company … Founded in 2024」

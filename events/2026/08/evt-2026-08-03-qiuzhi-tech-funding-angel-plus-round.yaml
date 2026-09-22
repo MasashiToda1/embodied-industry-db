@@ -1,0 +1,39 @@
+id: evt-2026-08-03-qiuzhi-tech-funding-angel-plus-round
+date: '2026-08-03'
+date_precision: day
+type: funding
+orgs:
+- id: qiuzhi-tech
+  role: subject
+title:
+  zh: 求之科技完成 1 亿美元天使+轮融资，IDG、达晨、九阳等参投
+summary:
+  zh: 8 月 3 日，求之科技（DISCOVER Robotics）宣布完成 1 亿美元天使+轮融资，由 IDG、星连、武岳峰、达晨、九阳、华映、滨湖区产业集团等产业与财务资本共同参投，老股东悉数追加投资，距 7 月超 1 亿美元天使轮不足一个月。公司称已构建「模型—数据—仿真」全栈技术底座：分层式具身智能基础模型 ORION、虚实混合数据闭环系统 LOOP 与高保真仿真器 DISCOVERSE。
+counterparties:
+- IDG
+- 星连
+- 武岳峰
+- 达晨
+- 九阳
+- 华映
+- 滨湖区产业集团
+amount:
+  value: 100000000
+  currency: USD
+axes:
+  model_form:
+  - hierarchical
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://www.163.com/dy/article/L3D54AQV05118HA4.html
+  publisher: 网易号（雷峰网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/163-2026-08-03-qiuzhi-tech-angel-plus-r.html
+- url: https://www.stcn.com/article/detail/4056353.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/stcn-2026-08-03-qiuzhi-tech-angel-plus-r.html
+corroboration: multi

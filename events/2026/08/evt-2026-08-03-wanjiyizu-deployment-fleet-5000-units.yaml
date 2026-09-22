@@ -1,0 +1,37 @@
+id: evt-2026-08-03-wanjiyizu-deployment-fleet-5000-units
+date: '2026-08-03'
+date_precision: day
+type: deployment
+orgs:
+- id: wanjiyizu
+  role: subject
+- id: ubtech
+  role: supplier
+- id: dobot
+  role: supplier
+- id: x-square-robot
+  role: supplier
+- id: magiclab
+  role: supplier
+title:
+  zh: 万机易租披露平台可调度合作机器人超 5000 台，接入优必选、越疆、自变量、魔法原子等厂商
+summary:
+  zh: 8 月 3 日报道，万机易租平台可调度合作机器人规模超 5000 台，合作企业包括优必选、越疆、自变量、魔法原子、优理奇、鲸鱼 AI 教育机器人、大咖机器人等，已在文旅、商演、展会、零售、办公、教育、酒店等场景交付项目。平台以 App 与微信小程序为载体，业务含新机销售、二手设备流转、定制开发、维保检修、零配件供销。
+counterparties:
+- 优理奇
+- 鲸鱼 AI 教育机器人
+- 大咖机器人
+axes:
+  delivery_model:
+  - rental
+  target_scene:
+  - tourism-performance
+  - commercial-service
+  - education-research
+evidence:
+- url: https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/gasgoo-2026-08-03-wanjiyizu-second-round.html
+corroboration: single

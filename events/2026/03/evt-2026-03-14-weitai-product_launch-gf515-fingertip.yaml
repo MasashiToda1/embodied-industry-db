@@ -1,0 +1,20 @@
+id: evt-2026-03-14-weitai-product_launch-gf515-fingertip
+date: '2026-03-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: weitai
+  role: subject
+title:
+  zh: 纬钛机器人发布 GF515 视触觉仿生指尖等四款视触觉新品
+summary:
+  zh: 3 月 14 日，纬钛机器人在「触觉觉醒，灵巧进化」新品发布会上推出四款视触觉新品，覆盖感知单元、执行单元与数据采集系统，其中面向灵巧手的视触觉仿生指尖 GF515 标准款尺寸 15×27mm、单体重量不足 15 克、最小识别力 0.01N、刷新率最高 120Hz；VT-UMI85 视触觉数据采集系统自重约 500 克，融合视触觉、RGB-D、IMU、编码器、位姿轨迹等多模态信息。
+axes:
+  data_modality: [tactile, rgbd]
+evidence:
+- url: https://www.robot-china.com/news/202603/19/95248.html
+  publisher: 中国机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/robot-china-2026-03-14-weitai-gf515-launch.html
+corroboration: single

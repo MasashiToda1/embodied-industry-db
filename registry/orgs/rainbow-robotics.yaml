@@ -5,8 +5,27 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2011
+hq:
+  country: KR
+  city: 世宗
+description: 源自 KAIST 人形机器人 HUBO 团队的韩国机器人整机公司，产品有协作臂 RB 系列、移动双臂 RB-Y1 / RB-Y2、四足 RBQ；三星电子为最大股东。
 upstream:
   robotics_notebooks_institution: rainbow-robotics
 accounts:
   huggingface: rainbowrobotics
   github: RainbowRobotics
+  site: https://rainbow-robotics.com
+sources:
+- url: https://rainbow-robotics.com/en/company/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页，产品线与 HUBO 起源
+- url: https://rainbow-robotics.com/en/products/rb-y1/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网页脚总部地址（韩国世宗市）
+- url: https://en.yna.co.kr/view/AEN20241231001700320
+  tier: media
+  retrieved: '2026-09-22'
+  note: 韩联社，2011 年由 KAIST 研究人员创立；三星电子 35% 持股

@@ -1,0 +1,35 @@
+id: evt-2026-04-07-shouxing-funding-a1
+date: '2026-04-07'
+date_precision: day
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+title:
+  zh: 首形科技完成数亿元 A1 轮融资，华控基金及某互联网大厂联合领投
+summary:
+  zh: 4 月 7 日，首形科技宣布完成数亿元人民币 A1 轮融资，由华控基金及某互联网大厂联合领投，嘉御资本、鹏瑞基金、亦庄国投、上海半导体产投、南山战新投及老股东招商局创投、顺为资本、弘晖基金、厚雪资本、东方富海跟投。资金用于多模态具身交互系统与情绪基座模型迭代、仿生面部部件规模化及全球市场拓展。
+counterparties:
+- 华控基金
+- 嘉御资本
+- 鹏瑞基金
+- 亦庄国投
+- 上海半导体产投
+- 南山战新投
+- 招商局创投
+- 顺为资本
+- 弘晖基金
+- 厚雪资本
+- 东方富海
+evidence:
+- url: https://www.yicai.com/news/103120884.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/yicai-2026-04-07-shouxing-a1-round.html
+- url: https://m.thepaper.cn/newsDetail_forward_32915673
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/m-2026-04-07-shouxing-a1-round-thepap.html
+corroboration: multi

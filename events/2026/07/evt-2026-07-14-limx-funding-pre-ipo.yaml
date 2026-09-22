@@ -1,0 +1,33 @@
+id: evt-2026-07-14-limx-funding-pre-ipo
+date: '2026-07-14'
+date_precision: day
+type: funding
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力完成近 2 亿美元 Pre-IPO 轮融资，半年累计融资 4 亿美元
+summary:
+  zh: 官网 7 月 14 日发文称，逐际动力近日完成 Pre-IPO 轮融资，金额近 2 亿美元，过去半年累计融资 4 亿美元。投资方包括 IDG 资本、蓝思科技、GGG Group、Redstone VC、华山资本、合肥滨湖产发集团；磊石资本（Stone Venture）连续追投，绿洲资本、基石资本、南山战新投、尚颀资本、蔚来资本等老股东加注。资金用于大小脑融合技术产品化、数千台人形机器人规模化部署与全球市场拓展。
+date_basis: derived
+date_as_stated: 官网文章日期 2026/7/14，正文写「近日……宣布完成 Pre-IPO 轮融资」
+counterparties:
+- IDG 资本
+- 蓝思科技
+- GGG Group
+- Redstone VC
+- 华山资本
+- 合肥滨湖产发集团
+- 磊石资本（Stone Venture）
+- 绿洲资本
+- 基石资本
+- 南山战新投
+- 尚颀资本
+- 蔚来资本
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000063
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/limxdynamics-2026-07-14-limx-pre-ipo.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2026-01-07-casbot-partnership-beijing-key-lab
+date: '2026-01-07'
+date_precision: day
+type: partnership
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 灵宝 CASBOT 与中科院自动化所、国网北京电力共建「工业具身智能北京市重点实验室」获批
+summary:
+  zh: 北京市科委 1 月 7 日转载报道，由中国科学院自动化研究所作为依托单位、北京中科慧灵机器人技术有限公司与国网北京市电力公司共同建设的「工业具身智能北京市重点实验室」正式获批。中科慧灵承担具身本体研发、量产制造及行业部署环节；实验室以矿山装药、电力巡检、质检装配为示范任务，科研面积 2809.9 平方米。
+date_basis: derived
+date_as_stated: 报道发布于 2026-01-07，正文写「近日……正式获批」
+counterparties:
+- 中国科学院自动化研究所
+- 国网北京市电力公司
+axes:
+  target_scene:
+  - inspection-hazardous
+  - industrial-manufacturing
+  data_sourcing:
+  - academic-partnership
+evidence:
+- url: https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202601/t20260107_4406763.html
+  publisher: 北京市科委、中关村管委会（转载北京青年网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/kw-2026-01-07-casbot-beijing-key-lab.html
+corroboration: single

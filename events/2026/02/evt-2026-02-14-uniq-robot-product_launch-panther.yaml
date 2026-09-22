@@ -1,0 +1,25 @@
+id: evt-2026-02-14-uniq-robot-product_launch-panther
+date: '2026-02-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇发布全尺寸轮式双臂人形机器人 Panther 黑豹系列
+summary:
+  zh: 2026 年 2 月，优理奇机器人（UniX AI）发布新一代轮式双臂人形机器人 Panther 黑豹系列，搭载量产级 8 自由度仿生机械臂与自适应智能夹爪，采用全向四转四驱底盘。官网产品页写整机 34 个自由度、身高 1600—1750mm、双臂负载 12kg、上半身升降 600—800mm、边缘算力最高 2070 TOPS。
+axes:
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://www.unix-group.ai/article/196/detail/136.html
+  publisher: 优理奇官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/unix-group-2026-02-14-uniq-robot-panther-launc.html
+- url: https://www.nbd.com.cn/articles/2026-02-15/4263636.html
+  publisher: 每经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/nbd-2026-02-15-uniq-robot-panther-nbd.html
+corroboration: multi

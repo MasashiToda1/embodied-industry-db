@@ -1,0 +1,26 @@
+id: evt-2026-04-30-pudu-product_launch-d9
+date: 2026-04-30
+date_precision: day
+type: product_launch
+orgs:
+- id: pudu
+  role: subject
+title:
+  zh: 普渡机器人发布全新一代人形机器人 PUDU D9
+summary:
+  zh: 4 月 30 日，深圳市普渡科技股份有限公司发布全新一代人形机器人 PUDU D9，身高 170cm、体重 58kg，采用轻量化高强度结构与全栈自研架构，在关节模组与运动控制两个维度升级。D9 与四足 PUDU D5、类人形 PUDU D7 构成多形态具身智能产品矩阵。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.pudutech.com/zh-CN/news/pudu-robotics-advances-general-embodied-ai-portfolio-pudu-d9
+  publisher: 普渡机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/pudutech-2026-04-30-pudu-d9.html
+- url: https://www.eepw.com.cn/article/202605/480886.htm
+  publisher: 电子产品世界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/eepw-2026-04-30-pudu-d9-eepw.html
+corroboration: multi

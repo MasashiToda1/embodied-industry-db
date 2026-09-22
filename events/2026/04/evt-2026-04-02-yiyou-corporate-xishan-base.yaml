@@ -1,0 +1,23 @@
+id: evt-2026-04-02-yiyou-corporate-xishan-base
+date: '2026-04-02'
+date_precision: day
+type: corporate
+orgs:
+- id: yiyou
+  role: subject
+title:
+  zh: 意优科技签约无锡锡山机器人关节全自动产业化基地，总投资 10 亿元
+summary:
+  zh: 4 月 2 日，意优科技机器人关节全自动产业化基地项目在无锡市锡山区签约，项目占地 34 亩，总投资 10 亿元，建设超 4 万平方米自动化生产基地，规划 30 条自动化生产线，年产 300 万个一体化关节模组。
+counterparties:
+- 无锡市锡山区
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://eyoubot.com/company-news/eyou-robotics-robot-joint-manufacturing-base-xishan-embodied-intelligence
+  publisher: 意优科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/eyoubot-2026-04-02-yiyou-xishan-base.html
+corroboration: single

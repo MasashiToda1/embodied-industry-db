@@ -1,0 +1,24 @@
+id: evt-2026-07-06-hf-robotics-partnership-nvidia-lerobot-groot-isaac-teleop
+date: 2026-07-06
+date_precision: day
+type: partnership
+orgs:
+- id: hf-robotics
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: 英伟达与 Hugging Face 把 Isaac GR00T 1.7、Isaac Teleop 与 Isaac Lab-Arena 接入 LeRobot，Jetson Thor 集成 Reachy 2，Cosmos 3 世界模型计划接入
+summary:
+  zh: 7 月 6 日，英伟达宣布与 Hugging Face 合作，将开源推理型 VLA 模型 Isaac GR00T 1.7 与遥操作框架 Isaac Teleop 接入 Hugging Face 的开源机器人库 LeRobot，Isaac Lab-Arena 仿真环境可注册进 LeRobot EnvHub 用于训练与评测 GR00T、Pi、SmolVLA 等通用策略；NVIDIA Jetson Thor 与 LeRobot 的 Reachy 2 集成以支持在开源人形上部署 VLA 模型；面向 Physical AI 的世界模型 Cosmos 3 计划随后接入。英伟达称此举把其 300 万机器人开发者与 Hugging Face 的 1600 万 AI 开发者连接起来。
+axes:
+  model_form: [end2end-vla, world-model]
+  sim_stack: [isaac-lab]
+  data_acquisition: [teleop]
+evidence:
+- url: https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/
+  publisher: NVIDIA Blog
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/blogs-2026-07-06-hf-robotics-nvidia-lerob.html
+corroboration: single

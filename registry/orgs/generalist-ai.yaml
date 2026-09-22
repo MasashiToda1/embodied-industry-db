@@ -5,7 +5,22 @@ names:
 status: active
 layers:
 - foundation
+founded: 2024
+hq:
+  country: US
+  city: San Mateo
+description: 做具身基础模型的公司，不绑定本体形态，模型有 GEN-0、GEN-1、GEN-1.5，自建真机操作数据采集体系。
 upstream:
   robotics_notebooks_institution: generalist-ai
 accounts:
   github: generalistai
+  site: https://generalistai.com
+sources:
+- url: https://generalistai.com/blog/gen-0
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官方博客，公司自述与数据体系
+- url: https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「founded in 2024 by former Google DeepMind researchers Pete Florence and Andy Zeng, along with former Boston Dynamics engineer Andrew Barry」；总部 San Mateo 见 The Robot Report 2026-04-03 报道

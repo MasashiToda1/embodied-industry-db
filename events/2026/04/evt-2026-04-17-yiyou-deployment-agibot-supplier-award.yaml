@@ -1,0 +1,22 @@
+id: evt-2026-04-17-yiyou-deployment-agibot-supplier-award
+date: '2026-04-17'
+date_precision: day
+type: deployment
+orgs:
+- id: yiyou
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 意优科技再获智元机器人「优秀供应商伙伴奖」，为其一体化关节定点供应商
+summary:
+  zh: 4 月 17 日，智元机器人第二届供应商大会在上海举行，意优科技作为智元机器人一体化关节定点供应商再获「优秀供应商伙伴奖」。意优科技称自 2024 年 6 月成为智元量产定点供应商以来，其一体化关节参与了智元 A 系列、精灵系列、次晨系列的研发、验证与量产；2025 年意优科技共交付关节模组约 9.5 万套。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://eyoubot.com/company-news/eyou-wins-agibot-outstanding-supplier-partner-award-again
+  publisher: 意优科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/eyoubot-2026-04-17-yiyou-agibot-supplier-aw.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2025-11-19-sunday-robotics-product_launch-memo
+date: 2025-11-19
+date_precision: day
+type: product_launch
+orgs:
+- id: sunday-robotics
+  role: subject
+title:
+  zh: Sunday 出 stealth 发布家用机器人 Memo，已获 Benchmark 与 Conviction 3500 万美元投资
+summary:
+  zh: 11 月 19 日，由斯坦福博士 Tony Zhao（CEO）与 Cheng Chi（CTO）创立的 Sunday 通过 GlobeNewswire 宣布出 stealth，发布家用机器人 Memo，面向洗碗、洗衣、收拾等家务。新闻稿称公司已获 Benchmark 与 Conviction 3500 万美元投资；Memo 的训练数据来自用公司专利 Skill Capture Glove 在 500 多个真实家庭采集的日常家务动作。当天起接受 Founding Family Beta 申请，计划 2026 年底启动，50 个家庭将收到带编号的机器人。
+counterparties:
+- Benchmark
+- Conviction
+axes:
+  target_scene: [home]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.globenewswire.com/news-release/2025/11/19/3191274/0/en/Sunday-Launches-Memo-the-Robot-That-Actually-Learns-Your-Home.html
+  publisher: GlobeNewswire · Sunday 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/globenewswir-2025-11-19-sunday-robotics-memo-lau.html
+corroboration: single

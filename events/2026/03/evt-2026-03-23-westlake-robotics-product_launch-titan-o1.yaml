@@ -1,0 +1,25 @@
+id: evt-2026-03-23-westlake-robotics-product_launch-titan-o1
+date: '2026-03-23'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「日前」「近日」发布，两篇报道均发布于 2026-03-23
+type: product_launch
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人发布搭载 GAE 身外化身系统的人形机器人「泰坦 o1」
+summary:
+  zh: 西湖大学孵化的西湖机器人发布人形机器人「泰坦 o1」（Titan o1），搭载自研通用动作预训练大模型 GAE（General Action Expert）身外化身系统。报道称该系统可实时模仿人类动作、跨本体适配，一人可操控多台不同地点的机器人同步作业。
+evidence:
+- url: https://finance.sina.com.cn/tjhz/2026-03-23/doc-inhrxmcx5524505.shtml
+  publisher: 新浪财经（转载上观新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/finance-2026-03-23-westlake-robotics-titan-.html
+- url: http://www.xinhuanet.com/20260323/c58804e25b4a43d5940a02270b51bee0/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/xinhuanet-2026-03-23-westlake-robotics-titan-.html
+corroboration: multi

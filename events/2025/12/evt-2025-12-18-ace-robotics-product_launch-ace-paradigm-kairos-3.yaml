@@ -1,0 +1,39 @@
+id: evt-2025-12-18-ace-robotics-product_launch-ace-paradigm-kairos-3
+date: '2025-12-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: ace-robotics
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 大晓机器人正式亮相，发布 ACE 具身研发范式、开悟世界模型 3.0（Kairos 3.0）与具身超级大脑模组 A1
+summary:
+  zh: 12 月 18 日，上海大晓无限机器人有限公司召开发布会，正式发布以环境式数据采集为引擎的 ACE 具身研发范式、开源且商业应用的开悟世界模型 3.0（Kairos 3.0，覆盖 115 个垂类具身场景，当日面向全行业开源）以及具身超级大脑模组 A1，并上线开悟具身智能世界模型产品平台。发布会上宣布与智元机器人达成战略合作，展示了面向即时零售场景的机器人和搭载 A1 模组的巡检机器狗；开悟世界模型 3.0 已与沐曦、壁仞、中科曙光等国产芯片产品完成适配。
+counterparties:
+- 沐曦股份
+- 壁仞科技
+- 中科曙光
+- 钛虎机器人
+- 国地中心
+axes:
+  model_form:
+  - world-model
+  data_acquisition:
+  - human-video
+  target_scene:
+  - commercial-service
+  - inspection-hazardous
+evidence:
+- url: https://www.sh.chinanews.com.cn/kjjy/2025-12-19/143451.shtml
+  publisher: 中新网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/sh-2025-12-18-ace-robotics-kairos-3-la.html
+- url: http://www.zqrb.cn/finance/hangyedongtai/2025-12-19/A1766148040897.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/zqrb-2025-12-18-ace-robotics-kairos-3-la.html
+corroboration: multi

@@ -1,0 +1,22 @@
+id: evt-2025-12-11-1x-technologies-partnership-eqt-10000-neo
+date: 2025-12-11
+date_precision: day
+type: partnership
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X 与 EQT 达成战略合作，2026 至 2030 年向 EQT 投资组合公司提供最多 1 万台人形机器人
+summary:
+  zh: 12 月 11 日，1X 宣布与瑞典多资产投资机构 EQT 达成战略合作，EQT 旗下 EQT Ventures 是 1X 的投资方。据 TechCrunch 报道，协议内容为 2026 至 2030 年间向 EQT 300 余家投资组合公司交付最多 1 万台 NEO 人形机器人，侧重制造、仓储、物流等工业用例；1X 向 TechCrunch 确认将与每家有意向的投资组合公司单独签约。
+counterparties:
+- EQT
+axes:
+  target_scene: [logistics-warehouse, industrial-manufacturing]
+evidence:
+- url: https://techcrunch.com/2025/12/11/1x-struck-a-deal-to-send-its-home-humanoids-to-factories-and-warehouses/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/techcrunch-2025-12-11-1x-technologies-eqt-tech.html
+corroboration: single

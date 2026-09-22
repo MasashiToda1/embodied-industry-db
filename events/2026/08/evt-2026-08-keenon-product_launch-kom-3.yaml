@@ -1,0 +1,23 @@
+id: evt-2026-08-keenon-product_launch-kom-3
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 报道（2026-08-23）原文「8月19日至23日，2026世界机器人大会……KOM 3.0的发布」
+type: product_launch
+orgs:
+- id: keenon
+  role: subject
+title:
+  zh: 擎朗智能在 2026 世界机器人大会发布大模型 KOM 3.0
+summary:
+  zh: 8 月 19 日至 23 日 2026 世界机器人大会期间，擎朗智能发布大模型 KOM 3.0，官方称其为融合潜空间世界模型的服务行业 VLA 架构。现场搭建咖啡亭、甜品屋、零售店、洗衣房四个场景，XMAN-R1 等人形机器人自主运行完成取杯、咖啡萃取、洗衣、叠衣等任务。
+axes:
+  model_form: [end2end-vla, world-model]
+  target_scene: [commercial-service]
+evidence:
+- url: http://www.investorscn.com/2026/08/23/135847/
+  publisher: 投资家网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/investorscn-2026-08-keenon-kom3.html
+corroboration: single

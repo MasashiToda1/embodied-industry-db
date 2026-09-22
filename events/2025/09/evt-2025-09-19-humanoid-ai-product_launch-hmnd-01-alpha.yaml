@@ -1,0 +1,22 @@
+id: evt-2025-09-19-humanoid-ai-product_launch-hmnd-01-alpha
+date: 2025-09-19
+date_precision: day
+type: product_launch
+orgs:
+- id: humanoid-ai
+  role: subject
+title:
+  zh: 英国 Humanoid 发布工业用轮式人形 HMND 01 Alpha：高 220 cm、29 个主动自由度、双臂负载 15 kg，采用 RaaS 模式
+summary:
+  zh: 9 月 19 日，英国 AI 与机器人公司 Humanoid 宣布推出工业用人形机器人 HMND 01 Alpha，称其在七个月内完成开发，成立首年已完成两个商业 PoC。Alpha 为轮式人形，身高 220 cm，速度最高 7.2 km/h，双臂负载 15 kg，作业范围从地面到 2 m，29 个主动自由度（不含末端），末端可换装 12 自由度五指手或 1 自由度平行夹爪，头部配 360 度 RGB 相机与两个深度传感器。公司称 Alpha 主要用于工业现场测试，Beta 轮式机型计划 2026 年三季度发布；公司由 5000 万美元创始人资本支持、团队 175 人，将采用机器人即服务（RaaS）模式。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  delivery_model: [service-delivery]
+evidence:
+- url: https://thehumanoid.ai/humanoid-unveils-the-uks-first-humanoid-robot-for-industrial-use/
+  publisher: Humanoid 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/thehumanoid-2025-09-19-humanoid-ai-hmnd-01-alph.html
+corroboration: single

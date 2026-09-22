@@ -1,0 +1,18 @@
+id: evt-2026-08-20-ohand-deployment-hand-orders-6000
+date: 2026-08-20
+date_precision: day
+type: deployment
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技称正推进三笔接近 6000 台的灵巧手大订单，合作伙伴近 300 家
+summary:
+  zh: 8 月 20 日，傲意科技 CEO 在 2026 世界机器人大会期间接受上海证券报采访时称，公司灵巧手、外骨骼机器人订单大幅放量，目前正在推进三笔大订单，接近 6000 台；截至上半年合作伙伴增长至近 300 家。展会期间 ROHand 全系列灵巧手 AP001、AP002、AP003 及 Lite 系列展出，公司同时首发工业三爪执行器。
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-08-20/doc-ininysmm8641873.shtml
+  publisher: 新浪财经 · 来源上海证券报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-20-ohand-orders-wrc.html
+corroboration: single

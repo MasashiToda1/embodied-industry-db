@@ -1,0 +1,32 @@
+id: evt-2025-12-09-deeprobotics-funding-c-round
+date: '2025-12-09'
+date_precision: day
+type: funding
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技完成超 5 亿元 C 轮融资
+summary:
+  zh: 12 月 9 日，杭州云深处科技股份有限公司宣布完成超 5 亿元人民币 C 轮融资，由招银国际和华夏基金联合领投，中国电信、中国联通旗下基金参与战略投资，云晖资本、中芯聚源、浙大基金会、首程控股等跟投，达晨财智、前海方舟、央视融媒体基金、北京机器人产业发展投资基金和华映资本等老股东继续加持。
+counterparties:
+- 招银国际
+- 华夏基金
+- 中国电信旗下基金
+- 中国联通旗下基金
+- 云晖资本
+- 中芯聚源
+- 浙大基金会
+- 首程控股
+- 达晨财智
+- 前海方舟
+- 央视融媒体基金
+- 北京机器人产业发展投资基金
+- 华映资本
+evidence:
+- url: https://www.deeprobotics.cn/robot/index/article/id/282.html
+  publisher: 云深处科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/deeprobotics-2025-12-09-deeprobotics-c-round.html
+corroboration: single

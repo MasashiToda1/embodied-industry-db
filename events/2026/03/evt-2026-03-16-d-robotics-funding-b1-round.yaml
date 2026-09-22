@@ -1,0 +1,34 @@
+id: evt-2026-03-16-d-robotics-funding-b1-round
+date: '2026-03-16'
+date_precision: day
+type: funding
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人宣布完成 1.2 亿美元 B1 轮融资
+summary:
+  zh: 2026 年 3 月 16 日，地瓜机器人宣布近期完成 1.2 亿美元 B1 轮融资，Synstellation Capital、滴滴、美团龙珠等产业资本联合入局，柏睿资本、九阳家办、甬宁高芯、北汽产投、九坤创投、芯联资本、雅瑞资本等战略投资机构加持，锦秋基金、星睿资本、初心资本、庚辛资本、沄柏资本等财务投资机构共投，高瓴创投、Vertex Growth、线性资本、和暄资本、黄浦江资本、五源资本、梅花创投等老股东跟投。A 轮、B1 轮两轮融资总额 2.2 亿美元。
+counterparties:
+- Synstellation Capital
+- 滴滴
+- 美团龙珠
+- 柏睿资本
+- 北汽产投
+- 九坤创投
+- 锦秋基金
+- 高瓴创投
+- Vertex Growth
+- 线性资本
+- 和暄资本
+- 五源资本
+amount:
+  value: 120000000
+  currency: USD
+evidence:
+- url: https://tech.caijing.com.cn/20260316/5147174.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/tech-2026-03-16-d-robotics-b1-round.html
+corroboration: single

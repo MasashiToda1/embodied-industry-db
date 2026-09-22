@@ -1,0 +1,20 @@
+id: evt-2026-01-21-yiyou-corporate-auto-joint-line
+date: '2026-01-21'
+date_precision: day
+type: corporate
+orgs:
+- id: yiyou
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 意优科技机器人关节自动化产线在上海张江投产
+summary:
+  zh: 1 月 21 日，意优科技机器人关节自动化产线在上海张江机器人谷投产，覆盖装配、测试、标定与质量检测环节。报道称该产线年产能 12 万套，加上无锡锡山工厂 6 万套，总产能 18 万套；意优科技 2025 年交付关节模组 9.5 万套，自 2024 年 10 月起为智元机器人一体化关节定点供应商，参与 A2 系列、X1/X2 系列量产交付。
+evidence:
+- url: https://www.ne-time.cn/web/article/37717
+  publisher: NE 时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/ne-time-2026-01-21-yiyou-auto-joint-line.html
+corroboration: single

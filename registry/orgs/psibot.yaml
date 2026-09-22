@@ -12,6 +12,21 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: psibot
+founded: 2024-09
+hq:
+  country: CN
+  city: 上海
+description: 研发灵巧操作具身模型（Psi 系列）与数采引擎的公司，2024 年 9 月成立于北京，现主体为上海灵初智能科技有限公司，办公地在上海徐汇。
 accounts:
   huggingface: PsiBotAI
   github: Psi-Robot
+  site: https://www.psibot.ai
+sources:
+- url: https://www.psibot.ai/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，发展历程写「2024 年 9 月灵初智能成立于北京」
+- url: https://www.psibot.ai/%E7%81%B5%E5%88%9D%E6%99%BA%E8%83%BD%E5%B7%B2%E5%AE%8C%E6%88%9020%E4%BA%BF%E8%9E%8D%E8%B5%84%EF%BC%8C%E8%8E%B7%E5%9B%BD%E5%AE%B6%E9%98%9F%E8%B5%84%E6%9C%AC%E9%87%8D%E7%A3%85%E6%8A%95/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网页脚：上海市徐汇区北杨人工智能小镇华发路 899 弄，版权方为上海灵初智能科技有限公司

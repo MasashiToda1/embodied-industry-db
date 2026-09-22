@@ -1,0 +1,18 @@
+id: evt-2025-09-17-cie-statement-embodied-talent-standard-kickoff
+date: '2025-09-17'
+date_precision: day
+type: statement
+orgs:
+- id: cie
+  role: subject
+title:
+  zh: 中国电子学会立项《具身智能从业人员能力要求》标准并征集参编单位
+summary:
+  zh: 9 月 17 日，中国电子学会发布通知，《具身智能从业人员能力要求》标准制定项目（立项号 JH/CIE 649-2025）正式立项，公开征集参编单位，申报截止 2025 年 9 月 30 日。通知称该标准界定具身智能产业的人才分类、能力要求、等级划分与评价方法。
+evidence:
+- url: https://www.cie.org.cn/list_43/15410.html
+  publisher: 中国电子学会官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/cie-2025-09-17-cie-embodied-talent-stan.html
+corroboration: single

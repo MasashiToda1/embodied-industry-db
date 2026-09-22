@@ -1,0 +1,20 @@
+id: evt-2026-05-01-meta-fair-robotics-funding-acquisition-assured-robot-intelligence
+date: 2026-05-01
+date_precision: day
+type: funding
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: Meta 收购人形机器人 AI 初创公司 Assured Robot Intelligence，团队并入 Superintelligence Labs
+summary:
+  zh: 5 月 1 日，Meta 向 TechCrunch 确认已收购人形机器人初创公司 Assured Robot Intelligence（ARI），金额未披露。Meta 发言人称该公司「处于机器人智能前沿，让机器人在复杂动态环境中理解、预测并适应人类行为」，由 Lerrel Pinto 与 Xiaolong Wang 领导的团队将加入 Meta 的 Superintelligence Labs，负责把机器人控制与自学习能力扩展到人形全身控制。ARI 此前从 AIX Ventures 获得一轮金额未披露的种子融资。
+counterparties:
+- Assured Robot Intelligence
+evidence:
+- url: https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/techcrunch-2026-05-01-meta-fair-robotics-ari-a.html
+corroboration: single

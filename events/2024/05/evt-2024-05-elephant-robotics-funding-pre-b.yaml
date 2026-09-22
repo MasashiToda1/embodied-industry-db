@@ -1,0 +1,23 @@
+id: evt-2024-05-elephant-robotics-funding-pre-b
+date: 2024-05
+date_precision: month
+date_basis: derived
+date_as_stated: 报道（2024-05-20）原文「近日，深圳市大象机器人科技有限公司……完成Pre-B轮融资」
+type: funding
+orgs:
+- id: elephant-robotics
+  role: subject
+title:
+  zh: 大象机器人完成 Pre-B 轮融资
+summary:
+  zh: 2024 年 5 月，深圳市大象机器人科技有限公司完成 Pre-B 轮融资，由清辉投资领投、云卓资本跟投，资金用于人形机器人产线升级及持续研发迭代。公司当时已发布水星 Mercury A1 七轴机械臂、B1 半人形双臂机器人与 X1 轮式人形机器人。
+counterparties:
+- 清辉投资
+- 云卓资本
+evidence:
+- url: https://news.qq.com/rain/a/20240520A028EY00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/05/news-2024-05-elephant-robotics-pre-b.html
+corroboration: single

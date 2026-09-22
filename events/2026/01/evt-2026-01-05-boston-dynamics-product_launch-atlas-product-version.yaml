@@ -1,0 +1,24 @@
+id: evt-2026-01-05-boston-dynamics-product_launch-atlas-product-version
+date: 2026-01-05
+date_precision: day
+type: product_launch
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: Boston Dynamics 发布 Atlas 产品版本，Hyundai 为首个客户，机队 2026 年发往 RMAC
+summary:
+  zh: 1 月 5 日，Boston Dynamics 发布 Atlas 的产品版本：面向工厂与仓库的全电动人形机器人，身高 1.9 米、臂展 2.3 米，可重复搬举 30 公斤，续航 4 小时并可在 3 分钟内自主更换电池，工作温度 -20 至 40 摄氏度，IP67 防护，四肢可在 5 分钟内现场更换，通过 Orbit 平台做机队管理。公司称 Hyundai Motor Group 为首个客户，去年已完成一次部署，一批机队将于 2026 年发往 Robotics Metaplant Application Center（RMAC）；Hyundai 计划建设年产数千台的机器人工厂。公司称已开始与部分客户合作评估自主物料搬运方案。
+counterparties:
+- Hyundai Motor Group
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://bostondynamics.com/blog/enterprise-robotics-redefined/
+  publisher: Boston Dynamics 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/bostondynami-2026-01-05-boston-dynamics-atlas-pr.html
+corroboration: single

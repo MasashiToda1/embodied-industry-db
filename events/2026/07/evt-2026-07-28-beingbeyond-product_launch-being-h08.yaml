@@ -1,0 +1,25 @@
+id: evt-2026-07-28-beingbeyond-product_launch-being-h08
+date: '2026-07-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 智在无界发布 Being-H0.8 隐式触觉世界动作模型，预训练人类视频超 50 万小时
+summary:
+  zh: 7 月 28 日，智在无界发布 Being-H0.8，官方称其为隐式触觉世界动作模型，首次将触觉模态引入大规模预训练，并将视觉、触觉、动作与未来状态变化统一到同一隐空间，预训练使用超 50 万小时人类视频。
+axes:
+  model_form:
+  - world-model
+  data_acquisition:
+  - human-video
+  data_modality:
+  - tactile
+evidence:
+- url: https://beingbeyond.com/newsInfo/1218.html
+  publisher: 智在无界官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/beingbeyond-2026-07-28-beingbeyond-being-h08.html
+corroboration: single

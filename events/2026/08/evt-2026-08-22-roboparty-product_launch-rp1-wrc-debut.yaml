@@ -1,0 +1,29 @@
+id: evt-2026-08-22-roboparty-product_launch-rp1-wrc-debut
+date: '2026-08-22'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2026 世界机器人大会期间」，报道发布于 2026 年 8 月 22 日
+type: product_launch
+orgs:
+- id: roboparty
+  role: subject
+- id: alibaba-robotics
+  role: counterparty
+title:
+  zh: RoboParty 在 2026 世界机器人大会首次完整公开下一代通用人形机器人 RP1 外观
+summary:
+  zh: 2026 世界机器人大会期间，RoboParty 萝博派对围绕「全栈开源」集中展示 RPO 机器人、前沿技术与开发者生态，并首次完整公开下一代通用人形机器人 RP1 的产品外观，暂不公布关键参数；RP1 定位更高性能的通用人形机器人本体，面向科研开发者和前沿具身智能研究，包括自研核心关节模组、灵巧手适配与拓展接口。RoboParty 还联合阿里巴巴达摩院于 8 月 21 日举办「开源具身智能与通用人形机器人的未来」技术论坛。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  hardware_strategy:
+  - in-house
+evidence:
+- url: http://www.investorscn.com/2026/08/22/135964/
+  publisher: 投资家网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/investorscn-2026-08-22-roboparty-rp1-wrc.html
+corroboration: single

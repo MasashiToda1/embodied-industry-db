@@ -1,0 +1,28 @@
+id: evt-2026-09-08-noetix-product-launch-scalabot-heron
+date: '2026-09-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力发布具身智能技术品牌 Scalabot 与首个世界模型 HERON-World Model
+summary:
+  zh: 9 月 8 日，松延动力发布通用具身智能技术品牌 Scalabot，并推出其技术架构 HERON 下的首个世界模型 HERON-World Model。公司称模型支持不同构型、不同自由度的机器人，将率先应用于家庭服务场景，并计划先以几百台机器人进入家庭采集数据。
+axes:
+  model_form:
+  - world-model
+  target_scene:
+  - home
+evidence:
+- url: https://www.d1ev.com/news/shichang/312299
+  publisher: 第一电动网（转载盖世汽车）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/d1ev-2026-09-08-noetix-scalabot.html
+- url: https://www.stcn.com/article/detail/4190007.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/stcn-2026-09-08-noetix-scalabot-stcn.html
+corroboration: multi

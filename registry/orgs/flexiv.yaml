@@ -4,6 +4,11 @@ names:
   en: Flexiv
   aliases:
   - 非夕
+founded: 2016
+hq:
+  country: CN
+  city: 上海
+description: 做自适应机器人的公司，产品有 Enlight 初昕全感知自适应机器人、Orion 天枢控制器与 MICO 双臂平台。
 status: active
 layers:
 - embodiment
@@ -12,3 +17,13 @@ upstream:
 accounts:
   huggingface: flexivrobotics
   github: flexivrobotics
+  site: https://www.flexiv.cn
+sources:
+- url: https://www.flexiv.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，「2016 年非夕团队正式成立」；硅谷、上海、北京等 7 个办公室，上海办公室位于闵行区紫星路
+- url: https://www.flexiv.cn/news/Flexiv_new_enlight
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻，2026 年 3 月发布 Enlight / Orion / MICO 产品

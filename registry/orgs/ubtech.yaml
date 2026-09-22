@@ -6,6 +6,11 @@ names:
   - UBTECH
   - 优必选科技
   - 优必选
+founded: 2012-03
+hq:
+  country: CN
+  city: 深圳
+description: 做人形机器人及智能服务机器人的公司，工业人形 Walker S 系列、商用 Walker C1，2023 年 12 月港交所上市（9880.HK）。
 status: active
 layers:
 - embodiment
@@ -15,3 +20,9 @@ upstream:
 accounts:
   huggingface: UBTECH-Robotics
   github: UBTECH-Robot
+  site: https://www.ubtrobot.com
+sources:
+- url: https://www.ubtrobot.com/cn/about/companyProfile
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介：成立于 2012 年 3 月，总部深圳市南山区，2023-12-29 港交所上市

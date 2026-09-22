@@ -1,0 +1,27 @@
+id: evt-2026-01-29-westwood-robotics-product_launch-themis-gen2-5-aos
+date: 2026-01-29
+date_precision: day
+type: product_launch
+orgs:
+- id: westwood-robotics
+  role: subject
+title:
+  zh: Westwood Robotics 发布全尺寸人形 THEMIS Gen2.5 与 AOS 系统：边走边操作，7 自由度手臂、单臂峰值负载超 5 kg，髋部换新款 Mountain BEAR 执行器
+summary:
+  zh: 1 月 29 日，Westwood Robotics 宣布 THEMIS Gen2.5 更新，称其为可在移动中进行操作的商用全尺寸人形机器人，并随之正式推出 AOS（AI-Augmented Humanoid OS），含三个模块：基于传感器融合状态估计的全身移动操作控制器、多层建图与语义理解的导航模块、由 OC-VAM（Object-Centric Vision-Action Model）驱动的交互模块。硬件方面：结构重新设计使抗冲击能力提升 40%，手臂升级为 7 自由度、单臂峰值负载超 5 kg，髋关节换用新款 Mountain BEAR 执行器（扭矩容量提升超 120%，发热减少约 80%）。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  control_route: [wbc]
+evidence:
+- url: https://www.linkedin.com/posts/westwoodrobotics_westwood-robotics-is-proud-to-announce-a-activity-7422644812530700288-P3-B
+  publisher: Westwood Robotics 官方 LinkedIn
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/linkedin-2026-01-29-westwood-robotics-themis.html
+- url: https://robohorizon.com/en-us/news/2026/01/westwood-robotics-themis-can-now-walk-and-work-simultaneously/
+  publisher: RoboHorizon
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/robohorizon-2026-01-29-westwood-robotics-themis.html
+corroboration: multi

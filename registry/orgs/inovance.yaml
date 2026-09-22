@@ -2,6 +2,26 @@ id: inovance
 names:
   zh: 汇川技术
   en: Inovance
+  aliases:
+  - 深圳市汇川技术股份有限公司
+  - Shenzhen Inovance Technology Co., Ltd.
+  - 300124.SZ
 status: active
 layers:
 - components
+founded: 2003-04
+hq:
+  country: CN
+  city: 深圳
+description: 做工业自动化、新能源汽车动力系统、智能机器人与数字能源的上市公司（创业板 300124），人形机器人方向提供无框力矩电机、执行器、行星滚柱丝杠、编码器与七自由度仿生臂解决方案。
+accounts:
+  site: https://www.inovance.com
+sources:
+- url: https://www.inovance.com/portal/aboutus
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页：成立于 2003 年，总部深圳，四大业务生态
+- url: https://static.cninfo.com.cn/finalpage/2026-07-27/1225443567.PDF
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 投资者关系活动记录表，人形机器人零部件与仿生臂产品线

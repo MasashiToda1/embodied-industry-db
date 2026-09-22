@@ -1,0 +1,27 @@
+id: evt-2026-04-30-hightorque-product-launch-panthera-ht
+date: 2026-04-30
+date_precision: day
+type: product_launch
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎动力发布开源六轴机械臂 Panthera-HT，官网称售价万元内，海外商店标价 1,799 美元
+summary:
+  zh: 4 月 30 日，高擎动力官网发文《黑客松严选：万元内性能极限六轴臂 Panthera-HT 正式开源发布！》（正文为图片）。高擎海外官方商店页面显示 Panthera-HT 6-DoF robotic arm 标价 1,799.00 美元，铝合金机身净重 4.35kg，负载 3.5kg，臂展 860mm。
+axes:
+  embodiment_form: [arm]
+  target_scene: [education-research]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.hightorque.cn/3055-2
+  publisher: 高擎动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/hightorque-2026-04-30-hightorque-panthera-ht-l.html
+- url: https://store.hightorque.cn/products/panthera-ht-6-dof-robotic-arm
+  publisher: 高擎动力海外官方商店
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/store-2026-04-30-hightorque-panthera-ht-s.html
+corroboration: single

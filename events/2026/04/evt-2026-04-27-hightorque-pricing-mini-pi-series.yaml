@@ -1,0 +1,23 @@
+id: evt-2026-04-27-hightorque-pricing-mini-pi-series
+date: 2026-04-27
+date_precision: day
+type: pricing
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎动力创始人受访称小型人形机器人整机定价 5 万元上下，最低配小派 3 万元以内，最高配 5 万多
+summary:
+  zh: 4 月 27 日，财经网科技刊发对高擎动力创始人的访谈（新浪财经转载）。受访者称产品「现在定价在 5 万上下，最便宜的小派在 3 万以内，最高配的派家大概在 5 万多，整体在 5 万到 6 万之间」；小派已量产，当前定位为开发平台，主要推向科研教育市场与商业表演公司；硬件除芯片外全部自研。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research, tourism-performance]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-04-27/doc-inhvxhzi2457005.shtml
+  publisher: 财经网科技（新浪财经转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-27-hightorque-pricing-inter.html
+corroboration: single

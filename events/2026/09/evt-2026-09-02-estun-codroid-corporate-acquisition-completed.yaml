@@ -1,0 +1,20 @@
+id: evt-2026-09-02-estun-codroid-corporate-acquisition-completed
+date: 2026-09-02
+date_precision: day
+type: corporate
+orgs:
+- id: estun-codroid
+  role: subject
+title:
+  zh: 埃斯顿完成收购埃斯顿酷卓，酷卓成为全资子公司
+summary:
+  zh: 9 月 7 日，埃斯顿（02715.HK）公告，收购南京埃斯顿酷卓科技有限公司 100% 股权事项已于 2026 年 9 月 2 日按股权收购协议完成；埃斯顿酷卓成为其间接全资子公司，财务业绩并入集团财务报表。
+counterparties:
+- 南京埃斯顿自动化股份有限公司
+evidence:
+- url: https://gmg.9fzt.com/dynamic/HKSE/02715/ed3dceda353ac2d290aaeb145d1e6afe.html
+  publisher: 格隆汇（九方智投转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/gmg-2026-09-02-estun-codroid-deal-close.html
+corroboration: single

@@ -1,0 +1,26 @@
+id: evt-2026-07-15-d-robotics-deployment-s600-customers
+date: '2026-07-15'
+date_precision: day
+type: deployment
+orgs:
+- id: d-robotics
+  role: subject
+- id: tars-robotics
+  role: customer
+- id: paxini
+  role: customer
+- id: x-humanoid
+  role: customer
+- id: sh-humanoid
+  role: customer
+title:
+  zh: 地瓜机器人公布旭日 S600 落地进展：与 20 余家头部客户达成合作，进入量产验证
+summary:
+  zh: 7 月 15 日，WAIC 2026 前期，地瓜机器人在上海举办媒体沟通会，公布旭日 S600 自 2025 年 11 月发布以来已与它石智航、帕西尼、北京人形机器人创新中心等 20 余家头部客户达成合作，联动超 100 家产业链伙伴完成协同适配。文中列出的进展：它石智航 A3 将搭载旭日 S600 实现规模化部署；北京人形机器人创新中心天工 3.0 基于旭日 S600 完成算力适配，计划 2026 年下半年开启量产交付；人形机器人（上海）有限公司灵龙 2.0 将于 2026 年 Q3 完成多场景应用验证。
+evidence:
+- url: http://finance.people.com.cn/n1/2026/0720/c1004-40764182.html
+  publisher: 人民网（转载证券日报网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-15-d-robotics-s600-waic-cus.html
+corroboration: single

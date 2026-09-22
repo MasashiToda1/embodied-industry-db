@@ -1,0 +1,27 @@
+id: evt-2025-09-11-robbyant-product_launch-r1
+date: '2025-09-11'
+date_precision: day
+type: product_launch
+orgs:
+- id: robbyant
+  role: subject
+title:
+  zh: 蚂蚁灵波在 2025 外滩大会首次展示轮式人形机器人 Robbyant R1
+  en: Robbyant unveils wheeled humanoid R1 at the 2025 Inclusion Conference on the Bund
+summary:
+  zh: 2025 年 9 月 11 日，蚂蚁集团旗下上海蚂蚁灵波科技在上海外滩大会首次展示人形机器人 R1。据南华早报报道，第一代 R1 为轮式双臂人形机器人，重 110 公斤，身高 1.6 至 1.75 米，34 个自由度，可担任厨师或导览员；现场人员称产品已量产并交付上海市历史博物馆等客户。
+  en: On 11 Sep 2025 Ant Group's robotics unit Robbyant showed its first humanoid R1 at the Inclusion Conference on the Bund in Shanghai. SCMP reported the wheeled, two-armed R1 weighs 110 kg, stands 1.6–1.75 m, has 34 degrees of freedom, and had shipped to clients including the Shanghai History Museum.
+counterparties:
+- 上海市历史博物馆
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  target_scene:
+  - commercial-service
+evidence:
+- url: https://www.scmp.com/tech/big-tech/article/3325222/unit-chinas-ant-group-unveils-first-humanoid-robot-entering-segment-led-unitree
+  publisher: South China Morning Post
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/scmp-2025-09-11-robbyant-r1-launch-scmp.html
+corroboration: single

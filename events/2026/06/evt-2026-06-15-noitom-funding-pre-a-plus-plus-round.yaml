@@ -1,0 +1,37 @@
+id: evt-2026-06-15-noitom-funding-pre-a-plus-plus-round
+date: '2026-06-15'
+date_precision: day
+type: funding
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾机器人完成数亿元人民币 Pre-A++ 轮融资
+summary:
+  zh: 6 月 15 日，诺亦腾机器人（Noitom Robotics）宣布完成数亿元人民币 Pre-A++ 轮融资，投资方包括北京市人工智能产业投资基金、上海人工智能产业系列基金、深创投、建发新兴投资、润璋创投、广发信德、中金资本、昆仑资本、元禾璞华等，老股东阿尔法公社、君联资本、五源资本、经纬创投等追加超额认购。资金用于具身智能多模态训练数据的采集、治理与交付能力建设，加速数据工厂、工程化平台和全球化服务体系落地。
+counterparties:
+- 北京市人工智能产业投资基金
+- 上海人工智能产业系列基金
+- 深创投
+- 建发新兴投资
+- 润璋创投
+- 广发信德
+- 中金资本
+- 昆仑资本
+- 元禾璞华
+- 阿尔法公社
+- 君联资本
+- 五源资本
+- 经纬创投
+evidence:
+- url: https://www.geekpark.net/news/366000
+  publisher: 极客公园
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/geekpark-2026-06-15-noitom-pre-a-plus-plus-r.html
+- url: https://news.pedaily.cn/202606/565258.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-15-noitom-pre-a-plus-plus-p.html
+corroboration: multi

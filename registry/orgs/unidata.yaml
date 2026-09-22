@@ -2,8 +2,27 @@ id: unidata
 names:
   zh: 优数数据
   en: Unidata
+  aliases:
+  - Unidata L.L.C-FZ
+  - unidata.pro
 status: active
 layers:
 - data
 upstream:
   robotics_notebooks_institution: unidata
+accounts:
+  site: https://unidata.pro
+founded: 2016
+hq:
+  country: AE
+  city: Dubai
+description: 迪拜的 AI 训练数据服务商，为机器人与具身智能团队做第一人称视角数据采集、标注与数据集授权。
+sources:
+- url: https://unidata.pro/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页，2016 年成立；页脚运营主体 Unidata L.L.C-FZ，地址 Meydan Grandstand, Dubai, United Arab Emirates
+- url: https://unidata.pro/blog/best-egocentric-data-providers-for-robotics/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网博客，机器人第一人称数据采集设备与数据集规模

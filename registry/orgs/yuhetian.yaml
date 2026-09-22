@@ -2,6 +2,25 @@ id: yuhetian
 names:
   zh: 玉禾田
   en: Yuhetian
+  aliases:
+  - 玉禾田环境发展集团股份有限公司
+  - 玉树智能
 status: active
 layers:
 - integration
+founded: 1997
+hq:
+  country: CN
+  city: 深圳
+description: 1997 年成立的 A 股城市环卫与综合运营服务商（300815），旗下玉树智能研发环卫清扫机器人与具身机器人。
+accounts:
+  site: https://www.eit-sz.com
+sources:
+- url: https://www.eit-sz.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 玉禾田官网，1997 年成立、深圳、股票代码 300815
+- url: https://www.stcn.com/article/detail/3610400.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 2026-01-23，玉树智能机器人产品矩阵

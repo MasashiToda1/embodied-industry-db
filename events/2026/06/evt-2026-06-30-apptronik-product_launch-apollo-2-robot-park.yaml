@@ -1,0 +1,23 @@
+id: evt-2026-06-30-apptronik-product_launch-apollo-2-robot-park
+date: 2026-06-30
+date_precision: day
+type: product_launch
+orgs:
+- id: apptronik
+  role: subject
+- id: gdm-robotics
+  role: counterparty
+title:
+  zh: Apptronik 发布 Apollo 2（双足与轮式底盘两种配置）并启用奥斯汀 Robot Park 数据采集训练基地
+summary:
+  zh: 6 月 30 日，Apptronik 宣布位于得州奥斯汀的旗舰数据采集与训练设施 Robot Park 扩建开放，并发布当前版人形平台 Apollo 2，提供双足与轮式底盘两种配置，用于大规模真实作业数据采集；作为与 Google DeepMind 研究合作的一部分，Apollo 2 采集的数据用于 Gemini Robotics 模型。公司称下一代商用产品为 Apollo 3。
+axes:
+  embodiment_form: [humanoid-biped, humanoid-wheeled]
+  data_acquisition: [real-robot]
+evidence:
+- url: https://apptronik.com/news-collection/welcome-to-robot-park-where-apptroniks-apollo-goes-to-work
+  publisher: Apptronik 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/apptronik-2026-06-30-apptronik-apollo-2-robot.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2025-09-23-cloudminds-corporate-beijing-bankruptcy-review
+date: 2025-09-23
+date_precision: day
+type: corporate
+orgs:
+- id: cloudminds
+  role: subject
+title:
+  zh: 达闼机器人（北京）有限公司被申请破产审查
+summary:
+  zh: 9 月 23 日，达闼机器人（北京）有限公司破产审查案件在天眼查公布。报道称，仅北京公司进入终本环节的 78 起案件涉案金额达 1066.91 万元，基本均未履行；北京公司的唯一股东为上海达闼。
+evidence:
+- url: https://www.leiphone.com/category/robot/Gya0eP56FU40RQeb.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/leiphone-2025-09-23-cloudminds-bankruptcy-re.html
+corroboration: single

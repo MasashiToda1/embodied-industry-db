@@ -1,0 +1,22 @@
+id: evt-2026-09-21-rlwrld-partnership-cj-logistics-logistics-rfm-poc-mou
+date: 2026-09-21
+date_precision: day
+type: partnership
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: RLWRLD 与 CJ 大韩通运再签 MOU：共同开发物流专用 RFM、在实际物流现场做 PoC，并探索物流即服务（LaaS）商用与联合出海
+summary:
+  zh: 9 月 21 日，RLWRLD 宣布与 CJ 大韩通运签署物流领域 Physical AI 技术开发与商用化的谅解备忘录。双方将把 RLWRLD 的 RFM（RLDX-1）与 Physical AI 软件同 CJ 大韩通运的物流现场与运营基础设施结合，共同选定应用 RFM 的物流工序并通过 PoC 验证核心动作，之后扩大应用范围、推进物流即服务（LaaS）商用化，并基于在韩国验证的物流专用 RFM 联合开拓海外市场。该协议是在 2025 年 11 月 MOU 与股权投资之后的进一步合作。
+counterparties:
+- CJ 大韩通运
+axes:
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://en.sedaily.com/technology/2026/09/21/realworld-cj-logistics-to-co-develop-ai-model-for-warehouses
+  publisher: Seoul Economic Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/en-2026-09-21-rlwrld-cj-logistics-rfm-.html
+corroboration: single

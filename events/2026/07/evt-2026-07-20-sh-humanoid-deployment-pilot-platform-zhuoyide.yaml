@@ -1,0 +1,27 @@
+id: evt-2026-07-20-sh-humanoid-deployment-pilot-platform-zhuoyide
+date: '2026-07-20'
+date_precision: day
+type: deployment
+orgs:
+- id: sh-humanoid
+  role: subject
+- id: zhuoyide
+  role: counterparty
+title:
+  zh: 上海市人形机器人中试服务平台投入运营，国地中心与卓益得签千台套试制专项
+summary:
+  zh: WAIC 2026 期间，国地中心联合上海电气集团打造的上海市人形机器人中试服务平台正式发布并投入运营，平台落地张江机器人谷，设两条模块化柔性整机试制产线与一条精密零部件装配线，报道称具备年产 2000 台（套）试制能力。同日国地中心与卓益得完成千台套人形机器人试制专项签约。
+counterparties:
+- 上海电气集团
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-07-20/doc-iniimqsk8240862.shtml
+  publisher: 新浪财经（转载证券时报 e 公司）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-20-sh-humanoid-waic-platfor.html
+- url: https://www.ofweek.com/im/2026-07/ART-201900-8120-30695296.html
+  publisher: OFweek 智能制造网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/ofweek-2026-07-20-sh-humanoid-pilot-platfo.html
+corroboration: multi

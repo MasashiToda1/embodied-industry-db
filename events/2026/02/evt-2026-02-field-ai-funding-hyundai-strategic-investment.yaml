@@ -1,0 +1,25 @@
+id: evt-2026-02-field-ai-funding-hyundai-strategic-investment
+date: 2026-02
+date_precision: month
+type: funding
+orgs:
+- id: field-ai
+  role: subject
+title:
+  zh: 现代汽车集团战略投资 FieldAI，双方合作把物理 AI 扩展到建筑与工业现场
+summary:
+  zh: 2026 年 2 月，韩国媒体 The Asia Business Daily 与 Aju Press 报道，现代汽车集团向美国机器人软件公司 FieldAI 投资数百万美元；报道引用 FieldAI 在 LinkedIn 发布的声明，称已与现代汽车集团建立正式合作，「该合作包含财务投资，聚焦把物理 AI 扩展为建筑与工业现场的完整运营 AI」。Aju Press 称 FieldAI 的 Field Foundation Model 已装在 Boston Dynamics 的 Spot 上，用于亚洲、欧洲和北美的建筑工地。两篇报道均未给出确定金额。
+counterparties:
+- Hyundai Motor Group
+evidence:
+- url: https://www.asiae.co.kr/en/article/2026022209045396719
+  publisher: The Asia Business Daily（亚洲经济）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/asiae-2026-02-field-ai-hyundai-investm.html
+- url: https://www.ajupress.com/view/20260222214570245
+  publisher: Aju Press
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/ajupress-2026-02-field-ai-hyundai-investm.html
+corroboration: multi

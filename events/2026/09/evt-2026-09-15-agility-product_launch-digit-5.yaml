@@ -1,0 +1,21 @@
+id: evt-2026-09-15-agility-product_launch-digit-5
+date: 2026-09-15
+date_precision: day
+type: product_launch
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility 发布新一代人形机器人 Digit 5，面向与人近距离协作作业
+summary:
+  zh: 9 月 15 日，Agility Robotics 发布新一代通用人形机器人 Digit 5，公司称这是其首款面向「cooperatively safe」规模化作业设计的人形机器人，可在无传统物理安全围栏的情况下与人近距离工作。公司披露截至 2026 年 5 月已有超 3 亿美元 Digit 5 多年期客户订单（附合同里程碑条件），Digit 5 将取得 CE 等认证以进入欧盟与英国市场，早期客户 2027 年上半年开始接入，2027 年底前面向制造、仓储与分销运营商普遍供货。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale
+  publisher: Agility Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/agilityrobot-2026-09-15-agility-digit-5.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-03-31-zj-humanoid-product_launch-naviai-hardware-system
+date: '2026-03-31'
+date_precision: day
+date_basis: derived
+date_as_stated: 界面新闻稿件发布于 2026/03/31，正文未写具体发布日
+type: product_launch
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形发布 NAVIAI 领航者硬件体系：U 系列双臂、WA 系列轮臂、I 系列双足及关节与控制器
+summary:
+  zh: 浙江人形机器人创新中心发布 NAVIAI 硬件体系，整机含 NAVIAI-U 系列双臂手作业人形（28—31 自由度）、轮臂式 NAVIAI-WA1/WA2、双足式 NAVIAI-I2/I3（I3 身高 180cm、最大步速 9km/h），配套 AH 系列谐波臂、JH 谐波关节与 JP 行星关节家族，以及 BC-275、BC-2070 大小脑一体化控制器。
+axes:
+  embodiment_form: [humanoid-biped, humanoid-wheeled, dual-arm-stationary]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.jiemian.com/article/14188280.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/jiemian-2026-03-zj-humanoid-naviai-hardw.html
+corroboration: single

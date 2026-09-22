@@ -11,3 +11,19 @@ layers:
 - simulation
 upstream:
   robotics_notebooks_institution: tencent
+founded: 2018
+hq:
+  country: CN
+  city: 深圳
+description: 腾讯 2018 年成立的机器人前沿研究实验室，与福田实验室联合推出 Tairos（钛螺丝）具身智能开放平台与 Hy-Embodied 系列具身模型。
+accounts:
+  site: https://tairos.tencent.com
+sources:
+- url: https://www.caiwennews.com/article/1523068.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 财闻网 2026 年 WAIC 访谈，Robotics X 成立于 2018 年；总部按腾讯集团填深圳
+- url: https://news.qq.com/rain/a/20260718A07MVL00
+  tier: official
+  retrieved: '2026-09-22'
+  note: 腾讯技术工程官方账号 2026-07-18，Tairos 平台与 Hy-Embodied 模型发布

@@ -5,3 +5,17 @@ names:
 status: active
 layers:
 - operation
+founded: 2025-12
+hq:
+  country: CN
+  city: 上海
+description: 智元机器人与飞阔科技等联合发起的机器人租赁平台，运营主体为擎天租（上海）科技有限公司，按天出租多品牌机器人。
+sources:
+- url: https://m.pedaily.cn/vc/company/887857.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 投资界公司页，载工商信息「成立于 2025-12-09」、注册地上海浦东与公司全称
+- url: https://finance.sina.com.cn/jjxw/2026-03-18/doc-inhrkskx9420832.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 澎湃新闻报道，载「由智元机器人、飞阔科技等具身智能领域企业于 2025 年 12 月联合发起成立」

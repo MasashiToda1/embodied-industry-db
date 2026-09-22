@@ -6,5 +6,20 @@ status: active
 layers:
 - embodiment
 - foundation
+founded: 2021
+hq:
+  country: US
+  city: Austin
+description: 特斯拉的人形机器人 Optimus 项目，2021 年 8 月 AI Day 首次公布，在弗里蒙特工厂安装第一代产线。
 accounts:
   github: tesla
+  site: https://www.tesla.com
+sources:
+- url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=10-K
+  tier: primary
+  retrieved: '2026-09-22'
+  note: SEC EDGAR 公司信息，Business Address 为 1 Tesla Road, Austin TX；集团总部
+- url: https://en.wikipedia.org/wiki/Optimus_(robot)
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: Optimus 项目于 2021 年 8 月 19 日 AI Day 公布，founded 取机器人业务对外公开年份

@@ -1,0 +1,22 @@
+id: evt-2025-11-15-noitom-funding-pre-a-round
+date: '2025-11-15'
+date_precision: day
+type: funding
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾机器人完成近亿元人民币 Pre-A 轮融资
+summary:
+  zh: 11 月 15 日消息，NOITOM ROBOTICS（诺亦腾机器人）宣布近日完成近亿元人民币 Pre-A 轮融资，投资方包括阿尔法公社、经纬创投、英诺天使基金等机构。
+counterparties:
+- 阿尔法公社
+- 经纬创投
+- 英诺天使基金
+evidence:
+- url: https://www.tmtpost.com/nictation/7766156.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/tmtpost-2025-11-15-noitom-pre-a-round.html
+corroboration: single

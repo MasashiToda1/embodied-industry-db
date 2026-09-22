@@ -5,3 +5,21 @@ names:
 status: active
 layers:
 - operation
+founded: 2026-01
+hq:
+  country: CN
+  city: 上海
+description: 上海万机易租科技有限公司运营的机器人租赁平台，通过 App 与小程序撮合机器人厂商、代理商与租赁需求方。
+sources:
+- url: https://www.163.com/dy/article/KLGD6HCC053900WX.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: IPO 早知道报道（网易转载），载「万机易租创办于 2026 年 1 月」
+- url: https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 盖世汽车报道，载公司全称「上海万机易租科技有限公司」与 App、小程序双载体
+- url: https://www.36kr.com/p/3642181919592329
+  tier: media
+  retrieved: '2026-09-22'
+  note: 36氪报道，平台发布会在上海松江举行

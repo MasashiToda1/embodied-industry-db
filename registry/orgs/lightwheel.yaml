@@ -15,3 +15,18 @@ upstream:
 accounts:
   huggingface: LightwheelAI
   github: LightwheelAI
+  site: https://www.lightwheel.ai
+founded: 2023-01
+hq:
+  country: CN
+  city: 北京
+description: 物理 AI 数据与评测基础设施公司，产品有 SimFoundry 仿真平台与 RoboFinals 评测平台。
+sources:
+- url: https://www.lightwheel.ai/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，公司定位与产品线（SimReady Library / EgoSuite / RoboFinals / Lightwheel-Platform）
+- url: https://www.bjnews.com.cn/detail/1773220226129690.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新京报报道引企查查，光轮智能（北京）科技有限公司成立于 2023 年 1 月，注册地北京中关村

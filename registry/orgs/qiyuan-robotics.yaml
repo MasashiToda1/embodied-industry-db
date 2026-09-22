@@ -6,6 +6,23 @@ names:
   - 启元
   - 启元 Q1
   - 启元 T1
+  - 上纬启元
+  - PrimeBOT
+  - 启元新创（上海）科技有限公司
 status: active
 layers:
 - embodiment
+founded: 2025-12
+hq:
+  country: CN
+  city: 上海
+description: 科创板公司上纬新材旗下的消费级个人机器人品牌，2025 年 12 月对外公布，产品有小尺寸全身力控人形启元 Q1 和可变形机器人启元 T1。
+sources:
+- url: https://www.163.com/tech/article/KI49S0JP00098IEO.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 网易科技 2025-12-31 报道，上纬新材宣布以「上纬启元」品牌进军个人机器人赛道，首次对外明确业务方向
+- url: https://stcn.com/article/detail/4041786.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报 2026-07-26 报道，运营主体启元新创（上海）科技有限公司落户浦东张江机器人谷

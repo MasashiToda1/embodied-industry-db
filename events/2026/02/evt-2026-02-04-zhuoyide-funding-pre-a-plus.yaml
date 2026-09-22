@@ -1,0 +1,29 @@
+id: evt-2026-02-04-zhuoyide-funding-pre-a-plus
+date: '2026-02-04'
+date_precision: day
+type: funding
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得机器人完成近亿元 Pre-A+ 轮融资
+summary:
+  zh: 2026 年 2 月 4 日，上海卓益得机器人有限公司宣布完成近亿元人民币 Pre-A+ 轮融资，由上海浦东引领区投资中心、上海张江科技创业投资有限公司联合领投，河南省科投产业发展投资基金等跟投，并引入青岛征和工业股份有限公司、厦门松霖科技股份有限公司集团成员作为战略产业投资者。资金用于核心技术与产品迭代、量产交付与供应链体系升级，重点面向老年人康养陪护市场。
+counterparties:
+- 上海浦东引领区投资中心
+- 上海张江科技创业投资有限公司
+- 河南省科投产业发展投资基金
+- 青岛征和工业股份有限公司
+- 厦门松霖科技股份有限公司
+evidence:
+- url: https://www.bjnews.com.cn/detail/1770256053129901.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/bjnews-2026-02-04-zhuoyide-pre-a-plus.html
+- url: https://www.droidup.com/fenleimingcheng
+  publisher: 卓益得机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/droidup-2026-01-30-zhuoyide-official-news.html
+corroboration: multi

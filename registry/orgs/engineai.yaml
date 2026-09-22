@@ -2,6 +2,11 @@ id: engineai
 names:
   zh: 众擎机器人
   en: EngineAI
+founded: 2023-10
+hq:
+  country: CN
+  city: 深圳
+description: 做人形机器人整机的公司，产品有 SA01、SE01、PM01、T800，公司主体深圳众擎机器人科技股份有限公司。
 status: active
 layers:
 - embodiment
@@ -9,3 +14,9 @@ upstream:
   robotics_notebooks_institution: engineai
 accounts:
   huggingface: engineai
+  site: https://www.engineai.com.cn
+sources:
+- url: https://www.engineai.com.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于众擎：成立于 2023 年 10 月，总部位于深圳

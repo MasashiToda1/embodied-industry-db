@@ -1,0 +1,22 @@
+id: evt-2026-08-19-qingzhuo-product_launch-4m-hydraulic-electric-humanoid
+date: '2026-08-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: qingzhuo
+  role: subject
+title:
+  zh: 清卓动力在 WRC 2026 首次公开展示 4 米级液电混驱超人形机器人
+summary:
+  zh: 8 月 19 日，第十一届世界机器人大会在北京开幕，清卓动力机器人科技（北京）有限公司首次公开展示 4 米级液电混驱超人机器人。整机 41 个主动自由度（双臂 14、双手 10、双腿及脚部 12、腰部 3、头部 2），除双前臂两处旋关节采用电驱外，其余 39 个自由度搭载自研数字液压线性执行器；双臂协作负载 500 公斤。面向核电运维、深海工程、矿山作业、应急救援等场景。
+axes:
+  target_scene: [inspection-hazardous]
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-08-19/doc-ininvfsy2773328.shtml
+  publisher: 上海证券报（新浪财经转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-19-qingzhuo-4m-hydraulic-hu.html
+corroboration: single

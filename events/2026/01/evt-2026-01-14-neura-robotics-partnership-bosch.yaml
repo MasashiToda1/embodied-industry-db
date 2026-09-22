@@ -1,0 +1,24 @@
+id: evt-2026-01-14-neura-robotics-partnership-bosch
+date: 2026-01-14
+date_precision: day
+type: partnership
+orgs:
+- id: neura-robotics
+  role: subject
+title:
+  zh: NEURA Robotics 与 Bosch 建立技术开发合作：在 Bosch 工厂用传感服采集数据、共同开发核心软件、支持量产工业化
+summary:
+  zh: 1 月 14 日，NEURA Robotics 与 Robert Bosch Robotics GmbH（Robert Bosch GmbH 子公司）宣布建立战略技术与开发合作。内容包括：双方在 Bosch 工厂用传感服（sensor suits）联合采集真实工作、动作与环境数据；共同开发基于 AI 的核心与功能软件及用户界面；Bosch 支持 NEURA 的工业化进程，从优化生产流程到软件规模化。采集的数据接入 NEURA 的 Neuraverse 生态。
+counterparties:
+- Robert Bosch Robotics GmbH
+- Robert Bosch GmbH
+axes:
+  data_acquisition: [mocap]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://neura-robotics.com/neura-robotics-bosch-partnership/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/neura-roboti-2026-01-14-neura-robotics-bosch.html
+corroboration: single

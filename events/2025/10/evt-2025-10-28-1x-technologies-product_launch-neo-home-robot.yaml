@@ -1,0 +1,22 @@
+id: evt-2025-10-28-1x-technologies-product_launch-neo-home-robot
+date: 2025-10-28
+date_precision: day
+type: product_launch
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X 发布家用人形机器人 NEO 并开放预订，2026 年起在美国交付
+summary:
+  zh: 10 月 28 日，1X 在 Palo Alto 宣布发布家用人形机器人 NEO 并开放预订，提供 Tan、Gray、Dark Brown 三色，2026 年起主要在美国交付，2027 年起扩展到其他市场。公司称 NEO 使用其通用模型 Redwood AI 学习与执行任务。
+axes:
+  target_scene: [home]
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.1x.tech/discover/neo-home-robot
+  publisher: 1X 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/1x-2025-10-28-1x-technologies-neo-laun.html
+corroboration: single

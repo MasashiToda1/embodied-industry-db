@@ -1,0 +1,21 @@
+id: evt-2026-04-13-rainbow-robotics-product_launch-rb-y2-simtos
+date: 2026-04-13
+date_precision: day
+type: product_launch
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: Rainbow Robotics 在 SIMTOS 2026 首次公开工业用移动双臂机器人 RB-Y2，单臂负载提升至约 6—7 kg
+summary:
+  zh: 4 月 13 日，Rainbow Robotics 在京畿道 KINTEX 开幕的 SIMTOS 2026 上首次公开移动双臂机器人 RB-Y2。RB-Y2 是约一年半前发布的研究平台 RB-Y1 的后续产品，面向制造与工业现场投入开发，已应用所需安全认证与法规规格，单臂负载从 3—4 kg 提升到约 6—7 kg。公司人员在现场称 RB-Y1 已向全球研究机构供货约 300 台，RB-Y2 的传感器、相机、夹爪将按导入现场定制。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://kidd.co.kr/news/245649
+  publisher: 산업종합저널（kidd.co.kr）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/kidd-2026-04-13-rainbow-robotics-rb-y2-s.html
+corroboration: single

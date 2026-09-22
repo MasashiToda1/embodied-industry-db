@@ -1,0 +1,25 @@
+id: evt-2026-06-wuji-tech-product_launch-wuji-hand-2-icra
+date: 2026-06
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「全球机器人行业顶会 ICRA 2026 圆满落幕……舞肌科技在 ICRA 现场重磅展示了新一代仿生灵巧手 Wuji Hand 2」（NE 时代 2026-06-08 报道）
+type: product_launch
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技在 ICRA 2026 展示新一代 20 自由度全直驱灵巧手 Wuji Hand 2
+summary:
+  zh: ICRA 2026 期间，舞肌科技展示新一代仿生灵巧手 Wuji Hand 2。该手 20 个主动自由度，全直驱、可反驱，整机重量不足 570g，静态握持 12kg，反向驱动扭矩低至 0.05N·m，传动效率较前代提升 20%，搭载 24×32 点阵全指柔性触觉阵列。
+axes:
+  hardware_strategy:
+  - in-house
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.ne-time.cn/web/article/38936
+  publisher: NE 时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/ne-time-2026-06-wuji-tech-wuji-hand-2-ic.html
+corroboration: single

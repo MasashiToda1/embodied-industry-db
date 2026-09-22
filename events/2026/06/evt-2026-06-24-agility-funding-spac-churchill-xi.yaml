@@ -1,0 +1,26 @@
+id: evt-2026-06-24-agility-funding-spac-churchill-xi
+date: 2026-06-24
+date_precision: day
+type: funding
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility Robotics 与 Churchill Capital Corp XI 签署合并协议拟上市，投前估值 25 亿美元
+summary:
+  zh: 6 月 24 日，Agility Robotics 与 SPAC 公司 Churchill Capital Corp XI（NASDAQ：CCXI）宣布签署最终业务合并协议，合并后公司拟以「AGLT」代码在北美主要交易所上市。交易对 Agility 投前股权估值 25 亿美元，公司称交易总募资超过 6.2 亿美元，含 Churchill XI 信托账户 4.2 亿美元现金（假设无赎回）及约 2 亿美元、每股 10 美元的普通股 PIPE，PIPE 由 Foxconn 领投。公司同时披露 Digit v5 已获超 3 亿美元多年期订单（附合同里程碑条件），Digit 累计运行超 6.5 万小时。交易需经 Churchill XI 股东批准与 SEC 审核。
+counterparties:
+- Churchill Capital Corp XI
+- Foxconn
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi
+  publisher: Agility Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/agilityrobot-2026-06-24-agility-spac-churchill.html
+- url: https://www.sec.gov/Archives/edgar/data/2074973/000121390026071287/ea0295484-8k425_church11.htm
+  publisher: SEC EDGAR · Churchill Capital Corp XI Form 8-K
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/sec-2026-06-24-agility-spac-8k.html
+corroboration: multi

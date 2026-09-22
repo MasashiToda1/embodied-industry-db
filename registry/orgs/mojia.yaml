@@ -2,6 +2,24 @@ id: mojia
 names:
   zh: 墨甲机器人
   en: Mojia Robotics
+  aliases:
+  - 安徽墨甲智创机器人科技有限公司
+  - AiMOGA Robotics
+  - 奇瑞墨甲
 status: active
 layers:
 - embodiment
+founded: 2025-01
+hq:
+  country: CN
+  city: 芜湖
+description: 奇瑞汽车出资成立的机器人子公司，产品有人形机器人墨茵（Mornine）、四足机器人 Argos、智警机器人和导医机器人，主要销往奇瑞海外 4S 店与公共服务场景。
+sources:
+- url: https://www.penghoo.cn/a/11153.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 朋湖科创 2026-08 报道，「安徽墨甲智创机器人科技有限公司成立于 2025 年 1 月，由奇瑞汽车全资控股」，产品矩阵
+- url: https://www.dtm.com.cn/news/202604/242198.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 美通社通稿，奇瑞墨甲全球发布会在安徽芜湖举行；官网 aimoga.com 抓取时为前端渲染空页，未取到内容

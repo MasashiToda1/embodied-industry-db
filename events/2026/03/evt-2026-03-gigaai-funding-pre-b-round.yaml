@@ -1,0 +1,34 @@
+id: evt-2026-03-gigaai-funding-pre-b-round
+date: 2026-03
+date_precision: month
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成近 10 亿元 Pre-B 轮融资
+summary:
+  zh: 极佳视界于 2026 年 3 月初完成近 10 亿元 Pre-B 轮融资，投资方包括中芯聚源、上海半导体产投基金、临芯资本、星源资本、万林国际等产业资本，以及中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等机构。
+counterparties:
+- 中芯聚源
+- 上海半导体产投基金
+- 临芯资本
+- 星源资本
+- 万林国际
+- 中金资本
+- 苏创投
+- 华强资本
+- 长江资本
+- 光谷产投
+evidence:
+- url: https://news.pedaily.cn/202606/565201.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-gigaai-three-rounds.html
+- url: https://news.qq.com/rain/a/20260416A05J0800
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-gigaai-b1-round.html
+corroboration: multi

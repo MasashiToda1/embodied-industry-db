@@ -1,0 +1,34 @@
+id: evt-2026-03-roboterax-funding-strategic-round-1b
+date: 2026-03
+date_precision: month
+type: funding
+orgs:
+- id: roboterax
+  role: subject
+title:
+  zh: 星动纪元完成 10 亿元战略轮融资，三星、新加坡电信等参投
+summary:
+  zh: 2026 年 3 月 5 日报道，星动纪元近日完成 10 亿元战略轮融资，由三星、高成投资、新加坡电信、友利资本、中金保时捷、中芯聚源、峰和资本、锡创投、广发乾和、鸿瑞集团等新机构联合投资，鼎晖 VGC、清控天诚等老股东追加投资。报道称本轮距上一轮仅 2 个月。
+counterparties:
+- 三星
+- 高成投资
+- 新加坡电信
+- 友利资本
+- 中金保时捷
+- 中芯聚源
+- 峰和资本
+- 锡创投
+- 广发乾和
+- 鸿瑞集团
+- 鼎晖 VGC
+- 清控天诚
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.bjnews.com.cn/detail/1772673112129969.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/bjnews-2026-03-roboterax-strategic-roun.html
+corroboration: single

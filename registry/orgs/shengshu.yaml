@@ -9,3 +9,22 @@ upstream:
   robotics_notebooks_institution: shengshu
 accounts:
   github: shengshu-ai
+  site: https://www.shengshu.com
+founded: 2023
+hq:
+  country: CN
+  city: 北京
+description: 做视频生成模型 Vidu 与具身世界模型 Motus 系列的公司，主体为北京生数科技股份有限公司（2026 年 3 月由有限公司股改）。
+sources:
+- url: https://www.zhidx.com/p/586199.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 智东西 2026-08-19 报道，北京公司、2023 年成立
+- url: https://www.36kr.com/p/3947480095430272
+  tier: media
+  retrieved: '2026-09-22'
+  note: 36 氪报道，2026-03-30 股改为北京生数科技股份有限公司
+- url: https://www.shengshu.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网域名（shengshu-ai.com 跳转至此）

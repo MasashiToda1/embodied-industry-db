@@ -1,0 +1,20 @@
+id: evt-2026-01-06-zhaowei-product-launch-zwhand-b20-ces
+date: 2026-01-06
+date_precision: day
+type: product_launch
+orgs:
+- id: zhaowei
+  role: subject
+title:
+  zh: 兆威机电子品牌 ZWHAND 在 CES 2026 全球首发 20 自由度灵巧手 B20
+summary:
+  zh: 南方都市报报道，当地时间 1 月 6 日 CES 2026 在拉斯维加斯开幕，兆威机电旗下灵巧手子品牌 ZWHAND 首次亮相，在北馆 N1.8153 展位全球首发 20 自由度灵巧手 ZWHAND B20。据现场展示信息，该灵巧手具备 20 个独立运动自由度，负载能力 5kg，依托触觉传感器实现 ±0.1N 的力觉感知阈值。
+axes:
+  data_modality: [tactile]
+evidence:
+- url: https://m.mp.oeeee.com/a/BAAFRD0000202601101507322.html
+  publisher: 南方都市报（奥一网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/m-2026-01-06-zhaowei-b20-ces-2026.html
+corroboration: single

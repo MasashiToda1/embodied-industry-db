@@ -6,9 +6,26 @@ names:
   - DM0.5        # 产品名当别名是例外：新闻标题常只写「DM0.5 横扫四榜」不带公司名。
   - DM0          # 4 个字符不到 MIN_STEM，不会影响账号匹配，只用于新闻文本命中。
   - DW0.5
+  - Dexmal
 status: active
 layers:
 - embodiment
 - foundation
 upstream:
   robotics_notebooks_institution: original-intelligence
+founded: 2025-03
+hq:
+  country: CN
+  city: 重庆
+description: 原力灵机（重庆）智能科技股份有限公司，英文名 Dexmal，研发具身模型 DM 系列、开源框架 Dexbotic 与通用机器人 Apex，2026 年合并仓储机器人公司原力聚合（Atomix）。
+accounts:
+  site: https://dexmal.com
+sources:
+- url: https://m.rccaijing.com/news-7395014056673473687.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 瑞财经报道写「Dexmal 原力灵机成立于 2025 年 3 月」
+- url: https://news.pedaily.cn/202608/567534.shtml
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 工商变更后全称为「原力灵机（重庆）智能科技股份有限公司」，注册地重庆；技术开放日与开发者大会均在北京举办

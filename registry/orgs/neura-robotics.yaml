@@ -5,3 +5,15 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2019
+hq:
+  country: DE
+  city: Metzingen
+description: 做认知机器人与人形机器人 4NE1 的公司，产品还有协作臂 MAiRA、LARA、移动机器人 MAV，运营 Neuraverse 平台与 NEURA Gym。
+accounts:
+  site: https://neura-robotics.com
+sources:
+- url: https://neura-robotics.com/about-us/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页：Founded in 2019 and headquartered in Metzingen, Germany

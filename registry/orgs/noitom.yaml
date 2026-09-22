@@ -5,6 +5,8 @@ names:
   aliases:
   - Noitom
   - 诺亦腾机器人
+  - Noitom Robotics
+  - 诺亦腾机器人科技（北京）有限公司
 status: active
 layers:
 - data
@@ -14,3 +16,22 @@ upstream:
 accounts:
   huggingface: noitomrobotics
   github: noitom-robotics
+  site: https://www.noitom.com.cn
+founded: 2012
+hq:
+  country: CN
+  city: 北京
+description: 北京的动作捕捉公司，机器人业务 2025 年分拆为诺亦腾机器人，做动捕数据采集与 ModalityNet 数据平台。
+sources:
+- url: https://www.noitom.com.cn/mobile/robotics.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 诺亦腾官网人形机器人解决方案页，动捕在具身智能中的遥操作、示教训练、数据工厂能力
+- url: https://news.pedaily.cn/202606/565258.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 投资界融资报道引公司官网，北京诺亦腾科技有限公司创立于 2012 年，总部北京
+- url: https://m.pedaily.cn/vc/company/843809.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 投资界公司页引工商信息，分拆主体诺亦腾机器人科技（北京）有限公司成立于 2025 年 3 月 21 日，注册地北京市海淀区

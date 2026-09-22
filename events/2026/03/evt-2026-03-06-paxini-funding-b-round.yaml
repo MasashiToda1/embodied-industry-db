@@ -1,0 +1,34 @@
+id: evt-2026-03-06-paxini-funding-b-round
+date: 2026-03-06
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，帕西尼感知科技（PaXini Tech）宣布完成超 10 亿元人民币 B 轮融资」（21 世纪经济报道 2026-03-06 报道）
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼感知科技完成超 10 亿元 B 轮融资，估值超 100 亿元
+summary:
+  zh: 帕西尼感知科技宣布完成超 10 亿元人民币 B 轮融资，公司估值超 100 亿元。本轮由黄浦江资本、凯泰资本、信安资本领投，珠海科技产业集团、善达资本、海川基金等联合投资，广州市新兴基金、优利德、知来资本、LEO LION、南岭基金、相城金控等跟投，毅达资本等老股东加码，庚辛资本中国担任独家战略财务顾问。
+counterparties:
+- 黄浦江资本
+- 凯泰资本
+- 信安资本
+- 珠海科技产业集团
+- 善达资本
+- 海川基金
+- 广州市新兴基金
+- 优利德
+- 知来资本
+- LEO LION
+- 南岭基金
+- 相城金控
+- 毅达资本
+evidence:
+- url: https://www.21jingji.com/article/20260306/herald/eabe4d5f0c6df37a1c9780107fa80b8b.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/21jingji-2026-03-06-paxini-b-round.html
+corroboration: single

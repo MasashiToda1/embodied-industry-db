@@ -1,0 +1,23 @@
+id: evt-2026-06-16-galaxea-product_launch-kengo-biped
+date: '2026-06-16'
+date_precision: day
+type: product_launch
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图在全球开发者大会首秀自研双足人形机器人 Kengo（行客）
+summary:
+  zh: 6 月 16 日，星海图全球开发者大会（Galaxea WDC 2026）在北京亦庄举行，星海图发布并开源新一代 VLA 基础模型 G0.5，自研双足人形机器人 Kengo（行客）现场首秀，并联合北京亦庄共建数据公司、启动百万小时真实数据计划。
+counterparties:
+- 北京亦庄（数据公司共建方）
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.stcn.com/article/detail/3965058.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/stcn-2026-06-16-galaxea-kengo-launch.html
+corroboration: single

@@ -5,3 +5,23 @@ names:
 status: active
 layers:
 - embodiment
+founded: 1996
+hq:
+  country: JP
+  city: 东京
+description: 本田技研工业的机器人研发业务（Honda Robotics / Honda R&D Frontier Robotics），1996 年公开双足机器人 P2、2000 年发布 ASIMO，现做遥操作 Avatar Robot 与多指灵巧手。
+accounts:
+  site: https://global.honda/en/robotics/
+sources:
+- url: https://global.honda/en/robotics/
+  tier: official
+  retrieved: '2026-09-22'
+  note: Honda Robotics 官网页，ASIMO 之后转向面向特定功能的多种机器人（Avatar Robot、UNI-ONE）
+- url: https://global.honda/en/stories/025.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: Honda Stories，双足机器人 P2 于 1996 年公开，2026 年 4 月获 IEEE Milestone；ASIMO 2000 年发布
+- url: https://global.honda/en/RandD/field/hgrx/honda-multi-fingered-hand/
+  tier: official
+  retrieved: '2026-09-22'
+  note: Honda R&D 多指手页面，团队归属 Honda R&D Frontier Robotics

@@ -1,0 +1,33 @@
+id: evt-2026-02-11-galaxea-funding-b-round-1b
+date: '2026-02-11'
+date_precision: day
+type: funding
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图完成 10 亿元 B 轮融资
+summary:
+  zh: 2 月 11 日消息，星海图（Galaxea AI）完成 10 亿元人民币 B 轮融资，累计融资额近 30 亿元。本轮投资方包括金鼎资本、北汽产投、碧鸿投资、正心谷资本、前海方舟、毅峰资本，老股东凯辉基金、美团龙珠、今日资本、襄禾资本、高瓴创投超额或满额追加。
+counterparties:
+- 金鼎资本
+- 北汽产投
+- 碧鸿投资
+- 正心谷资本
+- 前海方舟
+- 毅峰资本
+- 凯辉基金
+- 美团龙珠
+- 今日资本
+- 襄禾资本
+- 高瓴创投
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://equalocean.com/news/2026021221744-galaxea-ai-secures-10-billion-rmb-series-b-funding
+  publisher: EqualOcean
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/equalocean-2026-02-11-galaxea-b-round.html
+corroboration: single

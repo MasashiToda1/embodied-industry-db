@@ -7,3 +7,19 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: alibaba
+hq:
+  country: CN
+  city: 杭州
+description: 阿里巴巴集团在具身智能方向的团队，含达摩院具身智能实验室（RynnBrain 等具身模型）与高德具身业务部（四足机器人途途）。
+accounts:
+  site: https://damo.alibaba.com
+  github: alibaba-damo-academy
+sources:
+- url: https://finance.sina.com.cn/tech/digi/2026-02-10/doc-inhmihnp5577461.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: IT之家（新浪科技转载）2026-02-10，达摩院具身智能实验室发布 RynnBrain；总部按阿里巴巴集团填杭州
+- url: http://jjckb.xinhuanet.com/20260419/cc7ebda5b06a46ba8300d83dbbb2cdc7/c.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 经济参考网 2026-04-19，高德公开首款具身机器人途途

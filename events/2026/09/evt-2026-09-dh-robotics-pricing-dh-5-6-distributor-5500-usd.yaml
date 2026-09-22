@@ -1,0 +1,25 @@
+id: evt-2026-09-dh-robotics-pricing-dh-5-6-distributor-5500-usd
+date: 2026-09
+date_precision: month
+date_basis: estimated
+date_as_stated: 经销商页面未标注定价日期，取抓取月份 2026 年 9 月
+type: pricing
+orgs:
+- id: dh-robotics
+  role: subject
+title:
+  zh: 大寰 DH-5-6 五指灵巧手在美国授权经销商 Robotics Center 标价 5,500 美元
+summary:
+  zh: 美国经销商 Robotics Center（自称 Authorized distributor，旧金山发货）商店页面显示 DH Robotics DH-5-6 Dexterous Hand 标价 5,500.00 美元，状态为 Backorder；页面参数：6 个主动 / 11 个总自由度，单指指尖力 25N、五指抓握力 80N，提拉负载 10kg，单手重 790g，节拍 0.8s，寿命 ≥100 万次，可选触觉传感，Modbus RTU / RS485，24V DC。
+amount:
+  value: 5500
+  currency: USD
+axes:
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.roboticscenter.ai/zh/store/product/dh-robotics-dh-5-6
+  publisher: Robotics Center 商店页（经销商）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/roboticscent-2026-09-dh-robotics-dh-5-6-distr.html
+corroboration: single

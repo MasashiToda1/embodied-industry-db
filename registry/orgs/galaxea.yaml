@@ -2,6 +2,11 @@ id: galaxea
 names:
   zh: 星海图
   en: Galaxea
+founded: 2023-09
+hq:
+  country: CN
+  city: 北京
+description: 做具身智能基础模型与整机的公司，公司主体星海图（北京）人工智能科技股份有限公司，产品有 R1 系列、A1 与双足人形 Kengo，模型 G0 系列。
 status: active
 layers:
 - embodiment
@@ -10,3 +15,13 @@ upstream:
   robotics_notebooks_institution: galaxea
 accounts:
   github: OpenGalaxea
+  site: https://galaxea-ai.com
+sources:
+- url: https://galaxea-ai.com/cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们：成立于 2023 年 9 月，专注具身智能基础模型及机器人研发
+- url: https://www.stcn.com/article/detail/3965058.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券时报：G0.5 模型、双足人形 Kengo 首秀

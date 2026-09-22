@@ -1,0 +1,23 @@
+id: evt-2026-09-16-paxini-funding-b-plus-plus-round
+date: 2026-09-16
+date_precision: day
+type: funding
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼感知科技完成数亿元 B++ 轮融资，累计融资超 40 亿元
+summary:
+  zh: 9 月 16 日，帕西尼人工智能科技（北京）股份有限公司宣布完成数亿元 B++ 轮融资，投资方包括广新基金、四川省科创投资集团、宿迁产发创投、京铭资本，京铭资本等老股东继续加码。报道称公司累计融资超 40 亿元，总部位于北京市海淀区。
+counterparties:
+- 广新基金
+- 四川省科创投资集团
+- 宿迁产发创投
+- 京铭资本
+evidence:
+- url: https://finance.eastmoney.com/a/202609163876409752.html
+  publisher: 东方财富网 · 来源科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/finance-2026-09-16-paxini-b-plus-plus-round.html
+corroboration: single

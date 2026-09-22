@@ -1,0 +1,29 @@
+id: evt-2025-12-12-shouxing-funding-round-four
+date: '2025-12-12'
+date_precision: day
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+title:
+  zh: 首形科技完成 2025 年第四轮融资，中网投与蚂蚁集团联合领投
+summary:
+  zh: 12 月 12 日，首形科技宣布完成新一轮融资，由中国互联网投资基金（中网投）与蚂蚁集团联合领投，上海未来产业基金、东方富海参与，老股东招商局创投追投，深蓝资本担任财务顾问。资金用于产品矩阵扩展、小批量量产体系搭建及核心模型与算法迭代。金额未披露。
+counterparties:
+- 中国互联网投资基金（中网投）
+- 蚂蚁集团
+- 上海未来产业基金
+- 东方富海
+- 招商局创投
+evidence:
+- url: https://www.bjnews.com.cn/detail/1765528223168230.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/bjnews-2025-12-12-shouxing-dec-round.html
+- url: https://news.pedaily.cn/202512/558558.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-12-shouxing-dec-round-pedai.html
+corroboration: multi

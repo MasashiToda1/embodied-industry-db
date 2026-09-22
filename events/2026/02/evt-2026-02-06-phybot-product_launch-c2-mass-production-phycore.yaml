@@ -1,0 +1,27 @@
+id: evt-2026-02-06-phybot-product_launch-c2-mass-production-phycore
+date: '2026-02-06'
+date_precision: day
+type: product_launch
+orgs:
+- id: phybot
+  role: subject
+title:
+  zh: 动易科技宣布 PHYBOT C2 量产上市，运动控制智能体 PhyCore 0.1 永久免费开源
+summary:
+  zh: 2 月 6 日，动易科技在广州海珠创意产业园的发布会上宣布具身智能体 PHYBOT C2 量产，并发布 AI 智能体 PhyCore 0.1，宣布其基础运动能力面向全球永久免费开源、作为所有动易机器人出厂标配。C2 身高 1.35 米、体重 35kg，双臂负载 5kg，移动速度 4m/s，头部搭载双目 RGB 传感器与投影模块。
+axes:
+  embodiment_form: [humanoid-biped]
+  control_route: [rl]
+  target_scene: [commercial-service]
+evidence:
+- url: https://www.leiphone.com/category/robot/TloGQaOctENasvyL.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/leiphone-2026-02-06-phybot-c2-guangzhou-cent.html
+- url: https://m.zhidx.com/p/533960.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/m-2026-02-06-phybot-guangzhou-center-.html
+corroboration: multi

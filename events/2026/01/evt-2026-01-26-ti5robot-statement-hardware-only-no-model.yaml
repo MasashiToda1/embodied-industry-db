@@ -1,0 +1,18 @@
+id: evt-2026-01-26-ti5robot-statement-hardware-only-no-model
+date: '2026-01-26'
+date_precision: day
+type: statement
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人 CEO 称只组装硬件不做模型，2025 年大尺寸人形出货约 170 台
+summary:
+  zh: 1 月 26 日，36 氪《智能涌现》发布对钛虎机器人 CEO 的访谈。访谈称钛虎「只组装硬件，但并不自己做模型」，提供的是硬件参考解决方案；2025 年新工厂扩建完成后关节模组年产能从 3 万个提升至 10 万个，人形机器人组装能力达每年 3000 台，大尺寸人形机器人 2025 年出货约 170 台。
+evidence:
+- url: https://www.36kr.com/p/3656238372266121
+  publisher: 36 氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/36kr-2026-01-26-ti5robot-36kr-interview.html
+corroboration: single

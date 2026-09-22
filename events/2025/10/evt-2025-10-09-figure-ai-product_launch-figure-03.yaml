@@ -1,0 +1,22 @@
+id: evt-2025-10-09-figure-ai-product_launch-figure-03
+date: 2025-10-09
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure 发布第三代人形机器人 Figure 03
+summary:
+  zh: 10 月 9 日，Figure 发布第三代人形机器人 Figure 03，公司称其面向 Helix 模型、家庭场景与规模化量产做了软硬件整体重新设计，新增带触觉传感与掌心摄像头的手部、可拆洗软质外覆件、无线足底充电。公司同时披露自建工厂 BotQ 第一代产线初期年产能最高 1.2 万台，目标四年内累计生产 10 万台。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  target_scene: [home, industrial-manufacturing]
+evidence:
+- url: https://www.figure.ai/news/introducing-figure-03
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/figure-2025-10-09-figure-ai-figure-03.html
+corroboration: single
