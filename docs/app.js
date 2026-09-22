@@ -120,41 +120,64 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') $$('.facet.o
 
 async function pageIndex() {
   await load(); nav('index');
-  const F = { type: new Set(), layer: new Set(), axis: new Set(qs.get('axis') ? [qs.get('axis')] : []) };
+  const F = { org: new Set(qs.get('org') ? [qs.get('org')] : []), type: new Set(), layer: new Set(), axis: new Set(qs.get('axis') ? [qs.get('axis')] : []), from: '', to: '' };
+  const PAGE = 50; let page = 1;
   const count = fn => { const m = {}; D.events.forEach(e => fn(e).forEach(k => m[k] = (m[k] || 0) + 1)); return m; };
   const nType = count(e => [e.type]);
   const nLayer = count(e => [...new Set((e.orgs || []).flatMap(o => orgById[o.id]?.layers || []))]);
   const nAxis = count(e => Object.entries(e.axes || {}).flatMap(([f, v]) => (Array.isArray(v) ? v : [v]).map(x => f + ':' + x)));
+  const nOrg = count(e => (e.orgs || []).map(o => o.id));
+  const orgOpts = D.orgs.filter(o => nOrg[o.id]).map(o => ({ k: o.id, zh: `${o.names.zh}${o.names.en ? ' ' + o.names.en : ''}`, n: nOrg[o.id] })).sort((a, b) => b.n - a.n);
   const typeOpts = Object.entries(D.event_types).map(([k, zh]) => ({ k, zh, n: nType[k] || 0 })).sort((a, b) => b.n - a.n);
   const layerOpts = Object.entries(D.layers).map(([k, zh]) => ({ k, zh, n: nLayer[k] || 0 })).sort((a, b) => b.n - a.n);
   const axisOpts = Object.keys(nAxis).sort().map(k => ({ k, zh: label(k, k.split(':')[1]), group: label(k.split(':')[0]), n: nAxis[k] }));
-  const zh = { type: k => D.event_types[k] || k, layer: k => D.layers[k] || k, axis: k => `${label(k.split(':')[0])}: ${label(k, k.split(':')[1])}` };
+  const zh = { org: k => orgZh(k), type: k => D.event_types[k] || k, layer: k => D.layers[k] || k, axis: k => `${label(k.split(':')[0])}: ${label(k, k.split(':')[1])}` };
 
   $('main').innerHTML = `<div class="wrap">
     <h1>时间线</h1><div class="sub"></div>
-    <div class="fbar" id="fbar"></div><div class="fchips" id="fchips"></div>
-    <div class="card"><table><thead><tr><th>日期</th><th>主体</th><th>类型</th><th>事件</th><th class="right">来源</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div class="fbar" id="fbar"><span class="frange"><input type="month" id="f-from" title="起始月"><span class="muted">—</span><input type="month" id="f-to" title="截止月"></span></div><div class="fchips" id="fchips"></div>
+    <div class="card"><table><thead><tr><th>日期</th><th>主体</th><th>类型</th><th>事件</th><th class="right">来源</th></tr></thead><tbody id="rows"></tbody></table>
+      <div class="pager" id="pager"></div></div>
   </div>`;
   const rows = $('#rows'); bindExpand(rows);
   const menus = [
-    facetMenu('type', '类型', typeOpts, F.type, () => render()),
-    facetMenu('layer', '产业层', layerOpts, F.layer, () => render()),
-    facetMenu('axis', '轴取值', axisOpts, F.axis, () => render(), { search: true }),
+    facetMenu('org', '主体', orgOpts, F.org, () => { page = 1; render(); }, { search: true }),
+    facetMenu('type', '类型', typeOpts, F.type, () => { page = 1; render(); }),
+    facetMenu('layer', '产业层', layerOpts, F.layer, () => { page = 1; render(); }),
+    facetMenu('axis', '轴取值', axisOpts, F.axis, () => { page = 1; render(); }, { search: true }),
   ];
-  menus.forEach(m => $('#fbar').appendChild(m));
+  const range = $('.frange'); menus.forEach(m => $('#fbar').insertBefore(m, range));
+  $('#f-from').onchange = e => { F.from = e.target.value; page = 1; render(); };
+  $('#f-to').onchange = e => { F.to = e.target.value; page = 1; render(); };
 
+  const inRange = e => { const k = sortKey(e).slice(0, 7); return (!F.from || k >= F.from) && (!F.to || k <= F.to); };
   const render = () => {
     const list = D.events.filter(e =>
+      (!F.org.size || (e.orgs || []).some(o => F.org.has(o.id))) &&
       (!F.type.size || F.type.has(e.type)) &&
       (!F.layer.size || (e.orgs || []).some(o => (orgById[o.id]?.layers || []).some(l => F.layer.has(l)))) &&
-      (!F.axis.size || Object.entries(e.axes || {}).some(([f, v]) => (Array.isArray(v) ? v : [v]).some(x => F.axis.has(f + ':' + x)))));
-    rows.innerHTML = list.length ? list.map(e => eventRow(e)).join('') : `<tr><td colspan="5" class="empty">没有匹配的事件</td></tr>`;
-    $('.sub').textContent = `${list.length} / ${D.events.length} 条事件 · ${D.orgs.length} 家主体 · 每条都能点回原始来源与快照。点行展开。`;
-    const chips = ['type', 'layer', 'axis'].flatMap(f => [...F[f]].map(k => `<span class="fchip" data-f="${f}" data-k="${k}">${esc(zh[f](k))}<i>×</i></span>`));
+      (!F.axis.size || Object.entries(e.axes || {}).some(([f, v]) => (Array.isArray(v) ? v : [v]).some(x => F.axis.has(f + ':' + x)))) &&
+      inRange(e));
+    // 深链 ?ev= 时跳到它所在的页
+    const want = qs.get('ev'); if (want && !render.jumped) { const i = list.findIndex(e => e.id === want); if (i >= 0) page = Math.floor(i / PAGE) + 1; render.jumped = true; }
+    const pages = Math.max(1, Math.ceil(list.length / PAGE)); page = Math.min(page, pages);
+    const slice = list.slice((page - 1) * PAGE, page * PAGE);
+    rows.innerHTML = slice.length ? slice.map(e => eventRow(e)).join('') : `<tr><td colspan="5" class="empty">没有匹配的事件</td></tr>`;
+    $('.sub').textContent = `${list.length} / ${D.events.length} 条事件 · ${D.orgs.length} 家主体 · 每页 ${PAGE} 条 · 每条都能点回原始来源与快照，点行展开。`;
+    // 分页条：首页 / 上一页 / 邻近页码 / 下一页 / 末页
+    const near = [...new Set([1, page - 2, page - 1, page, page + 1, page + 2, pages].filter(p => p >= 1 && p <= pages))].sort((a, b) => a - b);
+    let ph = `<button class="pg" data-p="${page - 1}" ${page === 1 ? 'disabled' : ''}>‹ 上一页</button>`;
+    near.forEach((p, i) => { if (i && p - near[i - 1] > 1) ph += `<span class="muted">…</span>`; ph += `<button class="pg ${p === page ? 'on' : ''}" data-p="${p}">${p}</button>`; });
+    ph += `<button class="pg" data-p="${page + 1}" ${page === pages ? 'disabled' : ''}>下一页 ›</button><span class="muted" style="margin-left:8px">第 ${page} / ${pages} 页</span>`;
+    $('#pager').innerHTML = pages > 1 ? ph : '';
+    $$('#pager .pg').forEach(b => b.onclick = () => { page = +b.dataset.p; render(); $('#rows').closest('.card').scrollIntoView({ block: 'start' }); });
+    // 已选条件 chips
+    const chips = ['org', 'type', 'layer', 'axis'].flatMap(f => [...F[f]].map(k => `<span class="fchip" data-f="${f}" data-k="${k}">${esc(zh[f](k))}<i>×</i></span>`));
+    if (F.from || F.to) chips.push(`<span class="fchip" data-f="range">${F.from || '…'} — ${F.to || '…'}<i>×</i></span>`);
     $('#fchips').innerHTML = chips.length ? chips.join('') + `<span class="fchip clear" id="f-clear">清除全部</span>` : '';
-    $$('.fchip:not(.clear)').forEach(c => $('i', c).onclick = () => { F[c.dataset.f].delete(c.dataset.k); menus.forEach(m => m.redraw()); render(); });
-    const cl = $('#f-clear'); if (cl) cl.onclick = () => { Object.values(F).forEach(s => s.clear()); menus.forEach(m => m.redraw()); render(); };
-    const want = qs.get('ev'); if (want) { const d = rows.querySelector(`tr.detail[data-for="${want}"]`); if (d) { d.style.display = ''; d.previousElementSibling.scrollIntoView({ block: 'center' }); } }
+    $$('.fchip:not(.clear)').forEach(c => $('i', c).onclick = () => { if (c.dataset.f === 'range') { F.from = F.to = ''; $('#f-from').value = $('#f-to').value = ''; } else F[c.dataset.f].delete(c.dataset.k); menus.forEach(m => m.redraw()); page = 1; render(); });
+    const cl = $('#f-clear'); if (cl) cl.onclick = () => { ['org', 'type', 'layer', 'axis'].forEach(f => F[f].clear()); F.from = F.to = ''; $('#f-from').value = $('#f-to').value = ''; menus.forEach(m => m.redraw()); page = 1; render(); };
+    if (want) { const d = rows.querySelector(`tr.detail[data-for="${want}"]`); if (d) { d.style.display = ''; d.previousElementSibling.scrollIntoView({ block: 'center' }); } }
   };
   render();
 }

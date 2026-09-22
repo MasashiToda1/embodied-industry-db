@@ -60,6 +60,13 @@ td.mono,td.right,td>.chip{white-space:nowrap}
 .fopt input{margin:0}
 .fopt span{flex:1}
 .fopt em{font-style:normal;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.frange{display:inline-flex;align-items:center;gap:6px;margin-left:auto}
+.frange input{font:inherit;font-size:12px;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.pager{display:flex;align-items:center;gap:4px;padding:12px 0 2px;flex-wrap:wrap}
+.pg{font:inherit;font-size:12px;padding:4px 9px;border:1px solid var(--line);border-radius:6px;background:var(--card);cursor:pointer;color:var(--ink)}
+.pg:hover:not(:disabled){border-color:var(--ink)}
+.pg.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pg:disabled{color:#bbb;cursor:default}
 .fchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;min-height:0}
 .fchip{display:inline-flex;align-items:center;gap:5px;background:var(--ink);color:#fff;border-radius:20px;padding:2px 6px 2px 10px;font-size:12px}
 .fchip i{font-style:normal;cursor:pointer;background:rgba(255,255,255,.2);border-radius:50%;width:16px;height:16px;line-height:16px;text-align:center;font-size:11px}
