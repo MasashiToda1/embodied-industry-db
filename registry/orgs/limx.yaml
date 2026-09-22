@@ -6,7 +6,18 @@ status: active
 layers:
 - embodiment
 - locomotion
+founded: 2022-01
+hq:
+  country: CN
+  city: 深圳
+description: 具身智能机器人主机厂，产品有全尺寸人形 LimX Oli、LimX Luna、模块化机器人 TRON 系列和人形大脑系统 COSA。
 upstream:
   robotics_notebooks_institution: limx
 accounts:
   huggingface: limxdynamics
+  site: https://www.limxdynamics.com
+sources:
+- url: https://www.limxdynamics.com/zh/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍页，发展历程写「2022 年 1 月逐际动力正式成立，全球总部位于中国深圳」，产品线

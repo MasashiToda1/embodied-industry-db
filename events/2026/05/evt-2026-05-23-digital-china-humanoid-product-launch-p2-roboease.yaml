@@ -1,0 +1,25 @@
+id: evt-2026-05-23-digital-china-humanoid-product-launch-p2-roboease
+date: '2026-05-23'
+date_precision: day
+type: product_launch
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏发布双形态人形机器人星行侠 P2、场景大脑 RoboEase 与健康监护方案 RoboCare
+summary:
+  zh: 2026 年 5 月 23 日，数字华夏在深圳文博会同期举办新品发布会，发布「星」系列机器人星行侠 P2（双足/轮式「飞兵」双形态、10 小时续航、自主回充、三个版本）、具身智能场景大脑 RoboEase（图形化拖拽配置任务、标准化开发工具链）和面向康养的 RoboCare 健康监护方案。现场与深开鸿等数十家企业签署战略合作协议。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+  target_scene:
+  - commercial-service
+  - healthcare
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/214.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/digit-2026-05-23-digital-china-humanoid-p.html
+corroboration: single

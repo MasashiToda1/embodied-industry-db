@@ -1,0 +1,31 @@
+id: evt-2026-06-04-dexmate-funding-a-round
+date: '2026-06-04'
+date_precision: day
+type: funding
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人完成亿元 A 轮融资，汇川产投与中国电信联合投资
+summary:
+  zh: 证券时报 6 月 4 日报道，戴盟机器人近日完成亿元 A 轮融资，由汇川技术旗下产业基金汇川产投与中国电信联合投资，资金用于打造超大规模含物理交互信息数据集和物理世界模型研发。36氪报道称其视触觉传感器出货量居全球第一。
+date_basis: derived
+date_as_stated: 证券时报报道发布于 2026-06-04 20:04，正文写「近日……完成亿元 A 轮融资」
+counterparties:
+- 汇川产投
+- 中国电信
+axes:
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.stcn.com/article/detail/3944636.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/stcn-2026-06-dexmate-a-round.html
+- url: https://m.36kr.com/p/3837269482091656
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/m-2026-06-dexmate-a-round-36kr.html
+corroboration: multi

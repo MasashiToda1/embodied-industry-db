@@ -1,0 +1,20 @@
+id: evt-2026-07-26-qiyuan-robotics-corporate-pudong-hq
+date: '2026-07-26'
+date_precision: day
+type: corporate
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 启元新创（上海）落户浦东张江机器人谷，列为上海市人工智能重点项目
+summary:
+  zh: 证券时报 7 月 26 日报道，上纬新材旗下子公司启元新创（上海）科技有限公司近日正式落户浦东，作为上海市人工智能重点项目签约，项目同步落地张江机器人谷。报道称 2026 年一季度上纬新材具身智能业务研发投入 3778 万元，启元线下体验店已在上海、深圳、西安、厦门、广州陆续启动。
+date_basis: derived
+date_as_stated: 报道发布于 2026-07-26，正文写「近日……正式落户浦东」
+evidence:
+- url: https://stcn.com/article/detail/4041786.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/stcn-2026-07-26-qiyuan-robotics-pudong.html
+corroboration: single

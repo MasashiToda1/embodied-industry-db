@@ -1,0 +1,36 @@
+id: evt-2026-03-09-magiclab-funding-500m-round
+date: '2026-03-09'
+date_precision: day
+type: funding
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子完成 5 亿元新一轮融资，同步在无锡设立百亿级生态基金
+summary:
+  zh: 3 月 9 日，魔法原子宣布完成新一轮 5 亿元融资，投资机构包括天空工场创投基金、拓普集团、金雨茂物、苏大天宫、杰创智能、爱仕达、梁创投等，并引入宜宾宜发展旗下基金、武汉临空港旗下基金等地方国资。同时公司百亿级具身智能生态基金落地无锡，两项合计撬动资金规模超过 105 亿元。
+counterparties:
+- 天空工场创投基金
+- 拓普集团
+- 金雨茂物
+- 苏大天宫
+- 杰创智能
+- 爱仕达
+- 梁创投
+- 宜宾宜发展旗下基金
+- 武汉临空港旗下基金
+amount:
+  value: 500000000
+  currency: CNY
+evidence:
+- url: https://www.cyzone.cn/article/827132.html
+  publisher: 创业邦
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/cyzone-2026-03-09-magiclab-funding-500m-cy.html
+- url: https://news.pedaily.cn/202603/561523.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/news-2026-03-09-magiclab-funding-500m.html
+corroboration: multi

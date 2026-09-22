@@ -1,0 +1,37 @@
+id: evt-2026-04-17-booster-funding-near-1b
+date: '2026-04-17'
+date_precision: day
+type: funding
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化完成近 10 亿元融资，北京高精尖产业基金等联合领投
+summary:
+  zh: 4 月 17 日，北京加速进化科技有限公司宣布完成近 10 亿元融资，由北京高精尖产业基金、京国盛基金与华控基金联合领投，联想之星、国海创新资本、交银资本参与投资，深创投、北京市人工智能产业投资基金、源码资本、英诺基金、IDG 资本、彼岸时代、民银国际等老股东继续加码。公司同时披露 2026 年一季度出货量同比增长 500%，2025 年 12 月经营性现金流回正。
+counterparties:
+- 北京高精尖产业基金
+- 京国盛基金
+- 华控基金
+- 联想之星
+- 国海创新资本
+- 交银资本
+- 深创投
+- 北京市人工智能产业投资基金
+- 源码资本
+- 英诺基金
+- IDG 资本
+- 彼岸时代
+- 民银国际
+evidence:
+- url: https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202604/t20260422_244584.html
+  publisher: 北京市科委、中关村管委会（转载中关村科学城公众号）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/ncsti-2026-04-17-booster-funding-1b.html
+- url: https://news.qq.com/rain/a/20260417A04LPI00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-17-booster-funding-1b-qq.html
+corroboration: multi

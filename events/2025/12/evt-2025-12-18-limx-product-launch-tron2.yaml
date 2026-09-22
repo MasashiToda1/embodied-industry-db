@@ -1,0 +1,26 @@
+id: evt-2025-12-18-limx-product-launch-tron2
+date: '2025-12-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力发布多形态具身机器人 TRON 2，售价 4.98 万元起开放预订
+summary:
+  zh: 12 月 18 日，逐际动力发布多形态具身机器人 TRON 2，一个本体可切换双臂、双足、双轮足三种构型，面向 VLA 科研、移动操作与全身运控开发。售价 4.98 万元起，即日起开放预订。
+amount:
+  value: 49800
+  currency: CNY
+axes:
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000047
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/limxdynamics-2025-12-18-limx-tron2-launch.html
+corroboration: single

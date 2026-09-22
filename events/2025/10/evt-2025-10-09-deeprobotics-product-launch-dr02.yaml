@@ -1,0 +1,29 @@
+id: evt-2025-10-09-deeprobotics-product-launch-dr02
+date: '2025-10-09'
+date_precision: day
+type: product_launch
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技发布首款行业级人形机器人 DR02
+summary:
+  zh: 10 月 9 日，云深处科技发布行业级人形机器人 DR02。官方页面称整机达到 IP66 防水防尘，运行温度 -20℃ 至 55℃，面向安防巡逻、工厂作业等场景；第一财经报道该机身高 175cm、体重 75kg、31 个自由度（不含末端执行器）。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - inspection-hazardous
+  - industrial-manufacturing
+evidence:
+- url: https://www.deeprobotics.cn/robot/index/article/id/277.html
+  publisher: 云深处科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/deeprobotics-2025-10-09-deeprobotics-dr02-offici.html
+- url: https://www.yicai.com/news/102855785.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/yicai-2025-10-09-deeprobotics-dr02-yicai.html
+corroboration: multi

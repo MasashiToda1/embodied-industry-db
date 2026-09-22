@@ -1,0 +1,28 @@
+id: evt-2026-07-10-booster-product-launch-t2
+date: '2026-07-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化发布具身开发旗舰平台 Booster T2，专业版搭载英伟达 Thor
+summary:
+  zh: 7 月 10 日，加速进化发布具身开发旗舰平台 Booster T2。专业版搭载 NVIDIA Thor 芯片，端侧算力 2070 TFLOPS，身高 1.4 米，关节最大扭矩 140Nm，双臂最大静态负载 10kg。IT之家报道专业版当日开售，价格未公开，需在官网填写采购信息。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+evidence:
+- url: https://www.booster.tech/zh/about-us/
+  publisher: 加速进化官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/booster-2026-07-10-booster-t2-launch-offici.html
+- url: https://www.ithome.com/0/975/340.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/ithome-2026-07-10-booster-t2-ithome.html
+corroboration: multi

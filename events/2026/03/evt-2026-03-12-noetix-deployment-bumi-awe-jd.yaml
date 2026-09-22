@@ -1,0 +1,25 @@
+id: evt-2026-03-12-noetix-deployment-bumi-awe-jd
+date: '2026-03-12'
+date_precision: day
+type: deployment
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力在 AWE2026 现场交付「小布米」，宣布与京东深化合作
+summary:
+  zh: 3 月 12 日，松延动力携「小布米」与「小顽童 N2」亮相 AWE2026，创始人姜哲源在现场将「小布米」交付到用户手中；松延动力与京东联合宣布深化合作，推动人形机器人民用化。姜哲源称 2026 年核心目标是实现「小布米」万台规模交付。
+counterparties:
+- 京东
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - home
+evidence:
+- url: https://egs.stcn.com/news/detail/2250552.html
+  publisher: 证券时报·e公司
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/egs-2026-03-12-noetix-bumi-awe-delivery.html
+corroboration: single

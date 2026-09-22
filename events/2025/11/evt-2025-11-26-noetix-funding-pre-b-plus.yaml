@@ -1,0 +1,22 @@
+id: evt-2025-11-26-noetix-funding-pre-b-plus
+date: '2025-11-26'
+date_precision: day
+type: funding
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力完成近 2 亿元 Pre-B+ 轮融资，中金资本领投
+summary:
+  zh: 11 月 26 日，松延动力完成近 2 亿元 Pre-B+ 轮融资，由中金资本领投，允泰资本、厚为资本跟投。融资用于技术研发投入、高价值应用场景生态合作和打通规模化量产交付通路。与 10 月 26 日的 Pre-B 轮合计近 5 亿元。
+counterparties:
+- 中金资本
+- 允泰资本
+- 厚为资本
+evidence:
+- url: https://stcn.com/article/detail/3512757.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-26-noetix-pre-b-plus.html
+corroboration: single

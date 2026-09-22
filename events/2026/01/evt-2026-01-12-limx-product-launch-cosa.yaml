@@ -1,0 +1,23 @@
+id: evt-2026-01-12-limx-product-launch-cosa
+date: '2026-01-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力发布具身 Agentic OS 系统 LimX COSA
+summary:
+  zh: 1 月 12 日，逐际动力发布具身智能体系统 LimX COSA（Cognitive OS of Agents），官方称其将高阶认知与全身运控融合，统一调度模型、技能、记忆，对齐 VLA 与全身运控；全尺寸人形机器人 Oli 首先搭载该系统。
+axes:
+  model_form:
+  - hierarchical
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000054
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/limxdynamics-2026-01-12-limx-cosa-launch.html
+corroboration: single

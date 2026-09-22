@@ -1,0 +1,30 @@
+id: evt-2025-11-17-booster-funding-idg-round
+date: '2025-11-17'
+date_precision: day
+type: funding
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化完成超亿元新一轮融资，IDG 资本领投
+summary:
+  zh: 11 月 17 日，证券时报报道加速进化完成新一轮超亿元融资，由 IDG 资本投资、亦庄国投跟投，老股东源码资本、英诺天使基金、深创投集团、博华资本等继续加注，义柏资本担任独家财务顾问。资金用于产品研发升级、规模化量产交付及生态平台服务建设。报道称截至当时公司人形机器人全球累计出货量已突破 700 台。
+counterparties:
+- IDG 资本
+- 亦庄国投
+- 源码资本
+- 英诺天使基金
+- 深创投集团
+- 博华资本
+evidence:
+- url: https://www.stcn.com/article/detail/3497862.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-17-booster-funding-idg.html
+- url: https://www.tmtpost.com/7838341.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/tmtpost-2025-11-17-booster-funding-idg-tmt.html
+corroboration: multi

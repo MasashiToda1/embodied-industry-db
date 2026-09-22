@@ -1,0 +1,21 @@
+id: evt-2025-12-25-deeprobotics-funding-pre-ipo
+date: '2025-12-25'
+date_precision: day
+type: funding
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技完成数亿元 Pre-IPO 轮融资，国家人工智能产业投资基金领投
+summary:
+  zh: 证券时报援引企查查信息报道，12 月 25 日，云深处科技完成数亿元人民币 Pre-IPO 轮融资，由国家人工智能产业投资基金合伙企业（有限合伙）领投，京东跟投。
+counterparties:
+- 国家人工智能产业投资基金合伙企业（有限合伙）
+- 京东
+evidence:
+- url: https://www.stcn.com/article/detail/3558169.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/stcn-2025-12-25-deeprobotics-pre-ipo.html
+corroboration: single

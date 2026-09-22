@@ -1,0 +1,28 @@
+id: evt-2026-02-16-magiclab-deployment-cctv-spring-gala
+date: '2026-02-16'
+date_precision: day
+type: deployment
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子机器人登上 2026 央视春晚：6 台 Z1、2 台 Gen1 主会场表演，上百台 MagicDog 宜宾分会场群控
+summary:
+  zh: 2026 年央视春晚主会场节目《智造未来》中，魔法原子 6 台双足人形机器人 MagicBot Z1 和 2 台全尺寸人形机器人 MagicBot Gen1 与艺人同台表演；宜宾分会场上百台四足机器人 MagicDog 以「大熊猫」造型完成群控表演。Z1 在分会场完成托马斯、踢月腿 360° 等动作展示。
+date_basis: derived
+date_as_stated: 官网文章（2026-02-17）称「2026 年央视春晚」，春晚播出日为 2026 年 2 月 16 日（除夕）
+counterparties:
+- 中央广播电视总台
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+  target_scene:
+  - tourism-performance
+evidence:
+- url: https://www.magiclab.top/news/62
+  publisher: 魔法原子官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/magiclab-2026-02-16-magiclab-spring-gala-off.html
+corroboration: single

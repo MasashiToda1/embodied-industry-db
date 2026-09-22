@@ -1,0 +1,45 @@
+id: evt-2026-02-02-limx-funding-b-round-200m-usd
+date: '2026-02-02'
+date_precision: day
+type: funding
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力完成 2 亿美元 B 轮融资
+summary:
+  zh: 2 月 2 日，逐际动力宣布完成 2 亿美元 B 轮融资。机构投资方包括阿联酋磊石资本（Stone Venture）、东方富海、基石资本、天创资本、广发信德、合肥创新投、国泰君安创新投资、中信建投、唐兴资本、财鑫资本；战略产业投资人包括京东、中鼎股份、光洋股份、东土科技；老股东尚颀资本、彼岸时代、蔚来资本、明势创投继续加码。
+counterparties:
+- 磊石资本（Stone Venture）
+- 东方富海
+- 基石资本
+- 天创资本
+- 广发信德
+- 合肥创新投
+- 国泰君安创新投资
+- 中信建投
+- 唐兴资本
+- 财鑫资本
+- 京东
+- 中鼎股份
+- 光洋股份
+- 东土科技
+- 尚颀资本
+- 彼岸时代
+- 蔚来资本
+- 明势创投
+amount:
+  value: 200000000
+  currency: USD
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000056
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/limxdynamics-2026-02-02-limx-b-round.html
+- url: https://www.36kr.com/p/3664227663651718
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/36kr-2026-02-02-limx-b-round-36kr.html
+corroboration: multi

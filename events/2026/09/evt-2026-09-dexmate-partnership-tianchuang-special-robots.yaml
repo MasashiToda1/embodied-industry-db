@@ -1,0 +1,30 @@
+id: evt-2026-09-dexmate-partnership-tianchuang-special-robots
+date: 2026-09
+date_precision: month
+type: partnership
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人与南京天创智能签署亿元级框架协议，合作特种场景具身机器人
+summary:
+  zh: 2026 年 9 月初报道，南京天创智能科技有限公司与戴盟（深圳）机器人科技有限公司签署亿元级战略合作框架协议，围绕消防、电网、矿山、化工防爆等特种场景，结合天创的防爆巡检整机制造与戴盟的触觉传感器、Daimon-TWM 模型，推进电网巡检机器人触觉增强改造与矿山掘进机器人柔性操作系统开发。报道注明「亿元是框架协议，不是确定采购」。
+counterparties:
+- 南京天创智能科技有限公司
+axes:
+  target_scene:
+  - inspection-hazardous
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.dtm.com.cn/news/202609/305866.html
+  publisher: 天脉财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/dtm-2026-09-dexmate-tianchuang.html
+- url: https://caifuhao.eastmoney.com/news/20260903225801847968810
+  publisher: 东方财富网财富号
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/caifuhao-2026-09-dexmate-tianchuang-eastm.html
+corroboration: multi

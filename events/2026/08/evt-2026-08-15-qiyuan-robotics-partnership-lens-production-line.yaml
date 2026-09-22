@@ -1,0 +1,32 @@
+id: evt-2026-08-15-qiyuan-robotics-partnership-lens-production-line
+date: '2026-08-15'
+date_precision: day
+type: partnership
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 上纬新材半年报：启元与蓝思智能达成首期万台级机器人产线合作，预收货款 2.1 亿元
+summary:
+  zh: 上纬新材 2026 年半年报（8 月 15 日报道）披露，公司与蓝思科技子公司蓝思智能达成首期规划万台级机器人的产线合作，已与 20 余家核心渠道商签署合作协议；报告期内消费级具身智能机器人首批订单对应预收货款 2.1 亿元，尚未确认收入。上半年机器人业务研发投入约 1.6 亿元。
+counterparties:
+- 蓝思智能
+- 蓝思科技
+amount:
+  value: 210000000
+  currency: CNY
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: http://sh.news.cn/20260815/a3fdf95d43a548a1a5438c71cf9c6548/c.html
+  publisher: 新华网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/sh-2026-08-15-qiyuan-robotics-h1-repor.html
+- url: https://www.cnfin.com/gs-lb/detail/20260815/4455704_1.html
+  publisher: 中国金融信息网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/cnfin-2026-04-qiyuan-robotics-subsidia.html
+corroboration: multi

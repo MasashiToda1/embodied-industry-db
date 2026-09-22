@@ -1,0 +1,24 @@
+id: evt-2026-05-25-limx-product-launch-luna
+date: '2026-05-25'
+date_precision: day
+type: product_launch
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力发布全尺寸交互人形机器人 LimX Luna
+summary:
+  zh: 5 月 25 日，逐际动力发布面向商业服务的全尺寸交互人形机器人 LimX Luna，身高 160cm，27 个机身自由度（不含末端执行器），支持视频学舞、零代码任务编排与多机群控，面向商场、景区、展会等商业空间。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - commercial-service
+  - tourism-performance
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000061
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/limxdynamics-2026-05-25-limx-luna-launch.html
+corroboration: single

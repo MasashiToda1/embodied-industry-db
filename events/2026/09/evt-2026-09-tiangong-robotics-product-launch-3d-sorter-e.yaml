@@ -1,0 +1,29 @@
+id: evt-2026-09-tiangong-robotics-product-launch-3d-sorter-e
+date: 2026-09
+date_precision: month
+type: product_launch
+orgs:
+- id: tiangong-robotics
+  role: subject
+title:
+  zh: 天工机器人推出木马速运一体机（3D Sorter E），已在头部快递企业仓库投入运营
+summary:
+  zh: 2026 年 9 月，天工机器人推出木马速运一体机（3D Sorter E），作为交叉带分拣体系的补充，用一柱多车、立体化格口设计让 NC 件与扁平件多流向分拣在一套设备内一次完成。报道称该设备已在国内某头部快递企业仓库投入运营，2026 年 7 月 2 日现场峰值处理量 24500 件/小时，人员分拣效率提升 280%。客户名称未披露。
+axes:
+  target_scene:
+  - logistics-warehouse
+  delivery_model:
+  - hardware-sale
+  - project-based
+evidence:
+- url: http://zgdsb.cn/news/toutiao/11467.html
+  publisher: 电商报道网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/zgdsb-2026-09-tiangong-robotics-sorter.html
+- url: https://cinic.org.cn/zgzz/xw/1653672.html
+  publisher: 中国产业经济信息网（转自科技日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/cinic-2026-09-18-tiangong-robotics-produc.html
+corroboration: multi

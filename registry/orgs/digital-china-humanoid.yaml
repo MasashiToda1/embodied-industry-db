@@ -2,7 +2,26 @@ id: digital-china-humanoid
 names:
   zh: 数字华夏
   en: Digital China Humanoid
+  aliases:
+  - 数字华夏（深圳）科技有限公司
+  - 数字华夏（深圳）机器人有限公司
 status: active
 layers:
 - embodiment
 - content
+founded: 2024-03
+hq:
+  country: CN
+  city: 深圳
+description: 做交互型人形机器人的公司，产品有仿生人形夏澜系列、通用人形夏起系列、双形态星行侠系列和场景大脑 RoboEase，面向政务、金融、康养场景。
+accounts:
+  site: https://www.digit.com.cn
+sources:
+- url: https://www.digit.com.cn/NewsDetail/240.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻「数字华夏完成亿元级 Pre-A 轮战略融资」，写明「数字华夏成立于 2024 年 3 月」
+- url: https://www.digit.com.cn/AboutUs.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，深圳总部地址（南山区科技南八路），公司全称数字华夏（深圳）科技有限公司

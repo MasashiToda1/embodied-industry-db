@@ -1,0 +1,23 @@
+id: evt-2026-08-27-booster-deployment-shipments-3000
+date: '2026-08-27'
+date_precision: day
+type: deployment
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化公布双足人形机器人全球出货量突破 3000 台
+summary:
+  zh: 8 月 27 日，加速进化公布运营数据：公司双足人形机器人全球出货量突破 3000 台，其中 2026 年截至当日出货超 2000 台，上半年交付超 1200 台。公司称产品已覆盖全球 30 余个国家及地区的科研机构、高校及商业客户。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-08-27/doc-inipuiyp5206554.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-27-booster-shipments-3000.html
+corroboration: single

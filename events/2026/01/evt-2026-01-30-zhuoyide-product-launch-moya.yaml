@@ -1,0 +1,31 @@
+id: evt-2026-01-30-zhuoyide-product-launch-moya
+date: '2026-01-30'
+date_precision: day
+type: product_launch
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得在张江总部展厅开业仪式上发布完全仿生机器人 Moya，首批 50 台预售 120 万至 150 万元
+summary:
+  zh: 上海卓益得机器人有限公司在张江机器人谷总部展厅开业仪式上推出完全仿生具身智能机器人 Moya，定位高端情感陪护，目标客户为高净值家庭、养老机构及科研院所。报道称首批 50 台限量预售定价区间为 120 万至 150 万元人民币，计划 2026 年第四季度启动交付。官网新闻写明总部乔迁暨展厅开业典礼于 2026 年 1 月 30 日举行。
+date_basis: derived
+date_as_stated: ITBear 报道（2026-01-31）写「在张江机器人谷总部展厅的开业仪式上正式推出」；官网新闻写「2026 年 1 月 30 日……总部乔迁仪式暨展厅开业典礼在张江机器人谷一期举行」
+axes:
+  target_scene:
+  - healthcare
+  - home
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.itbear.com.cn/html/2026-01/1120964.html
+  publisher: ITBear 科技资讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/itbear-2026-01-30-zhuoyide-moya-launch.html
+- url: https://www.droidup.com/fenleimingcheng
+  publisher: 卓益得机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/droidup-2026-01-30-zhuoyide-official-news.html
+corroboration: multi

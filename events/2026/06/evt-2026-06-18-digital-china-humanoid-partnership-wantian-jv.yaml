@@ -1,0 +1,30 @@
+id: evt-2026-06-18-digital-china-humanoid-partnership-wantian-jv
+date: '2026-06-18'
+date_precision: day
+type: partnership
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏与港股中国万天控股旗下公司签约，共建合资运营平台推动服务人形机器人落地
+summary:
+  zh: 6 月 18 日，数字华夏（深圳）机器人有限公司与中国万天控股（1854.HK）关联控股子公司深圳万天人工智能科技有限公司签署战略合作框架协议，双方共建合资运营平台，推动服务人形机器人批量落地政务、金融、康养、商业场景，并围绕「出货、出海、出圈」布局东盟、中东、欧美市场。
+counterparties:
+- 中国万天控股有限公司
+- 深圳万天人工智能科技有限公司
+axes:
+  target_scene:
+  - commercial-service
+  - healthcare
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/225.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/digit-2026-06-18-digital-china-humanoid-w.html
+- url: https://fgw.sz.gov.cn/ztzl/qtztzl/szscjmyjjfzzhfwpt/mqfc/myqyfzdt/content/post_12865797.html
+  publisher: 深圳市发展和改革委员会网站（转载深圳新闻网）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/fgw-2026-06-18-digital-china-humanoid-w.html
+corroboration: multi

@@ -1,0 +1,22 @@
+id: evt-2026-07-casbot-corporate-zhongkehuisi-jv
+date: 2026-07
+date_precision: month
+type: corporate
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 中科慧灵与蓝思科技、湖南华夏投资集团合资成立灵巧手公司「中科慧思」
+summary:
+  zh: 2026 年 7 月，中科慧思具身智能（湖南）有限公司成立，由北京中科慧灵机器人技术有限公司、蓝思科技股份有限公司与湖南华夏投资集团有限公司共同设立，专注灵巧手及具身操作能力。8 月 7 日该公司在长沙发布 L1、D1、M1 三款灵巧手，L 系列已用于 CASBOT BAND 机器人乐队演奏。
+counterparties:
+- 蓝思科技股份有限公司
+- 湖南华夏投资集团有限公司
+- 中科慧思具身智能（湖南）有限公司
+evidence:
+- url: https://eu.36kr.com/zh/p/3931010805579139
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/eu-2026-07-casbot-zhongkehuisi-jv.html
+corroboration: single

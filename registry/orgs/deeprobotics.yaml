@@ -2,12 +2,30 @@ id: deeprobotics
 names:
   zh: 云深处科技
   en: Deep Robotics
+  aliases:
+  - 杭州云深处科技股份有限公司
+  - 杭州云深处科技有限公司
 status: active
 layers:
 - embodiment
 - locomotion
+founded: 2017-11
+hq:
+  country: CN
+  city: 杭州
+description: 做四足机器人、轮足机器人、人形机器人及关节模组的公司，产品有绝影 X30、山猫 M20、DR02。
 upstream:
   robotics_notebooks_institution: deeprobotics
 accounts:
   huggingface: deeproboticslab
   github: DeepRoboticsResearch
+  site: https://www.deeprobotics.cn
+sources:
+- url: https://www.deeprobotics.cn/robot/index/company.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网「关于云深处」页，公司简介、产品线与杭州地址
+- url: http://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-18/2837d363ae40628d49f2b6351debc9eb.pdf
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 科创板 IPO 发行保荐书，成立时间 2017 年 11 月 29 日，注册地址杭州市西湖区，主营业务

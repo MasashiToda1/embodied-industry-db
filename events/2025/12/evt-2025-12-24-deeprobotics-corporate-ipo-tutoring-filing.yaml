@@ -1,0 +1,20 @@
+id: evt-2025-12-24-deeprobotics-corporate-ipo-tutoring-filing
+date: '2025-12-24'
+date_precision: day
+type: corporate
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技提交 IPO 辅导备案，辅导机构为中信建投
+summary:
+  zh: 12 月 24 日，证监会官网显示，杭州云深处科技股份有限公司向浙江证监局提交 IPO 辅导备案，辅导券商为中信建投证券。报道称公司 12 月 8 日与中信建投签署辅导协议，辅导时间为 2025 年 12 月至 2026 年 6 月。
+counterparties:
+- 中信建投证券
+evidence:
+- url: https://news.qq.com/rain/a/20251224A04ONO00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-23-deeprobotics-ipo-tutorin.html
+corroboration: single

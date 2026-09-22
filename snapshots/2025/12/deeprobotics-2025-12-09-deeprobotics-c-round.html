@@ -1,0 +1,747 @@
+<!-- 抓取于 2026-09-22T15:03:21.072330+08:00 | 原始链接 https://www.deeprobotics.cn/robot/index/article/id/282.html | 公众号 未知 | 标题 deeprobotics-c-round | sha256:a4c457a952bb -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>云深处科技-具身智能技术创新与行业应用引领者</title>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="mail=no" />
+    <meta name="description" content="云深处科技(DEEP Robotics)是具身智能技术创新与行业应用引领者，也是全球首家围绕电力巡检行业应用的智能四足机器人企业，在中国率先实现四足机器人全自主巡检变电站。">
+    <meta name="keywords" content="云深处科技,绝影,绝影X20,绝影Lite，绝影mini,四足机器人，机器狗">
+
+    <link rel="stylesheet" href="/public/static/robot/css/index.css">
+    <style>
+        html,body{ background: #f5f9fa}
+    </style>
+</head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TN9DRQ2D');</script>
+<!-- End Google Tag Manager -->
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187211043", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<script>
+	if(window!=top){top.location.href=window.location.href;}
+	var phone = navigator.userAgent.match(/Android|iPad|iPhone|iPod/i) != null;
+	var url = window.location.href;
+	var host = window.location.host;
+	if(phone){
+		console.log(window.location.pathname)
+		if(window.location.pathname==="/robot" || window.location.pathname==="/"){
+			location.href= "https://www.deeprobotics.cn/robot/wap/";
+		}else{
+			if(url.indexOf('/index/') > -1){
+				var wwwurl = url.replace("/index/","/wap/");
+				location.href= wwwurl;
+			}
+		}
+		
+	}else{
+		
+	}
+</script>
+
+<style>
+
+.hover-line {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 0px; /* 确保有足够的空间显示下划线 */
+	color: #333;
+	text-decoration: none;
+	z-index: 9;
+}
+.hover-line::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 5px;
+	left: 20%;
+	background-color: #000;
+	transition: width 0.2s ease-out;
+}
+.hover-line:hover::after {
+	width:60%;
+}
+.actives::after {
+	content: '';
+	position: absolute;
+	width: 60%;
+	height: 2px;
+	bottom: 5px;
+	left: 20%;
+	background-color: #000;
+	transition: width 0.2s ease-out;
+}
+
+.hover-line-container {
+	display: inline-block;
+	position: relative;
+}
+.underline {
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 20%;
+	background-color: #000;
+	transition: width 0.3s ease-out;
+}
+.hover-line-container:hover .underline {
+	width: 60%;
+}
+.hover-text {
+	color: black;
+	text-decoration: none;
+	padding-bottom: 5px; /* 确保有足够的空间显示下划线 */
+}
+
+.hover-line-container2 {
+	display: inline-block;
+	position: relative;
+	color:#130a0a; height: 48px; line-height: 48px; width: 100%;  font-size: 16px; font-weight: bold;
+}
+.underline2 {
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 0%;
+	background-color: #000;
+	transition: width 0.3s ease-out;
+}
+.hover-line-container2:hover .underline2 {
+	width: 60%;
+}
+
+.vhide{opacity: 0;
+    visibility: hidden;}
+.vshow{ opacity: 1;
+    visibility: visible;}
+.shide{
+	overflow: hidden; height: 0px!important;
+}
+
+.toper .subnavs .navs .pros2{width: 960px; min-height: 270px; position: absolute; top: 40px; overflow: hidden;}
+.toper .subnavs .navs .pros2 .products { width: 750px; margin-left: 30px;  min-height: 270px; display: flex; flex-direction: row; justify-content:center;align-items: flex-start; flex-wrap: wrap}
+.toper .subnavs .navs .pros2 .products .series{width: 150px; height: 200px;  padding-top: 50px; display: flex;flex-direction: column; justify-content: center; align-items: center;}
+.toper .subnavs .navs .pros2 .products .series a{color:#130a0a; height: 48px; line-height: 48px; width: 100%; text-align: left; font-size: 16px; font-weight: bold;}
+.toper .subnavs .navs .pros2 .products .series .act{background: url(/public/static/robot/demo/nav_bottom.jpg) no-repeat left bottom;}
+
+.toper .subnavs .navs .pros2 .pts{width: 600px;  min-height: 200px; margin-top: 30px;}
+.toper .subnavs .navs .pros2 .pts .pro_info{width: 100%;  height: 42px; line-height: 42px; margin-left: 20px; text-align: center; font-size: 16px; color:#222}
+.toper .subnavs .navs .pros2 .pts .pro_list{width: 100%; min-height: 100px; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.toper .subnavs .navs .pros2 .pts .pro_list .pro_detail{width:400px; height: 260px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.toper .subnavs .navs .pros2 .pts .pro_list .pro_detail img{ width:160px; height:160px;}
+.toper .subnavs .navs .pros2 .pts .pro_list .pro_detail .tit{line-height: 24px; text-align: center; color: #222; font-size: 14px;  margin-top: 10px; letter-spacing: 1px;}
+
+.h-blue:hover{color:#1890ff}
+.contact:hover{background: #1890ff!important; color:#fff!important; border: 1px solid #1890ff!important;}
+</style>
+
+<body>
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN9DRQ2D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+    
+<div class="toper">
+    <div class="naver">
+        <div class="logo">
+			<img src="/public/static/robot/images/logo_.png" />
+        </div>
+        <div class="nav">
+			<div id="naver1">
+				<a href="/robot/index/index.html" class="hover-line ">首 页</a>				
+			</div>
+			<div  id="naver2">
+				<a href="/robot/index/industry.html" class="hover-line  ">行业应用</a>
+			</div>
+			<div id="naver3">
+				<a href="/robot/index/lynx.html" class="hover-line  ">产品中心</a>
+			</div>
+			<div id="naver4">
+				<a href="/robot/index/company.html" class="hover-line  ">关于云深处</a>
+			</div>
+			<div id="naver5">
+				<a href="/robot/index/support.html" class="hover-line  ">服务支持</a>
+			</div>
+			<div id="naver6">
+				<a href="/robot/index/news.html" class="hover-line  actives">新闻资讯</a>
+			</div>
+		</div>
+        <div class="part">
+			<a href="javascript:;" style="font-size:16px;"><img src="/public/static/robot/images/phone_icon_.png" />400-0559-095</a>
+			<a class="contact" href="/robot/index/buy.html">联系我们</a>
+			<a href="/en"><img src="/public/static/robot/images/lag_icon_.png" />中文/EN</a>
+			
+			<!-- <a href="/robot/index/buy.html"><img src="/public/static/robot/images/buy_icon.png" />我要订购</a>
+			<a href="/robot/index/cooperation.html"><img src="/public/static/robot/images/cop_icon.png" />我要合作</a>
+			<a href="/en" class="language"><img src="/public/static/robot/images/lag_icon.png" />English</a> -->
+		</div>
+    </div>
+
+	
+
+    <div class="subnavs shide">
+        <div class="logo"></div>
+        <div class="navs">
+            <div class="nv nv1 vhide">
+
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part1" class="hover-text">电力巡检</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part2" class="hover-text">应急救援</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part3" class="hover-text">管廊隧道</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part4" class="hover-text">金属冶炼</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part5" class="hover-text">建筑测绘</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/industry.html#part6" class="hover-text">教育科研</a>
+					<div class="underline"></div>
+				</div>
+
+            </div>
+            <div class="nv nv2 vhide">
+				<div class="hover-line-container link">
+					<a href="/robot/index/company.html#company" class="hover-text">公司简介</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/company.html#vision" class="hover-text">愿景使命</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/company.html#comp" class="hover-text">大事记</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/company.html#honor" class="hover-text">企业荣誉</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/company.html#maps" class="hover-text">联系我们</a>
+					<div class="underline"></div>
+				</div>		
+            </div>
+            <div class="nv nv3 vhide">
+				<div class="hover-line-container link">
+					<a href="/robot/index/support.html#download" class="hover-text">下载中心</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/support.html#download" class="hover-text">资源中心</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/support.html#faq" class="hover-text">常见问题</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/support.html#policy" class="hover-text">条款与政策</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/support.html#service" class="hover-text">售后服务</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/fault.html" class="hover-text">故障申报</a>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<div class="nv nv4 vhide">
+				<div class="hover-line-container link">
+					<a href="/robot/index/news.html#part1" class="hover-text">最新资讯</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/news.html#part2" class="hover-text">战略合作</a>
+					<div class="underline"></div>
+				</div>
+				<div class="hover-line-container link">
+					<a href="/robot/index/news.html#part3" class="hover-text">资讯订阅</a>
+					<div class="underline"></div>
+				</div>
+            </div>
+
+			<div class="pros2 vhide">
+				<div class="products">
+					<div class="series">
+						<div class="hover-line-container2" data-id=0 >
+							<a href="javascript:;" class="hover-text act">X 系列</a>
+							<div class="underline2"></div>
+						</div>
+						<div class="hover-line-container2" data-id=1 >
+							<a href="javascript:;"  class="hover-text">Lite 系列</a>
+							<div class="underline2"></div>
+						</div>
+						<div class="hover-line-container2" data-id=2 >
+							<a href="javascript:;"  class="hover-text">J 系列关节</a>
+							<div class="underline2"></div>
+						</div>
+						<div class="hover-line-container2" data-id=3 >
+							<a href="javascript:;"  class="hover-text">人形机器人</a>
+							<div class="underline2"></div>
+						</div>
+						<div class="hover-line-container2" data-id=4>
+							<a href="javascript:;"  class="hover-text">山猫</a>
+							<div class="underline2"></div>
+						</div>
+						<!-- <a href="javascript:;" data-id=0 class="act">X 系列</a>
+						<a href="javascript:;" data-id=1 class="">Lite 系列</a>
+						<a href="javascript:;" data-id=2 class="">J 系列关节</a>
+						<a href="javascript:;" data-id=3 class="">人形机器人</a> -->
+						<!-- <a href="javascript:;" data-id=4 class="">山猫</a> -->
+					</div>
+					<div class="pts">
+						<div class="pro_info" style="text-indent: -30px;">工业级行业应用四足机器人</div>
+						<div class="pro_list">
+							<!--<a href="/robot/index/product.html" class="pro_detail">-->
+							<!--	<img src="/public/static/robot/images/nav_x20.png">-->
+							<!--	<div class="tit">绝影X20</div>-->
+							<!--</a>-->
+							<a href="/robot/index/product3.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_x30.png">
+								<div class="tit">绝影X30</div>
+							</a>
+						</div>
+
+						<a href="/robot/index/product1.html" class="pro_list" style="display: none;">
+							<div class="pro_detail">
+								<img src="/public/static/robot/images/nav_lite3.png">
+								<div class="tit">绝影Lite3</div>
+							</div>
+						</a>
+
+						<div class="pro_list" style="display: none;">
+							<a href="/robot/index/j60.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_J60.png">
+								<div class="tit">J60系列关节</div>
+							</a>
+							<a href="/robot/index/j80j100.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_J100.png">
+								<div class="tit">J80&J100系列关节</div>
+							</a>
+						</div>
+
+						<div class="pro_list" style="display: none;margin-right: 40px;">
+							<a href="/robot/index/humanoid.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_hum.png">
+								<div class="tit">DR01</div>
+							</a>
+
+							<a href="/robot/index/dr02.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_hum02.png">
+								<div class="tit">DR02</div>
+							</a>
+							
+						</div>
+
+						<!-- <a href="/robot/index/humanoid.html" class="pro_list" style="display: none; ">
+							<div class="pro_detail">
+								<img src="/public/static/robot/images/nav_hum.png">
+								<div class="tit">DR01</div>
+							</div>
+						</a> -->
+
+						<div class="pro_list" style="display: none;">
+							<a href="/robot/index/cat.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_cat.png">
+								<div class="tit">云深处山猫</div>
+							</a>
+
+							<a href="/robot/index/lynx.html" class="pro_detail">
+								<img src="/public/static/robot/images/nav_lynx.png">
+								<div class="tit">山猫M20</div>
+							</a>
+
+							<a href="/robot/index/lynxs10.html" class="pro_detail">
+								<img src="/public/static/robot/demo/nav_s10.png">
+								<div class="tit">山猫S10</div>
+							</a>
+							
+						</div>
+
+
+					</div>
+				</div>
+				
+                
+            </div>
+
+
+            <div class="pros">
+                <div class="products">
+                    <a class="product" href="/robot/index/product1.html">
+                        <div class="tit">绝影Lite3</div>
+                        <div class="tip" style="color:#fff">教育科研</div>
+                        <div class="img"><img src="/public/static/robot/images/pro1.png"></div>
+                    </a>
+					<a class="product" href="/robot/index/product.html">
+                        <div class="tit">绝影X20</div>
+                        <div class="tip" style="color:#fff">行业应用</div>
+                        <div class="img"><img src="/public/static/robot/images/pro4.png"></div>
+                    </a>
+                    <a class="product" href="/robot/index/product3.html">
+                        <div class="tit">绝影X30</div>
+                        <div class="tip" style="color:#fff">行业应用</div>
+                        <div class="img"><img src="/public/static/robot/images/pro3_.png"></div>
+                    </a>	
+                    <a class="product" href="/robot/index/j60.html">
+                        <div class="tit">J60系列关节</div>
+                        <div class="tip" style="color:#fff">机器人关节</div>
+                        <div class="img"><img src="/public/static/robot/images/j60.png"></div>
+                    </a>
+					<a class="product" href="/robot/index/j80j100.html"  style="background:none">
+                        <div class="tit">J80&J100系列关节</div>
+                        <div class="tip" style="color:#fff">机器人关节</div>
+                        <div class="img"><img src="/public/static/robot/images/j100.png"></div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="part"></div>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript" src="/public/static/robot/js/jquery.min.js" ></script>
+<script>
+	$("#naver2").mouseover(function(){
+		$(".subnavs").removeClass('shide').css({"height":"220px"})
+		$(".nv1").removeClass('vhide').addClass('vshow');
+		$(".nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+	}).mouseout(function(){
+		$(".subnavs").addClass('shide')
+	})
+
+	$("#naver3").mouseover(function(){
+		$(".subnavs").removeClass('shide').css({"height":"320px"})
+		$(".pros2").removeClass('vhide').addClass('vshow');
+		$(".nv1,.nv2,.nv3,.nv4").removeClass('vshow').addClass('vhide');
+	}).mouseout(function(){
+		$(".subnavs").addClass('shide')
+		$(".pros2").removeClass('vshow').addClass('vhide');
+	})
+
+	$("#naver4").mouseover(function(){
+		$(".subnavs").removeClass('shide').css({"height":"180px"})
+		$(".nv2").removeClass('vhide').addClass('vshow');
+		$(".nv1,.nv3,.nv4").removeClass('vshow').addClass('vhide');
+	}).mouseout(function(){
+		$(".subnavs").addClass('shide')
+	})
+
+	$("#naver5").mouseover(function(){
+		$(".subnavs").removeClass('shide').css({"height":"220px"})
+		$(".nv3").removeClass('vhide').addClass('vshow');
+		$(".nv1,.nv2,.nv4").removeClass('vshow').addClass('vhide');
+	}).mouseout(function(){
+		$(".subnavs").addClass('shide')
+	})
+
+	$("#naver6").mouseover(function(){
+		$(".subnavs").removeClass('shide').css({"height":"120px"})
+		$(".nv4").removeClass('vhide').addClass('vshow');
+		$(".nv1,.nv2,.nv3").removeClass('vshow').addClass('vhide');
+	}).mouseout(function(){
+		$(".subnavs").addClass('shide')
+	})
+
+
+
+
+
+	$(".nv1").mouseover(function(){
+		$(".nv1").removeClass('vhide').addClass('vshow');
+		$(".subnavs").removeClass('shide')
+	}).mouseout(function(){
+		$(".nv1,.nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+		$(".subnavs").addClass('shide')
+	})
+
+	$(".nv2").mouseover(function(){
+		$(".nv2").removeClass('vhide').addClass('vshow');
+		$(".subnavs").removeClass('shide')
+	}).mouseout(function(){
+		$(".nv1,.nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+		$(".subnavs").addClass('shide')
+	})
+
+	$(".nv3").mouseover(function(){
+		$(".nv3").removeClass('vhide').addClass('vshow');
+		$(".subnavs").removeClass('shide')
+	}).mouseout(function(){
+		$(".nv1,.nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+		$(".subnavs").addClass('shide')
+	})
+
+	$(".nv4").mouseover(function(){
+		$(".nv4").removeClass('vhide').addClass('vshow');
+		$(".subnavs").removeClass('shide')
+	}).mouseout(function(){
+		$(".nv1,.nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+		$(".subnavs").addClass('shide')
+	})
+
+	$(".pros2").mouseover(function(){
+		$(".pros2").removeClass('vhide').addClass('vshow');
+		$(".subnavs").removeClass('shide')
+	}).mouseout(function(){
+		$(".nv1,.nv2,.nv3,.nv4,.pros2").removeClass('vshow').addClass('vhide');
+		$(".subnavs").addClass('shide')
+	})
+
+
+
+
+
+	// $(".nv,.pros2").mousemove(function(){
+	// 	$(".subnavs").addClass('vshow');
+	// })
+	// $(".nv,.pros2").mouseout(function(){
+	// 	$(".subnavs").addClass('vhide');
+	// })
+
+
+	$(".hover-line-container2").mousemove(function(){
+		var id = $(this).attr('data-id');
+		if(id==0){
+			$(".pro_info").text("工业级行业应用四足机器人");
+		}else if(id==1){
+			$(".pro_info").text("教育科研及行业应用四足机器人");
+		}else if(id==2){
+			$(".pro_info").text("机器人关节");
+		}else if(id==3){
+			$(".pro_info").text("具身智能通用型人形机器人");
+		}else if(id==4){
+			$(".pro_info").text("全地形机器人");
+		}
+		$(".pro_list").hide();
+		$(".pro_list").eq(id).show();
+		$(".series").find("a").removeClass('act');
+		$(this).addClass('act');
+	})
+	
+
+	$(".pro_detail").mousemove(function(){
+		$(this).find('.tit').css({'color':'#1890ff'})
+	}).mouseout(function(){
+		$(this).find('.tit').css({'color':'#222'})
+	})
+
+</script>
+
+
+<div class="art">
+    <div class="cnt">
+        <div class="cnt_title">云深处科技完成超5亿元C轮融资，加速具身智能核心技术攻关与行业落地</div>
+        <div class="cnt_desc">日期：2025-12-09</div>
+        <div class="cnt_content">
+            <p><img src="/ueditor/php/upload/image/20251209/1765260988266651.png" title="1765260988266651.png" alt="图片221.png"/></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">12月9日，杭州云深处科技股份有限公司（以下简称云深处科技）宣布完成超5亿元人民币C轮融资。云深处科技本轮融资，由招银国际和华夏基金联合领投，中国电信、中国联通旗下基金参与战略投资，云晖资本、中芯聚源、浙大基金会、首程控股等多家机构跟投，达晨财智、前海方舟、央视融媒体基金、北京机器人产业发展投资基金和华映资本等老股东在本轮继续加持。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">本轮融资不仅为云深处科技的技术研发、扩大产能及市场拓展提供了充足资金保障，通过此次融资与具备鲜明产业属性的投资方深度绑定，构建起“技术-产业-场景”协同发展的全新生态，将有力推动具身智能机器人在千行百业的商业化与规模化落地，实现产业资源与技术创新的深度融合，加速技术成果向实际生产力的转化。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="font-family: 黑体, SimHei;"><span style="font-family: 黑体, SimHei; line-height: 19.2px; font-size: 16px;">“</span><span style="font-family: 黑体, SimHei; line-height: 19.2px; color: rgb(6, 7, 31); font-size: 16px; background: rgb(253, 253, 254);">感谢新老股东的持续信任与支持，也特别感谢客户们一直以来的选择与支持。</span><span style="font-family: 黑体, SimHei; line-height: 19.2px; font-size: 16px;">今年是云深处科技快速发展的一年，公司实现了业绩快速增长，推出了轮足复合的四足机器人山猫M20和行业级人形机器人DR02，建成具身智能中试基地并完成了股份制改造。本轮我们又获得了多家知名投资机构及战略投资方的加持，相信在大家的共同合力下，我们将很快迎来下一个里程碑成果。”云深处科技创始人兼CEO朱秋国表示，对于这一轮的融资，将用来继续加大研发投入力度，引进更多优秀人才，进一步加强四足机器人及人形机器人的研发，“我们将以此次融资为契机，推动具身智能技术从‘单点突破’走向‘系统赋能’，让机器人真正成为千行百业的智能化助手，为具身智能产业的中国方案贡献一份力量。”</span></span></p><h1 style="margin: 21px 0px 8px; text-align: justify; font-family: Calibri; font-size: 14px; text-wrap-mode: wrap; line-height: 16.8px;"><span style="font-size: 20px;"><strong><span style="line-height: 19.2px; font-family: 黑体, SimHei;">聚焦创新，技</span><span style="font-family: 黑体, SimHei; line-height: 19.2px; color: rgb(6, 7, 31); background: rgb(253, 253, 254);">术和产品持续构建壁垒</span></strong></span></h1><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">云深处科技聚焦具身智能技术创新与行业应用，是专注于四足机器人、人形机器人及核心零部件的研发、生产、销售和服务的国家级高新技术企业。公司坚持自主创新，构建了“感知-决策-执行”全链路技术体系，其核心的多模态环境感知、跨场景具身导航、AI驱动的感控融合运动控制等新技术，已在多个新场景中应用落地。&nbsp;</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">今年以来，云深处科技在产品与技术上持续实现突破。4月，云深处科技重磅发布山猫M20——全球首款专为复杂地形和危险环境设计的行业应用轮足机器人。其融合了轮式机器人的速度与足式机器人的灵活性，自重33kg，单人可搬运；具备IP66防护等级，可在-20℃至55℃温度范围内正常作业，可攀爬80厘米高台，支持自主感知、自主导航和全向避障。凭借其先进的 AI 运动控制算法，山猫M20机器狗能够自主调整行进姿态，从容应对坎坷山路、泥泞湿地、废墟障碍等极端作业环境，实现全域作业、突破应用边界。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;"><img src="/ueditor/php/upload/image/20251209/1765261714370689.jpg" title="1765261714370689.jpg" alt="m20.jpg" style="float: left;"/></span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">10月，云深处科技发布全球首款行业级全天候人形机器人DR02，具备IP66防护等级，可在-20℃至55℃的宽温环境下稳定运行，打破了人形机器人仅在受控环境中使用的局限。其行走速度达1.5m/s，极限速度4m/s，可轻松跨越25cm高的楼梯，并适应多种斜坡地形，实现了在复杂环境下的实时感知与智能决策，为安防巡逻、工厂作业等场景提供了“类人”的作业能力。</span></p><p><img src="/ueditor/php/upload/image/20251209/1765261155741695.png" title="1765261155741695.png" alt="图片111.png"/></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">同时，正式发布DeepVLA1.0视觉语言具身导航系统，实现了大场景全域具身导航应用落地。DeepVLA1.0融合开放词汇语义点云与大语言模型，支持自然语言精准调节路径规划，其拓扑路网贯通户外场景与楼宇空间，能实现“门牌到门牌” 跨楼层精准导航，为机器狗切入园区巡检、楼宇巡逻等民用场景提供关键支撑，让机器人真正融入日常生产生活中。</span></p><p><img src="/ueditor/php/upload/image/20251209/1765261482340728.png" title="1765261482340728.png" alt="图片122.png"/></p><h1 style="margin: 21px 0px 8px; text-align: justify; font-family: Calibri; font-size: 14px; text-wrap-mode: wrap; line-height: 16.8px;"><span style="line-height: 19.2px; font-family: 黑体, SimHei; font-size: 20px;">深耕行业，应用场景持续拓展</span></h1><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">秉持“通过机器人与AI创造更加美好的生活”愿景，云深处科技构建了全球化市场布局，业务覆盖国内34个省级行政区、海外44个国家和地区，在电力巡检、应急消防、安防巡逻、工业运维、教育科研、文娱体验等领域行业场景应用成功落地，持续引领四足机器人的行业应用。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">这一年来，云深处科技持续深耕行业应用，进一步拓展行业应用的深度。在电力巡检领域，云深处科技的四足机器人智慧电力方案，为破解电力运维传统难题提供了卓有成效的答案。在南方电网近三十个变电站中，云深处科技机器狗化身为“超级员工”，凭借卓越的场景适应能力、移动能力与智能感知系统深度融合，不仅有效覆盖人工巡检难以到达或存在安全风险的区域，还帮助电站节约运维成本约70%，提升运行效率50%以上。</span></p><p style="text-align: left;"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;"><img src="/ueditor/php/upload/image/20251209/1765261803501641.png" title="1765261803501641.png" alt="微信图片_2025-12-08_175407_371.png"/></span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 35px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">而在安防巡逻领域，云深处科技机器狗正以智能化巡逻新范式，赋能一线警务实战。在青海西宁市城中分局，云深处科技机器狗治安巡逻方案，凭借集喊话、识别、采集、跟随于一体的自主作业能力，显著提升了巡逻勤务的效率和安全性。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">今年以来，云深处科技还积极拓展丰富更多落地新场景，不断推进各行各业智能化升级。在“世界超市”义乌国际商贸城，绝影X30机器狗成为“移动安防站”，承担起重点区域巡逻、消防隐患排查、异常行为预警三大核心职责，成为商贸城首位“24小时不打烊”的科技安防员，破解超大型市场的安防痛点，助力管理人员实现“全局动态尽在掌握”。</span></p><p style=";text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap"><img src="/ueditor/php/upload/image/20251209/1765261522387249.png" title="1765261522387249.png" alt="图片1111.png"/></p><p style=";text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 21px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">在海拔4600米可可西里无人区，云深处科技机器狗化身“全球首只机器藏羚羊”，潜入藏羚羊群与它们一起移动迁徙，突破了人类观测野生动物的常规距离限制，为藏羚羊行为研究提供更精准可靠的影响和数据，将有力赋能守护可可西里这片“人类禁区”。</span></p><p><img src="/ueditor/php/upload/image/20251209/1765261548450930.png" title="1765261548450930.png" alt="图片1333.png"/></p><p style=";font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">同时，今年云深处科技积极布局海外市场，推动更多海外场景落地。在北美某大型仓储园区，云深处科技的机器狗与HawkRobo的智能安防平台成功部署并投入实际应用，实现了仓储环境“感知-分析-决策-处置”的全流程自动化，提升了仓储区域的监控覆盖能力与应急响应速度，在降低人工巡检负荷的同时，为全球仓储安保提供了稳定、智能的运营实践。&nbsp;</span></p><p><img src="/ueditor/php/upload/image/20251209/1765261575539502.png" title="1765261575539502.png" alt="图片144.png"/></p><p style=";font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">在沙特NEOM未来新城的极端沙滩环境中，绝影X30机器狗建成沙特首个全自动户外巡检系统。它彻底取代了高危环境下的人工巡检，将原本每次4小时的人力往返转变为高效、无人化的持续值守，为全球极端环境巡检提供了可复制的智能化标杆。</span></p><p><img src="/ueditor/php/upload/image/20251209/1765261630733932.png" title="1765261630733932.png" alt="图片1445.png"/></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">未来，云深处科技将持续深化“自主创新+产业协同”双轮驱动战略，沿两大核心路径同步推进。一方面专注核心技术攻关与生产基地建设，筑牢发展根基；另一方面将与产业链合作伙伴共建产业生态，在更多行业领域打造标杆案例，推动机器人技术与产业需求的深度融合。</span></p><p style="margin: 8px 0;text-align: justify;font-family: Calibri;font-size: 14px;text-wrap-mode: wrap;text-indent: 32px;line-height: 16.8px"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">招银国际董事总经理漆潇潇表示：“招银国际长期深耕人工智能和机器人赛道，本次领投云深处科技源于对公司全球领先的硬核技术、成熟可靠的产品及扎实的场景落地能力的高度认可。我们尤为认可团队兼具卓越格局与务实初心，其“做难而正确的事“的价值坚守，与招银国际赋能硬核科技、服务科技强国战略的长期理念高度同频，期待双方携手共创产业新价值。”</span></p><p style="text-align: justify; font-family: Calibri; font-size: 14px; text-wrap-mode: wrap;"><span style="line-height: 19.2px; font-size: 16px; font-family: 黑体, SimHei;">华夏股权总经理张晖表示：“此次联合领投，不仅代表对云深处科技团队技术实力与发展潜力的高度认可，也是与产业资源战略协同的深度绑定。华夏股权将依托自身在科技领域的深度洞察以及全链条资源，以长期陪伴者的角色助力赋能优秀企业成长。”</span></p>        </div>
+    </div>
+
+    <div class="ns">
+        <div class="tit">其他新闻</div>
+                <a class="news_list" target="_blank" href="/robot/index/article/id/298.html">
+            <div class="img"><img src="/public/uploads/20260903/03fb284a8f579e430107520bb7a3d633.jpg"></div>
+            <div class="tit">中国设计最高荣誉！云深处科技绝影X30四足机器人摘得外观设计金奖</div>
+        </a>
+                <a class="news_list" target="_blank" href="/robot/index/article/id/297.html">
+            <div class="img"><img src="/public/uploads/20260727/58973f82770fde5d252143c3f5ee1f13.jpg"></div>
+            <div class="tit">邀你参赛！世界人工智能开源大赛「具身未来」赛道正式开启</div>
+        </a>
+                <a class="news_list" target="_blank" href="/robot/index/article/id/296.html">
+            <div class="img"><img src="/public/uploads/20260713/499e497065d968a2c666f398b3b28923.PNG"></div>
+            <div class="tit">云深处科技创始人朱秋国出席中国科协第十一次全国代表大会</div>
+        </a>
+        
+        <div class="tit" style="position: relative">社交媒体
+            <img id="qr" src="/public/static/robot/images/qr1.jpg" style="position:absolute; right:0px;top:50px; display: none;" width="200" height="200">
+        </div>
+        <a href="javascript:;" class="media qr1">
+            <img src="/public/static/robot/images/media_1_.png"> Wechat
+        </a>
+        <a href="https://space.bilibili.com/22477177" target="_blank" class="media">
+            <img src="/public/static/robot/images/media_2_.png"> Bilibili
+        </a>
+        <a href="https://www.linkedin.com/company/deep-robotics/mycompany/" target="_blank" class="media">
+            <img src="/public/static/robot/images/media_3_.png"> LinkedIn
+        </a>
+        <a href="https://www.youtube.com/channel/UCj73fOsxOlugnBPJOoM9rHw" target="_blank" class="media">
+            <img src="/public/static/robot/images/media_4_.png"> Youtube
+        </a>
+        <a href="https://twitter.com/DeepRobotics_CN" target="_blank" class="media">
+            <img src="/public/static/robot/images/media_5_.png"> Twitter
+        </a>
+        <a href="javascript:;" class="media qr2">
+            <img src="/public/static/robot/images/media_6_.png"> Douyin
+        </a>
+       
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="foot">
+        <div class="naver">
+            <div class="navs">
+                <p>行业应用</p>
+                <a href="/robot/index/industry.html#part1">电力巡检</a>
+				<a href="/robot/index/industry.html#part2">应急救援</a>
+				<a href="/robot/index/industry.html#part3">管廊隧道</a>
+				<a href="/robot/index/industry.html#part4">金属冶炼</a>
+				<a href="/robot/index/industry.html#part5">建筑测绘</a>
+				<a href="/robot/index/industry.html#part6">教育科研</a>
+            </div>
+
+            <div class="navs">
+                <p>产品中心</p>
+                <a href="/robot/index/product1.html">绝影Lite3 </a>
+                <!--<a href="/robot/index/product2.html">绝影Mini</a>-->
+                <!--<a href="/robot/index/product.html">绝影X20</a>-->
+                <a href="/robot/index/product3.html">绝影X30</a>
+                <a href="/robot/index/j60.html">J60系列关节</a>
+                <a href="/robot/index/j80j100.html">J80 & J100系列关节</a>
+                <a href="/robot/index/deeproboticslynx.html">云深处山猫</a>
+                <a href="/robot/index/lynx.html">山猫M20</a>
+            </div>
+
+            <div class="navs">
+                <p>关于云深处</p>
+                <a href="/robot/index/company.html#company">公司简介</a>
+				<a href="/robot/index/company.html#vision">愿景使命</a>
+				<a href="/robot/index/company.html#comp">大事记</a>
+				<a href="/robot/index/company.html#honor">企业荣誉</a>
+				<!--<a href="/robot/index/company.html#jobs">招聘精英</a>-->
+				<a href="/robot/index/company.html#maps">联系我们</a>				
+            </div>
+
+            <div class="navs">
+                <p>服务支持</p>
+                <a href="/robot/index/support.html#download">下载中心</a>
+                <a href="/robot/index/support.html#download">资源中心</a>
+				<a href="/robot/index/support.html#faq">常见问题</a>
+                <a href="/robot/index/support.html#policy">条款与政策</a>
+				<a href="/robot/index/support.html#service">售后服务</a>	
+                <a href="/robot/index/fault.html">故障申报</a>				
+            </div>
+
+            <div class="navs">
+                <p>新闻资讯</p>
+                <a href="/robot/index/news.html#part1">最新资讯</a>
+				<a href="/robot/index/news.html#part2">战略合作</a>
+				<a href="/robot/index/news.html#part3">资讯订阅</a>
+            </div>
+        </div>
+        <div class="media">
+            <div class="links" style="position:relative">
+                <a id="link1" href="javascript:;"><img src="/public/static/robot/images/media_1.png"></a>
+                <a href="https://space.bilibili.com/22477177" target="_blank"><img src="/public/static/robot/images/media_2.png"></a>
+                <a href="https://www.linkedin.com/company/deep-robotics/mycompany/" target="_blank"><img src="/public/static/robot/images/media_3.png"></a>
+                <a href="https://www.youtube.com/channel/UCj73fOsxOlugnBPJOoM9rHw" target="_blank"><img src="/public/static/robot/images/media_4.png"></a>
+                <a href="https://twitter.com/DeepRobotics_CN" target="_blank"><img src="/public/static/robot/images/media_5.png"></a>
+                <a id="link2" href="javascript:;"><img src="/public/static/robot/images/media_6.png"></a>
+                <div id="qr1" style="position:absolute; left: 140px; top:30px; display: none">
+                    <img class="qrcode" src="/public/static/robot/images/qr1.jpg" width="200" height="200">
+                </div>
+                <div id="qr2" style="position:absolute; right: 0px; top:30px; display: none">
+                    <img class="qrcode" src="/public/static/robot/images/qr2.png" width="200" height="200">
+                </div>
+            </div>
+            <!--<div class="robot"><img src="/public/static/robot/images/robot.png"></div>-->
+        </div>
+
+
+        <div class="logo"><img src="/public/static/robot/images/logo.png"></div>
+        <div style="color:#fff; text-align:center; width:100%; line-height:24px; margin-top:20px; font-size:13px">浙江省杭州市西湖区欣然街36号紫金梦想广场3幢</div>
+        <div class="copyright">
+            <p>©2017-2026 云深处科技股份有限公司 </p>  
+            
+            <p><a href="https://beian.miit.gov.cn" target="_blank" style="color:#fff">浙ICP备18014177号-1 </a>  </p>        
+            <p><img src="/public/static/robot/images/gongan.png">浙公网安备：33010602009611</p>
+        </div>
+    </div> 
+</div>
+
+<script>
+$("#link1").mousemove(function(){
+    $("#qr1").css({'display':'block'});
+}).mouseout(function(){
+    $("#qr1").css({'display':'none'});
+})
+
+$("#link2").mousemove(function(){
+    $("#qr2").css({'display':'block'});
+}).mouseout(function(){
+    $("#qr2").css({'display':'none'});
+})
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c7dc7d37b489eb61332086204831e01b";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript">
+window._agl = window._agl || [];
+(function () {
+_agl.push(
+['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+);
+(function () {
+var agl = document.createElement('script');
+agl.type = 'text/javascript';
+agl.async = true;
+agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(agl, s);
+})();
+})();
+</script>
+<script src="/public/static/robot/js/layer/2.4/layer.js"></script> 
+<script>
+    $(".qr1").mousemove(function(){
+        $("#qr").attr("src","/public/static/robot/images/qr1.jpg").show();
+    }).mouseout(function(){
+        $("#qr").hide();
+    })
+    $(".qr2").mousemove(function(){
+        $("#qr").attr("src","/public/static/robot/images/qr2.png").show();
+    }).mouseout(function(){
+        $("#qr").hide();
+    })
+</script>
+
+</body>
+
+
+</html>

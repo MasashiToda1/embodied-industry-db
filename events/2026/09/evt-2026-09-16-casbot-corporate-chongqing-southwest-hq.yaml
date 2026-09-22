@@ -1,0 +1,21 @@
+id: evt-2026-09-16-casbot-corporate-chongqing-southwest-hq
+date: '2026-09-16'
+date_precision: day
+type: corporate
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 中科慧灵西南区域总部落地重庆大渡口区，同场举行灵宝机器人重庆首台套交付
+summary:
+  zh: 9 月 16 日，北京中科慧灵机器人技术有限公司西南区域总部项目签约活动在重庆举行，大渡口区与公司签署项目合作协议。活动中，中科慧灵与潜能集团举行灵宝机器人重庆「首台套」交付仪式。
+counterparties:
+- 重庆市大渡口区
+- 潜能集团
+evidence:
+- url: http://cq.people.com.cn/n2/2026/0916/c367650-41698378.html
+  publisher: 人民网重庆
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/cq-2026-09-16-casbot-chongqing-hq.html
+corroboration: single

@@ -1,0 +1,25 @@
+id: evt-2026-04-qiyuan-robotics-corporate-subsidiaries
+date: 2026-04
+date_precision: month
+type: corporate
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 上纬新材审议通过消费级具身智能机器人业务规划，设立启元上海、启元北京两家全资子公司
+summary:
+  zh: 上纬新材 2026 年半年报披露，公司于 2026 年 4 月审议通过消费级具身智能机器人新业务发展规划，并设立启元上海、启元北京两家全资子公司作为新业务独立载体；上海子公司启元新创为上海市人工智能重点项目。
+counterparties:
+- 上纬新材料科技股份有限公司
+evidence:
+- url: https://www.cnfin.com/gs-lb/detail/20260815/4455704_1.html
+  publisher: 中国金融信息网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/cnfin-2026-04-qiyuan-robotics-subsidia.html
+- url: http://sh.news.cn/20260815/a3fdf95d43a548a1a5438c71cf9c6548/c.html
+  publisher: 新华网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/sh-2026-08-15-qiyuan-robotics-h1-repor.html
+corroboration: multi

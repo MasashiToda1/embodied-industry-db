@@ -1,0 +1,33 @@
+id: evt-2025-10-23-noetix-pricing-bumi-9998
+date: '2025-10-23'
+date_precision: day
+type: pricing
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力消费级人形机器人「小布米」上线京东，定价 9998 元
+summary:
+  zh: 10 月 23 日，松延动力人形机器人「Bumi 小布米」上架京东平台，定价 9998 元。投资界报道该机身高 94cm、重约 12kg、21 个以上自由度，支持行走、奔跑、舞蹈、语音交互与图形化编程；证券时报报道上线后一小时售出百台，两天首批 500 台售罄，截至 11 月 26 日线上线下累计售出数千台。
+amount:
+  value: 9998
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - home
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://stcn.com/article/detail/3512757.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/stcn-2025-10-23-noetix-bumi-price.html
+- url: https://news.pedaily.cn/202510/556361.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/news-2025-10-26-noetix-pre-b.html
+corroboration: multi
