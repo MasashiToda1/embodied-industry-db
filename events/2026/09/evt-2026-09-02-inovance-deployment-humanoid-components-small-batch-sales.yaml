@@ -1,0 +1,21 @@
+id: evt-2026-09-02-inovance-deployment-humanoid-components-small-batch-sales
+date: 2026-09-02
+date_precision: day
+type: deployment
+orgs:
+- id: inovance
+  role: subject
+title:
+  zh: 汇川技术称部分人形机器人零部件已取得客户定点、电机实现小批量销售，七轴仿生臂完成客户验证
+summary:
+  zh: 据汇川技术 2026 年 9 月 2 日披露的投资者关系活动记录表（编号 2026-5），公司在回答智能机器人零部件与具身智能进展时称：零部件层面，部分人形机器人零部件已取得客户定点，电机实现小批量销售，七轴仿生臂完成客户验证，处于逐步爬坡阶段；客户选择上优先具备可持续经营能力、应用场景具备商业价值的客户开展定点，非战略场景优先输出标准化零部件、审慎开展定制化开发；具身智能与泛人形解决方案层面，在工业特定场景对仿生臂、泛人形等解决方案进行方案验证。
+axes:
+  target_scene: [industrial-manufacturing]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://static.cninfo.com.cn/finalpage/2026-09-02/1225542907.PDF
+  publisher: 巨潮资讯网（汇川技术投资者关系活动记录表）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/static-2026-09-02-inovance-ir-record-human.html
+corroboration: single

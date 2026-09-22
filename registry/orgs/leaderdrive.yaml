@@ -2,6 +2,26 @@ id: leaderdrive
 names:
   zh: 绿的谐波
   en: Leaderdrive
+  aliases:
+  - 苏州绿的谐波传动科技股份有限公司
+  - Leader Harmonious Drive Systems Co., Ltd.
+  - 688017.SH
 status: active
 layers:
 - components
+founded: 2011-01
+hq:
+  country: CN
+  city: 苏州
+description: 做精密谐波减速器与机电一体化执行器的上市公司（科创板 688017），产品还包括行星滚柱丝杠、旋转执行器与数控转台，供应人形机器人与工业机器人关节。
+accounts:
+  site: https://www.leaderdrive.cn
+sources:
+- url: http://www.leaderdrive.cn/companyIntroducePage
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍页，业务范围、2020 年科创板上市
+- url: http://static.cninfo.com.cn/finalpage/2025-01-09/1222271275.PDF
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 巨潮资讯公告，成立日期 2011 年 1 月 13 日，注册地址苏州市吴中区木渎镇尧峰西路 68 号

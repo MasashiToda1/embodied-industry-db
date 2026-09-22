@@ -1,0 +1,27 @@
+id: evt-2026-02-ati-automation-product-launch-varo-force-torque-sensor
+date: 2026-02
+date_precision: month
+date_basis: derived
+date_as_stated: ATI 官方 LinkedIn 帖子抓取时显示发布于「7 个月」前（抓取日 2026-09-22），搜索引擎标注 2026-02-19；ATI Varo 手册 PDF 目录为 2026/02
+type: product_launch
+orgs:
+- id: ati-automation
+  role: subject
+title:
+  zh: ATI 推出面向人形机器人的六轴力 / 力矩传感器 Varo 系列（Varo55 / Varo62）
+summary:
+  zh: ATI Industrial Automation（Novanta 旗下）在官方 LinkedIn 发布帖子「A New Sense of Touch for Humanoid Robotics」，推出面向人形机器人、移动机械臂与 OEM 机器人平台的高性能力 / 力矩传感器 Varo，称其为标定六轴传感、紧凑轻量、全数字设计。Novanta 官网 Varo 系列页面列出 Varo55（直径 55mm、高 13.1mm、重 0.115kg，额定 Fx / Fy ±1200N）与 Varo62（直径 62mm、高 18.3mm、重 0.22kg，额定 Fx / Fy ±3000N、Tx / Ty ±120Nm）两款，数字输出、标准化数字接口（RS422）。
+axes:
+  data_modality: [force-torque]
+evidence:
+- url: https://www.linkedin.com/posts/ati-industrial-automation_ati-industrialautomation-forcetorquesensor-activity-7430270096775909376-ZGwl
+  publisher: ATI Industrial Automation 官方 LinkedIn
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/linkedin-2026-02-19-ati-automation-varo-laun.html
+- url: https://novanta.com/robotics-automation/products/varo/
+  publisher: Novanta 官网 Varo 系列产品页
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/novanta-2026-02-ati-automation-varo-seri.html
+corroboration: single

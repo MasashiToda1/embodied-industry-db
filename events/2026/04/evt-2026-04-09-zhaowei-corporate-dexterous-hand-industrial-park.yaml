@@ -1,0 +1,18 @@
+id: evt-2026-04-09-zhaowei-corporate-dexterous-hand-industrial-park
+date: 2026-04-09
+date_precision: day
+type: corporate
+orgs:
+- id: zhaowei
+  role: subject
+title:
+  zh: 兆威机电董事会通过拟竞买深圳宝安地块并投资约 8 亿元建设「灵巧手及微型驱动系统产业园项目」
+summary:
+  zh: 据兆威机电公告（编号 2026-026），公司 2026 年 4 月 9 日召开第三届董事会第十八次会议，审议通过拟参与竞买深圳市宝安区 A317-0592 宗地（土地面积 18,771.34 平方米）国有建设用地使用权，并以自有或自筹资金投资建设灵巧手及微型驱动系统产业园项目，项目投资总额约 8 亿元人民币（含建设用地使用权出让价款，最终以实际投资为准）。公告称目的是扩大公司机器人板块业务布局、优化产能分布。
+evidence:
+- url: http://static.cninfo.com.cn/finalpage/2026-04-10/1225087038.PDF
+  publisher: 巨潮资讯网（兆威机电公告）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/static-2026-04-09-zhaowei-dexterous-hand-i.html
+corroboration: single

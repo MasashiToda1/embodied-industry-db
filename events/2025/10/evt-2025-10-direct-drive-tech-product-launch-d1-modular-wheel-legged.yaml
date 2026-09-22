@@ -1,0 +1,26 @@
+id: evt-2025-10-direct-drive-tech-product-launch-d1-modular-wheel-legged
+date: 2025-10
+date_precision: month
+type: product_launch
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末科技推出整机模块化双轮足机器人 D1
+summary:
+  zh: 据本末动力招股书，D1 机器人于 2025 年 10 月推出，公司称其为全球首款商业化推出的整机模组化双轮足机器人（引述弗若斯特沙利文）。天脉财经报道称 D1 采用整机模块化设计，可多台拼接协作，极限越障 70 厘米，四轮匍匐模式最大负载 100 公斤、站立模式 80 公斤，双轮足模式空载续航超 5 小时，搭配 BOX 运载箱可用于封闭园区短途配送。
+axes:
+  target_scene: [inspection-hazardous, logistics-warehouse]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf
+  publisher: 香港交易所披露易（本末动力招股书）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/hkexnews-2026-09-21-direct-drive-tech-hk-pro.html
+- url: https://www.dtm.com.cn/news/202609/303694.html
+  publisher: 天脉财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/dtm-2025-10-direct-drive-tech-d1-lau.html
+corroboration: multi

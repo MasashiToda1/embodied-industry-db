@@ -1,0 +1,31 @@
+id: evt-2026-08-20-zhaowei-product-launch-zwhand-b21-wrc
+date: 2026-08-20
+date_precision: day
+type: product_launch
+orgs:
+- id: zhaowei
+  role: subject
+title:
+  zh: 兆威灵巧手在 2026 世界机器人大会发布 21 自由度仿生灵巧手 ZWHAND B21，整机重 700g、握力 5kg
+summary:
+  zh: 2026 世界机器人大会展商活动页显示，ZWHAND 于 2026 年 8 月 20 日 10:00—12:30 在展台举办「类人手，且超越人手——ZWHAND B21 灵巧手新品发布会」。展商信息页称 B21 为 21 自由度仿生灵巧手，尺寸接近真人手掌，整机重 700g，全域集成触觉传感器，指尖输出力 15N，握力 5kg，循环使用寿命可达 100 万次，面向人形机器人、工业装配、智能交互、康复假肢等场景。中证网报道称此次大会上兆威灵巧手发布新一代产品后，ZWHAND 形成 B06、C06、B21 的产品矩阵。
+axes:
+  data_modality: [tactile]
+  target_scene: [industrial-manufacturing, healthcare]
+evidence:
+- url: https://www.worldrobotconference.com/expo/event/216.html
+  publisher: 2026 世界机器人大会官网展商活动页
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/worldrobotco-2026-08-20-zhaowei-b21-launch-wrc-2.html
+- url: https://www.worldrobotconference.com/expo/company/533.html
+  publisher: 2026 世界机器人大会官网展商信息页
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/worldrobotco-2026-08-20-zhaowei-b21-specs-wrc-20.html
+- url: https://www.cs.com.cn/ssgs/01/2026/09/03/detail_2026090310036646.html
+  publisher: 中国证券报·中证网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/cs-2026-08-20-zhaowei-b21-launch-media.html
+corroboration: multi

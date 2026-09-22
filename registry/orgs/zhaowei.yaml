@@ -5,6 +5,26 @@ names:
   aliases:
   - 兆威灵巧手
   - ZWHAND
+  - 深圳市兆威机电股份有限公司
+  - 深圳市兆威灵巧手技术有限公司
+  - 003021.SZ
+  - 02692.HK
 status: active
 layers:
 - components
+founded: 2001
+hq:
+  country: CN
+  city: 深圳
+description: 做微型传动、微型驱动系统与电控系统的 A+H 上市公司（003021.SZ / 02692.HK），旗下 ZWHAND 品牌做灵巧手，产品有 B06、B20、B21、C06 与 A17。
+accounts:
+  site: https://www.szzhaowei.net
+sources:
+- url: https://www.szzhaowei.net/course/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网发展历程页，2020 年 12 月 A 股上市、2026 年 3 月 9 日港交所上市
+- url: https://www.worldrobotconference.com/expo/company/533.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商信息页，成立于 2001 年，深圳，ZWHAND 产品矩阵

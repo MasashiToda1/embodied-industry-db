@@ -1,0 +1,18 @@
+id: evt-2025-12-02-nabtesco-product-launch-rvmini-monocrank
+date: 2025-12-02
+date_precision: day
+type: product_launch
+orgs:
+- id: nabtesco
+  role: subject
+title:
+  zh: 纳博特斯克新增小型减速器 RVmini 系列与 Monocrank 系列，面向协作机器人与人形机器人的小扭矩关节
+summary:
+  zh: 12 月 2 日，纳博特斯克（Nabtesco）精机公司宣布在产品线中新增小型轻量高精度波动齿轮减速器「RVmini 系列」与小型高精度高刚性「Monocrank 系列」两款产品，并于 12 月 3 日起在 iREX2025 参考展出。公司称近年协作机器人与人形机器人等新用途使小型减速器需求显著增长，既有「精密减速机 RV」主要覆盖中高扭矩区间，此次新品用于补足小扭矩区间。日经报道称 RVmini 新品 2026 年 4 月起销售，Monocrank 新品 2026 年内销售。
+evidence:
+- url: https://www.nabtesco.com/news/20251202-17319/
+  publisher: 纳博特斯克官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/nabtesco-2025-12-02-nabtesco-rvmini-monocran.html
+corroboration: single

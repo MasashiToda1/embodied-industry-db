@@ -2,6 +2,26 @@ id: schaeffler
 names:
   zh: 舍弗勒
   en: Schaeffler
+  aliases:
+  - Schaeffler AG
+  - Schaeffler Group
+  - 舍弗勒集团
 status: active
 layers:
 - components
+founded: 1946
+hq:
+  country: DE
+  city: Herzogenaurach
+description: 德国汽车与工业零部件上市公司，人形机器人业务提供关节执行器平台（行星 / 谐波齿轮执行器）、轴承与成形工艺谐波减速器，并在自有工厂部署合作方的人形机器人。
+accounts:
+  site: https://www.schaeffler.com
+sources:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88184513
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿，公司自述「80 年」历史（2026 年），发布地 Herzogenaurach，出版方 Schaeffler AG；人形机器人执行器平台描述
+- url: https://www.schaeffler.com/en/technology-innovation/technology/humanoid-robots/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网人形机器人业务页，产品家族与部署计划

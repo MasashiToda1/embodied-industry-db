@@ -1,0 +1,27 @@
+id: evt-2026-09-21-direct-drive-tech-funding-hk-ipo-global-offering
+date: 2026-09-21
+date_precision: day
+type: funding
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末动力（06731.HK）启动港股 IPO 全球发售，发售 5000 万股 H 股、每股 21.6 港元，9 月 29 日挂牌
+summary:
+  zh: 9 月 21 日，本末动力（北京）科技股份有限公司（Direct Drive Tech Limited，股份代号 06731）刊发招股书并启动香港联交所主板全球发售：发售 5000 万股 H 股，其中香港公开发售 250 万股、国际发售 4750 万股，发售价每股 21.6 港元，中信证券（香港）为独家保荐人，招股书列明的挂牌日期为 2026 年 9 月 29 日。基石投资者香港科创与 JSC International 合计认购约 4.72 亿港元。假设超额配股权未获行使，公司估计所得款项净额约 9.825 亿港元。
+counterparties:
+- 中信证券（香港）
+- 香港科创
+- JSC International Investment Fund SPC – Shenghai SP
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf
+  publisher: 香港交易所披露易（本末动力招股书）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/hkexnews-2026-09-21-direct-drive-tech-hk-pro.html
+- url: https://finance.eastmoney.com/a/202609213879868367.html
+  publisher: 东方财富网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/finance-2026-09-21-direct-drive-tech-hk-ipo.html
+corroboration: multi

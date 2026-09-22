@@ -2,6 +2,26 @@ id: leadshine
 names:
   zh: 雷赛智能
   en: Leadshine
+  aliases:
+  - 深圳市雷赛智能控制股份有限公司
+  - China Leadshine Technology Co., Ltd.
+  - 002979.SZ
 status: active
 layers:
 - components
+founded: 1997
+hq:
+  country: CN
+  city: 深圳
+description: 做伺服系统、步进系统、运动控制 PLC / 控制卡的上市公司（深交所 002979），人形机器人方向提供无框力矩电机、空心杯电机、行星 / 谐波关节模组与灵巧手。
+accounts:
+  site: https://www.leisai.com
+sources:
+- url: https://www.leisai.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页：自 1997 年成立，总部深圳市南山区，产品线含人形机器人核心部件
+- url: https://www.leisai.com/investorRelations.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网投资者关系基本信息：公司全称、股票代码 002979、注册地址深圳南山

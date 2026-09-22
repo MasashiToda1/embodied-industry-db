@@ -1,0 +1,32 @@
+id: evt-2025-12-26-direct-drive-tech-funding-series-c
+date: 2025-12-26
+date_precision: day
+type: funding
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末动力（Direct Drive Tech）C 轮融资 1.854 亿元，投后估值 31.85 亿元，华泰数智基金、Rockets Capital、北京成琨、Brizan Ventures、联想之星参与
+summary:
+  zh: 据港交所披露的招股书，本末动力 Series C Financing 投资协议签署于 2025 年 12 月 26 日，公司收到资金合计 185,397,000 元人民币，2026 年 1 月 27 日完成交割，每股成本约 9.97 元，投前估值 30 亿元、投后估值 3,185,397,000 元人民币。新浪财经报道称 C 轮投资机构包括华泰数智基金、小鹏汽车关联基金 Rockets Capital、商汤关联的北京成琨、Brizan Ventures VII LP 及联想之星。
+counterparties:
+- 华泰数智基金（成都华泰天府数智创业投资合伙企业）
+- Rockets Capital
+- 北京成琨管理咨询合伙企业
+- Brizan Ventures VII LP
+- 联想之星
+amount:
+  value: 185397000
+  currency: CNY
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf
+  publisher: 香港交易所披露易（本末动力招股书）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/hkexnews-2026-09-21-direct-drive-tech-hk-pro.html
+- url: https://finance.sina.com.cn/stock/observe/2026-07-14/doc-inihunse1290973.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/finance-2025-12-26-direct-drive-tech-series.html
+corroboration: multi

@@ -1,0 +1,24 @@
+id: evt-2026-05-19-hightorque-partnership-icra-wbcd-standard-platform
+date: 2026-05-19
+date_precision: day
+type: partnership
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: Panthera-HT 成为 ICRA 2026 WBCD Challenge 可变形物体操作赛道上海赛区官方标准平台，高擎与上海市人工智能行业协会共建具身智能训练基地
+summary:
+  zh: 5 月 19 日，高擎动力官网发文称旗下 Panthera-HT 机械臂成为 ICRA 2026 WBCD Challenge Deformable Manipulation Track（可变形物体操作赛道）上海赛区官方标准平台，为参赛队伍提供统一硬件、全套 SDK 与 ROS2 工作空间；同时高擎与上海市人工智能行业协会达成战略合作，共建具身智能训练基地，相关实训场地已建成开放。赛事于 2026 年 6 月 1—4 日举行，奖金池超 28 万美元。
+counterparties:
+- 上海市人工智能行业协会
+- ICRA 2026 WBCD Challenge
+axes:
+  embodiment_form: [arm]
+  target_scene: [education-research]
+evidence:
+- url: https://www.hightorque.cn/icra-2026-wbcd-challenge-%e6%90%ba%e6%89%8b%e4%b8%8a%e6%b5%b7%e5%b8%82%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e8%a1%8c%e4%b8%9a%e5%8d%8f%e4%bc%9a%ef%bc%8cpanthera-ht%e6%ad%a3%e5%bc%8f%e6%88%90%e4%b8%ba
+  publisher: 高擎动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/hightorque-2026-05-19-hightorque-icra-wbcd-sta.html
+corroboration: single

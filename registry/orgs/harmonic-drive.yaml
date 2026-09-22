@@ -2,8 +2,24 @@ id: harmonic-drive
 names:
   zh: 哈默纳科
   en: Harmonic Drive
+  aliases:
+  - Harmonic Drive Systems Inc.
+  - ハーモニック・ドライブ・システムズ
+  - HDS
+  - 6324.T
 status: active
 layers:
 - components
+founded: 1970-10
+hq:
+  country: JP
+  city: 东京
+description: 做波动齿轮减速器「ハーモニックドライブ」与精密行星减速器、伺服执行器的日本上市公司（东证 6324），产品用于工业机器人、半导体设备与人形机器人关节。
 accounts:
   github: Harmonic-Drive
+  site: https://www.hds.co.jp
+sources:
+- url: https://www.hds.co.jp/company/about/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网会社概要：设立 1970 年 10 月 27 日，本社东京都品川区，事业内容

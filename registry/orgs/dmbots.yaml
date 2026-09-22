@@ -2,8 +2,27 @@ id: dmbots
 names:
   zh: 达妙科技
   en: DMBots
+  aliases:
+  - 深圳市达妙科技有限公司
+  - DAMIAO
 status: active
 layers:
 - components
 upstream:
   robotics_notebooks_institution: dmbots
+founded: 2019
+hq:
+  country: CN
+  city: 深圳
+description: 做机器人关节电机、轮毂电机、云台电机与驱动器的公司，产品有 DM-J 系列关节电机、DM-JH 系列谐波关节电机与 DM40 / DM60 / DM80 / DM100 驱动器。
+accounts:
+  site: https://www.damiaokeji.com
+sources:
+- url: https://www.damiaokeji.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页「关于我们」，2019 年创办，地址深圳市南山区
+- url: https://www.worldrobotconference.com/expo/company/550.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 2026 世界机器人大会展商信息页，2019 年创办、2022 年推出关节电机

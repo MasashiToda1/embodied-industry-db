@@ -2,11 +2,30 @@ id: hightorque
 names:
   zh: 高擎机电
   en: HighTorque Robotics
+  aliases:
+  - 高擎动力
+  - 广州高擎动力科技有限公司
+  - 广州高擎机电科技有限公司
 status: active
 layers:
 - components
 - embodiment
 upstream:
   robotics_notebooks_institution: hightorque
+founded: 2022
+hq:
+  country: CN
+  city: 广州
+description: 做一体化关节模组与小型人形机器人的公司，产品有行星 / 超薄 / 中空关节模组、Mini Pi、Mini Pi plus、Mini Hi 与 Panthera-HT 机械臂。
 accounts:
   github: HighTorque-Robotics
+  site: https://www.hightorque.cn
+sources:
+- url: https://www.hightorque.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页与页脚（广州高擎动力科技有限公司），产品线来自官网产品中心
+- url: https://www.leaderobot.com/news/4103
+  tier: media
+  retrieved: '2026-09-22'
+  note: 机器人大讲堂报道，称广州高擎机电科技有限公司成立于 2022 年

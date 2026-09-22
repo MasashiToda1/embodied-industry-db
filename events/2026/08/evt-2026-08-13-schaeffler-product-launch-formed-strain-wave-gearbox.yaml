@@ -1,0 +1,20 @@
+id: evt-2026-08-13-schaeffler-product-launch-formed-strain-wave-gearbox
+date: 2026-08-13
+date_precision: day
+type: product_launch
+orgs:
+- id: schaeffler
+  role: subject
+title:
+  zh: 舍弗勒推出面向人形机器人的成形工艺谐波减速器，完成验证测试，计划 2027 年在德国开始批量生产
+summary:
+  zh: 8 月 13 日，舍弗勒发布新闻稿称扩展人形机器人产品组合，将采用成形（forming）工艺制造的谐波减速器（strain wave gearbox）推向市场。公司称相比目前主流的精密机加工，成形工艺让关键部件的制造步骤从分钟级缩短到秒级，制造成本降低超 25%、材料消耗减少超 75%；已完成大规模验证测试，计划 2027 年在德国启动批量生产并逐步推广到其他地区。公司称过去十年已向汽车行业供应超过 200 万件成形谐波减速器。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88210241
+  publisher: 舍弗勒官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/schaeffler-2026-08-13-schaeffler-formed-strain.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2026-02-09-leaderdrive-partnership-minth-north-america-joint-module-jv
+date: 2026-02-09
+date_precision: day
+type: partnership
+orgs:
+- id: leaderdrive
+  role: subject
+title:
+  zh: 绿的谐波与敏实集团达成框架协议，拟在美国成立合资公司做北美人形机器人关节模组总成，初始出资 1000 万美元、绿的持股 40%
+summary:
+  zh: 2 月 9 日，敏实集团（00425.HK）在港交所刊发自愿公告：其全资附属公司 Minth California Inc.（加州敏实）与苏州绿的谐波传动科技股份有限公司于 2026 年 2 月 6 日订立框架协议，拟在美国成立合资公司，在北美开展人形机器人关节模组总成的设计、制造及商业化拓展。公告称合资公司初始资本出资总额为 1000 万美元（约 7800 万港元），加州敏实与绿的谐波分别持股 60% 与 40%；董事会五名董事中敏实委任三名、绿的委任两名。正式合资协议待取得适用监管批准后签署。
+counterparties:
+- 敏实集团（Minth Group，00425.HK）
+- Minth California Inc.
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0209/2026020900072_c.pdf
+  publisher: 香港交易所披露易（敏实集团自愿公告）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/hkexnews-2026-02-09-leaderdrive-minth-us-jv-.html
+corroboration: single

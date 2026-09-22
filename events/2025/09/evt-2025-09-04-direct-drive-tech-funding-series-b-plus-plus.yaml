@@ -1,0 +1,23 @@
+id: evt-2025-09-04-direct-drive-tech-funding-series-b-plus-plus
+date: 2025-09-04
+date_precision: day
+type: funding
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末动力（Direct Drive Tech）B++ 轮融资 1.084 亿元，投后估值 12.08 亿元
+summary:
+  zh: 据港交所披露的招股书，本末动力（北京）科技股份有限公司 Series B++ Financing 投资协议签署于 2025 年 9 月 4 日，公司收到资金合计 108,411,300 元人民币，2025 年 9 月 30 日完成交割，每股成本约 4.03 元，投后估值 1,208,411,300 元人民币。招股书称公司在 B++ 轮融资中结识君联资本（Legend Investment）。
+counterparties:
+- 君联资本
+amount:
+  value: 108411300
+  currency: CNY
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0921/12338836/2026092100159_c.pdf
+  publisher: 香港交易所披露易（本末动力招股书）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/hkexnews-2026-09-21-direct-drive-tech-hk-pro.html
+corroboration: single

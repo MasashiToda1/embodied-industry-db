@@ -1,0 +1,22 @@
+id: evt-2025-12-16-harmonic-drive-partnership-minebeamitsumi-robot-hand-micro-actuator
+date: 2025-12-16
+date_precision: day
+type: partnership
+orgs:
+- id: harmonic-drive
+  role: subject
+title:
+  zh: 美蓓亚三美与哈默纳科联合开发面向人形机器人手部的高扭矩微型执行器，在 CES 2026 首次公开演示
+summary:
+  zh: 12 月 16 日，美蓓亚三美（MinebeaMitsumi）发布新闻稿称将首次参展 CES 2026（2026 年 1 月 6—9 日），展出与 Harmonic Drive Systems 联合开发的机器人手用高扭矩微型齿轮执行器（尺寸 W 13mm × H 19.4mm × L 60.4mm），并首次公开演示搭载该执行器的机器人手：单指可提起 5kg 物体，指尖集成美蓓亚三美应变传感器以感知物体软硬。新闻稿称该展示面向人形机器人领域。
+counterparties:
+- 美蓓亚三美（MinebeaMitsumi Inc.）
+axes:
+  data_modality: [tactile]
+evidence:
+- url: https://www.minebeamitsumi.com/english/news/press/2025/1210639_20344.html
+  publisher: MinebeaMitsumi 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/minebeamitsu-2025-12-16-harmonic-drive-minebea-m.html
+corroboration: single

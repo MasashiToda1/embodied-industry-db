@@ -1,0 +1,20 @@
+id: evt-2026-07-27-inovance-product-launch-humanoid-components-7dof-bionic-arm
+date: 2026-07-27
+date_precision: day
+type: product_launch
+orgs:
+- id: inovance
+  role: subject
+title:
+  zh: 汇川技术披露人形机器人业务进展：已推出无框力矩电机、直线 / 旋转执行器、行星滚柱丝杠等零部件及七自由度智能仿生臂解决方案，部分零部件取得产品定点
+summary:
+  zh: 据汇川技术 2026 年 7 月 27 日披露的投资者关系活动记录表，公司称人形机器人是重点战略业务，自切入以来已完成核心零部件开发并推出无框力矩电机、低压高功率驱动器、直线 / 旋转执行器、行星滚柱丝杠、编码器等零部件以及七自由度智能仿生臂解决方案；目前已取得部分零部件的产品定点，七自由度智能仿生臂解决方案在客户端持续验证、力争 2026 年实现小批量销售，并聚焦泛人形机器人在打螺丝、异形件分拣等工业场景的落地。
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://static.cninfo.com.cn/finalpage/2026-07-27/1225443567.PDF
+  publisher: 巨潮资讯网（汇川技术投资者关系活动记录表）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/static-2026-07-27-inovance-ir-record-human.html
+corroboration: single

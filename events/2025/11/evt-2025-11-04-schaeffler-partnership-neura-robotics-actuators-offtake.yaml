@@ -1,0 +1,24 @@
+id: evt-2025-11-04-schaeffler-partnership-neura-robotics-actuators-offtake
+date: 2025-11-04
+date_precision: day
+type: partnership
+orgs:
+- id: schaeffler
+  role: subject
+- id: neura-robotics
+  role: counterparty
+title:
+  zh: 舍弗勒与 NEURA Robotics 建立技术合作：联合开发并供应人形机器人执行器，舍弗勒计划到 2035 年在生产网络部署数千台 NEURA 人形机器人
+summary:
+  zh: 11 月 4 日，舍弗勒（Schaeffler）发布新闻稿称与 NEURA Robotics 建立技术合作，内容包括联合开发并供应人形机器人关键部件（如执行器），以及人形机器人采购协议：舍弗勒将在全球生产网络部署 NEURA 的人形机器人，到 2035 年整合「中等四位数」数量的人形机器人。NEURA 借此锁定其紧凑轻量、可连续运行执行器的相当部分需求；双方在生产环境采集运动与交互数据用于训练 AI 模型，数据进入 Neuraverse。舍弗勒称其面向人形机器人的行星齿轮执行器产品扭矩最高 250 Nm。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+  data_acquisition: [real-robot]
+evidence:
+- url: https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88136515
+  publisher: 舍弗勒官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/schaeffler-2025-11-04-schaeffler-neura-partner.html
+corroboration: single
