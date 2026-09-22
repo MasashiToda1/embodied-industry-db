@@ -349,32 +349,95 @@ async function pageGraph() {
 }
 
 /* ---------- ⑤ 商业信号 ---------- */
+// 钱和客户的看板。全是事实汇总：计数、按币种合计、出现次数、场景分布。
+// 不换汇（CNY 和 USD 分开列）、不估算未披露金额、不排名。
+const scenes = e => Array.isArray(e.axes?.target_scene) ? e.axes.target_scene : e.axes?.target_scene ? [e.axes.target_scene] : [];
+const evLink = e => `<a class="mono" href="index.html?ev=${e.id}">${e.date}</a>`;
+function sumByCurrency(list) {
+  const m = {}; list.forEach(e => { if (e.amount) m[e.amount.currency] = (m[e.amount.currency] || 0) + e.amount.value; });
+  return Object.entries(m).map(([c, v]) => amountStr({ value: v, currency: c }));
+}
+function bars(rows, { max, link } = {}) {
+  // rows: [{zh, n, href?}]  横条，长度＝n/max
+  if (!rows.length) return '<div class="empty" style="padding:14px">暂无</div>';
+  const M = max || Math.max(...rows.map(r => r.n));
+  return `<div class="bars">${rows.map(r => `<div class="bar-row"><span class="bar-k">${r.href ? `<a href="${r.href}">${esc(r.zh)}</a>` : esc(r.zh)}</span><span class="bar-track"><i style="width:${(r.n / M * 100).toFixed(1)}%"></i></span><span class="bar-n">${r.n}</span></div>`).join('')}</div>`;
+}
+function monthBars(list, from, to) {
+  // 每月事件数，披露金额 / 未披露 两段
+  const months = d3.timeMonths(d3.timeMonth.floor(from), d3.timeMonth.offset(d3.timeMonth.floor(to), 1));
+  const key = d => d3.timeFormat('%Y-%m')(d);
+  const m = {}; months.forEach(d => m[key(d)] = { a: 0, b: 0 });
+  list.forEach(e => { const k = key(toDate(sortKey(e))); if (m[k]) m[k][e.amount ? 'a' : 'b']++; });
+  const M = Math.max(1, ...Object.values(m).map(x => x.a + x.b));
+  return `<div class="mbars">${months.map(d => { const k = key(d), x = m[k]; return `<div class="mcol" title="${k}：披露 ${x.a} · 未披露 ${x.b}"><div class="mstack"><i class="b" style="height:${x.b / M * 100}%"></i><i class="a" style="height:${x.a / M * 100}%"></i></div><span>${k.slice(2)}</span></div>`; }).join('')}</div>
+    <div class="legend" style="margin-top:6px"><i style="background:#1a1a1c"></i>披露金额 <i style="background:#c8c8cc"></i>未披露</div>`;
+}
 async function pageSignals() {
   await load(); nav('signals');
-  const TYPES = ['funding', 'procurement', 'deployment', 'pricing'];
-  const on = new Set(TYPES); let sort = 'date';
+  const E = D.events;
+  const fund = E.filter(e => e.type === 'funding'), proc = E.filter(e => e.type === 'procurement'),
+        dep = E.filter(e => e.type === 'deployment'), price = E.filter(e => e.type === 'pricing');
+  const four = [...fund, ...proc, ...dep, ...price];
+  const subj = e => (e.orgs || []).filter(o => o.role === 'subject').map(o => orgLink(o.id)).join('、') || (e.orgs || []).map(o => orgLink(o.id)).join('、');
+
+  // 谁在投：文本对手方 + investor 角色主体，按出现次数
+  const investors = {};
+  const addInv = (k, zh, e, href) => { (investors[k] = investors[k] || { zh, evs: [], href }).evs.push(e); };
+  fund.forEach(e => {
+    (e.counterparties || []).forEach(c => addInv(c, c, e));
+    (e.orgs || []).filter(o => o.role === 'investor').forEach(o => addInv('org:' + o.id, orgZh(o.id), e, `org.html?id=${o.id}`));
+  });
+  Object.values(investors).forEach(i => i.n = i.evs.length);
+  const invRows = Object.values(investors).sort((a, b) => b.n - a.n || a.zh.localeCompare(b.zh, 'zh'));
+
+  // 谁在买：中标与部署事件里的采购方 / 客户
+  const buyers = [];
+  [...proc, ...dep].forEach(e => {
+    const bs = [...(e.counterparties || []).map(c => ({ zh: c })), ...(e.orgs || []).filter(o => o.role === 'customer').map(o => ({ zh: orgZh(o.id), href: `org.html?id=${o.id}` }))];
+    (bs.length ? bs : [{ zh: '—' }]).forEach(b => buyers.push({ b, e }));
+  });
+
+  // 场景分布：四类事件里 target_scene 的出现次数
+  const sc = {}; four.forEach(e => scenes(e).forEach(s => sc[s] = (sc[s] || 0) + 1));
+  const scRows = Object.entries(sc).map(([k, n]) => ({ zh: label('target_scene:' + k, k), n, href: `index.html?axis=target_scene:${k}` })).sort((a, b) => b.n - a.n);
+
+  const dates = four.map(e => toDate(sortKey(e))); const from = dates.length ? new Date(Math.min(...dates)) : new Date(); const to = new Date();
+  const from12 = d3.timeMonth.count(from, to) > 12 ? d3.timeMonth.offset(to, -12) : from;   // 图最多回看 12 个月，更早的进表不进图
+  const stat = (n, zh, extra = '') => `<div class="stat"><div class="stat-n">${n}</div><div class="stat-zh">${zh}</div>${extra ? `<div class="stat-x">${extra}</div>` : ''}</div>`;
+
   $('main').innerHTML = `<div class="wrap"><h1>商业信号</h1>
-    <div class="sub">只看带钱和带客户的四类事件。金额留空的如实显示「未披露」，不填估算。</div>
-    <div class="card" style="margin-bottom:12px"><span id="ft">${TYPES.map(t => `<span class="tag on" data-t="${t}">${D.event_types[t]}</span>`).join('')}</span>
-      <span style="float:right"><span class="tag on" data-s="date">按日期</span><span class="tag" data-s="amount">按金额</span></span></div>
-    <div class="card"><table><thead><tr><th>日期</th><th>主体</th><th>类型</th><th>事件</th><th>对手方</th><th class="right">金额</th><th>场景</th><th class="right">来源</th></tr></thead><tbody id="rows"></tbody></table></div></div>`;
-  const rows = $('#rows'); bindExpand(rows);
-  const render = () => {
-    let list = D.events.filter(e => on.has(e.type));
-    if (sort === 'amount') list = [...list].sort((a, b) => (b.amount?.value || -1) - (a.amount?.value || -1));
-    rows.innerHTML = list.length ? list.map(e => `<tr class="ev" data-id="${e.id}">
-      <td class="mono">${e.date}</td><td>${(e.orgs || []).filter(o => o.role === 'subject').map(o => orgLink(o.id)).join('、') || (e.orgs || []).map(o => orgLink(o.id)).join('、')}</td>
-      <td><span class="chip">${D.event_types[e.type]}</span></td><td>${esc(e.title.zh)}</td>
-      <td class="muted">${[...(e.counterparties || []), ...(e.orgs || []).filter(o => o.role !== 'subject').map(o => orgZh(o.id) + '（' + D.roles[o.role] + '）')].map(esc).join('、') || '—'}</td>
-      <td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td>
-      <td>${(Array.isArray(e.axes?.target_scene) ? e.axes.target_scene : e.axes?.target_scene ? [e.axes.target_scene] : []).map(s => `<span class="chip">${label('target_scene:' + s, s)}</span>`).join('') || '<span class="muted">—</span>'}</td>
-      <td class="right muted">${(e.evidence || []).length}${e.corroboration === 'multi' ? ' ✓' : ''}</td></tr>
-      <tr class="detail" data-for="${e.id}" style="display:none"><td colspan="8"><div class="detail"><p class="sum">${esc(e.summary?.zh || '')}</p><div class="ev-list">来源：${evidenceList(e)} <span class="mono">· ${e.id}</span></div></div></td></tr>`).join('')
-      : `<tr><td colspan="8" class="empty">没有匹配</td></tr>`;
-  };
-  $$('#ft .tag').forEach(t => t.onclick = () => { t.classList.toggle('on'); on.has(t.dataset.t) ? on.delete(t.dataset.t) : on.add(t.dataset.t); render(); });
-  $$('[data-s]').forEach(t => t.onclick = () => { sort = t.dataset.s; $$('[data-s]').forEach(x => x.classList.toggle('on', x === t)); render(); });
-  render();
+    <div class="sub">钱和客户。四类事件（融资 / 中标 / 部署 / 定价）的汇总：谁在投、谁在买、进了什么场景、公开卖多少钱。金额只加已披露的，币种分开列，不换汇、不估算。</div>
+    <div class="stats">
+      ${stat(fund.length, '融资事件', `披露金额 ${fund.filter(e => e.amount).length} 条${sumByCurrency(fund).length ? ' · 合计 ' + sumByCurrency(fund).join(' + ') : ''}`)}
+      ${stat(proc.length, '招投标中标', sumByCurrency(proc).length ? '合计 ' + sumByCurrency(proc).join(' + ') : '')}
+      ${stat(dep.length, '落地部署', dep.length ? `${new Set(dep.flatMap(scenes)).size} 个场景` : '')}
+      ${stat(price.length, '公开定价', price.length ? '' : '尚无收录')}
+    </div>
+
+    <div class="two" style="margin-top:14px">
+      <div class="card"><h3>融资 · 按月</h3>${four.length ? monthBars(fund, from12, to) : '<div class="empty">暂无</div>'}</div>
+      <div class="card"><h3>谁在投 <span class="muted">出现次数</span></h3>${bars(invRows.slice(0, 12))}</div>
+    </div>
+
+    <div class="card" style="margin-top:14px"><h3>融资明细</h3>
+      ${fund.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>
+      ${fund.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${[...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(o => o.role === 'investor').map(o => orgLink(o.id))].join('、') || '—'}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无融资事件</div>'}</div>
+
+    <div class="two" style="margin-top:14px">
+      <div class="card"><h3>谁在买 <span class="muted">中标与部署里的采购方 / 客户</span></h3>
+        ${buyers.length ? `<table><thead><tr><th>采购方 / 客户</th><th>供给方</th><th>日期</th><th class="right">金额</th><th>场景</th></tr></thead><tbody>
+        ${buyers.map(({ b, e }) => `<tr><td>${b.href ? `<a href="${b.href}">${esc(b.zh)}</a>` : esc(b.zh)}</td><td>${subj(e)}</td><td class="mono">${evLink(e)}</td><td class="right">${e.amount ? amountStr(e.amount) : '<span class="muted">未披露</span>'}</td><td>${scenes(e).map(s => `<span class="chip">${label('target_scene:' + s, s)}</span>`).join('') || '<span class="muted">—</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无中标 / 部署事件</div>'}</div>
+      <div class="card"><h3>进了什么场景 <span class="muted">四类事件里的场景标注</span></h3>${bars(scRows)}</div>
+    </div>
+
+    <div class="card" style="margin-top:14px"><h3>公开卖多少钱</h3>
+      ${price.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th class="right">价格</th></tr></thead><tbody>
+      ${price.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="right"><b>${e.amount ? amountStr(e.amount) : '见原文'}</b></td></tr>`).join('')}</tbody></table>`
+      : `<div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。有公开报价的发布（如「19999 元起」）目前记在产品发布里，要进这张表需要单独记一条定价事件。</div>`}</div>
+
+    <div class="notice" style="margin-top:14px">样本：融资 ${fund.length} · 中标 ${proc.length} · 部署 ${dep.length} · 定价 ${price.length}。这页说的是「本库收录到了什么」，不是市场全貌；出现次数多只说明被记到得多。</div>
+  </div>`;
 }
 
 /* ---------- 入口 ---------- */
