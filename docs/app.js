@@ -474,7 +474,9 @@ async function pageSignals() {
   await load(); nav('signals');
   const E = D.events;
   const fund = E.filter(e => e.type === 'funding'), proc = E.filter(e => e.type === 'procurement'),
-        dep = E.filter(e => e.type === 'deployment'), price = E.filter(e => e.type === 'pricing');
+        dep = E.filter(e => e.type === 'deployment'),
+        // 公开价格：pricing 类事件，加上带 amount 的产品发布（发布会上报了售价的，如启元 Q1 19999 元起）
+        price = E.filter(e => e.type === 'pricing' || (e.type === 'product_launch' && e.amount));
   const four = [...fund, ...proc, ...dep, ...price];
   const subj = e => (e.orgs || []).filter(o => o.role === 'subject').map(o => orgLink(o.id)).join('、') || (e.orgs || []).map(o => orgLink(o.id)).join('、');
 

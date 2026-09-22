@@ -216,7 +216,7 @@ Exa 补的是 RSS 的盲区：媒体 feed 只有两家，一条「具身智能 �
 
 **arXiv 限流很紧**，官方要求请求间隔 ≥3 秒，密集调用会被整个挡掉，而且**返回 406 不是 429**——非常容易误判成参数写错。代码里已经单独识别这个码。每天跑一次不会碰到，调试时记得加 sleep。
 
-**以下源试过不行，别再加**：36氪 `/feed` 与 `/feed-newsflash` 返回 HTML 不是 RSS，机器之心 `/rss` 同样，IT桔子 412 反爬。免费新闻 API（NewsAPI / GNews / NewsData）额度小、中文覆盖一般，而且是二手聚合，在本库 tier 里属最低一档——**媒体自己的 RSS 更实在**。
+**以下源试过不行，别再加**：36氪 `/feed` 与 `/feed-newsflash` 返回 HTML 不是 RSS，机器之心 `/rss` 同样，凤凰科技 / 品玩 / Humanoids Daily 也是 HTML，The Robot Report 403，IT桔子 412 反爬。可用的（2026-09 实测）：雷峰网、量子位、IT之家、钛媒体、TechCrunch Robotics、IEEE Spectrum Robotics。另外 **feed 正文里的控制字符会让 ET 整份抛错**——雷峰网就这样静默坏过一次，`fetch_rss` 现在先洗掉再解析。免费新闻 API（NewsAPI / GNews / NewsData）额度小、中文覆盖一般，而且是二手聚合，在本库 tier 里属最低一档——**媒体自己的 RSS 更实在**。
 
 **微信公众号自动不了。** 需要反检测浏览器，GitHub Actions 里跑不现实。这条长期手工。
 

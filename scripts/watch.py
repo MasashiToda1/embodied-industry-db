@@ -218,7 +218,10 @@ def fetch_rss(name: str, url: str, tier: str) -> list[dict]:
     try:
         r = httpx.get(url, timeout=20, headers=UA, follow_redirects=True)
         r.raise_for_status()
-        root = ET.fromstring(r.content)
+        # 媒体 feed 正文里偶尔混进 XML 不允许的控制字符（雷峰网 2026-09 一篇里有 \x1e），
+        # ET 会整份抛错、整个源静默丢掉。先把这类字符洗掉再解析。
+        raw = re.sub(rb"[\x00-\x08\x0b\x0c\x0e-\x1f]", b"", r.content)
+        root = ET.fromstring(raw)
     except Exception as exc:  # noqa: BLE001
         print(f"  ! {name} 取不到：{type(exc).__name__}", file=sys.stderr)
         return []

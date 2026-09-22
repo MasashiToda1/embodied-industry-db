@@ -14,6 +14,20 @@ rss:
   - name: 量子位
     url: https://www.qbitai.com/feed
     tier: media
+  # 2026-09-22 实测可用的四个。凤凰科技 / 36氪 / 机器之心 / 品玩 / Humanoids Daily 返回 HTML，
+  # The Robot Report 403，均不可用，别再加（见 AGENTS.md）。
+  - name: IT之家
+    url: https://www.ithome.com/rss/
+    tier: media
+  - name: 钛媒体
+    url: https://www.tmtpost.com/rss.xml
+    tier: media
+  - name: TechCrunch Robotics
+    url: https://techcrunch.com/category/robotics/feed/
+    tier: media
+  - name: IEEE Spectrum Robotics
+    url: https://spectrum.ieee.org/feeds/topic/robotics.rss
+    tier: media
 
 arxiv:
   enabled: true
