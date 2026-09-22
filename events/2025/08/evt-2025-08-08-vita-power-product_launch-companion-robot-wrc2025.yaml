@@ -1,0 +1,22 @@
+id: evt-2025-08-08-vita-power-product_launch-companion-robot-wrc2025
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: vita-power
+  role: subject
+title:
+  zh: 维他动力在 2025 世界机器人大会发布智能伴随机器人
+summary:
+  zh: 8 月 8 日，Vbot 维他动力于 2025 世界机器人大会正式发布智能伴随机器人，官网稿件称该产品具备 VLA 自主移动和 Agent 视觉语言交互能力，无需遥控器。产品面向家庭及个人用户，提供随行携物、跟拍与照护等功能。
+axes:
+  embodiment_form: [quadruped]
+  target_scene: [home]
+  model_form: [end2end-vla]
+evidence:
+- url: https://www.vbot.cn/News/info/43
+  publisher: 维他动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/vbot-2025-08-08-vita-power-wrc2025-compa.html
+corroboration: single

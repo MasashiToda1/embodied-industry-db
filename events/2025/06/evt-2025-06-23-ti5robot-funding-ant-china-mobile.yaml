@@ -1,0 +1,21 @@
+id: evt-2025-06-23-ti5robot-funding-ant-china-mobile
+date: '2025-06-23'
+date_precision: day
+type: funding
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人完成超亿元新一轮融资，中国移动与蚂蚁集团参投
+summary:
+  zh: 6 月 23 日，36 氪报道钛虎机器人近日完成超亿元新一轮融资，投资方包括中国移动、蚂蚁集团。报道称这是阿里系首次入局人形机器人核心关节。
+counterparties:
+- 中国移动
+- 蚂蚁集团
+evidence:
+- url: https://m.36kr.com/newsflashes/3348742156212868
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/m-2025-06-23-ti5robot-antgroup-chinam.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2025-07-27-ti5robot-product_launch-waic2025-t170v21-t140
+date: '2025-07-27'
+date_precision: day
+type: product_launch
+orgs:
+- id: ti5robot
+  role: subject
+title:
+  zh: 钛虎机器人在 2025 WAIC 亮相 T170V2.1 与 T140 人形机器人
+summary:
+  zh: 钛虎机器人官网新闻称，在 2025 WAIC 世界人工智能大会上，钛虎 T170V2.1 与钛虎 T140 两款人形机器人正式亮相。T170V2.1 采用新一代关节设计，中空孔比例较上一代提升 20%；T140 体积更小，搭配语音交互功能，面向教育培训与家庭陪伴场景。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research, home]
+evidence:
+- url: https://www.ti5robot.com/h-nd-43.html
+  publisher: 钛虎机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ti5robot-2025-07-27-ti5robot-waic2025-t170v2.html
+corroboration: single

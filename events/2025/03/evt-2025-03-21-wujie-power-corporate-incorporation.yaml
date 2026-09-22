@@ -1,0 +1,18 @@
+id: evt-2025-03-21-wujie-power-corporate-incorporation
+date: '2025-03-21'
+date_precision: day
+type: corporate
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力（北京）技术研发有限公司成立
+summary:
+  zh: 新浪财经稿件称，无界动力成立于 2025 年 3 月 21 日，专注构建机器人「通用大脑」和「操作智能」，以通用基础模型研发与通用专家模型落地应用双线驱动，提供软硬一体的具身智能解决方案。
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-11-12/doc-infxcuqx3455336.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/finance-2025-03-21-wujie-power-incorporatio.html
+corroboration: single
