@@ -6,5 +6,20 @@ status: active
 layers:
 - simulation
 - foundation
+hq:
+  country: US
+  city: Santa Clara
+description: 英伟达的机器人业务线：Isaac GR00T 人形基础模型、Isaac Sim / Isaac Lab 仿真、Cosmos 世界模型与 Jetson Thor 机器人计算平台，本库只收其机器人相关事件。
 upstream:
   robotics_notebooks_institution: nvidia
+accounts:
+  site: https://developer.nvidia.com/isaac
+sources:
+- url: https://developer.nvidia.com/isaac/gr00t
+  tier: official
+  retrieved: '2026-09-22'
+  note: Isaac GR00T 平台页，机器人业务组成
+- url: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Global-Robotics-Leaders-Take-Physical-AI-to-the-Real-World/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 新闻稿发稿地 SANTA CLARA, Calif.

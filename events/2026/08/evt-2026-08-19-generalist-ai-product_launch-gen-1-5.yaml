@@ -1,0 +1,20 @@
+id: evt-2026-08-19-generalist-ai-product_launch-gen-1-5
+date: 2026-08-19
+date_precision: day
+type: product_launch
+orgs:
+- id: generalist-ai
+  role: subject
+title:
+  zh: Generalist AI 发布 GEN-1.5，称模型可从单个示范一次性学会新任务
+summary:
+  zh: 8 月 19 日，Generalist AI 在官方博客发布机器人基础模型 GEN-1.5。公司称该模型能在数秒内从单个示例学会新任务，无需梯度更新或微调，展示出一次性与少样本示范学习以及零样本泛化（即兴应变、使用刷子和簸箕等新工具）能力；博客说明任务目前是简单短时程的。GEN-1.5 是一个处理视频输入（30 秒记忆，加其他传感器、语言与本体感知输入）并输出 100 Hz 动作轨迹的大型多模态模型。
+axes:
+  data_modality: [rgb, language-annotated]
+evidence:
+- url: https://generalistai.com/blog/gen-1.5
+  publisher: Generalist AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/generalistai-2026-08-19-generalist-ai-gen-1-5.html
+corroboration: single

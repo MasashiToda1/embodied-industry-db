@@ -1,0 +1,25 @@
+id: evt-2026-03-16-nvidia-product_launch-gtc-2026-gr00t-n1-7-n2-preview
+date: 2026-03-16
+date_precision: day
+type: product_launch
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: NVIDIA 在 GTC 2026 开放 Isaac GR00T N1.7 商用授权早期访问，预告世界动作模型 GR00T N2
+summary:
+  zh: 3 月 16 日，NVIDIA 在 GTC 2026 宣布面向人形机器人的开放推理 VLA 模型 Isaac GR00T N1.7 进入带商用授权的早期访问，并预告基于 DreamZero 研究、采用世界动作模型（world action model）架构的下一代模型 GR00T N2，称其在新环境新任务上的成功率为领先 VLA 模型的两倍以上，计划年底前提供；同时预告统一合成世界生成、物理 AI 推理与动作仿真的世界基础模型 Cosmos 3。新闻稿列出 AGIBOT、Humanoid、LG Electronics、NEURA Robotics、Noble Machines 等采用 GR00T N 模型，Skild AI、Toyota Research Institute 等使用 Cosmos。
+axes:
+  model_form: [end2end-vla, world-model]
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai
+  publisher: NVIDIA Newsroom
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/nvidianews-2026-03-16-nvidia-gtc-2026-gr00t-n1.html
+- url: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Global-Robotics-Leaders-Take-Physical-AI-to-the-Real-World/
+  publisher: NVIDIA 投资者关系新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/investor-2026-03-16-nvidia-gtc-2026-robotics.html
+corroboration: single

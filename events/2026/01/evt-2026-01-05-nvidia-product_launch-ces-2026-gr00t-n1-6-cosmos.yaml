@@ -1,0 +1,20 @@
+id: evt-2026-01-05-nvidia-product_launch-ces-2026-gr00t-n1-6-cosmos
+date: 2026-01-05
+date_precision: day
+type: product_launch
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: NVIDIA 在 CES 2026 发布 Isaac GR00T N1.6、Cosmos Reason 2 等开放模型，Jetson T4000 上市
+summary:
+  zh: 1 月 5 日，NVIDIA 在 CES 2026 宣布发布面向人形机器人的开放推理 VLA 模型 Isaac GR00T N1.6（解锁全身控制，使用 Cosmos Reason 做推理），以及世界模型 Cosmos Transfer 2.5、Cosmos Predict 2.5 和开放推理视觉语言模型 Cosmos Reason 2；同时发布用于机器人策略评测的开源框架 Isaac Lab-Arena 和边缘到云的计算编排框架 OSMO，并宣布与 Hugging Face 将 Isaac 开放模型与库集成进 LeRobot。新闻稿称 Blackwell 架构的 Jetson T4000 模块开始供货。
+axes:
+  model_form: [end2end-vla, world-model]
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots
+  publisher: NVIDIA Newsroom
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/nvidianews-2026-01-05-nvidia-ces-2026-gr00t-n1.html
+corroboration: single

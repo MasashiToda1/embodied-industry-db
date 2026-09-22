@@ -1,0 +1,26 @@
+id: evt-2026-07-30-gdm-robotics-product_launch-gemini-robotics-2
+date: 2026-07-30
+date_precision: day
+type: product_launch
+orgs:
+- id: gdm-robotics
+  role: subject
+- id: apptronik
+  role: counterparty
+- id: boston-dynamics
+  role: counterparty
+title:
+  zh: Google DeepMind 发布 Gemini Robotics 2 三模型家族，首次控制完整人形机器人全身
+summary:
+  zh: 7 月 30 日，Google DeepMind 发布 Gemini Robotics 2 家族：VLA 模型 Gemini Robotics 2（可控制从双臂到完整人形的全身动作与双手灵巧操作）、具身推理模型 Gemini Robotics ER 2（规划数分钟的多步任务并支持多机器人协作）、可在机器人本地运行的 Gemini Robotics On-Device 2。ER 2 上线 Google AI Studio 并在 Gemini Enterprise Agent Platform 私有预览，VLA 与 On-Device 模型仅向早期访问合作方开放。博客展示同一模型检查点控制 Apptronik Apollo 2（SharpaWave 手与 Inspire 手两种配置）与 Franka Duo，并致谢合作方 Apptronik、Boston Dynamics 与 Agile Robots；博客称适配新双臂本体只需几小时、通常少于 200 条示例。
+counterparties:
+- Agile Robots
+axes:
+  model_form: [end2end-vla, hierarchical]
+evidence:
+- url: https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+  publisher: Google DeepMind 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/deepmind-2026-07-30-gdm-robotics-gemini-robo.html
+corroboration: single

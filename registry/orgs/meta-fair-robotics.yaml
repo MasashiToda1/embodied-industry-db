@@ -5,5 +5,21 @@ names:
 status: active
 layers:
 - foundation
+founded: 2025
+hq:
+  country: US
+  city: Menlo Park
+description: Meta 的机器人研究方向，含 FAIR 的 V-JEPA 2 世界模型与 2025 年成立、由 Marc Whitten 领导的人形机器人团队，路线是向第三方厂商授权软件平台。
 upstream:
   robotics_notebooks_institution: meta
+accounts:
+  site: https://ai.meta.com/research/vjepa/
+sources:
+- url: https://www.theverge.com/column/786759/humanoid-robots-meta
+  tier: media
+  retrieved: '2026-09-22'
+  note: CTO Bosworth 称机器人研究团队于 2025 年初成立，由 Marc Whitten 领导，路线为授权软件平台
+- url: https://ai.meta.com/research/vjepa/
+  tier: official
+  retrieved: '2026-09-22'
+  note: V-JEPA 2 官方页，FAIR 机器人相关研究

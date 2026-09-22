@@ -5,5 +5,15 @@ names:
 status: active
 layers:
 - foundation
+hq:
+  country: US
+  city: Irvine
+description: 做机器人自主软件 Field Foundation Models 的公司，不做本体，面向无地图、无 GPS 的工业与建筑现场，适配四足、人形、轮式等第三方机器人。
 accounts:
   github: field-ai
+  site: https://www.fieldai.com
+sources:
+- url: https://www.fieldai.com/news/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿，发稿地 Irvine, CA，Field Foundation Models 自述

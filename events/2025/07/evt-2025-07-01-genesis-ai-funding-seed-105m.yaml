@@ -1,0 +1,26 @@
+id: evt-2025-07-01-genesis-ai-funding-seed-105m
+date: 2025-07-01
+date_precision: day
+type: funding
+orgs:
+- id: genesis-ai
+  role: subject
+title:
+  zh: Genesis AI 出 stealth，完成 Eclipse 与 Khosla Ventures 联合领投的 1.05 亿美元种子轮
+summary:
+  zh: 7 月 1 日，Genesis AI 通过 PR Newswire 宣布出 stealth，完成 1.05 亿美元融资，由 Eclipse 与 Khosla Ventures 联合领投，Bpifrance、HSG 以及 Eric Schmidt、Xavier Niel 参投。公司自述为物理 AI 研究实验室与全栈机器人公司，总部列为巴黎与 Palo Alto，目标是构建通用机器人基础模型（RFM）与横向机器人平台。该轮为窗口外补录：截至 2026 年 9 月 22 日这是公司最近一轮已完成融资。
+counterparties:
+- Eclipse
+- Khosla Ventures
+- Bpifrance
+- HSG
+amount:
+  value: 105000000
+  currency: USD
+evidence:
+- url: https://www.prnewswire.com/news-releases/genesis-ai-emerges-from-stealth-with-105m-to-build-universal-robotics-foundation-model-and-horizontal-platform-for-general-purpose-physical-ai-302495016.html
+  publisher: PR Newswire · Genesis AI 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/prnewswire-2025-07-01-genesis-ai-seed-105m.html
+corroboration: single

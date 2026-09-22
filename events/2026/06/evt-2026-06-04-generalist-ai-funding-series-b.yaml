@@ -1,0 +1,33 @@
+id: evt-2026-06-04-generalist-ai-funding-series-b
+date: 2026-06-04
+date_precision: day
+type: funding
+orgs:
+- id: generalist-ai
+  role: subject
+- id: nvidia
+  role: investor
+title:
+  zh: Generalist AI 宣布 4 亿美元新融资，Radical Ventures 领投，累计融资超 5 亿美元
+summary:
+  zh: 6 月 4 日，Generalist AI 在官方博客宣布完成 4 亿美元新一轮融资，累计融资超过 5 亿美元。新进主要投资方包括 Radical Ventures（领投）、8VC、Union Square Ventures、Hanabi Capital、Norwest，NVIDIA、Boldstart Ventures、Spark Capital、Bezos Expeditions、NFDG 等现有主要投资方全部追加投资，新进天使投资人包括 Bin Lin、Fei-Fei Li、Naval Ravikant。博客未披露估值。
+counterparties:
+- Radical Ventures
+- 8VC
+- Union Square Ventures
+- Hanabi Capital
+- Norwest
+- Boldstart Ventures
+- Spark Capital
+- Bezos Expeditions
+- NFDG
+amount:
+  value: 400000000
+  currency: USD
+evidence:
+- url: https://generalistai.com/blog/accelerating-the-next-phase-of-physical-ai
+  publisher: Generalist AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/generalistai-2026-06-04-generalist-ai-series-b.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2026-06-16-genesis-ai-product_launch-eno
+date: 2026-06-16
+date_precision: day
+type: product_launch
+orgs:
+- id: genesis-ai
+  role: subject
+title:
+  zh: Genesis AI 发布首款通用机器人 Eno，轮式底盘加灵巧手，计划 2026 年底前量产并向工业客户部署
+summary:
+  zh: 6 月 16 日，Genesis AI 通过 PR Newswire 发布首款通用机器人 Eno，由公司基础模型 GENE 驱动，提供可显示机器人实时思考与执行状态的可选屏幕版本。公司计划 2026 年底前开始 Eno 的生产与定向客户部署，先面向制造、物流企业与实验室等工业客户，再到酒店、医院等服务业，最后是家庭与户外场景；新闻稿称还有其他本体形态在开发中。
+axes:
+  embodiment_form: [mobile-manipulator]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.prnewswire.com/news-releases/introducing-eno-genesis-ais-first-general-purpose-robot-is-challenging-traditional-humanoid-design-302801103.html
+  publisher: PR Newswire · Genesis AI 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/prnewswire-2026-06-16-genesis-ai-eno-launch.html
+corroboration: single

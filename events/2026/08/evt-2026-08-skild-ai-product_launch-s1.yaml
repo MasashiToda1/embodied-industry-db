@@ -1,0 +1,20 @@
+id: evt-2026-08-skild-ai-product_launch-s1
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 官方博客时间线图写「August 2026 S1 release」，博客正文未标注发布日；NVIDIA 9 月 10 日博客称该模型「launched last week」
+type: product_launch
+orgs:
+- id: skild-ai
+  role: subject
+title:
+  zh: Skild AI 发布旗舰机器人基础模型 S1，主打从单个任务视频做上下文学习
+summary:
+  zh: Skild AI 在官方博客发布旗舰机器人基础模型 S1。公司称 S1 从底层按上下文学习（in-context learning）设计，给它一段任务视频即可执行，无需更新模型权重或做任务专属后训练；博客称这是机器人基础模型首次在预训练中未见过、长达 10 分钟的长时程任务上展示上下文学习。博客时间线写明 2025 年 9 月发布 LocoFormer、2026 年 2 月获得首个域内上下文学习结果、5 月 S1 首次翻煎饼、8 月 S1 发布。
+evidence:
+- url: https://www.skild.ai/blogs/s1
+  publisher: Skild AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/skild-2026-08-skild-ai-s1.html
+corroboration: single

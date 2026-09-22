@@ -1,0 +1,22 @@
+id: evt-2025-09-25-gdm-robotics-product_launch-gemini-robotics-1-5
+date: 2025-09-25
+date_precision: day
+type: product_launch
+orgs:
+- id: gdm-robotics
+  role: subject
+- id: apptronik
+  role: counterparty
+title:
+  zh: Google DeepMind 发布 Gemini Robotics 1.5 与 Gemini Robotics-ER 1.5，ER 1.5 通过 Gemini API 开放
+summary:
+  zh: 9 月 25 日，Google DeepMind 发布两款模型：VLA 模型 Gemini Robotics 1.5，将视觉信息与指令转为机器人动作指令，行动前先「思考」并展示过程，可跨本体学习；具身推理视觉语言模型 Gemini Robotics-ER 1.5，负责规划多步任务并可原生调用工具。ER 1.5 当天起通过 Google AI Studio 的 Gemini API 向开发者开放，Gemini Robotics 1.5 仅向部分合作伙伴提供。博客称仅在 ALOHA 2 上训练的任务可直接在 Apptronik 的 Apollo 人形与双臂 Franka 上运行。
+axes:
+  model_form: [end2end-vla, hierarchical]
+evidence:
+- url: https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/
+  publisher: Google DeepMind 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/deepmind-2025-09-25-gdm-robotics-gemini-robo.html
+corroboration: single

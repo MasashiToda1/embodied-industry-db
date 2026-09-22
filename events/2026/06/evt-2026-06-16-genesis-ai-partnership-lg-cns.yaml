@@ -1,0 +1,20 @@
+id: evt-2026-06-16-genesis-ai-partnership-lg-cns
+date: 2026-06-16
+date_precision: day
+type: partnership
+orgs:
+- id: genesis-ai
+  role: subject
+title:
+  zh: Genesis AI 与 LG CNS 达成多阶段合作，在 LG 关联公司与 LG CNS 客户现场评估并试点 Eno
+summary:
+  zh: 6 月 16 日，Genesis AI 与 LG CNS 通过 PR Newswire 宣布多阶段跨行业合作：第一阶段在 LG CNS 的企业客户（含 LG 关联公司）中做战略评估，确定 Eno 能带来价值的用例并共同制定多阶段推广计划；随后双方执行试点，定义联合部署手册（工作流文档、数据采集、后训练、验证等）；最终目标是在制造、物流等劳动密集行业向 LG 集团关联公司与 LG CNS 客户全面推广。合作从 2026 年开始，先在韩国与美国，再扩展到全球。
+counterparties:
+- LG CNS
+evidence:
+- url: https://www.prnewswire.com/news-releases/genesis-ai-and-lg-cns-enter-industry-first-strategic-partnership-to-scale-general-purpose-robotics-across-enterprise-operations-302801102.html
+  publisher: PR Newswire · Genesis AI 与 LG CNS 联合新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/prnewswire-2026-06-16-genesis-ai-lg-cns-partne.html
+corroboration: single

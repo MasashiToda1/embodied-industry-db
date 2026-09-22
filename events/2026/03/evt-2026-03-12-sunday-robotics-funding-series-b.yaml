@@ -1,0 +1,39 @@
+id: evt-2026-03-12-sunday-robotics-funding-series-b
+date: 2026-03-12
+date_precision: day
+type: funding
+orgs:
+- id: sunday-robotics
+  role: subject
+title:
+  zh: Sunday 完成 Coatue 领投的 1.65 亿美元 B 轮融资，估值 11.5 亿美元
+summary:
+  zh: 3 月 12 日，Sunday 宣布完成超额认购的 1.65 亿美元 B 轮融资，估值 11.5 亿美元，由 Coatue 领投，Thomas Laffont 加入董事会，Bain Capital Ventures、Fidelity Management & Research Company、Tiger Global、Benchmark、Conviction、Xtal Ventures 等参投。公司称本轮资金用于停止做演示、全面转向 Memo 的真实家庭部署，Beta 交付将在数月内开始，目标 2026 年秋季进入家庭；官方博客称工程团队扩大 3 倍、研究 4 倍、数据运营 5 倍。
+counterparties:
+- Coatue
+- Bain Capital Ventures
+- Fidelity Management & Research Company
+- Tiger Global
+- Benchmark
+- Conviction
+- Xtal Ventures
+amount:
+  value: 165000000
+  currency: USD
+evidence:
+- url: https://www.globenewswire.com/news-release/2026/03/12/3254877/0/en/sunday-raises-165m-to-launch-first-autonomous-robots-by-thanksgiving.html
+  publisher: GlobeNewswire · Sunday 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/globenewswir-2026-03-12-sunday-robotics-series-b.html
+- url: https://www.sunday.ai/blog/series-b
+  publisher: Sunday 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/sunday-2026-03-12-sunday-robotics-series-b.html
+- url: https://techcrunch.com/2026/03/12/humanoid-robotics-maker-sunday-reaches-1-15b-valuation-to-build-household-robots/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/techcrunch-2026-03-12-sunday-robotics-series-b.html
+corroboration: multi

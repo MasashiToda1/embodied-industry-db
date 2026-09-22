@@ -1,0 +1,412 @@
+<!-- 抓取于 2026-09-22T15:41:03.953192+08:00 | 原始链接 https://generalistai.com/blog/gen-0 | 公众号 未知 | 标题 generalist-ai-gen-0 | sha256:2216ba761059 -->
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <script>history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7ZNP9LTG2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-D7ZNP9LTG2');
+    </script>
+    <script>
+      (function (ss, ex) {
+        window.ldfdr = window.ldfdr || function () { (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments)); };
+        (function (d, s) {
+          var fs = d.getElementsByTagName(s)[0];
+          function ce(src) {
+            var cs = d.createElement(s);
+            cs.src = src;
+            cs.async = 1;
+            fs.parentNode.insertBefore(cs, fs);
+          }
+          ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js');
+        })(document, 'script');
+      })('bElvO73gzbp7ZMqj');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generalist - GEN-0 / Embodied Foundation Models That Scale with Physical Interaction</title>
+    <meta name="description" content="We&#39;re introducing GEN-0, a new class of embodied foundation models built for multimodal training directly on high-fidelity raw physical interaction." />
+    <link rel="canonical" href="https://generalistai.com/blog/gen-0" />
+    <meta property="og:site_name" content="Generalist AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://generalistai.com/blog/gen-0" />
+    <meta property="og:title" content="GEN-0 - Generalist AI" />
+    <meta property="og:description" content="We&#39;re introducing GEN-0, a new class of embodied foundation models built for multimodal training directly on high-fidelity raw physical interaction." />
+    <meta property="og:image" content="https://generalistai.com/assets/pages/blog/gen-0/assets/generalist-gen0-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GEN-0 - Generalist AI" />
+    <meta name="twitter:description" content="We&#39;re introducing GEN-0, a new class of embodied foundation models built for multimodal training directly on high-fidelity raw physical interaction." />
+    <meta name="twitter:image" content="https://generalistai.com/assets/pages/blog/gen-0/assets/generalist-gen0-og.png" />
+    <meta name="twitter:site" content="@GeneralistAI" />
+    
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon-black.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon-white.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+    <div class="mobile-header-background" aria-hidden="true"></div>
+    <a href="/" class="mobile-header-brand" aria-label="Generalist AI">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1395.82 192.99" fill="currentColor" class="wordmark-variant--dark mobile-header-lockup" aria-hidden="true"><path d="M144.66,79.8V28.65L100.36,3.07l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,104.53l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,107.64c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,101.12,0,121.69,0,147.06s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /><g><path d="M235.64,96.48c0-14.59,2.14-27.8,6.41-39.63,4.27-11.83,10.45-21.97,18.52-30.43,8.07-8.46,17.85-14.98,29.33-19.55,11.48-4.57,24.48-6.86,38.98-6.86,13.73,0,25.6,1.88,35.61,5.63,10.01,3.76,18.3,8.7,24.86,14.83,6.56,6.13,11.53,12.82,14.89,20.07,3.37,7.25,5.31,14.42,5.83,21.5v3.89h-37.68c-.69-5.18-2.44-10.51-5.24-15.99-2.81-5.48-7.21-10.08-13.21-13.79-6-3.71-14.1-5.57-24.28-5.57-8.46,0-16.02,1.58-22.66,4.73-6.65,3.15-12.24,7.64-16.77,13.47-4.53,5.83-8.01,12.8-10.42,20.91-2.42,8.12-3.63,17.18-3.63,27.19,0,13.21,2.07,24.71,6.22,34.51,4.14,9.8,10.14,17.38,18,22.73,7.85,5.35,17.35,8.03,28.49,8.03s20.48-2.16,27.26-6.48c6.78-4.32,11.76-9.84,14.96-16.58,3.19-6.73,5.05-13.68,5.57-20.85h-45.84v-28.49h81.2v99.84h-35.61v-19.04h-2.59c-1.73,2.07-3.93,4.34-6.6,6.8-2.68,2.46-6.07,4.79-10.17,6.99-4.1,2.2-8.98,4.01-14.63,5.44-5.66,1.42-12.41,2.14-20.27,2.14-17.27,0-32.4-3.95-45.39-11.85-12.99-7.9-23.1-18.99-30.3-33.28-7.21-14.29-10.81-31.06-10.81-50.31Z" /><path d="M420.31,121.6c0-11.83,1.64-22.17,4.92-31.02,3.28-8.85,7.94-16.21,13.99-22.08,6.04-5.87,13.32-10.3,21.82-13.27,8.5-2.98,17.94-4.47,28.3-4.47,13.81,0,25.62,2.61,35.42,7.83,9.8,5.22,17.31,12.74,22.53,22.53,5.22,9.8,7.83,21.69,7.83,35.68v14.37h-97.77c.17,6.73,1.49,12.65,3.95,17.74,2.46,5.1,6.04,9.13,10.75,12.11,4.7,2.98,10.42,4.47,17.16,4.47s12.15-1.04,16.25-3.11c4.1-2.07,7.19-4.6,9.26-7.58,2.07-2.98,3.37-5.94,3.88-8.87h33.8v3.89c-1.04,4.66-2.89,9.5-5.57,14.5-2.68,5.01-6.48,9.67-11.4,13.99-4.92,4.32-11.14,7.79-18.65,10.42-7.51,2.63-16.53,3.95-27.07,3.95-21.07,0-37.9-5.91-50.5-17.74-12.61-11.83-18.91-29.61-18.91-53.35ZM457.73,106.84h60.86c-.09-5.61-1.17-10.62-3.24-15.02s-5.29-7.88-9.65-10.42c-4.36-2.55-9.95-3.82-16.77-3.82s-12.2,1.29-16.64,3.89c-4.45,2.59-7.83,6.09-10.17,10.49s-3.8,9.37-4.4,14.89Z" /><path d="M565.73,53.87h37.17v15.67h2.59c1.55-2.33,3.88-4.92,6.99-7.77,3.11-2.85,7.36-5.33,12.76-7.45,5.39-2.11,12.28-3.17,20.66-3.17,15.54,0,27.82,4.21,36.84,12.63,9.02,8.42,13.53,20.66,13.53,36.71v89.1h-38.85v-86.89c0-7.6-2.07-13.29-6.22-17.09-4.14-3.8-9.76-5.7-16.83-5.7-5.35,0-10.3,1.04-14.83,3.11-4.53,2.07-8.16,5.44-10.88,10.1-2.72,4.66-4.08,10.75-4.08,18.26v78.22h-38.85V53.87Z" /><path d="M705.72,121.6c0-11.83,1.64-22.17,4.92-31.02,3.28-8.85,7.94-16.21,13.99-22.08,6.04-5.87,13.32-10.3,21.82-13.27,8.5-2.98,17.94-4.47,28.3-4.47,13.81,0,25.62,2.61,35.42,7.83,9.8,5.22,17.31,12.74,22.53,22.53,5.22,9.8,7.83,21.69,7.83,35.68v14.37h-97.77c.17,6.73,1.49,12.65,3.95,17.74,2.46,5.1,6.04,9.13,10.75,12.11,4.7,2.98,10.42,4.47,17.16,4.47s12.15-1.04,16.25-3.11c4.1-2.07,7.19-4.6,9.26-7.58,2.07-2.98,3.37-5.94,3.88-8.87h33.8v3.89c-1.04,4.66-2.89,9.5-5.57,14.5-2.68,5.01-6.48,9.67-11.4,13.99-4.92,4.32-11.14,7.79-18.65,10.42-7.51,2.63-16.53,3.95-27.07,3.95-21.07,0-37.9-5.91-50.5-17.74-12.61-11.83-18.91-29.61-18.91-53.35ZM743.15,106.84h60.86c-.09-5.61-1.17-10.62-3.24-15.02s-5.29-7.88-9.65-10.42c-4.36-2.55-9.95-3.82-16.77-3.82s-12.2,1.29-16.64,3.89c-4.45,2.59-7.83,6.09-10.17,10.49s-3.8,9.37-4.4,14.89Z" /><path d="M851.15,53.87h37.17v20.72h2.59c1.81-5.01,4.47-9.34,7.96-13.01,3.5-3.67,8.22-6.37,14.18-8.09,5.96-1.73,13.51-2.07,22.66-1.04v32.5c-8.89-1.38-16.77-1.29-23.63.26-6.86,1.55-12.26,5.14-16.19,10.75-3.93,5.61-5.89,13.9-5.89,24.86v68.76h-38.85V53.87Z" /><path d="M939.86,94.79v-3.89c1.55-12.26,7.73-22.01,18.52-29.27,10.79-7.25,24.95-10.88,42.48-10.88,11.74,0,22.04,1.79,30.89,5.37,8.85,3.58,15.75,9.22,20.72,16.9,4.96,7.69,7.45,17.53,7.45,29.53v53.48c0,6.56.24,12.22.71,16.96.47,4.75,1.57,8.94,3.3,12.56l-.13,3.89-15.54.13h-21.11c-.6-2.07-1.08-4.27-1.42-6.6-.35-2.33-.52-5.01-.52-8.03h-2.59c-2.07,2.85-4.79,5.57-8.16,8.16-3.37,2.59-7.58,4.68-12.63,6.28-5.05,1.6-11.46,2.4-19.23,2.4-9.5,0-18.09-1.64-25.77-4.92-7.69-3.28-13.73-8.05-18.13-14.31-4.4-6.26-6.6-13.66-6.6-22.21,0-9.07,2.09-16.51,6.28-22.34,4.19-5.83,9.84-10.27,16.96-13.34,7.12-3.06,15.09-4.99,23.89-5.76l30.82-2.98c4.49-.43,7.85-1.49,10.1-3.17,2.24-1.68,3.37-4.38,3.37-8.09,0-5.7-2.01-10.04-6.02-13.02s-9.78-4.47-17.29-4.47-13.1,1.49-17.81,4.47c-4.71,2.98-7.1,7.36-7.19,13.14h-35.35ZM969.9,148.28c0,5.35,1.96,9.56,5.89,12.63,3.93,3.07,9.39,4.6,16.38,4.6,4.66,0,9.39-.95,14.18-2.85,4.79-1.9,8.81-5.2,12.04-9.91,3.24-4.7,4.86-11.11,4.86-19.23v-8.16h-2.59c-2.16,1.21-4.49,2.14-6.99,2.78-2.5.65-5.87,1.19-10.1,1.62l-14.37,1.55c-5.44.52-10.02,2.09-13.73,4.73-3.71,2.63-5.57,6.71-5.57,12.24Z" /><path d="M1076.48,3.11h38.85v186.48h-38.85V3.11Z" /><path d="M1132.42,3.11h39.11v32.38h-39.11V3.11ZM1132.55,53.87h38.85v135.72h-38.85V53.87Z" /><path d="M1183.7,92.33c0-12.43,5.14-22.4,15.41-29.91,10.27-7.51,24.65-11.27,43.12-11.27s33.13,3.74,43.71,11.2c10.57,7.47,16.64,16.94,18.19,28.43v3.89h-35.09c-.61-6.3-3.22-10.83-7.83-13.6-4.62-2.76-10.6-4.14-17.94-4.14s-12.71,1.25-16.9,3.76c-4.19,2.51-6.28,5.91-6.28,10.23s1.66,7.73,4.99,9.71c3.32,1.99,7.36,3.37,12.11,4.14l25.64,4.14c9.15,1.47,17.2,3.71,24.15,6.73,6.95,3.02,12.37,7.19,16.25,12.5,3.89,5.31,5.83,12.24,5.83,20.78,0,13.12-5.16,23.7-15.48,31.73-10.32,8.03-25.66,12.04-46.04,12.04s-36.15-3.95-47.33-11.85c-11.18-7.9-17.59-17.81-19.23-29.72v-3.89h36c.78,6.91,4.04,11.91,9.78,15.02,5.74,3.11,12.67,4.66,20.79,4.66s14.55-1.34,18.78-4.01c4.23-2.68,6.35-6.43,6.35-11.27,0-4.49-1.75-7.68-5.25-9.58-3.5-1.9-8.18-3.32-14.05-4.27l-25.64-4.14c-8.72-1.47-16.38-3.91-22.99-7.32-6.6-3.41-11.76-7.92-15.48-13.53-3.71-5.61-5.57-12.43-5.57-20.46Z" /><path d="M1304.78,53.87h24.6V18h38.46v35.87h27.97v25.77h-27.97v72.52c0,3.28.88,5.83,2.65,7.64,1.77,1.81,4.34,2.72,7.71,2.72h16.96v27.07h-27.32c-12,0-21.41-3.09-28.23-9.26-6.82-6.17-10.23-15.17-10.23-27v-73.69h-24.6v-25.77Z" /></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1379.23 192.99" fill="currentColor" class="wordmark-variant--light mobile-header-lockup" aria-hidden="true"><path d="M144.66,79.8V28.65L100.36,3.07l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,104.53l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,107.64c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,101.12,0,121.69,0,147.06s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /><g><path d="M236.29,96.48c0-14.68,2.14-27.95,6.41-39.82,4.27-11.87,10.42-22.01,18.45-30.43,8.03-8.42,17.72-14.89,29.07-19.42,11.35-4.53,24.11-6.8,38.27-6.8,13.38,0,24.97,1.86,34.77,5.57,9.8,3.71,17.94,8.57,24.41,14.57,6.48,6,11.42,12.61,14.83,19.81,3.41,7.21,5.37,14.35,5.89,21.43v3.89h-34.19c-.69-5.52-2.55-11.18-5.57-16.96-3.02-5.78-7.71-10.64-14.05-14.57-6.35-3.93-14.83-5.89-25.45-5.89-8.81,0-16.69,1.64-23.63,4.92-6.95,3.28-12.84,7.94-17.68,13.99-4.84,6.04-8.5,13.3-11.01,21.76-2.5,8.46-3.76,17.92-3.76,28.36,0,13.81,2.2,25.81,6.6,36,4.4,10.19,10.73,18.07,18.97,23.63,8.24,5.57,18.11,8.35,29.59,8.35s21.19-2.31,28.36-6.93c7.17-4.62,12.43-10.55,15.8-17.81,3.37-7.25,5.31-14.93,5.83-23.05h-48.3v-26.16h80.42v98.68h-32.38v-20.59h-2.59c-1.64,2.16-3.82,4.55-6.54,7.19-2.72,2.63-6.17,5.16-10.36,7.58-4.19,2.42-9.22,4.4-15.09,5.96-5.87,1.55-12.87,2.33-20.98,2.33-17.09,0-32.1-3.91-45-11.72-12.91-7.81-22.99-18.86-30.24-33.15-7.25-14.29-10.88-31.19-10.88-50.7Z" /><path d="M420.31,122.12c0-11.74,1.6-22.01,4.79-30.82,3.19-8.81,7.73-16.14,13.6-22.02,5.87-5.87,12.99-10.27,21.37-13.21,8.37-2.93,17.7-4.4,27.97-4.4,13.55,0,25.14,2.61,34.77,7.83,9.63,5.22,16.96,12.69,22.01,22.4,5.05,9.71,7.58,21.43,7.58,35.16v13.6h-98.42c.17,7.43,1.57,13.9,4.21,19.42,2.63,5.53,6.45,9.86,11.46,13.01,5.01,3.15,11.05,4.73,18.13,4.73s12.8-1.12,17.16-3.37c4.36-2.24,7.64-5.01,9.84-8.29,2.2-3.28,3.65-6.52,4.34-9.71h30.69v3.88c-.95,4.58-2.74,9.32-5.37,14.25-2.63,4.92-6.37,9.52-11.2,13.79-4.84,4.27-10.92,7.73-18.26,10.36-7.34,2.63-16.23,3.95-26.68,3.95-20.64,0-37.12-5.91-49.47-17.74-12.35-11.83-18.52-29.44-18.52-52.84ZM454.37,107.74h64.88c-.09-6.04-1.25-11.44-3.5-16.19-2.25-4.75-5.68-8.5-10.3-11.27-4.62-2.76-10.55-4.14-17.81-4.14s-12.99,1.4-17.74,4.21c-4.75,2.81-8.4,6.6-10.94,11.4-2.55,4.79-4.08,10.12-4.6,15.99Z" /><path d="M564.57,54.78h33.67v16.32h2.59c1.55-2.42,3.89-5.12,6.99-8.09s7.42-5.55,12.95-7.71c5.52-2.16,12.52-3.24,20.98-3.24,15.28,0,27.41,4.14,36.39,12.43,8.98,8.29,13.47,20.33,13.47,36.13v88.97h-35.09v-86.89c0-8.29-2.25-14.46-6.73-18.52-4.49-4.06-10.53-6.09-18.13-6.09-5.7,0-10.99,1.17-15.86,3.5-4.88,2.33-8.79,5.98-11.72,10.94-2.94,4.96-4.4,11.42-4.4,19.36v77.7h-35.09V54.78Z" /><path d="M702.61,122.12c0-11.74,1.6-22.01,4.79-30.82,3.19-8.81,7.73-16.14,13.6-22.02,5.87-5.87,12.99-10.27,21.37-13.21,8.37-2.93,17.7-4.4,27.97-4.4,13.55,0,25.14,2.61,34.77,7.83,9.63,5.22,16.96,12.69,22.01,22.4,5.05,9.71,7.58,21.43,7.58,35.16v13.6h-98.42c.17,7.43,1.57,13.9,4.21,19.42,2.63,5.53,6.45,9.86,11.46,13.01,5.01,3.15,11.05,4.73,18.13,4.73s12.8-1.12,17.16-3.37c4.36-2.24,7.64-5.01,9.84-8.29,2.2-3.28,3.65-6.52,4.34-9.71h30.69v3.88c-.95,4.58-2.74,9.32-5.37,14.25-2.63,4.92-6.37,9.52-11.2,13.79-4.84,4.27-10.92,7.73-18.26,10.36-7.34,2.63-16.23,3.95-26.68,3.95-20.64,0-37.12-5.91-49.47-17.74-12.35-11.83-18.52-29.44-18.52-52.84ZM736.67,107.74h64.88c-.09-6.04-1.25-11.44-3.5-16.19-2.25-4.75-5.68-8.5-10.3-11.27-4.62-2.76-10.55-4.14-17.81-4.14s-12.99,1.4-17.74,4.21c-4.75,2.81-8.4,6.6-10.94,11.4-2.55,4.79-4.08,10.12-4.6,15.99Z" /><path d="M846.87,54.78h33.67v20.2h2.59c1.81-4.75,4.45-8.91,7.9-12.5,3.45-3.58,8.14-6.24,14.05-7.96,5.91-1.73,13.45-2.11,22.6-1.17v29.53c-8.98-1.21-16.9-.97-23.76.71-6.86,1.68-12.24,5.37-16.12,11.07-3.89,5.7-5.83,14.03-5.83,24.99v69.93h-35.09V54.78Z" /><path d="M932.73,94.92v-3.88c1.55-12.09,7.64-21.69,18.26-28.81,10.62-7.12,24.48-10.68,41.57-10.68,11.48,0,21.52,1.79,30.11,5.37,8.59,3.58,15.28,9.09,20.07,16.51,4.79,7.43,7.19,17.05,7.19,28.88v54.65c0,6.39.28,11.87.84,16.45.56,4.58,1.57,8.68,3.04,12.3v3.88h-33.02c-.69-2.16-1.19-4.51-1.49-7.06-.3-2.54-.54-5.37-.71-8.48h-2.59c-2.07,3.02-4.81,5.92-8.22,8.68-3.41,2.76-7.75,5.01-13.01,6.73-5.27,1.73-11.78,2.59-19.55,2.59-9.5,0-18.02-1.71-25.58-5.12-7.56-3.41-13.51-8.18-17.87-14.31-4.36-6.13-6.54-13.42-6.54-21.89,0-8.98,2.09-16.32,6.28-22.02,4.19-5.7,9.84-10.06,16.96-13.08,7.12-3.02,15-4.96,23.63-5.83l30.69-2.98c4.66-.43,8.18-1.51,10.55-3.24,2.37-1.73,3.56-4.62,3.56-8.68,0-6.13-2.16-10.81-6.48-14.05-4.32-3.24-10.49-4.86-18.52-4.86s-14.42,1.58-19.43,4.73c-5.01,3.15-7.6,7.88-7.77,14.18h-31.99ZM959.54,149.31c0,5.7,2.16,10.23,6.48,13.6,4.32,3.37,10.14,5.05,17.48,5.05,5.27,0,10.44-1.1,15.54-3.3,5.09-2.2,9.32-5.87,12.69-11.01,3.37-5.14,5.05-12.02,5.05-20.66v-8.16h-2.59c-2.07,1.21-4.43,2.16-7.06,2.85-2.63.69-6.15,1.25-10.55,1.68l-15.54,1.55c-6.39.69-11.57,2.42-15.54,5.18-3.97,2.76-5.96,7.17-5.96,13.21Z" /><path d="M1068.44,3.11h35.09v186.48h-35.09V3.11Z" /><path d="M1122.44,3.24h35.35v31.21h-35.35V3.24ZM1122.44,54.78h35.22v134.81h-35.22V54.78Z" /><path d="M1171.65,92.33c0-12.26,5.05-22.04,15.15-29.33,10.1-7.29,24.13-10.94,42.09-10.94s32.27,3.63,42.67,10.88c10.4,7.25,16.34,16.62,17.81,28.1v3.88h-31.86c-.52-6.82-3.28-11.74-8.29-14.76-5.01-3.02-11.48-4.53-19.42-4.53s-13.79,1.36-18.32,4.08c-4.53,2.72-6.8,6.54-6.8,11.46s1.83,8.46,5.5,10.62c3.67,2.16,8.14,3.67,13.4,4.53l24.6,4.01c9.06,1.47,17.05,3.67,23.96,6.6,6.91,2.94,12.28,7.04,16.12,12.3,3.84,5.27,5.76,12.09,5.76,20.46,0,13.04-5.05,23.46-15.15,31.27-10.1,7.81-25.04,11.72-44.81,11.72s-35.16-3.86-46.17-11.59c-11.01-7.72-17.33-17.55-18.97-29.46v-3.88h32.63c.78,7.34,4.19,12.71,10.23,16.12,6.04,3.41,13.47,5.12,22.27,5.12s15.62-1.49,20.2-4.47c4.58-2.98,6.86-7.1,6.86-12.37s-1.94-8.57-5.83-10.68c-3.89-2.11-9.07-3.69-15.54-4.73l-24.61-4.01c-8.55-1.38-16.08-3.73-22.6-7.06-6.52-3.32-11.63-7.73-15.35-13.21-3.71-5.48-5.57-12.19-5.57-20.14Z" /><path d="M1290.92,54.78h24.99V18.65h34.84v36.13h28.49v23.7h-28.49v75.63c0,3.37.88,5.98,2.65,7.83,1.77,1.86,4.42,2.79,7.96,2.79h17.22v24.86h-26.03c-11.48,0-20.46-2.93-26.94-8.81-6.48-5.87-9.71-14.42-9.71-25.64v-76.66h-24.99v-23.7Z" /></g></svg>
+    </a>
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <main class="post-layout gen-0-post">
+      
+<nav>
+  <div class="header">
+    <a href="/" class="nav-symbol-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.79 189.92" fill="currentColor" class="symbol" role="img" aria-label="Generalist AI"><path d="M144.66,76.73V25.58L100.36,0l-44.3,25.58v51.15l22.15,12.79,22.15-38.36,22.15,38.36,22.15-12.79ZM129.41,101.45l24.56,42.53h-44.23v42.53h85.06v-85.06h-65.38ZM69.52,104.57c-6.9-4.14-14.96-6.52-23.59-6.52C20.56,98.05,0,118.62,0,143.98s20.56,45.93,45.93,45.93,45.93-20.57,45.93-45.93h-45.1l22.76-39.41Z" /></svg>
+    </a>
+    <ul>
+      
+        <li>
+          <a href="/">
+            <span>Index</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/blog" class="selected" aria-current="page">
+            <span>Blog</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/about">
+            <span>About</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/careers">
+            <span>Careers</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="/contact" class="yellow">
+            <span>Contact</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="nav-link-arrow" aria-hidden="true"><polygon points="44.58 26.2 32.09 13.71 29.26 16.54 37.85 25.13 10.67 25.13 10.67 30.13 37.83 30.13 29.25 38.71 32.08 41.54 44.58 29.03 44.58 26.2" /></svg>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  <div class="footer">
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://www.youtube.com/@Generalist_AI" aria-label="YouTube" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+            <span>YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.linkedin.com/company/generalistai/" aria-label="LinkedIn" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+            <span>LinkedIn</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://x.com/GeneralistAI" aria-label="x.com" class="button button-small" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+            <span>x.com</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="social-link-arrow" aria-hidden="true"><polygon points="41.17 12.08 23.67 12.08 23.67 16.08 35.99 16.08 12.08 39.99 15.26 43.17 39.17 19.26 39.17 31.58 43.17 31.58 43.17 14.08 41.17 12.08" /></svg>
+          </a>
+        </li>
+      
+    </ul>
+    <div class="copyright">
+      <span>&copy; 2026</span>
+      <span>Generalist AI, Inc.</span>
+      <span>All rights reserved.</span>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="post-details">
+    <div class="post-details-header">
+      
+<a href="/blog/research" class="button button-optical-adjustment button-small button-category">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="round" class="button-category-icon" aria-hidden="true"><defs><clipPath id="icon-clip-266"><polygon points="27.62 1.85 0 49.7 55.25 49.7 27.62 1.85" /></clipPath></defs><g clip-path="url(#icon-clip-266)"><polygon points="27.62 1.85 0 49.7 55.25 49.7 27.62 1.85" /></g></svg>
+  Research
+</a>
+
+      <h2 class="post-date">November 4, 2025</h2>
+    </div>
+    <div class="post-byline">
+      <h1 class="post-author">Generalist Team</h1>
+      <div class="post-read-listen">
+        <div class="label">12 min read</div>
+        <a href="/blog" class="button button-xsmall">Listen</a>
+      </div>
+    </div>
+    <div class="table-of-contents">
+      <h3 class="table-of-contents-title">Table of Contents</h3>
+      <ol class="table-of-contents-list">
+        <li><a href="#introduction" data-toc-label="Introduction"><span class="toc-link-text">Introduction</span></a></li>
+        <li><a href="#threshold" data-toc-label="Surpassing the Intelligence Threshold"><span class="toc-link-text">Surpassing the Intelligence Threshold</span></a></li>
+        <li><a href="#scaling-laws" data-toc-label="Scaling Laws for Robotics"><span class="toc-link-text">Scaling Laws for Robotics</span></a></li>
+        <li><a href="#data" data-toc-label="Robotics is No Longer Limited By Data"><span class="toc-link-text">Robotics is No Longer Limited By Data</span></a></li>
+        <li><a href="#citation" data-toc-label="Citation"><span class="toc-link-text">Citation</span></a></li>
+      </ol>
+    </div>
+    <div class="post-details-footer">
+      <a href="/blog" class="button button-optical-adjustment button-small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.25 55.25" fill="currentColor" class="button-icon button-icon-left" aria-hidden="true"><polygon points="10.67 29.05 23.16 41.54 25.99 38.71 17.4 30.12 44.58 30.12 44.58 25.12 17.42 25.12 26 16.54 23.17 13.71 10.67 26.22 10.67 29.05" /></svg><span>Back to Blog</span></a>
+    </div>
+  </section>
+  <section class="post-content">
+    <h1 class="post-title" id="introduction"><span class="gen-0">GEN-0</span> / Embodied Foundation Models That Scale with Physical Interaction</h1>
+
+    <div class="post-full-width post-hero-media gen-0-hero-video">
+      <video class="post-image" autoplay loop muted playsinline preload="auto">
+        <source src="/assets/pages/blog/gen-0/assets/gen0_teaser.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p>For years, foundation models in robotics have primarily used vision-language pretraining as the stepping stone towards scaling robotics, allowing us to <a href="https://palm-e.github.io/" target="_blank" rel="noopener">transfer</a><sup class="post-ref"><a href="#fn-1">1</a></sup> the benefits of semantic generalization from existing large multimodal models. But what&rsquo;s been missing is how to effectively scale large multimodal model training in the domain of robotics itself&mdash;to establish scaling laws that corroborate the consistent (and predictable) improvement of robot intelligence with more compute &amp; data, as has underpinned progress in other domains <a href="https://arxiv.org/pdf/2001.08361" target="_blank" rel="noopener">e.g. LLMs</a>.<sup class="post-ref"><a href="#fn-2">2</a></sup> This requires an architecture, training procedure, and data engine that pushes new sensorimotor capabilities, provides behavioral generalization, and grows with the vast and ever-expanding experience generated by interacting with the real physical world.</p>
+
+    <p>To this end, we&rsquo;re introducing <span class="gen-0">GEN-0</span>, a new class of embodied foundation models built for multimodal training directly on high-fidelity raw physical interaction. Its architecture builds on the strengths of vision and language models while also going beyond them&mdash;natively designed to capture human-level reflexes and physical commonsense. One core feature is Harmonic Reasoning, in which the models are trained to simultaneously think and act seamlessly. We&rsquo;ve shared a glimpse of the capabilities of early precursors in our <a href="/blog/research-preview">prior videos</a>,<sup class="post-ref"><a href="#fn-3">3</a></sup> and today we are sharing that not only does <span class="gen-0">GEN-0</span> have breakthrough fundamental capabilities, but these capabilities are scaling:</p>
+
+    <ul>
+      <li><strong>Surpassing the Intelligence Threshold</strong> &ndash; in an unprecedented high-data regime for robotics, we observe a phase transition at 7B where smaller models exhibit <a href="https://arxiv.org/abs/2102.01293" target="_blank" rel="noopener">ossification</a>,<sup class="post-ref"><a href="#fn-4">4</a></sup> while larger ones continue to improve. We&rsquo;ve since scaled <span class="gen-0">GEN-0</span> to 10B+ model sizes, and observe fast adaptation to new tasks with increasingly less post-training.</li>
+      <li><strong>Scaling Laws</strong> &ndash; <span class="gen-0">GEN-0</span> models exhibit strong scaling laws, in which more pretraining data and compute consistently (and predictably) improve downstream post-training performance of the model across many tasks.</li>
+      <li><strong>Harmonic Reasoning</strong> &ndash; Although for language chatbots it is straightforward to <a href="https://openai.com/index/learning-to-reason-with-llms/" target="_blank" rel="noopener">spend more time thinking before responding,</a><sup class="post-ref"><a href="#fn-5">5</a></sup> the same is not as simple for physical systems acting in the real world &ndash; physics doesn&rsquo;t stop. To address this problem, Harmonic Reasoning involves a fundamentally new approach to training models, and creates a &ldquo;harmonic&rdquo; interplay between asynchronous, continuous-time streams of sensing and acting tokens. This allows us to scale to very large model sizes without depending on <a href="https://www.figure.ai/news/helix" target="_blank" rel="noopener">System1-System2 architectures</a><sup class="post-ref"><a href="#fn-6">6</a></sup> or <a href="https://www.physicalintelligence.company/research/real_time_chunking" target="_blank" rel="noopener">inference-time guidance.</a><sup class="post-ref"><a href="#fn-7">7</a></sup></li>
+      <li><strong>Cross-Embodiment</strong> &ndash; <span class="gen-0">GEN-0</span> architecture works on different robots by design. We have tested our models on 6DoF, 7DoF, and 16+DoF semi-humanoid robots.</li>
+      <li><strong>No Longer Limited By Data</strong> &ndash; <span class="gen-0">GEN-0</span> is pretrained on our in-house robotics dataset, which includes over 270,000 hours of real-world diverse manipulation data, growing at a rate of 10,000 hours a week and accelerating.</li>
+      <li><strong>The Science of Pretraining</strong> &ndash; different mixtures of pretraining data (from various sources e.g. data foundries) yield <span class="gen-0">GEN-0</span> models with different characteristics. We share some early notes from our empirical observations in this high-data regime, and how that traces back to specific data collection operations.</li>
+    </ul>
+    <p>We believe that <span class="gen-0">GEN-0</span> marks the beginning of a new era: embodied foundation models whose capabilities predictably scale with physical interaction data &ndash; not just from text, images, or simulation &ndash; but the real world. Here are videos of <span class="gen-0">GEN-0</span> in action on new tasks:</p>
+
+    <div class="post-full-width">
+      <div class="video-gallery-container">
+        <div class="video-gallery">
+          <video class="gallery-video active" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/camera_pack_top.mp4" data-caption="Build a camera kit (top view). This is a long horizon dexterous task that involves placing a cleaning cloth into a box, folding in a cardboard tray, picking up a camera and unsheathing it from a plastic bag, placing it into the box, closing the box (and inserting the tiny flap), then discarding the plastic bag. The model does not maintain any explicit notion of a subtask, and performs this all within a single stream of harmonic reasoning." poster="/assets/pages/blog/gen-0/assets/camera_pack_top_down_thumbnail.png" tabindex="0" aria-label="Build a camera kit (top view)">
+            <source src="/assets/pages/blog/gen-0/assets/camera_pack_top.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/phone_pack.mp4" data-caption="Pack the phone into the box. The robot is tasked with gently packing a phone (including its accessory box) into a retail box. Handling the phone requires pushing it against 2 fingers to grasp and lift it from the side with the other hand. Inserting the accessory box, flipping, and closing the lid, are also tight fits, and require precisely modulating forces." poster="/assets/pages/blog/gen-0/assets/phone_packing_thumbnail.png" tabindex="0" aria-label="Pack the phone into the box">
+            <source src="/assets/pages/blog/gen-0/assets/phone_pack.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/camera_pack_side.mp4" data-caption="Build a camera kit (side view). This is a bonus side-view of the box closing flap insertion part, which requires precise and tight tolerances. Note that it does not succeed the first try, notices that, and then succeeds the second time around." poster="/assets/pages/blog/gen-0/assets/camera_pack_flap_close_thumbnail.png" tabindex="0" aria-label="Build a camera kit (side view)">
+            <source src="/assets/pages/blog/gen-0/assets/camera_pack_side.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/camera_pack_robot_pov.mp4" data-caption="Build a camera kit (robot PoV). This is another close-up view from the robot&rsquo;s perspective. Note that during the last box closing flap insertion, it misses, but then corrects itself to try again." poster="/assets/pages/blog/gen-0/assets/camera_pack_unbag_thumbnail.png" tabindex="0" aria-label="Build a camera kit (robot PoV)">
+            <source src="/assets/pages/blog/gen-0/assets/camera_pack_robot_pov.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/lego_build.mp4" data-caption="Lego building (robot PoV) &ndash; This is a close-up view of one-shot assembly: you show examples of what to build, and the robot copies it (see our original blog post). This task evaluates model intelligence in terms of both the high-level reasoning of &lsquo;what to build&rsquo; (recognizing the geometry of the structures presented by the human), and the low-level visuomotor control of &lsquo;how to build it&rsquo; (purposefully re-orienting individual pieces and nudging them together in place)." poster="/assets/pages/blog/gen-0/assets/lego_build_thumbnail.png" tabindex="0" aria-label="Lego building (robot PoV)">
+            <source src="/assets/pages/blog/gen-0/assets/lego_build.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/dexmate_fasteners.mp4" data-caption="Mobile sorting fasteners. Our model works on different robots (including yes, humanoids). This demonstrates mobility via a semi-humanoid robot Dexmate VEGA, and uses the same model as shown in our prior videos with stationary bimanual manipulators. The robot is tasked with moving up to the table, picking and sorting small, thin objects and placing them into corresponding compartments." poster="/assets/pages/blog/gen-0/assets/barkbox_packing_thumbnail.png" tabindex="0" aria-label="Mobile sorting fasteners">
+            <source src="/assets/pages/blog/gen-0/assets/dexmate_fasteners.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/box_pack_robot_pov.mp4" data-caption="Packing unseen objects into a box (robot PoV) &ndash; This offers a closer view at what the robot sees while packing objects. The subtle moments of non-prehensile manipulation are a little easier to see from this perspective." poster="/assets/pages/blog/gen-0/assets/box_pack_webcam.png" tabindex="0" aria-label="Packing unseen objects into a box (robot PoV)">
+            <source src="/assets/pages/blog/gen-0/assets/box_pack_robot_pov.mp4" type="video/mp4" />
+          </video>
+          <video class="gallery-video" muted loop autoplay playsinline preload="metadata" data-src="/assets/pages/blog/gen-0/assets/box_pack_3x.mp4" data-caption="Packing unseen objects into a box (top view) &ndash; This evaluates model generalization and &lsquo;physical commonsense.&rsquo; In particular, we are interested in measuring its ability to reason over the highly varied geometry and physics of new objects&mdash;nudging and reorienting objects in the bin to get a better grasp, packing objects in different positions depending on its shape (and how to best fit into the box), pushing objects around in the box to make space for others, and recovering from slipping objects (e.g. a heavy plastic box of paper clips)." poster="/assets/pages/blog/gen-0/assets/box_pack_top_down_thumbnail.png" tabindex="0" aria-label="Packing unseen objects into a box (top view)">
+            <source src="/assets/pages/blog/gen-0/assets/box_pack_3x.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="main-video-container">
+          <video controls muted loop autoplay playsinline preload="auto">
+            <source src="/assets/pages/blog/gen-0/assets/camera_pack_top.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <figcaption class="post-caption" data-video-caption>Build a camera kit (top view). This is a long horizon dexterous task that involves placing a cleaning cloth into a box, folding in a cardboard tray, picking up a camera and unsheathing it from a plastic bag, placing it into the box, closing the box (and inserting the tiny flap), then discarding the plastic bag. The model does not maintain any explicit notion of a subtask, and performs this all within a single stream of harmonic reasoning.</figcaption>
+      </div>
+    </div>
+
+    <h2 class="post-heading" id="threshold">Surpassing the Intelligence Threshold</h2>
+    <p>Our scaling experiments show that <span class="gen-0">GEN-0</span> models must be large enough to absorb vast amounts of physical interaction data. We observe that smaller models exhibit a phenomenon similar to ossification<sup class="post-ref"><a href="#fn-4">4</a></sup> under data overload, while larger ones continue to improve&mdash;demonstrating a surprising &ldquo;phase transition&rdquo; in the intelligence capacity of our models:</p>
+    <ul>
+      <li><strong>1B</strong> models struggle to absorb complex and diverse sensorimotor data during pretraining &ndash; model weights become unable to absorb new information over time.</li>
+      <li><strong>6B</strong> models begin to benefit from pretraining and show strong multi-task capabilities.</li>
+      <li><strong>7B+</strong> models are able to internalize large-scale robotic pretraining data that transfers to downstream tasks with only a few thousand steps of post-training.</li>
+    </ul>
+    <figure class="post-full-width post-figure">
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/ossification.png" alt="Figure 1: scaling GEN-0 model size improves performance" class="post-image" />
+      </div>
+      <figcaption class="post-caption">Figure 1. Scaling <span class="gen-0">GEN-0</span> model size (different colors) improves performance in terms of next-action validation prediction error (y-axis, lower is better) on a completely-withheld (i.e. zero-shot) long-horizon downstream task. 1B parameter models exhibit clear and early ossification, while 6B and 7B models perform better at absorbing pretraining respectively. The x-axis is pretraining compute normalized so that <span class="gen-0">GEN-0</span> 7B is 1.0.</figcaption>
+    </figure>
+    <p>To our knowledge, this is the first time that model ossification<sup class="post-ref"><a href="#fn-8">8</a></sup> has been observed in robotics. This might have eluded past research due to (a) the lack of a high data regime in robotics until now, and (b) large enough model sizes in this regime. Ossification has previously been observed in LLM literature<sup class="post-ref"><a href="#fn-4">4</a></sup><sup class="post-ref"><a href="#fn-9">9</a></sup> in the high data regime but with much smaller models, on the order of O(10M) parameters rather than O(1B). The observation that this phase transition occurs in robotics but with much larger model sizes echoes <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox" target="_blank" rel="noopener">Moravec&rsquo;s Paradox</a>:<sup class="post-ref"><a href="#fn-10">10</a></sup> what humans find effortless&mdash;perception and dexterity&mdash;demands far more computational complexity than abstract reasoning. Our experiments suggest that intelligence in the physical world (i.e. physical commonsense) may have a higher activation threshold in terms of compute, and we&rsquo;re only beginning to explore what lies beyond.</p>
+
+    <h2 class="post-heading" id="scaling-laws">Scaling Laws for Robotics</h2>
+    <p>Scaling laws are commonly measured during pretraining, as shown in Figure 1, which shows the relationship of model size and compute on a downstream zero-shot task during pretraining. Another type of scaling law relates to the benefits of pretraining that persist into finetuning.<sup class="post-ref"><a href="#fn-4">4</a></sup> At sufficient model scale, we also observe a strong power-law relationship (Figure 4) between pretraining data scale and downstream post-training performance. This applies to all of our tasks we&rsquo;ve measured, including partner and customer-inspired applications and their workflows across a wide range of industrial sectors &ndash; including apparel, manufacturing, logistics, automotive, and electronics.</p>
+    <p>More specifically, we take a variety of model checkpoints (Figure 2) that have been pretrained using our training procedure on different subsets of our pretraining dataset, and then post-train these checkpoints on multi-task language-conditioned data i.e. supervised fine-tuning simultaneously on 16 different task sets. We find that more pretraining improves downstream model performance across all tasks (Figure 2).</p>
+    <figure class="post-full-width post-figure">
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/validation_loss_scaling.png" alt="Validation loss scaling across pretraining data sizes" class="post-image" />
+      </div>
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/validation_pred_error_4x4.png" alt="Next-action prediction error across 16 task sets" class="post-image" style="margin-top: 12px;" />
+      </div>
+      <figcaption class="post-caption">Figure 2. With increasingly more pretraining data (different colors), multi-task model performance during post-training improves in terms of validation loss (top) as well as next action prediction error (bottom 4x4 grid) across all 16 task sets. These tasks include ones that evaluate dexterity (e.g. build Lego), industry-specific workflows (e.g. fast food packing), and generalization (e.g. &ldquo;_ anything&rdquo; tasks).</figcaption>
+    </figure>
+    <p>We also observe that these trends transfer to real-robot performance, measured with blind A/B evaluations. Increasing the amount of pretraining data improves downstream task success rates (Figure 3) using closed-loop policies with models post-trained on only 5.6 hours of task-specific data. While the gains are significant in this low-data regime, the highest task success rates (up to 99% peak performance in certain cases) emerge when large-scale pretraining is paired with ample task-specific post-training data. For valid comparisons, we ensured no overlap between the pretraining and post-training datasets, which were collected by different people in entirely different environments.</p>
+    <figure class="post-full-width post-figure">
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/real_robot_success_rate_scaling.png" alt="Real-robot task success rate vs. pretraining data" class="post-image" />
+      </div>
+      <figcaption class="post-caption">Figure 3. For real-robot evaluations, more pretraining data (colors denote different pretrained model bases) yields higher downstream average task success rates via closed-loop policy rollouts (performance is plotted with standard error). Models on the left are post-trained on 5.6 hours (1%) of task-specific data, and the best models (right) use both the full pretraining dataset and all (550+ hours) of available task-specific post-training data.</figcaption>
+    </figure>
+    <p>Model performance is predictable with a power-law relationship (Figure 4), with which we can answer questions like &ldquo;how much pretraining data do we need to reach a specific next-action prediction error?&rdquo; or &ldquo;how much post-training data (for a specific task) can we buy with more pretraining data?&rdquo; Given a fixed data and finetuning budget on a downstream task, and given a pretraining dataset of varying size \(D\), the validation error \(L(\cdot)\) on the downstream task can be predicted via a power-law of the form:</p>
+    <div class="post-equation">$$ L(D) = (D_c / D)^{\alpha_{D}} \ . $$</div>
+    <p>For example, in the case of Clothes Handling (which involves sorting, unscrambling, buttoning, and hanging clothes in a real workplace), we can predict model performance given 1 billion action trajectories. These estimates guide conversations on partner-related tasks and can provide estimates on how much more data is needed to reach specific levels of performance.</p>
+    <figure class="post-full-width post-figure">
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/scaling_law_clothes.png" alt="Scaling law for Clothes Handling task" class="post-image" />
+      </div>
+      <figcaption class="post-caption">Figure 4. Our scaling laws provide a good description for asymptotic next action prediction error on a post-trained model for a given task set as a function of pretraining dataset size (in terms of number of action trajectories). Together with model size scaling laws, we can use these results to predict optimal allocation of pretraining compute and data for any downstream post-training task.</figcaption>
+    </figure>
+
+    <h2 class="post-heading" id="data">Robotics is No Longer Limited By Data</h2>
+    <p>Our Foundation models are trained on an unprecedented corpus of 270,000 hours of real-world manipulation trajectories collected across diverse activities in 1,000s of homes, warehouses, and workplaces worldwide. Today, our robot data operations provide over 10,000 new hours per week and are accelerating. This is all powered by a global network of hardware and 1,000s of data collection devices and robots.</p>
+    <figure class="post-full-width post-figure">
+      <div class="data-size-image">
+        <img src="/assets/pages/blog/gen-0/assets/data_size.png" alt="GEN-0 dataset size compared to other large robotics datasets" class="post-image" />
+      </div>
+      <figcaption class="post-caption">Figure 5. <span class="gen-0">GEN-0</span> is trained on orders of magnitude more real-world manipulation data than some of the largest robotics datasets that exist to date (as of Nov 2025).</figcaption>
+    </figure>
+
+    <h3 class="post-subheading">Mapping the Universe of Manipulation</h3>
+    <p>To scale <span class="gen-0">GEN-0</span> capabilities, we are constructing the largest and most diverse real-world manipulation dataset ever built, including every manipulation task humans can think of &ndash; from peeling potatoes, to threading bolts &ndash; spanning homes, bakeries, laundromats, warehouses, factories, and more. Here is an example internal search tool we have built to explore this universe:</p>
+    <figure class="post-full-width post-figure">
+      <video class="post-image" autoplay loop muted playsinline preload="auto">
+        <source src="/assets/pages/blog/gen-0/assets/data_search.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption class="post-caption">Figure 6. This is an example of searching through &lt;1% of our pretraining dataset, which includes manipulation data from millions of diverse activities across different environments. The visualization navigates the user through a t-SNE map of corresponding language label embeddings in the dataset. Given a text description, the visualizer locates the nearest neighbor region, and randomly samples in the area a collection of related videos and displays them.</figcaption>
+    </figure>
+
+    <h3 class="post-subheading">Infrastructure for Internet-Scale Robot Data</h3>
+    <p>Building the operations and ML infrastructure to support this is no easy feat. For robot models and data at this scale, we built custom hardware, dataloaders, and network infrastructure (including laying new dedicated Internet lines) to support the uplink bandwidth from a diverse set of data collection sites all around the world. We&rsquo;ve negotiated multi-cloud contracts, built custom upload machines, scaled to O(10K) cores for continual multimodal data processing, compressed dozens of Petabytes of data, using dataloading techniques behind frontier video foundation models, capable of absorbing 6.85 years of real-world manipulation experience per day of training.</p>
+
+    <h3 class="post-subheading">Science of Pretraining</h3>
+    <p>From large-scale ablations, we find that data quality and diversity matters more than sheer volume, and that carefully constructed data mixtures can lead to different pretrained model characteristics. For example, Table 1 shows the performance metrics of different models trained on 8 different pretraining datasets, and their downstream impact when finetuned on 10 long-horizon task sets, organized into 3 groups that evaluate different dimensions: dexterity, real-world applications, and generalization.</p>
+    <p>Performance is measured in terms of validation prediction M.S.E. \(\text{MSE}_{\text{val}} = ||\mathbf{a}^{\star} - \hat{\mathbf{a}}||_2^2\) and <a href="https://groups.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank" rel="noopener">reverse Kullback&ndash;Leibler divergence</a><sup class="post-ref"><a href="#fn-11">11</a></sup> (reverse KL), which better measures mode-seeking behavior.<sup class="post-ref"><a href="#fn-12">12</a></sup><sup class="post-ref"><a href="#fn-13">13</a></sup> To estimate reverse KL, we use a Monte-Carlo estimator where the policy induces an empirical density \(q = \frac{1}{M}\sum_{m=1}^{M}\mathcal{N}\left(\mathbf{a}; \hat{\mathbf{a}}_{m},\mathbf{I}\right)\) via a unit-variance mixture of Gaussians centered at \(M\) policy samples \(\{\hat{\mathbf{a}}_m\}_{m=1}^{M}\), and the data/ground-truth induces a unit-variance Gaussian \(p(\mathbf{a})=\mathcal{N}\left(\mathbf{a}; \mathbf{a}^\star,\mathbf{I}\right)\) centered at \(\mathbf{a}^\star\). We approximate the expectation with policy samples:</p>
+    <div class="post-equation">$$ \widehat{D}_{\mathrm{KL}}(q||p) \approx \frac{1}{M}\sum_{m=1}^{M}\Big[\log q(\hat{\mathbf{a}}_{m})-\log p(\hat{\mathbf{a}}_{m})\Big] \ . $$</div>
+    <p>Experiments show that models with both low prediction errors and low reverse KL tend to perform better with supervised finetuning (SFT) for postraining, while models with high prediction errors and low reverse KL tend to be more distributionally multimodal, which can help post-training reinforcement learning. Having multiple data collection strategies at scale allows us to continually A/B test which data improves pretraining the most.</p>
+    <div class="post-full-width">
+      <div class="post-table-scroll">
+        <table class="post-table">
+          <thead>
+            <tr>
+              <th>Partner &amp; Class (Pred Err)</th>
+              <th>Dexterity</th>
+              <th>Applications</th>
+              <th>Generali&shy;zation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Partner A Class 1</td><td>0.00307682</td><td>0.00334155</td><td>0.00308992</td></tr>
+            <tr><td>Partner A Class 2</td><td>0.00306196</td><td>0.00333253</td><td>0.00306503</td></tr>
+            <tr><td>Partner A Class 3</td><td>0.00305728</td><td>0.00331309</td><td>0.00305888</td></tr>
+            <tr><td>Partner A Class 2 + 3</td><td>0.00315980</td><td>0.00341899</td><td>0.00315661</td></tr>
+            <tr><td>Partner B Class 1</td><td>0.00302728</td><td>0.00330365</td><td>0.00304627</td></tr>
+            <tr><td>Partner B Class 2 Objs</td><td>0.00314415</td><td>0.00341147</td><td>0.00315975</td></tr>
+            <tr><td>Partner B Class 2 Skills</td><td>0.00301995</td><td>0.00329235</td><td>0.00305292</td></tr>
+            <tr><td>Partner C Class 3</td><td>0.00306247</td><td>0.00332128</td><td>0.00307944</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="post-full-width" style="margin-top: 12px;">
+      <div class="post-table-scroll">
+        <table class="post-table">
+          <thead>
+            <tr>
+              <th>Partner &amp; Class (Rev KL)</th>
+              <th>Dexterity</th>
+              <th>Applications</th>
+              <th>Generali&shy;zation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Partner A Class 1</td><td>0.00200585</td><td>0.00258898</td><td>0.00198088</td></tr>
+            <tr><td>Partner A Class 2</td><td>0.00188744</td><td>0.00244642</td><td>0.00193866</td></tr>
+            <tr><td>Partner A Class 3</td><td>0.00198332</td><td>0.00246089</td><td>0.00190205</td></tr>
+            <tr><td>Partner A Class 2 + 3</td><td>0.00184110</td><td>0.00228588</td><td>0.00185473</td></tr>
+            <tr><td>Partner B Class 1</td><td>0.00189286</td><td>0.00246051</td><td>0.00192307</td></tr>
+            <tr><td>Partner B Class 2 Objs</td><td>0.00184719</td><td>0.00233209</td><td>0.00186721</td></tr>
+            <tr><td>Partner B Class 2 Skills</td><td>0.00182561</td><td>0.00242293</td><td>0.00190308</td></tr>
+            <tr><td>Partner C Class 3</td><td>0.00192134</td><td>0.00236901</td><td>0.00190956</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="post-caption" style="text-align: left; margin-top: 0.75rem;">Table 1. These experiments compare different pretraining datasets, collected together with multiple data foundry partners, split across different classifications (i.e. modes) of data collection. Class 1 involves data on specific tasks, Class 3 involves do-anything type data, and Class 2 is everything in between. Different partners also have different operations, and we can use these experiments to evaluate between partners to iterate and provide feedback on what data to collect, how to do it, and which methods improve models the most.</p>
+    <p>More on these learnings in future posts.</p>
+
+    <h2 class="post-heading" id="citation">Citation</h2>
+    <p>Please cite this work as:</p>
+    <div class="citation monospace">Generalist Team, &ldquo;<span class="gen-0">GEN-0</span>: Embodied Foundation Models That Scale with Physical Interaction&rdquo;, Generalist AI Blog, Nov 2025.</div>
+    <p>Or use the BibTeX citation:</p>
+    <div class="citation monospace">
+      @article&lbrace;generalist2025gen0,<br />
+        <span class="citation-indent">author = &lbrace;Generalist Team&rbrace;,<br />
+        title = &lbrace;<span class="gen-0">GEN-0</span>: Embodied Foundation Models That Scale with Physical Interaction&rbrace;,<br />
+        journal = &lbrace;Generalist AI Blog&rbrace;,<br />
+        year = &lbrace;2025&rbrace;,<br />
+        note = &lbrace;https://generalistai.com/blog/gen-0&rbrace;,</span><br />
+      &rbrace;
+    </div>
+  </section>
+  <div class="vertical-rule"></div>
+  <section class="post-footnotes">
+    <a class="post-footnote" id="fn-1" href="https://palm-e.github.io/" target="_blank" rel="noopener"><span class="post-footnote-marker">1</span><span class="post-footnote-body"><span class="post-footnote-title">PaLM-E: An Embodied Multimodal Language Model</span><span class="post-footnote-source"> (Driess et al., 2023)</span></span></a>
+    <a class="post-footnote" id="fn-2" href="https://arxiv.org/pdf/2001.08361" target="_blank" rel="noopener"><span class="post-footnote-marker">2</span><span class="post-footnote-body"><span class="post-footnote-title">Scaling Laws for Neural Language Models</span><span class="post-footnote-source"> (Kaplan and McCandlish et al., 2021)</span></span></a>
+    <a class="post-footnote" id="fn-3" href="/blog/research-preview"><span class="post-footnote-marker">3</span><span class="post-footnote-body"><span class="post-footnote-title">Research Preview</span><span class="post-footnote-source"> (Generalist, 2025)</span></span></a>
+    <a class="post-footnote" id="fn-4" href="https://arxiv.org/abs/2102.01293" target="_blank" rel="noopener"><span class="post-footnote-marker">4</span><span class="post-footnote-body"><span class="post-footnote-title">Scaling Laws for Transfer</span><span class="post-footnote-source"> (Hernandez et al., 2021)</span></span></a>
+    <a class="post-footnote" id="fn-5" href="https://openai.com/index/learning-to-reason-with-llms/" target="_blank" rel="noopener"><span class="post-footnote-marker">5</span><span class="post-footnote-body"><span class="post-footnote-title">Learning to reason with LLMs</span><span class="post-footnote-source"> (OpenAI, 2024)</span></span></a>
+    <a class="post-footnote" id="fn-6" href="https://www.figure.ai/news/helix" target="_blank" rel="noopener"><span class="post-footnote-marker">6</span><span class="post-footnote-body"><span class="post-footnote-title">Helix: A Vision-Language-Action Model for Generalist Humanoid Control</span><span class="post-footnote-source"> (Figure, 2025)</span></span></a>
+    <a class="post-footnote" id="fn-7" href="https://arxiv.org/abs/2506.07339" target="_blank" rel="noopener"><span class="post-footnote-marker">7</span><span class="post-footnote-body"><span class="post-footnote-title">Real-Time Execution of Action Chunking Flow Policies</span><span class="post-footnote-source"> (Black et al., 2025)</span></span></a>
+    <div class="post-footnote" id="fn-8"><span class="post-footnote-marker">8</span><span class="post-footnote-body">Note that in the LLM literature this phenomenon has been used to refer to the pretrain-to-finetune setting, whereas in our experiments (Figure 1) we observe ossification-type behavior of zero-shot generalization during the pure pretraining phase.</span></div>
+    <a class="post-footnote" id="fn-9" href="https://arxiv.org/abs/2503.19206" target="_blank" rel="noopener"><span class="post-footnote-marker">9</span><span class="post-footnote-body"><span class="post-footnote-title">Overtrained Language Models Are Harder to Fine-Tune</span><span class="post-footnote-source"> (Springer et al., 2025)</span></span></a>
+    <a class="post-footnote" id="fn-10" href="https://en.wikipedia.org/wiki/Moravec%27s_paradox" target="_blank" rel="noopener"><span class="post-footnote-marker">10</span><span class="post-footnote-body"><span class="post-footnote-title">Mind Children</span><span class="post-footnote-source"> (Moravec, 1988)</span></span></a>
+    <a class="post-footnote" id="fn-11" href="https://groups.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank" rel="noopener"><span class="post-footnote-marker">11</span><span class="post-footnote-body"><span class="post-footnote-title">Divergence measures and message passing</span><span class="post-footnote-source"> (Minka, 1988)</span></span></a>
+    <a class="post-footnote" id="fn-12" href="https://arxiv.org/abs/1905.12888" target="_blank" rel="noopener"><span class="post-footnote-marker">12</span><span class="post-footnote-body"><span class="post-footnote-title">A Divergence Minimization Perspective on Imitation Learning Methods</span><span class="post-footnote-source"> (Seyed Ghasemipour et al., 2019)</span></span></a>
+    <a class="post-footnote" id="fn-13" href="https://arxiv.org/abs/1905.12888" target="_blank" rel="noopener"><span class="post-footnote-marker">13</span><span class="post-footnote-body"><span class="post-footnote-title">Imitation Learning as f-Divergence Minimization</span><span class="post-footnote-source"> (Ke et al., 2020)</span></span></a>
+  </section>
+  <div class="vertical-rule"></div>
+    </main>
+
+    <script src="/assets/js/footnotes.js" defer></script>
+
+    <script src="/assets/js/scrollspy.js" defer></script>
+
+    <script src="/assets/js/video-gallery.js" defer></script>
+
+    <script src="/assets/js/mathjax-config.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+
+  </body>
+</html>
+

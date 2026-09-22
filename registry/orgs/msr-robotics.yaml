@@ -5,5 +5,20 @@ names:
 status: active
 layers:
 - foundation
+hq:
+  country: US
+  city: Redmond
+description: 微软研究院的机器人方向，2026 年 1 月发布基于 Phi 系列的首个机器人模型 Rho-alpha（VLA+），此前有 Magma 多模态智能体模型。
 upstream:
   robotics_notebooks_institution: microsoft
+accounts:
+  site: https://www.microsoft.com/en-us/research/
+sources:
+- url: https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 微软研究院官网文章，Rho-alpha 与物理 AI 方向说明
+- url: https://www.microsoft.com/en-us/research/publication/magma-a-foundation-model-for-multimodal-ai-agents/
+  tier: official
+  retrieved: '2026-09-22'
+  note: Magma 论文页，作者单位 Microsoft Research Redmond

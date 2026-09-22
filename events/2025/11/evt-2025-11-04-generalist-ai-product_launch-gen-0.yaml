@@ -1,0 +1,21 @@
+id: evt-2025-11-04-generalist-ai-product_launch-gen-0
+date: 2025-11-04
+date_precision: day
+type: product_launch
+orgs:
+- id: generalist-ai
+  role: subject
+title:
+  zh: Generalist AI 发布具身基础模型 GEN-0，称在 27 万小时真机操作数据上观察到规模定律
+summary:
+  zh: 11 月 4 日，Generalist AI 在官方博客发布 GEN-0，称其为直接在高保真原始物理交互数据上做多模态训练的新一类具身基础模型，核心特性之一是 Harmonic Reasoning（同时思考与行动）。公司称模型在 7B 参数处出现相变，较小模型出现「僵化」而更大模型持续改进，已扩展到 10B 以上；预训练数据为公司自建的超过 27 万小时真实世界操作数据，来自全球数千个家庭、仓库与工作场所，每周新增超过 1 万小时。
+axes:
+  data_acquisition: [real-robot]
+  data_sourcing: [in-house-factory]
+evidence:
+- url: https://generalistai.com/blog/gen-0
+  publisher: Generalist AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/generalistai-2025-11-04-generalist-ai-gen-0.html
+corroboration: single

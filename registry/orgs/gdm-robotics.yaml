@@ -5,5 +5,20 @@ names:
 status: active
 layers:
 - foundation
+hq:
+  country: GB
+  city: London
+description: Google DeepMind 的机器人团队，发布 Gemini Robotics 系列 VLA 与具身推理（ER）模型，模型提供给 Apptronik、Boston Dynamics 等合作方使用。
 upstream:
   robotics_notebooks_institution: google-deepmind
+accounts:
+  site: https://deepmind.google/models/gemini-robotics/
+sources:
+- url: https://deepmind.google/models/gemini-robotics/
+  tier: official
+  retrieved: '2026-09-22'
+  note: Gemini Robotics 模型页，团队产品线
+- url: https://www.therobotreport.com/apptronik-partners-google-deepmind-advance-humanoid-robots-ai/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「The London-based unit of Alphabet Inc.」，集团总部伦敦

@@ -1,0 +1,26 @@
+id: evt-2026-07-15-tri-corporate-walden-robotics-spinout
+date: 2026-07-15
+date_precision: day
+type: corporate
+orgs:
+- id: tri
+  role: subject
+title:
+  zh: TRI 大行为模型团队分拆为 Walden Robotics，携 3 亿美元融资、11 亿美元估值出 stealth
+summary:
+  zh: 7 月 15 日，Walden Robotics 宣布出 stealth，公司称其于 2026 年 1 月从 Toyota Research Institute（TRI）分拆成立，联合创始人兼 CEO Russ Tedrake 此前为 TRI 大行为模型（Large Behavior Models）高级副总裁。公司同时宣布完成 3 亿美元融资、估值 11 亿美元，由 Toyota（Toyota Motor Corp、Toyota Invention Partners、Toyota Ventures）与 Deviation Capital 联合领投，NVIDIA、Boeing、AE Ventures、Samsung Ventures、Prologis Ventures、CoreWeave Ventures 等参投。公司称其机器人基于 Diffusion Policy 与 LBM，自 2 月起已在丰田北美一家工厂的生产环节做实际工作。
+counterparties:
+- Walden Robotics
+- Toyota Motor Corporation
+- Toyota Ventures
+- Deviation Capital
+- Boeing
+- Samsung Ventures
+- CoreWeave Ventures
+evidence:
+- url: https://www.waldenrobotics.com/news/walden-robotics-launches-from-stealth
+  publisher: Walden Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/waldenroboti-2026-07-15-tri-walden-spinout-launc.html
+corroboration: single

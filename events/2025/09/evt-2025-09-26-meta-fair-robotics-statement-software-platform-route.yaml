@@ -1,0 +1,20 @@
+id: evt-2025-09-26-meta-fair-robotics-statement-software-platform-route
+date: 2025-09-26
+date_precision: day
+type: statement
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: Meta CTO Bosworth 称人形机器人是「AR 级赌注」，路线是向第三方授权软件平台而非自己做硬件
+summary:
+  zh: 9 月 26 日，The Verge 发表对 Meta CTO Andrew Bosworth 的专访。Bosworth 称 Meta 在 2025 年初按 CEO Mark Zuckerberg 的要求成立了机器人研究团队，由前 Cruise CEO Marc Whitten 领导，内部正在做名为 Metabot 的人形机器人原型，但公司的路线是像 Google 对手机厂商授权 Android 一样，把软件平台授权给其他机器人厂商，「我不在乎我们是不是硬件制造商」。他称 Meta 超级智能实验室正与机器人团队合作构建可对灵巧手做软件仿真的世界模型，并提到从 MIT 聘请 Sangbae Kim。
+axes:
+  model_form: [world-model]
+evidence:
+- url: https://www.theverge.com/column/786759/humanoid-robots-meta
+  publisher: The Verge
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/theverge-2025-09-26-meta-fair-robotics-boswo.html
+corroboration: single

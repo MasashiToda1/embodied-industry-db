@@ -1,0 +1,28 @@
+id: evt-2025-11-04-k-scale-labs-corporate-shutdown-refund-open-source
+date: 2025-11-04
+date_precision: day
+date_basis: derived
+date_as_stated: Humanoids Daily 报道发布于 2025 年 11 月 4 日，称创始人致客户信「在 X 上流传后得到确认」；36 氪英文版写创始人邮件发出于 2025 年 11 月 5 日
+type: corporate
+orgs:
+- id: k-scale-labs
+  role: subject
+title:
+  zh: K-Scale Labs 融资失败停止运营，取消全部 K-Bot 预订并退款，全部 IP 开源
+summary:
+  zh: 2025 年 11 月上旬，K-Scale Labs 创始人兼 CEO Benjamin Bolte 致信客户，称公司在 K-Bot 发布后未能找到领投方为量产模具与准入认证融资，「产品的单位经济不成立」，已裁掉大部分团队、剩余现金不足一个月，将取消所有 K-Bot 预订并退还定金，并把 K-Bot 与 Zeroth Bot 的全部专有硬件与软件 IP 开源（硬件 CERN-OHL-S-2.0，软件 MIT）。36 氪英文版称 K-Bot 预售价 8999 美元，5 月至 11 月初获得超过 100 台预订、金额超过 200 万美元。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.humanoidsdaily.com/news/k-scale-labs-cancels-k-bot-orders-open-sources-all-ip-after-funding-fails
+  publisher: Humanoids Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/humanoidsdai-2025-11-04-k-scale-labs-shutdown.html
+- url: https://eu.36kr.com/en/p/3558501366315912
+  publisher: 36 氪（英文版）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/eu-2025-11-04-k-scale-labs-shutdown-36.html
+corroboration: multi

@@ -5,5 +5,21 @@ names:
 status: active
 layers:
 - foundation
+founded: 2023
+hq:
+  country: US
+  city: Pittsburgh
+description: 做通用机器人基础模型 Skild Brain 的公司，不做本体，模型有 S1，自称可驱动任意机器人执行任意任务。
 upstream:
   robotics_notebooks_institution: skild-ai
+accounts:
+  site: https://www.skild.ai
+sources:
+- url: https://www.businesswire.com/news/home/20260114335623/en/Skild-AI-Raises-%241.4B-Now-Valued-Over-%2414B
+  tier: official
+  retrieved: '2026-09-22'
+  note: 公司新闻稿，发稿地 PITTSBURGH，公司自述
+- url: https://techcrunch.com/2026/01/14/robotic-software-maker-skild-ai-hits-14b-valuation/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「Founded in 2023」

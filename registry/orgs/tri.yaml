@@ -7,6 +7,21 @@ names:
 status: active
 layers:
 - foundation
+founded: 2016
+hq:
+  country: US
+  city: Los Altos
+description: 丰田旗下研究机构，研究大行为模型（LBM）、机器人、自动驾驶等，大行为模型团队 2026 年 1 月分拆为 Walden Robotics。
 accounts:
   huggingface: TRI-ML
   github: TRI-ML
+  site: https://www.tri.global
+sources:
+- url: https://www.tri.global/news/ai-powered-robot-boston-dynamics-and-toyota-research-institute-takes-key-step-towards-general
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿「About TRI」段，2016 年成立，办公地 Los Altos 与 Cambridge，研究方向
+- url: https://www.tri.global/about-us
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，Los Altos 标注为 HQ

@@ -1,0 +1,21 @@
+id: evt-2026-01-21-msr-robotics-product_launch-rho-alpha
+date: 2026-01-21
+date_precision: day
+type: product_launch
+orgs:
+- id: msr-robotics
+  role: subject
+title:
+  zh: 微软研究院发布首个机器人模型 Rho-alpha，基于 Phi 系列的 VLA+ 模型，开放早期访问申请
+summary:
+  zh: 1 月 21 日，微软研究院发布 Rho-alpha（ρα），称其为基于微软 Phi 系列视觉语言模型的首个机器人模型。Rho-alpha 把自然语言指令转成双臂操作任务的控制信号，微软称其为 VLA+ 模型：在感知上加入触觉传感，力觉等模态正在接入；在学习上朝部署中依据人类反馈持续改进的方向推进。文章称模型正在双臂装置与人形机器人上评估，将在数月内发布技术说明，并开放 Rho-alpha Research Early Access Program 供机器人厂商、集成商和终端用户申请，后续将通过 Microsoft Foundry 提供。
+axes:
+  model_form: [end2end-vla]
+  data_modality: [tactile]
+evidence:
+- url: https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/
+  publisher: Microsoft Research 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/microsoft-2026-01-21-msr-robotics-rho-alpha.html
+corroboration: single

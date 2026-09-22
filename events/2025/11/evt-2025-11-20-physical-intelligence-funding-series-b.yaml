@@ -1,0 +1,28 @@
+id: evt-2025-11-20-physical-intelligence-funding-series-b
+date: 2025-11-20
+date_precision: day
+type: funding
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: Physical Intelligence 获 6 亿美元融资，CapitalG 领投，估值 56 亿美元
+summary:
+  zh: 11 月 20 日，SiliconANGLE 援引 Bloomberg 与 The Information 报道，Physical Intelligence 完成 6 亿美元新一轮融资，估值 56 亿美元。Alphabet 旗下成长基金 CapitalG 领投，老股东 Lux Capital、Thrive Capital、Jeff Bezos 跟投，新投资方包括 Index Ventures 与 T. Rowe Price。报道指出公司本身未正式披露该轮融资，信息来自知情人士。
+counterparties:
+- CapitalG
+- Lux Capital
+- Thrive Capital
+- Jeff Bezos
+- Index Ventures
+- T. Rowe Price
+amount:
+  value: 600000000
+  currency: USD
+evidence:
+- url: https://siliconangle.com/2025/11/20/jeff-bezos-backed-physical-intelligence-raises-600m-improve-ai-robot-brains/
+  publisher: SiliconANGLE
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/siliconangle-2025-11-20-physical-intelligence-se.html
+corroboration: single
