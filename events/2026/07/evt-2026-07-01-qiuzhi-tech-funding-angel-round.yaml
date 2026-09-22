@@ -1,0 +1,37 @@
+id: evt-2026-07-01-qiuzhi-tech-funding-angel-round
+date: '2026-07-01'
+date_precision: day
+type: funding
+orgs:
+- id: qiuzhi-tech
+  role: subject
+title:
+  zh: 求之科技宣布完成超 1 亿美元天使轮融资，君联资本、联想创投等联合参投
+summary:
+  zh: 7 月 1 日，求之科技（无锡）有限公司（DISCOVER Robotics）宣布完成超 1 亿美元天使轮融资，由君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等联合参投，报道称为国内消费级具身智能机器人赛道单笔天使轮融资最高纪录。资金用于具身智能核心算法迭代与新品研发、建设年产万台级装配与测试产线、消费级产品量产及海外渠道拓展。公司以移动升降双臂机器人为核心形态，此前推出 AIRBOT 系列科研产品与 TOK 系列遥操作数据采集平台。
+counterparties:
+- 君联资本
+- 信产投资
+- 联想创投
+- 沄柏资本
+- 普华资本
+- 临港科创投
+- 琥珀资本
+- 庚辛资本
+axes:
+  embodiment_form:
+  - mobile-manipulator
+  data_acquisition:
+  - teleop
+evidence:
+- url: https://www.chinaventure.com.cn/news/114-20260701-392086.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/chinaventure-2026-07-01-qiuzhi-tech-angel-round-.html
+- url: https://www.sohu.com/a/1048144579_121455647
+  publisher: 搜狐（转载新华日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/sohu-2026-07-01-qiuzhi-tech-angel-round.html
+corroboration: multi

@@ -2,6 +2,8 @@ id: roboparty
 names:
   zh: 萝博派对
   en: RoboParty
+  aliases:
+  - 上海萝博派对科技有限公司
 status: active
 layers:
 - simulation
@@ -10,3 +12,18 @@ upstream:
   robotics_notebooks_institution: roboparty
 accounts:
   github: Roboparty
+  site: https://www.roboparty.com
+founded: 2025-02
+hq:
+  country: CN
+  city: 上海
+description: 做全栈开源双足人形机器人的公司，产品有萝博头原型机（Roboto Origin）、RPO 与下一代 RP1。
+sources:
+- url: https://hub.roboparty.com/documents/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官方文档站基本介绍，上海萝博派对科技有限公司成立于 2025 年 2 月 21 日，产品定位
+- url: https://www.jiemian.com/article/14870350.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 界面新闻转载投资界报道，2025 年 2 月在上海创办，办公地在上海张江机器人谷

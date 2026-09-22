@@ -1,0 +1,25 @@
+id: evt-2026-07-15-roboparty-funding-angel-plus-plus-pre-a
+date: '2026-07-15'
+date_precision: day
+type: funding
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: RoboParty 萝博派对连续完成近 5 亿元天使++轮和 Pre-A 轮融资，Pre-A 轮由宁德时代独家投资
+summary:
+  zh: 7 月 15 日消息，开源具身全栈平台「RoboParty 萝博派对」近日连续完成近 5 亿元人民币天使++轮和 Pre-A 轮融资：天使++轮由顺为资本、经纬创投、小米战投、商汤国香等老股东持续加注，Pre-A 轮由宁德时代独家投资，光源资本担任孵化方和独家财务顾问。报道称公司已完成从关节模组、整机平台、运动控制、SDK 到开源开发体系的底层建设，正在进入量产爬坡阶段，并于 2026 年 1 月成立 RoboParty Lab。
+counterparties:
+- 宁德时代
+- 顺为资本
+- 经纬创投
+- 小米战投
+- 商汤国香
+- 光源资本（财务顾问）
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2026-07-15/doc-inihvytp7900556.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-15-roboparty-pre-a-round.html
+corroboration: single

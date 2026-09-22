@@ -1,0 +1,37 @@
+id: evt-2026-07-17-daka-robot-deployment-waic-500m-orders
+date: '2026-07-17'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「WAIC 大会期间」（7 月 17 日至 20 日）
+type: deployment
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人在 WAIC 2026 与健麾信息、神州数码、无域无疆签约，累计锁定 5 亿元年度落地订单
+summary:
+  zh: WAIC 2026 期间，大咖机器人分别与医药数字化企业健麾信息、数字化物流服务商神州数码、线下零售服务商无域无疆签署深度战略合作协议，累计锁定 5 亿元年度落地订单；报道称加上此前公开的顺丰、科捷等物流合作，累计订单已超 8 亿元。艾媒咨询同场授予其「吨级重载机器马品类开创者」认证。
+counterparties:
+- 健麾信息
+- 神州数码
+- 无域无疆
+axes:
+  target_scene:
+  - logistics-warehouse
+  - commercial-service
+  - healthcare
+amount:
+  value: 500000000
+  currency: CNY
+evidence:
+- url: https://leaderobot.com/news/8555
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/leaderobot-2026-07-17-daka-robot-waic-launch.html
+- url: http://www.zqrb.cn/tmt/tmthangye/2026-07-19/A1784465194227.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/zqrb-2026-07-17-daka-robot-waic-zqrb.html
+corroboration: multi

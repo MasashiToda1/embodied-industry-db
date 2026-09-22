@@ -1,0 +1,29 @@
+id: evt-2026-04-22-daka-robot-product_launch-qiji-t1000
+date: '2026-04-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人在北京鸟巢发布骐骥 T1000 吨级重载「机器马」
+summary:
+  zh: 4 月 22 日，大咖机器人（Dax Robotics）在北京朝阳鸟巢举行新品发布会，全球首发骐骥 T1000 吨级重载「机器马」：搭载全自研关节，扭矩超 2000N·m，整备负重能力 1000 公斤，配备超高压系统，续航 1 至 2 天，面向安防巡检、消防救援、工程基建、智能物流、民生养老、户外出行等场景。文中称公司已与顺丰、科捷等物流企业达成合作。
+counterparties:
+- 顺丰
+- 科捷
+axes:
+  embodiment_form:
+  - quadruped
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - logistics-warehouse
+  - inspection-hazardous
+evidence:
+- url: https://www.news.cn/digital/20260430/8e0ba178c2e64155860bb449af092665/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-22-daka-robot-t1000-launch.html
+corroboration: single

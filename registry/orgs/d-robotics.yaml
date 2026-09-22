@@ -11,3 +11,22 @@ upstream:
 accounts:
   huggingface: D-Robotics
   github: D-Robotics
+  site: https://d-robotics.cc
+founded: 2024-01
+hq:
+  country: CN
+  city: 深圳
+description: 从地平线机器人事业部分拆的机器人软硬件底座提供商，产品有旭日系列计算芯片与 RDK 开发者套件。
+sources:
+- url: https://d-robotics.cc/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，公司定位与产品线；页脚注册主体为深圳地瓜机器人有限公司
+- url: https://www.21jingji.com/article/20260918/herald/6909276e4ed7a1b74f3703742c289671.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 21 经济网报道，2024 年初从地平线分拆成立独立公司，总部设在深圳
+- url: https://baike.baidu.com/item/%E6%B7%B1%E5%9C%B3%E5%9C%B0%E7%93%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/63972141
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 百度百科，成立日期 2024 年 1 月 16 日

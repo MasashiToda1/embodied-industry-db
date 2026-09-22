@@ -1,0 +1,28 @@
+id: evt-2026-06-03-noitom-product_launch-modalitynet
+date: '2026-06-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾机器人正式发布以人为中心的全模态数据平台 ModalityNet，首发三大核心数据集
+summary:
+  zh: 6 月 3 日，诺亦腾机器人（Noitom Robotics）正式发布 ModalityNet.com 数据平台，聚焦以人为中心（Human-centric）的全模态数据，首发 HiPHI-MOV（高精度人体动作、手部姿态、交互物体网格与轨迹、第一人称/侧视视觉）、HiPHI-OM（面向灵巧操作，含手部触觉与 RGB-D 数据流）和 ITW（自然真实环境人类行为）三大核心数据集，预期产能达 45 万小时级，面向机器人企业、具身智能模型团队与学术科研提供数据基础设施；同期上线技术博客，并计划在 ICRA 2026 现场展示。
+axes:
+  data_acquisition:
+  - mocap
+  - human-video
+  data_modality:
+  - joint-trajectory
+  - rgbd
+  - tactile
+  delivery_model:
+  - software-license
+evidence:
+- url: https://news.qq.com/rain/a/20260603A06UED00
+  publisher: 腾讯新闻（阿尔法公社 AlphaCommunity）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-03-noitom-modalitynet-launc.html
+corroboration: single

@@ -2,9 +2,32 @@ id: qiuzhi-tech
 names:
   zh: 求之科技
   en: QZTech
+  aliases:
+  - DISCOVER Robotics
+  - 求之科技（无锡）有限公司
 status: active
 layers:
 - data
 - embodiment
 upstream:
   robotics_notebooks_institution: qztech
+accounts:
+  site: https://www.discover-robotics.com
+founded: 2023-01
+hq:
+  country: CN
+  city: 无锡
+description: 清华 AIR 孵化的机器人公司，产品有 AIRBOT 机械臂与双臂平台、ORION 模型、DISCOVERSE 仿真器。
+sources:
+- url: https://www.discover-robotics.com/about-us
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页，2023 年 1 月成立，由清华大学智能产业研究院（AIR）孵化，产品线与发展历程；联系电话为无锡区号 0510
+- url: https://www.chinaventure.com.cn/news/114-20260701-392086.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 投中网融资报道，公司主体为求之科技（无锡）有限公司
+- url: https://www.sohu.com/a/1048144579_121455647
+  tier: media
+  retrieved: '2026-09-22'
+  note: 搜狐转载新华日报，2023 年 1 月在北京注册，同年总部迁至江苏无锡滨湖区

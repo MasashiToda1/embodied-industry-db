@@ -1,0 +1,25 @@
+id: evt-2026-07-13-d-robotics-partnership-tars-a3-s600
+date: '2026-07-13'
+date_precision: day
+type: partnership
+orgs:
+- id: d-robotics
+  role: subject
+- id: tars-robotics
+  role: customer
+title:
+  zh: 它石智航 A3 轮式双臂工业机器人全面搭载地瓜旭日 S600，开启规模化量产
+summary:
+  zh: 7 月 13 日，地瓜机器人宣布与它石智航的合作成果：它石智航新一代 A3 轮式双臂具身工业机器人将全面搭载旭日 S600 具身智能大算力芯片，面向工业、汽车、科研等场景开启规模化落地量产。双方针对 3B 参数级具身大模型完成旭日 S600 平台的适配与性能调优，首期 5 天实现真机部署。
+axes:
+  target_scene:
+  - industrial-manufacturing
+  embodiment_form:
+  - mobile-manipulator
+evidence:
+- url: https://news.pedaily.cn/202607/566223.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/news-2026-07-13-d-robotics-tars-a3-s600.html
+corroboration: single

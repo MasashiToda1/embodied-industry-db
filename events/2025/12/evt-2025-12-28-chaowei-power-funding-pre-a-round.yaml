@@ -1,0 +1,25 @@
+id: evt-2025-12-28-chaowei-power-funding-pre-a-round
+date: '2025-12-28'
+date_precision: day
+type: funding
+orgs:
+- id: chaowei-power
+  role: subject
+title:
+  zh: 超维动力完成 Pre-A 轮融资，松禾资本领投
+summary:
+  zh: 2025 年 12 月 28 日，深圳超维动力智能科技有限公司宣布完成 Pre-A 轮融资，由松禾资本领投，金额未披露。文中称公司总部位于深圳，并在香港设有研发中心。
+counterparties:
+- 松禾资本
+evidence:
+- url: https://www.163.com/dy/article/KHVRI09C05118K7K.html
+  publisher: 网易号（亿欧）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/163-2025-12-28-chaowei-power-pre-a-roun.html
+- url: https://www.donews.com/news/detail/8/6336926.html
+  publisher: DoNews
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/donews-2025-12-28-chaowei-power-pre-a-roun.html
+corroboration: multi

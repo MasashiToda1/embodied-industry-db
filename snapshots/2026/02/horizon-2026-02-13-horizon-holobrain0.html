@@ -1,0 +1,1129 @@
+<!-- 抓取于 2026-09-22T16:11:09.338641+08:00 | 原始链接 https://www.horizon.auto/news/technology/435 | 公众号 未知 | 标题 horizon-holobrain0 | sha256:1592c43b036c -->
+<!DOCTYPE html>
+<html lang="zh-CN" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="上海雍熙,https://www.yongsy.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="renderer" content="webkit">
+	<meta name="description" content="地平线是业内率先提出并践行软硬结合技术路径的智驾科技公司，坚持通过软硬协同优化的方式，将更化繁为简的算法、端云结合的数据、软硬结合的算力，结合成为系统化的技术力量，以极致的计算性能，持续逼近用户体验的上限。" />
+	<meta name="keywords" content="辅助驾驶,superdrive,智驾科技官网,智能驾驶汽车,智能驾驶上市公司龙头,上海智驾科技" />
+	<title>地平线正式开源HoloBrain VLA基座模型，构建具身智能全栈开源新生态-地平线HorizonRobotics</title>
+    <!-- public start -->
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link href="/Public/Cn/fonts/iconfont/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="/Public/Cn/css/public.css" type="text/css" rel="stylesheet" />
+    <link href="/Public/Cn/css/base-v3.0.min.css" type="text/css" rel="stylesheet" />
+    <link href="/Public/Cn/css/main.css?v=15" type="text/css" rel="stylesheet" />
+    <link href="/Public/Cn/css/media.css" type="text/css" rel="stylesheet" />
+    <script src="/Public/Cn/js/jquery.min.js"></script>
+    <!-- public end -->
+    <meta name="google-site-verification" content="AKZ5oN2CjadeH0IjhQnXnROdeNGFLl5CCgirlqsfc9c" />
+    <meta name="360-site-verification" content="9297c3d90ad16fea58e36825ebb3ab2c" />
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+    <meta name="sogou_site_verification" content="GVM1mSPTcM" />
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3ae49b76abc24aa337a95ad802989f39";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+    
+    <meta name="baidu-site-verification" content="codeva-xP9aa4UJuL" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVV3CK7VK9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-KVV3CK7VK9');
+    </script>
+    
+    <meta name="msvalidate.01" content="267278268696035B41F438029E9EC56F" />
+
+    
+</head>
+<!-- 以下代码下code为新增code，请不要删除，保留在当前文件内,！！！请不要放在最头部，放在head标签的下面！！！ -->
+<!-- WowPop Code for https://www.wowpop.cn/ -->
+<script async src="https://app.wowpop.cn/pixel/pwuzybsbelynrumo8ncr3edewj4ye13a"></script>
+<!-- END WowPop Code -->
+<!-- 新增结束 --><body class="inside-page">
+    <div class="ys-page-wrap newdet-main">
+        <!-- 顶部导航 -->
+		<!-- 微信分享，默认关闭后续需要此功能可自行打开 -->
+<!--这里是不加?dev=1才显示的结构-->
+<header class="ys-header mod-add25">
+    <!-- pc顶部导航 -->
+    <div class="ys-hd-pc head-top">
+        <div class="yx-cont1400">
+            <div class="mod-head">
+                <div class="head-logo">
+                    <a href="/">
+                        <img src="/Public/Uploads/uploadfile/images/20240805/a0logo01.svg" alt="a0_logo01.svg">
+                    </a>
+                </div>
+                <ul class="head-nav">
+                    <!-- 选中添加yxnav-active1 act类名 -->
+                    <li class="head-nav-item  ">
+                        <a href="/technology"  class="head-nav-item-title">创新技术</a>
+                        <!-- 下拉 -->
+                                            </li><li class="head-nav-item  has-pull">
+                        <a href="/solutions"  class="head-nav-item-title">解决方案</a>
+                        <!-- 下拉 -->
+                        <div class="head-nav-item-down">
+                            <div class="yx-cont1400">
+                                <div class="hnid-le">
+                                    <div class="hnid-le-link">
+                                        <a href="/solutions" >
+                                            <div class="hlul-link2-text std-parga3">
+                                                <div class="hlul-link2-text-tit">解决方案</div>
+                                            </div>
+                                            <div class="hlul-link2-icon">
+                                                <img src="/Public/Cn/images/e1_arrow02_1.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="hnid-le-cry">
+                                        <!-- 二级 -->
+                                        <ul class="hnid-le-ul">
+                                            <!-- 选中添加yxnav-active2 act类名 -->
+                                            <li class="hnid-le-ul-li ">
+                                                <div class="hlul-link2">
+                                                    <a href="/solutions/horizon-journey" >
+                                                        <div class="hlul-link2-text std-parga3">
+                                                            <div class="hlul-link2-text-tit">地平线征程<sup>®</sup></div>
+                                                            <p>车载智能计算方案</p>
+                                                        </div>
+                                                        <div class="hlul-link2-icon">
+                                                            <img src="/Public/Cn/images/e1_arrow02_1.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li><!-- 选中添加yxnav-active2 act类名 -->
+                                            <li class="hnid-le-ul-li ">
+                                                <div class="hlul-link2">
+                                                    <a href="/solutions/horizon-mono" >
+                                                        <div class="hlul-link2-text std-parga3">
+                                                            <div class="hlul-link2-text-tit">Horizon Mono<sup>™</sup></div>
+                                                            <p>基础辅助驾驶解决方案</p>
+                                                        </div>
+                                                        <div class="hlul-link2-icon">
+                                                            <img src="/Public/Cn/images/e1_arrow02_1.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li><!-- 选中添加yxnav-active2 act类名 -->
+                                            <li class="hnid-le-ul-li ">
+                                                <div class="hlul-link2">
+                                                    <a href="/solutions/horizon-superdrive" >
+                                                        <div class="hlul-link2-text std-parga3">
+                                                            <div class="hlul-link2-text-tit">Horizon SuperDrive<sup>™  </sup></div>
+                                                            <p>全场景辅助驾驶系统</p>
+                                                        </div>
+                                                        <div class="hlul-link2-icon">
+                                                            <img src="/Public/Cn/images/e1_arrow02_1.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>                                        </ul> 
+                                        <!-- 三级 -->
+                                        <ul class="hnid-le-thir">
+                                            <li class="hnid-le-thir-li">
+                                                <ul class="hlul-link3-ul">
+                                                        <!-- 选中添加yxnav-active3 act类名 -->
+                                                        <li class="hlul-link3-ul-li ">
+                                                            <a href="/solutions/horizon-journey/horizon-journey6" >
+                                                                <div class="glul-text std-parga3">
+                                                                    <div class="std-title4">征程<sup>®</sup>6系列</div>
+                                                                    <p>车载智能计算方案 </p>
+                                                                </div>
+                                                                <div class="hlul-link2-icon">
+                                                                    <img src="/Public/Cn/images/e1_arrow02_1.svg" alt="">
+                                                                </div>
+                                                            </a>
+                                                        </li>                                                    </ul>                                            </li><li class="hnid-le-thir-li">
+                                                                                            </li><li class="hnid-le-thir-li">
+                                                                                            </li>                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hnid-ri">
+                                    <ul class="hnid-ri-ul">
+                                        <li class="hnid-ri-ul-li">
+                                            <a href="/solutions/horizon-journey/horizon-journey6" target="_self">
+                                                                                            <div class="ys-imgbox-cover">
+                                                    <img src="/Public/Cn/images/d_pics1.png" alt="">
+                                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240830/xinpian2.jpg" alt="芯片(2).jpg">
+                                                </div>
+                                                <div class="hrul-text">
+                                                    <div class="hrul-text-img">
+                                                        <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20241015/zhengcheng6shiliang-9580.svg" alt="征程6矢量.svg">
+                                                    </div>
+                                                    <div class="hrul-text-icon">
+                                                        <img src="/Public/Cn/images/e1_arrow03.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><li class="hnid-ri-ul-li">
+                                            <a href="/solutions/horizon-superdrive" target="_self">
+                                                                                            <div class="ys-imgbox-cover">
+                                                    <img src="/Public/Cn/images/d_pics1.png" alt="">
+                                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240830/sd.jpg" alt="sd.jpg">
+                                                </div>
+                                                <div class="hrul-text">
+                                                    <div class="hrul-text-img">
+                                                        <img src="/Public/Uploads/uploadfile/images/20240823/sdlogo.svg" alt="sd logo.svg">
+                                                    </div>
+                                                    <div class="hrul-text-icon">
+                                                        <img src="/Public/Cn/images/e1_arrow03.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>                                    </ul>
+                                </div>
+                            </div>
+                        </div>                    </li><li class="head-nav-item  ">
+                        <a href="/business"  class="head-nav-item-title">量产应用</a>
+                        <!-- 下拉 -->
+                                            </li><li class="head-nav-item yxnav-active1 act ">
+                        <a href="/news"  class="head-nav-item-title">资讯动态</a>
+                        <!-- 下拉 -->
+                                            </li><li class="head-nav-item  ">
+                        <a href="/about"  class="head-nav-item-title">关于我们</a>
+                        <!-- 下拉 -->
+                                            </li><li class="head-nav-item  ">
+                        <a href="/investor-relations"  class="head-nav-item-title">投资者关系</a>
+                        <!-- 下拉 -->
+                                            </li>                        <!--<li class="head-nav-item">-->
+                        <!--<a href="/hts2025" class="head-nav-item-title">2025地平线技术生态大会<img class="head-add2025" src="/Public/Cn/images/0jin.svg" alt=""></a>-->
+                        <!--</li>-->
+                </ul>
+                <div class="head-other">
+                    <div class="head-other-lang">
+                                                    <a href="/" target="_self" class="act">CN</a><a href="/en" target="_self" class="">EN</a>                    </div>
+                    <div class="head-other-search">
+                        <div class="head-other-search-icon">
+                            <img src="/Public/Cn/images/a0_icon01.svg" alt="">
+                        </div>
+                        <div class="yx-search-box">
+                            <div class="yx-search3xlbox">
+                            <div class="yx-search-wrap">
+                                <div class="yx-search3-tbox clearfix">
+                                    <div class="yx-search3-xls fl">
+                                        <input type="text" placeholder="请输入..."  id="keywords">
+                                    </div>
+                                    <div class="yx-search3-xlicon fr" onclick="on_search()">
+                                        <img src="/Public/Cn/images/a0_icon01.svg">
+                                    </div>
+                                </div>
+                                <!--关键词-->
+                                <div class="yx-search-wrap-word">
+                                    <div class="ysww-parga">
+                                        <p>关键词</p>
+                                    </div>
+                                    <div class="ysww-list">
+                                        <ul>
+                                            <li>
+                                                <a href="/Cn/Index/search/wd/征程" class="ysww-list-box">
+                                                    <p>征程</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/余凯" class="ysww-list-box">
+                                                    <p>余凯</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/SuperDrive" class="ysww-list-box">
+                                                    <p>SuperDrive</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/智能驾驶" class="ysww-list-box">
+                                                    <p>智能驾驶</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/计算方案" class="ysww-list-box">
+                                                    <p>计算方案</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/智能计算" class="ysww-list-box">
+                                                    <p>智能计算</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/BPU" class="ysww-list-box">
+                                                    <p>BPU</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/安全认证" class="ysww-list-box">
+                                                    <p>安全认证</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/量产上市" class="ysww-list-box">
+                                                    <p>量产上市</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/ADAS" class="ysww-list-box">
+                                                    <p>ADAS</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/辅助驾驶" class="ysww-list-box">
+                                                    <p>辅助驾驶</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/域控制器 " class="ysww-list-box">
+                                                    <p>域控制器 </p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/一体机" class="ysww-list-box">
+                                                    <p>一体机</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/主动安全" class="ysww-list-box">
+                                                    <p>主动安全</p>
+                                                </a>
+                                            </li>                                        </ul>
+                                    </div>
+                                </div>                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ph顶部导航 -->
+    <div class="ys-hd-ph">
+        <nav class="ys-ph-navbar ys-ph-navbar2">
+            <!-- 导航条 -->
+            <div class="ys-phnav-header">
+                <!-- logo -->
+                <div class="ys-phnav-logo">
+                    <a href="/">
+                        <img src="/Public/Uploads/uploadfile/images/20240805/a0logo01.svg" alt="a0_logo01.svg">
+                    </a>
+                </div>
+                <!-- 右侧 -->
+                <div class="ys-phnav-r clearfix">
+                    <!-- 搜索 -->
+                    <div class="ys-phnav-search">
+                        <div class="ys-phnav-search-icon">
+                            <img src="/Public/Cn/images/a0_icon01.svg" alt="">
+                        </div>
+                        <div class="ys-phnavss-xl">
+                            <div class="ys-phnavss-form">
+                                <input type="text" placeholder="请输入关键词" id="phkeywords">
+                                <button type="button" onclick="phsearch()">
+                                    <img src="/Public/Cn/images/a0_icon01.svg" alt="">
+                                </button>
+                            </div>
+                            <!--关键词-->
+                            <div class="yx-search-wrap-word">
+                                    <div class="ysww-parga">
+                                        <p>关键词</p>
+                                    </div>
+                                    <div class="ysww-list">
+                                        <ul>
+                                            <li>
+                                                <a href="/Cn/Index/search/wd/征程" class="ysww-list-box">
+                                                    <p>征程</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/余凯" class="ysww-list-box">
+                                                    <p>余凯</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/SuperDrive" class="ysww-list-box">
+                                                    <p>SuperDrive</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/智能驾驶" class="ysww-list-box">
+                                                    <p>智能驾驶</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/计算方案" class="ysww-list-box">
+                                                    <p>计算方案</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/智能计算" class="ysww-list-box">
+                                                    <p>智能计算</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/BPU" class="ysww-list-box">
+                                                    <p>BPU</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/安全认证" class="ysww-list-box">
+                                                    <p>安全认证</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/量产上市" class="ysww-list-box">
+                                                    <p>量产上市</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/ADAS" class="ysww-list-box">
+                                                    <p>ADAS</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/辅助驾驶" class="ysww-list-box">
+                                                    <p>辅助驾驶</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/域控制器 " class="ysww-list-box">
+                                                    <p>域控制器 </p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/一体机" class="ysww-list-box">
+                                                    <p>一体机</p>
+                                                </a>
+                                            </li><li>
+                                                <a href="/Cn/Index/search/wd/主动安全" class="ysww-list-box">
+                                                    <p>主动安全</p>
+                                                </a>
+                                            </li>                                        </ul>
+                                    </div>
+                                </div>                            <div class="ys-phnavss-close">
+                                <i class="iconfont icon-close"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 菜单按钮 -->
+                    <div class="ys-phnav-menubox fl">
+                        <div class="ys-phnav-menubtn">
+                            <span></span>
+                        </div>
+                        <!-- <img src="/Public/Cn/images/menu.svg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 下拉菜单 -->
+            <div class="ys-phnav-menu">
+                <div class="ys-phnav-menu-tp">
+                    <div class="ypmt-lang head-other-lang">
+                                                    <a href="/" target="_self" class="act">CN</a><a href="/en" target="_self" class="">EN</a>                    </div>
+                    <div class="ypmt-close">
+                        <img src="/Public/Cn/images/ph_close.svg" alt="">
+                    </div>
+                </div>
+                <div class="ys-phnav-menu-cont">
+                    <!-- 导航 -->
+                    <div class="ys-phmenu-scroll">
+                        <ul class="ys-ph-nav">
+                            <!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1   ">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/technology" >
+                                        <div class="ys-phnav-header-font">创新技术</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                                            </li><!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1 ys-phnav-haschild  solution-nav">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/solutions" >
+                                        <div class="ys-phnav-header-font">解决方案</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                <!-- 二级 -->
+                                <ul class="ys-phnav-lisbox2">
+                                    <li class="ys-ph-nav-li2 ys-phnav-haschild ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/solutions/horizon-journey" >
+                                                <div class="ys-phnav-header-font">地平线征程<sup>®</sup></div>
+                                            </a>
+                                            <div class="ys-phnav-icon on"></div>
+                                        </div>
+                                        <!-- 三级 -->
+                                        <ul class="ys-phnav-lisbox3">
+                                            <li class="">
+                                                <div class="ys-phnav-lisbox">
+                                                    <a href="/solutions/horizon-journey/horizon-journey6" >
+                                                        <div class="ys-phnav-header-font">征程<sup>®</sup>6系列</div>
+                                                    </a>
+                                                    <div class="ys-phnav-icon"></div>
+                                                </div>
+                                            </li>                                        </ul>                                    </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/solutions/horizon-mono" >
+                                                <div class="ys-phnav-header-font">Horizon Mono<sup>™</sup></div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/solutions/horizon-superdrive" >
+                                                <div class="ys-phnav-header-font">Horizon SuperDrive<sup>™  </sup></div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li>                                </ul>                            </li><!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1   ">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/business" >
+                                        <div class="ys-phnav-header-font">量产应用</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                                            </li><!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1 ys-phnav-haschild yxnav-active1 ">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/news" >
+                                        <div class="ys-phnav-header-font">资讯动态</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                <!-- 二级 -->
+                                <ul class="ys-phnav-lisbox2">
+                                    <li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/press" >
+                                                <div class="ys-phnav-header-font">企业新闻</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/product" >
+                                                <div class="ys-phnav-header-font">产品资讯</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/partnership" >
+                                                <div class="ys-phnav-header-font">合作动态</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  yxnav-active2">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/technology" >
+                                                <div class="ys-phnav-header-font">技术进展</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/mass-production" >
+                                                <div class="ys-phnav-header-font">智驾量产</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2 ys-phnav-haschild ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/ecosystem" >
+                                                <div class="ys-phnav-header-font">智驾生态</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                        <!-- 三级 -->
+                                        <ul class="ys-phnav-lisbox3">
+                                            <li class="">
+                                                <div class="ys-phnav-lisbox">
+                                                    <a href="/news/ecosystem/hardware" >
+                                                        <div class="ys-phnav-header-font">硬件</div>
+                                                    </a>
+                                                    <div class="ys-phnav-icon"></div>
+                                                </div>
+                                            </li><li class="">
+                                                <div class="ys-phnav-lisbox">
+                                                    <a href="/news/ecosystem/algorithm" >
+                                                        <div class="ys-phnav-header-font">算法</div>
+                                                    </a>
+                                                    <div class="ys-phnav-icon"></div>
+                                                </div>
+                                            </li><li class="">
+                                                <div class="ys-phnav-lisbox">
+                                                    <a href="/news/ecosystem/software" >
+                                                        <div class="ys-phnav-header-font">软件</div>
+                                                    </a>
+                                                    <div class="ys-phnav-icon"></div>
+                                                </div>
+                                            </li>                                        </ul>                                    </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/events" >
+                                                <div class="ys-phnav-header-font">品牌活动 </div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/news/videos" >
+                                                <div class="ys-phnav-header-font">视频中心</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li>                                </ul>                            </li><!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1   ">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/about" >
+                                        <div class="ys-phnav-header-font">关于我们</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                                            </li><!-- 有下级时加类名ys-phnav-haschild 不需要判断加减号有无 -->
+                            <li class="ys-ph-nav-li1 ys-phnav-haschild  ">
+                                <div class="ys-phnav-lisbox ys-phnav-lisbox1">
+                                    <a href="/investor-relations" >
+                                        <div class="ys-phnav-header-font">投资者关系</div>
+                                    </a>
+                                    <div class="ys-phnav-icon"></div>
+                                </div>
+                                <!-- 二级 -->
+                                <ul class="ys-phnav-lisbox2">
+                                    <li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/investor-relations/calendar" >
+                                                <div class="ys-phnav-header-font">新闻及活动</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/investor-relations/governance" >
+                                                <div class="ys-phnav-header-font">企业管治</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/investor-relations/announcement" >
+                                                <div class="ys-phnav-header-font">公告及通函</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li><li class="ys-ph-nav-li2  ">
+                                        <div class="ys-phnav-lisbox">
+                                            <a href="/investor-relations/report" >
+                                                <div class="ys-phnav-header-font">业绩报告</div>
+                                            </a>
+                                            <div class="ys-phnav-icon "></div>
+                                        </div>
+                                                                            </li>                                </ul>                            </li>                                <!--<li class="ys-ph-nav-li1">-->
+                                <!--    <div class="ys-phnav-lisbox ys-phnav-lisbox1">-->
+                                <!--        <a href="/hts2025" class="">-->
+                                <!--        <div class="ys-phnav-header-font">2025地平线技术生态大会</div><img class="head-add2025" src="/Public/Cn/images/0jin.svg" alt=""></a>-->
+                                <!--    </div>-->
+                                <!--</li>-->
+                        </ul>
+                    </div>
+                    <ul class="ys-phmenu-list hnid-ri-ul">
+                        <li class="hnid-ri-ul-li">
+                            <a href="/solutions/horizon-journey/horizon-journey6" target="_self">
+                                                            <div class="ys-imgbox-cover">
+                                    <img src="/Public/Cn/images/hd_pics1.png" alt="">
+                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240905/ph1.jpg" alt="ph1.jpg">
+                                </div>
+                                <div class="hrul-text">
+                                    <div class="hrul-text-img">
+                                        <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20241015/zhengcheng6shiliang-9580.svg" alt="征程6矢量.svg">
+                                    </div>
+                                    <div class="hrul-text-icon">
+                                        <img src="/Public/Cn/images/e1_arrow03.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </li><li class="hnid-ri-ul-li">
+                            <a href="/solutions/horizon-superdrive" target="_self">
+                                                            <div class="ys-imgbox-cover">
+                                    <img src="/Public/Cn/images/hd_pics1.png" alt="">
+                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240905/ph2.jpg" alt="ph2.jpg">
+                                </div>
+                                <div class="hrul-text">
+                                    <div class="hrul-text-img">
+                                        <img src="/Public/Uploads/uploadfile/images/20240823/sdlogo.svg" alt="sd logo.svg">
+                                    </div>
+                                    <div class="hrul-text-icon">
+                                        <img src="/Public/Cn/images/e1_arrow03.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>                    </ul>                </div>
+            </div>
+        </nav>
+    </div>
+</header><!--
+实现静态化关闭站点，以及判断ip的js文件
+使用时，打开即可
+-->
+<!-- <div>
+    <p><a href="/technology">创新技术</a></p>
+    <p><a href="/solutions">解决方案</a></p>
+    <p><a href="/solutions/horizon-journey">&nbsp;&nbsp;地平线征程<sup>®</sup></a></p>
+    <p><a href="/solutions/horizon-journey/horizon-journey6">&nbsp;&nbsp;&nbsp;&nbsp;征程<sup>®</sup>6系列</a></p><p><a href="/solutions/horizon-mono">&nbsp;&nbsp;Horizon Mono<sup>™</sup></a></p>
+    <p><a href="/solutions/horizon-superdrive">&nbsp;&nbsp;Horizon SuperDrive<sup>™  </sup></a></p>
+    <p><a href="/business">量产应用</a></p>
+    <p><a href="/news">资讯动态</a></p>
+    <p><a href="/news/press">&nbsp;&nbsp;企业新闻</a></p>
+    <p><a href="/news/product">&nbsp;&nbsp;产品资讯</a></p>
+    <p><a href="/news/partnership">&nbsp;&nbsp;合作动态</a></p>
+    <p><a href="/news/technology">&nbsp;&nbsp;技术进展</a></p>
+    <p><a href="/news/mass-production">&nbsp;&nbsp;智驾量产</a></p>
+    <p><a href="/news/ecosystem">&nbsp;&nbsp;智驾生态</a></p>
+    <p><a href="/news/ecosystem/hardware">&nbsp;&nbsp;&nbsp;&nbsp;硬件</a></p><p><a href="/news/ecosystem/algorithm">&nbsp;&nbsp;&nbsp;&nbsp;算法</a></p><p><a href="/news/ecosystem/software">&nbsp;&nbsp;&nbsp;&nbsp;软件</a></p><p><a href="/news/events">&nbsp;&nbsp;品牌活动 </a></p>
+    <p><a href="/news/videos">&nbsp;&nbsp;视频中心</a></p>
+    <p><a href="/about">关于我们</a></p>
+    <p><a href="/investor-relations">投资者关系</a></p>
+    <p><a href="/investor-relations/calendar">&nbsp;&nbsp;新闻及活动</a></p>
+    <p><a href="/investor-relations/governance">&nbsp;&nbsp;企业管治</a></p>
+    <p><a href="/investor-relations/announcement">&nbsp;&nbsp;公告及通函</a></p>
+    <p><a href="/investor-relations/report">&nbsp;&nbsp;业绩报告</a></p>
+    </div>
+<script type="text/javascript" src="/Public/Cn/Yongsy/Yongsy.js"></script> -->        <!-- 主体内容 -->
+        <main class="ys-main">
+            <div class="mod-content">
+                <!-- page start -->
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+    <div class="yx-cont1400">
+        <ul class="ys-bread ys-flex-center">
+            <li class="ys-bread-list">
+                <a href="/">首页</a>
+            </li>
+            <li class="ys-bread-list">
+                    <a href="/news">资讯动态</a>
+                </li><li class="ys-bread-list">
+                    <a href="/news/technology">技术进展</a>
+                </li>        </ul>
+    </div>
+</div>                <section class="newdet-wrap std-padding2">
+                    <div class="yx-cont1400">
+                        <div class="newdet-wrap-tp">
+                            <div class="newdet-wrap-tp-cont">
+                                <h1 class="std-title1">地平线正式开源HoloBrain VLA基座模型，构建具身智能全栈开源新生态</h1>
+                                <div class="nwtc-info">
+                                    <div class="nwtc-info-time std-parga2">
+                                        <p>2026/02/26</p>
+                                    </div>
+                                    <div class="nwtc-info-lab">
+                                        <ul>
+                                            <li>
+                                                <a class="std-lab1">
+                                                    <p>产品突破</p>
+                                                </a>
+                                            </li>                                        </ul>
+                                    </div>                                </div>
+                            </div>
+                        </div>
+                        <div class="newdet-wrap-bt clearfix">
+                            <div class="newdet-wrap-bt-le fl">
+                                <div class="nwbl-edr">
+                                    <div class="std-parga2 yxedr-active">
+                                        <section style="font-size: 15px;line-height: 2;padding: 0px 10px;box-sizing: border-box;font-style: normal;font-weight: 400;text-align: justify;color: rgb(62, 62, 62);"><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">2月13日，<a href="https://www.horizon.auto/" target="_self">地平线</a>正式宣布其HoloBrain-0基座模型及框架全面开源。本次开源不仅包括HoloBrain-0核心算法，地平线同步开放完整基础设施RoboOrchard。作为地平线机器人实验室的重要技术成果，本次HoloBrain-0的开源有助于推动具身智能技术从实验室原型加速向规模化产业应用转型，助力整个具身智能领域的技术革新与生态共建。</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><section style="text-align: left;margin: 10px 0px -25px;line-height: 0;transform: translate3d(17px, 0px, 0px);-webkit-transform: translate3d(17px, 0px, 0px);-moz-transform: translate3d(17px, 0px, 0px);-o-transform: translate3d(17px, 0px, 0px);box-sizing: border-box;"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 24px;height: auto;box-sizing: border-box;" nodeleaf=""></section></section><section style="text-align: left;justify-content: flex-start;display: flex;flex-flow: row;margin: 10px 0px;width: 100%;align-self: flex-start;background-color: rgb(245, 245, 245);padding: 9px;overflow: hidden;box-sizing: border-box;"><section style="justify-content: flex-start;display: flex;flex-flow: row;width: 100%;align-self: flex-start;border-style: solid;border-width: 1px 0px;border-color: rgb(223, 223, 223);padding: 23px;box-sizing: border-box;"><section style="text-align: justify;width: 100%;box-sizing: border-box;"><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span leaf="">• 技术报告链接：</span></strong></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">https://arxiv.org/abs/2602.12062</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span leaf="">• </span></strong><strong style="text-align: unset;box-sizing: border-box;"><span leaf="">开源模型代码库：</span></strong></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">https://github.com/HorizonRobotics/RoboOrchardLab</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span leaf="">• 真机基础设施代码库：</span></strong></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">https://github.com/HorizonRobotics/RoboOrchard</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><strong style="box-sizing: border-box;"><span leaf="">• 项目主页：</span></strong></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">https://horizonrobotics.github.io/robot_lab/holobrain</span></p></section></section></section><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><section style="text-align: unset;box-sizing: border-box;"><p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">从基础模型研究迈向可靠的机器人真机部署，依然面临着“最后一公里”的巨大鸿沟。为此，我们正式开源HoloBrain-0，一个专为具身智能设计的全栈Vision-Language-Action (VLA) 框架。不同于传统VLA模型仅依赖“视觉到动作”的黑盒映射，HoloBrain-0首创性地在架构中显式注入了“具身先验”，将多视角相机参数与机器人运动学结构等机器人本体相关的先验信息显式融入模型，大幅提升其三维空间理解能力，使模型真正具备了统一的3D空间感知与跨本体控制能力。HoloBrain-0能够灵活适配单机械臂、双机械臂、移动机器人乃至于人类数据等多种机器人形态，无论从柔软衣物的灵巧折叠，还是到未知物体的通用抓取，HoloBrain-0都展现了卓越的泛化能力。</span></p></section><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">更重要的是，针对具身应用落地之难，地平线本次不仅开源了基座模型，更带来了只有0.2B参数的端侧友好版本以及全栈基础设施RoboOrchard，通过这一整套“开箱即用”的开源生态，大幅降低具身智能的研发门槛，与开发者共同加速通用机器人的到来。</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><section style="text-align: center;margin-top: 10px;margin-bottom: 10px;line-height: 0;box-sizing: border-box;"><section style="max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;box-sizing: border-box;" nodeleaf=""><img class="undefined" data-aistatus="1" data-backh="302" data-backw="558" data-imgfileid="502572845" data-ratio="0.5416666666666666" data-s="300,640" src="https://res.horizon.auto/20260226093449_699fa3392f01e.jpg" data-type="png" data-w="1080" style="vertical-align:middle;max-width:100%;width:100%;box-sizing:border-box;" alt="地平线正式开源HoloBrain-VLA基座模型2.jpg"/></section></section><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><section style="text-align: unset;box-sizing: border-box;"><p style="margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">在技术路线上，HoloBrain立足于空间理解与动作空间的统一两大核心维度进行设计，旨在赋予VLA模型卓越的3D理解能力，同时高效利用并充分发挥海量多本体数据的价值，进而实现优异的3D泛化性与本体泛化性。在预训练阶段，HoloBrain融合了多本体遥操作数据、人类视频数据以及仿真数据开展联合训练，使模型能够充分学习异构数据中隐含的动作流形。通过后训练，HoloBrain在RoboTwin 2.0、LIBERO、GenieSim等多个仿真基准测试中取得了业界领先的成果，并在多样化的真实机器人任务中展现出良好的稳健性。这一系列表现充分验证了HoloBrain在模型架构层面所具备的更高可靠性与更强泛化能力。其相关技术已在CVPR举办的RoboTwin双臂机器人竞赛中得到实战检验，助力参赛团队斩获真机赛冠军。</span></p></section><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">而本次开源之所以为社区创造独特价值，核心不仅在于HoloBrain本身，更在于同步发布的基础设施框架RoboOrchard所构建的完整生态。RoboOrchard具备两大优势：一是全栈基础设施开源，提供“数据—训练—部署”的全链路交钥匙方案，不仅开源核心算法，更将数据采集工具、标准化数据规范、真机部署异步推理方案在内的全套科研基础设施全面对外开放，极大降低了具身智能的准入门槛，让行业伙伴无需重复造轮子，即可获得一套开箱即用的完整实验闭环；二是原生架构自研，坚持以高标准构建底层框架以解决行业问题，在多模态数据对齐、系统实时性及稳定性上较现有开源方案有相对优势，该架构已成功支撑HoloBrain这一内部旗舰项目的研发落地，验证了其在高难度业务场景下的专业性与鲁棒性。</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">依托HoloBrain的核心技术优势与全栈开源生态，地平线同步推进硬件适配与业务布局，推动技术开源成果向实际产业价值转化。在硬件适配层面，HoloBrain的轻量化GD版本 (0.2B) 可高效适配地瓜机器人RDK S100机器人开发者套件，未来将进一步释放端侧算力潜力，推动具身智能模型在端侧硬件平台上的规模化部署。</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">地平线机器人实验室负责人苏治中阐释了本次开源的目的与行业共建初心：“具身智能的规模化落地，离不开底层核心技术的开放与全行业的协同发力。当前，具身智能行业仍处于发展初期，远未到企业间相互竞争的时刻，亟需全行业携手共创、突破技术边界。</span><span leaf="">HoloBrain的开源，是将地平线在智驾领域积累的规模化算法开发经验迁移至具身社区并且全面开放的重要举措，</span><span leaf="">我们希望通过这款高性能基座模型、RoboOrchard全栈工具链及完整开源生态，助力更多研究者、开发者快速切入具身智能研究与应用领域，携手攻克技术难题，推动机器人技术真正走进千行百业、服务日常生活，共筑具身智能产业发展新生态。”</span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf=""><br/></span></p><p style="white-space: normal;margin: 0px;padding: 0px;box-sizing: border-box;"><span leaf="">本次HoloBrain-0全面开源，结合RoboOrchard基础设施框架及相关协同技术，</span><span leaf="">为具身智能领域提供了一条便捷路径，既是地平线机器人实验室技术积累的集中展示，</span><span leaf="">更是其践行“全维利他”生态理念的具体体现。地平线诚挚邀请具身智能领域的各位研究者、开发者，积极运用HoloBrain-0开源模型、RoboOrchard框架及相关工具开展研究与实践，充分分享开源成果，携手推动具身智能技术的创新突破与规模化落地，共同推动行业发展。</span></p></section>                                    </div>
+                                    <div class="nwbr-info">
+                                        <div class="nwbr-info-parga std-parga1">
+                                            <p>分享文章</p>
+                                        </div>
+                                        <div class="ys-share clearfix">
+                                            <div class="ys-share-list ys-share-wechat fl" title="分享到微信">
+                                                <div class="ys-share-img">
+                                                    <img src="/Public/Cn/images/a0_icon02.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ys-share-list ys-share-sinaminiblog fl" title="分享到新浪微博">
+                                                <div class="ys-share-img">
+                                                    <img src="/Public/Cn/images/a0_icon03.svg" alt="">
+                                               </div>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <ul class="nwbl-page">
+                                    <li class="nwbl-page-li">
+                                        <a href="/news/technology/436" title="开发者说｜MapDream：让导航任务决定地图如何生成，而不应由专家预设">上一篇：开发者说｜MapDream：让导航任务决定地图如何生成，而不应由专家预设<img src="/Public/Cn/images/e1_arrow03_2.svg" alt=""></a>
+                                    </li>
+                                    <li class="nwbl-page-li">
+                                        <a href="/news/technology/416" title="开发者说｜Progress-Think：语义进展推理，让机器人理解每次行动的意义">下一篇：开发者说｜Progress-Think：语义进展推理，让机器人理解每次行动的意义<img src="/Public/Cn/images/e1_arrow03_2.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="newdet-wrap-bt-ri fr">
+                                <h2 class="std-title3 std-margin1">相关资讯</h2>
+                                                                    <ul class="nwbr-ul">
+                                        <li class="nwbr-ul-li">
+                                                                                            <a href="/news/technology/466" title="开发者说｜地平线发布EmbodiedGen V2：面向具身策略学习的生成式仿真基础设施">                                                <div class="ys-imgbox-cover">
+                                                    <img src="/Public/Cn/images/0pics1.png" alt="">
+                                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20260813/suoluetu-5005.jpg" alt="地平线发布EmbodiedGen V2：面向具身策略学习的生成式仿真基础设施">
+                                                </div>
+                                                <div class="nwbr-ul-li-text">
+                                                    <div class="std-parga1">开发者说｜地平线发布EmbodiedGen V2：面向具身策略学习的生成式仿真基础设施</div>
+                                                    <div class="std-parga2">2026/08/03</div>
+                                                </div>
+                                            </a>
+                                        </li><li class="nwbr-ul-li">
+                                                                                            <a href="/news/technology/460" title="开发者说｜地平线HoloAgent-0：构建具身执行闭环，让Agent走入物理世界">                                                <div class="ys-imgbox-cover">
+                                                    <img src="/Public/Cn/images/0pics1.png" alt="">
+                                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20260704/suoluetu1-5386.jpg" alt="缩略图1.jpg">
+                                                </div>
+                                                <div class="nwbr-ul-li-text">
+                                                    <div class="std-parga1">开发者说｜地平线HoloAgent-0：构建具身执行闭环，让Agent走入物理世界</div>
+                                                    <div class="std-parga2">2026/07/04</div>
+                                                </div>
+                                            </a>
+                                        </li><li class="nwbr-ul-li">
+                                                                                            <a href="/news/technology/456" title="地平线开源HoloMotion-1：4亿参数机器人小脑大模型，实现端侧300FPS">                                                <div class="ys-imgbox-cover">
+                                                    <img src="/Public/Cn/images/0pics1.png" alt="">
+                                                    <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20260520/suoluetu1-6710.jpg" alt="地平线开源HoloMotion-1_4亿参数机器人小脑大模型">
+                                                </div>
+                                                <div class="nwbr-ul-li-text">
+                                                    <div class="std-parga1">地平线开源HoloMotion-1：4亿参数机器人小脑大模型，实现端侧300FPS</div>
+                                                    <div class="std-parga2">2026/05/20</div>
+                                                </div>
+                                            </a>
+                                        </li>                                    </ul>
+                                <div class="nwbr-info">
+                                    <div class="nwbr-info-parga std-parga1">
+                                        <p>分享文章</p>
+                                    </div>
+                                    <div class="ys-share clearfix">
+                                        <div class="ys-share-list ys-share-wechat fl" title="分享到微信">
+                                            <div class="ys-share-img">
+                                                <img src="/Public/Cn/images/a0_icon02.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="ys-share-list ys-share-sinaminiblog fl" title="分享到新浪微博">
+                                            <div class="ys-share-img">
+                                                <img src="/Public/Cn/images/a0_icon03.svg" alt="">
+                                           </div>
+                                        </div>
+                                                                            </div>
+                                </div>
+                            </div>                        </div>
+                    </div>
+                </section>
+                <section class="mod-subscribe std-martop2 std-padding1">
+    <!-- 点击提交成功后加succ类名 -->
+    <div class="mod-subscribe-wrap">
+        <div class="yx-cont1400">
+            <div class="mod-subscribe-wrap-before">
+                <h2 class="std-title3"></h2>
+                <div class="mod-subscribe-wrap-parga std-parga2">
+                    <p>欢迎订阅地平线<span>相关资讯</span>，您可以随时取消订阅。</p>
+                </div>
+                <form id="form1"  onsubmit="return false">
+                    <input type="hidden" name="catid" value="1">
+                    <input type="hidden" name="modelid" value="48">
+                    <div class="mod-subscribe-wrap-add">
+                        <div class="mswa-input">
+                            <input type="text" placeholder="在此输入您的邮箱地址" id="email_subscribe" name="email_subscribe">
+                        </div>
+                        <div class="mswa-btn std-parga1" onclick="email_form('form1')">
+                            <p>立即订阅</p>
+                        </div>
+                    </div>
+                    <div class="mod-subscribe-wrap-agree">
+                        <div class="mswa-box" id="email_icon">
+                            <img src="/Public/Cn/images/duihao.svg" alt="">
+                        </div>
+                        <div class="mswa-parga std-parga3">
+                            <p>同意<a href="/legal/privacy">隐私政策</a>，允许向我推送地平线的新闻、资讯及更多内容。</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 提交成功结构 -->
+            <div class="mod-subscribe-wrap-success ys-pos-center">
+                <div class="msws-info">
+                    <img src="/Public/Cn/images/success.svg" alt="">
+                    <div class="std-title3">提交成功！</div>
+                </div>
+                <div class="msws-parga std-parga2">
+                    <p>感谢您的订阅， 我们会第一时间推送地平线最新活动与资讯到您邮箱</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mod-subscribe-bg ys-pos-center">
+        <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20241009/61-7313.jpg" alt="6-1.jpg" class="mod-subscribe-bg-pc">
+        <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20241015/618db6f9665a4ec5a04abb65a3df9030-6930.jpg" alt="618db6f9-665a-4ec5-a04a-bb65a3df9030.jpg" class="mod-subscribe-bg-ph">
+    </div>
+</section>                <!-- page end -->
+            </div>
+        </main>
+        <!-- 页脚 -->
+		<footer class="ys-footer">
+    <div class="yx-cont1400">
+        <div class="ys-footer-tp">
+            <div class="ys-footer-tp-list">
+                <div class="yftl-info">
+                    <div class="yftl-info-logo">
+                        <a href="/">
+                            <img src="/Public/Uploads/uploadfile/images/20240805/a0logo02.svg" alt="a0_logo02.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="yftl-ul">
+                    <ul class="yftl-ul-wrap"><li class="yftl-ul-wrap-li"><a href="/technology">创新技术</a><ul><li><a href="/technology?tp=1">软硬结合</a></li><li><a href="/technology?tp=5">智能计算</a></li><li><a target="_blank" href="https://auto-developer.horizon.cc/">开发者社区</a></li></ul></li><li class="yftl-ul-wrap-li"><a href="/solutions">解决方案</a><ul><li><a href="/solutions/horizon-journey">车载计算方案</a></li><li><p><a href="/solutions/horizon-mono" target="_self" textvalue="基础辅助驾驶">基础辅助驾驶</a></p></li><li><p><a href="/solutions/horizon-superdrive" target="_self" textvalue="全场景辅助驾驶">全场景辅助驾驶</a></p></li></ul></li><li class="yftl-ul-wrap-li"><a href="/business">量产应用</a><ul><li><a href="/business?tp=4" target="_self" textvalue="市场表现">市场表现</a></li><li><p><a href="/news/mass-production?tp=1" target="_self" textvalue="量产车型">量产车型</a></p></li><li><a href="/news/ecosystem?tp=1" target="_self" textvalue="生态赋能">生态赋能</a></li></ul></li><li class="yftl-ul-wrap-li"><a href="/news">资讯动态</a><ul><li><a href="/news/press?tp=1">企业新闻</a></li><li><a href="/news/product?tp=1">产品资讯</a></li><li><a href="/news/partnership?tp=1">合作动态</a></li><li><a href="/news/events?tp=1">品牌活动</a></li></ul></li><li class="yftl-ul-wrap-li"><a href="/about">关于我们</a><ul><li><a href="/about?tp=4" target="_self" textvalue="公司简介">公司简介</a></li><li><a href="/about?tp=5" target="_self" textvalue="发展历程">发展历程</a></li><li><a href="/about?tp=2">团队实力</a></li><li><a href="/investor-relations" target="_blank">投资者关系</a></li><li><a href="/about?tp=3">联系地平线</a></li></ul></li><li class="yftl-ul-wrap-li"><a href="https://wecruit.hotjob.cn/SU64819a4f2f9d2433ba8b043a/pb/custom.html?parentKey=section_0&pageType=customize_section_0#/" target="_blank">加入我们</a><ul><li><a href="https://wecruit.hotjob.cn/SU64819a4f2f9d2433ba8b043a/pb/social.html" target="_blank">社会招聘</a></li><li><a href="https://wecruit.hotjob.cn/SU6409ef49bef57c635fd390a6/pb/school.html" target="_blank">校园招聘</a></li><li><a href="https://wecruit.hotjob.cn/SU6409ef49bef57c635fd390a6/pb/interns.html" target="_blank">实习生招聘</a></li></ul></li></ul>                </div>
+            </div>
+            <div class="ys-footer-tp-share">
+                <div class="yfts-icon">
+                    <div class="yfts-icon-tit">关注我们</div>
+                    <ul class="yfts-icon-ul">
+                        <li class="yfts-icon-ul-li">
+                                                        <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240805/fticon1.svg" alt="ft_icon1.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240819/fticon101.svg" alt="ft_icon1_01.svg">
+                            </div>
+                                                        <div class="yiul-pop">
+                                <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240911/gongzhonghao.jpg" alt="gongzhonghao.jpg">
+                            </div>                        </li><li class="yfts-icon-ul-li">
+                                                        <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240820/fticon6.svg" alt="ft_icon6.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240820/zhaopin.svg" alt="招聘.svg">
+                            </div>
+                                                        <div class="yiul-pop">
+                                <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240911/fuwuhao.jpg" alt="fuwuhao.jpg">
+                            </div>                        </li><li class="yfts-icon-ul-li">
+                                                        <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240805/fticon3.svg" alt="ft_icon3.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240819/shipinhao.svg" alt="视频号.svg">
+                            </div>
+                                                        <div class="yiul-pop">
+                                <img src="https://res.horizon.auto/Public/Uploads/uploadfile/images/20240911/fuwuhao2.jpg" alt="fuwuhao2.jpg">
+                            </div>                        </li><li class="yfts-icon-ul-li">
+                            <a href="https://weibo.com/u/5704666369" target="_blank" rel="nofollow" class="new_iconurl" >                            <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240805/fticon2.svg" alt="ft_icon2.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240819/weibo.svg" alt="微博.svg">
+                            </div>
+                            </a>                                                    </li><li class="yfts-icon-ul-li">
+                            <a href="https://space.bilibili.com/35086580?spm_id_from=333.999.0.0" target="_blank" rel="nofollow" class="new_iconurl" >                            <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240805/fticon4.svg" alt="ft_icon4.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240819/bilibili.svg" alt="bilibili.svg">
+                            </div>
+                            </a>                                                    </li><li class="yfts-icon-ul-li">
+                            <a href="https://www.zhihu.com/org/di-ping-xian-ji-qi-ren-ji-shu" target="_blank" rel="nofollow" class="new_iconurl" >                            <div class="yiul-icon">
+                                <img src="/Public/Uploads/uploadfile/images/20240805/fticon5.svg" alt="ft_icon5.svg">
+                                <img src="/Public/Uploads/uploadfile/images/20240819/zhihu.svg" alt="知乎.svg">
+                            </div>
+                            </a>                                                    </li>                    </ul>
+                </div>                <div class="yfts-info std-parga2">
+                    <div class="yfts-info-li">
+                        <a href="tel:010-83452666" target="_blank">
+                                                    <img src="/Public/Uploads/uploadfile/images/20240805/fticon8.svg" alt="ft_icon8.svg">
+                            <p>010-83452666  （周一到周五 10:00-17:00）</p>
+                        </a>
+                    </div>                </div>
+            </div>
+        </div>
+        <div class="ys-footer-bt">
+            <div class="ys-footer-bt-le">
+                <!-- 版权信息 -->
+                <p><span>Copyright © 2019-2026 Horizon Robotics 北京地平线信息技术有限公司. All rights reserved. &nbsp;&nbsp;</span><a target="_blank" rel="noopenner noreferrer" href="https://beian.miit.gov.cn/">京ICP备2023006200号-3 &nbsp;</a><img src="https://res.horizon.auto/20241122142142_674022f615ac2.png" class="undefined" style="object-fit: contain;" alt="1702447175577004.png"/><a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802044200" rel="noreferrer" target="_blank">京公网安备11010802044200</a> </p>
+            </div>
+            <div class="ys-footer-bt-ri">
+                <p>
+                    <a href="/legal/privacy">隐私政策</a>
+                    <a href="/legal/cookie">Cookies 政策</a>
+                    <a href="/legal/security">产品安全</a>
+                    <!-- <a href="/legal/privacy">法律声明</a> -->
+                    <!-- <a href="/">知识产权</a> -->
+                    <a href="/sitemap.html">网站地图</a>
+                    <a href="https://www.yongsy.com" target="_blank" rel="noopenner noreferrer" title="网站建设">技术支持</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="mod-back">
+    <img src="/Public/Cn/images/back.svg" alt="">
+</div>    </div>
+    <!-- public start -->
+	<!--
+实现静态化关闭站点，以及判断ip的js文件
+使用时，打开即可
+-->
+<script type="text/javascript" src="/Public/Cn/Yongsy/Yongsy.js"></script>
+<script type="text/javascript" src="/Public/jqueryui/layer/layer.js"></script>
+<script src="/Public/Cn/js/public.js"></script>
+<script src="/Public/Cn/js/base-v3.0.min.js"></script>
+<script src="/Public/Cn/js/common.js"></script>
+
+<script>
+    function on_search() {
+    var wd = $("#keywords").val();
+    wd = wd.replace(/^\s+|\s+$/g, '');
+    if (wd.length == 0) {
+        alert("请输入关键字！");
+    } else {
+        var url= "/Cn/Index/search";
+        queryData.query(url,wd);
+    }
+}
+function phsearch() {
+    var wd = $("#phkeywords").val();
+    wd = wd.replace(/^\s+|\s+$/g, '');
+    if (wd.length == 0) {
+        alert("请输入关键字！");
+    } else {
+        var url= "/Cn/Index/search";
+        queryData.query(url,wd);
+    }
+}
+$("#keywords").keyup(function (event) {
+    if (event.keyCode == 13) {
+        var wd = $("#keywords").val();
+        wd = wd.replace(/^\s+|\s+$/g, '');
+        if (wd.length == 0) {
+            alert("请输入关键字！");
+        } else {
+            var url= "/Cn/Index/search";
+            queryData.query(url,wd);
+        }
+    }
+});
+function goToEle(selector,navheight){
+    var navheight = navheight || 64;
+    $("html,body").animate({
+        scrollTop: $(selector).offset().top - navheight
+    }, 500);
+}
+</script>
+<script>
+    function injectChk(oField){
+        re= /select|update|delete|exec|count|'|"|=|;|>|<|%/i;
+        if ( re.test(oField) ){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    checkForm={
+        changeVerifyImg:function(obj){
+            $(obj).attr("src","/Cn/Index/getVerifyImg?sid="+Math.random());
+        },
+        isEmpty:function(name,field,formId){
+            if($('#'+formId).find('input[name="'+name+'"],textarea[name="'+name+'"]').val().length==0 || injectChk($('#'+formId).find('input[name="'+name+'"],textarea[name="'+name+'"]').val()) == false){
+                layerHandel=layer.alert(
+                        field+"不能为空！",
+                        {
+                            'title':"消息",
+                            'btn':["好的"]
+                        },function(){
+                            layer.close(layerHandel);
+                            $('input[name="'+name+'"]').focus();
+                        }
+                );
+                return true;
+            }else{
+                return false;
+            }
+        },
+        notEmail:function(name,field,formId){
+            if(!/^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/.test($('#'+formId).find('input[name="'+name+'"]').val())){
+                layerHandel=layer.alert(
+                        field+"格式不正确！",
+                        {
+                            'title':"消息",
+                            'btn':["好的"]
+                        },function(){
+                            layer.close(layerHandel);
+                            $('input[name="'+name+'"]').focus();
+                        }
+                );
+                return true;
+            }else{
+                return false;
+            }
+        }
+    };
+    function email_form(formId){
+        if(formId=='form1'){
+            if(checkForm.isEmpty("email_subscribe","邮箱地址",formId)){
+                return false;
+            }
+            if(checkForm.notEmail("email_subscribe","邮箱地址",formId)){
+                return false;
+            }
+            if($('#email_icon').hasClass("act") == false){
+                layer.alert("请点击允许发送邮件到提交的邮箱，同意地平线隐私政策");
+                return false;
+            }
+            var msg = layer.msg('正在提交中...', {icon: 16,shade: [0.5, '#f5f5f5'],scrollbar: false,offset: '0px',time: 0});   
+            $.ajax({
+                url:"/Cn/Index/formView",
+                data:$("#"+formId).serialize(),
+                dataType:"json",
+                type:"POST",
+                success:function(data){
+                    layer.close(msg);
+                    // checkForm.changeVerifyImg($("#"+formId+" img[name='verifyImg']"));
+                    if(formId== 'form1'){
+                        if(data.status=="success"){
+                            $('.mod-subscribe-wrap').addClass('succ');
+                            setTimeout(function(){
+                                $('.mod-subscribe-wrap').removeClass('succ');
+                                $('#email_subscribe').val('');
+                                $('#email_icon').removeClass('act');
+                            },3000)
+                            // setTimeout('location.reload()',1500);
+                        }else{
+                            layer.alert(
+                                data.info,
+                                {
+                                    'title':"消息",
+                                    'btn':["好的"]
+                                }
+                            );
+                        }
+                    }
+                },
+                error:function(data){
+                    layer.open({
+                        title:"调试模式",
+                        content:data.responseText
+                    })
+                }
+            });
+            // $.ajax({
+            //     url:"/Cn/Index/email_subscribe",
+            //     data:{"email_subscribe":$('#email_subscribe').val()},
+            //     dataType:"json",
+            //     type:"POST",
+            //     success:function(data){
+            //         if(data.status=="success"){
+            //             setTimeout('location.reload()',1500);
+            //         }
+            //     },
+            //     error:function(data){
+            //         layer.open({
+            //             title:"调试模式",
+            //             content:data.responseText
+            //         })
+            //     }
+            // });
+        }
+    }
+</script>
+<!-- <script>
+    // 需要分离部署的项目需要保留此方法，其他项目可直接删除该方法。该方法用于替换页面中不是以.html结尾的链接，用于无缝切换伪静态和静态化时添加的链接无法批量修改的问题
+    $(function(){
+        var str = ".html";
+        concatHref(str);
+        function concatHref(str, selector) {
+            var $ele = selector ? $(selector) : $("a");
+            $ele.each(function() {
+                var oldHref = $(this).attr("href");
+                if (oldHref && oldHref != undefined) {
+                    if (oldHref.indexOf("javascript") == -1 && oldHref.indexOf(".html") == -1) {
+                        oldHref = oldHref ;
+                        $(this).attr("href", oldHref + str)
+                    }
+                }
+            })
+        }
+    })
+</script> -->    <!-- public end -->
+    <script>
+        ys.shareInit()
+    </script>
+</body>
+
+</html><script>console.log('%c文件路径：./Cn/View/Page/news_summary','color:green')</script>

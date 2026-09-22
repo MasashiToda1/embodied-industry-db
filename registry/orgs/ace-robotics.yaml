@@ -2,6 +2,9 @@ id: ace-robotics
 names:
   zh: 大晓机器人
   en: Ace Robotics
+  aliases:
+  - ACE ROBOTICS
+  - 上海大晓无限机器人有限公司
 status: active
 layers:
 - foundation
@@ -11,3 +14,21 @@ upstream:
 accounts:
   huggingface: ACERobotics
   github: DAXIAORobotics
+founded: 2025-07
+hq:
+  country: CN
+  city: 上海
+description: 商汤生态的具身智能公司，做开悟（Kairos）世界模型、环境式数据采集方案与具身超级大脑模组 A1。
+sources:
+- url: https://news.qq.com/rain/a/20260210A05WW500
+  tier: media
+  retrieved: '2026-09-22'
+  note: 腾讯新闻转载瑞财经，成立于 2025 年 7 月，商汤科技旗下专注具身智能的新业务公司
+- url: https://www.163.com/dy/article/KVF2UTAQ055040N3.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 网易号转载上观新闻，上海机器人初创公司
+- url: https://www.sh.chinanews.com.cn/kjjy/2025-12-19/143451.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 中新网上海，主体为上海大晓无限机器人有限公司，产品线

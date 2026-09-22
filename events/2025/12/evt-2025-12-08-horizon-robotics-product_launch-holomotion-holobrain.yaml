@@ -1,0 +1,25 @@
+id: evt-2025-12-08-horizon-robotics-product_launch-holomotion-holobrain
+date: '2025-12-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: horizon-robotics
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 地平线在 2025 技术生态大会发布具身智能小脑基座模型 HoloMotion 与大脑基座模型 HoloBrain
+summary:
+  zh: 12 月 8 日，地平线在 2025 地平线技术生态大会上正式发布两大具身智能开源模型：具身智能小脑基座模型 HoloMotion（人形机器人全身运控基础模型，提供从数据获取、强化学习多机并行训练到真机部署的全流程管线）和大脑基座模型 HoloBrain（通用操作基础模型，融合真实与仿真数据）。大会 12 月 8 日至 9 日举办，同期开设「从智能汽车到机器人的智能跃迁」专题论坛，地平线机器人实验室还介绍了 EmbodiedGen 仿真数据引擎、FSR-VLN 视觉语言导航与 RoboOrchard 具身智能框架。
+axes:
+  model_form:
+  - motion-generation
+  control_route:
+  - rl
+evidence:
+- url: https://www.horizon.auto/news/press/427
+  publisher: 地平线官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/horizon-2025-12-08-horizon-robotics-holomot.html
+corroboration: single

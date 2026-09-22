@@ -1,0 +1,26 @@
+id: evt-2025-12-19-ace-robotics-partnership-galbot
+date: '2025-12-19'
+date_precision: day
+type: partnership
+orgs:
+- id: ace-robotics
+  role: subject
+- id: galbot
+  role: counterparty
+title:
+  zh: 大晓机器人与银河通用达成战略合作，围绕世界模型协同与具身智能产品化落地
+summary:
+  zh: 12 月 19 日，大晓机器人与银河通用达成战略合作，双方围绕世界模型技术协同、具身智能产品化和规模化落地展开合作：大晓机器人依托其智能硬件平台与空间认知、场景理解算法能力，结合银河通用自研的具身智能大模型技术体系，共同打造面向典型工业与商业场景的融合解决方案。
+axes:
+  model_form:
+  - world-model
+  target_scene:
+  - industrial-manufacturing
+  - commercial-service
+evidence:
+- url: https://finance.sina.com.cn/stock/t/2025-12-20/doc-inhcncic6475857.shtml
+  publisher: 新浪财经（转载界面新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/finance-2025-12-19-ace-robotics-galbot-part.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2025-12-22-noitom-funding-pre-a-plus-round
+date: '2025-12-22'
+date_precision: day
+type: funding
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾机器人完成 Pre-A+ 轮融资，启明创投领投
+summary:
+  zh: 12 月 22 日消息，诺亦腾机器人（Noitom Robotics）近日宣布完成 Pre-A+ 轮融资，由启明创投领投，五源资本、君联资本等参与，经纬创投、英诺天使基金追加投资并超额认购；完成阿尔法公社领投的 Pre-A 轮及本轮后累计募资达数亿元人民币。金额未披露。报道称公司在全球范围推进「数据工厂」建设，相关能力已在服务数十家人形机器人企业及具身智能模型客户中得到验证。
+counterparties:
+- 启明创投
+- 五源资本
+- 君联资本
+- 经纬创投
+- 英诺天使基金
+axes:
+  data_acquisition:
+  - mocap
+  data_sourcing:
+  - in-house-factory
+evidence:
+- url: https://news.pedaily.cn/202512/558950.shtml
+  publisher: 投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-22-noitom-pre-a-plus-round.html
+corroboration: single

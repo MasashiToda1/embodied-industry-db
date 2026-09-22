@@ -1,0 +1,31 @@
+id: evt-2026-02-10-ace-robotics-funding-angel-round
+date: '2026-02-10'
+date_precision: day
+type: funding
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人完成天使轮融资，蚂蚁集团领投
+summary:
+  zh: 2 月 10 日消息，大晓机器人于近期完成天使轮融资，由蚂蚁集团领投，启明创投、金景资本、弘毅投资、联想创投、上海交大母基金菡源资产等跟投，老股东商汤国香资本持续增资，金额未披露。资金用于 ACE 具身研发范式迭代、环境式数据采集与开悟世界模型 3.0 研发，推动具身超级大脑模组落地。
+counterparties:
+- 蚂蚁集团
+- 启明创投
+- 金景资本
+- 弘毅投资
+- 联想创投
+- 上海交大母基金菡源资产
+- 商汤国香资本
+evidence:
+- url: https://www.chinaventure.com.cn/news/114-20260210-390131.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/chinaventure-2026-02-10-ace-robotics-angel-round.html
+- url: https://finance.sina.com.cn/jjxw/2026-02-10/doc-inhmiaek4663680.shtml
+  publisher: 新浪财经（转载证券时报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/finance-2026-02-10-ace-robotics-angel-round.html
+corroboration: multi

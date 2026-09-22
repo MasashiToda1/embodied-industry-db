@@ -1,0 +1,28 @@
+id: evt-2026-04-26-chaowei-power-product_launch-kai-humanoid
+date: '2026-04-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: chaowei-power
+  role: subject
+title:
+  zh: 超维动力发布首款全尺寸人形机器人 KAI，同步介绍 KAI World Model 与数采头环 KAI Halo
+summary:
+  zh: 4 月 26 日，超维动力（Kinetix AI）举办「降临 GIFTED」发布会，正式发布首款全尺寸人形机器人 KAI：本体 KaiBot 身高 173 厘米、体重 70 公斤，全身 115 个自由度，单手 36 个自由度灵巧手，全身触觉皮肤 18000 个触点，1.7kWh 半固态电池支持约 3 小时双臂操作。发布会同时介绍了包含动作模块与评估模块的 KAI World Model、「一芯八摄」轻量化头环数采终端 KAI Halo，以及预训练（互联网、仿真与第一人称数据）—桥接训练（UMI 与数采手套数据）—后训练（真机遥操数据）三阶段训练体系。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  hardware_strategy:
+  - in-house
+  model_form:
+  - world-model
+  data_acquisition:
+  - human-video
+  - teleop
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvxtqy9074347.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-26-chaowei-power-kai-launch.html
+corroboration: single

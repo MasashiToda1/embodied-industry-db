@@ -1,0 +1,30 @@
+id: evt-2025-10-13-daka-robot-pricing-x7-launch
+date: '2025-10-13'
+date_precision: day
+type: pricing
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人 X7 系列人形机器人启售，EDU 版标准价 8.98 万元、早鸟价 6.98 万元起
+summary:
+  zh: 10 月 13 日，大咖机器人 X7 系列正式启售，限量 100 台。X7 EDU 版标准价 8.98 万元，早鸟价 6.98 万元起，X7 Pro 版未公布价格。X7 系列设计身高 170 厘米，双七轴机械臂，双臂最大负载 10 公斤；EDU 版全身 23 个自由度（含 6 个底盘自由度），Pro 版 26 个自由度并配腕部与头部深度摄像头、底盘激光雷达。文中提到 9 月下旬公司与姬械机科技集团达成合作，将为其提供上百台人形机器人用于康养与应急机构。
+counterparties:
+- 姬械机科技集团
+amount:
+  value: 69800
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  delivery_model:
+  - hardware-sale
+  target_scene:
+  - education-research
+evidence:
+- url: https://www.gasgoo.com/robot/news/70435085-%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA-%E4%BB%B7%E6%A0%BC%E5%B1%A0%E5%A4%AB-%E5%A4%A7%E5%92%96%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8F%91%E5%B8%83%E6%96%B0%E5%93%81-6/
+  publisher: 盖世汽车
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/gasgoo-2025-10-13-daka-robot-x7-launch.html
+corroboration: single

@@ -1,0 +1,33 @@
+id: evt-2026-04-08-d-robotics-funding-b2-round
+date: '2026-04-08'
+date_precision: day
+type: funding
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人宣布完成 1.5 亿美元 B2 轮融资，B 轮累计 2.7 亿美元
+summary:
+  zh: 2026 年 4 月 8 日，地瓜机器人宣布完成 1.5 亿美元 B2 轮融资，B 轮累计融资额达 2.7 亿美元。本轮由某零售科技与供应链巨头、Prosperity7 风投基金、远景科技集团等战略投资机构，慕华科创、云锋基金、华控基金（T-Capital）、LOOK CAPITAL、凯联资本等财务投资机构联合投资，老股东高瓴创投、和暄资本、线性资本、黄浦江资本、滴滴、五源资本、初心资本、梅花创投、Vertex Growth 跟投。文中称 2025 年全年出货量同比增长 180%，全球开发者数量突破 10 万。
+counterparties:
+- Prosperity7 风投基金
+- 远景科技集团
+- 慕华科创
+- 云锋基金
+- 华控基金（T-Capital）
+- LOOK CAPITAL
+- 凯联资本
+- 高瓴创投
+- 滴滴
+- 五源资本
+- Vertex Growth
+amount:
+  value: 150000000
+  currency: USD
+evidence:
+- url: https://tech.caijing.com.cn/20260408/5152351.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/tech-2026-04-08-d-robotics-b2-round.html
+corroboration: single

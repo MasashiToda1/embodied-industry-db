@@ -1,0 +1,33 @@
+id: evt-2026-06-23-lightwheel-funding-strategic-round
+date: '2026-06-23'
+date_precision: day
+type: funding
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能宣布完成 10 亿元战略融资，中关村科学城基金、巨人网络等参投
+summary:
+  zh: 6 月 23 日，光轮智能宣布近日完成新一轮 10 亿元人民币战略融资。投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金，巨人网络、宇信科技、宝通科技、中科产投、量图智策等产业资本及财务投资机构，老股东建投投资、三七互娱、森马投资继续跟投。资金用于物理 AI 数据与评测基础设施研发，扩大人类行为数据、仿真合成数据与工业级评测能力建设。
+counterparties:
+- 中关村科学城基金
+- 四川发展科创基金
+- 山东发展科创投
+- 巨人网络
+- 宇信科技
+- 宝通科技
+- 中科产投
+- 量图智策
+- 建投投资
+- 三七互娱
+- 森马投资
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: http://www.bkeconomy.com/detail-1782192989129054.html
+  publisher: 新京报贝壳财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/bkeconomy-2026-06-23-lightwheel-strategic-rou.html
+corroboration: single

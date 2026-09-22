@@ -2,9 +2,28 @@ id: chaowei-power
 names:
   zh: 超维动力
   en: Kinetix AI
+  aliases:
+  - KAI
+  - 深圳超维动力智能科技有限公司
 status: active
 layers:
 - data
 - embodiment
 upstream:
   robotics_notebooks_institution: kinetix-ai
+accounts:
+  site: https://www.kinetixai.tech
+founded: 2025-07
+hq:
+  country: CN
+  city: 深圳
+description: 深圳的全栈具身智能公司，产品有人形机器人 KaiBot、灵巧手 KAI Hand 与数采头环 KAI Halo。
+sources:
+- url: https://www.kinetixai.tech/zh/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，2025 年 7 月成立，产品线；页脚地址深圳市南山区深圳湾科技生态园
+- url: https://www.163.com/dy/article/KHVRI09C05118K7K.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 网易号（亿欧）报道，成立于 2025 年 7 月 17 日，总部深圳，香港设研发中心

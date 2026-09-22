@@ -1,0 +1,35 @@
+id: evt-2026-05-25-lightwheel-funding-ant-group-round
+date: '2026-05-25'
+date_precision: day
+type: funding
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能完成新一轮融资，蚂蚁集团领投
+summary:
+  zh: 5 月 25 日消息，光轮智能近日完成新一轮融资，由蚂蚁集团领投，建投投资、大湾区共同家园基金、森马方道基金、山东孚弘（工业富联参与管理产业基金）、芯能投资、临芯投资等国资、产业及财务机构参与，三七互娱、国方创新、道禾长期投资、鼎石资管等老股东超额跟投。融资金额未披露；资金用于物理 AI 数据与评测基础设施核心技术投入、规模化交付能力建设与全球市场开拓。
+counterparties:
+- 蚂蚁集团
+- 建投投资
+- 大湾区共同家园基金
+- 森马方道基金
+- 山东孚弘
+- 芯能投资
+- 临芯投资
+- 三七互娱
+- 国方创新
+- 道禾长期投资
+- 鼎石资管
+evidence:
+- url: https://finance.sina.com.cn/stock/t/2026-05-25/doc-inhzcpie3422558.shtml
+  publisher: 新浪财经（转载北京商报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/finance-2026-05-25-lightwheel-ant-round-sin.html
+- url: https://www.stcn.com/article/detail/3927123.html
+  publisher: 证券时报网（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/stcn-2026-05-26-lightwheel-ant-round.html
+corroboration: multi

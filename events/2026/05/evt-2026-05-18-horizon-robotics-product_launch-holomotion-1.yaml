@@ -1,0 +1,32 @@
+id: evt-2026-05-18-horizon-robotics-product_launch-holomotion-1
+date: '2026-05-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线发布并开源 HoloMotion-1：4 亿参数人形机器人全身控制「小脑大模型」
+summary:
+  zh: 5 月 18 日，地平线正式发布并开源 HoloMotion-1，这是地平线机器人实验室面向人形机器人全身控制打造的 4 亿参数级机器人小脑大模型，采用 MoE-Transformer policy，结合 MoE 稀疏激活与 KV-cache 推理机制，在端侧实现约 300FPS 实时推理（报告设置下推理延迟 3.32ms）。训练数据来自互联网视频恢复动作、光学动捕数据、VR 遥操作数据和惯性动捕遥操作数据；同步开放覆盖数据处理、动作重定向、模型训练、离线评测、端侧部署的完整流程。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  model_form:
+  - motion-generation
+  data_acquisition:
+  - human-video
+  - mocap
+  - teleop
+evidence:
+- url: https://www.horizon.auto/news/technology/456
+  publisher: 地平线官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/horizon-2026-05-18-horizon-robotics-holomot.html
+- url: https://finance.sina.com.cn/tech/digi/2026-05-19/doc-inhymivm2307662.shtml
+  publisher: 新浪科技（转载 IT 之家）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/finance-2026-05-18-horizon-robotics-holomot.html
+corroboration: multi
