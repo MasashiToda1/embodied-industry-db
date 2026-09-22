@@ -1,0 +1,23 @@
+id: evt-2026-04-iso-tc299-statement-iso-26264-1-humanoid-dataset-wg16
+date: 2026-04
+date_precision: month
+type: statement
+orgs:
+- id: iso-tc299
+  role: subject
+title:
+  zh: ISO/TC 299 立项人形机器人数据集国际标准 ISO 26264-1，成立 WG16 工作组
+summary:
+  zh: 2026 年 4 月报道，由北京机械工业自动化研究所牵头的人形机器人数据集国际标准 ISO 26264-1 在 ISO/TC 299 立项，并成立人形机器人数据集工作组 ISO/TC 299/WG16，由中方专家任召集人。这是中国首次在 ISO/TC 299 成立国际标准工作组。
+counterparties:
+- 北京机械工业自动化研究所（北自所）
+- 中国机械科学研究总院集团
+date_basis: derived
+date_as_stated: 报道（2026-04-20）原文「近日」
+evidence:
+- url: https://cam.com.cn/contents/336/19077.html
+  publisher: 中国机械科学研究总院集团官网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/cam-2026-04-iso-tc299-iso-26264-1-wg.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-05-20-qingtianzu-funding-a-round
+date: '2026-05-20'
+date_precision: day
+type: funding
+orgs:
+- id: qingtianzu
+  role: subject
+title:
+  zh: 擎天租完成 A 轮及 A+ 轮融资，估值达 70 亿元
+summary:
+  zh: 5 月 20 日，擎天租宣布近期完成 A 轮及 A+ 轮融资，金额「数亿元」，融资后估值 70 亿元。资金用于 RaaS 体系建设和工业等场景拓展。公司称平台可调度机器人已超 4000 台，业务重心转向工业制造、园区运营、仓储物流、商业服务等场景。
+evidence:
+- url: https://www.jiemian.com/article/14486725.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/jiemian-2026-05-20-qingtianzu-a-round.html
+corroboration: single

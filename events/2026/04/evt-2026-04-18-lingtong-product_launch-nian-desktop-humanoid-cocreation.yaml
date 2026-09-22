@@ -1,0 +1,30 @@
+id: evt-2026-04-18-lingtong-product_launch-nian-desktop-humanoid-cocreation
+date: '2026-04-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: lingtong
+  role: subject
+title:
+  zh: 灵童机器人推出桌面人形机器人「念」，启动 1000 台全球共创计划
+summary:
+  zh: 4 月 18 日，灵童机器人启动「你好·未来造物者」社区共创计划，面向全球开发者、科研人员与内容创作者免费发放 1000 台桌面人形机器人「念」用于二次开发与内容共创。产品高约 60 厘米，集成 30 个自研力矩关节舵机、30 个自由度，可站立、行走、转身、蹲起及舞蹈。5 月 22 日报道称有效报名已超 5000 人。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - home
+evidence:
+- url: https://www.jur.com.cn/chanjing/202604/230600.html
+  publisher: 巨人天成财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/jur-2026-04-18-lingtong-nian-desktop-hu.html
+- url: https://finance.sina.com.cn/jjxw/2026-05-22/doc-inhytqkv7819136.shtml
+  publisher: 新浪财经 · 转载新华财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-18-lingtong-1000-cocreation.html
+corroboration: multi

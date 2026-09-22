@@ -1,0 +1,25 @@
+id: evt-2025-12-22-qingtianzu-corporate-platform-launch
+date: '2025-12-22'
+date_precision: day
+type: corporate
+orgs:
+- id: qingtianzu
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 擎天租机器人租赁平台在上海发布
+summary:
+  zh: 12 月 22 日，全国机器人租赁生态峰会暨擎天租平台发布会在上海举行，发布机器人租赁平台「擎天租」。平台称已建立触达全国 50 个核心城市的租赁节点，600 余家服务商，1000 余台设备，计划 2026 年内渗透 200 余个城市。
+counterparties:
+- 飞阔科技
+axes:
+  delivery_model:
+  - rental
+evidence:
+- url: https://news.dayoo.com/finance/202512/22/171077_54908782.htm
+  publisher: 广州日报大洋网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-22-qingtianzu-platform-laun.html
+corroboration: single

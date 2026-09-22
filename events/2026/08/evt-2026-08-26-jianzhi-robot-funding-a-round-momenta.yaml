@@ -1,0 +1,20 @@
+id: evt-2026-08-26-jianzhi-robot-funding-a-round-momenta
+date: '2026-08-26'
+date_precision: day
+type: funding
+orgs:
+- id: jianzhi-robot
+  role: subject
+title:
+  zh: 简智机器人完成 A 轮融资，Momenta 领投，累计融资超 2 亿美元
+summary:
+  zh: 8 月 26 日，简智机器人宣布完成 A 轮融资，由 Momenta 领投，多家老股东追投，本轮金额未披露。公司称成立一年内完成 7 轮融资，累计融资总额「超 2 亿美元」。资金投向无本体数据基础设施、Data Foundation Model 迭代、真机评测闭环与全球化业务。
+counterparties:
+- Momenta
+evidence:
+- url: https://robot.ofweek.com/2026-08/ART-8321201-8140-30700216.html
+  publisher: OFweek 机器人网 · 转载具身涌现
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/robot-2026-08-26-jianzhi-robot-a-round-mo.html
+corroboration: single

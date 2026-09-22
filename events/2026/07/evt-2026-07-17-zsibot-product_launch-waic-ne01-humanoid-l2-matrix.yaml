@@ -1,0 +1,26 @@
+id: evt-2026-07-17-zsibot-product_launch-waic-ne01-humanoid-l2-matrix
+date: '2026-07-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 智身科技在 WAIC 2026 集体亮相钢镚 L2、铅球 SP1、人形机器人银毅 NE01 与 MATRiX 2.0 仿真平台
+summary:
+  zh: 7 月 17 日至 20 日，智身科技在 2026 世界人工智能大会（WAIC 2026）首次以完整产品矩阵亮相，展出四足机器人钢镚 L2、防爆四足机器人铅球 SP1、人形机器人银毅 NE01 与 MATRiX 2.0 仿真训练平台。公司同时披露截至 2026 年 6 月累计量产突破 15000 台。
+axes:
+  embodiment_form:
+  - quadruped
+  - humanoid-biped
+  hardware_strategy:
+  - in-house
+  sim_stack:
+  - in-house
+evidence:
+- url: https://mp.weixin.qq.com/s/WJPqz7-AoHwgXJ3g1Src8w
+  publisher: 智身科技公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/mp-2026-07-17-zsibot-waic-ne01-l2-laun.html
+corroboration: single

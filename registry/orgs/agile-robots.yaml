@@ -6,5 +6,20 @@ status: active
 layers:
 - embodiment
 - components
+founded: 2018
+hq:
+  country: DE
+  city: 慕尼黑
+description: 2018 年成立于慕尼黑的机器人公司，产品有力控机械臂、灵巧手与全尺寸人形机器人 Agile ONE，中国主体为北京思灵机器人科技有限责任公司。
 accounts:
   github: AgileRobotsAG
+  site: https://www.agile-robots.cn
+sources:
+- url: https://www.agile-robots.cn/news/51
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网资讯，载「自 2018 年创立以来」与人形机器人 Agile ONE
+- url: https://www.agile-robots.cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页页脚，慕尼黑地址与北京主体名称

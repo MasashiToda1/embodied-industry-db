@@ -2,6 +2,22 @@ id: wangxingren
 names:
   zh: 汪星人
   en: Wangxingren
+  aliases:
+  - 汪星人科技
+  - 汪星人（广东）供应链科技有限公司
 status: active
 layers:
 - operation
+hq:
+  country: CN
+  city: 深圳
+description: 汪星人（广东）供应链科技有限公司，在深圳华强北运营全球机器人选品中心，做机器人租赁、销售与二次开发。
+sources:
+- url: https://www.stcn.com/article/detail/3607934.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 深圳商报报道（证券时报网转载），载公司全称、华强北全球机器人选品中心与租赁、销售、二次开发业务
+- url: https://www.szft.gov.cn/ftxx/xwdt/ftdt/content/post_12691328.html
+  tier: primary
+  retrieved: '2026-09-22'
+  note: 深圳福田区政府网，载汪星人科技联合组建华强北 9S 服务中心

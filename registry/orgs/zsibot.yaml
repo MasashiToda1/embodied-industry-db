@@ -11,6 +11,7 @@ founded: 2023-12
 hq:
   country: CN
   city: 北京
+description: 做四足机器人（钢镚 L1 / L2、铜锤 M1、防爆 SP1）、人形机器人银毅 NE01 与关节模组的公司，兼有 MATRiX 仿真训练平台。
 status: active
 layers:
 - embodiment
@@ -22,7 +23,12 @@ sources:
   tier: media
   retrieved: '2026-09-22'
   note: 凤凰网转载机器人前瞻报道，载有成立时间「2023 年 12 月」与总部「北京」
+- url: https://www.genisomai.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，产品矩阵与北京海淀、苏州吴中两处地址
 upstream:
   robotics_notebooks_institution: zsibot
 accounts:
   github: zsibot
+  site: https://www.genisomai.com

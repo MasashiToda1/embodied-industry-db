@@ -1,0 +1,29 @@
+id: evt-2026-01-15-wanjiyizu-corporate-platform-launch
+date: '2026-01-15'
+date_precision: day
+type: corporate
+orgs:
+- id: wanjiyizu
+  role: subject
+title:
+  zh: 万机易租平台在上海松江发布上线
+summary:
+  zh: 2026 年 1 月 15 日，全球机器人租赁生态联盟峰会暨万机易租平台发布会在上海松江区临港松江科技城举行，机器人租赁平台「万机易租」正式上线，并同步发起全球机器人租赁生态联盟。用户通过小程序下单，可租表演、清洁、教学、陪护等品类机器人。主要股东含德马科技、捞王餐饮集团、达诺尔的创始人及梧桐树资本、弘瑞资本、老鹰基金合伙人。
+counterparties:
+- 德马科技
+- 捞王餐饮集团
+- 达诺尔
+- 梧桐树资本
+- 弘瑞资本
+- 老鹰基金
+- 远东宏信
+axes:
+  delivery_model:
+  - rental
+evidence:
+- url: https://www.36kr.com/p/3642181919592329
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/36kr-2026-01-15-wanjiyizu-platform-launc.html
+corroboration: single

@@ -5,3 +5,19 @@ names:
 status: active
 layers:
 - standards
+founded: 1962
+hq:
+  country: CN
+  city: 北京
+description: 1962 年成立的电子信息领域全国性学术社团，总部为工业和信息化部部属事业单位，归口发布 T/CIE 人形机器人团体标准。
+accounts:
+  site: https://www.cie.org.cn
+sources:
+- url: https://www.cie.org.cn/about_107/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网学会简介页，成立年份 1962 与总部性质
+- url: https://www.cie.org.cn/about_148/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网总部页，地址北京市海淀区

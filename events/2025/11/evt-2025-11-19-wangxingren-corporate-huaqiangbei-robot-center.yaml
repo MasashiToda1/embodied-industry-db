@@ -1,0 +1,22 @@
+id: evt-2025-11-19-wangxingren-corporate-huaqiangbei-robot-center
+date: '2025-11-19'
+date_precision: day
+type: corporate
+orgs:
+- id: wangxingren
+  role: subject
+title:
+  zh: 汪星人运营的全球机器人选品中心在深圳华强北开业
+summary:
+  zh: 2025 年 11 月 19 日，由汪星人（广东）供应链科技有限公司运营的全球机器人选品中心在深圳华强北曼哈商业广场开业，将机器人租赁、销售、二次开发与场景化服务打包提供。报道称该中心汇聚 AI 智能玩具、工业机器人、家用服务机器人、特种机器人及芯片、传感器、电机等零部件。
+axes:
+  delivery_model:
+  - rental
+  - hardware-sale
+evidence:
+- url: https://www.stcn.com/article/detail/3607934.html
+  publisher: 证券时报网 · 转载深圳商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/stcn-2025-11-19-wangxingren-huaqiangbei-.html
+corroboration: single

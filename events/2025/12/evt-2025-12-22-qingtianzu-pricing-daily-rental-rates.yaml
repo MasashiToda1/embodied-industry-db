@@ -1,0 +1,28 @@
+id: evt-2025-12-22-qingtianzu-pricing-daily-rental-rates
+date: '2025-12-22'
+date_precision: day
+type: pricing
+orgs:
+- id: qingtianzu
+  role: subject
+- id: agibot
+  role: supplier
+title:
+  zh: 擎天租平台上线日租价：灵犀 X2 青春版 1499 元 / 天起，D1Edu 机器狗 200 元 / 天
+summary:
+  zh: 平台上线当日，记者登录擎天租平台看到，智元灵犀 X2 青春版人形机器人日租 1499 元 / 天起，首形桌面级仿生人形机器人 F1 Lite 1200 元 / 天起，智元 D1Edu 机器狗日租 200 元，均含免费上门配送与订单服务期内运维保障。
+counterparties:
+- 首形机器人
+axes:
+  delivery_model:
+  - rental
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+evidence:
+- url: https://news.dayoo.com/finance/202512/22/171077_54908782.htm
+  publisher: 广州日报大洋网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-22-qingtianzu-platform-laun.html
+corroboration: single

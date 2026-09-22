@@ -1,0 +1,25 @@
+id: evt-2026-06-11-zsibot-product_launch-sp1-explosion-proof-quadruped
+date: '2026-06-11'
+date_precision: day
+type: product_launch
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 智身科技防爆四足机器人 SP1 在 CTEF 2026 上海化工展首秀
+summary:
+  zh: 6 月 11 日，智身科技在上海新国际博览中心举行的 2026 中国国际化工技术装备博览会（CTEF 2026）上首次展出新品 SP1 防爆四足机器人、防爆关节模组及与合作伙伴打造的智能防爆巡检方案，面向石油、化工、燃气等高危工业场景。
+axes:
+  embodiment_form:
+  - quadruped
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - inspection-hazardous
+evidence:
+- url: https://mp.weixin.qq.com/s/-RMJOPuiKP_Ldpyb-1_Hew
+  publisher: 智身科技公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/mp-2026-06-11-zsibot-sp1-explosion-pro.html
+corroboration: single

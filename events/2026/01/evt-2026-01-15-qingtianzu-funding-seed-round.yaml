@@ -1,0 +1,24 @@
+id: evt-2026-01-15-qingtianzu-funding-seed-round
+date: '2026-01-15'
+date_precision: day
+type: funding
+orgs:
+- id: qingtianzu
+  role: subject
+title:
+  zh: 擎天租完成种子轮融资，高瓴创投领投
+summary:
+  zh: 1 月 15 日，擎天租宣布完成种子轮融资，由高瓴创投领投，复星创富、慕华科创、大丰基金及张江集团旗下具身智能公司参与投资，金额未披露。资金用于全国市场拓展、平台技术与服务体系建设。
+counterparties:
+- 高瓴创投
+- 复星创富
+- 慕华科创
+- 大丰基金
+- 张江集团
+evidence:
+- url: https://stcn.com/article/detail/3594340.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/stcn-2026-01-15-qingtianzu-seed-round.html
+corroboration: single

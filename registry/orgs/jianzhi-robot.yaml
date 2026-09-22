@@ -2,9 +2,32 @@ id: jianzhi-robot
 names:
   zh: 简智机器人
   en: JZ Robot
+  aliases:
+  - GenRobot
+  - 简智新创（北京）机器人科技有限公司
 status: active
 layers:
 - data
 - components
+founded: 2025-05
+hq:
+  country: CN
+  city: 北京
+description: 简智新创（北京）机器人科技有限公司，做具身智能数据采集设备 Gen DAS 与数据治理平台 Gen Matrix，不做机器人本体。
 upstream:
   robotics_notebooks_institution: jzrobot
+accounts:
+  site: https://cn.genrobot.com
+sources:
+- url: https://cn.genrobot.com/why
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于页，载公司全称与 Gen DAS、Gen Matrix、Gen ADP 产品体系
+- url: https://cn.genrobot.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，联系地址北京市海淀区
+- url: https://robot.ofweek.com/2026-08/ART-8321201-8140-30700216.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: OFweek 报道，载「2025 年 5 月正式成立」

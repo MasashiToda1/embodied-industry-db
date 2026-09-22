@@ -7,3 +7,19 @@ names:
 status: active
 layers:
 - standards
+founded: 2015
+hq:
+  country: CN
+  city: 沈阳
+description: 2015 年成立的机器人第三方检测认证机构，总部在上海，沈阳分中心依托中科院沈阳自动化所开展机器人检测与 CR 认证。
+accounts:
+  site: https://rtc.sia.cn
+sources:
+- url: http://rtc.sia.cn/ywly/yw3/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 沈阳分中心官网认证服务页，载「2015 年初国家机器人检测与评定中心成立」与依托单位中科院沈阳自动化所
+- url: https://www.sri-robot.com/about/jiancerenzhengpingtai
+  tier: official
+  retrieved: '2026-09-22'
+  note: 总部承建单位页面，载「一个总部、三个分中心和两个公共服务平台」结构，总部在上海

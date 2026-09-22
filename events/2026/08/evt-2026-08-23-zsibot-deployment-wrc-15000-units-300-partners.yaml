@@ -1,0 +1,24 @@
+id: evt-2026-08-23-zsibot-deployment-wrc-15000-units-300-partners
+date: '2026-08-23'
+date_precision: day
+type: deployment
+orgs:
+- id: zsibot
+  role: subject
+title:
+  zh: 智身科技在 WRC 2026 披露累计量产超 15000 台、单月产能超 5000 台、300 余家合作伙伴
+summary:
+  zh: 2026 年 8 月 23 日世界机器人大会（WRC 2026）在北京落幕，智身科技官方稿称截至 2026 年 6 月累计量产具身智能机器人超 15000 台，单月产能超 5000 台，全栈自研关节模组年产能突破 100 万件，合作伙伴 300 余家。展出的行业上装机器狗覆盖排爆、消杀、电力巡检、安防巡检、导盲、防爆等用途；钢镚 L2 参数为 16 千克持续背负、150 千克静态承载、5.5 小时续航、IP66 防护。
+axes:
+  embodiment_form:
+  - quadruped
+  - humanoid-biped
+  target_scene:
+  - inspection-hazardous
+evidence:
+- url: https://mp.weixin.qq.com/s/e_RY3t347rIPhdoHAylCxA
+  publisher: 智身科技公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/mp-2026-08-19-zsibot-wrc-15000-units.html
+corroboration: single

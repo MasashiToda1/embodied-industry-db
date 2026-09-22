@@ -1,0 +1,21 @@
+id: evt-2026-03-11-ul-solutions-statement-first-ul3300-robot-certification
+date: '2026-03-11'
+date_precision: day
+type: statement
+orgs:
+- id: ul-solutions
+  role: subject
+title:
+  zh: UL Solutions 颁出首张面向公共环境机器人的 UL 3300 安全认证
+  en: UL Solutions grants its first UL 3300 certification for a public-facing robot
+summary:
+  zh: 3 月 11 日，UL Solutions 宣布向 Simbe 的货架扫描自主移动机器人 Tally 颁发其首张面向公共环境运行机器人的安全认证，认证依据 UL 3300《服务、通信、信息、教育和娱乐机器人安全标准》，测试覆盖火灾与电击危险及自主移动安全。新闻稿称美国 OSHA 近期已将 UL 3300 列入认可的安全认证标准清单。
+counterparties:
+- Simbe Robotics
+evidence:
+- url: https://www.ul.com/news/ul-solutions-grants-its-first-global-certification-public-facing-robot-simbes-tally-autonomous
+  publisher: UL Solutions 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/ul-2026-03-11-ul-solutions-first-ul330.html
+corroboration: single

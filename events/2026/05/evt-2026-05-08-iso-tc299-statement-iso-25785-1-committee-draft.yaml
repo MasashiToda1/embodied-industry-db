@@ -1,0 +1,25 @@
+id: evt-2026-05-08-iso-tc299-statement-iso-25785-1-committee-draft
+date: '2026-05-08'
+date_precision: day
+type: statement
+orgs:
+- id: iso-tc299
+  role: subject
+title:
+  zh: ISO/CD 25785-1 动态稳定工业移动机器人安全要求进入委员会草案阶段
+summary:
+  zh: ISO 官网项目页显示，ISO/TC 299 归口的 ISO 25785-1《机器人 — 动态稳定工业移动机器人（腿式、轮式或其他移动形式）安全要求 — 第 1 部分：机器人》于 2026 年 5 月 8 日登记为委员会草案（阶段 30.00），5 月 12 日启动 CD 征询，7 月 8 日结束评议期（阶段 30.60）。文件适用范围含四足、双足与轮式平衡机器人。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+  - humanoid-wheeled
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.iso.org/standard/91469.html
+  publisher: ISO 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/iso-2026-07-08-iso-tc299-iso-25785-1-cd.html
+corroboration: single

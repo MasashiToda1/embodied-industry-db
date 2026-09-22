@@ -2,7 +2,26 @@ id: lingtong
 names:
   zh: 灵童机器人
   en: Lingtong Robotics
+  aliases:
+  - Figurobot
+  - 灵童机器人（上海）有限公司
 status: active
 layers:
 - embodiment
 - content
+founded: 2022-08
+hq:
+  country: CN
+  city: 上海
+description: 灵童机器人（上海）有限公司，做约 60 厘米高、30 个自由度的桌面人形机器人「念」，面向消费与内容共创。
+accounts:
+  site: https://www.figurobot.com
+sources:
+- url: https://www.robotsj.cn/brand/1647.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 机器人世界品牌页，载「成立于 2022 年 8 月，总部位于上海徐汇区」与英文名 Figurobot
+- url: https://finance.sina.com.cn/jjxw/2026-05-22/doc-inhytqkv7819136.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 新华财经报道，载公司全称、产品「念」高度约 60 厘米、30 个自由度
