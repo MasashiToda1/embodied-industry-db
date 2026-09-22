@@ -1,0 +1,21 @@
+id: evt-2025-08-08-agility-corporate-robofab-production-scale
+date: 2025-08-08
+date_precision: day
+type: corporate
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility Robotics 的 Salem RoboFab 工厂披露产能与人员规模
+summary:
+  zh: 8 月 8 日，The Oregonian / OregonLive 报道 Agility Robotics 在俄勒冈州 Salem 的 RoboFab 工厂：工厂有 150 名员工，公司总人数 280 人；计划 2025 年产出数百台机器人，2026 年远高于此；Marion County 评估该厂的存货与设备价值近 4000 万美元，公司前三年可获房产税减免。报道还称 Digit 当时已在佐治亚州一家 Spanx 仓库搬运物料（由 GXO 运营），公司计划到年底让数百台机器人上岗；Digit 第五代把安全放进设计核心，用 AI 识别附近有人并避免伤人动作，计划 2026 年部署。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.oregonlive.com/silicon-forest/2025/08/oregon-factory-builds-the-walking-robots-of-tomorrow-these-are-going-to-be-a-part-of-everyday-life.html
+  publisher: The Oregonian / OregonLive
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/oregonlive-2025-08-08-agility-robofab-salem.html
+corroboration: single

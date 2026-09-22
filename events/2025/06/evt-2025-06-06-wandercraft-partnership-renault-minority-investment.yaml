@@ -1,0 +1,23 @@
+id: evt-2025-06-06-wandercraft-partnership-renault-minority-investment
+date: 2025-06-06
+date_precision: day
+type: partnership
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Renault Group 完成对 Wandercraft 的少数股权投资，双方共同开发 Calvin 系列机器人
+summary:
+  zh: 6 月 6 日，Renault Group 与 Wandercraft 宣布 Renault Group 对 Wandercraft 的少数股权投资完成交割，Renault Group 与 Wandercraft 现有股东及新投资方一同投资。双方同时签署商业合作协议，共同开发基于 Wandercraft 技术的新一代机器人系列 Calvin，先用于 Renault Group 自家的制造运营，把工人从痛苦且不符合人体工学的工序中替换出来。公告称后续阶段该合作还包括由 Renault Group 来工业化生产这些机器人与外骨骼，用设计降本与规模化压低成本，并帮助 Wandercraft 把新外骨骼 Eve 推向市场。公告落款 Boulogne-Billancourt。投资金额未披露。
+counterparties:
+- Renault Group
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.wandercraft.eu/articles/renault-group-finalises-a-strategic-partnership-with-wandercraft
+  publisher: Wandercraft 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/wandercraft-2025-06-06-wandercraft-renault-calv.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2025-01-30-tesla-statement-optimus-shared-ai-system-10k
+date: 2025-01-30
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉 2024 年年报 10-K 表述：Optimus 由与自动驾驶同一套 AI 系统控制
+summary:
+  zh: 1 月 30 日，特斯拉向 SEC 提交 2024 财年 10-K 年报。文件在业务描述部分写道，公司把自动驾驶技术中的人工智能成果应用到机器人领域，例如仍在研发中的人形机器人 Optimus，「由同一套 AI 系统控制」（controlled by the same AI system）。该表述出现在介绍得州超级工厂训练集群 Cortex 的段落之后，是 Optimus 在这份年报中的唯一一处提及。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm
+  publisher: SEC EDGAR（Tesla, Inc. 2024 财年 Form 10-K）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/sec-2025-01-30-tesla-10k-fy2024.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2025-04-23-foundation-robotics-statement-phantom-tech-route
+date: 2025-04-23
+date_precision: day
+type: statement
+orgs:
+- id: foundation-robotics
+  role: subject
+title:
+  zh: Foundation 公开 Phantom 的技术路线：滚动接触齿轮箱、纯相机感知、混合 AI
+summary:
+  zh: 4 月 23 日，Humanoids Daily 刊出对 Foundation 的报道，记录公司对 Phantom 技术路线的说明：传动上采用滚动接触（rolling-contact）齿轮箱；感知上跟随特斯拉的做法，只用相机，不用激光雷达或其他传感器，以降低系统复杂度；早期进工业场景的 Phantom 采用有线供电，电池版本在后续规划中。报道称公司在旧金山与慕尼黑设有办公室，团队来自美国 IHMC 相关研究组与慕尼黑工业大学，Phantom 的早期用途集中在汽车制造（如零件上下架）与物流（搬箱）。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  data_modality: [rgb]
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://www.humanoidsdaily.com/news/foundation-emerges-with-phantom-humanoid-betting-on-novel-actuators-and-hybrid-ai
+  publisher: Humanoids Daily
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/humanoidsdai-2025-04-23-foundation-robotics-phan.html
+corroboration: single

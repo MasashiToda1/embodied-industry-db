@@ -1,0 +1,27 @@
+id: evt-2025-01-31-foundation-robotics-product_launch-phantom-mk1-public-debut
+date: 2025-01-31
+date_precision: day
+date_basis: derived
+date_as_stated: 原文只写活动名「Tech GigaParty」与「a club night marking 25 years of the 21st century」，未在可存快照的页面上写出具体日期
+type: product_launch
+orgs:
+- id: foundation-robotics
+  role: subject
+title:
+  zh: Foundation 的人形机器人 Phantom MK1 首次公开亮相
+summary:
+  zh: Foundation 的首款人形机器人 Phantom MK1 在旧金山 Temple Nightclub 的「Tech GigaParty」活动上首次公开亮相，接在一名人类 DJ 之后打了 30 分钟碟。报道称这套动作是预先编程的，曲目由人提前选定，公司花了数周训练机器人的每个动作。报道还称公司把 Phantom 定位于军事用途、仓储管理与汽车制造，当时的军方用途集中在偏远地区的飞机维护与加油。公司此前通过收购佛罗里达的 Boardwalk Robotics（其人形机器人 Alex 于 2024 年 8 月发布）扩充能力。
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://interestingengineering.com/innovation/humanoid-robot-ditches-war-to-dj
+  publisher: Interesting Engineering
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/interestinge-2025-01-31-foundation-robotics-phan.html
+- url: https://nypost.com/2025/02/18/lifestyle/war-robot-designed-for-defense-bizarrely-performs-dj-set-at-nightclub-a-fun-moment/
+  publisher: New York Post
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/nypost-2025-01-31-foundation-phantom-debut.html
+corroboration: multi

@@ -1,0 +1,21 @@
+id: evt-2025-03-15-figure-ai-corporate-botq-factory
+date: 2025-03-15
+date_precision: day
+type: corporate
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure AI 公布自建人形机器人工厂 BotQ，首代产线年产能上限 12000 台
+summary:
+  zh: 3 月 15 日，Figure AI 公布自建的人形机器人高产量制造基地 BotQ，称首代产线年产能上限为 12000 台人形机器人，并规划四年内把产能扩到 10 万台机器人、300 万台执行器。官方称硬件与制造工程团队用了此前八个月搭建产线，为量产从头重做了下一代机器人的整机架构（用注塑、压铸、金属注射成型、冲压替代原型阶段的 CNC 加工），并引入 MES、PLM、ERP、WMS 等制造软件；执行器、电机、传感器、电池包与电子件由公司自行设计，核心部件在内部装配，部分零件外协。
+axes:
+  hardware_strategy: [in-house]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.figure.ai/news/botq
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/figure-2025-03-15-figure-ai-botq.html
+corroboration: single

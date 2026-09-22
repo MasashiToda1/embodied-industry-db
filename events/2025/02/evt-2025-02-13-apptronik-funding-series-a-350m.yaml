@@ -1,0 +1,27 @@
+id: evt-2025-02-13-apptronik-funding-series-a-350m
+date: 2025-02-13
+date_precision: day
+type: funding
+orgs:
+- id: apptronik
+  role: subject
+title:
+  zh: Apptronik 完成 3.5 亿美元 A 轮融资
+summary:
+  zh: 2 月 13 日，Apptronik 宣布完成 3.5 亿美元 A 轮融资，由 B Capital 与 Capital Factory 联合领投，Google 参投。公告称此前公司累计融资仅 2800 万美元，本轮资金用于 Apollo 人形机器人的部署、扩大运营与团队。公告回顾，公司 2022 年与 NASA 合作，与 NVIDIA 合作演示灵巧操作并把 Apollo 放进 Omniverse 数字孪生，并与 Google DeepMind 机器人团队建立战略合作，还与 Mercedes-Benz 和 GXO Logistics 签下商业协议。
+counterparties:
+- B Capital
+- Capital Factory
+- Google
+amount:
+  value: 350000000
+  currency: USD
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://apptronik.com/news-collection/apptronik-raises-350-million-in-series-a-funding
+  publisher: Apptronik 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/apptronik-2025-02-13-apptronik-series-a-350m.html
+corroboration: single

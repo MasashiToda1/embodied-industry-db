@@ -1,0 +1,20 @@
+id: evt-2025-01-27-1x-technologies-funding-kind-humanoid-acquisition
+date: 2025-01-27
+date_precision: day
+type: funding
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X Technologies 收购家用人形机器人公司 Kind Humanoid
+summary:
+  zh: 1 月 27 日，1X Technologies 宣布收购 Kind Humanoid，两家团队合并。Kind Humanoid 是一家位于加州 Palo Alto 的机器人公司，产品为双足人形机器人 Mona，面向家庭与医疗等场景，把仿生机身与大语言模型结合。1X 称此次收购会同时扩充其湾区团队。交易金额未披露。1X 后来向 The Robot Report 确认，Kind Humanoid 的工作没有整合进 NEO Gamma。
+counterparties:
+- Kind Humanoid
+evidence:
+- url: https://www.1x.tech/discover/1x-acquires-kind-humanoid
+  publisher: 1X Technologies 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/1x-2025-01-27-1x-technologies-kind-hum.html
+corroboration: single

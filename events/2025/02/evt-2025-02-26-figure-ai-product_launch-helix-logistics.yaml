@@ -1,0 +1,24 @@
+id: evt-2025-02-26-figure-ai-product_launch-helix-logistics
+date: 2025-02-26
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure AI 公布 Helix 在物流包裹分拣场景的新版本，System 1 加入立体视觉与在线自校准
+summary:
+  zh: 2 月 26 日，Figure AI 公布 Helix 的新落地场景——物流包裹搬运与分拣（把包裹从一条传送带转到另一条，并把面单转到朝下以便扫描），同时公布 Helix System 1 的四项改动：隐式立体视觉、多尺度视觉表征、学习式视觉本体感知（各机器人用机载视觉估计末端 6D 位姿实现在线自校准，支持跨机迁移）、以及在推理时对动作块做线性重采样的「Sport Mode」加速（可获得 20% 的测试期加速）。官方称 8 小时经过筛选的演示数据即可训练出可用策略。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [teleop]
+  data_modality: [rgb, joint-trajectory]
+  target_scene: [logistics-warehouse]
+evidence:
+- url: https://www.figure.ai/news/helix-logistics
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/figure-2025-02-26-figure-ai-helix-logistic.html
+corroboration: single

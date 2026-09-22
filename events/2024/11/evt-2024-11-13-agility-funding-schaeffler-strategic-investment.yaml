@@ -1,0 +1,23 @@
+id: evt-2024-11-13-agility-funding-schaeffler-strategic-investment
+date: 2024-11-13
+date_precision: day
+type: funding
+orgs:
+- id: agility
+  role: subject
+- id: schaeffler
+  role: investor
+title:
+  zh: Agility Robotics获 Schaeffler 少数股权投资，并签下其全球工厂采购协议
+summary:
+  zh: 11 月 13 日，Agility Robotics 在 Web Summit 上宣布 Schaeffler 对公司做了少数股权投资，同时双方签署协议，Schaeffler 计划采购 Agility 的人形机器人用于其全球工厂网络。Schaeffler 首席运营官在公告中说，公司会把这项技术整合进生产运营，并看到在其全球 100 家工厂里到 2030 年部署相当数量人形机器人的潜力。投资金额未披露。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-announces-strategic-investment-and-agreement-with-motion-technology-company-schaeffler-group
+  publisher: Agility Robotics 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/agilityrobot-2024-11-13-agility-schaeffler-inves.html
+corroboration: single

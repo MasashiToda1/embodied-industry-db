@@ -1,0 +1,25 @@
+id: evt-2025-02-21-1x-technologies-product_launch-neo-gamma
+date: 2025-02-21
+date_precision: day
+type: product_launch
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X Technologies 发布家用人形机器人 NEO Gamma
+summary:
+  zh: 2 月 21 日，1X Technologies 发布新一代家用人形机器人 NEO Gamma。官方列出的改动包括：面向家居的外观设计与 Emotive Ear Rings 灯环反馈；多用途全身控制器，可用接近人类的步态行走并摆臂、下蹲从地面取物、坐进椅子，这些动作技能以 100 Hz 运行，用强化学习从人体动捕数据里学得；训练了视觉操作模型，可在训练时未见过的场景里抓取多种物体，网络直接从原始传感器数据预测遥操作动作；新增自研语言模型驱动的对话与肢体语言功能。关节用 1X 的 Tendon Drive 驱动并包软质外壳做被动安全，外层针织套由日本岛精机器 3D 打印尼龙一体成型。官方称该设计让公司可以开始内部家庭测试。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [home]
+  control_route: [rl]
+  data_acquisition: [mocap, teleop]
+  model_form: [end2end-vla, hierarchical]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.1x.tech/discover/introducing-neo-gamma
+  publisher: 1X Technologies 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/1x-2025-02-21-1x-technologies-neo-gamm.html
+corroboration: single

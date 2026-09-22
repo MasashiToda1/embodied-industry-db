@@ -1,0 +1,25 @@
+id: evt-2025-08-20-boston-dynamics-product_launch-atlas-large-behavior-model
+date: 2025-08-20
+date_precision: day
+type: product_launch
+orgs:
+- id: boston-dynamics
+  role: subject
+- id: tri
+  role: counterparty
+title:
+  zh: 波士顿动力与 TRI 公布驱动 Atlas 的大行为模型，单一策略完成长序列全身操作
+summary:
+  zh: 8 月 20 日，波士顿动力与丰田研究院（TRI）公布用大行为模型（LBM）驱动 Atlas 的进展，并联合发布视频：Atlas 用一套端到端语言条件策略连续完成需要把操作与移动结合起来的长流程任务。技术细节写在波士顿动力博客里：策略采用 450M 参数的 Diffusion Transformer 架构配 flow matching 目标，输入为本体感知、图像与指定任务的语言提示，图像以 30 Hz 进入，网络用历史观测预测长度 48（对应 1.6 秒）的动作块，每次推理通常执行其中 24 个动作（1 倍速下 0.8 秒），以 30 Hz 控制整台 Atlas。策略构建流程为四步：在真机与仿真里用遥操作采集具身行为数据、处理与标注与筛选数据、用全部任务的数据训练单一网络策略、用测试任务集评测。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [end2end-vla]
+  data_acquisition: [teleop, real-robot, sim-generated]
+  data_modality: [rgb, joint-trajectory, language-annotated]
+evidence:
+- url: https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/
+  publisher: 波士顿动力官网博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/bostondynami-2025-08-20-boston-dynamics-atlas-lb.html
+corroboration: single

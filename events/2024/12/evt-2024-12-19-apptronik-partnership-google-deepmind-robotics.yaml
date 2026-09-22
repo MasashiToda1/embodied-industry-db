@@ -1,0 +1,25 @@
+id: evt-2024-12-19-apptronik-partnership-google-deepmind-robotics
+date: 2024-12-19
+date_precision: day
+type: partnership
+orgs:
+- id: apptronik
+  role: subject
+- id: gdm-robotics
+  role: counterparty
+title:
+  zh: Apptronik 与 Google DeepMind 机器人团队签署战略合作协议
+summary:
+  zh: 12 月 19 日，Apptronik 宣布与 Google DeepMind 机器人团队签署战略合作协议，把 Google DeepMind 的 AI 与 Apptronik 的人形机器人硬件和具身智能结合，做在动态环境中可用的人形机器人。公告称 Google DeepMind 机器人团队在基础模型与 Gemini 等模型上的工作会用于机器人应用。公告同时提到，Apollo 发布不到一年，Apptronik 已与 GXO 与 Mercedes-Benz 建立合作。
+counterparties:
+- GXO Logistics
+- Mercedes-Benz
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://apptronik.com/news-collection/apptronik-partners-with-google-deepmind-robotics
+  publisher: Apptronik 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/apptronik-2024-12-19-apptronik-gdm-partnershi.html
+corroboration: single

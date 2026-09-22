@@ -1,0 +1,23 @@
+id: evt-2025-02-04-wandercraft-deployment-personal-exoskeleton-pivotal-trial
+date: 2025-02-04
+date_precision: day
+type: deployment
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Wandercraft 启动个人外骨骼的关键临床试验，落地两家康复机构
+summary:
+  zh: 2 月 4 日，Wandercraft 宣布启动其 Personal Exoskeleton（自平衡个人外骨骼）的关键临床试验。试验在纽约布朗克斯的 James J. Peters VA Medical Center 进行，并将在新泽西 West Orange 的 Kessler Institute for Rehabilitation 展开，评估该设备用于脊髓损伤（SCI）人群的安全性与有效性。招募对象为 18 岁及以上、T6 及以上节段完全或不完全运动性脊髓损伤者，且需有一名体能允许的同伴在训练中协助。
+counterparties:
+- James J. Peters VA Medical Center
+- Kessler Institute for Rehabilitation
+axes:
+  target_scene: [healthcare]
+evidence:
+- url: https://www.wandercraft.eu/articles/wandercraft-launches-pivotal-clinical-trial-of-its-groundbreaking-personal-exoskeleton
+  publisher: Wandercraft 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/wandercraft-2025-02-04-wandercraft-pivotal-tria.html
+corroboration: single

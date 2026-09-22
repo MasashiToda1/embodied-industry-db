@@ -1,0 +1,23 @@
+id: evt-2025-03-18-sanctuary-ai-statement-isaac-lab-sim-to-real
+date: 2025-03-18
+date_precision: day
+type: statement
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 说明用 NVIDIA Isaac Lab 训练液压灵巧手并做仿真到现实迁移
+summary:
+  zh: 3 月 18 日，Sanctuary AI 发布技术文章，说明公司用 NVIDIA Isaac Lab（建在 Isaac Sim 上，用 PhysX 做物理仿真、RTX 做渲染）搭建面向灵巧操作的训练环境，先在仿真里训练液压手完成操作任务，再迁移到真机。公司称自家手的运动学超出人手能力范围，无法用对应的遥操作方式驱动，因此在仿真环境里做在线强化学习，让算法充分利用手的能力，并能同时训练上千只手来加速学习过程。
+axes:
+  sim_stack: [isaac-lab, isaac-sim]
+  control_route: [rl]
+  data_acquisition: [sim-generated]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://sanctuary.ai/news/sanctuary-ai-leverages-isaac-lab/
+  publisher: Sanctuary AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/sanctuary-2025-03-18-sanctuary-ai-isaac-lab.html
+corroboration: single
