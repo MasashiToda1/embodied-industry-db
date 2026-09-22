@@ -1,0 +1,19 @@
+id: evt-2025-03-iso-tc299-statement-iso-22166-202-published
+date: '2025-03'
+date_precision: month
+type: statement
+orgs:
+- id: iso-tc299
+  role: subject
+title:
+  zh: "ISO/TC 299 归口的 ISO 22166-202:2025 服务机器人软件模块信息模型标准发布"
+  en: "ISO 22166-202:2025 Robotics — Modularity for service robots — Part 202 published"
+summary:
+  zh: "ISO 官网项目页显示，ISO/TC 299 归口的 ISO 22166-202:2025《机器人 — 服务机器人模块化 — 第 202 部分：软件模块信息模型》于 2025 年 3 月发布，进入阶段 60.60（国际标准已出版），第 1 版共 61 页。该文件规定服务机器人软件模块信息模型的要求与建议，把接口分为变量与方法两类，适用于设计、开发、运行与维护阶段。"
+evidence:
+- url: https://www.iso.org/standard/84589.html
+  publisher: ISO 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/iso-2025-03-iso-tc299-iso-22166-202-.html
+corroboration: single

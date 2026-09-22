@@ -1,0 +1,21 @@
+id: evt-2025-06-19-cie-statement-five-humanoid-industry-standards-approved
+date: '2025-06-19'
+date_precision: day
+type: statement
+orgs:
+- id: cie
+  role: subject
+title:
+  zh: 中国电子学会提出的五项人形机器人行业标准获批立项并公开征集参编单位
+summary:
+  zh: 6 月 19 日，中国电子学会发布通知：根据《工业和信息化部办公厅关于印发 2025 年第二批行业标准制修订和外文版项目计划的通知》（工信厅科函〔2025〕210 号），由学会提出的《人形机器人 基础共性 训练场构建技术规范》（计划号 2025-0483T-YD）、《人形机器人 基础共性 训练数据管理要求》（2025-0484T-YD）、《人形机器人 基础共性 智能化能力分级》（2025-0485T-YD）、《人形机器人 零部件及组件 电驱动一体化关节技术规范》（2025-0486T-YD）、《人形机器人 零部件及组件 灵巧手技术规范》（2025-0487T-YD）共 5 项行业标准已批准立项，通知同时公开征集参编单位，申报截止 2025 年 6 月 30 日。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.cie.org.cn/list_43/15188.html
+  publisher: 中国电子学会官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/cie-2025-06-19-cie-five-humanoid-indust.html
+corroboration: single

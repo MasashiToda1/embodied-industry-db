@@ -1,0 +1,23 @@
+id: evt-2025-08-25-ul-solutions-corporate-korea-service-robot-lab
+date: '2025-08-25'
+date_precision: day
+type: corporate
+orgs:
+- id: ul-solutions
+  role: subject
+title:
+  zh: UL Solutions 在韩国义王市开设首个商用与服务机器人测试实验室
+  en: UL Solutions opens its first commercial and service robot testing laboratory
+summary:
+  zh: 8 月 25 日，UL Solutions 宣布开设旗下首个商用与服务机器人测试实验室，位于韩国京畿道义王市（首尔以南 39 公里），面向家庭、零售、餐厅、学校与公共场所使用的机器人提供测试与认证服务，重点关注人机交互带来的风险。实验室以 UL 3300《服务、通信、信息、教育和娱乐机器人安全标准》符合性测试为主，覆盖移动性、火灾与电击危险、外部操纵以及与弱势人群的交互等。
+axes:
+  target_scene:
+  - commercial-service
+  - home
+evidence:
+- url: https://www.ul.com/news/ul-solutions-opens-first-commercial-and-service-robot-testing-laboratory
+  publisher: UL Solutions 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/ul-2025-08-25-ul-solutions-korea-robot.html
+corroboration: single

@@ -1,0 +1,22 @@
+id: evt-2025-04-26-crrc-shenyang-statement-humanoid-joint-cr-rule
+date: '2025-04-26'
+date_precision: day
+type: statement
+orgs:
+- id: crrc-shenyang
+  role: subject
+title:
+  zh: "《人形机器人一体化关节 CR 认证实施规则》与《机器人一体化关节技术规范》在 2025 人形机器人产业高质量发展论坛发布"
+summary:
+  zh: 4 月 26 日，2025 人形机器人产业高质量发展论坛在上海召开，论坛由中国机电一体化技术应用协会与国家机器人检测与评定中心（总部）指导。会上发布 CR-3-05：2025《人形机器人一体化关节 CR 认证实施规则》与 CR-3-05TS：2025《机器人一体化关节技术规范》，两份文件由上海机器人产业技术研究院牵头，国地共建具身智能机器人创新中心、人形机器人（上海）有限公司、杭州宇树科技有限公司、北京小米机器人技术有限公司等参与制定。规则从性能要求、智能化、安全要求、功能安全、信息安全、电磁兼容、可靠性、环境适应性等方面提出考核指标及测试方法。
+counterparties:
+- 机器人检测认证联盟
+- 中国机电一体化技术应用协会
+- 上海机器人产业技术研究院
+evidence:
+- url: https://www.sri-robot.com/news/1204.html
+  publisher: 上海机器人产业技术研究院（国家机器人检测与评定中心总部承建单位）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/sri-robot-2025-04-26-crrc-shenyang-joint-cr-r.html
+corroboration: single
