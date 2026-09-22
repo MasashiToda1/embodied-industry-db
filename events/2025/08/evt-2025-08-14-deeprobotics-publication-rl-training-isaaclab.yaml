@@ -1,0 +1,26 @@
+id: evt-2025-08-14-deeprobotics-publication-rl-training-isaaclab
+date: '2025-08-14'
+date_precision: day
+type: publication
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处开源基于 Isaac Lab 的强化学习训练库 rl_training
+summary:
+  zh: 8 月 14 日，云深处在 GitHub 组织 DeepRoboticsLab 下创建并公开 rl_training 仓库，仓库描述为「RL_Training Repo Based on Isaaclab」，定位为面向云深处机器人的强化学习训练库，训练出的策略配套该组织下的部署仓库使用，许可为 BSD-3-Clause。截至 2026 年 9 月抓取时，README 列出的训练环境覆盖 Lite3、M20 与 DR02 三款机型，依赖 Isaac Sim、Isaac Lab 与 RSL-RL。
+axes:
+  embodiment_form:
+  - quadruped
+  control_route:
+  - rl
+  sim_stack:
+  - isaac-lab
+  - isaac-sim
+evidence:
+- url: https://github.com/DeepRoboticsLab/rl_training
+  publisher: 云深处 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-14-deeprobotics-rl-training.html
+corroboration: single

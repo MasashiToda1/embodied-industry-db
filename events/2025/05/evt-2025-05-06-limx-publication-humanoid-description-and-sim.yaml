@@ -1,0 +1,31 @@
+id: evt-2025-05-06-limx-publication-humanoid-description-and-sim
+date: '2025-05-06'
+date_precision: day
+type: publication
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力开源全尺寸人形机器人模型与 MuJoCo 仿真环境
+summary:
+  zh: 5 月 6 日，逐际动力在 GitHub 账号 limxdynamics 下同日创建并公开 humanoid-description 与 humanoid-mujoco-sim 两个仓库。前者提供全尺寸人形机器人 HU_D03、HU_D04 的 URDF、MuJoCo MJCF 与 USD 模型，适配 ROS、MuJoCo 与 NVIDIA Isaac Sim；后者是这两款人形机器人的 MuJoCo 仿真环境，用于可视化模型、测试运动控制器并在部署到硬件前验证强化学习策略。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  sim_stack:
+  - mujoco
+  - isaac-sim
+  control_route:
+  - rl
+evidence:
+- url: https://github.com/limxdynamics/humanoid-description
+  publisher: 逐际动力 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-06-limx-humanoid-descriptio.html
+- url: https://github.com/limxdynamics/humanoid-mujoco-sim
+  publisher: 逐际动力 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-06-limx-humanoid-mujoco-sim.html
+corroboration: single

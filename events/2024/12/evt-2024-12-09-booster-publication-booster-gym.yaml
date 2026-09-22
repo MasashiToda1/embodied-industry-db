@@ -1,0 +1,23 @@
+id: evt-2024-12-09-booster-publication-booster-gym
+date: '2024-12-09'
+date_precision: day
+type: publication
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化开源人形机器人强化学习框架 Booster Gym
+summary:
+  zh: 12 月 9 日，加速进化在 GitHub 账号 BoosterRobotics 下创建并公开 booster_gym 仓库。README 写明 Booster Gym 是由加速进化开发的人形机器人运动强化学习框架，覆盖训练到实机部署的流程，并给出 T1 实机部署演示。该仓库是加速进化开源项目中 star 数最高的一个。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+evidence:
+- url: https://github.com/BoosterRobotics/booster_gym
+  publisher: 加速进化 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/github-2024-12-09-booster-gym-repo.html
+corroboration: single

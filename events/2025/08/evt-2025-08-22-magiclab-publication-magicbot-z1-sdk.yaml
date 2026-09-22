@@ -1,0 +1,21 @@
+id: evt-2025-08-22-magiclab-publication-magicbot-z1-sdk
+date: '2025-08-22'
+date_precision: day
+type: publication
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子开源 Magicbot-Z1 二次开发 SDK
+summary:
+  zh: 8 月 22 日，魔法原子在 GitHub 组织 MagiclabRobotics 下创建并公开 magicbot-z1_sdk 仓库，仓库描述为「SDK for secondary development with Magicbot-Z1」，配套中英文 SDK 文档，运行环境要求 Ubuntu 22.04 及以上，许可为 BSD-3-Clause。同期该组织还公开了 magicbot-z1_description 与 magicdog_sdk 两个仓库。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://github.com/MagiclabRobotics/magicbot-z1_sdk
+  publisher: 魔法原子 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-22-magiclab-z1-sdk.html
+corroboration: single

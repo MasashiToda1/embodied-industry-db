@@ -1,0 +1,21 @@
+id: evt-2025-05-29-magiclab-publication-magicbot-gen1-sdk
+date: '2025-05-29'
+date_precision: day
+type: publication
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子开源 Magicbot-Gen1 二次开发 SDK
+summary:
+  zh: 5 月 29 日，魔法原子在 GitHub 组织 MagiclabRobotics 下创建并公开 magicbot-gen1_sdk 仓库，面向 Magicbot-Gen1 人形机器人的二次开发，随仓库提供中英文 SDK 文档。README 写明运行环境为 Ubuntu 22.04 及以上，需配置实时优先级与套接字接收缓冲区，仓库主语言为 Python，许可为 BSD-3-Clause。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://github.com/MagiclabRobotics/magicbot-gen1_sdk
+  publisher: 魔法原子 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-29-magiclab-gen1-sdk.html
+corroboration: single

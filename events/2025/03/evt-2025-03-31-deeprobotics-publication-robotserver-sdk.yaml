@@ -1,0 +1,21 @@
+id: evt-2025-03-31-deeprobotics-publication-robotserver-sdk
+date: '2025-03-31'
+date_precision: day
+type: publication
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处开源导航控制接口库 robotserver_sdk
+summary:
+  zh: 3 月 31 日，云深处在 GitHub 组织 DeepRoboticsLab 下创建并公开 robotserver_sdk 仓库。中文 README 写明该 SDK 提供控制和监控机器狗导航任务的接口，封装底层协议与网络通信，功能包括连接与断开机器狗控制系统、获取实时状态、下发与取消导航任务、查询导航任务执行状态；要求 C++17、CMake 3.10、Boost 1.66 以上，许可为 MIT。
+axes:
+  embodiment_form:
+  - quadruped
+evidence:
+- url: https://github.com/DeepRoboticsLab/robotserver_sdk
+  publisher: 云深处 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-31-deeprobotics-robotserver.html
+corroboration: single

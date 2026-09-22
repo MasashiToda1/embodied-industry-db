@@ -1,0 +1,25 @@
+id: evt-2025-07-05-limx-publication-humanoid-rl-deploy-python
+date: '2025-07-05'
+date_precision: day
+type: publication
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力开源人形机器人 Python 版强化学习部署仓库
+summary:
+  zh: 7 月 5 日，逐际动力在 GitHub 账号 limxdynamics 下创建并公开 humanoid-rl-deploy-python 仓库，用于把训练结果部署到人形机器人，README 给出的工作流是先拉取 humanoid-mujoco-sim 仿真器再拉取该运动控制算法仓库，经 ONNX 运行时在仿真与实机上运行。同月该账号还公开了 humanoid-rl-deploy-cpp（7 月 17 日）与 humanoid-rl-deploy-ros2（7 月 28 日）两个对应版本。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://github.com/limxdynamics/humanoid-rl-deploy-python
+  publisher: 逐际动力 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-05-limx-humanoid-rl-deploy-.html
+corroboration: single

@@ -1,0 +1,25 @@
+id: evt-2024-09-18-deeprobotics-publication-robot-training-cases
+date: '2024-09-18'
+date_precision: day
+type: publication
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处开源 Lite3 实训案例集 Robot_Training_Cases
+summary:
+  zh: 9 月 18 日，云深处在 GitHub 组织 DeepRoboticsLab 下创建并公开 Robot_Training_Cases 仓库。README 写明这是基于杭州云深处科技教育科研类四足机器人 Lite3 激光版的实训案例参考资料，目录覆盖基础知识与操作体验、仿真环境及部署、运动开发入门、感知开发入门、单关节控制、基于 VMC 的运动控制、基于强化学习的训练及部署、激光定位建图与导航等案例，许可为 MIT。
+axes:
+  embodiment_form:
+  - quadruped
+  target_scene:
+  - education-research
+  control_route:
+  - rl
+evidence:
+- url: https://github.com/DeepRoboticsLab/Robot_Training_Cases
+  publisher: 云深处 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-18-deeprobotics-training-ca.html
+corroboration: single

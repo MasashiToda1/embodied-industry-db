@@ -1,0 +1,25 @@
+id: evt-2024-09-14-limx-publication-tron1-rl-deploy-python
+date: '2024-09-14'
+date_precision: day
+type: publication
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力开源 TRON1 的 Python 版强化学习部署仓库
+summary:
+  zh: 9 月 14 日，逐际动力在 GitHub 账号 limxdynamics 下创建并公开 tron1-rl-deploy-python 仓库，仓库描述为面向 TRON1 机器人的 Python 强化学习部署，使用 ONNX 运行时推理，配合同组织的 tron1-mujoco-sim 仿真器与 limxsdk 运动控制开发库完成仿真验证与实机部署。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://github.com/limxdynamics/tron1-rl-deploy-python
+  publisher: 逐际动力 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-14-limx-tron1-rl-deploy-pyt.html
+corroboration: single

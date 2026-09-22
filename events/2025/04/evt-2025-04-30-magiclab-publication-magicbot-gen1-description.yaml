@@ -1,0 +1,23 @@
+id: evt-2025-04-30-magiclab-publication-magicbot-gen1-description
+date: '2025-04-30'
+date_precision: day
+type: publication
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子开源 Magicbot-Gen1 机器人描述文件仓库
+summary:
+  zh: 4 月 30 日，魔法原子在 GitHub 组织 MagiclabRobotics 下创建并公开 magicbot-gen1_description 仓库，提供全尺寸人形机器人 Magicbot-Gen1 的 URDF 与 MJCF 模型。README 写明该描述包由 Magiclab Robotics 开发，Magicbot-Gen1 共 30 个关节，仓库采用 BSD-3-Clause 许可，示例覆盖 RViz 与 MuJoCo 两种可视化环境。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  sim_stack:
+  - mujoco
+evidence:
+- url: https://github.com/MagiclabRobotics/magicbot-gen1_description
+  publisher: 魔法原子 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/github-2025-04-30-magiclab-gen1-descriptio.html
+corroboration: single

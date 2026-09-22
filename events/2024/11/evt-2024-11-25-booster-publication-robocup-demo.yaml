@@ -1,0 +1,23 @@
+id: evt-2024-11-25-booster-publication-robocup-demo
+date: '2024-11-25'
+date_precision: day
+type: publication
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化开源 RoboCup 比赛示例代码 robocup_demo
+summary:
+  zh: 11 月 25 日，加速进化在 GitHub 账号 BoosterRobotics 下创建并公开 robocup_demo 仓库，仓库描述写明这是 Booster T1 与 K1 的 RoboCup 官方示例，使机器人能够自主参与足球比赛。仓库后续维护了适配新版 RoboCup 规则与 GameController 的分支，涵盖比赛通信行为、5v5 比赛支持与哨声检测。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+evidence:
+- url: https://github.com/BoosterRobotics/robocup_demo
+  publisher: 加速进化 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-25-booster-robocup-demo-rep.html
+corroboration: single

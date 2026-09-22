@@ -1,0 +1,23 @@
+id: evt-2025-07-25-magiclab-publication-gen1-pi0-demo
+date: '2025-07-25'
+date_precision: day
+type: publication
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子开源 Magicbot-Gen1 的 pi0 双臂操作实现 magicbot-gen1_pi0_demo
+summary:
+  zh: 7 月 25 日，魔法原子在 GitHub 组织 MagiclabRobotics 下创建并公开 magicbot-gen1_pi0_demo 仓库。README 写明这是开源 VLA 模型 pi0 在 Magicbot-Gen1 人形机器人上用于双臂灵巧操作的官方实现，覆盖数据预处理与模型训练的完整流程，并指向 Physical Intelligence 的 openpi 官方指南。仓库主语言为 Python，许可为 Apache-2.0。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://github.com/MagiclabRobotics/magicbot-gen1_pi0_demo
+  publisher: 魔法原子 GitHub
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-25-magiclab-gen1-pi0-demo.html
+corroboration: single
