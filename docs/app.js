@@ -164,11 +164,57 @@ async function pageOrgs() {
   await load(); nav('orgs');
   const id = qs.get('id');
   if (id) return pageOrg(id);
-  const byLayer = {};
-  D.orgs.forEach(o => (o.layers || []).forEach(l => (byLayer[l] = byLayer[l] || []).push(o)));
-  $('main').innerHTML = `<div class="wrap"><h1>主体</h1><div class="sub">${D.orgs.length} 家，按产业层分组；一家可占多层。点名字进主体页。灰字＝暂无事件（stub）。</div>
-    ${Object.entries(D.layers).map(([l, z]) => { const list = (byLayer[l] || []).sort((a, b) => b.event_count - a.event_count || a.names.zh.localeCompare(b.names.zh, 'zh')); return `<div class="card" style="margin-bottom:12px"><h3 style="margin:0 0 8px;font-size:14px">${z} <span class="muted" style="font-weight:400">${list.length}</span></h3>
-      ${list.map(o => `<a class="tag ${o.event_count ? '' : 'soft'}" href="org.html?id=${o.id}">${esc(o.names.zh)}${o.event_count ? ` <span class="muted">${o.event_count}</span>` : ''}</a>`).join('')}</div>`; }).join('')}</div>`;
+  // 每家的最近一条事件（D.events 已按日期倒序）
+  const latest = {};
+  D.events.forEach(e => (e.orgs || []).forEach(o => { if (!latest[o.id]) latest[o.id] = e; }));
+  const F = { layer: new Set(), hq: new Set() };
+  let sort = 'active', showStub = false;
+  const nLayer = {}, nHq = {};
+  const hqOf = o => (o.hq && (o.hq.country || Object.values(o.hq)[0])) || '';
+  D.orgs.forEach(o => { (o.layers || []).forEach(l => nLayer[l] = (nLayer[l] || 0) + 1); const h = hqOf(o); if (h) nHq[h] = (nHq[h] || 0) + 1; });
+  const layerOpts = Object.entries(D.layers).map(([k, zh]) => ({ k, zh, n: nLayer[k] || 0 })).sort((a, b) => b.n - a.n);
+  const hqOpts = Object.keys(nHq).sort((a, b) => nHq[b] - nHq[a]).map(k => ({ k, zh: k, n: nHq[k] }));
+
+  $('main').innerHTML = `<div class="wrap"><h1>主体</h1><div class="sub"></div>
+    <div class="fbar" id="fbar"><span class="spacer" style="flex:1"></span>
+      <button class="fbtn sortbtn" data-sort="active">最近活动</button><button class="fbtn sortbtn" data-sort="events">事件数</button><button class="fbtn sortbtn" data-sort="name">名称</button></div>
+    <div class="fchips" id="fchips"></div>
+    <div class="cards" id="cards"></div>
+    <div id="stubs"></div></div>`;
+  const menus = [
+    facetMenu('layer', '产业层', layerOpts, F.layer, () => render()),
+    facetMenu('hq', '总部', hqOpts, F.hq, () => render()),
+  ];
+  const bar = $('#fbar'); menus.reverse().forEach(m => bar.prepend(m));
+  $$('[data-sort]').forEach(b => b.onclick = () => { sort = b.dataset.sort; render(); });
+
+  const card = o => {
+    const le = latest[o.id]; const stack = Object.entries(o.stack || {}).flatMap(([f, xs]) => xs.map(x => ({ f, v: x.value }))).slice(0, 4);
+    return `<a class="ocard ${o.event_count ? '' : 'stub'}" href="org.html?id=${o.id}">
+      <div class="oc-head"><b>${esc(o.names.zh)}</b><span class="muted">${esc(o.names.en || '')}</span></div>
+      <div class="oc-meta">${(o.layers || []).map(l => `<span class="chip">${D.layers[l] || l}</span>`).join('')}${hqOf(o) ? `<span class="muted"> ${esc(hqOf(o))}${o.founded ? ' · ' + o.founded : ''}</span>` : ''}</div>
+      ${stack.length ? `<div class="oc-stack">${stack.map(s => `<span class="chip a">${label(s.f + ':' + s.v, s.v)}</span>`).join('')}</div>` : ''}
+      <div class="oc-foot">${le ? `<span class="mono">${le.date}</span> <span class="oc-ev">${esc(le.title.zh)}</span>` : '<span class="muted">暂无收录事件</span>'}<span class="oc-n">${o.event_count || ''}</span></div>
+    </a>`;
+  };
+  const render = () => {
+    const pass = o => (!F.layer.size || (o.layers || []).some(l => F.layer.has(l))) && (!F.hq.size || F.hq.has(hqOf(o)));
+    const by = { active: (a, b) => (sortKey(latest[b.id] || { date: '0000' }) .localeCompare(sortKey(latest[a.id] || { date: '0000' }))) || b.event_count - a.event_count,
+                 events: (a, b) => b.event_count - a.event_count || a.names.zh.localeCompare(b.names.zh, 'zh'),
+                 name: (a, b) => a.names.zh.localeCompare(b.names.zh, 'zh') }[sort];
+    const list = D.orgs.filter(pass).sort(by);
+    const active = list.filter(o => o.event_count), stubs = list.filter(o => !o.event_count);
+    $$('[data-sort]').forEach(b => b.classList.toggle('on', b.dataset.sort === sort));
+    $('.sub').textContent = `${list.length} / ${D.orgs.length} 家 · ${active.length} 家有事件 · 卡片上是最近一条事件与已知的技术栈取值，点进去看全貌。`;
+    $('#cards').innerHTML = active.length ? active.map(card).join('') : '<div class="empty">没有匹配</div>';
+    $('#stubs').innerHTML = stubs.length ? `<button class="fbtn stub-toggle" id="stub-toggle">${showStub ? '收起' : '展开'}暂无事件的 ${stubs.length} 家 ${showStub ? '▴' : '▾'}</button>${showStub ? `<div class="cards">${stubs.map(card).join('')}</div>` : ''}` : '';
+    const st = $('#stub-toggle'); if (st) st.onclick = () => { showStub = !showStub; render(); };
+    const chips = ['layer', 'hq'].flatMap(f => [...F[f]].map(k => `<span class="fchip" data-f="${f}" data-k="${k}">${esc(f === 'layer' ? D.layers[k] : k)}<i>×</i></span>`));
+    $('#fchips').innerHTML = chips.length ? chips.join('') + `<span class="fchip clear" id="f-clear">清除全部</span>` : '';
+    $$('.fchip:not(.clear)').forEach(c => $('i', c).onclick = () => { F[c.dataset.f].delete(c.dataset.k); menus.forEach(m => m.redraw()); render(); });
+    const cl = $('#f-clear'); if (cl) cl.onclick = () => { Object.values(F).forEach(s => s.clear()); menus.forEach(m => m.redraw()); render(); };
+  };
+  render();
 }
 async function pageOrg(id) {
   const o = orgById[id];
