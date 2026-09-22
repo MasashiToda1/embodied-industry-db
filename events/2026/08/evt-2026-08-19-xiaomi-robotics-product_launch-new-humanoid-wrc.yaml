@@ -1,0 +1,21 @@
+id: evt-2026-08-19-xiaomi-robotics-product_launch-new-humanoid-wrc
+date: 2026-08-19
+date_precision: day
+type: product_launch
+orgs:
+- id: xiaomi-robotics
+  role: subject
+title:
+  zh: 小米新一代人形机器人在 2026 世界机器人大会首次亮相
+summary:
+  zh: 8 月 19 日，结束 4 个月汽车工厂实训的小米新一代人形机器人在 2026 世界机器人大会对外亮相，整套动作由具身大模型驱动自主决策执行。小米称该机器人仍处于样机研发阶段，国内首展后将前往欧洲展出；技术路线为全尺寸双足方案，采用「大脑 + 小脑」混合架构，自研 Mi-Sense 深度视觉感知系统。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [hierarchical]
+evidence:
+- url: https://www.jiemian.com/article/14953257.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/jiemian-2026-08-19-xiaomi-robotics-wrc-huma.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2026-04-23-pudu-funding-new-round
+date: 2026-04-23
+date_precision: day
+type: funding
+orgs:
+- id: pudu
+  role: subject
+title:
+  zh: 普渡机器人完成近 10 亿元融资，估值突破 100 亿元
+summary:
+  zh: 4 月 23 日，普渡机器人宣布完成近 10 亿元人民币新一轮融资，估值突破 100 亿元人民币。本轮由龙岗金控、亚投资本联合领投，北汽产投、蓝思科技、弘晖基金及珠三角、长三角多地政府引导基金参与；资金投向具身智能技术研发、产品矩阵扩充、全球市场拓展与产能建设。
+counterparties:
+- 龙岗金控
+- 亚投资本
+- 北汽产投
+- 蓝思科技
+- 弘晖基金
+evidence:
+- url: https://www.pudutech.com/zh-CN/news/pudu-robotics-raises-150-million-exceeds-1-5-billion-valuation
+  publisher: 普渡机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/pudutech-2026-04-23-pudu-funding.html
+- url: https://finance.sina.com.cn/wm/2026-04-23/doc-inhvnaik5536280.shtml
+  publisher: 新浪财经（转载 IPO 早知道）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/finance-2026-04-23-pudu-funding-sina.html
+corroboration: multi

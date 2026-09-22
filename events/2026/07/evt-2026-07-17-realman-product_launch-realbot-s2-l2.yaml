@@ -1,0 +1,22 @@
+id: evt-2026-07-17-realman-product_launch-realbot-s2-l2
+date: 2026-07-17
+date_precision: day
+type: product_launch
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼智能首发 RealBot-S2 与 RealBot-L2 轮式人形机器人
+summary:
+  zh: 7 月 17 日，2026 世界人工智能大会期间，睿尔曼智能全球首发 RealBot-S2 与 RealBot-L2 两款轮式人形机器人，分别从「折叠」与「升降」两个维度扩展作业空间。两款产品共用全栈自研关节模组、GLN 远程作业网络与真实场景数据闭环；现场由北京人形机器人数据训练中心的操作员远程操控上海展台机器人完成泡茶作业。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  hardware_strategy: [in-house]
+  data_acquisition: [teleop]
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-07/18/content_549415.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/stdaily-2026-07-17-realman-realbot-s2-l2.html
+corroboration: single

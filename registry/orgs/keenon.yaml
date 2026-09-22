@@ -2,9 +2,24 @@ id: keenon
 names:
   zh: 擎朗智能
   en: KEENON Robotics
+  aliases:
+  - 擎朗
+  - 上海擎朗智能科技股份有限公司
+founded: 2010
+hq:
+  country: CN
+  city: 上海
+description: 商用服务机器人公司，产品有配送、清洁机器人与 XMAN 系列人形机器人（XMAN-F1 / R1 / L1）。
 status: active
 layers:
 - embodiment
 - operation
 upstream:
   robotics_notebooks_institution: keenon
+accounts:
+  site: https://www.keenon.com
+sources:
+- url: http://www.zqrb.cn/gscy/qiyexinxi/2026-05-27/A1779868098553.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 证券日报网报道，载有「成立于 2010 年，总部位于上海浦东」及 XMAN 产品线

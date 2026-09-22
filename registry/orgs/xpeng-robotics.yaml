@@ -5,8 +5,24 @@ names:
   aliases:
   - 小鹏
   - XPeng
+  - 鹏行
+  - Dogotix
+founded: 2020
+hq:
+  country: CN
+  city: 广州
+description: 小鹏集团旗下人形机器人业务，运营主体为鹏行（Dogotix），研发 IRON 人形机器人，量产基地位于广州。
 status: active
 layers:
 - embodiment
 accounts:
   huggingface: xpeng-robotics
+sources:
+- url: https://m.21jingji.com/article/20260825/herald/bbfd8049df86f78a80785f25df0a26f1.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 21 财经转载投资界报道，载有「小鹏人形机器人从 2020 年起步」及交易主体鹏行
+- url: https://www.xiaopeng.com/news/company_news/5537.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 小鹏汽车官网新闻，人形机器人全链条量产基地落地广州天河

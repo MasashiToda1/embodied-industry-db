@@ -4,9 +4,26 @@ names:
   en: RealMan Robotics
   aliases:
   - 睿尔曼
+  - 睿尔曼智能科技（北京）股份有限公司
+founded: 2018-01
+hq:
+  country: CN
+  city: 北京
+description: 做超轻量机械臂、一体化关节模组与轮式人形机器人的公司，产品有 RM 系列机械臂与 RealBot-S2 / L2。
 status: active
 layers:
 - embodiment
 - components
 upstream:
   robotics_notebooks_institution: realman
+accounts:
+  site: https://www.realman-robotics.com
+sources:
+- url: https://www.36kr.com/p/3944696405572742
+  tier: media
+  retrieved: '2026-09-22'
+  note: 36 氪报道，「睿尔曼成立于 2018 年 1 月」、公司全称、机械臂与关节模组业务
+- url: https://peking.bjd.com.cn/content/s67582b87e4b06b0a56240b86.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 北京日报客户端，总部位于北京市石景山首特产业园

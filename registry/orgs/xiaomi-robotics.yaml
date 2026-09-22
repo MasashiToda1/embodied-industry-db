@@ -5,7 +5,23 @@ names:
   aliases:
   - 小米集团
   - Xiaomi
+founded: 2022
+hq:
+  country: CN
+  city: 北京
+description: 小米集团旗下机器人团队，研发全尺寸双足人形机器人（CyberOne 及新一代样机）与 Xiaomi-Robotics 系列具身基座模型。
 status: active
 layers:
 - embodiment
 - foundation
+accounts:
+  site: https://robotics.xiaomi.com
+sources:
+- url: https://www.itbear.com.cn/html/2026-08/1511579.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: ITBear 报道，载有「2022 年正式发布第一代 Cyberone」及团队定位、全尺寸双足方案
+- url: https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%B1%B3%E9%9B%86%E5%9B%A2
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 维基百科，集团总部北京市海淀区

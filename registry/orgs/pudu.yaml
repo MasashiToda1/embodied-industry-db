@@ -2,7 +2,26 @@ id: pudu
 names:
   zh: 普渡机器人
   en: Pudu Robotics
+  aliases:
+  - 普渡科技
+  - 深圳市普渡科技股份有限公司
+founded: 2016
+hq:
+  country: CN
+  city: 深圳
+description: 商用服务机器人公司，产品线覆盖配送、清洁、工业配送与通用具身智能，人形机型有 PUDU D9 与类人形 PUDU D7。
 status: active
 layers:
 - embodiment
 - operation
+accounts:
+  site: https://www.pudutech.com
+sources:
+- url: https://www.pudutech.com/zh-CN/company
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，公司全称与四条产品线、全形态布局
+- url: https://baike.baidu.com/item/%E6%99%AE%E6%B8%A1%E7%A7%91%E6%8A%80/61706335
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 百度百科，成立于 2016 年、总部深圳

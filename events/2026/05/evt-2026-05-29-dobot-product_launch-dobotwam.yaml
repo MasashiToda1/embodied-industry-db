@@ -1,0 +1,18 @@
+id: evt-2026-05-29-dobot-product_launch-dobotwam
+date: 2026-05-29
+date_precision: day
+type: product_launch
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆发布空弈 DobotWAM 具身大模型
+summary:
+  zh: 5 月 29 日，深圳市越疆科技股份有限公司正式发布自研世界动作模型「空弈 DobotWAM」具身大模型。在 LIBERO 评测基准的 LIBERO-Spatial、LIBERO-Object、LIBERO-Goal、LIBERO-10 四个任务套件上，平均成功率 99.25%。
+evidence:
+- url: http://www.zqrb.cn/tmt/tmthangye/2026-05-29/A1780038904458.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/zqrb-2026-05-29-dobot-wam.html
+corroboration: single

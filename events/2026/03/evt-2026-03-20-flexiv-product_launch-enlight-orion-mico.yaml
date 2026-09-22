@@ -1,0 +1,21 @@
+id: evt-2026-03-20-flexiv-product_launch-enlight-orion-mico
+date: 2026-03-20
+date_precision: day
+type: product_launch
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技发布 Enlight 初昕自适应机器人、Orion 控制器与 MICO 双臂平台
+summary:
+  zh: 3 月 20 日，非夕科技在上海召开「FLEXIVERSE 2026」年度战略新品发布会，推出 Enlight 初昕系列全感知自适应机器人、Orion 天枢新一代架构控制器、一体化仿人智能平台 MICO 双臂机器人系统与增强型壁虎材料夹爪。Orion 控制器采用模块化设计，官方称可适配移动底座、人形躯干等具身智能载体。
+axes:
+  embodiment_form: [arm, dual-arm-stationary]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.flexiv.cn/news/Flexiv_new_enlight
+  publisher: 非夕科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/flexiv-2026-03-20-flexiv-enlight.html
+corroboration: single

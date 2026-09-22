@@ -1,0 +1,22 @@
+id: evt-2026-07-09-rokae-funding-hk-ipo
+date: 2026-07-09
+date_precision: day
+type: funding
+orgs:
+- id: rokae
+  role: subject
+title:
+  zh: 珞石机器人在港交所上市
+summary:
+  zh: 7 月 9 日，珞石机器人正式登陆港交所。公告显示，本次全球发售 2303.19 万股 H 股，发售价每股 38 港元；香港公开发售获 156.58 倍超额认购，国际发售获 11.96 倍超额认购，引入广发基金、华泰资本、北京金融街资本等 5 名基石投资者。
+counterparties:
+- 广发基金
+- 华泰资本
+- 北京金融街资本
+evidence:
+- url: https://m.gelonghui.com/p/5510236
+  publisher: 格隆汇
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/m-2026-07-09-rokae-hk-ipo.html
+corroboration: single

@@ -5,6 +5,12 @@ names:
   aliases:
   - 越疆
   - Dobot
+  - 越疆机器人
+founded: 2015
+hq:
+  country: CN
+  city: 深圳
+description: 协作机器人与具身智能机器人公司，港股上市（02432.HK），人形产品有 ATOM 双足与 ATOM W 轮式人形。
 status: active
 layers:
 - embodiment
@@ -12,3 +18,13 @@ upstream:
   robotics_notebooks_institution: dobot
 accounts:
   huggingface: Dobot-robot
+  site: https://www.dobot-robots.com
+sources:
+- url: http://jjckb.xinhuanet.com/20260723/5db85818881043db87786555c2d0183b/c.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 经济参考网报道，载有「成立于 2015 年」、港股主板上市及主营业务
+- url: https://www.sznews.com/news/content/2026-02/04/content_31934792.htm
+  tier: media
+  retrieved: '2026-09-22'
+  note: 深圳新闻网报道，公司全称深圳市越疆科技有限公司

@@ -1,0 +1,23 @@
+id: evt-2026-05-26-keenon-product_launch-xman-l1
+date: 2026-05-26
+date_precision: day
+date_basis: derived
+date_as_stated: 报道（2026-05-26）原文「近期，擎朗智能正式发布小尺寸人形机器人XMAN-L1」
+type: product_launch
+orgs:
+- id: keenon
+  role: subject
+title:
+  zh: 擎朗智能发布小尺寸人形机器人 XMAN-L1
+summary:
+  zh: 5 月 26 日，盖世汽车报道擎朗智能正式发布小尺寸人形机器人 XMAN-L1：身高 136cm，42 个仿生自由度，膝关节峰值扭矩 132N·m，单腿功率超 2000W，端侧算力 100TOPS，接入豆包、腾讯等大模型；定位为「通 + 专」矩阵中的轻量互动岗位，面向互动、客流引导与轻量表演场景。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [commercial-service]
+evidence:
+- url: https://d1ev.com/news/shichang/300582
+  publisher: 第一电动网（转载盖世汽车）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/d1ev-2026-05-26-keenon-xman-l1.html
+corroboration: single

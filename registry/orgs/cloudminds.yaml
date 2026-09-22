@@ -2,9 +2,27 @@ id: cloudminds
 names:
   zh: 达闼机器人
   en: CloudMinds
+  aliases:
+  - 达闼科技
+  - 达闼
+founded: 2015
+hq:
+  country: CN
+  city: 上海
+description: 做云端机器人的公司，产品有海睿 HARIX 云端大脑与 Cloud Ginger 人形服务机器人。
 status: active
 layers:
 - embodiment
 - foundation
 accounts:
   github: CloudmindsRobot
+  site: https://www.dataarobotics.com
+sources:
+- url: https://www.dataarobotics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页，载有「达闼成立于 2015 年」及产品线
+- url: https://www.leiphone.com/category/robot/Gya0eP56FU40RQeb.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 雷峰网报道，载有上海闵行产业基地、唯一股东上海达闼

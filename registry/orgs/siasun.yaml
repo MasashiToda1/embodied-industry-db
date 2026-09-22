@@ -2,7 +2,22 @@ id: siasun
 names:
   zh: 新松机器人
   en: SIASUN
+  aliases:
+  - 新松
+  - 沈阳新松机器人自动化股份有限公司
+founded: 2000
+hq:
+  country: CN
+  city: 沈阳
+description: 机器人与智能制造上市公司，具身产品有松羿轮式人形、松行双足人形、睿可轮式人形与 OneHub 羿枢多机器人协同系统。
 status: active
 layers:
 - embodiment
 - integration
+accounts:
+  site: https://www.siasun.com
+sources:
+- url: https://www.siasun.com/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于新松页，「成立于 2000 年」、地址辽宁省沈阳市浑南区全运路 33 号、2025 年具身智能新品
