@@ -1,0 +1,32 @@
+id: evt-2025-09-29-shouxing-funding-ant-led-round
+date: '2025-09-29'
+date_precision: day
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+title:
+  zh: 首形科技完成新一轮过亿元融资，蚂蚁集团领投
+summary:
+  zh: 9 月 29 日，首形科技（AheadForm）宣布完成新一轮过亿元融资，为 2025 年内第三轮，由蚂蚁集团领投、锦秋基金联合投资，厚雪资本、弘晖基金、鹏城愿景基金参与，老股东顺为资本、招商局创投、Taihill 追投。资金用于情绪基座模型迭代与多场景应用落地。
+counterparties:
+- 蚂蚁集团
+- 锦秋基金
+- 厚雪资本
+- 弘晖基金
+- 鹏城愿景基金
+- 顺为资本
+- 招商局创投
+- Taihill
+evidence:
+- url: https://www.yicai.com/news/102848787.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/yicai-2025-09-29-shouxing-ant-round.html
+- url: https://www.chinaventure.com.cn/news/114-20250929-388252.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/chinaventure-2025-09-29-shouxing-ant-round-cv.html
+corroboration: multi

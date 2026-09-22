@@ -1,0 +1,23 @@
+id: evt-2026-08-12-huilun-deployment-gomate-mini-fleet
+date: '2026-08-12'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「据公司披露」，无具体披露日，取稿件发布日 2026-08-12
+type: deployment
+orgs:
+- id: huilun
+  role: subject
+title:
+  zh: 慧仑科技披露 GoMate Mini 已在 7 个项目部署近 50 台，累计运行约 6.3 万公里
+summary:
+  zh: 据公司披露，第四代轮足式人形机器人 GoMate Mini 已在 7 个代表性项目部署近 50 台，最长单项目运行 12 个月，累计运行约 6.3 万公里，处置异常约 18.9 万次，落地高端园区、商业综合体、地铁枢纽等场景，采用销售加租赁组合模式，成立半年内获近千万元订单。
+axes:
+  target_scene: [commercial-service]
+  delivery_model: [hardware-sale, rental]
+evidence:
+- url: https://www.pencilnews.cn/p/47008.html
+  publisher: 铅笔道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/pencilnews-2026-08-12-huilun-funding-pencil.html
+corroboration: single

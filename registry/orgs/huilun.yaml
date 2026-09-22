@@ -5,3 +5,17 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2026-02
+hq:
+  country: CN
+  city: 广州
+description: 广汽集团孵化的人形机器人公司，产品为 GoMate 系列，主力机型为第四代轮足式人形机器人 GoMate Mini。
+sources:
+- url: https://www.gacgroup.com/cn/news/detail?baseid=19104
+  tier: official
+  retrieved: '2026-09-22'
+  note: 母公司广汽集团官网：2026 年 2 月 26 日宣布孵化成立，总部落地广州黄埔
+- url: https://www.jmxhrcw.com/company/c209502518.html
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 招聘站转载工商信息：成立于 2026-02-12，注册地广州市黄埔区

@@ -1,0 +1,26 @@
+id: evt-2026-09-09-force-infinity-product_launch-atomego
+date: '2026-09-09'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「9 月 9 日消息……近日……发布」
+type: product_launch
+orgs:
+- id: force-infinity
+  role: subject
+title:
+  zh: 原力无限联合多机构发布具身基础模型 AtomEgo
+summary:
+  zh: 原力无限联合招商局狮子山人工智能实验室、香港大学、同济大学等团队发布具身基础模型 AtomEgo，围绕人类第一人称（Ego）数据与机器人数据的跨本体学习，比较直接联合训练、渐进式具身对齐与 World–Action Modeling 等训练路径。
+counterparties:
+- 招商局狮子山人工智能实验室
+- 香港大学
+- 同济大学
+axes:
+  data_acquisition: [human-video, real-robot]
+evidence:
+- url: https://www.163.com/tech/article/L6CJ2KQT00098IEO.html
+  publisher: 网易科技（来源：网易智能）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/163-2026-09-09-force-infinity-atomego.html
+corroboration: single

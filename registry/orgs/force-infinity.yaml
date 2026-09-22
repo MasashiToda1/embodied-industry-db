@@ -7,3 +7,19 @@ layers:
 - foundation
 - embodiment
 - data
+accounts:
+  site: https://infiforce.cn
+founded: 2023
+hq:
+  country: CN
+  city: 杭州
+description: 杭州的具身大脑公司，研发具身大脑 AtomBrain 与 AI Infra DataGrid，本体有 AstroDroid 轮式人形、UltraDroid、小原子双足与 FORCE 系列专用机器人。
+sources:
+- url: https://infiforce.cn/news-detail?id=2018604246353821698
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻末尾公司介绍：Founded in 2023，Headquartered in Hangzhou，研发中心深圳、北京
+- url: https://infiforce.cn/news-detail?id=2088103628513726466
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网融资稿：AtomBrain、DataGrid 与产品矩阵

@@ -1,0 +1,25 @@
+id: evt-2026-08-19-lumos-robotics-product_launch-nexcore
+date: '2026-08-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人在 WRC 2026 首发技能进化引擎 Lumos NexCore，并展出重载轮臂机器人 MOS2
+summary:
+  zh: 8 月 19 日，鹿明机器人在 2026 世界机器人大会首发机器人技能进化引擎 Lumos NexCore，打通任务定义、数据接入、模型训练、技能评测、部署运行到持续学习的链路，采用平台订阅加训练算力、真机验证和技能授权的组合收费模式；同场展出第二代重载轮臂式机器人 MOS2，双臂负载 50kg。
+axes:
+  delivery_model: [subscription, software-license]
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-08-19/doc-ininvmyq8303221.shtml
+  publisher: 新浪财经（来源：机器之心）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-19-lumos-robotics-nexcore.html
+- url: https://www.tmtpost.com/nictation/8108562.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/tmtpost-2026-08-19-lumos-robotics-nexcore-t.html
+corroboration: multi

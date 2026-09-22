@@ -1,0 +1,39 @@
+id: evt-2026-06-30-dexforce-funding-b-round
+date: '2026-06-30'
+date_precision: day
+date_basis: derived
+date_as_stated: 官网稿件日期 2026-06-30，正文「近日……官宣完成 B 轮融资」
+type: funding
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能完成 10 亿元人民币 B 轮融资，投后估值超百亿
+summary:
+  zh: 跨维智能官宣完成 B 轮融资，官网称融资金额 10 亿元人民币、投后估值超百亿（21 世纪经济报道写「超 10 亿元」）。深创投、贵阳数字经济基金连续两轮投资，前海母基金、蓝思科技、工银资本、恒健资产、诸瑞资本新进，南山战新投、成都科创投、四川院士基金等老股东跟投。
+counterparties:
+- 深创投
+- 贵阳数字经济基金
+- 前海母基金
+- 蓝思科技
+- 工银资本
+- 恒健资产
+- 诸瑞资本
+- 南山战新投
+- 成都科创投
+- 四川院士基金
+amount:
+  value: 1000000000
+  currency: CNY
+evidence:
+- url: https://www.dexforce.com/news_detail.php?id=1261
+  publisher: 跨维智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/dexforce-2026-06-30-dexforce-b-round.html
+- url: https://www.stcn.com/article/detail/3988923.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/stcn-2026-06-30-dexforce-b-round-stcn.html
+corroboration: multi

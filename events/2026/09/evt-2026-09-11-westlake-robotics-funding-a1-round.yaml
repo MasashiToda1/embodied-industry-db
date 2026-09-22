@@ -1,0 +1,29 @@
+id: evt-2026-09-11-westlake-robotics-funding-a1-round
+date: '2026-09-11'
+date_precision: day
+type: funding
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人完成数亿元 A1 轮融资
+summary:
+  zh: 9 月 11 日，西湖机器人宣布完成数亿元 A1 轮融资，投资方包括海愿资本、翠微基金、银杏谷资本、西湖科创投、中山创投等。公司称 A 轮系列资金将投向全身运动操作一体化通用具身基础大模型 WR1、多场景商业化拓展与人才建设。
+counterparties:
+- 海愿资本
+- 翠微基金
+- 银杏谷资本
+- 西湖科创投
+- 中山创投
+evidence:
+- url: https://tech.ifeng.com/c/8wKpQvEjEwG
+  publisher: 凤凰网（转载机器人前瞻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/tech-2026-09-11-westlake-robotics-a1-rou.html
+- url: https://finance.sina.com.cn/jjxw/2026-09-11/doc-inirmvzx5314641.shtml
+  publisher: 新浪财经（转载投资界）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/finance-2026-09-11-westlake-robotics-a1-rou.html
+corroboration: multi

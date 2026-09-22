@@ -1,0 +1,22 @@
+id: evt-2026-07-sh-humanoid-product_launch-qinglong-3
+date: '2026-07'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「今年的 WAIC 上，最新一代的『青龙 3.0』焕新而来」（WAIC 2026 于 7 月 17—20 日举行），报道发布于 2026-07-27
+type: product_launch
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 国地中心在 WAIC 2026 展出「青龙 3.0」，配千寻位置联合研发的时空算力背包
+summary:
+  zh: 国地中心在 WAIC 2026 展台展出新一代全尺寸开源公版人形机器人「青龙 3.0」，报道称其采用高性能一体化关节，并背负与千寻位置联合打造的「时空算力背包」，可在端侧运行多类模型并实现端边协同，面向物流配送、园区导航、自主巡检等场景。
+counterparties:
+- 千寻位置
+evidence:
+- url: https://www.cls.cn/detail/2097422
+  publisher: 财联社·科创板日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/cls-2026-07-27-sh-humanoid-qinglong3-cl.html
+corroboration: single

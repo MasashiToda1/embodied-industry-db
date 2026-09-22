@@ -11,3 +11,14 @@ layers:
 - simulation
 accounts:
   huggingface: DexForceAI
+  site: https://www.dexforce.com
+founded: 2021
+hq:
+  country: CN
+  city: 深圳
+description: 深圳的具身智能公司，自研 DexVerse 生成式仿真引擎与世界模型 DexWorldModel，以合成数据训练模型，产品含 W1 Pro 人形机器人与 DexSense 视觉传感器。
+sources:
+- url: https://dexforce.com/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍：成立于 2021 年，办公地点深圳市南山区科园路 1001 号创投大厦 14 层

@@ -1,0 +1,28 @@
+id: evt-2026-06-09-uniq-robot-deployment-inspur-order
+date: '2026-06-09'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……宣布」，稿件发布于 2026-06-09
+type: deployment
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇与浪潮达成战略合作并签订 2000 万元机器人订单
+summary:
+  zh: 优理奇机器人宣布与浪潮达成战略合作，并签订 2000 万元机器人订单，双方围绕具身智能机器人在政企服务、智慧园区、商业服务、产业运维等场景的应用落地合作。报道称 Wanda 2.0 已在安保、酒店、零售餐饮场景常态化运营，Panther 已启动全球交付。
+counterparties:
+- 浪潮
+amount:
+  value: 20000000
+  currency: CNY
+axes:
+  target_scene: [commercial-service]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-06-09/doc-iniavfst1805235.shtml
+  publisher: 新浪财经（来源：维科网机器人）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/finance-2026-06-09-uniq-robot-inspur-order.html
+corroboration: single

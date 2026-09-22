@@ -1,0 +1,20 @@
+id: evt-2025-12-sentigent-product_launch-rovar-x3
+date: '2025-12'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日……问世并投放市场」，稿件发布于 2025-12-23
+type: product_launch
+orgs:
+- id: sentigent
+  role: subject
+title:
+  zh: 深庭纪发布双轮足户外陪伴机器人 Rovar X3
+summary:
+  zh: 苏州深庭纪智能科技有限公司发布双轮足户外陪伴机器人 Rovar X3，主打户外跟随、载物运送、摄影跟拍与宠物陪伴，采用直驱轮毂电机驱动。报道称产品已通过多项户外场景测试并在国外内测，将于 2026 年 1 月登陆 CES。
+evidence:
+- url: https://news.2500sz.com/doc/2025/12/23/1187570.shtml
+  publisher: 名城苏州网（来源：苏州新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/news-2025-12-sentigent-rovar-x3-launc.html
+corroboration: single

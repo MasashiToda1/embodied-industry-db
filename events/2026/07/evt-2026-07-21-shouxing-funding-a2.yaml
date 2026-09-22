@@ -1,0 +1,33 @@
+id: evt-2026-07-21-shouxing-funding-a2
+date: '2026-07-21'
+date_precision: day
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+title:
+  zh: 首形科技完成数亿元 A2 轮融资，中信金石与吉利资本联合领投
+summary:
+  zh: 7 月 21 日，首形科技宣布完成数亿元 A2 轮融资，由中信金石与吉利资本联合领投，中信证券国际资本、国泰君安创新投、君礼资本、京铭资本、交源资本跟投，老股东中网投与顺为资本追投。资金投向全系列仿生产品矩阵扩容、标准化量产产线搭建与仿生具身智能算法迭代。
+counterparties:
+- 中信金石
+- 吉利资本
+- 中信证券国际资本
+- 国泰君安创新投
+- 君礼资本
+- 京铭资本
+- 交源资本
+- 中国互联网投资基金（中网投）
+- 顺为资本
+evidence:
+- url: https://stcn.com/article/detail/4036657.html
+  publisher: 证券时报网（来源：21 世纪经济报道）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/stcn-2026-07-21-shouxing-a2-round.html
+- url: https://www.cyzone.cn/article/840668.html
+  publisher: 创业邦
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/cyzone-2026-07-21-shouxing-a2-round-cyzone.html
+corroboration: multi

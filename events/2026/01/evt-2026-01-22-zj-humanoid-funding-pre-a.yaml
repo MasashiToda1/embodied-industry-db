@@ -1,0 +1,42 @@
+id: evt-2026-01-22-zj-humanoid-funding-pre-a
+date: '2026-01-22'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「财联社 1 月 22 日电……近日完成 4.5 亿元 Pre-A 轮融资」
+type: funding
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形机器人创新中心完成 4.5 亿元 Pre-A 轮融资
+summary:
+  zh: 浙江人形机器人创新中心有限公司完成 4.5 亿元 Pre-A 轮融资，报道称自 2024 年年中以来累计筹资 22 亿元。股东包括中控技术、招商创科、联想创投、冯源资本、宁波工业互联网研究院、迦智科技、智昌科技等产业资本，浙江省创业投资集团、宁波金控控股集团、海发控股集团、越秀产业基金、宁波人才集团等政府产业资本，以及方广资本。
+counterparties:
+- 中控技术
+- 招商创科
+- 联想创投
+- 冯源资本
+- 宁波工业互联网研究院
+- 迦智科技
+- 智昌科技
+- 浙江省创业投资集团
+- 宁波金控控股集团
+- 海发控股集团
+- 越秀产业基金
+- 宁波人才集团
+- 方广资本
+amount:
+  value: 450000000
+  currency: CNY
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-01-22/doc-inhieyhu1551166.shtml
+  publisher: 新浪财经（转载财联社）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/finance-2026-01-22-zj-humanoid-pre-a-sina.html
+- url: http://jjckb.xinhuanet.com/20260123/db7e1207902344a0800570141d46eeb2/c.html
+  publisher: 经济参考网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/jjckb-2026-01-23-zj-humanoid-pre-a.html
+corroboration: multi

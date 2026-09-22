@@ -1,0 +1,32 @@
+id: evt-2026-05-11-lumos-robotics-funding-a1-a2
+date: '2026-05-11'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……宣布」，两篇稿件均发布于 2026-05-11
+type: funding
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人完成数亿元 A1 及 A2 轮融资，三菱电机连续领投，累计融资近 10 亿元
+summary:
+  zh: 鹿明机器人宣布连续完成 A1 及 A2 两轮融资。A1 轮由三菱电机智能制造科技（中国）集团有限公司领投，老股东普华资本、吴中金控等跟投；A2 轮由三菱电机继续领投，恒生电子、海高集团、昆石投资等跟投。两轮完成后公司累计融资近 10 亿元，资金用于具身大模型研发和场景拓展。
+counterparties:
+- 三菱电机智能制造科技（中国）集团有限公司
+- 普华资本
+- 吴中金控
+- 恒生电子
+- 海高集团
+- 昆石投资
+evidence:
+- url: https://www.jiemian.com/article/14408632.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/jiemian-2026-05-11-lumos-robotics-a1-a2.html
+- url: https://fgw.sz.gov.cn/ztzl/qtztzl/szscjmyjjfzzhfwpt/mqfc/myqyfzdt/content/post_12909785.html
+  publisher: 深圳市发展和改革委员会网站（转载搜狐）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/fgw-2026-05-11-lumos-robotics-a1-a2-szf.html
+corroboration: multi

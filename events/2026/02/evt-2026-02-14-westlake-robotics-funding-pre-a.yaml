@@ -1,0 +1,24 @@
+id: evt-2026-02-14-westlake-robotics-funding-pre-a
+date: '2026-02-14'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……亿元级 PreA 轮融资」，报道发布于 2026-02-14
+type: funding
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人完成亿元级 Pre-A 轮融资，赛富投资基金领投
+summary:
+  zh: 2 月 14 日报道，西湖机器人科技（杭州）有限公司完成亿元级 Pre-A 轮融资，由赛富投资基金领投，龙芯创投、莫干山基金等机构跟投。报道称公司成立于 2021 年，以全身运动操作一体的通用具身基础大模型为核心方向。
+counterparties:
+- 赛富投资基金
+- 龙芯创投
+- 莫干山基金
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-02-14/doc-inhmtwhv9539073.shtml
+  publisher: 新浪财经（转载财闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/finance-2026-02-14-westlake-robotics-pre-a.html
+corroboration: single

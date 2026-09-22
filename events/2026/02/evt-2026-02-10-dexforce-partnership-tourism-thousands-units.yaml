@@ -1,0 +1,32 @@
+id: evt-2026-02-10-dexforce-partnership-tourism-thousands-units
+date: '2026-02-10'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日……接连签署」，官网与证券时报稿件均发布于 2026-02-10
+type: partnership
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能签署三项文旅战略合作，与盈新数科约定三年内落地不少于 1000 台机器人
+summary:
+  zh: 跨维智能接连与桂林旅游学院、盈新发展子公司深圳盈新数科具身智能有限公司、上海景域无疆（驴妈妈）签署战略合作，计划三年内为文旅场景落地数千台人形机器人。其中与盈新数科明确三年内落地不少于 1000 台，部署于奶茶、咖啡、调酒、爆米花、冰激淋、24 小时零售店等文旅景区、游乐场、酒店与智慧物业场景。
+counterparties:
+- 桂林旅游学院
+- 深圳盈新数科具身智能有限公司（盈新发展）
+- 上海景域无疆
+axes:
+  target_scene: [tourism-performance, commercial-service]
+  embodiment_form: [humanoid-wheeled]
+evidence:
+- url: https://dexforce.com/news_detail.php?id=1241
+  publisher: 跨维智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/dexforce-2026-02-dexforce-tourism-partner.html
+- url: https://www.stcn.com/article/detail/3638105.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/stcn-2026-02-dexforce-tourism-partner.html
+corroboration: multi

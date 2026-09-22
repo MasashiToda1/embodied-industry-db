@@ -5,3 +5,15 @@ names:
 status: active
 layers:
 - embodiment
+accounts:
+  site: https://www.sentigent.cn
+founded: 2024-04
+hq:
+  country: CN
+  city: 苏州
+description: 苏州的消费级户外陪伴机器人公司，首款产品为双轮足机器人 Rovar X3，自研端侧具身智能架构 SWAN。
+sources:
+- url: https://www.sentigent.cn/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们：成立于 2024 年 4 月，总部位于苏州湾中心广场，深圳设子公司

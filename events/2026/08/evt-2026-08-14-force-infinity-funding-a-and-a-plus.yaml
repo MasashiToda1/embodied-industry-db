@@ -1,0 +1,31 @@
+id: evt-2026-08-14-force-infinity-funding-a-and-a-plus
+date: '2026-08-14'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近期已完成 A 轮及 A+ 轮融资」，人民财讯 8 月 14 日电
+type: funding
+orgs:
+- id: force-infinity
+  role: subject
+title:
+  zh: 原力无限完成 A 轮及 A+ 轮融资，金额近 10 亿元人民币
+summary:
+  zh: 8 月 14 日，原力无限（INFIFORCE）宣布已完成 A 轮及 A+ 轮融资，融资金额近 10 亿元人民币，由敦鸿资产及头部国资平台领投，浙大科创集团、盐都国控、丽水市国资公司等跟投，老股东创世伙伴创投 CCV 加注。资金投向具身大脑 AtomBrain 及因果世界模型研发、AI Infra DataGrid 升级、多形态本体规模化交付。
+counterparties:
+- 敦鸿资产
+- 浙大科创集团
+- 盐都国控
+- 丽水市国资公司
+- 创世伙伴创投 CCV
+evidence:
+- url: https://infiforce.cn/news-detail?id=2088103628513726466
+  publisher: 原力无限官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/infiforce-2026-08-14-force-infinity-a-round.html
+- url: https://www.stcn.com/article/detail/4076151.html
+  publisher: 证券时报网（人民财讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/stcn-2026-08-14-force-infinity-a-round-s.html
+corroboration: multi

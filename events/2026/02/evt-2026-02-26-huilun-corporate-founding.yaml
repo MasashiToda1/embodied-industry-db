@@ -1,0 +1,20 @@
+id: evt-2026-02-26-huilun-corporate-founding
+date: '2026-02-26'
+date_precision: day
+type: corporate
+orgs:
+- id: huilun
+  role: subject
+title:
+  zh: 广汽集团宣布孵化成立广东慧仑科技有限公司，独立承接人形机器人业务
+summary:
+  zh: 2 月 26 日，广汽集团在广州开发区、黄埔区高质量发展大会上宣布孵化成立广东慧仑科技有限公司，以独立主体开展市场化运营，全面承接广汽集团在具身智能领域的业务，总部落地黄埔；同场展出第四代具身智能人形机器人 GoMate Mini。
+counterparties:
+- 广汽集团
+evidence:
+- url: https://www.gacgroup.com/cn/news/detail?baseid=19104
+  publisher: 广汽集团官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/gacgroup-2026-02-26-huilun-founding.html
+corroboration: single
