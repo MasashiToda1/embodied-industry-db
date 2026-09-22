@@ -1,0 +1,22 @@
+id: evt-2025-07-04-gigaai-product-launch-gigabrain-0-preview
+date: '2025-07-04'
+date_precision: day
+type: product_launch
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界发布具身基础模型 GigaBrain-0 Preview
+summary:
+  zh: 机器人前瞻 2025 年 7 月 4 日报道，极佳视界当天发布具身基础模型 GigaBrain-0 Preview，训练数据中 90% 以上来自该公司自研的世界模型平台生成数据，不到
+    10% 来自真机实采数据。报道同时提到该公司将于近期发布面向具身智能方向的世界模型平台 Preview 版本。
+axes:
+  model_form: [end2end-vla, world-model]
+  data_acquisition: [sim-generated, real-robot]
+evidence:
+- url: https://zhidx.com/p/490327.html
+  publisher: 智东西 · 机器人前瞻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/zhidx-2025-07-04-gigaai-gigabrain0-previe.html
+corroboration: single

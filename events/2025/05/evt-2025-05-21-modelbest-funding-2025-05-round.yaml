@@ -1,0 +1,23 @@
+id: evt-2025-05-21-modelbest-funding-2025-05-round
+date: '2025-05-21'
+date_precision: day
+type: funding
+orgs:
+- id: modelbest
+  role: subject
+title:
+  zh: 面壁智能完成新一轮数亿元融资
+summary:
+  zh: 量子位 2025 年 5 月 21 日报道，面壁智能完成新一轮数亿元融资，由洪泰基金、国中资本、清控金信和茅台基金联合投资。公司称融资用于构筑高效大模型技术与产品壁垒，推动端侧大脑在行业规模化应用。
+counterparties:
+- 洪泰基金
+- 国中资本
+- 清控金信
+- 茅台基金
+evidence:
+- url: https://www.qbitai.com/2025/05/285655.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/qbitai-2025-05-21-modelbest-funding-2025-0.html
+corroboration: single

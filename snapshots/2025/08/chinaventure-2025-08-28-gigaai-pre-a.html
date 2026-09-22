@@ -1,0 +1,543 @@
+<!-- 抓取于 2026-09-22T20:44:21.185338+08:00 | 原始链接 https://www.chinaventure.com.cn/news/108-20250828-387796.html | 公众号 未知 | 标题 gigaai-pre-a | sha256:174d748aa750 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>极佳视界完成Pre-A&amp;Pre-A+连续两轮数亿元融资 | 投中网</title>
+    <!--SEO优化-->
+    <meta name="description" content="极佳视界半年内完成连续三轮融资，充分体现了资本市场对于极佳视界团队实力、技术路线和产品业务进展的认可。">
+    <meta name="keywords" content="极佳视界">
+    <link rel="icon" href="/images/logo/logo_tiny.png" sizes="30x30">
+    <!--css-->
+    <link rel="stylesheet" href="/css/reset.v1.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/inc_pc.css">
+    <link rel="stylesheet" href="/css/page/articledetail.css">
+    <!--js-->
+    <script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="/js/qrcode.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/TCaptcha.js"></script>
+<script type="text/javascript" src="/js/vue.min@2.5.16.js"></script>
+<script type="text/javascript" src="/js/seopush.js"></script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <header class="header_pc">
+    <div class="header_innner">
+        <a href="/index.html" class="logo_zone_pc">
+            <img alt="投中网" title="首页" src="/images/logo/logo_pc.png">
+        </a>
+        <nav class="nav_pc">
+            <ul class="nav_list">
+                <li :class="[activeUrl == 'index' ? 'active' : '']"><a class="level1" target="_blank" href="/index.html">首页</a></li>
+                <li :class="[activeUrl == 'institute' ? 'active' : '']"><a class="level1" target="_blank" href="/report/list.html">研究院</a></li>
+                <li :class="[activeUrl == 'ranklist' ? 'active' : '']"><a class="level1" target="_blank" href="/rank/list.html">榜单</a></li>
+                <li :class="[activeUrl == 'vtalk' ? 'active' : '']"><a class="level1" target="_blank" href="/vtalk/list.html">Vtalk</a></li>
+                <li :class="[activeUrl == 'meetinglist' ? 'active' : '']"><a class="level1" target="_blank" href="/meeting/list.html">会议</a></li>
+                <li :class="[activeUrl == 'community_introduce' ? 'active' : '']"><a class="level1" target="_blank" href="/community/community_introduce.html">投中社区</a></li>
+            </ul>
+        </nav>
+        <div class="userzone_pc">
+            <div class="search_all_btn" @click="openSearchZone()">搜索</div>
+            
+            <div class="userlogin_btn_box">
+                <div class="userlogin_btn"><span @click="openLoginZone(0)">登录</span>&nbsp;|&nbsp;<span @click="openLoginZone(2)">注册</span></div>
+                <div class="usercenter_drop">
+                    <div class="nav_userheadpic">
+                        <img src="/images/default_userheadpic.png" onerror="this.src='/images/default_userheadpic.png'" >
+                    </div>
+                    <ul>
+                        <li><a target="_blank" href="/usercenter/usercenter.html">个人中心</a></li>
+                        <li @click="toLogout">退出登录</li>
+                    </ul>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="search_content_pc">
+        <div class="search_content_pc_bg" @click="cancelSearch()"></div>
+        <div class="search_tiao_pc">
+            <div class="search_tiao_inner_pc">
+                <div class="searchinput_container clearfix">
+                    <input id="overallSearchInput" class="search_input" @keyup.enter="toSearchResultPage()" placeholder="在此输入您要查询的内容">
+                    <div class="to_search_btn" @click="toSearchResultPage()"></div>
+                </div>
+                <button class="cacelsearch_btn" @click="cancelSearch()"></button>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="login_warpper_pc">
+    <div class="login_box_pc">
+        <div class="close_login_btn" @click="closeLoginWrapper()"></div>
+        <div class="login_tab_zone clearfix">
+            <ul class="login_tablist">
+                <li class="active" @click="tabLoginType(0)">快捷登录</li>
+                <li @click="tabLoginType(1)">密码登录</li>
+                <li class="newuser" @click="tabLoginType(2)">新用户注册</li>
+            </ul>
+        </div>
+        <p class="login_text">
+            <span class="active">验证即登录，未注册则自动创建新账号</span>
+            <span>如果手机号已注册则自动登录</span>
+        </p>
+        <div id="fastlogin_phone" class="input_zone con_placeholder">
+            <input type="text" maxlength="11" placeholder="请输入手机号" >
+        </div>
+        <div id="fastlogin_phonetips" class="tips_label"></div>
+        <div id="fastlogin_code" class="input_zone con_placeholder">
+            <input type="text" maxlength="6" placeholder="短信验证码">
+            <button id="TencentCaptcha" data-appid="2027481577" data-cbfn="tencentTestCallback" type="button" class="commonlogin_sendcode_hook sendcode_btn" @click="sendMessageCode()">发送验证码</button>
+        </div>
+        <div id="fastlogin_codetips" class="tips_label"></div>
+        <div id="commonlogin_account" class="input_zone con_placeholder">
+            <input type="text" placeholder="手机号/邮箱地址">
+        </div>
+        <div id="commonlogin_accounttips" class="tips_label"></div>
+        <div id="commonlogin_password" class="input_zone con_placeholder">
+            <input type="password" maxlength="16" placeholder="请输入登录密码">
+            <button class="forget_password_btn" @click="toForgetPasswordPage">忘记密码</button>
+        </div>
+        <div id="commonlogin_passwordtips" class="tips_label"></div>
+        <div class="user_agreement">登录即代表您已同意投中网<a href="/usercenter/user_agreement.html" target="_blank">《用户注册服务协议》</a>与<a href="/usercenter/private_policy.html" target="_blank">《隐私政策》</a></div>
+        <button id="loginButton" class="login_btn button-base" @click="doWriteInTest()">登录</button>
+        <button id="registerButton" class="login_btn button-base" @click="doWriteInTest(vm)">立即注册</button>
+    </div>
+</div>
+        <!--主体1100-->
+        <div class="content_wrapper_min mrg_t80 clearfix">
+            <!--主体730-->
+            <div class="content_left_pc clearfix">
+                <div class="share_zone_pc">
+                    <ul>
+                        <li>
+                            <span class="wechat_share_pc" @click="showShareWXErcode"></span>
+                        </li>
+                        <li>
+                            <span class="sina_weibo_pc" @click="linkToSinaWeibo"></span>
+                        </li>
+                        <li>
+                            <span class="add_comment_pc" @click="scrollToComment"></span>
+                        </li>
+                        <li>
+                            <span class="shoucang_pc" @click="addToCollection" :class="{'active': isCollected}"></span>
+                        </li>
+                        <li>
+                            <span class="chenjin_pc" @click="openImmerseReading"></span>
+                        </li>
+                    </ul>
+                    <div class="ercode_showwarpper" :style="{display:showShareErcode}" @click="hideShareWXErcode">
+                        <div class="ercode_innerbox">
+                            <div class="close_btn"></div>
+                            <div class="title">打开微信扫码分享</div>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_comment_pc">
+                    <!--文章主体-->
+                    <div class="article_warpper_pc">
+                        <div class="breadcase">
+                            <a href="/index.html">投中网</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <a href="/news/108.html">业界动态</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <span>正文</span>
+                        </div>
+                        <h1 class="maintitle_pc">极佳视界完成Pre-A&amp;Pre-A+连续两轮数亿元融资</h1>
+                        <div class="author_keyword clearfix">
+                            <div class="source_author">                                
+                                <span>投中网</span>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
+                                <span>投中网</span>
+                            </div>
+                            <div class="releaseTime">
+                                <span>2025-08-28 14:53:56</span>
+                            </div>
+                            <input id="articleId" type="hidden" value="387796">
+                            <input id="keywords" type="hidden" value="极佳视界">
+                            <input id="mUrl" type="hidden" value="/news/108-20250828-387796.html">
+                            <input id="coverimg" type="hidden" value="https://pic.chinaventure.com.cn/news/387796/7366724693262336.jpg">
+                        </div>
+                        <h2 class="describe_text">极佳视界半年内完成连续三轮融资，充分体现了资本市场对于极佳视界团队实力、技术路线和产品业务进展的认可。</h2>
+                        <div class="article_slice_pc clearfix">
+                        	<p style="text-align: left;">近日，Physical&nbsp;AI公司「极佳视界」宣布完成Pre-A&amp;Pre-A+连续两轮数亿元融资，Pre-A轮融资由国中资本领投，紫峰资本、老股东PKSHA&nbsp;Algorithm&nbsp;Fund 跟投；Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。2025年2月，「极佳视界」还完成数千万天使++轮融资，由普超资本、合鼎共资本、上海天使会投资。极佳视界半年内完成连续三轮融资，充分体现了资本市场对于极佳视界团队实力、技术路线和产品业务进展的认可。</p><p style="text-align: left;">极佳视界是一家物理世界通用智能公司，成立于2023年6月，专注「世界模型驱动的物理世界基础模型」，加速走向物理世界通用智能。公司产品包括世界模型平台GigaWorld（驾驶+具身）、具身基础模型GigaBrain、通用具身本体等Physical AI全栈系列产品。 此前，公司已完成亿元级种子、天使、天使+多轮融资。</p><p style="text-align: left;">2023年初，基于语言模型的ChatGPT时刻彻底引爆了数字世界通用智能，带来了巨大的技术进展、AI应用爆发和社会影响。目前，物理世界的“ChatGPT时刻”成为下一个备受关注的时刻，极佳视界认为，「世界模型+VLA+强化学习」的范式正在逐渐完备，2-3年内将迎来物理世界ChatGPT时刻，将带来更为深刻的物理AI技术突破、应用爆发和社会影响。</p><p style="text-align: left;">在海外，包括Nvidia、Google-DeepMind、World Labs等头部科技公司都在世界模型方向进行积极布局和快速突破。同时，基于真机的「VLA+强化学习」则正在快速迭代和扩展，但是面临着巨大的数据瓶颈，「世界模型」是解决物理世界通用智能真机数据瓶颈的最佳方式。</p><p style="text-align: left;">极佳视界是国内第一家专注「世界模型」方向的科技公司，并在「世界模型」和「VLA大模型」方向都处于全球一流水平，持续引领相关方向技术发展和产业落地。在世界模型方向，极佳视界持续引领技术创新和产业落地，并已经和多个机器人、汽车主机厂等行业头部企业达成签约合作和量产落地；在端到端VLA具身基础模型方向，极佳视界拥有行业领先的真机效果、行业最优的模型架构设计、行业最高的数据利用效率，并已经开始迈向量产落地。</p><p style="text-align: left;"><strong>01 顶尖团队：世界级全栈算法模型团队，携手产业专家高管团队</strong></p><p style="text-align: left;">极佳视界紧密依托清华大学自动化系智能视觉实验室，核心团队来自清华、中科院等知名院校顶尖研究人员，以及百度、微软、地平线等知名企业高管和产业专家。核心团队发表人工智能顶级会议和期刊论文200余篇，主导获得数十个人工智能全球最具影响力比赛世界冠军，发布多个具有全球影响力的人工智能技术成果，在Physical&nbsp;AI方向兼具世界级的研究能力、超大规模架构工程经验、超大规模量产落地经验。</p><p style="text-align: left;">CEO黄冠博士是清华大学自动化系博士，国家级创新领军人才，多次带领团队获得全球权威AI比赛世界冠军，发布多个全球知名AI成果；同时拥有微软、三星、地平线等知名企业研究工作经历，多次带领百人研发团队；并拥有Physical AI方向丰富的连续创业经验，作为核心高管累积主导或参与融资超10亿元。</p><p style="text-align: left;">首席科学家朱政博士拥有超过60篇视觉和AI方向顶会论文，超过15000次引用，是国内AI方向引用最高的青年科学家之一。</p><p style="text-align: left;">工程副总裁毛继明拥有超过16年的仿真/工程/数据/分布式架构方向的经验，曾担任百度Apollo仿真和工程负责人，曾担任百度、赢彻等T10级别架构师。</p><p style="text-align: left;">产品副总裁孙韶言博士曾担任阿里云总监，地平线数据闭环产品线总经理，在物理世界超大规模数据闭环产品和架构方面拥有行业领先的经验。</p><p style="text-align: left;">公司核心团队包括世界级的算法、数据、基础设施等模型全栈团队，丰富人形机器人量产经验的硬件团队，以及资深行业经验的产业专家高管团队。</p><p style="text-align: left;"><strong>02 技术引领：世界模型驱动，引领全球具身智能新范式</strong></p><p style="text-align: left;">世界模型是仿真2.0，更是VLA的下一代：随着生成式AI的飞速发展，基于生成式世界模型的仿真2.0正在成为物理世界通用智能最重要的数据来源。通过模拟和生成视觉真实、几何准确、物理精确的无限平行世界，并基于交互式环境生成无限的交互动作，基于世界模型的仿真2.0为端到端VLA大模型的训练和测试提供了全新的技术路径和支持。同时，随着世界模型生成能力的不断增强，世界模型将逐渐进入机器人端侧，成为VLA的下一代。</p><p style="text-align: left;">全球领先的VLA具身基础模型：2025年7月，极佳视界发布全球首个世界模型驱动的具身基础模型GigaBrain-0 Preview，全新范式解决具身智能数据瓶颈！GigaBrain-0是具有空间推理能力的双系统端到端VLA具身基础模型，不仅可以丝滑实现柔性、双臂协同、开放互动、自主推理等长程复杂操作任务；更重要的是，GigaBrain-0在数据来源方面取得突破性进展，90%以上数据来自极佳视界自研「世界模型平台」生成数据，不到10%来自真机实采数据，通过极低成本实现了极大的泛化性。同时，基于世界模型生成的海量数据，极佳视界GigaBrain-0在全球首次实现了柔性长程复杂操作的开放世界“零样本”泛化。GigaBrain-0的卓越性能为解决具身智能数据瓶颈提供了全新范式，2025年9月，极佳视界将发布GigaBrain-0正式版。</p><p style="text-align: left;">全球领先的驾驶和具身世界模型平台：极佳视界世界模型平台应用于驾驶和具身两个方向，极佳视界持续引领驾驶世界模型技术突破和量产落地，发表DriveDreamer、DriveDreamer-2、DriveDreamer4D、ReconDreamer、ReconDreamer++等系列代表性成果，相关成果全部被视觉和AI方向顶级会议收录。在具身世界模型方向，极佳视界发表EmbodieDreamer、RoboTransfer、EmbodiedGen等代表性领先学术工作，在视频世界模型和3D世界模型方向都拥有行业领先的技术积累和模型效果，并已经开始大规模应用于量产落地场景。极佳视界将于近期发布具身世界模型平台GigaWorld-0，欢迎关注。</p><p style="text-align: left;"><strong>03 加速量产：携手行业加速量产落地，加速走向物理世界通用智能</strong></p><p style="text-align: left;">自成立至今，极佳视界始终将商业量产落地放在第一位，不仅率先实现了自动驾驶领域世界模型的大规模量产落地，更是在具身世界模型、具身大模型等方向实现了广泛的合作落地，技术驱动携手行业加速量产落地，加速走向物理世界通用智能。</p><p style="text-align: left;">在驾驶世界模型方向，极佳视界和多家国内头部汽车主机厂、多家海外和合资头部汽车主机厂、多家AI芯片和Tier 1巨头等达成签约和量产合作。</p><p style="text-align: left;">在具身世界模型方向，极佳视界和多地人形机器人创新中心、实训场达成深度合作，打造全球领先的虚实结合的机器人训练场等在内的全栈产品。</p><p style="text-align: left;">在具身VLA大模型方向，极佳视界和多家全球汽车行业巨头、多家头部具身本体公司等达成深度合作，共同探索具身智能在工业、服务、家庭等多个场景的落地。</p><p style="text-align: left;"><strong>04 资方观点：世界模型是物理世界通用智能的关键，极佳视界拥有技术产业全面优势</strong></p><p style="text-align: left;">国中资本执行总经理史新表示：极佳视界是国内世界模型和具身智能方向的引领者，不仅最早开始相关方向的技术布局和创新引领，更是快速实现了规模化的产业落地。我们十分看好公司团队的技术优势和产业经验，我们期待物理世界的ChatGPT时刻，更期待极佳视界能够引领中国的物理世界ChatGPT时刻。</p><p style="text-align: left;">紫峰资本董事长杨小宁表示：当下，具身智能和机器人产业正在蓬勃发展的关键时刻，具身大模型是产业发展的关键。极佳视界团队拥有超过10年的物理AI经验，历经CV、自动驾驶等多个物理AI时代，并持续作出全球领先的技术成果和实现大规模产业落地。我们看好极佳视界团队在具身智能机器人时代，持续取得更大的成功。</p><p style="text-align: left;">中金资本项目负责人表示：数据和模型是具身智能机器人发展的关键，极佳视界团队在具身智能的数据和模型都拥有领先的优势，我们非常看好通过世界模型更本质的解决具身智能数据和模型的问题。同时，极佳视界团队兼具领先的技术优势和深厚的产业积累，中金资本持续看好和支持团队，助力团队在具身智能领域持续技术创新和应用落地，推动具身智能产业不断走向新的高度。</p><p style="text-align: left;">广州产投项目负责人表示：广州产投长期看好具身智能机器人未来广阔的市场空间，具身智能机器人目前的发展瓶颈是具身大模型，随着具身大模型能力的不断提升，具身智能机器人有望成为下一个超级终端。极佳视界的端端到端VLA大模型在世界模型的加持下，不仅可以丝滑实现柔性物体、双臂协同、开放互动、自主推理等多种长程复杂操作任务，更是在开放世界首次实现了柔性复杂长程操作的“零样本”泛化。广州产投将依托广州市的科技产业场景资源持续支持极佳视界发展。</p><p style="text-align: left;">一村淞灵投资总经理张晨表示：世界模型是语言模型之后下一个最本质的事情，也是一村淞灵在其思考决策周期要布局的生态点之一。物理AI将提升自然规则在物理世界和数字世界之间的映射关系，物理引擎、世界模型可能是技术必经之路经。极佳团队生成+重建联合优化范式以高斯泼溅为基础很有亮点。团队也是国内最早开始系统布局世界模型的团队，并在多个应用方向快速实现了产业落地。一村淞灵长期看好人工智能和机器人方向，将持续大力支持极佳视界以及淞灵AI生态标的项目，推动人工智能行业不断迈向新高度，创造更大的产业和社会价值。</p><p style="text-align: left;">华强资本高级投资总监谢立广表示：华强资本深度参与具身智能和机器人产业革命，极佳视界在世界模型和VLA大模型方向都处于国内领先水平。我们看好团队在物理AI方向的技术深度、技术广度和产业经验上的全面优势，看好极佳视界成为具身大模型国内代表性企业，更看好团队在机器人终端和应用上实现更大的突破。</p><p style="text-align: left;">普超资本创始合伙人李立伟表示：极佳视界是国内空间智能和世界模型的引领者，不仅最早进行技术布局和实现创新突破，并在驾驶、具身、内容等多个领域实现了规模化应用落地。普超资本看好极佳视界团队在人工智能领域领先的技术积累和深厚的产业落地经验，并将持续看好和支持极佳视界成为人工智能和世界模型领域新一代代表性企业。</p><p style="text-align: left;">极佳视界创始人兼CEO黄冠博士表示：“衷心感谢各位资方的认可和支持。极佳视界团队拥有超过十年的物理AI经历，历经CV、自动驾驶等多个技术时代和产业周期，持续作出世界级技术成果，并实现大规模应用落地。而同时，我们深刻认识到上个时代物理AI技术的巨大局限性，在通用智能时代，我们对于物理世界通用智能有着坚定的使命和扎实的愿景。面向未来，极佳视界希望在世界模型和具身智能方向，不断实现世界级的技术突破，并持续取得商业成功和创造社会价值，加速走向物理世界通用智能。”</p><p style="text-align: left;">此次融资资金主要用于世界模型和具身智能方向技术产品研发、市场商务拓展和客户服务交付，极佳视界持续招聘行业顶尖人才，共同开启物理世界通用智能新时代！</p><p><br/></p>
+                        </div>
+                   
+                        <div class="editor_zone_pc clearfix">                       	
+                            <span>网站编辑：</span>
+                            <span>郭靖</span>                            
+                        </div>
+                        
+                        <!--原创新闻才显示-->
+                   
+                   
+                    </div>
+                    <!--点赞区-->
+					<div id="articledetail_pointLike" class="thumbsup_zone_pc">
+    <div class="thumb_btn_pc" :class="{'active': isPointLike}" @click="addPointLike">
+        <div class="thumb_img"></div>
+        <p id="pointLikeNumber">0</p>
+    </div>
+</div>
+					
+                    <!--二维码区-->
+                    <div class="articledetail_ercode_pc">
+                        <img class="ercode" src="/images/article_ercode.png">
+                        <p>第一时间获取股权投资行业新鲜资讯和深度商业分析，请在微信公众账号中搜索投中网，或用手机扫描左侧二维码，即可获得投中网每日精华内容推送。</p>
+                    </div>
+                    
+                    <!--评论区-->
+                    <div class="comment_warpper_pc">
+                        <div class="submit_comment">
+                            <div id="comment_zone" class="comment_commontitle_pc">
+                                <h4>发表评论</h4>
+                                <span></span>
+                            </div>
+                            <div class="comment_textarea_box clearfix">
+                                <div class="headpic">
+                                    <img src="/images/default_userheadpic2.png" />
+                                </div>
+                                <textarea v-model="commentText" maxlength="200" placeholder="说点什么..."></textarea>
+                            </div>
+                            <div class="btn_zone">
+                                <div class="fontNum">
+                                    <span v-text="textNum"></span>
+                                    <span>&nbsp;/&nbsp;200</span>
+                                </div>
+                                <button class="submit_comment_btn" :class="{'disabled': submitDisabled}" @click="checkSensitiveWord">发表评论</button>
+                            </div>
+                        </div>
+                        <div class="all_comment_list">
+                            <div class="comment_commontitle_pc">
+                                <h4>全部评论</h4>
+                                <span></span>
+                            </div>
+                            <!--success insert-->
+                            <ul class="comment_floor_list" v-if="insertComment.length !== 0">
+                                <li class="comment_singlefloor" v-for="item in insertComment">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.commentText"></div>
+                                </li>
+                            </ul>
+                            
+                            <!--全部评论INC-->
+                           	<div id="articledetail_comment_all">
+
+	    <div class="no_morelist_inc" v-if="true">——&nbsp;没有更多评论了&nbsp;——</div>
+    
+</div>
+                           	
+                            <!--更多评论-->
+                            <ul class="comment_floor_list">
+                                <li class="comment_singlefloor" v-for="item in commentObj.showUserList">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.comment_custom_time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.content"></div>
+                                </li>
+                            </ul>
+                            <div class="controllzone_hook" v-if="needTorequest">
+                                <div v-show="commentObj.showLoading" class="common_loading_pc"></div>
+                                <button v-if="!commentObj.showNomore" v-show="!(commentObj.showLoading)" class="click_getmore_pc" @click="stepAddCommentList()">点击加载更多</button>
+                                <div class="no_morelist" v-if="commentObj.showNomore">——&nbsp;没有更多评论了&nbsp;——</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--侧边栏340-->
+            <div class="content_right_pc">
+                <!--广告图位-->
+                <aside id="articledetail_aside_advimg" class="aside_common_content">
+    <div class="articledetail_advpic_pc">
+    	        <a href="https://www.chinaventure.com.cn/meeting/live/6.html" target="_blank">
+            <img src="https://pic.chinaventure.com.cn/head/6800358722502656.jpg">
+        </a>
+        
+    </div>
+</aside>
+
+                <!--相关文章-->
+                <aside v-if="relevantList.length !== 0" class="aside_common_content">
+                    <div class="aside_commontitle_pc">
+                        <h4>相关文章</h4>
+                        <span></span>
+                        <a></a>
+                    </div>
+                    <ul class="common_relevantarticle_pc clearfix">
+                        <li class="clearfix" v-for="(item,index) in relevantList">
+                            <a target="_blank" :href="item.url">
+                                <img :src="item.headPic">
+                                <h1 v-text="item.title"></h1>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!--本周热文-->
+                <aside id="index_aside_weekhotarticle" class="aside_common_content">
+    <div class="aside_commontitle_pc">
+        <h4>本周热文</h4>
+        <span></span>
+        <a></a>
+    </div>
+    <ul class="common_weekhotarticle_pc clearfix">
+    
+    	        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260919-393346.html">
+                <img src="https://pic.chinaventure.com.cn//head/7357266361581568.png?x-image-process=image/quality,q_80" title="LP周报丨上海又落地了一只并购基金">
+                <h1>LP周报丨上海又落地了一只并购基金</h1>
+                <p>3天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">1</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260916-393294.html">
+                <img src="https://pic.chinaventure.com.cn/head/7472109521469440.png?x-image-process=image/quality,q_80" title="ExploMar擎波探索宣布完成近亿元A轮融资">
+                <h1>ExploMar擎波探索宣布完成近亿元A轮融资</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">2</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/78-20260917-393312.html">
+                <img src="https://pic.chinaventure.com.cn//head/7346465810677760.png?x-image-process=image/quality,q_80" title="日本年轻人，开始在小游戏里社交">
+                <h1>日本年轻人，开始在小游戏里社交</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">3</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393297.html">
+                <img src="https://pic.chinaventure.com.cn//head/7303692403343360.png?x-image-process=image/quality,q_80" title="350亿打水漂，中东土豪也栽了">
+                <h1>350亿打水漂，中东土豪也栽了</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">4</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260921-393375.html">
+                <img src="https://pic.chinaventure.com.cn/head/7426464467124224.png?x-image-process=image/quality,q_80" title="行云集成完成近8亿人民币融资">
+                <h1>行云集成完成近8亿人民币融资</h1>
+                <p>1天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">5</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393298.html">
+                <img src="https://pic.chinaventure.com.cn/head/7403981491929088.png?x-image-process=image/quality,q_80" title="9个月完成123笔融资，顶级VC正在悄悄押注这个赛道">
+                <h1>9个月完成123笔融资，顶级VC正在悄悄押注这个赛道</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">6</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260918-393343.html">
+                <img src="https://pic.chinaventure.com.cn/head/7506634137927680.jpg?x-image-process=image/quality,q_80" title="智谱下场，投资人抢投RSI｜Frontline">
+                <h1>智谱下场，投资人抢投RSI｜Frontline</h1>
+                <p>4天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">7</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/110-20260917-393305.html">
+                <img src="https://pic.chinaventure.com.cn//head/7239466691330048.png?x-image-process=image/quality,q_80" title="估值83亿，上海毫米波雷达芯片巨头冲刺IPO">
+                <h1>估值83亿，上海毫米波雷达芯片巨头冲刺IPO</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">8</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/111-20260917-393317.html">
+                <img src="https://pic.chinaventure.com.cn/head/7020581727764480.png?x-image-process=image/quality,q_80" title="思博慧医完成首期融资">
+                <h1>思博慧医完成首期融资</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">9</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/110-20260916-393290.html">
+                <img src="https://pic.chinaventure.com.cn/head/7455085118357504.jpg?x-image-process=image/quality,q_80" title="车企争夺动力电池话语权，宁德时代怕了吗？">
+                <h1>车企争夺动力电池话语权，宁德时代怕了吗？</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">10</div>
+            </a>
+        </li>
+
+    </ul>
+</aside>
+            </div>
+        </div>
+
+        <!--沉浸式阅读-->
+        <div class="immerse_reading_zone">
+            <div class="immerse_article_wrapper"></div>
+            <div class="backtopage_btn" @click="closeImmerseReading"></div>
+        </div>
+
+        <div class="common_asidefixed_tools">
+    <a class="guestsignup_btn" target="_blank" href="/signup/guestinfo_collection.html">联系我们</a>
+    <a class="contribute_btn" target="_blank" href="/contribute.html">欢迎投稿</a>
+    <div class="appdownload_btn">
+        <div class="ercode_box_bg">
+            <div class="ercode_box">
+                <ul class="appcode_tab">
+                    <li class="active">投中网</li>
+                    <li>CVS投中数据</li>
+                </ul>
+                <ol class="appcode_box">
+                    <li class="active">
+                        <img id="downloadCodepic" src="/images/chinaventure_downloadcode.png" />
+                        <p>创新经济的<br>智识、洞见和未来</p>
+                    </li>
+                    <li>
+                        <img src="/images/cvsercode.png" />
+                        <p>投资人都在用的<br>数据专家</p>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </div>
+    <div class="backtotop_btn">返回顶部</div>
+</div>
+        
+        <footer id="footer_pc" class="footer_pc">
+    <div class="footer_innner">
+        <div class="footer_coperator clearfix">
+            <div id="index_footer_sponsor" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>合作机构</span>
+                    <a href="/coperation.html?activeIndex=0" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img title="第一财经" src="/images/coperation/media/第一财经.png"></li>
+                    <li><img title="界面新闻" src="/images/coperation/media/界面新闻.png"></li>
+                    <li><img title="新浪科技" src="/images/coperation/media/新浪科技.png"></li>
+                    <li><img title="新浪财经客户端" src="/images/coperation/media/新浪财经客户端.png"></li>
+                    <li><img title="凤凰网财经" src="/images/coperation/media/凤凰网财经.png"></li>
+                    <li><img title="36kr" src="/images/coperation/media/36kr.png"></li>
+                    <li><img title="财联社" src="/images/coperation/media/财联社.png"></li>
+                    <li><img title="GEEKPARK" src="/images/coperation/media/GEEKPARK.png"></li>
+                    <li><img title="华夏时报" src="/images/coperation/media/华夏时报.png"></li>
+                    <li><img title="钛媒体" src="/images/coperation/media/钛媒体.png"></li>
+                    <li><img title="和讯" src="/images/coperation/media/和讯.png"></li>
+                    <li><img title="雪球" src="/images/coperation/media/雪球.png"></li>
+                </ul>
+            </div>
+            <div id="index_footer_customer" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>投中客户</span>
+                    <a href="/coperation.html?activeIndex=1" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951018487087104.png" title="深圳担保" alt="深圳担保"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951058941149184.png" title="联创资本" alt="联创资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019497914368.png" title="普罗资本" alt="普罗资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020231917568.png" title="钛信资本" alt="钛信资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019833458688.png" title="创东方" alt="创东方" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019636326400.png" title="基石资本" alt="基石资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020080922624.png" title="华平投资" alt="华平投资" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019938316288.png" title="澳银资本" alt="澳银资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019757961216.png" title="毅达资本" alt="毅达资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019686658048.png" title="高新投" alt="高新投" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020001230848.png" title="紫金港资本" alt="紫金港资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951022693974016.png" title="东方富海" alt="东方富海" /></li> 
+                </ul>
+            </div>
+            <div class="footer_linkzone_pc clearfix footer_link">
+                <h1 class="footer_title">
+                    <span>联系我们</span>
+                </h1>
+                <ul class="clearfix">
+                    <li><span>商务合作：sa@chinaventure.com.cn</span></li>
+                </ul>
+                <ul class="clearfix">
+                    <li class="m-t-10"><span>机构合作：md-pr@chinaventure.com.cn</span></li>
+                </ul>
+            </div>
+            <div id="index_footer_friendlink" class="footer_linkzone_pc clearfix">
+                <h1 class="footer_title">
+                    <span>友情链接</span>
+                </h1>
+                <ul class="clearfix"> 
+                    <li><a target="_blank" href="http://tech.qq.com">腾讯科技</a></li>
+                    <li><a target="_blank" href="http://www.caijing.com.cn">财经网</a></li>
+                    <li><a target="_blank" href="http://www.jrj.com.cn">金融界</a></li>
+                    <li><a target="_blank" href="http://capital.people.com.cn">人民创投</a></li>
+                    <li><a target="_blank" href="http://www.hexun.com">和讯</a></li>
+                    <li><a target="_blank" href="http://www.iresearch.cn">艾瑞网</a></li>
+                    <li><a target="_blank" href="https://www.youliancloud.cn/ ">有连云</a></li>
+                    <li><a target="_blank" href="http://www.easeye.com.cn/">亿业科技</a></li>
+                    <li><a target="_blank" href="https://www.catrust.cn/">国产SSL证书</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright_text">
+            <p><a href="https://www.12377.cn" target="_blank">违法和不良信息举报电话：(021)56790721</a>　<a href="https://www.chinaventure.com.cn/news/64-20260126-389940.html" target="_blank">举报邮箱：report2019@chinaventure.com.cn</a></p>
+            <p>Copyright &#169 2005-2023 ChinaVenture Investment Consulting Ltd. 投中网 <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2023019928号-1</a></p>
+            <p>本站带宽由 ChinaCache 提供&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902003027" style="display:inline-block;text-decoration:none;"><img style="width:20px;height:20px;position:relative;top:5px;" src="/images/gongan.png"/>&nbsp;沪公网安备 31010902003027号</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020200109105830000005532081-SAIC_SHOW_310000-2c9be8bd717d3562017198bf4d8c0ffb065&signData=MEQCIATlMt5wh1D4jG0Rzra+Eq/qT9fo4I2bhjHWs+VSiQacAiA16eKQi3fn2qiEdfEQQ+FkLu+myHa5XhS+WRNKyOBCGA==" style="display:inline-block;text-decoration:none;"><img style="width:16px;height:20px;position:relative;top:5px;" alt="投中网电子营业执照" title="投中网电子营业执照" src="/images/dianziyingyezhizhao.png"/></a></p>
+        </div>
+    </div>
+</footer>
+        
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/page/articledetail.js"></script>
+</html>

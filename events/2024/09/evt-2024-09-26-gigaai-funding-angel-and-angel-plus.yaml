@@ -1,0 +1,26 @@
+id: evt-2024-09-26-gigaai-funding-angel-and-angel-plus
+date: '2024-09-26'
+date_precision: day
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成天使及天使 + 连续两轮融资
+summary:
+  zh: 投中网 2024 年 9 月 26 日报道，空间智能公司极佳视界宣布完成近 5000 万元天使及天使 + 连续两轮融资，由北汽产投、奇绩创坛、华民投、龙鼎投资、清智资本、PKSHA
+    Algorithm Fund 等机构投资。此前该公司已完成数千万元种子轮融资，由辰韬资本投资。
+counterparties:
+- 北汽产投
+- 奇绩创坛
+- 华民投
+- 龙鼎投资
+- 清智资本
+- PKSHA Algorithm Fund
+evidence:
+- url: https://www.chinaventure.com.cn/news/80-20240926-383156.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/chinaventure-2024-09-26-gigaai-angel-round.html
+corroboration: single

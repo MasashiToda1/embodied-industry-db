@@ -1,0 +1,22 @@
+id: evt-2024-11-29-gigaai-publication-recondreamer
+date: '2024-11-29'
+date_precision: day
+type: publication
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: "极佳视界开源 ReconDreamer：用世界模型在线修复做驾驶场景重建"
+summary:
+  zh: 极佳视界 GitHub 账号 GigaAI-research 的 ReconDreamer 仓库 README 记录，2024 年 11 月 29 日仓库初始化，2024
+    年 12 月 4 日发布基于 Street Gaussians 的部分场景权重与 NTA-IoU 计算脚本。该工作提出 DriveRestorer 在线修复伪影，论文为
+    arXiv 2411.19548，后被 CVPR 2025 收录。
+axes:
+  model_form: [world-model]
+evidence:
+- url: https://github.com/GigaAI-research/ReconDreamer
+  publisher: GitHub · GigaAI-research
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-28-gigaai-recondreamer.html
+corroboration: single

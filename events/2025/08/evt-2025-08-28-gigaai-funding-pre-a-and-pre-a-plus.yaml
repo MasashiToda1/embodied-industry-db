@@ -1,0 +1,27 @@
+id: evt-2025-08-28-gigaai-funding-pre-a-and-pre-a-plus
+date: '2025-08-28'
+date_precision: day
+type: funding
+orgs:
+- id: gigaai
+  role: subject
+title:
+  zh: 极佳视界完成 Pre-A 与 Pre-A+ 连续两轮融资
+summary:
+  zh: 投中网 2025 年 8 月 28 日报道，极佳视界宣布完成 Pre-A 与 Pre-A+ 连续两轮数亿元融资。Pre-A 轮由国中资本领投，紫峰资本、老股东
+    PKSHA Algorithm Fund 跟投；Pre-A+ 轮由中金资本、广州产投、一村淞灵、华强资本投资。
+counterparties:
+- 国中资本
+- 紫峰资本
+- PKSHA Algorithm Fund
+- 中金资本
+- 广州产投
+- 一村淞灵
+- 华强资本
+evidence:
+- url: https://www.chinaventure.com.cn/news/108-20250828-387796.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/chinaventure-2025-08-28-gigaai-pre-a.html
+corroboration: single

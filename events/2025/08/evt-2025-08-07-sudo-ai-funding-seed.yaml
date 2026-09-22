@@ -1,0 +1,21 @@
+id: evt-2025-08-07-sudo-ai-funding-seed
+date: '2025-08-07'
+date_precision: day
+type: funding
+orgs:
+- id: sudo-ai
+  role: subject
+title:
+  zh: 苏度科技完成种子轮融资
+summary:
+  zh: 投资界企业页记录，苏度科技于 2025 年 8 月 7 日完成种子轮融资，投资方为启迪之星创投，融资金额未披露。该页同时载明上海苏度科技有限公司成立于 2025
+    年 5 月 19 日。
+counterparties:
+- 启迪之星创投
+evidence:
+- url: https://vc.pedaily.cn/company/843265.html
+  publisher: 投资界（清科）
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/vc-2025-08-07-sudo-ai-seed.html
+corroboration: single
