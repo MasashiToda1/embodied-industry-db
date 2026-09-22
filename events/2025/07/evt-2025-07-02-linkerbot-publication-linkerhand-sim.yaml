@@ -1,0 +1,18 @@
+id: evt-2025-07-02-linkerbot-publication-linkerhand-sim
+date: '2025-07-02'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手开源 LinkerHand 仿真环境仓库
+summary:
+  zh: 灵心巧手在 GitHub 组织 linker-bot 下创建并开源 linkerhand-sim 仓库，发布 Linker Hand 灵巧手的仿真环境，采用 Apache-2.0 许可证。
+evidence:
+- url: https://github.com/linker-bot/linkerhand-sim
+  publisher: GitHub · linker-bot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-02-linkerbot-linkerhand-sim.html
+corroboration: single

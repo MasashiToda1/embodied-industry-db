@@ -1,0 +1,21 @@
+id: evt-2025-05-12-orbbec-product_launch-gemini-435le
+date: '2025-05-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: orbbec
+  role: subject
+title:
+  zh: 奥比中光在 Automate 2025 发布工业级双目 3D 相机 Gemini 435Le
+summary:
+  zh: 2025 年 5 月 12 日，奥比中光在美国底特律举办的 Automate 2025 展会上发布 Gemini 435Le 双目 3D 相机。该产品为工业级双目视觉方案，内置多种预设深度模式，可通过软件切换适配移动避障与尺寸测量等不同场景，具备 IP67 防护等级，支持 -10°C 至 50°C 宽温域工作，面向叉车、AMR、物流分拣机械臂等机器人应用。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  data_modality: [rgbd]
+evidence:
+- url: https://www.orbbec.com.cn/index/News/info.html?cate=31&id=318
+  publisher: 奥比中光官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/orbbec-2025-05-12-orbbec-gemini-435le.html
+corroboration: single

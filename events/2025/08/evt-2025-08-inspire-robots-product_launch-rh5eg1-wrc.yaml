@@ -1,0 +1,23 @@
+id: evt-2025-08-inspire-robots-product_launch-rh5eg1-wrc
+date: '2025-08'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文发布于 2025-08-09，报道 2025 WRC 世界机器人大会展会现场「携两款重磅产品亮相展会」
+type: product_launch
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人 RH5EG1 系列高自由度灵巧手在 2025 WRC 亮相
+summary:
+  zh: 在 2025 WRC 世界机器人大会上，因时机器人展出 RH5EG1 系列高自由度仿人五指灵巧手。该系列具有 14 个主动自由度、18 个可运动关节，指尖抓握力达 2kg，掌内集成 13 组高灵敏度触觉传感器，现场以视觉遥操方式演示。
+axes:
+  data_modality: [tactile, force-torque]
+  data_acquisition: [teleop]
+evidence:
+- url: https://www.leaderobot.com/news/6033
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/leaderobot-2025-08-inspire-robots-rh5eg1-wr.html
+corroboration: single

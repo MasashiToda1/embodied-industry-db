@@ -1,0 +1,22 @@
+id: evt-2025-05-13-ohand-funding-b-plus-plus-round
+date: '2025-05-13'
+date_precision: day
+type: funding
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技完成近亿元 B++ 轮融资
+summary:
+  zh: 5 月 13 日消息，傲意科技近期已完成近亿元 B++ 轮融资，由英飞尼迪资本、浙江省国有资本运营有限公司旗下浙江省发展资产经营有限公司、沃美达资本共同投资，升氪剂资本担任长期财务顾问。本轮募集资金将用于灵巧手技术研发投入、新产品上市进程以及产能建设和市场拓展。
+counterparties:
+- 英飞尼迪资本
+- 浙江省发展资产经营有限公司
+- 沃美达资本
+evidence:
+- url: https://news.qq.com/rain/a/20250513A01NOD00
+  publisher: 36氪（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-13-ohand-b-plus-plus-round.html
+corroboration: single

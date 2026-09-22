@@ -1,0 +1,22 @@
+id: evt-2025-04-29-inspire-robots-funding-b3-round
+date: '2025-04-29'
+date_precision: day
+type: funding
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人完成近亿元 B3 轮融资
+summary:
+  zh: 4 月 29 日消息，因时机器人完成近亿元人民币 B3 轮投资，由神骐资本领投，源禾资本、华盖资本跟投，久谦资本担任长期独家财务顾问。融资将投入尖端技术研发、产品迭代以及全球化市场拓展。
+counterparties:
+- 神骐资本
+- 源禾资本
+- 华盖资本
+evidence:
+- url: https://36kr.com/newsflashes/3270724216397961
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/36kr-2025-04-29-inspire-robots-b3-round.html
+corroboration: single

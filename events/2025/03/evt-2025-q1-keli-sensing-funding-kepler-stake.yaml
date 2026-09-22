@@ -1,0 +1,25 @@
+id: evt-2025-q1-keli-sensing-funding-kepler-stake
+date: '2025-Q1'
+date_precision: quarter
+type: funding
+orgs:
+- id: keli-sensing
+  role: investor
+- id: kepler
+  role: subject
+title:
+  zh: 柯力传感战略投资开普勒机器人并持有 1.55% 股权
+summary:
+  zh: 柯力传感 2024 年年度报告披露，公司于 2025 年一季度完成对开普勒机器人的战略投资，股权关系为参股，被投企业核心产品为人形机器人、灵巧手。公司在投资者关系平台答复中称持有开普勒机器人 1.55% 股权，双方将在传感器技术创新、供应链协同、产业化推进等方面加强合作。
+evidence:
+- url: https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=11027744&stockid=603662
+  publisher: 新浪财经 · 柯力传感 2024 年年度报告摘要
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/Q1/vip-2025-Q1-keli-sensing-2024-annual.html
+- url: https://stock.stockstar.com/IG2025043000036213.shtml
+  publisher: 证券之星 · 柯力传感投资者关系平台答复
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/Q1/stock-2025-Q1-keli-sensing-kepler-stak.html
+corroboration: multi

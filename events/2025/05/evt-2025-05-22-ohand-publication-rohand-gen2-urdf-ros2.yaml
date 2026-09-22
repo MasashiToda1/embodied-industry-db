@@ -1,0 +1,18 @@
+id: evt-2025-05-22-ohand-publication-rohand-gen2-urdf-ros2
+date: '2025-05-22'
+date_precision: day
+type: publication
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技开源 ROHand Gen2 的 URDF ROS2 包
+summary:
+  zh: 傲意科技在 GitHub 组织 oymotion 下创建并开源 rohand_gen2_urdf_ros2 仓库，发布第二代 ROHand 灵巧手的 URDF 模型 ROS2 包。
+evidence:
+- url: https://github.com/oymotion/rohand_gen2_urdf_ros2
+  publisher: GitHub · oymotion
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-22-ohand-rohand-gen2-urdf-r.html
+corroboration: single

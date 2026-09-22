@@ -1,0 +1,25 @@
+id: evt-2025-07-26-brainco-product_launch-revo-2
+date: '2025-07-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: brainco
+  role: subject
+title:
+  zh: 强脑科技在 2025 WAIC 发布仿生灵巧手 Revo 2
+summary:
+  zh: 7 月 26 日，在 2025 世界人工智能大会上，强脑科技发布新一代灵巧手产品 BrainCo 仿生灵巧手 Revo 2。该产品重量 383 克，尺寸 16×7.6 厘米，操作精度 0.1 毫米，握力 50N，承载 20KG，抓重比 52.6，搭载多模态触觉传感器，可感知物体硬度、纹理及受力方向，支持 64V 宽电压与多种通讯协议。
+axes:
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://www.stcn.com/article/detail/2763335.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stcn-2025-07-26-brainco-revo2-waic.html
+- url: https://tech.ifeng.com/c/8lSmUifsJ60
+  publisher: 凤凰网科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/tech-2025-07-26-brainco-revo2-waic-ifeng.html
+corroboration: multi

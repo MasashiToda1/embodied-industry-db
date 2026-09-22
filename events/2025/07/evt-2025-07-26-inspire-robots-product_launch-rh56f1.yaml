@@ -1,0 +1,20 @@
+id: evt-2025-07-26-inspire-robots-product_launch-rh56f1
+date: '2025-07-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人发布第五代 RH56F1 系列仿人五指灵巧手
+summary:
+  zh: 7 月 26 日，在 2025 WAIC 世界人工智能大会上，因时机器人发布第五代产品 RH56F1 系列仿人五指灵巧手。该系列采用全金属机身与骨架一体化设计，支持 1KHz 高速实时通讯，静态被动载荷 30KG，指尖抓握力 15N。
+axes:
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://www.ithome.com/0/870/952.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ithome-2025-07-26-inspire-robots-rh56f1.html
+corroboration: single

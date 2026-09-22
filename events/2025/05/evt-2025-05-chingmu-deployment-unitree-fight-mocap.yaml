@@ -1,0 +1,26 @@
+id: evt-2025-05-chingmu-deployment-unitree-fight-mocap
+date: '2025-05'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「今年 5 月，宇树科技人形机器人亮相全球首个以人形机器人为参赛主体的格斗竞技赛——CMG 世界机器人格斗擂台赛」（青瞳视觉官网 2025-08-28 发布）
+type: deployment
+orgs:
+- id: chingmu
+  role: subject
+- id: unitree
+  role: customer
+title:
+  zh: 宇树科技机器人格斗训练采用青瞳视觉光学动捕系统采集数据
+summary:
+  zh: 青瞳视觉官网披露，宇树科技人形机器人在 CMG 世界机器人格斗擂台赛与 UFC 精英训练中心两场活动的赛前训练中，均采用青瞳视觉的光学动捕系统进行格斗训练数据采集，对格斗运动员的位姿、速度等指标进行捕捉，记录肢体关节角度变化以及出拳速度、运动轨迹连贯性等信息，用于机器人动作执行评估与控制算法优化。
+axes:
+  data_acquisition: [mocap]
+  data_modality: [joint-trajectory]
+  target_scene: [tourism-performance]
+evidence:
+- url: https://www.chingmu.com/company-news/newsdetail_854.shtml
+  publisher: 青瞳视觉官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/chingmu-2025-05-chingmu-unitree-fight-mo.html
+corroboration: single

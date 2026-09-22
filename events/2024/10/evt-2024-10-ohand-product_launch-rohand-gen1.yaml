@@ -1,0 +1,22 @@
+id: evt-2024-10-ohand-product_launch-rohand-gen1
+date: '2024-10'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「傲意科技第一代灵巧手 ROhand 在去年 10 月正式亮相」（报道发布于 2025-06-04）
+type: product_launch
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技推出第一代灵巧手 ROHand
+summary:
+  zh: 傲意科技第一代灵巧手 ROHand（型号 ROH-A001）于 2024 年 10 月正式推出，具备 6 个主动自由度、11 个运动关节，单个手指最大负载 10 千克，整手最大负载 30 千克，面向具身机器人与工业自动化场景。
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://news.qq.com/rain/a/20250604A046RB00
+  publisher: 南方都市报（腾讯新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/news-2024-10-ohand-rohand-gen1.html
+corroboration: single

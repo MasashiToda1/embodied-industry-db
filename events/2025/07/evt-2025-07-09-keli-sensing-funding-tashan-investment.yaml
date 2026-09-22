@@ -1,0 +1,22 @@
+id: evt-2025-07-09-keli-sensing-funding-tashan-investment
+date: '2025-07-09'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，柯力传感与北京他山科技有限公司……正式签署投资协议，完成了对他山科技的战略投资」（柯力传感官网 2025-07-09 发布）
+type: funding
+orgs:
+- id: keli-sensing
+  role: investor
+title:
+  zh: 柯力传感战略投资触觉传感芯片公司他山科技
+summary:
+  zh: 柯力传感与北京他山科技有限公司签署投资协议，完成对他山科技的战略投资，这是柯力继投资猿声科技之后在触觉传感器及电子皮肤领域的又一次投资。他山科技成立于 2017 年，产品为 AI 触感芯片及触觉感知算法，可实现对三维力及物体表面形变、温度、纹理的感知，已与人形机器人、灵巧手和机械臂等多个机器人产业链合作伙伴达成合作。
+counterparties:
+- 北京他山科技有限公司
+evidence:
+- url: https://www.kelichina.com/news/keli_news/2663.html
+  publisher: 柯力传感官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/kelichina-2025-07-09-keli-sensing-tashan.html
+corroboration: single

@@ -1,0 +1,31 @@
+id: evt-2025-08-21-robosense-deployment-h1-2025-robot-lidar
+date: '2025-08-21'
+date_precision: day
+type: deployment
+orgs:
+- id: robosense
+  role: subject
+- id: unitree
+  role: customer
+- id: dobot
+  role: customer
+- id: x-humanoid
+  role: customer
+title:
+  zh: 速腾聚创 2025 年中期业绩：机器人及其他激光雷达上半年销量约 4.63 万台
+summary:
+  zh: 8 月 21 日，速腾聚创公布截至 2025 年 6 月 30 日止六个月的中期业绩。机器人及其他产品的激光雷达销量由 2024 年同期约 8900 台增加至 2025 年上半年约 46300 台，该板块收入为人民币 2.207 亿元，同比增长 184.8%，公司将增长归因于机器人客户对新 E1R 及 Airy 激光雷达产品以及 Helios、Bpearl 系列机械式激光雷达的需求增加；该类产品平均单价由 2024 年上半年每台约 8700 元降至 2025 年同期每台约 4800 元。公司称机器人业务服务全球客户突破 3200 家，在具身智能领域与宇树科技、越疆、国地中心等全球超 20 家具身机器人公司达成深度合作，在割草机器人领域拿下全球前五厂商中多家的独供订单。
+axes:
+  data_modality: [pointcloud]
+evidence:
+- url: https://www.hkexnews.hk/listedco/listconews/sehk/2025/0821/2025082101018_c.pdf
+  publisher: 香港交易所披露易 · 速腾聚创 2025 年中期业绩公告
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/hkexnews-2025-08-21-robosense-h1-2025-interi.html
+- url: https://stcn.com/article/detail/3248993.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-21-robosense-h1-2025-stcn.html
+corroboration: multi

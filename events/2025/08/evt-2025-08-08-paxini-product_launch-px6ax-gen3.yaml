@@ -1,0 +1,20 @@
+id: evt-2025-08-08-paxini-product_launch-px6ax-gen3
+date: '2025-08-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼在 2025 WRC 全球首发第三代多维触觉传感器矩阵 PX-6AX-GEN3
+summary:
+  zh: 在 2025 世界机器人大会首日，帕西尼全球首发第三代多维触觉传感器矩阵 PX-6AX-GEN3，涵盖 Elite、Core、Omega 三大系列共 12 款不同尺寸及型号，并同步开启预售。Elite 系列面向性价比与高性能指标，Core 系列配备更密集的测点与更多构型，Omega 系列通过表层结构优化扩大接触面积。
+axes:
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://www.leaderobot.com/news/6015
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/leaderobot-2025-08-08-paxini-px6ax-gen3.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2025-04-01-linkerbot-publication-linkerhand-ros2-sdk
+date: '2025-04-01'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手开源 LinkerHand ROS2 SDK
+summary:
+  zh: 灵心巧手在 GitHub 组织 linker-bot 下创建并开源 linkerhand-ros2-sdk 仓库，为 Linker Hand 系列灵巧手提供 ROS2 驱动与接口，采用 Apache-2.0 许可证。
+evidence:
+- url: https://github.com/linker-bot/linkerhand-ros2-sdk
+  publisher: GitHub · linker-bot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/github-2025-04-01-linkerbot-linkerhand-ros.html
+corroboration: single

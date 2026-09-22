@@ -1,0 +1,23 @@
+id: evt-2025-01-07-hesai-deployment-mova-1000-jt16
+date: '2025-01-07'
+date_precision: day
+type: deployment
+orgs:
+- id: hesai
+  role: subject
+title:
+  zh: 禾赛 JT16 激光雷达搭载于 MOVA 割草机器人 MOVA 1000
+summary:
+  zh: 在 CES 2025 上，禾赛科技与 MOVA 共同展出割草机器人 MOVA 1000，该产品搭载一颗禾赛 JT16 迷你型 3D 激光雷达。禾赛称 JT 整机重量 200 克至 250 克，嵌入式安装视窗露出高度不超过 30 毫米，运行功耗最低约 4.3W；2024 年 12 月公司激光雷达单月交付量突破 100000 台，其中面向机器人市场单月交付量超过 20000 台。
+counterparties:
+- MOVA
+axes:
+  target_scene: [home]
+  data_modality: [pointcloud]
+evidence:
+- url: https://finance.sina.com.cn/roll/2025-01-08/doc-ineefuvv1176193.shtml
+  publisher: 上海证券报（新浪财经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/finance-2025-01-07-hesai-mova-1000-jt16.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2025-01-07-hesai-product_launch-jt-series
+date: '2025-01-07'
+date_precision: day
+type: product_launch
+orgs:
+- id: hesai
+  role: subject
+title:
+  zh: 禾赛科技在 CES 2025 发布面向机器人的迷你型超半球 3D 激光雷达 JT 系列
+summary:
+  zh: 2025 年 1 月 7 日（太平洋时间），禾赛科技在 CES 2025 发布面向机器人领域的迷你型超半球 3D 激光雷达 JT 系列，并宣布已开始向客户量产交付。JT 采用禾赛第四代自研芯片，JT128 与 JT32 视场角为 360°×187°，JT16 视场角为 360°×40°，最高支持 256 线，可用于移动机器人、配送机器人、清扫机器人、割草机器人等场景。禾赛称 2024 年 12 月面向机器人市场单月交付激光雷达已超过 20000 台。
+axes:
+  target_scene: [logistics-warehouse, commercial-service]
+  data_modality: [pointcloud]
+evidence:
+- url: https://www.hesaitech.com/cn/news/610
+  publisher: 禾赛科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/hesaitech-2025-01-07-hesai-jt-series-launch.html
+corroboration: single

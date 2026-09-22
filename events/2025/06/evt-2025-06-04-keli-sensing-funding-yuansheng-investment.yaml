@@ -1,0 +1,22 @@
+id: evt-2025-06-04-keli-sensing-funding-yuansheng-investment
+date: '2025-06-04'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，柯力传感与猿声先达科技（深圳）有限公司……签署投资协议，完成了猿声科技的战略投资」（柯力传感官网 2025-06-04 发布）
+type: funding
+orgs:
+- id: keli-sensing
+  role: investor
+title:
+  zh: 柯力传感战略投资触觉传感器公司猿声先达
+summary:
+  zh: 柯力传感与猿声先达科技（深圳）有限公司签署投资协议，完成对猿声科技的战略投资，这是柯力传感在多维触觉传感和电子皮肤方向的布局。猿声科技成立于 2025 年 1 月，已量产两款触觉传感器产品：面向灵巧手指尖的超薄高密度「感算一体」多维触觉传感器 MultiDT，以及面向人形机器人全身触觉的大面积触觉传感器 HexT。公司在投资者关系平台答复中称持有猿声先达 7.69% 股权。
+counterparties:
+- 猿声先达科技（深圳）有限公司
+evidence:
+- url: https://www.kelichina.com/news/keli_news/2649.html
+  publisher: 柯力传感官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/kelichina-2025-06-04-keli-sensing-yuansheng.html
+corroboration: single

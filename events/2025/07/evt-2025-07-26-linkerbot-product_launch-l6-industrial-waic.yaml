@@ -1,0 +1,22 @@
+id: evt-2025-07-26-linkerbot-product_launch-l6-industrial-waic
+date: '2025-07-26'
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「7月26日，2025 WAIC 世界人工智能大会暨人工智能全球治理高级别会议在上海正式开幕」「在本次大会上……Linker Hand L6 工业版正式与大众见面……这也是该款产品的首次亮相」
+type: product_launch
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手 Linker Hand L6 工业版在 2025 WAIC 首次亮相
+summary:
+  zh: 在 2025 世界人工智能大会上，灵心巧手的 Linker Hand「工业大师」版灵巧手 L6 首次亮相。L6 工业版针对工业场景的高灵活性、高负载需求开发，具备 6 个主动自由度、12 个总自由度，采用「无刷电机 + 滚珠丝杠」的超强电缸驱动模块与驱控一体化设计。
+axes:
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.36kr.com/p/3398252618238081
+  publisher: 36氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/36kr-2025-07-26-linkerbot-l6-waic.html
+corroboration: single

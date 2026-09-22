@@ -1,0 +1,30 @@
+id: evt-2025-03-qianjue-deployment-agibot-tactile-solution
+date: '2025-03'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「2025年3月,千觉机器人首创推出的全球首个触觉仿真工具Xense_Sim以及多模态高精度触觉传感器G1-WS,助力智元机器人完备数据采集模态」
+type: deployment
+orgs:
+- id: qianjue
+  role: subject
+- id: agibot
+  role: customer
+title:
+  zh: 千觉机器人触觉感知方案落地智元机器人
+summary:
+  zh: 千觉机器人自主研发的触觉仿真工具 Xense_Sim 与多模态高精度触觉传感器 G1-WS 落地应用于智元机器人，用于完备数据采集模态。G1-WS 专为机器人夹爪设计，三维形状测量分辨率为每平方厘米 5 万个测量点，X/Y 方向精度 0.03mm、Z 方向精度 0.06mm，每帧力场处理时间 10ms；Xense_Sim 可模拟切向运动与力信息，处理速度 50Hz，已集成至 Isaac Sim 仿真平台。
+axes:
+  data_modality: [tactile, force-torque]
+  sim_stack: [isaac-sim]
+evidence:
+- url: https://www.geekpark.net/news/346630
+  publisher: 极客公园
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/geekpark-2025-03-qianjue-agibot-deploy-ge.html
+- url: https://sensor.ofweek.com/2025-05/ART-81013-8120-30662389.html
+  publisher: OFweek传感器网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/sensor-2025-03-qianjue-agibot-deploy.html
+corroboration: multi

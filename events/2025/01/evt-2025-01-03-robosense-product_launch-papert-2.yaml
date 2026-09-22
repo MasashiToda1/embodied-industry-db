@@ -1,0 +1,25 @@
+id: evt-2025-01-03-robosense-product_launch-papert-2
+date: '2025-01-03'
+date_precision: day
+type: product_launch
+orgs:
+- id: robosense
+  role: subject
+title:
+  zh: 速腾聚创发布第二代灵巧手 Papert 2.0
+summary:
+  zh: 1 月 3 日，速腾聚创在「Hello Robot」2025 AI 机器人全球线上发布会上发布第二代灵巧手 Papert 2.0。该产品为仿人手设计，具有 20 个自由度，最大负载 5kg，在指尖指腹和手掌上共有 14 个力传感器；配合机械臂及其控制系统，可完成用 4 自由度食指使用电动螺丝刀、拿起鸡蛋、捡起螺丝钉等操作，并可结合传感器感知信息与手部动作进行闭环控制。发布会上速腾聚创还首次展示自研的人形机器人整机。
+axes:
+  data_modality: [force-torque]
+evidence:
+- url: https://www.zhidx.com/p/461999.html
+  publisher: 智东西
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/zhidx-2025-01-03-robosense-hello-robot.html
+- url: https://news.qq.com/rain/a/20250103A08PXN00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-03-robosense-papert2.html
+corroboration: multi

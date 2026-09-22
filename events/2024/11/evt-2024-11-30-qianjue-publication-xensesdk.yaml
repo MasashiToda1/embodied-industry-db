@@ -1,0 +1,20 @@
+id: evt-2024-11-30-qianjue-publication-xensesdk
+date: '2024-11-30'
+date_precision: day
+type: publication
+orgs:
+- id: qianjue
+  role: subject
+title:
+  zh: 千觉机器人开源触觉传感器 Python SDK
+summary:
+  zh: 千觉机器人在 GitHub 组织 XenseRobotics 下创建并开源 xensesdk 仓库，为其触觉传感器提供 Python SDK，支持深度、形变、marker 跟踪、力场以及远程 / 离线推理。该组织主页登记的网站为 xenserobotics.com。
+axes:
+  data_modality: [tactile, force-torque]
+evidence:
+- url: https://github.com/XenseRobotics/xensesdk
+  publisher: GitHub · XenseRobotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-30-qianjue-xensesdk.html
+corroboration: single

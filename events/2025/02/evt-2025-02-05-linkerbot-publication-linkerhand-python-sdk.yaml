@@ -1,0 +1,18 @@
+id: evt-2025-02-05-linkerbot-publication-linkerhand-python-sdk
+date: '2025-02-05'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手开源 LinkerHand Python SDK
+summary:
+  zh: 灵心巧手在 GitHub 组织 linker-bot 下创建并开源 linkerhand-python-sdk 仓库，为 Linker Hand 系列灵巧手提供 Python 控制接口。
+evidence:
+- url: https://github.com/linker-bot/linkerhand-python-sdk
+  publisher: GitHub · linker-bot
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/github-2025-02-05-linkerbot-linkerhand-pyt.html
+corroboration: single

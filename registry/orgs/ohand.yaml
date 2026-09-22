@@ -13,6 +13,7 @@ hq:
   city: 上海
 description: 做肌电 / 脑电传感、智能仿生手与机器人灵巧手的公司，产品有 OHand 仿生手与 ROHand 系列灵巧手。
 accounts:
+  github: oymotion   # GitHub 组织显示名 OYMotion，登记站点 oymotion.com、所在地上海
   site: https://www.oymotion.com
 sources:
 - url: https://www.oymotion.com/
