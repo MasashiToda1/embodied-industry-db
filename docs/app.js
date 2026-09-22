@@ -225,21 +225,79 @@ async function pageOrg(id) {
   evs.forEach(e => (e.orgs || []).forEach(x => { if (x.id !== id) (rel[x.id] = rel[x.id] || []).push({ role: x.role, ev: e }); }));
   const myRoleIn = (e) => (e.orgs || []).find(x => x.id === id)?.role;
   const stack = o.stack || {};
+  const mine = evs.filter(e => myRoleIn(e) === 'subject');           // 自己是主体的事件，融资 / 中标只算这些
+  const fund = mine.filter(e => e.type === 'funding'), proc = mine.filter(e => e.type === 'procurement');
+  const fundSum = sumByCurrency(fund), procSum = sumByCurrency(proc);
+  const hq = o.hq ? [o.hq.city, o.hq.country].filter(Boolean).join('，') : '';
+  const layersZh = (o.layers || []).map(l => D.layers[l] || l);
+  const typeCount = {}; mine.forEach(e => typeCount[e.type] = (typeCount[e.type] || 0) + 1);
+  const topTypes = Object.entries(typeCount).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([t, n]) => `${D.event_types[t] || t} ${n} 条`);
+  const TECH = ['control_route', 'model_form', 'sim_stack', 'embodiment_form', 'data_acquisition', 'data_modality', 'data_sourcing', 'data_openness'];
+  const BIZ = ['hardware_strategy', 'delivery_model', 'target_scene'];
+  const stackLine = fields => fields.filter(f => stack[f]).map(f => `${label(f)}${stack[f].map(x => label(f + ':' + x.value, x.value)).join('、')}`).join('；');
+
+  // 简介是算出来的：只说库里有的事实。registry 若日后加 description 字段，优先显示它
+  const summary = o.description || (() => {
+    let s = `${o.names.zh}${o.names.en ? `（${o.names.en}）` : ''}是${layersZh.length ? layersZh.join('、') + '层' : ''}主体`;
+    if (o.founded) s += `，${o.founded} 年成立`; if (hq) s += `，总部${hq}`; s += '。';
+    if (!mine.length && !evs.length) return s + '本库尚未收录它的事件。';
+    if (mine.length) s += `本库收录 ${mine.length} 条以它为主体的事件（${mine[mine.length - 1].date} 至 ${mine[0].date}），其中${topTypes.join("；")}。`;
+    if (fund.length) s += `融资 ${fund.length} 轮${fundSum.length ? `，已披露合计 ${fundSum.join(' + ')}` : '，金额均未披露'}；最近一轮 ${fund[0].date}。`;
+    if (proc.length) s += `中标 ${proc.length} 项${procSum.length ? `，合计 ${procSum.join(' + ')}` : ''}。`;
+    const t = stackLine(TECH), b = stackLine(BIZ);
+    if (t) s += `技术上已见：${t}。`; if (b) s += `商业上已见：${b}。`;
+    return s;
+  })();
+
+  const kv = (k, v, sub = '') => `<div class="stat"><div class="stat-zh">${k}</div><div class="stat-v">${v}</div>${sub ? `<div class="stat-x">${sub}</div>` : ''}</div>`;
+  const linkOf = { github: v => `https://github.com/${v}`, huggingface: v => `https://huggingface.co/${v}`, website: v => v };
+  const links = Object.entries(o.accounts || {}).concat(o.website ? [['website', o.website]] : [])
+    .map(([k, v]) => `<a class="olink" href="${esc(linkOf[k] ? linkOf[k](v) : v)}" target="_blank" rel="noopener">${k === 'huggingface' ? 'Hugging Face' : k === 'github' ? 'GitHub' : k === 'website' ? '官网' : esc(k)}</a>`).join('');
+
+  // 技术栈：按轴一行，取值做 chip，首次可见与来源放在 chip 里
+  const axisRow = f => stack[f] ? `<div class="ax-row"><div class="ax-k">${label(f)}</div><div class="ax-v">${stack[f].map(x =>
+    `<span class="ax-chip"><a href="axes.html?axis=${f}">${label(f + ':' + x.value, x.value)}</a><a class="ax-src" href="index.html?ev=${x.evidence}" title="首次可见 ${x.as_of} · 点开来源事件">${x.as_of}</a></span>`).join('')}</div></div>` : '';
+  const techRows = TECH.map(axisRow).join(''), bizRows = BIZ.map(axisRow).join('');
+  const missing = [...TECH, ...BIZ].filter(f => !stack[f]).map(f => label(f));
+
   document.title = `${o.names.zh} · 具身产业库`;
   $('main').innerHTML = `<div class="wrap">
-    <h1>${esc(o.names.zh)} <span class="muted" style="font-size:14px;font-weight:400">${esc(o.names.en || '')}${o.hq ? ' · ' + Object.values(o.hq).join('') : ''}${o.founded ? ' · ' + o.founded : ''}</span></h1>
-    <div class="sub">${(o.layers || []).map(l => `<span class="chip">${D.layers[l] || l}</span>`).join('')}${(o.names.aliases || []).length ? `<span class="muted"> 别名：${o.names.aliases.map(esc).join('、')}</span>` : ''}
-      ${o.accounts ? `<span class="muted"> · 监控：${Object.entries(o.accounts).map(([k, v]) => `${k}=${esc(v)}`).join(' ')}</span>` : ''}</div>
-    <div class="two">
-      <div class="card"><h3 style="margin:0 0 8px;font-size:14px">技术与商业栈 <span class="muted" style="font-weight:400;font-size:12px">历史取值不删，首次可见＝本库收录到的最早证据</span></h3>
-        ${Object.keys(stack).length ? `<table><thead><tr><th>轴</th><th>取值</th><th>首次可见</th><th>来源事件</th></tr></thead><tbody>
-        ${Object.entries(stack).flatMap(([f, items]) => items.map(it => `<tr><td>${label(f)}</td><td><a class="chip a" href="axes.html?axis=${f}">${label(f + ':' + it.value, it.value)}</a></td><td class="mono">${it.as_of}</td><td><a class="mono" href="index.html?ev=${it.evidence}">${it.evidence.slice(0, 40)}…</a></td></tr>`)).join('')}</tbody></table>` : '<div class="empty">暂无轴取值</div>'}</div>
-      <div class="card"><h3 style="margin:0 0 8px;font-size:14px">关联主体 <span class="muted" style="font-weight:400;font-size:12px">来自事件里的角色</span></h3>
+    <div class="ohead">
+      <div><h1>${esc(o.names.zh)} <span class="muted" style="font-size:15px;font-weight:400">${esc(o.names.en || '')}</span></h1>
+        <div class="sub" style="margin-bottom:0">${layersZh.map(z => `<span class="chip">${z}</span>`).join('')}${(o.names.aliases || []).length ? `<span class="muted"> 别名：${o.names.aliases.map(esc).join('、')}</span>` : ''}</div></div>
+      <div class="olinks">${links}</div>
+    </div>
+    <p class="osummary">${esc(summary)}</p>
+
+    <div class="stats stats-6">
+      ${kv('成立', o.founded || '<span class="muted">未知</span>')}
+      ${kv('总部', hq || '<span class="muted">未知</span>')}
+      ${kv('已披露融资', fundSum.length ? fundSum.join('<br>') : `<span class="muted">${fund.length ? '未披露' : '—'}</span>`, fund.length ? `${fund.length} 轮` : '')}
+      ${kv('最近一轮', fund.length ? fund[0].date : '<span class="muted">—</span>', fund.length && fund[0].amount ? amountStr(fund[0].amount) : '')}
+      ${kv('中标合计', procSum.length ? procSum.join('<br>') : `<span class="muted">${proc.length ? '未披露' : '—'}</span>`, proc.length ? `${proc.length} 项` : '')}
+      ${kv('收录事件', mine.length, evs.length > mine.length ? `另 ${evs.length - mine.length} 条作为对手方 / 投资方` : '')}
+    </div>
+
+    <div class="card" style="margin-top:14px"><h3>技术栈 <span class="muted">历史取值不删；chip 右侧是首次可见时间，点它看来源事件</span></h3>
+      ${techRows || '<div class="empty" style="padding:10px 0">暂无技术轴取值</div>'}
+      ${bizRows ? `<h3 style="margin-top:14px">商业栈</h3>${bizRows}` : ''}
+      ${missing.length ? `<div class="muted" style="font-size:12px;margin-top:10px">未见取值：${missing.join('、')}</div>` : ''}</div>
+
+    ${fund.length ? `<div class="card" style="margin-top:14px"><h3>融资 <span class="muted">${fund.length} 轮${fundSum.length ? ' · 已披露合计 ' + fundSum.join(' + ') : ''}</span></h3>
+      <table><thead><tr><th>日期</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>
+      ${fund.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${[...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(x => x.role === 'investor').map(x => orgLink(x.id))].join('、') || '—'}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table></div>` : ''}
+
+    <div class="two" style="margin-top:14px">
+      <div class="card"><h3>关联主体 <span class="muted">来自事件里的角色</span></h3>
         ${Object.keys(rel).length ? `<table><thead><tr><th>主体</th><th>它的角色</th><th>事件</th></tr></thead><tbody>
-        ${Object.entries(rel).map(([oid, xs]) => `<tr><td>${orgLink(oid)}</td><td>${[...new Set(xs.map(x => D.roles[x.role] || x.role))].join('、')}</td><td>${xs.map(x => `<a class="mono" href="index.html?ev=${x.ev.id}">${x.ev.date}</a>`).join(' ')}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无关联主体</div>'}
+        ${Object.entries(rel).map(([oid, xs]) => `<tr><td>${orgLink(oid)}</td><td>${[...new Set(xs.map(x => D.roles[x.role] || x.role))].join('、')}</td><td>${xs.map(x => evLink(x.ev)).join(' ')}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无关联主体</div>'}</div>
+      <div class="card"><h3>对手方 <span class="muted">事件里出现、不在 registry 的机构</span></h3>
+        ${(() => { const m = {}; mine.forEach(e => (e.counterparties || []).forEach(c => (m[c] = m[c] || []).push(e))); const xs = Object.entries(m);
+          return xs.length ? `<table><thead><tr><th>机构</th><th>事件类型</th><th>事件</th></tr></thead><tbody>${xs.map(([c, es]) => `<tr><td>${esc(c)}</td><td>${[...new Set(es.map(e => D.event_types[e.type]))].join('、')}</td><td>${es.map(evLink).join(' ')}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无</div>'; })()}
         ${o.upstream?.robotics_notebooks_institution ? `<div class="muted" style="margin-top:10px;font-size:12px">上游：Robotics_Notebooks · ${esc(o.upstream.robotics_notebooks_institution)}</div>` : ''}</div>
     </div>
-    <div class="card" style="margin-top:18px"><h3 style="margin:0 0 8px;font-size:14px">时间线 <span class="muted" style="font-weight:400;font-size:12px">${evs.length} 条</span></h3>
+
+    <div class="card" style="margin-top:14px"><h3>时间线 <span class="muted">${evs.length} 条</span></h3>
       ${evs.length ? `<table><thead><tr><th>日期</th><th>类型</th><th>事件</th><th class="right">来源</th></tr></thead><tbody id="rows">${evs.map(e => eventRow(e, false).replace(/<td><span class="chip">/, m => (myRoleIn(e) && myRoleIn(e) !== 'subject') ? `<td><span class="chip">${D.roles[myRoleIn(e)]}</span><span class="chip">` : m)).join('')}</tbody></table>` : '<div class="empty">暂无收录事件</div>'}</div>
   </div>`;
   const rows = $('#rows'); if (rows) bindExpand(rows);
