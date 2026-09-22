@@ -1,0 +1,25 @@
+id: evt-2026-06-sanctuary-ai-personnel-friedmann-ceo
+date: 2026-06
+date_precision: month
+type: personnel
+orgs:
+- id: sanctuary-ai
+  role: subject
+title:
+  zh: Sanctuary AI 董事会任命 Daniel Friedmann 为 CEO，临时 CEO James Wells 离任
+summary:
+  zh: 2026 年 6 月，Sanctuary AI 董事会任命原董事长 Daniel Friedmann 为首席执行官，Friedmann 曾任航天公司 MDA CEO 近二十年、Carbon Engineering CEO 兼董事长；董事会同时向离任的 James Wells 致谢。BetaKit 报道称 Wells 于 2024 年 11 月联合创始人 Geordie Rose 被免职后以临时 CEO 身份接任，此次离任伴随公司「新战略」。
+date_basis: derived
+date_as_stated: Sanctuary AI 官网公告页元数据 datePublished 为 2026-06-16；BetaKit 报道日期 2026-06-26，称 Wells「this week」宣布离任
+evidence:
+- url: https://sanctuary.ai/news/daniel-friedmann-appointed-ceo-of-sanctuary-ai/
+  publisher: Sanctuary AI 官网公告
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/sanctuary-2026-06-sanctuary-ai-ceo-friedma.html
+- url: https://betakit.com/robotics-startup-sanctuary-ai-appoints-former-mda-exec-as-ceo/
+  publisher: BetaKit
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/betakit-2026-06-sanctuary-ai-ceo-betakit.html
+corroboration: multi

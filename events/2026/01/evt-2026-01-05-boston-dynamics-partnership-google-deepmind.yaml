@@ -1,0 +1,23 @@
+id: evt-2026-01-05-boston-dynamics-partnership-google-deepmind
+date: 2026-01-05
+date_precision: day
+type: partnership
+orgs:
+- id: boston-dynamics
+  role: subject
+- id: gdm-robotics
+  role: counterparty
+title:
+  zh: Boston Dynamics 与 Google DeepMind 达成 AI 合作，将 Gemini Robotics 基础模型接入新一代 Atlas
+summary:
+  zh: 1 月 5 日，Boston Dynamics 与 Google DeepMind 在 CES 2026 宣布 AI 合作，双方将把 Gemini Robotics 基础模型与新一代 Atlas 机器人结合，联合研究于 2026 年内启动，在两家公司同时开展，目标是让人形机器人完成多种工业任务，从汽车制造业开始。Boston Dynamics 同时披露一批 Atlas 将发往 Google DeepMind。
+axes:
+  model_form: [end2end-vla]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://bostondynamics.com/blog/boston-dynamics-google-deepmind-form-new-ai-partnership/
+  publisher: Boston Dynamics 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/bostondynami-2026-01-05-boston-dynamics-deepmind.html
+corroboration: single

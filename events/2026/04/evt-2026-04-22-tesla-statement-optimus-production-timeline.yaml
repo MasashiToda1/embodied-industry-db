@@ -1,0 +1,18 @@
+id: evt-2026-04-22-tesla-statement-optimus-production-timeline
+date: 2026-04-22
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉称 Optimus 将于 7 月底至 8 月在弗里蒙特开始生产，第二座 Optimus 工厂在得州建设
+summary:
+  zh: 4 月 22 日，特斯拉在 2026 年第一季度财报电话会上称，Optimus 将于 7 月底或 8 月在弗里蒙特工厂开始生产，初期产量「相当慢」，公司拒绝给出 2026 年产量目标；Optimus 3 的发布推迟到「今年年中左右」。Elon Musk 同时确认在 Giga Texas 建设第二座 Optimus 工厂，目标 2027 年夏季前后投产。
+evidence:
+- url: https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/
+  publisher: Electrek
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/electrek-2026-04-22-tesla-q1-2026-optimus.html
+corroboration: single

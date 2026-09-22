@@ -5,3 +5,18 @@ names:
 status: active
 layers:
 - embodiment
+hq:
+  country: CA
+  city: Vancouver
+description: 做 Physical AI 与液压灵巧手的公司，人形机器人产品为 Phoenix，2026 年起把 AI 部署到现有工业机器人上。
+accounts:
+  site: https://sanctuary.ai
+sources:
+- url: https://sanctuary.ai/about-us/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页：Headquartered in Vancouver, Canada；成立年份未在官网读到，不填
+- url: https://sanctuary.ai/news/sanctuary-ai-expands-physical-ai-strategy-to-industrial-robotics-demonstrating-production-ready-ai-performance/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻，Physical AI 部署到现有工业机器人的路线与 Phoenix 产品

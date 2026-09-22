@@ -1,0 +1,23 @@
+id: evt-2025-11-19-figure-ai-deployment-bmw-figure-02-results
+date: 2025-11-19
+date_precision: day
+type: deployment
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure 公布 Figure 02 在 BMW Spartanburg 工厂 11 个月部署结果，参与 3 万余辆 X3 生产
+summary:
+  zh: 11 月 19 日，Figure 公布 Figure 02 在 BMW Group Plant Spartanburg 为期 11 个月的部署结果：在车身车间承担钣金件上料（pick-and-place），周一至周五每天运行 10 小时班次，累计上料 9 万余件、运行 1250 小时以上，参与 3 万余辆 X3 车型生产。公司同时宣布随 Figure 03 发布启动 Figure 02 全机队退役。
+counterparties:
+- BMW Group
+axes:
+  target_scene: [industrial-manufacturing]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.figure.ai/news/production-at-bmw
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/figure-2025-11-19-figure-ai-bmw-f02-result.html
+corroboration: single

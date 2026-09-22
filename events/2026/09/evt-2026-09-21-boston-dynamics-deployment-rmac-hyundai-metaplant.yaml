@@ -1,0 +1,23 @@
+id: evt-2026-09-21-boston-dynamics-deployment-rmac-hyundai-metaplant
+date: 2026-09-21
+date_precision: day
+type: deployment
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: Boston Dynamics 在 Hyundai 佐治亚 Metaplant 启用 RMAC，Atlas 开始为汽车零件物流排序任务训练
+summary:
+  zh: 9 月 21 日，Boston Dynamics 宣布在 Hyundai Motor Group Metaplant America（HMGMA，佐治亚州 Savannah 外）启用 Robotics Metaplant Application Center（RMAC），作为把 Atlas 接入 Hyundai 汽车制造流程的测试与训练中心，当前训练任务为汽车零件的物流准备与排序，公司称 2030 年前扩展到部件装配。Hyundai 计划未来数年先在 Hyundai 与 Kia 全球工厂部署 2.5 万台 Atlas，并在美国新建年产 3 万台机器人的工厂。RMAC 第一阶段已运行，2027 年迁入新楼后规模扩大约 10 倍。
+counterparties:
+- Hyundai Motor Group
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://bostondynamics.com/news/boston-dynamics-opens-robotics-metaplant-application-center-to-train-humanoid-robots-for-manufacturing-tasks/
+  publisher: Boston Dynamics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/bostondynami-2026-09-21-boston-dynamics-rmac.html
+corroboration: single

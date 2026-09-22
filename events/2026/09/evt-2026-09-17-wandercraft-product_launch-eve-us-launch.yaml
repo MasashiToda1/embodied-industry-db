@@ -1,0 +1,21 @@
+id: evt-2026-09-17-wandercraft-product_launch-eve-us-launch
+date: 2026-09-17
+date_precision: day
+type: product_launch
+orgs:
+- id: wandercraft
+  role: subject
+title:
+  zh: Wandercraft 个人外骨骼 Eve 在美国商业上市
+summary:
+  zh: 9 月 17 日，Wandercraft 在纽约宣布 Eve 在美国商业上市，面向能手动操作控制器、任何损伤节段的脊髓损伤成年轮椅使用者，用户需与陪同人完成临床评估与培训后带回家使用；公司称已建立评估、培训、报销、交付与服务网络。新闻稿同时提到公司的工业人形机器人 Calvin-40。
+axes:
+  target_scene: [healthcare, home]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.globenewswire.com/news-release/2026/09/17/3364023/0/en/wandercraft-launches-eve-the-world-s-first-self-balancing-personal-exoskeleton-bringing-hands-free-upright-mobility-to-the-home.html
+  publisher: GlobeNewswire · Wandercraft 新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/globenewswir-2026-09-17-wandercraft-eve-us-launc.html
+corroboration: single

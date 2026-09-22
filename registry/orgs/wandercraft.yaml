@@ -5,5 +5,20 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2012
+hq:
+  country: FR
+  city: Paris
+description: 做自平衡外骨骼（康复用 Atalante X、个人用 Eve）与工业人形机器人 Calvin-40 的公司，Renault Group 为股东与客户。
 accounts:
   github: Wandercraft
+  site: https://www.wandercraft.eu
+sources:
+- url: https://www.globenewswire.com/news-release/2025/06/11/3097632/0/en/wandercraft-announces-series-d-round-bringing-75m-in-total-funding-secured-for-global-acceleration-of-ai-powered-robotics.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 公司新闻稿 About 段：Founded in 2012；产品 Atalante X、Eve、Calvin-40
+- url: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260381
+  tier: primary
+  retrieved: '2026-09-22'
+  note: FDA 510(k) 记录申请人地址 Wandercraft SAS, 88 Rue De Rivoli, Paris

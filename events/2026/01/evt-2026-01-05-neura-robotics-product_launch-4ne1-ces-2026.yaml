@@ -1,0 +1,20 @@
+id: evt-2026-01-05-neura-robotics-product_launch-4ne1-ces-2026
+date: 2026-01-05
+date_precision: day
+type: product_launch
+orgs:
+- id: neura-robotics
+  role: subject
+title:
+  zh: NEURA Robotics 在 CES 2026 首发新一代人形机器人 4NE1，并推出 4NE1 Mini 与四足机器人
+summary:
+  zh: 1 月 5 日，NEURA Robotics 宣布在 CES 2026 上首次公开新一代人形机器人 4NE1（与 Studio F.A. Porsche 合作设计），同时推出小型版 4NE1 Mini 与 NEURA Quadruped Robot，公司称后两者将进入量产。展台同时演示其 Neuraverse 操作系统，嘉宾包括 NVIDIA 与 Schaeffler 的高管。
+axes:
+  embodiment_form: [humanoid-biped, quadruped]
+evidence:
+- url: https://neura-robotics.com/neura-robotics-at-ces-2026/
+  publisher: NEURA Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/neura-roboti-2026-01-05-neura-robotics-ces-2026.html
+corroboration: single

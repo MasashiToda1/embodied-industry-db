@@ -5,3 +5,19 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2024
+hq:
+  country: US
+  city: San Francisco
+description: 做人形机器人 Phantom 的公司（法定名 Foundation Future Industries, Inc.），面向工业与国防场景，AI 栈名为 Cortex。
+accounts:
+  site: https://www.foundation.bot
+sources:
+- url: https://www.foundation.bot/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网：产品 Phantom 与 Cortex，版权署名 Foundation Future Industries, Inc.；成立年份与总部未在官网写明
+- url: https://www.cnbc.com/2026/05/30/humanoid-robots-ukraine-war-foundation-military-ai.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「a start-up founded in 2024」；图注「the company's factory in San Francisco, California」

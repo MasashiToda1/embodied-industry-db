@@ -1,0 +1,31 @@
+id: evt-2025-09-16-figure-ai-funding-series-c
+date: 2025-09-16
+date_precision: day
+type: funding
+orgs:
+- id: figure-ai
+  role: subject
+- id: nvidia
+  role: investor
+title:
+  zh: Figure AI 宣布 C 轮融资承诺资本超 10 亿美元，投后估值 390 亿美元
+summary:
+  zh: 9 月 16 日，Figure 宣布 C 轮融资已获得超过 10 亿美元的承诺资本（committed capital），投后估值 390 亿美元。本轮由 Parkway Venture Capital 领投，Brookfield Asset Management、NVIDIA、Macquarie Capital、Intel Capital、Align Ventures、Tamarack Global、LG Technology Ventures、Salesforce、T-Mobile Ventures、Qualcomm Ventures 参投。原文金额为「more than $1 billion」，未给确定数字。
+counterparties:
+- Parkway Venture Capital
+- Brookfield Asset Management
+- Macquarie Capital
+- Intel Capital
+- Align Ventures
+- Tamarack Global
+- LG Technology Ventures
+- Salesforce
+- T-Mobile Ventures
+- Qualcomm Ventures
+evidence:
+- url: https://www.figure.ai/news/series-c
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/figure-2025-09-16-figure-ai-series-c.html
+corroboration: single

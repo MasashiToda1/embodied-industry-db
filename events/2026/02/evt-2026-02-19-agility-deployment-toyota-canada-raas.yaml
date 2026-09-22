@@ -1,0 +1,24 @@
+id: evt-2026-02-19-agility-deployment-toyota-canada-raas
+date: 2026-02-19
+date_precision: day
+type: deployment
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Toyota Motor Manufacturing Canada 与 Agility 签 RaaS 商业协议，试点后部署 Digit
+summary:
+  zh: 2 月 19 日，Agility Robotics 宣布 Toyota Motor Manufacturing Canada（TMMC）在试点成功后与其签署 Robots-as-a-Service 商业协议，将在其工厂部署 Digit 支持制造、供应链与物流作业。TMMC 总裁 Tim Hollander 称在评估多款机器人后选择部署 Digit。
+counterparties:
+- Toyota Motor Manufacturing Canada
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+  delivery_model: [subscription]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-announces-commercial-agreement-with-toyota-motor-manufacturing-canada
+  publisher: Agility Robotics 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/agilityrobot-2026-02-19-agility-tmmc.html
+corroboration: single

@@ -7,5 +7,16 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: pal-robotics
+founded: 2004
+hq:
+  country: ES
+  city: Barcelona
+description: 做研究用人形与移动操作机器人的公司，产品有双足人形 KANGAROO、TALOS、移动操作平台 TIAGo Pro 与机械臂 TIAGo Pro Arm。
 accounts:
   github: pal-robotics
+  site: https://pal-robotics.com
+sources:
+- url: https://pal-robotics.com/about-us/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 About 页：Since 2004；总部 Barcelona（C/ Pujades 77-79, 08005），办公室在 Toulouse 与 Bari

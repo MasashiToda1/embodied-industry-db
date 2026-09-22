@@ -1,0 +1,29 @@
+id: evt-2025-10-28-1x-technologies-pricing-neo-20000-usd
+date: 2025-10-28
+date_precision: day
+type: pricing
+orgs:
+- id: 1x-technologies
+  role: subject
+title:
+  zh: 1X 公布 NEO 售价：买断 2 万美元，或订阅每月 499 美元，预订押金 200 美元
+summary:
+  zh: 10 月 28 日，1X 在 NEO 发布时公布定价：Early Access 买断价 20000 美元，含 3 年保修、优先交付；订阅方案每月 499 美元，稍后交付；预订押金 200 美元，可全额退款。官网订购页标注「US Deliveries start 2026」。
+amount:
+  value: 20000
+  currency: USD
+axes:
+  delivery_model: [hardware-sale, subscription]
+  target_scene: [home]
+evidence:
+- url: https://www.1x.tech/discover/neo-home-robot
+  publisher: 1X 官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/1x-2025-10-28-1x-technologies-neo-laun.html
+- url: https://www.1x.tech/order
+  publisher: 1X 官网订购页
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/10/1x-2025-10-28-1x-technologies-neo-orde.html
+corroboration: single

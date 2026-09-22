@@ -8,5 +8,19 @@ layers:
 - foundation
 upstream:
   robotics_notebooks_institution: figure-ai
+hq:
+  country: US
+  city: San Jose
+description: 做通用人形机器人整机与 Helix 具身模型的公司，产品有 Figure 03，自建工厂 BotQ。
 accounts:
   github: figurerobotics
+  site: https://www.figure.ai
+sources:
+- url: https://www.figure.ai/news/series-c
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻稿，落款 San Jose, Calif.；成立年份未在官网读到，不填
+- url: https://www.figure.ai/news/introducing-figure-03
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网 Figure 03 发布页，产品与 BotQ 工厂信息

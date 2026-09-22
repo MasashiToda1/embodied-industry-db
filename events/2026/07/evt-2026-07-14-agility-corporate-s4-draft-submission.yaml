@@ -1,0 +1,20 @@
+id: evt-2026-07-14-agility-corporate-s4-draft-submission
+date: 2026-07-14
+date_precision: day
+type: corporate
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility 与 Churchill XI 向 SEC 秘密提交 Form S-4 注册声明草案
+summary:
+  zh: 7 月 14 日，Agility Robotics 与 Churchill Capital Corp XI 宣布已向美国 SEC 秘密提交 Form S-4 注册声明草案，推进此前公告的业务合并。公告重申交易总募资超 6.2 亿美元（信托账户 4.21 亿美元现金加约 2.01 亿美元 PIPE），合并后公司以「AGLT」代码上市。
+counterparties:
+- Churchill Capital Corp XI
+evidence:
+- url: https://www.sec.gov/Archives/edgar/data/2074973/000121390026077981/ea029792301ex99-1.htm
+  publisher: SEC EDGAR · Churchill Capital Corp XI 8-K Exhibit 99.1（联合新闻稿）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/sec-2026-07-14-agility-s4-submission.html
+corroboration: single

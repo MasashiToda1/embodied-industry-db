@@ -1,0 +1,21 @@
+id: evt-2026-01-27-figure-ai-product_launch-helix-02
+date: 2026-01-27
+date_precision: day
+type: product_launch
+orgs:
+- id: figure-ai
+  role: subject
+title:
+  zh: Figure 发布全身自主控制模型 Helix 02
+summary:
+  zh: 1 月 27 日，Figure 发布 Helix 02，公司称其为一个直接从像素控制人形机器人全身（行走、操作、平衡）的单一神经系统，在原有 System 1 / System 2 架构下新增 System 0 基础层，演示任务为在整间厨房内端到端装卸洗碗机。
+axes:
+  model_form: [end2end-vla, hierarchical]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.figure.ai/news/helix-02
+  publisher: Figure AI 官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/figure-2026-01-27-figure-ai-helix-02.html
+corroboration: single
