@@ -1,0 +1,30 @@
+id: evt-2026-04-10-baidu-cloud-product_launch-embodied-data-market
+date: 2026-04-10
+date_precision: day
+type: product_launch
+orgs:
+- id: baidu-cloud
+  role: subject
+- id: fourier
+  role: counterparty
+- id: weitai
+  role: counterparty
+title:
+  zh: 百度智能云联合多家具身智能企业推出「具身智能数据超市（Beta 版）」
+summary:
+  zh: 4 月 10 日，在第三届中国机器人产业大会上，百度智能云联合零次方、灵生、傅利叶、纬钛科技、拓元智慧、枢途科技、松应科技等企业推出「具身智能数据超市（Beta 版）」，采用层级化、可扩展的数据标签体系，依托百舸异构计算平台为具身企业提供数据托管与展示。百度智能云称已为智元机器人、宇树科技等产业链上超过 30 家企业提供服务。
+axes:
+  data_openness: [partially-open]
+counterparties:
+- 零次方
+- 灵生
+- 拓元智慧
+- 枢途科技
+- 松应科技
+evidence:
+- url: https://www.stcn.com/article/detail/3741461.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stcn-2026-04-10-baidu-cloud-embodied-dat.html
+corroboration: single

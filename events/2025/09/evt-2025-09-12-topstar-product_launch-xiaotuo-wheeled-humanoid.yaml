@@ -1,0 +1,35 @@
+id: evt-2025-09-12-topstar-product_launch-xiaotuo-wheeled-humanoid
+date: 2025-09-12
+date_precision: day
+type: product_launch
+orgs:
+- id: topstar
+  role: subject
+- id: orbbec
+  role: counterparty
+title:
+  zh: 拓斯达在全球开放日发布首款轮式人形机器人「小拓」，并发起人形机器人生态创新联盟
+summary:
+  zh: 9 月 12 日，拓斯达在东莞举办「AI 无界 智造共生——拓斯达全球开放日 2025」，旗下矩阵智拓发布首款人形机器人「小拓」，为轮式人形机器人，基于拓斯达与智谱共同构建的具身模型，集成 3D 相机与 AI 视觉检测系统，已在注塑车间完成多轮验证，能识别注塑件良率并自主完成装盘。同场拓斯达与伯恩光学、尼得科、THK、奥比中光、华南理工大学等发起「拓斯达人形机器人生态创新联盟」。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+  hardware_strategy: [in-house]
+  model_form: [end2end-vla]
+counterparties:
+- 智谱
+- 伯恩光学
+- 尼得科
+- THK
+evidence:
+- url: https://www.topstarltd.com/lang-cn/newsview/2142.html
+  publisher: 拓斯达官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/topstarltd-2025-09-12-topstar-xiaotuo-wheeled-.html
+- url: https://news.qq.com/rain/a/20250915A080K000
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/news-2025-09-12-topstar-xiaotuo-qq.html
+corroboration: multi

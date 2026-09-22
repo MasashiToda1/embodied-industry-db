@@ -1,0 +1,33 @@
+id: evt-2026-01-05-tencent-robotics-partnership-unitree-tairos
+date: 2026-01-05
+date_precision: day
+type: partnership
+orgs:
+- id: tencent-robotics
+  role: subject
+- id: unitree
+  role: counterparty
+title:
+  zh: 腾讯 Robotics X 与宇树科技达成战略合作，Tairos 具身大模型部署于宇树 G1 落地敦煌导览
+summary:
+  zh: 2026 年 1 月 5 日，腾讯 Robotics X 实验室与宇树科技达成战略合作：腾讯以 SDK 和云服务形式提供 Tairos（钛螺丝）规划大模型与多模态感知模型，宇树及其生态企业负责部署到旗下主流机型并完成系统集成，面向文旅景区、商场、企业展厅等场景。2026 年元旦起，部署 Tairos 的宇树 G1 导览机器人「小莫」在敦煌莫高窟数字展示中心上岗试运营，另一试点位于上海一家律师事务所展厅。
+axes:
+  target_scene: [tourism-performance, commercial-service]
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [software-only]
+  delivery_model: [software-license]
+counterparties:
+- 敦煌研究院
+- 上海宝山区上大通用智能机器人研究院
+evidence:
+- url: https://finance.sina.com.cn/tjhz/2026-01-06/doc-inhfkfup7178371.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/finance-2026-01-05-tencent-robotics-unitree.html
+- url: https://www.robot-china.com/news/202601/06/94851.html
+  publisher: 中国机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/robot-china-2026-01-05-tencent-robotics-unitree.html
+corroboration: multi

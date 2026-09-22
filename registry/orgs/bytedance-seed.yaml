@@ -13,3 +13,19 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: bytedance
+founded: 2023
+hq:
+  country: CN
+  city: 北京
+description: 字节跳动的 AI 研发团队，2023 年成立，下设 Seed Robotics，发布过 GR-3 机器人操作模型与 ByteMini 双臂移动机器人。
+accounts:
+  site: https://seed.bytedance.com
+sources:
+- url: https://seed.bytedance.com/zh/GR3
+  tier: official
+  retrieved: '2026-09-22'
+  note: Seed 官网 GR-3 项目页，团队与 ByteMini 本体介绍
+- url: https://www.guancha.cn/economy/2025_11_05_795859.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 观察者网 2025-11-05，Seed 团队成立于 2023 年、研究方向含具身智能；总部按字节跳动填北京

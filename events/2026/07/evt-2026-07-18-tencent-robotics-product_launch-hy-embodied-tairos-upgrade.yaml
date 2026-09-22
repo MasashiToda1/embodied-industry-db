@@ -1,0 +1,24 @@
+id: evt-2026-07-18-tencent-robotics-product_launch-hy-embodied-tairos-upgrade
+date: 2026-07-18
+date_precision: day
+type: product_launch
+orgs:
+- id: tencent-robotics
+  role: subject
+title:
+  zh: 腾讯 Robotics X 发布 Hy-Embodied 系列具身基座模型与两款具身智能体，Tairos 平台全面升级
+summary:
+  zh: 7 月 18 日，腾讯 Robotics X 实验室、福田实验室联合腾讯混元发布具身基座模型 Hy-Embodied-VLM-1.0、Hy-Embodied-RxBrain-1.0 和 Hy-Embodied-VLA-0.5，以及具身智能体 Apexio 与 Tairos Agent，并对 2025 年发布的 Tairos 具身智能开放平台进行升级，称升级后的 Tairos 保持开源开放。腾讯称过去一年 Robotics X 已与宇树、智元、越疆、松延动力、乐聚、华沿等机器人企业开展合作。
+axes:
+  model_form: [hierarchical, end2end-vla]
+  hardware_strategy: [software-only]
+counterparties:
+- 福田实验室（具身智能广东省实验室）
+- 腾讯混元
+evidence:
+- url: https://news.qq.com/rain/a/20260718A07MVL00
+  publisher: 腾讯技术工程官方账号（腾讯新闻）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/news-2026-07-18-tencent-robotics-hy-embo.html
+corroboration: single

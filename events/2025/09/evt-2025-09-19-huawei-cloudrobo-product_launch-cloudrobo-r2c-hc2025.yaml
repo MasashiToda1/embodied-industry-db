@@ -1,0 +1,33 @@
+id: evt-2025-09-19-huawei-cloudrobo-product_launch-cloudrobo-r2c-hc2025
+date: 2025-09-19
+date_precision: day
+type: product_launch
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+- id: flexiv
+  role: counterparty
+- id: galaxea
+  role: counterparty
+title:
+  zh: 华为云在全联接大会 2025 展示 CloudRobo 具身智能平台，R2C 协议三项国家标准立项并确立首批 20 家伙伴
+summary:
+  zh: 9 月 19 日，在华为全联接大会 2025 上，华为云展示 CloudRobo 具身智能平台，整合数据生产管理、机器人训练及机器人运行管理三大平台。华为云同时推出 R2C（Robot to Cloud）机器人云联接协议，其数据采集、数据生成、通讯接口三项国家标准已完成立项，华龙讯达、非夕、亿嘉和、道和通泰、星海图等 20 家机构成为首批合作伙伴，围绕制造、物流、巡检、康养领域开发云端一体化机器人解决方案。
+axes:
+  hardware_strategy: [software-only]
+counterparties:
+- 华龙讯达
+- 亿嘉和
+- 道和通泰
+evidence:
+- url: https://www.huaweicloud.com/news/2025/20250919104714436.html
+  publisher: 华为云官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/huaweicloud-2025-09-19-huawei-cloudrobo-hc2025-.html
+- url: https://www.sh.chinanews.com.cn/chanjing/2025-09-19/140153.shtml
+  publisher: 中新网上海
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/09/sh-2025-09-19-huawei-cloudrobo-hc2025-.html
+corroboration: multi

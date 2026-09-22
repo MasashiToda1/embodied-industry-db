@@ -2,7 +2,25 @@ id: topstar
 names:
   zh: 拓斯达
   en: Topstar
+  aliases:
+  - 广东拓斯达科技股份有限公司
 status: active
 layers:
 - embodiment
 - integration
+founded: 2007
+hq:
+  country: CN
+  city: 东莞
+description: 2007 年成立的 A 股工业机器人与注塑装备企业（300607），2025 年发布拓星纪系列具身机器人与轮式人形机器人小拓。
+accounts:
+  site: https://www.topstarltd.com
+sources:
+- url: https://www.topstarltd.com/lang-cn/about.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 拓斯达官网关于我们，成立于 2007 年、总部东莞、股票代码 300607
+- url: https://www.topstarltd.com/lang-cn/newsview/2142.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 拓斯达官网 2025-09 新闻，小拓与拓星纪系列发布

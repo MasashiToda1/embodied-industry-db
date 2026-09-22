@@ -1,0 +1,26 @@
+id: evt-2026-07-23-topstar-product_launch-fysiverse-world-model
+date: 2026-07-23
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2026 年世界人工智能大会（以下简称 WAIC）期间」（21 经济网 2026-07-23 发布）
+type: product_launch
+orgs:
+- id: topstar
+  role: subject
+title:
+  zh: 拓斯达联合飞捷科思在 WAIC 2026 发布 Fysiverse 工业物理世界模型
+summary:
+  zh: 2026 年世界人工智能大会期间，拓斯达联合飞捷科思发布 Fysiverse 工业物理世界模型。该模型搭载飞捷科思自研可微分物理仿真引擎 Fysics，用于还原零部件与产线的刚度、形变、摩擦、负载、公差等物理特征，生成可交互数字孪生环境与训练素材，并适配拓斯达全系工业机器人。
+axes:
+  sim_stack: [in-house]
+  data_acquisition: [sim-generated]
+  target_scene: [industrial-manufacturing]
+counterparties:
+- 飞捷科思
+evidence:
+- url: https://www.21jingji.com/article/20260723/herald/2ed48c44a31338eb59b1ea864bdb05cd.html
+  publisher: 21 经济网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/21jingji-2026-07-23-topstar-fysiverse-world-.html
+corroboration: single

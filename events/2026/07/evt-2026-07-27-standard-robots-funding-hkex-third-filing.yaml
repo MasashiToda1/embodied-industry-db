@@ -1,0 +1,27 @@
+id: evt-2026-07-27-standard-robots-funding-hkex-third-filing
+date: 2026-07-27
+date_precision: day
+type: funding
+orgs:
+- id: standard-robots
+  role: subject
+title:
+  zh: 斯坦德机器人第三次向港交所主板递交上市申请，中信证券与国泰君安国际联席保荐
+summary:
+  zh: 据港交所 7 月 27 日披露，斯坦德机器人（无锡）股份有限公司向港交所主板提交上市申请，中信证券、国泰君安国际为联席保荐人，为公司第三次递表。招股书披露公司成立以来共完成 7 轮融资，最后一轮为 2024 年 6 月披露的 D 轮，投后估值 21 亿元；2023 年获小米 C 轮前投资 1.5 亿元，小米智造基金持股 8.4%，小米汽车超级工厂采用其解决方案。
+counterparties:
+- 中信证券
+- 国泰君安国际
+- 小米智造股权投资基金
+evidence:
+- url: https://finance.sina.com.cn/wm/2026-07-28/doc-inikiewh8140675.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/finance-2026-07-27-standard-robots-hkex-thi.html
+- url: https://robot.ofweek.com/2026-08/ART-8321202-12003-30697487.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/robot-2026-07-27-standard-robots-hkex-thi.html
+corroboration: multi

@@ -1,0 +1,26 @@
+id: evt-2026-04-19-alibaba-robotics-product_launch-amap-tutu
+date: 2026-04-19
+date_precision: day
+type: product_launch
+orgs:
+- id: alibaba-robotics
+  role: subject
+title:
+  zh: 阿里旗下高德公开首款四足具身机器人途途，在亦庄人形机器人半马首次亮相
+summary:
+  zh: 4 月 19 日，阿里巴巴旗下高德公开首款具身机器人产品途途，为四足机器人形态，定位智能导盲犬，在 2026 北京亦庄人形机器人半程马拉松赛场首次公开演示，协助一位视障人士完成规避动静态障碍、穿越狭窄通道、穿行密集人群等任务。证券时报称这是阿里巴巴在具身智能硬件上的首次正式亮相。
+axes:
+  embodiment_form: [quadruped]
+  hardware_strategy: [in-house]
+evidence:
+- url: http://jjckb.xinhuanet.com/20260419/cc7ebda5b06a46ba8300d83dbbb2cdc7/c.html
+  publisher: 经济参考网（新华社）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/jjckb-2026-04-19-alibaba-robotics-amap-tu.html
+- url: https://www.stcn.com/article/detail/3765222.html
+  publisher: 证券时报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/stcn-2026-04-19-alibaba-robotics-amap-tu.html
+corroboration: multi

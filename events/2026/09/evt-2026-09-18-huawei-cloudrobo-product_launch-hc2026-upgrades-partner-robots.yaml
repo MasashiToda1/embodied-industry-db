@@ -1,0 +1,32 @@
+id: evt-2026-09-18-huawei-cloudrobo-product_launch-hc2026-upgrades-partner-robots
+date: 2026-09-18
+date_precision: day
+type: product_launch
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+title:
+  zh: 华为云 CloudRobo 在全联接大会 2026 发布平台能力升级，并与福龙马、亿嘉和发布环卫与电力作业机器人
+summary:
+  zh: 9 月 18 日，华为全联接大会 2026 期间，华为云 CloudRobo 具身智能论坛在上海举办，发布 CloudRobo 平台在模型、数据、仿真、协同架构、运行管理与生态合作方面的能力升级，并联合福龙马发布无人清扫机器人 SD22C、联合亿嘉和发布配网带电作业机器人 Z200Pro，同时与九家伙伴发布覆盖工业制造、能源电力、市政环卫、教育教学、工程装备等场景的八大具身智能行业解决方案。
+axes:
+  target_scene: [inspection-hazardous, commercial-service]
+  hardware_strategy: [software-only]
+counterparties:
+- 福龙马
+- 亿嘉和
+- 上海国地中心
+- 无锡数据集团
+- 山河智能
+evidence:
+- url: https://news.iresearch.cn/yx/2026/09/566832.shtml
+  publisher: 艾瑞网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/news-2026-09-18-huawei-cloudrobo-hc2026-.html
+- url: https://news.ikanchai.com/2026/0921/667785.shtml
+  publisher: 砍柴网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/news-2026-09-18-huawei-cloudrobo-hc2026--2.html
+corroboration: multi

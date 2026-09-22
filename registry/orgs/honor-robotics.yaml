@@ -8,3 +8,19 @@ names:
 status: active
 layers:
 - embodiment
+founded: 2026
+hq:
+  country: CN
+  city: 深圳
+description: 荣耀终端的人形机器人业务，首款人形机器人于 MWC 2026 公开亮相，隶属新产业孵化部，下设具身智能、具身数据、动力总成等实验室。
+accounts:
+  site: https://www.honor.com/cn/
+sources:
+- url: https://zhidx.com/p/537008.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 智东西 2026-03-01 巴塞罗那现场报道，荣耀首款人形机器人亮相；founded 取业务对外公开年份 2026
+- url: https://www.gkong.com/news/125105.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 中华工控网 2026-03，荣耀成立新产业孵化部与五个实验室；总部按荣耀终端填深圳

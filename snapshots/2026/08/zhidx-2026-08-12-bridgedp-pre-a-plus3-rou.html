@@ -1,0 +1,1092 @@
+<!-- 抓取于 2026-09-22T16:32:52.326875+08:00 | 原始链接 https://www.zhidx.com/p/584179.html | 公众号 未知 | 标题 bridgedp-pre-a-plus3-round | sha256:2f927b639a67 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=1240,initial-scale=0.8,minimum-scale=0.8,maximum-scale=0.8,user-scalable=no">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>不造机器人，专教机器人走跑跳，南科大学霸融资亿元 - 智东西</title>
+    <meta name="keywords" content="融资">
+    <meta name="description" content="对话桥介数物创始人尚阳星。">
+        <link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/base.css?a=1">
+    <script type='text/javascript' src='//oss.zhidx.com/static/common/lib/jquery.min.js'></script>
+    <script src="//oss.zhidx.com/static/themes/zhidxcom/js/base.js?a=1"></script>
+    <link rel="stylesheet" href="//oss.zhidx.com/static/common/lib/layui/css/layui.css">
+
+    <script src="//oss.zhidx.com/static/common/lib/layui/layui.js"></script>
+    <script src="//oss.zhidx.com/static/common/lib/lazyload.min.js"></script>
+    <style>
+        .author-desc,.author-desp {
+            text-align: justify !important;
+        }
+    </style>
+    <script>
+        //var ajaxurl = '//';
+        var ajaxurl = '/wp-admin/admin-ajax.php';
+
+        //启用延迟加载
+        window.addEventListener('load', function() {
+            lazyload()
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6a105aad5d4cd3c47e5745e226ca9ccc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        if (window.outerWidth < 1240) {
+            var ratio = window.outerWidth / 1240
+            document.querySelector('meta[name="viewport"]').setAttribute('content', [
+                'width=1240',
+                'initial-scale=' + ratio,
+                'minimum-scale=' + ratio,
+                'maximum-scale=' + ratio,
+                'user-scalable=no'
+            ].join(','))
+//            console.log('viewport', )
+        }
+    </script>
+</head>
+<body>
+    <div style="display:none" data-login></div>
+    <link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/tips.css?a=1">
+<!-- 登录 -->
+<div class="my-layer login-layer" style="display: none;">
+    <div class="qrcode-tips qrcode-login">
+        <div class="close">
+            <img src="//oss.zhidx.com/static/themes/zhidxcom/images/close-icon.png" alt="">
+        </div>
+        <div class="title">扫码关注智东西Pro服务号登录</div>
+        <div class="qrcode-2">
+            <img id="qrcode" src="//oss.zhidx.com/static/themes/zhidxcom/images/qrcode-fail.jpg" alt="">
+        </div>
+        <div class="desp">
+            请使用微信扫描二维码
+        </div>
+    </div>
+</div>
+
+<div class="my-layer bind-phone-tips">
+    <div class="info-tips bind-phone">
+        <div class="close">
+            <img src="//oss.zhidx.com/static/themes/zhidxcom/images/close-icon.png" alt="">
+        </div>
+        <div class="content">
+            <div class="title">绑定手机号</div>
+            <form class="form-list bind-phone-form">
+                <div class="form-item">
+                    <input type="text" name="phone" placeholder="请输入手机号码">
+                </div>
+                <div class="form-item">
+                    <input type="text" class="code-input" name="code" placeholder="请输入验证码"><div class="get-code code-btn"  data-isnew="1">获取验证码</div>
+                </div>
+            </form>
+            <div class="form-btn">确认绑定</div>
+        </div>
+    </div>
+</div>
+    <script !src="">
+        function is_mobile() {
+            return /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+        }
+
+        function is_wechat() {
+            return  navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1;
+        }
+
+        /**
+         * pc端获取登录信息
+         */
+        function getPcLoginInfo(callback) {
+            $.get('/api/index/login_info.php', function(res) {
+                if (res.state === 1) {
+                    $('.user-wrapper').html(res.result)
+                    userOption()
+                    callback && callback()
+                }
+            }, 'json');
+        }
+
+        var bindPhoneObj = {
+            callback: null,
+            fetchData: function(){
+                var that = this;
+                $.post('/api/index/bind_phone.php', $('.bind-phone-form').serialize(), function(res) {
+                    $('.close').trigger('click');
+                    myhandleResponse(res, function() {
+                        that.callback && that.callback()
+                    })
+                }, 'json')
+            }
+        };
+
+        function myhandleResponse(res, success, fail) {
+            if (res.state === 1) {
+                layer.msg(res.result, {icon: 1, time: 2000}, function () {
+                    success && success()
+                })
+            } else {
+                layer.msg(res.result, {icon: 2}, function() {
+                    fail && fail();
+                });
+            }
+        }
+
+        function check_phone(callback) {
+            $.get('/api/index/check_phone.php', function (res) {
+                if (res.state ===  0) {
+                    $('.bind-phone-tips').css('display', 'block');
+                    bindPhoneObj.callback = callback;
+                } else if (res.state === 1) {
+                    callback && callback()
+                }
+            }, 'json');
+        }
+
+        function pc_login(callback) {
+            layer.load(2);
+            var img = new Image();
+            img.src = '/api/index/generate_qrcode.php';
+            img.onload = function() {
+                layer.closeAll()
+                $('.login-layer').css('display', 'block');
+                $('.login-layer #qrcode').attr('src', img.src);
+                timer = setInterval(function () {
+                    $.get('/api/index/check_login.php', function (res) {
+                        if (res.state === 1) {
+                            if (timer) {
+                                clearInterval(timer);
+                                $('.close').trigger('click');
+                            }
+                            getPcLoginInfo(function() {
+                                layer.msg(res.result, {
+                                    icon :1,
+                                    time: 2000
+                                }, function() {
+                                    check_phone(callback)
+                                })
+                            })
+                        }
+                    }, 'json')
+                }, 3000)
+            };
+            img.onerror = function () {
+                layer.closeAll();
+                $('.login-layer').css('display', 'block');
+            }
+        }
+
+        window.addEventListener('load', function() {
+            (function($) {
+                if (! is_mobile()) {
+                    getPcLoginInfo();
+                }
+                if (sessionStorage.getItem('check_phone')) {
+
+                    sessionStorage.setItem('check_phone', '');
+                }
+
+
+                if (!num) {
+                    var num = 0;
+                }
+                var numTimer = null;
+                if (num > 0) {
+                    setNumTimer(num)
+                }
+
+                function setNumTimer(num) {
+                    numTimer = setInterval(function() {
+                        num --;
+                        $('.code-btn').html(num + 's后再次发送')
+                        if (num == 0) {
+                            $('.code-btn').html('获取验证码')
+                            clearInterval(numTimer)
+                        }
+                    }, 1000);
+                }
+                var timer = null;
+                layui.use(['layer'], function() {
+//获取验证码
+                    $('.get-code').on('click', function() {
+                        var is_new = $(this).data('isnew')
+                        is_new = is_new ? 1 : 0;
+                        if (num > 0) {
+                            console.log('num: ', num)
+                            return;
+                        }
+                        var phone = $('input[name="phone"]').val();
+                        if (!phone) {
+                            layer.msg('请输入您的手机号码', {icon: 2})
+                            return;
+                        }
+                        if (! /^1[^1,2][0-9]{9}$/.test(phone)) {
+                            layer.msg('请输入正确的手机号', {icon: 2});
+                            return;
+                        }
+                        layer.load(2);
+                        $.post('/api/index/get_code.php', {
+                            phone: phone,
+                            is_new: is_new,
+                        }, function(res) {
+                            layer.closeAll();
+                            myhandleResponse(res, function() {
+                                setNumTimer(60)
+                            });
+                        }, 'json')
+                    });
+                    $('.form-btn').click(function() {
+                        bindPhoneObj.fetchData();
+                    });
+
+                    var layer = layui.layer;
+                    $('body').on('click', '[data-login]', function () {
+                        pc_login()
+                    });
+                    $('body').on('click', '[data-logout]', function() {
+                        $.get('/api/index/logout.php', function (res) {
+                            if (res.state === 1) {
+                                getPcLoginInfo(function() {
+                                    layer.msg(res.result, {
+                                        icon :1,
+                                        time: 2000
+                                    })
+                                })
+                            }
+                        }, 'json')
+                    });
+                    $('.close').on('click', function() {
+                        $('.my-layer').css('display', 'none')
+                        if (timer) {
+                            clearInterval(timer)
+                        }
+                    })
+                })
+            })(jQuery)
+        })
+    </script>
+<link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/nav-zhidx.css?a=1?a=4">
+<script src="//oss.zhidx.com/static/ab/zhidxad.js?b=a1" async></script>
+<style>
+    #new-header .header-nav .content .nav-wrapper a {
+        margin-right: 20px;
+    }
+</style>
+<header id="new-header">
+    <div class="header-top" style="min-width:1200px;">
+        <div class="w1200 margin-auto content">
+            <div class="top-option">
+                <div class="item">
+                    欢迎来智东西
+                </div>
+                <div class="item split">
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/top-option-split.png">
+                </div>
+                <div class="user-wrapper">
+                    <div class="item">登录</div>
+                    <div class="item">免费注册</div>
+                </div>
+                <div class="item split">
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/top-option-split.png">
+                </div>
+                <div class="item header-sub">
+                    关注我们
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/top-option-cursor.png" class="icon">
+                    <div class="sub-content">
+                        <div class="list w1200">
+                            <div class="item">
+                                <img src="//oss.zhidx.com/static/themes/zhidxcom/images/zdx-wechat.png" alt="">
+                                <div class="name">智东西</div>
+                            </div>
+                            <div class="item">
+                                <img src="//oss.zhidx.com/static/themes/zhidxcom/images/cdx-wechat.png" alt="">
+                                <div class="name">车东西</div>
+                            </div>
+                            <div class="item">
+                                <img src="//oss.zhidx.com/static/themes/zhidxcom/images/xindongxi-wechat.png?a=1" alt="">
+                                <div class="name">芯东西</div>
+                            </div>
+                            <div class="item">
+                                <img src="https://oss.zhidx.com/gtic/24/09/66e542403c06c-aiorang-wechat.jpg" alt="">
+                                <div class="name">智猩猩</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="website-wrapper">
+                <div class="item">
+                    <a href="https://zhidx.com" target="_blank">智东西</a>
+                </div>
+                <div class="item">
+                    <a href="https://chedongxi.com" target="_blank">车东西</a>
+                </div>
+                <div class="item">
+                    <a href="https://zhidx.com/aichip001" target="_blank">芯东西</a>
+                </div>
+<!--                <div class="item split">-->
+<!--                    <img src="--><!--/images/top-option-split.png">-->
+<!--                </div>-->
+                <div class="item split">
+                    <a href="https://aiorang.com/" target="_blank">智猩猩</a>
+                </div>
+                <div class="item course" style="display: none;">
+                    <a href="https://aiorang.com" target="_blank">
+                        公开课
+                        <img src="//oss.zhidx.com/static/themes/zhidxcom/images/top-option-cursor.png" class="icon">
+                    </a>
+                    <div class="options-wrapper">
+                        <div class="course-options">
+                            <div class="course-item border-left"><a href="https://aiorang.com/" target="_blank">智猩猩</a></div>
+                            <div class="course-item">
+                                <a href="javascript:;">公开课小程序</a>
+                                <div class="mini-programs">
+                                    <img src="https://oss.zhidx.com/gtic/20/08/5f2aa733d91fc-gh_4cff094b8cff_258.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://gtic.zhidx.com/" target="_blank">线下大会</a>
+                </div>
+                <div class="item margin0">
+                    <a href="http://aipfia.zhidx.com/2022/index.html" target="_blank">AI生产力创新奖</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <div class="w1200 margin-auto content">
+            <a href="/" class="logo">
+                <img src="//oss.zhidx.com/static/themes/zhidxcom/images/zhidx-logo.png" alt="">
+            </a>
+            <div class="nav-wrapper">
+                                                        <a href="/news" target="_blank" class="">快讯</a>
+                                            <a href="javascript:;"><span class="i"></span></a>
+                                                                            <a href="/p/category/zhidongxi/topnews" target="_blank" class="">头条</a>
+                                                                            <a href="/p/category/人工智能" target="_blank" class="">人工智能</a>
+                                                                            <a href="https://zhidx.com/aichip001" target="_blank" class="">芯东西</a>
+                                                                            <a href="/p/category/intelligent-home" target="_blank" class="">AIoT</a>
+                                                                            <a href="/p/category/digital-new-capital-construction" target="_blank" class="">云与智慧城市</a>
+                                                                            <a href="/p/category/机器人无人机" target="_blank" class="">机器人</a>
+                                                                            <a href="/p/category/vr-ar" target="_blank" class="">VR/AR</a>
+                                                                            <a href="https://zhidx.com/p/category/zhidongxi/mobiledevice" target="_blank" class="">手机通信</a>
+                                                                                <a href="javascript:;"><span class="i"></span></a>
+                                        <a href="https://huodong.zhidx.com" target="_blank" class="">活动</a>
+                                                </div>
+            <form class="search-wrapper" action="/" target="_self">
+                <input type="text" name="s" placeholder="请输入搜索内容">
+                <button class="search-btn">
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/zhidx-search-icon.png">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+<!--<a href="https://gtic.zhidx.com/2020/aichip/" target="_blank" style="display: block;height: 100px;width:100%; background: url(https://oss.zhidx.com/gtic/2020/gtic-2020.jpg?a=4) no-repeat center/1920px auto, #04121b;"></a>--><link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/index.css?b=1">
+<link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/single.css">
+<link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/share.min.css">
+<script src="//oss.zhidx.com/static/themes/zhidxcom/js/jquery.share.min.js"></script>
+<style>
+    .post-content video,
+    .post-content iframe {
+        min-width: 800px;
+        min-height: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /*.post-content > div {*/
+    /*    padding-bottom: 14px;*/
+    /*    padding-top: 14px;*/
+    /*    letter-spacing: .5px;*/
+    /*    text-align: justify;*/
+    /*}*/
+    .post-content {
+        word-break: break-all;
+    }
+
+    .post-content > div, .post-content > section {
+        padding-bottom: 14px;
+        padding-top: 14px;
+        letter-spacing: .5px;
+        text-align: justify;
+    }
+
+    .post-content li {
+        padding-left: 8px;
+    }
+    .post-content p,.post-content h2,.post-content h3,.post-content h1,.post-content h4,.post-content h5 {
+        padding-bottom:14px;
+        padding-top:14px;
+        letter-spacing: .5px;
+        text-align: justify;
+    }
+
+    .post-content li:before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #333;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .post-content .article-mark {
+        font-size: 12px;
+        vertical-align: top;
+        line-height: 20px;
+    }
+</style>
+<section id="main">
+    <div id="new-info">
+        <div id="info-right">
+            <div class="info-right-item author-info">
+                <div class="author-pic">
+                    <!--                    <img src="images/author-header.png" alt="">-->
+                    <img src="https://oss.zhidx.com/3934889bb2eff0a512d7f79620bf8caf/6ab1c500/uploads/2024/08/66d17d7fc1665_66d17d7fbe993_66d17d7fbe96e_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240830160604.jpg?x-oss-process=image/resize,m_fill,w_150,h_150" width="96" height="96" alt="许 丽思" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" />                </div>
+                <div class="author-name"><a href="https://www.zhidx.com/p/author/xulisi" title="由许 丽思发布" rel="author">许 丽思</a></div>
+                <!--                <div class="author-posts">共发表-->
+                <!--篇文章</div>-->
+                <div class="author-desc" style="height: auto;min-height: 48px;">
+                                    </div>
+            </div>
+            <script src="//oss.zhidx.com/static/themes/zhidxcom/js/tagcloud.js"></script>
+<div class="info-right-item">
+    <div class="info-right-item-top">
+        <div class="irit-title">标签</div>
+        <a href="/p/category/tag_list" class="irit-other">更多</a >
+    </div>
+    <div class="info-right-item-bb"></div>
+    <div class="info-right-tag">
+    <a href="https://www.zhidx.com/p/tag/%E4%B8%89%E6%98%9F" class="tag3">三星</a><a href="https://www.zhidx.com/p/tag/%E6%99%BA%E4%B8%9C%E8%A5%BF" class="tag3">智东西</a><a href="https://www.zhidx.com/p/tag/%E8%8B%B9%E6%9E%9C" class="tag2">苹果</a><a href="https://www.zhidx.com/p/tag/%E7%99%BE%E5%BA%A6" class="tag3">百度</a><a href="https://www.zhidx.com/p/tag/%E5%BE%AE%E8%BD%AF" class="tag2">微软</a><a href="https://www.zhidx.com/p/tag/360" class="tag3">360</a><a href="https://www.zhidx.com/p/tag/IDx" class="tag3">IDx</a><a href="https://www.zhidx.com/p/tag/%E5%B0%8F%E7%B1%B3" class="tag3">小米</a><a href="https://www.zhidx.com/p/tag/%E5%8D%8E%E4%B8%BA" class="tag2">华为</a><a href="https://www.zhidx.com/p/tag/%E9%80%9A%E7%94%A8" class="tag3">通用</a><a href="https://www.zhidx.com/p/tag/%E8%8B%B1%E7%89%B9%E5%B0%94" class="tag3">英特尔</a><a href="https://www.zhidx.com/p/tag/%E8%B0%B7%E6%AD%8C" class="tag3">谷歌</a><a href="https://www.zhidx.com/p/tag/%E9%AB%98%E9%80%9A" class="tag1">高通</a><a href="https://www.zhidx.com/p/tag/5G" class="tag1">5G</a><a href="https://www.zhidx.com/p/tag/%E8%85%BE%E8%AE%AF" class="tag3">腾讯</a><a href="https://www.zhidx.com/p/tag/iPhone" class="tag3">iPhone</a><a href="https://www.zhidx.com/p/tag/%e5%a4%a7%e6%a8%a1%e5%9e%8b" class="tag3">大模型</a>    </div>
+</div>
+<script>
+    (function() {
+        function randsort(num) {
+            return Math.random() > 0.5 ? 1 : -1;
+        }
+
+        function rand(num) {
+            return Math.floor(Math.random() * (num + 1));
+        }
+
+        var indexList = [];
+        var objList = document.querySelectorAll('.info-right-tag a');
+        var length = document.querySelectorAll('.info-right-tag a').length;
+        for (var i = 0; i < length; i++) {
+            indexList.push(i)
+        }
+        indexList.sort(rand);
+        var w = document.querySelector('.info-right-tag').offsetWidth;
+        indexList.forEach(function (e) {
+            objList[e].style.cssText = [
+                'margin:' + [
+                    rand(10) + 'px',
+                    rand(10) + 'px',
+                    rand(10) + 'px',
+                    rand(10) + 'px'
+                ].join(' ') + ';'
+            ].join('')
+        });
+    })();
+</script>                    </div>
+        <div id="info-left">
+            <div class="post-title">
+                不造机器人，专教机器人走跑跳，南科大学霸融资亿元            </div>
+            <div class="post-related">
+                <!--                <span class="name">-->                <!--</span>-->
+                <span class="leibie"><a href="https://www.zhidx.com/p/category/zhidongxi/%e6%9c%ba%e5%99%a8%e4%ba%ba%e6%97%a0%e4%ba%ba%e6%9c%ba" rel="category tag">机器人前瞻</a>  <a href="https://www.zhidx.com/p/category/vanguard" rel="category tag">硬创先锋</a></span><span
+                        class="time">2026/08/12 </span>
+            </div>
+            <div class="post-content">
+                <div style="margin-top: 15px;">
+                    <!--                        -->                                        <img src="https://oss.zhidx.com/0114de24669a639b62a6bd3cfd3f377d/6ab1c500/uploads/2026/08/6a7bf9a027afc_6a7bf9a0246fc_6a7bf9a0246b3_%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260812110045_29_59.jpg">
+                </div>
+                <p><strong><b>机器人前瞻（公众号：robot_pro）<br />
+作者 | 许丽思<br />
+编辑 | 漠影</b></strong></p>
+<p>机器人前瞻8月12日获悉，深圳通用机器人操作系统研发商桥介数物（BridgeDP Robotics）已完成<span style="color: #0f59a4"><strong> Pre-A+++ 轮融资。</strong></span>本轮融资由<span style="color: #0f59a4"><strong>中国移动链长基金</strong></span>领投，老股东复星创富、深创投追加投资，融资规模达亿元级。</p>
+<p>桥介数物表示，本次融资将主要用于四个方向：RoboCraft AI 通用机器人运动能力开发平台的生态建设、跨本体全身运动数据工厂产能提升、运动控制模型持续迭代，以及海外技术服务体系布局与合规。接下来，桥介数物将继续以“运动控制”为立足点，围绕机器人运动能力纵向延展至操作、世界模型等关键领域，加速构建面向全球的通用机器人操作系统。</p>
+<p>在热火朝天的具身智能赛道，桥介数物一直是一个颇为特殊的存在。</p>
+<p>这家公司不造机器人，但是你看到的市面上许多机器人炫酷动作展示，背后的运控技术可能就来自这家接近百人规模的初创公司。这也让桥介数物成为具身智能行业里，一个低调的隐形推手。</p>
+<p>桥介数物成立于2023年5月，是一家以构建通用机器人操作系统为目标的公司。早期，该公司从<span style="color: #0f59a4"><strong><b>机器人小脑</b></strong></span>切入，为四足、轮足、人形等不同构型的机器人提供运动控制解决方案。</p>
+<p>桥介数物<span style="color: #0f59a4"><strong><b>创始人尚阳星</b></strong></span>本科毕业于华中科技大学，随后进入南方科技大学读研，师从逐际动力创始人张巍，研究方向集中在足式机器人的感知、规划与控制，还去了逐际动力实习。2023年，他选择休学并离开逐际动力，正式踏上了创业之路。</p>
+<p>创业早期，桥介数物主要通过<span style="color: #0f59a4"><strong><b>项目制</b></strong></span>服务本体厂商：客户提供机器人，该公司派出工程师完成建模、训练、调试和真机部署。这种模式很快验证了运动控制的市场需求，也帮助该公司较早获得收入并实现盈利。</p>
+<p>但随着项目越做越多，一个有点棘手的问题也逐渐浮出水面。</p>
+<p>项目可以持续带来收入，但工程师为一台机器人积累的调参经验、训练流程和失败数据，很难自动复用到下一台机器人上。换一套关节、调整身体比例，或者更换底层接口，许多工作就要重新开始。</p>
+<p>也就是说，这更像一门依靠工程师经验不断交付的生意，而不是一套能够快速复制的软件产品，<span style="color: #0f59a4"><strong><b>难以支撑更大规模的增长。</b></strong></span></p>
+<p>从项目制走向平台化，因而成了桥介数物必须跨出的一步，<span style="color: #0f59a4"><strong><b>RoboCraft AI</b></strong></span>也由此诞生。</p>
+<p><img class="alignnone size-full wp-image-584184" src="https://oss.zhidx.com/afa374c54806780b58728b89d69bdb9e/6ab1c500/uploads/2026/08/6a7bf9cd35512_6a7bf9cd31c4c_6a7bf9cd31c1f_%E5%9B%BE%E7%89%8723.png" alt="不造机器人，专教机器人走跑跳，南科大学霸融资亿元" width="2612" height="1498" /></p>
+<p>RoboCraft AI是一套<span style="color: #0f59a4"><strong><b>通用机器人运动能力开发平台</b></strong>，</span>简单来说就像机器人的<span style="color: #0f59a4"><strong><b>“动作商场”。</b></strong></span></p>
+<p>在传统机器人开发流程中，每换一台新机器人，很多团队都要重新解决“怎么站稳、怎么走、怎么部署到真机、怎么调到可靠”这些底层问题，行业在不断重复<span style="color: #0f59a4"><strong><b>“让机器人重新学会走路”</b></strong></span>这件事。</p>
+<p>而RoboCraft AI 想做的，就是把专家才能做的机器人运动开发，变成平台辅助下的软件开发流程。它选择先从 Motion 层做起，沉淀走路、跑步、转身、跨障和表演等可复用的运动片段，让机器人能稳定、安全、低门槛地动起来。</p>
+<p>目前，机器人开发平台正在成为本体厂商争夺开发者生态的新入口。比如，<span style="color: #0f59a4"><strong><b>宇树UniStore</b></strong></span>主要围绕宇树自有硬件，提供动作和任务能力的下载、使用与分享；<span style="color: #0f59a4"><strong><b>智元LinkCraft</b></strong></span>侧重零代码内容创作与演绎，服务文娱、商演、接待和教育等场景。</p>
+<p>而RoboCraft AI更强调第三方、跨本体，核心目标是让同一套动作和技能尽可能迁移到不同品牌、不同构型的机器人上。</p>
+<p>在这个平台上，过去大量大量依赖专家经验的流程，比如机器人建模与 URDF 校验、部署前硬件安全检查、仿真环境配置、动作数据预处理、Tracker / Planner 等训练流程、强化学习训练任务管理、模型评估与版本管理、Sim-to-Real 部署等，都能逐步标准化和自动化。</p>
+<p>据了解，传统项目制开发中，一个新本体或复杂动作从开发到真机部署，常见情况可能需要数周到数月。RoboCraft AI给自己设定了一个颇为激进的目标：在本体硬件不出现异常状况的前提下，将过去可能需要<span style="color: #0f59a4"><strong><b>5名</b></strong><strong><b>专业的机器人强化学习</b></strong><strong><b>工程师、耗时3个月</b></strong></span>的开发任务，压缩为<span style="color: #0f59a4"><strong><b>一名</b></strong><strong><b>普通软件的软件</b></strong><strong><b>工程师在一周内完成。</b></strong></span></p>
+<p>解决机器人“怎么动”，只是桥介数物平台化路线的第一步，RoboCraft AI还规划了从“动作商城”到<span style="color: #0f59a4"><strong><b>“技能商城”</b></strong>，</span>再到<span style="color: #0f59a4"><strong><b>“应用商城”</b></strong></span>的长期蓝图。</p>
+<p>技能商城将进一步提供搬箱子、开门、分拣、巡检、上下楼等<span style="color: #0f59a4"><strong><b>可参数化、可组合的原子能力；</b></strong></span>应用商城则面向工厂巡检、仓储搬运、商场导览和展厅接待等具体场景，提供更加<span style="color: #0f59a4"><strong><b>完整的任务解决方案。</b></strong></span></p>
+<p>这条演进路线背后，是桥介数物对机器人软件能力的三层划分：<span style="color: #0f59a4"><strong><b>Motion</b></strong></span>负责封装底层硬件差异，<span style="color: #0f59a4"><strong><b>Skill</b></strong></span>提供可以组合和调用的技能，<span style="color: #0f59a4"><strong><b>Task</b></strong></span>则根据具体任务调度不同Skill。</p>
+<p>至此，桥介数物的野心也超出了小脑供应商的范围。</p>
+<p>其实在创业之初，尚阳星想做的就是机器人时代的基础设施。如今，该公司正在以运动控制为地基，逐步向技能、应用延伸，最终拼出一套面向应用开发者的<span style="color: #0f59a4"><strong><b>通用机器人操作系统</b></strong><strong><b>。</b></strong></span></p>
+<p>最近，围绕RoboCraft AI的平台逻辑、第三方运控公司的生存空间、机器人小脑的技术拐点，机器人前瞻与桥介数物创始人、CEO尚阳星进行了一次深度对话。</p>
+<p>以下是不改变原意的编辑整理：</p>
+<h2><strong><b>一、不造本体，成为一家独立、第三方的机器人平台公司</b></strong></h2>
+<p><strong><b>机器人前瞻：目前国内除了桥介数物，就没有其他公司也是这样专门做第三方、独立的机器人运动控制平台，为什么？</b></strong></p>
+<p><strong>尚阳星：</strong>我只能谈自己的推测。第一，运动控制本身有一定难度。过去，运动控制算法比较难，随着技术逐渐成熟，虽然掌握相关能力的人越来越多，但是算法也在持续进步。</p>
+<p>第二，<span style="color: #0f59a4"><strong><b>运动控制不容易标准化。</b></strong></span>在一台机器人上调出来，并不等于在另一台机器人上也能调出来。每个项目偏定制化，就很难规模化，外界可能因此认为这件事的天花板不高。</p>
+<p>第三，存在时代机遇、先发积累。三年前我们刚创业时使用的算法，如果放到今天，肯定卖不出去；但在当时，算法就能卖出去。这意味着我们必须跟随算法进步，并持续跑在前面，才能不断把算法卖出去。</p>
+<p>早期行业刚起步，一个有经验、有一定能力的小团队就可能做到比较靠前；随着时间发展，我们持续积累经验并保持在前面，后来者再切入就没有那么容易。</p>
+<p><strong><b>机器人前瞻：具身智能现在融资热度很高，你观察到投资人的关注点发生了哪些变化？</b></strong></p>
+<p><strong><span style="color: #000000">尚阳星：</span></strong>总体趋势是，三年前投资人主要看本体，后来逐渐关注零部件。起初关注的零部件更多偏硬件，现在也开始看软件。</p>
+<p>因为随着投资人对产业的了解不断深入，越来越多人认识到，很多公司都会造自己的机器人本体。如果本体的壁垒和难度没有那么高，企业就可能选择自己造。比如荣耀这样的公司也能把机器人做得很好。汽车厂商、手机厂商以及很多传统制造业公司，只要具备一定制造能力，都可能有这样的想法。</p>
+<p><strong><b>机器人前瞻：桥介数物这一轮融资最能打动投资人的是什么？资金将主要投向哪些方向？</b></strong></p>
+<p><strong>尚阳星：</strong>我觉得最能打动投资人的是<span style="color: #0f59a4"><strong><b>未来的平台化机会。</b></strong></span>公司刚开始做运动控制时，业务偏项目制。项目制让我们成为过去几年少数能够盈利的公司之一，也验证了市场需求，客户愿意支付较高费用，请我们解决问题，但<span style="color: #000000"><strong><b>项目制不容易规模化。</b></strong></span></p>
+<p>我们认为，这类定制需求未来可以用标准化方式满足。平台化产品要解决两个维度的问题：<span style="color: #0f59a4"><strong><b>一是跨本体泛化，二是跨动作泛化。</b></strong></span>随着技术进步和工程化积累，这逐渐具备实现可能。</p>
+<p>在跨动作泛化方面，就是靠<span style="color: #0f59a4"><strong><b>运动</b></strong><strong><b>基座</b></strong><strong><b>模型。</b></strong></span>过去，一个客户有一种动作，我们就为他定制训练；现在不用了，我们已经建设了一个数据工厂，计划积累几十万至上百万小时的运动数据，用于训练一个基座模型。模型训练完成后，机器人就能够完成多种不同动作，用户只需要提供目标动作。</p>
+<p>跨本体泛化目前还没有解决得那么好，但我们看到了标准化的机会。</p>
+<p>首先，我们把训练流程做成<span style="color: #0f59a4"><strong><b>标准化平台</b></strong>，</span>用户可以上传机器人的URDF，训练框架和流程都是标准化的。就像人穿上更高的鞋、穿上外骨骼，或者身体状态发生变化后，也能经过一段时间学习和适应而重新走路。只要学习和适应足够快，未来就可能出现一个系统，能够控制不同本体的机器人，并让它们完成各种动作。</p>
+<p>融资资金将围绕这两个目标投入。第一，<span style="color: #0f59a4"><strong><b>在跨动作泛化方面收集更多数据</b></strong>，</span>让模型更具泛化能力。我们已经建设了一个数据工厂，团队另配有五六十人，采集跨本体所需的人体全身运动数据。</p>
+<p>第二，<span style="color: #0f59a4"><strong><b>构建平台化产品。</b></strong></span>过去交付的可能是一组算法或模型，还没有形成完整的软件产品；现在要通过系统和软件工程建设，为用户提供更完整的体验，让交互方式从命令行逐步走向图形化界面。</p>
+<p><strong><b>机器人前瞻：现在那么多机器人厂商自己也在做机器人小脑，你如何看待这种竞争格局？会担心吗？</b></strong></p>
+<p><strong>尚阳星：</strong>我觉得我们目前是拥有一个结构性优势的。很多公司倾向于做自己的本体，即使是做“大脑”的公司，也想自己做本体。</p>
+<p>但是我们坚持不做自己的硬件，因为我们想成为独立第三方，瞄准的是<span style="color: #0f59a4"><strong><b>跨平台的应用开发平台。</b></strong></span>自己造本体的公司与我们不在同一个生态位，我并不担心。</p>
+<p>未来，人形机器人的下游应用会非常多。本体厂商即使最终收敛，至少也可能有五六家。应用开发者需要开发工具，不可能为每一家本体厂商分别学习一套工具。就像开发安卓应用一样，如果五六家厂商都有自己的开发工具，学习成本会很高，开发成果也无法复用。</p>
+<p>所以，最好就是有一个统一的开发平台，开发者只需开发一次，就能在不同硬件本体上使用。这样的机会必须由独立第三方平台来承接。</p>
+<h2><strong><b>二、打造一个通用机器人操作系统</b></strong></h2>
+<p><strong><b>机器人前瞻：RoboCraft AI定位于通用机器人操作系统的Motion层，那么一个完整的具身智能操作系统应该包括哪些核心层级？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>我们把机器人软件能力分为三个部分：<strong><span style="color: #0f59a4">最底层是Motion，中间是Skill，最上层是Task。</span></strong></p>
+<p>Motion层的使命，是<span style="color: #0f59a4"><strong><b>封装底层硬件差异。</b></strong></span>不同人形机器人看起来可能差不多，但使用的关节并不相同。它们可以完成相同动作或任务，例如向前走几步、挥挥手、弯下腰等，但执行的关节指令不同。</p>
+<p>Motion层要把这些差异封装起来，使开发者在一台机器人上开发的Skill有机会迁移到另一台机器人上。这样可以提高开发效率，大家能够共同开发并分享大量Skill，已经开发过的能力不必重复开发，从而形成互相加速的生态，这就像是计算机的内核。</p>
+<p>Skill层未来会非常丰富。走路可以是一种Skill，因为有不同的走路姿势和风格；搬箱子、抓瓶子同样是Skill。未来也可能出现一个更大的模型，同时完成多种Skill。Skill层类似计算机中的各类库，可以由第三方开发、由社区共同开发，也可以由我们提供。</p>
+<p>最上层的Task相当于应用程序，可以由大语言模型驱动。例如，用户要求机器人收拾桌子，系统会把任务拆解，再调用不同Skill完成。</p>
+<p>除此之外，操作系统还需要开发工具，例如编辑器、图形化界面等。这些不属于上述功能分层，但也是完整系统的一部分。</p>
+<p><strong><b>机器人前瞻：开发平台也有一些企业能去做，桥介数物做这件事，具备哪些独特的技术基因和经验？其他企业很难在短期内复制的壁垒是什么？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>真正难的不是做一个网页平台，而是把跨本体运动能力做成产品。桥介的技术基因来自三件事：</p>
+<p>第一，桥介一开始就选择了<span style="color: #0f59a4"><strong><b>最难标准化的运动控制层。</b></strong></span>机器人本体差异极大，关节数、惯量、驱动性能、传感器、底层延迟都不一样。桥介过去在大量真实本体和真实项目中，积累了跨硬件适配、强化学习训练、Sim-to-Real、真机部署、安全边界和失败恢复经验。</p>
+<p>第二，桥介不是只交付算法，而是在<span style="color: #0f59a4"><strong><b>把经验固化成系统。</b></strong></span>包括机器人建模、硬件检查、训练流程、仿真评估、真机部署、版本管理、异常检测等。壁垒不只在某段代码里，而在“真实机器人跑出来的经验、失败样本、数据闭环和工程流程”里。</p>
+<p>第三，桥介坚持<span style="color: #0f59a4"><strong><b>不做整机，</b></strong></span>这带来第三方中立性。本体厂商使用 RoboCraft AI，不是在给竞争对手交数据或交生态，而是在接入一个运动能力基础设施。这一点和很多自有硬件厂商的平台逻辑不同。</p>
+<p>短期内难复制的壁垒主要是：跨本体真实部署经验、Sim-to-Real 闭环、真机失败数据、运动控制模型、统一抽象接口、安全部署体系，以及对本体厂商和开发者需求的长期理解。</p>
+<p><strong><b>机器人前瞻：从Motion层走向Skill层，需要处理更多环境交互的不确定性。桥介数物未来会涉及末端执行器、灵巧手等控制能力吗？</b></strong></p>
+<p><strong>尚阳星：</strong>会。我们不会把控制范围限定为下半身、上半身、全身或手部，而是控制相关的都做。</p>
+<p>公司过去的定位是通用机器人小脑研发商，现在升级为<span style="color: #0f59a4"><strong><b>通用机器人操作系统研发商。</b></strong></span>这不仅是名称变化，也是视角转变：过去我们关注的是把小脑做好，现在关注的是如何<span style="color: #0f59a4"><strong><b>服务好应用开发者。</b></strong></span>应用开发者需要什么，我们就会逐步构建什么，这会影响公司的路径选择。</p>
+<p>现阶段，我们首先要把Motion层做好。全身运动控制是上层规划的基础，相当于地基，必须先打牢。未来，我们会逐步<span style="color: #0f59a4"><strong><b>向上拓展感知、避障、操作任务和开发工具</b></strong>，但</span>核心目的始终是服务应用开发者，让真正懂应用场景的人快速开发应用，而不必学习机器人的各种底层知识。</p>
+<p><strong><b>机器人前瞻：RoboCraft AI 平台盈利模式是什么？以后会怎么向开发者收取费用，同时保证平台的生态可持续性？</b></strong></p>
+<p><strong>尚阳星：</strong>Robocraft 的收费模式是按照订阅制收费，平台生成的模型部署到每台机器人都会收订阅费。</p>
+<p>比如某机器人乐园，他用 Robocraft 平台定制一场舞台剧表演，通过平台的使用就不需要寻找更贵的机器人强化学习工程师来进行二次开发，省下来的钱可以用来支付平台费用。</p>
+<p>未来随着平台上的开发者越来越多，我们会考虑分成的方式，不过目前主要还是通过订阅制收费。</p>
+<p>我们面向的开发者并非传统的专业机器人开发者，而是通过平台抽象和封装，降低机器人开发难度，让开发门槛进一步降低，让<strong><b>真正懂应用场景的、而非懂机器人的工程师</b></strong>也能进行机器人开发。</p>
+<p><strong><b>机器人前瞻：桥介数物正在训练动作层面的世界模型，目前进展怎么样了？</b></strong><strong><b><br />
+</b></strong></p>
+<p><strong>尚阳星：</strong>我们所说的世界模型，不是通常所说的视频世界模型，而是运动层面的机器人动力学世界模型，我们<span style="color: #0f59a4"><strong><b>正在用神经网络拟合机器人动力学的世界模型。</b></strong></span></p>
+<p>建立机器人动力学世界模型，主要是为了<span style="color: #0f59a4"><strong><b>更系统地解决Sim2Real问题</b></strong>。</span>今天一个很大的瓶颈是，在仿真中训练的机器人动作部署到实机后，表现会有差异。过去也有域随机化等方法尝试建模真实世界，但这些方法还不够自动化。</p>
+<p>我们的目标是适配大量机器人，实现跨本体泛化。目前在适配不同本体时，仍需要人工调整Sim2Real Gap。未来如果要把这一环节自动化，就需要从更根本的层面用世界模型解决。</p>
+<p>具体来说，就是收集真实机器人的运动数据，再训练一个世界模型，它也可以被视为一种仿真器。因为使用真机数据训练，这个世界模型会更准确；如果在其中训练机器人动作，就有机会缩小Sim2Real Gap。</p>
+<p>目前，我们已经能够在仿真环境中训练这样的世界模型，并初步验证了这条技术路线的可行性。具体来说，在两个不同的仿真环境中，先在一个仿真环境拟合世界模型，再测试这个模型能否迁移到另一个仿真环境。这套流程已经在跑通了，我们正在进一步采集真实机器人运动数据，并推进实机实验。</p>
+<h2><strong><b>三、从平台到生态，桥介数物的下一步旗</b></strong></h2>
+<p><strong><b>机器人前瞻：桥介数物目前还在推进哪些战略布局，以逐步补齐通用机器人操作系统的版图？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>操作系统是一个长期目标，需要一步一步建设。在操作系统还不完善时，它所能支撑的应用也有限，因此在构建操作系统的过程中，我们仍要寻找能够产生商业价值的场景。</p>
+<p>商业方面，目前主要希望切入展演、导览、文旅、租赁表演等泛娱乐场景。我们的平台能让用户快速为新机型定制动作，机器人表演时不必每次都重复同一套动作，也不需要大量专业工程师进行动作创作。随着技术成熟，我们会逐步拓展新的应用场景。</p>
+<p>技术方面，除平台化建设和数据工厂外，公司过去主要聚焦运动控制，现在也开始<span style="color: #0f59a4"><strong><b>拓展定位、避障等偏感知的工作，并开展部分操作能力的预研。</b></strong></span></p>
+<p>还有一件很重要的事情，我们正在做<span style="color: #0f59a4"><strong><b>关节模组数据库。</b></strong></span>关节模组是机器人最核心的零部件之一，它的性能会直接影响整机的运动表现和Sim2Real效果。</p>
+<p>但是目前，<span style="color: #0f59a4"><strong><b>机器人关节模组行业存在较为普遍的参数虚标问题。</b></strong></span>这未必是厂商主观上希望虚标，更多是行业在缺少统一测试标准和权威评价体系的情况下，逐渐陷入了一种恶性竞争，你不虚标别人就虚标，用户又很难判断，最终可能会倾向于选择参数看起来更高的产品。</p>
+<p>长期来看，这种现象对行业发展是不利的。因为你买回来后才发现关节模组的实际性能不足，前期设计和研发投入就可能被浪费。</p>
+<p>目前，我们正在联系市面上的主流关节模组厂商，将不同产品带到专业测试台架上进行统一测试，不仅会核验关节模组的真实性能是否与标称参数一致，还会对关节的动力学特性进行更加深入的建模，提高Sim2Real的效率。数据库建设完成后，相关信息也计划在我们的平台化产品上公开。</p>
+<p><strong><b>机器人前瞻：随着桥介数物从运动控制平台走向更深入的产业生态，你们最渴望获得哪些外部资源？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>资金当然是一个非常重要的外部资源，另外，我们希望获得关节模组厂商和各类商业化零部件厂商更充分的支持。</p>
+<p>还有一点是，目前行业标准并不统一。不同厂商采用的通信方式、主控板等等都不同，这些差异会给我们建设统一平台带来比较大困难。</p>
+<p>对于本体厂商上游的关节、主控、IMU和结构件等企业，我希望大家能够联合起来。虽然各家之间存在竞争关系，但也有很多需要相互配合的地方。</p>
+<p>坦白讲，目前已经有部分国家标准，但大家不一定都会遵守；还有一些领域缺少相应标准，或者现有标准比较笼统，无法约束到这些具体环节。</p>
+<p>未来，行业需要逐渐形成一些事实标准，大家能够真正遵守这些标准。这对大家都有利，也能进一步推动产业形成模块化分工。不过，这件事确实无法由一个人或一家公司完成，需要行业共同配合。这也是我们目前最需要的外部行业资源。</p>
+<p><strong><b>机器人前瞻：业内不少公司都在开源自己的小脑模型</b></strong><strong><b>，有观点认为，本体公司只需下载开源模型，就能直接获得不错的运动控制能力，你怎么看？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>开源与闭源的问题在很多行业都存在，就像大模型，既有开源模型，也有闭源模型。桥介数物未来也会考虑开源部分模型，但模型需要持续维护。</p>
+<p>今天的运动控制模型不同于过去的代码。过去把代码开源，基本上就是把全部内容开源；现在即使模型开源，背后的数据通常也不一定开源。模型的竞争正加速从“纯算法突破”走向“算法 + 高质量大规模数据”的双轮驱动。单纯开源算法架构，已难以承载复杂运动控制对泛化性与鲁棒性的极高要求。</p>
+<p>与此同时，现有模型基本不具备跨本体泛化能力。一个基于特定机器人训练的模型，即使开源，也只能在这台机器人上使用，无法直接用于市面上的其他机器人，对其他厂商的意义就不太大。</p>
+<p>此外，数据采集需要持续投入成本。即使有财大气粗的机构愿意做这件事情，也需要持续收集更多数据，不一定能一直维护这个模型。</p>
+<p><strong><b>机器人前瞻：你之前提到觉得人形机器人可能比四足机器人更快落地，为什么？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>这只是一种可能性。机器人落地很重要的一个方面是智能程度，而人类创造的很多智能来自对人类数据的模仿。</p>
+<p>我认为，智能产生的方式主要有两种：第一是模仿，第二是通过试错自主学习，两种方式可以结合使用。大语言模型使用大量人类数据形成智能，后训练阶段又用强化学习进一步提升；AlphaGo早期也从模仿人类棋谱，后来AlphaZero才实现不依赖人类棋谱、从头通过强化学习进行学习，反而超越了 AlphaGo。</p>
+<p>通用机器人的智能非常复杂，今天要从头创造这些智能仍然很难，也需要很强的仿真基础设施，更便捷的方式还是使用人类数据</p>
+<p>所以在使用人类数据时，人形机器人具有优势：收集人类数据训练模型后，由于人形机器人的构型与人更接近，模型更容易用于人形机器人，但未必能用于四足机器人。</p>
+<p><strong><b>机器人前瞻：大语言模型有“GPT时刻”，机器人小脑会不会也有类似时刻？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>银河通用之前提出了“小脑的GPT时刻”，我认为这个说法也算是中肯。与过去的小模型相比，今天的运动控制模型规模更大，也采用生成式预训练Transformer。从技术角度看，<strong><b>运动</b></strong><strong><b>基座</b></strong><strong><b>模型</b></strong>已经具有类似GPT的特征：过去一个动作需要训练一个模型，现在同一个模型可以完成更多任务，遇到新动作也不需要重新训练。</p>
+<p>但人们通常所说的“GPT时刻”，还意味着产生<strong><b>革命性的社会影响</b></strong>。运动控制虽然在技术上达到了一定程度，目前却还没有产生类似ChatGPT发布后的巨大影响，这是由结构性限制决定的。运动控制是机器人未来开展工作的必要能力，但仅有运动控制还不够，还需要操作能力取得突破。</p>
+<p><strong><b>机器人前瞻：你今年有什么最关注的前沿技术趋势？</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>我看到一个似曾相识的趋势，就是<span style="color: #0f59a4"><strong><b>机器人操作领域的技术范式可能在未来一到两年发生较大变化，并带来操作能力的突破和繁荣。</b></strong></span>今天的操作能力仍存在瓶颈。过去的范式，是通过遥操作收集大量数据，再用纯监督学习方法训练模型。现在，英伟达及Sharpa正在推动一个新趋势：在仿真中通过强化学习训练操作模型。</p>
+<p>具体路径是，先在真实世界收集数据并建模真实世界，再在相应仿真环境中通过强化学习学习策略，最后部署回真实世界，即Real-to-Sim-to-Real。这条路径可以把对真实数据的要求降低一个数量级，甚至更多。</p>
+<p>过去直接采集遥操作数据的利用效率很低，连失败场景也需要人为采集；引入强化学习后，很多失败数据可以由系统自主探索，只需提供成功轨迹作为参照。这样不仅能降低数据需求，也有望提升模型的鲁棒性和泛化性。数据成本过高、数据需求过多、泛化能力不足等问题，都可能因此获得突破。</p>
+<p>之所以觉得似曾相识，是因为<span style="color: #0f59a4"><strong><b>运动控制领域已经经历过类似的范式转变</b></strong>。</span>我刚创业时，行业主要采用MPC等传统运动控制方法。过去让足式机器人或人形机器人走路、跑步、跳舞非常难，波士顿动力需要很多博士投入多年才能做出相关能力，ASIMO能够实现行走也曾是重大突破。</p>
+<p>大约从2020年开始，英伟达等逐步推动在仿真中用学习方法解决运动控制问题：先构建尽可能接近实物的仿真器，在仿真中通过强化学习训练，再部署到实机上。早期仿真基础设施并不完善，也很少有人探索这条路线。</p>
+<p>英伟达一直在建设Omniverse等仿真系统，并与ETH 的 Marco Hutter 团队等合作开发基础设施和算法。最初只有少数团队取得成果，后来越来越多人投入，最终在2023年前后形成爆发，2024年至2025年在产业界出现快速技术突破。大家突然发现，人形机器人跳舞似乎不再那么难，这也是行业热情升高的重要原因。</p>
+<p>这次操作范式的变化可能经历相似过程：从早期酝酿、逐步显现，到最终在产业界形成较大影响。</p>
+<p><strong><b>机器人前瞻：这种操作技术范式的突破，会对机器人规模化落地带来哪些影响？</b></strong></p>
+<p><strong>尚阳星：</strong>最直接的影响是让机器人真正可用、能够落地。未来不需要收集那么多真实数据，也能让机器人完成任务，鲁棒性和泛化性也会更强。机器人因此才可能真正进入工厂工作。</p>
+<p>届时会有更多应用开发者参与。我们希望把相关能力做成简单的开发工具，交给真正了解应用场景的人。只有应用专家才清楚具体生产工艺、生产SOP或服务SOP是什么。</p>
+<p>今天，一些公司希望训练一个非常大的大脑模型，就解决所有问题并在很多场景落地，我认为这不现实。<strong><span style="color: #0f59a4">机器人落地必须依赖应用开发者，因为他们才是应用专家，真正知道具体场景应该怎样运行。</span></strong></p>
+<p><strong><b>机器人前瞻：你对桥介数物今年的营收有什么预期？</b></strong><strong><b><br />
+</b></strong></p>
+<p><strong><b>尚阳星：</b></strong>今年的重点工作没有放在营收上。过去公司已经实现盈利，营收也在快速增长，但核心问题是业务以非标准化项目制为主。项目制能带来一定现金流，却很难做到很大规模；即使继续快速增长，最终也会触及天花板，想象空间有限。</p>
+<p>今年，这类项目制业务不是重点方向。过去的项目仍会持续做，但主要用于积累经验。要实现跨本体，就必须调试和处理很多问题，只有经历这些项目，才知道怎样更快地解决问题。因此，今年对项目制业务的定位是保持稳定。</p>
+<p>今年工作的重点，是想方设法把平台化产品做好、推出，并验证它具有一定商业价值。前期收入规模可能不大，但只要产品是标准化的，能力未来就能复用到其他场景，这就算成功。今年的营收目标维持在数千万元规模，但也会比去年有些增长。</p>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$.post('https://www.zhidx.com/wp-admin/admin-ajax.php', {action: 'wpt_view_count', id: '584179'});
+});
+</script>            </div>
+            
+            <div class="post-share">
+                <div class="praise" data-postid="584179">
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/praise.png" alt="">
+                    <span>6</span>
+                </div>
+                <div class="social-share" data-title="不造机器人，专教机器人走跑跳，南科大学霸融资亿元" id="share"
+                     data-sites="weibo,qq,qzone,wechat"></div>
+            </div>
+            <div class="post-tag">
+                <a href="https://www.zhidx.com/p/tag/%E8%9E%8D%E8%B5%84">融资</a>            </div>
+
+
+            <div id="single-suffix"></div>
+            <script type="html/text" id="single-suffix-tmp">
+                <a class="suffix" style="display:block;" href="{{link}}" {{target}}><img src="{{img}}" alt=""></a>
+
+
+            </script>
+            <script>
+                (function () {
+                    var url = "https://oss.zhidx.com/static/single/index.json?a=2"
+                    var tmp = document.querySelector("#single-suffix-tmp").innerHTML
+                    fetch(url).then(rest => rest.json()).then(rest => {
+                        document.querySelector("#single-suffix").innerHTML = tmp.replace(/{{link}}/, rest.link || "javascript:;").replace(/{{img}}/, rest.pc)
+                            .replace(/{{target}}/, rest.link ? 'target="_blank"' : '')
+                    })
+                })()
+            </script>
+
+            <div class="post-comments" id="comments">
+                <link rel="stylesheet" href="//oss.zhidx.com/static/common/lib/layui/css/layui.css">
+<script src="//oss.zhidx.com/static/common/lib/layui/layui.js"></script>
+
+<div class="comment-box">
+    <div class="cb-title">
+        来, 说两句
+    </div>
+    <form action="" class="commentform">
+        <div>
+            <textarea class="comment-textarea" name="comment"></textarea>
+        </div>
+        <div>
+            <input type="button" value="发布" class="comment_submit">
+        </div>
+        <input type="hidden" name="comment_post_ID" value="584179">
+        <input type="hidden" name="comment_parent" value="0">
+    </form>
+</div>
+<div id="comments-list">
+
+<ul>
+    </ul>
+</div>
+<script type="text-html" id="reply-template">
+    <div class="comment-box" style="width:850px">
+    <div class="cb-title">
+        回复：{{author}}
+    </div>
+    <form action="" class="commentform">
+        <div>
+            <textarea class="comment-textarea" name="comment"></textarea>
+        </div>
+        <div>
+            <input type="button" value="发布" class="comment_submit">
+        </div>
+        <input type="hidden" name="comment_post_ID" value="584179">
+        <input type="hidden" name="comment_parent" value="{{parent}}">
+    </form>
+</div>
+</script>
+    <script>
+        jQuery("img[src*='ZDX-Card-for-PC-e1']").css('display', 'none');
+    </script>
+            </div>
+
+            <style>
+    .about-title {
+        font-size:30px;
+        line-height: 30px;
+        padding: 25px 0 10px;
+    }
+    .ilr-tag {
+        background-image: url('//oss.zhidx.com/static/themes/zhidxcom/images/tag-icon.png') !important;
+        background-position-x: 10px !important;
+    }
+</style>
+<div class="post-aboute">
+    <h3 class="about-title">相关推荐</h3>
+    <ul class="info-list" id="about-list">
+
+    </ul>
+    <div class="info-left-other load-over">
+        加载更多...
+    </div>
+</div>
+<script type="text/html" id="tmp">
+    <li>
+        <div class="info-list-img">
+            <a href="{{link}}" target="_blank" title="{{title}}">{{pic}}</a>
+        </div>
+        <div class="info-left-content">
+            <div class="info-left-title">
+                <a href="{{link}}" target="_blank" title="{{title}}">{{title}}</a>
+            </div>
+            <div class="info-left-desc">
+                {{desc}}
+            </div>
+            <div class="info-left-related">
+                <div class="ilr-author">
+                    <div class="ilr-author-img">
+                        {{author_pic}}
+                    </div>
+                    <div class="ilr-author-name">{{author_name}}</div>
+                </div>
+                <div class="ilr-time">
+                    {{publish_time}}
+                </div>
+                <div class="ilr-comment ilr-tag">
+                    {{taglink}}
+                </div>
+            </div>
+        </div>
+    </li>
+</script>
+<script>
+    (function($) {
+        var page = 1;
+        var tmp = $('#tmp').html()
+        function fetchData() {
+            $.post('/wp-admin/admin-ajax.php', {
+                action: 'post_about',
+                postid: '584179',
+                page: page,
+            }, function(jsonObj) {
+                if (jsonObj.state === 0) {
+                    var htmlList = jsonObj.result.map(function(e) {
+                         return tmp.replace(/{{title}}/g, e.title)
+                            .replace(/{{desc}}/, e.desp)
+                            .replace(/{{publish_time}}/, e.publish_time)
+                            .replace(/{{pic}}/, e.pic)
+                            .replace(/{{author_pic}}/, e.author_pic)
+                            .replace(/{{author_name}}/, e.author_name)
+                            .replace(/{{link}}/g, e.link)
+                             .replace(/{{taglink}}/, e.tagname ? '<a href="/p/category/tag_list">'+e.tagname+'</a>' : '')
+                    });
+                    page ++;
+                    if (htmlList.length > 0) {
+                        $('#about-list').get(0).innerHTML += htmlList.join('')
+                    }
+                    loadOver(jsonObj.result.length, 5);
+                }
+            }, 'json')
+        }
+        fetchData()
+        $('.info-left-other').click(function() {
+            fetchData();
+        })
+    })(jQuery)
+</script>        </div>
+    </div>
+</section>
+<script>
+    jQuery('.post-content').html(jQuery('.post-content').html().replace(/dev.(?:wp|zhidx).com/g, 'zhidx.com'));
+</script>
+<script src="//oss.zhidx.com/static/themes/zhidxcom/js/single.js?a=1"></script>
+<script>
+    //    jQuery('.post-content img').css('maxWidth', '850px');
+    jQuery('.post-content img').each(function (i, e) {
+        e.onload = function () {
+            if (e.width > 850) {
+                e.style.width = '850px';
+            }
+        }
+    });
+    (function () {
+        document.querySelectorAll('.post-content p').forEach(item => {
+            if (item.textContent && item.textContent[0] === '▲') {
+                item.style.paddingTop = '0'
+                item.style.marginTop = '-7px'
+            }
+        })
+    })();
+</script>
+<style>
+    .sub-m {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, .65);
+        display: none;
+    }
+    .sub {
+        width: 494px;
+        height: 408px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        border-radius: 5px;
+        background: #fff;
+    }
+    .sub-close {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 20px;
+        color: #666;
+    }
+    .sub-title {
+        font-size: 28px;
+        color: #353535;
+        font-weight: 500;
+        text-align: center;
+        line-height: 28px;
+        padding: 40px 0;
+    }
+    .sub-desp {
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        color: #353535;
+        width: 336px;
+        margin: 0 auto;
+    }
+    .sub-qrcode img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        padding-top: 40px;
+        padding-bottom: 2px;
+    }
+    .sub-qrcode-desp {
+        text-align: center;
+        font-size: 14px;
+        color: #b2b2b2;
+        line-height: 14px;
+    }
+</style>
+<div class="sub-m">
+    <div class="sub">
+        <div class="sub-close">✕</div>
+        <div class="sub-title">订阅</div>
+        <div class="sub-desp">
+            智东西晚报通过智东西Pro服务号每天定时推送
+            一次订阅，不错过每天行业重磅信息
+        </div>
+        <div class="sub-qrcode">
+            <img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFc8TwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyYnNkV2R1OXpmejExMDAwMGcwN3QAAgTfopBcAwQAAAAA" alt="">
+            <div class="sub-qrcode-desp">扫码关注，立即订阅</div>
+        </div>
+    </div>
+</div>
+<script>
+    (function($) {
+        $(function() {
+            $('.sub-close').on('click', function() {
+                $('.sub-m').css('display', 'none');
+            })
+            $('.sub-btn').on('click', function() {
+                $('.sub-m').css('display', 'block');
+            })
+            $('.sub-know').on('click', function() {
+                $('.sub-tips').css('display', 'none');
+                window.localStorage.setItem('sub_know', 1);
+            });
+            if (window.localStorage) {
+                if (window.localStorage.getItem('sub_know') != 1) {
+                    $('.sub-tips').css('display', 'block');
+                }
+            }
+        })
+    })(jQuery)
+</script><script>
+    document.querySelectorAll('.post-content img').forEach(imgObj => {
+        const width = parseInt(imgObj.getAttribute('width'))
+        const height = parseInt(imgObj.getAttribute('height'))
+        if (width < 300 || height < 60) {
+            imgObj.style.cssText = `
+            width:${width}px !important;
+            height: ${height}px;
+            display: inline-block;
+            margin: 0;
+            `
+        }
+    })
+</script>
+<link rel="stylesheet" href="//oss.zhidx.com/static/themes/zhidxcom/css/footer.css">
+<footer id="footer">
+    <ul id="footer-info">
+        <li class="footer-realize">
+            <div class="footer-title">欢迎来撩</div>
+            <ul class="content">
+                <li>
+                    <a href="https://zhidx.com/about" target="_blank">关于我们</a>
+                </li>
+                                    <li>
+                        <a href="javascript:;">加入我们</a>
+                        <div class="show-wrapper">
+                            <div class="show">
+                                                                    <div class="wechat-qrcode">
+                                        <img src="https://oss.zhidx.com/gtic/20/08/5f29622a64c0d-1000.jpg" alt="">
+                                    </div>
+                                                                <div class="desp">
+                                    扫码加我直接扔简历                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <a href="javascript:;">寻求报道</a>
+                        <div class="show-wrapper">
+                            <div class="show">
+                                                                    <div class="info">
+                                        邮件地址：news@zhidx.com                                    </div>
+                                                                <div class="desp">
+                                    快把您的需求发给我                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <a href="javascript:;">商务合作</a>
+                        <div class="show-wrapper">
+                            <div class="show">
+                                                                    <div class="wechat-qrcode">
+                                        <img src="https://oss.zhidx.com/gtic/24/07/66861d9ecf1e7-20240704115545.png/w1200" alt="">
+                                    </div>
+                                                                <div class="desp">
+                                    扫码加我直接开聊                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <a href="javascript:;">会议咨询</a>
+                        <div class="show-wrapper">
+                            <div class="show">
+                                                                    <div class="wechat-qrcode">
+                                        <img src="https://oss.zhidx.com/gtic/24/10/671891a7881a9-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241023140311.jpg/w1200" alt="">
+                                    </div>
+                                                                <div class="desp">
+                                                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                                    <li>
+                        <a href="javascript:;">媒体合作</a>
+                        <div class="show-wrapper">
+                            <div class="show">
+                                                                    <div class="wechat-qrcode">
+                                        <img src="https://oss.zhidx.com/gtic/21/07/60fada53ccc15-WechatIMG316.jpeg/w1200" alt="">
+                                    </div>
+                                                                <div class="desp">
+                                    扫码加我直接开聊                                </div>
+                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </li>
+        <li class="footer-wechat">
+            <div class="footer-title">公众号</div>
+            <ul>
+                <li>
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/zdx-wechat.png" class="footer-wechat-img" alt="智东西公众号">
+                    <div class="footer-wechat-title">智东西</div>
+                </li>
+                <li>
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/cdx-wechat.png" class="footer-wechat-img" alt="车东西公众号">
+                    <div class="footer-wechat-title">车东西</div>
+                </li>
+                <li>
+                    <img src="//oss.zhidx.com/static/themes/zhidxcom/images/xindongxi-wechat.png" class="footer-wechat-img" alt="智猩猩">
+                    <div class="footer-wechat-title">芯东西</div>
+                </li>
+                <li>
+                    <img src="https://oss.zhidx.com/gtic/24/09/66e542403c06c-aiorang-wechat.jpg" class="footer-wechat-img" alt="智猩猩">
+                    <div class="footer-wechat-title">智猩猩</div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+            <div id="friend-link">
+            <div class="footer-title"></div>
+        </div>
+        <div id="colophon">
+                <div>智东西 版权所有<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802034975" style="color: #999;"><img src="https://oss.zhidx.com/76ecf8e604f7e1f746c5db01d8ab23ce/6ab1c500/uploads/2021/06/60c9b7290ece3_60c9b7290bfe3_60c9b7290bfb4_beian.png">京公网安备 11010802034975号</a> <a href="http://beian.miit.gov.cn/?spm=a2c4g.11186623.7y9jhqsfz.110.4f6d7243Z9KLvk" style="color: #999;" target="_blank">京ICP备16059766-1号</a> Copyright ©2014-2026 zhidx.com. All Rights Reserved</div>
+        <div>北京市海淀区学清路10号院1号楼学清嘉创大厦A座</div>
+    </div>
+</footer>
+<script src="https://oss.zhidx.com/static/common/lib/feedback.js?b=2"></script>
+</body>
+<script>
+    var navTimer;
+    jQuery(".zixun").each(function(i, e) {
+        e.onmouseover = function() {
+            if (this.navTimer) {
+                clearTimeout(this.navTimer);
+            }
+            document.querySelectorAll('.zixun').forEach(function(item) {
+                item.querySelector('.zixun-show').style.display = 'none';
+                item.querySelector('a').className = '';
+                item.style.cssText = '';
+            });
+            this.style.cssText = " height: 80px;border: none;background: rgba(235, 235, 235, .85) !important;";
+            this.querySelector('.zixun-show').style.display = 'inline-block';
+            this.querySelector('.zixun>a').className = 'zixun-select';
+        }
+    })
+    jQuery(".zixun").each(function(i, e) {
+        e.onmouseout = function() {
+            var that = this;
+            this.navTimer = setTimeout(function() {
+                that.querySelector('.zixun-show').style.display = 'none';
+                that.querySelector('a').className = '';
+                that.style.cssText = '';
+            }, 300);
+        }
+    });
+    layui.use(['layer'], function() {
+        var layer = layui.layer
+        jQuery('.sw-coop').click(function() {
+            var img = new Image();
+                        img.src = 'https://oss.zhidx.com/920b56cc9d993ebaf19e0d140cece2f7/6ab1c500/uploads/dw-uploads/sw-coop-img.jpeg';
+            img.style = 'width:400px;height:auto;'
+            img.onload = function() {
+                //商务合作
+                layer.open({
+                    type: 1,
+                    title: false,
+                    closeBtn: false,
+                    shadeClose: true,
+                    area: ['auto'],
+                    content: img.outerHTML
+                })
+            }
+        })
+    })
+</script>
+
+</html>

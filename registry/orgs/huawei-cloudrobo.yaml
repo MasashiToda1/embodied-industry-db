@@ -11,3 +11,19 @@ layers:
 - simulation
 upstream:
   robotics_notebooks_institution: huawei
+founded: 2025
+hq:
+  country: CN
+  city: 深圳
+description: 华为云 2025 年推出的具身智能开发平台，提供数据合成、模型开发、仿真评测、运行管理与 R2C 机器人云联接协议。
+accounts:
+  site: https://www.huaweicloud.com/product/cloudrobo.html
+sources:
+- url: https://www.huaweicloud.com/product/cloudrobo.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 华为云 CloudRobo 产品页，平台能力与 R2C 协议
+- url: https://www.huaweicloud.com/news/2025/20250919104714436.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 华为云官网新闻 2025-09-19，「今年华为云推出了 CloudRobo 具身智能平台」；总部按华为填深圳

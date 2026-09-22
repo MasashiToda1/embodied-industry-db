@@ -1,0 +1,20 @@
+id: evt-2026-01-16-topstar-funding-hkex-h-share-filing
+date: 2026-01-16
+date_precision: day
+type: funding
+orgs:
+- id: topstar
+  role: subject
+title:
+  zh: 拓斯达向港交所主板递交 H 股上市申请，推进 A+H 上市
+summary:
+  zh: 据港交所 1 月 16 日披露，广东拓斯达科技股份有限公司（300607.SZ）向港交所主板递交上市申请书，华泰国际为独家保荐人。招股书称公司在机器人核心零部件、机器人本体、自动化应用系统形成全链条布局，并定位为具身智能领域的先行者。
+counterparties:
+- 华泰国际
+evidence:
+- url: http://mp.cnfol.com/8919/article/1768746605-142220437.html
+  publisher: 中金在线（转载智通财经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/mp-2026-01-16-topstar-hkex-h-share-fil.html
+corroboration: single
