@@ -1,0 +1,25 @@
+id: evt-2024-12-02-magiclab-deployment-dreame-factory-training
+date: '2024-12-02'
+date_precision: day
+type: deployment
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子公布人形机器人 MagicBot 进驻工厂产线实训视频
+summary:
+  zh: 12 月 2 日，魔法原子发布视频公布产品进展，人形机器人 MagicBot 已进驻工厂产线，执行产品检测、物料搬运、零件取放、扫码入库等作业，多台机器人之间实现小范围协作。公司后续披露，2024 年 11 月小麦（MagicBot）进驻合作伙伴追觅科技工厂，在零部件上下料、物料搬运、产品检测等岗位实训。
+counterparties:
+- 追觅科技
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.leiphone.com/category/robot/DSAOMpXsbbHdEsCS.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/leiphone-2024-12-02-magiclab-factory-trainin.html
+corroboration: single

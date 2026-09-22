@@ -1,0 +1,20 @@
+id: evt-2025-07-21-limx-funding-jd-strategic
+date: '2025-07-21'
+date_precision: day
+type: funding
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力新一轮融资获京东战略领投
+summary:
+  zh: 7 月 21 日，逐际动力发布公告称新一轮融资获京东战略领投，融资将深化双方在零售、物流和服务等领域的协同探索，金额未披露。同一公告称公司全尺寸人形机器人已完成量产准备，将于 2025 年下半年公开销售；双足机器人 TRON 1 自 2024 年 10 月发布以来客户包括国内外高校、智能设备企业与科技公司。
+counterparties:
+- 京东
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000021
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/limxdynamics-2025-07-21-limx-jd-strategic.html
+corroboration: single

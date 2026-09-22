@@ -1,0 +1,27 @@
+id: evt-2025-02-18-casbot-funding-angel
+date: '2025-02-18'
+date_precision: day
+type: funding
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 灵宝 CASBOT 宣布天使轮融资累计超亿元，联想创投、国投创合参投
+summary:
+  zh: 2 月 18 日，北京中科慧灵机器人技术有限公司宣布完成新一轮融资，天使轮融资额累计超过 1 亿元人民币，投资方包括联想创投、国投创合、河南资产基金等。公司称资金主要用于加速推进人形机器人量产及核心技术研发。报道写明公司成立于 2023 年 8 月，注册资本约 127.78 万元。
+counterparties:
+- 联想创投
+- 国投创合
+- 河南资产基金
+evidence:
+- url: https://www.tmtpost.com/7460102.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/tmtpost-2025-02-18-casbot-angel-100m.html
+- url: https://www.21jingji.com/article/20250218/herald/9c7ce794eff8339bb014d825d983fb9e.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/21jingji-2025-02-18-casbot-angel-100m-21jj.html
+corroboration: multi

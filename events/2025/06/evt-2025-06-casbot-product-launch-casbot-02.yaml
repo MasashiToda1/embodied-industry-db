@@ -1,0 +1,32 @@
+id: evt-2025-06-casbot-product-launch-casbot-02
+date: '2025-06'
+date_precision: month
+type: product_launch
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 灵宝 CASBOT 发布第二代全尺寸双足人形机器人 CASBOT 02，京东标准版售价 32.88 万元
+summary:
+  zh: 2025 年 6 月，灵宝 CASBOT 推出第二代全尺寸双足人形机器人 CASBOT 02（昵称「灵贰」），身高约 163cm、体重约 55kg，搭载 275 TOPS 算力芯片，配备 RGBD 相机、IMU 与麦克风阵列，支持人脸追踪与声纹识别。产品面向科技馆、展厅、商场、4S 店等场景的交互娱乐、教育科研用户。科创板日报报道称 CASBOT 02 已在京东上架，标准版售价 32.88 万元，并有线上成交记录。
+amount:
+  value: 328800
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - commercial-service
+  - education-research
+  delivery_model:
+  - hardware-sale
+  data_modality:
+  - rgbd
+  - audio
+evidence:
+- url: https://www.cnaiplus.com/a/robot/8564060.html
+  publisher: 科创板日报（AI 中国网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/cnaiplus-2025-06-16-casbot-02-jd-price-cn.html
+corroboration: single

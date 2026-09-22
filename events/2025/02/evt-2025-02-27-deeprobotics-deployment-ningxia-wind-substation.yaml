@@ -1,0 +1,28 @@
+id: evt-2025-02-27-deeprobotics-deployment-ningxia-wind-substation
+date: '2025-02-27'
+date_precision: day
+type: deployment
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处 X30 机器狗交付宁夏戈壁滩无人区风电场升压站智能巡检项目
+summary:
+  zh: 云深处官网 2 月 27 日发文称，公司与金风慧能、中国三峡集团合作的四足机器人无人巡检项目已在宁夏戈壁滩无人风电场升压站交付。项目从 2024 年 8 月运行至 2025 年 2 月，累计完成超过 200 次巡检，单日最高覆盖 349 个巡检对象，识别准确率 96.5%。X30 机器狗与无人机协作，每日两次巡检、每次约 80 分钟，巡检对象包括主变压器、套管、隔离刀闸、避雷器及分合指示器。
+counterparties:
+- 金风慧能
+- 中国三峡集团
+axes:
+  embodiment_form:
+  - quadruped
+  target_scene:
+  - inspection-hazardous
+  delivery_model:
+  - project-based
+evidence:
+- url: https://www.deeprobotics.cn/robot/index/article/id/273.html
+  publisher: 云深处科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/deeprobotics-2025-02-27-deeprobotics-ningxia-win.html
+corroboration: single

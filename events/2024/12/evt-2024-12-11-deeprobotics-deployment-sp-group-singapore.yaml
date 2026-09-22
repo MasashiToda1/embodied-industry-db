@@ -1,0 +1,33 @@
+id: evt-2024-12-11-deeprobotics-deployment-sp-group-singapore
+date: '2024-12-11'
+date_precision: day
+type: deployment
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处 X30 四足机器人交付新加坡能源集团电力隧道巡检方案
+summary:
+  zh: 12 月 11 日，云深处科技宣布与官方合作伙伴 Eastern Green Power（EGP）合作，采用自研 X30 四足机器人和数字化技术，交付新加坡能源集团（SP 集团）电力隧道巡检解决方案。SP 集团将该机器狗命名为「SPock」，配备视频摄像头和热成像仪，在管廊内自主导航、实时发现缺陷并生成数据报告，官方称预估每年节省人工隧道检查时间 480 小时。官网稿称 X30 是国内第一台在海外电力系统落地应用的行业级四足机器人。
+counterparties:
+- Eastern Green Power
+- 新加坡能源集团（SP Group）
+axes:
+  embodiment_form:
+  - quadruped
+  target_scene:
+  - inspection-hazardous
+  delivery_model:
+  - project-based
+evidence:
+- url: https://www.ithome.com/0/816/971.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/ithome-2024-12-11-deeprobotics-sp-group-it.html
+- url: https://www.deeprobotics.cn/robot/index/article/id/265.html
+  publisher: 云深处科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/deeprobotics-2024-12-11-deeprobotics-sp-group.html
+corroboration: multi

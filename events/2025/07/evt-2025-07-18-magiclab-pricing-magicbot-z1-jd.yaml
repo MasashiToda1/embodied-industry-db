@@ -1,0 +1,26 @@
+id: evt-2025-07-18-magiclab-pricing-magicbot-z1-jd
+date: '2025-07-18'
+date_precision: day
+type: pricing
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子 MagicBot Z1 在京东上线开售，售价 178000 元起
+summary:
+  zh: 7 月 18 日，魔法原子双足人形机器人 MagicBot Z1 在京东上线开售，售价 178000 元起。
+amount:
+  value: 178000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://finance.sina.com.cn/tech/roll/2025-07-21/doc-infheytt3441622.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/finance-2025-07-18-magiclab-z1-jd-price-sin.html
+corroboration: single

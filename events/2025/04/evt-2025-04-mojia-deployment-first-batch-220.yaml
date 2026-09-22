@@ -1,0 +1,25 @@
+id: evt-2025-04-mojia-deployment-first-batch-220
+date: '2025-04'
+date_precision: month
+type: deployment
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 奇瑞墨甲机器人完成首批 220 台量产机器人全球交付
+summary:
+  zh: 官方通稿写明，2025 年 4 月 AiMOGA 奇瑞墨甲机器人完成首批 220 台量产机器人的全球交付，覆盖东南亚、中东、南非等市场，印尼为首批部署国家之一。墨甲机器人在 4S 店场景提供主动问候、销售指导、车型推荐和绕车讲解服务，并依托本地知识库与大语言模型实现当地语言实时交互。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - commercial-service
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.prnasia.com/story/498978-1.shtml
+  publisher: 美通社（AiMOGA 墨甲机器人通稿）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/prnasia-2025-04-mojia-220-delivery-prn.html
+corroboration: single

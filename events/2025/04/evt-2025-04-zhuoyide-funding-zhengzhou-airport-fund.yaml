@@ -1,0 +1,22 @@
+id: evt-2025-04-zhuoyide-funding-zhengzhou-airport-fund
+date: '2025-04'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「2025年年初……完成投资决策落地，并于近日完成交割」，报道发布于 2025-04-16
+type: funding
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 郑州航空港私募基金完成对卓益得的投资交割
+summary:
+  zh: 大河财立方 4 月 16 日报道，郑州航空港私募基金管理有限公司于 2025 年年初完成对卓益得的投资决策落地，并于近日完成交割，卓益得是该基金完成的首个投资项目，金额未披露。报道同时提到，2024 年 10 月中豫具身智能实验室在郑州揭牌成立，卓益得创始人任实验室执行主任。
+counterparties:
+- 郑州航空港私募基金管理有限公司
+evidence:
+- url: https://app.dahecube.com/nweb/news/20250416/232543nc542a7b0cf0.htm?artid=232543
+  publisher: 大河财立方
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/app-2025-04-zhuoyide-pre-a-hangkongg.html
+corroboration: single

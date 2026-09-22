@@ -1,0 +1,25 @@
+id: evt-2025-03-14-digital-china-humanoid-funding-angel-plus
+date: '2025-03-14'
+date_precision: day
+type: funding
+orgs:
+- id: digital-china-humanoid
+  role: subject
+title:
+  zh: 数字华夏完成数千万元天使 + 轮融资，同创伟业独家投资
+summary:
+  zh: 3 月 14 日，数字华夏（深圳）科技有限公司宣布完成数千万元天使 + 轮融资，由同创伟业独家投资，资金用于人形机器人多模态互动大模型研发、产品线扩展及商业化应用场景拓展。公告称公司 2024 年完成数十台机器人商业交付和数千万元营收，客户包括头部 ICT 厂商、头部银行、电网企业和国央企；星行侠 IP 系列机器人在研。
+counterparties:
+- 同创伟业
+evidence:
+- url: https://www.digit.com.cn/NewsDetail/103.html
+  publisher: 数字华夏官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/digit-2025-03-14-dch-angel-plus.html
+- url: http://www.investorscn.com/2025/03/14/120119/
+  publisher: 投资家网
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/investorscn-2025-03-14-dch-angel-plus-inv.html
+corroboration: multi

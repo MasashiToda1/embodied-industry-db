@@ -1,0 +1,31 @@
+id: evt-2024-11-13-casbot-product-launch-casbot-01
+date: '2024-11-13'
+date_precision: day
+type: product_launch
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 中科慧灵发布首款全尺寸双足人形机器人灵宝 CASBOT 01
+summary:
+  zh: 11 月 13 日晚，北京中科慧灵机器人技术有限公司通过线上直播发布首款全尺寸双足人形机器人灵宝 CASBOT 01（又名「星期三」）。整机身高 179cm、体重 60kg，内置 52 个自由度、550 TOPS 算力，续航超过 4 小时，自研行星、谐波、直线三大系列一体化关节，峰值扭矩密度最高 207Nm/kg。公司称 CASBOT 01 尚未批量生产，计划 2025 年迭代 1—2 轮后再考虑小批量生产，潜在客户覆盖航空航天、危险作业、工业制造、商业服务。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+  - inspection-hazardous
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2024-11/14/content_258423.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/stdaily-2024-11-13-casbot-01-launch.html
+- url: https://news.qq.com/rain/a/20241114A01ZTT00
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/news-2024-11-13-casbot-01-launch-tmt.html
+corroboration: multi

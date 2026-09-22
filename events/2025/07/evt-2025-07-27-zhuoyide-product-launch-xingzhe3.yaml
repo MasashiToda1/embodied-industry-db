@@ -1,0 +1,29 @@
+id: evt-2025-07-27-zhuoyide-product-launch-xingzhe3
+date: '2025-07-27'
+date_precision: day
+type: product_launch
+orgs:
+- id: zhuoyide
+  role: subject
+title:
+  zh: 卓益得在 WAIC 2025 发布双足人形机器人「行者三号」
+summary:
+  zh: 7 月 27 日，在 2025 世界人工智能大会上，卓益得推出双足人形机器人「行者三号」。官方介绍其身高约 1.7 米、重约 38 公斤，依托肌腱仿生驱动技术，机身较同级轻 20% 以上、能耗降低 50%，动态耦合节能技术使动态续航达 6 小时；共 30 个主动自由度（不含手部），全身 3D 高弹性材料外壳可衰减 90% 以上碰撞力。公司同期在 WAIC 宣布总部迁入张江机器人谷，并发布全球合作伙伴招募政策，未公布行者三号售价。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+  - commercial-service
+evidence:
+- url: https://finance.eastmoney.com/a/202507273468475238.html
+  publisher: 上海证券报·中国证券网（东方财富转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/finance-2025-07-27-zhuoyide-xingzhe3-launch.html
+- url: https://mp.weixin.qq.com/s/dd0CM8tfD5g1gWlO8uFmCQ
+  publisher: 卓益得机器人微信公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/mp-2025-07-27-zhuoyide-xingzhe3-offici.html
+corroboration: multi

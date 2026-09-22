@@ -1,0 +1,33 @@
+id: evt-2025-03-26-magiclab-product-launch-xiaomai-and-model
+date: '2025-03-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子举办「原子双生」场景战略发布会，推出人形机器人小麦与原子万象大模型
+summary:
+  zh: 3 月 26 日，魔法原子举办「原子双生」2025 场景战略发布会，正式推出人形机器人小麦（MagicBot）和四足机器人，并首次推出端到端「原子万象大模型」，同时宣布启动「千景共创计划」，拓展 1000 家合作伙伴、打造 1000 个落地应用场景。官方稿称人形机器人已在追觅科技工厂完成物料搬运、产品检测、点胶等工序；观察者网报道公司总裁在会上表示 2025 年将量产 400 台人形机器人投入工业及商业领域。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+  target_scene:
+  - industrial-manufacturing
+  - commercial-service
+  model_form:
+  - end2end-vla
+  - hierarchical
+evidence:
+- url: https://www.magiclab.top/news/49
+  publisher: 魔法原子官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/magiclab-2025-03-26-magiclab-scene-strategy.html
+- url: https://www.guancha.cn/economy/2025_03_27_770030.shtml
+  publisher: 观察者网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/guancha-2025-03-26-magiclab-scene-strategy-.html
+corroboration: multi

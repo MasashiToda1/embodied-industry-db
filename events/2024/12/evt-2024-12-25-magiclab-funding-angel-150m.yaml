@@ -1,0 +1,29 @@
+id: evt-2024-12-25-magiclab-funding-angel-150m
+date: '2024-12-25'
+date_precision: day
+type: funding
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子完成 1.5 亿元天使轮融资
+summary:
+  zh: 12 月 25 日，具身智能机器人公司魔法原子宣布完成 1.5 亿元天使轮融资，由追创创投领投，翼朴基金跟投，资金用于技术研发、整机量产和商业化落地。官方稿称将于 2025 年第一季度正式发布新一代 MagicBot 人形机器人产品，2025 年交付数百台量产版 MagicBot。
+counterparties:
+- 追创创投
+- 翼朴基金
+amount:
+  value: 150000000
+  currency: CNY
+evidence:
+- url: https://www.magiclab.top/news/29
+  publisher: 魔法原子官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/magiclab-2024-12-25-magiclab-angel-round.html
+- url: https://www.yicai.com/news/102416634.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/yicai-2024-12-25-magiclab-angel-yicai.html
+corroboration: multi

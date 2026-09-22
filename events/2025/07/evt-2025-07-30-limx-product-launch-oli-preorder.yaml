@@ -1,0 +1,30 @@
+id: evt-2025-07-30-limx-product-launch-oli-preorder
+date: '2025-07-30'
+date_precision: day
+type: product_launch
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际动力发布全尺寸人形机器人 LimX Oli 并开放预订，售价 15.8 万元起
+summary:
+  zh: 7 月 30 日，逐际动力正式发布全尺寸通用人形机器人 LimX Oli，售价 15.8 万元起，即日起开放预订。Oli 身高 165cm，31 个机身自由度（不含末端执行器），单臂 7、单腿 6、腰部 3、颈部 2，提供 Lite、EDU 及 Super 三个版本，兼容二指夹爪与五指灵巧手等末端执行器，SDK 全开放，支持云端 API 与 OTA 升级。官方同时公布前 50 名购买 EDU 版赠送一台 TRON 1 EDU 版的活动，并称 Oli 将于 8 月 8 日在北京世界机器人大会首次公开演示。
+amount:
+  value: 158000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.limxdynamics.com/zh/news/BK000022
+  publisher: 逐际动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/limxdynamics-2025-07-30-limx-oli-preorder.html
+corroboration: single

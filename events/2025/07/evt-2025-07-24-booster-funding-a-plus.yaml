@@ -1,0 +1,27 @@
+id: evt-2025-07-24-booster-funding-a-plus
+date: '2025-07-24'
+date_precision: day
+type: funding
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化完成超亿元 A+ 轮融资
+summary:
+  zh: 7 月 24 日，北京加速进化科技有限公司宣布完成超亿元人民币 A+ 轮融资，投资方为北京市机器人产业发展投资基金（由首程控股和京国瑞共同管理）、北京市人工智能产业投资基金（由顺禧基金和启明创投共同管理）和博华资本，义柏资本担任长期独家财务顾问。加速进化官网大事记以「加速进化完成 A+ 轮融资」收录同一消息。
+counterparties:
+- 北京市机器人产业发展投资基金
+- 北京市人工智能产业投资基金
+- 博华资本
+evidence:
+- url: https://ai.42how.com/article/442644ee-b518-5c0c-a44d-58f20782d3f3
+  publisher: 42号电波
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ai-2025-07-24-booster-a-plus.html
+- url: https://www.booster.tech/cn/about-us/
+  publisher: 加速进化官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/booster-2025-07-24-booster-about-timeline.html
+corroboration: multi

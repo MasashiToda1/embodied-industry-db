@@ -1,0 +1,35 @@
+id: evt-2025-03-14-noetix-product-launch-n2-e1
+date: '2025-03-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: noetix
+  role: subject
+title:
+  zh: 松延动力发布人形机器人 N2 与升级版 E1，宣传起售价 3.99 万元
+summary:
+  zh: 3 月 14 日，松延动力发布人形机器人 N2 和升级版 E1，对外宣传起售价 3.99 万元。N2 身高 1.2 米、体重 30 公斤，具备后空翻、奔跑、单双脚跳跃等运动能力，实测奔跑速度最快 3.5 米每秒，机身标配二次开发接口，内置模型预测控制（MPC）与强化学习（RL）协同技术。钛媒体当晚采访中，公司方面称 3.99 万元对应单次批量 50 台以上，50 台以内为 4.99 万元，N2 预售价为 5.99 万元起、E1 最低 3.99 万元起。每日经济新闻 4 月报道称 N2 定价 3.99 万元、交付周期约两周，E1 处于全面开放预订状态。
+amount:
+  value: 39900
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+  control_route:
+  - hybrid
+evidence:
+- url: https://www.tmtpost.com/7494943.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/tmtpost-2025-03-14-noetix-n2-e1-launch.html
+- url: https://www.nbd.com.cn/articles/2025-04-23/3844689.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/nbd-2025-03-14-noetix-n2-price-nbd.html
+corroboration: multi

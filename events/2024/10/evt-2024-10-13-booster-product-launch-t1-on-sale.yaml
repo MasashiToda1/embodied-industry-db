@@ -1,0 +1,25 @@
+id: evt-2024-10-13-booster-product-launch-t1-on-sale
+date: '2024-10-13'
+date_precision: day
+type: product_launch
+orgs:
+- id: booster
+  role: subject
+title:
+  zh: 加速进化人形机器人 Booster T1 正式上市
+summary:
+  zh: 加速进化官网新闻中心收录一条日期为 2024 年 10 月 13 日的消息「Booster T1，现已上市！」，同期 T1 参展 IROS 2024。Booster T1 于 2024 年 8 月 WRC2024 首次亮相，是公司面向开发者与科研教育的双足人形机器人平台，身高约 1.1 米、体重约 29 公斤，官网未在该条消息中公布售价。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.booster.tech/cn/news/3/
+  publisher: 加速进化官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/booster-2024-10-13-booster-news-list.html
+corroboration: single

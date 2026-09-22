@@ -1,0 +1,35 @@
+id: evt-2025-07-08-deeprobotics-funding-pre-c
+date: '2025-07-08'
+date_precision: day
+type: funding
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处科技宣布完成近 5 亿元人民币新一轮融资
+summary:
+  zh: 7 月 8 日，杭州云深处科技有限公司宣布完成近 5 亿元人民币新一轮融资，由达晨财智、国新基金等联合领投，北京机器人产业发展投资基金、前海母基金、央视融媒体基金、富浙基金、华映资本、物产中大投资等机构跟投，钧山资本、方广资本及爱施德智城基金等老股东继续加持。官方称资金投向四足机器人产线扩建、人形机器人技术研发及高端人才引进。后续报道将该轮称为 Pre-C 轮。
+counterparties:
+- 达晨财智
+- 国新基金
+- 北京机器人产业发展投资基金
+- 前海母基金
+- 央视融媒体基金
+- 富浙基金
+- 华映资本
+- 物产中大投资
+- 钧山资本
+- 方广资本
+- 爱施德智城基金
+evidence:
+- url: https://news.pedaily.cn/202507/552010.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-08-deeprobotics-pre-c.html
+- url: https://www.ithome.com/0/866/622.htm
+  publisher: IT之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ithome-2025-07-08-deeprobotics-pre-c-ithom.html
+corroboration: multi

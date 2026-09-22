@@ -1,0 +1,27 @@
+id: evt-2024-11-18-dexmate-funding-angel-plus
+date: '2024-11-18'
+date_precision: day
+type: funding
+orgs:
+- id: dexmate
+  role: subject
+title:
+  zh: 戴盟机器人宣布连续完成两轮亿元级天使 + 轮融资
+summary:
+  zh: 11 月 18 日，戴盟机器人（Daimon Robotics）宣布连续完成两轮亿元级人民币天使 + 轮融资，由国中资本联合领投，主要投资方包括金鼎资本、联想创投以及头部银行系投资机构。公司称资金主要用于视触觉（光学式触觉）传感器、触觉灵巧手以及含触觉的多模态感知操作模型等产品与技术研发。报道称公司 2023 年 8 月正式运营，团队规模超 30 人，研发人员占比超 80%。
+counterparties:
+- 国中资本
+- 金鼎资本
+- 联想创投
+evidence:
+- url: https://www.chinaventure.com.cn/news/108-20241118-383899.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/chinaventure-2024-11-18-dexmate-angel-plus.html
+- url: https://finance.sina.com.cn/tech/roll/2024-11-18/doc-incwmzst0500122.shtml
+  publisher: 新浪科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/finance-2024-11-18-dexmate-angel-plus-sina.html
+corroboration: multi
