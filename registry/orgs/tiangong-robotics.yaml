@@ -1,0 +1,10 @@
+id: tiangong-robotics
+names:
+  zh: 天工机器人
+  en: Tiangong Robotics
+  aliases:
+  - 北京天下先智创机器人技术有限责任公司
+  - 天下先智创
+status: active
+layers:
+- embodiment

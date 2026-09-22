@@ -199,6 +199,14 @@ orgs:
   - { id: spacetime-var,   zh: 时空变量,      en: Spacetime Variable, layers: [data, components] }
   - { id: agilex,          zh: 松灵机器人,    en: AgileX Robotics,   layers: [data, components, embodiment], aliases: [AgileX, 松灵, Pika, ALOHA], upstream: agilex }
 
+  # ---------------- 第四批：9/22 从自动盯梢 digest 里判出来的新主体 ----------------
+  - { id: tiangong-robotics, zh: 天工机器人, en: Tiangong Robotics, layers: [embodiment], aliases: [北京天下先智创机器人技术有限责任公司, 天下先智创] }
+    # ⚠️ 与北京人形机器人创新中心的产品「天工」不是一回事，报道原文特意澄清。别名里不放「天工」二字。
+  - { id: qiyuan-robotics,   zh: 启元机器人, en: Qiyuan Robotics,   layers: [embodiment],             aliases: [启元, 启元 Q1, 启元 T1] }
+    # 稚晖君（智元联合创始人）主导，19999 元起个人机器人，人形／四足可切换。与智元、上纬新材关系待核。
+  - { id: cognibrain,        zh: 具脑磐石,   en: CogniBrain,        layers: [foundation],             aliases: [具脑, Cog-WM] }
+  - { id: xieyue-ai,         zh: 斜跃智能,   en: Xieyue AI,         layers: [foundation],             aliases: [斜跃] }
+
   # ---------------- 第三批：原判边界外，用户 9/21 拍板收进来 ----------------
   # 共同点是都有工业根基但已经开出具身产品线，不是纯 AGV 或纯协作臂。
   - { id: standard-robots, zh: 斯坦德机器人,  en: Standard Robots,   layers: [embodiment, integration], aliases: [Standard Robots, SROS] }

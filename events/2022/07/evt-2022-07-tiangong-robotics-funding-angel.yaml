@@ -1,0 +1,28 @@
+id: evt-2022-07-tiangong-robotics-funding-angel
+date: 2022-07
+date_precision: month
+type: funding
+orgs:
+- id: tiangong-robotics
+  role: subject
+title:
+  zh: 天工机器人成立四个月获 2 亿元天使轮
+summary:
+  zh: 2022 年 7 月，公司成立刚满四个月即获 2 亿元天使轮融资，投资方为经纬创投、华兴新经济基金、红点中国、零一创投。
+counterparties:
+- 经纬创投
+- 华兴新经济基金
+- 红点中国
+- 零一创投
+amount:
+  value: 200000000
+  currency: CNY
+date_basis: derived
+date_as_stated: 报道（2026-09-15）原文「2022 年 7 月，这家公司成立刚满 4 个月」
+evidence:
+- url: https://www.leiphone.com/category/industrynews/QDqnLfFb5wiTdPyd.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2022/07/leiphone-2022-07-tiangong.html
+corroboration: single

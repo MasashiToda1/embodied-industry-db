@@ -1,0 +1,28 @@
+id: evt-2026-01-zsibot-funding-multi-round
+date: 2026-01
+date_precision: month
+type: funding
+orgs:
+- id: zsibot
+  role: subject
+- id: agibot
+  role: investor
+- id: keli-sensing
+  role: investor
+title:
+  zh: 智身科技宣布完成连续多轮融资，累计数亿元，智元机器人等参投
+summary:
+  zh: 2026 年 1 月，智身科技宣布完成连续多轮融资，累计金额达数亿元。投资方含智元机器人、贵安鲲鹏基金、金马游乐、柯力股份、豪鹏科技等。
+counterparties:
+- 贵安鲲鹏基金
+- 金马游乐
+- 豪鹏科技
+date_basis: derived
+date_as_stated: 报道（2026-09-20）原文「今年 1 月」
+evidence:
+- url: https://tech.ifeng.com/c/8wZeUpurplD
+  publisher: 凤凰网 · 转载机器人前瞻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/tech-2026-01-zsibot.html
+corroboration: single

@@ -6,6 +6,7 @@ status: active
 layers:
 - embodiment
 - data
+- content        # 9/22 补：机器人剧场《机器人和 TA 的朋友们》——节目内容本身是资产
 upstream:
   robotics_notebooks_institution: lumos
 accounts:

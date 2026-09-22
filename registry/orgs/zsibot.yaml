@@ -1,10 +1,28 @@
 id: zsibot
 names:
   zh: 智身科技
-  en: ZSibot
+  en: GENISOM AI
+  aliases:
+  - ZSibot
+  - GENISOM
+  - Genisom
+  - 智身
+founded: 2023-12
+hq:
+  country: CN
+  city: 北京
 status: active
 layers:
 - embodiment
+- locomotion
+- components
 - simulation
+sources:
+- url: https://tech.ifeng.com/c/8wZeUpurplD
+  tier: media
+  retrieved: '2026-09-22'
+  note: 凤凰网转载机器人前瞻报道，载有成立时间「2023 年 12 月」与总部「北京」
 upstream:
   robotics_notebooks_institution: zsibot
+accounts:
+  github: zsibot

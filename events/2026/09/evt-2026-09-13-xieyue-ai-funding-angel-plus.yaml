@@ -1,0 +1,18 @@
+id: evt-2026-09-13-xieyue-ai-funding-angel-plus
+date: '2026-09-13'
+date_precision: day
+type: funding
+orgs:
+- id: xieyue-ai
+  role: subject
+title:
+  zh: 斜跃智能完成数亿元天使+轮融资
+summary:
+  zh: 斜跃智能宣布完成数亿元天使+轮融资，用于推进其称为 Duplex Reasoning 范式的具身基础模型。
+evidence:
+- url: https://www.leiphone.com/category/industrynews/PHYwHDvtZ5GGXTK6.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/leiphone-2026-09-13-xieyue.html
+corroboration: single

@@ -1,0 +1,10 @@
+id: cognibrain
+names:
+  zh: 具脑磐石
+  en: CogniBrain
+  aliases:
+  - 具脑
+  - Cog-WM
+status: active
+layers:
+- foundation

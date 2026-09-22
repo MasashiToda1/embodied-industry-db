@@ -327,14 +327,27 @@ def fetch_huggingface(orgs: list[dict], days: int = 14) -> list[dict]:
             # 而「批量发布 N 个数据集」本身才是那个值得记的事件。
             if len(fresh) > HF_BATCH_MIN:
                 dates = sorted(d for d, _, _ in fresh)
-                names = [n for _, n, _ in fresh]
+                # 聚合不能只列名字——用户 9/22 说「要更细一点，深入到这些数据集是什么」。
+                # 每条带许可、任务标签、规模区间，人一眼能判断值不值得收。
+                detail_lines = []
+                for d, n, it in fresh[:12]:
+                    tags = [t for t in (it.get("tags") or [])
+                            if not t.startswith(("license:", "region:", "arxiv:", "language:", "format:", "library:"))]
+                    size = next((t.split(":", 1)[1] for t in (it.get("tags") or []) if t.startswith("size_categories:")), "")
+                    lic = (it.get("cardData") or {}).get("license") or next(
+                        (t.split(":", 1)[1] for t in (it.get("tags") or []) if t.startswith("license:")), "未标")
+                    detail_lines.append(
+                        f"{n}（{d}；许可 {lic}；{'规模 ' + size + '；' if size else ''}"
+                        f"标签 {'、'.join(tags[:5]) or '—'}）")
+                if len(fresh) > 12:
+                    detail_lines.append(f"…另 {len(fresh) - 12} 个")
                 out.append({
                     "source": f"Hugging Face · {slug}",
                     "tier": "official",
                     "title": f"{org['zh']}批量发布 {len(fresh)} 个{label}（{dates[0]}～{dates[-1]}）",
                     "url": f"https://huggingface.co/{slug}",
                     "date": dates[-1],
-                    "summary": "含：" + "、".join(names[:8]) + ("…" if len(names) > 8 else ""),
+                    "summary": "；".join(detail_lines),
                     "kind": "dataset_release" if kind == "datasets" else "publication",
                     "org": {"id": org["id"], "zh": org["zh"], "matched": slug},
                 })
@@ -375,6 +388,20 @@ def _gh_headers() -> dict:
 
 # 这些仓不是发布：组织配置、主页、fork、归档
 RE_GH_SKIP = re.compile(r"^(\.github|.*\.github\.io|profile)$", re.I)
+
+# 补丁版本不值得记。x5-v1.1.2 → x5-v1.1.3 这种一天一个 issue 是噪音，
+# 用户 9/22 明确说「小版本更新不太具有记录的价值」。
+# 只留：主版本 / 次版本（x.y.0、vX、vX.Y）；dev / nightly / alpha / rc 也丢。
+RE_RELEASE_JUNK = re.compile(r"(dev|nightly|alpha|beta|rc|snapshot|post)\d*", re.I)
+
+
+def is_patch_release(tag: str) -> bool:
+    if RE_RELEASE_JUNK.search(tag):
+        return True
+    m = re.search(r"(\d+)\.(\d+)\.(\d+)(?!\d)", tag)
+    if m and int(m.group(3)) > 0:
+        return True           # x.y.Z，Z>0 就是补丁
+    return False
 GH_BATCH_MIN = 3
 GH_RELEASE_REPOS = 8      # 每个主体查最近推送的这么多仓的 release；再多调用量上去意义不大
 MAX_ISSUES_PER_RUN = 15   # 每轮最多开的 issue 数，溢出进 digest
@@ -473,6 +500,8 @@ def fetch_github(orgs: list[dict], days: int = 14) -> list[dict]:
                 if rel.get("draft") or pub < cutoff:
                     continue
                 tag = rel.get("tag_name", "")
+                if is_patch_release(tag):
+                    continue
                 body = re.sub(r"\s+", " ", rel.get("body") or "")[:200]
                 out.append({
                     "source": f"GitHub · {login}",

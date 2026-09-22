@@ -1,0 +1,40 @@
+id: evt-2026-09-20-qiyuan-robotics-product-launch-q1-t1
+date: '2026-09-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: qiyuan-robotics
+  role: subject
+title:
+  zh: 启元机器人发售个人机器人 Q1、T1，19999 元起
+summary:
+  zh: 上纬新材旗下消费级具身智能品牌启元机器人在上海举办新品发布会，正式发售启元 Q1 与启元 T1 两款个人机器人，发售即发货。Q1 售价 19999 元，Q1
+    探索版 26999 元；T1 被报道为「可变形」个人机器人，人形与四足形态可切换。
+amount:
+  value: 19999
+  currency: CNY
+axes:
+  target_scene:
+  - home
+  delivery_model:
+  - hardware-sale
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+evidence:
+- url: https://tech.caijing.com.cn/20260920/5184656.shtml
+  publisher: 财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/tech-2026-09-20-qiyuan.html
+- url: https://www.robotbloc.com/news/315.html
+  publisher: 机器人之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/robotbloc-2026-09-20-qiyuan.html
+- url: https://news.dayoo.com/finance/202609/21/171077_55006010.htm
+  publisher: 广州日报大洋网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/news-2026-09-20-qiyuan.html
+corroboration: multi
