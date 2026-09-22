@@ -1,0 +1,18 @@
+id: evt-2025-03-25-force-infinity-corporate-elu-ai-brand-upgrade
+date: 2025-03-25
+date_precision: day
+type: corporate
+orgs:
+- id: force-infinity
+  role: subject
+title:
+  zh: 原力无限宣布品牌升级为 ELU.AI，下设原力无限、原力光年、原力万象三大子品牌
+summary:
+  zh: 3 月 25 日，与 Pre-A 轮融资同时，ELU.AI 宣布品牌升级，聚焦 AI 智能机器人、行业 AI Agent 和类脑智能三大核心领域，旗下涵盖原力无限（INFIFORCE）、原力光年（LIGHTFORCE）和原力万象（UNIFORCE）三大子品牌，分别专注于智能机器人、行业 AI 应用和机器人大脑。
+evidence:
+- url: https://www.tmtpost.com/7507888.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/tmtpost-2025-03-25-force-infinity-pre-a.html
+corroboration: single

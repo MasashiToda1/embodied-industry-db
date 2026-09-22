@@ -1,0 +1,23 @@
+id: evt-2025-05-07-sh-humanoid-partnership-qiaoyin-city-service
+date: 2025-05-07
+date_precision: day
+type: partnership
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 国地中心与侨银股份合作，双方签订 1000 台城市服务人形机器人意向订单
+summary:
+  zh: 2025 年 5 月 7 日，国家地方共建人形机器人创新中心与侨银股份达成合作。上海市经济和信息化委员会公众号稿件写明，双方已签订 1000 台城市服务人形机器人意向订单，重点部署于环卫、物业、家居等应用场景，任务包括地面巡检、水面保洁、路面清洗、垃圾清理及分类、绿化养护，以及门禁管理、安全巡查、环境清洁与房屋设施设备维护。
+counterparties:
+- 侨银股份
+axes:
+  target_scene: [commercial-service, inspection-hazardous, home]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://mp.weixin.qq.com/s/n6ezf-tT0Vz1mrXfdAbkfQ
+  publisher: 上海经信委（上海市经济和信息化委员会公众号）
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/mp-2025-05-07-sh-humanoid-qiaoyin-1000.html
+corroboration: single

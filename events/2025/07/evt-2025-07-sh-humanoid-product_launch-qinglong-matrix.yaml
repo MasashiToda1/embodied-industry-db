@@ -1,0 +1,28 @@
+id: evt-2025-07-sh-humanoid-product_launch-qinglong-matrix
+date: '2025-07'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，在 2025 世界人工智能大会（WAIC 2025）期间，人形机器人与具身智能创新发展论坛成功举行」，上海证券报稿件发布于 2025-07-28
+type: product_launch
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 国地中心在 WAIC 2025 期间发布青龙人形机器人产品矩阵，含青龙 Pro、青龙 Lite、青龙 Wheel
+summary:
+  zh: 在 2025 世界人工智能大会期间举行的人形机器人与具身智能创新发展论坛上，国家地方共建人形机器人创新中心发布青龙人形机器人产品矩阵，包括青龙 Pro、青龙 Lite、青龙 Wheel 等系列产品，涵盖双足人形机器人与轮臂人形机器人两条技术路线。报道写明青龙 Pro 身高 1.85 米、重 85 公斤，青龙 Lite 身高 1.45 米、重 45 公斤，面向工业、安防、服务、教育及智慧城市等场景。
+axes:
+  embodiment_form: [humanoid-biped, humanoid-wheeled]
+  target_scene: [industrial-manufacturing, commercial-service, education-research, inspection-hazardous]
+evidence:
+- url: https://news.qq.com/rain/a/20250728A09SQI00
+  publisher: 文汇报（上观新闻，腾讯新闻转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-28-sh-humanoid-qinglong-mat.html
+- url: https://finance.sina.com.cn/roll/2025-07-28/doc-infhywqz5774422.shtml
+  publisher: 上海证券报·中国证券网（新浪财经转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/finance-2025-07-28-sh-humanoid-training-gro.html
+corroboration: multi

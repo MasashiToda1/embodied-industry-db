@@ -1,0 +1,25 @@
+id: evt-2025-02-westlake-robotics-deployment-xiaoxi-elderly-center
+date: '2025-02'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「今年 2 月，『小西』在西湖区古荡街道的一个民生综合体上岗」，每日商报稿件发布于 2025-05-08
+type: deployment
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人四足机器人「小西」在杭州西湖区古荡街道民生综合体上岗送餐
+summary:
+  zh: 每日商报稿件写明 2025 年 2 月「小西」在杭州西湖区古荡街道的一个民生综合体上岗，食堂用餐时间背着餐盒穿梭在点餐区和用餐区之间，为就座等待的老人送上餐食。稿件同时写明「小西」目前在多个养老服务中心进行试点实验。
+counterparties:
+- 杭州市西湖区古荡街道嘉荷民生综合体
+axes:
+  embodiment_form: [quadruped]
+  target_scene: [healthcare, commercial-service]
+evidence:
+- url: https://hzdaily.hangzhou.com.cn/mrsb/2025/05/08/article_detail_3_20250508A168.html
+  publisher: 每日商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/hzdaily-2025-05-08-westlake-robotics-xiaoxi.html
+corroboration: single

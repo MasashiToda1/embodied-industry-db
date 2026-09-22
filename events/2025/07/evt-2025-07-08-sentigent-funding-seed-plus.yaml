@@ -1,0 +1,27 @@
+id: evt-2025-07-08-sentigent-funding-seed-plus
+date: 2025-07-08
+date_precision: day
+type: funding
+orgs:
+- id: sentigent
+  role: subject
+title:
+  zh: 深庭纪智能完成种子+轮融资，原话为「数千万元人民币」
+summary:
+  zh: 7 月 8 日，AI 伴随机器人研发商深庭纪智能科技宣布完成种子+轮融资，报道原话为「数千万元人民币」，未披露确定金额，由黑芝麻智能、软通高科、粒子未来基金等机构参投。报道写明资金主要用于具身大脑的核心能力建设、完善从感知、认知到决策的闭环架构，以及加速新一代机器人产品的量产落地。
+counterparties:
+- 黑芝麻智能
+- 软通高科
+- 粒子未来基金
+evidence:
+- url: http://www.eeo.com.cn/2025/0708/736999.shtml
+  publisher: 经济观察网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/eeo-2025-07-08-sentigent-seed-plus.html
+- url: https://news.pedaily.cn/202507/552054.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-08-sentigent-seed-plus-peda.html
+corroboration: multi

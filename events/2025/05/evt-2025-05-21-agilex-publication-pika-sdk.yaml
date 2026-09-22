@@ -1,0 +1,20 @@
+id: evt-2025-05-21-agilex-publication-pika-sdk
+date: 2025-05-21
+date_precision: day
+type: publication
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人开源 Pika 系列设备的 Python SDK
+summary:
+  zh: 松灵机器人在自有 GitHub 组织 agilexrobotics 下建立 pika_sdk 仓库，开源面向 Pika 系列设备的 Python 软件开发工具包，许可证为 LGPL-3.0。README 写明 SDK 支持 Pika Sense 与 Pika Gripper 两类设备，运行环境为 x86_64 / arm64 架构、Ubuntu 20.04 或 22.04、Python 3.9 及以下，并依赖 Intel RealSense SDK。
+axes:
+  data_openness: fully-open
+evidence:
+- url: https://github.com/agilexrobotics/pika_sdk
+  publisher: AgileX Robotics（agilexrobotics GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-21-agilex-pika-sdk.html
+corroboration: single

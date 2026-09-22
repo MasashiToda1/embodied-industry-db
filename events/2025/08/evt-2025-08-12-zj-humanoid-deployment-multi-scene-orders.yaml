@@ -1,0 +1,22 @@
+id: evt-2025-08-12-zj-humanoid-deployment-multi-scene-orders
+date: 2025-08-12
+date_precision: day
+type: deployment
+orgs:
+- id: zj-humanoid
+  role: subject
+title:
+  zh: 浙江人形机器人创新中心称在手订单几千万元，领航者 2 号已在商超零售、纺织服装等场景落地
+summary:
+  zh: 8 月 12 日，新浪财经稿件引述浙江人形机器人创新中心首席科学家的说法：中心已与宁波当地企业开展合作，领航者 2 号投入应用于实验室作业、商超零售、纺织服装、家居厨房和展厅导览等场景；公司在手的订单有几千万元，部分已经完成交付。稿件写明中心与产业链上游进行需求对接的上百家企业中有超过 50 家位于宁波。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, commercial-service, education-research]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2025-08-12/doc-infkvrav4102075.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/finance-2025-08-12-zj-humanoid-orders.html
+corroboration: single

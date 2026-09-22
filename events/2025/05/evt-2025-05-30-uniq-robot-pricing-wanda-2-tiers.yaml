@@ -1,0 +1,24 @@
+id: evt-2025-05-30-uniq-robot-pricing-wanda-2-tiers
+date: 2025-05-30
+date_precision: day
+type: pricing
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇公开 Wanda 2.0 分档定价，基础版 8.8 万元
+summary:
+  zh: 新华日报财经稿件写明优理奇量产产品 Wanda 2.0 基础版定价 8.8 万元，具备 6 至 8 小时续航与基础操作能力；高阶版定价 18.8 万元与 26.8 万元，负载提升至 6 公斤，续航达 16 小时，并分别配备 100 TOPS 和 275 TOPS 算力的交互大模型。稿件写明该定价基于自研硬件与本地化供应链，公司核心部件全自研，80% 硬件自主设计。
+amount:
+  value: 88000
+  currency: CNY
+axes:
+  embodiment_form: [humanoid-wheeled]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.xhby.net/content/s683955f9e4b0cade5e5bc73a.html
+  publisher: 新华日报财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/xhby-2025-05-30-uniq-robot-angel-funding.html
+corroboration: single

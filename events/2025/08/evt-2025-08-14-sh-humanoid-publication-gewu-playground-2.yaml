@@ -1,0 +1,25 @@
+id: evt-2025-08-14-sh-humanoid-publication-gewu-playground-2
+date: 2025-08-14
+date_precision: day
+type: publication
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 格物仿真平台发布 2.0 版本代码，覆盖行走、导航、操作任务
+summary:
+  zh: OpenLoong 的 Unity-RL-Playground 仓库 README 记录「2025.8.14，格物 2.0（Gewu Playground 2.0）代码发布」，该版本采用 Unity 2022（兼容团结引擎），集成主界面 UI，覆盖行走、导航、操作全流程，并提供免安装版体验。README 写明格物由国家地方共建人形机器人创新中心、上海大学、清华大学联合推出，基于 Unity 构建。
+counterparties:
+- 上海大学
+- 清华大学
+axes:
+  sim_stack: [in-house]
+  control_route: [rl]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/loongOpen/Unity-RL-Playground
+  publisher: OpenLoong（loongOpen GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-14-sh-humanoid-gewu-2.html
+corroboration: single

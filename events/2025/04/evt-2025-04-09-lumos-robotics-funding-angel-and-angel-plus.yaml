@@ -1,0 +1,29 @@
+id: evt-2025-04-09-lumos-robotics-funding-angel-and-angel-plus
+date: 2025-04-09
+date_precision: day
+type: funding
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人完成天使轮及天使+轮两轮融资，原话为「近亿元」
+summary:
+  zh: 4 月 9 日，鹿明机器人宣布在成立半年内连续完成天使轮及天使+轮两轮融资，报道原话为「近亿元」，未披露确定金额。天使轮由英诺天使基金、商汤国香资本、梅花创投联合投资；天使+轮由普华资本、香港科技大学工学院创院院长高秉强等联合投资，老股东行使超额认购权；瑞辰资本担任独家财务顾问。报道写明资金用于加速核心技术研发、高端人才引进与产品化商业化落地。公司官网里程碑把这两轮记在 2025.04。
+counterparties:
+- 英诺天使基金
+- 商汤国香资本
+- 梅花创投
+- 普华资本
+- 瑞辰资本
+evidence:
+- url: https://news.pedaily.cn/202504/548124.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/news-2025-04-09-lumos-robotics-angel-plu.html
+- url: https://www.lumosbot.tech/about/
+  publisher: 鹿明机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/lumosbot-2025-06-lumos-robotics-milestone.html
+corroboration: multi

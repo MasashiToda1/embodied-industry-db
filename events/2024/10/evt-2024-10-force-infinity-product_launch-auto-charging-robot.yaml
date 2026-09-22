@@ -1,0 +1,22 @@
+id: evt-2024-10-force-infinity-product_launch-auto-charging-robot
+date: '2024-10'
+date_precision: month
+date_basis: stated
+type: product_launch
+orgs:
+- id: force-infinity
+  role: subject
+title:
+  zh: 原力无限发布智能全自动充电机器人
+summary:
+  zh: 钛媒体稿件写明「2024 年 10 月，原力无限发布全球首创的智能全自动充电机器人，打通『自动驾驶、自动泊车、自动充电』全链路」。同一稿件写明原力无限当时已在北京、广州等核心城市部署该产品。
+axes:
+  target_scene: [commercial-service]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.tmtpost.com/7507888.html
+  publisher: 钛媒体
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/tmtpost-2024-10-force-infinity-charging-.html
+corroboration: single

@@ -1,0 +1,754 @@
+<!-- 抓取于 2026-09-22T21:41:31.356460+08:00 | 原始链接 http://news.cnnb.com.cn/system/2025/03/11/030654442.shtml | 公众号 未知 | 标题 zj-humanoid-naviai2-walk | sha256:81e5d4f1c13e -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="author" content="" />
+<title>ȫ�����ȣ������λ������м���ͻ��-��������-�й�������</title>
+<meta name="keywords" content="">
+<meta name="description" content="��Ƶ��Դ���㽭���λ����˴�������
+��ɿͻ��˼��� ��� ͨѶԱ ��ӳӳ
+�������������λ����˳�Ϊʱ�������ŵ�����֮һ���������Ƽ��Ļ����˵������Ӵ���֮�ʣ����ٶ��ߺ��棬�����������������кν�չ��
+���գ����������������ˮ�ſƴ����ĵ��㽭���λ����˴�����������߷���ϲѶ�����������㽭��ѧ���ؽ��ڼ��Ŷ�...">
+<script src="http://www.cnnb.com.cn/javascript/jquery.js" type="text/javascript"></script>
+<script src="http://www.cnnb.com.cn/xinwen/yp_xw_report.js" type="text/javascript"></script>
+<script>
+    function loadScript(url, callback){
+        var script = document.createElement ("script")
+        script.type = "text/javascript";
+        if (script.readyState){ //IE
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" || script.readyState == "complete"){
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else { //Others
+            script.onload = function(){
+                callback();
+            };
+        }
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    function addSheetFile(path){
+        var fileref = document.createElement("link")
+        fileref.rel = "stylesheet";
+        fileref.type = "text/css";
+        fileref.href = path;
+        fileref.media = "screen";
+        var headobj = document.getElementsByTagName('head')[0];
+        headobj.appendChild(fileref);
+    }
+    window.onload = function(){
+        var ua=navigator.userAgent.toLowerCase();
+        var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";
+        var bIsAndroid=ua.match(/android/i)=="android";
+        var bIsWM=ua.match(/windows mobile/i)=="windows mobile";
+        if(bIsIphoneOs||bIsAndroid||bIsWM){
+            addSheetFile('http://news.cnnb.com.cn/packages/2015/css/mobile/article.css');
+            addSheetFile('http://news.cnnb.com.cn/packages/2015/css/MPreview.mobile.css');
+            loadScript("http://news.cnnb.com.cn/packages/2015/js/MPreview.mobile.min.js",function(){
+                    $('#pc,embed').remove();
+                    $('#mobile').css('display', 'block');
+                    $('a').each(function(index, el) {
+                        $(this).attr('target', '_self');
+                    });
+                    var w = $(document).width() * 0.9;
+                    var h = w * 2 / 3;
+                    if(typeof(video) != "undefined"){
+                        CKobject.embed('http://flash.cnnb.com.cn:8080/ckplayer6.7/ckplayer/ckplayer.swf','a1','ckplayer_a1',w,h,true,flashvars,video,params);
+                    }
+                    $(window).bind('orientationchange',function(e){
+                        window.location.reload();
+                    });
+                    // var data = [];
+                    var title  = 'ȫ�����ȣ������λ������м���ͻ��<img src=http://www.cnnb.com.cn/home/images/09/xtb01.png border=0>';
+                    var direction = 'left';
+                    var wrap = document.querySelector('#overlay');
+                    var elem = document.querySelectorAll('.contentArea img');
+                    $('.contentArea img').each(function(index, el) {
+                        $(this).removeAttr('style');
+                        $(this).removeAttr('height');
+                        // data.push($(this).attr('src'));
+                    });
+                    $("a").on('touch',function(e){
+                        var href = $(this).attr("href");
+                        var classname = $(this).attr("class");
+                        // alert(classname);
+                        if(classname == "gototop"){
+                            $('body,html').animate({scrollTop:0},1000);
+                        }else{
+                            window.location.href = href;
+                        }
+                    })
+                    for(var i = 0,len = elem.length;i < len;i++){
+                        elem[i].addEventListener('touch', function(e) {
+                            // e.preventDefault();
+                            wrap.className = wrap.className + ' in';
+                            var item = [];
+                            item.push(this.src);
+                            setTimeout(function() {
+                                MPreview({
+                                    data: item,
+                                    title: title,
+                                    direction: direction,
+                                    wrap: '#overlay',
+                                    init: function() {
+                                        // window.console && console.log('MPreview.mobile init');
+                                    },
+                                    close: function() {
+                                        wrap.className = wrap.className.replace(' in', '');
+                                    }
+                                });
+                            }, 400);
+                        });
+                    };
+                });
+        }else{
+            addSheetFile('http://news.cnnb.com.cn/packages/2020/css/moban.css');
+			$('#mobile').remove();
+			$('#pc').css('display', 'block');
+			$('a').each(function(index, el) {
+				$(this).attr('target', '_blank');
+			});
+			$('#news_more_page_div_id a').each(function(index, el) {
+				$(this).attr('target', '_self');
+			});
+			$('#Zoom img').each(function(index, el) {
+				$(this).removeAttr('style');
+				$(this).removeAttr('height');
+			});
+        }
+    }
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f6f5a90167e67e974e7c7380028b0a47";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<style>
+    #pc,#mobile{display: none;}
+	#Zoom img{ margin:5px 0;}
+</style>
+<div id="pc">
+    <div id="topMenu">
+        
+        <ul class="mainNav menu1">
+            <li><a href="http://www.cnnb.com.cn/" target="_blank">��ҳ</a></li>
+            <li class="dropdown">
+                <a href="http://news.cnnb.com.cn/"  rel="dropmenu1">����</a>
+                <ul>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/toutiao/" target="_blank">ͷ��</a></li>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/jctp/" target="_blank">����ͼƬ</a></li>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/gnyw/gnsz/" target="_blank">��������</a></li>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/gnyw/rdjj/" target="_blank">�ȵ�۽�</a></li>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/gjyw/" target="_blank">����</a></li>
+<li class="dropNav"><a href="http://news.cnnb.com.cn/shxw/" target="_blank">���</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='http://nbnews.cnnb.com.cn/'  rel='dropmenu1'>����</a>
+                <ul>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/sz/">ʱ��&middot;����</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/cj/">����&middot;����</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/sh/">ͻ��&middot;�ֳ�</a></li>
+                <li class="dropNav"><a href="hhttp://nbnews.cnnb.com.cn/kjw/">�Ƽ�&middot;����</a></li>
+                <li class="dropNav"><a href="http://nbnews.cnnb.com.cn/wt/">�Ļ�&middot;����</a></li>
+                </ul>
+            </li>
+            <li class="dropdown edt">
+                <a href='http://nb8185.cnnb.com.cn/'  rel='dropmenu1'>e��ͨ</a>
+                <ul>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=1176&filter=sortid&sortid=23&orderby=lastpost" target="_blank">���������</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=1176&filter=sortid&sortid=24&orderby=lastpost" target="_blank">�г�������</a></li>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/plus/list.php?tid=1401" target="_blank">���Żظ���ѡ</a></li>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/html/1756/" target="_blank">��������Ѳ��</a></li>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/plus/list.php?tid=1398" target="_blank">Сe׷�ٵ���</a></li>
+                <li class="dropNav"><a href="https://nb8185.cnnb.com.cn/html/292/2564/" target="_blank">e������</a></li>
+                <li class="dropNav"><a href="http://nb8185.cnnb.com.cn/html/292/27/1284/" target="_blank">e����</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='http://bbs.cnnb.com.cn/'  rel='dropmenu1'>��̳</a>
+                <ul>               
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=2" target="_blank">�����ȵ�</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=1176" target="_blank">��Ҫ����</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=57" target="_blank">����¥��</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=3" target="_blank">������ͨ</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=1036" target="_blank">������;</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=17" target="_blank">��Ӱ���</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=61" target="_blank">�����վ</a></li>
+                <li class="dropNav"><a href="https://bbs.cnnb.com.cn/forum.php?mod=forumdisplay&fid=365" target="_blank">�����л�</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='#'  rel='dropmenu1'>��ҵ</a>
+                <ul>
+                <li class="dropNav"><a href="http://yy.cnnb.com.cn/" target="_blank">��ӿ��ҵ</a></li>
+                <li class="dropNav"><a href="http://jingj.cnnb.com.cn/" target="_blank">����</a></li>
+                <li class="dropNav"><a href="http://hd.cnnb.com.cn/" target="_blank">�</a></li>
+                <li class="dropNav"><a href="https://www.nbrc.com.cn/" target="_blank">��ְ</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href='#'  rel='dropmenu1'>��Ƶ</a>
+                <ul>
+                <li class="dropNav"><a href="http://v.cnnb.com.cn/" target="_blank">��������</a></li>
+                <li class="dropNav"><a href="http://ggg.cnnb.com.cn/" target="_blank">��������</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="subNav">
+            <li><a href="http://www.cnnb.com.cn/search/index.html">����</a></li>
+            <li style="color: #dddddd;">|</li>
+            <li><a href="http://mail.cnnb.com.cn/">����</a></li>
+            <li style="color: #dddddd;">|</li>
+            <li id="sc"><a href="">�ղ�</a></li>
+        </ul>
+    </div>
+    <div class="nextmenu">
+    	<img src="http://news.cnnb.com.cn/packages/2015/images/1_2.jpg" />
+    	<p class="p1">����</p>
+    	<p class="p2">�������ߣ�81850000</p>
+    </div>
+    <div style="width: 1170px; margin: 0 auto;">
+    <div class="mainArea">
+       
+        <div class="titleArea">
+            <div class="leftPart">
+                <div class="position"><span>
+
+����ǰ��λ�� �� <a href=http://www.cnnb.com.cn/index.shtml>�й�������</a> &nbsp;&gt;&nbsp; <a href=http://news.cnnb.com.cn/index.shtml>��������</a> &nbsp;&gt;&nbsp; <a href=http://nbnews.cnnb.com.cn/index.shtml>����</a> &nbsp;&gt;&nbsp; <a href=http://nbnews.cnnb.com.cn/kjw/index.shtml>�ƽ̡�����</a>
+</span></div>
+                <div style="width:790px; height:2px; background-color:#468dcc;float:left;"></div>
+            </div>    
+                <div class="heading" style="padding: 28px 0 10px;">ȫ�����ȣ������λ������м���ͻ��<img src=http://www.cnnb.com.cn/home/images/09/xtb01.png border=0></div>
+                <div class="subhead" style="height: 22px;float: left;font-size: 20px;line-height: 22px;padding-bottom: 28px;color:#666666;"></div>
+                <div class="source">
+                <span class="left"> 2025-03-11 20:45:00</span>
+                <span class="left">��Դ�� 
+
+�й�������
+��</span>
+                <div class="tool">
+                    <div class="fontSize">
+                        <a onclick="doZoom(20)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_14.jpg" /></a>
+                        <a onclick="doZoom(18)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_15.jpg" /></a>
+                        <a onclick="doZoom(16)"><img src="http://news.cnnb.com.cn/packages/2015/images/1_16.png" /></a>
+                    </div>
+                    <script type="text/javascript">
+                        function doZoom(size) {
+                            var zoom = document.all ? document.all['Zoom'] : document.getElementById('Zoom');
+                            zoom.style.fontSize = size + 'px';
+                        }
+						sc.onclick = function(){
+							alert("��ʹ����Ͽ�ݼ�'Ctrl+D'����");
+						}
+                    </script>
+                </div>
+                </div>
+        </div>
+        <div class="contentArea">
+            <div class="leftPart">
+                
+                <div class="article" >
+                    <center id="topic">
+
+
+</center>
+                    <div id="Zoom"><center>
+<video controls="" height="500" paicent-data-id="5d04bae9e4b03864f6e9db59" poster="http://www.cnnb.com.cn/pic/003/010/674/00301067412_59db9b24.jpg"><source src="http://www.cnnb.com.cn/video/003/010/674/00301067411_vw00000000000001_8fc03180.mp4" type="video/mp4" /></video>
+</center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">��Ƶ��Դ���㽭���λ����˴�������</span></p>
+
+<p style="text-indent:2em;text-align:left"><strong><span>��ɿͻ��˼��� ��� ͨѶԱ ��ӳӳ</span></strong></p>
+
+<p style="text-indent:2em;text-align:left">�������������λ����˳�Ϊʱ�������ŵ�����֮һ���������Ƽ��Ļ����˵������Ӵ���֮�ʣ����ٶ��ߺ��棬�����������������кν�չ��</p>
+
+<p style="text-indent:2em;text-align:left">���գ����������������ˮ�ſƴ����ĵ��㽭���λ����˴�����������߷���ϲѶ�����������㽭��ѧ���ؽ��ڼ��Ŷ����϶��֪����ҵ�����������з���&ldquo;�캽��2��NAVIAI&rdquo;���λ����˳ɹ��������������������µ�ǰ���£�ʵ��������̬���Ȳ����ߣ����������ȫ������ˮƽ��</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067405_390d363e.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;���ܵ������ߡ��㽭���λ����˴������Ĺ�ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left"><strong>ȫ�ߴ磬�Ȳ���</strong></p>
+
+<p style="text-indent:2em;text-align:left">3�³�����·����վ����������һ̨&ldquo;����·&rdquo;����ɫ���λ����ˣ��ֱ���Ȼ�ڶ����Ų���ӯ���ţ�����������޼��������&ldquo;�캽��2��&rdquo;��·������׷��ó��ֻ����գ���̾&ldquo;�Ժ��Ҫ�����������ˣ�&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">�����������λ������Ѿ���&ldquo;Ť����&rdquo;ʱ��&ldquo;�캽��2��&rdquo;��ѧ���������ߣ����Ƿ���ζ�ű��˼ҵļ���&ldquo;����&rdquo;������ʵǡǡ�෴��</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067406_151f6913.jpg" /></center>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067407_759486d9.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;����·����վ�������ߣ���������Χ�ۡ��㽭���λ����˴������Ĺ�ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left">�㽭���λ����˴��������㷨����ʦ���������߼��ߣ�&ldquo;�����ϵ��������λ����ˣ������ձ������С�������ǽ����λ��������Ϊ������˵�����ȫ�ߴ磬����1.65�ף�����60ǧ�ˡ��Ի�������˵������Խ��ƽ�����ߵ��ѶȾ�ָ�������������ǼӰ�ӵ㣬�ɹ�������һ�������⣬��ԭ�ƻ���ʱ������2���¡�&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">���������ܣ�������ѵ��ȫ�ߴ����λ�����ʱ����Ҫ��ͨ���豸��ȡ������˶���׽���ݣ���ͨ���㷨����ӳ�䵽���������ϣ�������������漼���������ԣ�&ldquo;�൱��Ϊ������װ�Ϸ����&lsquo;С��&rsquo;����������̽���ܱ߻������������߷�ʽ��&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">Ŀǰ��&ldquo;�캽��2��&rdquo;������ˮ��·������·���ܽ��ܵ��ȶ���·��ƽ�����ߣ���첽���ٶȿɴ�ÿ��1.5�ס���Ҳ��֮��Ϊȫ���׸�ȫ�ߴ硢ȫ���ɶȡ����о�׼������ҵ���������λ����ˡ�</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067408_10497728.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">�㽭���λ����˴������Ĺ�����Ա�������ܹĽ����з�������&nbsp;���/��</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;���������ǽ����������ܹĵ��з�����������ʵ���ܲ�����Ծ���¶ף��������߱���·�����������֣�Ԥ��2-3��������ɡ���Ȼ�������λ������߽�ǧ����֮ǰ�����ǻ�Ҫ��������ȶ��ԺͰ�ȫ�����⣬����ͻ����ս��&rdquo;��������ʾ��</p>
+
+<p style="text-indent:2em;text-align:left"><strong>���������ȫ����</strong></p>
+
+<p style="text-indent:2em;text-align:left">��ȫ�ߴ�����λ�����ѧ���������ߣ��Ը��и�ҵ��ζ��ʲô�������������������־�����λ������ܸ��õ������������磬�ڹ�������������п�Ϊ��</p>
+
+<p style="text-indent:2em;text-align:left">ȥ��8�£�&ldquo;�캽��2��&rdquo;������ʱ���Ѿ��߱��ܹ���һ������&ldquo;����&rdquo;������һ˫���ܴ���˿�����ܶ�ˮȡ���&ldquo;������&rdquo;���˴�&ldquo;С��&rdquo;����ļ���ͻ�ƣ������������ش����ڹ������䡢���۳��С���ҵչ���Ȼ�����ʵ�����ϰ��˺��˻�������</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067409_21463104.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;�����пؼ�������������չͿ���������ܷö���ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;��������������������λ����˶��ǳ���ע����������һ��˵�Ҵ�����ع������׷�ѯ��&lsquo;�����˻᲻��ȡ������&rsquo;�������ǵĳ��ģ���ϣ���������ܹ���������ظ�����ķ����Ͷ��н�ų�����ת��Ͷ���ڸ��ߴ������ҵ����Ҳ������Ͷ���з��Ķ�����&rdquo;������˵��</p>
+
+<p style="text-indent:2em;text-align:left">ת�ۼ䣬�㽭���λ����˴���������������ѽӽ�1���ꡣ��һ�꣬������Ϊ������������λ����������ҵ�ļ���ר�ң���&ldquo;��������&rdquo;�����λ�������ȫ���ľ������ܰ�ͼ��ռ��һϯ֮�ء�</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067410_57ed3d2f.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;�ӻ�����ץȡ��ݮ�����۳���������&nbsp;���/��</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;����������&lsquo;�캽��2��&rsquo;������н������ǻ����ۡ������������ҵ�����磬���������ظ�У������Ϊʦ���ṩ�����豸���û����˲����̳�����ķּ�Ͱ��ˣ��û��������пؼ�����������&lsquo;��&rsquo;�����Ѿ��ܹ�����ͨ����һ������ˢ��պȡͿ���ٸ���ӡ�Ƶ�·��&hellip;&hellip;&rdquo;�㽭���λ����˴��������г�������ӳӳ��ʾ��</p>
+
+<p style="text-indent:2em;text-align:left">�����˽⵽�����꣬�㽭���λ����˴������������������￪�蹤����Ԥ����4����������̨���λ����˵�������ͬʱ�������Ĺ�����Ա���ڻ����Խ��������ص��㲿����Ӧ�̣������Ա��ز�ҵ���ķ������������</p>
+
+<p style="text-indent:2em;text-align:left"><strong><span>���Ŷ�һ��</span></strong></p>
+
+<p style="text-indent:2em;text-align:left">��ȫ����Χ�����������λ����˲�ҵ���൱��ȫ����������ʾ�����������ŷ�������������Ⱥ����㲿��Լռ�����������ɱ���70%��������ǡ�ǹ������е�����&ldquo;�����&rdquo;������в��ֵĳ��С�</p>
+
+<p style="text-indent:2em;text-align:left">����Ħ��ʿ���������ġ����λ�����100���������λ����˼�ֵ��ͼ�ס���������5����ҵ��ѡȫ�����λ����˰�ǿ��ռȫ����ѡ�������߷�֮һ���ֱ����������š�˫�ֹɷݡ����ռ��š��������С��д����¡����ж���������й�˾��ʾ�����ǽ���������㲿����ҵ���۵�ʵ���������λ����˲�ҵ���졣</p>
+
+<p style="text-indent:2em;text-align:left">��Ϊȫ���׸�����ҵ&ldquo;�ٹ�֮��&rdquo;����������Ϊ���λ������ṩ�����Ĺ�ҵӦ�ó��������ڣ���ʮ̨�ű�ѡ���λ�����Ӧ��&ldquo;Ⱥ������&rdquo;������������ǰ�������ļ��5G�ǻ۹������࣬��չȫ��������̨���ೡ��������������λ�����Эͬʵѵ��</p>
+ 
+
+
+
+</div>
+                    <p class="right"><b>�༭��</b> ����<span class="right" style="color:rgb(110,110,110);font-size:14px;padding-left: 30px;">������<a href="mailto:171964650@qq.com" target="_blank" style="text-decoration: underline;padding-right:5px;">171964650@qq.com</a></span></p>
+                    <p class="clearfix"></p>
+                </div>
+				<div class="phoneewm">
+                    	<div class="bottle">
+                    		<div class="bo-le">
+                    		<img src="http://www.cnnb.com.cn/pic/003/010/398/00301039872_39df486a.png">
+                    		<p style="margin-left: -9px;">�й��������ֻ���</p>
+                    		</div>
+                    		<div class="bo-ri">
+                    			<img src="http://news.cnnb.com.cn/packages/2020/img/wxgzh.gif">
+                    			<p style="margin-left: 8px;">΢�Ź��ں�</p>
+                    		</div>
+                    	</div>
+                    </div>
+<div>
+<!--<a href="http://www.lulong.cn" target="_blank"><img src="http://www.cnnb.com.cn/pic/0/04/16/04/4160461_914457.gif" width="650" height="40"></a>-->
+</div>
+
+                
+                <div class="picnewsArea">
+                    <ul>
+
+
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654442.shtml' target='_blank' title='ȫ�����ȣ������λ������м���ͻ��'><img src='http://www.cnnb.com.cn/pic/003/010/674/00301067415_b0f4d523.jpg' alt='ȫ�����ȣ������λ������м���ͻ��'><p>ȫ�����ȣ������λ������м���ͻ��</p></a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654429.shtml' target='_blank' title='��ˮ��ȳ�22�ף�������ɽ�۳ɹ���ж�����Ϳ�'><img src='http://www.cnnb.com.cn/pic/003/010/673/00301067390_1c56a2a0.jpg' alt='��ˮ��ȳ�22�ף�������ɽ�۳ɹ���ж�����Ϳ�'><p>��ˮ��ȳ�22�ף�������ɽ�۳ɹ���ж�����Ϳ�</p></a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654443.shtml' target='_blank' title='��Ǯ�����ϣ�һ��ʫ�� ǧ��绪'><img src='http://www.cnnb.com.cn/pic/003/010/674/00301067447_d0a56268.jpg' alt='��Ǯ�����ϣ�һ��ʫ�� ǧ��绪'><p>��Ǯ�����ϣ�һ��ʫ�� ǧ��绪</p></a></li>
+                    </ul>
+                </div>
+                <div class="picline">
+                	<ul>
+
+
+<li><a href='http://news.cnnb.com.cn/system/2025/03/10/030654209.shtml' target='_blank' title='�Ҿ���ĸս������ �ܶ��״α��ճ�'><img src='http://www.cnnb.com.cn/pic/003/010/671/00301067174_i1000200000135be_36ae63f8.jpg' alt='�Ҿ���ĸս������ �ܶ��״α��ճ�'><p>�Ҿ���ĸս������ �ܶ��״α��ճ�<img src=http://www.cnnb.com.cn/home/images/09/xtb01.png border=0></p></a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/10/030654066.shtml' target='_blank' title='����ʤѡ���̬�����ô����������յó�'><img src='http://www.cnnb.com.cn/pic/003/010/670/00301067055_i1000200000135be_9f26f392.png' alt='����ʤѡ���̬�����ô����������յó�'><p>����ʤѡ���̬�����ô����������յó�<img src= http://www.cnnb.com.cn/home/images/09/xtb01.png border=0></p></a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/09/030653876.shtml' target='_blank' title='����̫��Լ9���� ���Ա׼������'><img src='http://www.cnnb.com.cn/pic/003/010/669/00301066932_6145a9f4.jpg' alt='����̫��Լ9���� ���Ա׼������'><p>����̫��Լ9���� ���Ա׼������<img src=http://www.cnnb.com.cn/home/images/09/xtb01.png border=0></p></a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/08/030653611.shtml' target='_blank' title='һ������Ƭ��ġ����� ��Ѯ�����þ�ͷ��¼Ů�Թ���'><img src='http://www.cnnb.com.cn/pic/003/010/667/00301066713_i1000200000135be_6033bcac.jpg' alt='һ������Ƭ��ġ����� ��Ѯ�����þ�ͷ��¼Ů�Թ���'><p>һ������Ƭ��ġ����� ��Ѯ�����þ�ͷ��¼Ů�Թ���<img border="0" src="http://www.cnnb.com.cn/home/images/09/xtb01.png" /></p></a></li>
+                    </ul>
+                </div>
+                <div class="quickLink">
+                    <div class="link"><a href="http://www.cnnb.com.cn/">�й���������ҳ</a></div>
+                    <div class="link"><a href="http://news.cnnb.com.cn/">����������ҳ</a></div>
+                </div>
+            </div>
+        </div>
+         
+	</div>
+	<div class="rightPart">
+                <style media="screen">
+                    li.withPic {height: 72px;margin: 20px 0;}
+                    li.withPic img {float: left;margin-right: 10px;width: 90pt;height: 72px;}
+                    li.withPic .content {float: left;width: 175px;}
+                    p.date {font-family: "Arial";padding-top: 5px;font-size: 12px;color: #999;}
+                    ul.items li {height: 30px;overflow: hidden;}
+                    ul.items li a {font-size: 14px;color: rgb(57, 57, 57);line-height: 1.5em;white-space: nowrap;font-family: 'MicroSoft YaHei',"΢���ź�";}
+                </style>
+                <div class="rightPart">
+                    <div class="section-01 ovh">
+                        <div class="module" style="border-bottom: 2px #468dcc solid;"><span class="orangle">24Сʱ</span>���ŵ����</div>
+						<style>
+							li.withPic .content{
+								white-space: pre-line;
+								line-height: 20px;
+							}
+						</style>
+                        <ul>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2025/03/10/030654225.shtml' target='_blank' title='977.7���ˣ�����ȥ������8���� ����ȥ���ģ�'><img src='http://www.cnnb.com.cn/pic/003/010/671/00301067103_i1000200000135be_62ccff17.jpg' alt='977.7���ˣ�����ȥ������8���� ����ȥ���ģ�'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2025/03/10/030654225.shtml' target='_blank' title='977.7���ˣ�����ȥ������8���� ����ȥ���ģ�'>977.7���ˣ�����ȥ������8���� ����ȥ���ģ�</a></p>
+<!--<p class='date'>2025-03-10 22:18</p>-->
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2025/03/10/030654226.shtml' target='_blank' title='�����ͻ���ͼ�ѽ��� ���պ����ָ��'><img src='http://www.cnnb.com.cn/pic/003/010/671/00301067193_281112ad.jpg' alt='�����ͻ���ͼ�ѽ��� ���պ����ָ��'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2025/03/10/030654226.shtml' target='_blank' title='�����ͻ���ͼ�ѽ��� ���պ����ָ��'>�����ͻ���ͼ�ѽ��� ���պ����ָ��</a></p>
+<!--<p class='date'>2025-03-10 22:32</p>-->
+</div>
+</li>
+<li class='withPic'>
+<a href='http://news.cnnb.com.cn/system/2025/03/11/030654244.shtml' target='_blank' title='���������ġ�������ը���� ��Ǩ���ؿ�������Ȼ��'><img src='http://www.cnnb.com.cn/pic/003/010/672/00301067212_i1000200000135be_984eace0.jpg' alt='���������ġ�������ը���� ��Ǩ���ؿ�������Ȼ��'></a>
+<div class='content'>
+<p class='title'><a href='http://news.cnnb.com.cn/system/2025/03/11/030654244.shtml' target='_blank' title='���������ġ�������ը���� ��Ǩ���ؿ�������Ȼ��'>���������ġ�������ը���� ��Ǩ���ؿ�������Ȼ��</a></p>
+<!--<p class='date'>2025-03-11 07:18</p>-->
+</div>
+</li>                        </ul>
+                        <ul>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654278.shtml' target='_blank' title='2025���һ���ȡ��㽭���ˡ�������ʾ ����5���ϰ�'>2025���һ���ȡ��㽭���ˡ�������ʾ ����...</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654241.shtml' target='_blank' title='�μ䡰���ݡ�5���� ������СѧУ԰�к��±仯'>�μ䡰���ݡ�5���� ������СѧУ԰�к��±仯</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654324.shtml' target='_blank' title='��˹����ֵһҹ���������� ��˹�˻�Ӧ'>��˹����ֵһҹ���������� ��˹�˻�Ӧ</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654258.shtml' target='_blank' title='�������ڻ�������20%-30% ���������Ա��׷�����ô�죿'>�������ڻ�������20%-30% ���������Ա���...</a></li>
+<li><a href='http://news.cnnb.com.cn/system/2025/03/11/030654385.shtml' target='_blank' title='���������������´�2025����񾭼ú���ᷢչ�ƻ�'>���������������´�2025����񾭼ú����...</a></li>                        </ul>
+                    </div>
+					<style>
+						.ypewm{width: 308px;height: 165px;border: 1.5px dashed #4697b5;background: #e6f8fe;border-radius: 10px;margin-top: 25px;}
+						.ypewm img{float: left;margin: 24px 0 0 26px;}
+						.ypewm p{float: right;width: 160px;text-align: center;}
+					</style>
+                    <div class="ypewm">
+						<img src="http://www.cnnb.com.cn/pic/003/010/398/00301039855_9dd3a219.jpg" />
+						<p style="color: #14688a;font-size: 24px;line-height: 24px;margin-top: 42px;">�<span style="color:#e30000;">��</span>�ͻ���</p>
+						<p style="color: #4697b5;font-size: 12px;line-height: 12px;margin-top: 10px;">�м��ش�������������ƽ̨</p>
+						<p style="color: #606060;font-size: 16px;line-height: 16px;margin-top: 26px; text-decoration: underline;">ɨ������</p>
+					</div>
+                    <div class="section-01 ovh" style="padding-top: 27px;">
+                        <div class="module"><a href="http://nbnews.cnnb.com.cn/"><span class="orangle">����</span>����</a></div>
+                        <ul>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654169.shtml" target="_blank">�������ݣ������ĸ��ط��˿���ࣿ</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654385.shtml" target="_blank">������2025����񾭼ú���ᷢչ�ƻ��´�</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654241.shtml" target="_blank">�μ�"����"5���� ������СѧУ԰�к��±仯</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654186.shtml" target="_blank">��7000�O ���ĵؿ�ȷ�����շ�Χ</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654172.shtml" target="_blank">�봺����������"���"��"��ˮ" ����ר�ҽ��</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654258.shtml" target="_blank">���ڻ������� ���������Ա��׷�����ô�죿</a>
+</li>                        </ul>
+                    </div>
+                    <div class="section-01" style="padding-top: 17px;">
+                    	<div class="headl"><a href="http://opinion.cnnb.com.cn/mzlt/" target="_blank">������̳</a>/<a href="http://opinion.cnnb.com.cn/yccb/" target="_blank">�ǳ���</a></div>
+                    	<ul style="border-bottom: dashed 1px #d8d8d8; padding-bottom: 10px;">
+
+
+<li><a href='http://opinion.cnnb.com.cn/system/2025/03/06/030652847.shtml' target='_blank' title='���������������������顰��ͷ�ʡ�'>���������������������顰��ͷ�ʡ�</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/03/05/030652527.shtml' target='_blank' title='Ӫ����ҵ�ҽ����ɳ��������̬'>Ӫ����ҵ�ҽ����ɳ��������̬</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/02/28/030651140.shtml' target='_blank' title='Ϊ��Ӫ��ҵ��չӪ����û���'>Ϊ��Ӫ��ҵ��չӪ����û���</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/02/27/030650926.shtml' target='_blank' title='���ᣬ����һ�¡���ͷ�ʡ�'>���ᣬ����һ�¡���ͷ�ʡ�</a></li>
+                        </ul>
+                        <ul>
+
+
+<li><a href='http://opinion.cnnb.com.cn/system/2025/03/09/030653883.shtml' target='_blank' title='רҵ����������彨����ʡ��'>רҵ����������彨����ʡ��</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/03/09/030653882.shtml' target='_blank' title='����������չ������ע��'>����������չ������ע��</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/03/04/030652255.shtml' target='_blank' title='��������������㡰���ġ�����'>��������������㡰���ġ�����</a></li>
+<li><a href='http://opinion.cnnb.com.cn/system/2025/02/25/030650502.shtml' target='_blank' title='�Ը������������ƽ���У����'>�Ը������������ƽ���У����</a></li>
+                        </ul>
+                    </div>
+                    <ul class="mhj">
+                       <li style="float: left;">
+
+<a href='http://www.cnnb.com.cn/ll/system/2025/03/11/030654267.shtml' target='_blank' title='�»顰ֲ��ϲ'><img src='http://www.cnnb.com.cn/pic/003/010/672/00301067271_2fbf9e0d.png' alt='�»顰ֲ��ϲ'><p>�»顰ֲ��ϲ</p></a>
+</li>
+                        <li style="float: right;">
+
+<a href='http://www.cnnb.com.cn/ll/system/2025/02/25/030650384.shtml' target='_blank' title='��Ƹ'><img src='http://www.cnnb.com.cn/pic/003/010/636/00301063660_6e04d6be.png' alt='��Ƹ'><p>��Ƹ</p></a>
+</li>
+                    </ul>
+                    <div class="section-01" style="display: none;">
+                    	<div class="headl"><a href="http://www.cnnb.com.cn/ll/cz/" target="_blank">����</a>/<a href="http://www.cnnb.com.cn/ll/ll/gdjc/" target="_blank">��ժ</a></div>
+                    	<ul style="border-bottom: dashed 1px #d8d8d8; padding-bottom: 10px;">
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/02/25/030650386.shtml" target="_blank">�޺���������Ȱ����һ�ֿɹ��Ʒ��</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/02/11/030647380.shtml" target="_blank">����Ǯ����������Դ�������ǰ��</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/02/11/030647379.shtml" target="_blank">˼ Ƽ��������ڲ���</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/01/02/030639864.shtml" target="_blank">�ѽ��ǣ��������ɣ���������</a>
+</li>                        </ul>
+                        <ul>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/02/26/030650717.shtml" target="_blank">�����֣�׼ȷ������ҵ̬�Ĵ��»���������ս</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/01/21/030643566.shtml" target="_blank">��������ѧϰ���á�ǧ�򹤳̡����� �ƶ�����ũ��ʵ�֡�������</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/01/14/030642292.shtml" target="_blank">�����ģ�ʼ�ձ��ַ����ܲ�ͣЪ������</a>
+</li>
+<li>
+<a href="http://www.cnnb.com.cn/ll/system/2025/01/10/030641619.shtml" target="_blank">������Ⱥ����Ϊ�Ļ�����ļ�֤�ߡ����ͼҺ�������</a>
+</li>                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+    <div class="foot">
+	   <p>�й���������������ɴ�ý�ɷ����޹�˾����Ȩ����(C)</p>
+	   <p>Copyright(C) 2001-2025 cnnb.com.cn  All Rights Reserved</p>
+	   <p>������������Ϣ��������֤��3312017004      ��Ϣ���紫��������Ŀ����֤��1104076</p>
+	   <p>Υ���Ͳ�����Ϣ�ٱ��绰��0574-81850000���ٱ����䣺nb81850@qq.com</p>
+</div>
+	</div>
+</div>
+<div id="mobile">
+    <div id="header">
+        <div class="logo"><a href="http://www.cnnb.com.cn/home/index_mobile.html" style="display:block;height:100%;"></a></div>
+        <div class="channel left"><a href="http://news.cnnb.com.cn/index_mobile.html" style="color:#fff;">������</a></div>
+        <div class="channel left" style="border:none;"><a href="http://nbnews.cnnb.com.cn/index_mobile.html" style="color:#fff;">������</a></div>
+        <ul class="menu">
+            <!-- <li><a href=""><img src="images/mobile/03.png" alt="" /></a></li> -->
+            <!-- <li><a href="#"><img src="images/mobile/04.png" /></a></li> -->
+        </ul>
+    </div>
+    <div class="newsArea">
+        <div class="newsTitle">
+            <p class="title">ȫ�����ȣ������λ������м���ͻ��<img src=http://www.cnnb.com.cn/home/images/09/xtb01.png border=0></p>
+            <p class="subtitle"></p>
+            <p ><span class="source">��Դ�� 
+
+�й�������
+</span>
+            <span class="time">2025-03-11 20:45:00</span></p>
+        </div>
+        <div class="contentArea">
+            <center>
+<video controls="" height="500" paicent-data-id="5d04bae9e4b03864f6e9db59" poster="http://www.cnnb.com.cn/pic/003/010/674/00301067412_59db9b24.jpg"><source src="http://www.cnnb.com.cn/video/003/010/674/00301067411_vw00000000000001_8fc03180.mp4" type="video/mp4" /></video>
+</center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">��Ƶ��Դ���㽭���λ����˴�������</span></p>
+
+<p style="text-indent:2em;text-align:left"><strong><span>��ɿͻ��˼��� ��� ͨѶԱ ��ӳӳ</span></strong></p>
+
+<p style="text-indent:2em;text-align:left">�������������λ����˳�Ϊʱ�������ŵ�����֮һ���������Ƽ��Ļ����˵������Ӵ���֮�ʣ����ٶ��ߺ��棬�����������������кν�չ��</p>
+
+<p style="text-indent:2em;text-align:left">���գ����������������ˮ�ſƴ����ĵ��㽭���λ����˴�����������߷���ϲѶ�����������㽭��ѧ���ؽ��ڼ��Ŷ����϶��֪����ҵ�����������з���&ldquo;�캽��2��NAVIAI&rdquo;���λ����˳ɹ��������������������µ�ǰ���£�ʵ��������̬���Ȳ����ߣ����������ȫ������ˮƽ��</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067405_390d363e.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;���ܵ������ߡ��㽭���λ����˴������Ĺ�ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left"><strong>ȫ�ߴ磬�Ȳ���</strong></p>
+
+<p style="text-indent:2em;text-align:left">3�³�����·����վ����������һ̨&ldquo;����·&rdquo;����ɫ���λ����ˣ��ֱ���Ȼ�ڶ����Ų���ӯ���ţ�����������޼��������&ldquo;�캽��2��&rdquo;��·������׷��ó��ֻ����գ���̾&ldquo;�Ժ��Ҫ�����������ˣ�&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">�����������λ������Ѿ���&ldquo;Ť����&rdquo;ʱ��&ldquo;�캽��2��&rdquo;��ѧ���������ߣ����Ƿ���ζ�ű��˼ҵļ���&ldquo;����&rdquo;������ʵǡǡ�෴��</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067406_151f6913.jpg" /></center>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067407_759486d9.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;����·����վ�������ߣ���������Χ�ۡ��㽭���λ����˴������Ĺ�ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left">�㽭���λ����˴��������㷨����ʦ���������߼��ߣ�&ldquo;�����ϵ��������λ����ˣ������ձ������С�������ǽ����λ��������Ϊ������˵�����ȫ�ߴ磬����1.65�ף�����60ǧ�ˡ��Ի�������˵������Խ��ƽ�����ߵ��ѶȾ�ָ�������������ǼӰ�ӵ㣬�ɹ�������һ�������⣬��ԭ�ƻ���ʱ������2���¡�&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">���������ܣ�������ѵ��ȫ�ߴ����λ�����ʱ����Ҫ��ͨ���豸��ȡ������˶���׽���ݣ���ͨ���㷨����ӳ�䵽���������ϣ�������������漼���������ԣ�&ldquo;�൱��Ϊ������װ�Ϸ����&lsquo;С��&rsquo;����������̽���ܱ߻������������߷�ʽ��&rdquo;</p>
+
+<p style="text-indent:2em;text-align:left">Ŀǰ��&ldquo;�캽��2��&rdquo;������ˮ��·������·���ܽ��ܵ��ȶ���·��ƽ�����ߣ���첽���ٶȿɴ�ÿ��1.5�ס���Ҳ��֮��Ϊȫ���׸�ȫ�ߴ硢ȫ���ɶȡ����о�׼������ҵ���������λ����ˡ�</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067408_10497728.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">�㽭���λ����˴������Ĺ�����Ա�������ܹĽ����з�������&nbsp;���/��</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;���������ǽ����������ܹĵ��з�����������ʵ���ܲ�����Ծ���¶ף��������߱���·�����������֣�Ԥ��2-3��������ɡ���Ȼ�������λ������߽�ǧ����֮ǰ�����ǻ�Ҫ��������ȶ��ԺͰ�ȫ�����⣬����ͻ����ս��&rdquo;��������ʾ��</p>
+
+<p style="text-indent:2em;text-align:left"><strong>���������ȫ����</strong></p>
+
+<p style="text-indent:2em;text-align:left">��ȫ�ߴ�����λ�����ѧ���������ߣ��Ը��и�ҵ��ζ��ʲô�������������������־�����λ������ܸ��õ������������磬�ڹ�������������п�Ϊ��</p>
+
+<p style="text-indent:2em;text-align:left">ȥ��8�£�&ldquo;�캽��2��&rdquo;������ʱ���Ѿ��߱��ܹ���һ������&ldquo;����&rdquo;������һ˫���ܴ���˿�����ܶ�ˮȡ���&ldquo;������&rdquo;���˴�&ldquo;С��&rdquo;����ļ���ͻ�ƣ������������ش����ڹ������䡢���۳��С���ҵչ���Ȼ�����ʵ�����ϰ��˺��˻�������</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067409_21463104.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;�����пؼ�������������չͿ���������ܷö���ͼ</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;��������������������λ����˶��ǳ���ע����������һ��˵�Ҵ�����ع������׷�ѯ��&lsquo;�����˻᲻��ȡ������&rsquo;�������ǵĳ��ģ���ϣ���������ܹ���������ظ�����ķ����Ͷ��н�ų�����ת��Ͷ���ڸ��ߴ������ҵ����Ҳ������Ͷ���з��Ķ�����&rdquo;������˵��</p>
+
+<p style="text-indent:2em;text-align:left">ת�ۼ䣬�㽭���λ����˴���������������ѽӽ�1���ꡣ��һ�꣬������Ϊ������������λ����������ҵ�ļ���ר�ң���&ldquo;��������&rdquo;�����λ�������ȫ���ľ������ܰ�ͼ��ռ��һϯ֮�ء�</p>
+
+<center><img height="auto" src="http://www.cnnb.com.cn/pic/003/010/674/00301067410_57ed3d2f.jpg" /></center>
+
+<p style="text-indent: 2em; text-align: center;"><span style="color:#808080;">&ldquo;�캽��2��&rdquo;�ӻ�����ץȡ��ݮ�����۳���������&nbsp;���/��</span></p>
+
+<p style="text-indent:2em;text-align:left">&ldquo;����������&lsquo;�캽��2��&rsquo;������н������ǻ����ۡ������������ҵ�����磬���������ظ�У������Ϊʦ���ṩ�����豸���û����˲����̳�����ķּ�Ͱ��ˣ��û��������пؼ�����������&lsquo;��&rsquo;�����Ѿ��ܹ�����ͨ����һ������ˢ��պȡͿ���ٸ���ӡ�Ƶ�·��&hellip;&hellip;&rdquo;�㽭���λ����˴��������г�������ӳӳ��ʾ��</p>
+
+<p style="text-indent:2em;text-align:left">�����˽⵽�����꣬�㽭���λ����˴������������������￪�蹤����Ԥ����4����������̨���λ����˵�������ͬʱ�������Ĺ�����Ա���ڻ����Խ��������ص��㲿����Ӧ�̣������Ա��ز�ҵ���ķ������������</p>
+
+<p style="text-indent:2em;text-align:left"><strong><span>���Ŷ�һ��</span></strong></p>
+
+<p style="text-indent:2em;text-align:left">��ȫ����Χ�����������λ����˲�ҵ���൱��ȫ����������ʾ�����������ŷ�������������Ⱥ����㲿��Լռ�����������ɱ���70%��������ǡ�ǹ������е�����&ldquo;�����&rdquo;������в��ֵĳ��С�</p>
+
+<p style="text-indent:2em;text-align:left">����Ħ��ʿ���������ġ����λ�����100���������λ����˼�ֵ��ͼ�ס���������5����ҵ��ѡȫ�����λ����˰�ǿ��ռȫ����ѡ�������߷�֮һ���ֱ����������š�˫�ֹɷݡ����ռ��š��������С��д����¡����ж���������й�˾��ʾ�����ǽ���������㲿����ҵ���۵�ʵ���������λ����˲�ҵ���졣</p>
+
+<p style="text-indent:2em;text-align:left">��Ϊȫ���׸�����ҵ&ldquo;�ٹ�֮��&rdquo;����������Ϊ���λ������ṩ�����Ĺ�ҵӦ�ó��������ڣ���ʮ̨�ű�ѡ���λ�����Ӧ��&ldquo;Ⱥ������&rdquo;������������ǰ�������ļ��5G�ǻ۹������࣬��չȫ��������̨���ೡ��������������λ�����Эͬʵѵ��</p>
+ 
+
+
+
+            <p style="width: 100%;text-align: left;">�༭�� ����</p>
+			<p style="width: 100%;text-align: right;font-size: 14px;color: rgb(110,110,110);">����<a href="mailto:171964650@qq.com" target="_blank" style="color:rgb(110,110,110);">��171964650@qq.com</a></p> 
+      <div style="margin-top:10px;">
+	  <h2 class="gdkd usu"></h2>
+        <ul class="newslist-01" style="border-top: 1px #eaeaea solid;">
+<li style="overflow: hidden;">
+<div style="float: left;width: 70%;height: 100%;overflow: hidden;text-align:justify;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654246.shtml"><p style="margin:0;line-height: 1.4em;">�����չ�˰��������������˥�˵��� ��ָ�յ�4%</p></a>
+</div>
+<div style="float: right;height: 10%;width:25%;overflow: hidden;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654246.shtml"><img src="http://www.cnnb.com.cn/pic/003/008/541/00300854144_d504f82d.jpg" /></a>
+</div>
+</li>
+<li style="overflow: hidden;">
+<div style="float: left;width: 70%;height: 100%;overflow: hidden;text-align:justify;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654244.shtml"><p style="margin:0;line-height: 1.4em;">���������ġ�������ը���� ��Ǩ���ؿ�������Ȼ��</p></a>
+</div>
+<div style="float: right;height: 10%;width:25%;overflow: hidden;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654244.shtml"><img src="http://www.cnnb.com.cn/pic/003/010/672/00301067212_i1000200000135be_984eace0.jpg" /></a>
+</div>
+</li>
+<li style="overflow: hidden;">
+<div style="float: left;width: 70%;height: 100%;overflow: hidden;text-align:justify;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654242.shtml"><p style="margin:0;line-height: 1.4em;">ҽ�����������ݣ������߳������ܷ����޷�׼ȷ����</p></a>
+</div>
+<div style="float: right;height: 10%;width:25%;overflow: hidden;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654242.shtml"><img src="http://www.cnnb.com.cn/pic/003/010/672/00301067209_i1000200000135be_aefb2db2.png" /></a>
+</div>
+</li>
+<li style="overflow: hidden;">
+<div style="float: left;width: 70%;height: 100%;overflow: hidden;text-align:justify;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654241.shtml"><p style="margin:0;line-height: 1.4em;">�μ䡰���ݡ�5���� ������СѧУ԰�к��±仯</p></a>
+</div>
+<div style="float: right;height: 10%;width:25%;overflow: hidden;">
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654241.shtml"><img src="http://www.cnnb.com.cn/pic/003/010/672/00301067204_i1000200000135be_6e554031.jpg" /></a>
+</div>
+</li>        </ul>
+      </div>
+      <div>
+        <h2 class="jxyd usu"></h2>
+        <ul class="lajiduo">
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654169.shtml" target="_blank">�������ݣ������ĸ��ط��˿���ࣿ</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654385.shtml" target="_blank">������2025����񾭼ú���ᷢչ�ƻ��´�</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654241.shtml" target="_blank">�μ�"����"5���� ������СѧУ԰�к��±仯</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654186.shtml" target="_blank">��7000�O ���ĵؿ�ȷ�����շ�Χ</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030654172.shtml" target="_blank">�봺����������"���"��"��ˮ" ����ר�ҽ��</a>
+</li><li>
+<a href="http://news.cnnb.com.cn/system/2025/03/11/030654306.shtml" target="_blank">���ڿƼ���IMAX������߸?�������г�:����</a>
+</li>        </ul>
+      </div>
+      <div>
+        <h2 class="tfh usu"></h2>
+        <ul class="lajiduo">
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/10/030653888.shtml" target="_blank">���������봺 �����������������Ҳ����</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/09/030653825.shtml" target="_blank">��С��¿����ʱ�û��£���ôѡ�����������˱���</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/09/030653880.shtml" target="_blank">����С����Խ��ѡ�ֻ����Ҷ�</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/09/030653840.shtml" target="_blank">2000����ǰ���ɵ��Ͼ�С�� ȫ��������и��¸��췶Χ</a>
+</li>
+<li>
+<a href="http://news.cnnb.com.cn/system/2025/03/09/030653857.shtml" target="_blank">������������������Ƽ��֧������������Ч��ͨ�Ľ�ͨ����</a>
+</li>        </ul>
+      </div>
+
+        </div>
+    </div>
+    <div class="link-01"><a href="http://www.cnnb.com.cn/home/index_mobile.html">����ҳ</a><a class="gototop">�ض���</a></div>
+    <div class="footer">
+        <p style="font-size:14px">�й���������������ɴ�ý�ɷ����޹�˾����Ȩ����(C)</p>
+        <p style="font-size:12px;">Copyright(C) 2001-2025 cnnb.com.cn��All Rights Reserved</p>
+    </div>
+    <style>
+        .overlay { background: #000; width: 100%; height: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999999;
+            -webkit-transition: all 300ms ease-in 0s;
+                    transition: all 300ms ease-in 0s;
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            -webkit-transform: translate3d(100%, 0px, 0px); 
+                transform: translate3d(100%, 0px, 0px);
+        }
+        .overlay.in { 
+            -webkit-transform: translate3d(0px, 0px, 0px); 
+                    transform: translate3d(0px, 0px, 0px);
+        }
+		.lajiduo{}
+        .lajiduo li{line-height: 1.4em;}
+        .lajiduo li a{text-overflow: ellipsis;white-space: nowrap;width: 100%;display: inline-block;overflow: hidden;font-size: 0.9em;color: rgb(110,110,100);}
+        .usu{margin:0;height:40px;overflow:hidden;color:#129bf0;line-height: 40px;font-size: 1.2em;}
+        .jxyd{}
+        .jxyd::after{content: '�����Ķ�';}
+		.gdkd::after{content: '���࿴��';}
+        .tfh{background-size: contain;}
+        .tfh::after{content: '24Сʱ����';background-color: white;padding-right: 10px;}
+     .newslist-01 li {
+        font-size: 0.9em;
+		color:rgb(110,110,110);
+        border-bottom: 1px #eaeaea solid;
+        padding: 10px 0;
+    }
+    </style>
+    <div class="overlay" id="overlay"></div>
+<div style="display:none">
+    <script src="http://www.cnnb.com.cn/sys/online_calc.js?ver=1"></script>
+</div>
+</div>
+</body>
+</html>
+<!--ecms sync check [sync_thread_id="3bcee7cc5a424330844ab778a62d31c1" sync_date="2025-03-11 23:03:46" check_sum="3bcee7cc5a424330844ab778a62d31c1]-->

@@ -1,0 +1,31 @@
+id: evt-2025-03-21-sh-humanoid-publication-gewu-sim-platform
+date: 2025-03-21
+date_precision: day
+type: publication
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: 国地中心联合上海大学、清华大学发布具身智能仿真平台「格物」，在 OpenLoong 社区开源
+summary:
+  zh: 3 月 21 日，国家地方共建人形机器人创新中心联合上海大学、清华大学在上海张江发布具身智能仿真平台「格物」。新华社稿件写明该平台集成强化学习框架与多模态运动控制技术，一套代码覆盖百余款机器人，新机器人导入即训练；功能包括一键式训练（导入模型后自动优化奖励函数并生成运动策略）、多模态运动学习（支持双足、四足、轮式形态，可生成行走、奔跑、跳跃动作）。平台基于 Unity RL Playground 强化学习框架打造，在 OpenLoong 开源社区全开源，GitHub 仓库 README 记录「2025.3.20，格物 0.1（Unity RL Playground）代码发布」。
+counterparties:
+- 上海大学
+- 清华大学
+axes:
+  sim_stack: [in-house]
+  control_route: [rl]
+  embodiment_form: [humanoid-biped, quadruped, humanoid-wheeled]
+  data_openness: fully-open
+evidence:
+- url: https://www.news.cn/tech/20250321/0e6d99d550a741199e5cd4f09cd8b7fa/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-21-sh-humanoid-gewu-sim.html
+- url: https://github.com/loongOpen/Unity-RL-Playground
+  publisher: OpenLoong（loongOpen GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-20-sh-humanoid-gewu-repo.html
+corroboration: multi

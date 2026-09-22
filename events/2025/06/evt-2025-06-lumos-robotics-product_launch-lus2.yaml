@@ -1,0 +1,22 @@
+id: evt-2025-06-lumos-robotics-product_launch-lus2
+date: '2025-06'
+date_precision: month
+date_basis: stated
+type: product_launch
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人发布全尺寸双足人形机器人 Lumos LUS2
+summary:
+  zh: 鹿明机器人官网里程碑写明 2025 年 6 月发布 Lumos LUS2，官网称其为全球首款能在 1 秒内起身的全尺寸双足人形机器人。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.lumosbot.tech/about/
+  publisher: 鹿明机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/lumosbot-2025-06-lumos-robotics-milestone.html
+corroboration: single

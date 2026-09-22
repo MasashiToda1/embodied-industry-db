@@ -1,0 +1,24 @@
+id: evt-2025-02-uniq-robot-deployment-wanda-2-mass-delivery
+date: '2025-02'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「他们的轮式双臂机器人已于 2025 年 2 月开始量产交付」，极客公园稿件发布于 2025-05-29
+type: deployment
+orgs:
+- id: uniq-robot
+  role: subject
+title:
+  zh: 优理奇 Wanda 2.0 自 2025 年 2 月开始量产交付，公司称已完成超千万元订单
+summary:
+  zh: 极客公园稿件写明优理奇的轮式双臂机器人已于 2025 年 2 月开始量产交付，售价压在十万元以内，公司表示已经完成超千万元订单。稿件写明 8.8 万元版本的 Wanda 2.0 单臂负载 2 公斤、单臂 8 自由度、全身 23 自由度，续航 6 至 8 小时；公司实现核心部件全自研，80% 硬件自主设计。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://news.qq.com/rain/a/20250529A05JOX00
+  publisher: 极客公园（腾讯新闻转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/news-2025-02-uniq-robot-wanda2-delive.html
+corroboration: single

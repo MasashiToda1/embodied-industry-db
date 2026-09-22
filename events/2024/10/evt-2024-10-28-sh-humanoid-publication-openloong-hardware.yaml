@@ -1,0 +1,22 @@
+id: evt-2024-10-28-sh-humanoid-publication-openloong-hardware
+date: 2024-10-28
+date_precision: day
+type: publication
+orgs:
+- id: sh-humanoid
+  role: subject
+title:
+  zh: OpenLoong 开源青龙全尺寸通用人形机器人硬件系统仓库 OpenLoong-Hardware
+summary:
+  zh: 国地中心运营的 OpenLoong 开源组织在 GitHub 建立 OpenLoong-Hardware 仓库，开源「青龙」全尺寸通用人形机器人的硬件内容，包含腰部组件、胸腔系统、头部感知系统、腿足系统的图纸与设计方案，以及《青龙全尺寸通用人形机器人硬件开源内容》PDF。README 写明整机高 1.85 米、重 80 公斤、43 个自由度，行走速度不低于 5 km/h，负载不低于 20 公斤，控制与感知算力最高 400 TOPS，关节通过 EtherCAT 总线控制，感知系统含 3D 激光雷达、深度相机与环视相机。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/loongOpen/OpenLoong-Hardware
+  publisher: OpenLoong（loongOpen GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-28-sh-humanoid-openloong-ha.html
+corroboration: single

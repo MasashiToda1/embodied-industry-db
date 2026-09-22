@@ -1,0 +1,32 @@
+id: evt-2025-07-10-dexforce-funding-a1-a2
+date: 2025-07-10
+date_precision: day
+type: funding
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能完成 A1&A2 轮融资，原话为「数亿元」
+summary:
+  zh: 7 月 10 日，跨维（深圳）智能数字科技有限公司宣布完成 A1&A2 轮融资，报道原话为「数亿元」，未披露确定金额。领投方为成都科创投、洪泰基金，其他投资机构包括天鹰资本、四川院士基金、南山战新投、一村淞灵、探元创投，老股东联想创投持续加码。报道写明公司面向商业服务、智能制造、康养陪护等场景推出通用人形机器人 DexForce W1 系列。
+counterparties:
+- 成都科创投
+- 洪泰基金
+- 天鹰资本
+- 四川院士基金
+- 南山战新投
+- 一村淞灵
+- 探元创投
+- 联想创投
+evidence:
+- url: https://www.21jingji.com/article/20250710/herald/121306a84ec4749b08f2adc1dd4bb20c.html
+  publisher: 21 世纪经济报道（南方财经）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/21jingji-2025-07-10-dexforce-a1-a2-funding.html
+- url: https://www.yicai.com/news/102715181.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/yicai-2025-07-10-dexforce-a1-a2-yicai.html
+corroboration: multi

@@ -1,0 +1,28 @@
+id: evt-2025-05-lumos-robotics-product_launch-lux-tactile-module
+date: '2025-05'
+date_precision: month
+date_basis: stated
+type: product_launch
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人发布 LUX 系列视触觉模组
+summary:
+  zh: 鹿明机器人官网里程碑写明 2025 年 5 月发布 LUX 系列视触觉模组。投资界稿件写明这是公司旗下首款核心零部件产品，为具身智能行业提供高精度、高可靠性的关键零部件解决方案。
+axes:
+  data_modality: [tactile, rgb]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.lumosbot.tech/about/
+  publisher: 鹿明机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/lumosbot-2025-05-lumos-robotics-milestone.html
+- url: https://news.pedaily.cn/202505/550373.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/news-2025-05-30-lumos-robotics-angel-pp.html
+corroboration: multi

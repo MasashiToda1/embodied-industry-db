@@ -1,0 +1,25 @@
+id: evt-2025-01-agilex-product_launch-pika-data-kit
+date: '2025-01'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「在 1 月 3 日，松灵机器人其实已经在公众号上预告了这款 Pika 新品的消息」，机器人大讲堂稿件发布于 2025-01-08
+type: product_launch
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人推出 Pika 通用具身数据采集方案，官网开放预售
+summary:
+  zh: 松灵机器人在 Cobot Magic 遥操作数据采集方案之后推出名为 Pika 的通用数据采集方案，由手持数据采集夹爪 Pika Sense、机械臂末端执行夹爪 Pika Gripper、高精度定位基站 Pika Station 三部分组成。报道写明末端执行夹爪重量 690 克，最大夹持力 2 公斤，空间定位精度 ±1.5 毫米，可输出 6D 空间坐标、夹爪开合角度、深度数据、RGB 数据与 IMU 数据；两指夹爪最大开合尺寸 95 毫米。Pika 已在松灵官网开放预售，首批于 2025 年 3 月开启交付，松灵同步开源 Pika 数据集。
+axes:
+  data_acquisition: [teleop, human-video]
+  data_modality: [rgbd, rgb, joint-trajectory]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://news.qq.com/rain/a/20250108A098SB00
+  publisher: 机器人大讲堂（腾讯新闻转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-08-agilex-pika-launch.html
+corroboration: single

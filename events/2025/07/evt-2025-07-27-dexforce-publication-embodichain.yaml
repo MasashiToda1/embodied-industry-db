@@ -1,0 +1,22 @@
+id: evt-2025-07-27-dexforce-publication-embodichain
+date: 2025-07-27
+date_precision: day
+type: publication
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能推出开源具身智能开发平台 EmbodiChain
+summary:
+  zh: 在 WAIC 2025 的 DexForce W1 Pro 发布会上，跨维智能首次推出开源具身智能开发平台 EmbodiChain。稿件写明该平台依托跨维 DexVerse 技术底座，以数据生成与仿真引擎构建机器人双臂操作技能数据管线，支持离线与在线两种数据模式；数据引擎包括场景相关数据生成、Real2Sim 的数据轨迹映射与大规模多模态数据扩增，平台内置 Sim2Real VLA 基础模型并提供在线微调功能，训练产出的 VLA 模型可接入 W1 的 X-Wiz 软件生态。稿件写明该蓝图的核心理念与部分代码实现将逐步在 EmbodiChain 中落地并向开发者开放。
+axes:
+  sim_stack: [embodichain]
+  model_form: [end2end-vla]
+  data_acquisition: [sim-generated]
+evidence:
+- url: https://www.pingwest.com/a/306441
+  publisher: 品玩
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/pingwest-2025-07-27-dexforce-embodichain.html
+corroboration: single

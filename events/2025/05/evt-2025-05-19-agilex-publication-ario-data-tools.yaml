@@ -1,0 +1,22 @@
+id: evt-2025-05-19-agilex-publication-ario-data-tools
+date: 2025-05-19
+date_precision: day
+type: publication
+orgs:
+- id: agilex
+  role: subject
+title:
+  zh: 松灵机器人开源 ARIO 格式数据工具链仓库 data_tools
+summary:
+  zh: 松灵机器人在自有 GitHub 组织 agilexrobotics 下建立 data_tools 仓库，开源 ARIO Dataset Tools，许可证为 BSD-3-Clause。README 写明该工具链包含数据采集、数据保存与数据发布代码，按固定格式存储数据；采集入口支持 aloha、single_pika、multi_pika、single_pika_teleop、multi_pika_teleop 五种设备类型，记录的话题包括彩色图像、鱼眼相机、深度图、点云、位姿、夹爪数据与 IMU 数据。
+axes:
+  data_acquisition: [teleop, real-robot]
+  data_modality: [rgb, rgbd, pointcloud, joint-trajectory]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/agilexrobotics/data_tools
+  publisher: AgileX Robotics（agilexrobotics GitHub 组织）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-19-agilex-data-tools.html
+corroboration: single

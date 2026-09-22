@@ -1,0 +1,23 @@
+id: evt-2025-06-26-shouxing-funding-pre-a
+date: 2025-06-26
+date_precision: day
+type: funding
+orgs:
+- id: shouxing
+  role: subject
+title:
+  zh: 首形科技完成 Pre-A 轮融资，招商局创投与深创投共同领投
+summary:
+  zh: 6 月 26 日，首形科技宣布完成新一轮融资，由招商局创投、深创投共同领投，五源资本、浔商创投跟投，未披露金额。稿件写明此前天使轮投资人为德迅投资、奇绩创坛、Taihill、智元机器人；其创始人发布的一段仿生机器人睁眼、微笑的视频在社交平台获得大量转发。
+counterparties:
+- 招商局创投
+- 深创投
+- 五源资本
+- 浔商创投
+evidence:
+- url: https://news.pedaily.cn/202506/551521.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/news-2025-06-26-shouxing-pre-a.html
+corroboration: single
