@@ -373,36 +373,41 @@ async function pageGraph() {
       <span class="legend" style="float:right">拖动节点 · 滚轮缩放 · 点节点进主体页</span></div>
     <div id="graph"></div><div class="tip" id="tip"></div>
     <div class="notice" style="margin-top:12px">默认只画事件里的关系，对手方只显示出现 ≥2 次的（${nTextRepeat} 个）——只投过一家的机构在图上是孤枝，打开开关才显示。共享技术栈的虚线也默认关：技术选择相同不等于有关系。</div></div>`;
+  // 渲染用 vasturiano/force-graph（canvas）。节点半径与字号都除以 globalScale：
+  // 放大时点不变大、间距变大，越放大标出的名字越多。
+  const el = $('#graph');
+  const r = n => n.text ? 3 + Math.min(n.events, 8) * .6 : 5 + Math.sqrt(n.events || 0) * 2.2;
+  const fg = ForceGraph()(el).width(el.clientWidth).height(el.clientHeight).backgroundColor('#fff')
+    .nodeId('id').nodeVal(n => r(n) * r(n)).nodeRelSize(1)
+    .nodeCanvasObjectMode(() => 'replace')
+    .nodeCanvasObject((n, ctx, k) => {
+      const rr = r(n) / k;
+      ctx.beginPath(); ctx.arc(n.x, n.y, rr, 0, 2 * Math.PI);
+      ctx.fillStyle = n.text ? '#c8c8cc' : (n.events ? '#1a1a1c' : '#9a9a9e'); ctx.fill();
+      // 标签：高频节点常显；放大到 1.6 倍以上全显
+      const show = k > 1.6 || (n.text ? n.events >= 4 : n.events >= 5);
+      if (show) { ctx.font = `${11 / k}px -apple-system, PingFang SC, sans-serif`; ctx.fillStyle = n.text ? '#6b6b70' : '#1a1a1c'; ctx.textBaseline = 'middle'; ctx.fillText(n.zh, n.x + rr + 3 / k, n.y); }
+    })
+    .nodePointerAreaPaint((n, color, ctx, k) => { ctx.fillStyle = color; ctx.beginPath(); ctx.arc(n.x, n.y, r(n) / k + 2 / k, 0, 2 * Math.PI); ctx.fill(); })
+    .linkColor(l => l.kind === 'shared' ? 'rgba(120,120,120,.45)' : 'rgba(26,26,28,.35)')
+    .linkWidth(l => l.kind === 'shared' ? 1 : 1.2).linkLineDash(l => l.kind === 'shared' ? [4, 4] : null)
+    .nodeLabel(n => `<b>${esc(n.zh)}</b>${n.text ? '<br>文本对手方（不在 registry）' : `<br>${(n.layers || []).map(l => D.layers[l]).join('、')}<br>${n.events} 条事件`}`)
+    .linkLabel(l => l.kind === 'shared' ? `共享：${l.values.map(v => label(v, v)).join('、')}` : `${(l.roles || []).map(x => D.roles[x] || x).join('、')} · ${l.events.length} 条事件`)
+    .onNodeClick(n => { if (!n.text) location.href = 'org.html?id=' + n.id; })
+    .onLinkClick(l => { if (l.kind === 'event') location.href = 'index.html?ev=' + l.events[0]; })
+    .cooldownTicks(200).d3VelocityDecay(.3);
+  fg.d3Force('charge').strength(-90).distanceMax(320);
+  fg.d3Force('link').distance(l => l.kind === 'shared' ? 110 : 55);
+  fg.d3Force('collide', d3.forceCollide(n => r(n) + 2));
   const draw = () => {
     const base = showAll ? G.all_nodes.concat(G.nodes.filter(n => n.text)) : G.nodes;
     const nodes = base.filter(n => !n.text || allText || n.events >= 2).map(n => ({ ...n }));
     const ids = new Set(nodes.map(n => n.id));
-    const edges = G.edges.filter(e => (e.kind === 'event' || showShared) && ids.has(e.source) && ids.has(e.target)).map(e => ({ ...e }));
-    const el = $('#graph'); el.innerHTML = ''; const W = el.clientWidth, H = el.clientHeight;
-    const svg = d3.select(el).append('svg').attr('width', W).attr('height', H);
-    const g = svg.append('g');
-    svg.call(d3.zoom().scaleExtent([.3, 4]).on('zoom', e => g.attr('transform', e.transform)));
-    const r = n => n.text ? 4 + Math.min(n.events, 8) : 6 + Math.sqrt(n.events || 0) * 3;
-    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(edges).id(d => d.id).distance(d => d.kind === 'shared' ? 140 : (nodes.length > 200 ? 40 : 90)))
-      .force('charge', d3.forceManyBody().strength(nodes.length > 200 ? -60 : -260).distanceMax(nodes.length > 200 ? 200 : 420)).force('center', d3.forceCenter(W / 2, H / 2))
-      .force('x', d3.forceX(W / 2).strength(.02)).force('y', d3.forceY(H / 2).strength(.03))   // 把孤点拉回画布
-      .force('collide', d3.forceCollide(d => r(d) + (nodes.length > 200 ? 3 : 14)));
-    const link = g.append('g').selectAll('line').data(edges).join('line')
-      .attr('stroke', d => d.kind === 'shared' ? '#bbb' : '#1a1a1c').attr('stroke-width', d => d.kind === 'shared' ? 1 : 1.2).attr('stroke-opacity', d => d.kind === 'shared' ? .5 : .35)
-      .attr('stroke-dasharray', d => d.kind === 'shared' ? '4 4' : null).style('cursor', 'pointer');
-    const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', d => d.text ? 'default' : 'pointer')
-      .call(d3.drag().on('start', (e, d) => { d.fx = d.x; d.fy = d.y; }).on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; sim.alpha(.3).restart(); }).on('end', (e, d) => { d.fx = d.fy = null; }));
-    node.append('circle').attr('r', r).attr('fill', d => d.text ? '#c8c8cc' : (d.events ? '#1a1a1c' : '#9a9a9e'));
-    node.append('text').text(d => (d.text ? d.events >= 4 : d.events >= 5 || nodes.length < 80) ? d.zh : '').attr('x', d => r(d) + 4).attr('y', 4).style('font-size', '11px').style('fill', '#1a1a1c');
-    const tip = $('#tip');
-    link.on('mousemove', (e, d) => { tip.style.display = 'block'; tip.style.left = e.clientX + 12 + 'px'; tip.style.top = e.clientY + 12 + 'px';
-      tip.innerHTML = d.kind === 'shared' ? `共享：${d.values.map(v => label(v, v)).join('、')}` : `${(d.roles || []).map(x => D.roles[x] || x).join('、')} · ${d.events.length} 条事件<br><span class="mono">${d.events.slice(0, 3).join('<br>')}</span>`; })
-      .on('mouseleave', () => tip.style.display = 'none').on('click', (e, d) => { if (d.kind === 'event') location.href = 'index.html?ev=' + d.events[0]; });
-    node.on('click', (e, d) => { if (!d.text) location.href = 'org.html?id=' + d.id; })
-      .on('mousemove', (e, d) => { tip.style.display = 'block'; tip.style.left = e.clientX + 12 + 'px'; tip.style.top = e.clientY + 12 + 'px'; tip.innerHTML = `<b>${esc(d.zh)}</b>${d.text ? '<br>文本对手方（不在 registry）' : `<br>${(d.layers || []).map(l => D.layers[l]).join('、')}<br>${d.events} 条事件`}`; })
-      .on('mouseleave', () => tip.style.display = 'none');
-    sim.on('tick', () => { link.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y); node.attr('transform', d => `translate(${d.x},${d.y})`); });
+    const links = G.edges.filter(e => (e.kind === 'event' || showShared) && ids.has(e.source) && ids.has(e.target)).map(e => ({ ...e }));
+    fg.graphData({ nodes, links });
+    fg.onEngineStop(() => { fg.zoomToFit(400, 30); fg.onEngineStop(() => {}); });
   };
+  window.addEventListener('resize', () => fg.width(el.clientWidth));
   $('#t-shared').onclick = e => { showShared = !showShared; e.target.classList.toggle('on', showShared); draw(); };
   $('#t-all').onclick = e => { showAll = !showAll; e.target.classList.toggle('on', showAll); e.target.classList.toggle('soft', !showAll); draw(); };
   $('#t-text').onclick = e => { allText = !allText; e.target.classList.toggle('on', allText); e.target.classList.toggle('soft', !allText); draw(); };
@@ -433,6 +438,37 @@ function monthBars(list, from, to) {
   const M = Math.max(1, ...Object.values(m).map(x => x.a + x.b));
   return `<div class="mbars">${months.map(d => { const k = key(d), x = m[k]; return `<div class="mcol" title="${k}：披露 ${x.a} · 未披露 ${x.b}"><div class="mstack"><i class="b" style="height:${x.b / M * 100}%"></i><i class="a" style="height:${x.a / M * 100}%"></i></div><span>${k.slice(2)}</span></div>`; }).join('')}</div>
     <div class="legend" style="margin-top:6px"><i style="background:#1a1a1c"></i>披露金额 <i style="background:#c8c8cc"></i>未披露</div>`;
+}
+const acc = (head, body, open = false, cls = '') => `<details class="acc ${cls}" ${open ? 'open' : ''}><summary>${head}</summary><div class="acc-body">${body}</div></details>`;
+const investorsOf = e => [...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(o => o.role === 'investor').map(o => orgLink(o.id))].join('、') || '—';
+const fundRow = (e, subj) => `<tr data-q="${esc(((e.orgs || []).map(o => orgZh(o.id)).join(' ') + ' ' + (e.counterparties || []).join(' ') + ' ' + e.title.zh).toLowerCase())}"><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${investorsOf(e)}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`;
+// 融资明细：按月折叠。E 已按日期倒序，所以第一组就是最近一个月
+function fundMonths(fund, subj) {
+  const groups = {}; fund.forEach(e => { const k = String(e.date).slice(0, 7).replace(/-Q\d$/, ''); (groups[k] = groups[k] || []).push(e); });
+  return Object.entries(groups).map(([m, es], i) => {
+    const sums = sumByCurrency(es);
+    const head = `<span class="mono">${m}</span> <b>${es.length} 轮</b> <span class="muted">· 披露 ${es.filter(e => e.amount).length} 条${sums.length ? ' · 合计 ' + sums.join(' + ') : ''}</span>`;
+    const body = `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>${es.map(e => fundRow(e, subj)).join('')}</tbody></table>`;
+    return acc(head, body, i === 0);
+  }).join('');
+}
+// 谁在买：按供给方（事件 subject）折叠，一行看清它卖给了谁
+function buyerGroups(buyers, subj) {
+  const g = {};
+  buyers.forEach(({ b, e }) => { const sid = ((e.orgs || []).find(o => o.role === 'subject') || (e.orgs || [])[0] || {}).id || '?'; (g[sid] = g[sid] || { evs: new Set(), rows: [] }); g[sid].evs.add(e.id); g[sid].rows.push({ b, e }); });
+  return Object.entries(g).sort((a, b) => b[1].rows.length - a[1].rows.length).map(([sid, x]) => {
+    const evs = [...new Map(x.rows.map(r => [r.e.id, r.e])).values()]; const sums = sumByCurrency(evs);
+    const names = [...new Set(x.rows.map(r => r.b.zh))];
+    const head = `${sid === '?' ? '—' : orgLink(sid)} <b>${names.length} 个买方</b> <span class="muted">· ${evs.length} 条事件${sums.length ? ' · ' + sums.join(' + ') : ''}</span><div class="acc-chips">${names.slice(0, 6).map(n => `<span class="chip">${esc(n)}</span>`).join('')}${names.length > 6 ? `<span class="chip">+${names.length - 6}</span>` : ''}</div>`;
+    const body = `<table><thead><tr><th>采购方 / 客户</th><th>日期</th><th>事件</th><th class="right">金额</th><th>场景</th></tr></thead><tbody>${x.rows.map(({ b, e }) => `<tr><td>${b.href ? `<a href="${b.href}">${esc(b.zh)}</a>` : esc(b.zh)}</td><td class="mono">${evLink(e)}</td><td>${esc(e.title.zh)}</td><td class="right">${e.amount ? amountStr(e.amount) : '<span class="muted">未披露</span>'}</td><td>${scenes(e).map(s => `<span class="chip">${label('target_scene:' + s, s)}</span>`).join('') || '<span class="muted">—</span>'}</td></tr>`).join('')}</tbody></table>`;
+    return acc(head, body, false, 'acc-compact');
+  }).join('');
+}
+// 公开价格：按主体一张卡
+function priceCards(price) {
+  const g = {}; price.forEach(e => { const sid = ((e.orgs || []).find(o => o.role === 'subject') || (e.orgs || [])[0] || {}).id || '?'; (g[sid] = g[sid] || []).push(e); });
+  return `<div class="cards">${Object.entries(g).map(([sid, es]) => `<div class="pcard"><div class="pcard-h">${sid === '?' ? '—' : orgLink(sid)}</div>
+    ${es.map(e => `<div class="pcard-row"><a class="mono muted" href="index.html?ev=${e.id}">${e.date}</a><span class="pcard-t">${esc(e.title.zh)}</span><b>${e.amount ? amountStr(e.amount) : '见原文'}</b></div>`).join('')}</div>`).join('')}</div>`;
 }
 async function pageSignals() {
   await load(); nav('signals');
@@ -481,24 +517,30 @@ async function pageSignals() {
       <div class="card"><h3>谁在投 <span class="muted">出现次数</span></h3>${bars(invRows.slice(0, 12))}</div>
     </div>
 
-    <div class="card" style="margin-top:14px"><h3>融资明细</h3>
-      ${fund.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>
-      ${fund.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${[...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(o => o.role === 'investor').map(o => orgLink(o.id))].join('、') || '—'}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无融资事件</div>'}</div>
+    <div class="card" style="margin-top:14px"><h3>融资明细 <span class="muted">按月折叠，最近一个月展开；输入主体或投资方名过滤</span></h3>
+      <input class="fsearch" id="fund-q" placeholder="过滤：主体 / 投资方…" autocomplete="off" style="max-width:320px;margin-bottom:8px">
+      <div id="fund-months">${fund.length ? fundMonths(fund, subj) : '<div class="empty">暂无融资事件</div>'}</div></div>
 
     <div class="two" style="margin-top:14px">
-      <div class="card"><h3>谁在买 <span class="muted">中标与部署里的采购方 / 客户</span></h3>
-        ${buyers.length ? `<table><thead><tr><th>采购方 / 客户</th><th>供给方</th><th>日期</th><th class="right">金额</th><th>场景</th></tr></thead><tbody>
-        ${buyers.map(({ b, e }) => `<tr><td>${b.href ? `<a href="${b.href}">${esc(b.zh)}</a>` : esc(b.zh)}</td><td>${subj(e)}</td><td class="mono">${evLink(e)}</td><td class="right">${e.amount ? amountStr(e.amount) : '<span class="muted">未披露</span>'}</td><td>${scenes(e).map(s => `<span class="chip">${label('target_scene:' + s, s)}</span>`).join('') || '<span class="muted">—</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无中标 / 部署事件</div>'}</div>
+      <div class="card"><h3>谁在买 <span class="muted">按供给方折叠：谁卖给了谁</span></h3>
+        ${buyers.length ? buyerGroups(buyers, subj) : '<div class="empty">暂无中标 / 部署事件</div>'}</div>
       <div class="card"><h3>进了什么场景 <span class="muted">四类事件里的场景标注</span></h3>${bars(scRows)}</div>
     </div>
 
-    <div class="card" style="margin-top:14px"><h3>公开卖多少钱</h3>
-      ${price.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th class="right">价格</th></tr></thead><tbody>
-      ${price.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="right"><b>${e.amount ? amountStr(e.amount) : '见原文'}</b></td></tr>`).join('')}</tbody></table>`
-      : `<div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。有公开报价的发布（如「19999 元起」）目前记在产品发布里，要进这张表需要单独记一条定价事件。</div>`}</div>
+    <div class="card" style="margin-top:14px"><h3>公开卖多少钱 <span class="muted">按主体一张卡，最新报价在前</span></h3>
+      ${price.length ? priceCards(price) : `<div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。有公开报价的发布（如「19999 元起」）目前记在产品发布里，要进这张表需要单独记一条定价事件。</div>`}</div>
 
     <div class="notice" style="margin-top:14px">样本：融资 ${fund.length} · 中标 ${proc.length} · 部署 ${dep.length} · 定价 ${price.length}。这页说的是「本库收录到了什么」，不是市场全貌；出现次数多只说明被记到得多。</div>
   </div>`;
+  // 过滤：命中的行留下、有命中的月份展开；清空恢复默认
+  const q = $('#fund-q'), box = $('#fund-months');
+  if (q) q.oninput = () => {
+    const t = q.value.trim().toLowerCase();
+    $$('details', box).forEach((d, i) => {
+      let hit = 0; $$('tr[data-q]', d).forEach(tr => { const ok = !t || tr.dataset.q.includes(t); tr.style.display = ok ? '' : 'none'; if (ok) hit++; });
+      d.style.display = hit ? '' : 'none'; d.open = t ? hit > 0 : i === 0;
+    });
+  };
 }
 
 /* ---------- 入口 ---------- */
