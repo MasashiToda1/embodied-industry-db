@@ -1,0 +1,21 @@
+id: evt-2025-05-28-pal-robotics-publication-brax-training-viewer
+date: 2025-05-28
+date_precision: day
+type: publication
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: 帕尔机器人开源强化学习训练可视化工具 Brax Training Viewer
+summary:
+  zh: 5 月 28 日，帕尔机器人在 GitHub 组织 pal-robotics 下建立 brax_training_viewer 仓库，以 Apache-2.0 协议开源一个面向 Brax 的实时交互式网页查看器，用于在训练过程中监控强化学习策略。README 称该工具按 JAX 的 JIT 编译范式设计，能在不打断计算流的前提下可视化 JIT 编译环境与向量化（vmap）rollout 的状态；数据从 Python 后端推送到网页前端，只用浏览器即可监控远程无显示器的训练任务，并可随时暂停状态同步以降低性能影响。
+axes:
+  control_route: [rl]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/pal-robotics/brax_training_viewer
+  publisher: GitHub（pal-robotics/brax_training_viewer）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-28-pal-robotics-brax-traini.html
+corroboration: single

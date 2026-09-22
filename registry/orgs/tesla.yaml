@@ -12,7 +12,9 @@ hq:
   city: Austin
 description: 特斯拉的人形机器人 Optimus 项目，2021 年 8 月 AI Day 首次公布，在弗里蒙特工厂安装第一代产线。
 accounts:
-  github: tesla
+  github: teslamotors   # 订正：原填 tesla 是同名的 Maven/Tycho 项目组织（仓库均为 2012—2013 年的 m2eclipse-*），
+                        # 与特斯拉公司无关。teslamotors 显示名为 Tesla, Inc.、blog 指向 tesla.com。
+                        # 注：该组织内容以基础设施为主，Optimus 不开源
   site: https://www.tesla.com
 sources:
 - url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=10-K

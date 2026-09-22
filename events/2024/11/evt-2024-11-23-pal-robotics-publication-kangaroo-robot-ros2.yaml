@@ -1,0 +1,21 @@
+id: evt-2024-11-23-pal-robotics-publication-kangaroo-robot-ros2
+date: 2024-11-23
+date_precision: day
+type: publication
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: 帕尔机器人开源双足机器人 KANGAROO 的 ROS 2 软件栈
+summary:
+  zh: 11 月 23 日，帕尔机器人在 GitHub 组织 pal-robotics 下建立 kangaroo_robot 仓库，以 Apache-2.0 协议开源双足人形机器人 KANGAROO 的 ROS 2 软件栈，仓库描述为「The perfect robot to learn about walking locomotion」。仓库内含四个子包：kangaroo_bringup（启动）、kangaroo_controller_configuration（控制器配置）、kangaroo_description（模型描述）与 kangaroo_robot（元包）。package.xml 中的维护者邮箱为 pal-robotics.com 域名。
+axes:
+  embodiment_form: [humanoid-biped]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/pal-robotics/kangaroo_robot
+  publisher: GitHub（pal-robotics/kangaroo_robot）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-23-pal-robotics-kangaroo-ro.html
+corroboration: single

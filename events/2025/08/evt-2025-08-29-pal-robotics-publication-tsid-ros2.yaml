@@ -1,0 +1,20 @@
+id: evt-2025-08-29-pal-robotics-publication-tsid-ros2
+date: 2025-08-29
+date_precision: day
+type: publication
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: 帕尔机器人开源基于 TSID 的 ROS 2 控制器框架 tsid_ros2
+summary:
+  zh: 8 月 29 日，帕尔机器人在 GitHub 组织 pal-robotics 下建立 tsid_ros2 仓库，开源一套基于 Task-Space Inverse Dynamics（TSID）库的 ROS 2 控制器。README 称该框架把控制任务（如到达某个坐标或关节状态）表达为优化问题，每个控制周期用二次规划（QP）求解最优加速度与力矩，约束包含机器人动力学方程、力矩上下限、速度限制与关节限位；框架设计为与机器人无关，README 以 TIAGo Pro 在仿真环境中的部署作为示例。
+axes:
+  data_openness: fully-open
+evidence:
+- url: https://github.com/pal-robotics/tsid_ros2
+  publisher: GitHub（pal-robotics/tsid_ros2）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-29-pal-robotics-tsid-ros2.html
+corroboration: single

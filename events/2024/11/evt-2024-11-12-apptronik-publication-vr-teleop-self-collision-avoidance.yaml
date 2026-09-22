@@ -1,0 +1,21 @@
+id: evt-2024-11-12-apptronik-publication-vr-teleop-self-collision-avoidance
+date: 2024-11-12
+date_precision: day
+type: publication
+orgs:
+- id: apptronik
+  role: subject
+title:
+  zh: "Apptronik 在 arXiv 发表 VR 遥操作上半身人形机器人的论文《Effective Virtual Reality Teleoperation of an Upper-body Humanoid with Modified Task Jacobians and Relaxed Barrier Functions for Self-Collision Avoidance》"
+summary:
+  zh: 11 月 12 日，Apptronik 在 arXiv 提交论文（编号 2411.07534），作者两人的署名单位为 Apptronik Inc.（美国得州奥斯汀），邮箱为 apptronik.com 域名。论文提出把市售 VR 追踪器重定向到上半身人形机器人做遥操作的方法，关键做法是通过修改后的任务雅可比把各追踪器分配到对应关节组，并用松弛障碍函数（relaxed barrier functions）避免自碰撞：头显姿态控制颈部关节，手柄姿态只控制手臂关节，腰部追踪器的竖直轴控制躯干偏航关节，头显的前后位置通过躯干俯仰关节控制机器人前倾角度。方法在 Apptronik 自家的 Astro 硬件上验证，完成了桌面场景的抓放装箱与双手取箱交接任务。论文注释标明该工作曾获 2022 年 IROS「Horizons of an extended robotics reality」研讨会一等奖。
+axes:
+  embodiment_form: [humanoid-biped]
+  data_acquisition: [teleop]
+evidence:
+- url: https://arxiv.org/abs/2411.07534
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/arxiv-2024-11-12-apptronik-vr-teleop-astr.html
+corroboration: single

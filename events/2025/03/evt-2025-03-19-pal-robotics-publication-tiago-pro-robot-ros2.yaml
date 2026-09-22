@@ -1,0 +1,21 @@
+id: evt-2025-03-19-pal-robotics-publication-tiago-pro-robot-ros2
+date: 2025-03-19
+date_precision: day
+type: publication
+orgs:
+- id: pal-robotics
+  role: subject
+title:
+  zh: 帕尔机器人开源移动操作机器人 TIAGo Pro 的 ROS 2 软件栈
+summary:
+  zh: 3 月 19 日，帕尔机器人在 GitHub 组织 pal-robotics 下建立 tiago_pro_robot 仓库，以 Apache-2.0 协议开源移动操作机器人 TIAGo Pro 的 ROS 2 软件栈，含 tiago_pro_bringup、tiago_pro_controller_configuration、tiago_pro_description 与 tiago_pro_robot 四个子包，package.xml 中的维护者邮箱为 pal-robotics.com 域名。同年 3 月 31 日起，该组织下陆续建立 tiago_pro_simulation、tiago_pro_moveit_config、tiago_pro_head_robot 与 tiago_pro_head_simulation 等配套仓库。
+axes:
+  embodiment_form: [mobile-manipulator]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/pal-robotics/tiago_pro_robot
+  publisher: GitHub（pal-robotics/tiago_pro_robot）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/github-2025-03-19-pal-robotics-tiago-pro-r.html
+corroboration: single

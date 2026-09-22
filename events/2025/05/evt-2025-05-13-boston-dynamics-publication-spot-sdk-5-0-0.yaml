@@ -1,0 +1,20 @@
+id: evt-2025-05-13-boston-dynamics-publication-spot-sdk-5-0-0
+date: 2025-05-13
+date_precision: day
+type: publication
+orgs:
+- id: boston-dynamics
+  role: subject
+title:
+  zh: 波士顿动力发布 Spot SDK v5.0.0
+summary:
+  zh: 5 月 13 日，波士顿动力在 GitHub 上发布 Spot SDK v5.0.0 大版本。官方发布说明列出的破坏性变更包括：Python SDK 不再支持 Python 3.6（5.0.0 支持 3.7 至 3.10）；CORE I/O 上移除 Change Detection，改用 Orbit AI Visual Inspections（AIVI）；移除 generate_extension_data.py。编排（Choreography）方面新增调整 Spot 腿部自碰撞区域的能力（Leg Size Configuration，用于腿部加装外套或负载的情况，设置在重启后保留）、Custom Gait 行为整体稳定性改进、无 Xbox 手柄时可用 WASD 键盘驱动 Custom Gait、可从 Choreographer 启动实验日志。Extensions 新增 installation_target、files_to_save 与 directories_to_save 三个字段，升级同名扩展时可保留指定文件与目录。
+axes:
+  embodiment_form: [quadruped]
+evidence:
+- url: https://github.com/boston-dynamics/spot-sdk/releases/tag/v5.0.0
+  publisher: GitHub（boston-dynamics/spot-sdk）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-13-boston-dynamics-spot-sdk.html
+corroboration: single
