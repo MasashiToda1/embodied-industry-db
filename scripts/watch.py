@@ -65,6 +65,68 @@ def ingested_urls() -> set[str]:
     return out
 
 
+def bigrams(s: str) -> set[str]:
+    s = re.sub(r"[\s\W_]+", "", (s or "").lower())
+    return {s[i:i + 2] for i in range(len(s) - 1)}
+
+
+def ingested_titles() -> dict[str, list[tuple[str, set[str]]]]:
+    """已入库事件按主体归类的标题/摘要二元组集合，用来判「这条新闻是不是已经记过了」。
+
+    URL 去重只能挡同一个链接。同一件事换家媒体报，链接不同但内容一样——
+    第二天实跑就把昨天刚入库的超维动力融资又报了一遍。
+    """
+    out: dict[str, list[tuple[str, set[str]]]] = {}
+    for p in (ROOT / "events").rglob("*.yaml"):
+        doc = yaml.safe_load(p.read_text()) or {}
+        date = str(doc.get("date", ""))[:10]
+        text = " ".join([(doc.get("title") or {}).get("zh", ""), (doc.get("summary") or {}).get("zh", "")])
+        grams = bigrams(text)
+        for o in doc.get("orgs") or []:
+            out.setdefault(o.get("id", ""), []).append((date, grams))
+    return out
+
+
+def already_covered(org_id: str, title: str, summary: str, date: str,
+                    index: dict[str, list[tuple[str, set[str]]]], threshold: float = 0.35) -> bool:
+    """同主体、日期相近、标题摘要二元组重合度高 → 已记过。"""
+    cands = index.get(org_id) or []
+    if not cands:
+        return False
+    g = bigrams(f"{title} {summary}")
+    if not g:
+        return False
+    d = _to_date(_day(date))
+    for ev_date, ev_grams in cands:
+        e = _to_date(ev_date)
+        if d and e and abs((d - e).days) > 10:
+            continue
+        inter = len(g & ev_grams)
+        if inter / max(1, min(len(g), len(ev_grams))) >= threshold:
+            return True
+    return False
+
+
+def _to_date(s: str):
+    """YYYY / YYYY-MM / YYYY-Qn / YYYY-MM-DD → date（粗精度取期中），解析不了返回 None。"""
+    from datetime import date as date_cls
+
+    s = (s or "").strip()
+    try:
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", s):
+            return date_cls.fromisoformat(s)
+        if re.fullmatch(r"\d{4}-\d{2}", s):
+            return date_cls.fromisoformat(s + "-15")
+        m = re.fullmatch(r"(\d{4})-Q([1-4])", s)
+        if m:
+            return date_cls(int(m.group(1)), int(m.group(2)) * 3 - 1, 15)
+        if re.fullmatch(r"\d{4}", s):
+            return date_cls(int(s), 6, 30)
+    except ValueError:
+        pass
+    return None
+
+
 def load_state() -> tuple[set[str], set[str]]:
     """返回（已报过的条目键, 上次见到的上游机构 id）。"""
     if STATE.exists():
@@ -103,6 +165,16 @@ def load_orgs() -> list[dict]:
 GENERIC_NAMES = {"humanoid", "figure", "foundation", "genesis", "apollo", "atlas",
                  "optimus", "digit", "phoenix", "carbon", "field ai", "sunday"}
 
+# 大厂：机器人只是它们一条业务线，关于它们的新闻绝大多数与机器人无关。
+# 第二天实跑就中了一排——蚂蚁办公、字节 CEO 讲飞书、英伟达 IMO 金牌、百度智能体、地平线智驾。
+# 所以这些主体的文本命中必须**同时**出现机器人关键词，否则不算。
+CONGLOMERATES = {
+    "alibaba-robotics", "baidu-cloud", "tencent-robotics", "huawei-cloudrobo", "bytedance-seed",
+    "xiaomi-robotics", "robbyant", "nvidia", "meta-fair-robotics", "gdm-robotics", "msr-robotics",
+    "horizon-robotics", "d-robotics", "tesla", "honda", "tri", "honor-robotics", "xpeng-robotics",
+    "hf-robotics", "scale-ai",
+}
+
 # 早报串烧：一条标题里塞七八家公司，命中任何一家都没意义
 RE_ROUNDUP = re.compile(r"[;；]")
 
@@ -111,11 +183,17 @@ def is_roundup(title: str) -> bool:
     return len(RE_ROUNDUP.findall(title)) >= 2
 
 
-def match_org(text: str, orgs: list[dict]) -> dict | None:
+def match_org(text: str, orgs: list[dict], title: str = "", kw: re.Pattern | None = None) -> dict | None:
     """命中 registry 主体。
 
     先按候选名长度降序，长名优先——「UBTECH Walker」里既有 UBTECH 又有普通词，
     要认成优必选而不是别的。普通词公司名不参与文本匹配。
+
+    两条防误判：
+      · 大厂（CONGLOMERATES）必须同时命中机器人关键词，否则跳过
+      · 传了 title 的话，主体名必须出现在标题里。只在正文提一句的多半是「提到谁」
+        不是「谁的事」——第二天实跑里「前小米铁蛋负责人创业」被记到智元头上，
+        就是正文顺带提了智元。
     """
     cands: list[tuple[str, dict]] = []
     for org in orgs:
@@ -124,8 +202,13 @@ def match_org(text: str, orgs: list[dict]) -> dict | None:
                 cands.append((cand, org))
     cands.sort(key=lambda x: -len(x[0]))
     for cand, org in cands:
-        if cand in text:
-            return {"id": org["id"], "zh": org["zh"], "matched": cand}
+        if cand not in text:
+            continue
+        if title and cand not in title:
+            continue
+        if org["id"] in CONGLOMERATES and kw is not None and not kw.search(text):
+            continue
+        return {"id": org["id"], "zh": org["zh"], "matched": cand}
     return None
 
 
@@ -607,11 +690,19 @@ def cluster_hits(hits: list[tuple[str, dict]]) -> list[list[dict]]:
     HF 的批量发布已经在源头聚过，这里主要合新闻。
     """
     buckets: dict[tuple, list[dict]] = {}
+    title_key: dict[tuple, tuple] = {}     # 归一化标题 → 已有桶键，同标题不同日期也合
     for _, it in hits:
         d = _day(it.get("date", ""))
         # 日期粗到 3 天桶，同一件事不同媒体发稿日差一两天很常见
         day_bucket = d[:8] + str(int(d[8:10]) // 3) if d else "?"
         key = (it["org"]["id"], it.get("kind", "news"), day_bucket)
+        # 同一标题从不同源、不同日期进来的，强制并到同一桶——
+        # 英伟达那条「开源 IMO 金牌配方」雷峰网和 Exa 各给一次，日期差 4 天就开了两个 issue
+        tk = (it["org"]["id"], re.sub(r"[\s\W_]+", "", it["title"].lower())[:40])
+        if tk in title_key:
+            key = title_key[tk]
+        else:
+            title_key[tk] = key
         buckets.setdefault(key, []).append(it)
     groups = list(buckets.values())
     # 每组内按来源等级排：official > primary > media > aggregator，取最好的当头条
@@ -699,7 +790,8 @@ def main() -> int:
         items += up_items
 
     already = ingested_urls()
-    hits, digest, skipped = [], [], 0
+    covered_index = ingested_titles()
+    hits, digest, skipped, dup_covered = [], [], 0, 0
     for it in items:
         k = key_of(it["url"], it["title"])
         # 两道去重：报过的不再报，已入库的更不该报
@@ -712,8 +804,14 @@ def main() -> int:
             if kw.search(blob):
                 digest.append((k, it))
             continue
-        org = it.get("org") or match_org(blob, orgs)
+        # 新闻类：主体名必须在标题里，大厂还要同时命中机器人关键词
+        org = it.get("org") or match_org(blob, orgs, title=it["title"], kw=kw)
         if org:
+            # 第三道去重：同一件事换家媒体报，链接不同内容一样——跟已入库事件比标题相似度
+            if it.get("kind") == "news" and already_covered(
+                    org["id"], it["title"], it.get("summary", ""), it.get("date", ""), covered_index):
+                dup_covered += 1
+                continue
             it["org"] = org
             hits.append((k, it))
         elif it["kind"].startswith("upstream-"):
@@ -733,7 +831,7 @@ def main() -> int:
     groups = cluster_hits(hits)
 
     papers = sum(1 for it in items if it["kind"] == "paper")
-    print(f"抓到 {len(items)} 条（其中论文 {papers}），去重跳过 {skipped}，"
+    print(f"抓到 {len(items)} 条（其中论文 {papers}），去重跳过 {skipped}，已入库同事件跳过 {dup_covered}，"
           f"命中主体 {len(hits)} 条 → 聚成 {len(groups)} 件事，仅命中关键词 {len(digest)}")
 
     for g in groups:
