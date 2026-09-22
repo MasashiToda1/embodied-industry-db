@@ -494,6 +494,7 @@ async function pageSignals() {
     const bs = [...(e.counterparties || []).map(c => ({ zh: c })), ...(e.orgs || []).filter(o => o.role === 'customer').map(o => ({ zh: orgZh(o.id), href: `org.html?id=${o.id}` }))];
     (bs.length ? bs : [{ zh: '—' }]).forEach(b => buyers.push({ b, e }));
   });
+  buyers.sort((x, y) => sortKey(y.e).localeCompare(sortKey(x.e)));
 
   // 场景分布：四类事件里 target_scene 的出现次数
   const sc = {}; four.forEach(e => scenes(e).forEach(s => sc[s] = (sc[s] || 0) + 1));
@@ -503,10 +504,36 @@ async function pageSignals() {
   const from12 = d3.timeMonth.count(from, to) > 12 ? d3.timeMonth.offset(to, -12) : from;   // 图最多回看 12 个月，更早的进表不进图
   const stat = (n, zh, extra = '') => `<div class="stat"><div class="stat-n">${n}</div><div class="stat-zh">${zh}</div>${extra ? `<div class="stat-x">${extra}</div>` : ''}</div>`;
 
-  $('main').innerHTML = `<div class="wrap"><h1>商业信号</h1>
+  // 二级页：?view=funding / buyers / pricing / investors
+  const view = qs.get('view');
+  const crumb = t => `<div class="crumb"><a href="signals.html">商业信号</a> › ${t}</div>`;
+  const more = (v, n) => `<a class="more" href="signals.html?view=${v}">查看全部 ${n} 条 →</a>`;
+  if (view === 'funding') {
+    document.title = '融资明细 · 具身产业库';
+    $('main').innerHTML = `<div class="wrap">${crumb('融资明细')}<h1>融资明细</h1><div class="sub">${fund.length} 条，按月折叠，最近一个月展开；输入主体或投资方名过滤。</div>
+      <div class="card"><input class="fsearch" id="fund-q" placeholder="过滤：主体 / 投资方…" autocomplete="off" style="max-width:320px;margin-bottom:8px">
+      <div id="fund-months">${fund.length ? fundMonths(fund, subj) : '<div class="empty">暂无融资事件</div>'}</div></div></div>`;
+  } else if (view === 'buyers') {
+    document.title = '谁在买 · 具身产业库';
+    $('main').innerHTML = `<div class="wrap">${crumb('谁在买')}<h1>谁在买</h1><div class="sub">中标与部署事件里的采购方 / 客户，按供给方折叠：谁卖给了谁、多少钱、进了什么场景。</div>
+      <div class="card">${buyers.length ? buyerGroups(buyers, subj) : '<div class="empty">暂无中标 / 部署事件</div>'}</div></div>`;
+  } else if (view === 'pricing') {
+    document.title = '公开卖多少钱 · 具身产业库';
+    $('main').innerHTML = `<div class="wrap">${crumb('公开卖多少钱')}<h1>公开卖多少钱</h1><div class="sub">${price.length} 条公开报价，按主体一张卡。只收原文给了确定数字的。</div>
+      ${price.length ? priceCards(price) : `<div class="card"><div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。</div></div>`}</div>`;
+  } else if (view === 'investors') {
+    document.title = '谁在投 · 具身产业库';
+    $('main').innerHTML = `<div class="wrap">${crumb('谁在投')}<h1>谁在投</h1><div class="sub">融资事件里出现的投资方，按出现次数。出现次数多只说明被记到得多。</div>
+      <div class="card">${bars(invRows)}</div></div>`;
+  } else {
+    // 总览：数字 + 图 + 每个板块只放最新几条
+    const latestFund = fund.slice(0, 8);
+    const latestBuy = [...new Map(buyers.map(x => [x.e.id, x])).values()].slice(0, 6);
+    const latestPrice = price.slice(0, 5);
+    $('main').innerHTML = `<div class="wrap"><h1>商业信号</h1>
     <div class="sub">钱和客户。四类事件（融资 / 中标 / 部署 / 定价）的汇总：谁在投、谁在买、进了什么场景、公开卖多少钱。金额只加已披露的，币种分开列，不换汇、不估算。</div>
     <div class="stats">
-      ${stat(fund.length, '融资事件', `披露金额 ${fund.filter(e => e.amount).length} 条${sumByCurrency(fund).length ? ' · 合计 ' + sumByCurrency(fund).join(' + ') : ''}`)}
+      ${stat(fund.length, '融资事件', `披露金额 ${fund.filter(e => e.amount).length} 条`)}
       ${stat(proc.length, '招投标中标', sumByCurrency(proc).length ? '合计 ' + sumByCurrency(proc).join(' + ') : '')}
       ${stat(dep.length, '落地部署', dep.length ? `${new Set(dep.flatMap(scenes)).size} 个场景` : '')}
       ${stat(price.length, '公开定价', price.length ? '' : '尚无收录')}
@@ -514,24 +541,24 @@ async function pageSignals() {
 
     <div class="two" style="margin-top:14px">
       <div class="card"><h3>融资 · 按月</h3>${four.length ? monthBars(fund, from12, to) : '<div class="empty">暂无</div>'}</div>
-      <div class="card"><h3>谁在投 <span class="muted">出现次数</span></h3>${bars(invRows.slice(0, 12))}</div>
+      <div class="card"><h3>谁在投 <span class="muted">出现次数</span><a class="more" href="signals.html?view=investors">查看全部 ${invRows.length} 家 →</a></h3>${bars(invRows.slice(0, 10))}</div>
     </div>
 
-    <div class="card" style="margin-top:14px"><h3>融资明细 <span class="muted">按月折叠，最近一个月展开；输入主体或投资方名过滤</span></h3>
-      <input class="fsearch" id="fund-q" placeholder="过滤：主体 / 投资方…" autocomplete="off" style="max-width:320px;margin-bottom:8px">
-      <div id="fund-months">${fund.length ? fundMonths(fund, subj) : '<div class="empty">暂无融资事件</div>'}</div></div>
+    <div class="card" style="margin-top:14px"><h3>最新融资${more('funding', fund.length)}</h3>
+      ${latestFund.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>${latestFund.map(e => fundRow(e, subj)).join('')}</tbody></table>` : '<div class="empty">暂无</div>'}</div>
 
     <div class="two" style="margin-top:14px">
-      <div class="card"><h3>谁在买 <span class="muted">按供给方折叠：谁卖给了谁</span></h3>
-        ${buyers.length ? buyerGroups(buyers, subj) : '<div class="empty">暂无中标 / 部署事件</div>'}</div>
+      <div class="card"><h3>最新买方${more('buyers', buyers.length)}</h3>
+        ${latestBuy.length ? `<table><thead><tr><th>日期</th><th>供给方 → 买方</th><th class="right">金额</th></tr></thead><tbody>${latestBuy.map(({ b, e }) => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)} <span class="muted">→</span> ${b.href ? `<a href="${b.href}">${esc(b.zh)}</a>` : esc(b.zh)}${scenes(e).length ? ` <span class="chip">${label('target_scene:' + scenes(e)[0], scenes(e)[0])}</span>` : ''}</td><td class="right">${e.amount ? amountStr(e.amount) : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">暂无</div>'}</div>
       <div class="card"><h3>进了什么场景 <span class="muted">四类事件里的场景标注</span></h3>${bars(scRows)}</div>
     </div>
 
-    <div class="card" style="margin-top:14px"><h3>公开卖多少钱 <span class="muted">按主体一张卡，最新报价在前</span></h3>
-      ${price.length ? priceCards(price) : `<div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。有公开报价的发布（如「19999 元起」）目前记在产品发布里，要进这张表需要单独记一条定价事件。</div>`}</div>
+    <div class="card" style="margin-top:14px"><h3>最新公开报价${more('pricing', price.length)}</h3>
+      ${latestPrice.length ? `<table><thead><tr><th>日期</th><th>主体</th><th>事件</th><th class="right">价格</th></tr></thead><tbody>${latestPrice.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="right"><b>${e.amount ? amountStr(e.amount) : '见原文'}</b></td></tr>`).join('')}</tbody></table>` : `<div class="empty">还没有 <span class="mono">pricing</span> 类型的事件。</div>`}</div>
 
     <div class="notice" style="margin-top:14px">样本：融资 ${fund.length} · 中标 ${proc.length} · 部署 ${dep.length} · 定价 ${price.length}。这页说的是「本库收录到了什么」，不是市场全貌；出现次数多只说明被记到得多。</div>
   </div>`;
+  }
   // 过滤：命中的行留下、有命中的月份展开；清空恢复默认
   const q = $('#fund-q'), box = $('#fund-months');
   if (q) q.oninput = () => {

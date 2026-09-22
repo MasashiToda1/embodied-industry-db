@@ -123,6 +123,10 @@ td.mono,td.right,td>.chip{white-space:nowrap}
 .mstack i.b{background:#c8c8cc}
 .mcol span{font-size:10px;color:var(--muted);margin-top:4px;white-space:nowrap}
 @media (max-width:860px){.stats{grid-template-columns:1fr 1fr}}
+/* 商业信号：二级页 */
+.crumb{font-size:12px;color:var(--muted);margin-bottom:6px}
+.crumb a{color:var(--muted)}
+.card h3 .more{float:right;font-weight:400;font-size:12px;color:var(--accent)}
 /* 折叠组（商业信号） */
 .acc{border-top:1px solid var(--line)}
 .acc:first-of-type{border-top:none}
