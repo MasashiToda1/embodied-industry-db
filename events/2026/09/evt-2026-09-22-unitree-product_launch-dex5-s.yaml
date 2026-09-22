@@ -1,0 +1,24 @@
+id: evt-2026-09-22-unitree-product_launch-dex5-s
+date: 2026-09-22
+date_precision: day
+type: product_launch
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技发布新一代灵巧手 Dex5-S，单手 22 自由度，3.99 万元起
+summary:
+  zh: 9 月 22 日，宇树科技发布新一代灵巧手 Dex5-S，单手 22 个自由度（拇指 5、食指 / 中指 / 无名指各 4、小拇指 5），真手 1:1 尺寸，外形 102×187×26 毫米、重约 620 克，22 个电机全部支持直驱与反向驱动，最大负载 2 公斤、持续负载 1 公斤，千兆网口下控制频率最高 1000Hz；适配 H1 / G1 本体。标准版起售价 3.99 万元，触觉感知为 Pro 版专属。
+amount:
+  value: 39900
+  currency: CNY
+axes:
+  hardware_strategy: [in-house]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://tech.ifeng.com/c/8wcXH4svBbP
+  publisher: 凤凰网科技
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/tech-2026-09-22-unitree-dex5s-launch.html
+corroboration: single
