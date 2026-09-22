@@ -1,0 +1,22 @@
+id: evt-2026-09-14-cognibrain-publication-cog-wm-1
+date: '2026-09-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: cognibrain
+  role: subject
+title:
+  zh: 具脑磐石发布类脑认知世界模型 Cog-WM 1.0
+summary:
+  zh: 上海具脑磐石科技有限公司在其承办的 2026 浦江创新论坛·类脑具身智能分论坛发布 Cog-WM 1.0，官方称为业界首个类脑认知世界模型，面向陌生环境中的自主规划、语义导航与操作。算法团队披露在公开基准上对比
+    BSC-Nav 等导航 SOTA 的测试数据。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://www.leiphone.com/category/robot/Dq92tSkeaGMAL0rP.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/leiphone-2026-09-14-cognibrain.html
+corroboration: single

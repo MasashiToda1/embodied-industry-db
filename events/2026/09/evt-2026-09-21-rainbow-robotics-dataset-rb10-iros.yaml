@@ -1,0 +1,25 @@
+id: evt-2026-09-21-rainbow-robotics-dataset-rb10-iros
+date: '2026-09-21'
+date_precision: day
+type: dataset_release
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人发布 RB-10 IROS 演示数据集（LeRobot 格式）
+summary:
+  zh: 在 Hugging Face 发布 rb10_iros_double 及其加工版本 rb10_iros_double_trim、rb10_iros_double_0921，三者为同一数据的处理链（README
+    载有 lineage）。LeRobot 格式，规模区间 100K–1M，模态含视频与时序，标签 robotics。许可未标注。
+axes:
+  data_modality:
+  - rgb
+  - joint-trajectory
+  embodiment_form:
+  - arm
+evidence:
+- url: https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double
+  publisher: Hugging Face · rainbowrobotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/huggingface-2026-09-21-rainbow.html
+corroboration: single

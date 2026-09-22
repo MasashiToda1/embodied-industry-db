@@ -1,0 +1,21 @@
+id: evt-2026-09-15-original-intelligence-publication-dm05-robocoliseum
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: original-intelligence
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 原力灵机 DM0.5 在 RoboColiseum 四个子榜单登顶
+summary:
+  zh: 报道称原力灵机模型 DM0.5 同时占据 RoboColiseum 评测平台四个能力子榜单（指令跟随、空间理解、扰动适应、通用操作）榜首。RoboColiseum
+    由智元机器人发起，现有 78 个评测任务、超 3000 个泛化 case，训练集与评测集隔离。
+evidence:
+- url: https://www.leiphone.com/category/ai/jIrGoPOXjx7WNljl.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/leiphone-2026-09-15-original-intelligence.html
+corroboration: single

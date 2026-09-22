@@ -1,0 +1,11 @@
+id: qiyuan-robotics
+names:
+  zh: 启元机器人
+  en: Qiyuan Robotics
+  aliases:
+  - 启元
+  - 启元 Q1
+  - 启元 T1
+status: active
+layers:
+- embodiment

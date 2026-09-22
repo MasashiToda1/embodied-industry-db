@@ -1,0 +1,26 @@
+id: evt-2026-09-19-lumos-robotics-deployment-theater
+date: '2026-09-19'
+date_precision: day
+type: deployment
+orgs:
+- id: lumos-robotics
+  role: subject
+title:
+  zh: 鹿明机器人剧场《机器人和 TA 的朋友们》在深圳全球首演
+summary:
+  zh: 由鹿明机器人与深圳市文旅产业发展有限公司共同打造的机器人剧场在深圳市宝安区青少年宫首场公演。45 分钟沉浸式演出，由机器人主持全程串联，涵盖舞蹈、相声、小品、武术、DJ
+    秀、魔术六大品类，多台机器人协同参演。该剧场将由深圳文旅进行常态化运营。
+counterparties:
+- 深圳市文旅产业发展有限公司
+axes:
+  target_scene:
+  - tourism-performance
+  delivery_model:
+  - service-delivery
+evidence:
+- url: https://www.leiphone.com/category/industrynews/KQYlP3qCFGorz4hm.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/leiphone-2026-09-19-lumos.html
+corroboration: single

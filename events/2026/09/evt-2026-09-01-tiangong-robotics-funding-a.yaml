@@ -1,0 +1,27 @@
+id: evt-2026-09-01-tiangong-robotics-funding-a
+date: '2026-09-01'
+date_precision: day
+type: funding
+orgs:
+- id: tiangong-robotics
+  role: subject
+title:
+  zh: 天工机器人完成数亿元 A 轮融资
+summary:
+  zh: 北京天下先智创机器人技术有限责任公司（天工机器人）宣布完成数亿元 A 轮融资，初芯基金领投，经纬创投、合肥国资等跟投。资金用于分拣类机器人扩大量产、基于人形的分拣机器人研发与商用化、海外市场拓展。报道称其手握全球头部电商与快递企业的产线订单。
+counterparties:
+- 初芯基金
+- 经纬创投
+- 合肥国资
+axes:
+  target_scene:
+  - logistics-warehouse
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.leiphone.com/category/industrynews/QDqnLfFb5wiTdPyd.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/leiphone-2026-09-01-tiangong.html
+corroboration: single

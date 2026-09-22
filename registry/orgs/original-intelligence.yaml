@@ -2,6 +2,10 @@ id: original-intelligence
 names:
   zh: 原力灵机
   en: Original Intelligence
+  aliases:
+  - DM0.5        # 产品名当别名是例外：新闻标题常只写「DM0.5 横扫四榜」不带公司名。
+  - DM0          # 4 个字符不到 MIN_STEM，不会影响账号匹配，只用于新闻文本命中。
+  - DW0.5
 status: active
 layers:
 - embodiment
