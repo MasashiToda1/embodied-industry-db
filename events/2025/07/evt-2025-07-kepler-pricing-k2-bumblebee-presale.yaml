@@ -1,0 +1,29 @@
+id: evt-2025-07-kepler-pricing-k2-bumblebee-presale
+date: 2025-07
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「开普勒 K2 大黄蜂也在近日正式开启量产预售」，报道 WAIC 2025 会期为 2025-07-26 至 07-29
+type: pricing
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒 K2 大黄蜂开启量产预售，最低价格 24.8 万元起
+summary:
+  zh: 开普勒 K2 大黄蜂正式开启量产预售，共有双足基础版、双足开发版以及轮式开发版三款型号可供预定，最低价格为 24.8 万元起，通过官方商城预定可享受十倍膨胀福利政策。报道称启动量产前 K2 大黄蜂已在多个行业的头部企业完成实测，测试场景涉及物流搬运、智能分拣、冲压上料、教育科研、展厅接待等。
+amount:
+  value: 248000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - humanoid-wheeled
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.imsilkroad.com/news/p/540563.html
+  publisher: 新华丝路（新华企业资讯）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/imsilkroad-2025-07-kepler-k2-presale.html
+corroboration: single

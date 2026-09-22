@@ -1,0 +1,31 @@
+id: evt-2024-11-18-galbot-funding-strategic-round-500m
+date: 2024-11-18
+date_precision: day
+type: funding
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用完成 5 亿元战略轮融资
+summary:
+  zh: 11 月 18 日，北京银河通用机器人有限公司宣布完成 5 亿元战略轮融资，投资方包括恒旭资本、香港投资公司 HKIC、上海人工智能产业基金、北京机器人产业基金、深创投、建银国际、智友科学家基金、容亿投资、金景资本等，老股东 IDG、经纬、蓝驰、北京人工智能产业基金等追加投资。报道称公司成立一年共融资 12 亿元。
+counterparties:
+- 恒旭资本
+- 香港投资公司 HKIC
+- 上海人工智能产业基金
+- 北京机器人产业基金
+- 深创投
+- 建银国际
+- 智友科学家基金
+- 容亿投资
+- 金景资本
+amount:
+  value: 500000000
+  currency: CNY
+evidence:
+- url: https://companies.caixin.com/2024-11-19/102259043.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/companies-2024-11-18-galbot-strategic-round-5.html
+corroboration: single

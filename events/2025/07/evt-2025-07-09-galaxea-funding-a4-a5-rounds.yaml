@@ -1,0 +1,31 @@
+id: evt-2025-07-09-galaxea-funding-a4-a5-rounds
+date: 2025-07-09
+date_precision: day
+type: funding
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图完成 A4 轮及 A5 轮战略融资
+summary:
+  zh: 7 月 9 日，星海图公告完成 A4 轮及 A5 轮战略融资，公告称合计融资金额「超过 1 亿美元」。A4 轮由今日资本、美团龙珠联合领投，中金保时捷基金、襄禾资本以及老股东米哈游、无锡创投集团跟投；A5 轮由美团龙珠、美团战投联合领投，北京机器人基金超额加注，亦庄国投跟投，IDG 资本、BV 百度风投、凯辉基金、今日资本、襄禾资本等老股东持续追投。
+counterparties:
+- 今日资本
+- 美团龙珠
+- 美团战投
+- 中金保时捷基金
+- 襄禾资本
+- 米哈游
+- 无锡创投集团
+- 北京机器人基金
+- 亦庄国投
+- IDG 资本
+- BV 百度风投
+- 凯辉基金
+evidence:
+- url: https://www.caixin.com/2025-07-09/102339623.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/caixin-2025-07-09-galaxea-a4-a5-round.html
+corroboration: single

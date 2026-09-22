@@ -1,0 +1,25 @@
+id: evt-2025-03-10-agibot-product_launch-go1
+date: 2025-03-10
+date_precision: day
+type: product_launch
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人发布通用具身基座大模型 GO-1 与 ViLLA 架构
+summary:
+  zh: 3 月 10 日，智元机器人发布 Vision-Language-Latent-Action（ViLLA）架构与通用具身基座大模型 GO-1（Genie Operator-1）。GO-1 由 VLM 与 MoE 组成，VLM 主干网络继承开源多模态大模型 InternVL2.5-2B 的权重，整合视觉、语言、动作、触觉等多模态输入并输出机器人动作执行序列。
+axes:
+  model_form:
+  - end2end-vla
+  data_acquisition:
+  - human-video
+  - real-robot
+  - sim-generated
+evidence:
+- url: https://news.qq.com/rain/a/20250310A05HBK00
+  publisher: 机器之心
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-10-agibot-go1-model.html
+corroboration: single

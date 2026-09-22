@@ -1,0 +1,21 @@
+id: evt-2024-10-10-x-humanoid-corporate-national-center
+date: 2024-10-10
+date_precision: day
+type: corporate
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京具身智能机器人创新中心升级为国家地方共建具身智能机器人创新中心
+summary:
+  zh: 10 月 10 日，工业和信息化部与北京市政府在京举行揭牌仪式，北京具身智能机器人创新中心正式升级为「国家地方共建具身智能机器人创新中心」。该中心于 2023 年 11 月在北京经济技术开发区成立。升级后中心将推动具身智能产业标准制定、降低企业研发与中试成本。
+counterparties:
+- 工业和信息化部
+- 北京市人民政府
+evidence:
+- url: http://www.bj.xinhuanet.com/20241011/2c7b463df8374670925ef1dac3ca4639/c.html
+  publisher: 新华社
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/bj-2024-10-10-x-humanoid-national-cent.html
+corroboration: single

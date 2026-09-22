@@ -1,0 +1,25 @@
+id: evt-2024-11-20-ubtech-funding-h-share-placing-587m
+date: 2024-11-20
+date_precision: day
+type: funding
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选按一般授权配售 700 万股新 H 股，所得款项总额约 5.8716 亿港元
+summary:
+  zh: 港交所公告显示，优必选于 2024 年 11 月 20 日与配售代理订立配售协议，按每股 83.88 港元配售合共 700 万股新 H 股，占经扩大后已发行股本约 1.62%。公告载明所得款项总额及净额估计分别约为 587.16 百万港元及 551.88 百万港元，净发行价约每股 78.84 港元，用于业务运营和发展及偿还授信业务到期金额。
+counterparties:
+- 国泰君安证券（香港）有限公司
+- 中信里昂证券有限公司
+- TradeGo Markets Limited
+amount:
+  value: 587160000
+  currency: HKD
+evidence:
+- url: https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1120/2024112000026_c.pdf
+  publisher: 香港交易所披露易
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/www1-2024-11-20-ubtech-h-share-placing.html
+corroboration: single

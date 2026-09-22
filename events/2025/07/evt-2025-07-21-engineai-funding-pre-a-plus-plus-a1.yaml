@@ -1,0 +1,26 @@
+id: evt-2025-07-21-engineai-funding-pre-a-plus-plus-a1
+date: 2025-07-21
+date_precision: day
+type: funding
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人连续完成 Pre-A++ 轮与 A1 轮融资
+summary:
+  zh: 7 月 21 日，众擎机器人宣布连续完成 Pre-A++ 轮与 A1 轮融资，两轮合计「近 10 亿元人民币」。Pre-A++ 轮由小鹏汽车作为基石出资人发起设立的星航资本投资；A1 轮由京东领投，宁德时代旗下溥泉资本、银泰集团等产业投资方，以及华控基金、达晨财智旗下国晨基金、黄浦江资本等财务投资方参投。
+counterparties:
+- 星航资本
+- 京东
+- 溥泉资本
+- 银泰集团
+- 华控基金
+- 国晨基金
+- 黄浦江资本
+evidence:
+- url: https://www.ichaoqi.com/caijing/2025/0721/75591.html
+  publisher: 潮起网（转载美通社通稿）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/ichaoqi-2025-07-21-engineai-a1-round.html
+corroboration: single

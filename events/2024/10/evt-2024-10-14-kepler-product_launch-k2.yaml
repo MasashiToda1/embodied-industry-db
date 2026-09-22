@@ -1,0 +1,30 @@
+id: evt-2024-10-14-kepler-product_launch-k2
+date: 2024-10-14
+date_precision: day
+date_basis: derived
+date_as_stated: 原文称先行者 K2「正式全球发布，并在 10 月 14 日开幕的 GITEX GLOBAL 2024 上首度公开亮相」，报道日 2024-10-19
+type: product_launch
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒发布全尺寸通用人形机器人先行者 K2
+summary:
+  zh: 上海开普勒机器人有限公司自主研发的全尺寸通用人形机器人先行者 K2 正式全球发布，并在 10 月 14 日开幕的 GITEX GLOBAL 2024 上首度公开亮相。K2 身高 175 厘米、体重 83 公斤，采用新一代绳驱触觉灵巧手，单手多达 11 个自由度，单手负载能力可达 15 公斤，每个指尖配备高达 96 个触点的柔性传感器。K2 适用于智能制造、仓储物流、特种作业、科研教育等领域。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_modality:
+  - tactile
+  target_scene:
+  - industrial-manufacturing
+  - logistics-warehouse
+  - inspection-hazardous
+  - education-research
+evidence:
+- url: https://news.qq.com/rain/a/20241019A01T0L00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/news-2024-10-14-kepler-k2-launch.html
+corroboration: single

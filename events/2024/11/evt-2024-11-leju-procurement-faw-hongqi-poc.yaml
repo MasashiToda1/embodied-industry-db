@@ -1,0 +1,28 @@
+id: evt-2024-11-leju-procurement-faw-hongqi-poc
+date: 2024-11
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「『夸父』与一汽结缘于 2024 年 11 月。当时一汽向全行业发起了国内汽车行业首个公开招标的人形机器人项目……乐聚团队中标」
+type: procurement
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚中标一汽公开招标的人形机器人项目
+summary:
+  zh: 2024 年 11 月，一汽向全行业发起国内汽车行业首个公开招标的人形机器人项目，针对工厂物流自动化难题，乐聚团队中标。报道称一汽基于工业真实场景对中标的人形机器人软硬件提出 68 项要求，乐聚围绕「硬件—控制—感知」迭代开发，用 3 个月突破作业效率、负载行走、长时间稳定作业等问题。公开报道未披露中标金额。
+counterparties:
+- 中国第一汽车集团（一汽红旗）
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+  - logistics-warehouse
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_30582771
+  publisher: 澎湃新闻·湃客
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/thepaper-2024-11-leju-faw-hongqi-bid.html
+corroboration: single

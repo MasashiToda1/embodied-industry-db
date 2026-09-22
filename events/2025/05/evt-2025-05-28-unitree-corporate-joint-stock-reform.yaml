@@ -1,0 +1,18 @@
+id: evt-2025-05-28-unitree-corporate-joint-stock-reform
+date: 2025-05-28
+date_precision: day
+type: corporate
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技变更为股份有限公司并更名为杭州宇树科技股份有限公司
+summary:
+  zh: 国家企业信用信息公示系统显示，5 月 28 日杭州宇树科技有限公司名称变更为杭州宇树科技股份有限公司，市场主体类型由有限责任公司（外商投资、非独资）变更为股份有限公司（外商投资、未上市），同日投资人和高级管理人员也发生变更。公司相关负责人对记者表示，这是公司运营方面的常规变更。
+evidence:
+- url: http://www.chinanews.com.cn/cj/2025/05-30/10424536.shtml
+  publisher: 中国新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/chinanews-2025-05-28-unitree-joint-stock.html
+corroboration: single

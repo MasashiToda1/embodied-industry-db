@@ -1,0 +1,23 @@
+id: evt-2025-08-06-fourier-product_launch-gr3
+date: 2025-08-06
+date_precision: day
+type: product_launch
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶在北京发布全尺寸人形 Care-bot GR-3
+summary:
+  zh: 8 月 6 日，傅利叶在北京正式发布全尺寸人形机器人 Care-bot GR-3，为 GRx 系列第三代智能人形机器人。GR-3 身高 1.65 米、体重 71 公斤、全身 55 个自由度、续航 3 小时、单手负载 3 公斤，采用柔肤软包覆材设计，头部和躯干配备 31 个触摸传感器，电池系统采用双电池热插拔架构。报道称 GR-3 将进入康复机构、养老院等场所提供慢病照护与日常生活协助。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - healthcare
+evidence:
+- url: https://www.stcn.com/article/detail/2975614.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/stcn-2025-08-06-fourier-gr3-launch.html
+corroboration: single

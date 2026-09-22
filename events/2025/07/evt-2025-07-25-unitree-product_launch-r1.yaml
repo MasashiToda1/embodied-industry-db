@@ -1,0 +1,26 @@
+id: evt-2025-07-25-unitree-product_launch-r1
+date: 2025-07-25
+date_precision: day
+type: product_launch
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技发布人形机器人 Unitree R1 智能伙伴，售价 3.99 万元起
+summary:
+  zh: 7 月 25 日下午，宇树科技在官方微信公众号宣布正式发布第三款人形机器人「Unitree R1 智能伙伴」，售价 3.99 万元起，整机约 25 千克，支持开发与改制，集成语音和图像多模态大模型。宣传视频显示 R1 拥有 26 个关节，可完成翻跟头、倒立行走、奔跑、打拳等动作。
+amount:
+  value: 39900
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://www.21jingji.com/article/20250725/herald/1656fcc4d8354b494542174508088eae.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/21jingji-2025-07-25-unitree-r1-launch.html
+corroboration: single

@@ -1,0 +1,21 @@
+id: evt-2024-09-26-fourier-product_launch-gr2
+date: 2024-09-26
+date_precision: day
+type: product_launch
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶发布新一代通用人形机器人 GR-2
+summary:
+  zh: 9 月 26 日，傅利叶智能发布自主研发的新一代通用人形机器人 GR-2。GR-2 沿用 GR-1 的仿生设计，身高 175 厘米、体重 63 千克，全身共 53 个自由度，单臂运动负载 3 千克，电池容量翻倍、续航延长至 2 小时并增加可拆卸换电方案。单手自由度由初代的 6 个增加至 12 个，搭载 6 个阵列式触觉传感器，新一代执行器最大关节峰值扭矩超 380 N·m。
+axes:
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_28862550
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/thepaper-2024-09-26-fourier-gr2-launch.html
+corroboration: single

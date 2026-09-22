@@ -1,0 +1,30 @@
+id: evt-2025-03-12-ubtech-product_launch-tiangong-walker
+date: 2025-03-12
+date_precision: day
+type: product_launch
+orgs:
+- id: ubtech
+  role: subject
+- id: x-humanoid
+  role: counterparty
+title:
+  zh: 优必选联合北京人形机器人创新中心发布全尺寸科研教育人形机器人天工行者，售价 29.9 万元起
+summary:
+  zh: 3 月 12 日，优必选科技联合北京人形机器人创新中心发布全尺寸科研教育人形机器人天工行者，定价 29.9 万元起，已开放预订并将于二季度开始交付。双方调研称全尺寸（1.6 米以上）人形机器人更贴近科研需求，而市场上多为中尺寸（1.1 米—1.3 米）机型。
+amount:
+  value: 299000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - education-research
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: https://news.qq.com/rain/a/20250312A0ALQN00
+  publisher: 北京商报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/news-2025-03-12-ubtech-tiangong-walker.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2025-03-galbot-deployment-haidian-retail-warehouse
+date: 2025-03
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「今年 3 月，银河通用全球首个人形机器人智慧零售解决方案率先在海淀北下关街道落地」，发稿日 2025-08-19
+type: deployment
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用人形机器人零售仓在北京海淀北下关街道落地
+summary:
+  zh: 银河通用的人形机器人智慧零售解决方案在北京海淀区北下关街道落地，机器人店员 Galbot 在专为机器人打造的「零售仓」中销售医疗器械等商品，接到线上订单后完成分拣、打包和出货。据报道，Galbot 可在 50 平方米门店内完成 5000 种商品、6000 个货道的自动化全流程操作，截至 2025 年 8 月已上岗超过 150 天，该方案已在北京全市超过十家门店上岗。
+counterparties:
+- 北京市海淀区北下关街道
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  target_scene:
+  - commercial-service
+  delivery_model:
+  - service-delivery
+evidence:
+- url: https://www.beinet.net.cn/jjyw/cyfz/202508/t14439502.html
+  publisher: 北京日报（北京经济信息网转载）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/beinet-2025-03-galbot-haidian-retail.html
+corroboration: single

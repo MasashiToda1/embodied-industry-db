@@ -1,0 +1,28 @@
+id: evt-2025-01-28-unitree-deployment-cctv-gala-yangbot
+date: 2025-01-28
+date_precision: day
+date_basis: derived
+date_as_stated: 原文称「蛇年春晚」，新华社发稿日期 2025-01-29，节目播出日为除夕 2025-01-28
+type: deployment
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树 H1 集群参演 2025 年央视春晚创意融合舞蹈《秧BOT》
+summary:
+  zh: 16 台宇树 H1「福兮」人形机器人与新疆艺术学院演员同台表演创意融合舞蹈《秧BOT》。据报道，H1 依靠高精度 3D 激光 SLAM 自主定位和导航、多智能体协同规划与集群协同控制系统完成队形变换，并通过 AI 驱动全身运动控制技术完成转手绢等动作。
+counterparties:
+- 中央广播电视总台
+- 新疆艺术学院
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - tourism-performance
+evidence:
+- url: http://www.news.cn/local/20250129/0bc78414b22a472898cf7e402d291ea0/c.html
+  publisher: 新华社
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-28-unitree-cctv-gala.html
+corroboration: single

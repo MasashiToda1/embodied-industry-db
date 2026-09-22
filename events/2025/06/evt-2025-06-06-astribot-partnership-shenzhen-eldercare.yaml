@@ -1,0 +1,25 @@
+id: evt-2025-06-06-astribot-partnership-shenzhen-eldercare
+date: 2025-06-06
+date_precision: day
+type: partnership
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能与深圳市养老护理院达成战略合作
+summary:
+  zh: 6 月 6 日，星尘智能与深圳市养老护理院达成战略合作，聚焦 AI 养老机器人研发、多模态数据训练及智慧照护系统落地。按合作安排，星尘智能 AI 机器人 Astribot S1 将在联合训练基地开展常态化驻场运行与真实场景测试，双方共设专项工作小组，在技术设备部署、场景化训练基地共建等方面展开部署。
+counterparties:
+- 深圳市养老护理院
+axes:
+  target_scene:
+  - healthcare
+  data_acquisition:
+  - real-robot
+evidence:
+- url: https://news.qq.com/rain/a/20250606A08J6C00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/news-2025-06-06-astribot-shenzhen-elderc.html
+corroboration: single

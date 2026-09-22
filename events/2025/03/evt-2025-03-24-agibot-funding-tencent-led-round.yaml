@@ -1,0 +1,24 @@
+id: evt-2025-03-24-agibot-funding-tencent-led-round
+date: 2025-03-24
+date_precision: day
+type: funding
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人完成腾讯领投的新一轮融资
+summary:
+  zh: 3 月 24 日，第一财经援引上海证券报报道称，智元机器人已于近日完成新一轮融资，该轮投资由腾讯领投，另有多家产业方及老股东跟投，包括龙旗科技、卧龙电气、华发集团、蓝驰创投等。报道未披露融资金额。
+counterparties:
+- 腾讯
+- 龙旗科技
+- 卧龙电气
+- 华发集团
+- 蓝驰创投
+evidence:
+- url: https://www.yicai.com/news/102530827.html
+  publisher: 第一财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/yicai-2025-03-24-agibot-tencent-round.html
+corroboration: single

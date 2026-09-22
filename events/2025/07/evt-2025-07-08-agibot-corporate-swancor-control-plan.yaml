@@ -1,0 +1,22 @@
+id: evt-2025-07-08-agibot-corporate-swancor-control-plan
+date: 2025-07-08
+date_precision: day
+type: corporate
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 上纬新材公告控股股东将由 SWANCOR 萨摩亚变更为智元恒岳
+summary:
+  zh: 7 月 8 日，上纬新材（688585.SH）公告，智元恒岳拟以协议转让方式受让上纬投控全资子公司 SWANCOR 萨摩亚所持公司 1.01 亿股（占总股本 24.99%），致远新创合伙拟受让 SWANCOR 萨摩亚 240.09 万股（0.6%）及金风投控 1776.73 万股（4.40%）。同时智元恒岳拟通过部分要约收购进一步增持 1.49 亿股（占总股本 37.00%）。本次权益变动后，公司控股股东将由 SWANCOR 萨摩亚变更为智元恒岳。
+counterparties:
+- 上纬新材（688585.SH，被收购方）
+- SWANCOR 萨摩亚（转让方）
+- 金风投控（转让方）
+evidence:
+- url: https://www.nbd.com.cn/articles/2025-07-08/3936752.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/nbd-2025-07-08-agibot-swancor-deal.html
+corroboration: single

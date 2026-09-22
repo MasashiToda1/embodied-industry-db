@@ -1,0 +1,22 @@
+id: evt-2025-06-26-kepler-funding-a-round
+date: 2025-06-26
+date_precision: day
+type: funding
+orgs:
+- id: kepler
+  role: subject
+title:
+  zh: 开普勒机器人完成 A 轮融资签约
+summary:
+  zh: 6 月 26 日，「开普勒机器人生态合作暨乔迁仪式」在上海张江人工智能岛举行，上海开普勒机器人有限公司总部揭幕，开普勒具身智能研究院落成。活动现场，开普勒机器人与浙江兆丰机电股份有限公司、汉威科技集团股份有限公司、乔锋智能装备股份有限公司三家企业进行 A 轮融资签约并达成深度合作。报道未披露签约金额。
+counterparties:
+- 浙江兆丰机电股份有限公司
+- 汉威科技集团股份有限公司
+- 乔锋智能装备股份有限公司
+evidence:
+- url: https://www.fecn.net/finance/3/2025/0630/0630266075266075.html
+  publisher: 中国财经网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/fecn-2025-06-26-kepler-a-round.html
+corroboration: single

@@ -1,0 +1,35 @@
+id: evt-2024-12-24-engineai-product_launch-pm01
+date: 2024-12-24
+date_precision: day
+type: product_launch
+orgs:
+- id: engineai
+  role: subject
+title:
+  zh: 众擎机器人发布人形机器人 PM01，商业版与教育版统一售价 8.8 万元
+summary:
+  zh: 12 月 24 日，深圳市众擎机器人科技有限公司发布人形机器人新品 PM01。该机器人身高 1.38 米，体重约 40 公斤，全身 24 个自由度，移动速度每秒 2 米，腰部装有 320 度自由旋转电机，具有机械式步态和类人自然步态两种行走模式，借助光学动捕技术采集人体运动数据并通过强化学习和模仿学习提高拟人程度。发售自当日起至 2025 年 3 月 31 日，商业版与教育版均以 8.8 万元的统一价格面向市场发售。
+amount:
+  value: 88000
+  currency: CNY
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - rl
+  data_acquisition:
+  - mocap
+  delivery_model:
+  - hardware-sale
+evidence:
+- url: http://www.news.cn/20241224/cbc699d2195c41dba84bebd692530dfd/c.html
+  publisher: 新华社
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/news-2024-12-24-engineai-pm01-launch.html
+- url: https://www.cls.cn/detail/1898737
+  publisher: 财联社（科创板日报）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/cls-2024-12-24-engineai-pm01-price.html
+corroboration: multi

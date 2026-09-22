@@ -1,0 +1,27 @@
+id: evt-2024-12-ubtech-deployment-zeekr-phase2
+date: 2024-12
+date_precision: month
+date_basis: derived
+date_as_stated: 原文称「近日，全新升级的工业人形机器人 Walker S1 再次进入极氪智慧工厂开启第二阶段的实训」，发稿日 2024-12-09
+type: deployment
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选 Walker S1 进入极氪智慧工厂开启第二阶段实训
+summary:
+  zh: 全新升级的工业人形机器人 Walker S1 再次进入极氪智慧工厂开启第二阶段实训，在智能搬运工作中搬运速度提升约 25%，并完成质量检查等新任务。12 月 7 日极氪智慧工厂第 40 万台汽车下线时，正在该厂实训的 Walker S1 参与和见证。此前 2024 年 7 月 Walker S Lite 曾在该厂 CTU 入库上料工位连续实训 21 天。
+counterparties:
+- 极氪智慧工厂
+axes:
+  embodiment_form:
+  - humanoid-biped
+  target_scene:
+  - industrial-manufacturing
+evidence:
+- url: https://www.stcn.com/article/detail/1444653.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/stcn-2024-12-ubtech-zeekr-phase2.html
+corroboration: single
