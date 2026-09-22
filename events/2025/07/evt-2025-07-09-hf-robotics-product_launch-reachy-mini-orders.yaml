@@ -1,0 +1,29 @@
+id: evt-2025-07-09-hf-robotics-product_launch-reachy-mini-orders
+date: 2025-07-09
+date_precision: day
+type: product_launch
+orgs:
+- id: hf-robotics
+  role: subject
+title:
+  zh: Hugging Face 桌面机器人 Reachy Mini 开放订购，Lite 版 299 美元、无线版 449 美元
+summary:
+  zh: 7 月 9 日，Hugging Face 发布官方博客文章开放 Reachy Mini 订购。TechCrunch 同日报道，Reachy Mini 分两个版本：无线版售价 449 美元、内置 Raspberry Pi 5；Lite 版需连接电脑，售价 299 美元。两版均以开发者自行组装的套件形式提供，机身约毛绒玩具大小，带两块屏幕作眼睛与两根天线，组装后可用 Python 完全编程，预装若干 demo 并与 Hugging Face Hub 打通。报道称 Lite 版将于下月开始发货。原型机于 2025 年 5 月与人形机器人 HopeJR 一同首次公开。
+amount:
+  value: 299
+  currency: USD
+axes:
+  delivery_model: [hardware-sale]
+  target_scene: [education-research, home]
+evidence:
+- url: https://techcrunch.com/2025/07/09/hugging-face-opens-up-orders-for-its-reachy-mini-desktop-robots/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/techcrunch-2025-07-09-hf-robotics-reachy-mini-.html
+- url: https://huggingface.co/blog/reachy-mini
+  publisher: Hugging Face 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/huggingface-2025-07-09-hf-robotics-reachy-mini-.html
+corroboration: single

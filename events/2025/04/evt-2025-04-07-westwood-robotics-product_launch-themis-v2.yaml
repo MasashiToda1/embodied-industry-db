@@ -1,0 +1,21 @@
+id: evt-2025-04-07-westwood-robotics-product_launch-themis-v2
+date: 2025-04-07
+date_precision: day
+type: product_launch
+orgs:
+- id: westwood-robotics
+  role: subject
+title:
+  zh: Westwood Robotics 公开全尺寸人形机器人 THEMIS V2
+summary:
+  zh: 4 月 7 日，Interesting Engineering 报道 Westwood Robotics 公开新一代全尺寸人形机器人 THEMIS V2：身高 5 英尺 3 英寸（约 1.6 米），40 个自由度，手臂升级为 6 自由度、末端执行器为 7 自由度，行走速度与人接近、奔跑速度可达 10 km/h，可做跳跃与跑酷类动作。机器人使用公司自研的 BEAR 系列本体感知执行器（Back-drivable Electromechanical Actuator for Robotics），配 MicroStrain 3DM-CV7-AHRS 惯性传感器（每秒 1000 次更新），软件基于 ROS。公司在其视频中称这些升级提升了操作、感知与导航能力。
+axes:
+  embodiment_form: [humanoid-biped]
+  control_route: [rl]
+evidence:
+- url: https://interestingengineering.com/innovation/humanoid-robot-shows-parkour-power
+  publisher: Interesting Engineering
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/interestinge-2025-04-03-westwood-robotics-themis.html
+corroboration: single

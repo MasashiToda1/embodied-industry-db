@@ -1,0 +1,26 @@
+id: evt-2024-09-30-rainbow-robotics-publication-rby1-sdk-first-release
+date: 2024-09-30
+date_precision: day
+type: publication
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人在 GitHub 发布 RB-Y1 官方 SDK rby1-sdk 首批版本
+summary:
+  zh: 9 月 30 日，彩虹机器人在 GitHub 组织 RainbowRobotics 下的 rby1-sdk 仓库发布 v0.1.10 与 v0.1.11，这是该仓库 releases 页上最早的两个版本。仓库说明为「Official Python and C++ SDK for seamless control and development of the Rainbow Robotics RB-Y1 robot」，以 Apache License 2.0 开源，提供 Python 与 C++ 两套接口。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  data_openness: fully-open
+evidence:
+- url: https://github.com/RainbowRobotics/rby1-sdk
+  publisher: GitHub / RainbowRobotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-30-rainbow-robotics-rby1-sd.html
+- url: https://github.com/RainbowRobotics/rby1-sdk/releases/tag/v0.1.11
+  publisher: GitHub / RainbowRobotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/github-2024-09-30-rainbow-robotics-rby1-sd-2.html
+corroboration: single

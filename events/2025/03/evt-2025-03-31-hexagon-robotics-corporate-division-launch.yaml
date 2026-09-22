@@ -1,0 +1,20 @@
+id: evt-2025-03-31-hexagon-robotics-corporate-division-launch
+date: 2025-03-31
+date_precision: day
+type: corporate
+orgs:
+- id: hexagon-robotics
+  role: subject
+title:
+  zh: Hexagon 宣布设立机器人部门，面向工业应用做人形机器人
+summary:
+  zh: 3 月 31 日，Hexagon 发布新闻稿宣布设立专门的 Robotics 部门，依托集团在测量技术、AI 与自主系统上的积累推进人形机器人，并任命了该部门总裁（向集团临时总裁兼 CEO 汇报、进入执行管理层）。新闻稿写明该部门聚焦工业应用，面向制造、汽车、航空、能源、仓储与物流市场，部门总裁负责研发、产品、商务、运营、伙伴关系与支持职能。
+axes:
+  target_scene: [industrial-manufacturing, logistics-warehouse]
+evidence:
+- url: https://hexagon.com/company/newsroom/press-releases/2025/hexagon-launches-new-robotics-division-to-drive-next-generation-autonomy
+  publisher: Hexagon AB 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/hexagon-2025-03-31-hexagon-robotics-divisio.html
+corroboration: single

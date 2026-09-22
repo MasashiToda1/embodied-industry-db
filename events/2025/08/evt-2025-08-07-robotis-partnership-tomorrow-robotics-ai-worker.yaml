@@ -1,0 +1,23 @@
+id: evt-2025-08-07-robotis-partnership-tomorrow-robotics-ai-worker
+date: 2025-08-07
+date_precision: day
+type: partnership
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 与投摩罗机器人（Tomorrow Robotics）签署作业型人形机器人共同事业化协议
+summary:
+  zh: 8 月 7 日，ROBOTIS 宣布与 Tomorrow Robotics 签署「基于 Physical AI 的作业型人形机器人共同事业化」业务协约（MOU）。报道称这是 7 月正式发售的 AI Worker 的扩张策略之一，已向 Tomorrow Robotics 交付 5 台，另有多家客户的交付与新合同在推进中；公司同时在搭建模块化零部件、维护服务与机器人硬件真实世界数据销售等收入结构。
+counterparties:
+- Tomorrow Robotics
+axes:
+  embodiment_form: [humanoid-wheeled]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.irobotnews.com/news/articleView.html?idxno=41086
+  publisher: 로봇신문（机器人新闻）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/irobotnews-2025-08-07-robotis-tomorrow-robotic.html
+corroboration: single

@@ -1,0 +1,22 @@
+id: evt-2024-10-11-rainbow-robotics-deployment-rb-y1-first-30-units
+date: 2024-10-11
+date_precision: day
+type: deployment
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: 彩虹机器人移动双臂机器人 RB-Y1 预售 30 台售罄并开始正式交付
+summary:
+  zh: 10 月 11 日，ZDNet Korea 报道彩虹机器人 3 月首次公开的移动双臂机器人 RB-Y1 完成 30 台预售并转入正式销售，国内与海外各 15 台，已交付的客户包括 MIT、加州大学伯克利分校、佐治亚理工学院与延世大学。RB-Y1 为轮式高速移动底盘加双 7 自由度手臂、6 轴单腿构型，除轮子外共 22 轴，可通过数据臂（主）对机器人（从）做示教。报道称该产品尚未进入现场应用阶段。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [education-research]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://zdnet.co.kr/view/?no=20241011170145
+  publisher: ZDNet Korea
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/zdnet-2024-10-11-rainbow-robotics-rby1-pr.html
+corroboration: single

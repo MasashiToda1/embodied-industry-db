@@ -1,0 +1,22 @@
+id: evt-2025-06-06-vinmotion-product_launch-motion-1-prototype
+date: 2025-06-06
+date_precision: day
+type: product_launch
+orgs:
+- id: vinmotion
+  role: subject
+title:
+  zh: VinMotion 公开越南首台自研人形机器人原型
+summary:
+  zh: 6 月 6 日，越南《Tuổi Trẻ》报道 Vingroup 推出 VinMotion 品牌的首台人形机器人原型。报道写明 VinMotion 于 2025 年 1 月成立、注册资本 1 万亿越南盾，成立三个多月后由越南工程师团队做出首台机器人原型，可完成行走、挥手与手势交互等基础动作。
+counterparties:
+- Vingroup
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://tuoitre.vn/vinmotion-robot-hinh-nguoi-made-in-vietnam-dau-tien-ra-mat-20250606101019994.htm
+  publisher: Tuổi Trẻ Online
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/tuoitre-2025-06-06-vinmotion-motion1-protot.html
+corroboration: single

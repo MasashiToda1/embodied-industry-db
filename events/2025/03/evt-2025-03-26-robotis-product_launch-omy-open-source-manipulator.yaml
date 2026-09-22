@@ -1,0 +1,21 @@
+id: evt-2025-03-26-robotis-product_launch-omy-open-source-manipulator
+date: 2025-03-26
+date_precision: day
+type: product_launch
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 宣布 6 月推出开源协作机械臂 OM-Y 与配套 AI Manipulator
+summary:
+  zh: 3 月 26 日，《每日经济》英文版报道 ROBOTIS 将于 6 月推出搭载 Physical AI 技术的定制型协作机器人 OM-Y。OM-Y 是开源机械臂，以模块形式提供、用户可按需调整关节与连杆；同期推出的 AI Manipulator 包含 leader、follower 与相机三个部分，同样开源，并与 DYNAMIXEL 完全兼容。公司称将配合基于视觉—语言—动作（VLA）模型的模仿学习趋势推出后续产品，并扩展对 NVIDIA、Google DeepMind、Open Robotics 所提供仿真环境中强化学习平台的支持。
+axes:
+  embodiment_form: [arm]
+  data_acquisition: [teleop]
+evidence:
+- url: https://www.mk.co.kr/en/business/11274315
+  publisher: 每日经济（Maeil Business Newspaper）英文版
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/mk-2025-03-26-robotis-omy-announcement.html
+corroboration: single
