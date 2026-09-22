@@ -1,0 +1,20 @@
+id: evt-2025-01-elephant-robotics-product_launch-mygripper-h100
+date: 2025-01
+date_precision: month
+type: product_launch
+orgs:
+- id: elephant-robotics
+  role: subject
+title:
+  zh: 大象机器人发布三指力控灵巧手 myGripper H100
+summary:
+  zh: 大象机器人官方文档的公司发展历程页记载：2025 年 1 月，公司发布 myGripper H100 三指力控灵巧手。同一页面记载 2024 年 11 月发布 myGripper F100 力控夹爪、2024 年 12 月发布 myController S570 外骨骼控制器。
+axes:
+  hardware_strategy: [in-house]
+evidence:
+- url: https://docs.elephantrobotics.com/docs/Mercury_A1_cn/9-AboutUs/9.1-company.html
+  publisher: 大象机器人官方文档
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/docs-2024-12-elephant-robotics-milest.html
+corroboration: single

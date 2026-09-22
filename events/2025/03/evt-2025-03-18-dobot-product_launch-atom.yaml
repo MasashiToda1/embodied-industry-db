@@ -1,0 +1,28 @@
+id: evt-2025-03-18-dobot-product_launch-atom
+date: 2025-03-18
+date_precision: day
+type: product_launch
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技发布并预售全尺寸人形机器人 Dobot Atom
+summary:
+  zh: 3 月 18 日，越疆科技正式发布并预售全尺寸具身智能人形机器人 Dobot Atom，起售价 19.9 万元。该机型身高 1.53 米、体重 62 公斤，采用 1∶1 仿人手臂构型，全身 41 个自由度，配备 RGB-D 深度相机与双目视觉系统，搭载自研神经驱动灵巧操作系统 NDS 与操作模型 ROM-1，端侧算力 1500 TOPS；配套 X-Trainer 双臂平台与便携式数据采集设备 PocketGo 采集操作数据。
+amount:
+  value: 199000
+  currency: CNY
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  model_form: [end2end-vla]
+  data_acquisition: [teleop]
+  data_modality: [rgbd, joint-trajectory]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.sznews.com/news/content/mb/2025-03/19/content_31492195.htm
+  publisher: 深圳新闻网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/sznews-2025-03-18-dobot-atom-launch.html
+corroboration: single

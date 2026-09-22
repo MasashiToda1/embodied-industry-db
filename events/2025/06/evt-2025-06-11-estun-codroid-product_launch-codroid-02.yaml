@@ -1,0 +1,23 @@
+id: evt-2025-06-11-estun-codroid-product_launch-codroid-02
+date: 2025-06-11
+date_precision: day
+type: product_launch
+orgs:
+- id: estun-codroid
+  role: subject
+title:
+  zh: 埃斯顿酷卓发布第二代人形机器人 Codroid 02
+summary:
+  zh: 6 月 11 日上午，埃斯顿酷卓在 2025 智能机器人发展大会上发布第二代人形机器人 Codroid 02。官方介绍该机型身高 170cm、体重 70kg、单臂负载 5 公斤，全身自由度可达 31 个（不含灵巧手），全身一体化关节模组由公司自主研发；控制系统采用快慢系统的智能体架构，现场以视频演示了部件抓取、物料搬运、螺丝锁付、质检巡检等工业场景任务。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  model_form: [hierarchical]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://mp.weixin.qq.com/s/gzBPKVSC19sDbq3pVkEtZQ
+  publisher: 埃斯顿酷卓微信公众号
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/mp-2025-06-11-estun-codroid-codroid02.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2025-07-16-flexiv-publication-tdk-v1-4
+date: 2025-07-16
+date_precision: day
+type: publication
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技发布遥操作开发套件 Flexiv TDK v1.4
+summary:
+  zh: 非夕科技在 GitHub 发布 flexiv_tdk v1.4，兼容 Flexiv 软件包 v3.9.3。发布说明列出新增 DeviceTeleopLan 类与 MotionControlCmds，使用户可用力反馈设备、空间鼠标等自定义设备遥操作同一局域网内的一台或多台机器人；新增 TransparentCartesianTeleopWAN 类把透明笛卡尔遥操作从局域网扩展到广域网，并新增统一的网络配置 NetworkCfg 与参与角色 Role。
+axes:
+  data_acquisition: [teleop]
+evidence:
+- url: https://github.com/flexivrobotics/flexiv_tdk/releases/tag/v1.4
+  publisher: GitHub · Flexiv Robotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-16-flexiv-tdk-v1-4.html
+corroboration: single

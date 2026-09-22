@@ -1,0 +1,21 @@
+id: evt-2025-04-dobot-product_launch-pocketgo
+date: 2025-04
+date_precision: month
+type: product_launch
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技发布轮式加单臂具身智能机器人数据采集平台
+summary:
+  zh: 越疆科技官网在名古屋发布会稿件中写明：2025 年 4 月，越疆发布了轮式 + 单臂具身智能机器人，是一款以「感知 - 训练 - 决策 - 执行」为核心的便携式通用数据采集平台，覆盖工业制造、商业零售等多领域。
+axes:
+  embodiment_form: [mobile-manipulator]
+  data_acquisition: [teleop]
+evidence:
+- url: https://www.dobot.cn/news/blog/1299.html
+  publisher: 越疆科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/dobot-2025-06-27-dobot-atom-mass-delivery.html
+corroboration: single

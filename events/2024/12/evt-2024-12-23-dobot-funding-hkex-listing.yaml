@@ -1,0 +1,18 @@
+id: evt-2024-12-23-dobot-funding-hkex-listing
+date: 2024-12-23
+date_precision: day
+type: funding
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技在港交所主板挂牌上市
+summary:
+  zh: 12 月 23 日，越疆科技在香港交易所主板挂牌，股份简称「越疆」，股票代码 02432.HK，按《上市规则》第 18C 章上市。发行价 18.80 港元/股，开盘价 19.70 港元，收盘报 18.94 港元，收盘市值约 75.76 亿港元。
+evidence:
+- url: https://www.jiemian.com/article/12158371.html
+  publisher: 界面新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/12/jiemian-2024-12-23-dobot-hkex-listing.html
+corroboration: single

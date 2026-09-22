@@ -1,0 +1,20 @@
+id: evt-2024-11-25-flexiv-publication-isaac-sim-ws-v1-0
+date: 2024-11-25
+date_precision: day
+type: publication
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技开源 Isaac Sim 工作空间 isaac_sim_ws 并发布 v1.0
+summary:
+  zh: 非夕科技在 GitHub 组织 flexivrobotics 下开源仓库 isaac_sim_ws 并发布 v1.0。仓库说明该工作空间把非夕机器人接入 NVIDIA Isaac Sim，并可通过 Flexiv Elements Studio 或 Flexiv RDK 使用与实机相同的力矩控制器进行控制。v1.0 发布说明列出新增 Isaac Sim 的 Flexiv 扩展、Flexiv-Isaac Bridge 应用与 follow_target_with_rmpflow 示例，兼容 Flexiv Elements Studio v3.8 与 Isaac Sim v4.0、v4.2。
+axes:
+  sim_stack: [isaac-sim]
+evidence:
+- url: https://github.com/flexivrobotics/isaac_sim_ws/releases/tag/v1.0
+  publisher: GitHub · Flexiv Robotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-25-flexiv-isaac-sim-ws-v1-0.html
+corroboration: single

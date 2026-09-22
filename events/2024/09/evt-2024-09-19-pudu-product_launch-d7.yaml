@@ -1,0 +1,22 @@
+id: evt-2024-09-19-pudu-product_launch-d7
+date: 2024-09-19
+date_precision: day
+type: product_launch
+orgs:
+- id: pudu
+  role: subject
+title:
+  zh: 普渡机器人发布首款类人形机器人 PUDU D7
+summary:
+  zh: 9 月 19 日，普渡机器人发布初代类人形机器人 PUDU D7，由普渡 X 实验室（Pudu X-Lab）孵化研发。官方介绍该机型身高 165 厘米、重量 45 公斤，仿生臂臂展 65 厘米，整机 30 个自由度，配备灵巧手后提升至 50 个；采用仿生双臂与全向移动底盘，大模型上采用「大脑大模型」与「小脑大模型」分离的策略。官网把该机型全面商业化落地的时间目标定在 2025 年。
+axes:
+  embodiment_form: [humanoid-wheeled, mobile-manipulator]
+  model_form: [hierarchical]
+  target_scene: [commercial-service]
+evidence:
+- url: https://www.pudutech.com/zh-CN/news/818
+  publisher: 普渡机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/pudutech-2024-09-19-pudu-d7-launch.html
+corroboration: single

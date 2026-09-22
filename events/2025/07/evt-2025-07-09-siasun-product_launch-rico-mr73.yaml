@@ -1,0 +1,21 @@
+id: evt-2025-07-09-siasun-product_launch-rico-mr73
+date: 2025-07-09
+date_precision: day
+type: product_launch
+orgs:
+- id: siasun
+  role: subject
+title:
+  zh: 中科新松发布睿可系列人形机器人 MR73A 与 MR73B
+summary:
+  zh: 7 月 9 日下午，在上海 AMTS 汽车制造技术与装备及材料展上，新松旗下中科新松正式发布两款仿生人形机器人新品——多可睿可系列 MR73A 轮式人形与 MR73B 升降人形机器人。官方介绍两款产品把移动性、环境感知力与灵巧操作能力结合，面向工业柔性协作场景。
+axes:
+  embodiment_form: [humanoid-wheeled]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.siasun.com/index.php/news-detail167.html
+  publisher: 新松官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/siasun-2025-07-09-siasun-rico-launch.html
+corroboration: single

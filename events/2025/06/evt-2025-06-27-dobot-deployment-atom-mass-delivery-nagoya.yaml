@@ -1,0 +1,24 @@
+id: evt-2025-06-27-dobot-deployment-atom-mass-delivery-nagoya
+date: 2025-06-27
+date_precision: day
+type: deployment
+orgs:
+- id: dobot
+  role: subject
+title:
+  zh: 越疆科技在日本名古屋开启人形机器人 Atom 批量交付
+summary:
+  zh: 6 月 27 日，越疆科技在日本名古屋举办新品发布会，宣布人形机器人 DOBOT Atom 完成量产验证、开启批量发货交付，并在发布会现场完成首批交付；同场与日本集成商 ASKA 株式会社达成合作，并全球发布 30 公斤大负载协作机器人 CR 30H。官方称 Atom 具备工业级 ±0.05mm 重复定位精度。
+counterparties:
+- ASKA 株式会社
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing]
+  delivery_model: [hardware-sale]
+evidence:
+- url: https://www.dobot.cn/news/blog/1299.html
+  publisher: 越疆科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/dobot-2025-06-27-dobot-atom-mass-delivery.html
+corroboration: single

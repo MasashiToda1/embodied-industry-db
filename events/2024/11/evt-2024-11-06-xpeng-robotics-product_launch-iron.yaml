@@ -1,0 +1,22 @@
+id: evt-2024-11-06-xpeng-robotics-product_launch-iron
+date: 2024-11-06
+date_precision: day
+type: product_launch
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏在 AI 科技日发布 AI 机器人 Iron
+summary:
+  zh: 11 月 6 日，「小鹏 AI 科技日」在广州华南理工大学举办，小鹏发布 AI 机器人 Iron。官方介绍 Iron 以 1∶1 类真人姿态呈现，拥有超 60 个关节，可模拟人类站立、躺卧、坐；搭载自研图灵 AI 芯片、端到端大模型与小鹏天玑 AIOS，手指可完成抓、拿、放等任务。官方称该机器人已进入工厂工作，后续将进入销售门店、办公室、家庭等场景。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.xiaopeng.com/news/company_news/5409.html
+  publisher: 小鹏汽车官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/xiaopeng-2024-11-06-xpeng-robotics-iron-laun.html
+corroboration: single

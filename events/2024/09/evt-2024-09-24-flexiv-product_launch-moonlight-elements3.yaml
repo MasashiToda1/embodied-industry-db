@@ -1,0 +1,21 @@
+id: evt-2024-09-24-flexiv-product_launch-moonlight-elements3
+date: 2024-09-24
+date_precision: day
+type: product_launch
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技在工博会推介自适应并联机器人 Moonlight 玄晖并发布 Flexiv Elements 3
+summary:
+  zh: 9 月 24 日，中国国际工业博览会开幕首日，非夕科技在展台正式对外推介自适应并联机器人 Moonlight 玄晖，并发布全新升级的编程及操作系统 Flexiv Elements 3 系列。报道称工博会前非夕对外公布玄晖正式开始批量销售；发布会上以 FPC 插拔与汽车焊接后处理打磨为例介绍自适应机器人的应用技术路线。
+axes:
+  embodiment_form: [arm]
+  target_scene: [industrial-manufacturing]
+evidence:
+- url: https://www.zidonghua.com.cn/news/newproduct/62693.html
+  publisher: 自动化网（来源：非夕科技）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/zidonghua-2024-09-24-flexiv-moonlight-element.html
+corroboration: single

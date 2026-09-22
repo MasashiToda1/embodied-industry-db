@@ -1,0 +1,18 @@
+id: evt-2025-07-09-flexiv-publication-rdk-v1-7
+date: 2025-07-09
+date_precision: day
+type: publication
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕科技发布机器人开发套件 Flexiv RDK v1.7
+summary:
+  zh: 非夕科技在 GitHub 发布 flexiv_rdk v1.7，兼容 Flexiv 软件包 v3.9。发布说明列出新增 rdk::RobotEvent 结构体、外部轴自由度信息 RobotInfo::DoF_e 与 DoF_m、Robot::LockExternalAxes() 外部轴锁定、轨迹文件下载接口，以及用于运行复合任务的新控制模式 NRT_SUPER_PRIMITIVE。
+evidence:
+- url: https://github.com/flexivrobotics/flexiv_rdk/releases/tag/v1.7
+  publisher: GitHub · Flexiv Robotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-09-flexiv-rdk-v1-7.html
+corroboration: single
