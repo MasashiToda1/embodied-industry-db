@@ -1,0 +1,24 @@
+id: evt-2025-07-03-lightwheel-publication-leisaac
+date: '2025-07-03'
+date_precision: day
+type: publication
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能开源 IsaacLab 遥操作工具链 LeIsaac
+summary:
+  zh: 7 月 3 日，光轮智能在 GitHub 的 LightwheelAI 组织下开源 LeIsaac。该项目在 IsaacLab 中提供基于 LeRobot SO101Leader 的遥操作能力，覆盖数据采集、把 HDF5 数据转换为 LeRobot Dataset 格式，以及后续策略训练；仓库同时给出用仿真采集数据微调 GR00T N1.5 并部署到真机的流程。
+axes:
+  sim_stack:
+  - isaac-lab
+  data_acquisition:
+  - teleop
+  - sim-generated
+evidence:
+- url: https://github.com/LightwheelAI/leisaac
+  publisher: 光轮智能 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/github-2025-07-03-lightwheel-leisaac.html
+corroboration: single

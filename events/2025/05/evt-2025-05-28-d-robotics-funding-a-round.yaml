@@ -1,0 +1,38 @@
+id: evt-2025-05-28-d-robotics-funding-a-round
+date: '2025-05-28'
+date_precision: day
+type: funding
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人完成 1 亿美元 A 轮融资
+summary:
+  zh: 5 月 28 日，地瓜机器人宣布完成 1 亿美元 A 轮融资，由高瓴创投、五源资本、线性资本等超 10 家投资机构共同参投。量子位报道列出的参投方还包括和暄资本、九合创投、Vertex Growth、砺思资本、敦鸿资产、沸点资本、梅花创投、黄浦江资本。
+counterparties:
+- 高瓴创投
+- 五源资本
+- 线性资本
+- 和暄资本
+- 九合创投
+- Vertex Growth
+- 砺思资本
+- 敦鸿资产
+- 沸点资本
+- 梅花创投
+- 黄浦江资本
+amount:
+  value: 100000000
+  currency: USD
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2025-05/28/content_346937.html
+  publisher: 科技日报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/stdaily-2025-05-28-d-robotics-a-round.html
+- url: https://www.qbitai.com/2025/05/288738.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/qbitai-2025-05-28-d-robotics-a-round-qbita.html
+corroboration: multi

@@ -1,0 +1,26 @@
+id: evt-2025-05-22-daka-robot-funding-strategic-round
+date: '2025-05-22'
+date_precision: day
+type: funding
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人完成首轮战略融资
+summary:
+  zh: RobotHub 企业库记载，2025 年 5 月 22 日大咖机器人完成首轮战略融资，金额 3020 万元人民币，投资方为润中国际控股。RoboRadar 企业库把这笔融资记为 2025 年 5 月、3000 万元人民币，投资方列为北京博雅宏远咨询有限公司与润中国际控股。两处记载的金额与投资方名单不一致。
+counterparties:
+- 润中国际控股
+- 北京博雅宏远咨询有限公司
+evidence:
+- url: https://www.robothub.app/zh/companies/daka-robotics
+  publisher: RobotHub
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/robothub-2025-05-22-daka-robot-strategic-rou.html
+- url: https://theroboradar.com/companies/dax-robotics
+  publisher: RoboRadar
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/theroboradar-2025-05-22-daka-robot-strategic-rou.html
+corroboration: multi

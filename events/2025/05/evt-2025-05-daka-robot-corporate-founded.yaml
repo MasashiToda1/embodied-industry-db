@@ -1,0 +1,21 @@
+id: evt-2025-05-daka-robot-corporate-founded
+date: '2025-05'
+date_precision: month
+type: corporate
+orgs:
+- id: daka-robot
+  role: subject
+title:
+  zh: 大咖机器人（北京）有限公司成立
+summary:
+  zh: 世界机器人大会展商页介绍，大咖机器人（北京）有限公司 2025 年 5 月成立，定位系统级具身智能基础设施公司，聚焦生产力具身智能机器人研发与场景落地，面向泛零售、泛物流、养老等赛道，技术路线为 Dualis 具身大脑模型加通用本体加数据飞轮，底座是自研的 DaxBrain-WM 具身世界模型。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://www.worldrobotconference.com/expo/company/642.html
+  publisher: 世界机器人大会展商页
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/worldrobotco-2025-05-daka-robot-founded.html
+corroboration: single

@@ -1,0 +1,27 @@
+id: evt-2025-03-21-noitom-corporate-noitom-robotics-spinoff
+date: '2025-03-21'
+date_precision: day
+type: corporate
+orgs:
+- id: noitom
+  role: subject
+title:
+  zh: 诺亦腾把机器人团队分拆为独立公司诺亦腾机器人
+summary:
+  zh: 2025 年年初，诺亦腾将其搭建的机器人团队拆分为独立运营与融资的新公司，新公司命名为诺亦腾机器人（Noitom Robotics），主要业务聚焦机器人数据。工商信息显示，诺亦腾机器人科技（北京）有限公司成立于 2025 年 3 月 21 日，注册地为北京市海淀区，业务定位是为人形机器人与具身智能产业提供从真机到人类交互的全链路数据解决方案。
+axes:
+  data_acquisition:
+  - mocap
+  - teleop
+evidence:
+- url: https://m.pedaily.cn/vc/company/843809.html
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/m-2025-03-21-noitom-robotics-founded.html
+- url: https://www.36kr.com/p/3478931911252355
+  publisher: 36 氪智能涌现
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/36kr-2025-03-21-noitom-robotics-spinoff-.html
+corroboration: multi

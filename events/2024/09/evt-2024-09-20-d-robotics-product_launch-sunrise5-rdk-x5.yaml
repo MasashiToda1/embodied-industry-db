@@ -1,0 +1,26 @@
+id: evt-2024-09-20-d-robotics-product_launch-sunrise5-rdk-x5
+date: '2024-09-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人开发者日发布旭日 5 芯片与 RDK X5、RDK S100 开发者套件
+summary:
+  zh: 9 月 20 日，主题为「加速智能生长」的 2024 地瓜机器人开发者日在深圳举办。地瓜机器人发布旭日 5 智能计算芯片、RDK X5 机器人开发者套件、面向具身智能的 RDK S100，以及机器人云端开发环境。旭日 5 基于 BPU 贝叶斯架构，算力 10 TOPS，功耗 3W。RDK X5 的 4GB 版定价 549 元、8GB 版定价 699 元，首发立减 100 元。
+amount:
+  value: 549
+  currency: CNY
+evidence:
+- url: https://www.leiphone.com/category/industrynews/rhw4I1kHNrJ61BPO.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/leiphone-2024-09-20-d-robotics-devday2024.html
+- url: https://news.qq.com/rain/a/20240920A06KY000
+  publisher: 腾讯新闻转载 IT 之家
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/news-2024-09-20-d-robotics-rdkx5-price.html
+corroboration: multi

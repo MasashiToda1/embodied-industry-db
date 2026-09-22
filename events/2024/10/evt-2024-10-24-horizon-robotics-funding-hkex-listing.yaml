@@ -1,0 +1,26 @@
+id: evt-2024-10-24-horizon-robotics-funding-hkex-listing
+date: '2024-10-24'
+date_precision: day
+type: funding
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线在香港交易所主板挂牌上市
+summary:
+  zh: 10 月 24 日，地平线（股票代码 9660.HK）正式于香港交易所主板挂牌上市，上市仪式在港交所举行。据每日经济新闻报道，本次 IPO 以每股 3.99 港元发售 13.6 亿股，募资总额 54.07 亿港元，开盘价 5.12 港元。
+amount:
+  value: 5407000000
+  currency: HKD
+evidence:
+- url: https://www.horizon.auto/news/press/306
+  publisher: 地平线官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/horizon-2024-10-24-horizon-robotics-hkex-li.html
+- url: https://www.nbd.com.cn/articles/2024-10-24/3603332.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/nbd-2024-10-24-horizon-robotics-hkex-nb.html
+corroboration: multi

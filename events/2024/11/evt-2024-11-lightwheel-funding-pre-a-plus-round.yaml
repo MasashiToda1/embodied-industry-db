@@ -1,0 +1,28 @@
+id: evt-2024-11-lightwheel-funding-pre-a-plus-round
+date: '2024-11'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日」，投中网与投资界 2024 年 11 月 1 日发布
+type: funding
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能完成数千万元人民币 Pre-A+ 轮融资
+summary:
+  zh: 2024 年 11 月，光轮智能（北京）科技有限公司宣布完成数千万人民币的 Pre-A+ 轮融资，由北京市人工智能产业投资基金主导，股东经纬创投继续跟投。报道称本轮资金用于自动驾驶、具身智能在端到端技术路线上的研发升级，以及商业扩张和全球业务拓展。
+counterparties:
+- 北京市人工智能产业投资基金
+- 经纬创投
+evidence:
+- url: https://news.pedaily.cn/202411/542338.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/news-2024-11-lightwheel-pre-a-plus.html
+- url: https://www.chinaventure.com.cn/news/113-20241101-383667.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/chinaventure-2024-11-lightwheel-pre-a-plus-cv.html
+corroboration: multi

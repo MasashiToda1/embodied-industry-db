@@ -1,0 +1,23 @@
+id: evt-2025-07-qiuzhi-tech-funding-a-round
+date: '2025-07'
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「根据天眼查 APP 于 7 月 13 日公布的信息整理」，证券之星 2025 年 7 月 16 日发布
+type: funding
+orgs:
+- id: qiuzhi-tech
+  role: subject
+title:
+  zh: 求之科技完成 A 轮融资
+summary:
+  zh: 证券之星 2025 年 7 月 16 日报道，根据天眼查于 7 月 13 日公布的信息，求之科技（无锡）有限公司完成 A 轮融资，融资额未披露，参与投资的机构包括北京信息产业发展基金、联想创投。
+counterparties:
+- 北京信息产业发展基金
+- 联想创投
+evidence:
+- url: https://www.163.com/dy/article/K4K4D0K0051984TV.html
+  publisher: 网易号转载证券之星
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/163-2025-07-qiuzhi-tech-a-round.html
+corroboration: single

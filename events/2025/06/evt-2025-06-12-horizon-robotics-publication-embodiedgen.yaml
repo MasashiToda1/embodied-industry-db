@@ -1,0 +1,23 @@
+id: evt-2025-06-12-horizon-robotics-publication-embodiedgen
+date: '2025-06-12'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: "地平线发布并开源生成式 3D 世界引擎 EmbodiedGen"
+summary:
+  zh: 6 月 12 日，地平线团队将 EmbodiedGen 论文提交至 arXiv，并在 GitHub 的 HorizonRobotics 组织下开源代码。EmbodiedGen 是交互式 3D 世界生成平台，可低成本批量生成带真实物理属性与真实尺度、以 URDF 格式输出的可控 3D 资产，用于具身智能任务的训练与评测。
+evidence:
+- url: https://arxiv.org/abs/2506.10600
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-12-horizon-robotics-embodie.html
+- url: https://github.com/HorizonRobotics/EmbodiedGen
+  publisher: 地平线 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-12-horizon-robotics-embodie.html
+corroboration: single

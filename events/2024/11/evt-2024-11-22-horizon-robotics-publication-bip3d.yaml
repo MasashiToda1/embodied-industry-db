@@ -1,0 +1,23 @@
+id: evt-2024-11-22-horizon-robotics-publication-bip3d
+date: '2024-11-22'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: "地平线发布具身 3D 感知模型论文《BIP3D: Bridging 2D Images and 3D Perception for Embodied Intelligence》"
+summary:
+  zh: 11 月 22 日，地平线团队将 BIP3D 论文提交至 arXiv。BIP3D 是以图像为中心的 3D 感知模型，用显式 3D 位置编码配合预训练 2D 视觉基础模型，并引入空间增强模块，实现多视角、多模态特征融合与端到端 3D 感知；论文称在 EmbodiedScan benchmark 上，3D 检测任务提升 5.69%，3D 视觉定位任务提升 15.25%。代码仓库在 GitHub 的 HorizonRobotics 组织下公开。
+evidence:
+- url: https://arxiv.org/abs/2411.14869
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/arxiv-2024-11-22-horizon-robotics-bip3d.html
+- url: https://github.com/HorizonRobotics/BIP3D
+  publisher: 地平线 GitHub 组织
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/github-2024-11-22-horizon-robotics-bip3d-r.html
+corroboration: single

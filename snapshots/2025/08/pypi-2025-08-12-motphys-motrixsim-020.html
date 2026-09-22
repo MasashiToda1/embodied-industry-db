@@ -1,0 +1,2189 @@
+<!-- 抓取于 2026-09-22T21:08:51.436131+08:00 | 原始链接 https://pypi.org/project/motrixsim/0.2.0/ | 公众号 未知 | 标题 motphys-motrixsim-020 | sha256:48f05fca9fd4 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="de, en, es, eo, fr, pt_BR, el, ru, uk, he, zh_Hans, zh_Hant, ja, ko">
+    <title>motrixsim · PyPI</title>
+    <meta name="description" content="A high-performance physics simulation engine designed for multibody dynamics and robotics simulation.">
+    <link rel="stylesheet" href="/static/css/warehouse-ltr.6d5afd58.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.94176253.css">
+    <link rel="stylesheet" href="/static/css/fonts.3b5d1a1c.css">
+    <noscript>
+      <link rel="stylesheet"
+            href="/static/css/noscript.0673c9ea.css">
+    </noscript>
+    <link rel="icon" href="/static/images/favicon.35549fe8.ico" type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS: latest releases for motrixsim" href="/rss/project/motrixsim/releases.xml">      <link rel="canonical" href="https://pypi.org/project/motrixsim/">
+    <meta property="og:url" content="https://pypi.org/project/motrixsim/0.2.0/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+<meta property="og:image" content="https://pypi.org/static/images/og-card.00947198.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PyPI, the Python Package Index">
+  <meta name="twitter:image:alt" content="PyPI, the Python Package Index">
+  <meta name="twitter:card" content="summary_large_image">    <meta property="og:title" content="motrixsim">
+    <meta property="og:description" content="A high-performance physics simulation engine designed for multibody dynamics and robotics simulation.">
+<meta name="source-commit" content="1e5bf8e79a5d1b8be305681d118d7f22297454e2">    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+    <script defer="" src="/static/js/warehouse.31001f20.js">
+    </script>
+  <script src="/static/js/utils/mathjax-config.e569c56a.js"></script>
+  <script async="" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII=" crossorigin="anonymous"></script>
+      <script src="/static/js/utils/plausible-init.f60de74f.js"></script>
+      <script async="" src="https://analytics.python.org/js/pa-Z-QYGvOKHwfKWak0xljXn.js"></script>
+    <script async="" src="https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js" integrity="sha256-U3hKDidudIaxBDEzwGJApJgPEf2mWk6cfMWghrAa6i0= sha384-UcmsCqcNRSLW/dV3Lo1oCi2/VaurXbib6p4HyUEOeIa/4OpsrnucrugAefzVZJfI sha512-q4t1L4xEjGV2R4hzqCa41P8jrgFUS8xTb8rdNv4FGvw7FpydVj/kkxBJHOiaoxHa8olCcx1Slk9K+3sNbsM4ug==" crossorigin="anonymous"></script>
+  <style>[data-ea-publisher].loaded,[data-ea-type].loaded{font-size:14px;font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-weight:normal;font-style:normal;leter-spacing:0px;vertical-align:baseline;line-height:1.3em}[data-ea-publisher].loaded a,[data-ea-type].loaded a{text-decoration:none}[data-ea-publisher].loaded .ea-pixel,[data-ea-type].loaded .ea-pixel{display:none}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{margin:1em 1em 0.5em 1em;padding:1em;background:rgba(0,0,0,0.03);color:#505050}[data-ea-publisher].loaded .ea-content a:link,[data-ea-type].loaded .ea-content a:link{color:#505050}[data-ea-publisher].loaded .ea-content a:visited,[data-ea-type].loaded .ea-content a:visited{color:#505050}[data-ea-publisher].loaded .ea-content a:hover,[data-ea-type].loaded .ea-content a:hover{color:#373737}[data-ea-publisher].loaded .ea-content a:active,[data-ea-type].loaded .ea-content a:active{color:#373737}[data-ea-publisher].loaded .ea-content a strong,[data-ea-publisher].loaded .ea-content a b,[data-ea-type].loaded .ea-content a strong,[data-ea-type].loaded .ea-content a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a:link,[data-ea-type].loaded .ea-callout a:link{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:visited,[data-ea-type].loaded .ea-callout a:visited{color:#6a6a6a}[data-ea-publisher].loaded .ea-callout a:hover,[data-ea-type].loaded .ea-callout a:hover{color:#505050}[data-ea-publisher].loaded .ea-callout a:active,[data-ea-type].loaded .ea-callout a:active{color:#505050}[data-ea-publisher].loaded .ea-callout a strong,[data-ea-publisher].loaded .ea-callout a b,[data-ea-type].loaded .ea-callout a strong,[data-ea-type].loaded .ea-callout a b{color:#088cdb}[data-ea-publisher].loaded .ea-callout a,[data-ea-type].loaded .ea-callout a{font-size:0.8em}[data-ea-publisher].loaded.dark .ea-content,[data-ea-type].loaded.dark .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:link,[data-ea-type].loaded.dark .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:visited,[data-ea-type].loaded.dark .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-content a:hover,[data-ea-type].loaded.dark .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a:active,[data-ea-type].loaded.dark .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.dark .ea-content a strong,[data-ea-publisher].loaded.dark .ea-content a b,[data-ea-type].loaded.dark .ea-content a strong,[data-ea-type].loaded.dark .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.dark .ea-callout a:link,[data-ea-type].loaded.dark .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:visited,[data-ea-type].loaded.dark .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.dark .ea-callout a:hover,[data-ea-type].loaded.dark .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a:active,[data-ea-type].loaded.dark .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.dark .ea-callout a strong,[data-ea-publisher].loaded.dark .ea-callout a b,[data-ea-type].loaded.dark .ea-callout a strong,[data-ea-type].loaded.dark .ea-callout a b{color:#50baf9}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.adaptive .ea-content,[data-ea-type].loaded.adaptive .ea-content{background:rgba(255,255,255,0.05);color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:link,[data-ea-type].loaded.adaptive .ea-content a:link{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:visited,[data-ea-type].loaded.adaptive .ea-content a:visited{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-content a:hover,[data-ea-type].loaded.adaptive .ea-content a:hover{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a:active,[data-ea-type].loaded.adaptive .ea-content a:active{color:#f6f6f6}[data-ea-publisher].loaded.adaptive .ea-content a strong,[data-ea-publisher].loaded.adaptive .ea-content a b,[data-ea-type].loaded.adaptive .ea-content a strong,[data-ea-type].loaded.adaptive .ea-content a b{color:#50baf9}[data-ea-publisher].loaded.adaptive .ea-callout a:link,[data-ea-type].loaded.adaptive .ea-callout a:link{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:visited,[data-ea-type].loaded.adaptive .ea-callout a:visited{color:#c3c3c3}[data-ea-publisher].loaded.adaptive .ea-callout a:hover,[data-ea-type].loaded.adaptive .ea-callout a:hover{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a:active,[data-ea-type].loaded.adaptive .ea-callout a:active{color:#dcdcdc}[data-ea-publisher].loaded.adaptive .ea-callout a strong,[data-ea-publisher].loaded.adaptive .ea-callout a b,[data-ea-type].loaded.adaptive .ea-callout a strong,[data-ea-type].loaded.adaptive .ea-callout a b{color:#50baf9}}[data-ea-publisher].loaded .ea-content,[data-ea-type].loaded .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.raised .ea-content,[data-ea-type].loaded.raised .ea-content{border:0px;border-radius:3px;box-shadow:0px 2px 3px rgba(0,0,0,0.15)}[data-ea-publisher].loaded.bordered .ea-content,[data-ea-type].loaded.bordered .ea-content{border:1px solid rgba(0,0,0,0.04);border-radius:3px;box-shadow:none}[data-ea-publisher].loaded.bordered.dark .ea-content,[data-ea-type].loaded.bordered.dark .ea-content{border:1px solid rgba(255,255,255,0.07)}@media (prefers-color-scheme: dark){[data-ea-publisher].loaded.bordered.adaptive .ea-content,[data-ea-type].loaded.bordered.adaptive .ea-content{border:1px solid rgba(255,255,255,0.07)}}[data-ea-publisher].loaded.flat .ea-content,[data-ea-type].loaded.flat .ea-content{border:0px;border-radius:3px;box-shadow:none}[data-ea-type="image"].loaded,[data-ea-publisher]:not([data-ea-type]).loaded,.ea-type-image{display:inline-block}[data-ea-type="image"].loaded .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content,.ea-type-image .ea-content{max-width:180px;overflow:auto;text-align:center}[data-ea-type="image"].loaded .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>a>img,.ea-type-image .ea-content>a>img{width:120px;height:90px;display:inline-block}[data-ea-type="image"].loaded .ea-content>.ea-text,[data-ea-publisher]:not([data-ea-type]).loaded .ea-content>.ea-text,.ea-type-image .ea-content>.ea-text{margin-top:1em;font-size:1em;text-align:center}[data-ea-type="image"].loaded .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded .ea-callout,.ea-type-image .ea-callout{max-width:180px;margin:0em 1em 1em 1em;padding-left:1em;padding-right:1em;font-style:italic;text-align:right}[data-ea-type="image"].loaded.horizontal .ea-content,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content,.ea-type-image.horizontal .ea-content{max-width:320px}[data-ea-type="image"].loaded.horizontal .ea-content>a>img,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content>a>img,.ea-type-image.horizontal .ea-content>a>img{float:left;margin-right:1em}[data-ea-type="image"].loaded.horizontal .ea-content .ea-text,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-content .ea-text,.ea-type-image.horizontal .ea-content .ea-text{margin-top:0em;text-align:left;overflow:auto}[data-ea-type="image"].loaded.horizontal .ea-callout,[data-ea-publisher]:not([data-ea-type]).loaded.horizontal .ea-callout,.ea-type-image.horizontal .ea-callout{max-width:320px;text-align:right}[data-ea-type="text"].loaded,.ea-type-text{font-size:14px}[data-ea-type="text"].loaded .ea-content,.ea-type-text .ea-content{text-align:left}[data-ea-type="text"].loaded .ea-callout,.ea-type-text .ea-callout{margin:0.5em 1em 1em 1em;padding-left:1em;padding-right:1em;text-align:right;font-style:italic}[data-ea-style="stickybox"].loaded .ea-type-image{z-index:1000;position:fixed;bottom:20px;right:20px}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{cursor:pointer;position:absolute;top:0.75em;right:0.75em;background-color:#fefefe;border:1px solid #088cdb;border-radius:50%;color:#088cdb;font-size:1em;text-align:center;height:1.5em;width:1.5em;line-height:1.5em}@media (max-width: 1300px){[data-ea-style="stickybox"].loaded .ea-type-image{position:static;bottom:0;right:0;margin:auto;text-align:center}[data-ea-style="stickybox"].loaded .ea-type-image .ea-stickybox-hide{display:none}}@media (min-width: 1301px){[data-ea-style="stickybox"].loaded .ea-type-image .ea-content{background:#dcdcdc}[data-ea-style="stickybox"].loaded.dark .ea-type-image .ea-content{background:#505050}}@media (min-width: 1301px) and (prefers-color-scheme: dark){[data-ea-style="stickybox"].loaded.adaptive .ea-type-image .ea-content{background:#505050}}
+</style><script src="https://server.ethicalads.io/api/v1/decision/?publisher=psf&amp;ad_types=psf&amp;div_ids=ad_1790082521402_48413&amp;callback=ad_1790082521402_48413&amp;keywords=pypi-sidebar%7Clinux%7Cpython%7Crust&amp;campaign_types=paid%7Ccommunity%7Chouse&amp;format=jsonp&amp;client_version=1.4.0&amp;url=https%3A%2F%2Fpypi.org%2Fproject%2Fmotrixsim%2F0.2.0%2F" type="text/javascript" async=""></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-SVG-styles">
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+</style></head>
+  <body data-controller="viewport-toggle" style="padding-top: 0px;">
+      <!-- Accessibility: this link should always be the first piece of content inside the body-->
+      <a href="#content" class="skip-to-content">Skip to main content</a>
+      <button type="button" class="button button--primary button--switch-to-mobile hidden" data-viewport-toggle-target="switchToMobile" data-action="viewport-toggle#switchToMobile">Switch to mobile version</button>
+      <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+        <!-- Add browser warning. Will show for ie9 and below -->
+        <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <div class="notification-bar__container">
+          <span class="notification-bar__icon">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <span class="sr-only">Warning</span>
+          </span>
+          <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+        </div>
+      </div>
+      <![endif]-->
+        <noscript>
+          <div class="notification-bar notification-bar--warning" role="status">
+            <div class="notification-bar__container">
+              <span class="notification-bar__icon">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span class="sr-only">Warning</span>
+              </span>
+              <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+            </div>
+          </div>
+        </noscript>
+<div data-html-include="/_includes/unauthed/notification-banners/"></div>    </div>
+<div data-html-include="/_includes/unauthed/flash-messages/"></div><div data-html-include="/_includes/authed/session-notifications/"></div><header class="site-header ">
+  <div class="site-container">
+    <div class="split-layout">
+        <div class="split-layout">
+          <div>
+            <a class="site-header__logo" href="/">
+              <img alt="PyPI" src="/static/images/logo-small.0e0855d0.svg">
+            </a>
+          </div>
+          <form class="search-form search-form--primary" action="/search/" role="search">
+            <label for="search" class="sr-only">Search PyPI</label>
+            <input id="search" class="search-form__search" type="text" name="q" placeholder="Type '/' to search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false" data-controller="search-focus" data-action="keydown@window-&gt;search-focus#focusSearchField" data-search-focus-target="searchField">
+            <button type="submit" class="search-form__button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <span class="sr-only">Search</span>
+            </button>
+          </form>
+        </div>
+<div data-html-include="/_includes/authed/current-user-indicator/">        <div class="site-menu">
+    <nav class="site-menu site-menu--dropdown-below-desktop" aria-label="Main navigation">
+      <ul>
+        <li class="site-menu__item">
+          <a href="/help/" class="site-menu__link">Help</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="https://docs.pypi.org/" class="site-menu__link">Docs</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="/account/login/?next=https%3A%2F%2Fpypi.org%2Fproject%2Fmotrixsim%2F0.2.0%2F" class="site-menu__link">Log in</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="/account/register/" class="site-menu__link">Register</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="dropdown dropdown--on-menu site-menu--dropdown site-menu--dropdown-below-desktop" aria-label="Main navigation">
+      <button type="button" class="site-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu" data-dropdown-bound="true">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+        <li>
+          <a class="dropdown__link" href="/help/">Help</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="https://docs.pypi.org/">Docs</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="/account/login/?next=https%3A%2F%2Fpypi.org%2Fproject%2Fmotrixsim%2F0.2.0%2F">Log in</a>
+        </li>
+        <li>
+          <a class="dropdown__link" href="/account/register/">Register</a>
+        </li>
+      </ul>
+    </nav>
+<nav class="dropdown dropdown--on-menu dropdown--with-icons site-menu--dropdown" aria-label="Localization">
+  <button type="button" class="site-menu__link site-menu__link--with-icon dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="Change language" data-dropdown-bound="true">
+    <i class="fa-solid fa-language" aria-hidden="true"></i>
+  </button>
+  <form action="/locale/">
+    <ul class="dropdown__content dropdown__content--languages" aria-hidden="true" aria-label="Languages">
+        <li>
+          <button name="locale_id" value="de" type="submit" class="dropdown__link">
+            Deutsch
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="en" type="submit" class="dropdown__link" aria-current="true">
+<i class="fa fa-check" aria-hidden="true"></i>            English
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="es" type="submit" class="dropdown__link">
+            español
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="eo" type="submit" class="dropdown__link">
+            Esperanto
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="fr" type="submit" class="dropdown__link">
+            français
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="pt_BR" type="submit" class="dropdown__link">
+            português (Brasil)
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="el" type="submit" class="dropdown__link">
+            Ελληνικά
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="ru" type="submit" class="dropdown__link">
+            русский
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="uk" type="submit" class="dropdown__link">
+            українська
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="he" type="submit" class="dropdown__link">
+            עברית
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="zh_Hans" type="submit" class="dropdown__link">
+            中文 (简体)
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="zh_Hant" type="submit" class="dropdown__link">
+            中文 (繁體)
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="ja" type="submit" class="dropdown__link">
+            日本語
+          </button>
+        </li>
+        <li>
+          <button name="locale_id" value="ko" type="submit" class="dropdown__link">
+            한국어
+          </button>
+        </li>
+    </ul>
+  </form>
+</nav>  </div>
+</div>  </div>
+</div>
+</header>
+  <div class="mobile-search">
+    <form class="search-form search-form--fullwidth" action="/search/" role="search">
+      <label for="mobile-search" class="sr-only">Search PyPI</label>
+      <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+      
+      <button type="submit" class="search-form__button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </form>
+  </div>
+<main id="content">
+<div class="banner  banner--project">
+  <div class="project-header">
+    <h1 class="project-header__name">motrixsim 0.2.0</h1>
+      <p class="project-header__summary">A high-performance physics simulation engine designed for multibody dynamics and robotics simulation.</p>
+      <div data-controller="clipboard" data-clipboard-plausible-event-value="Copy Project Install Command">
+        <p class="project-header__pip-instructions">
+          <span id="pip-command" data-clipboard-target="source">pip install motrixsim==0.2.0</span>
+          <button type="button" class="copy-tooltip copy-tooltip-n" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+            <i class="fa fa-copy" aria-hidden="true"></i>
+            <span class="sr-only">Copy PIP instructions</span>
+          </button>
+        </p>
+      </div>
+  </div>
+</div><div data-html-include="/_includes/authed/administer-project-include/motrixsim"></div>  <div data-controller="project-tabs" class="project-tabs">
+<div class="horizontal-section horizontal-section--grey horizontal-section--no-padding">
+  <div class="site-container">
+    <nav class="project-tabs__tabs" aria-label="Navigation for motrixsim">
+      <ul class="project-tabs__list" role="tablist">
+        <li role="presentation">
+          <a id="description-tab" href="#description" role="tab" class="project-tabs__tab project-tabs__tab--is-active" aria-selected="true" aria-controls="description" tabindex="0" data-project-tabs-target="tab" data-action="project-tabs#tabClick keydown-&gt;project-tabs#tabKeydown" aria-label="Project description. Focus will be moved to the description.">
+            <span>
+              <i class="fa-regular fa-rectangle-list" aria-hidden="true"></i>
+Description            </span>
+          </a>
+        </li>
+          <li role="presentation">
+            <a id="files-tab" href="#files" role="tab" class="project-tabs__tab" aria-selected="false" aria-controls="files" tabindex="-1" data-project-tabs-target="tab" data-action="project-tabs#tabClick keydown-&gt;project-tabs#tabKeydown" aria-label="Files. Focus will be moved to the project files.">
+              <span>
+                <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+Release files              </span>
+            </a>
+          </li>
+        <li role="presentation">
+          <a id="history-tab" href="#history" role="tab" class="project-tabs__tab" aria-selected="false" aria-controls="history" tabindex="-1" data-project-tabs-target="tab" data-action="project-tabs#tabClick keydown-&gt;project-tabs#tabKeydown" aria-label="Release history. Focus will be moved to the release history panel.">
+            <span>
+              <i class="fa fa-history" aria-hidden="true"></i>
+Release history            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>    <div class="site-container">
+      <div class="project-tabs__panel">
+<div id="description" data-project-tabs-target="content" role="tabpanel" aria-labelledby="description-tab" tabindex="-1" style="display: block;">
+  <div class="project-description">
+    <div class="project-description__main">
+        <div class="project-description__content"><h1><a href="#user-content-motrixsim" id="user-content-motrixsim" rel="nofollow"></a>MotrixSIm</h1>
+<p>MotrixSim 是一个高性能的物理仿真引擎，专为多体动力学和机器人仿真设计。它提供了一个高效、稳定的物理仿真平台，支持广泛的应用场景，包括机器人控制、强化学习、工业仿真等。</p>
+<h2><a href="#user-content-主要特性" id="user-content-主要特性" rel="nofollow"></a>主要特性</h2>
+<ul>
+<li><strong>物理仿真</strong>: 支持刚体动力学、碰撞检测等完整的物理仿真功能</li>
+<li><strong>广义坐标建模</strong>: 采用广义坐标系统，支持复杂的多体系统建模</li>
+<li><strong>全新求解器</strong>: 采用自研的约束模型和求解器，提供高效、稳定的多体动力学计算</li>
+<li><strong>高性能计算</strong>: CPU 版本基于 Rust 开发，提供出色的性能和内存安全性</li>
+<li><strong>Python API</strong>: 简洁易用的 Python 接口，便于快速开发和原型制作</li>
+<li><strong>机器人支持</strong>: 专门优化的机器人仿真功能，高度兼容 MJCF 模型格式</li>
+</ul>
+<h2><a href="#user-content-适用场景" id="user-content-适用场景" rel="nofollow"></a>适用场景</h2>
+<ul>
+<li>机器人控制算法开发和测试</li>
+<li>强化学习环境构建</li>
+<li>工业实时物理仿真</li>
+<li>物理现象模拟和分析</li>
+<li>工程设计验证</li>
+<li>教育和研究</li>
+</ul>
+</div>
+    </div>
+    <div class="project-description__sidebar">
+<div data-html-include="/_includes/authed/edit-project-button/motrixsim"></div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">Project links</h2>
+    <div class="sidebar-section__data-block">
+      <ul class="sidebar-links">
+            <li>
+              <a class="sidebar-links__link" href="https://motrixsim.readthedocs.io" rel="nofollow">  <i class="fas fa-book" aria-hidden="true"></i>documentation</a>
+            </li>
+            <li>
+              <a class="sidebar-links__link" href="https://github.com/Motphys/motrixsim-docs" rel="nofollow">  <i class="fab fa-github" aria-hidden="true"></i>repository</a>
+            </li>
+      </ul>
+    </div>
+</div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">Key dates</h2>
+  <div class="sidebar-section__content sidebar-section__content--pypi">
+    <details class="sidebar-section__data-source">
+      <summary class="sidebar-section__data-source-label" title="PyPI data">PyPI data</summary>
+      <div class="sidebar-section__data-source-description">Data sourced directly from PyPI's database.</div>
+    </details>
+    <div class="sidebar-section__data-block">
+      <ul class="unstyled">
+          <li>
+              <strong>Released:</strong> <time datetime="2025-08-12T09:26:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:08 (+08:00)" aria-label="2025-08-12 17:26:08 (+08:00)">Aug 12, 2025</time>
+          </li>
+      </ul>
+          <a class="badge badge--warning" href="/project/motrixsim/">
+Newer release available (0.10.1)          </a>
+    </div>
+  </div>
+</div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">
+1 maintainer  </h2>
+  <div class="sidebar-section__content sidebar-section__content--pypi">
+    <details class="sidebar-section__data-source">
+      <summary class="sidebar-section__data-source-label" title="PyPI data">PyPI data</summary>
+      <div class="sidebar-section__data-source-description">Data sourced directly from PyPI's database.</div>
+    </details>
+    <div class="sidebar-section__data-block">
+          <a class="sidebar-section__maintainer" href="/user/Motphys/" aria-label="Motphys">
+    <img src="https://pypi-camo.freetls.fastly.net/e12097e6b41c9b047b1f63af03d91e40c283b2c8/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30353636383034326135376539666139323436373038303235353165616265353f73697a653d3335" height="35" width="35" alt="Avatar for Motphys from gravatar.com" title="Avatar for Motphys from gravatar.com">
+    <span>Motphys</span>
+  </a>
+
+    </div>
+  </div>
+</div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">Credits</h2>
+      <div class="sidebar-section__data-block">
+          <p>
+            <strong>
+Author:            </strong>
+            <a href="mailto:developers@motphys.com">Motphys</a>
+          </p>
+      </div>
+</div><div class="sidebar-section">
+    <h2 class="sidebar-section__title">License</h2>
+    <div class="sidebar-section__data-block">
+      <p>Apache Software License (Apache-2.0)</p>
+    </div>
+</div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">Requires</h2>
+  <div class="sidebar-section__data-block">
+    <p><strong>Python</strong> &lt;3.14, &gt;=3.10</p>
+  </div>
+</div><div class="sidebar-section">
+  <h2 class="sidebar-section__title">Classifiers</h2>
+  <div class="sidebar-section__data-block">
+    <ul class="sidebar-section__classifiers">
+        <li>
+          License
+          <ul>
+              <li>
+                <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+Apache+Software+License">
+                  OSI Approved :: Apache Software License
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li>
+          Operating System
+          <ul>
+              <li>
+                <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+                  Microsoft :: Windows
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+                  POSIX :: Linux
+                </a>
+              </li>
+          </ul>
+        </li>
+        <li>
+          Programming Language
+          <ul>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.10">
+                  Python :: 3.10
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.11">
+                  Python :: 3.11
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.12">
+                  Python :: 3.12
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.13">
+                  Python :: 3.13
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+CPython">
+                  Python :: Implementation :: CPython
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+PyPy">
+                  Python :: Implementation :: PyPy
+                </a>
+              </li>
+              <li>
+                <a href="/search/?c=Programming+Language+%3A%3A+Rust">
+                  Rust
+                </a>
+              </li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+</div><div class="sidebar-section">
+  <div class="sidebar-section loaded" data-ea-publisher="psf" data-ea-type="psf" data-ea-keywords="pypi-sidebar"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/10404/01a0c93b-b64a-7e23-87b1-399501fac0e4/" rel="nofollow noopener sponsored" target="_blank" class="ethical-image-link"><img src="https://media.ethicalads.io/images/2026/09/SerpApi-logo-with-text_c6iCMi7.png" alt="Sponsored: Python Software Foundation"></a><div class="ethical-text">SerpApi is a Maintaining sponsor of the Python Software Foundation.</div></div><div class="ethical-callout"><small><em><a href="https://www.python.org/psf/sponsorship/?ref=ethicalads-placement">PSF Sponsor</a><span> · </span><a href="https://www.ethicalads.io/sponsorship-platform/?ref=psf">Served ethically</a></em></small></div></div></div>
+</div>
+<div class="sidebar-section">
+  <a class="button button--full-width button--warning" href="https://pypi.org/project/motrixsim/submit-malware-report/" rel="nofollow" role="button">Report project as malware</a>
+</div>    </div>
+  </div>
+</div>  <div id="files" data-project-tabs-target="content" role="tabpanel" aria-labelledby="files-tab" tabindex="-1" data-controller="filter-list" style="display: none;">
+    <h2 class="page-title">Release files for motrixsim 0.2.0</h2>
+    <p>
+For a detailed explanation of source distributions (sdists) and built distributions (wheels), please see the <a href="https://packaging.python.org/en/latest/discussions/package-formats/#package-formats" title="External link" target="_blank" rel="noopener">package formats documentation</a>.    </p>
+    <h3>
+      <i class="fa-solid fa-cube" aria-hidden="true"></i>
+Built distributions (wheels)  </h3>
+    <noscript>
+      <p class="initial-toggle-visibility">
+Enable javascript to be able to filter the list of wheel files.      </p>
+    </noscript>
+    <div class="initial-toggle-visibility">
+      <div class="form-group form-group--flex-width form-group--wide">
+        <label class="form-group__label sr-only" for="bdist-filenames-filter">Search wheels</label>
+        <input class="form-group__field" type="text" id="bdist-filenames-filter" name="bdist-filenames-filter" placeholder="Search wheels by file name" autocapitalize="none" autocomplete="" spellcheck="false" data-action="filter-list#filter" data-filter-list-target="filter" data-filtered-source="filename" data-comparison-type="includes" data-auto-update-url-querystring="true">
+      </div>
+    </div>
+  <table class="table table--files">
+    <caption class="sr-only">Table of built distributions (wheels) for motrixsim 0.2.0</caption>
+    <thead>
+      <tr>
+        <th scope="col">File</th>
+        <th scope="col" class="table__filter-col">
+            <label class="sr-only" for="bdist-tags-interpreter">Interpreter</label>
+            <span class="table__filter-control">
+              <i class="fa-solid fa-filter" aria-hidden="true"></i>
+              <select class="table-filter" id="bdist-tags-interpreter" name="bdist-tags-interpreter" data-action="filter-list#filter" data-filter-list-target="filter" data-filtered-source="interpreter" data-comparison-type="exact" data-auto-update-url-querystring="true">
+                
+                  
+                  
+                  
+                  
+              <option value="" selected="">Interpreter</option><option value="cp310">CPython 3.10</option><option value="cp311">CPython 3.11</option><option value="cp312">CPython 3.12</option><option value="cp313">CPython 3.13</option></select>
+            </span>
+        </th>
+        <th scope="col" class="table__filter-col">
+            <label class="sr-only" for="bdist-tags-abi">ABI</label>
+            <span class="table__filter-control">
+              <i class="fa-solid fa-filter" aria-hidden="true"></i>
+              <select class="table-filter" id="bdist-tags-abi" name="bdist-tags-abi" data-action="filter-list#filter" data-filter-list-target="filter" data-filtered-source="abi" data-comparison-type="exact" data-auto-update-url-querystring="true">
+                
+                  
+                  
+                  
+                  
+              <option value="" selected="">ABI</option><option value="cp310">CPython 3.10</option><option value="cp311">CPython 3.11</option><option value="cp312">CPython 3.12</option><option value="cp313">CPython 3.13</option></select>
+            </span>
+        </th>
+        <th scope="col" class="table__filter-col">
+            <label class="sr-only" for="bdist-tags-platform">Platform</label>
+            <span class="table__filter-control">
+              <i class="fa-solid fa-filter" aria-hidden="true"></i>
+              <select class="table-filter" id="bdist-tags-platform" name="bdist-tags-platform" data-action="filter-list#filter" data-filter-list-target="filter" data-filtered-source="platform" data-comparison-type="exact" data-auto-update-url-querystring="true">
+                
+                  
+                  
+              <option value="" selected="">Platform</option><option value="manylinux2014_x86_64">Linux glibc 2.17+ x86-64</option><option value="win_amd64">Windows x86-64</option></select>
+            </span>
+        </th>
+        <th scope="col">
+          <a href="https://pypi.org/project/motrixsim/0.2.0/#files" data-action="filter-list#filterClear" data-filter-list-target="clear" class="hidden button button--link">Reset</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp313-cp313-win_amd64.whl&quot;, &quot;CPython 3.13&quot;, &quot;Windows x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp313&quot;]" data-filtered-target-abi="[&quot;cp313&quot;]" data-filtered-target-platform="[&quot;win_amd64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/fb/95/78d2ef3f84b2ca7453a5d0381dbe1076e87a589071cf81d9d1f2f82e2be3/motrixsim-0.2.0-cp313-cp313-win_amd64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp313-cp313-win_amd64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">28.8 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:27:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:27:19 (+08:00)" aria-label="2025-08-12 17:27:19 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.13
+            </td>
+            <td class="table__filter-col">
+              CPython 3.13
+            </td>
+            <td class="table__filter-col">
+              Windows x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp313-cp313-win_amd64.whl" id="motrixsim-0.2.0-cp313-cp313-win_amd64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl&quot;, &quot;CPython 3.13&quot;, &quot;Linux glibc 2.17+ x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp313&quot;]" data-filtered-target-abi="[&quot;cp313&quot;]" data-filtered-target-platform="[&quot;manylinux_2_17_x86_64&quot;, &quot;manylinux2014_x86_64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/68/df/498872e1ead6d25b2218930c82632aa92cb894c9cd80b5ff57d2f958b300/motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">41.3 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:32:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:53 (+08:00)" aria-label="2025-08-12 17:32:53 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.13
+            </td>
+            <td class="table__filter-col">
+              CPython 3.13
+            </td>
+            <td class="table__filter-col">
+              Linux glibc 2.17+ x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" id="motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp312-cp312-win_amd64.whl&quot;, &quot;CPython 3.12&quot;, &quot;Windows x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp312&quot;]" data-filtered-target-abi="[&quot;cp312&quot;]" data-filtered-target-platform="[&quot;win_amd64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/a7/8b/d756deafc0bedd409916ea55a94e5bdc78ca2d20c809785ff18d3fb52528/motrixsim-0.2.0-cp312-cp312-win_amd64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp312-cp312-win_amd64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">28.8 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:26:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:08 (+08:00)" aria-label="2025-08-12 17:26:08 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.12
+            </td>
+            <td class="table__filter-col">
+              CPython 3.12
+            </td>
+            <td class="table__filter-col">
+              Windows x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp312-cp312-win_amd64.whl" id="motrixsim-0.2.0-cp312-cp312-win_amd64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl&quot;, &quot;CPython 3.12&quot;, &quot;Linux glibc 2.17+ x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp312&quot;]" data-filtered-target-abi="[&quot;cp312&quot;]" data-filtered-target-platform="[&quot;manylinux2014_x86_64&quot;, &quot;manylinux_2_17_x86_64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/df/c3/46c00c2c9155ddb325afeb7999713fe2ad7f096dd936ccf6541981e287c7/motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">41.3 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:32:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:19 (+08:00)" aria-label="2025-08-12 17:32:19 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.12
+            </td>
+            <td class="table__filter-col">
+              CPython 3.12
+            </td>
+            <td class="table__filter-col">
+              Linux glibc 2.17+ x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" id="motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp311-cp311-win_amd64.whl&quot;, &quot;CPython 3.11&quot;, &quot;Windows x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp311&quot;]" data-filtered-target-abi="[&quot;cp311&quot;]" data-filtered-target-platform="[&quot;win_amd64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/c8/7e/333aee2c1d83482c94874e4990d7b3203b5f1d67c987ea2ed30a93bf8f06/motrixsim-0.2.0-cp311-cp311-win_amd64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp311-cp311-win_amd64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">28.8 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:26:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:54 (+08:00)" aria-label="2025-08-12 17:26:54 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.11
+            </td>
+            <td class="table__filter-col">
+              CPython 3.11
+            </td>
+            <td class="table__filter-col">
+              Windows x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp311-cp311-win_amd64.whl" id="motrixsim-0.2.0-cp311-cp311-win_amd64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl&quot;, &quot;CPython 3.11&quot;, &quot;Linux glibc 2.17+ x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp311&quot;]" data-filtered-target-abi="[&quot;cp311&quot;]" data-filtered-target-platform="[&quot;manylinux2014_x86_64&quot;, &quot;manylinux_2_17_x86_64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/09/26/d4409249968ab8012b44afe27eb6d295c8ef0477fa0da4d75bcd80bb9da2/motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">41.3 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:32:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:42 (+08:00)" aria-label="2025-08-12 17:32:42 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.11
+            </td>
+            <td class="table__filter-col">
+              CPython 3.11
+            </td>
+            <td class="table__filter-col">
+              Linux glibc 2.17+ x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" id="motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp310-cp310-win_amd64.whl&quot;, &quot;CPython 3.10&quot;, &quot;Windows x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp310&quot;]" data-filtered-target-abi="[&quot;cp310&quot;]" data-filtered-target-platform="[&quot;win_amd64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/66/69/65c79c6eb4c62356335e65f6cb127ae627d5a5b9d588f4595bf980c61e6f/motrixsim-0.2.0-cp310-cp310-win_amd64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp310-cp310-win_amd64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">28.8 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:26:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:29 (+08:00)" aria-label="2025-08-12 17:26:29 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.10
+            </td>
+            <td class="table__filter-col">
+              CPython 3.10
+            </td>
+            <td class="table__filter-col">
+              Windows x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp310-cp310-win_amd64.whl" id="motrixsim-0.2.0-cp310-cp310-win_amd64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+        <tr class="file-row" data-filter-list-target="item" data-filtered-target-filename="[&quot;motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl&quot;, &quot;CPython 3.10&quot;, &quot;Linux glibc 2.17+ x86-64&quot;]" data-filtered-target-interpreter="[&quot;cp310&quot;]" data-filtered-target-abi="[&quot;cp310&quot;]" data-filtered-target-platform="[&quot;manylinux_2_17_x86_64&quot;, &quot;manylinux2014_x86_64&quot;]" data-filtered-target-other="[]">
+          <td>
+            <span class="file-info__name">
+              <a href="https://files.pythonhosted.org/packages/68/e4/d745887373821f0bf084579f6c2886657898fd1dc57a4f519965430c191d/motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> <span>motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span></a>
+            </span>
+            <span class="file-info__metadata">
+              <span class="file-info__meta">41.3 MB</span>
+              <span class="file-info__meta-divider" aria-hidden="true"></span>
+                <span class="file-info__meta">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <time datetime="2025-08-12T09:33:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:33:04 (+08:00)" aria-label="2025-08-12 17:33:04 (+08:00)">Aug 12, 2025</time>
+                </span>
+            </span>
+          </td>
+            <td class="table__filter-col">
+              CPython 3.10
+            </td>
+            <td class="table__filter-col">
+              CPython 3.10
+            </td>
+            <td class="table__filter-col">
+              Linux glibc 2.17+ x86-64
+            </td>
+          <td>
+            <a href="#motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" id="motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" class="button button--small button--outline file-info__details-button" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Details</a>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+    <p class="initial-toggle-visibility">
+      <span data-filter-list-target="summary">Showing 8 of 8 built distribution (wheel) files.</span>
+    </p>
+    <hr>
+    <div>
+      <p>
+        <strong>Total release size:</strong> 280.4 MB
+      </p>
+    </div>
+</div>
+<div id="motrixsim-0.2.0-cp313-cp313-win_amd64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp313-cp313-win_amd64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp313-cp313-win_amd64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/fb/95/78d2ef3f84b2ca7453a5d0381dbe1076e87a589071cf81d9d1f2f82e2be3/motrixsim-0.2.0-cp313-cp313-win_amd64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp313-cp313-win_amd64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>28.8 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.13</span>
+                <span class="badge badge--neutral badge--no-uppercase">Windows x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">7f318eb76a6b725c8133e91b2217cf5dfe09c5ba61927b10137f55f532a6e667</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">fb9578d2ef3f84b2ca7453a5d0381dbe1076e87a589071cf81d9d1f2f82e2be3</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:27:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:27:19 (+08:00)" aria-label="2025-08-12 17:27:19 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/68/df/498872e1ead6d25b2218930c82632aa92cb894c9cd80b5ff57d2f958b300/motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>41.3 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.13</span>
+                <span class="badge badge--neutral badge--no-uppercase">Linux glibc 2.17+ x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">d2cb556d1300dc8a7ccbf712e34c03b74327d5c498773862c6c616930478679a</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">68df498872e1ead6d25b2218930c82632aa92cb894c9cd80b5ff57d2f958b300</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:32:53+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:53 (+08:00)" aria-label="2025-08-12 17:32:53 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp312-cp312-win_amd64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp312-cp312-win_amd64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp312-cp312-win_amd64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/a7/8b/d756deafc0bedd409916ea55a94e5bdc78ca2d20c809785ff18d3fb52528/motrixsim-0.2.0-cp312-cp312-win_amd64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp312-cp312-win_amd64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>28.8 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.12</span>
+                <span class="badge badge--neutral badge--no-uppercase">Windows x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">7cde3b654e711de456a2e1987752909f5bf5de5751047fb8482fdd9fb4df1d1b</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">a78bd756deafc0bedd409916ea55a94e5bdc78ca2d20c809785ff18d3fb52528</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:26:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:08 (+08:00)" aria-label="2025-08-12 17:26:08 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/df/c3/46c00c2c9155ddb325afeb7999713fe2ad7f096dd936ccf6541981e287c7/motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>41.3 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.12</span>
+                <span class="badge badge--neutral badge--no-uppercase">Linux glibc 2.17+ x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">dd89e1eb79fce3fa1b0101ac6b70a150d21c86e2b76160f479a490db30273e48</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">dfc346c00c2c9155ddb325afeb7999713fe2ad7f096dd936ccf6541981e287c7</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:32:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:19 (+08:00)" aria-label="2025-08-12 17:32:19 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp311-cp311-win_amd64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp311-cp311-win_amd64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp311-cp311-win_amd64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/c8/7e/333aee2c1d83482c94874e4990d7b3203b5f1d67c987ea2ed30a93bf8f06/motrixsim-0.2.0-cp311-cp311-win_amd64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp311-cp311-win_amd64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>28.8 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.11</span>
+                <span class="badge badge--neutral badge--no-uppercase">Windows x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">a4ac00241dadddb9888c90cec35fee1146bf7b21a00335eab15c70e75af62665</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">c87e333aee2c1d83482c94874e4990d7b3203b5f1d67c987ea2ed30a93bf8f06</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:26:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:54 (+08:00)" aria-label="2025-08-12 17:26:54 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/09/26/d4409249968ab8012b44afe27eb6d295c8ef0477fa0da4d75bcd80bb9da2/motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>41.3 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.11</span>
+                <span class="badge badge--neutral badge--no-uppercase">Linux glibc 2.17+ x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">44c9f3553f325e2ed8e5633773cbfd4f6f0533bcc028407d5796af21e998788f</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">0926d4409249968ab8012b44afe27eb6d295c8ef0477fa0da4d75bcd80bb9da2</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:32:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:32:42 (+08:00)" aria-label="2025-08-12 17:32:42 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp310-cp310-win_amd64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp310-cp310-win_amd64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp310-cp310-win_amd64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/66/69/65c79c6eb4c62356335e65f6cb127ae627d5a5b9d588f4595bf980c61e6f/motrixsim-0.2.0-cp310-cp310-win_amd64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp310-cp310-win_amd64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>28.8 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.10</span>
+                <span class="badge badge--neutral badge--no-uppercase">Windows x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">17e170c687d9970a73cb51da5cd76dc5f22b398408f443f121d7b2806d6cf8cf</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">666965c79c6eb4c62356335e65f6cb127ae627d5a5b9d588f4595bf980c61e6f</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:26:29+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:29 (+08:00)" aria-label="2025-08-12 17:26:29 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" data-project-tabs-target="content" role="tabpanel" aria-labelledby="motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title">
+    <a href="#files" data-project-tabs-target="tab" data-action="project-tabs#onTabClick">Release files</a>
+    / motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  </h2>
+  <table class="table table--information">
+    <tbody>
+      <tr>
+        <th scope="row">Download URL</th>
+        <td class="file-download">
+          <a href="https://files.pythonhosted.org/packages/68/e4/d745887373821f0bf084579f6c2886657898fd1dc57a4f519965430c191d/motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>motrixsim-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Size</th>
+        <td>41.3 MB</td>
+      </tr>
+        <tr>
+          <th scope="row">Tags</th>
+          <td class="file-tags">
+                <span class="badge badge--neutral badge--no-uppercase">CPython 3.10</span>
+                <span class="badge badge--neutral badge--no-uppercase">Linux glibc 2.17+ x86-64</span>
+          </td>
+        </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+SHA-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">bf85ee0e35f6292a22fbb3363747708c2d8e226bb54750ba498bd7c4ee330317</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr data-controller="clipboard">
+        <th scope="row">
+BLAKE2b-256 checksum          <br>
+          <a href="https://pip.pypa.io/en/stable/topics/secure-installs/#hash-checking-mode" title="External link" target="_blank" rel="noopener">How to use checksums</a>
+        </th>
+        <td>
+          <code class="code-block code-block--with-copy">
+            <span data-clipboard-target="source">68e4d745887373821f0bf084579f6c2886657898fd1dc57a4f519965430c191d</span>
+            <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-action="clipboard#copy" data-clipboard-target="tooltip" data-clipboard-tooltip-value="Copy to clipboard">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+            </button>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Upload date</th>
+        <td><time datetime="2025-08-12T09:33:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:33:04 (+08:00)" aria-label="2025-08-12 17:33:04 (+08:00)">Aug 12, 2025</time></td>
+      </tr>
+      <tr>
+        <th scope="row">
+Uploaded using Trusted Publishing?          <br>
+          <a href="https://docs.pypi.org/trusted-publishers/">What is trusted publishing?</a>
+        </th>
+        <td>
+No        </td>
+      </tr>
+        <tr>
+          <th scope="row">Uploaded via</th>
+          <td>
+            <code class="code-block code-block--tight">pdm/2.25.2 CPython/3.10.12 Linux/5.4.0-214-generic</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div><div id="history" data-project-tabs-target="content" role="tabpanel" aria-labelledby="history-tab" tabindex="-1" style="display: none;">
+  <h2 class="page-title split-layout">
+    <span>Release history</span>
+    <span class="reset-text margin-top">
+      <a href="/help/#project-release-notifications">Release notifications</a> |
+      <a href="/rss/project/motrixsim/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+    </span>
+  </h2>
+  <div class="release-timeline">
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.10.1/">0.10.1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-09-18T16:25:05+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-09-19 00:25:05 (+08:00)" aria-label="2026-09-19 00:25:05 (+08:00)">Sep 19, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.10.1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.10.0/">0.10.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-08-14T10:55:24+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-08-14 18:55:24 (+08:00)" aria-label="2026-08-14 18:55:24 (+08:00)">Aug 14, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.10.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.9.0/">0.9.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-07-08T10:24:03+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-07-08 18:24:03 (+08:00)" aria-label="2026-07-08 18:24:03 (+08:00)">Jul 8, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.9.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.8.2/">0.8.2</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-06-08T14:32:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-06-08 22:32:41 (+08:00)" aria-label="2026-06-08 22:32:41 (+08:00)">Jun 8, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.8.2/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.8.1/">0.8.1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-06-02T10:46:01+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-06-02 18:46:01 (+08:00)" aria-label="2026-06-02 18:46:01 (+08:00)">Jun 2, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.8.1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.8.0/">0.8.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-05-22T09:35:47+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-05-22 17:35:47 (+08:00)" aria-label="2026-05-22 17:35:47 (+08:00)">May 22, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.8.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 1 release file</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.7.0/">0.7.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-04-01T08:20:10+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-04-01 16:20:10 (+08:00)" aria-label="2026-04-01 16:20:10 (+08:00)">Apr 1, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.7.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 12 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.7.0b0/">0.7.0b0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-03-27T08:11:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-03-27 16:11:04 (+08:00)" aria-label="2026-03-27 16:11:04 (+08:00)">Mar 27, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.7.0b0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 12 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.6.1/">0.6.1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-03-11T09:35:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-03-11 17:35:00 (+08:00)" aria-label="2026-03-11 17:35:00 (+08:00)">Mar 11, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.6.1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 12 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.6.0/">0.6.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-03-05T12:19:06+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-03-05 20:19:06 (+08:00)" aria-label="2026-03-05 20:19:06 (+08:00)">Mar 5, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.6.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 12 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.6.0b1/">0.6.0b1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-02-10T07:15:54+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-02-10 15:15:54 (+08:00)" aria-label="2026-02-10 15:15:54 (+08:00)">Feb 10, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.6.0b1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.6.0b0/">0.6.0b0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-01-15T06:35:59+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-01-15 14:35:59 (+08:00)" aria-label="2026-01-15 14:35:59 (+08:00)">Jan 15, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.6.0b0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 12 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.5.0/">0.5.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2026-01-08T07:39:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2026-01-08 15:39:04 (+08:00)" aria-label="2026-01-08 15:39:04 (+08:00)">Jan 8, 2026</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.5.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.5.0b2/">0.5.0b2</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-12-30T09:39:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-12-30 17:39:23 (+08:00)" aria-label="2025-12-30 17:39:23 (+08:00)">Dec 30, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.5.0b2/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.5.0b1/">0.5.0b1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-12-23T10:57:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-12-23 18:57:58 (+08:00)" aria-label="2025-12-23 18:57:58 (+08:00)">Dec 23, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.5.0b1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.4.0/">0.4.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-11-17T08:02:36+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-11-17 16:02:36 (+08:00)" aria-label="2025-11-17 16:02:36 (+08:00)">Nov 17, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.4.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.3.1/">0.3.1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-09-24T08:52:12+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-09-24 16:52:12 (+08:00)" aria-label="2025-09-24 16:52:12 (+08:00)">Sep 24, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.3.1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.3.0/">0.3.0</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-09-23T05:20:40+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-09-23 13:20:40 (+08:00)" aria-label="2025-09-23 13:20:40 (+08:00)">Sep 23, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.3.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.2.2/">0.2.2</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-08-18T13:17:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-18 21:17:48 (+08:00)" aria-label="2025-08-18 21:17:48 (+08:00)">Aug 18, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.2.2/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.2.1/">0.2.1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-08-13T14:58:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-13 22:58:08 (+08:00)" aria-label="2025-08-13 22:58:08 (+08:00)">Aug 13, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.2.1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--current">
+        <div class="release__current-badge">
+            <span class="badge">This release</span>
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.572a5bfb.svg">
+        </div>
+        <div class="release__card">
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.2.0/">0.2.0</a>
+                <span class="badge">This release</span>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-08-12T09:26:08+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-08-12 17:26:08 (+08:00)" aria-label="2025-08-12 17:26:08 (+08:00)">Aug 12, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.2.0/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.1.0b2/">0.1.0b2</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-07-14T10:07:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-07-14 18:07:02 (+08:00)" aria-label="2025-07-14 18:07:02 (+08:00)">Jul 14, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.1.0b2/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="release release--pre-release">
+        <div class="release__current-badge">
+        </div>
+        <div class="release__graphic">
+            <div class="release__line"></div>
+            <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.2351a86c.svg">
+        </div>
+        <div class="release__card">
+            <div class="release__card-header">
+              <a href="/help/#pre-release-versioning"><i class="fa fa-flask" aria-hidden="true"></i> <span>Pre-release</span></a>
+            </div>
+          <div class="release__card-body">
+            <p class="release__version">
+              <a href="/project/motrixsim/0.1.0b1/">0.1.0b1</a>
+            </p>
+            <p class="release__meta">
+              <span class="release__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> <time datetime="2025-07-11T15:19:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false" title="2025-07-11 23:19:00 (+08:00)" aria-label="2025-07-11 23:19:00 (+08:00)">Jul 11, 2025</time></span>
+                <span class="release__meta-divider" aria-hidden="true"></span>
+                <a href="/project/motrixsim/0.1.0b1/#files"><i class="fa-regular fa-circle-down" aria-hidden="true"></i> 8 release files</a>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__left">
+      <a class="footer__logo" href="/">
+        <img src="/static/images/white-cube.2351a86c.svg" alt="" class="-js-white-cube">
+        <span>PyPI</span>
+      </a>
+      <p class="footer__tagline">Developed and maintained by the <a href="https://www.python.org/psf/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a> and Python community, for the Python community.</p>
+        <p class="footer__status">
+          <span class="footer__status-dot" aria-hidden="true"></span>
+          <a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">Status: <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">All Systems Operational</span></a>
+        </p>
+      <div class="footer__donate">
+        <a class="button button--small" href="https://donate.pypi.org">Donate today!</a>
+      </div>
+    </div>
+    <div class="footer__right">
+      <div class="footer__menu">
+        <h2>Help</h2>
+        <nav aria-label="Help navigation">
+          <ul>
+            <li>
+              <a href="https://packaging.python.org/tutorials/installing-packages/" title="External link" target="_blank" rel="noopener">Installing packages</a>
+            </li>
+            <li>
+              <a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a>
+            </li>
+            <li>
+              <a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a>
+            </li>
+            <li>
+              <a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Project name retention</a>
+            </li>
+            <li>
+              <a href="/help/">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__menu">
+        <h2>About PyPI</h2>
+        <nav aria-label="About PyPI navigation">
+          <ul>
+            <li>
+              <a href="https://blog.pypi.org" title="External link" target="_blank" rel="noopener">PyPI Blog</a>
+            </li>
+            <li>
+              <a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a>
+            </li>
+            <li>
+              <a href="/stats/">Statistics</a>
+            </li>
+            <li>
+              <a href="/trademarks/">Logos &amp; trademarks</a>
+            </li>
+            <li>
+              <a href="/sponsors/">Our sponsors</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__menu">
+        <h2>Contributing to PyPI</h2>
+        <nav aria-label="How to contribute navigation">
+          <ul>
+            <li>
+              <a href="/help/#feedback">Bugs and feedback</a>
+            </li>
+            <li>
+              <a href="https://github.com/pypi/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a>
+            </li>
+            <li>
+              <a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a>
+            </li>
+            <li>
+              <a href="/sponsors/">Sponsor PyPI</a>
+            </li>
+            <li>
+              <a href="https://github.com/pypi/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__menu">
+        <h2>Using PyPI</h2>
+        <nav aria-label="Using PyPI navigation">
+          <ul>
+            <li>
+              <a href="https://policies.python.org/pypi.org/Terms-of-Service/" title="External link" target="_blank" rel="noopener">Terms of Service</a>
+            </li>
+            <li>
+              <a href="/security/">Report security issue</a>
+            </li>
+            <li>
+              <a href="https://policies.python.org/python.org/code-of-conduct/" title="External link" target="_blank" rel="noopener">Code of conduct</a>
+            </li>
+            <li>
+              <a href="https://policies.python.org/pypi.org/Privacy-Notice/" title="External link" target="_blank" rel="noopener">Privacy Notice</a>
+            </li>
+            <li>
+              <a href="https://policies.python.org/pypi.org/Acceptable-Use-Policy/" title="External link" target="_blank" rel="noopener">Acceptable Use Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="footer__switch-viewport hide-on-desktop">
+    <button type="button" class="button button--small button--switch-to-desktop" data-viewport-toggle-target="switchToDesktop" data-action="viewport-toggle#switchToDesktop">Switch to desktop version</button>
+  </div>
+</footer>
+<div class="sponsors">
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.anthropic.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/0e16ff2846ab7bc04f1e52d760b072c987232f52/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f416e7468726f7069635f6c6f676f5f2d5f536c6174652e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Anthropic, PBC</span>
+        <span class="sponsors__description">Visionary sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.techatbloomberg.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/2056e7cc45e271b6b509980e9ff24b8b6346f2f4/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f626c6f6f6d626572672e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Bloomberg</span>
+        <span class="sponsors__description">Visionary sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.hudsonrivertrading.com/careers/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/7e24ecafc35532bbd56c7c91521ea6701110c742/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f6872742e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Hudson River Trading</span>
+        <span class="sponsors__description">Visionary sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://about.facebook.com/meta/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/6f7cbf25b7d9ee146661528e012e8fa51d6f3337/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f4d6574615f6c6f636b75705f706f7369746976655f7072696d6172795f5247425f636f70795f68546b493532472e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Meta</span>
+        <span class="sponsors__description">Visionary sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://developer.nvidia.com">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/22baa32a7b36b109ce052634015d878f5d029280/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f6e76696469612e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">NVIDIA</span>
+        <span class="sponsors__description">Visionary sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aka.ms/python">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/34ebcaca9a4316e862f2f7641b12534f0cb81bf1/68747470733a2f2f73332e6475616c737461636b2e75732d656173742d322e616d617a6f6e6177732e636f6d2f707974686f6e646f746f72672d6173736574732f6d656469612f73706f6e736f725f7765625f6c6f676f732f6d6963726f736f66742e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Microsoft</span>
+        <span class="sponsors__description">Sustainability sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://depot.dev">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/237c8773674b9f8beff9f894a07424e3b579cd6a/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6465706f742d636f6c6f722d6c6f676f2d35567a75416e7a6b2e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Depot</span>
+        <span class="sponsors__description">Continuous Integration</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/f0e9bd2edb2aa1c533d61b0d4fda0ee761bef88a/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f6177732d636f6c6f722d6c6f676f2d416c6f43525230612e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">AWS</span>
+        <span class="sponsors__description">Cloud computing and Security Sponsor</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/530379bec76c3440bd94a24092f49e27323ad0d7/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f64617461646f672d636f6c6f722d6c6f676f2d71616563774a67722e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Datadog</span>
+        <span class="sponsors__description">Monitoring</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/9706778018adad6f5bf682f55d7bbc226abe551c/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f666173746c792d636f6c6f722d6c6f676f2d766c6d424c33654c2e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Fastly</span>
+        <span class="sponsors__description">CDN</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://careers.google.com/">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/522342e78db3080c18697369dde99a0ed7925e86/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f676f6f676c652d636f6c6f722d6c6f676f2d32755437496c54702e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Google</span>
+        <span class="sponsors__description">Download Analytics</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://sentry.io/for/python/?utm_source=pypi&amp;utm_medium=paid-community&amp;utm_campaign=python-na-evergreen&amp;utm_content=static-ad-pypi-sponsor-learnmore">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/f2a422796f8e4d51d60d7030b7973aa1651bd096/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f73656e7472792d636f6c6f722d6c6f676f2d346e306a654878502e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">Sentry</span>
+        <span class="sponsors__description">Error logging</span>
+      </a>
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+        <span class="sponsors__image"><img src="https://pypi-camo.freetls.fastly.net/b0ba0741ac65afcb01ebb4bbf0634c54b8a15827/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f707970692d6173736574732f73706f6e736f726c6f676f732f737461747573706167652d636f6c6f722d6c6f676f2d423232436b746e6b2e706e67" alt="" loading="lazy"></span>
+        <span class="sponsors__name">StatusPage</span>
+        <span class="sponsors__description">Status page</span>
+      </a>
+</div><div class="legal-footer">
+  <ul>
+    <li>"PyPI", "Python Package Index", and the blocks logos are registered <a href="/trademarks/">trademarks</a> of the <a href="https://www.python.org/psf-landing" target="_blank" rel="noopener">Python Software Foundation</a>.</li>
+    <li>
+      © 2026 <a href="https://www.python.org/psf-landing/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a>
+    </li>
+    <li>
+      <a href="/sitemap/">Site map</a>
+    </li>
+      <li>
+Deployed from <a href="https://github.com/pypi/warehouse/commit/1e5bf8e79a5d1b8be305681d118d7f22297454e2" title="External link" target="_blank" rel="noopener"><code>1e5bf8e</code></a>      </li>
+  </ul>
+</div>
+
+</body></html>

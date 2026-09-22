@@ -1,0 +1,21 @@
+id: evt-2025-06-11-d-robotics-product_launch-rdk-s100
+date: '2025-06-11'
+date_precision: day
+type: product_launch
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人发布 RDK S100 机器人开发套件并开启预售
+summary:
+  zh: 6 月 11 日，地瓜机器人发布单 SoC 算控一体化机器人开发套件 RDK S100，在单一 SoC 上整合 CPU、BPU 与 MCU，兼顾感知推理与实时运动控制，配套官方适配的 AI 模型、从采集训练到部署的数据闭环方案、硬件加速的 ROS 2 功能包与 200 多个开源算法示例。RDK S100 市场定价 2799 元，当日起开启预售，限时优惠价 2499 元。
+amount:
+  value: 2799
+  currency: CNY
+evidence:
+- url: https://www.qbitai.com/2025/06/292932.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/qbitai-2025-06-11-d-robotics-rdk-s100.html
+corroboration: single
