@@ -1,0 +1,23 @@
+id: evt-2025-08-06-skild-ai-publication-vision-based-locomotion
+date: 2025-08-06
+date_precision: day
+type: publication
+orgs:
+- id: skild-ai
+  role: subject
+title:
+  zh: Skild AI 公开 Skild Brain 的端到端视觉驱动运动控制结果
+summary:
+  zh: 8 月 6 日，Skild AI 在官方博客公开 Skild Brain 低层控制部分的结果。博客写明这是一个完全由在线视觉与本体感知驱动的端到端运动控制模型：从原始图像与关节反馈直接输出低层电机指令，让人形机器人在平地行走、上下楼梯与跨越障碍之间连续切换，不做规划、不建地图、也不在多套行为之间手动切换。博客称模型依据每一步看到的画面即时决策，步态随场景连续变化，高层指令只给一个大致方向，绕障由模型自己解决。
+axes:
+  embodiment_form: [humanoid-biped]
+  model_form: [hierarchical]
+  control_route: [rl]
+  data_modality: [rgb, joint-trajectory]
+evidence:
+- url: https://www.skild.ai/blogs/one-policy-all-scenarios
+  publisher: Skild AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/skild-2025-08-06-skild-ai-locomotion.html
+corroboration: single

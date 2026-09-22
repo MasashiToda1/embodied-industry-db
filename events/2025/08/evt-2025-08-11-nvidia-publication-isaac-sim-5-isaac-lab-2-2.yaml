@@ -1,0 +1,20 @@
+id: evt-2025-08-11-nvidia-publication-isaac-sim-5-isaac-lab-2-2
+date: 2025-08-11
+date_precision: day
+type: publication
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: 英伟达在 SIGGRAPH 把 Isaac Sim 5.0 与 Isaac Lab 2.2 放上 GitHub 正式开放
+summary:
+  zh: 8 月 11 日 SIGGRAPH 2025，英伟达宣布仿真与机器人学习框架 Isaac Sim 5.0 与 Isaac Lab 2.2 正式开放，源码在 GitHub 提供。技术博客写明 Isaac Sim 专有扩展已开源到公开 GitHub 仓库，用户可自行构建与运行 Isaac Sim，Omniverse Kit 的部分组件仍为闭源且暂不接受外部贡献；5.0 新增神经重建与渲染、进阶合成数据生成流水线、新机器人模型，以及基于新的 OmniSensor USD schema 的传感器仿真。Isaac Lab 2.2 新增合成动作生成、Omniverse Fabric 集成与张量化吸盘夹爪，并与 Lightwheel 合作开发开源的策略评测框架。
+axes:
+  sim_stack: [isaac-sim, isaac-lab]
+evidence:
+- url: https://developer.nvidia.com/blog/isaac-sim-and-isaac-lab-are-now-available-for-early-developer-preview/
+  publisher: NVIDIA 技术博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/developer-2025-08-11-nvidia-isaac-sim-5-lab-2.html
+corroboration: single

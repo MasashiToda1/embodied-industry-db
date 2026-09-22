@@ -1,0 +1,22 @@
+id: evt-2025-03-19-generalist-ai-funding-nventures-seed
+date: 2025-03-19
+date_precision: day
+type: funding
+orgs:
+- id: generalist-ai
+  role: subject
+- id: nvidia
+  role: investor
+title:
+  zh: Generalist AI 获英伟达 NVentures 投资，金额未披露
+summary:
+  zh: 3 月 19 日，TechCrunch 报道 Generalist AI 已获得英伟达投资。报道依据是前一日英伟达 GTC 大会上一场面向其风投部门 NVentures 被投企业的圆桌，Generalist AI 的联合创始人兼 CEO 以该身份出席。公司当时仍处于 stealth 状态，创始人对 TechCrunch 称公司使命是让通用机器人成为现实。报道未披露投资金额与轮次规模。
+counterparties:
+- NVentures
+evidence:
+- url: https://techcrunch.com/2025/03/19/a-key-deepmind-robotics-researcher-left-google-and-nvidia-has-already-backed-his-stealth-startup/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/techcrunch-2025-03-19-generalist-ai-nvidia-see.html
+corroboration: single

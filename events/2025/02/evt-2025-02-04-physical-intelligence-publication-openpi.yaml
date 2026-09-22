@@ -1,0 +1,20 @@
+id: evt-2025-02-04-physical-intelligence-publication-openpi
+date: 2025-02-04
+date_precision: day
+type: publication
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: 物理智能开源 π0 代码与权重，发布 openpi 仓库
+summary:
+  zh: 2 月 4 日，物理智能在官方博客宣布把 π0 的代码与权重作为 openpi 仓库开源。博客列出仓库提供四部分内容：运行 π0 预训练基座模型的代码与权重、在 ALOHA 与 DROID 等常见平台上针对若干简单任务微调好的 checkpoint、在多个真实与仿真机器人平台上运行推理的示例代码，以及针对自有任务与平台微调 π0 基座模型的代码。博客写明基座模型在 OXE 与公司 7 个机器人平台的数据上训练，设计用途是微调，对预训练数据中已有的任务也可零样本使用。
+axes:
+  model_form: [end2end-vla]
+evidence:
+- url: https://www.pi.website/blog/openpi
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/02/pi-2025-02-04-physical-intelligence-op.html
+corroboration: single

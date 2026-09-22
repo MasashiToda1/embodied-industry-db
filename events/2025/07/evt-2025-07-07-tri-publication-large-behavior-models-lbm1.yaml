@@ -1,0 +1,28 @@
+id: evt-2025-07-07-tri-publication-large-behavior-models-lbm1
+date: 2025-07-07
+date_precision: day
+type: publication
+orgs:
+- id: tri
+  role: subject
+title:
+  zh: "丰田研究院公开大行为模型评测论文《A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation》"
+summary:
+  zh: "7 月 7 日，丰田研究院（TRI）LBM 团队在 arXiv 公开论文（arXiv:2507.05331），把 Diffusion Policy 范式扩展到多任务机器人操作策略，称之为大行为模型（LBM），并给出一套带统计显著性的评测流程。论文写明预训练数据混合 Ramen 共约 1695 小时演示，其中 TRI 自采约 545 小时、外部整理数据约 1150 小时；真机平台为双臂 Franka FR3 加平行夹爪与 TRI 的 finray 式手指，共九个工位。评测做了 1800 次真机盲测 A/B 与超过 4.7 万次仿真 rollout。结论是多任务预训练让策略更成功、更稳健，学新任务所需数据更少，且性能随预训练规模与多样性增加而稳定提升。TRI 官网 7 月 11 日的新闻条目写明，在需要对多种环境因素稳健的场景里，新任务可用少 3 至 5 倍的数据学会。"
+axes:
+  embodiment_form: [dual-arm-stationary]
+  model_form: [il]
+  data_acquisition: [teleop, real-robot, sim-generated]
+  data_modality: [rgb, joint-trajectory, language-annotated]
+evidence:
+- url: https://arxiv.org/abs/2507.05331
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/arxiv-2025-07-07-tri-lbm1-arxiv.html
+- url: https://www.tri.global/news/tri-pretrained-large-behavior-models-accelerate-robot-learning
+  publisher: 丰田研究院官网新闻
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/tri-2025-07-11-tri-lbm1-news.html
+corroboration: single

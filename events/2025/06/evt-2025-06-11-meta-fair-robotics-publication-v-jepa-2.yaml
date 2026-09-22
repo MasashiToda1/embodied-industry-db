@@ -1,0 +1,30 @@
+id: evt-2025-06-11-meta-fair-robotics-publication-v-jepa-2
+date: 2025-06-11
+date_precision: day
+type: publication
+orgs:
+- id: meta-fair-robotics
+  role: subject
+title:
+  zh: Meta 发布世界模型 V-JEPA 2 与动作条件版本 V-JEPA 2-AC，开源代码与权重
+summary:
+  zh: 6 月 11 日，Meta 发布 V-JEPA 2，官方博客称这是首个在视频上训练、能做零样本规划与机器人控制的世界模型，参数量 12 亿，同时发布三个用于评测模型物理世界推理能力的新基准。论文（arXiv:2506.09985）写明预训练数据为超过 100 万小时的互联网视频与图像，在 Something-Something v2 动作理解上 top-1 准确率 77.3，在 Epic-Kitchens-100 人类动作预测上 recall-at-5 为 39.7。机器人部分是后训练出的隐动作条件世界模型 V-JEPA 2-AC，只用 DROID 数据集中不到 62 小时的无标注机器人视频，零样本部署到两个不同实验室的 Franka 机械臂上，通过图像目标规划完成够取、抓取与拾放，过程中没有采集这些环境的数据，也没有任务特定训练或奖励。代码与 checkpoint 开源在 facebookresearch/vjepa2。
+axes:
+  model_form: [world-model]
+  embodiment_form: [arm]
+  control_route: [mpc]
+  data_acquisition: [human-video, real-robot]
+  data_modality: [rgb]
+  data_sourcing: [open-dataset]
+evidence:
+- url: https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/
+  publisher: Meta AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/ai-2025-06-11-meta-fair-robotics-vjepa.html
+- url: https://arxiv.org/abs/2506.09985
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-11-meta-fair-robotics-vjepa.html
+corroboration: single

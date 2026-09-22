@@ -1,0 +1,24 @@
+id: evt-2025-03-18-nvidia-partnership-newton-physics-engine
+date: 2025-03-18
+date_precision: day
+type: partnership
+orgs:
+- id: nvidia
+  role: subject
+- id: gdm-robotics
+  role: counterparty
+title:
+  zh: 英伟达与 Google DeepMind、Disney Research 合作开发开源物理引擎 Newton
+summary:
+  zh: 3 月 18 日 GTC，英伟达宣布与 Google DeepMind 和 Disney Research 合作开发 Newton，一个面向机器人开发的开源物理引擎。新闻稿写明 Newton 基于 NVIDIA Warp 框架构建，针对机器人学习做优化，兼容 Google DeepMind 的 MuJoCo 与 NVIDIA Isaac Lab 等仿真框架，三方还计划让 Newton 能使用 Disney 的物理引擎。新闻稿另写明 Google DeepMind 与英伟达正在合作开发 MuJoCo-Warp，将通过 Google DeepMind 的 MJX 开源库与 Newton 提供给开发者；Disney Research 将是首批使用 Newton 的机构之一，用于其机器人角色平台。新闻稿写明 Newton 物理引擎将在 2025 年内提供。
+counterparties:
+- Disney Research
+axes:
+  sim_stack: [isaac-lab, mujoco]
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks
+  publisher: NVIDIA 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/nvidianews-2025-03-18-nvidia-groot-n1.html
+corroboration: single

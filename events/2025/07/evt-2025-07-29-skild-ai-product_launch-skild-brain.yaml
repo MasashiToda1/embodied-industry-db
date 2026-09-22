@@ -1,0 +1,23 @@
+id: evt-2025-07-29-skild-ai-product_launch-skild-brain
+date: 2025-07-29
+date_precision: day
+type: product_launch
+orgs:
+- id: skild-ai
+  role: subject
+title:
+  zh: Skild AI 公开机器人基础模型 Skild Brain 的首批结果
+summary:
+  zh: 7 月 29 日，Skild AI 在官方博客首次公开其机器人基础模型 Skild Brain 的技术路线与结果。博客写明模型定位是跨形态（omni-bodied）的单一大脑，可用于四足、人形、桌面机械臂与移动操作机器人，训练数据跨多种形态并包含人类数据。架构为分层两级：低频的高层操作与导航动作策略输出指令，交给高频的低层动作策略转成关节角与电机力矩；模型在多样数据、任务与硬件上训练后，再按部署需求做微调与蒸馏。
+axes:
+  embodiment_form: [humanoid-biped, quadruped, mobile-manipulator, arm]
+  model_form: [hierarchical]
+  hardware_strategy: [software-only]
+  data_acquisition: [real-robot, sim-generated, human-video]
+evidence:
+- url: https://www.skild.ai/blogs/building-the-general-purpose-robotic-brain
+  publisher: Skild AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/skild-2025-07-29-skild-ai-skild-brain.html
+corroboration: single

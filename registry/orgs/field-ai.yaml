@@ -5,6 +5,7 @@ names:
 status: active
 layers:
 - foundation
+founded: 2023
 hq:
   country: US
   city: Irvine
@@ -17,3 +18,7 @@ sources:
   tier: official
   retrieved: '2026-09-22'
   note: 官网新闻稿，发稿地 Irvine, CA，Field Foundation Models 自述
+- url: https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains/
+  tier: media
+  retrieved: '2026-09-22'
+  note: 「Since launching the company in 2023」，成立年份

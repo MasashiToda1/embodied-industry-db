@@ -1,0 +1,25 @@
+id: evt-2025-03-13-skild-ai-partnership-hpe-stn-nvidia
+date: 2025-03-13
+date_precision: day
+type: partnership
+orgs:
+- id: skild-ai
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: Skild AI 改用 STN 基于 HPE 与英伟达搭的私有 AI 服务训练 Skild Brain
+summary:
+  zh: 3 月 13 日，HPE 发布新闻稿：Skild AI 从此前只用公有云，转为采用 HPE 合作伙伴 STN 提供的 GPU One 私有 AI 即服务，底层为 HPE AI 基础设施与英伟达加速计算，用于 Skild Brain 的训练与推理。新闻稿写明配置为 HPE Cray XD670 配 NVIDIA HGX H200 做大语言模型、自然语言处理与多模态训练，HPE ProLiant Compute DL380a Gen12 服务器配 8 张 NVIDIA L40S 做模型可视化。新闻稿还写明 Skild AI 使用 NVIDIA Cosmos 世界基础模型与 NVIDIA Isaac Lab 在仿真中对 Skild Brain 做后训练。
+counterparties:
+- Hewlett Packard Enterprise
+- STN
+axes:
+  sim_stack: [isaac-lab]
+evidence:
+- url: https://www.hpe.com/us/en/newsroom/press-release/2025/03/skild-ai-accelerates-development-of-human-like-robot-brain-with-ai-solutions-from-hewlett-packard-enterprise.html
+  publisher: HPE 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/hpe-2025-03-13-skild-ai-hpe-stn-nvidia.html
+corroboration: single

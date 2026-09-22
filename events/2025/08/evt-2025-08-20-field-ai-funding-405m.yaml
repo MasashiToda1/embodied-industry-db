@@ -1,0 +1,40 @@
+id: evt-2025-08-20-field-ai-funding-405m
+date: 2025-08-20
+date_precision: day
+type: funding
+orgs:
+- id: field-ai
+  role: subject
+- id: nvidia
+  role: investor
+title:
+  zh: Field AI 宣布两轮累计融资 4.05 亿美元
+summary:
+  zh: 8 月 20 日，Field AI 发新闻稿宣布在连续两轮融资中累计募得 4.05 亿美元。新闻稿列出的投资方包括 Bezos Expeditions、BHP Ventures、Canaan Partners、Emerson Collective、Intel Capital、Khosla Ventures、NVentures（英伟达的风投部门）、Prysm 与 Temasek，此前投资方还有 Gates Frontier 与 Samsung。新闻稿称最新一轮超额认购，原因是客户采用速度快并有多个扩单合同，产品已在数百个复杂的真实工业环境中完成测试与部署。TechCrunch 同日报道写明最新一轮为 3.14 亿美元，由 Bezos Expeditions、Prysm 与 Temasek 联合领投。公司核心产品 Field Foundation Models 定位为面向具身智能的物理优先基础模型，用于在没有先验地图、GPS 或预设路径的动态非结构化环境中运行。
+counterparties:
+- Bezos Expeditions
+- BHP Ventures
+- Canaan Partners
+- Emerson Collective
+- Intel Capital
+- Khosla Ventures
+- Prysm
+- Temasek
+amount:
+  value: 405000000
+  currency: USD
+axes:
+  hardware_strategy: [software-only]
+  target_scene: [industrial-manufacturing, inspection-hazardous]
+evidence:
+- url: https://www.fieldai.com/news/fieldai-announces-over-400m-in-funds-raised-to-advance-embodied-ai-at-scale
+  publisher: FieldAI 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/fieldai-2025-08-20-field-ai-funding-405m.html
+- url: https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains/
+  publisher: TechCrunch
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/techcrunch-2025-08-20-field-ai-funding-405m-tc.html
+corroboration: multi

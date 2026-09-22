@@ -1,0 +1,22 @@
+id: evt-2025-01-06-nvidia-publication-cosmos-world-foundation-models
+date: 2025-01-06
+date_precision: day
+type: publication
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: 英伟达在 CES 发布 Cosmos 世界基础模型平台，首批模型按开放模型许可发布
+summary:
+  zh: 1 月 6 日 CES，英伟达发布 NVIDIA Cosmos 平台，包含生成式世界基础模型（WFM）、视觉 tokenizer、护栏与加速视频处理流水线，面向自动驾驶与机器人这类物理 AI 系统的开发。新闻稿写明首批 Cosmos 世界基础模型即日起按 NVIDIA 开放模型许可在 Hugging Face 与 NVIDIA NGC 目录提供下载，开发者可在 NVIDIA API 目录先行试用，许可允许商业使用。模型用于基于物理的仿真与合成数据生成，可与 Omniverse 的 3D 场景配合生成可控的照片级合成视频。新闻稿列出 1X、Agile Robots、Agility、Figure AI、Foretellix、Uber、Waabi 与小鹏机器人为首批采用方。
+axes:
+  model_form: [world-model]
+  data_acquisition: [sim-generated]
+  data_modality: [rgb]
+evidence:
+- url: https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-world-foundation-model-platform-to-accelerate-physical-ai-development
+  publisher: NVIDIA 官网新闻稿
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/nvidianews-2025-01-06-nvidia-cosmos-wfm.html
+corroboration: single

@@ -1,0 +1,23 @@
+id: evt-2025-06-17-generalist-ai-publication-research-preview
+date: 2025-06-17
+date_precision: day
+type: publication
+orgs:
+- id: generalist-ai
+  role: subject
+title:
+  zh: Generalist AI 发布首份研究预览，公开端到端灵巧操作结果
+summary:
+  zh: 6 月 17 日，Generalist AI 在官网发布 Research Preview，首次公开其模型能力演示。博客写明视频中的机器人全自主运行，由一个端到端深度神经网络实时控制，从像素与其他传感器数据直接映射到 100Hz 的动作。展示的四项任务为：从杂物中挑拣并分类紧固件、折箱并把自行车链锁装进去再合盖、把螺丝收回玻璃罐、拆解乐高并分色投放，分别用于测试精细运动控制、可变形与铰接物体的长流程处理、工具使用与双手协调、以及高速再抓取。博客写明跨具身模型可在 7 自由度的 Flexiv Rizon 4 与 6 自由度的 UR5 两种机械臂之间迁移，其中紧固件任务没有用过 UR5 的数据，也没有该评测环境内的任务数据。
+axes:
+  embodiment_form: [dual-arm-stationary, arm]
+  model_form: [end2end-vla]
+  hardware_strategy: [adapt-others]
+  data_modality: [rgb, joint-trajectory]
+evidence:
+- url: https://generalistai.com/blog/jun-17-2025-research-preview
+  publisher: Generalist AI 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/generalistai-2025-06-17-generalist-ai-research-p.html
+corroboration: single

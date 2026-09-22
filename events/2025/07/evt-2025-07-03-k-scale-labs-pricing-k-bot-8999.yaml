@@ -1,0 +1,25 @@
+id: evt-2025-07-03-k-scale-labs-pricing-k-bot-8999
+date: 2025-07-03
+date_precision: day
+type: pricing
+orgs:
+- id: k-scale-labs
+  role: subject
+title:
+  zh: K-Scale Labs 公开人形机器人 K-Bot 售价 8,999 美元并开卖
+summary:
+  zh: 7 月 3 日，K-Scale Labs 在 Hacker News 发 Launch HN 帖，公开在售人形机器人 K-Bot 的价格为 8,999 美元。帖子写明选择此时开卖而不是继续研发，是为了在做最终 DfM 之前先和供应商谈量价，例如执行器与末端执行器能拿到比独立开发者低量订单更好的批量价格。帖子另写明公司提供一个 Full Autonomy 选项：硬件与基础款相同，但承诺免费提供硬件与软件升级，直到机器人做到完全自主。公司创立时的目标是用 COTS 商用现成元件把整机成本做到约 1 万美元，对标当时最便宜也要 5 万美元以上的人形机器人。
+amount:
+  value: 8999
+  currency: USD
+axes:
+  embodiment_form: [humanoid-biped]
+  delivery_model: [hardware-sale]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://news.ycombinator.com/item?id=44456904
+  publisher: Hacker News · K-Scale Labs Launch HN 帖
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/news-2025-07-03-k-scale-labs-launch-hn.html
+corroboration: single

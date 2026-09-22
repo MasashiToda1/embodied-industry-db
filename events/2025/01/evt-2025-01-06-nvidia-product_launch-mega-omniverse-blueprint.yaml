@@ -1,0 +1,24 @@
+id: evt-2025-01-06-nvidia-product_launch-mega-omniverse-blueprint
+date: 2025-01-06
+date_precision: day
+type: product_launch
+orgs:
+- id: nvidia
+  role: subject
+title:
+  zh: 英伟达在 CES 发布 Mega 蓝图，用于在数字孪生里开发与测试机器人集群
+summary:
+  zh: 1 月 6 日 CES，英伟达发布 Omniverse 蓝图 Mega，用于在工厂或仓库的数字孪生里大规模开发、测试与优化机器人集群，再部署到真实场地。官方博客写明 Mega 由 Omniverse Sensor RTX API 驱动，给出的是一套结合英伟达加速计算、AI、NVIDIA Isaac 与 NVIDIA Omniverse 的参考架构，可测试驱动机器人的 AI、视频分析 AI 智能体与设备。博客写明供应链方案商 KION Group 与 Accenture 是首批采用方，KION 用它优化零售、快消与包裹服务等场景的仓库运营，可在不中断运营的前提下测试仓库布局、机器人集群行为以及工人与智能车辆的数量配置。
+counterparties:
+- KION Group
+- Accenture
+axes:
+  target_scene: [logistics-warehouse, industrial-manufacturing]
+  sim_stack: [isaac-sim]
+evidence:
+- url: https://blogs.nvidia.com/blog/mega-omniverse-blueprint/
+  publisher: NVIDIA 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/blogs-2025-01-06-nvidia-mega-blueprint.html
+corroboration: single

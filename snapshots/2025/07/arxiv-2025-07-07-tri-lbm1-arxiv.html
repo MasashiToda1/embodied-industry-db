@@ -1,0 +1,622 @@
+<!-- 抓取于 2026-09-22T20:56:52.992369+08:00 | 原始链接 https://arxiv.org/abs/2507.05331 | 公众号 未知 | 标题 tri-lbm1-arxiv | sha256:db3ad9c38b5e -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script>document.documentElement.classList.add('js');</script>  <title>[2507.05331] A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/browse/0.3.4/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/browse/0.3.4/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/browse/0.3.4/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/static/browse/0.3.4/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="/static/browse/0.3.4/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/browse/0.3.4/css/arXiv.css?v=20260318" />
+  <link rel="stylesheet" type="text/css" media="print" href="/static/browse/0.3.4/css/arXiv-print.css?v=20200611" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/browse/0.3.4/css/browse_search.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/base/1.0.1/css/arxiv-header-footer.css?v=20260626" />
+  <script language="javascript" src="/static/browse/0.3.4/js/accordion.js" ></script>
+  <script language="javascript" src="/static/browse/0.3.4/js/optin-modal.js?v=20250819"></script>
+  
+  <link rel="canonical" href="https://arxiv.org/abs/2507.05331"/>
+  <meta name="description" content="Abstract page for arXiv paper 2507.05331: A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation"><meta property="og:type" content="website" />
+<meta property="og:site_name" content="arXiv.org" />
+<meta property="og:title" content="A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation" />
+<meta property="og:url" content="https://arxiv.org/abs/2507.05331v1" />
+<meta property="og:image" content="/static/browse/0.3.4/images/arxiv-logo-fb.png" />
+<meta property="og:image:secure_url" content="/static/browse/0.3.4/images/arxiv-logo-fb.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="700" />
+<meta property="og:image:alt" content="arXiv logo"/>
+<meta property="og:description" content="Robot manipulation has seen tremendous progress in recent years, with imitation learning policies enabling successful performance of dexterous and hard-to-model tasks. Concurrently, scaling data and model size has led to the development of capable language and vision foundation models, motivating large-scale efforts to create general-purpose robot foundation models. While these models have garnered significant enthusiasm and investment, meaningful evaluation of real-world performance remains a challenge, limiting both the pace of development and inhibiting a nuanced understanding of current capabilities. In this paper, we rigorously evaluate multitask robot manipulation policies, referred to as Large Behavior Models (LBMs), by extending the Diffusion Policy paradigm across a corpus of simulated and real-world robot data. We propose and validate an evaluation pipeline to rigorously analyze the capabilities of these models with statistical confidence. We compare against single-task baselines through blind, randomized trials in a controlled setting, using both simulation and real-world experiments. We find that multi-task pretraining makes the policies more successful and robust, and enables teaching complex new tasks more quickly, using a fraction of the data when compared to single-task baselines. Moreover, performance predictably increases as pretraining scale and diversity grows. Project page: https://toyotaresearchinstitute.github.io/lbm1/"/>
+<meta name="twitter:site" content="@arxiv"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Careful Examination of Large Behavior Models for Multitask..."/>
+<meta name="twitter:description" content="Robot manipulation has seen tremendous progress in recent years, with imitation learning policies enabling successful performance of dexterous and hard-to-model tasks. Concurrently, scaling data..."/>
+<meta name="twitter:image" content="https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"/>
+<meta name="twitter:image:alt" content="arXiv logo"/>
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/browse/0.3.4/css/tooltip.css"/><link rel="stylesheet" media="screen" type="text/css" href="https://static.arxiv.org/js/bibex-dev/bibex.css?20200709"/>  <script src="/static/browse/0.3.4/js/mathjaxToggle.min.js" type="text/javascript"></script>  <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="//cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js" type="text/javascript"></script>
+  <script src="//cdn.jsdelivr.net/npm/dompurify@2.3.5/dist/purify.min.js"></script>
+  <script src="/static/browse/0.3.4/js/toggle-labs.js?20241022" type="text/javascript"></script>
+  <script src="/static/browse/0.3.4/js/cite.js" type="text/javascript"></script><meta name="citation_title" content="A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation" /><meta name="citation_author" content="TRI LBM Team" /><meta name="citation_author" content="Barreiros, Jose" /><meta name="citation_author" content="Beaulieu, Andrew" /><meta name="citation_author" content="Bhat, Aditya" /><meta name="citation_author" content="Cory, Rick" /><meta name="citation_author" content="Cousineau, Eric" /><meta name="citation_author" content="Dai, Hongkai" /><meta name="citation_author" content="Fang, Ching-Hsin" /><meta name="citation_author" content="Hashimoto, Kunimatsu" /><meta name="citation_author" content="Irshad, Muhammad Zubair" /><meta name="citation_author" content="Itkina, Masha" /><meta name="citation_author" content="Kuppuswamy, Naveen" /><meta name="citation_author" content="Lee, Kuan-Hui" /><meta name="citation_author" content="Liu, Katherine" /><meta name="citation_author" content="McConachie, Dale" /><meta name="citation_author" content="McMahon, Ian" /><meta name="citation_author" content="Nishimura, Haruki" /><meta name="citation_author" content="Phillips-Grafflin, Calder" /><meta name="citation_author" content="Richter, Charles" /><meta name="citation_author" content="Shah, Paarth" /><meta name="citation_author" content="Srinivasan, Krishnan" /><meta name="citation_author" content="Wulfe, Blake" /><meta name="citation_author" content="Xu, Chen" /><meta name="citation_author" content="Zhang, Mengchao" /><meta name="citation_author" content="Alspach, Alex" /><meta name="citation_author" content="Angeles, Maya" /><meta name="citation_author" content="Arora, Kushal" /><meta name="citation_author" content="Guizilini, Vitor Campagnolo" /><meta name="citation_author" content="Castro, Alejandro" /><meta name="citation_author" content="Chen, Dian" /><meta name="citation_author" content="Chu, Ting-Sheng" /><meta name="citation_author" content="Creasey, Sam" /><meta name="citation_author" content="Curtis, Sean" /><meta name="citation_author" content="Denitto, Richard" /><meta name="citation_author" content="Dixon, Emma" /><meta name="citation_author" content="Dusel, Eric" /><meta name="citation_author" content="Ferreira, Matthew" /><meta name="citation_author" content="Goncalves, Aimee" /><meta name="citation_author" content="Gould, Grant" /><meta name="citation_author" content="Guoy, Damrong" /><meta name="citation_author" content="Gupta, Swati" /><meta name="citation_author" content="Han, Xuchen" /><meta name="citation_author" content="Hatch, Kyle" /><meta name="citation_author" content="Hathaway, Brendan" /><meta name="citation_author" content="Henry, Allison" /><meta name="citation_author" content="Hochsztein, Hillel" /><meta name="citation_author" content="Horgan, Phoebe" /><meta name="citation_author" content="Iwase, Shun" /><meta name="citation_author" content="Jackson, Donovon" /><meta name="citation_author" content="Karamcheti, Siddharth" /><meta name="citation_author" content="Keh, Sedrick" /><meta name="citation_author" content="Masterjohn, Joseph" /><meta name="citation_author" content="Mercat, Jean" /><meta name="citation_author" content="Miller, Patrick" /><meta name="citation_author" content="Mitiguy, Paul" /><meta name="citation_author" content="Nguyen, Tony" /><meta name="citation_author" content="Nimmer, Jeremy" /><meta name="citation_author" content="Noguchi, Yuki" /><meta name="citation_author" content="Ong, Reko" /><meta name="citation_author" content="Onol, Aykut" /><meta name="citation_author" content="Pfannenstiehl, Owen" /><meta name="citation_author" content="Poyner, Richard" /><meta name="citation_author" content="Rocha, Leticia Priebe Mendes" /><meta name="citation_author" content="Richardson, Gordon" /><meta name="citation_author" content="Rodriguez, Christopher" /><meta name="citation_author" content="Seale, Derick" /><meta name="citation_author" content="Sherman, Michael" /><meta name="citation_author" content="Smith-Jones, Mariah" /><meta name="citation_author" content="Tago, David" /><meta name="citation_author" content="Tokmakov, Pavel" /><meta name="citation_author" content="Tran, Matthew" /><meta name="citation_author" content="Van Hoorick, Basile" /><meta name="citation_author" content="Vasiljevic, Igor" /><meta name="citation_author" content="Zakharov, Sergey" /><meta name="citation_author" content="Zolotas, Mark" /><meta name="citation_author" content="Ambrus, Rares" /><meta name="citation_author" content="Fetzer-Borelli, Kerri" /><meta name="citation_author" content="Burchfiel, Benjamin" /><meta name="citation_author" content="Kress-Gazit, Hadas" /><meta name="citation_author" content="Feng, Siyuan" /><meta name="citation_author" content="Ford, Stacie" /><meta name="citation_author" content="Tedrake, Russ" /><meta name="citation_date" content="2025/07/07" /><meta name="citation_online_date" content="2025/07/07" /><meta name="citation_pdf_url" content="https://arxiv.org/pdf/2507.05331" /><meta name="citation_arxiv_id" content="2507.05331" /><meta name="citation_abstract" content="Robot manipulation has seen tremendous progress in recent years, with imitation learning policies enabling successful performance of dexterous and hard-to-model tasks. Concurrently, scaling data and model size has led to the development of capable language and vision foundation models, motivating large-scale efforts to create general-purpose robot foundation models. While these models have garnered significant enthusiasm and investment, meaningful evaluation of real-world performance remains a challenge, limiting both the pace of development and inhibiting a nuanced understanding of current capabilities. In this paper, we rigorously evaluate multitask robot manipulation policies, referred to as Large Behavior Models (LBMs), by extending the Diffusion Policy paradigm across a corpus of simulated and real-world robot data. We propose and validate an evaluation pipeline to rigorously analyze the capabilities of these models with statistical confidence. We compare against single-task baselines through blind, randomized trials in a controlled setting, using both simulation and real-world experiments. We find that multi-task pretraining makes the policies more successful and robust, and enables teaching complex new tasks more quickly, using a fraction of the data when compared to single-task baselines. Moreover, performance predictably increases as pretraining scale and diversity grows. Project page: https://toyotaresearchinstitute.github.io/lbm1/" />
+</head>
+
+<body ><div class="flex-wrap-footer">
+    <a href="#content" class="ds-skip-link">Skip to main content</a>
+  
+  
+  
+<header class="ds-site-header">
+  <a aria-hidden="true" tabindex="-1" href="https://arxiv.org/IgnoreMe" class="is-sr-only"></a>
+
+  <a href="https://arxiv.org/" class="ds-site-header-logo" aria-label="archive home">
+    <img src="/static/base/1.0.1/images/arxiv-logo-primary-light.svg" alt="archive">
+  </a>
+
+  <button type="button" id="ds-nav-toggle" class="ds-site-header-nav-toggle"
+    aria-label="Open menu" aria-controls="ds-site-header-nav" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
+
+  <nav class="ds-site-header-nav" id="ds-site-header-nav" aria-label="Main navigation"><a id="arxiv-search-toggle" href="https://arxiv.org/search"
+      aria-controls="arxiv-search-overlay" aria-expanded="false">
+      <svg class="ds-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      Search
+    </a>
+    <a href="https://arxiv.org/user/create">Submit</a>
+    <a href="https://info.arxiv.org/about/donate.html">Donate</a>
+    <span class="ds-site-header-divider" aria-hidden="true"></span>
+      <a href="https://arxiv.org/login" class="ds-site-header-login">Log in</a>
+  </nav>
+</header>
+
+<div class="arxiv-search-overlay" id="arxiv-search-overlay" hidden>
+  <div class="arxiv-search-panel" role="search">
+    <form method="GET" action="https://arxiv.org/search">
+      <label for="arxiv-search-input" class="is-sr-only">Search arXiv</label>
+      <input type="text" name="query" id="arxiv-search-input" autocomplete="off"
+        placeholder="Search papers by title, author, abstract, or ID...">
+      <input type="hidden" name="searchtype" value="all">
+      <input type="hidden" name="source" value="header">
+    </form>
+    <div class="arxiv-search-hint">
+      Press Enter to search &middot; <a href="https://arxiv.org/search/advanced">Advanced search</a>
+    </div>
+  </div>
+</div>
+    <main>
+      <div id="content">
+<!--
+rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+    <rdf:Description
+        rdf:about="/abs/2507.05331"
+        dc:identifier="/abs/2507.05331"
+        dc:title="A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation"
+        trackback:ping="/trackback/2507.05331" />
+    </rdf:RDF>
+--><div id="abs-outer">
+
+  <div class="leftcolumn">
+    <div class="subheader">
+      <h1>Computer Science > Robotics</h1>
+    </div>
+
+    <div class="header-breadcrumbs-mobile">
+      <strong>arXiv:2507.05331</strong> (cs)
+    </div>
+<link rel="stylesheet" type="text/css" href="/static/base/1.0.1/css/abs.css">
+<div id="content-inner">
+  <div id="abs">
+    <div class="dateline">
+  [Submitted on 7 Jul 2025]</div>
+    <h1 class="title mathjax"><span class="descriptor">Title:</span>A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation</h1>
+    <div class="authors"><span class="descriptor">Authors:</span><a href="https://arxiv.org/search/cs?searchtype=author&amp;query=TRI+LBM+Team" rel="nofollow">TRI LBM Team</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Barreiros,+J" rel="nofollow">Jose Barreiros</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Beaulieu,+A" rel="nofollow">Andrew Beaulieu</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Bhat,+A" rel="nofollow">Aditya Bhat</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Cory,+R" rel="nofollow">Rick Cory</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Cousineau,+E" rel="nofollow">Eric Cousineau</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Dai,+H" rel="nofollow">Hongkai Dai</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Fang,+C" rel="nofollow">Ching-Hsin Fang</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Hashimoto,+K" rel="nofollow">Kunimatsu Hashimoto</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Irshad,+M+Z" rel="nofollow">Muhammad Zubair Irshad</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Itkina,+M" rel="nofollow">Masha Itkina</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Kuppuswamy,+N" rel="nofollow">Naveen Kuppuswamy</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Lee,+K" rel="nofollow">Kuan-Hui Lee</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Liu,+K" rel="nofollow">Katherine Liu</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=McConachie,+D" rel="nofollow">Dale McConachie</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=McMahon,+I" rel="nofollow">Ian McMahon</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Nishimura,+H" rel="nofollow">Haruki Nishimura</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Phillips-Grafflin,+C" rel="nofollow">Calder Phillips-Grafflin</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Richter,+C" rel="nofollow">Charles Richter</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Shah,+P" rel="nofollow">Paarth Shah</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Krishnan" rel="nofollow">Krishnan Srinivasan</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Wulfe,+B" rel="nofollow">Blake Wulfe</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Xu,+C" rel="nofollow">Chen Xu</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Zhang,+M" rel="nofollow">Mengchao Zhang</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Alspach,+A" rel="nofollow">Alex Alspach</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Angeles,+M" rel="nofollow">Maya Angeles</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Arora,+K" rel="nofollow">Kushal Arora</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Guizilini,+V+C" rel="nofollow">Vitor Campagnolo Guizilini</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Castro,+A" rel="nofollow">Alejandro Castro</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Chen,+D" rel="nofollow">Dian Chen</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Chu,+T" rel="nofollow">Ting-Sheng Chu</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Creasey,+S" rel="nofollow">Sam Creasey</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Curtis,+S" rel="nofollow">Sean Curtis</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Denitto,+R" rel="nofollow">Richard Denitto</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Dixon,+E" rel="nofollow">Emma Dixon</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Dusel,+E" rel="nofollow">Eric Dusel</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ferreira,+M" rel="nofollow">Matthew Ferreira</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Goncalves,+A" rel="nofollow">Aimee Goncalves</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Gould,+G" rel="nofollow">Grant Gould</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Guoy,+D" rel="nofollow">Damrong Guoy</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Gupta,+S" rel="nofollow">Swati Gupta</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Han,+X" rel="nofollow">Xuchen Han</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Hatch,+K" rel="nofollow">Kyle Hatch</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Hathaway,+B" rel="nofollow">Brendan Hathaway</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Henry,+A" rel="nofollow">Allison Henry</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Hochsztein,+H" rel="nofollow">Hillel Hochsztein</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Horgan,+P" rel="nofollow">Phoebe Horgan</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Iwase,+S" rel="nofollow">Shun Iwase</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Jackson,+D" rel="nofollow">Donovon Jackson</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Karamcheti,+S" rel="nofollow">Siddharth Karamcheti</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Keh,+S" rel="nofollow">Sedrick Keh</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Masterjohn,+J" rel="nofollow">Joseph Masterjohn</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Mercat,+J" rel="nofollow">Jean Mercat</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Miller,+P" rel="nofollow">Patrick Miller</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Mitiguy,+P" rel="nofollow">Paul Mitiguy</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Nguyen,+T" rel="nofollow">Tony Nguyen</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Nimmer,+J" rel="nofollow">Jeremy Nimmer</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Noguchi,+Y" rel="nofollow">Yuki Noguchi</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ong,+R" rel="nofollow">Reko Ong</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Onol,+A" rel="nofollow">Aykut Onol</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Pfannenstiehl,+O" rel="nofollow">Owen Pfannenstiehl</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Poyner,+R" rel="nofollow">Richard Poyner</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Rocha,+L+P+M" rel="nofollow">Leticia Priebe Mendes Rocha</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Richardson,+G" rel="nofollow">Gordon Richardson</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Rodriguez,+C" rel="nofollow">Christopher Rodriguez</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Seale,+D" rel="nofollow">Derick Seale</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Sherman,+M" rel="nofollow">Michael Sherman</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Smith-Jones,+M" rel="nofollow">Mariah Smith-Jones</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Tago,+D" rel="nofollow">David Tago</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Tokmakov,+P" rel="nofollow">Pavel Tokmakov</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Tran,+M" rel="nofollow">Matthew Tran</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Van+Hoorick,+B" rel="nofollow">Basile Van Hoorick</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Vasiljevic,+I" rel="nofollow">Igor Vasiljevic</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Zakharov,+S" rel="nofollow">Sergey Zakharov</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Zolotas,+M" rel="nofollow">Mark Zolotas</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ambrus,+R" rel="nofollow">Rares Ambrus</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Fetzer-Borelli,+K" rel="nofollow">Kerri Fetzer-Borelli</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Burchfiel,+B" rel="nofollow">Benjamin Burchfiel</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Kress-Gazit,+H" rel="nofollow">Hadas Kress-Gazit</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Feng,+S" rel="nofollow">Siyuan Feng</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Ford,+S" rel="nofollow">Stacie Ford</a>, <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Tedrake,+R" rel="nofollow">Russ Tedrake</a></div>            <div id="download-button-info" hidden>View a PDF of the paper titled A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation, by TRI LBM Team and 81 other authors</div>
+    <a class="mobile-submission-download" href="/pdf/2507.05331">View PDF</a>
+    <a class="mobile-submission-download" href="https://arxiv.org/html/2507.05331v1">HTML (experimental)</a>
+
+
+
+    <blockquote class="abstract mathjax">
+            <span class="descriptor">Abstract:</span>Robot manipulation has seen tremendous progress in recent years, with imitation learning policies enabling successful performance of dexterous and hard-to-model tasks. Concurrently, scaling data and model size has led to the development of capable language and vision foundation models, motivating large-scale efforts to create general-purpose robot foundation models. While these models have garnered significant enthusiasm and investment, meaningful evaluation of real-world performance remains a challenge, limiting both the pace of development and inhibiting a nuanced understanding of current capabilities. In this paper, we rigorously evaluate multitask robot manipulation policies, referred to as Large Behavior Models (LBMs), by extending the Diffusion Policy paradigm across a corpus of simulated and real-world robot data. We propose and validate an evaluation pipeline to rigorously analyze the capabilities of these models with statistical confidence. We compare against single-task baselines through blind, randomized trials in a controlled setting, using both simulation and real-world experiments. We find that multi-task pretraining makes the policies more successful and robust, and enables teaching complex new tasks more quickly, using a fraction of the data when compared to single-task baselines. Moreover, performance predictably increases as pretraining scale and diversity grows. Project page: <a href="https://toyotaresearchinstitute.github.io/lbm1/" rel="external noopener nofollow" class="link-external link-https">this https URL</a>
+    </blockquote>
+
+    <!--CONTEXT-->
+    <div class="metatable">
+      <table summary="Additional metadata"><tr>
+          <td class="tablecell label">Subjects:</td>
+          <td class="tablecell subjects">
+            <span class="primary-subject">Robotics (cs.RO)</span></td>
+        </tr><tr>
+          <td class="tablecell label">Cite as:</td>
+          <td class="tablecell arxivid"><span class="arxivid"><a href="https://arxiv.org/abs/2507.05331">arXiv:2507.05331</a> [cs.RO]</span></td>
+        </tr>
+        <tr>
+          <td class="tablecell label">&nbsp;</td>
+          <td class="tablecell arxividv">(or <span class="arxivid">
+              <a href="https://arxiv.org/abs/2507.05331v1">arXiv:2507.05331v1</a> [cs.RO]</span> for this version)
+          </td>
+        </tr>
+        <tr>
+          <td class="tablecell label">&nbsp;</td>
+          <td class="tablecell arxivdoi">              <a href="https://doi.org/10.48550/arXiv.2507.05331"  id="arxiv-doi-link">https://doi.org/10.48550/arXiv.2507.05331</a><div class="button-and-tooltip">
+              <button class="more-info" aria-describedby="more-info-desc-1">
+                <svg height="15" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" class=""></path></svg>
+                <span class="visually-hidden">Focus to learn more</span>
+              </button>
+              <!-- tooltip description -->
+              <div role="tooltip" id="more-info-desc-1">
+                <span class="left-corner"></span>                  arXiv-issued DOI via DataCite</div>
+            </div>
+          </td>
+        </tr></table>
+    </div>
+  </div>
+</div>
+    <div class="submission-history">
+      <h2>Submission history</h2> From: Rares Ambrus [<a href="/show-email/c8f39cad/2507.05331" rel="nofollow">view email</a>]      <br/>    <strong>[v1]</strong>
+        Mon, 7 Jul 2025 17:56:01 UTC (42,316 KB)<br/>
+</div>
+  </div>
+  <!--end leftcolumn-->
+<div class="extra-services">    <div class="full-text">
+      <a name="other"></a>
+      <span class="descriptor">Full-text links:</span>
+      <h2>Access Paper:</h2>
+      <ul>
+  <div id="download-button-info" hidden>
+View a PDF of the paper titled A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation, by TRI LBM Team and 81 other authors</div><li><a href="/pdf/2507.05331" aria-describedby="download-button-info" accesskey="f" class="abs-button download-pdf">View PDF</a></li><li><a href="https://arxiv.org/html/2507.05331v1" class="abs-button" id="latexml-download-link">HTML (experimental)</a></li><li><a href="/src/2507.05331" class="abs-button download-eprint">TeX Source
+ </a></li></ul>
+      <div class="abs-license"><a href="http://arxiv.org/licenses/nonexclusive-distrib/1.0/" title="Rights to this article">view license</a></div>
+    </div>
+    <!--end full-text-->    <div class="browse">
+    <h3 class="browse-context-heading">Current browse context:</h3>
+  <div class="current">cs.RO</div>
+
+  <div class="prevnext">
+<span class="arrow">
+      <a class="abs-button prev-url" href="/prevnext?id=2507.05331&amp;function=prev&amp;context=cs.RO"
+         accesskey="p" title="previous in cs.RO (accesskey p)" rel="nofollow">&lt;&nbsp;prev</a>
+    </span>
+    <span class="is-hidden-mobile">&nbsp; | &nbsp;</span>    <span class="arrow">
+      <a class="abs-button next-url" href="/prevnext?id=2507.05331&amp;function=next&amp;context=cs.RO" accesskey="n"
+         title="next in cs.RO (accesskey n)"  rel="nofollow">next&nbsp;&gt;</a>
+    </span><br/>
+  </div><div class="list">
+    <a class="abs-button abs-button-grey abs-button-small context-new" href="/list/cs.RO/new"  rel="nofollow">new</a>
+    <span class="is-hidden-mobile"> | </span>
+    <a class="abs-button abs-button-grey abs-button-small context-recent" href="/list/cs.RO/recent" rel="nofollow">recent</a>
+    <span class="is-hidden-mobile"> | </span><a class="abs-button abs-button-grey abs-button-small context-id" href="/list/cs.RO/2025-07" rel="nofollow">2025-07</a>
+  </div><div class="abs-switch-cat">
+    Change to browse by:
+    <div class="switch context-change">
+        <a href="/abs/2507.05331?context=cs" rel="nofollow">cs</a><br class="is-hidden-mobile">
+    </div>
+  </div>
+
+    </div>
+      <div class="extra-ref-cite">
+        <h3>References &amp; Citations</h3>
+        <ul>
+          <li><a  class="abs-button abs-button-small cite-ads" href="https://ui.adsabs.harvard.edu/abs/arXiv:2507.05331">NASA ADS</a></li><li><a  class="abs-button abs-button-small cite-google-scholar" href="https://scholar.google.com/scholar_lookup?arxiv_id=2507.05331" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a  class="abs-button abs-button-small cite-semantic-scholar" href="https://api.semanticscholar.org/arXiv:2507.05331" target="_blank" rel="noopener">Semantic Scholar</a></li>
+        </ul>
+        <div style="clear:both;"></div>
+      </div>
+
+<div class='extra-ref-cite'>
+    <button type="button" id='bib-cite-trigger' class="bib-cite-button abs-button">export BibTeX citation</button>
+    <span id='bib-cite-loading' hidden='true'>Loading...</span>
+</div>
+
+<div id='bib-cite-modal' class='bib-modal' hidden='true'>
+    <div class='bib-modal-content'>
+        <div class='bib-modal-title'>
+            <h2>BibTeX formatted citation</h2>
+            <button type="button" class='bib-modal-close' aria-label="Close">&times;</button>
+        </div>
+        <div>
+            <textarea id='bib-cite-target' class="bib-citation-content" aria-label="loading the citation">loading...</textarea>
+        </div>
+        <div>
+            <span>Data provided by: </span>
+            <a id='bib-cite-source-api'></a>
+        </div>
+    </div>
+</div><div class="bookmarks">
+  <div><h3>Bookmark</h3></div><a class="abs-button abs-button-grey abs-button-small" href="http://www.bibsonomy.org/BibtexHandler?requTask=upload&amp;url=https://arxiv.org/abs/2507.05331&amp;description=A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation"
+     title="Bookmark on BibSonomy">
+    <img src="/static/browse/0.3.4/images/icons/social/bibsonomy.png"
+         alt="BibSonomy"/>
+  </a>
+  <a class="abs-button abs-button-grey abs-button-small" href="https://reddit.com/submit?url=https://arxiv.org/abs/2507.05331&amp;title=A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation"
+     title="Bookmark on Reddit">
+    <img src="/static/browse/0.3.4/images/icons/social/reddit.png"
+         alt="Reddit"/>
+  </a>
+</div>  </div>
+  <!--end extra-services-->
+<!-- LABS AREA -->
+<div id="labstabs">
+  <div class="labstabs" role="tablist" aria-label="arXivLabs tools"><input type="radio" name="tabs" id="tabone"checked="checked"class="labs-tab-input">
+    <label for="tabone" role="tab" aria-selected="true" aria-controls="tabpanel-one" id="tab-label-one">Bibliographic Tools</label>
+    <div class="tab labs-display-bib" role="tabpanel" id="tabpanel-one" aria-labelledby="tab-label-one">
+      <h1>Bibliographic and Citation Tools</h1>
+      <div class="toggle">
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input id="bibex-toggle" type="checkbox" class="lab-toggle"
+                     data-script-url="/static/browse/0.3.4/bibex/bibex.js?20241202">
+              <span class="slider"></span>
+              <span class="is-sr-only">Bibliographic Explorer Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-bibex">Bibliographic Explorer</span> <em>(<a href="https://info.arxiv.org/labs/showcase.html#arxiv-bibliographic-explorer">What is the Explorer?</a>)</em>
+          </div>
+        </div>
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="connectedpapers-toggle"
+                type="checkbox"
+                class="lab-toggle"
+                data-script-url="/static/browse/0.3.4/js/connectedpapers.js"
+                aria-labelledby="label-for-connected-papers">
+              <span class="slider"></span>
+              <span class="is-sr-only">Connected Papers Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-connected-papers">Connected Papers</span> <em>(<a href="https://www.connectedpapers.com/about" target="_blank">What is Connected Papers?</a>)</em>
+          </div>
+        </div><div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="litmaps-toggle"
+                type="checkbox"
+                class="lab-toggle"
+                data-script-url="/static/browse/0.3.4/js/litmaps.js?20210617"
+                aria-labelledby="label-for-litmaps">
+              <span class="slider"></span>
+              <span class="is-sr-only">Litmaps Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-litmaps">Litmaps</span> <em>(<a href="https://www.litmaps.co/" target="_blank">What is Litmaps?</a>)</em>
+          </div>
+        </div>
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="scite-toggle"
+                type="checkbox"
+                class="lab-toggle"
+                data-script-url="/static/browse/0.3.4/js/scite.js?20210617"
+                aria-labelledby="label-for-scite">
+              <span class="slider"></span>
+              <span class="is-sr-only">scite.ai Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-scite">scite Smart Citations</span> <em>(<a href="https://www.scite.ai/" target="_blank">What are Smart Citations?</a>)</em>
+          </div>
+        </div>
+      </div>
+        <div class="labs-content-placeholder labs-display" style="display: none;"></div>
+        <div style="min-height: 15px" id="connectedpapers-output"></div>
+        <div style="min-height: 15px" id="litmaps-open-in"></div>
+        <div style="min-height: 15px" id="scite-open-in"></div>
+    </div>
+
+
+    <input type="radio" name="tabs" id="tabtwo" class="labs-tab-input">
+    <label for="tabtwo" role="tab" aria-selected="false" aria-controls="tabpanel-two" id="tab-label-two">Code, Data, Media</label>
+    <div class="tab" role="tabpanel" id="tabpanel-two" aria-labelledby="tab-label-two">
+      <h1>Code, Data and Media Associated with this Article</h1>
+      <div class="toggle">
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="alphaxiv-toggle"
+                data-script-url="/static/browse/0.3.4/js/alphaxiv.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-alphaxiv">
+              <span class="slider"></span>
+              <span class="is-sr-only">alphaXiv Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-alphaxiv">alphaXiv</span> <em>(<a href="https://alphaxiv.org/" target="_blank">What is alphaXiv?</a>)</em>
+          </div>
+        </div>
+
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input        
+                id="catalyzex-toggle"
+                data-script-url="/static/browse/0.3.4/js/catalyzex.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-cx">
+              <span class="slider"></span>
+              <span class="is-sr-only">Links to Code Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-cx">CatalyzeX Code Finder for Papers</span> <em>(<a href="https://www.catalyzex.com" target="_blank">What is CatalyzeX?</a>)</em>
+          </div>
+        </div>
+
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="dagshub-toggle"
+                data-script-url="/static/browse/0.3.4/js/dagshub.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-dagshub">
+              <span class="slider"></span>
+              <span class="is-sr-only">DagsHub Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-dagshub">DagsHub</span> <em>(<a href="https://dagshub.com/" target="_blank">What is DagsHub?</a>)</em>
+          </div>
+        </div>
+  
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="gotitpub-toggle"
+                data-script-url="/static/browse/0.3.4/js/gotitpub.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-gotitpub">
+              <span class="slider"></span>
+              <span class="is-sr-only">GotitPub Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-gotitpub">Gotit.pub</span> <em>(<a href="http://gotit.pub/faq" target="_blank">What is GotitPub?</a>)</em>
+          </div>
+        </div>
+
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="huggingface-toggle"
+                data-script-url="/static/browse/0.3.4/js/huggingface.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-huggingface">
+              <span class="slider"></span>
+              <span class="is-sr-only">Huggingface Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-huggingface">Hugging Face</span> <em>(<a href="https://huggingface.co/huggingface" target="_blank">What is Huggingface?</a>)</em>
+          </div>
+        </div>
+
+        <div class="columns is-mobile lab-row">
+          <div class="column lab-switch">
+            <label class="switch">
+              <input
+                id="sciencecast-toggle"
+                data-script-url="/static/browse/0.3.4/js/sciencecast.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-sciencecast">
+              <span class="slider"></span>
+              <span class="is-sr-only">ScienceCast Toggle</span>
+            </label>
+          </div>
+          <div class="column lab-name">
+            <span id="label-for-sciencecast">ScienceCast</span> <em>(<a href="https://sciencecast.org/welcome" target="_blank">What is ScienceCast?</a>)</em>
+          </div>
+        </div>
+      </div>
+
+      <div id="alphaxiv-output" style="display:none"></div>
+      <div id="catalyzex-output" style="display:none"></div>
+      <div id="dagshub-output" style="display:none"></div>
+      <div id="gotitpub-output" style="display:none"></div>
+      <div id="sciencecast-output" style="display:none"></div>
+      <div id="huggingface-output" style="display:none"></div>
+    </div>
+
+
+      <input type="radio" name="tabs" id="labstabs-demos-input" class="labs-tab-input">
+      <label for="labstabs-demos-input" id="labstabs-demos-label" role="tab" aria-selected="false" aria-controls="tabpanel-demos">Demos</label>
+      <div class="tab" role="tabpanel" id="tabpanel-demos" aria-labelledby="labstabs-demos-label">
+        <h1>Demos</h1>
+        <div class="toggle">
+          <div class="columns is-mobile lab-row">
+            <div class="column lab-switch">
+              <label class="switch">
+                <input
+                  id="replicate-toggle"
+                  data-script-url="/static/browse/0.3.4/js/replicate.js"
+                  type="checkbox" class="lab-toggle" aria-labelledby="label-for-replicate">
+                <span class="slider"></span>
+                <span class="is-sr-only">Replicate Toggle</span>
+              </label>
+            </div>
+            <div class="column lab-name">
+              <span id="label-for-replicate">Replicate</span> <em>(<a href="https://replicate.com/docs/arxiv/about" target="_blank">What is Replicate?</a>)</em>
+            </div>
+          </div>
+          <div class="columns is-mobile lab-row">
+            <div class="column lab-switch">
+              <label class="switch">
+                <input
+                  id="spaces-toggle"
+                  data-script-url="/static/browse/0.3.4/js/spaces.js"
+                  type="checkbox" class="lab-toggle" aria-labelledby="label-for-spaces">
+                <span class="slider"></span>
+                <span class="is-sr-only">Spaces Toggle</span>
+              </label>
+            </div>
+            <div class="column lab-name">
+              <span id="label-for-spaces">Hugging Face Spaces</span> <em>(<a href="https://huggingface.co/docs/hub/spaces" target="_blank">What is Spaces?</a>)</em>
+            </div>
+          </div>
+          <div class="columns is-mobile lab-row">
+            <div class="column lab-switch">
+              <label class="switch">
+                <input
+                  id="txyz-toggle"
+                  data-script-url="/static/browse/0.3.4/js/txyz.js"
+                  type="checkbox" class="lab-toggle" aria-labelledby="label-for-txyz">
+                <span class="slider"></span>
+                <span class="is-sr-only">Spaces Toggle</span>
+              </label>
+            </div>
+            <div class="column lab-name">
+              <span id="label-for-txyz">TXYZ.AI</span> <em>(<a href="https://txyz.ai" target="_blank">What is TXYZ.AI?</a>)</em>
+            </div>
+          </div>
+        </div>
+        <div id="replicate-output"></div>
+        <div id="spaces-output"></div>
+        <div id="txyz-output"></div>
+      </div>
+      <input type="radio" name="tabs" id="tabfour" class="labs-tab-input">
+      <label for="tabfour" role="tab" aria-selected="false" aria-controls="tabpanel-four" id="tab-label-four">Related Papers</label>
+      <div class="tab" role="tabpanel" id="tabpanel-four" aria-labelledby="tab-label-four">
+        <h1>Recommenders and Search Tools</h1>
+        <div class="toggle">
+          <div class="columns is-mobile lab-row">
+            <div class="column lab-switch">
+              <label class="switch">
+                <input id="influenceflower-toggle"
+                data-script-url="/static/browse/0.3.4/js/influenceflower.js"
+                type="checkbox" class="lab-toggle" aria-labelledby="label-for-influenceflower">
+                <span class="slider"></span>
+                <span class="is-sr-only">Link to Influence Flower</span>
+              </label>
+            </div>
+            <div class="column lab-name">
+              <span id="label-for-influenceflower">Influence Flower</span> <em>(<a href="https://influencemap.cmlab.dev/" target="_blank">What are Influence Flowers?</a>)</em>
+            </div>
+          </div>
+          <div class="columns is-mobile lab-row">
+            <div class="column lab-switch">
+              <label class="switch">
+                <input id="core-recommender-toggle" type="checkbox" class="lab-toggle" aria-labelledby="label-for-core">
+                <span class="slider"></span>
+                <span class="is-sr-only">Core recommender toggle</span>
+              </label>
+            </div>
+            <div class="column lab-name">
+              <span id="label-for-core">CORE Recommender</span> <em>(<a href="https://core.ac.uk/services/recommender">What is CORE?</a>)</em>
+            </div>
+          </div></div>
+        <div id="influenceflower-output"></div>
+        <div id="influenceflower-output-graph" style="display:none">
+          <ul class="flower-tabs">
+            <li class="active"><a class="btn tab-btn" onclick="openTab(event, 'tab-author')">Author</a></li>
+            <li><a class="btn tab-btn" onclick="openTab(event, 'tab-venue')">Venue</a></li>
+            <li><a class="btn tab-btn" onclick="openTab(event, 'tab-inst')">Institution</a></li>
+            <li><a class="btn tab-btn" onclick="openTab(event, 'tab-topic')">Topic</a></li>
+          </ul>
+          <div class="flower-tab-content">
+            <div class="tab-flower active" id="tab-author"><svg id="flower-graph-author"></svg></div>
+            <div class="tab-flower" id="tab-venue"><svg id="flower-graph-venue"></svg></div>
+            <div class="tab-flower" id="tab-inst"><svg id="flower-graph-inst"></svg></div>
+            <div class="tab-flower" id="tab-topic"><svg id="flower-graph-topic"></svg></div>
+          </div>
+        </div>
+        <div id="coreRecommenderOutput"></div>
+        <div id="iarxivOutput"></div>
+      </div>
+
+      <input type="radio" name="tabs" id="tabfive" class="labs-tab-input">
+      <label for="tabfive" role="tab" aria-selected="false" aria-controls="tabpanel-five" id="tab-label-five">
+        About arXivLabs
+      </label>
+      <div class="tab" role="tabpanel" id="tabpanel-five" aria-labelledby="tab-label-five">
+        <div class="columns">
+          <div class="column">
+            <h1>arXivLabs: experimental projects with community collaborators</h1>
+            <p>arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.</p>
+            <p>Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.</p>
+            <p>Have an idea for a project that will add value for arXiv's community? <a href="https://info.arxiv.org/labs/index.html"><strong>Learn more about arXivLabs</strong></a>.</p>
+          </div>
+          <div class="column is-narrow is-full-mobile">
+            <p class="icon-labs"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 635.572 811"><path d="M175.6 676v27h-27v-27zm-54 27v27h27v-27zm-27 27v27h27v-27zm396-54v27h-27v-27zm0 27v27h27v-27zm27 27v27h27v-27zm-27-414h27v27h-27zm27 0h27v-27h-27zm27-27h27v-27h-27zm-396 45h-27v-27h27zm-27-54h-27v27h27zm-27-27h-27v27h27z"/><path d="M94.6 730v27h-27v-27zm477 0v27h-27v-27zm-27-495h27v27h-27zm-450 18h-27v-27h27zm477 9h27v27h-27zm-54 495h27v27h-27zm-423 0h27v27h-27zm-54-504h27v27h-27z" fill="#666"/><path d="M67.6 730v27h-27v-27zm54 54v27h-27v-27zm0-108v27h27v-27zm-27 27v27h27v-27zm-81 0v27h27v-27zm585 27v27h-27v-27zm-108-54v27h27v-27zm27 27v27h27v-27zm81 0v27h27v-27zm-54-495h27v27h-27zm-54 108h27v-27h-27zm27-27h27v-27h-27zm0-81h27v-27h-27zm-423 18h-27v-27h27zm54 54h-27v27h27zm-27-27h-27v27h27zm0-81h-27v27h27zm423 612v27h-27v-27zm81-522v27h-27v-27zm-585-9v27h-27v-27z" fill="#999"/><path d="M94.6 784v27h-27v-27zm-27-27v27h27v-27zm-27-54v27h27v-27zm27 0v27h27v-27zm0-27v27h27v-27zm27 0v27h27v-27zm0-27v27h27v-27zm27 0v27h27v-27zm-108 81v27h27v-27zm558 54v27h-27v-27zm-27-27v27h27v-27zm27-54v27h27v-27zm-27 0v27h27v-27zm0-27v27h27v-27zm-27 0v27h27v-27zm0-27v27h27v-27zm-27 0v27h27v-27zm108 81v27h27v-27zm0-495h27v27h-27zm-27 27h27v-27h-27zm-54-27h27v-27h-27zm0 27h27v-27h-27zm-27 0h27v-27h-27zm0 27h27v-27h-27zm-27 0h27v-27h-27zm0 27h27v-27h-27zm81-108h27v-27h-27zm-504 45h-27v-27h27zm27-27h-27v27h27zm54-27h-27v27h27zm0 27h-27v27h27zm27 0h-27v27h27zm0 27h-27v27h27zm27 0h-27v27h27zm0 27h-27v27h27zm-81-108h-27v27h27z" fill="#ccc"/><path d="M598.6 665.1H41.5C-76.5 667 176 280.2 176 280.2h53a46.5 46.5 0 0162.8-56.3 29.2 29.2 0 1128.5 35.9h-1a46.5 46.5 0 01-1.5 20.3l142.5-.1s255.3 387 138.3 385.1zM291 181a29.3 29.3 0 10-29.2-29.3A29.3 29.3 0 00291 181zm65.4-66.8a22.4 22.4 0 10-22.5-22.4 22.4 22.4 0 0022.5 22.4z" fill="#fc0"/><path d="M245.5 172V10h153v162s324 495 198 495h-558c-126 0 207-495 207-495zm126 54h56m-13 72h56m-9 72h56m-20 72h56m-22 72h56m-29 72h56m-457-45c20.8 41.7 87.3 81 160.7 81 72.1 0 142.1-38.2 163.4-81" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="20"/><path d="M273.3 421.7c0 31-9.8 56.3-21.9 56.3s-21.8-25.2-21.8-56.3 9.8-56.3 21.8-56.3 21.9 25.2 21.9 56.3zm114.4-56.3c-12 0-21.8 25.2-21.8 56.3s9.7 56.3 21.8 56.3 21.9-25.2 21.9-56.3-9.8-56.3-21.9-56.3zM150.1 526.6c-18.2 6.7-27.5 22.9-23.2 30.2s14.8-5.5 33-12.2 37.4-4.9 33-12.2-24.5-12.6-42.8-5.8zm296 5.8c-4.2 7.3 14.9 5.5 33.1 12.2s28.7 19.5 33 12.2-5-23.5-23.2-30.2-38.5-1.5-42.8 5.8z"/></svg></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+<!-- END LABS AREA -->
+  <div class="endorsers">
+    <a href="/auth/show-endorsers/2507.05331" class="endorser-who" rel="nofollow">Which authors of this paper are endorsers?</a> |
+    <a id="mathjax_toggle" href="javascript:setMathjaxCookie()">Disable MathJax</a> (<a href="https://info.arxiv.org/help/mathjax.html">What is MathJax?</a>)
+    <span class="help" style="font-style: normal; float: right; margin-top: 0; margin-right: 1em;"></span>
+  </div>
+  <script type="text/javascript" language="javascript">mathjaxToggle();</script>
+</div>
+      </div>
+    </main>
+
+<footer class="ds-site-footer">
+  <div class="ds-site-footer-grid">
+    <div class="ds-site-footer-main">
+      <div class="ds-site-footer-ack">
+        We gratefully acknowledge support from
+        our <strong>major funders</strong>,
+        <a href="https://info.arxiv.org/about/ourmembers.html"><strong>member institutions</strong></a><span class="ack-member-inline" hidden>, <strong></strong></span>,
+        and all contributors.
+      </div>
+      <nav class="ds-site-footer-links" aria-label="Site navigation">
+        <a href="https://info.arxiv.org/about">About</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help">Help</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help/contact.html">Contact</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help/subscribe">Subscribe</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help/license/index.html">Copyright</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help/policies/privacy_policy.html">Privacy</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://info.arxiv.org/help/web_accessibility.html">Accessibility</a>
+        <span class="ds-site-footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://status.arxiv.org" target="_blank" rel="noopener noreferrer">Operational Status<span class="is-sr-only"> (opens in new tab)</span></a>
+      </nav>
+    </div>
+
+    <div class="ds-site-footer-funders" aria-label="Major funders">
+      <div class="ds-site-footer-funders-label">Major funding support from</div>
+      <div class="ds-site-footer-funders-logos">
+        <a class="ds-funder-link" href="https://www.simonsfoundation.org/" target="_blank" rel="noopener noreferrer">
+          <img class="ds-funder-logo" src="/static/base/1.0.1/images/funders/simons-foundation.png" alt="Simons Foundation">
+        </a>
+        <a class="ds-funder-link" href="https://www.sfi.org.bm/" target="_blank" rel="noopener noreferrer">
+          <img class="ds-funder-logo" src="/static/base/1.0.1/images/funders/simons-foundation-international.png" alt="Simons Foundation International">
+        </a>
+        <a class="ds-funder-link" href="https://www.schmidtsciences.org/" target="_blank" rel="noopener noreferrer">
+          <img class="ds-funder-logo" src="/static/base/1.0.1/images/funders/schmidt-sciences.png" alt="Schmidt Sciences">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>  </div>
+
+  <script src="/static/base/1.0.1/js/arxiv-header.js?v=20260626"></script>
+
+</body>
+
+</html>

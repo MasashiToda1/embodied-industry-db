@@ -1,0 +1,27 @@
+id: evt-2024-10-31-physical-intelligence-publication-pi0
+date: 2024-10-31
+date_precision: day
+type: publication
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: 物理智能发布首个通用机器人基础模型 π0 与配套论文
+summary:
+  zh: "10 月 31 日，物理智能（Physical Intelligence）在官方博客发布 π0（pi-zero），博客称这是公司开发八个月的通用机器人基础模型，也是其第一个通用策略。模型以预训练视觉语言模型为底座，采用跨具身训练把不同机器人类型的数据合进同一个模型，用 action chunking 架构配 flow matching 输出连续动作，博客与论文称可在折叠衣物这类灵巧任务上以最高 50 Hz 控制机器人，覆盖单臂、双臂与移动操作平台。同日 arXiv 公开论文《π0: A Vision-Language-Action Flow Model for General Robot Control》（arXiv:2410.24164），作者单位为 Physical Intelligence，训练数据为 OXE 与公司自有的 7 个机器人平台数据。"
+axes:
+  model_form: [end2end-vla]
+  data_acquisition: [real-robot, teleop]
+  data_modality: [rgb, joint-trajectory, language-annotated]
+evidence:
+- url: https://www.pi.website/blog/pi0
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/pi-2024-10-31-physical-intelligence-pi.html
+- url: https://arxiv.org/abs/2410.24164
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/arxiv-2024-10-31-physical-intelligence-pi.html
+corroboration: single

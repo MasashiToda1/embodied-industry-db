@@ -1,0 +1,32 @@
+id: evt-2024-09-12-gdm-robotics-publication-aloha-unleashed-demostart
+date: 2024-09-12
+date_precision: day
+type: publication
+orgs:
+- id: gdm-robotics
+  role: subject
+title:
+  zh: Google DeepMind 发布灵巧操作两篇论文 ALOHA Unleashed 与 DemoStart
+summary:
+  zh: 9 月 12 日，Google DeepMind 在官方博客发布两项机器人灵巧操作研究。ALOHA Unleashed 做双臂操作：在 ALOHA 2 平台上做大规模遥操作数据采集，采到超过 2.6 万条演示，再训练基于 Transformer 的 Diffusion Policy，博客与论文列出的任务包括系鞋带、把衬衫挂上衣架、更换另一台机器人的手指、插齿轮与堆叠厨房物品，另有 3 个仿真双臂任务。DemoStart 做多指手：用强化学习配少量演示，在 MuJoCo 物理仿真里自动生成课程来跨越 sim-to-real 差距，博客给出仿真中多个任务成功率超过 98%，真机上方块重定向与抓取 97%、需要高精度手指协调的插孔任务 64%，硬件为 Shadow Robot 的 DEX-EE 多指手。
+counterparties:
+- Shadow Robot
+axes:
+  embodiment_form: [dual-arm-stationary, arm]
+  model_form: [il]
+  control_route: [rl]
+  sim_stack: [mujoco]
+  data_acquisition: [teleop, real-robot, sim-generated]
+  data_modality: [rgb, joint-trajectory]
+evidence:
+- url: https://deepmind.google/blog/advances-in-robot-dexterity/
+  publisher: Google DeepMind 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/deepmind-2024-09-12-gdm-robotics-aloha-unlea.html
+- url: https://arxiv.org/abs/2410.13126
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/arxiv-2024-09-12-gdm-robotics-aloha-unlea.html
+corroboration: single

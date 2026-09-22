@@ -1,0 +1,27 @@
+id: evt-2025-03-12-gdm-robotics-publication-gemini-robotics-1-0
+date: 2025-03-12
+date_precision: day
+type: publication
+orgs:
+- id: gdm-robotics
+  role: subject
+title:
+  zh: Google DeepMind 发布 Gemini Robotics 与 Gemini Robotics-ER 两个机器人模型
+summary:
+  zh: "3 月 12 日，Google DeepMind 在官方博客发布基于 Gemini 2.0 的两个机器人模型。Gemini Robotics 是视觉语言动作（VLA）模型，在 Gemini 2.0 基础上把物理动作加为新的输出模态，直接控制机器人。Gemini Robotics-ER 是具身推理（embodied reasoning）视觉语言模型，强化空间理解，可做物体检测、指点、轨迹与抓取预测以及 3D 理解，让机器人开发者接自己的底层控制器，或用代码生成做零样本控制。博客写明 Gemini Robotics-ER 提供给可信测试者，名单包括 Agile Robots、Agility Robotics、Boston Dynamics 与 Enchanted Tools，Apptronik 为人形机器人合作方。配套技术报告《Gemini Robotics: Bringing AI into the Physical World》（arXiv:2503.20020）写明模型可用 100 条演示学会新的短程任务，并可迁移到双臂平台与高自由度人形机器人。"
+axes:
+  model_form: [end2end-vla, hierarchical]
+  data_acquisition: [teleop, real-robot]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+evidence:
+- url: https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/
+  publisher: Google DeepMind 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/deepmind-2025-03-12-gdm-robotics-gemini-robo.html
+- url: https://arxiv.org/abs/2503.20020
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/arxiv-2025-03-12-gdm-robotics-gemini-robo.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2025-06-24-gdm-robotics-publication-gemini-robotics-on-device
+date: 2025-06-24
+date_precision: day
+type: publication
+orgs:
+- id: gdm-robotics
+  role: subject
+title:
+  zh: Google DeepMind 发布可在机器人本地运行的 Gemini Robotics On-Device 与配套 SDK
+summary:
+  zh: 6 月 24 日，Google DeepMind 发布 Gemini Robotics On-Device，博客称这是其为在机器人本体上本地运行而优化的 VLA 模型，不依赖数据网络，面向对时延敏感以及网络时断时续或完全没有网络的场景。同时发布 Gemini Robotics SDK，开发者可用它在自己的任务与环境上评测模型、在 MuJoCo 物理仿真里测试，并用 50 到 100 条演示把模型适配到新领域；SDK 通过可信测试者计划申请获取。博客写明模型只在 ALOHA 机器人上训练，之后被适配到双臂 Franka FR3 与 Apptronik 的 Apollo 人形机器人。
+axes:
+  embodiment_form: [dual-arm-stationary, humanoid-biped]
+  model_form: [end2end-vla]
+  sim_stack: [mujoco]
+  data_acquisition: [teleop, real-robot]
+  data_modality: [rgb, language-annotated, joint-trajectory]
+evidence:
+- url: https://deepmind.google/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/
+  publisher: Google DeepMind 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/deepmind-2025-06-24-gdm-robotics-on-device.html
+corroboration: single

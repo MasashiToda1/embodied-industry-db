@@ -1,0 +1,22 @@
+id: evt-2025-01-16-physical-intelligence-publication-fast
+date: 2025-01-16
+date_precision: day
+type: publication
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: "物理智能发布机器人动作 tokenizer FAST 与自回归策略 π0-FAST"
+summary:
+  zh: "1 月 16 日，物理智能发布动作 tokenizer FAST。做法是先用离散余弦变换（DCT）压缩动作块，再接字节对编码（BPE），把原始动作块压成每块 30 到 60 个 token，博客称相比此前的动作 tokenization 方法压缩约 10 倍。团队把 FAST 与 π0 结合训出自回归通用策略 π0-FAST，博客称其训练速度是原 π0 的 5 倍，任务表现相当，并在 DROID 数据集上训出可在新环境按语言指令零样本执行操作任务的策略，在 UC Berkeley、Stanford 与 University of Washington 三处测试。同时公司发布在 100 万条真机动作序列上训练的通用版 FAST tokenizer，托管在 Hugging Face 的 physical-intelligence/fast。"
+axes:
+  model_form: [end2end-vla]
+  data_acquisition: [real-robot, teleop]
+  data_modality: [rgb, joint-trajectory, language-annotated]
+evidence:
+- url: https://www.pi.website/research/fast
+  publisher: Physical Intelligence 官方博客
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/pi-2025-01-16-physical-intelligence-fa.html
+corroboration: single
