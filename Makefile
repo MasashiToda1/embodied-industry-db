@@ -1,4 +1,4 @@
-.PHONY: lint lint-strict build test test-ingest preflight serve setup clean preview intake
+.PHONY: lint lint-strict build test test-ingest preflight serve setup clean preview intake site site-serve
 
 # CI 里没有 .venv，用 PY=python3 覆盖
 PY ?= .venv/bin/python
@@ -55,6 +55,14 @@ test-ingest:
 #   make intake N=12 WRITE=--write
 intake:
 	$(PY) scripts/intake.py --issue $(N) $(WRITE)
+
+# 静态站数据（docs/data/*.json，不进 git，Pages 部署时现场生成）
+site:
+	$(PY) scripts/build_site.py --root . --out docs/data
+
+# 本地预览：make site-serve 然后开 http://127.0.0.1:8800
+site-serve: site
+	cd docs && $(PY) -m http.server 8800
 
 # 推送前跑这一条。但它不能替代 PR 上的 Actions——
 # 本地环境和 CI 不一定一致，最终以 PR Checks 为准。
