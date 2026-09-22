@@ -1,0 +1,26 @@
+id: evt-2025-04-21-agibot-publication-genie-sim
+date: 2025-04-21
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 AgibotTech/genie_sim 的 created_at 为 2025-04-21
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人开源仿真平台 Genie Sim
+summary:
+  zh: 智元机器人在 GitHub 开源仿真平台 Genie Sim。README 说明该平台为开发者提供环境重建、场景泛化、数据采集与自动化评测的工具链，核心模块 Genie Sim Benchmark 覆盖 200 多项任务、10 万以上场景，并开放超过 1 万小时合成数据，仿真资产、数据集与代码全部开源。
+axes:
+  sim_stack:
+  - in-house
+  data_acquisition:
+  - sim-generated
+  data_openness: fully-open
+evidence:
+- url: https://github.com/AgibotTech/genie_sim
+  publisher: AgiBot（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/github-2025-04-21-agibot-genie-sim.html
+corroboration: single

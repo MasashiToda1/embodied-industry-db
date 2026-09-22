@@ -1,0 +1,29 @@
+id: evt-2025-06-06-galbot-publication-openwbt
+date: 2025-06-06
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 GalaxyGeneralRobotics/OpenWBT 的 created_at 为 2025-06-06
+type: publication
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用开源人形机器人全身遥操作系统 OpenWBT
+summary:
+  zh: 银河通用在 GitHub 开源 OpenWBT，仓库署名「GALBOT · Tsinghua」，采用 Apache-2.0 许可。README 说明该项目用 Apple Vision Pro 实现宇树 G1 与 H1 人形机器人的全身遥操作，支持实机与仿真环境，单个操作员即可控制机器人完成行走、下蹲、弯腰、抓取、举起等动作；下半身由手柄控制，上半身通过 VR 测得的人手位姿经逆运动学解算得到；项目支持在 Isaac Sim 中做遥操作仿真。
+counterparties:
+- 清华大学
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_acquisition:
+  - teleop
+  sim_stack:
+  - isaac-sim
+evidence:
+- url: https://github.com/GalaxyGeneralRobotics/OpenWBT
+  publisher: Galbot（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-06-galbot-openwbt.html
+corroboration: single

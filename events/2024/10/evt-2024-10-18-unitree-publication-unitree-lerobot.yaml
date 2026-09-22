@@ -1,0 +1,28 @@
+id: evt-2024-10-18-unitree-publication-unitree-lerobot
+date: 2024-10-18
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 unitreerobotics/unitree_lerobot 的 created_at 为 2024-10-18
+type: publication
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技开源 unitree_lerobot 数据转换与训练验证仓库
+summary:
+  zh: 宇树科技在 GitHub 开源 unitree_lerobot 仓库，用于 LeRobot 训练验证与宇树数据转换，支持 LeRobot 数据集 2.0 及以上版本。仓库包含训练代码目录、宇树数据处理工具与实机推理验证模块，README 列出 v0.1 支持 G1 + Dex1 + Dex3 的数据转换、模型部署与实机测试，v0.2 增加 BrainCo 与因时灵巧手的数据转换和模型部署、数据集回放及仿真环境验证。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_acquisition:
+  - teleop
+  - real-robot
+  model_form:
+  - il
+evidence:
+- url: https://github.com/unitreerobotics/unitree_lerobot
+  publisher: Unitree Robotics（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/github-2024-10-18-unitree-lerobot-opensour.html
+corroboration: single

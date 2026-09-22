@@ -1,0 +1,22 @@
+id: evt-2024-11-11-x-humanoid-publication-tiangong-opensource-plan
+date: 2024-11-11
+date_precision: day
+type: publication
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 国家地方共建具身智能机器人创新中心发布天工开源计划
+summary:
+  zh: 11 月 11 日，国家地方共建具身智能机器人创新中心在发布会上正式发布天工开源计划。报道称当时天工软件开发文档、结构设计文档已开源，年底前将开源天工结构图纸、软件架构、电气系统等内容，数据集与运动控制训练框架也将陆续开放开源。创新中心表示将联合高校、科研院所与合作伙伴共同建设具身智能开源开放社区。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_openness: partially-open
+evidence:
+- url: http://bj.news.cn/20241112/ab41ce67e5ce4e5b86f2c147919349cf/c.html
+  publisher: 新华网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/bj-2024-11-11-x-humanoid-tiangong-open.html
+corroboration: single

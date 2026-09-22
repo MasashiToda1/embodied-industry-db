@@ -1,0 +1,21 @@
+id: evt-2025-06-x-humanoid-dataset_release-artvip
+date: 2025-06
+date_precision: month
+date_as_stated: 数据集页版本历史写「v1.0 | 2025-06 | Initial release of ArtVIP dataset」；Hugging Face 仓库 createdAt 为 2025-05-14
+type: dataset_release
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心发布铰接数字资产集 ArtVIP
+summary:
+  zh: 北京人形机器人创新中心以 X-Humanoid 账号在 Hugging Face 发布 ArtVIP 数据集，任务类别标注为 Robotics，许可为 Apache-2.0，标签为 usd、articulations 与 Robotics simulation，关联论文 arXiv:2506.04941。页面版本历史记录 v1.0 于 2025-06 初始发布，包含 206 个铰接物体与 6 个交互场景；数据集特性包括数字孪生铰接物体、可复用模块化交互、物理保真度与像素级 affordance 标注。
+axes:
+  data_openness: fully-open
+evidence:
+- url: https://huggingface.co/datasets/X-Humanoid/ArtVIP
+  publisher: X-Humanoid（Hugging Face）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/huggingface-2025-05-14-x-humanoid-artvip.html
+corroboration: single

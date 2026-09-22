@@ -1,0 +1,26 @@
+id: evt-2025-05-17-leju-publication-kuavo-ros-opensource
+date: 2025-05-17
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 LejuRobotics/kuavo-ros-opensource 的 created_at 为 2025-05-17
+type: publication
+orgs:
+- id: leju
+  role: subject
+title:
+  zh: 乐聚机器人开源夸父机器人 ROS 仓库 kuavo-ros-opensource
+summary:
+  zh: 乐聚机器人开源 kuavo-ros-opensource 仓库，提供夸父机器人的运动控制接口、全身控制器参数说明、kuavo_asset 配置文档与 topic 文档。README 说明仓库同时托管在 GitCode 与 Gitee（gitee.com/leju-robot/kuavo-ros-opensource），使用前需按 ROBOT_VERSION 环境变量匹配机器人版本，并按整机称重结果写入总质量文件以校准模型，运动控制使用 OCS2 与 CppAD 自动微分库。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  control_route:
+  - mpc
+  - wbc
+evidence:
+- url: https://github.com/LejuRobotics/kuavo-ros-opensource
+  publisher: Leju Robotics（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/github-2025-05-17-leju-kuavo-ros-opensourc.html
+corroboration: single

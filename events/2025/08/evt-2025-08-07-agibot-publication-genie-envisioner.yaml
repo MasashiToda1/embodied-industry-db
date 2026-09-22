@@ -1,0 +1,22 @@
+id: evt-2025-08-07-agibot-publication-genie-envisioner
+date: 2025-08-07
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人发布世界基座平台 Genie Envisioner 论文
+summary:
+  zh: 智元机器人在 arXiv 发布 Genie Envisioner（GE）论文，该平台把策略学习、评测与仿真整合进同一个视频生成框架。其中 GE-Base 是大规模指令条件视频扩散模型，GE-Act 通过 flow-matching 解码器把隐空间表示映射为可执行动作轨迹，GE-Sim 作为动作条件神经仿真器生成闭环开发所需的 rollout，并配套标准化评测集 EWMBench。论文称全部代码、模型与 benchmark 将公开发布。
+axes:
+  model_form:
+  - world-model
+  - end2end-vla
+evidence:
+- url: https://arxiv.org/abs/2508.05635
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/arxiv-2025-08-07-agibot-genie-envisioner.html
+corroboration: single

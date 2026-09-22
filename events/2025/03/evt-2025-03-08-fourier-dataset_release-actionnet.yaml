@@ -1,0 +1,30 @@
+id: evt-2025-03-08-fourier-dataset_release-actionnet
+date: 2025-03-08
+date_precision: day
+date_basis: derived
+date_as_stated: Hugging Face 数据集 FourierIntelligence/ActionNet 的 createdAt 为 2025-03-08
+type: dataset_release
+orgs:
+- id: fourier
+  role: subject
+title:
+  zh: 傅利叶发布全尺寸人形机器人数据集 Fourier ActionNet
+summary:
+  zh: 傅利叶在 Hugging Face 发布数据集 Fourier ActionNet，发布方显示为 Fourier Co Ltd，许可为 CC BY-NC-SA 4.0，任务类别标注为 Robotics，规模区间为 10K—100K，访问需同意条款并提供联系信息。数据集页说明数据来自机器人端与相机端两个来源，机器人端数据存于 HDF5 文件，相机端数据存于对应的 episode 文件夹。同期傅利叶在 GitHub 开源了配套的 fourier-lerobot 与 ActionNet 仓库。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  data_acquisition:
+  - teleop
+  - real-robot
+  data_modality:
+  - joint-trajectory
+  - rgb
+  data_openness: partially-open
+evidence:
+- url: https://huggingface.co/datasets/FourierIntelligence/ActionNet
+  publisher: Fourier（Hugging Face）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/huggingface-2025-03-08-fourier-actionnet-datase.html
+corroboration: single

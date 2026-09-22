@@ -1,0 +1,29 @@
+id: evt-2025-06-05-unitree-publication-unitree-rl-lab
+date: 2025-06-05
+date_precision: day
+date_basis: derived
+date_as_stated: GitHub 仓库 unitreerobotics/unitree_rl_lab 的 created_at 为 2025-06-05
+type: publication
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技开源强化学习训练框架 unitree_rl_lab
+summary:
+  zh: 宇树科技在 GitHub 开源 unitree_rl_lab，以 Apache-2.0 许可发布。README 说明该项目基于 Isaac Lab 提供一套面向宇树机器人的强化学习环境，当前支持 Go2、H1 与 G1-29dof，并提供 Isaac Lab、MuJoCo 与实机三种运行路径，机器人描述文件从 Hugging Face 上的 unitree_model 与 unitree_ros 获取。
+axes:
+  embodiment_form:
+  - humanoid-biped
+  - quadruped
+  sim_stack:
+  - isaac-lab
+  - mujoco
+  control_route:
+  - rl
+evidence:
+- url: https://github.com/unitreerobotics/unitree_rl_lab
+  publisher: Unitree Robotics（GitHub）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/github-2025-06-05-unitree-rl-lab.html
+corroboration: single
