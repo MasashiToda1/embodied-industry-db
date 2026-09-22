@@ -1,0 +1,31 @@
+id: evt-2024-11-15-huawei-cloudrobo-partnership-shenzhen-embodied-center-mous
+date: 2024-11-15
+date_precision: day
+type: partnership
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+- id: topstar
+  role: counterparty
+- id: leju
+  role: counterparty
+- id: zhaowei
+  role: counterparty
+- id: x-square-robot
+  role: counterparty
+title:
+  zh: 华为（深圳）全球具身智能产业创新中心启动运营，与 16 家企业签署合作备忘录
+summary:
+  zh: 11 月 15 日，深圳市前海管理局与宝安区政府举办「AI 向未来——人工智能应用创新成果发布会」，会上华为（深圳）全球具身智能产业创新中心宣布正式运营，并举行优选伙伴签约仪式，与 16 家企业签署合作备忘录。报道列出的签约企业包括兆威机电、拓斯达、乐聚机器人、深圳市大族机器人、深圳墨影科技、自变量机器人等。报道称该中心由华为与深圳市前海管理局、宝安区人民政府合作建立，后续华为将与签约企业开展应用场景相关合作。
+counterparties:
+- 深圳市前海管理局
+- 深圳市宝安区人民政府
+- 深圳市大族机器人有限公司
+- 深圳墨影科技有限公司
+evidence:
+- url: https://caifuhao.eastmoney.com/news/20241115170249743115900
+  publisher: 东方财富网财富号（金色光投资有道）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/caifuhao-2024-11-15-huawei-cloudrobo-shenzhe.html
+corroboration: single

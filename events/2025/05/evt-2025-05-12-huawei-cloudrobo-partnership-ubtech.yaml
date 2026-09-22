@@ -1,0 +1,23 @@
+id: evt-2025-05-12-huawei-cloudrobo-partnership-ubtech
+date: 2025-05-12
+date_precision: day
+type: partnership
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+- id: ubtech
+  role: counterparty
+title:
+  zh: 华为与优必选签署全面合作协议，围绕具身智能与人形机器人合作
+summary:
+  zh: 5 月 12 日，华为与优必选科技在深圳签署全面合作协议，围绕具身智能与人形机器人在产品技术研发、场景应用及产业体系开展合作。协议约定双方结合华为昇腾、鲲鹏、华为云及大模型能力与优必选的人形机器人技术，推动人形机器人在工业、家庭等场景落地；华为将支持优必选建设具身智能创新中心，并基于场景打造「人形机器人 + 智慧工厂」联合示范方案，合作开发包含双足与轮式人形机器人的家庭服务人形机器人。
+axes:
+  target_scene: [industrial-manufacturing, home]
+  embodiment_form: [humanoid-biped, humanoid-wheeled]
+evidence:
+- url: https://m.mp.oeeee.com/a/BAAFRD0000202505121085818.html
+  publisher: 南方都市报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/05/m-2025-05-12-huawei-cloudrobo-ubtech-.html
+corroboration: single

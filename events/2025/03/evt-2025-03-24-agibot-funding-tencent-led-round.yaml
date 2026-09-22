@@ -5,6 +5,8 @@ type: funding
 orgs:
 - id: agibot
   role: subject
+- id: tencent-robotics
+  role: investor
 title:
   zh: 智元机器人完成腾讯领投的新一轮融资
 summary:

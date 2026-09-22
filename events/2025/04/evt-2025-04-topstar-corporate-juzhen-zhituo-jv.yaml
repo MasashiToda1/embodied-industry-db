@@ -1,0 +1,27 @@
+id: evt-2025-04-topstar-corporate-juzhen-zhituo-jv
+date: 2025-04
+date_precision: month
+type: corporate
+orgs:
+- id: topstar
+  role: subject
+title:
+  zh: 拓斯达与智谱华章成立控股子公司矩阵智拓，研发机器人大小脑与行业专用模型
+summary:
+  zh: 拓斯达在官网文章中称，2025 年 4 月拓斯达与智谱华章成立合资公司矩阵智拓，由拓斯达控股，专注机器人大小脑与具身智能研究、开发行业专用模型。每日经济新闻 2025 年 3 月 13 日援引天眼查信息报道称，广东矩阵智拓科技有限公司注册资本 5000 万元人民币，由拓斯达（300607）、智谱 AI 关联公司北京智谱华章科技有限公司、海南何尊网络科技有限公司、东莞市拓谱思企业管理中心（有限合伙）共同持股。
+counterparties:
+- 北京智谱华章科技有限公司
+- 海南何尊网络科技有限公司
+- 东莞市拓谱思企业管理中心（有限合伙）
+evidence:
+- url: https://www.topstarltd.com/lang-cn/newsview/2269.html
+  publisher: 拓斯达
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/topstarltd-2025-04-topstar-juzhen-zhituo-jv.html
+- url: https://www.nbd.com.cn/articles/2025-03-13/3787046.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/nbd-2025-04-topstar-juzhen-zhituo-re.html
+corroboration: multi

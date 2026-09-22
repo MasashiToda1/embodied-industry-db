@@ -1,0 +1,30 @@
+id: evt-2025-08-06-bridgedp-funding-angel-plus-and-pre-a
+date: 2025-08-06
+date_precision: day
+type: funding
+orgs:
+- id: bridgedp
+  role: subject
+title:
+  zh: 桥介数物完成天使 + 轮及 Pre-A 轮融资，半年内累计三轮「近亿元」
+summary:
+  zh: 8 月 6 日，桥介数物（深圳）科技有限公司宣布完成天使 + 轮及 Pre-A 轮融资。天使 + 轮投资方包括复星创富、潜能集团等；Pre-A 轮由隐山资本领投，明荟致远、沂景资本等跟投；易凯资本担任独家财务顾问。报道称桥介数物在半年时间内连续完成 3 轮融资，累计金额「近亿元」。公司称资金将用于通用机器人动作开发平台的技术研发、产品升级与人才招聘。
+counterparties:
+- 复星创富
+- 潜能集团
+- 隐山资本
+- 明荟致远
+- 沂景资本
+- 易凯资本
+evidence:
+- url: https://www.caixin.com/2025-08-07/102349522.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/caixin-2025-08-06-bridgedp-angel-plus-prea.html
+- url: https://news.qq.com/rain/a/20250809A06H8F00
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/news-2025-08-06-bridgedp-angel-plus-prea.html
+corroboration: multi

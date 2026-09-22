@@ -1,0 +1,21 @@
+id: evt-2025-06-11-bytedance-seed-publication-chain-of-action
+date: 2025-06-11
+date_precision: day
+type: publication
+orgs:
+- id: bytedance-seed
+  role: subject
+title:
+  zh: "字节跳动 Seed 发布机器人操作论文《Chain-of-Action: Trajectory Autoregressive Modeling for Robotic Manipulation》"
+summary:
+  zh: 6 月 11 日，字节跳动 Seed 与阿德莱德大学、新加坡国立大学等机构在 arXiv 提交 Chain-of-Action 论文，提出从任务目标关键帧向初始状态反向自回归生成整条轨迹的视觉 - 运动策略范式。论文称在 60 项 RLBench 任务与 8 项真实操作任务上取得当时最好表现。
+counterparties:
+- 阿德莱德大学
+- 新加坡国立大学
+evidence:
+- url: https://arxiv.org/abs/2506.09990
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/arxiv-2025-06-11-bytedance-seed-chain-of-.html
+corroboration: single

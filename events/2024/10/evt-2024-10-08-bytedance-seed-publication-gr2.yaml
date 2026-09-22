@@ -1,0 +1,21 @@
+id: evt-2024-10-08-bytedance-seed-publication-gr2
+date: 2024-10-08
+date_precision: day
+type: publication
+orgs:
+- id: bytedance-seed
+  role: subject
+title:
+  zh: "字节跳动发布机器人操作模型 GR-2 论文《GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation》"
+summary:
+  zh: 10 月 8 日，ByteDance Research 在 arXiv 提交第二代机器人操作模型 GR-2 的技术报告。论文称 GR-2 先在 3800 万个互联网视频片段、超过 500 亿 token 上预训练，再用机器人轨迹微调视频生成与动作预测，在超过 100 项任务上平均成功率 97.7%。
+axes:
+  model_form: [end2end-vla]
+  data_acquisition: [human-video, real-robot]
+evidence:
+- url: https://arxiv.org/abs/2410.06158
+  publisher: arXiv
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/10/arxiv-2024-10-08-bytedance-seed-gr2.html
+corroboration: single

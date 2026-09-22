@@ -1,0 +1,22 @@
+id: evt-2025-06-28-yuhetian-partnership-agibot-strategic-agreement
+date: 2025-06-28
+date_precision: day
+type: partnership
+orgs:
+- id: yuhetian
+  role: subject
+- id: agibot
+  role: counterparty
+title:
+  zh: 玉禾田与上海智元新创签署战略合作协议，推动人形机器人进入城市服务场景
+summary:
+  zh: 6 月 28 日，玉禾田环境发展集团与上海智元新创技术有限公司在深圳福田玉禾田大厦签署战略合作协议。玉禾田称将推动人形机器人技术与城市服务场景结合，以城市服务场景为切入点构建智能装备研发与数据服务能力，实现从「城市服务商」到「科技赋能平台」的转型。
+axes:
+  target_scene: [commercial-service]
+evidence:
+- url: https://www.hbzhan.com/news/detail/189617.html
+  publisher: 环保在线（来源玉禾田集团）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/hbzhan-2025-06-28-yuhetian-agibot-strategi.html
+corroboration: single

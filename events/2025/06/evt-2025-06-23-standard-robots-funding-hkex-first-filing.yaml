@@ -1,0 +1,18 @@
+id: evt-2025-06-23-standard-robots-funding-hkex-first-filing
+date: 2025-06-23
+date_precision: day
+type: funding
+orgs:
+- id: standard-robots
+  role: subject
+title:
+  zh: 斯坦德机器人首次向港交所递交招股书
+summary:
+  zh: 6 月 23 日，斯坦德机器人正式向港交所递交招股书，拟在主板上市。招股书显示募集资金将用于强化核心机器人技术平台、机器人产品及 RoboVerse 系统，开发相关专有机器人技术，以及提升生产能力与建设新生产线。
+evidence:
+- url: https://robot.ofweek.com/2025-06/ART-8321202-8120-30665418.html
+  publisher: OFweek 机器人网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/robot-2025-06-23-standard-robots-hkex-fir.html
+corroboration: single

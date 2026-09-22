@@ -5,6 +5,8 @@ type: funding
 orgs:
 - id: limx
   role: subject
+- id: alibaba-robotics
+  role: investor
 title:
   zh: 逐际动力完成 A+ 轮融资，半年累计完成 5 亿元 A 轮系列融资
 summary:

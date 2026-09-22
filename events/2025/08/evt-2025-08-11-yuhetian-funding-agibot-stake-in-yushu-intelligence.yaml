@@ -1,0 +1,25 @@
+id: evt-2025-08-11-yuhetian-funding-agibot-stake-in-yushu-intelligence
+date: 2025-08-11
+date_precision: day
+type: funding
+orgs:
+- id: yuhetian
+  role: subject
+- id: agibot
+  role: investor
+title:
+  zh: 智元创新增资入股玉禾田旗下深圳玉树智能，持股 5%
+summary:
+  zh: 8 月 11 日，据国家企业信用信息公示系统数据，玉禾田全资子公司控股的深圳玉树智能机器人有限公司股权结构发生变更，智元创新（上海）科技有限公司认缴出资 263.16 万元持有 5% 股权，增资后深圳玉树注册资本由 5000 万元增至 5263.16 万元，玉禾田全资子公司持股比例调整为 95%。玉禾田接线人员对记者表示，公司此前 6 月已与智元机器人达成战略合作，因智元参股比例较小未在上市公司公告中披露，合作主要聚焦环卫机器人研发方向。
+amount:
+  value: 2631600
+  currency: CNY
+axes:
+  target_scene: [commercial-service]
+evidence:
+- url: https://www.21jingji.com/article/20250811/herald/503d1a57d1782d0aab4c234fd2e3d903.html
+  publisher: 21 世纪经济报道
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/21jingji-2025-08-11-yuhetian-agibot-stake.html
+corroboration: single

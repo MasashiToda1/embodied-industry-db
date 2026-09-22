@@ -1,0 +1,22 @@
+id: evt-2024-09-24-tencent-robotics-product_launch-the-five
+date: 2024-09-24
+date_precision: day
+type: product_launch
+orgs:
+- id: tencent-robotics
+  role: subject
+title:
+  zh: 腾讯 Robotics X 实验室发布人居环境机器人「5 号」（The Five，小五）
+summary:
+  zh: 9 月 24 日，腾讯 Robotics X 实验室发布第五代机器人人居环境机器人「5 号」（The Five，小五）。实验室称小五融合四腿轮足复合设计、大面积触觉皮肤、多指灵巧手与安全人机物理交互等自研技术，可在真实人居环境中完成行走、搬运物体等动作并与人交互。演示场景为养老院，小五依靠激光雷达与 RGBD 相机数据在推轮椅时自主避障，双臂抱扶承重 50 公斤。实验室称小五目前是原型机。
+axes:
+  target_scene: [home, healthcare]
+  embodiment_form: [humanoid-wheeled]
+  data_modality: [rgbd, tactile]
+evidence:
+- url: https://mp.weixin.qq.com/s/pZUKo5OLLdARQGvG7pwM6A
+  publisher: 腾讯 Robotics X
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/mp-2024-09-24-tencent-robotics-the-fiv.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2024-09-25-baidu-cloud-product_launch-embodied-track-solution
+date: 2024-09-25
+date_precision: day
+type: product_launch
+orgs:
+- id: baidu-cloud
+  role: subject
+title:
+  zh: 百度智能云在 2024 云智大会首设具身智能专题论坛并发布具身智能赛道解决方案
+summary:
+  zh: 9 月 25 日，2024 百度云智大会「具身智能专题论坛」在北京中关村国际创新中心举办，这是百度智能云首次在云智大会中设立具身智能分论坛。会上百度智能云对外发布具身智能赛道解决方案，方向包括：以文心大模型与千帆大模型平台构建具身大脑、云上仿真平台用于运控算法训练迭代、规模化数据采集与标注服务、远场语音交互方案、云管端一体化安全方案，以及云上 AI 算力与 AI Infra 平台。
+axes:
+  delivery_model: [subscription, service-delivery]
+evidence:
+- url: https://leaderobot.com/news/4686
+  publisher: 机器人大讲堂
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/09/leaderobot-2024-09-25-baidu-cloud-yunzhi2024-e.html
+corroboration: single

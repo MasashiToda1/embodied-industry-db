@@ -1,0 +1,28 @@
+id: evt-2025-08-11-alibaba-robotics-publication-rynn-opensource-trio
+date: 2025-08-11
+date_precision: day
+type: publication
+orgs:
+- id: alibaba-robotics
+  role: subject
+title:
+  zh: 阿里达摩院在世界机器人大会开源 RynnVLA-001-7B、RynnEC 与机器人上下文协议 RynnRCP
+summary:
+  zh: 8 月 11 日，在世界机器人大会上，阿里达摩院宣布开源自研的 VLA 模型 RynnVLA-001-7B、世界理解模型 RynnEC 与机器人上下文协议 RynnRCP。RynnVLA-001 基于视频生成与人体轨迹预训练，从第一人称视角视频学习操作技能并迁移到机械臂；RynnEC 从位置、功能、数量等 11 个维度解析场景物体；RynnRCP 包含 RCP 框架与 RobotMotion 两个模块，打通传感器数据采集、模型推理到动作执行的工作流，已支持 Pi0、GR00T N1.5 等模型与 SO-100、SO-101 等机械臂。RobotMotion 自带基于 MuJoCo 的物理仿真与真机调试、数据采集、轨迹可视化工具。
+axes:
+  model_form: [end2end-vla, world-model]
+  sim_stack: [mujoco]
+  data_acquisition: [human-video]
+  data_openness: fully-open
+evidence:
+- url: https://www.qbitai.com/2025/08/320807.html
+  publisher: 量子位
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/qbitai-2025-08-11-alibaba-robotics-rynn-op.html
+- url: https://github.com/alibaba-damo-academy/RynnRCP
+  publisher: Alibaba DAMO Academy
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/github-2025-08-11-alibaba-robotics-rynnrcp.html
+corroboration: multi

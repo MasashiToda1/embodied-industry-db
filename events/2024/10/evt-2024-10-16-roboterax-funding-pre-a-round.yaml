@@ -5,6 +5,8 @@ type: funding
 orgs:
 - id: roboterax
   role: subject
+- id: alibaba-robotics
+  role: investor
 title:
   zh: 星动纪元完成 Pre-A 轮融资
 summary:

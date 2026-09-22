@@ -1,0 +1,24 @@
+id: evt-2025-03-06-huawei-cloudrobo-partnership-leju-5ga-kuavo
+date: 2025-03-06
+date_precision: day
+type: partnership
+orgs:
+- id: huawei-cloudrobo
+  role: subject
+- id: leju
+  role: counterparty
+title:
+  zh: 中国移动、华为与乐聚在 MWC2025 联合发布搭载 5G-A 技术的人形机器人夸父
+summary:
+  zh: 3 月 6 日，乐聚机器人官方微信公众号发布消息称，在西班牙巴塞罗那举行的世界移动通信大会（MWC2025）上，中国移动、华为与乐聚联合发布搭载 5G-A 技术的人形机器人「夸父」。乐聚称该机器人是三方在 GTI 平台下合作的阶段性成果，通过更宽的带宽、更低的延迟与更智能化的网络架构支撑人形机器人的多场景应用。
+counterparties:
+- 中国移动
+axes:
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://www.nbd.com.cn/articles/2025-03-06/3778119.html
+  publisher: 每日经济新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/nbd-2025-03-06-huawei-cloudrobo-5ga-kua.html
+corroboration: single

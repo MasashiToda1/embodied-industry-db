@@ -1,0 +1,18 @@
+id: evt-2025-04-03-honor-robotics-corporate-new-industry-incubation-dept
+date: 2025-04-03
+date_precision: day
+type: corporate
+orgs:
+- id: honor-robotics
+  role: subject
+title:
+  zh: 报道称荣耀设立新产业孵化部，下设具身智能实验室等五个实验室
+summary:
+  zh: 4 月 3 日，《科创板日报》报道称荣耀已设立新产业孵化部，下设具身智能实验室、具身数据实验室、交互安全实验室、动力总成实验室、仿生本体研究实验室。报道称荣耀在招聘网站上发布了机器人数据生成算法工程师、一体化关节设计师、机器人动力系统仿真工程师等岗位。
+evidence:
+- url: https://www.tmtpost.com/nictation/7522156.html
+  publisher: 钛媒体（转载《科创板日报》）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/04/tmtpost-2025-04-03-honor-robotics-incubatio.html
+corroboration: single

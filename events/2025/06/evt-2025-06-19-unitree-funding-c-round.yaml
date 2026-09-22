@@ -5,6 +5,10 @@ type: funding
 orgs:
 - id: unitree
   role: subject
+- id: alibaba-robotics
+  role: investor
+- id: tencent-robotics
+  role: investor
 title:
   zh: 宇树科技确认完成 C 轮融资交割
 summary:
