@@ -1,0 +1,23 @@
+id: evt-2026-07-07-orbbec-partnership-robbyant-lingbot-depth-2
+date: 2026-07-07
+date_precision: day
+type: partnership
+orgs:
+- id: orbbec
+  role: subject
+- id: robbyant
+  role: counterparty
+title:
+  zh: 奥比中光发布无本体数据采集硬件平台，EGO RGB-D 适配蚂蚁灵波 LingBot-Depth 2.0
+summary:
+  zh: 7 月 7 日，蚂蚁灵波发布新一代空间感知模型 LingBot-Depth 2.0，结合奥比中光相机使用并获奥比中光深度视觉实验室认证。奥比中光同期推出无本体数据采集硬件平台（EGO、UMI、WristCam），其中 EGO RGB-D 集成 Gemini 330 系列双目 3D 相机与自研深度引擎芯片 MX6800，并适配 LingBot-Depth 2.0；双方合作始于 2026 年 1 月的战略合作。
+axes:
+  data_modality:
+  - rgbd
+evidence:
+- url: https://orbbec.com.cn/index/News/info.html?cate=31&id=375
+  publisher: 奥比中光官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/orbbec-2026-07-07-orbbec-robbyant-lingbot-.html
+corroboration: single

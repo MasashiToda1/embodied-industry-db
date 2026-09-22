@@ -1,0 +1,29 @@
+id: evt-2026-08-18-hesai-deployment-q2-2026-robotics-lidar
+date: 2026-08-18
+date_precision: day
+type: deployment
+orgs:
+- id: hesai
+  role: subject
+- id: unitree
+  role: customer
+- id: robbyant
+  role: customer
+- id: galbot
+  role: customer
+- id: galaxea
+  role: customer
+title:
+  zh: 禾赛 2026 年二季度机器人激光雷达出货 142371 台，宇树、蚂蚁灵波、银河通用、星海图等下新增订单
+summary:
+  zh: 8 月 18 日，禾赛发布 2026 年第二季度业绩：机器人激光雷达出货 142371 台，同比增长 193.4%，上半年累计 260653 台。公司称人形机器人等智能终端带来宇树、蚂蚁灵波、银河通用、星海图、原力灵机等客户的新增订单；自研机器人动力模组于二季度开始产生收入并向 Sharpa 供货，灵巧手模组已出货；空间智能平台 Kosmo 于 2026 年 7 月交付样机后获得包括银河通用在内的多家人形机器人公司订单。
+counterparties:
+- 原力灵机
+- Sharpa
+evidence:
+- url: https://investor.hesaitech.com/news-releases/news-release-details/hesai-group-reports-second-quarter-2026-unaudited-financial/
+  publisher: Hesai Group 投资者关系网站
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/investor-2026-08-18-hesai-q2-2026-robotics-l.html
+corroboration: single

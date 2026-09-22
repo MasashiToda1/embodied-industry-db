@@ -8,3 +8,15 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: chingmu
+founded: 2015
+hq:
+  country: CN
+  city: 上海
+description: 做光学动作捕捉系统的公司，产品有 MC / K 系列动捕相机、OptiUMI 数采系统与 RoboDecode 机器人数据 / 测评平台。
+accounts:
+  site: https://www.chingmu.com
+sources:
+- url: https://www.chingmu.com/company-news/newsdetail_658.shtml
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司介绍，上海青瞳视觉科技有限公司创立于 2015 年，总部上海

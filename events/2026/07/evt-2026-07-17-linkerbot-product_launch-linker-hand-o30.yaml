@@ -1,0 +1,21 @@
+id: evt-2026-07-17-linkerbot-product_launch-linker-hand-o30
+date: 2026-07-17
+date_precision: day
+type: product_launch
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手在 WAIC 2026 首发 20 自由度全直驱灵巧手 Linker Hand O30
+summary:
+  zh: 7 月 17 日 2026 世界人工智能大会（WAIC）开幕，灵心巧手在 H3-B122 展位首次公开亮相全直驱灵巧手 Linker Hand O30。O30 为 20 自由度，每个关节搭载独立驱动单元，单手重 740 克，公司称其具备亚毫米级重复定位精度；现场同时展示「灵巧手组装灵巧手」自动产线，并集中展示连杆、腱绳、直驱三条技术路线的新品。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://robot.ofweek.com/2026-07/ART-898890-8120-30695066.html
+  publisher: OFweek 机器人网 · 来源灵心巧手
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/robot-2026-07-17-linkerbot-o30-waic.html
+corroboration: single

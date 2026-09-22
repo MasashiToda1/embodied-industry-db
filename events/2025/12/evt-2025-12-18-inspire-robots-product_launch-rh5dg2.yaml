@@ -1,0 +1,21 @@
+id: evt-2025-12-18-inspire-robots-product_launch-rh5dg2
+date: 2025-12-18
+date_precision: day
+type: product_launch
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人发布 RH5DG2 系列高自由度灵巧手，全年量产交付超 10000 台
+summary:
+  zh: 12 月 18 日，在杭州举办的第六届中国机器人行业年会上，因时机器人发布新一代 RH5DG2 系列（G2 系列）高自由度灵巧手。G2 系列具备 13 个主动自由度、18 个可运动关节，整手宽度 95mm，重量约 990g，指尖抓握力 20N，掌内集成 8 组触觉传感器。公司 CEO 在大会上称，因时机器人灵巧手全年累计量产交付超过 10000 台。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://inspire-robots.com/news/company%20news/2025-12-30/296.html
+  publisher: 因时机器人官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/inspire-robo-2025-12-18-inspire-robots-g2-launch.html
+corroboration: single

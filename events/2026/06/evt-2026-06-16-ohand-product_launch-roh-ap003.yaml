@@ -1,0 +1,27 @@
+id: evt-2026-06-16-ohand-product_launch-roh-ap003
+date: 2026-06-16
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「2026 年 6 月 16 日至 17 日，2026 张江 EAI 在上海举行……在大会新品发布环节……推出了与迈来芯联合打造的 ROH-AP003 触觉力控灵巧手」
+type: product_launch
+orgs:
+- id: ohand
+  role: subject
+title:
+  zh: 傲意科技发布与迈来芯联合打造的 ROH-AP003 触觉力控灵巧手
+summary:
+  zh: 2026 张江具身智能供应链大会（6 月 16 日至 17 日）期间，傲意科技发布与迈来芯联合打造的 ROH-AP003 触觉力控灵巧手，采用迈来芯 Tactaxis 3D 磁触觉传感技术，传感器可感知 0.1N 的力，剪切力方向分辨度 1°，采样频率 150Hz。公司称其为国内首个实现量产的 3D 磁触觉灵巧手，可搭载于机械臂与人形机器人平台。
+counterparties:
+- 迈来芯
+axes:
+  hardware_strategy:
+  - in-house
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.oymotion.com/news8/481
+  publisher: 傲意科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/oymotion-2026-06-16-ohand-roh-ap003-launch.html
+corroboration: single

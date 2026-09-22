@@ -2,8 +2,22 @@ id: qianjue
 names:
   zh: 千觉机器人
   en: Qianjue Robotics
+  aliases:
+  - Xense Robotics
 status: active
 layers:
 - components
 upstream:
   robotics_notebooks_institution: qianjue
+founded: 2024-05
+hq:
+  country: CN
+  city: 上海
+description: 做多模态视触觉传感器与触觉数采、仿真的公司，产品有精灵指尖触觉传感器、XTac 数采夹爪与 Xense Sim。
+accounts:
+  site: https://www.xenserobotics.com
+sources:
+- url: https://www.xenserobotics.com/aboutus/38
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，成立于 2024 年 5 月，总部上海

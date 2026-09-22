@@ -1,0 +1,30 @@
+id: evt-2026-02-24-inspire-robots-funding-c1-c2-round
+date: 2026-02-24
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「因时机器人近日完成 C1 及 C2 两轮融资」（投中网 2026-02-25 报道；新浪财经转载称 2 月 24 日宣布）
+type: funding
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人完成数亿元 C1 轮及 C2 轮融资
+summary:
+  zh: 因时机器人宣布完成 C1 及 C2 两轮融资，合计融资金额数亿元人民币。C1 轮由中国移动链长基金与深创投联合领投，博原资本、达晨财智、春华资本跟投；C2 轮由北京市人工智能产业投资基金领投，启明创投、博原资本、春华资本、金石数经基金、TCL 创投跟投。公司称融资用于灵巧操作技术研发、核心零部件产品创新、提升交付能力与拓展全球化市场。
+counterparties:
+- 中国移动链长基金
+- 深创投
+- 博原资本
+- 达晨财智
+- 春华资本
+- 北京市人工智能产业投资基金
+- 启明创投
+- 金石数经基金
+- TCL 创投
+evidence:
+- url: https://www.chinaventure.com.cn/news/114-20260225-390217.html
+  publisher: 投中网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/chinaventure-2026-02-24-inspire-robots-c1-c2-rou.html
+corroboration: single

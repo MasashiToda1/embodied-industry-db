@@ -1,0 +1,23 @@
+id: evt-2026-05-21-orbbec-deployment-humanoid-orders-double
+date: 2026-05-21
+date_precision: day
+type: deployment
+orgs:
+- id: orbbec
+  role: subject
+- id: x-square-robot
+  role: customer
+title:
+  zh: 奥比中光称 2026 年一季度人形机器人相关订单环比翻倍，全球机器人客户超 1000 家
+summary:
+  zh: 奥比中光称，2025 年以来公司人形机器人相关订单季度环比增速均超过 60%，2026 年第一季度订单环比翻倍增长，整体交付周期由约 40 天缩短至 20 天左右；公司为自变量机器人、北京人形机器人创新中心等客户提供 3D 视觉感知方案，包括人形在内的全球机器人客户超 1000 家。自变量机器人多台人形机器人搭载奥比中光双目结构光相机进行插花、快递分拣等任务测试。
+axes:
+  data_modality:
+  - rgbd
+evidence:
+- url: http://www.orbbec.com.cn/index/News/info.html?cate=31&id=368
+  publisher: 奥比中光官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/orbbec-2026-05-21-orbbec-humanoid-orders.html
+corroboration: single

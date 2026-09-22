@@ -1,0 +1,23 @@
+id: evt-2025-12-29-linkerbot-funding-a-plus-plus-round
+date: 2025-12-29
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成 A++ 轮融资，红杉中国、创世伙伴创投等投资
+summary:
+  zh: 12 月 29 日，灵心巧手宣布完成 A++ 轮融资，本轮由红杉中国、创世伙伴创投（CCV）、广发乾和、普丰资本投资，金额未披露，资金用于产品技术研发、产能提升和具身智能灵巧操作数据积累。公司称已量产千台高自由度灵巧手，计划 2026 年交付 5 万至 10 万台。
+counterparties:
+- 红杉中国
+- 创世伙伴创投（CCV）
+- 广发乾和
+- 普丰资本
+evidence:
+- url: https://www.bjnews.com.cn/detail/1766978522129896.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/bjnews-2025-12-29-linkerbot-a-plus-plus-ro.html
+corroboration: single

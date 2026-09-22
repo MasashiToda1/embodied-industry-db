@@ -1,0 +1,25 @@
+id: evt-2026-05-wuji-tech-deployment-genesis-ai-gene-26-5-hand
+date: 2026-05
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，舞肌科技通过社交媒体正式证实」（NE 时代 2026-05-09 报道）
+type: deployment
+orgs:
+- id: wuji-tech
+  role: subject
+- id: genesis-ai
+  role: customer
+title:
+  zh: 舞肌科技证实 Genesis AI 基础模型 GENE-26.5 演示中的灵巧手为 Wuji Hand
+summary:
+  zh: 舞肌科技通过社交媒体证实，Genesis AI 首款机器人基础模型 GENE-26.5 演示（烹饪、移液、解魔方、弹钢琴等任务）中的核心硬件为其自研的 Wuji Hand。Wuji Hand 原型被用于 Genesis AI 专有灵巧手的开发，舞肌科技依据 1:1 人体比例与反向驱动设计协助制造了 Genesis Hand 1.0。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.ne-time.cn/web/article/38662
+  publisher: NE 时代
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/ne-time-2026-05-wuji-tech-genesis-ai-han.html
+corroboration: single

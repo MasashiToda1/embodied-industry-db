@@ -1,0 +1,24 @@
+id: evt-2026-05-29-keli-sensing-deployment-robot-force-sensors-2025
+date: 2026-05-29
+date_precision: day
+type: deployment
+orgs:
+- id: keli-sensing
+  role: subject
+- id: kepler
+  role: customer
+title:
+  zh: 柯力传感称 2025 年机器人力学传感器销量超 1500 只，向开普勒人形机器人批量出货数百台
+summary:
+  zh: 5 月 29 日，柯力传感召开 2025 年度暨 2026 年第一季度业绩说明会。公司称机器人力学传感器已向超过 70 家机器人企业送样，2025 年全年销量超 1500 只，其中应用于 AI 理疗机器人及开普勒人形机器人的产品均实现数百台批量出货；2025 年公司先后战略投资开普勒、猿声先达、他山科技、北微传感、智身科技。
+counterparties:
+- 猿声先达
+- 他山科技
+- 北微传感
+evidence:
+- url: https://m.10jqka.com.cn/sn/20260529/58293627.shtml
+  publisher: 同花顺财经 · 柯力传感公告
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/m-2026-05-29-keli-sensing-2025-result.html
+corroboration: single

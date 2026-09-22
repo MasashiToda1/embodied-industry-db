@@ -1,0 +1,22 @@
+id: evt-2026-03-04-hesai-deployment-honor-humanoid-jt-lidar
+date: 2026-03-04
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「近日，在西班牙巴塞罗那举行的 2026 世界移动通信大会（MWC）上……」（禾赛官网 2026-03-04 发布）
+type: deployment
+orgs:
+- id: hesai
+  role: subject
+- id: honor-robotics
+  role: customer
+title:
+  zh: 荣耀首款具身智能人形机器人搭载禾赛 JT 系列激光雷达在 MWC 2026 亮相
+summary:
+  zh: 2026 世界移动通信大会（MWC）上，荣耀第一款具身智能人形机器人亮相，搭载禾赛 JT 系列激光雷达，现场完成握手、太空步、后空翻等动作。禾赛称 JT 系列为迷你型 360° 激光雷达，截至 2025 年累计交付量突破 20 万颗。
+evidence:
+- url: https://www.hesaitech.com/cn/news/1436
+  publisher: 禾赛科技官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/hesaitech-2026-03-04-hesai-honor-humanoid-mwc.html
+corroboration: single

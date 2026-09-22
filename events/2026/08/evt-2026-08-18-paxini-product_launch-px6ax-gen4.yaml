@@ -1,0 +1,21 @@
+id: evt-2026-08-18-paxini-product_launch-px6ax-gen4
+date: 2026-08-18
+date_precision: day
+type: product_launch
+orgs:
+- id: paxini
+  role: subject
+title:
+  zh: 帕西尼发布第四代多维触觉传感器系列 PX6AX GEN4，搭载自研 6D 触觉感知芯片 GEN4 FUSE
+summary:
+  zh: 8 月 18 日，帕西尼发布搭载自研 6D 触觉感知芯片 GEN4 FUSE 的第四代 ITPU 多维触觉传感器系列 PX6AX GEN4，包括 Superior（旗舰指尖 / 指腹 / 掌心）、Neuron（全身电子皮肤）、Gripper（夹爪触觉模块）三个新形态，并对 Elite、Core、Omega 系列升级。公司称近一年自研芯片累计消耗量突破 100 万颗，模组厚度 1.9mm。
+axes:
+  data_modality:
+  - tactile
+evidence:
+- url: https://www.sensorexpert.com.cn/article/503118.html
+  publisher: 传感器专家网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/sensorexpert-2026-08-18-paxini-px6ax-gen4-launch.html
+corroboration: single

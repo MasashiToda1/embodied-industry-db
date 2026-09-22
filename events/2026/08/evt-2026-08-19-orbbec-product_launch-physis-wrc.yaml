@@ -1,0 +1,23 @@
+id: evt-2026-08-19-orbbec-product_launch-physis-wrc
+date: 2026-08-19
+date_precision: day
+type: product_launch
+orgs:
+- id: orbbec
+  role: subject
+title:
+  zh: 奥比中光在 WRC 2026 发布机器人视觉新品 Physis 系列与无本体数据采集硬件矩阵
+summary:
+  zh: 8 月 19 日，2026 世界机器人大会首日，奥比中光举行「多维感知」新品发布会，发布机器人视觉新品 Physis 系列（瞳距 RGB 双目 Physis 257g 与单目 RGB Physis 157g），无本体数据采集硬件矩阵（EGO、UMI、WristCam、Hub）首次集中亮相；同时推出双目 3D 相机 Gemini 338Le 与 Gemini 338Lg。
+axes:
+  data_acquisition:
+  - teleop
+  data_modality:
+  - rgbd
+evidence:
+- url: https://www.orbbec.com.cn/index/News/info.html?cate=31&id=380
+  publisher: 奥比中光官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/orbbec-2026-08-19-orbbec-physis-wrc-launch.html
+corroboration: single

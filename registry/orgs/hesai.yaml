@@ -7,3 +7,15 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: hesai
+founded: 2014
+hq:
+  country: CN
+  city: 上海
+description: 纳斯达克与港交所上市（HSAI / 2525）的激光雷达公司，机器人产品有 JT 系列迷你激光雷达、Kosmo 空间智能平台与机器人动力模组。
+accounts:
+  site: https://www.hesaitech.com
+sources:
+- url: https://www.hesaitech.com/cn/about-us
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于禾赛页，2014 年在上海创立，产品矩阵与上市信息

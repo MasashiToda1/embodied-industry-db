@@ -1,0 +1,27 @@
+id: evt-2026-08-keli-sensing-deployment-robot-force-sensors-h1-2026
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 柯力传感《2026 年「提质增效重回报」行动方案半年度评估报告》，与 2026 年半年度报告同期披露（2026 年 8 月下旬）
+type: deployment
+orgs:
+- id: keli-sensing
+  role: subject
+title:
+  zh: 柯力传感 2026 年上半年机器人力学传感器销售超 2000 只，4 月起月订单量突破千只
+summary:
+  zh: 柯力传感在 2026 年半年度评估报告中称，2026 年上半年机器人力学传感器业务由小批量生产向批量化供应过渡，自 4 月起月订单量持续突破千只，1 至 6 月累计销售超 2000 只，超过 2025 年全年销量；已累计向超过 90 家人形机器人、协作机器人及工业机器人企业送样，产品涵盖六维力 / 力矩传感器、关节力矩传感器。上半年公司直投体系完成对深朴智能、云幕智造等的战略投资，旗下产业基金完成对恒之未来等的战略投资。
+counterparties:
+- 深朴智能
+- 云幕智造
+- 中科动态
+- 新港电子
+- 芯探科技
+- 森云智能
+evidence:
+- url: https://www.9fzt.com/detail/sh_603662_9_e2aa931d3346f410d1636f6abe643b5e.html
+  publisher: 九方智投 · 柯力传感公告
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/9fzt-2026-08-keli-sensing-h1-2026-rob.html
+corroboration: single

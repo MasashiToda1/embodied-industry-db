@@ -1,0 +1,32 @@
+id: evt-2026-08-26-robosense-deployment-h1-2026-robot-lidar
+date: 2026-08-26
+date_precision: day
+type: deployment
+orgs:
+- id: robosense
+  role: subject
+- id: unitree
+  role: customer
+- id: agibot
+  role: customer
+- id: galbot
+  role: customer
+- id: pudu
+  role: customer
+- id: dobot
+  role: customer
+- id: limx
+  role: customer
+- id: fourier
+  role: customer
+title:
+  zh: 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展
+summary:
+  zh: 8 月 26 日，速腾聚创发布 2026 年中期业绩：上半年激光雷达总销量 719200 台，其中机器人领域 282600 台，同比增长 510.4%，机器人业务收入占产品收入近半。公司称已与宇树、智元、银河通用、普渡、越疆、逐际动力、傅利叶等近 60 家具身智能企业达成合作；首次披露空间相机（已获规模化订单，三季度末启动交付）、视触觉与 MEMS 触觉传感器（9 月底启动商业交付）、关节模组（首批万级采购需求，四季度批量交付）三类新品。
+evidence:
+- url: https://www.163.com/dy/article/L5B3OFHP053990SN.html
+  publisher: 网易号 · 金角财经（转载速腾聚创新闻稿）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/163-2026-08-26-robosense-h1-2026-robot-.html
+corroboration: single

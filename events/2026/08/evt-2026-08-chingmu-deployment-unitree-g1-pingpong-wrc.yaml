@@ -1,0 +1,29 @@
+id: evt-2026-08-chingmu-deployment-unitree-g1-pingpong-wrc
+date: 2026-08
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「From August 19 to 23, the 2026 World Robot Conference (WRC) was held……CHINGMU joined forces with……Unitree Technology」（青瞳视觉官网英文站 2026-08-26 发布）
+type: deployment
+orgs:
+- id: chingmu
+  role: subject
+- id: unitree
+  role: customer
+title:
+  zh: 青瞳视觉在 WRC 2026 联合宇树科技演示动捕驱动的 G1 人机乒乓对打、实时遥操作与 RoboEval 运动测评
+summary:
+  zh: 2026 世界机器人大会期间，青瞳视觉联合宇树科技、极佳科技等以七个展示点位呈现数据采集、遥操作、机器人执行到运动测评的链路：光学动捕实时捕捉乒乓球与机器人位置驱动宇树 G1 人机对打，演示 RoboTeleop 实时遥操作，并联合北京市文化和旅游局、中国质量检验检测科学研究院演示 RoboEval 机器人运动测评平台。
+counterparties:
+- 极佳科技
+- 中国质量检验检测科学研究院
+axes:
+  data_acquisition:
+  - mocap
+  - teleop
+evidence:
+- url: https://en.chingmu.com/company-news/10792.shtml
+  publisher: 青瞳视觉官网（英文站）
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/en-2026-08-chingmu-unitree-wrc-ping.html
+corroboration: single

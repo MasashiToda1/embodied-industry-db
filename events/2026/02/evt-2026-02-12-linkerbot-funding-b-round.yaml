@@ -1,0 +1,31 @@
+id: evt-2026-02-12-linkerbot-funding-b-round
+date: 2026-02-12
+date_precision: day
+type: funding
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手完成近 15 亿元 B 轮融资，道得投资、盛世投资领投
+summary:
+  zh: 2 月 12 日，灵心巧手宣布完成近 15 亿元 B 轮融资。本轮由道得投资、盛世投资领投，盈渊朴远基金、诺瓦星云、新鼎资本、中和资本、智路资本、诚筑投资、临云资本、嘉铭浩春、财鑫资本、Singapore Eastern Epic Capitals 等跟投。公司称融资用于核心产品技术研发、产能提升和全栈基座能力打造，目标在 2026 年实现 5 万至 10 万台灵巧手交付。
+counterparties:
+- 道得投资
+- 盛世投资
+- 盈渊朴远基金
+- 诺瓦星云
+- 新鼎资本
+- 中和资本
+- 智路资本
+- 诚筑投资
+- 临云资本
+- 嘉铭浩春
+- 财鑫资本
+- Singapore Eastern Epic Capitals
+evidence:
+- url: https://www.stcn.com/article/detail/3641823.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/stcn-2026-02-12-linkerbot-b-round.html
+corroboration: single

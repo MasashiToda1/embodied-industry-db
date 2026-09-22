@@ -5,5 +5,20 @@ names:
 status: active
 layers:
 - components
+founded: 2015
+hq:
+  country: CN
+  city: 杭州
+description: 做非侵入式脑机接口、智能仿生手与机器人灵巧手的公司，产品有 Revo 系列灵巧手与智能仿生腿。
 accounts:
   github: brainco
+  site: https://www.brainco.cn
+sources:
+- url: https://www.brainco.cn/zh-TW/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，创立于 2015 年
+- url: https://zh.wikipedia.org/wiki/%E5%BC%BA%E8%84%91%E7%A7%91%E6%8A%80
+  tier: aggregator
+  retrieved: '2026-09-22'
+  note: 运营主体浙江强脑科技有限公司 2018-12-21 注册，总部杭州市余杭区

@@ -1,0 +1,21 @@
+id: evt-2026-03-29-inspire-robots-product_launch-rh56h1
+date: 2026-03-29
+date_precision: day
+type: product_launch
+orgs:
+- id: inspire-robots
+  role: subject
+title:
+  zh: 因时机器人发布小尺寸灵巧手 RH56H1 系列
+summary:
+  zh: 3 月 29 日，因时机器人发布 RH56H1 系列灵巧手，定位小尺寸高性能执行器，面向具身智能与人形机器人应用。产品尺寸 159.70mm×75.18mm，六自由度、十一关节，单指最大输出力 15N，单指被动负载 8kg，控制频率 1000Hz，集成触觉传感器，支持 Modbus-RTU、EtherCAT、RS485 及 CANFD 通信协议。
+axes:
+  hardware_strategy:
+  - in-house
+evidence:
+- url: https://www.aibangbots.com/a/8062
+  publisher: 艾邦机器人
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/aibangbots-2026-03-29-inspire-robots-rh56h1-la.html
+corroboration: single

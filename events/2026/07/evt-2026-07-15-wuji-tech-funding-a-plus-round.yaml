@@ -1,0 +1,23 @@
+id: evt-2026-07-15-wuji-tech-funding-a-plus-round
+date: 2026-07-15
+date_precision: day
+date_basis: derived
+date_as_stated: 原文「企查查 APP 显示，近日，上海舞肌科技有限公司发生工商变更」（人民财讯 2026-07-15 电）；投资界等聚合库记为 2026-07-15 A+ 轮
+type: funding
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技工商变更新增蚂蚁集团关联公司、美团龙珠等股东（A+ 轮）
+summary:
+  zh: 企查查显示，上海舞肌科技有限公司发生工商变更，新增蚂蚁集团关联公司上海云玚企业管理咨询有限公司、美团旗下福建省龙珠文旅数创股权投资基金合伙企业（有限合伙）等为股东，注册资本增至 262.25 万元。融资金额未披露。
+counterparties:
+- 蚂蚁集团
+- 美团龙珠
+evidence:
+- url: https://www.stcn.com/article/detail/4020460.html
+  publisher: 证券时报网 · 来源人民财讯
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/stcn-2026-07-15-wuji-tech-a-plus-round.html
+corroboration: single

@@ -5,3 +5,15 @@ names:
 status: active
 layers:
 - components
+founded: 2016
+hq:
+  country: CN
+  city: 北京
+description: 做微型伺服电缸与仿人五指灵巧手的公司，产品有 RH56 系列灵巧手与 LA 系列微型电缸。
+accounts:
+  site: https://inspire-robots.com
+sources:
+- url: https://inspire-robots.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网首页公司简介，成立于 2016 年，总部北京石景山

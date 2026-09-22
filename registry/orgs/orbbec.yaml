@@ -8,5 +8,16 @@ layers:
 - data
 upstream:
   robotics_notebooks_institution: orbbec
+founded: 2013
+hq:
+  country: CN
+  city: 深圳
+description: 科创板上市（688322）的 3D 视觉传感器公司，产品有 Gemini 330 系列双目 3D 相机、Physis 系列与无本体数据采集硬件。
 accounts:
   github: orbbec
+  site: https://www.orbbec.com.cn
+sources:
+- url: https://www.orbbec.com.cn/index/CompanyProfile/index.html?cate=49
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介，成立于 2013 年，总部深圳，2022 年 7 月科创板上市

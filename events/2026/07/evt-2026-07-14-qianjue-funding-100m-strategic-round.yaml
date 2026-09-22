@@ -1,0 +1,21 @@
+id: evt-2026-07-14-qianjue-funding-100m-strategic-round
+date: 2026-07-14
+date_precision: day
+type: funding
+orgs:
+- id: qianjue
+  role: subject
+title:
+  zh: 千觉机器人完成亿元级融资，吉德电器与具身智能产业方战略投资
+summary:
+  zh: 7 月 14 日，千觉机器人科技（上海）有限公司宣布完成亿元级融资，本轮由一家具身智能产业方与吉德电器战略投资，天季资本共同投资。资金用于高精度三色光视触觉传感器产业化、视触觉数采设备与触觉数据集部署验证、原生支持触觉与接触模态的物理智能模型。报道同时提到公司 7 月 10 日发布面向 UMI 数据采集的视触觉传感器 GS-PS。
+counterparties:
+- 吉德电器
+- 天季资本
+evidence:
+- url: https://tech.ifeng.com/c/8ukvcONpO63
+  publisher: 凤凰网科技 · 来源智东西机器人前瞻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/tech-2026-07-14-qianjue-100m-round.html
+corroboration: single

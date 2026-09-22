@@ -1,0 +1,24 @@
+id: evt-2026-09-qianjue-funding-two-strategic-rounds
+date: 2026-09
+date_precision: month
+date_basis: derived
+date_as_stated: 原文「近日，千觉机器人宣布连续完成两轮数亿元战略融资」（千觉机器人公众号，智能制造网 2026-09-20 转载）
+type: funding
+orgs:
+- id: qianjue
+  role: subject
+title:
+  zh: 千觉机器人连续完成两轮数亿元战略融资，蓝驰创投、中金资本、靖亚资本加注
+summary:
+  zh: 千觉机器人宣布连续完成两轮数亿元战略融资，投资方包括蓝驰创投、中金资本旗下基金、靖亚资本等。公司称资金用于高精度视触觉传感器迭代与规模化交付、真实交互数据采集、触觉仿真与数据集建设，以及触觉具身模型和触觉世界模型研发。
+counterparties:
+- 蓝驰创投
+- 中金资本
+- 靖亚资本
+evidence:
+- url: https://www.gkzhan.com/news/detail/195751.html
+  publisher: 智能制造网 · 来源千觉机器人微信公众号
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/09/gkzhan-2026-09-qianjue-two-strategic-ro.html
+corroboration: single

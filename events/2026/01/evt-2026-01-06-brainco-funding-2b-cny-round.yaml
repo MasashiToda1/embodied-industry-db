@@ -1,0 +1,34 @@
+id: evt-2026-01-06-brainco-funding-2b-cny-round
+date: 2026-01-06
+date_precision: day
+date_basis: derived
+date_as_stated: 澎湃新闻 2026-01-06 报道「近期……完成约 20 亿元人民币融资」；公司负责人 1 月 8 日向上海证券报确认完成该融资
+type: funding
+orgs:
+- id: brainco
+  role: subject
+title:
+  zh: 强脑科技完成约 20 亿元融资，IDG 与华登国际领投
+summary:
+  zh: 1 月 6 日，澎湃新闻报道强脑科技近期完成约 20 亿元人民币融资，投资人包括 IDG、华登国际、蓝思科技、领益智造、韦尔股份、润泽科技、华住集团、好未来集团及中国香港、美国家族办公室。1 月 8 日公司负责人向上海证券报确认完成该融资，称本轮由 IDG、华登国际领衔，募集资金用于脑机接口核心技术研发、产品规模化与量产落地。
+counterparties:
+- IDG
+- 华登国际
+- 蓝思科技
+- 领益智造
+- 韦尔股份
+- 润泽科技
+- 华住集团
+- 好未来集团
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_32326833
+  publisher: 澎湃新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/thepaper-2026-01-06-brainco-2b-round.html
+- url: https://www.stcn.com/article/detail/3578281.html
+  publisher: 证券时报网 · 来源上海证券报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/stcn-2026-01-06-brainco-2b-round-confirm.html
+corroboration: multi

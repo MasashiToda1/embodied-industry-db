@@ -11,3 +11,19 @@ layers:
 - components
 upstream:
   robotics_notebooks_institution: paxini
+founded: 2021
+hq:
+  country: CN
+  city: 北京
+description: 做霍尔式多维触觉传感器、触觉灵巧手与人形机器人的公司，产品有 PX6AX 系列传感器、DexH13 灵巧手与 TORA-ONE。
+accounts:
+  site: https://paxini.com
+sources:
+- url: https://paxini.com/cn/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网关于我们页，成立于 2021 年，产品线；页面列出深圳、上海、天津、宿迁办公地址
+- url: https://finance.eastmoney.com/a/202609163876409752.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 科创板日报 2026-09-16 报道，公司现名帕西尼人工智能科技（北京）股份有限公司，总部位于北京市海淀区（2026 年 8 月由深圳迁至北京）
