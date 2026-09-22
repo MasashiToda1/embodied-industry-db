@@ -1,0 +1,21 @@
+id: evt-2024-11-14-zhaowei-product-launch-first-gen-dexterous-hand-chtf
+date: 2024-11-14
+date_precision: day
+type: product_launch
+orgs:
+- id: zhaowei
+  role: subject
+title:
+  zh: 兆威机电在第二十六届高交会首发手指集成驱动的灵巧手，整手 17 个主动执行单元
+summary:
+  zh: 11 月 14 日，证券时报报道称兆威机电在第二十六届中国国际高新技术成果交易会举办新品发布会，推出手指集成驱动的高可靠灵巧手。报道称该灵巧手采用单关节驱动技术，整手配备 17 个主动执行单元，单指可达 3 个及以上主动执行单元；公司自研柔顺控制算法，面向工业生产、特种作业、生活服务等场景。
+axes:
+  embodiment_form: [humanoid-biped]
+  hardware_strategy: [in-house]
+evidence:
+- url: http://stcn.com/article/detail/1413147.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2024/11/stcn-2024-11-14-zhaowei-gen1-dexhand-cht.html
+corroboration: single

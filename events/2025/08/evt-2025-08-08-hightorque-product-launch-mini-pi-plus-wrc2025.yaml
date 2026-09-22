@@ -1,0 +1,22 @@
+id: evt-2025-08-08-hightorque-product-launch-mini-pi-plus-wrc2025
+date: 2025-08-08
+date_precision: day
+type: product_launch
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎机电在 2025 世界机器人大会首次公开展示派+（Mini Pi+）
+summary:
+  zh: 高擎机电官网 8 月活动回顾称，8 月 8 日 2025 年世界机器人大会（WRC2025）在北京亦庄启幕，公司携「海派兄弟」系列机器人参展，其中新成员派+（Mini Pi+）在本次展会上首次公开亮相。官网称派+高度约 65cm、重量 10kg，搭载自研关节模组，支持相机、夹爪、灵巧手、语音控制等功能拓展，可满足 Locomotion、Manipulation、Whole-body Control 等算法研究需求。
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [education-research]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.hightorque.cn/%e9%ab%98%e6%93%8e%e6%9c%ba%e7%94%b58%e6%9c%88%e6%b4%bb%e5%8a%a8%e5%9b%9e%e9%a1%be%ef%bc%9a%e4%b8%80%e6%ac%a1%e6%ac%a1%e4%ba%ae%e7%9b%b8%ef%bc%8c%e4%b8%80%e6%ad%a5%e6%ad%a5%e5%90%91%e5%89%8d
+  publisher: 高擎动力官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/08/hightorque-2025-08-08-hightorque-wrc2025-mini-.html
+corroboration: single

@@ -1,0 +1,29 @@
+id: evt-2025-06-06-direct-drive-tech-funding-series-b-and-b-plus
+date: 2025-06-06
+date_precision: day
+type: funding
+orgs:
+- id: direct-drive-tech
+  role: subject
+title:
+  zh: 本末科技完成 B 轮及 B+ 轮融资，北京市先进制造和智能装备产业投资基金领投
+summary:
+  zh: 6 月 6 日，36 氪硬氪与投资界报道称本末科技已完成 B 轮及 B+ 轮融资，累计金额「达数亿元人民币」，由北京市先进制造和智能装备产业投资基金领投，北京市新材料产业投资基金、顺禧基金、联想之星联合跟投，星辰资本担任长期独家财务顾问。报道称资金将用于电机柔性化设计和生产、提升直驱关节模组规模化交付能力、加速机器人产品开发迭代与多场景商业化落地；公司机器人产品累计交付量已达数千台，出口至全球 50 多个国家和地区。
+counterparties:
+- 北京市先进制造和智能装备产业投资基金
+- 北京市新材料产业投资基金
+- 顺禧基金
+- 联想之星
+- 星辰资本
+evidence:
+- url: https://www.36kr.com/p/3324371342944770
+  publisher: 36 氪硬氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/36kr-2025-06-06-direct-drive-tech-series.html
+- url: https://news.pedaily.cn/202506/550657.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/06/news-2025-06-06-direct-drive-tech-series.html
+corroboration: multi

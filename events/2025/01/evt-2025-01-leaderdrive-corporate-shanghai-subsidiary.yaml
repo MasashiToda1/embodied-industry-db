@@ -1,0 +1,23 @@
+id: evt-2025-01-leaderdrive-corporate-shanghai-subsidiary
+date: 2025-01
+date_precision: month
+type: corporate
+orgs:
+- id: leaderdrive
+  role: subject
+title:
+  zh: 绿的谐波成立全资子公司绿的谐波（上海）传动科技，建具身智能机器人核心零部件研发及服务中心
+summary:
+  zh: 绿的谐波 2025 年半年报称，公司成立全资子公司上海绿的（绿的谐波（上海）传动科技有限公司），围绕具身智能机器人用核心零部件建设研发及服务中心。腾讯新闻财经稿件称该子公司于 2025 年 1 月在上海成立，注册资本 5000 万元。
+evidence:
+- url: https://static.cninfo.com.cn/finalpage/2025-08-16/1224499386.PDF
+  publisher: 巨潮资讯 · 苏州绿的谐波传动科技股份有限公司 2025 年半年度报告
+  tier: primary
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/static-2025-01-leaderdrive-shanghai-sub.html
+- url: https://news.qq.com/rain/a/20250528A05FU000
+  publisher: 腾讯新闻
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/news-2025-01-leaderdrive-shanghai-lvd-2.html
+corroboration: multi

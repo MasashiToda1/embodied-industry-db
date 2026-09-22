@@ -1,0 +1,22 @@
+id: evt-2025-01-16-hightorque-publication-mini-pi-rl-baseline
+date: 2025-01-16
+date_precision: day
+type: publication
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎机电开源 Mini_Pi_RL_Baseline 强化学习基线
+summary:
+  zh: 1 月 16 日，高擎机电在 GitHub 组织 HighTorque-Robotics 下创建 Mini_Pi_RL_Baseline 仓库。README 称该基线提供基于 NVIDIA Isaac Gym 的强化学习环境，面向高擎机电的 Pi 系列人形机器人，并包含从 Isaac Gym 到 MuJoCo 的 sim2sim 框架，供用户在不同仿真器中验证训练出的策略。仓库提供 PPO 训练、策略回放与导出 JIT 模型的脚本。
+axes:
+  sim_stack: [mujoco]
+  control_route: [rl]
+  embodiment_form: [humanoid-biped]
+evidence:
+- url: https://github.com/HighTorque-Robotics/Mini_Pi_RL_Baseline
+  publisher: GitHub · HighTorque-Robotics
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/01/github-2025-01-16-hightorque-mini-pi-rl-ba.html
+corroboration: single

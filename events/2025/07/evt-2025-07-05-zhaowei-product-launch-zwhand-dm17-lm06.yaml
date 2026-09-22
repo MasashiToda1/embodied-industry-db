@@ -1,0 +1,37 @@
+id: evt-2025-07-05-zhaowei-product-launch-zwhand-dm17-lm06
+date: 2025-07-05
+date_precision: day
+type: product_launch
+orgs:
+- id: zhaowei
+  role: subject
+- id: galbot
+  role: counterparty
+title:
+  zh: 兆威机电在深圳发布新一代仿生灵巧手 ZWHAND，含 DM17 与 LM06 系列
+summary:
+  zh: 7 月 5 日，兆威机电在深圳发布新一代仿生灵巧手 ZWHAND。证券时报报道称新一代产品包括 LM06（内置 6 个微型电机）、DM17（内置 17 个微型电机）与 DM20（内置 20 个微型电机），采用高度集成一体化设计，以 DM17 为例将 17 个微型电机、位置和力传感器、控制模块集成于整手。人民网报道称核心组件设计寿命超过 1 万小时，指尖、手心与手背覆盖柔性电子皮肤，可感知压力、温度与湿度；DM17 面向泛化通用装配等工业场景，LM06 面向服务机器人领域。证券日报报道称发布会现场兆威机电与北京银河通用机器人有限公司、途见科技（北京）有限公司等 12 家企业签署战略备忘录。
+counterparties:
+- 途见科技（北京）有限公司
+axes:
+  embodiment_form: [humanoid-biped]
+  target_scene: [industrial-manufacturing, commercial-service]
+  data_modality: [tactile, force-torque]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.stcn.com/article/detail/2419511.html
+  publisher: 证券时报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/stcn-2025-07-05-zhaowei-zwhand-dm17-lm06.html
+- url: http://sz.people.com.cn/n2/2025/0708/c202846-41284285.html
+  publisher: 人民网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/sz-2025-07-05-zhaowei-zwhand-people-cn.html
+- url: http://www.zqrb.cn/gscy/gongsi/2025-07-07/A1751878830603.html
+  publisher: 证券日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/07/zqrb-2025-07-05-zhaowei-zwhand-zqrb-mou.html
+corroboration: multi

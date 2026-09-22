@@ -1,0 +1,28 @@
+id: evt-2025-03-13-leadshine-product-launch-dh-series-dexterous-hand
+date: 2025-03-13
+date_precision: day
+type: product_launch
+orgs:
+- id: leadshine
+  role: subject
+title:
+  zh: 雷赛智能发布 DH 系列灵巧手解决方案，首款 DH116 计划二季度试产试销
+summary:
+  zh: 3 月 13 日，雷赛智能发布 DH 系列（Dex Hand）灵巧手解决方案，包括 11、20、24 自由度等多款型号，由子公司深圳市灵巧驱控技术有限公司负责研发、生产与销售。首款普及型 DH116 具备 11 自由度（其中 6 个主动自由度），标配 6 个触觉传感器，整手最大负载 40 公斤、单指最大负载 10 公斤，自重 490 克，采用无刷空心杯伺服电机与 FOC 电流环、力位混合控制算法，标配 100MHz EtherCAT 通讯并兼容 RS485 与 CAN。公司称 DH116 将在 3 月 26 日至 29 日深圳工业展展出，二季度进入小批量生产与试销测试；产品面向人形机器人、四足机器狗、移动机器人与协作机器人四类场景。
+axes:
+  embodiment_form: [humanoid-biped, quadruped]
+  target_scene: [industrial-manufacturing, commercial-service]
+  data_modality: [tactile, force-torque]
+  hardware_strategy: [in-house]
+evidence:
+- url: https://www.gkong.com/news/120693.html
+  publisher: 中华工控网（来源：雷赛智能）
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/gkong-2025-03-13-leadshine-dh-series-laun.html
+- url: https://finance.sina.com.cn/stock/relnews/cn/2025-03-14/doc-inepritp9605547.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/03/finance-2025-03-13-leadshine-dh116-sina.html
+corroboration: multi
