@@ -1,0 +1,23 @@
+id: evt-2026-07-15-beingbeyond-product_launch-being-m07
+date: '2026-07-15'
+date_precision: day
+type: product_launch
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 智在无界发布 Being-M0.7 全身移动操作隐式世界动作模型
+summary:
+  zh: 7 月 15 日，智在无界发布 Being-M0.7，官方称其为全身移动操作隐式世界动作模型（Latent WAM），面向人形机器人的移动与灵巧操作。
+axes:
+  model_form:
+  - world-model
+  embodiment_form:
+  - humanoid-biped
+evidence:
+- url: https://beingbeyond.com/newsInfo/1219.html
+  publisher: 智在无界官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/beingbeyond-2026-07-15-beingbeyond-being-m07.html
+corroboration: single

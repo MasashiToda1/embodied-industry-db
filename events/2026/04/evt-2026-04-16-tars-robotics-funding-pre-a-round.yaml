@@ -1,0 +1,37 @@
+id: evt-2026-04-16-tars-robotics-funding-pre-a-round
+date: '2026-04-16'
+date_precision: day
+type: funding
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航完成 4.55 亿美元 Pre-A 轮融资，高瓴创投、红杉中国、美团联合领投
+summary:
+  zh: 4 月 16 日，它石智航宣布完成 4.55 亿美元 Pre-A 轮融资，高瓴创投与红杉中国联合领投，美团战投作为基石战略股东加注并联合领投，美团龙珠、中金资本、凯联资本、东方富海、钧山投资跟投，启明创投、线性资本、蓝驰创投等老股东加注，TCL 创投、首程控股、北京机器人产业发展投资基金、上海国投先导等参与。报道称这是中国具身智能领域单轮融资最高纪录。
+counterparties:
+- 高瓴创投
+- 红杉中国
+- 美团战投
+- 美团龙珠
+- 中金资本
+- 凯联资本
+- 东方富海
+- 钧山投资
+- 启明创投
+- 线性资本
+- 蓝驰创投
+- TCL 创投
+- 首程控股
+- 北京机器人产业发展投资基金
+- 上海国投先导
+amount:
+  value: 455000000
+  currency: USD
+evidence:
+- url: http://www.news.cn/tech/20260417/aa7c5116da7648fc99470a6b4a56ef35/c.html
+  publisher: 新华网 · 转载环球网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/news-2026-04-16-tars-robotics-pre-a-roun.html
+corroboration: single

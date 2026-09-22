@@ -1,0 +1,28 @@
+id: evt-2026-08-27-psibot-funding-usd-round
+date: '2026-08-27'
+date_precision: day
+type: funding
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能完成过亿美元新一轮融资，拓普集团、瑞丞基金、蓝思科技等参与
+summary:
+  zh: 2026 年 8 月 27 日，灵初智能宣布完成新一轮过亿美元融资，投资方包括拓普集团、奇瑞控股旗下瑞丞基金、蓝思科技、三七互娱、芜湖市投控集团、复星创富，老股东珠海科技产业集团超额追加投资。官方称资金投向世界模型研发与物流、先进制造场景落地。
+counterparties:
+- 拓普集团
+- 瑞丞基金
+- 蓝思科技
+- 三七互娱
+- 芜湖市投控集团
+- 复星创富
+- 珠海科技产业集团
+date_basis: derived
+date_as_stated: 官网发布日期 2026 年 8 月 27 日，原文「近日，灵初智能正式完成新一轮过亿美元融资」
+evidence:
+- url: https://www.psibot.ai/%E7%81%B5%E5%88%9D%E6%99%BA%E8%83%BD%E5%B7%B2%E5%AE%8C%E6%88%90%E8%BF%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BA%A7%E4%B8%9A%E9%BE%99%E5%A4%B4%E8%81%9A%E5%8A%9B%E5%8A%A0%E6%8C%81/
+  publisher: 灵初智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/psibot-2026-08-27-psibot-usd-round.html
+corroboration: single

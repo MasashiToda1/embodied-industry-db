@@ -1,0 +1,18 @@
+id: evt-2026-02-10-original-intelligence-product_launch-dm0
+date: '2026-02-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机发布具身原生大模型 DM0、开发框架 Dexbotic 2.0 与量产工作流 DFOL
+summary:
+  zh: 2 月 10 日，原力灵机在北京举办技术开放日，发布具身原生大模型 DM0、开发框架 Dexbotic 2.0 和应用量产工作流 DFOL。官方称 DM0 参数量 2.4B，从零开始训练并与阶跃星辰联合训练，预训练覆盖 UR、Franka、ARX、UMI、Aloha、R1-Lite、Realman、DOS-W1 等 8 种机型，并宣布 DM0 全面开源。
+evidence:
+- url: https://news.qq.com/rain/a/20260210A03NBB00
+  publisher: 腾讯新闻 · TechWeb
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/news-2026-02-10-original-intelligence-dm.html
+corroboration: single

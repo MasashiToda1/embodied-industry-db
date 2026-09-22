@@ -6,5 +6,20 @@ status: active
 layers:
 - embodiment
 - foundation
+founded: 2025-01
+hq:
+  country: CN
+  city: 合肥
+description: 合肥零次方机器人有限公司，由清华大学智能机器人实验室团队创立，研发轮式人形机器人 Zerith-H1 与场景操作模型 Zerith-V 系列。
 accounts:
   github: inFpZero
+  site: https://zerith.com
+sources:
+- url: https://zerith.com/about
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网公司简介，主体为合肥零次方机器人有限公司
+- url: http://business.china.com.cn/2026-04/13/content_43396684.shtml
+  tier: media
+  retrieved: '2026-09-22'
+  note: 报道写「零次方机器人成立于 2025 年 1 月，由清华大学 AI&Robot 智能机器人实验室核心成员闵宇恒、程颐等创办」

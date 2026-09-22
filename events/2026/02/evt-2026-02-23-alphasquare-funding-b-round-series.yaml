@@ -1,0 +1,23 @@
+id: evt-2026-02-23-alphasquare-funding-b-round-series
+date: '2026-02-23'
+date_precision: day
+type: funding
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方宣布完成超 10 亿元 B 轮系列融资，估值超百亿元
+summary:
+  zh: 2 月 23 日，智平方（AI² Robotics）宣布完成 B 轮系列融资，融资规模超 10 亿元人民币，公司估值超过百亿元。官方称此前 2025 年半年内连续完成 7 轮数亿级融资，此次再获 5 轮加注，一年累计完成 12 轮融资。财新报道投资方包括百度、中国中车、沄柏资本、国泰海通等。
+counterparties:
+- 百度战投
+- 中车资本
+- 沄柏资本
+- 国泰海通
+evidence:
+- url: https://www.bjnews.com.cn/detail/1771819839129832.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/bjnews-2026-02-23-alphasquare-b-round.html
+corroboration: single

@@ -1,0 +1,544 @@
+<!-- 抓取于 2026-09-22T15:07:37.459481+08:00 | 原始链接 https://www.chinaventure.com.cn/news/80-20260629-392068.html | 公众号 未知 | 标题 x-square-robot-b-plus-c-round | sha256:8c8f33d5c440 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>大湾区首家，自变量连融四轮估值超200亿元，顶级投资人云集下注 | 投中网</title>
+    <!--SEO优化-->
+    <meta name="description" content="互联网大厂、顶级VC、产业方、国家队和地方政府资金抱团下注。">
+    <meta name="keywords" content="自变量">
+    <link rel="icon" href="/images/logo/logo_tiny.png" sizes="30x30">
+    <!--css-->
+    <link rel="stylesheet" href="/css/reset.v1.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/inc_pc.css">
+    <link rel="stylesheet" href="/css/page/articledetail.css">
+    <!--js-->
+    <script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="/js/qrcode.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/TCaptcha.js"></script>
+<script type="text/javascript" src="/js/vue.min@2.5.16.js"></script>
+<script type="text/javascript" src="/js/seopush.js"></script>
+</head>
+
+<body>
+    <div id="page_content" class="page_content">
+        <header class="header_pc">
+    <div class="header_innner">
+        <a href="/index.html" class="logo_zone_pc">
+            <img alt="投中网" title="首页" src="/images/logo/logo_pc.png">
+        </a>
+        <nav class="nav_pc">
+            <ul class="nav_list">
+                <li :class="[activeUrl == 'index' ? 'active' : '']"><a class="level1" target="_blank" href="/index.html">首页</a></li>
+                <li :class="[activeUrl == 'institute' ? 'active' : '']"><a class="level1" target="_blank" href="/report/list.html">研究院</a></li>
+                <li :class="[activeUrl == 'ranklist' ? 'active' : '']"><a class="level1" target="_blank" href="/rank/list.html">榜单</a></li>
+                <li :class="[activeUrl == 'vtalk' ? 'active' : '']"><a class="level1" target="_blank" href="/vtalk/list.html">Vtalk</a></li>
+                <li :class="[activeUrl == 'meetinglist' ? 'active' : '']"><a class="level1" target="_blank" href="/meeting/list.html">会议</a></li>
+                <li :class="[activeUrl == 'community_introduce' ? 'active' : '']"><a class="level1" target="_blank" href="/community/community_introduce.html">投中社区</a></li>
+            </ul>
+        </nav>
+        <div class="userzone_pc">
+            <div class="search_all_btn" @click="openSearchZone()">搜索</div>
+            
+            <div class="userlogin_btn_box">
+                <div class="userlogin_btn"><span @click="openLoginZone(0)">登录</span>&nbsp;|&nbsp;<span @click="openLoginZone(2)">注册</span></div>
+                <div class="usercenter_drop">
+                    <div class="nav_userheadpic">
+                        <img src="/images/default_userheadpic.png" onerror="this.src='/images/default_userheadpic.png'" >
+                    </div>
+                    <ul>
+                        <li><a target="_blank" href="/usercenter/usercenter.html">个人中心</a></li>
+                        <li @click="toLogout">退出登录</li>
+                    </ul>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    <div class="search_content_pc">
+        <div class="search_content_pc_bg" @click="cancelSearch()"></div>
+        <div class="search_tiao_pc">
+            <div class="search_tiao_inner_pc">
+                <div class="searchinput_container clearfix">
+                    <input id="overallSearchInput" class="search_input" @keyup.enter="toSearchResultPage()" placeholder="在此输入您要查询的内容">
+                    <div class="to_search_btn" @click="toSearchResultPage()"></div>
+                </div>
+                <button class="cacelsearch_btn" @click="cancelSearch()"></button>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="login_warpper_pc">
+    <div class="login_box_pc">
+        <div class="close_login_btn" @click="closeLoginWrapper()"></div>
+        <div class="login_tab_zone clearfix">
+            <ul class="login_tablist">
+                <li class="active" @click="tabLoginType(0)">快捷登录</li>
+                <li @click="tabLoginType(1)">密码登录</li>
+                <li class="newuser" @click="tabLoginType(2)">新用户注册</li>
+            </ul>
+        </div>
+        <p class="login_text">
+            <span class="active">验证即登录，未注册则自动创建新账号</span>
+            <span>如果手机号已注册则自动登录</span>
+        </p>
+        <div id="fastlogin_phone" class="input_zone con_placeholder">
+            <input type="text" maxlength="11" placeholder="请输入手机号" >
+        </div>
+        <div id="fastlogin_phonetips" class="tips_label"></div>
+        <div id="fastlogin_code" class="input_zone con_placeholder">
+            <input type="text" maxlength="6" placeholder="短信验证码">
+            <button id="TencentCaptcha" data-appid="2027481577" data-cbfn="tencentTestCallback" type="button" class="commonlogin_sendcode_hook sendcode_btn" @click="sendMessageCode()">发送验证码</button>
+        </div>
+        <div id="fastlogin_codetips" class="tips_label"></div>
+        <div id="commonlogin_account" class="input_zone con_placeholder">
+            <input type="text" placeholder="手机号/邮箱地址">
+        </div>
+        <div id="commonlogin_accounttips" class="tips_label"></div>
+        <div id="commonlogin_password" class="input_zone con_placeholder">
+            <input type="password" maxlength="16" placeholder="请输入登录密码">
+            <button class="forget_password_btn" @click="toForgetPasswordPage">忘记密码</button>
+        </div>
+        <div id="commonlogin_passwordtips" class="tips_label"></div>
+        <div class="user_agreement">登录即代表您已同意投中网<a href="/usercenter/user_agreement.html" target="_blank">《用户注册服务协议》</a>与<a href="/usercenter/private_policy.html" target="_blank">《隐私政策》</a></div>
+        <button id="loginButton" class="login_btn button-base" @click="doWriteInTest()">登录</button>
+        <button id="registerButton" class="login_btn button-base" @click="doWriteInTest(vm)">立即注册</button>
+    </div>
+</div>
+        <!--主体1100-->
+        <div class="content_wrapper_min mrg_t80 clearfix">
+            <!--主体730-->
+            <div class="content_left_pc clearfix">
+                <div class="share_zone_pc">
+                    <ul>
+                        <li>
+                            <span class="wechat_share_pc" @click="showShareWXErcode"></span>
+                        </li>
+                        <li>
+                            <span class="sina_weibo_pc" @click="linkToSinaWeibo"></span>
+                        </li>
+                        <li>
+                            <span class="add_comment_pc" @click="scrollToComment"></span>
+                        </li>
+                        <li>
+                            <span class="shoucang_pc" @click="addToCollection" :class="{'active': isCollected}"></span>
+                        </li>
+                        <li>
+                            <span class="chenjin_pc" @click="openImmerseReading"></span>
+                        </li>
+                    </ul>
+                    <div class="ercode_showwarpper" :style="{display:showShareErcode}" @click="hideShareWXErcode">
+                        <div class="ercode_innerbox">
+                            <div class="close_btn"></div>
+                            <div class="title">打开微信扫码分享</div>
+                            <div id="qrcode"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_comment_pc">
+                    <!--文章主体-->
+                    <div class="article_warpper_pc">
+                        <div class="breadcase">
+                            <a href="/index.html">投中网</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <a href="/news/80.html">资本市场</a>
+                            <span>&nbsp;>&nbsp;</span>
+                            <span>正文</span>
+                        </div>
+                        <h1 class="maintitle_pc">大湾区首家，自变量连融四轮估值超200亿元，顶级投资人云集下注</h1>
+                        <div class="author_keyword clearfix">
+                            <div class="source_author">                                
+                                <span>投中网</span>
+                                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span> 
+                                <span>簪竹</span>
+                            </div>
+                            <div class="releaseTime">
+                                <span>2026-06-29 17:38:18</span>
+                            </div>
+                            <input id="articleId" type="hidden" value="392068">
+                            <input id="keywords" type="hidden" value="自变量">
+                            <input id="mUrl" type="hidden" value="/news/80-20260629-392068.html">
+                            <input id="coverimg" type="hidden" value="https://pic.chinaventure.com.cn/head/7477294280998912.png">
+                        </div>
+                        <h2 class="describe_text">互联网大厂、顶级VC、产业方、国家队和地方政府资金抱团下注。</h2>
+                        <div class="article_slice_pc clearfix">
+                        	<p style="text-align: left;">投中网获悉，自变量继4月下旬发布会宣布完成小米战投领投的B轮融资后，又连续完成B+、B++和C轮融资，2个多月时间连续完成 4 轮重磅融资并全部完成交割。</p><p style="text-align: left;">此次爆出的自变量融资的投资方阵容豪华程度令人咋舌，汇集了各个领域中最顶级的资本阵容，目前已经确定的投资方包括中国移动、中保投资、红杉中国、IDG资本、源码资本、达晨财智、中金资本等30多家顶级机构、互联网巨头资本、产业资本、国家和地方基金，而小米战投已经连续参与三轮融资。</p><p style="text-align: left;">互联网大厂、顶级VC、产业方、国家队和地方政府资金抱团下注，一方面说明，资本市场对具身基础模型重要性已经达成集体共识，另一方面，也印证了资本对自变量这家公司技术和发展潜力的认可。</p><p style="text-align: left;">自变量机器人是大湾区第一家、也是目前唯一一家估值超过200亿元的具身模型。据了解，截至目前，具身模型领域只有自变量、智元、银河通用和星海图四家企业估值突破200亿。</p><p style="text-align: left;"><strong>各路顶级资本齐下注豪华程度极其罕见</strong></p><p style="text-align: left;">回溯自变量的领投方，可以发现一件在科技领域非常罕见的事情：美团（A轮）、阿里（A+轮）、字节跳动（A++ 轮）、小米（B 轮）四大互联网厂商分别领投，并多次加注。以技术著称的互联网巨头对自变量技术水平的高度认可，因此以重注的方式表示支持。</p><p style="text-align: left;">这其中，美团是最早押注自变量的互联网巨头之一。美团的核心业务，外卖、到店、酒旅，本质上都是劳动密集型服务。随着人力成本持续攀升，末端配送和线下服务的人效天花板已经显现。可以说，对美团而言，具身智能和本地生活业务关联密切。</p><p style="text-align: left;">作为B轮领投方，小米在具身领域的投资也很广泛，在不同的触点上布局了触觉传感的纬钛机器人、做本体的萝博派对、聚焦灵巧手的曦诺未来等公司。在模型层面，自变量是其重注的一家。</p><p style="text-align: left;">字节在AI算法和算力上的积累无需多言，但一直缺乏一个将AI能力延伸到物理世界的平台。此外，字节的硬件如PICO VR等业务，都需要新的交互入口。到目前为止，自变量是字节在具身智能领域的唯一一笔直接投资。同理，具身智能是AI从虚拟走向物理的载体，也是阿里业务需要的&quot;物理世界接口&quot;。</p><p style="text-align: left;">互联网大厂之外，产业资本也轮番加注自变量。除开基础的资金支持，更以具身智能为契机，升级产业链。自变量的最近四轮融资，频繁出现产业资本的身影：58 集团、沈阳汽车（沈阳汽车产业投资基金）、奇瑞汽车（国海创新资本）、法国雷诺等，这是对自变量技术领先性和产业落地前景的坚定认可。</p><p style="text-align: left;">目前，自变量机器人已经在 58 到家的家政服务、某德国豪华品牌汽车零部件供应了产线等场景落地，走入真实的家庭服务和工业生产中。58集团投资自变量，是业务绑定的深化。</p><p style="text-align: left;">在单笔融资金额超过10亿之后，市场上能出得起大钱的投资方数量缩减，具身赛道的融资已经迅速进入“国资轮”。众多“国字头”主体和地方资本也密集下注：中保投资、国投创新、国开科创、国科投资、中保投资、江苏高投、深投控资本、宝安区引导基金等；中国移动等央企也多次现身投资方。具身智能已经被列入“十五五”规划的未来产业核心赛道，国资、地方基金和国央企的密集加注，不仅表明资金已经向头部收拢，也为自变量带来潜在的地方产业资源和供应链支持。</p><p style="text-align: left;">本次自变量四轮融资中的财务投资机构同样群星闪耀：红杉中国、IDG资本、达晨财智、深创投、中金资本、源码资本、毅达资本等。这也是红杉中国第三次押注自变量。红杉在具身和人形机器人赛道上颇为谨慎，宇树和智元两家之外，三次押注自变量足以说明对这家公司的看好。</p><p style="text-align: left;">自变量从成立之初就坚持自研具身模型，是国内最早采用完全端到端路径、实现通用具身智能大模型的企业，也是具身智能行业的“最强大脑”。</p><p style="text-align: left;"><strong>具身行业“最强大脑”世界统一模型“闯进”用户家庭</strong></p><p style="text-align: left;">具身智能行业的关注焦点已转移到具身大脑。这使得自变量这样的具身大模型公司受到了高度关注。自变量自研的“世界统一模型”以机器人为载体，已经进入了无数用户的家庭生活，这被外界视为对泛化能力的“最高检验”，成为自变量受到资本追捧的原因之一。</p><p><img src="https://pic.chinaventure.com.cn/newsContent/392068/1782725785430022813.png" title="1782725785430022813.png" alt="4.png"/></p><p>在今年 4 月，自变量发布了全球首个基于“世界统一模型（WUM）”架构的具身大模型 WALL-B。据发布会信息，WALL-B 将视觉、语言、动作、物理预测等所有能力，放在同一个网络中从零开始联合训练，能够消除模块间的边界和数据搬运损耗。</p><p>这使得 WALL-B 具备三个核心优势：原生多模态、能理解物理规律并预测演化、能在与环境的互动中自我进化。尽管并未公布太多信息，但自变量宣布了让搭载 WALL-B 模型的机器人常驻用户家庭的计划。目前这一计划已经在推进中，成为外界对 WALL-B 模型泛化能力的最直观认识。</p><p><strong><img src="https://pic.chinaventure.com.cn/newsContent/392068/1782725795188040495.png" title="1782725795188040495.png" alt="5.png"/></strong></p><p><strong>多次刷新具身模型范式自变量技术实力“秀肌肉”</strong></p><p>不仅如此，在最近3个月，自变量频繁秀技术“肌肉”并在技术圈层吸引了巨大关注，也让外界对其技术实力有了更清晰的认识。</p><p>举例来说，自变量在6月连续发布了开源模型 WALL-OSS-0.5以及世界模型 WALL-WM。</p><p>其中， WALL-OSS-0.5 仅预训练，就具备堪比进行后训练之后的任务完成能力：在 17 个真机任务中，无需后训练， 4 个任务自主完成率超过 80%，在操作类和推理类任务中均领先 Pi 0.5 等主流开源模型。</p><p>而世界模型 WALL-WM，是全球首个具备“事件级预测能力”的世界模型。不同于目前所有世界模型按照时间进行均匀采样的方式，WALL-WM 通过“事件”来对齐语言、视觉、动作等多模态数据，让模型更好学习不同模态数据的关联性，从而理解物理世界将如何演化、模型应当如何执行。</p><p>同时在具身行业最稀缺的数据方面，自变量同样“亲力亲为”。其不仅自建数采工厂，还研发了完整的数据管线，能够自动、大规模地执行数据的采集、清洗、标注、质量控制等。其还发布了基于自研数采设备 XR Zero G0 的数采方案，通过研究将训练模型所需数据成本降低 95%。</p><p>在机器人本体方面，自变量则自研了搭载不同模型的量子一号和量子二号，这些机器人成为模型的载体，进入数采工厂和各种落地场景。</p><p>就目前来说，实现通用具身智能的路途尚远，模型-数据-本体的配合缺一不可，唯有拥有全栈能力的玩家才有可能将领先优势保持到最后。自变量在具身模型上已经通过落地高泛化场景，和频繁的技术发布更新行业范式，证明了自己的技术能力。在数据和本体方面则亲力亲为，不是等待其他玩家建设“坐享其成”，而是主动研究前沿问题、开源分享成果。这种从第一性原理出发，为通用具身智能自己添砖加瓦的做法，可能才是投资人最看重、也最值得行业伙伴学习的。</p><p><br/></p>
+                        </div>
+                   
+                        <div class="editor_zone_pc clearfix">                       	
+                            <span>网站编辑：</span>
+                            <span>郭靖</span>                            
+                        </div>
+                        
+                        <!--原创新闻才显示-->
+							<div class="reprint_zone">本文为投中网原创文章，转载或内容合作请点击<a target="_blank" href="/usercenter/reprint_agreement.html">转载说明</a>，违规转载法律必究</div>
+                   
+                   
+                    </div>
+                    <!--点赞区-->
+					<div id="articledetail_pointLike" class="thumbsup_zone_pc">
+    <div class="thumb_btn_pc" :class="{'active': isPointLike}" @click="addPointLike">
+        <div class="thumb_img"></div>
+        <p id="pointLikeNumber">0</p>
+    </div>
+</div>
+					
+                    <!--二维码区-->
+                    <div class="articledetail_ercode_pc">
+                        <img class="ercode" src="/images/article_ercode.png">
+                        <p>第一时间获取股权投资行业新鲜资讯和深度商业分析，请在微信公众账号中搜索投中网，或用手机扫描左侧二维码，即可获得投中网每日精华内容推送。</p>
+                    </div>
+                    
+                    <!--评论区-->
+                    <div class="comment_warpper_pc">
+                        <div class="submit_comment">
+                            <div id="comment_zone" class="comment_commontitle_pc">
+                                <h4>发表评论</h4>
+                                <span></span>
+                            </div>
+                            <div class="comment_textarea_box clearfix">
+                                <div class="headpic">
+                                    <img src="/images/default_userheadpic2.png" />
+                                </div>
+                                <textarea v-model="commentText" maxlength="200" placeholder="说点什么..."></textarea>
+                            </div>
+                            <div class="btn_zone">
+                                <div class="fontNum">
+                                    <span v-text="textNum"></span>
+                                    <span>&nbsp;/&nbsp;200</span>
+                                </div>
+                                <button class="submit_comment_btn" :class="{'disabled': submitDisabled}" @click="checkSensitiveWord">发表评论</button>
+                            </div>
+                        </div>
+                        <div class="all_comment_list">
+                            <div class="comment_commontitle_pc">
+                                <h4>全部评论</h4>
+                                <span></span>
+                            </div>
+                            <!--success insert-->
+                            <ul class="comment_floor_list" v-if="insertComment.length !== 0">
+                                <li class="comment_singlefloor" v-for="item in insertComment">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.commentText"></div>
+                                </li>
+                            </ul>
+                            
+                            <!--全部评论INC-->
+                           	<div id="articledetail_comment_all">
+
+	    <div class="no_morelist_inc" v-if="true">——&nbsp;没有更多评论了&nbsp;——</div>
+    
+</div>
+                           	
+                            <!--更多评论-->
+                            <ul class="comment_floor_list">
+                                <li class="comment_singlefloor" v-for="item in commentObj.showUserList">
+                                    <div class="userbase clearfix">
+                                        <img src="/images/default_userheadpic.png">
+                                        <span class="t1" v-text="item.nickname"></span>
+                                        <span class="t2" v-text="item.comment_custom_time"></span>
+                                        <div class="pointzan_comment">
+                                            <button></button>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="comment_contenxt" v-text="item.content"></div>
+                                </li>
+                            </ul>
+                            <div class="controllzone_hook" v-if="needTorequest">
+                                <div v-show="commentObj.showLoading" class="common_loading_pc"></div>
+                                <button v-if="!commentObj.showNomore" v-show="!(commentObj.showLoading)" class="click_getmore_pc" @click="stepAddCommentList()">点击加载更多</button>
+                                <div class="no_morelist" v-if="commentObj.showNomore">——&nbsp;没有更多评论了&nbsp;——</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--侧边栏340-->
+            <div class="content_right_pc">
+                <!--广告图位-->
+                <aside id="articledetail_aside_advimg" class="aside_common_content">
+    <div class="articledetail_advpic_pc">
+    	        <a href="https://www.chinaventure.com.cn/meeting/live/6.html" target="_blank">
+            <img src="https://pic.chinaventure.com.cn/head/6800358722502656.jpg">
+        </a>
+        
+    </div>
+</aside>
+
+                <!--相关文章-->
+                <aside v-if="relevantList.length !== 0" class="aside_common_content">
+                    <div class="aside_commontitle_pc">
+                        <h4>相关文章</h4>
+                        <span></span>
+                        <a></a>
+                    </div>
+                    <ul class="common_relevantarticle_pc clearfix">
+                        <li class="clearfix" v-for="(item,index) in relevantList">
+                            <a target="_blank" :href="item.url">
+                                <img :src="item.headPic">
+                                <h1 v-text="item.title"></h1>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!--本周热文-->
+                <aside id="index_aside_weekhotarticle" class="aside_common_content">
+    <div class="aside_commontitle_pc">
+        <h4>本周热文</h4>
+        <span></span>
+        <a></a>
+    </div>
+    <ul class="common_weekhotarticle_pc clearfix">
+    
+    	        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260919-393346.html">
+                <img src="https://pic.chinaventure.com.cn//head/7357266361581568.png?x-image-process=image/quality,q_80" title="LP周报丨上海又落地了一只并购基金">
+                <h1>LP周报丨上海又落地了一只并购基金</h1>
+                <p>3天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">1</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260915-393275.html">
+                <img src="https://pic.chinaventure.com.cn/head/7484861531029504.jpg?x-image-process=image/quality,q_80" title="星路科技完成A+轮融资">
+                <h1>星路科技完成A+轮融资</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">2</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260916-393294.html">
+                <img src="https://pic.chinaventure.com.cn/head/7472109521469440.png?x-image-process=image/quality,q_80" title="ExploMar擎波探索宣布完成近亿元A轮融资">
+                <h1>ExploMar擎波探索宣布完成近亿元A轮融资</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">3</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/78-20260917-393312.html">
+                <img src="https://pic.chinaventure.com.cn//head/7346465810677760.png?x-image-process=image/quality,q_80" title="日本年轻人，开始在小游戏里社交">
+                <h1>日本年轻人，开始在小游戏里社交</h1>
+                <p>4天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">4</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393297.html">
+                <img src="https://pic.chinaventure.com.cn//head/7303692403343360.png?x-image-process=image/quality,q_80" title="350亿打水漂，中东土豪也栽了">
+                <h1>350亿打水漂，中东土豪也栽了</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">5</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260921-393375.html">
+                <img src="https://pic.chinaventure.com.cn/head/7426464467124224.png?x-image-process=image/quality,q_80" title="行云集成完成近8亿人民币融资">
+                <h1>行云集成完成近8亿人民币融资</h1>
+                <p>1天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">6</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/80-20260916-393298.html">
+                <img src="https://pic.chinaventure.com.cn/head/7403981491929088.png?x-image-process=image/quality,q_80" title="9个月完成123笔融资，顶级VC正在悄悄押注这个赛道">
+                <h1>9个月完成123笔融资，顶级VC正在悄悄押注这个赛道</h1>
+                <p>5天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">7</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/78-20260915-393274.html">
+                <img src="https://pic.chinaventure.com.cn/head/7491708195438592.png?x-image-process=image/quality,q_80" title="AI巨头，盯上“金融牛马”">
+                <h1>AI巨头，盯上“金融牛马”</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">8</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/78-20260915-393277.html">
+                <img src="https://pic.chinaventure.com.cn//head/7226771363594240.jpeg?x-image-process=image/quality,q_80" title="郑钦文美网赚621万，今年又是“体坛赚钱一姐”？">
+                <h1>郑钦文美网赚621万，今年又是“体坛赚钱一姐”？</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">9</div>
+            </a>
+        </li>
+
+        
+        <li class="clearfix">
+            <a target="_blank" href="/news/114-20260915-393276.html">
+                <img src="https://pic.chinaventure.com.cn//head/7334419580846080.jpeg?x-image-process=image/quality,q_80" title="脑机公司，拔苗助长">
+                <h1>脑机公司，拔苗助长</h1>
+                <p>6天前</p>
+                <div class="meng_bg"></div>
+                <div class="top1_label">10</div>
+            </a>
+        </li>
+
+    </ul>
+</aside>
+            </div>
+        </div>
+
+        <!--沉浸式阅读-->
+        <div class="immerse_reading_zone">
+            <div class="immerse_article_wrapper"></div>
+            <div class="backtopage_btn" @click="closeImmerseReading"></div>
+        </div>
+
+        <div class="common_asidefixed_tools">
+    <a class="guestsignup_btn" target="_blank" href="/signup/guestinfo_collection.html">联系我们</a>
+    <a class="contribute_btn" target="_blank" href="/contribute.html">欢迎投稿</a>
+    <div class="appdownload_btn">
+        <div class="ercode_box_bg">
+            <div class="ercode_box">
+                <ul class="appcode_tab">
+                    <li class="active">投中网</li>
+                    <li>CVS投中数据</li>
+                </ul>
+                <ol class="appcode_box">
+                    <li class="active">
+                        <img id="downloadCodepic" src="/images/chinaventure_downloadcode.png" />
+                        <p>创新经济的<br>智识、洞见和未来</p>
+                    </li>
+                    <li>
+                        <img src="/images/cvsercode.png" />
+                        <p>投资人都在用的<br>数据专家</p>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </div>
+    <div class="backtotop_btn">返回顶部</div>
+</div>
+        
+        <footer id="footer_pc" class="footer_pc">
+    <div class="footer_innner">
+        <div class="footer_coperator clearfix">
+            <div id="index_footer_sponsor" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>合作机构</span>
+                    <a href="/coperation.html?activeIndex=0" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img title="第一财经" src="/images/coperation/media/第一财经.png"></li>
+                    <li><img title="界面新闻" src="/images/coperation/media/界面新闻.png"></li>
+                    <li><img title="新浪科技" src="/images/coperation/media/新浪科技.png"></li>
+                    <li><img title="新浪财经客户端" src="/images/coperation/media/新浪财经客户端.png"></li>
+                    <li><img title="凤凰网财经" src="/images/coperation/media/凤凰网财经.png"></li>
+                    <li><img title="36kr" src="/images/coperation/media/36kr.png"></li>
+                    <li><img title="财联社" src="/images/coperation/media/财联社.png"></li>
+                    <li><img title="GEEKPARK" src="/images/coperation/media/GEEKPARK.png"></li>
+                    <li><img title="华夏时报" src="/images/coperation/media/华夏时报.png"></li>
+                    <li><img title="钛媒体" src="/images/coperation/media/钛媒体.png"></li>
+                    <li><img title="和讯" src="/images/coperation/media/和讯.png"></li>
+                    <li><img title="雪球" src="/images/coperation/media/雪球.png"></li>
+                </ul>
+            </div>
+            <div id="index_footer_customer" class="footer_logozone_pc">
+                <h1 class="footer_title">
+                    <span>投中客户</span>
+                    <a href="/coperation.html?activeIndex=1" target="_blank">更多</a>
+                </h1>
+                <ul class="clearfix">
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951018487087104.png" title="深圳担保" alt="深圳担保"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951058941149184.png" title="联创资本" alt="联创资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019497914368.png" title="普罗资本" alt="普罗资本"></li>
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020231917568.png" title="钛信资本" alt="钛信资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019833458688.png" title="创东方" alt="创东方" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019636326400.png" title="基石资本" alt="基石资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020080922624.png" title="华平投资" alt="华平投资" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019938316288.png" title="澳银资本" alt="澳银资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019757961216.png" title="毅达资本" alt="毅达资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951019686658048.png" title="高新投" alt="高新投" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951020001230848.png" title="紫金港资本" alt="紫金港资本" /></li> 
+                    <li><img src="https://pic.chinaventure.com.cn/head/6951022693974016.png" title="东方富海" alt="东方富海" /></li> 
+                </ul>
+            </div>
+            <div class="footer_linkzone_pc clearfix footer_link">
+                <h1 class="footer_title">
+                    <span>联系我们</span>
+                </h1>
+                <ul class="clearfix">
+                    <li><span>商务合作：sa@chinaventure.com.cn</span></li>
+                </ul>
+                <ul class="clearfix">
+                    <li class="m-t-10"><span>机构合作：md-pr@chinaventure.com.cn</span></li>
+                </ul>
+            </div>
+            <div id="index_footer_friendlink" class="footer_linkzone_pc clearfix">
+                <h1 class="footer_title">
+                    <span>友情链接</span>
+                </h1>
+                <ul class="clearfix"> 
+                    <li><a target="_blank" href="http://tech.qq.com">腾讯科技</a></li>
+                    <li><a target="_blank" href="http://www.caijing.com.cn">财经网</a></li>
+                    <li><a target="_blank" href="http://www.jrj.com.cn">金融界</a></li>
+                    <li><a target="_blank" href="http://capital.people.com.cn">人民创投</a></li>
+                    <li><a target="_blank" href="http://www.hexun.com">和讯</a></li>
+                    <li><a target="_blank" href="http://www.iresearch.cn">艾瑞网</a></li>
+                    <li><a target="_blank" href="https://www.youliancloud.cn/ ">有连云</a></li>
+                    <li><a target="_blank" href="http://www.easeye.com.cn/">亿业科技</a></li>
+                    <li><a target="_blank" href="https://www.catrust.cn/">国产SSL证书</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright_text">
+            <p><a href="https://www.12377.cn" target="_blank">违法和不良信息举报电话：(021)56790721</a>　<a href="https://www.chinaventure.com.cn/news/64-20260126-389940.html" target="_blank">举报邮箱：report2019@chinaventure.com.cn</a></p>
+            <p>Copyright &#169 2005-2023 ChinaVenture Investment Consulting Ltd. 投中网 <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备2023019928号-1</a></p>
+            <p>本站带宽由 ChinaCache 提供&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902003027" style="display:inline-block;text-decoration:none;"><img style="width:20px;height:20px;position:relative;top:5px;" src="/images/gongan.png"/>&nbsp;沪公网安备 31010902003027号</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020200109105830000005532081-SAIC_SHOW_310000-2c9be8bd717d3562017198bf4d8c0ffb065&signData=MEQCIATlMt5wh1D4jG0Rzra+Eq/qT9fo4I2bhjHWs+VSiQacAiA16eKQi3fn2qiEdfEQQ+FkLu+myHa5XhS+WRNKyOBCGA==" style="display:inline-block;text-decoration:none;"><img style="width:16px;height:20px;position:relative;top:5px;" alt="投中网电子营业执照" title="投中网电子营业执照" src="/images/dianziyingyezhizhao.png"/></a></p>
+        </div>
+    </div>
+</footer>
+        
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/page/articledetail.js"></script>
+</html>

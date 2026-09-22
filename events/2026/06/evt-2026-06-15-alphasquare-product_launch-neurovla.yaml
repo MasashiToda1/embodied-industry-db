@@ -1,0 +1,21 @@
+id: evt-2026-06-15-alphasquare-product_launch-neurovla
+date: '2026-06-15'
+date_precision: day
+type: product_launch
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方在智源大会发布类脑式具身智能系统 NeuroVLA 并开源
+summary:
+  zh: 6 月 15 日，智平方创始人兼 CEO 郭彦东在 2026 北京智源大会具身产业 CEO 论坛发布类脑式具身智能系统 NeuroVLA，并宣布在 AlphaBrain Platform 开源。官方称该架构由智平方联合香港科技大学（广州）研发，仿生「皮层-小脑-脊髓」三层结构，分别承担任务规划、动作稳定与本能级快速反应。
+axes:
+  model_form:
+  - hierarchical
+evidence:
+- url: https://www.donews.com/news/detail/4/6595774.html
+  publisher: DoNews
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/donews-2026-06-15-alphasquare-neurovla.html
+corroboration: single

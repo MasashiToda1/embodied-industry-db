@@ -8,3 +8,19 @@ layers:
 - embodiment
 upstream:
   robotics_notebooks_institution: alphasquare
+founded: 2023-04
+hq:
+  country: CN
+  city: 深圳
+description: 智平方（深圳）科技股份有限公司，研发具身大模型 AlphaBrain 与 AlphaBot（爱宝）系列机器人。
+accounts:
+  site: https://www.ai2robotics.com
+sources:
+- url: https://www.caixin.com/2026-06-29/102458633.html
+  tier: media
+  retrieved: '2026-09-22'
+  note: 财新报道写「深圳机器人创业公司智平方」；财新 2026-02-23 报道写「成立于 2023 年 4 月，由郭彦东创立」
+- url: https://www.ai2robotics.com/
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网页脚版权方为智平方（深圳）科技股份有限公司

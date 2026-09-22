@@ -1,0 +1,30 @@
+id: evt-2026-02-x-square-robot-funding-pre-b-round
+date: '2026-02'
+date_precision: month
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人完成数亿元新一轮融资，上汽金控、中金上汽基金领投
+summary:
+  zh: 2026 年 2 月，自变量机器人宣布完成数亿元人民币新一轮融资，由上汽金控、中金上汽基金等领投，美团龙珠、红杉中国、北京信息产业发展投资基金、国开金融、啟赋资本、渶策资本、广发信德等老股东跟投。这是该公司 2026 年以来的第二笔融资。
+counterparties:
+- 上汽金控
+- 中金上汽基金
+- 美团龙珠
+- 红杉中国
+- 北京信息产业发展投资基金
+- 国开金融
+- 啟赋资本
+- 渶策资本
+- 广发信德
+date_basis: derived
+date_as_stated: 报道（2026-02-26）原文「近日，自变量机器人宣布完成数亿元新一轮融资」
+evidence:
+- url: https://news.qq.com/rain/a/20260226A0399000
+  publisher: 腾讯新闻 · 福布斯中国
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/news-2026-02-x-square-robot-pre-b-rou.html
+corroboration: single

@@ -1,0 +1,25 @@
+id: evt-2026-04-zerith-funding-a-round
+date: '2026-04'
+date_precision: month
+type: funding
+orgs:
+- id: zerith
+  role: subject
+title:
+  zh: 零次方机器人完成超亿元融资，润泽集团领投
+summary:
+  zh: 2026 年 4 月，零次方机器人（Zerith）宣布完成最新一轮超亿元人民币融资，由润泽集团领投，宁波东力、接力天使、平湖泽新跟投。官方称本轮与润泽集团基于「算力 + 场景」逻辑合作，并锁定机器人领域订单战略合作；资金投向场景基础模型算法、本体量产降本与渠道拓展。
+counterparties:
+- 润泽集团
+- 宁波东力
+- 接力天使
+- 平湖泽新
+date_basis: derived
+date_as_stated: 报道（2026-04-13）原文「零次方机器人（Zerith）近日完成最新一轮超亿元融资」
+evidence:
+- url: http://business.china.com.cn/2026-04/13/content_43396684.shtml
+  publisher: 中国网 · 转载中国日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/business-2026-04-zerith-a-round.html
+corroboration: single

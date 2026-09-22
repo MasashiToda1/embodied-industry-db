@@ -9,7 +9,22 @@ status: active
 layers:
 - foundation
 - locomotion
+founded: 2024
+hq:
+  country: CN
+  city: 深圳
+description: 研发全身智能基础模型 Light 系列与小型人形机器人 LightBot 的公司，2024 年底成立。
 accounts:
   huggingface: LightOriginsHQ
+  site: https://www.lightorigins.com
+sources:
+- url: https://www.lightorigins.com/news/pre-a-2026
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网融资新闻写「亮源新创成立于 2024 年底」，创始人兼 CEO 姜旭
+- url: https://www.lightorigins.com/en/news/pre-a-2026
+  tier: official
+  retrieved: '2026-09-22'
+  note: 英文版新闻电头为 SHENZHEN, August 14, 2026
 # 「光原点」是 Robotics_Notebooks institutions.json 的写法，
 # 公众号与官网自称「亮源新创」，以后者为准，前者留作别名。

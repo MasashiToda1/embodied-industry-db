@@ -1,0 +1,22 @@
+id: evt-2026-01-26-beingbeyond-funding-lh-ventures
+date: '2026-01-26'
+date_precision: day
+type: funding
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 领航新界宣布投资智在无界（BeingBeyond）
+summary:
+  zh: 领航新界（重庆）私募股权投资基金管理有限公司于 2026 年 1 月 26 日发文，宣布投资通用具身智能大模型公司智在无界（BeingBeyond）。文中称智在无界已积累超过 3 万小时第一人称人类视频数据，并与 PND、灵心巧手等硬件公司达成合作。轮次与金额未披露。
+counterparties:
+- 领航新界
+date_basis: derived
+date_as_stated: 投资方官网发布日期 2026 年 1 月 26 日，原文「近日，领航新界正式宣布投资……智在无界」
+evidence:
+- url: https://www.lh-ventures.com/newsinfo/3142582.html
+  publisher: 领航新界官网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/lh-ventures-2026-01-26-beingbeyond-lh-ventures-.html
+corroboration: single

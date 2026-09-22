@@ -1,0 +1,23 @@
+id: evt-2026-06-11-beingbeyond-partnership-d-robotics
+date: '2026-06-11'
+date_precision: day
+type: partnership
+orgs:
+- id: beingbeyond
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 智在无界与地瓜机器人达成战略合作，Being-H-Flash 在旭日 S600/S100 端侧部署
+summary:
+  zh: 2026 年 6 月 11 日，智在无界与地瓜机器人宣布达成战略合作。双方基于 Being-H0.7 与地瓜旭日 S600、S100 芯片进行适配，官方称 Being-H-Flash 在旭日 S 算力平台上的推理速度接近 20FPS。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://beingbeyond.com/newsInfo/1214.html
+  publisher: 智在无界官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/beingbeyond-2026-06-11-beingbeyond-d-robotics-p.html
+corroboration: single

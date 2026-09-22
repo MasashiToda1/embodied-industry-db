@@ -1,0 +1,25 @@
+id: evt-2026-02-10-noematrix-funding-a-round
+date: '2026-02-10'
+date_precision: day
+type: funding
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能完成数亿元 A 轮融资，C 资本领投
+summary:
+  zh: 穹彻智能宣布完成 A 轮融资，金额达数亿元人民币，由 C 资本领投，Sea Limited、普华资本等跟投，老股东 Prosperity7 Ventures 超额追投。官方称资金用于具身大脑研发迭代、多场景商业化落地与国际化。
+counterparties:
+- C 资本
+- Sea Limited
+- 普华资本
+- Prosperity7 Ventures
+date_basis: derived
+date_as_stated: 官网新闻列表日期 2026 年 2 月 10 日，原文「近日，穹彻智能宣布完成 A 轮融资」
+evidence:
+- url: https://www.noematrix.ai/about
+  publisher: 穹彻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/noematrix-2026-02-10-noematrix-a-round-about.html
+corroboration: single

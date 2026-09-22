@@ -1,0 +1,21 @@
+id: evt-2026-07-10-robbyant-product_launch-lingbot-va-2
+date: '2026-07-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: robbyant
+  role: subject
+title:
+  zh: 蚂蚁灵波发布具身原生世界动作模型 LingBot-VA2.0
+summary:
+  zh: 7 月 10 日，蚂蚁灵波发布 LingBot-VA2.0，官方称其为从零开始预训练的具身原生世界动作模型，单卡实现 150Hz 实时推理。同周该公司还发布并开源了 LingBot-Vision、LingBot-Depth2.0、LingBot-VLA2.0、LingBot-World2.0 与 LingBot-Video 等模型。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://news.aibase.com/zh/news/29517
+  publisher: AIbase
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/07/news-2026-07-10-robbyant-lingbot-va-2.html
+corroboration: single

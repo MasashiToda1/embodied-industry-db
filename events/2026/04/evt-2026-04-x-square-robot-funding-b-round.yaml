@@ -1,0 +1,23 @@
+id: evt-2026-04-x-square-robot-funding-b-round
+date: '2026-04'
+date_precision: month
+type: funding
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人完成近 20 亿元 B 轮融资，小米战投、红杉中国领投
+summary:
+  zh: 36 氪报道，自变量机器人于三月底至四月初完成近 20 亿元人民币 B 轮融资，领投方为小米战投和红杉中国。报道称自变量成为同时被字节、美团、阿里、小米四家互联网公司投资的具身智能公司。
+counterparties:
+- 小米战投
+- 红杉中国
+date_basis: derived
+date_as_stated: 报道（2026-04-20）原文「已经于三月底至四月初完成近 20 亿元 B 轮融资」
+evidence:
+- url: https://www.36kr.com/p/3774502008963841
+  publisher: 36 氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/36kr-2026-04-x-square-robot-b-round.html
+corroboration: single

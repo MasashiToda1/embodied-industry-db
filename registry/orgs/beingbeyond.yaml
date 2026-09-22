@@ -2,11 +2,28 @@ id: beingbeyond
 names:
   zh: 超越智能
   en: BeingBeyond
+  aliases:
+  - 智在无界        # 公司自称与工商名（北京智在无界科技有限公司），新闻文本命中用
 status: active
 layers:
 - foundation
 upstream:
   robotics_notebooks_institution: beingbeyond
+founded: 2025-01
+hq:
+  country: CN
+  city: 北京
+description: 北京智在无界科技有限公司，研发以人类视频预训练的具身基础模型 Being 系列，不做本体。
 accounts:
   huggingface: BeingBeyond
   github: BeingBeyond
+  site: https://beingbeyond.com
+sources:
+- url: https://www.36kr.com/p/3324923112614405
+  tier: media
+  retrieved: '2026-09-22'
+  note: 36 氪报道写「北京智在无界科技有限公司……成立于 2025 年 1 月」，创始人卢宗青
+- url: https://beingbeyond.com/newsInfo/1218.html
+  tier: official
+  retrieved: '2026-09-22'
+  note: 官网新闻末尾「关于智在无界」自述：专注具身通用基础模型研发，以大规模人类视频数据训练通用模型

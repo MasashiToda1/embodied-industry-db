@@ -1,0 +1,37 @@
+id: evt-2026-06-16-original-intelligence-funding-atomix-merger
+date: '2026-06-16'
+date_precision: day
+type: funding
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机完成与原力聚合（Atomix）合并，同步完成新一轮战略融资
+summary:
+  zh: 6 月 16 日，原力聚合（Atomix）官网宣布原力灵机完成与原力聚合的合并，并完成新一轮战略融资。投资方包括智谱、阶跃星辰、商汤、阿里巴巴，华勤技术、上汽恒旭等产业资本，以及金浦资本、元禾璞华、兴证资本、苏州基金、招银国际、厚雪基金、正奇能科、运衡实业等机构，老股东跟投，高鹄资本担任独家财务顾问。融资金额未披露。
+counterparties:
+- 原力聚合（Atomix）
+- 智谱
+- 阶跃星辰
+- 商汤
+- 阿里巴巴
+- 华勤技术
+- 上汽恒旭
+- 金浦资本
+- 元禾璞华
+- 兴证资本
+- 苏州基金
+- 招银国际
+- 厚雪基金
+evidence:
+- url: https://www.atomixrobot.com.cn/news/228.html
+  publisher: 原力聚合（Atomix）官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/atomixrobot-2026-06-16-original-intelligence-at.html
+- url: https://news.pedaily.cn/202606/565150.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/news-2026-06-original-intelligence-at.html
+corroboration: multi

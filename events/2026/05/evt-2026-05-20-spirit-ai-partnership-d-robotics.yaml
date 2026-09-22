@@ -1,0 +1,23 @@
+id: evt-2026-05-20-spirit-ai-partnership-d-robotics
+date: '2026-05-20'
+date_precision: day
+type: partnership
+orgs:
+- id: spirit-ai
+  role: subject
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 千寻智能与地瓜机器人达成战略合作，Spirit v1.5 完成与旭日 S600 适配
+summary:
+  zh: 2026 年 5 月 20 日，千寻智能宣布与地瓜机器人达成战略合作，双方已完成千寻开源具身模型 Spirit v1.5 与地瓜旭日 S600 大算力平台（560TOPS INT8）的适配，Spirit v1.5 可在该平台实现端到端推理。官方称 Spirit v1.5 采用 VLA 统一建模框架。
+axes:
+  model_form:
+  - end2end-vla
+evidence:
+- url: https://www.spirit-ai.com/news/32
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/spirit-ai-2026-05-20-spirit-ai-d-robotics-par.html
+corroboration: single

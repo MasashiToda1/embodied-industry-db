@@ -1,0 +1,18 @@
+id: evt-2026-03-14-tars-robotics-product_launch-awe-3-0
+date: '2026-03-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航发布通用具身大模型 AWE 3.0 与数据解决方案 SenseHub
+summary:
+  zh: 3 月 14 日，它石智航举办 AWE 3.0 暨数据解决方案 SenseHub 发布会，首席科学家丁文超发布通用具身大模型 AWE 3.0。官方称模型在新视角下任务成功率提升 3 倍、任务抖动降低超 45%，依托 WIYH 数据集超百万小时数据。同期它石 A1 机器人基于 AWE 3.0 创造「机器人在一小时内装配亚毫米级线束最多次数」吉尼斯世界纪录。
+evidence:
+- url: https://news.qq.com/rain/a/20260317A0632200
+  publisher: 腾讯新闻 · 中国日报网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/03/news-2026-03-14-tars-robotics-awe-3-0.html
+corroboration: single

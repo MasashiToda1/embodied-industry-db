@@ -1,0 +1,22 @@
+id: evt-2026-08-light-origins-funding-pre-a-round
+date: '2026-08'
+date_precision: month
+type: funding
+orgs:
+- id: light-origins
+  role: subject
+title:
+  zh: 亮源新创完成数亿元 Pre-A 轮融资，国科投资领投
+summary:
+  zh: 2026 年 8 月，亮源新创（Light Origins）宣布完成数亿元人民币 Pre-A 轮融资，由国科投资领投，招商局创投、襄禾资本等参与。官方称资金用于超大规模具身智能模型训练、多模态数据基础设施、软硬件全栈平台研发与团队扩张，公司团队规模已超百人。
+counterparties:
+- 国科投资
+- 招商局创投
+- 襄禾资本
+evidence:
+- url: https://www.lightorigins.com/news/pre-a-2026
+  publisher: 亮源新创官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/lightorigins-2026-08-14-light-origins-pre-a-roun.html
+corroboration: single

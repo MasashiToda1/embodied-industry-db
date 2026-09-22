@@ -1,0 +1,26 @@
+id: evt-2026-01-cognibrain-funding-seed-round
+date: '2026-01'
+date_precision: month
+type: funding
+orgs:
+- id: cognibrain
+  role: subject
+- id: leju
+  role: investor
+title:
+  zh: 具脑磐石完成数千万元种子轮融资，乐聚机器人、四川科创投等参与
+summary:
+  zh: 2026 年 1 月，具脑磐石宣布完成数千万元人民币种子轮融资，投资方包括乐聚机器人、上海道禾长期投资、四川科创投集团及东方精工等。报道称公司由前华为云 AI 算法创新 Lab 主任朱森华创立，成立仅两个月。
+counterparties:
+- 上海道禾长期投资
+- 四川科创投集团
+- 东方精工
+date_basis: derived
+date_as_stated: 报道（2026-01-07）原文「近日宣布完成数千万元种子轮融资」
+evidence:
+- url: https://www.wdn.com.cn/jingji/202601/173382.html
+  publisher: 数据世界 · 转载天脉网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/01/wdn-2026-01-cognibrain-seed-round.html
+corroboration: single

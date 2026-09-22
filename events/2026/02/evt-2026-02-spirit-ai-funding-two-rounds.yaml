@@ -1,0 +1,36 @@
+id: evt-2026-02-spirit-ai-funding-two-rounds
+date: '2026-02'
+date_precision: month
+type: funding
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能连续完成两轮融资近 20 亿元，云锋基金、红杉中国等参与
+summary:
+  zh: 2026 年 2 月，千寻智能宣布连续完成两轮融资近 20 亿元人民币，投资方包括云锋基金、混沌投资、红杉中国、Synstellation Capital、TCL 创投、明荟致远、重庆产业投资母基金、杭州金投、360 基金、厚雪资本等，顺为资本、Prosperity7、达晨财智等老股东继续认购。36 氪报道称本轮后公司估值突破百亿元。
+counterparties:
+- 云锋基金
+- 混沌投资
+- 红杉中国
+- Synstellation Capital
+- TCL 创投
+- 明荟致远
+- 重庆产业投资母基金
+- 杭州金投
+- 360 基金
+- 厚雪资本
+date_basis: derived
+date_as_stated: 官网原文「近日……连续完成两轮融资近 20 亿」，36 氪报道（2026-04-07）原文「今年 2 月，千寻连续完成两轮融资近 20 亿元」
+evidence:
+- url: https://www.spirit-ai.com/news/26
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/spirit-ai-2026-02-spirit-ai-feb-rounds.html
+- url: https://www.36kr.com/p/3756015111291654
+  publisher: 36 氪 · 转载投资界
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/36kr-2026-04-07-spirit-ai-a-round-www.html
+corroboration: multi

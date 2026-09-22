@@ -1,0 +1,18 @@
+id: evt-2026-08-original-intelligence-corporate-joint-stock-reform
+date: '2026-08'
+date_precision: month
+type: corporate
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机完成股份制改造，更名为原力灵机（重庆）智能科技股份有限公司
+summary:
+  zh: 工商信息显示，原力灵机于 2026 年 8 月完成工商变更登记，企业类型变更为股份有限公司，公司全称变更为原力灵机（重庆）智能科技股份有限公司。公司未公布上市时间表。
+evidence:
+- url: https://news.pedaily.cn/202608/567534.shtml
+  publisher: 投资界
+  tier: aggregator
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/news-2026-08-original-intelligence-jo.html
+corroboration: single

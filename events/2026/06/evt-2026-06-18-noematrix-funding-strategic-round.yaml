@@ -1,0 +1,30 @@
+id: evt-2026-06-18-noematrix-funding-strategic-round
+date: '2026-06-18'
+date_precision: day
+type: funding
+orgs:
+- id: noematrix
+  role: subject
+title:
+  zh: 穹彻智能完成新一轮数亿元融资，上海交大 AI 未来基金、无锡数据集团等注资
+summary:
+  zh: 穹彻智能宣布完成新一轮数亿元人民币融资，投资方为上海交通大学 AI 未来基金（创业基金）、上海创之智科技有限公司（上海创智学院全资子公司）、无锡数据集团、一村资本等，老股东跟投。官方称资金用于具身大模型研发以及酒店洗衣、家庭整理等场景落地。
+counterparties:
+- 上海交通大学 AI 未来基金
+- 上海创之智科技有限公司
+- 无锡数据集团
+- 一村资本
+date_basis: derived
+date_as_stated: 官网新闻列表日期 2026 年 6 月 18 日，原文「近日，具身智能企业穹彻智能（Noematrix）宣布完成新一轮数亿元融资」
+evidence:
+- url: https://www.noematrix.ai/news/Noematrix-A++
+  publisher: 穹彻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/noematrix-2026-06-18-noematrix-strategic-roun.html
+- url: https://www.noematrix.ai/about
+  publisher: 穹彻智能官网 · 新闻列表
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/02/noematrix-2026-02-10-noematrix-a-round-about.html
+corroboration: single

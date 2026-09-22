@@ -1,0 +1,22 @@
+id: evt-2026-05-25-cognibrain-funding-100m-round
+date: '2026-05-25'
+date_precision: day
+type: funding
+orgs:
+- id: cognibrain
+  role: subject
+title:
+  zh: 具脑磐石完成新一轮亿元级融资，多维资本担任独家财务顾问
+summary:
+  zh: 36 氪 5 月 25 日报道，具脑磐石完成新一轮亿元级人民币融资，由具备类脑与具身产业背景的产业资本领投，老股东及多家基金跟投，多维资本担任独家财务顾问，领投方名称未披露；公司称更新一轮融资在同步交割中。资金用于认知世界模型（Cognitive World Model）研发、团队扩充与全球市场拓展。
+counterparties:
+- 多维资本
+date_basis: derived
+date_as_stated: 报道（2026-05-25）原文「硬氪获悉，具身智能大脑公司「具脑磐石」完成新一轮亿元级融资」
+evidence:
+- url: https://www.36kr.com/p/3819931562414467
+  publisher: 36 氪 · 硬氪
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/05/36kr-2026-05-25-cognibrain-100m-round-ww.html
+corroboration: single

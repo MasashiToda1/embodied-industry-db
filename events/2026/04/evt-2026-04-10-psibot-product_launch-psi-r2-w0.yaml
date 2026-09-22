@@ -1,0 +1,21 @@
+id: evt-2026-04-10-psibot-product_launch-psi-r2-w0
+date: '2026-04-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: psibot
+  role: subject
+title:
+  zh: 灵初智能发布 Psi-R2 与 Psi-W0 双模型，开源首批 1000 小时人类手部操作数据
+summary:
+  zh: 4 月 10 日，灵初智能发布基于人类数据预训练的模型 Psi-R2 和 Psi-W0。官方称 Psi-R2 为使用 10 万小时量级人类数据预训练的 World Action Model，输入图片与语言、输出未来视频与机器人动作；Psi-W0 为 Action-Conditioned World Model，用于策略评估与强化学习。同时开源首批 1000 小时人类手部操作全模态数据集。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://www.zidonghua.com.cn/news/newproduct/83907.html
+  publisher: 自动化网 · 转载灵初智能
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/04/zidonghua-2026-04-10-psibot-psi-r2-w0.html
+corroboration: single

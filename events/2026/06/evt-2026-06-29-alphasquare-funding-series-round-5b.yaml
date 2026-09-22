@@ -1,0 +1,18 @@
+id: evt-2026-06-29-alphasquare-funding-series-round-5b
+date: '2026-06-29'
+date_precision: day
+type: funding
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方宣布完成近 50 亿元系列融资，估值超 200 亿元
+summary:
+  zh: 6 月 29 日，智平方宣布完成一系列新融资，融资总额近 50 亿元人民币（约 7 亿美元），估值升至超 200 亿元。官方称融资后将推进「机器人大脑」迭代与规模化量产。具体投资方名单未在报道中列出。
+evidence:
+- url: https://www.caixin.com/2026-06-29/102458633.html
+  publisher: 财新网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/caixin-2026-06-29-alphasquare-series-round.html
+corroboration: single

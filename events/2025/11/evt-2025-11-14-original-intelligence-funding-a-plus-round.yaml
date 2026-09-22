@@ -1,0 +1,30 @@
+id: evt-2025-11-14-original-intelligence-funding-a-plus-round
+date: '2025-11-14'
+date_precision: day
+type: funding
+orgs:
+- id: original-intelligence
+  role: subject
+title:
+  zh: 原力灵机完成数亿元 A+ 轮融资，阿里巴巴独家投资
+summary:
+  zh: 11 月 14 日，Dexmal 原力灵机通过官方公众号宣布完成数亿元人民币 A+ 轮融资，阿里巴巴为独家投资方。此前 A 轮由蔚来资本领投，洪泰基金、联想创投、锡创投、正景基金跟投，君联资本、启明创投、九坤创投追投；两轮融资金额近 10 亿元。
+counterparties:
+- 阿里巴巴
+- 蔚来资本
+- 洪泰基金
+- 联想创投
+- 锡创投
+- 正景基金
+- 君联资本
+- 启明创投
+- 九坤创投
+date_basis: derived
+date_as_stated: 报道（2025-11-14）原文「11 月 14 日，据「Dexmal 原力灵机」官方公众号消息，近日……宣布完成数亿元 A+ 轮融资」
+evidence:
+- url: https://m.bjnews.com.cn/detail/1763108341168583.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/11/m-2025-11-14-original-intelligence-a-.html
+corroboration: single

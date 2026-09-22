@@ -1,0 +1,25 @@
+id: evt-2026-08-zerith-deployment-robot-store-hefei
+date: '2026-08'
+date_precision: month
+type: deployment
+orgs:
+- id: zerith
+  role: subject
+title:
+  zh: 零次方机器人小店在合肥四点位同步落地，公司称订单规模突破 3 亿元
+summary:
+  zh: 新浪财经 8 月 21 日报道，零次方以 Zerith-H1 轮式人形机器人为核心的无人机器人小店将于 8 月 26 日进驻合肥罍街东区、南区、合柴 1972、贡街四个点位；此前已在合肥骆岗公园、中国视界及上海宝山滨江实测，公司称单店日订单峰值 1103 单、周履约成功率 99.5%，2026 年 8 月订单规模突破 3 亿元，年内计划落地 500 个小店。
+axes:
+  target_scene:
+  - commercial-service
+  embodiment_form:
+  - humanoid-wheeled
+date_basis: derived
+date_as_stated: 报道（2026-08-21）原文「8 月 26 日，这批机器人小店将进驻罍街东区、南区、合柴 1972、贡街 4 个点位」「今年 8 月迎来订单规模突破 3 亿元」
+evidence:
+- url: https://finance.sina.com.cn/jjxw/2026-08-21/doc-ininztwt6443000.shtml
+  publisher: 新浪财经
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/08/finance-2026-08-zerith-robot-store-hefei.html
+corroboration: single

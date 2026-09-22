@@ -1,0 +1,26 @@
+id: evt-2026-06-03-spirit-ai-funding-a-plus-round
+date: '2026-06-03'
+date_precision: day
+type: funding
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能完成 15 亿元 A+ 轮融资，同日宣布 Spirit v1.6 登顶 RoboArena
+summary:
+  zh: 6 月 3 日，千寻智能宣布完成 15 亿元人民币 A+ 轮融资，股东包含一线美元基金、大型产业投资方及国资基金，老股东继续加码，具体投资方名单未披露。同日公司宣布其具身基座模型 Spirit v1.6 在 RoboArena 评测中综合得分第一。报道称公司三个月内完成四轮融资，累计近 50 亿元。
+amount:
+  value: 1500000000
+  currency: CNY
+evidence:
+- url: https://www.spirit-ai.com/news/34
+  publisher: 千寻智能官网
+  tier: official
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/spirit-ai-2026-06-03-spirit-ai-a-plus-round.html
+- url: https://finance.sina.com.cn/wm/2026-06-03/doc-iniacxkk4007887.shtml
+  publisher: 新浪财经 · AI 资本局
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2026/06/finance-2026-06-03-spirit-ai-a-plus-round-s.html
+corroboration: multi

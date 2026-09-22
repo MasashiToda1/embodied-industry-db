@@ -1,0 +1,23 @@
+id: evt-2025-12-19-tars-robotics-product_launch-awe-2-0
+date: '2025-12-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航技术首秀发布具身基础模型 AWE 2.0、数采系统 SenseHub 与 T/A 系列本体
+summary:
+  zh: 12 月 19 日，它石智航举办「TA 来了，针功夫」技术首秀直播，发布具身基础模型 TARS AWE（AI World Engine）2.0、以人为中心的数据采集系统 SenseHub，以及 T 系列与 A 系列自研本体机器人，并展示完成自主刺绣的机器人。官方称 AWE 2.0 通过空间感知预训练与全身端到端学习实现精确执行。
+axes:
+  hardware_strategy:
+  - in-house
+  data_acquisition:
+  - human-video
+evidence:
+- url: http://iot.china.com.cn/content/2025-12/23/content_43316083.shtml
+  publisher: 中国网
+  tier: media
+  retrieved: '2026-09-22'
+  snapshot: snapshots/2025/12/iot-2025-12-19-tars-robotics-awe-2-0-la.html
+corroboration: single
