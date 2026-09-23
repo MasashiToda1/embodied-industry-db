@@ -13,6 +13,8 @@ layers:
 - components
 - embodiment
 upstream:
+  # 上游另有 agilex-ai 条目，那是本主体域名 agilex.ai 的误读，本库已删掉该重复条目；
+  # 它带的中文名「智在无界」实属 beingbeyond（已在那边的 aliases 里）
   robotics_notebooks_institution: agilex
 accounts:
   github: agilexrobotics   # 订正：原填 agilex 是同名英国公司（blog agilex.co.uk，5 个仓），

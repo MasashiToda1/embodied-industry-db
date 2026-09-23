@@ -1,9 +1,9 @@
 id: direct-drive-tech
 names:
-  zh: 直驱科技
+  zh: 本末科技
   en: Direct Drive Tech
   aliases:
-  - 本末科技
+  - 直驱科技          # 早期译名，registry id 沿用它
   - 本末动力
   - 本末动力（北京）科技股份有限公司
   - Direct Drive Tech Limited

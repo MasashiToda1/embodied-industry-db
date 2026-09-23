@@ -51,7 +51,7 @@ orgs:
   - { id: shadow-robotics, zh: 影子机器人,    en: Shadow Robot Company, layers: [components],                    upstream: shadow-robotics }
   - { id: ohand,           zh: 傲意科技,      en: OHand Technology, layers: [components],                        upstream: ohand }
   - { id: dmbots,          zh: 达妙科技,      en: DMBots,          layers: [components],                         upstream: dmbots }
-  - { id: direct-drive-tech, zh: 直驱科技,    en: Direct Drive Tech, layers: [components],                       upstream: direct-drive-tech }
+  - { id: direct-drive-tech, zh: 本末科技,    en: Direct Drive Tech, layers: [components],                       upstream: direct-drive-tech }
   - { id: qianjue,         zh: 千觉机器人,    en: Qianjue Robotics, layers: [components],                        upstream: qianjue }
   - { id: ti5robot,        zh: 钛虎机器人,    en: Ti5 Robot,       layers: [components, embodiment],             upstream: ti5robot }
   - { id: hightorque,      zh: 高擎机电,      en: HighTorque Robotics, layers: [components, embodiment],         upstream: hightorque }
@@ -154,7 +154,6 @@ orgs:
   - { id: gigaai,          zh: 极佳视界,      en: GigaAI,            layers: [foundation, embodiment], upstream: gigaai }
   - { id: ace-robotics,    zh: 大晓机器人,    en: Ace Robotics,      layers: [foundation, data], upstream: ace-robotics }
   - { id: shengshu,        zh: 生数科技,      en: Shengshu,          layers: [foundation], upstream: shengshu }
-  - { id: agilex-ai,       zh: 智在无界,      en: AgileX AI,         layers: [foundation, data], upstream: agilex-ai }
   - { id: modelbest,       zh: 面壁智能,      en: ModelBest,         layers: [foundation], upstream: modelbest }
   - { id: miaodong,        zh: 妙动科技,      en: Miaodong,          layers: [foundation, embodiment], upstream: miaodong }
   - { id: mirros,          zh: 镜识科技,      en: MirroS,            layers: [foundation, embodiment], upstream: mirros }
