@@ -21,6 +21,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audit-readable
+          git add audit-primary snapshots/2026/10/intake-primary-20261001
           git commit -m "取证：提取阅读文本并生成去重索引"
           git push
