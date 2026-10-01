@@ -14,11 +14,13 @@ jobs:
         with:
           python-version: "3.11"
       - name: 保存公开来源原文
-        run: python evidence-fetch.py
+        run: |
+          pip install --quiet beautifulsoup4 pypdf pyyaml
+          python evidence-fetch.py
       - name: 保存核验快照
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots/2026/10/intake-audit-20261001
-          git commit -m "取证：保存剩余线索公开来源原文"
+          git add audit-readable
+          git commit -m "取证：提取阅读文本并生成去重索引"
           git push
