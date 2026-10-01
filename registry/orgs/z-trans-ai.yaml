@@ -1,0 +1,39 @@
+{
+  "id": "z-trans-ai",
+  "names": {
+    "zh": "域变换",
+    "en": "Z-Trans AI",
+    "aliases": [
+      "Z-Trans"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation",
+    "simulation"
+  ],
+  "description": "提供 Zeva 具身学习模型、Zetta 机器人执行与纠错框架及 Z-Infra 训练推理基础设施。",
+  "sources": [
+    {
+      "url": "https://air.tsinghua.edu.cn/info/1009/2542.htm",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/4.html",
+      "note": "清华 AIR 官网媒体报道栏目确认域变换品牌与公司定位；转载采访不另算独立佐证。"
+    },
+    {
+      "url": "https://air-embodied-brain.github.io/zetta/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/5.html",
+      "note": "项目页明确列出清华 AIR 与 Z-Trans AI 的共同项目归属。"
+    },
+    {
+      "url": "https://air-embodied-brain.github.io/Zeva/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/6.html",
+      "note": "Zeva 项目页明确机构归属与机器人学习模型。"
+    }
+  ]
+}

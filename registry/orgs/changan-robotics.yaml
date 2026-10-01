@@ -1,0 +1,31 @@
+{
+  "id": "changan-robotics",
+  "names": {
+    "zh": "长安天枢机器人",
+    "aliases": [
+      "长安机器人公司",
+      "长安天枢智能机器人"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "embodiment"
+  ],
+  "description": "长安体系的机器人产业主体，以智能人形机器人技术为牵引发展多场景具身智能产品。",
+  "sources": [
+    {
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2025-11-29/a67d28e2-182d-4b19-a033-49d95fc90c65.PDF",
+      "tier": "primary",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/9.pdf",
+      "note": "2025 年董事会决议确认投资主体与人形机器人定位；当时公司全称为暂定名，不作为最终工商名称。"
+    },
+    {
+      "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-28/dd1ddb04-5c1e-4efd-a4b0-5e9a25264da4.PDF",
+      "tier": "primary",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/10.pdf",
+      "note": "2026 年公司披露文件记载成立天枢机器人公司及多场景具身产品定位；不据此推定具体注册日期。"
+    }
+  ]
+}

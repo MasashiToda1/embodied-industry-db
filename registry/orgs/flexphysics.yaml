@@ -1,0 +1,51 @@
+{
+  "id": "flexphysics",
+  "names": {
+    "zh": "灵境数值",
+    "en": "FlexPhysics",
+    "aliases": [
+      "广州灵境数值软件有限公司",
+      "Flex Physics"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "simulation",
+    "data"
+  ],
+  "description": "运营 FlexPhysics 机器人仿真平台，提供 URDF 可视化编辑、仿真训练与评估，以及面向机器人任务的仿真数据服务。",
+  "accounts": {
+    "site": "https://www.flexphysics.com/",
+    "huggingface": "FlexPhysics"
+  },
+  "sources": [
+    {
+      "url": "https://www.flexphysics.com/terms-of-users",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/11.html",
+      "note": "用户协议页面由网页脚本渲染，运营主体原文见同组 13.js 快照；协议日期不作为公司成立日。"
+    },
+    {
+      "url": "https://docs.flexphysics.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/2.html",
+      "note": "产品文档说明机器人模型编辑、仿真训练与评估流程。"
+    },
+    {
+      "url": "https://www.flexphysics.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/12.html",
+      "note": "官网说明机器人任务仿真及数据服务。"
+    },
+    {
+      "url": "https://www.flexphysics.com/static/mainApp/js/main-BtJqPAH1.js",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/13.js",
+      "note": "官网页面脚本含运营主体、产品及数据服务文案，并链接 Hugging Face/FlexPhysics；与官网为同源证据。"
+    }
+  ]
+}
