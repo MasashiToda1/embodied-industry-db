@@ -334,10 +334,10 @@ async function pageAxes() {
   let axis = qs.get('axis') && A[qs.get('axis')] ? qs.get('axis') : (Object.keys(A)[0] || fields[0]);
   let tab = 'stream';
   $('main').innerHTML = `<div class="wrap"><h1>轴 / 收敛</h1>
-    <div class="sub">选一条轴。流图看各取值的主体数随时间怎么变——分散度下降就是收敛；热力看谁先谁后、谁换过。都是分布，不是排名。</div>
+    <div class="sub">选一条轴：流图看路线记录随时间的变化，热力图看哪些公司有哪条路线的记录。公司可以同时出现多种路线。</div>
     <div class="card" style="margin-bottom:12px"><div id="axis-tags">${fields.map(f => `<span class="tag ${f === axis ? 'on' : ''} ${A[f] ? '' : 'soft'}" data-f="${f}">${label(f)}${A[f] ? '' : ' <small>0</small>'}</span>`).join('')}</div>
-      <div style="margin-top:8px"><span class="tag ${tab === 'stream' ? 'on' : ''}" data-t="stream">流图</span><span class="tag" data-t="heat">热力</span></div></div>
-    <div class="card" id="viz"></div><div class="notice" style="margin-top:12px">样本还少：现在只有几家主体、几十条事件，曲线代表的是「本库收录到了什么」，不是行业全貌。</div></div>`;
+      <div style="margin-top:8px"><span class="tag ${tab === 'stream' ? 'on' : ''}" data-t="stream">流图</span><span class="tag" data-t="heat">路线热力图</span></div></div>
+    <div class="card" id="viz"></div><div class="notice" style="margin-top:12px">图表只反映本库已收录的公开证据，不代表行业全貌；尚未收录不等于未采用。</div></div>`;
   const draw = () => {
     $$('#axis-tags .tag').forEach(t => t.classList.toggle('on', t.dataset.f === axis));
     $$('[data-t]').forEach(t => t.classList.toggle('on', t.dataset.t === tab));
@@ -373,14 +373,25 @@ function drawStream(el, ax) {
 }
 function drawHeat(el, ax) {
   const values = Object.keys(ax.values);
-  const orgs = [...new Set(values.flatMap(v => ax.values[v].orgs.map(o => o.org)))];
-  const first = {}; values.forEach(v => ax.values[v].orgs.forEach(o => first[o.org + '|' + v] = o));
-  const dates = Object.values(first).map(o => toDate(o.first_seen).getTime()); const lo = Math.min(...dates), hi = Math.max(...dates);
-  const shade = t => { const k = hi > lo ? (t - lo) / (hi - lo) : .5; return `rgba(63,127,230,${.18 + .7 * k})`; };
-  el.innerHTML = `<div class="legend" style="margin-bottom:8px">颜色越深＝首次可见越晚。空格＝未见到该取值。</div>
-    <div class="heat" style="grid-template-columns:140px repeat(${values.length},1fr)">
-      <div class="h"></div>${values.map(v => `<div class="h">${esc(ax.values[v].zh)}</div>`).join('')}
-      ${orgs.map(o => `<div class="h"><a href="org.html?id=${o}">${esc(orgZh(o))}</a></div>${values.map(v => { const f = first[o + '|' + v]; return f ? `<div class="v" style="background:${shade(toDate(f.first_seen).getTime())};color:${(toDate(f.first_seen).getTime() - lo) / ((hi - lo) || 1) > .5 ? '#fff' : '#1f4fa8'}"><a href="index.html?ev=${f.event}" style="color:inherit">${f.first_seen}</a></div>` : '<div></div>'; }).join('')}`).join('')}
+  const orgs = [...new Set(values.flatMap(v => ax.values[v].orgs.map(o => o.org)))]
+    .sort((a, b) => orgZh(a).localeCompare(orgZh(b), 'zh-CN') || a.localeCompare(b));
+  if (!orgs.length) { el.innerHTML = '<div class="empty">这条轴暂无路线记录</div>'; return; }
+  const records = new Map(values.map(v => [v, new Map(ax.values[v].orgs.map(o => [o.org, o]))]));
+  el.innerHTML = `<h2 class="heat-title">公司 × ${esc(ax.zh || '路线')}</h2>
+    <p class="heat-help" id="heat-help">每行一家公司，每列一种路线。蓝色表示本库有该路线的公开记录，点击查看来源；灰色表示尚未收录，不能据此判断未采用。记录包含研究与历史选择，不等同于当前量产路线。</p>
+    <div class="heat-legend"><span><i class="heat-key seen"></i>有记录</span><span><i class="heat-key"></i>尚未收录</span><span class="muted">${orgs.length} 家公司 · 可同时记录多种路线 · 按名称排列</span></div>
+    <div class="heat-scroll" role="region" aria-label="公司与路线记录矩阵，可横向滚动" tabindex="0">
+      <table class="heat" aria-describedby="heat-help">
+        <caption>公司与路线的公开记录分布</caption>
+        <thead><tr><th scope="col">公司 / 路线</th>${values.map(v => `<th scope="col">${esc(ax.values[v].zh || v)}<small>${records.get(v).size} 家有记录</small></th>`).join('')}</tr></thead>
+        <tbody>${orgs.map(o => `<tr><th scope="row"><a href="org.html?id=${encodeURIComponent(o)}">${esc(orgZh(o))}</a></th>${values.map(v => {
+          const record = records.get(v).get(o);
+          const name = `${orgZh(o)} · ${ax.values[v].zh || v}`;
+          return record
+            ? `<td class="heat-seen"><a href="index.html?ev=${encodeURIComponent(record.event)}" title="${esc(name + '：有记录；首次收录到的证据日期 ' + record.first_seen)}" aria-label="${esc(name + '：有记录，查看来源事件')}"><span aria-hidden="true">●</span> 有记录</a></td>`
+            : `<td class="heat-unknown"><span aria-label="${esc(name + '：尚未收录，不表示未采用')}" title="尚未收录，不表示未采用">—</span></td>`;
+        }).join('')}</tr>`).join('')}</tbody>
+      </table>
     </div>`;
 }
 
