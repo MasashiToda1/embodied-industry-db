@@ -1,0 +1,28 @@
+id: "evt-2026-09-30-roboparty-publication-capture-repository"
+date: "2026-09-30"
+date_precision: "day"
+date_basis: "derived"
+date_as_stated: "GitHub API created_at: 2026-09-30T08:55:54Z；此日期为仓库创建时间。功能描述以 2026-10-01 抓取的 README 为准，不作为首日功能完成时间。"
+type: "publication"
+orgs:
+  -
+    id: "roboparty"
+    role: "subject"
+title:
+  zh: "萝博派对创建 roboparty_capture 数据采集工具仓库"
+summary:
+  zh: "GitHub 元数据显示，萝博派对官方账号 Roboparty 于 9 月 30 日创建 roboparty_capture 仓库。截至 10 月 1 日核验，公开 README 将其描述为基于 ROS 2 的机器人板端数据采集包，提供 EGO 双目相机和 IMU 驱动，并将相机、机器人状态及遥操命令录制为 MCAP 文件。README 同时注明，完整构建、取数与录制验收仍待完成。"
+evidence:
+  -
+    url: "https://api.github.com/repos/Roboparty/roboparty_capture"
+    publisher: "GitHub · Roboparty"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-roboparty-capture-repo-20261001.json"
+  -
+    url: "https://github.com/Roboparty/roboparty_capture/blob/feat/recording-workflow/README.md"
+    publisher: "GitHub · Roboparty README"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-roboparty-capture-readme-20261001.md"
+corroboration: "single"

@@ -1,0 +1,20 @@
+id: "evt-2026-09-28-hightorque-publication-fdcan-v2-0-0"
+date: "2026-09-28"
+date_precision: "day"
+type: "publication"
+orgs:
+  -
+    id: "hightorque"
+    role: "subject"
+title:
+  zh: "高擎机电发布 hightorque_fdcan v2.0.0"
+summary:
+  zh: "高擎机电在官方 GitHub 仓库发布 hightorque_fdcan v2.0.0。发布说明列明适配 v6 版本通信板，不兼容 v4、v5 版本通信板，并新增修改 FDCAN 波特率功能。日期依据 GitHub release 的 published_at 字段。"
+evidence:
+  -
+    url: "https://github.com/HighTorque-Robotics/hightorque_fdcan/releases/tag/v2.0.0"
+    publisher: "GitHub · HighTorque-Robotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-hightorque-fdcan-v2-20261001.json"
+corroboration: "single"
