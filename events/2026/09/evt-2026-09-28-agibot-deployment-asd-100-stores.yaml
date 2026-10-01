@@ -1,0 +1,31 @@
+{
+  "id": "evt-2026-09-28-agibot-deployment-asd-100-stores",
+  "date": "2026-09-28",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "agibot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "智元灵犀 X2 在爱仕达百店开展零售服务"
+  },
+  "summary": {
+    "zh": "报道援引智元官方信息称，100 台灵犀 X2 部署于爱仕达 100 家门店，承担迎宾、产品介绍、推荐及转交人工销售等任务。温州、上海和无锡门店自 9 月 28 日开展三天直播，每日 10 时至 20 时；该观察窗口不等于已证明全年持续运营表现。"
+  },
+  "counterparties": [
+    "爱仕达"
+  ],
+  "evidence": [
+    {
+      "url": "https://yangtzeer.com/news/startups/agibot-100-humanoids-asd-stores/",
+      "publisher": "Yangtzeer",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/16.html"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-23-daka-robot-statement-edge-model-service-interview",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "daka-robot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "大咖机器人阐述端侧模型与按工作量收费策略"
+  },
+  "summary": {
+    "zh": "大咖机器人在钛媒体采访中称，将模型控制在 2—3B 参数量、坚持端侧部署并约束算力成本；商业上尽量按工作量提供物理服务，由公司保留机器人所有权，也接受买断。该条为公司经营与选型表态，不视为所有客户均已采用这一模式。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用采访文章发布日期 2026-09-23；不推定访谈实际举行日。",
+  "evidence": [
+    {
+      "url": "https://www.tmtpost.com/8149409.html",
+      "publisher": "钛媒体",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/63.html"
+    }
+  ],
+  "corroboration": "single"
+}

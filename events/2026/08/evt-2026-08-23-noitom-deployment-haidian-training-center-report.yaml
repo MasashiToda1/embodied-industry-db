@@ -1,0 +1,33 @@
+{
+  "id": "evt-2026-08-23-noitom-deployment-haidian-training-center-report",
+  "date": "2026-08-23",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "noitom",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "报道确认诺亦腾海淀跨本体数采训练中心提供服务"
+  },
+  "summary": {
+    "zh": "中新网现场报道确认，诺亦腾与中关村海淀具身智能创新产业园共建的训练中心开展真实场景数采及训练服务，结合真机遥操作、穿戴动捕和视频采集。日期取报道可确认的运营状态，不推定开业当天。"
+  },
+  "counterparties": [
+    "中关村（海淀）具身智能创新产业园"
+  ],
+  "date_basis": "derived",
+  "date_as_stated": "以 2026-08-23 现场报道确认服务已开展；原文另有 7 月 28 日调试图片，但未给出正式开业日。",
+  "evidence": [
+    {
+      "url": "https://www.chinanews.com.cn/cj/2026/08-23/10682837.shtml",
+      "publisher": "中国新闻网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/5.html"
+    }
+  ],
+  "corroboration": "single"
+}

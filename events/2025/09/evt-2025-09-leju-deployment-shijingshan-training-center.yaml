@@ -1,0 +1,34 @@
+{
+  "id": "evt-2025-09-leju-deployment-shijingshan-training-center",
+  "date": "2025-09",
+  "date_precision": "month",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "leju",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "乐聚与京石科创联合运营石景山机器人训练场"
+  },
+  "summary": {
+    "zh": "北京市科委官网转发的报道确认，该训练场已投入运营，由石景山区政府牵头、京石科创集团与乐聚联合运营，覆盖工业、家庭等多类任务场景。报道所称年产数据能力属于产能描述，不视为已累计交付的数据量。"
+  },
+  "counterparties": [
+    "北京市石景山区政府",
+    "京石科创集团"
+  ],
+  "date_basis": "derived",
+  "date_as_stated": "原文发布日期为 2025-09-26，投运表述为“近日”；按 2025 年 9 月记录，不能使用 2026 年线索发现日。",
+  "evidence": [
+    {
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202509/t20250926_4211351.html",
+      "publisher": "北京市科学技术委员会",
+      "tier": "primary",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/49.html"
+    }
+  ],
+  "corroboration": "single"
+}

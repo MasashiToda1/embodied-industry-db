@@ -1,0 +1,38 @@
+{
+  "id": "evt-2026-09-24-agibot-deployment-chimelong-300-robots",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "agibot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "智元向横琴长隆飞船乐园部署超过 300 台机器人"
+  },
+  "summary": {
+    "zh": "乐园焕新开园首期引入超过 300 台智元机器人，分布于 100 余个交互体验点。智元同日披露第 20,000 台具身机器人远征 A3 Ultra 下线并交付长隆；这是累计生产节点，不是该园部署数量，也不包含规划中的后续扩容。"
+  },
+  "counterparties": [
+    "长隆集团"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/robot/23F3DiDtv7Puosqy.html",
+      "publisher": "雷峰网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/36.html"
+    },
+    {
+      "url": "https://www.ithome.com/1/006/710.htm",
+      "publisher": "IT之家",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/55.html"
+    }
+  ],
+  "corroboration": "single"
+}

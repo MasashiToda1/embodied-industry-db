@@ -1,0 +1,32 @@
+{
+  "id": "evt-2025-12-12-agibot-procurement-fudan-lingxi-x2",
+  "date": "2025-12-12",
+  "date_precision": "day",
+  "type": "procurement",
+  "orgs": [
+    {
+      "id": "agibot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "复旦采购公告包含两台智元灵犀 X2"
+  },
+  "summary": {
+    "zh": "复旦大学项目 HW2025102404 的中标公告列出两台灵犀 X2，单价 324,000 元，供货商为上海睿炅智能科技有限公司。合同还含另一品牌的视频安全网关；不把 90 万元项目总额认定为智元合同收入，也不把品牌方写成中标供货商。"
+  },
+  "counterparties": [
+    "复旦大学",
+    "上海睿炅智能科技有限公司"
+  ],
+  "evidence": [
+    {
+      "url": "https://xxgk.fudan.edu.cn/_upload/article/files/eb/23/6b43218f43ceb9c688f69be3dea4/657de252-2c4c-43ab-bc64-c4f00b391d1b.pdf",
+      "publisher": "复旦大学 / 中国政府采购网",
+      "tier": "primary",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/3.pdf"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-23-tars-robotics-statement-shanghai-expansion-intent",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "tars-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "它石智航表态扩大研发团队与生产交付能力"
+  },
+  "summary": {
+    "zh": "它石智航在授权发布的活动稿中介绍面向工业场景的具身模型与机器人业务，并表示将扩大研发团队、布局生产基地及提升交付能力。记录的是扩张方向，不据此认定新生产基地已投产或新增客户合同已签署。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "公司供稿发表于 2026-09-23，活动时间仅写“近日”；本条按表态公开日记录。",
+  "evidence": [
+    {
+      "url": "https://www.qbitai.com/2026/09/496481.html",
+      "publisher": "量子位（它石智航供稿）",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/54.html"
+    }
+  ],
+  "corroboration": "single"
+}

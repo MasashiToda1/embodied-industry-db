@@ -1,0 +1,31 @@
+{
+  "id": "evt-2026-09-25-ubtech-statement-kazakhstan-factory-talks",
+  "date": "2026-09-25",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "ubtech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "优必选与哈萨克斯坦方面讨论阿拉木图机器人生产基地"
+  },
+  "summary": {
+    "zh": "据 IT之家转述优必选公告，双方在哈萨克斯坦—中国投资论坛期间会面，讨论面向教育和服务的机器人设备制造工厂、行业应用及高校合作。哈方表达支持建设工厂；来源未证明工厂已建成、投产或完成投资签约。"
+  },
+  "counterparties": [
+    "哈萨克斯坦方面"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.ithome.com/1/008/652.htm",
+      "publisher": "IT之家",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/8.html"
+    }
+  ],
+  "corroboration": "single"
+}
