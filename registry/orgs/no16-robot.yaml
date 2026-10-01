@@ -1,25 +1,55 @@
-id: no16-robot
-names:
-  zh: 十六号机器人
-  en: No.16 Robot
-  aliases:
-  - XVI Robotics
-  - 北京十六号机器人科技有限公司
-status: active
-layers:
-- embodiment
-- foundation
-founded: 2025-12
-hq:
-  country: CN
-  city: 北京
-description: 前月之暗面后训练与强化学习负责人宋鸿涌创立的公司，做通用人形机器人基座模型，主体为北京十六号机器人科技有限公司。
-sources:
-- url: https://finance.sina.com.cn/wm/2026-05-24/doc-inhyzkka3079176.shtml
-  tier: media
-  retrieved: '2026-09-22'
-  note: 观点网 2026-05-24 报道，企查查信息成立于 2025-12-17，法定代表人宋鸿涌，注册资本 100 万元
-- url: https://news.qq.com/rain/a/20260522A08XJW00
-  tier: media
-  retrieved: '2026-09-22'
-  note: 腾讯新闻 2026-05-22，英文名 XVI Robotics，业务定位；官网未查到
+{
+  "id": "no16-robot",
+  "names": {
+    "zh": "十六号机器人",
+    "en": "XVI Robotics",
+    "aliases": [
+      "No.16 Robot",
+      "北京十六号机器人科技有限公司"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation"
+  ],
+  "founded": "2025-12",
+  "hq": {
+    "country": "CN",
+    "city": "北京"
+  },
+  "description": "研发面向人形机器人的基座模型，主体为北京十六号机器人科技有限公司。",
+  "accounts": {
+    "site": "https://xvirobotics.com/",
+    "github": "xvirobotics"
+  },
+  "sources": [
+    {
+      "url": "https://github.com/xvirobotics/xvirobotics.github.io/blob/795f009ad7f8e036177b5b878e17eddcfd8e3e24/index.html",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-robotics-homepage.html",
+      "note": "官网公开源文件，正文与 https://xvirobotics.com/ 一致；页面标题与页脚确认品牌、公司主体及人形机器人基座模型定位。"
+    },
+    {
+      "url": "https://github.com/xvirobotics/xvirobotics.github.io/blob/795f009ad7f8e036177b5b878e17eddcfd8e3e24/CNAME",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-robotics-domain.txt",
+      "note": "官网仓库的自定义域名配置为 xvirobotics.com，核实官方 GitHub 账号与网站关联。"
+    },
+    {
+      "url": "https://finance.sina.com.cn/wm/2026-05-24/doc-inhyzkka3079176.shtml",
+      "tier": "media",
+      "retrieved": "2026-09-22",
+      "snapshot": "snapshots/2025/12/finance-2025-12-17-no16-robot-founding.html",
+      "note": "观点网 2026-05-24 报道，转述企查查登记信息：公司成立于 2025-12-17。"
+    },
+    {
+      "url": "https://news.qq.com/rain/a/20260522A08XJW00",
+      "tier": "media",
+      "retrieved": "2026-09-22",
+      "snapshot": "snapshots/2026/05/news-2026-05-no16-robot-seed-round.html",
+      "note": "腾讯新闻 2026-05-22 报道，英文名 XVI Robotics，定位为通用人形机器人基座模型。"
+    }
+  ]
+}
