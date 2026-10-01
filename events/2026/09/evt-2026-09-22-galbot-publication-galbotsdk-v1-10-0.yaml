@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-09-22-galbot-publication-galbotsdk-v1-10-0",
+  "date": "2026-09-22",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "galbot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "银河通用发布 GalbotSDK V1.10.0"
+  },
+  "summary": {
+    "zh": "标签内更新日志列出软件急停与恢复、底盘速度查询、运动规划、视频订阅等接口，新增 NVIDIA Jetson AGX Thor 平台支持并扩展灵巧手适配。README 标注兼容机器人环境 V1.18。这里记录 SDK 更新，不据机型支持条目推断硬件新品发布。 日期采用官方 GitHub release 的 published_at（UTC）。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/GalaxyGeneralRobotics/GalbotSDK/releases/tag/V1.10.0",
+      "publisher": "GitHub · GalaxyGeneralRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-galbotsdk-v1-10-0-release-20261001.json"
+    },
+    {
+      "url": "https://github.com/GalaxyGeneralRobotics/GalbotSDK/blob/V1.10.0/README.md",
+      "publisher": "GitHub · GalaxyGeneralRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-galbotsdk-v1-10-0-readme-20261001.md"
+    },
+    {
+      "url": "https://github.com/GalaxyGeneralRobotics/GalbotSDK/blob/V1.10.0/CHANGELOG.md",
+      "publisher": "GitHub · GalaxyGeneralRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-galbotsdk-v1-10-0-changelog-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

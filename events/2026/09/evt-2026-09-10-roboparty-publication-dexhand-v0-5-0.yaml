@@ -1,0 +1,26 @@
+id: "evt-2026-09-10-roboparty-publication-dexhand-v0-5-0"
+date: "2026-09-10"
+date_precision: "day"
+type: "publication"
+orgs:
+  -
+    id: "roboparty"
+    role: "subject"
+title:
+  zh: "萝博派对发布 roboparty_dexhand v0.5.0"
+summary:
+  zh: "该标签下的 README 将软件定义为 RP_Hand 6DOF 灵巧手的 Linux C++/Python 控制库，通过 SocketCAN CAN-FD 通信。发布说明只写 update to 24.04 并附版本比较链接，未进一步解释该版本号的含义。 日期采用官方 GitHub release 的 published_at（UTC）。"
+evidence:
+  -
+    url: "https://github.com/Roboparty/roboparty_dexhand/releases/tag/v0.5.0"
+    publisher: "GitHub · Roboparty"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-dexhand-v0-5-0-release-20261001.json"
+  -
+    url: "https://github.com/Roboparty/roboparty_dexhand/blob/v0.5.0/README.md"
+    publisher: "GitHub · Roboparty"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-dexhand-v0-5-0-readme-20261001.md"
+corroboration: "single"

@@ -1,0 +1,26 @@
+id: "evt-2026-09-23-qianjue-publication-xensesdk-v2-2-0"
+date: "2026-09-23"
+date_precision: "day"
+type: "publication"
+orgs:
+  -
+    id: "qianjue"
+    role: "subject"
+title:
+  zh: "千觉机器人发布 xensesdk v2.2.0"
+summary:
+  zh: "该标签下的 README 将 Xense SDK 定义为触觉视觉传感器开发工具包，列出图像、深度、三维力分布和六维合力等数据接口。发布说明未列本版本功能变更，因此不将 README 中的既有功能记作本版新增。 日期采用官方 GitHub release 的 published_at（UTC）。"
+evidence:
+  -
+    url: "https://github.com/XenseRobotics/xensesdk/releases/tag/v2.2.0"
+    publisher: "GitHub · XenseRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-xensesdk-v2-2-0-release-20261001.json"
+  -
+    url: "https://github.com/XenseRobotics/xensesdk/blob/v2.2.0/README.md"
+    publisher: "GitHub · XenseRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-xensesdk-v2-2-0-readme-20261001.md"
+corroboration: "single"

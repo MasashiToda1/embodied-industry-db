@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-09-22-flexiv-publication-rdk-csharp-v1-9",
+  "date": "2026-09-22",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "flexiv",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "非夕发布 Flexiv RDK CSharp v1.9"
+  },
+  "summary": {
+    "zh": "发布说明标注兼容 Flexiv 软件包 v3.11。标签内 README 说明该项目通过 P/Invoke 为 RDK C++ 接口提供 C# 绑定，不包含 Model 与 Scheduler；支持 Windows 10 及以上的 x64 平台与 .NET 5.0 及以上运行时。 日期采用官方 GitHub release 的 published_at（UTC）。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/flexivrobotics/flexiv_rdk_csharp/releases/tag/v1.9",
+      "publisher": "GitHub · flexivrobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-rdk-csharp-v1-9-release-20261001.json"
+    },
+    {
+      "url": "https://github.com/flexivrobotics/flexiv_rdk_csharp/blob/v1.9/README.md",
+      "publisher": "GitHub · flexivrobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-rdk-csharp-v1-9-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}
