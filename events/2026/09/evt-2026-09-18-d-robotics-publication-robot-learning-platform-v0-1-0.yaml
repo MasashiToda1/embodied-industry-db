@@ -1,0 +1,46 @@
+{
+  "id": "evt-2026-09-18-d-robotics-publication-robot-learning-platform-v0-1-0",
+  "date": "2026-09-18",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "d-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地瓜机器人发布 Robot Learning Platform v0.1.0"
+  },
+  "summary": {
+    "zh": "官方首个公开评审版本提供面向 MicroDuck 与 RDK-X5 的仿真、录制、训练、评测和部署工作台，文档列出 PPO、ACT、Diffusion Policy、MuJoCo/MJX 及 LeRobot v3 转换。全部本地训练引擎均标记 deployable=false；ACT/Diffusion worker 冒烟使用合成数据，实际设备部署仍需编译、预检和板端验收，不能据演示流程认定真机就绪。 日期采用官方 GitHub release 的 published_at（UTC）。"
+  },
+  "axes": {
+    "control_route": [
+      "rl"
+    ],
+    "model_form": [
+      "il"
+    ],
+    "sim_stack": [
+      "mujoco"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/D-Robotics/robot-learning-platform/releases/tag/v0.1.0",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-robot-learning-platform-v0-1-0-release-20261001.json"
+    },
+    {
+      "url": "https://github.com/D-Robotics/robot-learning-platform/blob/v0.1.0/README.md",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-robot-learning-platform-v0-1-0-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}
