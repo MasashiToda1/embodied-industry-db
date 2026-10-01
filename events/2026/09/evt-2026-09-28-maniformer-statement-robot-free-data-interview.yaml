@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-28-maniformer-statement-robot-free-data-interview",
+  "date": "2026-09-28",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "maniformer",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "觅蜂科技披露无本体数据采集与质检业务进展"
+  },
+  "summary": {
+    "zh": "公司在采访中称已向真实场景陆续部署两万套 MEgo 设备、累计采集百万小时级有效数据，并介绍设备采集、云端处理和质量标记流程。上述规模保留为公司陈述；不将设备数量等同于持续在线设备或公开可下载数据集。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用钛媒体正文页发布日期 2026-09-28；累计规模为受访方截至报道时的陈述。",
+  "evidence": [
+    {
+      "url": "https://www.tmtpost.com/8153852.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/27.html",
+      "publisher": "钛媒体"
+    },
+    {
+      "url": "https://www.maniformer.ai/pages/mego",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/6.html",
+      "publisher": "主体官网 / 官方项目仓库"
+    }
+  ],
+  "corroboration": "single"
+}

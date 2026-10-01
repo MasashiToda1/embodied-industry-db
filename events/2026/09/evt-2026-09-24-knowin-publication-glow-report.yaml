@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-09-24-knowin-publication-glow-report",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "knowin",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "诺因发布 GLOW 生成式具身学习技术报告"
+  },
+  "summary": {
+    "zh": "报告提出将物理交互经验、任务上下文与闭环执行相结合的通用具身学习框架，并展示人类演示驱动的任务复用。官网报告和公司供稿可核验本次技术公开；本条不照录榜单排名，也不把报告发布当作代码或权重开放。"
+  },
+  "evidence": [
+    {
+      "url": "https://knowinai.com/tech.html",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/7.html",
+      "publisher": "主体官网 / 官方项目仓库"
+    },
+    {
+      "url": "https://www.qbitai.com/2026/09/496816.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/43.html",
+      "publisher": "量子位（诺因供稿）"
+    }
+  ],
+  "corroboration": "single"
+}

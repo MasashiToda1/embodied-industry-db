@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-ff-eai-robotics-product_launch-nine-configurations",
+  "date": "2026-09",
+  "date_precision": "month",
+  "date_basis": "derived",
+  "date_as_stated": "官网活动标记为 919，媒体于 2026-09-20 报道；未统一中美时区，保守按 2026 年 9 月记录。",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "ff-eai-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "FF 公布五个型号、九种配置的具身机器人产品组合"
+  },
+  "summary": {
+    "zh": "官网发布会材料列出人形、四足及轮足产品，包含五个型号的九种配置，并介绍教育、科研、安防和巡检方案。九种配置不是九个独立机器人型号；官网称可销售和交付，本条不由此推定已有客户交付数量。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.ff.com/us/919-ff-eai-robotics/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/17.html",
+      "publisher": "Faraday Future"
+    }
+  ],
+  "corroboration": "single"
+}

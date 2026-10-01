@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-synapath-funding-pre-a",
+  "date": "2026-09",
+  "date_precision": "month",
+  "type": "funding",
+  "orgs": [
+    {
+      "id": "synapath",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "枢途科技完成 Pre-A 轮融资"
+  },
+  "summary": {
+    "zh": "报道披露本轮由鼎晖百孚与鲲鹏基金联合领投，广州产投、亿合资本参与，趋势投资跟投。募资用于数据产品交付能力及触觉表征等方向；金额表述为“近亿元”，不换算成精确金额。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "2026-09-28 报道称“近日”完成融资，仅定位至当月。",
+  "counterparties": [
+    "鼎晖百孚",
+    "鲲鹏基金",
+    "广州产投",
+    "亿合资本",
+    "趋势投资"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/robot/zVCVfjhnzD1S34Pm.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/20.html",
+      "publisher": "雷峰网"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "encos",
+  "names": {
+    "zh": "因克斯",
+    "en": "Encos",
+    "aliases": [
+      "南京因克斯智能科技有限公司",
+      "EncosTech"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "components"
+  ],
+  "description": "提供关节模组、灵巧手及通信等部件，官网明确人形与四足机器人解决方案。",
+  "accounts": {
+    "site": "https://www.encos.cn/"
+  },
+  "sources": [
+    {
+      "url": "https://www.encos.cn/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/14.html"
+    },
+    {
+      "url": "https://img.wanwang.xin/pubsf/31110/31110156/cdn-static-pages/pages/pc/32_zh-cn.html.Body.js?version=20260922160014",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/19.html"
+    }
+  ]
+}

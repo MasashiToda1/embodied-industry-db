@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>KNOWIN | 让智能机器人走进每个家庭</title>
+    <meta
+      name="description"
+      content="KNOWIN 诺因智能，新一代折叠双臂具身机器人，面向通用高频家庭任务。"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="stylesheet" href="./css/base.css?v=20260923-nav-align-2" />
+    <link rel="stylesheet" href="./css/mobile.css?v=20260923-nav-align-2" />
+    <link rel="preload" as="video" href="./assets/videos/home-screen-1-web.mp4" type="video/mp4" />
+  </head>
+  <body>
+    <header class="figma-header" data-theme="light">
+      <div class="header-canvas">
+        <a class="brand-mark" href="./index.html" aria-label="KNOWIN 首页">
+          <img src="./assets/images/figma/shared/logo.svg" alt="KNOWIN" />
+        </a>
+        <nav class="home-nav-links" aria-label="首页导航">
+          <a href="./index.html" aria-current="page">首页</a>
+          <a href="./product.html">产品详情</a>
+          <a href="./tech.html">技术说明</a>
+          <a href="./company.html">关于我们</a>
+          <a href="./careers.html">加入我们</a>
+        </nav>
+        <div class="header-actions home-header-actions">
+          <button class="icon-button mobile-menu-button" type="button" data-menu-open aria-label="打开导航"></button>
+          <div class="language-switcher">
+            <button class="icon-button" type="button" data-language-toggle aria-label="切换语言">
+              <img src="./assets/images/figma/shared/language-icon-white.svg" alt="" />
+            </button>
+            <div class="language-popover" data-language-popover>
+              <a href="./index.html" aria-current="page">简体中文</a>
+              <a href="./en/index.html">English</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="figma-canvas" data-canvas>
+        <section class="screen screen-product image-screen" id="product" data-section-theme="light">
+          <video
+            class="screen-bg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            poster="./assets/images/figma/home-new/section-product.png"
+            aria-hidden="true"
+          >
+            <source src="./assets/videos/home-screen-1-web.mp4" type="video/mp4" />
+          </video>
+          <div class="bottom-fade"></div>
+          <div class="screen-copy copy-product">
+            <h1>让智能机器人走进每个家庭</h1>
+            <p>新一代折叠双臂具身机器人，集灵巧操作、智能交互、家庭值守与持续进化能力于一体，面向通用高频家庭任务。</p>
+          </div>
+          <a class="figma-pill pill-light" href="./product.html">
+            <span>了解更多</span>
+            <span class="pill-arrow" aria-hidden="true"></span>
+          </a>
+        </section>
+
+        <section class="screen screen-video image-screen" id="video-section" data-section-theme="light">
+          <img
+            class="screen-bg"
+            data-deferred-src="./assets/images/figma/home-new/section-video-home-robot.png"
+            alt=""
+            draggable="false"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+          />
+          <div class="bottom-fade"></div>
+          <div class="screen-copy copy-wide">
+            <h2>越用越懂家的机器人</h2>
+            <p>通过持续的世界生成、世界建模与行为学习，使机器人具备从感知、认知、行动到长期进化的统一能力。</p>
+          </div>
+          <button class="figma-pill pill-light" type="button" data-video-open>
+            <span>完整视频</span>
+            <span class="pill-arrow pill-play" aria-hidden="true"></span>
+          </button>
+        </section>
+
+        <section class="screen screen-tech image-screen" id="tech-section" data-section-theme="light">
+          <video
+            class="screen-bg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            data-deferred-src="./assets/videos/home-screen-3.mp4"
+            data-deferred-poster="./assets/images/figma/home-new/section-tech.png"
+            aria-hidden="true"
+          ></video>
+          <div class="bottom-fade"></div>
+          <div class="screen-copy copy-tech">
+            <h2>生成式具身智能驱动</h2>
+            <p>
+              Knowin-X1 搭载自研的生成式具身大模型系统Generative Learning of World （GLOW），理解真实家庭环境，持续提升长程任务完成能力与个性化服务能力。
+            </p>
+          </div>
+          <a class="figma-pill pill-light" href="./tech.html">
+            <span class="home-tech-pill-label-desktop">关于GLOW</span>
+            <span class="home-tech-pill-label-mobile">关于GLOW</span>
+            <span class="pill-arrow" aria-hidden="true"></span>
+          </a>
+        </section>
+
+        <section class="screen screen-team image-screen" id="about-section" data-section-theme="dark">
+          <div class="screen-team-bg" aria-hidden="true"></div>
+          <img
+            class="screen-team-robot"
+            data-deferred-src="./assets/images/figma/home-new/section-team.png"
+            alt=""
+            draggable="false"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+          />
+          <div class="screen-copy copy-team dark-copy">
+            <h2>将未知变成已知的团队</h2>
+            <p>我们拥有探索未知的勇气和好奇心，也有追求卓越的决心和毅力。截至2026年6月，团队规模超150人，90%来自藤校、清北、港三、新二、C9等顶尖院校。</p>
+          </div>
+          <a class="figma-pill pill-light" href="./careers.html">
+            <span>加入我们</span>
+            <span class="pill-arrow" aria-hidden="true"></span>
+          </a>
+        </section>
+
+        <section class="screen screen-contact" id="contact-section" data-section-theme="dark">
+          <p class="contact-slogan">让智能机器人走进每个家庭</p>
+          <div class="footer-column footer-menu">
+            <h2>目录</h2>
+            <a href="./product.html">产品详情</a>
+            <a href="./tech.html">技术说明</a>
+            <a href="./company.html">关于我们</a>
+            <a href="./careers.html">加入我们</a>
+          </div>
+          <div class="footer-column footer-social">
+            <h2>社交媒体</h2>
+            <button type="button" data-social="wechat" data-mobile-social="wechat">微信公众号</button>
+            <button type="button" data-social="video" data-mobile-social="video">微信视频号</button>
+            <button type="button" data-social="redbook" data-mobile-social="redbook">小红书</button>
+          </div>
+          <div class="footer-column footer-contact">
+            <h2>联系我们</h2>
+            <p>招聘邮箱：HR@knowin.ai</p>
+            <p>联系电话：0755 8626 9789</p>
+            <p>媒介合作：media@knowin.ai</p>
+            <p>公司地址：深圳市南山区粤海街道高新区社区科技南路18号深圳湾科技生态园12栋A2406</p>
+          </div>
+          <div class="social-preview" data-social-preview aria-hidden="true">
+            <img
+              data-social-preview-img
+              data-src="./assets/images/figma/careers-new/qr-wechat.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+            />
+          </div>
+          <p class="copyright">
+            <span class="copyright-owner">Copyright © 2026 Knowin 深圳诺因智能有限公司 版权所有</span>
+            <span class="copyright-separator" aria-hidden="true"> | </span>
+            <a class="copyright-icp" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026014989号-2</a>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <div class="menu-overlay" data-menu-overlay aria-hidden="true">
+      <div class="menu-canvas">
+        <button class="menu-close" type="button" data-menu-close aria-label="关闭导航"><span aria-hidden="true"></span></button>
+        <nav class="menu-links" aria-label="弹出导航">
+          <a href="./index.html" data-menu-link aria-current="page">首页</a>
+          <a href="./product.html" data-menu-link>产品详情</a>
+          <a href="./tech.html" data-menu-link>技术说明</a>
+          <a href="./company.html" data-menu-link>关于我们</a>
+          <a href="./careers.html" data-menu-link>加入我们</a>
+          <a href="#contact-section" data-menu-link data-scroll-target="contact-section">联系我们</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="video-modal" data-video-modal aria-hidden="true">
+      <div class="video-panel">
+        <button class="modal-close" type="button" data-video-close aria-label="关闭视频">×</button>
+        <video data-src="./assets/videos/video_1.mp4" controls playsinline preload="none"></video>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

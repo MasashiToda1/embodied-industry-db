@@ -1,0 +1,38 @@
+{
+  "id": "evt-2026-09-24-infinigence-publication-rlark",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "infinigence",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "无问芯穹与清华大学公开 RLark 具身任务平台"
+  },
+  "summary": {
+    "zh": "公司供稿宣布开放 RLark 跨集群具身智能设备与任务纳管平台，官方项目仓库可核验 Kubernetes 任务调度、机器人运行时及跨集群互联代码。报道中的设备接入与任务启动耗时限于所述测试环境，不作为通用服务承诺。"
+  },
+  "counterparties": [
+    "清华大学"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.qbitai.com/2026/09/496767.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/44.html",
+      "publisher": "量子位（无问芯穹供稿）"
+    },
+    {
+      "url": "https://github.com/RLinf/RLark",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/8.html",
+      "publisher": "主体官网 / 官方项目仓库"
+    }
+  ],
+  "corroboration": "single"
+}

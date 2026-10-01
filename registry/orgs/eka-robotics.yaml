@@ -1,0 +1,24 @@
+{
+  "id": "eka-robotics",
+  "names": {
+    "zh": "Eka Robotics",
+    "en": "Eka Robotics"
+  },
+  "status": "active",
+  "layers": [
+    "foundation"
+  ],
+  "description": "研发面向物理操作的 Vision-Force-Action 模型。",
+  "accounts": {
+    "site": "https://ekarobotics.com/"
+  },
+  "sources": [
+    {
+      "url": "https://ekarobotics.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/10.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "memo-space",
+  "names": {
+    "zh": "美梦空间",
+    "aliases": [
+      "杭州美梦空间科技有限公司"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation",
+    "simulation"
+  ],
+  "description": "研发 Physical-WAM 世界动作模型及 RoboTwin-Phys 物理扰动评测基准；与其他使用 Memo 名称的主体分开核验。",
+  "sources": [
+    {
+      "url": "https://www.qbitai.com/2026/09/498478.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/31.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

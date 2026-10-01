@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-30-rysen-statement-apex-hand-interview",
+  "date": "2026-09-30",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "rysen",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "源升智能阐述 Apex Hand 灵巧手技术取舍"
+  },
+  "summary": {
+    "zh": "公司在采访中介绍 Apex Hand 采用以腱绳为主、结合直驱和连杆的混合驱动结构，并将可靠性、灵巧性及触觉感知等作为产品设计目标。所述参数及取舍为公司公开陈述，不作为本库独立测试结果。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "按雷峰网采访稿 2026-09-30 11:55 的公开时间记录，实际访谈日未披露。",
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/robot/rhJu6CEW1OjHWAHH.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/9.html",
+      "publisher": "雷峰网"
+    }
+  ],
+  "corroboration": "single"
+}

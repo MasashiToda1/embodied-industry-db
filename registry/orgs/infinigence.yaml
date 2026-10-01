@@ -1,0 +1,38 @@
+{
+  "id": "infinigence",
+  "names": {
+    "zh": "无问芯穹",
+    "en": "Infinigence"
+  },
+  "status": "active",
+  "layers": [
+    "simulation"
+  ],
+  "description": "以面向具身智能的 RLark 跨集群设备纳管开发工具链纳入本库，通用算力业务不作为机器人事实收录。",
+  "sources": [
+    {
+      "url": "https://www.qbitai.com/2026/09/496767.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/44.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://github.com/RLinf/RLark",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/8.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://www.infinigence-ai.com/2026waic/6.html",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/22.html",
+      "note": "官网明确机器人部件或具身开发工具链定位。"
+    }
+  ],
+  "accounts": {
+    "site": "https://www.infinigence-ai.com/"
+  }
+}

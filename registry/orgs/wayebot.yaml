@@ -1,0 +1,33 @@
+{
+  "id": "wayebot",
+  "names": {
+    "zh": "苇熠科技",
+    "aliases": [
+      "上海苇熠科技"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "components"
+  ],
+  "description": "提供人形机器人关节模组、力控双臂与双臂控制器。",
+  "accounts": {
+    "site": "http://www.wayebot.com/"
+  },
+  "sources": [
+    {
+      "url": "https://leaderobot.com/news/9992",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/14.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "http://www.wayebot.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/21.html",
+      "note": "官网明确机器人部件或具身开发工具链定位。"
+    }
+  ]
+}

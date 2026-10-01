@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="/wp-content/themes/liangziwei/imgnew/favicon.ico">
+        <link rel="pingback" href="https://www.qbitai.com/xmlrpc.php">
+        <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark &#8211; 量子位</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="量子位 &raquo; Feed" href="https://www.qbitai.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="量子位 &raquo; 评论 Feed" href="https://www.qbitai.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="量子位 &raquo; 5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark 评论 Feed" href="https://www.qbitai.com/2026/09/496767.html/feed" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.qbitai.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.qbitai.com%2F2026%2F09%2F496767.html" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.qbitai.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.qbitai.com%2F2026%2F09%2F496767.html&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='liangziwei-style-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style1-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/bootstrap.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style2-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/swiper.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style3-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/font-awesome.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style4-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/base.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style5-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style6-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/wbshare.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style7-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/zk_style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='liangziwei-style8-css' href='https://www.qbitai.com/wp-content/themes/liangziwei/css/ai_style.css?ver=6.9' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/jquery.min.js?ver=6.9" id="liangziwei-min-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/popper.min.js?ver=6.9" id="liangziwei-popper-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/bootstrap.min.js?ver=6.9" id="liangziwei-bootstrap-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/bootstrap.offcanvas.js?ver=6.9" id="liangziwei-offcanvas-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/flexible_css.debug.js?ver=6.9" id="liangziwei-css-debug-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/flexible.debug.js?ver=6.9" id="liangziwei-debug-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/swiper.min.js?ver=6.9" id="liangziwei-swiper-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/qrcode.js?ver=6.9" id="liangziwei-qrcode-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/yao.js?ver=6.9" id="liangziwei-yao-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/ScrollPic.js?ver=6.9" id="liangziwei-ScrollPic-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/zktag.js?ver=6.9" id="liangziwei-zktag-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/jquery-1.7.1.min.js?ver=6.9" id="liangziwei-zkai2-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/ai_playBox.js?ver=6.9" id="liangziwei-zkai1-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.qbitai.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.qbitai.com/wp-json/wp/v2/posts/496767" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.qbitai.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<link rel="canonical" href="https://www.qbitai.com/2026/09/496767.html" />
+<link rel='shortlink' href='https://www.qbitai.com/?p=496767' />
+<meta property="og:category" content="news" /><meta property="og:site_name" content="量子位" /><meta property="og:locale" content="zh_CN" /><meta property="og:url" content="https://www.qbitai.com/2026/09/496767.html" /><meta property="og:title" content="5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark" /><meta property="og:description" content="开源一座具身智能的新“塔台”" /><meta property="og:image" content="https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="300" /><meta property="og:image:secure_url" content="https://www.qbitai.com/wp-content/uploads/imgs/qbitai_icon.png" /><meta property="og:site_name" content="量子位" /><meta property="og:author" content="量子位" /><meta property="og:type" content="article" /><meta name="apple-mobile-web-app-title" content="量子位"><link rel="apple-touch-icon-precomposed" sizes="171x171" href="https://www.qbitai.com/wp-content/uploads/imgs/logo171.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.qbitai.com/wp-content/uploads/imgs/logo114.png" /><link rel="apple-touch-icon-precomposed" sizes="400x400" href="https://www.qbitai.com/wp-content/uploads/imgs/logo400.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.qbitai.com/wp-content/uploads/imgs/logo57.png" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>    <!--[if IE 8]>
+        <link id="liangziwei-ie7-css" rel="stylesheet" type="text/css" href="https://www.qbitai.com/wp-content/themes/liangziwei/css/ie8_style.css?ver=5.0.13"  media="all"/>
+    <![endif]-->
+    <!--[if IE 9]>
+            <link id="liangziwei-ie8-css" rel="stylesheet" type="text/css" href="https://www.qbitai.com/wp-content/themes/liangziwei/css/ie9_style.css?ver=5.0.13"  media="all"/>
+    <![endif]-->
+    <script type="text/javascript">
+        $("#top_search").click(function(){
+            $("#search").toggle()
+        });
+        $(document).click(function(){
+            $(".weixin_pop").hide();
+        });
+    </script>
+    <style type="text/css">
+        blockquote {
+            margin: 1.4em 0;
+            padding-left: 1em;
+            color: #646464;
+            border-left: 3px solid #D3D3D3;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 40px;
+            margin-inline-end: 40px;
+        }
+    </style>
+
+
+
+    
+</head>
+<body class="body-offcanvas">
+<header class="top">
+    <div class="top_logo">
+        <div class="nav_box">
+                        <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;"></button>
+            <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas">
+                                    <div class="container-fluid"><ul id="menu-%e9%a1%b6%e9%83%a8%e8%8f%9c%e5%8d%95" class="nav navbar-nav"><li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-110"><a href="http://www.qbitai.com/">首页</a></li>
+<li id="menu-item-107" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-107"><a href="https://www.qbitai.com/category/%e8%b5%84%e8%ae%af">资讯</a></li>
+<li id="menu-item-26804" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26804"><a href="https://www.qbitai.com/category/auto">智能车</a></li>
+<li id="menu-item-110561" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-110561"><a href="https://www.qbitai.com/category/zhiku">智库</a></li>
+<li id="menu-item-17709" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17709"><a href="https://www.qbitai.com/category/huodong">活动</a></li>
+<li id="menu-item-10902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10902"><a href="https://www.qbitai.com/meet/meet2026/">MEET大会</a></li>
+<li id="menu-item-53733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53733"><a href="https://www.qbitai.com/meet/aigc2026/">AIGC</a></li>
+</ul></div>                            </nav>
+                    </div>
+        <div class="logo"><a href="https://www.qbitai.com/"></a></div>
+        <div class="top_r_icons">
+                        <div class="top_weixin"><a href="javascript:void(0)"class="biaojiwei"><i class="fa fa-weixin"></i></a>
+                                <div class="weixin_pop"style="display:none"id="pophead">
+               <p>扫码关注量子位</p>
+               <img src="/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg">
+        </div>
+         </div>
+            <div class="top_weibo"><a href="https://weibo.com/qbitai?is_all=1" target="_blank"><i></i></a></div>
+            
+<!--             <div class="top_search">
+                <form role="search" method="get" class="search-form" action="https://www.qbitai.com/" id="search">
+                <label>
+                    <input type="search" class="search-field" placeholder="搜索…" value="" name="s">
+                </label>
+                <button type="submit" class="search-submit"></button>
+                </form>
+            </div> -->
+        </div>
+        <script type="text/javascript">
+        // $('.biaojiwei').click(function(){
+            $('.biaojiwei').click(function(event){
+                event.stopPropagation();
+                $('#pophead').show();
+            })
+            $('.weixin_pop').click(function(){
+                $('.weixin_pop').hide();
+            })
+        // })
+        </script>
+        <div class="share_box">
+        </div>
+    </div>
+    <div class="line"></div>
+</header>
+
+
+		
+
+<div class="main">
+	<div class="content">
+
+
+    <div class="wx_img" style="width: 0; height: 0; overflow: hidden; font-size: 0; line-height: 0px;">
+        < img id="wx_img" src="https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png" width="400" height="400">
+    </div>
+
+
+      <!-- articlead begin-->
+                    <!-- articlead end-->
+        	<div class="article">
+				     <h1>5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark</h1>
+    			   <div class="article_info">
+             <span class="author"><img alt='量子位的朋友们' src='http://www.qbitai.com/wp-content/uploads/2019/06/200-100x100.jpg' class='avatar avatar-100 photo' height='100' width='100' /><em><a href="https://www.qbitai.com/author/qbitai" title="由 量子位的朋友们 发布" rel="author">量子位的朋友们</a></em></span>
+                          <span class="date">2026-09-24</span>
+             <span class="time">13:19:55</span>
+          <span class="from">
+          来源：<a href='https://www.qbitai.com' target='blank' rel='nofllow'>量子位</a>            </span></div>
+                          <!--摘要样式-->
+            <div class="zhaiyao"><p>开源一座具身智能的新“塔台”</p>
+</div>                			<p>一架架飞机在空中有序飞行，按时起降，看似只是飞机自己的事情，实际上，它需要持续与机场、跑道、航线以及地面资源系统协同。</p>
+<p>这正是“塔台”存在的意义：<strong>它负责把分散的飞机和地面、空中的资源协调组织起来，让飞机根据各自的任务有序运行。而当飞机越来越多、航线越来越复杂，这种统一管控和协调也就变得越来越重要。</strong></p>
+<p>具身智能也同样如此。</p>
+<p>一项具身任务，本质上是多个角色的协同：机器人和相机等现场设备、云端算力、训练与推理程序，以及连接这些角色的通信和运行环境。</p>
+<p><strong>而随着更多机器人投入研发与应用，这种协同的复杂度与成本更将进一步放大：</strong>设备需要一个个接入，任务需要分别部署，云端与现场需要反复配置网络，不同设备和程序出了问题，还要逐一排查设备、网络、程序。</p>
+<p>因此，当机器人从“单机”走向更大的“机群”，具身智能也需要一座新的“塔台”——不只是“把设备接进来”，而是<strong>统一组织管理分散的算力、设备和执行程序，让它们围绕同一项任务协同高效运行。</strong></p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/194372f416c662e21120ecaf0ab67b5a.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/194372f416c662e21120ecaf0ab67b5a.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>为解决这一问题，清华大学与无问芯穹共同打造并开源<strong>面向具身智能的云原生纳管平台 RLark。</strong>平台以自研的具身设备运行时（embodied-runtime）和任务级跨集群网络互联技术为核心，打通<strong>“真实设备如何被统一调度”</strong>与<strong>“跨地域任务如何互联运行”</strong>两个关键环节。</p>
+<p>一方面，统一管理机器人、相机等具身设备的运行时环境，让设备可以像 GPU 一样被申请、调度和复用；另一方面，针对不同任务和网络流量特征，对跨集群通信进行任务级隔离，并优化大小包传输性能，提升云端与现场协同运行的效率。</p>
+<p><strong>最终，RLark 可以将云端算力、边缘节点和具身设备纳入统一资源体系，并以一项完整任务为单位组织运行。让一次实验中完成的接入、部署与通信配置，能够在后续任务中复用。</strong>运维人员通过一行命令即可接入并统一管理设备，研究人员通过一份任务配置，即可将训练、推理和真机交互程序部署到不同集群。</p>
+<p>目前，RLark 已完成 <strong>3 个集群、近百个云边端节点</strong>的统一纳管，覆盖 <strong>4 种型号的具身设备</strong>，<strong>设备纳管从小时级缩短至约 5 分钟，任务提交后可在 10 秒内即可启动运行。</strong>同时，RLark 进一步结合训练框架，打通了<strong>跨地域的采集、训练与真机验证闭环</strong>。为具身智能实验走向更大规模的设备与更复杂的协同场景提供基础支撑。</p>
+<p>RLark 将从<strong>用户界面、API、后端服务，到任务编排、跨集群互联和具身设备运行时</strong>的整套能力开放出来，降低具身基础设施的使用门槛，让更多团队可以直接部署和使用。</p>
+<p><strong>开源地址：</strong> github.com/RLinf/RLark</p>
+<p><strong>项目文档：</strong> rlark.readthedocs.io</p>
+<p><strong>快速开始：</strong> github.com/RLinf/RLark#quick-start</p>
+<h1 class="pgc-h-forward-slash">01 从设备接入到真机训练，一场具身智能的跨地域实测</h1>
+<p>为了验证云端算力与现场设备能否围绕同一项任务协同运行，团队将 RLark 与强化学习基础设施框架 RLinf 结合，在<strong>广东云端 GPU 集群与北京机器人现场</strong>之间，完成了一次<strong>跨地域的真机实测。</strong></p>
+<p>这项实验同时涉及现场机器人与相机、云端 GPU，以及训练、推理和真机交互等多个执行角色。</p>
+<ul>
+<li><strong>现场设备</strong>负责交互和数据采集</li>
+<li><strong>云端 GPU </strong>承担训练计算，训练得到的策略再用于后续真机交互。</li>
+<li><strong>RLark </strong>负责设备申请、跨集群部署、任务实例互联与运行状态汇集。</li>
+<li><strong>RLinf </strong>负责训练计算与数据协作，两者共同支撑实验运行。</li>
+</ul>
+<p>这次实验重点验证的，不只是“能不能把设备连起来”，而是 RLark 能否让一项原本需要多处配置、多个程序协作的复杂实验，<strong>更快准备、更简单运行，并形成完整的采集—训练—验证闭环。</strong></p>
+<p>1. <strong>5 分钟完成设备纳管：让云和端的资源可被统一申请</strong></p>
+<p>实验准备阶段，运维人员首先将云端 GPU 集群与现场设备所在集群接入 RLark，由各集群 Agent 同步节点容量、资源信息与运行状态。随后，通过具身设备运行时（embodied-runtime）接入已适配的双臂机器人与相机，将真实硬件注册为任务可申请、可调度的资源。</p>
+<p>在测试环境下，<strong>具身设备纳管从传统的1小时骤降为 5 分钟</strong>。完成接入后，研究人员可以在平台中统一查看两地资源的位置、类型与可用情况，并在后续实验中持续申请和复用，无需每次重新接入设备。</p>
+<p>2. <strong>10 秒内启动任务：用一份任务配置组织两地执行</strong></p>
+<p>资源准备就绪后，<strong>研究人员通过一份任务配置，定义训练、推理和真机交互等执行角色，声明各角色所需的资源、实例数量与部署位置。</strong>例如，训练角色使用云端 GPU，真机交互角色申请现场机器人与相机，共同归属于同一项具身任务。</p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/0dc5588b535d2cdbd2e22dd3c4e1d7ec.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/0dc5588b535d2cdbd2e22dd3c4e1d7ec.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>任务提交后，RLark 将配置下发至相应集群，由 Agent 创建执行实例，并建立实例之间的跨集群通信关系。</p>
+<p>在资源已接入且具备运行条件的测试环境下，<strong>任务提交后 10 秒内即可在平台侧启动</strong>，无需逐台登录设备、分别部署程序。</p>
+<p>3. <strong>全链路跑通：实现采集—训练—真机验证闭环</strong></p>
+<p>任务启动后，现场机器人与相机持续产生交互数据，并回传云端由 RLinf 用于训练；训练后更新的策略再用于后续真机交互，形成<strong>采集—训练—验证</strong>的持续循环。</p>
+<p>本次实验连续运行约 36 分钟，训练推进至 <strong>323 个全局训练步骤（global step）</strong>，<strong>完整跑通了设备申请、跨集群调度、真机数据回传、云端训练和策略更新全链路。</strong></p>
+<p>运行过程中，研究人员可以从同一任务入口查看各角色的状态，并沿执行实例、节点、设备与日志定位异常。后续更换设备、调整角色规模或算法参数时，可以直接修改并复用任务配置，减少重新搭建实验流程的工作。</p>
+<p>通过这次实验，RLark 将原本分散在不同地点的<strong>设备、算力和执行程序</strong>组织到同一项任务中，验证了云端算力与现场设备围绕同一项任务协同运行的能力，实现了从<strong>资源接入、任务启动到持续运行</strong>的一体化协同。</p>
+<p>4. <strong>通信优化专项测试：跨地域真机训练更流畅</strong></p>
+<p>RLark 结合虚拟寻址、gVisor 用户态网络栈与 SSH 安全隧道，为分布在云端和现场的执行实例建立通信通道，由平台统一维护路由、隧道与转发关系，支撑真机数据回传与策略同步。在此基础上，通过训练框架 RLinf 的分布式通信方式，进一步优化数据流转，减少不必要的跨域传输，协同完成任务级跨集群通信优化。</p>
+<p>为了进一步验证这条跨地域任务链路的通信能力，团队针对任务级跨集群网络互联开展了专项测试。</p>
+<p>在受限网络环境下，RLark 的大包单流吞吐较测试所用 VPN 方案提升约 <strong>49%</strong>，小包单流吞吐提升约 <strong>14%</strong>；在高带宽环境下，大包单流吞吐接近 <strong>2 Gbps</strong>。</p>
+<p>更高的传输效率，为模型、交互数据和运行信息在云端与现场之间持续传输提供了更稳定的通信基础。与传统的 EasyTier方案对比，RLark 显著减少了跨地域真机任务运行过程中因网络传输造成的卡顿。</p>
+<h1 class="pgc-h-forward-slash">02 RLark 技术路径：贯通设备接入与任务运行</h1>
+<p>一项具身任务真正运行起来，需要解决的不只是设备接入，还包括<strong>任务怎么部署、不同集群之间怎么通信，以及运行过程中出了问题怎么定位。</strong></p>
+<p>RLark 采用控制面与数据面分离的架构，将分散在云端、边缘和实验现场的资源纳入统一管理。</p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/db07c472f773721f47ab20e96824d8e0.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/db07c472f773721f47ab20e96824d8e0.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>RLark整体技术架构图</p>
+<p>用户通过 Web 控制台、API 或命令行工具（CLI）管理资源、提交任务；控制面承担“塔台”的协调职责，统一维护资源信息、任务配置与通信关系；各集群中的 Agent 负责本地任务部署、资源同步与状态回传。</p>
+<p>这座“塔台”主要由四项核心技术共同支撑：</p>
+<p>1. <strong>自研具身设备插件与运行时：让机器人成为可管理调度的资源</strong></p>
+<p>RLark 将云端算力、边缘节点与机器人、相机等具身设备纳入统一资源体系。各集群 Agent 持续向控制面同步资源信息和运行状态，用户可以从同一入口查看资源的位置、类型与可用情况。</p>
+<p>针对具身设备，RLark 研发了<strong>具身设备运行时（embodied-runtime）</strong>，通过统一硬件抽象，<strong>将机器人、相机等真实设备转化为云原生系统中可识别、可申请、可调度的资源，使其能够与 GPU 等算力资源共同参与任务编排。</strong></p>
+<p>这一过程由设备插件与运行时协同完成：设备插件发现并注册已适配的具身设备，将其资源信息提供给 Kubernetes；各集群 Agent 向控制面同步资源信息与运行状态，形成覆盖云端算力、边缘节点和现场设备的统一资源视图。任务申请资源后，平台组织资源分配，运行时为执行实例提供访问所分配硬件的能力，打通从资源声明、调度分配到真实设备使用的完整链路。</p>
+<p>研究人员因此可以在同一份任务配置中声明 GPU、机械臂和相机的类型与数量，由平台统一组织使用。机器人由需要单独连接和配置的外部设备，转变为能够与算力一起申请、分配和复用的任务资源。</p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/a14c218d7f0b25927925a07aecd2365a.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/a14c218d7f0b25927925a07aecd2365a.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>2. <strong>任务级跨集群通信优化：让同一任务中分散的角色真正连接</strong></p>
+<p>RLark 研发了<strong>任务级跨集群网络互联技术</strong>，通过虚拟地址与 SSH 安全隧道，<strong>将同一任务中分布在不同集群的执行实例连接起来，为云端训练、推理与现场真机交互提供统一通信通道。</strong>在此基础上，训练框架可进一步<strong>优化任务部署与数据流转，减少不必要的跨域传输。</strong></p>
+<p><strong>首先，由 RLark 建立并管理网络隧道，实现跨域互联。</strong>其核心是将执行实例的通信地址与实际部署位置解耦：平台为实例分配虚拟地址，通过 TUN 虚拟网络接口接收流量，由 gVisor 用户态网络栈处理，再经 SSH 安全隧道转发至对端。实例通过虚拟地址相互访问，底层路由、隧道与转发路径由平台统一维护。同时，RLark 通过<strong>通信域（Domain）</strong>组织互联范围，结合成员关系与证书认证控制访问，减少跨集群部署时逐一配置网络的工作。</p>
+<p><strong>在此基础上，RLinf框架基于 RLark 提供的隧道，对流量进行本地化适配。</strong>该技术源自 RLinf 推出的面向真实机器人在线策略学习系统 USER，支持在真机交互过程中持续采集数据并更新模型策略。在与 RLark 的协同中，RLinf 将观测数据处理、推理与真机交互等环节组织在边缘侧，让高频交互和原始数据处理就近完成，再通过 RLark 提供的跨集群通道回传训练所需的数据、下发更新后的策略，减少原始观测数据全量回传带来的带宽开销。</p>
+<div class="tableWrapper">
+<div class="syl-shadow-provider">
+<div class="syl-table-wrap" data-simplebar="init">
+<div class="simplebar-wrapper">
+<div class="simplebar-height-auto-observer-wrapper">
+<div class="simplebar-height-auto-observer"></div>
+</div>
+<div class="simplebar-mask">
+<div class="simplebar-offset">
+<div class="simplebar-content-wrapper">
+<div class="simplebar-content">
+<table>
+<colgroup>
+<col /></colgroup>
+<tbody>
+<tr>
+<td>技术论文见团队发表在 RSS 2026 的《RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI》<br />
+https://arxiv.org/abs/2602.07837</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="simplebar-placeholder"></div>
+</div>
+<div class="simplebar-track simplebar-horizontal"></div>
+<div class="simplebar-track simplebar-vertical"></div>
+</div>
+</div>
+</div>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/ed048a363289ebc2a4c38aa9e1dd2aff.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/ed048a363289ebc2a4c38aa9e1dd2aff.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>3. <strong>声明式任务编排：让实验从“脚本拼接”变成“一份配置”</strong></p>
+<p>RLark 通过自定义任务类型，用 Job、Task 和 Worker 三层模型描述一项具身实验：Job 代表整项任务，Task 描述训练、推理、真机交互等执行角色，Worker 则是实际承担这些角色的执行实例。</p>
+<p><strong>用户通过一份配置，声明各角色需要的资源、实例数量和部署位置。</strong></p>
+<p>任务提交后，控制面将部署配置下发至相应集群，由 Agent 创建 Worker 并回传状态。平台统一管理各集群中的 Worker，通过持续调协，使实际运行状态与任务配置保持一致。</p>
+<p>后续实验可以复用同一份配置，按需调整设备、角色规模与部署位置；具有阶段依赖的流程，还可以通过 Workflow 组织多个 Job，减少维护多套启动脚本和手动衔接实验步骤的工作。</p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/88208ebb40f7c30dd7d3c574d5bab256.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/88208ebb40f7c30dd7d3c574d5bab256.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<p>4. <strong>任务级运行观测：让问题沿着任务链路逐层排查定位</strong></p>
+<p>任务运行出现异常后，如何快速知道问题出在哪里？</p>
+<p>RLark 以同一项任务为主线，将 Job、Task、Worker 与相关节点、设备、事件和日志关联起来。各集群 Agent 回传的状态在控制面统一汇集，让用户能够从一个入口查看整项任务及各执行角色的运行情况。</p>
+<p>任务未按预期推进时，用户可以沿着“任务—角色—执行实例”逐层排查：先判断哪个角色未正常运行，再定位到具体 Worker，检查其事件、日志及关联节点和设备的状态。</p>
+<p>平台同时提供 Web Terminal 与 TensorBoard 入口，支持进一步检查运行环境、设备访问和训练过程，减少登录多台机器、跨系统寻找和核对异常信息的工作。</p>
+<div class="pgc-img"><img decoding="async" class="syl-page-img" src="https://i.qbitai.com/wp-content/uploads/2026/09/19c6cd28bd93d25727ee5d618d62ec78.png" data-src="https://i.qbitai.com/wp-content/uploads/2026/09/19c6cd28bd93d25727ee5d618d62ec78.png" /></p>
+<p class="pgc-img-caption">
+</div>
+<h1 class="pgc-h-forward-slash" data-track="3">03 共同建设持续生长的具身智能新 “塔台”</h1>
+<p>具身智能的硬件与运行环境仍在快速变化。</p>
+<p>新的机器人、相机和传感器还在持续接入；不同场地的网络条件需要逐一验证；实验规模扩大后，调度、通信与异常恢复也会出现更多新的工程问题。</p>
+<p>这意味着，<strong>具身智能需要的不只是一个能够“把设备接进来”的工具，而是一套可以持续扩展、复用和共同演进的基础设施。</strong></p>
+<p>RLark 选择开源，正是希望将设备适配、任务配置和真实实验中的基础设施经验沉淀为可复用能力。管理员可以通过平台管理集群、节点、设备信息和基础组件；研发人员可以通过 Web 控制台配置采集、训练和评测任务，并使用工作流、通信域、存储、日志与远程终端管理执行过程。RLark 同时提供 API，便于接入既有算法框架与研发工具链。</p>
+<p>后续，RLark 将继续完善设备与芯片适配、轻量运行时、跨域通信、任务异常恢复和实验配置复用。</p>
+<p>我们欢迎机器人及芯片厂商参与设备适配，欢迎算法团队分享数据采集、训练和验证场景，也欢迎基础设施开发者参与任务编排、网络与运行观测能力建设。</p>
+<p>我们也期待能与开源社区携手，共同建设这座支撑具身智能走向更大规模、更复杂场景的新“塔台”。</p>
+<p>项目地址： github.com/RLinf/RLark</p>
+<p>欢迎 Star、部署试用、提交 Issue 或参与贡献。</p>
+<p data-track="1">本文由无问芯穹提供，量子位获授权转载，观点归原作者所有。</p>
+                
+                <!--版权声明-->
+                <div class="line_font"><span></span><em>版权所有，未经授权不得以任何形式转载及使用，违者必究。</em><span></span></div>
+            </div>
+     		<div class="tags"><a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e6%97%a0%e9%97%ae%e8%8a%af%e7%a9%b9" rel="tag">无问芯穹</a> <a href="https://www.qbitai.com/tag/%e6%b8%85%e5%8d%8e%e5%a4%a7%e5%ad%a6" rel="tag">清华大学</a></div>
+            <!--作者文章列表-->
+    		<div class="person_box">
+            	<a href="#" target="_blank"><div class="person_head"><img alt='量子位的朋友们' src='http://www.qbitai.com/wp-content/uploads/2019/06/200.jpg' class='avatar avatar-512 photo' height='512' width='512' /><span><a href="https://www.qbitai.com/author/qbitai" title="由 量子位的朋友们 发布" rel="author">量子位的朋友们</a></span></div></a>
+                <div class="person_con">
+                	<ul>
+                                          <li><a href="https://www.qbitai.com/2026/09/499239.html" rel="bookmark" title="正行创新联合创始人杨宇欣正式亮相：出任总裁，负责全球业务拓展"target="_blank">正行创新联合创始人杨宇欣正式亮相：出任总裁，负责全球业务拓展</a><i>2026-09-29</i></li>
+                                          <li><a href="https://www.qbitai.com/2026/09/499308.html" rel="bookmark" title="DeepSeek知乎独家发文，首次公开V4.1 Agent训练“大本营”DSec"target="_blank">DeepSeek知乎独家发文，首次公开V4.1 Agent训练“大本营”DSec</a><i>2026-09-30</i></li>
+                                          <li><a href="https://www.qbitai.com/2026/09/499263.html" rel="bookmark" title="DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态"target="_blank">DeepSeek官方开源昇腾基础组件，与昇腾共建高效易用的AI芯片软件生态</a><i>2026-09-30</i></li>
+                                          <li><a href="https://www.qbitai.com/2026/09/499135.html" rel="bookmark" title="成立一年完成5轮融资，诺因智能再获数亿元，累计超10亿元"target="_blank">成立一年完成5轮融资，诺因智能再获数亿元，累计超10亿元</a><i>2026-09-29</i></li>
+                                      
+                    </ul>
+                </div>
+    		</div>
+            <!--左侧分享-->
+                        <div class="share_pc">
+            	<div class=" share_icon"></div>
+                <div class="share_weixin"><span id="weixin_qrcode"></span>
+        <div id="qrcode" style="display:none;">扫码分享至朋友圈</div>
+        <div></div></div>
+
+                <a href="https://service.weibo.com/share/share.php?url=https://www.qbitai.com/2026/09/496767.html&title=5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark&appkey=4017757111&searchPic=true&ralateUid=6105753431" class="share_sina" data-cmd="tsina" title="分享到新浪微博"target="_blank"><div class="share_weibo"></div></a>
+                <a href=""><div class="share_qzone"></div></a>
+            </div>
+                        <script>
+                // 设置参数方式
+                var qrcode = new QRCode('qrcode', {
+                  text: 'https://www.qbitai.com/2026/09/496767.html',
+                  width: 256,
+                  height: 256,
+                  colorDark : '#000000',
+                  colorLight : '#ffffff',
+                  correctLevel : QRCode.CorrectLevel.H
+                });
+                </script>
+                <script>
+                var weixin_qrcode  = document.getElementById('weixin_qrcode');
+                var qrcode = document.getElementById('qrcode');
+                $(document).click(function(){
+                    $("#qrcode").hide();
+                });
+                weixin_qrcode.onclick = function(event){
+                    event.stopPropagation();
+                    var val = qrcode.style.display;
+                    if(val == 'none'){
+                        qrcode.style.display = 'block'; //显示
+                    }else{
+                        qrcode.style.display = 'none'; //隐藏
+                    }
+                }
+                qrcode.onclick = function(event){
+                        event.stopPropagation();
+                        qrcode.style.display = 'none'; //隐藏
+                }
+
+               
+
+                function shareToQq(title,url,picurl){
+                var shareqqzonestring='https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary='+title+'&url='+url+'&title='+title+'&pics='+picurl;
+                window.open(shareqqzonestring,'newwindow','height=400,width=400,top=100,left=100');
+                }
+                $('.share_qzone').click(function(e){
+                shareToQq("5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark","https://www.qbitai.com/2026/09/496767.html","https://www.qbitai.com/wp-content/uploads/2026/09/194372f416c662e21120ecaf0ab67b5a.png");
+                })
+    
+                </script>
+<!--相关阅读 start-->
+          
+                                          <div class="xiangguan">
+                          <h3>相关阅读</h3>
+                            <ul id="tags_related">
+                                         <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2026/06/433560.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/2026/06/81efd989b127475cbdccee819fdb7805.png" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2026/06/433560.html" target="_blank">理想智驾一号位创业，落户北京亦庄了</a></h4>
+                              <p>10天跻身具身独角兽</p>
+                              <div class="info"><span class="author"><a href="/?author=47842" target="_blank">杰西卡</a></span><span class="author"><span class="time">2026-06-09</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e7%90%86%e6%83%b3%e6%b1%bd%e8%bd%a6" rel="tag">理想汽车</a> <a href="https://www.qbitai.com/tag/%e8%bd%a6%e5%9c%88%e6%9c%80%e6%96%b0%e8%ae%a4%e7%9f%a5" rel="tag">车圈最新认知</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                 <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2024/10/209691.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/replace/06765703e671bc4a34a948b7f3ddf60d-e1729580133684-300x175.gif" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2024/10/209691.html" target="_blank">机器人轻松模仿人类，还能泛化到不同任务和智能体！微软新研究，学习人类和机器人统一动作表示</a></h4>
+                              <p>不怕缺高质量数据了</p>
+                              <div class="info"><span class="author"><a href="/?author=47833" target="_blank">西风</a></span><span class="author"><span class="time">2024-10-22</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e6%9c%ba%e6%a2%b0%e8%87%82" rel="tag">机械臂</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                 <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2025/03/267551.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/2025/03/2025-03-26-15.32.21-e1742974433386.png" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2025/03/267551.html" target="_blank">姚班天才范浩强创业公司曝光！旷视三剑客携2亿天使轮进军具身智能赛道</a></h4>
+                              <p>老东家入股支持</p>
+                              <div class="info"><span class="author"><a href="/?author=54" target="_blank">衡宇</a></span><span class="author"><span class="time">2025-03-26</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e5%a7%9a%e7%8f%ad" rel="tag">姚班</a> <a href="https://www.qbitai.com/tag/%e6%b8%85%e5%8d%8e%e7%b3%bb" rel="tag">清华系</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                 <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2026/01/370355.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/2026/01/2bcccd8f4665e415a8b97fa88d0896c8.webp" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2026/01/370355.html" target="_blank">哈工大系闯出人形机器人黑马：成立不到一年，全栈开源3m/s原型机，小米商汤都投了</a></h4>
+                              <p>硬件图纸+算法+避坑指南都有</p>
+                              <div class="info"><span class="author"><a href="/?author=50" target="_blank">邓思邈</a></span><span class="author"><span class="time">2026-01-19</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/%e4%ba%ba%e5%bd%a2%e6%9c%ba%e5%99%a8%e4%ba%ba" rel="tag">人形机器人</a> <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e5%93%88%e5%b7%a5%e5%a4%a7" rel="tag">哈工大</a> <a href="https://www.qbitai.com/tag/%e8%90%9d%e5%8d%9a%e6%b4%be%e5%af%b9" rel="tag">萝博派对</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                 <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2026/09/496778.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/2026/09/人机协作实验室对比-ದೃ.png" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2026/09/496778.html" target="_blank">教机器人干活，光“刷课时”可不够！灵初这次较真数据质量</a></h4>
+                              <p>专治人机动作对不齐</p>
+                              <div class="info"><span class="author"><a href="/?author=50" target="_blank">邓思邈</a></span><span class="author"><span class="time">2026-09-24</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e6%95%b0%e6%8d%ae" rel="tag">数据</a> <a href="https://www.qbitai.com/tag/%e7%81%b5%e5%88%9d%e6%99%ba%e8%83%bd" rel="tag">灵初智能</a> <a href="https://www.qbitai.com/tag/%e8%a7%86%e9%a2%91" rel="tag">视频</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                 <div class="picture_text">
+                          <div class="picture"><a href="https://www.qbitai.com/2025/10/347397.html" target="_blank">
+                            <img src="https://i.qbitai.com/wp-content/uploads/2025/10/2025-10-30-18.18.57-e1761819769325-300x175.png" alt="" title="">                          </div>
+                          <div class="text_box">
+                              <h4><a href="https://www.qbitai.com/2025/10/347397.html" target="_blank">让机器人在“想象”中学习世界的模型来了！PI联创课题组&清华陈建宇团队联合出品</a></h4>
+                              <p>零真机、长时稳定、厘米级控制</p>
+                              <div class="info"><span class="author"><a href="/?author=54" target="_blank">衡宇</a></span><span class="author"><span class="time">2025-10-30</span><div class="tags_s">
+                                                                        <i></i>
+                                    <a href="https://www.qbitai.com/tag/physical-intelligence" rel="tag">Physical Intelligence</a> <a href="https://www.qbitai.com/tag/%e4%b8%96%e7%95%8c%e6%a8%a1%e5%9e%8b" rel="tag">世界模型</a> <a href="https://www.qbitai.com/tag/%e5%85%b7%e8%ba%ab%e6%99%ba%e8%83%bd" rel="tag">具身智能</a> <a href="https://www.qbitai.com/tag/%e6%b8%85%e5%8d%8e%e5%a4%a7%e5%ad%a6" rel="tag">清华大学</a>                                                                    </div></div>
+                          </div>
+                      </div>
+                
+                                              </ul>
+                      </div> 
+              
+            <!--相关阅读 end-->
+		</div>
+        <div class="content_right">
+           			<!--热门文章 start-->
+      <div class="yaowen">
+        <h3>热门文章</h3>
+                                <div class="picture_text">
+<a href="https://www.qbitai.com/2026/09/496925.html" target="_blank">
+<div class="picture"><img width="128" height="75" src="https://i.qbitai.com/wp-content/uploads/2026/09/1f82dcf25e0cf598b28e47ddbb4b418d.webp" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" 0="" decoding="async" loading="lazy" /></div>
+<div class="text_box"><h4>PCIe显卡被低估了！内核补齐+通信重构，DeepSeek推理吞吐翻近7倍</h4></div>
+<div class="info">2026-09-24</div>
+</a>
+</div><div class="picture_text">
+<a href="https://www.qbitai.com/2026/09/497075.html" target="_blank">
+<div class="picture"><img width="128" height="83" src="https://i.qbitai.com/wp-content/uploads/2026/09/ec70ba413b87d756ddffb67a5f303163.jpeg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" 0="" decoding="async" loading="lazy" srcset="https://i.qbitai.com/wp-content/uploads/2026/09/ec70ba413b87d756ddffb67a5f303163.jpeg 1080w, https://i.qbitai.com/wp-content/uploads/2026/09/ec70ba413b87d756ddffb67a5f303163-768x499.jpeg 768w" sizes="auto, (max-width: 128px) 85vw, 128px" /></div>
+<div class="text_box"><h4>别人忙着卷Code，Kimi抽身反打浏览器插件：网页操作一秒变Skill</h4></div>
+<div class="info">2026-09-25</div>
+</a>
+</div><div class="picture_text">
+<a href="https://www.qbitai.com/2026/09/496961.html" target="_blank">
+<div class="picture"><img width="128" height="72" src="https://i.qbitai.com/wp-content/uploads/2026/09/c0380aea861c7806a53ad5220bb49f45.webp" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" 0="" decoding="async" loading="lazy" /></div>
+<div class="text_box"><h4>出海Agent“小元AI”入驻腾讯WorkBuddy：找买家写开发信谈生意</h4></div>
+<div class="info">2026-09-24</div>
+</a>
+</div><div class="picture_text">
+<a href="https://www.qbitai.com/2026/09/497108.html" target="_blank">
+<div class="picture"><img width="128" height="96" src="https://i.qbitai.com/wp-content/uploads/2026/09/c39a29eeab5e59a8d95c3b4acfbd85af.jpeg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" 0="" decoding="async" loading="lazy" srcset="https://i.qbitai.com/wp-content/uploads/2026/09/c39a29eeab5e59a8d95c3b4acfbd85af.jpeg 1080w, https://i.qbitai.com/wp-content/uploads/2026/09/c39a29eeab5e59a8d95c3b4acfbd85af-768x576.jpeg 768w" sizes="auto, (max-width: 128px) 85vw, 128px" /></div>
+<div class="text_box"><h4>亮出“中国最强AI芯片”还不够，平头哥又甩出一手开源</h4></div>
+<div class="info">2026-09-25</div>
+</a>
+</div><div class="picture_text">
+<a href="https://www.qbitai.com/2026/09/496816.html" target="_blank">
+<div class="picture"></div>
+<div class="text_box"><h4>GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案</h4></div>
+<div class="info">2026-09-24</div>
+</a>
+</div>                      </div>
+      <!-- 
+<form role="search" method="get" class="search-form" action="https://www.qbitai.com/">
+	<label>
+		<span class="screen-reader-text">搜索：</span>
+		<input type="search" class="search-field" placeholder="搜索…" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">搜索</span></button>
+</form>
+ -->
+			<!--热门文章 end-->
+        </div>
+</div>
+
+
+<!--底部版权-->
+<div class="footer">
+	<div class="footer_con">
+        <div class="footer_r">
+        	<ul class="links"><li><a href="/?page_id=99" target="_blank">关于量子位</a></li><li><a href="/?page_id=101" target="_blank">加入我们</a></li><li><a href="/?page_id=103" target="_blank">寻求报道</a></li><li><a href="/?page_id=105" target="_blank">商务合作</a></li></ul>
+            
+            <div class="icon_btns">
+            <!-- <a href="/?page_id=183"target="_blank"><i class="weixin_icon"></i></a> -->
+            <a href="javascript:void(0)" class="footer_weixin"><div class="fa fa-weixin"id="biaojiwei2"><i class="weixin_icon"></i></div>
+    <div class="weixin_pop" id="popfoot" style="display:none">
+       <p>扫码关注量子位</p>
+       <img src="https://www.qbitai.com/wp-content/uploads/2019/01/qrcode_QbitAI_1.jpg">
+    </div>
+</a>
+            <a href="https://weibo.com/qbitai?is_all=1"target="_blank"><i class="weibo_icon"></i></a>
+            <a href="https://www.zhihu.com/org/liang-zi-wei-48/activities"target="_blank"><div class="share_zhihu"></div></a>
+            <a href="https://www.toutiao.com/c/user/53624121633/#mid=1556041376883713"target="_blank"><div class="share_toutiao"></div></a>
+            </div>
+            <script type="text/javascript">
+         $('#biaojiwei2').click(function(event){
+                event.stopPropagation();
+               $('#popfoot').show();
+                })
+             $('#popfoot').click(function(){
+               $('#popfoot').hide();
+                })
+        </script>
+        </div>
+        <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/liangziwei/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="liangziwei-script-js-extra">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"\u5c55\u5f00\u5b50\u83dc\u5355","collapse":"\u6298\u53e0\u5b50\u83dc\u5355"};
+//# sourceURL=liangziwei-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.qbitai.com/wp-content/themes/liangziwei/js/functions.js?ver=20160816" id="liangziwei-script-js"></script>
+<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js?ver=6.9" id="wxcs-js"></script>
+	<script id="wxcs-script">
+	WX_Custom_Share = function(){
+		
+		var xhr = null;
+		var url = 'https://www.qbitai.com/wp-admin/admin-ajax.php';
+		var signature_url = window.location.href.split('#')[0];
+		var formData = {
+			action: 'wxcs_get_share_info',
+			type: 'post',
+			id: '496767',
+			signature_url: signature_url
+		};
+		
+		this.init = function(){
+			if( window.XMLHttpRequest ){
+				xhr = new XMLHttpRequest();
+			}
+			else if( window.ActiveXObject ){
+				xhr = new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			
+			get_share_info();
+		}
+		
+		function formatPostData( obj ){
+			
+			var arr = new Array();
+			for (var attr in obj ){
+				arr.push( encodeURIComponent( attr ) + '=' + encodeURIComponent( obj[attr] ) );
+			}
+			
+			return arr.join( '&' );
+		}
+		
+		function get_share_info(){
+			
+			if( xhr == null ) return;
+			
+			xhr.onreadystatechange = function(){
+				if( xhr.readyState == 4 && xhr.status == 200 ){
+					
+					var data = eval('(' + xhr.responseText + ')');
+					
+					if( data == null ){
+						return;
+					}
+					
+					var info = {
+						title: data.title,
+						summary: data.desc,
+						pic: data.img,
+						url: data.url
+					};
+					
+					if( formData.type == 'other' ){
+						info.title = document.title;
+						info.summary = location.href;
+						info.url = location.href;
+					}
+					
+					if( data.use_actual_url == true ){
+						info.url = location.href;
+					}
+
+					if( data.error ){
+						console.error( '自定义微信分享: ', data.error );
+					}
+					else if( data.appid ){
+						info.WXconfig = {
+							swapTitleInWX: data.swapTitleInWX,
+							appId: data.appid,
+							timestamp: data.timestamp,
+							nonceStr: data.nonceStr,
+							signature: data.signature
+						};
+					}
+					
+					setShareInfo( info );
+				}
+			};
+			
+			xhr.open( 'POST', url, true);
+			xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+			xhr.send( formatPostData( formData ) );
+		}
+	}
+	
+	new WX_Custom_Share().init();
+	</script>
+	<script>
+                        (function(){
+                            var bp = document.createElement('script');
+                            var curProtocol = window.location.protocol.split(':')[0];
+                            if (curProtocol === 'https') {
+                                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                            }
+                            else {
+                                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                            }
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(bp, s);
+                        })();
+                        </script>        <div class="footer_l">
+        	<div class="footer_logo"><a href="#" target="_blank"></a><span>追踪人工智能新趋势，报道科技行业新突破</span></div>
+            <div class="line3"></div>
+            <!--<p>量子位 QbitAI 版权所有&copy;北京极客伙伴科技有限公司 京ICP备17005886号-1</p>-->
+            <p>量子位 QbitAI 版权所有&copy;北京极客伙伴科技有限公司 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备17005886号-1</a ></p >
+        </div>
+    </div>
+</div>
+</body>
+</html>
