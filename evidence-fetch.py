@@ -37,3 +37,14 @@ for r in results:
  (out/(str(r["index"])+".txt")).write_text(text)
 import yaml
 (out/"registry-main.json").write_text(json.dumps([yaml.safe_load(p.read_text()) for p in pathlib.Path("registry/orgs").glob("*.yaml")],ensure_ascii=False))
+
+import re
+asset=root/"13.html"
+if asset.exists():
+ s=asset.read_text()
+ s=re.sub(r"\\u([0-9a-fA-F]{4})",lambda m:chr(int(m.group(1),16)),s)
+ keys=["广州灵境","FlexPhysics","FlatWorld","StateLeWM","huggingface.co","github.com","关于","仿真数据"]
+ found=[]
+ for k in keys:
+  for m in list(re.finditer(re.escape(k),s))[:12]:found.append({"key":k,"context":s[max(0,m.start()-200):m.end()+650]})
+ (out/"flex-asset-excerpts.json").write_text(json.dumps(found,ensure_ascii=False))
