@@ -1,0 +1,30 @@
+{
+  "date_precision": "month",
+  "orgs": [
+    {
+      "id": "wayebot",
+      "role": "subject"
+    }
+  ],
+  "corroboration": "single",
+  "id": "evt-2026-03-wayebot-funding-pre-a",
+  "date": "2026-03",
+  "type": "funding",
+  "date_basis": "stated",
+  "date_as_stated": "正文明确「2026年3月」完成融资，文章发表于 2026-09-24。",
+  "title": {
+    "zh": "苇熠科技完成数千万元 Pre-A 轮融资"
+  },
+  "summary": {
+    "zh": "苇熠科技官网披露，公司于 2026 年 3 月完成数千万元 Pre-A 轮融资，列出小苗朗程与上海闵行金融投资发展有限公司参与。正文开头称小苗朗程领投、上海国资跟投，后文又称上海国资体系领投，领投方表述存在冲突，故不记录确定的领投关系。金额保留原文范围，不换算为精确数值；公司称资金将用于人才、技术研发及产能扩建。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.waybot.org/sys-nd/11.html",
+      "publisher": "苇熠科技",
+      "tier": "official",
+      "retrieved": "2026-10-02",
+      "snapshot": "snapshots/2026/10/waybot-20261002/waybot-news11.html"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "date_precision": "month",
+  "orgs": [
+    {
+      "id": "wayebot",
+      "role": "subject"
+    },
+    {
+      "id": "zerith",
+      "role": "counterparty"
+    }
+  ],
+  "corroboration": "single",
+  "id": "evt-2026-08-wayebot-zerith-partnership",
+  "date": "2026-08",
+  "type": "partnership",
+  "date_basis": "stated",
+  "date_as_stated": "正文明确「2026年8月」签署协议，文章发表于 2026-09-20。",
+  "title": {
+    "zh": "苇熠科技与零次方机器人签署战略合作协议"
+  },
+  "summary": {
+    "zh": "苇熠科技官网披露，双方于 2026 年 8 月在合肥签署战略合作协议，合作方向包括力控关节及双臂适配零次方人形整机平台、硬件适配、整机联调与精密作业场景试点验证。文中相关技术适配与落地内容为合作计划，不据此认定已完成客户交付或量产部署。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.waybot.org/sys-nd/10.html",
+      "publisher": "苇熠科技",
+      "tier": "official",
+      "retrieved": "2026-10-02",
+      "snapshot": "snapshots/2026/10/waybot-20261002/waybot-news10.html"
+    }
+  ]
+}
