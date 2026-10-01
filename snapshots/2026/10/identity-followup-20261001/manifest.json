@@ -69,7 +69,7 @@
     "final_url": "https://weibo.com/ttarticle/p/show?id=2309405191884162335016",
     "content_type": "text/html; charset=utf-8",
     "path": "snapshots/2026/10/identity-followup-20261001/7.html",
-    "bytes": 29837
+    "bytes": 29828
   },
   {
     "index": 8,
@@ -97,5 +97,32 @@
     "content_type": "application/pdf",
     "path": "snapshots/2026/10/identity-followup-20261001/10.pdf",
     "bytes": 510978
+  },
+  {
+    "index": 11,
+    "url": "https://www.flexphysics.com/terms-of-users",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/terms-of-users",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/11.html",
+    "bytes": 1851
+  },
+  {
+    "index": 12,
+    "url": "https://www.flexphysics.com/",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/12.html",
+    "bytes": 2739
+  },
+  {
+    "index": 13,
+    "url": "https://www.flexphysics.com/static/mainApp/js/main-BtJqPAH1.js",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/static/mainApp/js/main-BtJqPAH1.js",
+    "content_type": "application/javascript",
+    "path": "snapshots/2026/10/identity-followup-20261001/13.html",
+    "bytes": 970745
   }
 ]
