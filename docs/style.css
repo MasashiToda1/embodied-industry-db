@@ -160,10 +160,30 @@ td.mono,td.right,td>.chip{white-space:nowrap}
 /* 图谱 */
 #graph{width:100%;height:780px;background:var(--card);border:1px solid var(--line);border-radius:10px}
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:12px;padding:6px 9px;border-radius:6px;max-width:320px;display:none;z-index:20}
-/* 热力 */
-.heat{display:grid;gap:2px;font-size:11px}
-.heat div{padding:4px 6px;background:#f4f4f6;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.heat .h{background:none;color:var(--muted);font-weight:600}
-.heat .v{background:#e6effc;color:#1f4fa8}
+/* 公司 × 路线：统一颜色表示存在记录，不编码时间或实力 */
+.heat-title{font-size:16px;margin:0 0 6px}
+.heat-help{font-size:13px;color:var(--muted);margin:0 0 12px;max-width:900px}
+.heat-legend{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:12px;margin-bottom:12px}
+.heat-legend>span{display:inline-flex;gap:6px;align-items:center}
+.heat-key{display:inline-block;width:14px;height:14px;border-radius:3px;background:#f4f4f6;border:1px solid var(--line)}
+.heat-key.seen{background:#dbe9ff;border-color:#9dbce9}
+.heat-scroll{overflow:auto;max-height:65vh;border:1px solid var(--line);border-radius:8px}
+.heat-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.heat{border-collapse:separate;border-spacing:0;min-width:100%;width:max-content;font-size:12px}
+.heat caption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.heat th,.heat td{padding:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;min-width:112px}
+.heat th{padding:10px 12px;background:var(--card);font-weight:600;max-width:200px;white-space:normal;overflow-wrap:anywhere}
+.heat thead th{position:sticky;top:0;z-index:2;background:#f7f8fa}
+.heat th small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
+.heat tbody th,.heat thead th:first-child{position:sticky;left:0;text-align:left;min-width:156px;width:180px;z-index:1}
+.heat thead th:first-child{z-index:3}
+.heat tr>*:last-child{border-right:0}
+.heat tbody tr:last-child>*{border-bottom:0}
+.heat .heat-seen{background:#dbe9ff;color:#174b9c}
+.heat .heat-seen a{display:block;padding:12px;text-decoration:none;white-space:nowrap}
+.heat .heat-seen a:hover,.heat .heat-seen a:focus-visible{background:#bfd6fb;outline:2px solid #174b9c;outline-offset:-2px}
+.heat .heat-unknown{background:#f4f4f6;color:#92929a}
+.heat .heat-unknown span{display:block;padding:12px}
+@media (max-width:600px){.heat tbody th,.heat thead th:first-child{min-width:116px;width:116px;max-width:116px}.heat th,.heat td{min-width:104px}}
 footer{color:var(--muted);font-size:12px;padding:20px 0;border-top:1px solid var(--line);margin-top:30px}
 @media (max-width:860px){.two{grid-template-columns:1fr}nav input{width:120px}.fbar{flex-wrap:wrap}}
