@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-20-x-square-robot-publication-x2real-static-assets",
+  "date": "2026-09-20",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "x-square-robot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "自变量 X2Real 仿真资产包完成第 107 个分片上传"
+  },
+  "summary": {
+    "zh": "仓库提供由 107 个 TAR 分片组成的静态仿真资产包；当前卡片列出 74,423 个场景、模型、材质及抓取标签等文件，涵盖移动操作等任务。该数量不是机器人轨迹或 episode 数量，查看器中的 CSV 是文件目录；仿真代码与策略权重另行提供，许可仍标为 TODO。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取提交历史中 Upload X2Real asset shard 107/107 的时间 2026-09-20T13:38:49Z；内容和许可描述按 2026-10-01 模型卡核验，不推断此前公开可见状态。",
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets",
+      "publisher": "Hugging Face · x-square-robot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/78.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/x-square-robot/x2real-assets/raw/main/README.md",
+      "publisher": "Hugging Face · datasets",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/103.md"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets/commits/main",
+      "publisher": "Hugging Face · x-square-robot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/104.json"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-23-dexforce-publication-embodichain-locomotion-policies",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "dexforce",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "跨维智能上传 EmbodiChain 足式机器人策略检查点"
+  },
+  "summary": {
+    "zh": "官方模型仓库列出 ANYmal-C、G1、Go1、Go2、H1_2 与 MicroDuck 的 12 个 PPO 策略检查点，覆盖默认及 Newton 配置。模型卡记录 FastRT/DexSim 仿真回放检查；不代表真机验证，机器人资产与策略权重分开提供，卡片未声明权重许可。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方仓库权重上传提交的 UTC 日期；模型卡内容按 2026-10-01 核验，不将后续说明文字回溯为上传当天已存在。",
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/models/DexForceAI/embodichain_model",
+      "publisher": "Hugging Face · DexForceAI",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/74.json"
+    },
+    {
+      "url": "https://huggingface.co/DexForceAI/embodichain_model/raw/main/README.md",
+      "publisher": "Hugging Face · DexForceAI",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/95.md"
+    },
+    {
+      "url": "https://huggingface.co/api/models/DexForceAI/embodichain_model/commits/main",
+      "publisher": "Hugging Face · DexForceAI",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/96.json"
+    }
+  ],
+  "corroboration": "single"
+}

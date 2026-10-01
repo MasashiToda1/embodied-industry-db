@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-09-14-zsibot-publication-gawm",
+  "date": "2026-09-14",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-14T06:32:14Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "zsibot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "智身科技创建 GAWM 几何感知世界模型仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 将 GAWM 定义为用于目标条件机器人规划的 JEPA 风格世界模型，通过物理状态预测与逆动力学学习动作条件视觉动态，并以 CEM 优化动作序列；记录研究实现，不作为量产产品架构结论。"
+  },
+  "axes": {
+    "model_form": [
+      "world-model"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/zsibot/gawm",
+      "publisher": "GitHub · zsibot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-zsibot-gawm-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/zsibot/gawm/blob/main/README.md",
+      "publisher": "GitHub · zsibot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-zsibot-gawm-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

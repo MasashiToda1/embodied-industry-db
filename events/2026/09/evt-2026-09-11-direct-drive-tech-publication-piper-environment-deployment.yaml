@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-11-direct-drive-tech-publication-piper-environment-deployment",
+  "date": "2026-09-11",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-11T02:12:55Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "direct-drive-tech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "本末科技创建 D1 与 Piper 机械臂集成指南仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 明确为 D1 上控制 Piper 的集成指南，区分 D1 电机与机械臂 CAN 总线，提供键盘、SSH 和 D1 遥控器控制方法。本条归于本末发布的集成工具，不将 Piper 本体归为其产品。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/DDTRobot/piper-environment-deployment",
+      "publisher": "GitHub · DDTRobot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-direct-drive-tech-piper-environment-deployment-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/DDTRobot/piper-environment-deployment/blob/main/README.md",
+      "publisher": "GitHub · DDTRobot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-direct-drive-tech-piper-environment-deployment-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

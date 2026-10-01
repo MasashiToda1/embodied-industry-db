@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-29-d-robotics-publication-robotics-dream-keeper-challenge-winter",
+  "date": "2026-09-29",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-29T01:23:51Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "d-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地瓜机器人创建 2026 冬季 RDK 开发者挑战赛仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 记录面向 RDK X5 的三阶段开发计划，报名期为 9 月 30 日至 10 月 31 日，最终提交截至 12 月 15 日。项目展示材料与参与者源码分别维护，不将计划中的里程碑写成已完成成果。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-robotics-dream-keeper-challenge-winter-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter/blob/main/README.md",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-robotics-dream-keeper-challenge-winter-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

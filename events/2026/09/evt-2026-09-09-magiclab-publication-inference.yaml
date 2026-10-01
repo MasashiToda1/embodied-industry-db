@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-09-magiclab-publication-inference",
+  "date": "2026-09-09",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-09T12:16:02Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "magiclab",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "魔法原子创建机器人策略推理框架仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 描述策略服务器与机器人客户端之间的推理运行层，支持 JAX 检查点、TensorRT、WebSocket 与共享内存，并提供 Piper 机械臂客户端及无硬件模拟流程。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/MagiclabRobotics/Inference",
+      "publisher": "GitHub · MagiclabRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-magiclab-inference-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/MagiclabRobotics/Inference/blob/main/README.md",
+      "publisher": "GitHub · MagiclabRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-magiclab-inference-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

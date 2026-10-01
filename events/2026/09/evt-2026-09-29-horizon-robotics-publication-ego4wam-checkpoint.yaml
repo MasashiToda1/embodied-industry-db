@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-29-horizon-robotics-publication-ego4wam-checkpoint",
+  "date": "2026-09-29",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "horizon-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地平线上传 Ego4WAM Joint 变体模型权重"
+  },
+  "summary": {
+    "zh": "模型卡说明仓库提供 Joint 变体的完整权重，含所需骨干参数；模型权重采用 Apache-2.0，代码采用 MIT。此条依据权重上传提交记录，不将仓库创建时间当作模型发布日。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方仓库权重上传提交的 UTC 日期；模型卡内容按 2026-10-01 核验，不将后续说明文字回溯为上传当天已存在。",
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/72.json"
+    },
+    {
+      "url": "https://huggingface.co/HorizonRobotics/Ego4WAM/raw/main/README.md",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/91.md"
+    },
+    {
+      "url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM/commits/main",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/92.json"
+    }
+  ],
+  "corroboration": "single"
+}

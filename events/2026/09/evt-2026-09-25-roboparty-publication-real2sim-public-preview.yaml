@@ -1,0 +1,40 @@
+{
+  "id": "evt-2026-09-25-roboparty-publication-real2sim-public-preview",
+  "date": "2026-09-25",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "roboparty",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "萝博派对公开 Real2Sim 研究工程流程预览版"
+  },
+  "summary": {
+    "zh": "该公共预览提供基于 Blender 与 MuJoCo 的照片到仿真场景流程、阶段协议和冻结示例回放资料。发布说明明确未新增重建算法、自动商品检索、通用 CAD 导入或物理实验；项目由萝博派对发布，名称中的模型名不表示模型提供方发布了本项目。"
+  },
+  "axes": {
+    "sim_stack": [
+      "mujoco"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/releases/tag/public-preview-20260925",
+      "publisher": "GitHub · Roboparty",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-roboparty-real2sim-public-preview-20261001.json"
+    },
+    {
+      "url": "https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/blob/public-preview-20260925/README.md",
+      "publisher": "GitHub · Roboparty",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-roboparty-real2sim-public-preview-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

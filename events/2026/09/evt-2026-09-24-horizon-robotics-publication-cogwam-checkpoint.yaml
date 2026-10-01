@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-24-horizon-robotics-publication-cogwam-checkpoint",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "horizon-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地平线上传 CogWAM 预训练检查点"
+  },
+  "summary": {
+    "zh": "模型仓库包含权重与检查点清单，模型卡描述 50,000 步检查点、25 步预测时域和 14 维动作。发布方将检查点权重标为 MIT；RynnBrain 与 DINOv3 等依赖骨干适用各自条款。此条记录权重上传，与项目介绍公开分开计时。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方仓库权重上传提交的 UTC 日期；模型卡内容按 2026-10-01 核验，不将后续说明文字回溯为上传当天已存在。",
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/71.json"
+    },
+    {
+      "url": "https://huggingface.co/HorizonRobotics/CogWAM/raw/main/README.md",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/89.md"
+    },
+    {
+      "url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM/commits/main",
+      "publisher": "Hugging Face · HorizonRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/90.json"
+    }
+  ],
+  "corroboration": "single"
+}
