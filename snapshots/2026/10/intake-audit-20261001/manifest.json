@@ -1,0 +1,939 @@
+[
+  {
+    "index": 0,
+    "url": "https://arxiv.org/abs/2609.39601v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.39601v1",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/0.html",
+    "bytes": 48364
+  },
+  {
+    "index": 1,
+    "url": "https://arxiv.org/html/2609.39601v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.39601v1",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/1.html",
+    "bytes": 1797261
+  },
+  {
+    "index": 2,
+    "url": "https://www.tmtpost.com/8157612.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8157612.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/2.html",
+    "bytes": 150490
+  },
+  {
+    "index": 3,
+    "url": "https://xxgk.fudan.edu.cn/_upload/article/files/eb/23/6b43218f43ceb9c688f69be3dea4/657de252-2c4c-43ab-bc64-c4f00b391d1b.pdf",
+    "status": 200,
+    "final_url": "https://xxgk.fudan.edu.cn/_upload/article/files/eb/23/6b43218f43ceb9c688f69be3dea4/657de252-2c4c-43ab-bc64-c4f00b391d1b.pdf",
+    "content_type": "application/pdf",
+    "path": "snapshots/2026/10/intake-audit-20261001/3.pdf",
+    "bytes": 377460
+  },
+  {
+    "index": 4,
+    "url": "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+    "status": 200,
+    "final_url": "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+    "content_type": "text/html;charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/4.html",
+    "bytes": 36369
+  },
+  {
+    "index": 5,
+    "url": "https://www.chinanews.com.cn/cj/2026/08-23/10682837.shtml",
+    "status": 200,
+    "final_url": "https://www.chinanews.com.cn/cj/2026/08-23/10682837.shtml",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-audit-20261001/5.html",
+    "bytes": 82075
+  },
+  {
+    "index": 6,
+    "url": "https://huggingface.co/HorizonRobotics/Ego4WAM",
+    "status": 200,
+    "final_url": "https://huggingface.co/HorizonRobotics/Ego4WAM",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/6.html",
+    "bytes": 129259
+  },
+  {
+    "index": 7,
+    "url": "https://www.leiphone.com/category/private/zoJ7chGiDi7IPHvN.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/private/zoJ7chGiDi7IPHvN.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/7.html",
+    "bytes": 184966
+  },
+  {
+    "index": 8,
+    "url": "https://www.ithome.com/1/008/652.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/008/652.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/8.html",
+    "bytes": 22186
+  },
+  {
+    "index": 9,
+    "url": "https://www.leiphone.com/category/robot/rhJu6CEW1OjHWAHH.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/robot/rhJu6CEW1OjHWAHH.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/9.html",
+    "bytes": 264111
+  },
+  {
+    "index": 10,
+    "url": "https://www.leiphone.com/category/robot/S9YPlbN9tONrBqrI.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/robot/S9YPlbN9tONrBqrI.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/10.html",
+    "bytes": 137655
+  },
+  {
+    "index": 11,
+    "url": "https://www.leiphone.com/category/industrynews/r1gMx892vG7al5M5.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/industrynews/r1gMx892vG7al5M5.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/11.html",
+    "bytes": 53614
+  },
+  {
+    "index": 12,
+    "url": "https://www.leiphone.com/category/industrynews/yR9rN5kyqx3kypzz.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/industrynews/yR9rN5kyqx3kypzz.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/12.html",
+    "bytes": 60350
+  },
+  {
+    "index": 13,
+    "url": "https://www.qbitai.com/2026/09/499239.html",
+    "status": 200,
+    "final_url": "https://www.qbitai.com/2026/09/499239.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/13.html",
+    "bytes": 47439
+  },
+  {
+    "index": 14,
+    "url": "https://leaderobot.com/news/9992",
+    "status": 200,
+    "final_url": "https://leaderobot.com/news/9992",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/14.html",
+    "bytes": 100617
+  },
+  {
+    "index": 15,
+    "url": "https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base",
+    "status": 200,
+    "final_url": "https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/15.html",
+    "bytes": 95323
+  },
+  {
+    "index": 16,
+    "url": "https://yangtzeer.com/news/startups/agibot-100-humanoids-asd-stores/",
+    "status": 200,
+    "final_url": "https://yangtzeer.com/news/startups/agibot-100-humanoids-asd-stores/",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/16.html",
+    "bytes": 146267
+  },
+  {
+    "index": 17,
+    "url": "https://www.leiphone.com/category/industrynews/ieKrThrdXB840uPe.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/industrynews/ieKrThrdXB840uPe.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/17.html",
+    "bytes": 51619
+  },
+  {
+    "index": 18,
+    "url": "https://www.leiphone.com/category/industrynews/swRASiuHGdPbjWEY.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/industrynews/swRASiuHGdPbjWEY.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/18.html",
+    "bytes": 51606
+  },
+  {
+    "index": 19,
+    "url": "https://www.leiphone.com/category/industrynews/eDhvnoxGSSJk1eQo.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/industrynews/eDhvnoxGSSJk1eQo.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/19.html",
+    "bytes": 57043
+  },
+  {
+    "index": 20,
+    "url": "https://www.leiphone.com/category/robot/zVCVfjhnzD1S34Pm.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/robot/zVCVfjhnzD1S34Pm.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/20.html",
+    "bytes": 57018
+  },
+  {
+    "index": 21,
+    "url": "https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/21.html",
+    "bytes": 55801
+  },
+  {
+    "index": 22,
+    "url": "https://www.ithome.com/1/008/202.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/008/202.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/22.html",
+    "bytes": 24698
+  },
+  {
+    "index": 23,
+    "url": "https://www.ithome.com/1/008/220.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/008/220.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/23.html",
+    "bytes": 22176
+  },
+  {
+    "index": 24,
+    "url": "https://www.tmtpost.com/8153463.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8153463.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/24.html",
+    "bytes": 196904
+  },
+  {
+    "index": 25,
+    "url": "https://www.ithome.com/1/007/678.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/007/678.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/25.html",
+    "bytes": 23821
+  },
+  {
+    "index": 26,
+    "url": "https://www.ithome.com/1/007/671.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/007/671.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/26.html",
+    "bytes": 22487
+  },
+  {
+    "index": 27,
+    "url": "https://www.tmtpost.com/8153852.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8153852.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/27.html",
+    "bytes": 176529
+  },
+  {
+    "index": 28,
+    "url": "https://www.tmtpost.com/8153534.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8153534.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/28.html",
+    "bytes": 178162
+  },
+  {
+    "index": 29,
+    "url": "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "index": 30,
+    "url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_30k",
+    "status": 200,
+    "final_url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_30k",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/30.html",
+    "bytes": 97689
+  },
+  {
+    "index": 31,
+    "url": "https://www.qbitai.com/2026/09/498478.html",
+    "status": 200,
+    "final_url": "https://www.qbitai.com/2026/09/498478.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/31.html",
+    "bytes": 53016
+  },
+  {
+    "index": 32,
+    "url": "https://www.ithome.com/1/007/443.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/007/443.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/32.html",
+    "bytes": 23401
+  },
+  {
+    "index": 33,
+    "url": "https://www.gelonghui.com/live/2678653",
+    "status": 200,
+    "final_url": "https://www.gelonghui.com/live/2678653",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/33.html",
+    "bytes": 291962
+  },
+  {
+    "index": 34,
+    "url": "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+    "status": 200,
+    "final_url": "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/34.html",
+    "bytes": 68354
+  },
+  {
+    "index": 35,
+    "url": "https://www.ithome.com/1/007/277.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/007/277.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/35.html",
+    "bytes": 23328
+  },
+  {
+    "index": 36,
+    "url": "https://www.leiphone.com/category/robot/23F3DiDtv7Puosqy.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/robot/23F3DiDtv7Puosqy.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/36.html",
+    "bytes": 59827
+  },
+  {
+    "index": 37,
+    "url": "https://www.tmtpost.com/8152876.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8152876.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/37.html",
+    "bytes": 149266
+  },
+  {
+    "index": 38,
+    "url": "https://www.tmtpost.com/8152613.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8152613.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/38.html",
+    "bytes": 160128
+  },
+  {
+    "index": 39,
+    "url": "https://www.chinaventure.com.cn/news/114-20260827-392961.html",
+    "status": 200,
+    "final_url": "https://www.chinaventure.com.cn/news/114-20260827-392961.html",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-audit-20261001/39.html",
+    "bytes": 44046
+  },
+  {
+    "index": 40,
+    "url": "https://huggingface.co/vinmotion/m2",
+    "status": 200,
+    "final_url": "https://huggingface.co/vinmotion/m2",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/40.html",
+    "bytes": 83153
+  },
+  {
+    "index": 41,
+    "url": "https://www.leiphone.com/category/ai/k1XGdu6w3n7xGgKB.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/ai/k1XGdu6w3n7xGgKB.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/41.html",
+    "bytes": 246361
+  },
+  {
+    "index": 42,
+    "url": "https://www.leiphone.com/category/ai/c5xfhIwWHqSfnGrS.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/ai/c5xfhIwWHqSfnGrS.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/42.html",
+    "bytes": 142973
+  },
+  {
+    "index": 43,
+    "url": "https://www.qbitai.com/2026/09/496816.html",
+    "status": 200,
+    "final_url": "https://www.qbitai.com/2026/09/496816.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/43.html",
+    "bytes": 66148
+  },
+  {
+    "index": 44,
+    "url": "https://www.qbitai.com/2026/09/496767.html",
+    "status": 200,
+    "final_url": "https://www.qbitai.com/2026/09/496767.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/44.html",
+    "bytes": 69510
+  },
+  {
+    "index": 45,
+    "url": "https://www.ithome.com/1/007/073.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/007/073.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/45.html",
+    "bytes": 22194
+  },
+  {
+    "index": 46,
+    "url": "https://news.qq.com/rain/a/20260920A0AE8E00",
+    "status": 200,
+    "final_url": "https://news.qq.com/rain/a/20260920A0AE8E00",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/46.html",
+    "bytes": 94496
+  },
+  {
+    "index": 47,
+    "url": "https://c.eihee.com/plus/view-20900-1.html",
+    "status": 200,
+    "final_url": "https://c.eihee.com/plus/view-20900-1.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/47.html",
+    "bytes": 39984
+  },
+  {
+    "index": 48,
+    "url": "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+    "status": 200,
+    "final_url": "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+    "content_type": "text/html;charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/48.html",
+    "bytes": 43138
+  },
+  {
+    "index": 49,
+    "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202509/t20250926_4211351.html",
+    "status": 200,
+    "final_url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202509/t20250926_4211351.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/49.html",
+    "bytes": 54155
+  },
+  {
+    "index": 50,
+    "url": "https://huggingface.co/datasets/x-square-robot/x2real-assets",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/x-square-robot/x2real-assets",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/50.html",
+    "bytes": 395778
+  },
+  {
+    "index": 51,
+    "url": "https://huggingface.co/rainbowrobotics",
+    "status": 200,
+    "final_url": "https://huggingface.co/rainbowrobotics",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/51.html",
+    "bytes": 200331
+  },
+  {
+    "index": 52,
+    "url": "https://huggingface.co/DexForceAI/embodichain_model",
+    "status": 200,
+    "final_url": "https://huggingface.co/DexForceAI/embodichain_model",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/52.html",
+    "bytes": 95195
+  },
+  {
+    "index": 53,
+    "url": "https://huggingface.co/HorizonRobotics/CogWAM",
+    "status": 200,
+    "final_url": "https://huggingface.co/HorizonRobotics/CogWAM",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/53.html",
+    "bytes": 113325
+  },
+  {
+    "index": 54,
+    "url": "https://www.qbitai.com/2026/09/496481.html",
+    "status": 200,
+    "final_url": "https://www.qbitai.com/2026/09/496481.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/54.html",
+    "bytes": 53254
+  },
+  {
+    "index": 55,
+    "url": "https://www.ithome.com/1/006/710.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/006/710.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/55.html",
+    "bytes": 22674
+  },
+  {
+    "index": 56,
+    "url": "https://www.ithome.com/1/006/596.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/006/596.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/56.html",
+    "bytes": 24756
+  },
+  {
+    "index": 57,
+    "url": "https://www.tmtpost.com/8151470.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8151470.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/57.html",
+    "bytes": 162991
+  },
+  {
+    "index": 58,
+    "url": "https://www.tmtpost.com/8151174.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8151174.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/58.html",
+    "bytes": 166385
+  },
+  {
+    "index": 59,
+    "url": "https://www.chinanews.com/cj/2026/09-04/10690406.shtml",
+    "status": 200,
+    "final_url": "https://www.chinanews.com/cj/2026/09-04/10690406.shtml",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-audit-20261001/59.html",
+    "bytes": 80282
+  },
+  {
+    "index": 60,
+    "url": "https://time-weekly.com/post/333039",
+    "status": 200,
+    "final_url": "https://time-weekly.com/post/333039",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/60.html",
+    "bytes": 49905
+  },
+  {
+    "index": 61,
+    "url": "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html",
+    "status": 200,
+    "final_url": "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/61.html",
+    "bytes": 30729
+  },
+  {
+    "index": 62,
+    "url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_15k",
+    "status": 200,
+    "final_url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_15k",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/62.html",
+    "bytes": 97676
+  },
+  {
+    "index": 63,
+    "url": "https://www.tmtpost.com/8149409.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8149409.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/63.html",
+    "bytes": 192149
+  },
+  {
+    "index": 64,
+    "url": "https://www.leiphone.com/category/academic/Ti3obLMNSuHn5OpR.html",
+    "status": 200,
+    "final_url": "https://www.leiphone.com/category/academic/Ti3obLMNSuHn5OpR.html",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/64.html",
+    "bytes": 181136
+  },
+  {
+    "index": 65,
+    "url": "https://www.ithome.com/1/006/217.htm",
+    "status": 200,
+    "final_url": "https://www.ithome.com/1/006/217.htm",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/65.html",
+    "bytes": 23498
+  },
+  {
+    "index": 66,
+    "url": "https://www.tmtpost.com/8149507.html",
+    "status": 200,
+    "final_url": "https://www.tmtpost.com/8149507.html",
+    "content_type": "text/html;charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/66.html",
+    "bytes": 159149
+  },
+  {
+    "index": 67,
+    "url": "http://www.xinhuanet.com/tech/20260922/770e10d4acdb48ed865eee514b26e06d/c.html",
+    "status": 200,
+    "final_url": "http://www.xinhuanet.com/tech/20260922/770e10d4acdb48ed865eee514b26e06d/c.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/67.html",
+    "bytes": 21364
+  },
+  {
+    "index": 68,
+    "url": "https://www.cnbeta.com.tw/articles/tech/1576876.htm",
+    "status": 200,
+    "final_url": "https://www.cnbeta.com.tw/articles/tech/1576876.htm",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-audit-20261001/68.html",
+    "bytes": 47490
+  },
+  {
+    "index": 69,
+    "url": "https://www.163.com/dy/article/L7B39IJ9055040N3.html",
+    "status": 200,
+    "final_url": "https://www.163.com/dy/article/L7B39IJ9055040N3.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/69.html",
+    "bytes": 156944
+  },
+  {
+    "index": 70,
+    "url": "https://finance.eastmoney.com/a/202609213880224614.html",
+    "status": 200,
+    "final_url": "https://finance.eastmoney.com/a/202609213880224614.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/70.html",
+    "bytes": 68009
+  },
+  {
+    "index": 71,
+    "url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/71.json",
+    "bytes": 737
+  },
+  {
+    "index": 72,
+    "url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/72.json",
+    "bytes": 1438
+  },
+  {
+    "index": 73,
+    "url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/73.json",
+    "bytes": 1023
+  },
+  {
+    "index": 74,
+    "url": "https://huggingface.co/api/models/DexForceAI/embodichain_model",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/DexForceAI/embodichain_model",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/74.json",
+    "bytes": 4564
+  },
+  {
+    "index": 75,
+    "url": "https://huggingface.co/api/models/vinmotion/m2",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/vinmotion/m2",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/75.json",
+    "bytes": 406
+  },
+  {
+    "index": 76,
+    "url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_15k",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_15k",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/76.json",
+    "bytes": 2108
+  },
+  {
+    "index": 77,
+    "url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_30k",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_30k",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/77.json",
+    "bytes": 2108
+  },
+  {
+    "index": 78,
+    "url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/78.json",
+    "bytes": 6442
+  },
+  {
+    "index": 79,
+    "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0923",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0923",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/79.json",
+    "bytes": 22084
+  },
+  {
+    "index": 80,
+    "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0923/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0923/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/80.md",
+    "bytes": 2010
+  },
+  {
+    "index": 81,
+    "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0921",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0921",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/81.json",
+    "bytes": 13680
+  },
+  {
+    "index": 82,
+    "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0921/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0921/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/82.md",
+    "bytes": 1775
+  },
+  {
+    "index": 83,
+    "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/83.json",
+    "bytes": 13532
+  },
+  {
+    "index": 84,
+    "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/84.md",
+    "bytes": 821
+  },
+  {
+    "index": 85,
+    "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_trim",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_trim",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/85.json",
+    "bytes": 12944
+  },
+  {
+    "index": 86,
+    "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_trim/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_trim/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/86.md",
+    "bytes": 135
+  },
+  {
+    "index": 87,
+    "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_0917",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_0917",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/87.json",
+    "bytes": 2083
+  },
+  {
+    "index": 88,
+    "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_0917/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_0917/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/88.md",
+    "bytes": 3666
+  },
+  {
+    "index": 89,
+    "url": "https://huggingface.co/HorizonRobotics/CogWAM/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/HorizonRobotics/CogWAM/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/89.md",
+    "bytes": 2948
+  },
+  {
+    "index": 90,
+    "url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/HorizonRobotics/CogWAM/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/90.json",
+    "bytes": 571
+  },
+  {
+    "index": 91,
+    "url": "https://huggingface.co/HorizonRobotics/Ego4WAM/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/HorizonRobotics/Ego4WAM/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/91.md",
+    "bytes": 2293
+  },
+  {
+    "index": 92,
+    "url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/HorizonRobotics/Ego4WAM/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/92.json",
+    "bytes": 1134
+  },
+  {
+    "index": 93,
+    "url": "https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/93.md",
+    "bytes": 28
+  },
+  {
+    "index": 94,
+    "url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/94.json",
+    "bytes": 442
+  },
+  {
+    "index": 95,
+    "url": "https://huggingface.co/DexForceAI/embodichain_model/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/DexForceAI/embodichain_model/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/95.md",
+    "bytes": 1671
+  },
+  {
+    "index": 96,
+    "url": "https://huggingface.co/api/models/DexForceAI/embodichain_model/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/DexForceAI/embodichain_model/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/96.json",
+    "bytes": 691
+  },
+  {
+    "index": 97,
+    "url": "https://huggingface.co/vinmotion/m2/raw/main/README.md",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "index": 98,
+    "url": "https://huggingface.co/api/models/vinmotion/m2/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/vinmotion/m2/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/98.json",
+    "bytes": 209
+  },
+  {
+    "index": 99,
+    "url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_15k/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_15k/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/99.md",
+    "bytes": 483
+  },
+  {
+    "index": 100,
+    "url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_15k/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_15k/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/100.json",
+    "bytes": 692
+  },
+  {
+    "index": 101,
+    "url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_30k/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/rainbowrobotics/pi05_rb10_iros_ee_30k/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/101.md",
+    "bytes": 496
+  },
+  {
+    "index": 102,
+    "url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_30k/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/models/rainbowrobotics/pi05_rb10_iros_ee_30k/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/102.json",
+    "bytes": 692
+  },
+  {
+    "index": 103,
+    "url": "https://huggingface.co/datasets/x-square-robot/x2real-assets/raw/main/README.md",
+    "status": 200,
+    "final_url": "https://huggingface.co/datasets/x-square-robot/x2real-assets/raw/main/README.md",
+    "content_type": "text/plain; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/103.md",
+    "bytes": 5129
+  },
+  {
+    "index": 104,
+    "url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets/commits/main",
+    "status": 200,
+    "final_url": "https://huggingface.co/api/datasets/x-square-robot/x2real-assets/commits/main",
+    "content_type": "application/json; charset=utf-8",
+    "path": "snapshots/2026/10/intake-audit-20261001/104.json",
+    "bytes": 14472
+  }
+]
