@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -51,3 +53,46 @@ jobs:
       # 一手来源第三方核验不了，所以在 PR 里显式列出来，让它始终可见
       - name: 列出一手来源事件
         run: python scripts/lint.py --root . | grep -A50 "一手来源事件" || echo "（本次无一手来源事件）"
+
+      # 把受影响主体的真实编译结果展示给审核者，不手写视图。
+      - name: 受影响主体预览
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          python - <<'PY'
+          import os
+          import subprocess
+          from pathlib import Path
+          import yaml
+
+          base = os.environ.get("BASE_SHA", "")
+          if not base or set(base) == {"0"}:
+              base = subprocess.check_output(
+                  ["git", "rev-parse", "HEAD^"], text=True
+              ).strip()
+          paths = subprocess.check_output(
+              ["git", "diff", "--name-only", "--diff-filter=AM", base, "HEAD",
+               "--", "events/", "registry/orgs/"], text=True
+          ).splitlines()
+          orgs = set()
+          for name in paths:
+              path = Path(name)
+              if path.suffix != ".yaml" or not path.is_file():
+                  continue
+              doc = yaml.safe_load(path.read_text()) or {}
+              if name.startswith("events/"):
+                  orgs.update(item["id"] for item in doc.get("orgs", []))
+              else:
+                  orgs.add(doc["id"])
+          rendered = []
+          for oid in sorted(orgs):
+              page = Path("build/orgs") / (oid + ".md")
+              # 只读编译器生成的主体文件。
+              if page.resolve().parent != Path("build/orgs").resolve():
+                  raise ValueError("Invalid org id")
+              rendered.append(page.read_text())
+          summary = "\n\n".join(rendered) or "本次没有受影响的主体。"
+          print(summary)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as output:
+              output.write(summary + "\n")
+          PY

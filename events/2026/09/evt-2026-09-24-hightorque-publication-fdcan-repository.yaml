@@ -1,0 +1,22 @@
+id: "evt-2026-09-24-hightorque-publication-fdcan-repository"
+date: "2026-09-24"
+date_precision: "day"
+date_basis: "derived"
+date_as_stated: "GitHub API created_at: 2026-09-24T10:28:07Z；此日期为仓库创建时间，不是 v2.0.0 发布时间。"
+type: "publication"
+orgs:
+  -
+    id: "hightorque"
+    role: "subject"
+title:
+  zh: "高擎机电创建 hightorque_fdcan 仓库"
+summary:
+  zh: "GitHub 元数据显示，高擎机电官方账号 HighTorque-Robotics 于 9 月 24 日创建 hightorque_fdcan 仓库。截至 10 月 1 日核验，仓库公开可访问，描述为面向 v6 通信板 FDCAN 透传功能的上位机。"
+evidence:
+  -
+    url: "https://api.github.com/repos/HighTorque-Robotics/hightorque_fdcan"
+    publisher: "GitHub · HighTorque-Robotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-hightorque-fdcan-repo-20261001.json"
+corroboration: "single"
