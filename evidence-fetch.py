@@ -1,6 +1,6 @@
 import concurrent.futures, json, pathlib, urllib.request, time
 urls=json.loads(pathlib.Path("evidence-urls.json").read_text())
-root=pathlib.Path("snapshots/2026/10/intake-primary-20261001")
+root=pathlib.Path("snapshots/2026/10/identity-followup-20261001")
 root.mkdir(parents=True,exist_ok=True)
 def get(pair):
  i,url=pair
@@ -22,17 +22,18 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
 (root/"manifest.json").write_text(json.dumps(results,ensure_ascii=False,indent=2))
 print(json.dumps(results,ensure_ascii=False))
 
-import subprocess, sys, re
-subprocess.check_call([sys.executable,"-m","pip","install","-q","beautifulsoup4"])
+
 from bs4 import BeautifulSoup
-out=pathlib.Path("audit-primary");out.mkdir(exist_ok=True)
+from pypdf import PdfReader
+out=pathlib.Path("audit-followup");out.mkdir(exist_ok=True)
 for r in results:
  if "path" not in r: continue
- p=pathlib.Path(r["path"]); soup=BeautifulSoup(p.read_bytes(),"html.parser")
- for e in soup(["script","style","nav","footer","header"]):e.decompose()
- (out/(str(r["index"])+".txt")).write_text(soup.get_text("\\n",strip=True))
-metas=[]
-for p in pathlib.Path("snapshots/2026/10/intake-audit-20261001").glob("*.html"):
- soup=BeautifulSoup(p.read_bytes(),"html.parser")
- metas.append({"index":int(p.stem),"meta":[str(m) for m in soup.find_all("meta") if any(w in str(m).lower() for w in ["date","time","published"])],"times":[x.get_text() for x in soup.find_all("time")]})
-(out/"dates.json").write_text(json.dumps(metas,ensure_ascii=False))
+ p=pathlib.Path(r["path"])
+ if p.suffix==".pdf": text="\n".join(page.extract_text() or "" for page in PdfReader(p).pages)
+ else:
+  soup=BeautifulSoup(p.read_bytes(),"html.parser")
+  for e in soup(["script","style","nav","header"]):e.decompose()
+  text=soup.get_text("\n",strip=True)
+ (out/(str(r["index"])+".txt")).write_text(text)
+import yaml
+(out/"registry-main.json").write_text(json.dumps([yaml.safe_load(p.read_text()) for p in pathlib.Path("registry/orgs").glob("*.yaml")],ensure_ascii=False))
