@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-27-direct-drive-tech-statement-direct-drive-route-interview",
+  "date": "2026-09-27",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "direct-drive-tech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "本末科技在采访中阐述直驱动力系统研发路线"
+  },
+  "summary": {
+    "zh": "本末科技在钛媒体采访中将自身定位为以直驱为核心的机器人技术平台，描述电机直接输出与磁场传力两条研究路线，以及材料和设计算法的作用。该条记录公开技术选择表态，不将对行业替代比例的预测或未具名上游支持写成已发生的合作。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用采访文章正文页明确标注的发布日期 2026-09-27 18:38；不使用 RSS 汇总发现日，也不推定访谈实际举行日。",
+  "evidence": [
+    {
+      "url": "https://www.tmtpost.com/8153463.html",
+      "publisher": "钛媒体",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/24.html"
+    }
+  ],
+  "corroboration": "single"
+}

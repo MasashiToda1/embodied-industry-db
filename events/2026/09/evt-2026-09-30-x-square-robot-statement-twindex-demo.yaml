@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-30-x-square-robot-statement-twindex-demo",
+  "date": "2026-09-30",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "x-square-robot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "自变量展示 TwinDEX 无本体数据长程操作演示"
+  },
+  "summary": {
+    "zh": "雷峰网报道自变量以 TwinDEX 可穿戴采集系统和对应三指末端执行器展示连续 24 个子动作的化学实验操作，并称训练仅使用数百条无本体示范。记录为该演示及训练条件的公开陈述，不推广为所有任务均可替代真机数据。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用 2026-09-30 报道公开日；文章称“最近”发布演示，未给出拍摄日或独立发布日。",
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/robot/S9YPlbN9tONrBqrI.html",
+      "publisher": "雷峰网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/10.html"
+    }
+  ],
+  "corroboration": "single"
+}

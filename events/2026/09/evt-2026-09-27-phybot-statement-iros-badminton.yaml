@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-09-27-phybot-statement-iros-badminton",
+  "date": "2026-09-27",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "phybot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "动易科技在 IROS 介绍人形羽毛球分层控制研究"
+  },
+  "summary": {
+    "zh": "动易科技在 IROS workshop 演讲中介绍高层 GRU 击球策略与低层全身控制的分工，并披露真人对拉四十余拍的演示。高层策略在仿真中通过零和多智能体强化学习自我博弈训练；本条记录团队研究陈述，不将演示视为量产产品能力。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/private/zoJ7chGiDi7IPHvN.html",
+      "publisher": "雷峰网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/7.html"
+    }
+  ],
+  "corroboration": "single"
+}

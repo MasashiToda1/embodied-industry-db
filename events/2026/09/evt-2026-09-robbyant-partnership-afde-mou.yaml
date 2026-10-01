@@ -1,0 +1,40 @@
+{
+  "id": "evt-2026-09-robbyant-partnership-afde-mou",
+  "date": "2026-09",
+  "date_precision": "month",
+  "type": "partnership",
+  "orgs": [
+    {
+      "id": "robbyant",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "蚂蚁灵波与阿拉伯数字经济联盟签署合作备忘录"
+  },
+  "summary": {
+    "zh": "双方在全球数字贸易博览会配套对接活动上签署框架合作备忘录，合作方向包括中东部署、本地化、概念验证及数据训练协作。备忘录约定的是合作方向，不代表所列场景均已完成商业部署；两篇雷峰网稿件属于同一来源。"
+  },
+  "counterparties": [
+    "阿拉伯数字经济联盟（AFDE）"
+  ],
+  "date_basis": "derived",
+  "date_as_stated": "报道以“近日”描述数贸会期间签约；仅定位至 2026 年 9 月，不把转载日作为签约日。",
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/industrynews/ieKrThrdXB840uPe.html",
+      "publisher": "雷峰网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/17.html"
+    },
+    {
+      "url": "https://www.leiphone.com/category/industrynews/swRASiuHGdPbjWEY.html",
+      "publisher": "雷峰网",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/18.html"
+    }
+  ],
+  "corroboration": "single"
+}

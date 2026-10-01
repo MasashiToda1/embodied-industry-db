@@ -1,0 +1,31 @@
+{
+  "id": "evt-2026-09-20-engineai-deployment-rek-teleop-demonstration",
+  "date": "2026-09-20",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "engineai",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "众擎 T800 在 REK 赛事进行遥控人机格斗演示"
+  },
+  "summary": {
+    "zh": "IT之家报道美国旧金山 REK 赛事中的 T800 人机对战。原文明确动作由操作员通过 VR 设备和动作控制器远程操控，机器人负责动态平衡与姿态校正；不将其记为自主 AI 格斗能力。"
+  },
+  "counterparties": [
+    "REK 机器人格斗赛事"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.ithome.com/1/006/596.htm",
+      "publisher": "IT之家",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/56.html"
+    }
+  ],
+  "corroboration": "single"
+}
