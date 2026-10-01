@@ -3,16 +3,19 @@
   "names": {
     "zh": "苇熠科技",
     "aliases": [
-      "上海苇熠科技"
-    ]
+      "上海苇熠科技",
+      "上海苇熠科技有限公司",
+      "WAYBOT"
+    ],
+    "en": "WayRobotics"
   },
   "status": "active",
   "layers": [
     "components"
   ],
-  "description": "提供人形机器人关节模组、力控双臂与双臂控制器。",
+  "description": "研发与提供面向人形机器人等应用的核心运动部件，产品包括行星、谐波、摆线关节模组及人形力控双臂，并提供具身智能本体集成方案。",
   "accounts": {
-    "site": "http://www.wayebot.com/"
+    "site": "https://www.waybot.org/"
   },
   "sources": [
     {
@@ -28,6 +31,22 @@
       "retrieved": "2026-10-01",
       "snapshot": "snapshots/2026/10/intake-primary-20261001/21.html",
       "note": "官网明确机器人部件或具身开发工具链定位。"
+    },
+    {
+      "url": "https://www.waybot.org/",
+      "tier": "official",
+      "retrieved": "2026-10-02",
+      "snapshot": "snapshots/2026/10/waybot-20261002/waybot-home.html",
+      "note": "官网页面明确上海苇熠科技有限公司、产品矩阵及具身智能本体集成方案；与已有 wayebot 主体为同一公司，原官网来源保留。"
+    },
+    {
+      "url": "https://www.waybot.org/sys-nd/11.html",
+      "publisher": "苇熠科技",
+      "tier": "official",
+      "retrieved": "2026-10-02",
+      "snapshot": "snapshots/2026/10/waybot-20261002/waybot-news11.html",
+      "note": "官网融资稿明确公司成立于 2024 年；融资领投方的前后表述不一致，事件中保留说明。"
     }
-  ]
+  ],
+  "founded": 2024
 }
