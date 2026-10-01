@@ -1,0 +1,143 @@
+[
+  {
+    "index": 0,
+    "url": "https://www.rysenbot.com/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+  },
+  {
+    "index": 1,
+    "url": "https://docs.rysenbot.com/apex-hand",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+  },
+  {
+    "index": 2,
+    "url": "https://www.synapath.com/",
+    "status": 200,
+    "final_url": "https://www.synapath.com/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/2.html",
+    "bytes": 454
+  },
+  {
+    "index": 3,
+    "url": "https://www.sharpa.com/",
+    "status": 200,
+    "final_url": "https://www.sharpa.com/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/3.html",
+    "bytes": 273408
+  },
+  {
+    "index": 4,
+    "url": "https://www.zeroth0.com/zh/pages/about-us-our-identity",
+    "status": 200,
+    "final_url": "https://www.zeroth0.com/zh/pages/about-us-our-identity",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/4.html",
+    "bytes": 453233
+  },
+  {
+    "index": 5,
+    "url": "https://www.wayebot.com/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.wayebot.com'. (_ssl.c:1016)>"
+  },
+  {
+    "index": 6,
+    "url": "https://www.maniformer.ai/pages/mego",
+    "status": 200,
+    "final_url": "https://www.maniformer.ai/pages/mego",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/6.html",
+    "bytes": 57650
+  },
+  {
+    "index": 7,
+    "url": "https://knowinai.com/tech.html",
+    "status": 200,
+    "final_url": "https://knowinai.com/tech.html",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/7.html",
+    "bytes": 143261
+  },
+  {
+    "index": 8,
+    "url": "https://github.com/RLinf/RLark",
+    "status": 200,
+    "final_url": "https://github.com/RLinf/RLark",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/8.html",
+    "bytes": 345202
+  },
+  {
+    "index": 9,
+    "url": "https://docs.axisrobotics.ai/",
+    "status": 200,
+    "final_url": "https://docs.axisrobotics.ai/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/9.html",
+    "bytes": 491198
+  },
+  {
+    "index": 10,
+    "url": "https://ekarobotics.com/",
+    "status": 200,
+    "final_url": "https://ekarobotics.com/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/10.html",
+    "bytes": 147002
+  },
+  {
+    "index": 11,
+    "url": "https://mate-robot.cn/about/",
+    "status": 200,
+    "final_url": "https://mate-robot.cn/about/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/11.html",
+    "bytes": 15281
+  },
+  {
+    "index": 12,
+    "url": "https://menlo.ai/handbook/problem",
+    "status": 200,
+    "final_url": "https://menlo.ai/handbook/problem",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/12.html",
+    "bytes": 84470
+  },
+  {
+    "index": 13,
+    "url": "https://www.cvte.com/product/quadrupedrobot",
+    "status": 200,
+    "final_url": "https://www.cvte.com/product/quadrupedrobot",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/13.html",
+    "bytes": 134798
+  },
+  {
+    "index": 14,
+    "url": "https://www.encos.cn/",
+    "status": 200,
+    "final_url": "https://www.encos.cn/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/14.html",
+    "bytes": 1331
+  },
+  {
+    "index": 15,
+    "url": "https://menlo.ai/",
+    "status": 200,
+    "final_url": "https://menlo.ai/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/15.html",
+    "bytes": 157878
+  },
+  {
+    "index": 16,
+    "url": "https://knowinai.com/",
+    "status": 200,
+    "final_url": "https://knowinai.com/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/16.html",
+    "bytes": 9440
+  }
+]

@@ -1,0 +1,65 @@
+Menlo Research\nBuy Asimov\nMeet Asimov\nThe most developer-friendly humanoid in the world.\nOrder\n$499 deposit\nTalk to Sales\nTrusted by\nindustry leaders\nThe easiest humanoid you will ever build on\nAsimov 1 is a humanoid you can build yourself. It stands 1.2 m tall, weighs 35 kg, and comes loaded with everything you need to operate a robot, all in one box. The moment it's on its feet, it's yours to program, mod, and build on.\nOrder\n$499 deposit\nLearn more\nThe easiest humanoid you will ever build on\nAsimov 1 is a humanoid you can build yourself. It stands 1.2 m tall, weighs 35 kg, and comes loaded with everything you need to operate a robot, all in one box. The moment it's on its feet, it's yours to program, mod, and build on.\nOrder\n$499 deposit\nLearn more\nTake Asimov for a spin\nDigital Asimov is a free, browser-based twin of the real robot. Hop in, run your code, and see exactly how it moves, no hardware required.\nTry it free\nTake Asimov for a spin\nDigital Asimov is a free, browser-based twin of the real robot. Hop in, run your code, and see exactly how it moves, no hardware required.\nTry it free\nThinking bigger?\nFor fleets, custom builds, and real-world deployments, our team will get you sorted.\nTalk to sales\nLoved by\ndevelopers, startups, and organizations\nworldwide\nAsimov v1
+
+An open-source DIY humanoid kit you can build at home.
+
+Price goal $15,000, available to pre-order for a refundable $499
+
+- 1.2m (3'11"), 35kg (77 lb), 25+2 DOF
+- Ships this summer with the full BOM, CAD files, sim environment, and a pre-trained walking policy, all on GitHub
+- 50–100 hours to assemble\nThe Humanoid Hub\n@\nTheHumanoidHub\nHumanoids are getting their first true kit.
+
+@asimovinc V1 is a 1.2 meter, 35 kilogram biped with 25 actuated joints, full mechanical and simulation files on GitHub, and a DIY kit targeting a 15,000 dollar build cost.
+
+Most fleets are locked inside proprietary programs; Asimov is handing the hardware to anyone willing to build, train, and experiment.\nRobotico\n@\nroboticomarket\nInitiatives like this are key to robot adoption at scale. Humanoid or not — the hardware that has the most user input is the one that will be best. That means inevitably, open source design will win. Just like what Meta did with the Open Compute Project.\nSaman Farid\n@\nsamanfarid\nWe are in 1st half of 2026 and we can now preorder diy-kit of robot and train it or build around it just insane ⁉️\nAnsh Bharti\n@\nBhartiAnsh2007\nThe ankle inversion/eversion is done in a really unique way — this is interesting.\nShigekazu Ishihara\n@\nshigekzishihara\nHumanoid look awesome! Would love to see flexibility and human walk mimicry. Keep pushing!\nViraj\n@\nvirajdeshwall\nThe most Real Steel moment in robotics right now, and almost nobody's talking about it.
+
+This is Asimov 1, suspended on a safety rig, being trained by someone sitting a few feet away — headset on, laptop open, feeding it movement data one session at a time.\nqqwzex\n@\nKrdTundra\n🙌 Yes, this! Open hardware, open software and models, and DIY kits are the only way to do robotics.\nPaige Bailey\n@\nDynamicWebPaige\nlooks gorgeous. nice touch with the gantry eyelets\nScott\n@\n_naturalfreq\nAsimov is looking really slick - amazing price for a full humanoid robot that's totally open source\nChris Paxton\n@\nchris_j_paxton\nThe next wave of robtoics is here and I am here for it\naryan\n@\naryan559552\nAsimov v1
+
+An open-source DIY humanoid kit you can build at home.
+
+Price goal $15,000, available to pre-order for a refundable $499
+
+- 1.2m (3'11"), 35kg (77 lb), 25+2 DOF
+- Ships this summer with the full BOM, CAD files, sim environment, and a pre-trained walking policy, all on GitHub
+- 50–100 hours to assemble\nThe Humanoid Hub\n@\nTheHumanoidHub\nHumanoids are getting their first true kit.
+
+@asimovinc V1 is a 1.2 meter, 35 kilogram biped with 25 actuated joints, full mechanical and simulation files on GitHub, and a DIY kit targeting a 15,000 dollar build cost.
+
+Most fleets are locked inside proprietary programs; Asimov is handing the hardware to anyone willing to build, train, and experiment.\nRobotico\n@\nroboticomarket\nInitiatives like this are key to robot adoption at scale. Humanoid or not — the hardware that has the most user input is the one that will be best. That means inevitably, open source design will win. Just like what Meta did with the Open Compute Project.\nSaman Farid\n@\nsamanfarid\nWe are in 1st half of 2026 and we can now preorder diy-kit of robot and train it or build around it just insane ⁉️\nAnsh Bharti\n@\nBhartiAnsh2007\nThe ankle inversion/eversion is done in a really unique way — this is interesting.\nShigekazu Ishihara\n@\nshigekzishihara\nHumanoid look awesome! Would love to see flexibility and human walk mimicry. Keep pushing!\nViraj\n@\nvirajdeshwall\nThe most Real Steel moment in robotics right now, and almost nobody's talking about it.
+
+This is Asimov 1, suspended on a safety rig, being trained by someone sitting a few feet away — headset on, laptop open, feeding it movement data one session at a time.\nqqwzex\n@\nKrdTundra\n🙌 Yes, this! Open hardware, open software and models, and DIY kits are the only way to do robotics.\nPaige Bailey\n@\nDynamicWebPaige\nlooks gorgeous. nice touch with the gantry eyelets\nScott\n@\n_naturalfreq\nAsimov is looking really slick - amazing price for a full humanoid robot that's totally open source\nChris Paxton\n@\nchris_j_paxton\nThe next wave of robtoics is here and I am here for it\naryan\n@\naryan559552\nAsimov v1 just got open-sourced. A 1.2m, 35kg humanoid with 25 DoF, full CAD, MuJoCo sim model, locomotion stack, and a $15k DIY kit. This might be the DeepSeek moment for humanoid robotics - and almost no one is talking about why it actually matters. 🧵\nKubaS\n@\nkubasienki\nSeven months in and its a real, walking humanoid with head and arms\nChris Paxton\n@\nchris_j_paxton\nasimov v1 is a signal shift in robotics. not a demo robot. a reference humanoid you can actually build.
+
+• open-source humanoid platform → full mechanical + simulation stack released
+• 1.2m biped robot → ~35kg, 25+ degrees of freedom
+• DIY or self-source → BOM + CAD + simulation available
+• real hardware stack → aluminum structure, modular actuators, ROS2-based control
+• simulation included → MuJoCo model for training and testing before hardware\nMustafa\n@\noprydai\nMay the 4th be with you - Happy Star Wars day!
+
+What if your robot could look like anything?\nGrafto\n@\ngraftoverflow\nMy 6 year keeps asking if we can build a robot together like we do Lego models...\nRichard Palethorpe\n@\njichiep\nAsimov is one the best references to start in Humanoids\nAkash\n@\nAkashChikkam\nThe next chapter of evolution may be engineered rather than inherited.
+
+Open-source robotics gives builders around the world a chance to help write it.\nEmerson S\n@\nEm_Nomadic\nShould I buy one
+
+What a flex this would be. Recording a video with one of these bad boys in the background
+
+Literally use it just as a prop\nnicksaraev\n@\nnicksaraev\nWhen I was young
+we only had blocks,
+Lincoln Logs and Erector Sets
+
+My how things have changed\nGoogleFu\n@\nPlanetarySeed\nSo we can now customize our humanoids appearance. Can't wait to see some amazing designs\nMartin\n@\nCurrenticAI\nAsimov v1 just got open-sourced. A 1.2m, 35kg humanoid with 25 DoF, full CAD, MuJoCo sim model, locomotion stack, and a $15k DIY kit. This might be the DeepSeek moment for humanoid robotics - and almost no one is talking about why it actually matters. 🧵\nKubaS\n@\nkubasienki\nSeven months in and its a real, walking humanoid with head and arms\nChris Paxton\n@\nchris_j_paxton\nasimov v1 is a signal shift in robotics. not a demo robot. a reference humanoid you can actually build.
+
+• open-source humanoid platform → full mechanical + simulation stack released
+• 1.2m biped robot → ~35kg, 25+ degrees of freedom
+• DIY or self-source → BOM + CAD + simulation available
+• real hardware stack → aluminum structure, modular actuators, ROS2-based control
+• simulation included → MuJoCo model for training and testing before hardware\nMustafa\n@\noprydai\nMay the 4th be with you - Happy Star Wars day!
+
+What if your robot could look like anything?\nGrafto\n@\ngraftoverflow\nMy 6 year keeps asking if we can build a robot together like we do Lego models...\nRichard Palethorpe\n@\njichiep\nAsimov is one the best references to start in Humanoids\nAkash\n@\nAkashChikkam\nThe next chapter of evolution may be engineered rather than inherited.
+
+Open-source robotics gives builders around the world a chance to help write it.\nEmerson S\n@\nEm_Nomadic\nShould I buy one
+
+What a flex this would be. Recording a video with one of these bad boys in the background
+
+Literally use it just as a prop\nnicksaraev\n@\nnicksaraev\nWhen I was young
+we only had blocks,
+Lincoln Logs and Erector Sets
+
+My how things have changed\nGoogleFu\n@\nPlanetarySeed\nSo we can now customize our humanoids appearance. Can't wait to see some amazing designs\nMartin\n@\nCurrenticAI\nWe are building\nAsimov in public\nDiscord\nGitHub\nDay\n95\nDay\n107\nDay\n119\nDay\n168\nDay\n169\nDay\n170\nDay\n199\nDay\n204\nDay\n211\nDay\n323\nDay\n95\nDay\n107\nDay\n119\nDay\n168\nDay\n169\nDay\n170\nDay\n199\nDay\n204\nDay\n211\nDay\n323\nJoin our team\nWe believe the next billion robots will multiply what humanity can build, reach, and become.\nIf that sounds like the problem you want to spend the next few years on, come find us.\nOpen roles\nHandbook\nWhat's happening\nRobots are more fun in person. We host demos, talks, and community nights\nacross Singapore, the Bay Area, and online.\nUpcoming\nSingapore AI & Robotics Demo Night (Oct 2026)\nOctober 13, 2026\nNational Library / Lee Kong Chian Reference Library, 100 Victoria St, Singapore 188064\nUpcoming\nMenlo Community Talk #22 (Online)\nOctober 9, 2026\nOnline\nUpcoming\nMenlo Community Talk #21 (Online)\nOctober 2, 2026\nOnline\nPast\nMenlo Community Talk #20 (Online)\nSeptember 25, 2026\nOnline\nPast\nMenlo Community Talk #19 (Online)\nSeptember 18, 2026\nOnline\nPast\nMenlo Community Talk #18 (Online)\nSeptember 11, 2026\nOnline\nPast\nSingapore AI & Robotics Demo Night (Sep 2026)\nSeptember 8, 2026\nNational Library / Lee Kong Chian Reference Library, 100 Victoria St, Singapore 188064\nPast\nMenlo Community Talk #17 (Online)\nSeptember 4, 2026\nOnline\nPast\nMenlo Community Talk #16 (Online)\nAugust 28, 2026\nOnline\nPast\nMenlo Community Talk #15 (Online)\nAugust 21, 2026\nOnline\nInterested in\nworking with us?
