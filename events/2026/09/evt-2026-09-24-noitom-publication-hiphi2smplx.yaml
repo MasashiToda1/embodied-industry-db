@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-24-noitom-publication-hiphi2smplx",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-24T08:58:59Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "noitom",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "诺亦腾创建 HiPHI BVH 转 SMPL-X 工具仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 说明工具将 HiPHI BVH 动捕转换为 SMPL-X 身体参数，可供 UMR 人形动作重定向使用。当前仅拟合 22 个身体关节，不拟合脸、眼和手指；SMPL-X 模型与姿态先验需另行取得。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/noitom-robotics/hiphi2smplx",
+      "publisher": "GitHub · noitom-robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-noitom-hiphi2smplx-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/noitom-robotics/hiphi2smplx/blob/main/README.md",
+      "publisher": "GitHub · noitom-robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-noitom-hiphi2smplx-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

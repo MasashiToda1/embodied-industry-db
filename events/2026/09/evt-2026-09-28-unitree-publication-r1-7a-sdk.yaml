@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-28-unitree-publication-r1-7a-sdk",
+  "date": "2026-09-28",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-28T11:51:38Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "unitree",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "宇树创建 R1 七自由度机械臂低层控制 SDK 仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 说明 SDK 通过 IM6014 串行总线控制 R1 七自由度机械臂，提供低层控制、停止、归零、目标位姿和关节校准工具，支持 aarch64 与 x86_64。该 SDK 与 UnifoLM-WLA 模型分别记录。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/unitreerobotics/r1-7a_sdk",
+      "publisher": "GitHub · unitreerobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-unitree-r1-7a-sdk-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/unitreerobotics/r1-7a_sdk/blob/main/README.md",
+      "publisher": "GitHub · unitreerobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-unitree-r1-7a-sdk-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

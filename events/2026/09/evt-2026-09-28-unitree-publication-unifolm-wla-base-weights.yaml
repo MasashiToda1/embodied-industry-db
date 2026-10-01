@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-28-unitree-publication-unifolm-wla-base-weights",
+  "date": "2026-09-28",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "unitree",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "宇树上传 UnifoLM-WLA-1.0-Base 权重"
+  },
+  "summary": {
+    "zh": "官方 Hugging Face 仓库已包含模型权重、配置及分词器文件，模型卡声明 Apache-2.0。当前模型卡未给出架构、训练数据或评测说明，本条不由模型名称推定这些技术属性。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方仓库权重上传提交的 UTC 日期；模型卡内容按 2026-10-01 核验，不将后续说明文字回溯为上传当天已存在。",
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base",
+      "publisher": "Hugging Face · unitreerobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/73.json"
+    },
+    {
+      "url": "https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base/raw/main/README.md",
+      "publisher": "Hugging Face · unitreerobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/93.md"
+    },
+    {
+      "url": "https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base/commits/main",
+      "publisher": "Hugging Face · unitreerobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/94.json"
+    }
+  ],
+  "corroboration": "single"
+}

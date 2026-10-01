@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-23-direct-drive-tech-publication-d1-langyi-sdk-demo",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-23T02:39:44Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "direct-drive-tech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "本末科技创建 D1 朗毅控制演示仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 提供 D1 朗毅控制示例的源码构建、启动及 arm64 Debian 安装包使用流程。来源未给出性能或客户验收指标，本条不补充此类断言。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/DDTRobot/d1_langyi_sdk_demo",
+      "publisher": "GitHub · DDTRobot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-direct-drive-tech-d1-langyi-sdk-demo-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/DDTRobot/d1_langyi_sdk_demo/blob/Branch_D1/README.md",
+      "publisher": "GitHub · DDTRobot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-direct-drive-tech-d1-langyi-sdk-demo-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

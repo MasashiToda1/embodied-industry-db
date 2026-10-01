@@ -1,0 +1,40 @@
+{
+  "id": "evt-2026-09-30-magiclab-publication-magic-w0",
+  "date": "2026-09-30",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "magiclab",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "魔法原子公开 Magic-W0 世界动作模型项目介绍"
+  },
+  "summary": {
+    "zh": "项目更新栏明确记载 9 月 30 日新增项目概览，描述结构化世界预测与机器人动作生成。核验时 README 明确代码和预训练权重仍待发布；本条只记录研究项目介绍，不认定源码或权重已开放。"
+  },
+  "axes": {
+    "model_form": [
+      "world-model"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/MagiclabRobotics/Magic-W0",
+      "publisher": "GitHub · MagiclabRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-magiclab-magic-w0-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/MagiclabRobotics/Magic-W0/blob/main/README.md",
+      "publisher": "GitHub · MagiclabRobotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-magiclab-magic-w0-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-18-d-robotics-publication-di-e2e-mot",
+  "date": "2026-09-18",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-18T11:35:19Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "d-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地瓜机器人创建端到端多目标跟踪工具仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 描述统一配置、模型注册与静态 ONNX 导出工作流，并明确当前为部分实现：Horizon/RDK 部署后端仍为未实现占位，部分移植模型未经上游指标复现。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/D-Robotics/di-e2e-mot",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-di-e2e-mot-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/D-Robotics/di-e2e-mot/blob/develop/README.md",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-di-e2e-mot-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-09-24-agibot-publication-sonic-for-a3",
+  "date": "2026-09-24",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-24T03:49:57Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "agibot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "智元创建 SONIC 全身控制 A3 适配仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 提供 A3 训练适配、MuJoCo sim2sim、ONNX/RKNN 与 C++ 部署流程。035 为实验标签，非产品版本；当前检查点不含 SMPL 或遥操编码器，仍需上游动作重定向，仿真通过不代表真机执行已获验证。"
+  },
+  "axes": {
+    "sim_stack": [
+      "mujoco"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/AgibotTech/sonic_for_a3",
+      "publisher": "GitHub · AgibotTech",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-agibot-sonic-for-a3-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/AgibotTech/sonic_for_a3/blob/main/README.md",
+      "publisher": "GitHub · AgibotTech",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-agibot-sonic-for-a3-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-09-29-d-robotics-publication-rdk-community-build",
+  "date": "2026-09-29",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "GitHub created_at=2026-09-29T01:54:54Z，按 UTC 记录仓库创建日期；功能描述以 2026-10-01 README 核验内容为准，不认定为创建当天已完成。",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "d-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地瓜机器人创建 RDK 社区项目展示仓库"
+  },
+  "summary": {
+    "zh": "核验时 README 将其定义为 RDK 开发者作品发现与展示中心，各参与者继续维护自己的代码仓库；本仓库收录活动说明、提交指南和作品索引。"
+  },
+  "evidence": [
+    {
+      "url": "https://api.github.com/repos/D-Robotics/RDK-Community-Build",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-rdk-community-build-meta-20261001.json"
+    },
+    {
+      "url": "https://github.com/D-Robotics/RDK-Community-Build/blob/main/README.md",
+      "publisher": "GitHub · D-Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/github-d-robotics-rdk-community-build-readme-20261001.md"
+    }
+  ],
+  "corroboration": "single"
+}
