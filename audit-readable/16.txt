@@ -1,0 +1,34 @@
+Lingxi X2 robots take on reception, product recommendations and customer handoffs at 100 stores
+Three-day livestream tests the machines through 10-hour shifts in real retail settings
+Chinese humanoid robot maker AgiBot (智元机器人) has deployed 100 Lingxi X2 robots across 100 stores of cookware maker ASD (爱仕达), moving its retail deployment from individual trials to a nationwide rollout.
+The robots began working at ASD stores in Wenzhou, Shanghai and Wuxi on September 28 as part of a three-day livestream, running from 10 a.m. to 8 p.m. each day.
+The machines handle customer reception, needs assessment, product explanations, recommendations and handoffs to human sales staff.
+Underpinned by an integrated tech stack
+In the stores, Lingxi X2 can recommend cookware within 30 seconds based on a customer’s household size, cooking habits and budget, according to AgiBot.
+More complicated requests are transferred to human sales staff, creating a human-robot service workflow. The half-sized humanoid is designed to fit into space-constrained retail environments includig aisles, shelves and checkout counters.
+AgiBot said its capabilities are supported by an integrated technology stack covering motion, interaction and task intelligence.
+The system allows the robots to adjust their behavior to changing conditions rather than simply follow preset scripts, the company said.
+Source: AgiBot’s official WeChat
+The partnership marks what AgiBot describes as the first 100-store-scale deployment of an embodied AI system in retail.
+Jiang Qingsong (姜青松), AgiBot’s president of marketing and services, previously said that “2026 would be a pivotal year for robots to move from development to deployment.”
+A big fan of livestreams
+The rollout is also part of AgiBot’s broader push to
+use long-duration livestreams to demonstrate robots operating in real-world environments
+.
+In June, its Genie G2 robots
+spent six days working on a production line
+at consumer electronics contract manufacturer Longcheer Technology’s factory in eastern China’s Nanchang, checking tablets with a reported 99.99% success rate.
+Source: AgiBot
+Eight robots followed the factory’s regular working hours and completed 17,625 tasks during the livestream, which attracted more than 20 million views, according to AgiBot.
+The company said the G2 had already been operating at the factory for more than 100 days before the livestream.
+In April, it completed an eight-hour continuous work session at the same site without any major incidents.
+AgiBot has also used livestreams to demonstrate endurance outdoors. In November 2025, its Expedition A2 walked 106 kilometers from Suzhou to Shanghai over 56 hours, with 15 battery swaps and no falls, according to the company.
+In August 2025, the robot completed a 24-hour outdoor walking livestream in Shanghai without remote-control intervention.
+The 100-store deployment
+From factories and outdoor environments to retail stores, AgiBot has increasingly used extended public demonstrations to show how its robots perform outside controlled laboratory settings.
+The 100-store deployment marks a shift from demonstrating individual robots to operating a fleet across a standardized commercial network.
+The bigger test will be whether humanoids can deliver consistent performance across different stores while fitting into existing workflows and working alongside human employees.
+AgiBot executive Jiang has said the competitive focus in embodied AI will eventually shift beyond hardware toward operations, services and ecosystems.
+Header image credit: AgiBot’s official WeChat
+Twitter
+Linkedin

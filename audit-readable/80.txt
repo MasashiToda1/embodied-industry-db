@@ -1,0 +1,40 @@
+---
+tags:
+- lerobot
+- robotics
+---
+
+# rb10_iros_double_0923
+
+Sources (merged with the pinned LeRobot merge, videos byte-identical):
+[rainbowrobotics/rb10_iros_double](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double)
+at revision `020afce7d1fa3061d74101f7d6fce0acbd102cc9` (197 episodes) and
+[rainbowrobotics/rb10_iros_double_2_trim](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_2_trim)
+at revision `9863c864` (136 episodes).
+
+Both `action` and `observation.state` are absolute RB10 end-effector poses:
+`[ee_x, ee_y, ee_z, ee_roll, ee_pitch, ee_yaw, gripper_0]` (float32).
+Position is in metres. Angles are radians, with
+`R = Rz(yaw) @ Ry(pitch) @ Rx(roll)` (extrinsic XYZ).
+Roll/yaw are canonical [-pi, pi]; pitch is [-pi/2, pi/2]. Euler branch
+wraps are possible; these are not sudden physical rotations. No unwrapping
+or relative-action conversion is applied.
+
+Frame: `link0` (base) → URDF `tcp`, with no additional gripper-tool offset.
+FK uses `rb10_1300e.urdf` (RB10), not the RB10-E model. Gripper values
+are unchanged (1=open). Original joint values remain in the source dataset,
+not in additional columns here.
+
+Videos, codec, episode/frame order, and timestamps are unchanged. Numeric
+pose statistics are recomputed; unchanged video statistics are retained.
+For the double-camera dataset, the source's already-rotated front video
+is preserved exactly; it is not rotated a second time.
+
+For later RB10-E inference, solve IK with `rb10_1300e_u.urdf` for the same
+base-to-tcp pose. This dataset does not establish physical reachability,
+collision safety, controller TCP alignment, or the calibration of the
+real RB10-E installation. URDF joint limits are generic +/-3.14 while
+recorded source angles can exceed them; do not silently clip FK inputs
+or assume these limits describe the real controller's permissible range.
+Model-only URDFs are included in `meta/kinematics`; referenced visual meshes
+are not bundled. See `meta/fk_conversion.json` for exact provenance.

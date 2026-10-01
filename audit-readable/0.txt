@@ -1,0 +1,225 @@
+Computer Science > Computer Vision and Pattern Recognition
+arXiv:2609.39601v1
+(cs)
+[Submitted on 30 Sep 2026]
+Title:
+GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives
+Authors:
+Qize Yu
+,
+Lianrui Fan
+,
+Boyu Chen
+,
+Jiaqi Liang
+,
+Xini Ding
+,
+Yue Chen
+,
+Zetian Song
+,
+Yuran Wang
+,
+Yi Zou
+,
+Kaixuan Wang
+,
+Tianxing Chen
+,
+Wenxuan Song
+,
+Bohan Zhou
+,
+Mingleyang Li
+,
+Siqiao Huang
+,
+Yuqi Ye
+,
+Caigao Jiang
+,
+Wei Wei
+,
+Ruihai Wu
+,
+Hang Zhang
+,
+Yixiao Ge
+,
+Shuchang Zhou
+,
+Shilong Liu
+,
+Xianming Liu
+,
+Ping Luo
+,
+Shiyu Huang
+View a PDF of the paper titled GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives, by Qize Yu and 25 other authors
+View PDF
+HTML (experimental)
+Abstract:
+Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. On RoboTwin 2.0, it outperforms every mainstream backbone we evaluate in all four out-of-distribution settings, by up to 24.8% relative to the strongest backbone. On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%. On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m. We systematically analyze GroundingPI's pretraining in scale and data composition. Downstream autonomous driving and robotic manipulation improve as the pretraining is scaled. Analyzing the data recipe across these 11 perceptual capabilities shows dense grounding's substantial benefits for both, and OCR's potential as a catalyst for perceptual learning. These results support grounding as a perceptual foundation, and dedicated perceptual pretraining as a promising direction for foundation models of physical intelligence.
+Comments:
+64 pages, including supplementary material. Project page:
+this https URL
+Code:
+this https URL
+Model:
+this https URL
+Subjects:
+Computer Vision and Pattern Recognition (cs.CV)
+; Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Robotics (cs.RO)
+ACM
+classes:
+I.2.10; I.2.6; I.2.9
+Cite as:
+arXiv:2609.39601
+[cs.CV]
+(or
+arXiv:2609.39601v1
+[cs.CV]
+for this version)
+https://doi.org/10.48550/arXiv.2609.39601
+Focus to learn more
+arXiv-issued DOI via DataCite (pending registration)
+Submission history
+From: Qize Yu [
+view email
+]
+[v1]
+Wed, 30 Sep 2026 12:20:54 UTC (13,146 KB)
+Full-text links:
+Access Paper:
+View a PDF of the paper titled GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives, by Qize Yu and 25 other authors
+View PDF
+HTML (experimental)
+TeX Source
+view license
+Current browse context:
+cs.CV
+< prev
+|
+next >
+new
+|
+recent
+|
+2026-09
+Change to browse by:
+cs
+cs.AI
+cs.LG
+cs.RO
+References & Citations
+NASA ADS
+Google Scholar
+Semantic Scholar
+export BibTeX citation
+Loading...
+BibTeX formatted citation
+×
+loading...
+Data provided by:
+Bookmark
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer
+(
+What is the Explorer?
+)
+Connected Papers Toggle
+Connected Papers
+(
+What is Connected Papers?
+)
+Litmaps Toggle
+Litmaps
+(
+What is Litmaps?
+)
+scite.ai Toggle
+scite Smart Citations
+(
+What are Smart Citations?
+)
+Code, Data, Media
+Code, Data and Media Associated with this Article
+alphaXiv Toggle
+alphaXiv
+(
+What is alphaXiv?
+)
+Links to Code Toggle
+CatalyzeX Code Finder for Papers
+(
+What is CatalyzeX?
+)
+DagsHub Toggle
+DagsHub
+(
+What is DagsHub?
+)
+GotitPub Toggle
+Gotit.pub
+(
+What is GotitPub?
+)
+Huggingface Toggle
+Hugging Face
+(
+What is Huggingface?
+)
+ScienceCast Toggle
+ScienceCast
+(
+What is ScienceCast?
+)
+Demos
+Demos
+Replicate Toggle
+Replicate
+(
+What is Replicate?
+)
+Spaces Toggle
+Hugging Face Spaces
+(
+What is Spaces?
+)
+Spaces Toggle
+TXYZ.AI
+(
+What is TXYZ.AI?
+)
+Related Papers
+Recommenders and Search Tools
+Link to Influence Flower
+Influence Flower
+(
+What are Influence Flowers?
+)
+Core recommender toggle
+CORE Recommender
+(
+What is CORE?
+)
+Author
+Venue
+Institution
+Topic
+About arXivLabs
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community?
+Learn more about arXivLabs
+.
+Which authors of this paper are endorsers?
+|
+Disable MathJax
+(
+What is MathJax?
+)

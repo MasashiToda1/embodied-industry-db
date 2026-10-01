@@ -1,0 +1,140 @@
+YAML Metadata
+			Warning:
+empty or missing yaml metadata in repo card
+Check out the
+documentation
+for more information.
+CogWAM — RoboDojo, 25-step horizon, 50k steps
+Released weights for the CogWAM recipe
+cogwam_robodojo_causal_dino_mot_h25_eventmem_dino_multilayer_50k_v1
+,
+taken at optimizer step 50,000.
+Contents
+File
+Size
+model.safetensors
+7.80 GiB
+2272 BF16 tensors: the framework state dict
+checkpoint_keys.json
+215 KiB
+key -> [dtype, shape]
+, for validating without loading weights
+dataset_statistics.json
+5 KiB
+action/state normalisation —
+the policy server cannot un-normalise actions without it
+inference_config.yaml
+the resolved configuration this checkpoint was trained with
+artifact_manifest.json
+sha256 of each file, model geometry, backbone requirements
+What is NOT here
+The two backbones are referenced, not bundled, because one of them may not be
+redistributed:
+Backbone
+Where to get it
+Licence
+RynnBrain1.1-2B
+Alibaba-DAMO-Academy
+on Hugging Face
+Apache-2.0
+DINOv3 ViT-B/16
+facebook/dinov3-vitb16-pretrain-lvd1689m
+Meta
+dinov3-license
+, gated
+— accept Meta's terms yourself
+The DINO teacher is also genuinely absent from the state dict: it is attached
+outside the module tree and its normalisation buffers are non-persistent, so it
+never enters
+state_dict()
+.
+Loading
+export
+COGWAM_BASE_VLM=/models/rynnbrain1.1-2B
+export
+COGWAM_DINO_MODEL=/models/dinov3-vitb16
+
+python tools/verify_checkpoint.py --artifact <this directory> --build
+--build
+constructs the framework from
+inference_config.yaml
+and loads with
+strict=True
+. No key remapping is needed or performed: checkpoint key prefixes
+come from
+nn.Module
+attribute names, not from the framework class name.
+To serve it:
+COGWAM_ARTIFACT_DIR=<this directory> NUM_SERVERS=8 bash scripts/serve_policy.sh
+Geometry
+Tensors / dtype
+2272 / BF16
+Prefixes
+action_model.
+1652,
+qwen_vl_interface.
+618,
+world_plan_queries.embedding
+,
+action_plan_queries.embedding
+Action horizon / dim
+25 / 14
+World queries
+16
+Planner hidden
+2048
+Vocabulary
+248081 (includes
+<WORLD_PLAN>
+,
+<ACTION_PLAN>
+,
+<KEEP>
+,
+<UPDATE>
+)
+MoT
+30 layers; world 512, action 1024
+DINO embedding
+768
+Two digests are recorded in the manifest and they answer different questions:
+model.key_inventory_sha256
+covers names/shapes/dtypes, so two runs of the same
+recipe share it; only
+files["model.safetensors"].sha256
+identifies these
+particular weights.
+Evaluation
+Run against RoboDojo 0.2.0 at commit
+9b4cc885e8f530ed3ab14a30a312ae70242771c4
+. Protocol, chunk/replan semantics and
+the event-memory state machine are documented in the repository under
+docs/evaluation.md
+. Published results are not included with this release.
+Licence
+MIT for the code; these weights are released under the same terms. The two
+backbone models carry their own licences, listed above.
+Downloads last month
+-
+Downloads are not tracked for this model.
+How to track
+Safetensors
+Model size
+4B params
+Tensor type
+BF16
+·
+Files info
+Inference Providers
+NEW
+This model isn't deployed by any Inference Provider.
+🙋
+Ask for provider support
+Collection including
+HorizonRobotics/CogWAM
+HWM
+•
+2 items
+•
+Updated
+about 22 hours ago

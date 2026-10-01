@@ -1,0 +1,579 @@
+Dataset Viewer
+Auto-converted
+to Parquet
+API
+Embed
+Duplicate
+Data Studio
+Subset (1)
+assets
+·
+74.4k rows
+assets (74.4k rows)
+Split (1)
+train
+·
+74.4k rows
+train (74.4k rows)
+SQL
+Console
+path
+string
+lengths
+21
+236
+type
+string
+classes
+1
+				value
+size
+int64
+67
+379M
+sha256
+string
+lengths
+64
+64
+art_assets/materials/glasses/Clear_Glass.mdl
+file
+1,220
+3f6b362ecd8071af2def8ff5078a5be2454403eafe68b497b7b35c01ab1c0f01
+art_assets/materials/metals/Copper.mdl
+file
+2,009
+49d53bf970670b96dde0657182c80d2f6952b2eac2f99af89d1ed1668f97a174
+art_assets/materials/metals/Copper/Copper_BaseColor.png
+file
+16,905
+e405f5511f0d35810d1b6faa5b75291f6d729b79271fc20a8a5b947bb18144e1
+art_assets/materials/metals/Copper/Copper_N.png
+file
+2,272,406
+8221595d4a575d1e95f059288ce11f1bd0bc7c107ad77bbe482ae7c717816c65
+art_assets/materials/metals/Copper/Copper_ORM.png
+file
+995,872
+65a9b4ed3c7a04dec11410dc7b98a14ebac34567338d44bcae3a1208d07b6298
+art_assets/materials/metals/Steel_Carbon.mdl
+file
+1,793
+22e7fc7b49c15ba8ea2b51d2d8a743ab674465ae9a203f75c8ab9ee6d3267393
+art_assets/materials/metals/Steel_Carbon/Steel_Carbon_BaseColor.png
+file
+303,344
+d39c88f00286497145a10dad5109df32185c486f4e5d99aa3eb01d93520e5829
+art_assets/materials/metals/Steel_Carbon/Steel_Carbon_N.png
+file
+739,981
+43b9cbf7619fdef4877acd35bcb0a50f6e896a7256e7fca0bede0d0b6c71d155
+art_assets/materials/metals/Steel_Carbon/Steel_Carbon_ORM.png
+file
+903,663
+8a5d0cd6e9021b2089ac5fe879a1b98d90e73ed8c49aa8e1e9aae311fc04e84a
+art_assets/materials/metals/Steel_Stainless.mdl
+file
+2,073
+d56116ad23f20d5845b8f9388cd720bab7858f17d9e63936b6edf3fc52f8e646
+art_assets/materials/metals/Steel_Stainless/Steel_Stainless_BaseColor.png
+file
+16,902
+3f8b3b576ce734630625a64faf6266faf411714a59c42c7af395dc0826e52151
+art_assets/materials/metals/Steel_Stainless/Steel_Stainless_N.png
+file
+2,272,406
+8221595d4a575d1e95f059288ce11f1bd0bc7c107ad77bbe482ae7c717816c65
+art_assets/materials/metals/Steel_Stainless/Steel_Stainless_ORM.png
+file
+779,615
+a300aae59deb440b90e73f4ab9e6f0fc2da41ba405442ff988e681df921f2a4e
+art_assets/materials/plastics/Plastic.mdl
+file
+1,511
+eec05fc1f50a27f5fd3f05ec5464c3ca41537d3c476b4325275e234bb77f4429
+art_assets/materials/plastics/Plastic_ABS.mdl
+file
+1,522
+996caa235e62010e15fcf8c820ffdf502a3c276fc416d3f95298e325adf44616
+art_assets/materials/plastics/Plastic_Acrylic.mdl
+file
+571
+7580631ef7e211f31c7fd67083943d20946689453e7a4f0eb5746a1d34abdf5b
+art_assets/materials/plastics/Plastic_Clear.mdl
+file
+570
+ce2e49eec7bac31894bf6f167bbedc2b0a33072740f9eb82f156bd9183d88798
+art_assets/materials/plastics/Rubber_Smooth.mdl
+file
+1,558
+d5c2e1cae0ea1aea77d47e0b9f41c0e3e857a76537c5f6469dd597f1234f3d2b
+art_assets/materials/plastics/Rubber_Smooth/Rubber_Smooth_Normal.png
+file
+283,173
+18412030dc1b672fc53a32881e3cc707823e9832d133eaa7619859d0f60a3e48
+art_assets/materials/stone/Marble_Tile_12.mdl
+file
+2,065
+4ac8f4ae0d383869e1c281abf059c2c22474c3f2e28f2e5f0bf0314b324bde46
+art_assets/materials/stone/Marble_Tile_12/Marble_Tile_12_BaseColor.png
+file
+858,637
+4c787c8ac2f967542901915df75620f8445246592e2de43356da5f2d2b90bd97
+art_assets/materials/stone/Marble_Tile_12/Marble_Tile_12_N.png
+file
+913,367
+f8c7aa07ead1aa4a73c8dd97cb5697c5c675bdb8f0ac21f31a1e5defea602615
+art_assets/materials/stone/Marble_Tile_12/Marble_Tile_12_ORM.png
+file
+698,320
+7b2710c700923680b6a14a3ce9978c5c9e6471023627ff4a956e76b1914ae194
+art_assets/materials/water/water_blue.mdl
+file
+15,569
+ed1c1d7cb11de7a0a72211583536102689d0ffc00ef7fda44dc3e963061a8c45
+art_assets/materials/wood/Bamboo.mdl
+file
+2,009
+24cd5ceaabf892378ee045d2a47b031af522e73b46ca095a9ed81eae18cee371
+art_assets/materials/wood/Bamboo/Bamboo_BaseColor.png
+file
+1,688,699
+1b99d2989052da2848b8ef2dd05a50854c938e62e5c666bc0510626d8e5fda1c
+art_assets/materials/wood/Bamboo/Bamboo_N.png
+file
+1,486,668
+ae7246dd52d4aae04bbc2d5946123a40b13ba6c506268c70faee2c58db8d80f3
+art_assets/materials/wood/Bamboo/Bamboo_ORM.png
+file
+550,125
+fa9b60387e8b0b965b541c9b1f3bd48b90b801d0cbaef7ebacb8d5c892e5099c
+art_assets/materials/wood/Birch.mdl
+file
+2,003
+3aa146766d12295773f19daefbc4e67541d25da063023fe6f9c45cb098b59bd3
+art_assets/materials/wood/Birch/Birch_BaseColor.png
+file
+4,482,356
+797e72d5cff567fed1ccb36d3ad447d631a12b67419f0e2f5ae1d0b1e00c6b14
+art_assets/materials/wood/Birch/Birch_N.png
+file
+3,587,578
+34dbe80f021d59d0a4dfa6fe39d0320b9d6300840cdab6589e6053619f1c70f3
+art_assets/materials/wood/Birch/Birch_ORM.png
+file
+303,591
+8bf7ee628a8a9e7dbd01ff8778ea6cf19b51e4e75b6b90295f8d1204598a57b6
+art_assets/materials/wood/Mahogany.mdl
+file
+2,025
+9968b10a1683f46c90e675c052957d50e91ee9b8b21a987affccbc22529d2abe
+art_assets/materials/wood/Oak.mdl
+file
+1,989
+4dd26cf073769c325b886561d157d7405753693f2ac6912db6fc862d229190b3
+art_assets/materials/wood/Oak/Oak_BaseColor.jpg
+file
+223,784
+2d46226c95a9596ca463c833ce1bba2dc85a7f39d22ba984e90ff237e18948e2
+art_assets/materials/wood/Oak/Oak_BaseColor.png
+file
+5,383,545
+58648d35e3b8a9d953948ce0394b56aa95184e1f88b5abab139e7a32a2b44043
+art_assets/materials/wood/Oak/Oak_N.jpg
+file
+29,448
+1a127eb017439f96511985978d5a13dab4f56efd3deff238561eee8600ec20a4
+art_assets/materials/wood/Oak/Oak_N.png
+file
+2,939,899
+4538148c60da7c94d88d656bbc62106a16bd652052bc196cab56ee6d9e01c249
+art_assets/materials/wood/Oak/Oak_ORM.jpg
+file
+80,537
+caf71fd5a1f91b499e9456e7717d954c4ecfa73b12f05fee34a7127174df5580
+art_assets/materials/wood/Oak/Oak_ORM.png
+file
+1,171,706
+754ccca3176ccb3bbeb648af574c57eb5be0b876c579faaf45f9e8a09f71ec39
+art_assets/models/objects/balance/balance_a.usd
+file
+13,393
+fa954e014ab3357c0e8d1fcde4ee55f383e07cbe619c133b065daaf99bf25c6d
+art_assets/models/objects/balance/balance_a_base.usd
+file
+660,590
+182638e8d74ad185c56c46825932bbc3e14055f669ca1cad48796cd834c52a08
+art_assets/models/objects/balance/balance_a_plates.usd
+file
+765,120
+9c49bf66ab39a178043937cded7c24ec2094ecd73f7c4b81931c857eddc3ddeb
+art_assets/models/objects/balance/balance_a_topbeam.usd
+file
+216,062
+e06245f661509e698705c15ab87b861bee9c8149457c6204f2c541a8b6312f99
+art_assets/models/objects/balance/balance_a_topbeamother.usd
+file
+385,050
+d4f06774ca6b0e4c27115ffdbd0dc96af33adc2f3171f7a5af0b092b3d9d88c4
+art_assets/models/objects/balance/textures/weight_a_bc.jpg
+file
+427,401
+42c72828c1eef2f430972aea307f8fefb58d3bdc0feb7a388e05ad67717a838e
+art_assets/models/objects/balance/textures/weight_a_n.jpg
+file
+371,780
+ea8c12a8337857f6844a6172e5bf5f89c31b7d2b8727f0dac8d965bd047b6d2a
+art_assets/models/objects/basket/basket_b.usd
+file
+2,017,852
+831c732ad773fc49bc4abcf2ca2b7f4b0ff3f54bb8a721fcd599c4b31733662a
+art_assets/models/objects/basket/basket_c.usd
+file
+2,037,609
+237456630b08b6ea9ac3b22c3ec6dcd3fcc87847dcb02867c3e53c8c67d28582
+art_assets/models/objects/basket/basket_d.usd
+file
+2,037,703
+945e6c9e670a89b36b4151e358e529812eceda8f6d8741b865b150bbb31cc625
+art_assets/models/objects/basket/basket_e.usd
+file
+2,037,703
+b0d19937de8317002434a6bc3911bf35a499b6bbeb8dff09adf46970f4112973
+art_assets/models/objects/basket/textures/basket_b_bc.jpg
+file
+1,526,097
+83ac1021fbb17adbbc8ffa0ad5a71d64881a4205fd0dd62ffc308621133efe50
+art_assets/models/objects/basket/textures/basket_b_n.png
+file
+864,366
+eae2c114fd72dd2239f9995f9519bb8dd41bf519c2ea5c74784fae02ea288c3d
+art_assets/models/objects/basket/textures/basket_b_orm.jpg
+file
+990,378
+a4edbafbb182fd8b2b67c6de38aea05c88128bb498061711b18238c1919ad9db
+art_assets/models/objects/basket/textures/basket_c_bc.jpg
+file
+497,341
+2a802cbdce35c6e6297a6eab892793fdbfe30ce864cc7f5f91afb263c356bd0c
+art_assets/models/objects/basket/textures/basket_c_text.jpg
+file
+51,023
+1e3ef65999f2ac92535743c0fcfb6d5766d8341d3d339516e98d47e71174d8cd
+art_assets/models/objects/basket/textures/basket_e_bc.jpg
+file
+831,108
+f4b2a5768f6fd24f5047aea1eeb928448e4a112bdc8db0a4de1679ffea73fa53
+art_assets/models/objects/block/block_a.usd
+file
+26,229
+35a2eeeb6653eb9f647ccf3a6fc464af5ddec8c59a79e275a6492b988226487a
+art_assets/models/objects/block/block_alphabet_2.usd
+file
+21,569
+fcdc273dd682a1545178b4c7bd972745b6e41ed08c1ff7261193dfe820953960
+art_assets/models/objects/block/block_alphabet_a.usd
+file
+24,889
+75a02e3ad76688e7995381fbf4c24a81b83c782254b76d15f2deb1bc6a34c67a
+art_assets/models/objects/block/block_alphabet_b.usd
+file
+21,544
+558cbd26ff0695bd6ec44cc2d4396232dcf6bc0975e2b3ec5f461b9dc25b0084
+art_assets/models/objects/block/block_alphabet_c.usd
+file
+21,569
+dead784da6ee4eb53c8d2572f7770c58c51854b503be17af9062584a0272977b
+art_assets/models/objects/block/block_alphabet_d.usd
+file
+21,569
+d8d18f4fab49772fcc5b134038c78dc76c4d1e2b9ef4bb1724158243c01a54ed
+art_assets/models/objects/block/block_alphabet_e.usd
+file
+21,569
+7e80e914baecafd42d8b0815130014227a8e6aac489611e8ee5b0acbdfb54ef9
+art_assets/models/objects/block/block_alphabet_f.usd
+file
+21,569
+398b2fd56b6ce5b3aea1087e40729b22fc0f240829327fe1732626bd4205c938
+art_assets/models/objects/block/block_alphabet_g.usd
+file
+21,555
+eb2bfd60f0079612682933244d9aaea99872ec3b94eb173951bac2bba95c1564
+art_assets/models/objects/block/block_alphabet_h.usd
+file
+21,569
+0689426ee5b86a9c1385ed26ae6c9e5f7ed3e61d7ae20d0065ebd5cba0ff3122
+art_assets/models/objects/block/block_alphabet_i.usd
+file
+21,560
+38cc7e3a200b47693b73ebc1e3060aa740f99f66113c145af6d9deade4e3770d
+art_assets/models/objects/block/block_alphabet_j.usd
+file
+21,569
+be7fd85c35f5dbdb423a54b1910b6b3276a05acea929aab5ab27fe031b8d14f2
+art_assets/models/objects/block/block_alphabet_k.usd
+file
+21,569
+6749c60d0134d52b9595da8c0da1bdb5f4278721a0c2aac89519d41e08bce325
+art_assets/models/objects/block/block_alphabet_l.usd
+file
+21,569
+763e26f7212ed30b43869b59ff742e713b8cbab5a4dc63dc350a1192cf116975
+art_assets/models/objects/block/block_alphabet_m.usd
+file
+21,555
+3d66a2f6352060a9a4c11cf744dc08f91aea56c82146ece1719917f97a7723ae
+art_assets/models/objects/block/block_alphabet_n.usd
+file
+23,294
+3a13881dbdeca94351a3d54c85f2696d469f392f07b0421f367ac3bf8a369924
+art_assets/models/objects/block/block_alphabet_o.usd
+file
+21,630
+585478ca8f4d93ab9c4d68035f508f6183d4d8fa3e38e4b7d9548a39dd90646e
+art_assets/models/objects/block/block_alphabet_p.usd
+file
+21,619
+49858e460b19334245671edabad8ba58b30398d169cc4162e7351f296bd79382
+art_assets/models/objects/block/block_alphabet_q.usd
+file
+21,619
+4257d4cb0c8c5d9cf605443ac96181348af87a06b0c898783a5d1548138ef1c4
+art_assets/models/objects/block/block_alphabet_r.usd
+file
+21,619
+af430f485e8268860f45b1db3df90cd2ccc31c447eff82141d9eeb64e8d3e352
+art_assets/models/objects/block/block_alphabet_s.usd
+file
+21,605
+c5c15dd1fa1ef8aae2d438f0bc61788217171b195d466e821416e073d74f1fb5
+art_assets/models/objects/block/block_alphabet_t.usd
+file
+21,619
+66ea1fb6a14781f3db3ea64c16b0dfa62e69545de658685b0cb0b4349c7c4f7b
+art_assets/models/objects/block/block_alphabet_u.usd
+file
+21,619
+076660708c744a4dec9da93132d418ac8846b099e16cdb85559c8df2b1306a1d
+art_assets/models/objects/block/block_alphabet_v.usd
+file
+21,607
+235d882159cfd79dbfd10a102893a9d91cab11336171abcb7edfb309368c2320
+art_assets/models/objects/block/block_alphabet_w.usd
+file
+21,618
+45ce2140580b15e44ee7804a5383b8a90f086eb107253e4f59928f4909f058cb
+art_assets/models/objects/block/block_alphabet_x.usd
+file
+21,619
+ab486efb81a2363f1781b6fbb03af2fb37ab456241cbe07c05184adae63f3e05
+art_assets/models/objects/block/block_alphabet_y.usd
+file
+21,619
+504df5f33ff00d76190e4e8c1f349fc16c9b6d45320feb3d020da7b91d14d3e7
+art_assets/models/objects/block/block_alphabet_z.usd
+file
+21,619
+e88d973afbb6d7aeef0b99e7cbabe554ea9c2ca3adb7645db6057e176f4c7f3c
+art_assets/models/objects/block/textures/block_alphabet.jpg
+file
+249,042
+96f8f81a5d4451654b49d92e38d263d962192db7ddff666d88f1bb9b5508ec14
+art_assets/models/objects/bluetooth_earphone/bluetooth_earphone_a.usd
+file
+532,234
+1f4e89f286bc21b5745798d2df3393445effa09d4a8b01fc45a263d1f7e3493d
+art_assets/models/objects/bluetooth_earphone/bluetooth_earphone_b.usd
+file
+532,218
+769b035f1021d048c3f58791b648b897b406df9d21272840d8e51d34f31db66d
+art_assets/models/objects/bluetooth_earphone/bluetooth_earphone_c.usd
+file
+532,218
+b179bf5db2658a19f45ebea2e5d19abd4071a3f1dac482dd014ddd88eaaaa3e1
+art_assets/models/objects/book/book_b.usd
+file
+26,077
+da988ba8a1f5b30124a956210bc0d6bdc0aed15b4fba3254845c37c874ef8034
+art_assets/models/objects/book/book_c.usd
+file
+24,813
+0acf9620b87a3ad400e9bde07e6d37becfe58f3f5963774febcd9864ccbdf6b0
+art_assets/models/objects/book/book_d.usd
+file
+22,933
+24c53dfbff6a196e7bdb3ec3ebc45d0e85a991e15745db2f8a2c89c1010ae2ec
+art_assets/models/objects/book/book_e.usd
+file
+22,918
+20c59e4229f9b15be86167242f95d2dfd06958824b5aac3c491677c2b0a4ce08
+art_assets/models/objects/book/book_f.usd
+file
+29,099
+f2c36e043667acac9c73160004f3f3dba20a16d8e51d40e94fbc6f0f7e425ac1
+art_assets/models/objects/book/textures/book_b_bc.jpg
+file
+1,165,272
+9c20f6056e7a20e5ae43abab7cc714fb5ca8690ae94f585aaadf62f6676030a9
+art_assets/models/objects/book/textures/book_base.jpg
+file
+278,157
+70680909c523db50a009c0b54370dbc32bd8d51f07a1fc22da47cfabc0e69e0f
+art_assets/models/objects/book/textures/book_c_bc.jpg
+file
+1,356,785
+272b37d83f27f0cdaae69a2553c54c4d816e04a76ab8530453e75b79d0ad91ef
+art_assets/models/objects/book/textures/book_d_bc.jpg
+file
+566,017
+10e4293ac28293f6d075c490552006eed38a90d717318b66b2606055eebea0c6
+art_assets/models/objects/book/textures/book_e_bc.jpg
+file
+1,000,406
+390bcff765b5c5dda002c3df2afbcd6b379a790f1a4de61052091ab37133a132
+art_assets/models/objects/book/textures/book_f_bc.jpg
+file
+621,129
+10fdc006582390be573a747dbd8a1eeba8ed1445194a2a04d007d2efd00c42ac
+End of preview.
+Expand
+in
+Data Studio
+X2Real Simulation Assets
+This repository distributes a versioned snapshot of simulation assets used by X2Real ID evaluation and local simulation workloads. It contains robot and object models, indoor scenes, materials, textures, lighting resources, grasp labels, and task asset catalogs and pools.
+This repository contains static simulation assets for X2Real, not LeRobot episodes, observations, actions, videos, or trajectories. Simulator code, task definitions, control logic, and policy weights are provided separately.
+Restored asset tree
+The payload inventory contains 74,423 files:
+Directory
+Files
+Contents
+navigation/
+70,359
+3DSceneData
+scenes, USD scenes and objects, textures, maps, and lighting; about 34.44 GB
+benchmark/
+3,455
+Evaluation objects, scene backgrounds, and HDRI lighting; about 8.81 GB
+art_assets/
+329
+Models, scenes, materials, URDF, and STL resources
+grasp_labels/
+196
+Object grasp-label arrays (
+.npy
+)
+robots/
+45
+Franka and ARX R5 USD models and related materials
+simready/
+4
+EX001 robot USD versions and sensor USD configuration
+manipulation/
+12
+Task object categories and attribute JSON files
+objects/
+11
+Brick, paper, and other USD objects and textures
+pools/
+11
+Task sampling pools for bottles, dishes, fruit baskets, drawers, and mobile manipulation
+render_settings/
+1
+green_booth
+render settings
+The main formats are USD/USDA, PNG/JPG, EXR, MDL, JSON, NPY, and a small number of URDF, STL, GLB, PGM, and YAML files.
+Evaluation coverage
+The snapshot covers
+5 boards and 73 unique ID cases
+:
+Board
+Setting
+Cases
+artixon_arm6a_tabletop
+ArtiXon Arm-6A tabletop manipulation
+38
+artixon_arm6a_challenge
+ArtiXon Arm-6A challenge tasks
+10
+quanta_x1_mobile
+Quanta X1 mobile manipulation
+3
+arx_r5_tabletop
+ARX R5 tabletop manipulation
+12
+franka_panda_tabletop
+Franka Panda-Hand tabletop manipulation
+10
+Repository layout
+README.md                         # This dataset card
+SHA256SUMS                        # SHA-256 checksums for distribution files
+upload-manifest.json              # Paths, sizes, and SHA-256 for all 107 TAR shards
+restore_assets.py                 # Restore and verify the original asset tree
+scripts/
+  download_x2real_assets.py        # Download, verify, and optionally restore
+bundle/
+  README.md                       # Original snapshot notes
+  manifest.json                   # Source, version, counts, tree digest, and checks
+  inventory.jsonl                 # Per-file path, size, and SHA-256
+shards/
+  assets-001-of-107.tar
+  ...
+  assets-107-of-107.tar
+Each shard is an independent TAR archive. All shards together restore the same asset root.
+Do not concatenate the shards with
+cat
+.
+The repository can show its README before every shard is available, so check
+upload-manifest.json
+and the checksums before restoring.
+Download and restore
+Download this public Hugging Face dataset:
+python3 -m pip install -U huggingface_hub
+hf download x-square-robot/x2real-assets scripts/download_x2real_assets.py --repo-type dataset --local-dir ./x2real-assets-tools
+python3 ./x2real-assets-tools/scripts/download_x2real_assets.py --output ./x2real-assets
+The helper downloads all 107 shards into
+./x2real-assets-download
+, verifies every file listed in
+SHA256SUMS
+, and restores the asset tree into
+./x2real-assets
+. It requires Python 3.12 or newer. To keep the download and restore steps separate, use:
+python3 ./scripts/download_x2real_assets.py --download-dir ./x2real-assets-download
+python3 ./x2real-assets-download/restore_assets.py --output ./x2real-assets
+The output directory must be absent or empty. Point the asset-root option of your simulator to
+./x2real-assets
+; do not point it at the download directory or at
+shards/
+. The restore script checks TAR sizes and SHA-256 values, then verifies the payload file count, directory count, file sizes, per-file SHA-256 values, and the complete tree digest.
+Keeping both the downloaded shards and the restored tree requires about 88.3 GB before filesystem overhead; reserve at least
+100 GB
+of free space. After restoration, the same checks can be run again:
+python3 ./x2real-assets-download/restore_assets.py --output ./x2real-assets --verify-only
+Dataset viewer
+For metadata browsing in the Hugging Face Dataset Viewer, use
+asset_catalog.csv
+. It contains one row per payload file with its relative path, type, byte size, and SHA-256. The simulator assets remain packaged in the shards/ directory and are restored with the download script.
+Project links
+Paper:
+X2Real: An eXtensive Simulation Benchmark for Real-World Generalist Policies
+Code:
+X-Square-Robot/x2real
+License: TODO
+Copy to bucket
+new
+Use this dataset
+Downloads last month
+1,157
+Number of rows:
+74,423
+Total file size:
+44.2 GB
+Paper for
+x-square-robot/x2real-assets
+Paper
+•
+2609.27449
+•
+Published
+9 days ago

@@ -1,0 +1,43 @@
+EmbodiChain models
+Pretrained model bundles for
+EmbodiChain
+.
+This repository contains 12 PPO policies: ANYmal-C, G1 flat locomotion, Go1, Go2,
+H1_2 and MicroDuck, each with
+default
+and
+newton
+physics configurations.
+Model index
+: model IDs, tasks and tested runtime information.
+policies/<model-id>/
+: weights, RunManifest, configuration snapshots and evaluation evidence.
+Policy evaluation documentation
+: installation prerequisites, commands and options are maintained in EmbodiChain.
+Robot assets are distributed separately in
+DexForceAI/embodichain_data
+.
+HF revisions version the index and bundles together. No videos are included.
+Evaluation and licensing
+No weight license is currently declared. EmbodiChain's code license does not
+establish the redistribution terms of these weights.
+All 12 policies completed 1,000 control steps (20 simulated seconds) with
+FastRT using the public DexSim 0.5.0 wheel, Warp 1.15.0 and Newton 1.4.0.
+Robot assets were downloaded through the standard resolver into a new cache.
+G1 was also evaluated headlessly on both backends, starting with empty model
+and asset caches. Checkpoint training counters and runtime versions are
+recorded in each evaluation.json.
+The evaluation used EmbodiChain main at
+1b23ea0a
+with the proposed pretrained
+download entry point. Automatic
+--pretrained
+support is being prepared for
+EmbodiChain; the bundles already use its existing native RUN layout.
+Downloads last month
+-
+Downloads are not tracked for this model.
+How to track
+Video Preview
+Reinforcement Learning
+loading

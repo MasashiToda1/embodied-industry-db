@@ -1,0 +1,101 @@
+---
+configs:
+- config_name: assets
+  default: true
+  data_files:
+  - split: train
+    path: asset_catalog.csv
+---
+
+# X2Real Simulation Assets
+
+This repository distributes a versioned snapshot of simulation assets used by X2Real ID evaluation and local simulation workloads. It contains robot and object models, indoor scenes, materials, textures, lighting resources, grasp labels, and task asset catalogs and pools.
+
+This repository contains static simulation assets for X2Real, not LeRobot episodes, observations, actions, videos, or trajectories. Simulator code, task definitions, control logic, and policy weights are provided separately.
+
+## Restored asset tree
+
+The payload inventory contains 74,423 files:
+
+| Directory | Files | Contents |
+| --- | ---: | --- |
+| `navigation/` | 70,359 | `3DSceneData` scenes, USD scenes and objects, textures, maps, and lighting; about 34.44 GB |
+| `benchmark/` | 3,455 | Evaluation objects, scene backgrounds, and HDRI lighting; about 8.81 GB |
+| `art_assets/` | 329 | Models, scenes, materials, URDF, and STL resources |
+| `grasp_labels/` | 196 | Object grasp-label arrays (`.npy`) |
+| `robots/` | 45 | Franka and ARX R5 USD models and related materials |
+| `simready/` | 4 | EX001 robot USD versions and sensor USD configuration |
+| `manipulation/` | 12 | Task object categories and attribute JSON files |
+| `objects/` | 11 | Brick, paper, and other USD objects and textures |
+| `pools/` | 11 | Task sampling pools for bottles, dishes, fruit baskets, drawers, and mobile manipulation |
+| `render_settings/` | 1 | `green_booth` render settings |
+
+The main formats are USD/USDA, PNG/JPG, EXR, MDL, JSON, NPY, and a small number of URDF, STL, GLB, PGM, and YAML files.
+
+## Evaluation coverage
+
+The snapshot covers **5 boards and 73 unique ID cases**:
+
+| Board | Setting | Cases |
+| --- | --- | ---: |
+| `artixon_arm6a_tabletop` | ArtiXon Arm-6A tabletop manipulation | 38 |
+| `artixon_arm6a_challenge` | ArtiXon Arm-6A challenge tasks | 10 |
+| `quanta_x1_mobile` | Quanta X1 mobile manipulation | 3 |
+| `arx_r5_tabletop` | ARX R5 tabletop manipulation | 12 |
+| `franka_panda_tabletop` | Franka Panda-Hand tabletop manipulation | 10 |
+
+## Repository layout
+
+```text
+README.md                         # This dataset card
+SHA256SUMS                        # SHA-256 checksums for distribution files
+upload-manifest.json              # Paths, sizes, and SHA-256 for all 107 TAR shards
+restore_assets.py                 # Restore and verify the original asset tree
+scripts/
+  download_x2real_assets.py        # Download, verify, and optionally restore
+bundle/
+  README.md                       # Original snapshot notes
+  manifest.json                   # Source, version, counts, tree digest, and checks
+  inventory.jsonl                 # Per-file path, size, and SHA-256
+shards/
+  assets-001-of-107.tar
+  ...
+  assets-107-of-107.tar
+```
+
+Each shard is an independent TAR archive. All shards together restore the same asset root. **Do not concatenate the shards with `cat`.** The repository can show its README before every shard is available, so check `upload-manifest.json` and the checksums before restoring.
+
+## Download and restore
+
+Download this public Hugging Face dataset:
+
+```bash
+python3 -m pip install -U huggingface_hub
+hf download x-square-robot/x2real-assets scripts/download_x2real_assets.py --repo-type dataset --local-dir ./x2real-assets-tools
+python3 ./x2real-assets-tools/scripts/download_x2real_assets.py --output ./x2real-assets
+```
+
+The helper downloads all 107 shards into `./x2real-assets-download`, verifies every file listed in `SHA256SUMS`, and restores the asset tree into `./x2real-assets`. It requires Python 3.12 or newer. To keep the download and restore steps separate, use:
+
+```bash
+python3 ./scripts/download_x2real_assets.py --download-dir ./x2real-assets-download
+python3 ./x2real-assets-download/restore_assets.py --output ./x2real-assets
+```
+
+The output directory must be absent or empty. Point the asset-root option of your simulator to `./x2real-assets`; do not point it at the download directory or at `shards/`. The restore script checks TAR sizes and SHA-256 values, then verifies the payload file count, directory count, file sizes, per-file SHA-256 values, and the complete tree digest.
+
+Keeping both the downloaded shards and the restored tree requires about 88.3 GB before filesystem overhead; reserve at least **100 GB** of free space. After restoration, the same checks can be run again:
+
+```bash
+python3 ./x2real-assets-download/restore_assets.py --output ./x2real-assets --verify-only
+```
+
+## Dataset viewer
+
+For metadata browsing in the Hugging Face Dataset Viewer, use [asset_catalog.csv](./asset_catalog.csv). It contains one row per payload file with its relative path, type, byte size, and SHA-256. The simulator assets remain packaged in the shards/ directory and are restored with the download script.
+
+## Project links
+
+- Paper: [X2Real: An eXtensive Simulation Benchmark for Real-World Generalist Policies](https://arxiv.org/abs/2609.27449)
+- Code: [X-Square-Robot/x2real](https://github.com/X-Square-Robot/x2real)
+- License: TODO
