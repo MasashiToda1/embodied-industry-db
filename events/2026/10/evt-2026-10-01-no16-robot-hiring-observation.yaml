@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-01",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "来源未声明这些内容的首次发布日期；2026-10-01 为本库核验公开页面与代码的日期，仅记录当时可见内容，不代表招聘启动、产品发布或项目完成日期。",
+  "orgs": [
+    {
+      "id": "no16-robot",
+      "role": "subject"
+    }
+  ],
+  "corroboration": "single",
+  "id": "evt-2026-10-01-no16-robot-hiring-observation",
+  "type": "hiring_signal",
+  "title": {
+    "zh": "十六号机器人官网招聘覆盖 VLA、全身运控与自我改进研究系统（核验记录）"
+  },
+  "summary": {
+    "zh": "截至本次核验，官网列出 VLA 全栈研究员、人形机器人运控工程师／研究员、RSI 研究员、Agent Infra／MetaBot 全栈工程师与训练推理基础设施工程师。VLA 职责包括数据、训练、评测及真机部署，覆盖导航、灵巧手和移动操作；运控要求包含强化学习、全身控制和 sim-to-real；RSI 方向为提出假设、执行实验并从结果中学习的自我改进研究系统；训练推理岗位提及 PyTorch、CUDA、Triton、NCCL。这些是招聘职责与技能要求，不等同于产品已经采用或完成部署。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/xvirobotics/xvirobotics.github.io/blob/795f009ad7f8e036177b5b878e17eddcfd8e3e24/careers.html",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/careers.html"
+    }
+  ]
+}
