@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XVI Robotics | Humanoid Foundation Model</title>
+    <meta name="description" content="XVI Robotics builds foundation models for humanoid robots — bridging intelligence and embodiment to unlock the next era of human civilization.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#04070b">
+    <link rel="canonical" href="https://xvirobotics.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="XVI Robotics">
+    <meta property="og:title" content="XVI Robotics | Humanoid Foundation Model">
+    <meta property="og:description" content="XVI Robotics builds foundation models for humanoid robots — bridging intelligence and embodiment to unlock the next era of human civilization.">
+    <meta property="og:url" content="https://xvirobotics.com/">
+    <meta property="og:image" content="https://xvirobotics.com/assets/logo-color.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="XVI Robotics | Humanoid Foundation Model">
+    <meta name="twitter:description" content="Foundation models for humanoid robots.">
+    <meta name="twitter:image" content="https://xvirobotics.com/assets/logo-color.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="modulepreload" href="vendor/three.module.min.js">
+    <link rel="modulepreload" href="vendor/three.core.min.js">
+    <link rel="preload" href="vendor/h2.glb" as="fetch" crossorigin>
+    <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js" } }
+    </script>
+    <link rel="icon" href="logo-new-mark.jpg">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #04070b;
+            overflow: hidden;
+        }
+
+        ::selection {
+            background: rgba(126, 224, 255, 0.3);
+            color: #ffffff;
+        }
+
+        @keyframes xviUp {
+            from { opacity: 0; transform: translateY(22px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes xviPulse {
+            0%, 100% { opacity: 0.45; }
+            50% { opacity: 1; }
+        }
+
+        .screen {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background: #04070b;
+            color: #e8eff6;
+            font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+        }
+
+        .bg-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            z-index: 0;
+        }
+
+        .vignette {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background:
+                radial-gradient(ellipse 60% 70% at 66% 54%, rgba(126, 224, 255, 0.05) 0%, rgba(4, 7, 11, 0) 60%),
+                radial-gradient(ellipse 140% 120% at 50% 50%, rgba(4, 7, 11, 0) 55%, rgba(4, 7, 11, 0.65) 100%);
+        }
+
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 44px;
+            pointer-events: none;
+        }
+
+        .nav .logo {
+            height: 24px;
+            display: block;
+            filter: drop-shadow(0 0 18px rgba(126, 224, 255, 0.25));
+            pointer-events: auto;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            pointer-events: auto;
+        }
+
+        .contact-link {
+            font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+            font-size: 12px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(232, 239, 246, 0.62);
+            text-decoration: none;
+        }
+
+        .careers-link {
+            font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+            font-size: 12px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #7ee0ff;
+            text-decoration: none;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        .careers-link:hover,
+        .careers-link:focus-visible,
+        .contact-link:focus-visible {
+            color: #ffffff;
+            text-shadow: 0 0 18px rgba(126, 224, 255, 0.4);
+        }
+
+        .careers-link:focus-visible,
+        .contact-link:focus-visible {
+            outline: 1px solid rgba(126, 224, 255, 0.75);
+            outline-offset: 5px;
+            border-radius: 2px;
+        }
+
+        .contact-link:hover {
+            color: #ffffff;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            white-space: nowrap;
+        }
+
+        .lang-switch button {
+            background: none;
+            border: 0;
+            padding: 0;
+            font: inherit;
+            letter-spacing: inherit;
+            cursor: pointer;
+            color: rgba(232, 239, 246, 0.38);
+            user-select: none;
+        }
+
+        .lang-switch button:focus-visible {
+            outline: 1px solid rgba(126, 224, 255, 0.7);
+            outline-offset: 3px;
+        }
+
+        .lang-switch .dot {
+            color: rgba(156, 194, 220, 0.28);
+        }
+
+        html[lang="en"] #lang-en,
+        html[lang="zh"] #lang-zh {
+            color: #f2f7fb;
+        }
+
+        .hero {
+            position: absolute;
+            z-index: 3;
+            left: clamp(24px, 6.5vw, 110px);
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: min(640px, 88vw);
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 34px;
+            animation: xviUp 0.9s ease-out 0.1s both;
+        }
+
+        .eyebrow-line {
+            width: 26px;
+            height: 1px;
+            background: #7ee0ff;
+        }
+
+        .eyebrow-text {
+            font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.38em;
+            text-transform: uppercase;
+            color: #7ee0ff;
+        }
+
+        h1 {
+            margin: 0 0 30px;
+            font-weight: 500;
+            font-size: clamp(38px, 5.4vw, 84px);
+            line-height: 1.05;
+            letter-spacing: -0.015em;
+            color: #f2f7fb;
+            text-wrap: balance;
+            animation: xviUp 0.9s ease-out 0.25s both;
+        }
+
+        h1 .accent {
+            color: #7ee0ff;
+        }
+
+        .summary {
+            margin: 0 0 46px;
+            max-width: 460px;
+            font-size: clamp(14px, 1.2vw, 17px);
+            font-weight: 300;
+            line-height: 1.8;
+            color: rgba(232, 239, 246, 0.58);
+            text-wrap: pretty;
+            animation: xviUp 0.9s ease-out 0.4s both;
+        }
+
+        .cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 15px 28px;
+            border: 1px solid rgba(126, 224, 255, 0.32);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 13px;
+            letter-spacing: 0.1em;
+            color: #eef5fa;
+            text-decoration: none;
+            background: rgba(126, 224, 255, 0.04);
+            pointer-events: auto;
+            transition: all 0.25s ease;
+            animation: xviUp 0.9s ease-out 0.55s both;
+        }
+
+        .cta:hover {
+            background: rgba(126, 224, 255, 0.12);
+            border-color: rgba(126, 224, 255, 0.7);
+            box-shadow: 0 0 32px rgba(126, 224, 255, 0.14);
+        }
+
+        .cta .pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #7ee0ff;
+            animation: xviPulse 2.2s ease-in-out infinite;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 26px 44px;
+            pointer-events: none;
+            font-family: 'IBM Plex Mono', 'Noto Sans SC', monospace;
+            font-size: 11px;
+            letter-spacing: 0.18em;
+            color: rgba(232, 239, 246, 0.34);
+            white-space: nowrap;
+        }
+
+        .footer-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+            flex-wrap: wrap;
+        }
+
+        .icp-link {
+            color: rgba(232, 239, 246, 0.72);
+            pointer-events: auto;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.3em;
+        }
+
+        .icp-link:hover,
+        .icp-link:focus-visible {
+            color: rgba(232, 239, 246, 1);
+        }
+
+        .icp-link:focus-visible {
+            outline: 1px solid currentColor;
+            outline-offset: 4px;
+            border-radius: 2px;
+        }
+
+        .orbit-hint {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(126, 224, 255, 0.75);
+            opacity: 0.8;
+            transition: opacity 0.8s ease;
+        }
+
+        .orbit-hint.hinted {
+            opacity: 0;
+        }
+
+        html[lang="zh"] [data-lang-en] {
+            display: none;
+        }
+
+        html[lang="en"] [data-lang-cn] {
+            display: none;
+        }
+
+        /* phones/tablets: compact text block pinned to the top so the full
+           walking figure owns the lower two-thirds of the screen */
+        @media (max-width: 880px) {
+            h1, .summary {
+                text-shadow: 0 0 18px rgba(4, 7, 11, 0.9), 0 2px 8px rgba(4, 7, 11, 0.7);
+            }
+
+            .hero {
+                top: 92px;
+                transform: none;
+                max-width: min(560px, 90vw);
+            }
+
+            .eyebrow {
+                margin-bottom: 14px;
+            }
+
+            .eyebrow-text {
+                font-size: 10px;
+            }
+
+            h1 {
+                font-size: clamp(24px, 6.2vw, 40px);
+                margin-bottom: 12px;
+            }
+
+            .summary {
+                font-size: 13px;
+                line-height: 1.6;
+                margin-bottom: 18px;
+                max-width: 420px;
+            }
+
+            .cta {
+                font-size: 12px;
+                padding: 11px 16px;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav {
+                padding: 22px 20px;
+            }
+
+            .nav .logo {
+                height: 18px;
+            }
+
+            .nav-right {
+                gap: 18px;
+            }
+
+            .contact-link {
+                letter-spacing: 0.12em;
+            }
+
+            .careers-link {
+                letter-spacing: 0.08em;
+            }
+
+            .cta {
+                font-size: 12px;
+                letter-spacing: 0.05em;
+                padding: 12px 16px;
+                gap: 10px;
+            }
+
+            .footer {
+                padding: 20px;
+                letter-spacing: 0.12em;
+                white-space: normal;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+        }
+
+        @media (max-height: 560px) {
+            .nav {
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+
+            .eyebrow {
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                margin-bottom: 16px;
+                font-size: clamp(28px, 5.4vw, 84px);
+            }
+
+            .summary {
+                margin-bottom: 22px;
+            }
+
+            .footer {
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+        }
+
+        /* landscape phones: re-center a minimal text block (the pinned-top
+           mobile layout would overflow a ~360px-high viewport) */
+        @media (max-width: 880px) and (max-height: 560px) {
+            .hero {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .eyebrow {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: clamp(20px, 4.6vw, 30px);
+                margin-bottom: 10px;
+            }
+
+            .summary {
+                display: none;
+            }
+
+            .cta {
+                font-size: 11px;
+                padding: 9px 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .eyebrow, h1, .summary, .cta {
+                animation: none;
+            }
+
+            .cta .pulse {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+
+        <canvas class="bg-canvas" id="bg" aria-hidden="true"></canvas>
+
+        <div class="vignette"></div>
+
+        <nav class="nav">
+            <img src="assets/logo-white.png" alt="XVI Robotics" class="logo">
+            <div class="nav-right">
+                <a class="careers-link" href="careers.html" aria-label="Careers / 招聘">
+                    <span data-lang-en>Careers</span><span data-lang-cn>招聘</span>
+                </a>
+                <a class="contact-link" data-mailto>
+                    <span data-lang-en>Contact</span><span data-lang-cn>联系我们</span>
+                </a>
+                <div class="lang-switch">
+                    <button id="lang-en" type="button" onclick="setLang('en')" aria-pressed="true">EN</button>
+                    <span class="dot">·</span>
+                    <button id="lang-zh" type="button" lang="zh" onclick="setLang('zh')" aria-pressed="false">中文</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="hero">
+            <div class="eyebrow">
+                <div class="eyebrow-line"></div>
+                <div class="eyebrow-text">
+                    <span data-lang-en>Humanoid Foundation Model</span><span data-lang-cn>人形机器人基座模型</span>
+                </div>
+            </div>
+
+            <h1>
+                <span data-lang-en>Advancing the Robot Revolution Towards a <span class="accent">Type&nbsp;II Civilization</span></span><span data-lang-cn>推进机器人革命<br>迈向<span class="accent">二型文明</span></span>
+            </h1>
+
+            <p class="summary">
+                <span data-lang-en>We build foundation models for humanoid robots — bridging intelligence and embodiment to unlock the next era of human civilization.</span><span data-lang-cn>我们构建人形机器人基座模型——连接智能与具身，开启人类文明的下一个时代。</span>
+            </p>
+
+            <a class="cta" data-mailto>
+                <span class="pulse"></span>
+                <span id="email-text"></span>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-meta">
+                <span>© <span id="year">2025</span> XVI ROBOTICS · 北京十六号机器人科技有限公司</span>
+                <span aria-hidden="true">·</span>
+                <a class="icp-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备2026046063号-1</a>
+            </div>
+            <div class="orbit-hint" id="orbit-hint">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 7a5 5 0 1 0 1.5-3.6"></path><path d="M2 1.5V4h2.5" fill="none"></path></svg>
+                <span data-lang-en>DRAG TO ORBIT</span><span data-lang-cn>拖动旋转视角</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="moonbase-scene.js"></script>
+    <script>
+        function applyLang(lang) {
+            document.documentElement.setAttribute("lang", lang);
+            document.getElementById("lang-en").setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+            document.getElementById("lang-zh").setAttribute("aria-pressed", lang === "zh" ? "true" : "false");
+        }
+
+        function setLang(lang) {
+            applyLang(lang);
+            try { localStorage.setItem("xvi-lang", lang); } catch (e) {}
+        }
+
+        (function restoreLanguage() {
+            var saved = null;
+            try { saved = localStorage.getItem("xvi-lang"); } catch (e) {}
+            if (saved === "en" || saved === "zh") {
+                applyLang(saved);
+                return;
+            }
+            var browserLang = navigator.language || "";
+            if (browserLang.toLowerCase().indexOf("zh") === 0) {
+                applyLang("zh");
+            }
+        })();
+
+        // email assembled at runtime to keep it out of the static markup
+        (function wireEmail() {
+            var email = ["floodsung", "xvirobotics.com"].join("@");
+            document.getElementById("email-text").textContent = email;
+            var links = document.querySelectorAll("[data-mailto]");
+            for (var i = 0; i < links.length; i++) {
+                links[i].setAttribute("href", "mailto:" + email);
+            }
+        })();
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        window.addEventListener("xvi-orbit", function () {
+            document.getElementById("orbit-hint").classList.add("hinted");
+        }, { once: true });
+
+        (function bootScene() {
+            var canvas = document.getElementById("bg");
+            var booted = false;
+            function hideHint() {
+                document.getElementById("orbit-hint").classList.add("hinted");
+            }
+            // the scene's module graph needs import-map support (Safari 16.4+);
+            // on older engines fail fast to a clean static page instead of a
+            // dead canvas with a lingering "drag to orbit" hint
+            if (!HTMLScriptElement.supports || !HTMLScriptElement.supports("importmap")) {
+                hideHint();
+                return;
+            }
+            function tryBoot() {
+                if (booted || !window.XVIMoonBase || !canvas) return false;
+                booted = true;
+                try {
+                    window.XVIMoonBase(canvas);
+                } catch (e) {
+                    hideHint(); // no WebGL: keep the static page, drop the orbit promise
+                }
+                return true;
+            }
+            // primary: the module announces itself (robust on slow connections);
+            // fallback: poll, then degrade gracefully if the scene never arrives
+            window.addEventListener("xvi-scene-ready", tryBoot, { once: true });
+            var tries = 0;
+            (function poll() {
+                if (tryBoot()) return;
+                if (tries++ < 150) setTimeout(poll, 80);
+                else if (!booted) hideHint();
+            })();
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-01",
+  "date_precision": "day",
+  "date_basis": "derived",
+  "date_as_stated": "来源未声明这些内容的首次发布日期；2026-10-01 为本库核验公开页面与代码的日期，仅记录当时可见内容，不代表招聘启动、产品发布或项目完成日期。",
+  "orgs": [
+    {
+      "id": "no16-robot",
+      "role": "subject"
+    }
+  ],
+  "corroboration": "single",
+  "id": "evt-2026-10-01-no16-robot-github-research-observation",
+  "type": "statement",
+  "title": {
+    "zh": "十六号机器人 GitHub 披露 Agent 工具与机器人项目名称（核验记录）"
+  },
+  "summary": {
+    "zh": "截至本次核验，官方 GitHub 的 MetaBot 为 Agent 工作台，Metaskill 用于生成 Agent 团队与技能，Fey-R 用于交互式论文研读。MetaBot 文档和看板代码将 wbc、vlm-brain、g1-wuji-teleoperation、humanoid-foundation、matrix-agentvla、xviinfra、metabot 列为公司核心视图的项目标识。该列表是展示层筛选配置，仅证明公开文档与代码列出了这些名称；不据此确认机器人型号采用、硬件合作、具体算法、项目完成、真机部署或机器人模型开源。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/xvirobotics/metabot/blob/916637eccb68fd79a0850a02dff390580cedce4a/README.md",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/metabot-readme.md"
+    },
+    {
+      "url": "https://github.com/xvirobotics/metabot/blob/916637eccb68fd79a0850a02dff390580cedce4a/docs/features/t5t-board.md",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/metabot-projects.md"
+    },
+    {
+      "url": "https://github.com/xvirobotics/metabot/blob/916637eccb68fd79a0850a02dff390580cedce4a/packages/web-ui/src/components/t5t/board-utils.ts",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/metabot-projects.ts"
+    },
+    {
+      "url": "https://github.com/xvirobotics/metaskill/blob/bef7252cde51a2be4755d7d15dc22cb05c0ddcef/README.md",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/metaskill-readme.md"
+    },
+    {
+      "url": "https://github.com/xvirobotics/fey-r/blob/0c531ab00410887fa4c8ebf8598f4e38ff6a62de/README.md",
+      "publisher": "XVI Robotics",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/xvi-research/fey-r-readme.md"
+    }
+  ]
+}
