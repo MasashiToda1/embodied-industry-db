@@ -340,15 +340,15 @@ async function pageAxes() {
     <div class="card" id="viz"></div><div class="notice" style="margin-top:12px">图表只反映本库已收录的公开证据，不代表行业全貌；尚未收录不等于未采用。</div></div>`;
   const draw = () => {
     $$('#axis-tags .tag').forEach(t => t.classList.toggle('on', t.dataset.f === axis));
-    $('[data-t]').forEach(t => { t.classList.toggle('on', t.dataset.t === tab); t.setAttribute('aria-pressed', String(t.dataset.t === tab)); });
+    $$('[data-t]').forEach(t => { t.classList.toggle('on', t.dataset.t === tab); t.setAttribute('aria-pressed', String(t.dataset.t === tab)); });
     const ax = A[axis]; const viz = $('#viz');
     if (!ax) { viz.innerHTML = '<div class="empty">这条轴还没有任何主体有取值</div>'; return; }
     viz.onclick = null;
     tab === 'stream' ? drawStream(viz, ax) : drawRouteMap(viz, ax);
   };
   const remember = () => { const params = new URLSearchParams(location.search); params.set('axis', axis); params.set('view', tab); history.replaceState(null, '', '?' + params); };
-  $('#axis-tags .tag').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
-  $('[data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
+  $$('#axis-tags .tag').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
+  $$('[data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
   draw();
 }
 function toDate(s) { s = String(s); if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(s); if (/^\d{4}-\d{2}$/.test(s)) return new Date(s + '-15'); const q = s.match(/^(\d{4})-Q([1-4])$/); if (q) return new Date(+q[1], q[2] * 3 - 2, 15); if (/^\d{4}$/.test(s)) return new Date(+s, 6, 1); return new Date(s); }
