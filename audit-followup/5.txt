@@ -1,0 +1,177 @@
+Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence
+90.8%
+LIBERO-Pro Goal
+average task success
+93.6%
+RoboCasa 18-task
+average success
+20.6×
+valid rollout throughput
+with
+Zetta ζ
++56.3 pt
+LIBERO-Pro absolute gain
+over frozen VLA
++20 pt
+RoboCasa absolute gain
+over frozen VLA
+11.1×
+Zetta ζ
+inference speedup
+Zetta ζ closes the loop for embodied self-evolution.
+Frequent runtime critics trigger recoveries during execution, while verified failures are distilled into reusable critic and recovery skills across rollouts. A hardware-decoupled rollout layer scales this process across heterogeneous environments, models, CPUs, and GPUs.
+Zetta ζ
+enables sustained same-task improvement, zero-shot skill transfer, robotic "Aha moment", and accelerated agent execution.
+Abstract
+Embodied agents are increasingly used to close the gap left by end-to-end policy models. Yet the agentic path has not realized closed-loop learning in physical execution: existing harnesses remain largely open-loop, following fixed skills during rollout and reflecting only after an episode completes. Such post-hoc reflection cannot govern execution as it unfolds, because physical interaction requires decisions to track rapidly changing robot-environment states at a frequency beyond today’s large agentic models. We present
+Zetta ζ
+, a closed-loop embodied harness that evolves code-based runtime critics and recovery skills online while keeping the base policy frozen. Through three timescale-separated loops,
+Zetta ζ
+provides action-frequency governance, rollout-level critic-recovery proposal, and validation-gated skill updates. Together with Z-Infra, a rollout infrastructure decoupling agent logic from heterogeneous execution resources,
+Zetta ζ
+achieves state-of-the-art success on LIBERO-Pro and RoboCasa under our current rollout budget, reaching 90.8% and 93.6%, with a 11.1 × inference speedup; success continues to scale with self-exploration experience; learned skills transfer zero-shot, and clear robotic "Aha Moments" emerge. These results show that closed-loop harness self-evolution opens a scaling path for reliable physical intelligence.
+Zetta ζ
+enables efficient closed-loop self-evolution in deployment.
+您的浏览器暂不支持 HTML5 视频播放。
+Three loops for self-evolving physical intelligence
+No VLA fine-tuning. No gradient updates on policy weights. Only the code-based execution harness evolves.
+Loop 1 · Action
+Critic-Governed Action Loop
+Learned runtime critics execute at action frequency, monitor physical state, and trigger recovery skills the moment execution deviates from the nominal distribution.
+Loop 2 · Rollout Batch
+Candidate Optimization Loop
+Failed rollouts are clustered by earliest observable divergence, causally diagnosed, and converted into candidate critic and recovery updates in code space.
+Loop 3 · Iteration
+Validation-Gated Skill Update Loop
+Only candidates that pass historical regression and strict held-out generalization are admitted into the versioned skill memory.
+Overview of the Z-Harness evolutionary framework.
+Parallel rollouts are governed by an evolvable harness of critics, recoveries, and tools under an orchestrator agent;
+          failed trajectories trigger offline clustering, causal diagnosis, minimal repair, and generalization into a merged harness.
+Physical-intelligence “Aha” moments
+Success is not always a smooth curve.
+Zetta ζ
+often discovers the key physical bottleneck and unlocks a sharp, discontinuous jump.
+Aha moments on RoboCasa.
+Early revisions yield marginal gains; identifying the decisive physical variable raises success sharply.
+Aha moments on LIBERO-Pro.
+Wine-bottle-in-bowl improves from 15% to 95%; cream-cheese placement improves from 5% to 90% — with the VLA frozen.
+RoboCasa case study
+CoffeeSetupMug
+Let's look at a case. Round-change improvements emerge on RoboCasa tasks such as turning on an electric kettle, sliding a dishwasher rack, closing a toaster-oven door, and placing a coffee pot. The CoffeeSetupMug task provides a representative example:
+Round 0
+SR: 70%
+Your browser does not support HTML5 video playback.
+The policy correctly identifies the mug and coffee machine and begins transporting the mug. As the robot approaches the machine, however, the absence of continuous checks for grasp stability and collision clearance causes the arm to collide with the environment and lose the mug. The policy fails to detect this local physical anomaly in time, resulting in task failure.
+Round 1
+SR: 86%
+Your browser does not support HTML5 video playback.
+Zetta ζ
+evolves a contact-aware manipulation skill from the failure. Its critic continuously monitors grasp stability, object drift, and collision risk. When triggered, the recovery transports the mug while maintaining safe clearance and relinquishes control only after confirming stable placement.
+LIBERO-Pro case study
+Push the plate to the front of the stove
+Here's another case from LIBERO-PRO. Consider the task
+Push the plate to the front of the stove
+:
+Round 0
+SR: 0%
+Your browser does not support HTML5 video playback.
+The rollout fails at
+Failure 0
+: after grasping the plate, the policy does not maintain a stable grasp and loses the object before completing the transport.
+Round 1
+SR: 45%
+Your browser does not support HTML5 video playback.
+Critic 1 (retained-grasp)
+determines whether the plate has been securely lifted, while
+Recovery 1 (retained-object transport)
+takes over the transport and resolves Failure 0. The rollout then encounters
+Failure 1
+: the grasp is lost during transport.
+Round 2
+SR: 95%
+Your browser does not support HTML5 video playback.
+Building on Critic 1 and Recovery 1,
+Critic 2 (carry-retention)
+detects grasp instability during transport, and
+Recovery 2 (robust-carry retry)
+stabilizes the grasp and reduces transport risk. Together, they resolve Failure 1 and enable successful task completion.
+Success scales with evolution iterations
+As cumulative critic–recovery mechanisms are added, task success steadily approaches the measured capability ceiling of the frozen policy.
+LIBERO-Pro Goal (T).
+Average success rises from 31.0% to 92.5% without VLA fine-tuning.
+LIBERO-Pro Goal (S).
+Average success rises from 38.0% to 89.0% across ten tasks.
+RoboCasa Atomic-Seen.
+Average success rises from 73.56% to 93.56% across 18 tasks.
+Learned skills transfer zero-shot across tasks
+The skills evolved by
+Zetta ζ
+are not task-specific trajectories. They are defined by
+object-relative geometry, contact, grasp retention, and progress predicates
+— physical invariants that transfer across related tasks.
+PnP Skills
+Pick-and-place transfer
+Pregrasp, regrasp, and stable-placement skills learned on PnP-Stove improve PnP-Sink, PnP-Cabinet, and PnP-Toaster from a 64% macro-average to 84%.
+Articulated Skills
+Contact-rich interaction transfer
+Target localization, collision-aware approach, and stable-contact skills learned on TurnOffStove improve faucet, cabinet, and microwave tasks from a 64% macro-average to 80%.
+Reflection-driven scaling and transfer on RoboCasa.
+Skills discovered on one source task transfer to related tasks without an additional evolution loop.
+Z-Infra: rollout infrastructure for self-evolving embodied agents
+Self-exploration in the environment is the source of learning data, so faster rollouts produce faster evolution.
+Three-layer architecture of Z-Infra.
+A control plane routes agent requests to specialized environment workers and rollout workers, decoupling agent logic from heterogeneous hardware.
+Throughput.
+Z-Infra scales valid rollout throughput from 1.7 to 35.1 episodes/min (20.6×) on 8×A100 GPUs.
+Latency under load.
+Z-Infra maintains controlled per-episode latency while baselines degrade sharply or carry high agent overhead.
+System Performance Comparison
+您的浏览器暂不支持 HTML5 视频播放。
+Benchmark results
+Table:
+Success rates (%) on LIBERO-Pro and RoboCasa. Bold marks
+Zetta ζ
+.
+          LIBERO-Pro Goal (T/S) and LIBERO-10 (T/S) are averaged over ten tasks each; RoboCasa is the macro-average over 18 Atomic-Seen tasks.
+Benchmark
+Setting
+Frozen VLA
+Zetta ζ
+LIBERO-Pro
+Goal (T)
+31.0
+92.5
+Goal (S)
+38.0
+89.0
+LIBERO-Pro
+LIBERO-10 (T)
+50.0
+63.0
+LIBERO-10 (S)
+9.0
+40.0
+RoboCasa
+18 Atomic-Seen
+73.56
+93.56
+Recovery in action
+A failed grasp becomes a targeted recovery, then control returns to the nominal trajectory.
+A sequence of critic–recovery interventions during a pick-and-place episode.
+The harness detects grasp loss, synthesizes a new grasp pose, and invokes stable placement — all while the base VLA remains frozen.
+BibTeX
+@misc{ding2026zettazetaefficientclosedloop,
+          title={Zetta $\zeta$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence}, 
+          author={Xin Ding and Liang Mi and Mingzhe Huang and Zixuan Wang and Chao Zhang and Zixu Hao and Fu Chen and Xiangyu Li and Yikai Zheng and Yaoyu Guo and Weijun Wang and Kun Li and Hao Wu and Yunxin Liu and Ting Cao},
+          year={2026},
+          eprint={2608.16590},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2608.16590}, 
+        }
+Project page for
+Zetta ζ
+: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence.
+Code
+·
+Arxiv

@@ -1,0 +1,308 @@
+Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation
+Zeva
+performs In-Context Causal Learning (ICCL): a frozen policy learns from the robot’s own physical interactions by extracting action–state-change causality into a dual-timescale causal memory, and injecting it back as a Causal Prompt at decision time. During deployment, all model parameters remain frozen; only the interaction memories are updated.
+76.8%
+Avg. success on RoboCasa365-Atomic5
+(+4.4 pt over Fast-WAM)
+83.3%
+Avg. success on ChemLab-Evo Level-1 real robot tasks
+100%
+Pick Up Test Tube SR on ChemLab-Evo
+(20 randomized episodes)
+Overview Video
+A short visual summary of Zeva, showing how interaction memory supports post-deployment improvement with a frozen policy.
+Zeva learns from the robot's own physical interactions during deployment while keeping all model weights unchanged.
+Abstract
+Generalizable embodied manipulation remains difficult to achieve through pretraining alone, due to unseen physical conditions in the real world. We argue that robots need to learn from their own physical interactions on the fly during real-world deployment and use this knowledge to inform subsequent actions. We present Zeva, the first framework that enables in-context learning from a robot's own physical interaction experience while keeping the policy model frozen. Zeva employs a Causal Interaction Extractor to encode an executed action and its induced state change into a causal interaction signal, which is stored in a dual-timescale causal memory. For subsequent actions, relevant causal interaction signals are retrieved from memory and injected into the frozen policy model as context. Experiments in simulation and real-world manipulation demonstrate that Zeva achieves the best performance among the compared frontier VLAs and WAMs and, more importantly, enables self-evolution during deployment without gradient updates. Its success rate continues to improve as the robot accumulates interaction experience. Furthermore, the acquired interaction experience can generalize across tasks.
+Demonstration Videos
+The same frozen policy improves across repeated attempts and can be warm-started by a single human demonstration. The rollout-only video is not included here.
+Online Self-Evolution 1
+Repeated attempts on a real manipulation task: earlier failures are corrected in later attempts using Persistent Interaction Memory, while the policy weights remain frozen.
+Online Self-Evolution 2
+A second example of gradient-free self-evolution across attempts, showing how causal interaction evidence changes the subsequent execution.
+One-Shot Human Warm-Up
+A human physically guides the robot once; the same frozen policy later reproduces the demonstrated sequence without any weight update.
+Method
+Zeva is built around one idea: the robot should not only execute from pretrained weights; it should remember what its own actions caused, and let that memory guide the next attempt.
+Stage 1
+Causal Interaction Extraction
+A Causal Transition Encoder (CTE) integrates visual latents, action encodings, and observed effects into a Causal Interaction State, then projects it into a task Phase Token and a Causal Interaction Signal.
+Stage 2
+Dual-timescale Causal Memory
+A Brief Interaction Trace (BIT) captures recent within-attempt dynamics; a Persistent Interaction Memory (PIM) consolidates cross-attempt evidence within the same episode through similarity-based merging.
+Stage 3
+In-Context Policy Injection
+Zeva retrieves phase-matched interaction evidence and constructs a Causal Prompt for the frozen foundation policy. During deployment, all parameters remain frozen; only the memories are updated online.
+Causal Guidance in Motion
+A flow-field visualization comparing standard Flow Matching with Zeva's causal-memory-guided dynamics.
+Your browser does not support embedded video.
+Watch the flow-field visualization
+.
+Left:
+standard Flow Matching, without causal guidance.
+Right:
+Zeva adds causal guidance to the base flow; the dashed green region marks causal memory in this visualization.
+Illustrative dynamics, not a robot rollout. Use full screen to inspect the trajectories, or
+open the video in a new tab
+.
+Post-Deployment Capability Scaling
+Zeva improves as it interacts. With all policy parameters frozen, cumulative success rises across repeated attempts on both simulation and real hardware.
+RoboCasa365.
+Pooled cumulative success rate over five tasks rises from 26% at Evolve 1 to 73% at Evolve 4.
+ChemLab-Evo (real ARX manipulator).
+Pick Up Test Tube rises from 65% to 100%, Place Beaker from 25% to 70%, Pour Water from 30% to 80%.
+Evaluation Results
+Benchmark Results
+Method
+ElectricKettle
+ToasterOvenDoor
+Microwave
+CoffeeSetupMug
+StandMixerHead
+Avg.
+LingBot-VA
+63
+60
+70
+35
+48
+55.2
+Xiaomi-Robotics-1
+17
+16
+82
+6
+35
+31.2
+τ
+0
+-WM
+15
+32
+63
+12
+23
+29.0
+Fast-WAM
+88
+66
+60
+54
+94
+72.4
+Cosmos3-Nano
+76
+74
+76
+6
+92
+64.8
+Zeva
+78
+86
+84
+44
+92
+76.8
+Success rates (%) on RoboCasa365-Atomic5. Bold marks the best per task; shaded row is Zeva.
+Real-World ChemLab-Evo Results
+Method
+Pick Up Test Tube
+Place Beaker
+Pour Water
+Level 1 Avg.
+Titration
+Prepare Salt Solution
+Level 2 Avg.
+Balance Weighing
+Extraction
+Level 3 Avg.
+LingBot-VA
+80
+70
+65
+71.7
+55
+75
+65.0
+5
+0
+2.5
+Fast-WAM
+85
+70
+75
+76.7
+45
+55
+50.0
+0
+0
+0.0
+π
+0.5
+95
+60
+65
+73.3
+60
+50
+55.0
+0
+0
+0.0
+Cosmos3-Nano
+80
+70
+60
+70.0
+45
+60
+52.5
+0
+0
+0.0
+Zeva
+100
+70
+80
+83.3
+70
+70
+70.0
+5
+10
+7.5
+Success rates (%) over 20 randomized episodes on the real-world ChemLab-Evo benchmark.
+Long-Horizon Process Scores
+Method
+Balance Weighing
+Extraction
+Avg.
+LingBot-VA
+28.75
+40.00
+34.38
+Fast-WAM
+22.50
+58.57
+40.54
+π
+0.5
+33.75
+31.43
+32.59
+Cosmos3-Nano
+38.75
+50.71
+44.73
+Zeva
+47.50
+67.14
+57.32
+Process scores report the average percentage of ordered stages completed on the two long-horizon tasks.
+Ablation: Two Memory Timescales
+BIT
+PIM
+Pick Up Test Tube
+Place Beaker
+Pour Water
+Titration
+Salt Solution
+✓
+✓
+100
+70
+80
+70
+70
+✓
+80
+50
+50
+40
+55
+✓
+85
+60
+70
+60
+50
+65
+40
+45
+25
+35
+Real-world ablation (SR %) on five ChemLab-Evo tasks over 20 randomized episodes. Removing PIM reduces SR by 10–20 points; removing BIT causes a larger 15–30 point drop.
+What Interaction Memory Changes in the Real World
+On the ARX manipulator, the frames trace how interaction memory turns failed attempts into a subsequent successful attempt.
+Red: terminal observations from distinct failed attempts
+Green: subsequent successful attempt
+For Pick Up Test Tube and Place Beaker, the two green frames are successive stages of the same continuous successful attempt.
+Pick Up Test Tube
+Failed attempt
+Failed attempt
+Successful attempt
+Same success (later stage)
+Place Beaker
+Failed attempt
+Failed attempt
+Successful attempt
+Same success (later stage)
+Pour Water
+Failed attempt
+Failed attempt
+Failed attempt
+Successful attempt
+Cross-Task Effect Retrieval
+The VBD effect token captures action-induced state changes beyond task-specific appearance. For each query transition, nearest neighbors are retrieved from other tasks by effect-token cosine similarity. Despite changes in objects, viewpoints, and instructions, the retrieval aligns functionally equivalent effects: container tilting, gripper closure, and post-grasp lifting.
+Pouring / Container Tilt
+Query
+→
+Retrieved Match 1
+→
+Retrieved Match 2
+→
+Gripper Closure
+Query
+→
+Retrieved Match 1
+→
+Retrieved Match 2
+→
+Lifting / Upward Motion
+Query
+→
+Retrieved Match 1
+→
+Retrieved Match 2
+→
+Each block is a before–after transition pair. Effect labels are shown for interpretation and do not enter the similarity ranking.
+One-Shot Human Warm-Up
+A single human-guided demonstration on Balance Weighing initializes PIM before autonomous execution. The frozen policy then reproduces the demonstrated approach, grasp, transfer, and placement — no gradient update needed. No ICL denotes execution without memory warm-up; ICL uses the demonstrated experience.
+Trajectory Alignment
+3D comparison of human (GT), No ICL, and ICL end-effector trajectories after one-shot memory warm-up.
+Reproduced Manipulation Sequence
+01
+Approach
+02
+Grasp
+03
+Transfer
+04
+Place
+Quantitative Warm-Up Effect
+Quantitative warm-up effect.
+One human demonstration improves or matches SR at every evolution milestone on the three atomic ChemLab-Evo tasks; gains reach 20 points on Place Beaker and 15 points on Pour Water.
+BibTeX
+@misc{zeva2026,
+  title={Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation},
+  author={
+    Fu Chen, Xin Ding, Bingjia Huang, Xiangyu Li, Mingju Wang, Jiawei He, Kun Li, Wei Sun, Yunxin Liu, Hao Wu, Ting Cao
+  },
+  year={2026},
+  url={https://arxiv.org/pdf/2608.30880},
+}
+Project page for
+Zeva
+: In-Context Causal Learning for Generalizable Embodied Manipulation.

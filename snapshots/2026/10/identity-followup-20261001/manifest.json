@@ -1,0 +1,101 @@
+[
+  {
+    "index": 0,
+    "url": "https://www.flexphysics.com/about",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/about",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/0.html",
+    "bytes": 1951
+  },
+  {
+    "index": 1,
+    "url": "https://www.flexphysics.com/showcase",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/showcase",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/1.html",
+    "bytes": 1955
+  },
+  {
+    "index": 2,
+    "url": "https://docs.flexphysics.com/",
+    "status": 200,
+    "final_url": "https://docs.flexphysics.com/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/identity-followup-20261001/2.html",
+    "bytes": 36448
+  },
+  {
+    "index": 3,
+    "url": "https://www.flexphysics.com/open-source",
+    "status": 200,
+    "final_url": "https://www.flexphysics.com/open-source",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/3.html",
+    "bytes": 1837
+  },
+  {
+    "index": 4,
+    "url": "https://air.tsinghua.edu.cn/info/1009/2542.htm",
+    "status": 200,
+    "final_url": "https://air.tsinghua.edu.cn/info/1009/2542.htm",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/identity-followup-20261001/4.html",
+    "bytes": 83204
+  },
+  {
+    "index": 5,
+    "url": "https://air-embodied-brain.github.io/zetta/",
+    "status": 200,
+    "final_url": "https://air-embodied-brain.github.io/zetta/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/5.html",
+    "bytes": 47572
+  },
+  {
+    "index": 6,
+    "url": "https://air-embodied-brain.github.io/Zeva/",
+    "status": 200,
+    "final_url": "https://air-embodied-brain.github.io/Zeva/",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/6.html",
+    "bytes": 51038
+  },
+  {
+    "index": 7,
+    "url": "https://weibo.com/ttarticle/p/show?id=2309405191884162335016",
+    "status": 200,
+    "final_url": "https://weibo.com/ttarticle/p/show?id=2309405191884162335016",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/identity-followup-20261001/7.html",
+    "bytes": 29837
+  },
+  {
+    "index": 8,
+    "url": "https://om.linker.cc/",
+    "status": 200,
+    "final_url": "https://om.linker.cc/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/identity-followup-20261001/8.html",
+    "bytes": 2371
+  },
+  {
+    "index": 9,
+    "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2025-11-29/a67d28e2-182d-4b19-a033-49d95fc90c65.PDF",
+    "status": 200,
+    "final_url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2025-11-29/a67d28e2-182d-4b19-a033-49d95fc90c65.PDF",
+    "content_type": "application/pdf",
+    "path": "snapshots/2026/10/identity-followup-20261001/9.pdf",
+    "bytes": 116891
+  },
+  {
+    "index": 10,
+    "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-28/dd1ddb04-5c1e-4efd-a4b0-5e9a25264da4.PDF",
+    "status": 200,
+    "final_url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-28/dd1ddb04-5c1e-4efd-a4b0-5e9a25264da4.PDF",
+    "content_type": "application/pdf",
+    "path": "snapshots/2026/10/identity-followup-20261001/10.pdf",
+    "bytes": 510978
+  }
+]
