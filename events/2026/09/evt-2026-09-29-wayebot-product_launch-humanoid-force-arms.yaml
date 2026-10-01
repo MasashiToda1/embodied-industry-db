@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-29-wayebot-product_launch-humanoid-force-arms",
+  "date": "2026-09-29",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "wayebot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "苇熠科技公布人形力控臂与双臂控制器产品组合"
+  },
+  "summary": {
+    "zh": "公开产品稿介绍关节力矩感知与双臂协同控制，列出面向工业及家庭场景的不同负载配置。场景说明属于产品面向方向，不据此认定所列工厂和家庭任务都已有交付案例。"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用产品稿明确标注的 2026-09-29 发布日期；未另行披露发布会日期。",
+  "evidence": [
+    {
+      "url": "https://leaderobot.com/news/9992",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/14.html",
+      "publisher": "Leaderobot"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-09-02-lexiang-tech-product_launch-zeroth-xiaoqiao-sales",
+  "date": "2026-09-02",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "lexiang-tech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "乐享科技旗下元点小桥机器人开售"
+  },
+  "summary": {
+    "zh": "雷峰网回顾元点小桥于 9 月 2 日正式开售，首发价为 8,888 元，并介绍开发者可使用遥操作及开放工具开发动作技能。销售数量是报道转述的公司口径，本条不把销量表述扩展为用户长期活跃或生态成熟度。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/industrynews/yR9rN5kyqx3kypzz.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/12.html",
+      "publisher": "雷峰网"
+    }
+  ],
+  "corroboration": "single"
+}

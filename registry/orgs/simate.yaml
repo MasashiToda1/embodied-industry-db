@@ -1,0 +1,25 @@
+{
+  "id": "simate",
+  "names": {
+    "zh": "Simate",
+    "en": "Simate"
+  },
+  "status": "active",
+  "layers": [
+    "foundation",
+    "simulation"
+  ],
+  "description": "研发具身基础模型及机器人学习、仿真评测和部署基础设施。",
+  "accounts": {
+    "site": "https://mate-robot.cn/"
+  },
+  "sources": [
+    {
+      "url": "https://mate-robot.cn/about/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/11.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

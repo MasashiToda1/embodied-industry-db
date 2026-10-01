@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-09-16-lexiang-tech-deployment-ether-barbecue-demo",
+  "date": "2026-09-16",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "lexiang-tech",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "乐享科技举行双机器人烧烤服务直播演示"
+  },
+  "summary": {
+    "zh": "雷峰网报道两台搭载以太模型的机器人在上海烧烤店进行接单、烤制和送餐直播，现场允许顾客干预任务。记录为限定时长的现场演示，不当作持续商业运营或全场景自主能力的证明。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/academic/Ti3obLMNSuHn5OpR.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/64.html",
+      "publisher": "雷峰网"
+    }
+  ],
+  "corroboration": "single"
+}

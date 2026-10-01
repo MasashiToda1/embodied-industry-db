@@ -1,0 +1,24 @@
+{
+  "id": "seeact-ai",
+  "names": {
+    "zh": "观行智能",
+    "en": "SeeAct AI",
+    "aliases": [
+      "SeeActAI"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation"
+  ],
+  "description": "面向机器人研究奖励驱动的策略学习与自进化系统；不将创始团队此前学术成果默认归属公司。",
+  "sources": [
+    {
+      "url": "https://www.leiphone.com/category/ai/k1XGdu6w3n7xGgKB.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/41.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

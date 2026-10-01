@@ -1,0 +1,34 @@
+{
+  "id": "synapath",
+  "names": {
+    "zh": "枢途科技",
+    "en": "Synapath AI",
+    "aliases": [
+      "SYNAPATH"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "data"
+  ],
+  "description": "面向机器人模型训练提供视频升维数据与触觉数据表征。",
+  "accounts": {
+    "site": "https://www.synapath.com/"
+  },
+  "sources": [
+    {
+      "url": "https://www.leiphone.com/category/robot/zVCVfjhnzD1S34Pm.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/20.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://www.synapath.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/2.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

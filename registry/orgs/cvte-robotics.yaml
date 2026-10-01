@@ -1,0 +1,29 @@
+{
+  "id": "cvte-robotics",
+  "names": {
+    "zh": "视源机器人",
+    "en": "CVTE Robotics",
+    "aliases": [
+      "视源股份",
+      "CVTE",
+      "MAXHUB"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "embodiment"
+  ],
+  "description": "视源股份的机器人产品线，提供可扩展机械臂和传感器的 X7 四足机器人。",
+  "accounts": {
+    "site": "https://www.cvte.com/product/quadrupedrobot"
+  },
+  "sources": [
+    {
+      "url": "https://www.cvte.com/product/quadrupedrobot",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/13.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

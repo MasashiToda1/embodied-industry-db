@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-09-28-sharpa-product_launch-d01-w02-ae01",
+  "date": "2026-09-28",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "sharpa",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Sharpa 在 IROS 发布 D01、W02 与 AE01"
+  },
+  "summary": {
+    "zh": "Sharpa 发布一体式触觉感知机器人 D01、灵巧手 W02 及外骨骼数据手套 AE01，分别面向动作执行、精细操作和遥操作数据采集。官网可核验该产品组合；发布不等同于全部产品已规模交付。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/21.html",
+      "publisher": "雷峰网"
+    },
+    {
+      "url": "https://www.sharpa.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/3.html",
+      "publisher": "主体官网 / 官方项目仓库"
+    }
+  ],
+  "corroboration": "single"
+}

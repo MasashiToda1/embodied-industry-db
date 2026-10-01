@@ -1,0 +1,33 @@
+{
+  "id": "evt-2026-09-26-memo-space-publication-physical-wam-robotwin-phys",
+  "date": "2026-09-26",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "memo-space",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "美梦空间公布 Physical-WAM 与 RoboTwin-Phys"
+  },
+  "summary": {
+    "zh": "公司在数贸会上公开物理世界动作模型 Physical-WAM 与物理扰动评测基准 RoboTwin-Phys，介绍物理参数表征及分层评估方法。RoboTwin-Phys 为项目基准，不是经标准机构制定的行业标准；不将宣传中的首创或泛化结论作为本库判断。"
+  },
+  "axes": {
+    "model_form": [
+      "world-model"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://www.qbitai.com/2026/09/498478.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/31.html",
+      "publisher": "量子位（美梦空间供稿）"
+    }
+  ],
+  "corroboration": "single"
+}

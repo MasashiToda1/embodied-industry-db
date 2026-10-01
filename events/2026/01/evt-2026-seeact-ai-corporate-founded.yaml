@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-seeact-ai-corporate-founded",
+  "date": "2026",
+  "date_precision": "year",
+  "type": "corporate",
+  "orgs": [
+    {
+      "id": "seeact-ai",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "观行智能成立并探索机器人自进化系统"
+  },
+  "summary": {
+    "zh": "雷峰网访谈明确介绍 SeeAct AI 观行智能于 2026 年创办，拟结合策略、世界及奖励模型形成机器人自进化系统。创办前的 RoboTwin 等个人或高校成果不自动归属公司，计划中的交付形式不视为已批量销售。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/ai/k1XGdu6w3n7xGgKB.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/41.html",
+      "publisher": "雷峰网"
+    }
+  ],
+  "corroboration": "single"
+}

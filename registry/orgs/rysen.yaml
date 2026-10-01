@@ -1,0 +1,27 @@
+{
+  "id": "rysen",
+  "names": {
+    "zh": "源升智能",
+    "en": "Rysen",
+    "aliases": [
+      "源升智能机器人（深圳）有限公司"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "components"
+  ],
+  "description": "研发面向机器人灵巧操作的 Apex Hand 末端执行器。",
+  "accounts": {
+    "site": "https://www.rysenbot.com/"
+  },
+  "sources": [
+    {
+      "url": "https://www.leiphone.com/category/robot/rhJu6CEW1OjHWAHH.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/9.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "knowin",
+  "names": {
+    "zh": "诺因智能",
+    "en": "Knowin",
+    "aliases": [
+      "诺因",
+      "深圳诺因智能有限公司"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation",
+    "embodiment"
+  ],
+  "description": "研发 GLOW 生成式具身模型框架与 Knowin-X1 家庭机器人。",
+  "accounts": {
+    "site": "https://knowinai.com/"
+  },
+  "sources": [
+    {
+      "url": "https://knowinai.com/",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/16.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://knowinai.com/tech.html",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/7.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}

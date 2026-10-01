@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-striding-ai-corporate-founded",
+  "date": "2026",
+  "date_precision": "year",
+  "type": "corporate",
+  "orgs": [
+    {
+      "id": "striding-ai",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "正行创新成立并开展物理智能研发"
+  },
+  "summary": {
+    "zh": "公司授权供稿明确称正行创新成立于 2026 年初，研发世界动作模型与强化学习技术，面向商业和工业机器人服务。仅按年份记录成立，不填未经核验的工商日期或已实现的量产规模。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.qbitai.com/2026/09/499239.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/13.html",
+      "publisher": "量子位（正行创新供稿）"
+    }
+  ],
+  "corroboration": "single"
+}

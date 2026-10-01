@@ -1,0 +1,37 @@
+{
+  "id": "lexiang-tech",
+  "names": {
+    "zh": "乐享科技",
+    "aliases": [
+      "苏州乐享智能科技有限公司",
+      "元点智能",
+      "元点机器人",
+      "Zeroth"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "embodiment",
+    "foundation"
+  ],
+  "description": "元点智能是乐享科技旗下消费级具身机器人品牌；公司研发机器人本体与以太模型。",
+  "accounts": {
+    "site": "https://www.zeroth0.com/"
+  },
+  "sources": [
+    {
+      "url": "https://www.zeroth0.com/zh/pages/about-us-our-identity",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-primary-20261001/4.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://www.leiphone.com/category/academic/Ti3obLMNSuHn5OpR.html",
+      "tier": "media",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/intake-audit-20261001/64.html",
+      "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    }
+  ]
+}
