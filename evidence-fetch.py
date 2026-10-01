@@ -27,3 +27,7 @@ for p in pathlib.Path("events").rglob("*.yaml"):
 orgs=[yaml.safe_load(p.read_text()) for p in pathlib.Path("registry/orgs").glob("*.yaml")]
 (out/"existing-orgs.json").write_text(json.dumps(orgs,ensure_ascii=False,default=str))
 print("Extracted",len(events),"events,",len(orgs),"orgs")
+
+for org in orgs:
+ group=[e for e in events if any(o["id"]==org["id"] for o in (e.get("orgs") or []))]
+ (out/("events-"+org["id"]+".json")).write_text(json.dumps(group,ensure_ascii=False,default=str))
