@@ -1,0 +1,27 @@
+{
+  "id": "omai",
+  "names": {
+    "zh": "联汇科技",
+    "en": "OmAI",
+    "aliases": [
+      "OmAI联汇"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "integration"
+  ],
+  "description": "提供面向机器狗等机器人终端的 OmAgent 智能体平台，连接多模态感知、记忆、决策与任务执行，支持 API 和私有部署。",
+  "accounts": {
+    "site": "https://om.linker.cc/"
+  },
+  "sources": [
+    {
+      "url": "https://weibo.com/ttarticle/p/show?id=2309405191884162335016",
+      "tier": "official",
+      "retrieved": "2026-10-01",
+      "snapshot": "snapshots/2026/10/identity-followup-20261001/7.html",
+      "note": "公司发布的 OmAgent 说明明确机器人终端与交付形态；未据此验证基础模型原创比例或客户规模。"
+    }
+  ]
+}
