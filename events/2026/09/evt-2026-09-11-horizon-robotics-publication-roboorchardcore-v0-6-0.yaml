@@ -1,0 +1,20 @@
+id: "evt-2026-09-11-horizon-robotics-publication-roboorchardcore-v0-6-0"
+date: "2026-09-11"
+date_precision: "day"
+type: "publication"
+orgs:
+  -
+    id: "horizon-robotics"
+    role: "subject"
+title:
+  zh: "地平线发布 RoboOrchardCore v0.6.0"
+summary:
+  zh: "发布说明列出相机批数据的缩放与图像编码、坐标变换图索引、四元数序列连续性处理，以及配置校验、命令行扩展和运行时清理等更新。 日期采用官方 GitHub release 的 published_at（UTC）。"
+evidence:
+  -
+    url: "https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.6.0-release"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-roboorchardcore-v0-6-0-release-20261001.json"
+corroboration: "single"

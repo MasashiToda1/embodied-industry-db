@@ -1,0 +1,34 @@
+id: "evt-2026-09-28-horizon-robotics-publication-cogwam-research-note"
+date: "2026-09-28"
+date_precision: "day"
+date_basis: "derived"
+date_as_stated: "README 所在提交 ceb5c169c72c47920965aeb2f348ac6f4e153caf 的 committer.date 为 2026-09-28T03:25:06Z；按 UTC 记录文档提交日期，不认定为仓库首次公开或模型权重首次发布日。"
+type: "publication"
+orgs:
+  -
+    id: "horizon-robotics"
+    role: "subject"
+title:
+  zh: "地平线提交 CogWAM RoboDojo 复现技术说明"
+summary:
+  zh: "地平线在官方 CogWAM 仓库提交技术说明，描述以持久语义状态连接任务进度、未来世界预测与动作生成，并列出 RoboDojo 复现实验的训练、策略服务和评测流程。说明明确该发布范围不包含论文中的 BiCoord 与真实机器人实验；评测客户端使用 Isaac Sim 与 Isaac Lab。这里记录研究复现设置，不代表量产产品采用该架构。"
+axes:
+  model_form:
+    - "world-model"
+  sim_stack:
+    - "isaac-sim"
+    - "isaac-lab"
+evidence:
+  -
+    url: "https://github.com/HorizonRobotics/CogWAM/blob/ceb5c169c72c47920965aeb2f348ac6f4e153caf/README.md"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-cog-research-note-20261001.md"
+  -
+    url: "https://api.github.com/repos/HorizonRobotics/CogWAM/git/commits/ceb5c169c72c47920965aeb2f348ac6f4e153caf"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-cog-readme-commit-20261001.json"
+corroboration: "single"

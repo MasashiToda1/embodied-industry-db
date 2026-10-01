@@ -1,0 +1,20 @@
+id: "evt-2026-09-11-horizon-robotics-publication-roboorchardcore-v0-7-0"
+date: "2026-09-11"
+date_precision: "day"
+type: "publication"
+orgs:
+  -
+    id: "horizon-robotics"
+    role: "subject"
+title:
+  zh: "地平线发布 RoboOrchardCore v0.7.0"
+summary:
+  zh: "发布说明引入轻量基础安装，将完整机器人运行时依赖放入 robotics 可选安装组，保留 all 聚合安装组及 kinematic 兼容别名。 日期采用官方 GitHub release 的 published_at（UTC）。"
+evidence:
+  -
+    url: "https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.7.0-release"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-roboorchardcore-v0-7-0-release-20261001.json"
+corroboration: "single"

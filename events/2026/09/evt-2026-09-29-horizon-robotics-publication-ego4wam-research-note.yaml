@@ -1,0 +1,33 @@
+id: "evt-2026-09-29-horizon-robotics-publication-ego4wam-research-note"
+date: "2026-09-29"
+date_precision: "day"
+date_basis: "derived"
+date_as_stated: "README 所在提交 abbf69f4e36fbff6457d8e190adec3afd651b5b3 的 committer.date 为 2026-09-29T16:38:13Z；按 UTC 记录文档提交日期，不认定为仓库首次公开或模型权重首次发布日。"
+type: "publication"
+orgs:
+  -
+    id: "horizon-robotics"
+    role: "subject"
+title:
+  zh: "地平线提交 Ego4WAM 第一视角人类数据研究说明"
+summary:
+  zh: "地平线在官方 Ego4WAM 仓库提交研究说明，在固定世界动作模型框架下研究第一视角人类数据的对齐、时长、任务多样性和监督形式，并描述真机与 RoboDojo 闭环评测。说明列出 Wan2.2 视频世界模型骨干及 LeRobot 数据格式，并提供 Hugging Face 模型链接。此事件记录研究说明，不将 README 或仓库创建时间作为模型权重首次可下载时间。"
+axes:
+  model_form:
+    - "world-model"
+  data_acquisition:
+    - "human-video"
+evidence:
+  -
+    url: "https://github.com/HorizonRobotics/Ego4WAM/blob/abbf69f4e36fbff6457d8e190adec3afd651b5b3/README.md"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-ego-research-note-20261001.md"
+  -
+    url: "https://api.github.com/repos/HorizonRobotics/Ego4WAM/git/commits/abbf69f4e36fbff6457d8e190adec3afd651b5b3"
+    publisher: "GitHub · HorizonRobotics"
+    tier: "official"
+    retrieved: "2026-10-01"
+    snapshot: "snapshots/2026/10/github-ego-readme-commit-20261001.json"
+corroboration: "single"
