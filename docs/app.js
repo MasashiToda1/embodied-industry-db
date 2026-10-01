@@ -332,21 +332,23 @@ async function pageAxes() {
   const A = await (await fetch('data/axes.json')).json();
   const fields = Object.keys(D.axes_meta);
   let axis = qs.get('axis') && A[qs.get('axis')] ? qs.get('axis') : (Object.keys(A)[0] || fields[0]);
-  let tab = 'stream';
+  let tab = qs.get('view') === 'stream' ? 'stream' : 'map';
   $('main').innerHTML = `<div class="wrap"><h1>轴 / 收敛</h1>
-    <div class="sub">选一条轴：流图看路线记录随时间的变化，热力图看哪些公司有哪条路线的记录。公司可以同时出现多种路线。</div>
+    <div class="sub">选一条轴，直接看每条路线有哪些公司。点击公司可对照它涉及的其他路线；切换流图查看时间变化。</div>
     <div class="card" style="margin-bottom:12px"><div id="axis-tags">${fields.map(f => `<span class="tag ${f === axis ? 'on' : ''} ${A[f] ? '' : 'soft'}" data-f="${f}">${label(f)}${A[f] ? '' : ' <small>0</small>'}</span>`).join('')}</div>
-      <div style="margin-top:8px"><span class="tag ${tab === 'stream' ? 'on' : ''}" data-t="stream">流图</span><span class="tag" data-t="heat">路线热力图</span></div></div>
+      <div style="margin-top:8px"><button type="button" class="tag" data-t="map">路线分组地图</button><button type="button" class="tag" data-t="stream">流图</button></div></div>
     <div class="card" id="viz"></div><div class="notice" style="margin-top:12px">图表只反映本库已收录的公开证据，不代表行业全貌；尚未收录不等于未采用。</div></div>`;
   const draw = () => {
     $$('#axis-tags .tag').forEach(t => t.classList.toggle('on', t.dataset.f === axis));
-    $$('[data-t]').forEach(t => t.classList.toggle('on', t.dataset.t === tab));
+    $('[data-t]').forEach(t => { t.classList.toggle('on', t.dataset.t === tab); t.setAttribute('aria-pressed', String(t.dataset.t === tab)); });
     const ax = A[axis]; const viz = $('#viz');
     if (!ax) { viz.innerHTML = '<div class="empty">这条轴还没有任何主体有取值</div>'; return; }
-    tab === 'stream' ? drawStream(viz, ax) : drawHeat(viz, ax);
+    viz.onclick = null;
+    tab === 'stream' ? drawStream(viz, ax) : drawRouteMap(viz, ax);
   };
-  $$('#axis-tags .tag').forEach(t => t.onclick = () => { axis = t.dataset.f; history.replaceState(null, '', '?axis=' + axis); draw(); });
-  $$('[data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; draw(); });
+  const remember = () => { const params = new URLSearchParams(location.search); params.set('axis', axis); params.set('view', tab); history.replaceState(null, '', '?' + params); };
+  $('#axis-tags .tag').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
+  $('[data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
   draw();
 }
 function toDate(s) { s = String(s); if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(s); if (/^\d{4}-\d{2}$/.test(s)) return new Date(s + '-15'); const q = s.match(/^(\d{4})-Q([1-4])$/); if (q) return new Date(+q[1], q[2] * 3 - 2, 15); if (/^\d{4}$/.test(s)) return new Date(+s, 6, 1); return new Date(s); }
@@ -371,28 +373,53 @@ function drawStream(el, ax) {
   svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4)).selectAll('text').style('font-size', '11px');
   svg.append('text').attr('x', m.l).attr('y', 12).style('font-size', '11px').style('fill', '#6b6b70').text('主体数（累计首次可见）');
 }
-function drawHeat(el, ax) {
-  const values = Object.keys(ax.values);
-  const orgs = [...new Set(values.flatMap(v => ax.values[v].orgs.map(o => o.org)))]
-    .sort((a, b) => orgZh(a).localeCompare(orgZh(b), 'zh-CN') || a.localeCompare(b));
-  if (!orgs.length) { el.innerHTML = '<div class="empty">这条轴暂无路线记录</div>'; return; }
-  const records = new Map(values.map(v => [v, new Map(ax.values[v].orgs.map(o => [o.org, o]))]));
-  el.innerHTML = `<h2 class="heat-title">公司 × ${esc(ax.zh || '路线')}</h2>
-    <p class="heat-help" id="heat-help">每行一家公司，每列一种路线。蓝色表示本库有该路线的公开记录，点击查看来源；灰色表示尚未收录，不能据此判断未采用。记录包含研究与历史选择，不等同于当前量产路线。</p>
-    <div class="heat-legend"><span><i class="heat-key seen"></i>有记录</span><span><i class="heat-key"></i>尚未收录</span><span class="muted">${orgs.length} 家公司 · 可同时记录多种路线 · 按名称排列</span></div>
-    <div class="heat-scroll" role="region" aria-label="公司与路线记录矩阵，可横向滚动" tabindex="0">
-      <table class="heat" aria-describedby="heat-help">
-        <caption>公司与路线的公开记录分布</caption>
-        <thead><tr><th scope="col">公司 / 路线</th>${values.map(v => `<th scope="col">${esc(ax.values[v].zh || v)}<small>${records.get(v).size} 家有记录</small></th>`).join('')}</tr></thead>
-        <tbody>${orgs.map(o => `<tr><th scope="row"><a href="org.html?id=${encodeURIComponent(o)}">${esc(orgZh(o))}</a></th>${values.map(v => {
-          const record = records.get(v).get(o);
-          const name = `${orgZh(o)} · ${ax.values[v].zh || v}`;
-          return record
-            ? `<td class="heat-seen"><a href="index.html?ev=${encodeURIComponent(record.event)}" title="${esc(name + '：有记录；首次收录到的证据日期 ' + record.first_seen)}" aria-label="${esc(name + '：有记录，查看来源事件')}"><span aria-hidden="true">●</span> 有记录</a></td>`
-            : `<td class="heat-unknown"><span aria-label="${esc(name + '：尚未收录，不表示未采用')}" title="尚未收录，不表示未采用">—</span></td>`;
-        }).join('')}</tr>`).join('')}</tbody>
-      </table>
-    </div>`;
+function drawRouteMap(el, ax) {
+  const groups = Object.entries(ax.values).map(([value, data]) => ({
+    value, name: data.zh || value,
+    orgs: [...new Map(data.orgs.map(o => [o.org, o])).values()]
+      .sort((a, b) => orgZh(a.org).localeCompare(orgZh(b.org), 'zh-CN') || a.org.localeCompare(b.org))
+  })).filter(g => g.orgs.length);
+  if (!groups.length) { el.innerHTML = '<div class="empty">这条轴暂无路线记录</div>'; return; }
+  const orgCount = new Set(groups.flatMap(g => g.orgs.map(o => o.org))).size;
+  const events = new Map((D?.events || []).map(e => [e.id, e]));
+  el.innerHTML = `<div class="route-intro"><h2>${esc(ax.zh || '路线')} · 公司分布</h2>
+    <span class="muted">${groups.length} 条路线 · ${orgCount} 家公司（去重）</span></div>
+    <p class="route-help">同一家公司可以出现在多个分组。公司按名称排列；记录包含研究与历史选择，不等同于当前量产采用。</p>
+    <div class="route-selection" aria-live="polite" aria-atomic="true"><span class="muted">点击任一公司，高亮它在本轴的全部路线，并查看各路线的来源。</span></div>
+    <div class="route-grid">${groups.map((g, i) => `<section class="route-group" data-route="${esc(g.value)}" aria-labelledby="route-heading-${i}">
+      <div class="route-heading"><h3 id="route-heading-${i}">${esc(g.name)}</h3><span>${g.orgs.length} 家</span></div>
+      <div class="route-companies">${g.orgs.map(o => `<button type="button" class="route-company" data-route-org="${esc(o.org)}" aria-pressed="false" aria-label="${esc(orgZh(o.org) + '，查看涉及的路线及来源')}">${esc(orgZh(o.org))}</button>`).join('')}</div>
+    </section>`).join('')}</div>`;
+  let selected = null;
+  const select = id => {
+    selected = id;
+    $$('[data-route-org]', el).forEach(button => {
+      const active = button.dataset.routeOrg === id;
+      button.classList.toggle('selected', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    $$('.route-group', el).forEach((section, i) => section.classList.toggle('selected', groups[i].orgs.some(o => o.org === id)));
+    const panel = $('.route-selection', el);
+    if (!id) { panel.innerHTML = '<span class="muted">点击任一公司，高亮它在本轴的全部路线，并查看各路线的来源。</span>'; return; }
+    const matches = groups.filter(g => g.orgs.some(o => o.org === id));
+    panel.innerHTML = `<div class="route-selection-head"><strong>${esc(orgZh(id))} · 涉及 ${matches.length} 条路线</strong>
+      <a href="org.html?id=${encodeURIComponent(id)}">查看公司</a><button type="button" data-route-clear>取消选择</button></div>
+      <ul class="route-sources">${matches.map(g => {
+        const record = g.orgs.find(o => o.org === id), event = events.get(record.event);
+        return `<li><b>${esc(g.name)}</b><a href="index.html?ev=${encodeURIComponent(record.event)}">${esc(event?.title?.zh || '查看来源事件')}</a><span class="muted">首次可见 ${esc(record.first_seen)}</span></li>`;
+      }).join('')}</ul>`;
+  };
+  el.onclick = event => {
+    const button = event.target.closest('button');
+    if (!button || !el.contains(button)) return;
+    if (button.hasAttribute('data-route-clear')) {
+      const previous = selected;
+      select(null);
+      $$('[data-route-org]', el).find(b => b.dataset.routeOrg === previous)?.focus();
+    } else if (button.hasAttribute('data-route-org')) {
+      select(selected === button.dataset.routeOrg ? null : button.dataset.routeOrg);
+    }
+  };
 }
 
 /* ---------- ④ 图谱 ---------- */
