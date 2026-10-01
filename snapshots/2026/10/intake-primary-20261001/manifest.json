@@ -25,7 +25,7 @@
     "final_url": "https://www.sharpa.com/",
     "content_type": "text/html; charset=utf-8",
     "path": "snapshots/2026/10/intake-primary-20261001/3.html",
-    "bytes": 273408
+    "bytes": 274576
   },
   {
     "index": 4,
@@ -34,7 +34,7 @@
     "final_url": "https://www.zeroth0.com/zh/pages/about-us-our-identity",
     "content_type": "text/html; charset=utf-8",
     "path": "snapshots/2026/10/intake-primary-20261001/4.html",
-    "bytes": 453233
+    "bytes": 453230
   },
   {
     "index": 5,
@@ -66,7 +66,7 @@
     "final_url": "https://github.com/RLinf/RLark",
     "content_type": "text/html; charset=utf-8",
     "path": "snapshots/2026/10/intake-primary-20261001/8.html",
-    "bytes": 345202
+    "bytes": 345199
   },
   {
     "index": 9,
@@ -139,5 +139,55 @@
     "content_type": "text/html",
     "path": "snapshots/2026/10/intake-primary-20261001/16.html",
     "bytes": 9440
+  },
+  {
+    "index": 17,
+    "url": "https://www.ff.com/us/919-ff-eai-robotics/",
+    "status": 200,
+    "final_url": "https://www.ff.com/us/919-ff-eai-robotics/",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/17.html",
+    "bytes": 664265
+  },
+  {
+    "index": 18,
+    "url": "https://app-us.ff.com/ff-v3/news/1422?lang=en-US",
+    "status": 200,
+    "final_url": "https://app-us.ff.com/ff-v3/news/1422?lang=en-US",
+    "content_type": "text/html",
+    "path": "snapshots/2026/10/intake-primary-20261001/18.html",
+    "bytes": 5549
+  },
+  {
+    "index": 19,
+    "url": "https://img.wanwang.xin/pubsf/31110/31110156/cdn-static-pages/pages/pc/32_zh-cn.html.Body.js?version=20260922160014",
+    "status": 200,
+    "final_url": "https://img.wanwang.xin/pubsf/31110/31110156/cdn-static-pages/pages/pc/32_zh-cn.html.Body.js?version=20260922160014",
+    "content_type": "application/javascript",
+    "path": "snapshots/2026/10/intake-primary-20261001/19.html",
+    "bytes": 184852
+  },
+  {
+    "index": 20,
+    "url": "http://www.rysenbot.com/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+  },
+  {
+    "index": 21,
+    "url": "http://www.wayebot.com/",
+    "status": 200,
+    "final_url": "http://www.waybot.org/",
+    "content_type": "text/html; charset=UTF-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/21.html",
+    "bytes": 203455
+  },
+  {
+    "index": 22,
+    "url": "https://www.infinigence-ai.com/2026waic/6.html",
+    "status": 200,
+    "final_url": "https://www.infinigence-ai.com/2026waic/6.html",
+    "content_type": "text/html; charset=utf-8",
+    "path": "snapshots/2026/10/intake-primary-20261001/22.html",
+    "bytes": 50872
   }
 ]

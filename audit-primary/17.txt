@@ -1,0 +1,96 @@
+919 FF EAI Robotics Launch Event | Faraday Future\nKey Messages\nHighlights of Today's Event\nToday we focus on two of our four cores:\nEAI Devices and Industry Productivity Solutions.\n01\nFF EAI Devices Core\nTwo form factors, three product series, five models and nine configurations
+          of new EAI devices launched and available for immediate sales and delivery.
+          FF becomes the U.S. robotics company with the widest range of device form
+          factors, broadest size coverage and largest number of product models.\n02\nIndustry Productivity Solutions Core\nFour complete solutions launched for K–12 education, higher education and
+          research, security, and inspection — providing a replicable path toward
+          practical robot deployment.\n03\nSales and Delivery\nThree product combinations — standard devices, “devices + Skills Packages,”
+          and “devices + solutions.” A “6+1 Channel” system covers direct sales, the
+          official website, e-commerce, PAR, MCube, ecosystem content touchpoints and
+          RoboShare leasing.\n04\nRoboShare\nSigned MOU with U.S. robot rental platform; evaluating expansion into
+          additional AI device categories, including autonomous shared mobility.\nEAI Devices Core\nTwo Forms,\nThree Series,\nFive Models,\nNine New Devices\nNine new products launch,\ngo on sale,\nand become available for delivery today.\nModel 1\nFF All-New Futurist\nStandard / Ultra\nOur flagship product. The full-size professional EAI humanoid robot,\nan all-in-one professional expert.\nAmong the EAI robots currently on the market, it offers the most advanced
+            motion control and the most powerful EAI Brain. It is also the first
+            full-size humanoid robot around the country to natively support NVIDIA SONIC.\nPrice\n$89,900\nStandard, includes a $10,000 Skills Package\n$129,900\nUltra, includes a $15,000 Skills Package\nLearn More\nModel 2\nFF Master Mini\nMini / Pro / Ultra\nAn EAI humanoid designed for education, sports, and robotics competitions —\nthe all-rounder built to go from classroom to competition.\nThe first EAI small humanoid robot in North America under $10,000, and the
+            first compact EAI humanoid here in the States to bring coding education, an
+            open development platform, and real-world sports competition together in one
+            product.\nPrice\n$9,990\nMaster Mini, includes a $1,000 Skills Package\n$12,990\nPro, includes a $1,500 Skills Package\n$17,990\nUltra, includes a $2,000 Skills Package\nLearn More\nModel 3\nFX Aegis Classic - Ultra W\nNew wheel-legged option\nA Lightweight Professional Wheel-Legged EAI robot built for security and
+            companionship,\ndelivering flexible protection with a compact design.\nIt packs high-speed wheeled quadruped mobility, obstacle-clearing agility,
+            low-noise operation, and open development capabilities all into a compact
+            22-kilogram body.\nPrice\n$12,990\nincludes a $3,000 Skills Package\nLearn More\nModel 4\nFX Aegis Mega\nMega A / Mega D\nA mid-sized, industrial-grade wheeled-legged EAI robot that acts as\nan all-around pioneer across complex terrains and demanding environments.\nIt sets a new benchmark for product strength among mid-sized industrial
+            robot dogs at this price point in the U.S. market.\nPrice\n$74,990\nMega A and Mega D, both include an $8,000 Skills Package\nLearn More\nModel 5\nFX Aegis Hyper\nQuadruped · Flagship of the Aegis family\nA Large Industrial-Grade EAI Quadruped built for extreme environments,
+            heavy-duty tasks, and high-risk autonomous operations —\na versatile field operations expert.\nThe first Large Industrial-Grade EAI Quadruped in the U.S. purpose-built
+            for real-world industrial operations and autonomous inspection across a
+            wide range of challenging conditions.\nPrice\n$137,900\nstarting, includes a $15,000 Skills Package\nLearn More\nFF EAI Robot World 2.0\nOne Brain,\nMultiple Forms;\nMultiple Forms,\nMultiple Capabilities\nHow has FF built a largely complete “Four-Core Full-Stack AI” ecosystem —\nand brought together Robot World 2.0 with 24 EAI Devices —\nin less than a year?\nFive key reasons.\nUse cases shape each form\n→\nForms generate data\n→\nData makes the Brain smarter\n→\nA smarter Brain empowers every form\nOne\nForward-looking Strategy & Leading Business Model\n“One Brain, Multiple Forms” vision + “Light on Four, Heavy on Four”
+          operations — light on capital / assets / marketing / sales, heavy on
+          product power / AI / real-world utility / users.\nTwo\nProduct & Technology: In-house Development + Open Collaboration\n12 years of AI accumulation powering the “Four-Core Full-Stack AI”
+          Ecosystem, a self-evolving flywheel, Robot World 2.0, and the
+          three-phase “Built in USA” program.\nThree\nSupply Chain, Manufacturing & Compliance\nThe “Built in USA” Acceleration Program leverages FF’s years of EAI EV
+          industry capabilities, turning experience into competitive advantages
+          faster.\nFour\nUser Ecosystem\nThree product packages (Device / Device + Skills / Device + Industry
+          Solutions) + “6+1” network serving B2B & B2C — converting one-time
+          sales into long-term ecosystem revenue.\nFive\nIndustry Alliance\nGlobal EAI Industry Bridge + EAI Robotics “Made in USA” Industry
+          Alliance continuously attract more suppliers, clients, and capital
+          into the ecosystem.\nProductivity Core\nFour Solutions Across Four Scenarios\nThe first product launch since the Productivity Solutions Core joined
+        our Four-Core Full-Stack AI Ecosystem in July.\nEducation & Research Ecosystem\nEcosystem 1.0 is fully ready\nK–12 Education\nFF EAI Robotics K–12 Education Solution\nAn integrated Physical AI teaching and competition growth platform
+              for K–12 students. Centered on real EAI robots, it connects interest
+              initiation, programming learning, AI practice, robot competition,
+              and higher education research, nurturing students as they grow from
+              robotics beginners into youth developers.\nDevices\nCentered on Master Mini; Navi for young beginners, Aegis Classic
+                  for quadruped motion control, Master Classic and All-New Futurist
+                  bridging advanced high school studies and university research\nPlatform\nA three-tier curriculum in Blockly, Python, and ROS alongside an
+                  aligned competition system\nCoverage\nRobots and development kits, grade-specific courses, teaching
+                  and developer platforms, teacher training, classroom and
+                  competition projects, device management, assessment, data
+                  security, and support\nCustomers\nK–12 private schools, public schools and districts, and training
+                  institutions, via modular solutions on a unified platform\nResearch\nFF EAI Robotics Research Solution\nAn all-form Physical AI teaching and EAI research platform for
+              universities, serving as an R&D foundation that runs every
+              robot form on a single platform.\nThe first university research solution in the U.S. to connect
+              full-size humanoids, small humanoids, quadrupeds, wheeled quadrupeds,
+              and mobile manipulators through a unified development platform,
+              letting research teams complete algorithm development, simulation
+              verification, physical deployment, and cross-device migration in
+              one toolchain.\nDevices\nAll-New Futurist as the flagship, paired with Master Classic,
+                  Master Mini, Aegis Classic, Aegis Mega, Faber and other series
+                  and configurations\nPlatform\nUnified SDK, ROS interfaces, simulation and digital twins, data
+                  collection, model training, and skill management\nResearch\nMotion control, embodied foundation models, sim-to-real transfer,
+                  and swarm intelligence\nValue\nA single lab can serve computer science, AI, and mechanical
+                  engineering — moving from selling equipment to joint labs,
+                  research collaborations, and commercial conversion\nSecurity & Inspection Ecosystem\nFrom communities to critical infrastructure\nSecurity\nFF EAI Robotics Security Solution\nAn integrated Physical AI security solution with multi-model,
+              multi-tier coverage — a round-the-clock protective force from
+              living rooms to industrial parks, and from shopping malls to factories.\nThe first comprehensive security solution from an American robotics
+              company to deploy both multi-size wheeled and quadruped robots
+              together, covering communities, campuses, buildings, industrial
+              parks, warehouses, and critical infrastructure.\nDevices\nThe Aegis Classic series handles indoor and building patrols,
+                  Aegis Mega takes on large outdoor and high-risk tasks; payloads
+                  configurable for thermal imaging, 360° cameras, and LiDAR\nPlatform\nOne system manages multiple robots with 3D mapping, autonomous
+                  patrolling, all-weather multimodal sensing, and AI event recognition\nResponse\nAlarm integration, two-way audio, teleoperation, and digital
+                  evidence archiving\nValue\nHigh-frequency, night, and dangerous patrols move to robots;
+                  partners move from single-unit sales to a replicable operations
+                  business of devices, payloads, subscriptions, and maintenance\nInspection\nFF EAI Robotics Inspection Solution\nA multi-form EAI inspection solution for energy, electric power,
+              manufacturing, mining, tunnels, and large facilities — an industrial
+              inspection expert that can see clearly, hear distinctly, measure
+              accurately, and even manipulate objects.\nThe first inspection solution in the U.S. market to pair heavy-duty
+              wheeled and quadruped robots with mobile manipulators, covering the
+              complete workflow of seeing, hearing, measuring, and physical operation.\nDevices\nAegis Mega handles high-frequency inspection for large facilities
+                  and power stations, Aegis Hyper targets extreme high-risk areas,
+                  and Faber manages indoor precision operations\nPayloads\nPTZ cameras, thermal imaging, gas detection, 3D scanning, and
+                  robotic arm end-effectors\nPlatform\nFF Smart Inspection Platform: autonomous mapping, meter OCR reading,
+                  AI anomaly and leak recognition, automated reports, and alert ticketing\nValue\nHigh-frequency, traceable data detects degradation early;
+                  coordinated perception and manipulation open doors, pull switches,
+                  and collect samples — scaling from single-site POC to multi-site
+                  deployment\nSales & Delivery\nLaunch Means Sales,\nSales Means Delivery\nProducts go on sale the moment they launch,\nand every sale is backed by immediate delivery.\nWhat can customers buy? We offer three types of product packages.\nStandard EAI Device\nCustomers can choose from the announced models and configurations.
+          Base capabilities, included Skills Packages, and after-sales benefits
+          will be based on the final sales package.\nEAI Device + Skills Package\nWhether for education, development, security, inspection, or competition,
+          you can choose the Skills you need — pre-installed at purchase or unlocked
+          later. You are not simply buying hardware; you are getting an EAI work
+          platform that grows with you over time.\nEAI Device + Complete Solution\nFor K–12 education, research, security, or inspection, we bring everything
+          together: EAI Devices, specialized payloads, the software platform, Skills,
+          deployment, training, operations and maintenance, and after-sales support —
+          delivered as one integrated package.\nTogether,\nthis “6+1” network connects product sales,\nchannel partnerships,\nasset operations,\nand real-world deployment. It helps put more robots to work,\nfaster,\ncreating lasting productivity and value in the real world.\nThe “6” · Six routes to market\nB2B, FF PAR, E-commerce, Marcom & Video Sales, Community, and MCube —
+          together reaching enterprise customers, channel partners, individual
+          users, developers, content platforms, and communities. Whichever route
+          you choose, pricing, orders, delivery, and after-sales support are all
+          handled through the same FF system.\nThe “+1” · RoboShare\nIf ownership is not what you need right now, you can rent a robot on
+          demand through RoboShare. And if you already own an eligible device,
+          you can apply to bring it onto the platform, make it available for
+          rentals and on-site deployments, improve its utilization, and
+          potentially generate operating income.
