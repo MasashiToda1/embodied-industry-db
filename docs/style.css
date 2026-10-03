@@ -190,3 +190,22 @@ button.tag.on{background:var(--ink)}
 @media (max-width:600px){.route-grid{grid-template-columns:1fr}.route-selection-head button{margin-left:0}}
 footer{color:var(--muted);font-size:12px;padding:20px 0;border-top:1px solid var(--line);margin-top:30px}
 @media (max-width:860px){.two{grid-template-columns:1fr}nav input{width:120px}.fbar{flex-wrap:wrap}}
+
+/* 维度决定比较内容；展示方式仅控制图表呈现。 */
+.axis-filter{margin-bottom:16px}
+.axis-filter-label{font-size:12px;font-weight:600;color:var(--muted);margin-bottom:10px}
+.axis-options{display:flex;flex-wrap:wrap;gap:8px}
+.axis-option{font:inherit;font-size:13px;line-height:1.4;padding:7px 13px;border:1px solid var(--line);border-radius:18px;background:var(--card);color:var(--ink);cursor:pointer}
+.axis-option:hover{border-color:var(--ink)}
+.axis-option.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.axis-option.soft:not(.on){color:var(--muted)}
+.axis-chart-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.axis-chart-toolbar h2{font-size:18px;margin:0}
+.axis-view-control{display:flex;align-items:center;gap:10px}
+.axis-view-control>span{font-size:12px;color:var(--muted);white-space:nowrap}
+.axis-view-switch{display:inline-flex;gap:3px;padding:3px;background:#f0f1f3;border-radius:8px}
+.axis-view-switch button{font:inherit;font-size:12px;line-height:1.5;white-space:nowrap;padding:6px 11px;border:1px solid transparent;border-radius:6px;background:transparent;color:var(--muted);cursor:pointer}
+.axis-view-switch button:hover{color:var(--ink)}
+.axis-view-switch button.on{background:var(--card);color:var(--ink);border-color:var(--line);box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.axis-option:focus-visible,.axis-view-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:600px){.axis-chart-toolbar{align-items:flex-start;flex-direction:column}.axis-option{padding:7px 11px}.axis-view-control{flex-wrap:wrap}}
