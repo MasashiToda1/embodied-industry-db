@@ -335,20 +335,33 @@ async function pageAxes() {
   let tab = qs.get('view') === 'stream' ? 'stream' : 'map';
   $('main').innerHTML = `<div class="wrap"><h1>轴 / 收敛</h1>
     <div class="sub">选一条轴，直接看每条路线有哪些公司。点击公司可对照它涉及的其他路线；切换流图查看时间变化。</div>
-    <div class="card" style="margin-bottom:12px"><div id="axis-tags">${fields.map(f => `<span class="tag ${f === axis ? 'on' : ''} ${A[f] ? '' : 'soft'}" data-f="${f}">${label(f)}${A[f] ? '' : ' <small>0</small>'}</span>`).join('')}</div>
-      <div style="margin-top:8px"><button type="button" class="tag" data-t="map">路线分组地图</button><button type="button" class="tag" data-t="stream">流图</button></div></div>
-    <div class="card" id="viz"></div><div class="notice" style="margin-top:12px">图表只反映本库已收录的公开证据，不代表行业全貌；尚未收录不等于未采用。</div></div>`;
+    <section class="card axis-filter" aria-labelledby="axis-filter-label">
+      <div class="axis-filter-label" id="axis-filter-label">比较维度</div>
+      <div id="axis-tags" class="axis-options" role="group" aria-labelledby="axis-filter-label">${fields.map(f => `<button type="button" class="axis-option ${f === axis ? 'on' : ''} ${A[f] ? '' : 'soft'}" data-f="${f}" aria-pressed="${f === axis}">${label(f)}${A[f] ? '' : ' <small>0</small>'}</button>`).join('')}</div>
+    </section>
+    <section class="card axis-chart" aria-labelledby="axis-chart-title">
+      <div class="axis-chart-toolbar">
+        <h2 id="axis-chart-title"></h2>
+        <div class="axis-view-control"><span id="axis-view-label">展示方式</span>
+          <div class="axis-view-switch" role="group" aria-labelledby="axis-view-label">
+            <button type="button" data-t="map">路线分组地图</button><button type="button" data-t="stream">流图</button>
+          </div>
+        </div>
+      </div>
+      <div id="viz"></div>
+    </section><div class="notice" style="margin-top:12px">图表只反映本库已收录的公开证据，不代表行业全貌；尚未收录不等于未采用。</div></div>`;
   const draw = () => {
-    $$('#axis-tags .tag').forEach(t => t.classList.toggle('on', t.dataset.f === axis));
-    $$('[data-t]').forEach(t => { t.classList.toggle('on', t.dataset.t === tab); t.setAttribute('aria-pressed', String(t.dataset.t === tab)); });
+    $$('#axis-tags .axis-option').forEach(t => { t.classList.toggle('on', t.dataset.f === axis); t.setAttribute('aria-pressed', String(t.dataset.f === axis)); });
+    $('#axis-chart-title').textContent = label(axis);
+    $$('.axis-view-switch [data-t]').forEach(t => { t.classList.toggle('on', t.dataset.t === tab); t.setAttribute('aria-pressed', String(t.dataset.t === tab)); });
     const ax = A[axis]; const viz = $('#viz');
     if (!ax) { viz.innerHTML = '<div class="empty">这条轴还没有任何主体有取值</div>'; return; }
     viz.onclick = null;
     tab === 'stream' ? drawStream(viz, ax) : drawRouteMap(viz, ax);
   };
   const remember = () => { const params = new URLSearchParams(location.search); params.set('axis', axis); params.set('view', tab); history.replaceState(null, '', '?' + params); };
-  $$('#axis-tags .tag').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
-  $$('[data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
+  $$('#axis-tags .axis-option').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
+  $$('.axis-view-switch [data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
   draw();
 }
 function toDate(s) { s = String(s); if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(s); if (/^\d{4}-\d{2}$/.test(s)) return new Date(s + '-15'); const q = s.match(/^(\d{4})-Q([1-4])$/); if (q) return new Date(+q[1], q[2] * 3 - 2, 15); if (/^\d{4}$/.test(s)) return new Date(+s, 6, 1); return new Date(s); }
