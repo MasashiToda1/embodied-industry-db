@@ -17,7 +17,7 @@ founded: 2025-02
 hq:
   country: CN
   city: 上海
-description: 做全栈开源双足人形机器人的公司，产品有萝博头原型机（Roboto Origin）、RPO 与下一代 RP1。
+description: 做全栈开源双足人形机器人的公司，产品有萝博头原型机（Roboto Origin）、RPO 与下一代 RP1；官方 GitHub 另维护 LabWeft，用于组织实验、证据与研究过程的本地科研工作台，当前为 Alpha 工具，不据此认定机器人技术成果。
 sources:
 - url: https://hub.roboparty.com/documents/
   tier: official
@@ -27,3 +27,8 @@ sources:
   tier: media
   retrieved: '2026-09-22'
   note: 界面新闻转载投资界报道，2025 年 2 月在上海创办，办公地在上海张江机器人谷
+- url: https://github.com/Roboparty/LabWeft/blob/366e0e89424ee0353210e6a80e0a8a6c56a43e81/README.md
+  tier: official
+  retrieved: '2026-10-03'
+  snapshot: snapshots/2026/10/intake-20261003/labweft-readme.md
+  note: 通用科研工具背景，不独立计为机器人技术发布。

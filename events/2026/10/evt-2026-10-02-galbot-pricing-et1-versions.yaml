@@ -1,0 +1,34 @@
+{
+  "id": "evt-2026-10-02-galbot-pricing-et1-versions",
+  "date": "2026-10-02",
+  "date_precision": "day",
+  "type": "pricing",
+  "orgs": [
+    {
+      "id": "galbot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "媒体披露银河星仔 ET1 三个版本售价，基础版 7.9 万元"
+  },
+  "summary": {
+    "zh": "量子位报道银河星仔 ET1 基础版、专业版和旗舰版售价分别为人民币 7.9 万元、13.9 万元和 17.9 万元。基础版列为 26 自由度；专业版和旗舰版分别列有 Nano 40 TOPS 与 NX 100 TOPS 配置。结构化金额仅指基础版售价，不是成交额；本条记录媒体披露的价格，不重复登记此前开启预订，也不推定交付数量。"
+  },
+  "evidence": [
+    {
+      "url": "https://finance.sina.com.cn/wm/2026-10-02/doc-inituwtp5963713.shtml",
+      "tier": "media",
+      "publisher": "新浪转载量子位",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/price.html"
+    }
+  ],
+  "corroboration": "single",
+  "amount": {
+    "value": 79000,
+    "currency": "CNY"
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用报道日期 2026-10-02，未披露价格首次生效日。"
+}

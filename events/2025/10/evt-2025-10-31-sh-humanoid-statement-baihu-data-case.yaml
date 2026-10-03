@@ -1,0 +1,36 @@
+{
+  "id": "evt-2025-10-31-sh-humanoid-statement-baihu-data-case",
+  "date": "2025-10-31",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "sh-humanoid",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "国家数据局案例披露上海人形机器人具身操作数据集建设规模"
+  },
+  "summary": {
+    "zh": "国家数据局发布的案例列人形机器人（上海）有限公司与第伍要素（上海）数据科技有限公司为申报单位，披露依托超 5000 平方米训练场、超过 100 台多构型机器人，累计形成超 100 万条、2.5 PB 真机数据，包含关节位姿、图像和文本，并以仿真场景合成数据。记录为案例披露，不认定该日首次发布数据集或已开放全部数据下载。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.nda.gov.cn/sjj/ywpd/szkjyjcss/1031/20251031193216150911981_pc.html",
+      "tier": "primary",
+      "publisher": "国家数据局",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/nda.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "data_acquisition": [
+      "sim-generated"
+    ],
+    "data_modality": [
+      "joint-trajectory"
+    ]
+  }
+}
