@@ -1,0 +1,44 @@
+{
+  "id": "evt-2026-09-23-rainbow-robotics-dataset-rb10-iros-update",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "type": "dataset_release",
+  "orgs": [
+    {
+      "id": "rainbow-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "彩虹机器人 RB-10 IROS 数据集 0923 版记录 333 条轨迹"
+  },
+  "summary": {
+    "zh": "Hugging Face 的 rb10_iros_double_0923 元数据记录 333 条轨迹、282633 帧、1 个任务及 30 FPS，采用 LeRobot v3.0 格式。已收录的 rb10_iros_double 版本为 197 条轨迹、171789 帧；本次只记录新版规模变化，不把旧版、trim 和 0921 加工版本重复计为新数据集。未标注许可，不认定可自由商用；轨迹数差值不解释为全部新增采集。"
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0923/blob/320d090447984457617b007578e95c1fade7d460/meta/info.json",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/rainbow-info.json"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0923",
+      "tier": "official",
+      "publisher": "Hugging Face",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/rainbow-api.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double/blob/main/meta/info.json",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/rainbow-old-info.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "Hub 元数据显示该版本仓库于 2026-09-23 创建并于同日更新；日期表示该数据版本的 Hub 上传记录，不是采集日期。"
+}

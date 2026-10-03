@@ -1,0 +1,35 @@
+{
+  "id": "evt-2025-08-15-realman-deployment-shijingshan-data-center",
+  "date": "2025-08-15",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "realman",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "石景山人形机器人数据训练中心开放日披露运营规模与数据服务"
+  },
+  "summary": {
+    "zh": "北京日报报道 8 月 15 日训练中心开放日情况，明确运营方为睿尔曼，中心占地 3000 平方米，拥有 108 台多种形态机器人，覆盖十大实景应用场景，已向海内外大模型与机器人企业提供数据服务。报道描述中心由区企共建、于当年 3 月 28 日落地；本条记录开放日可确认的运营状态。文中年产超百万条为预期产能，不记录为已实现产量。"
+  },
+  "evidence": [
+    {
+      "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202508/t20250818_4175247.html",
+      "tier": "media",
+      "publisher": "北京市科委转载北京日报",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/beijing.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "2025-08-18 报道明确开放日为 8 月 15 日；按报道年份补全为 2025-08-15，不将报道日作为开业日。",
+  "axes": {
+    "data_sourcing": [
+      "gov-training-ground"
+    ]
+  }
+}

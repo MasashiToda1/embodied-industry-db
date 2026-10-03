@@ -1,0 +1,33 @@
+{
+  "id": "evt-2026-10-01-boston-dynamics-product_launch-atlas-gr3-hand",
+  "date": "2026-10-01",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "boston-dynamics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Boston Dynamics 披露 Atlas 新一代 13 自由度四指机械手"
+  },
+  "summary": {
+    "zh": "官方介绍 Atlas 新一代机械手从 7 个自由度增至 13 个，采用包含拇指在内的四指结构与直接驱动，指尖和手掌覆盖压力触觉传感器。设计面向高保真仿真及 sim-to-real 强化学习，展示工具扳机操作、指内物体调整等能力；不据此认定相关任务已完成客户部署。"
+  },
+  "evidence": [
+    {
+      "url": "https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/",
+      "tier": "official",
+      "publisher": "Boston Dynamics",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/atlas.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "control_route": [
+      "rl"
+    ]
+  }
+}

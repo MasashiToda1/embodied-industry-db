@@ -13,7 +13,7 @@
     "simulation",
     "data"
   ],
-  "description": "运营 FlexPhysics 机器人仿真平台，提供 URDF 可视化编辑、仿真训练与评估，以及面向机器人任务的仿真数据服务。",
+  "description": "运营 FlexPhysics 机器人仿真平台，提供 URDF 可视化编辑、仿真训练与评估，以及面向机器人任务的仿真数据服务。公开 pick_and_place 平台样例包含 32 条 UR10 搭配 Robotiq-85 的抓放仿真轨迹与视频，采用脚本专家及 PD 控制，数据为 NPZ 格式。",
   "accounts": {
     "site": "https://www.flexphysics.com/",
     "huggingface": "FlexPhysics"
@@ -46,6 +46,14 @@
       "retrieved": "2026-10-01",
       "snapshot": "snapshots/2026/10/identity-followup-20261001/13.js",
       "note": "官网页面脚本含运营主体、产品及数据服务文案，并链接 Hugging Face/FlexPhysics；与官网为同源证据。"
+    },
+    {
+      "url": "https://huggingface.co/datasets/FlexPhysics/pick_and_place/blob/main/README.md",
+      "tier": "official",
+      "publisher": "FlexPhysics",
+      "retrieved": "2026-10-03",
+      "snapshot": "snapshots/2026/10/intake-20261003/flex-readme.md",
+      "note": "平台样例资料；32 条有效且成功轨迹，不作为独立重要发布，不称 LeRobot 数据或真机采集。"
     }
   ]
 }
