@@ -1,0 +1,19 @@
+id: evt-2024-03-10-foxglove-product_launch-platform-2-0
+date: '2024-03-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 2.0 合并可视化与数据平台并调整开源策略
+summary:
+  zh: Foxglove 宣布将 Studio 与 Data Platform 合并为统一产品，提供整合的网页和桌面界面，并将机器人端数据导入服务 Foxglove
+    Agent 正式开放。公司同时宣布停止开发开源版 Studio，继续维护 MCAP 及其他开源库；这里的数据导入 Agent 与后来的对话式 Agent 分开记录。
+evidence:
+- url: https://foxglove.dev/blog/foxglove-2-0-unifying-robotics-observability
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/v2.html
+corroboration: single

@@ -1,0 +1,19 @@
+id: evt-2022-02-15-foxglove-publication-mcap-beta
+date: '2022-02-15'
+date_precision: day
+type: publication
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布 MCAP 机器人数据容器格式测试版
+summary:
+  zh: Foxglove 宣布推出开放的 MCAP 数据容器格式，用于在同一文件保存异构机器人消息流和元数据。公告列出内嵌消息结构、附件、按主题与时间戳索引读取，以及
+    C++、Python、Go、TypeScript 库；当时处于测试阶段。
+evidence:
+- url: https://foxglove.dev/blog/introducing-the-mcap-file-format
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/mcap.html
+corroboration: single
