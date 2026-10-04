@@ -1,0 +1,21 @@
+id: evt-2025-04-08-infermove-deployment-carri-caohejing
+date: '2025-04-08'
+date_precision: day
+type: deployment
+orgs:
+- id: infermove
+  role: subject
+title:
+  zh: 推行科技 Carri 系列在漕河泾 AI 校友中心启动配送服务
+summary:
+  zh: 上海徐汇 5 月 23 日报道，推行科技 Carri 系列于 4 月 8 日入驻漕河泾开发区 AI 校友中心并开启园区配送。报道现场展示的是 Carri
+    LITE，服务覆盖 A5、A6 栋；不将该部署解释为 Carri FLEX 已交付或其上肢操作能力已在该场景验收。
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_30869553
+  publisher: 上海徐汇官方澎湃号
+  tier: media
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/thepaper.html
+corroboration: single
+counterparties:
+- 漕河泾开发区 AI 校友中心
