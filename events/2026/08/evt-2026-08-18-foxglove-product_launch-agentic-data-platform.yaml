@@ -1,0 +1,19 @@
+id: evt-2026-08-18-foxglove-product_launch-agentic-data-platform
+date: '2026-08-18'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布对话式数据工作流与多次运行对比功能
+summary:
+  zh: Foxglove 发布应用内 Agent Sidebar、MCP 接口、多次运行对比、数据预览和语义搜索功能，可通过自然语言查找机器人记录和组织数据。公告将语义搜索标为测试版，Remote
+    Access 标为正式可用；这些能力用于机器人数据开发流程，不等同于机器人控制策略或基础模型。
+evidence:
+- url: https://foxglove.dev/blog/introducing-the-agentic-data-platform-for-physical-ai
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/agent.html
+corroboration: single

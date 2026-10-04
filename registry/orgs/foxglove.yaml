@@ -1,0 +1,28 @@
+id: foxglove
+names:
+  zh: Foxglove
+  en: Foxglove
+  aliases:
+  - Foxglove Technologies, Inc.
+  - Foxglove Studio
+status: active
+layers:
+- simulation
+accounts:
+  site: https://foxglove.dev
+  github: foxglove
+description: 机器人数据开发工具公司，提供数据采集、管理、可视化、调试与检索平台，并维护 MCAP 开放文件格式。商业 Foxglove 平台与历史开源版
+  Studio 分开记录；不将开发工具归为仿真引擎或机器人本体。
+sources:
+- url: https://foxglove.dev/about
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/about.html
+  note: 官网列明公司名称和机器人开发工具定位；Foxglove Studio 为历史产品名，作为检索别名
+- url: https://foxglove.dev/blog/foxglove-2-0-unifying-robotics-observability
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/v2.html
+  note: Foxglove 2.0 合并 Studio 与 Data Platform，停止开源版 Studio 开发，继续维护 MCAP 等开源项目

@@ -1,0 +1,22 @@
+id: evt-2025-11-11-foxglove-funding-series-b-40m
+date: '2025-11-11'
+date_precision: day
+type: funding
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 宣布完成 4000 万美元 B 轮融资
+summary:
+  zh: Foxglove 宣布完成 4000 万美元 B 轮融资，由 Bessemer Venture Partners 领投，Eclipse Capital、Amplify
+    Partners 和 Icehouse Ventures 参投，用于扩展面向 Physical AI 开发、测试和运营的数据平台。
+evidence:
+- url: https://foxglove.dev/blog/foxglove-series-b
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/funding.html
+corroboration: single
+amount:
+  value: 40000000
+  currency: USD

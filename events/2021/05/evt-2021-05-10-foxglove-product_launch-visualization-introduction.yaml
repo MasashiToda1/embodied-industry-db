@@ -1,0 +1,21 @@
+id: evt-2021-05-10-foxglove-product_launch-visualization-introduction
+date: '2021-05-10'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 介绍跨平台机器人可视化与调试工具
+summary:
+  zh: Foxglove 官方介绍文章列出 Linux、Windows、macOS 桌面应用及 ROS 1 连接能力，可通过可配置面板查看三维场景、相机图像、曲线和原始消息，并用用户脚本转换数据。本条日期为该官方介绍文章日期，不认定为公司成立日。
+evidence:
+- url: https://foxglove.dev/blog/introducing-foxglove
+  publisher: Foxglove 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/foxglove-20261004/launch.html
+corroboration: single
+axes:
+  hardware_strategy:
+  - software-only
