@@ -1,0 +1,19 @@
+id: evt-2026-05-13-rerun-product_launch-sdk-0-32
+date: '2026-05-13'
+date_precision: day
+type: product_launch
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun SDK 0.32 发布机器人数据处理与训练读取功能
+summary:
+  zh: Rerun SDK 0.32 发布分块数据处理 API、实验性数据集审查与 PyTorch 数据加载器，扩展 MCAP 和 ROS 2 消息支持；开源目录服务支持按需从磁盘读取记录。发布说明将数据处理
+    API 和训练加载器标为实验性功能。
+evidence:
+- url: https://api.github.com/repos/rerun-io/rerun/releases/tags/0.32.0
+  publisher: GitHub · rerun-io/rerun
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/release.json
+corroboration: single
