@@ -1,0 +1,460 @@
+# 2026-10-04 维护者批准审核清单 A、B 全部合并；仅用于融资展示，不改历史事实或产业主体身份。
+# 精确映射，不按集团关系自动合并；C 组角色清理未纳入本次批准。
+approved_on: '2026-10-04'
+groups:
+- name: TCL 创投
+  aliases:
+  - TCL 创投
+  - TCL创投
+  org_ids: []
+  approved_groups:
+  - A1
+- name: MFund 魔量资本
+  aliases:
+  - MFund 魔量资本
+  - Mfund 魔量资本
+  org_ids: []
+  approved_groups:
+  - A2
+- name: 创世伙伴创投（CCV）
+  aliases:
+  - 创世伙伴创投
+  - 创世伙伴创投（CCV）
+  - 创世伙伴创投 CCV
+  org_ids: []
+  approved_groups:
+  - A3
+- name: 蚂蚁集团
+  aliases:
+  - 蚂蚁集团
+  - 蚂蚁集团（联合领投）
+  org_ids: []
+  approved_groups:
+  - A4
+- name: 国科投资
+  aliases:
+  - 国科投资
+  - 国科投资（联合领投）
+  org_ids: []
+  approved_groups:
+  - A5
+- name: 吉利资本
+  aliases:
+  - 吉利资本
+  - 吉利资本（领投）
+  org_ids: []
+  approved_groups:
+  - A6
+- name: 赛富投资基金
+  aliases:
+  - 赛富投资基金
+  - 赛富投资基金（领投）
+  org_ids: []
+  approved_groups:
+  - A7
+- name: 黄浦江资本
+  aliases:
+  - 黄浦江资本
+  - 黄浦江资本（领投）
+  org_ids: []
+  approved_groups:
+  - A8
+- name: 河南投资集团汇融基金
+  aliases:
+  - 河南投资集团汇融基金
+  - 河南投资集团汇融基金（领投）
+  org_ids: []
+  approved_groups:
+  - A9
+- name: 中国移动链长基金
+  aliases:
+  - 中国移动链长基金
+  - 中国移动链长基金（领投）
+  org_ids: []
+  approved_groups:
+  - A10
+- name: 溥泉资本（CATL Capital）
+  aliases:
+  - 溥泉资本
+  - 溥泉资本（CATL Capital）
+  org_ids: []
+  approved_groups:
+  - A11
+- name: 粒子未来基金
+  aliases:
+  - 粒子未来基金
+  - Particle Future（粒子未来基金）
+  org_ids: []
+  approved_groups:
+  - A12
+- name: 磊石资本（Stone Venture）
+  aliases:
+  - Stone Venture
+  - 磊石资本（Stone Venture）
+  org_ids: []
+  approved_groups:
+  - A13
+- name: 华控基金
+  aliases:
+  - 华控基金
+  - 华控基金（T-Capital）
+  org_ids: []
+  approved_groups:
+  - A14
+- name: 中国互联网投资基金（中网投）
+  aliases:
+  - 中国互联网投资基金
+  - 中国互联网投资基金（中网投）
+  - 中网投
+  org_ids: []
+  approved_groups:
+  - A15
+- name: Prosperity7 Ventures
+  aliases:
+  - Prosperity7 Ventures
+  - Prosperity7 风投基金
+  org_ids: []
+  approved_groups:
+  - A16
+- name: iCANX 基金
+  aliases:
+  - iCANX 基金
+  - iCANX Fund
+  org_ids: []
+  approved_groups:
+  - A17
+- name: 博世（Bosch）
+  aliases:
+  - Bosch
+  - 博世（Bosch）
+  org_ids: []
+  approved_groups:
+  - A18
+- name: BV 百度风投
+  aliases:
+  - 百度风投
+  - BV 百度风投
+  org_ids: []
+  approved_groups:
+  - A19
+- name: IDG 资本
+  aliases:
+  - IDG
+  - IDG 资本
+  org_ids: []
+  approved_groups:
+  - A20
+- name: 深创投
+  aliases:
+  - 深创投
+  - 深创投集团
+  org_ids: []
+  approved_groups:
+  - A21
+- name: 英诺基金
+  aliases:
+  - 英诺天使
+  - 英诺天使基金
+  - 英诺基金
+  org_ids: []
+  approved_groups:
+  - A22
+- name: 阿里巴巴
+  aliases:
+  - 阿里巴巴
+  - 阿里巴巴集团
+  org_ids:
+  - alibaba-robotics
+  approved_groups:
+  - A23
+  link_org: alibaba-robotics
+- name: 智元机器人
+  aliases:
+  - 智元机器人
+  org_ids:
+  - agibot
+  approved_groups:
+  - A24
+  link_org: agibot
+- name: 国家人工智能产业投资基金
+  aliases:
+  - 国家人工智能产业投资基金
+  - 国家人工智能产业投资基金合伙企业（有限合伙）
+  org_ids: []
+  approved_groups:
+  - A25
+- name: 梁溪科创产业二期母基金
+  aliases:
+  - 梁溪科创产业二期母基金
+  - 梁溪科创产业二期母基金（博华资本管理）
+  org_ids: []
+  approved_groups:
+  - A26
+- name: 腾讯
+  aliases:
+  - 腾讯
+  - 腾讯投资
+  org_ids:
+  - tencent-robotics
+  approved_groups:
+  - A27
+  - B33
+- name: 商汤国香资本
+  aliases:
+  - 商汤国香资本
+  - 商汤国香
+  org_ids: []
+  approved_groups:
+  - B1
+- name: 张科垚坤基金
+  aliases:
+  - 张科垚坤基金
+  - 张科垚坤
+  org_ids: []
+  approved_groups:
+  - B2
+- name: 达晨财智
+  aliases:
+  - 达晨
+  - 达晨创投
+  - 达晨财智
+  org_ids: []
+  approved_groups:
+  - B3
+- name: 北京机器人产业基金
+  aliases:
+  - 北京机器人产业基金
+  - 北京机器人产业发展投资基金
+  - 北京市机器人产业发展投资基金
+  - 北京机器人基金
+  org_ids: []
+  approved_groups:
+  - B4
+- name: 北京信息产业发展基金
+  aliases:
+  - 北京信息产业发展基金
+  - 北京信息产业发展投资基金
+  org_ids: []
+  approved_groups:
+  - B5
+- name: 北京高精尖产业基金
+  aliases:
+  - 北京高精尖基金
+  - 北京高精尖产业基金
+  org_ids: []
+  approved_groups:
+  - B6
+- name: 无锡创投集团
+  aliases:
+  - 无锡创投
+  - 无锡创投集团
+  - 锡创投
+  org_ids: []
+  approved_groups:
+  - B7
+- name: 四川省科创投资集团
+  aliases:
+  - 四川科创投集团
+  - 四川科创
+  - 四川省科创投资集团
+  org_ids: []
+  approved_groups:
+  - B8
+- name: 道禾长期投资
+  aliases:
+  - 道禾长期投资
+  - 上海道禾长期投资
+  org_ids: []
+  approved_groups:
+  - B9
+- name: 金沙江联合资本
+  aliases:
+  - 金沙江联合
+  - 金沙江联合资本
+  org_ids: []
+  approved_groups:
+  - B10
+- name: 好未来
+  aliases:
+  - 好未来
+  - 好未来集团
+  org_ids: []
+  approved_groups:
+  - B11
+- name: 中金保时捷基金
+  aliases:
+  - 中金保时捷
+  - 中金保时捷基金
+  org_ids: []
+  approved_groups:
+  - B12
+- name: 上海半导体产投基金
+  aliases:
+  - 上海半导体产投
+  - 上海半导体产投基金
+  org_ids: []
+  approved_groups:
+  - B13
+- name: 金融街资本
+  aliases:
+  - 金融街资本
+  - 北京金融街资本
+  org_ids: []
+  approved_groups:
+  - B14
+- name: 武岳峰
+  aliases:
+  - 武岳峰
+  - 武岳峰科创
+  org_ids: []
+  approved_groups:
+  - B15
+- name: 华映资本
+  aliases:
+  - 华映
+  - 华映资本
+  org_ids: []
+  approved_groups:
+  - B16
+- name: 星连资本
+  aliases:
+  - 星连
+  - 星连资本
+  org_ids: []
+  approved_groups:
+  - B17
+- name: 红杉中国种子基金
+  aliases:
+  - 红杉种子基金
+  - 红杉中国种子基金
+  org_ids: []
+  approved_groups:
+  - B18
+- name: 红杉中国
+  aliases:
+  - HSG
+  - 红杉中国
+  org_ids: []
+  approved_groups:
+  - B19
+- name: 钧山投资
+  aliases:
+  - 钧山
+  - 钧山资本
+  - 钧山投资
+  org_ids: []
+  approved_groups:
+  - B20
+- name: 厚雪资本
+  aliases:
+  - 厚雪基金
+  - 厚雪资本
+  org_ids: []
+  approved_groups:
+  - B21
+- name: 临芯投资
+  aliases:
+  - 临芯资本
+  - 临芯投资
+  org_ids: []
+  approved_groups:
+  - B22
+- name: 金浦投资
+  aliases:
+  - 金浦资本
+  - 金浦投资
+  org_ids: []
+  approved_groups:
+  - B23
+- name: 瑞丞基金
+  aliases:
+  - 瑞丞投资
+  - 瑞丞基金
+  org_ids: []
+  approved_groups:
+  - B24
+- name: 复琢创投
+  aliases:
+  - 复琢投资
+  - 复琢创投
+  org_ids: []
+  approved_groups:
+  - B25
+- name: 天季资本
+  aliases:
+  - 天季投资
+  - 天季资本
+  org_ids: []
+  approved_groups:
+  - B26
+- name: 吉德电器
+  aliases:
+  - 宁波吉德
+  - 吉德电器
+  org_ids: []
+  approved_groups:
+  - B27
+- name: 京国瑞
+  aliases:
+  - 京国瑞
+  - 京国瑞管理公司
+  org_ids: []
+  approved_groups:
+  - B28
+- name: 河南资产
+  aliases:
+  - 河南资产
+  - 河南资产基金
+  org_ids: []
+  approved_groups:
+  - B29
+- name: Hashed
+  aliases:
+  - Hashed
+  - Hashed Ventures
+  org_ids: []
+  approved_groups:
+  - B30
+- name: 中关村启航投资
+  aliases:
+  - 中关村启航基金
+  - 中关村启航投资
+  org_ids: []
+  approved_groups:
+  - B31
+- name: 上海人工智能产业基金
+  aliases:
+  - 上海人工智能产业基金
+  - 上海人工智能产业系列基金
+  org_ids: []
+  approved_groups:
+  - B32
+- name: 中信里昂
+  aliases:
+  - 中信里昂
+  - 中信里昂证券有限公司
+  org_ids: []
+  approved_groups:
+  - B34
+- name: 国泰海通创新投
+  aliases:
+  - 国泰君安创新投资
+  - 国泰君安创新投
+  - 国泰海通创新投
+  org_ids: []
+  approved_groups:
+  - B35
+- name: 香港慧科科创
+  aliases:
+  - 香港慧科科创
+  - 香港科创
+  org_ids: []
+  approved_groups:
+  - B36
+- name: 国方创新
+  aliases:
+  - 国方创新
+  - 国方创投
+  org_ids: []
+  approved_groups:
+  - B37
