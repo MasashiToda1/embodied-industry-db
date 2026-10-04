@@ -308,7 +308,7 @@ async function pageOrg(id) {
 
     ${fund.length ? `<div class="card" style="margin-top:14px"><h3>融资 <span class="muted">${fund.length} 轮${fundSum.length ? ' · 已披露合计 ' + fundSum.join(' + ') : ''}</span></h3>
       <table><thead><tr><th>日期</th><th>事件</th><th>投资方</th><th class="right">金额</th></tr></thead><tbody>
-      ${fund.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${[...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(x => x.role === 'investor').map(x => orgLink(x.id))].join('、') || '—'}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table></div>` : ''}
+      ${fund.map(e => `<tr><td class="mono">${evLink(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${investorsOf(e)}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`).join('')}</tbody></table></div>` : ''}
 
     <div class="two" style="margin-top:14px">
       <div class="card"><h3>关联主体 <span class="muted">来自事件里的角色</span></h3>
@@ -514,8 +514,32 @@ function monthBars(list, from, to) {
     <div class="legend" style="margin-top:6px"><i style="background:#1a1a1c"></i>披露金额 <i style="background:#c8c8cc"></i>未披露</div>`;
 }
 const acc = (head, body, open = false, cls = '') => `<details class="acc ${cls}" ${open ? 'open' : ''}><summary>${head}</summary><div class="acc-body">${body}</div></details>`;
-const investorsOf = e => [...(e.counterparties || []).map(esc), ...(e.orgs || []).filter(o => o.role === 'investor').map(o => orgLink(o.id))].join('、') || '—';
-const fundRow = (e, subj) => `<tr data-q="${esc(((e.orgs || []).map(o => orgZh(o.id)).join(' ') + ' ' + (e.counterparties || []).join(' ') + ' ' + e.title.zh).toLowerCase())}"><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${investorsOf(e)}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`;
+// 仅在融资视图归一名称；事件原文和产业主体身份保持不变。
+function fundingInvestors(e) {
+  const result = new Map();
+  const add = (key, zh, orgId) => {
+    const approved = D?.investor_aliases?.[key];
+    const item = approved || { key, zh, org_id: orgId };
+    if (!result.has(item.key)) result.set(item.key, {
+      key: item.key, zh: item.zh,
+      href: item.org_id ? `org.html?id=${encodeURIComponent(item.org_id)}` : undefined
+    });
+  };
+  (e.counterparties || []).forEach(n => add('text:' + n, n));
+  (e.orgs || []).filter(o => o.role === 'investor').forEach(o => add('org:' + o.id, orgZh(o.id), o.id));
+  return [...result.values()];
+}
+function investorRows(events) {
+  const groups = new Map();
+  events.forEach(e => fundingInvestors(e).forEach(i => {
+    if (!groups.has(i.key)) groups.set(i.key, { ...i, events: new Map() });
+    groups.get(i.key).events.set(e.id, e);
+  }));
+  return [...groups.values()].map(({ events, ...i }) => ({ ...i, evs: [...events.values()], n: events.size }))
+    .sort((a, b) => b.n - a.n || a.zh.localeCompare(b.zh, 'zh'));
+}
+const investorsOf = e => fundingInvestors(e).map(i => i.href ? `<a href="${i.href}">${esc(i.zh)}</a>` : esc(i.zh)).join('、') || '—';
+const fundRow = (e, subj) => `<tr data-q="${esc(((e.orgs || []).map(o => orgZh(o.id)).join(' ') + ' ' + (e.counterparties || []).join(' ') + ' ' + fundingInvestors(e).map(i => i.zh).join(' ') + ' ' + e.title.zh).toLowerCase())}"><td class="mono">${evLink(e)}</td><td>${subj(e)}</td><td>${esc(e.title.zh)}</td><td class="muted">${investorsOf(e)}</td><td class="right">${e.amount ? `<b>${amountStr(e.amount)}</b>` : '<span class="muted">未披露</span>'}</td></tr>`;
 // 融资明细：按月折叠。E 已按日期倒序，所以第一组就是最近一个月
 function fundMonths(fund, subj) {
   const groups = {}; fund.forEach(e => { const k = String(e.date).slice(0, 7).replace(/-Q\d$/, ''); (groups[k] = groups[k] || []).push(e); });
@@ -554,15 +578,8 @@ async function pageSignals() {
   const four = [...fund, ...proc, ...dep, ...price];
   const subj = e => (e.orgs || []).filter(o => o.role === 'subject').map(o => orgLink(o.id)).join('、') || (e.orgs || []).map(o => orgLink(o.id)).join('、');
 
-  // 谁在投：文本对手方 + investor 角色主体，按出现次数
-  const investors = {};
-  const addInv = (k, zh, e, href) => { (investors[k] = investors[k] || { zh, evs: [], href }).evs.push(e); };
-  fund.forEach(e => {
-    (e.counterparties || []).forEach(c => addInv(c, c, e));
-    (e.orgs || []).filter(o => o.role === 'investor').forEach(o => addInv('org:' + o.id, orgZh(o.id), e, `org.html?id=${o.id}`));
-  });
-  Object.values(investors).forEach(i => i.n = i.evs.length);
-  const invRows = Object.values(investors).sort((a, b) => b.n - a.n || a.zh.localeCompare(b.zh, 'zh'));
+  // 已审核别名统一展示，同一投资方在同一事件中只计一次。
+  const invRows = investorRows(fund);
 
   // 谁在买：中标与部署事件里的采购方 / 客户
   const buyers = [];

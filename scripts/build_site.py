@@ -122,6 +122,26 @@ def build_axes(c: Compiler) -> dict:
     return out
 
 
+def load_investor_aliases(root: Path) -> dict:
+    """只输出维护者批准的精确映射；冲突导致构建失败。"""
+    path = root / "registry/investor-aliases.yaml"
+    if not path.exists():
+        return {}
+    groups = yaml.safe_load(path.read_text(encoding="utf-8"))["groups"]
+    aliases = {}
+    for group in groups:
+        value = {"key": "approved:" + group["name"], "zh": group["name"]}
+        if group.get("link_org"):
+            value["org_id"] = group["link_org"]
+        keys = (["text:" + n for n in group["aliases"]]
+                + ["org:" + oid for oid in group.get("org_ids", [])])
+        for key in keys:
+            if key in aliases:
+                raise ValueError(f"投资方别名重复配置：{key}")
+            aliases[key] = value
+    return aliases
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=".")
@@ -137,6 +157,7 @@ def main() -> int:
     c.load_events()
 
     payload = c.export_json()
+    payload["investor_aliases"] = load_investor_aliases(root)
     # 词表标签与层，前端显示中文用
     payload["labels"] = c.vocab["labels"]
     payload["layers"] = {v["id"]: v["zh"] for v in yaml.safe_load((root / "vocab/layers.yaml").read_text())["values"]}
