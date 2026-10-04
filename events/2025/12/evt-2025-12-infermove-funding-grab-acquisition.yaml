@@ -1,0 +1,26 @@
+id: evt-2025-12-infermove-funding-grab-acquisition
+date: 2025-12
+date_precision: month
+type: funding
+orgs:
+- id: infermove
+  role: subject
+title:
+  zh: Grab 于 2025 年 12 月收购 Infermove
+summary:
+  zh: Grab 2025 年度报告记载已完成对 Infermove 的收购，正文第 117 页员工表脚注将收购时间列为 2025 年 12 月。铁大科技此前公告记载相关方于
+    2025 年 10 月 3 日签署股份购买协议，签约日与完成月份分开记录；该公告中的 336 万美元是终止此前认购协议的对价，不作为本次收购总价。
+evidence:
+- url: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001855612/4d2a05a2-f9ed-4b40-9803-129963531f02.pdf
+  publisher: Grab Holdings 2025 年度报告
+  tier: primary
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/grab-2025.pdf
+- url: https://static.cninfo.com.cn/finalpage/2025-10-10/1224706591.PDF
+  publisher: 铁大科技公告 2025-100
+  tier: primary
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/identity.pdf
+corroboration: multi
+counterparties:
+- Grab

@@ -1,0 +1,32 @@
+id: infermove
+names:
+  zh: 推行科技
+  en: Infermove
+  aliases:
+  - Carri
+status: acquired
+layers:
+- embodiment
+founded: 2021
+accounts:
+  site: https://infermove.ai
+description: 移动操作机器人公司，Carri FLEX 具备按按钮、推拉、抓放等上肢操作能力。2025 年 12 月被 Grab 收购。公开文件列明境内关联公司包括推移机器人科技（苏州）有限责任公司、北京推行科技有限责任公司；上海徐汇报道将象其物宜（上海）人工智能科技有限公司称为推行科技。
+sources:
+- url: https://www.thepaper.cn/newsDetail_forward_30869553
+  publisher: 上海徐汇官方澎湃号
+  tier: media
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/thepaper.html
+  note: 确认中文品牌、2021 年成立、上海运营主体及 Carri FLEX 能力；Carri 为产品系列别名
+- url: https://static.cninfo.com.cn/finalpage/2025-10-10/1224706591.PDF
+  publisher: 铁大科技公告 2025-100
+  tier: primary
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/identity.pdf
+  note: 第 1 页将 Infermove 简称推行科技，明确苏州和北京公司为境内关联公司；不把关联法人当成同一法定主体
+- url: https://d18rn0p25nwr6d.cloudfront.net/CIK-0001855612/4d2a05a2-f9ed-4b40-9803-129963531f02.pdf
+  publisher: Grab Holdings 2025 年度报告
+  tier: primary
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/grab-2025.pdf
+  note: 正文第 117 页员工表脚注明确 2025 年 12 月收购 Infermove

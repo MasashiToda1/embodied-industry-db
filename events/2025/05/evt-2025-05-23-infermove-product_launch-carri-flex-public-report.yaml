@@ -1,0 +1,25 @@
+id: evt-2025-05-23-infermove-product_launch-carri-flex-public-report
+date: '2025-05-23'
+date_precision: day
+type: product_launch
+orgs:
+- id: infermove
+  role: subject
+title:
+  zh: 上海徐汇报道推行科技已推出 Carri FLEX 移动操作机器人
+summary:
+  zh: 上海徐汇报道推行科技已推出具备上肢操作能力的 Carri FLEX，可完成按按钮、推拉、抓放动作，并展示其自主操作电梯按钮。来源未给出产品正式发布日期，本条以该报道日记录公开可见的产品能力。
+evidence:
+- url: https://www.thepaper.cn/newsDetail_forward_30869553
+  publisher: 上海徐汇官方澎湃号
+  tier: media
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/infermove-20261004/thepaper.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2025-05-23 为报道日期；原文为“推出了”，未载明正式发布日，不认定该日为首次发布或交付日。
+axes:
+  embodiment_form:
+  - mobile-manipulator
+  hardware_strategy:
+  - in-house
