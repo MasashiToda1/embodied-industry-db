@@ -1,0 +1,22 @@
+id: evt-2026-10-02-tesla-statement-optimus-ai5-memory-96gb
+date: '2026-10-02'
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉公开表态将 AI5 内存方案调整为 96GB
+summary:
+  zh: 据 Drive Tesla 10 月 2 日报道及其内嵌公开帖文，特斯拉在先前提出 AI5 使用 72GB LPDDR5 内存后，将方案调整为 96GB。报道将内存方案调整与
+    Optimus 供货规模和成本联系起来；本条记录公开表态，不将其视为最终量产规格、已交付配置或实测性能。
+evidence:
+- url: https://driveteslacanada.ca/news/tesla-cuts-ai5-memory-optimus-96gb/
+  publisher: Drive Tesla
+  tier: media
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/tesla.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用报道内嵌原帖标注的 October 2, 2026；网页 datePublished 同为 2026-10-02。原 X 帖文未直接取回，证据等级保留为
+  media。

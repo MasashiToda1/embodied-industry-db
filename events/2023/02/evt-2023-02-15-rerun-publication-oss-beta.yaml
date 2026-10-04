@@ -1,0 +1,21 @@
+id: evt-2023-02-15-rerun-publication-oss-beta
+date: '2023-02-15'
+date_precision: day
+type: publication
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun 公开发布机器人数据可视化开源测试版
+summary:
+  zh: Rerun 宣布开源项目公开发布，提供 Python 与 Rust 安装方式。SDK 记录图像、张量和点云等数据，配套可视化应用，用于计算机视觉与机器人开发中的调试和数据探索；当时仍处于测试阶段。
+evidence:
+- url: https://rerun.io/blog/oss-beta
+  publisher: Rerun 官方博客
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/launch.html
+corroboration: single
+axes:
+  hardware_strategy:
+  - software-only

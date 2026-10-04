@@ -1,0 +1,22 @@
+id: evt-2025-03-20-rerun-funding-seed-17m
+date: '2025-03-20'
+date_precision: day
+type: funding
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun 宣布完成 1700 万美元种子轮融资
+summary:
+  zh: Rerun 公司新闻稿宣布获得 1700 万美元种子轮融资，由 Point Nine 领投，Sunflower Capital 及现有投资者 Costanoa
+    Ventures、Seedcamp 参投。公司同期介绍面向 Physical AI 多模态数据的数据库与云平台，商业产品当时仍与设计合作方开发中。
+evidence:
+- url: https://www.globenewswire.com/news-release/2025/03/20/3046617/0/en/rerun-raises-17m-to-build-the-data-infrastructure-powering-the-physical-ai-revolution.html
+  publisher: Rerun 新闻稿（GlobeNewswire）
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/funding.html
+corroboration: single
+amount:
+  value: 17000000
+  currency: USD

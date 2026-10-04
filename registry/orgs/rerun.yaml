@@ -1,0 +1,30 @@
+id: rerun
+names:
+  zh: Rerun
+  en: Rerun
+  aliases:
+  - Rerun Technologies AB
+status: active
+layers:
+- simulation
+founded: 2022
+hq:
+  country: SE
+  city: Stockholm
+accounts:
+  site: https://rerun.io
+  github: rerun-io
+description: 瑞典机器人多模态数据工具公司，提供开源 Rerun SDK 与商业 Rerun Hub，支持数据记录、查询、转换、可视化及训练读取。
+sources:
+- url: https://rerun.io/about
+  publisher: Rerun 官网
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/about.html
+  note: 官网列明公司法定名称与瑞典身份、SDK 和 Hub 产品范围
+- url: https://www.globenewswire.com/news-release/2025/03/20/3046617/0/en/rerun-raises-17m-to-build-the-data-infrastructure-powering-the-physical-ai-revolution.html
+  publisher: Rerun 新闻稿（GlobeNewswire）
+  tier: official
+  retrieved: '2026-10-04'
+  snapshot: snapshots/2026/10/intake-20261004/funding.html
+  note: 公司新闻稿列明 2022 年成立、斯德哥尔摩总部与融资信息
