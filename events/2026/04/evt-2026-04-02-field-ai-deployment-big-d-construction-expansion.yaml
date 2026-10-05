@@ -1,0 +1,22 @@
+id: evt-2026-04-02-field-ai-deployment-big-d-construction-expansion
+date: '2026-04-02'
+date_precision: day
+type: deployment
+orgs:
+- id: field-ai
+  role: subject
+title:
+  zh: Field AI 披露 Big-D Construction 建筑现场应用与扩展部署
+summary:
+  zh: Field AI 的客户案例披露 Big-D Construction 已在实际施工现场使用机器人采集三维及进度信息、识别现场问题，并扩大到更多项目。案例未给出首次部署日和总交付量；将覆盖每个项目及更多搬运任务作为未来愿景，不写为已实现能力。
+evidence:
+- url: https://www.fieldai.com/news/bringing-general-purpose-robots-to-every-construction-site-inside-big-d-constructions-expansion-with-fieldai
+  publisher: FieldAI 官网
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/field-bigd.html
+corroboration: single
+counterparties:
+- Big-D Construction
+date_basis: derived
+date_as_stated: 2026-04-02 为官方案例披露日，非首次部署日。

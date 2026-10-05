@@ -1,0 +1,26 @@
+id: evt-2026-03-16-field-ai-partnership-nvidia-omniverse-simulation
+date: '2026-03-16'
+date_precision: day
+type: partnership
+orgs:
+- id: field-ai
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: Field AI 扩大 NVIDIA 合作，采用 Omniverse 重建与 Isaac 仿真流程
+summary:
+  zh: Field AI 宣布深化 NVIDIA Omniverse 库的使用，将现场机器人采集的数据通过 NuRec 构建数字孪生，并在 Isaac Sim
+    与 Isaac Lab 中训练和验证机器人策略。公告另称正在采用经由 Microsoft Azure 的 Physical AI Data Factory
+    Blueprint、Cosmos 与 OSMO，用于合成数据及训练流程。
+evidence:
+- url: https://www.fieldai.com/news/fieldai-accelerates-industrial-customers-adoption-of-ai-in-collaboration-with-nvidia
+  publisher: FieldAI 官网
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/field-nvidia.html
+corroboration: single
+axes:
+  sim_stack:
+  - isaac-sim
+  - isaac-lab
