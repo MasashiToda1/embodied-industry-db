@@ -1,0 +1,21 @@
+id: evt-2026-03-12-field-ai-partnership-boston-dynamics-spot
+date: '2026-03-12'
+date_precision: day
+type: partnership
+orgs:
+- id: field-ai
+  role: subject
+- id: boston-dynamics
+  role: counterparty
+title:
+  zh: Field AI 与 Boston Dynamics 宣布 Spot 建筑现场自主作业合作
+summary:
+  zh: 双方宣布将 Field Foundation Models 与 Spot 结合，用于动态建筑现场的自主巡检、三维扫描及进度记录。公告描述端侧运行及无需预先地图、GPS
+    或固定路径的能力，并称已在多个建筑现场部署；后续扩大机队属于计划，不记录为已完成交付数量。
+evidence:
+- url: https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments
+  publisher: FieldAI 官网
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/field-spot.html
+corroboration: single

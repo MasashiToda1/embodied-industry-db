@@ -1,0 +1,24 @@
+id: evt-2026-10-05-physical-intelligence-publication-rules-layer-optimizer-v010
+date: '2026-10-05'
+date_precision: day
+type: publication
+orgs:
+- id: physical-intelligence
+  role: subject
+title:
+  zh: 物理智能首次发布 rules_layer_optimizer v0.1.0
+summary:
+  zh: Physical Intelligence 发布 Bazel 构建规则工具 rules_layer_optimizer v0.1.0，提供 APT 与
+    Python 依赖推断、可复用软件包镜像层、按大小排序及小层合并，以生成 OCI 镜像。建仓线索合并至此次首次版本发布记录；不据此标注机器人模型、控制算法或仿真路线。
+evidence:
+- url: https://github.com/Physical-Intelligence/rules_layer_optimizer/releases/tag/v0.1.0
+  publisher: Physical Intelligence 官方 GitHub
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/pi-release.json
+- url: https://raw.githubusercontent.com/Physical-Intelligence/rules_layer_optimizer/v0.1.0/README.md
+  publisher: Physical Intelligence 官方 GitHub
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/pi-readme.md
+corroboration: single

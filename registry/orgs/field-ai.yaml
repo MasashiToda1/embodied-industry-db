@@ -2,6 +2,8 @@ id: field-ai
 names:
   zh: Field AI
   en: Field AI
+  aliases:
+  - FieldAI
 status: active
 layers:
 - foundation
@@ -22,3 +24,9 @@ sources:
   tier: media
   retrieved: '2026-09-22'
   note: 「Since launching the company in 2023」，成立年份
+- url: https://www.fieldai.com/news/boston-dynamics-and-fieldai-partner-to-bring-robots-into-uncharted-and-dynamic-environments
+  publisher: FieldAI 官网
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/field-spot.html
+  note: 官方品牌 FieldAI，与 Field AI 为同一主体；总部 Irvine，自主软件适配第三方机器人。

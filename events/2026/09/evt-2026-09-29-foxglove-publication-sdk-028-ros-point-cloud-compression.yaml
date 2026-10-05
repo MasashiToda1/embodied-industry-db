@@ -1,0 +1,30 @@
+id: evt-2026-09-29-foxglove-publication-sdk-028-ros-point-cloud-compression
+date: '2026-09-29'
+date_precision: day
+type: publication
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove SDK 0.28.0 与 ROS Bridge 3.6.0 更新远程点云压缩能力
+summary:
+  zh: Foxglove 发布 SDK 0.28.0，为 ROS 1 PointCloud2 通道自动应用 Draco 压缩，并开放保持点顺序的编码选项；ROS
+    Bridge 3.6.0 增加 point_cloud_compression_method 参数。发布还扩展音频格式标识并修复远程访问连接问题。10 月
+    2 日 ROS 1 Bridge 3.5.0 将 SDK 升至 0.28.0，作为兼容更新附记，不另计一次功能发布。
+evidence:
+- url: https://github.com/foxglove/foxglove-sdk/releases/tag/sdk/v0.28.0
+  publisher: Foxglove 官方 GitHub
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/fox-sdk.json
+- url: https://github.com/foxglove/foxglove-sdk/releases/tag/ros-v3.6.0
+  publisher: Foxglove 官方 GitHub
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/fox-ros.json
+- url: https://github.com/foxglove/foxglove-bridge-ros1/releases/tag/v3.5.0
+  publisher: Foxglove 官方 GitHub
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/issue-intake-20261005/fox-ros1.json
+corroboration: single
