@@ -22,6 +22,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from compile import Compiler  # noqa: E402
+from research_signals import load_research_signals  # noqa: E402
 
 ROLE_ZH = {"subject": "主体", "counterparty": "对手方", "investor": "投资方",
            "customer": "客户", "supplier": "供应方"}
@@ -158,6 +159,7 @@ def main() -> int:
 
     payload = c.export_json()
     payload["investor_aliases"] = load_investor_aliases(root)
+    payload["research_signals"] = load_research_signals(root, c.orgs, c.events)
     # 词表标签与层，前端显示中文用
     payload["labels"] = c.vocab["labels"]
     payload["layers"] = {v["id"]: v["zh"] for v in yaml.safe_load((root / "vocab/layers.yaml").read_text())["values"]}

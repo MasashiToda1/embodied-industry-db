@@ -239,6 +239,58 @@ async function pageOrgs() {
   };
   render();
 }
+/* 招聘只提供方向线索；研判由独立审核层提供，不自动抽取轴。 */
+function researchDate(ev) {
+  return (ev.evidence || []).map(e => String(e.retrieved || ''))
+    .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort().pop() || '';
+}
+function recentResearch(date, today) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) return false;
+  const days = (Date.parse(today + 'T00:00:00Z') - Date.parse(date + 'T00:00:00Z')) / 86400000;
+  return days >= 0 && days <= 90;
+}
+function researchView(id, today = new Date().toISOString().slice(0, 10)) {
+  const evidence = D.events.filter(e => e.type === 'hiring_signal' &&
+    (e.orgs || []).some(o => o.id === id && o.role === 'subject'));
+  const assessments = (D.research_signals || []).filter(s => s.org === id)
+    .slice().sort((a, b) => b.reviewed_on.localeCompare(a.reviewed_on) || b.id.localeCompare(a.id));
+  const topics = new Set(), current = [], history = [];
+  assessments.forEach(s => {
+    const latest = !topics.has(s.topic); topics.add(s.topic);
+    (latest && recentResearch(s.last_observed, today) ? current : history).push(s);
+  });
+  return { current, history,
+    recent: evidence.filter(e => recentResearch(researchDate(e), today)),
+    older: evidence.filter(e => !recentResearch(researchDate(e), today)) };
+}
+function researchSection(id, today) {
+  const { current, history, recent, older } = researchView(id, today);
+  const strength = { limited: '有限', supported: '有支持', corroborated: '有交叉印证' };
+  const assessment = s => `<article class="research-reading">
+    <div class="research-meta">研判 · 证据支持：${esc(strength[s.strength] || s.strength)}</div>
+    <h4>${esc(s.title)}</h4><p>${esc(s.judgment)}</p>
+    <p class="muted">尚不能确认：${esc(s.limitations)}</p>
+    <div class="research-meta">招聘证据核验至 ${esc(s.last_observed)} · 研判审核 ${esc(s.reviewed_on)}</div>
+    <details><summary>查看判断依据</summary><ul>${s.evidence_events.map(eid => {
+      const e = D.events.find(x => x.id === eid);
+      return e ? `<li><a href="index.html?ev=${encodeURIComponent(eid)}">${esc(e.title.zh)}</a><p>${esc(e.summary?.zh || '')}</p></li>` : '';
+    }).join('')}</ul></details></article>`;
+  const fact = e => `<article class="research-fact"><h4>${esc(e.title.zh)}</h4>
+    <p>${esc(e.summary?.zh || '')}</p><div class="research-meta">最近核验 ${esc(researchDate(e) || '未知')} · <a href="index.html?ev=${encodeURIComponent(e.id)}">查看事实记录</a></div>
+    <details><summary>来源与时间说明</summary>
+      <p>${esc(e.date_as_stated || '核验时间不等于岗位首次发布日，也不保证岗位当前仍有效。')}</p>
+      <ul>${(e.evidence || []).map(s => `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.publisher || '原始来源')}</a>` : esc(tierZh[s.tier] || '来源')}
+      ${s.snapshot ? ` · <a href="https://github.com/MasashiToda1/embodied-industry-db/blob/main/${s.snapshot.split('/').map(encodeURIComponent).join('/')}">历史快照</a>` : ''}</li>`).join('')}</ul>
+    </details></article>`;
+  return `<section class="card research-section" aria-label="近期研发动向">
+    <h3>近期研发动向 <span class="muted">招聘线索</span></h3>
+    <p class="research-intro">关注研发方向与投入变化。近期指近 90 天核验过的线索，不等于岗位仍在招；招聘要求也不等于已实现的产品能力。</p>
+    ${current.length ? current.map(assessment).join('') : `<p class="research-pending">${recent.length ? '已有近期招聘证据，尚未形成经审核的方向研判。' : '暂无近 90 天核验的招聘线索，不能据此判断公司没有研发活动。'}</p>`}
+    ${recent.length ? `<details class="research-evidence" ${current.length ? '' : 'open'}><summary>近期招聘事实 · ${recent.length} 条</summary>${recent.map(fact).join('')}</details>` : ''}
+    ${history.length || older.length ? `<details class="research-history"><summary>历史研判与证据 · ${history.length} 条研判 / ${older.length} 条较早事实</summary>
+      <p class="muted">历史记录用于比较方向变化，不作为当前状态。岗位下架也不能直接解释为项目停止。</p>${history.map(assessment).join('')}${older.map(fact).join('')}</details>` : ''}
+  </section>`;
+}
 async function pageOrg(id) {
   const o = orgById[id];
   if (!o) { $('main').innerHTML = `<div class="wrap"><div class="empty">没有这个主体：${esc(id)}</div></div>`; return; }
@@ -291,6 +343,8 @@ async function pageOrg(id) {
       <div class="olinks">${links}</div>
     </div>
     <p class="osummary">${esc(summary)}</p>
+
+    ${researchSection(id)}
 
     <div class="stats stats-6">
       ${kv('成立', o.founded || '<span class="muted">未知</span>')}
