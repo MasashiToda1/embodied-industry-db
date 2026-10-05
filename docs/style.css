@@ -209,3 +209,17 @@ footer{color:var(--muted);font-size:12px;padding:20px 0;border-top:1px solid var
 .axis-view-switch button.on{background:var(--card);color:var(--ink);border-color:var(--line);box-shadow:0 1px 2px rgba(0,0,0,.05)}
 .axis-option:focus-visible,.axis-view-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media(max-width:600px){.axis-chart-toolbar{align-items:flex-start;flex-direction:column}.axis-option{padding:7px 11px}.axis-view-control{flex-wrap:wrap}}
+/* 研发动向：研判与事实证据有明确的阅读层级。 */
+.research-section { margin: 14px 0; }
+.research-intro, .research-meta { color: var(--muted, #6b6b70); font-size: 12px; }
+.research-intro { margin: 0 0 14px; line-height: 1.7; }
+.research-reading { border-left: 3px solid #567ba9; padding: 12px 16px; margin: 12px 0; background: #f5f8fc; }
+.research-section h4 { margin: 6px 0; font-size: 15px; }
+.research-section p { line-height: 1.75; }
+.research-pending { padding: 12px 0; color: #6b6b70; }
+.research-section summary { cursor: pointer; padding: 10px 0; font-size: 13px; }
+.research-fact { padding: 12px 0; border-top: 1px solid #e3e4e8; overflow-wrap: anywhere; }
+.research-fact p, .research-reading p { font-size: 13px; }
+.research-evidence, .research-history { margin-top: 12px; }
+.research-history { border-top: 1px solid #e3e4e8; }
+.research-section li { margin: 6px 0; overflow-wrap: anywhere; }

@@ -58,6 +58,7 @@ jobs:
         run: |
           python scripts/build_site.py --root . --out docs/data
           node tests/test_investor_aliases.cjs
+          node tests/test_research_signals.cjs
 
       # 一手来源第三方核验不了，所以在 PR 里显式列出来，让它始终可见
       - name: 列出一手来源事件

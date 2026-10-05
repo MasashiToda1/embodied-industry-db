@@ -42,6 +42,7 @@ test:
 	fi
 
 test-ingest:
+	$(PY) tests/test_research_signals.py
 	$(PY) tests/test_wechat.py
 	@echo
 	$(PY) tests/test_tender.py
