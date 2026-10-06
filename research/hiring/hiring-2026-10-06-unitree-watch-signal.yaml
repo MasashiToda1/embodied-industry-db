@@ -1,0 +1,25 @@
+id: hiring-2026-10-06-unitree-watch-signal
+org: unitree
+topic: watch-signal
+title: 消费级小型机器人结构岗位提到原型、轻量化和小批量试产。
+judgment: 消费级小型机器人结构岗位提到原型、轻量化和小批量试产。
+limitations: 仅一份实习岗位，未给出产品型号、形态、规格或时间，可能是既有产品迭代或人才储备。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-unitree-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 154
+  saved_bodies: 59
+  unique_bodies: 57
+  reviewed_bodies: 57
+evidence_groups:
+- hash: 324b10709db17b1e1a7780e9678ba24f0848e884b0a6d3228d9daf22ef384b99
+  role: 岗位职责
+  quote: 聚焦消费级小型机器人本体机械结构设 计，主导3D打印快速原型验证，跟进轻量化、低成本新工艺的落地尝试
+  reason: 正文直接出现该潜在线索，但不证明成果已经落地。
+  urls:
+  - https://www.zhipin.com/job_detail/9e17505a77becc390nN_0tS5GVFW.html
+next_check: 后续核验是否出现同方向正式岗位、产品型号、公开发布或可验证的试产信息。

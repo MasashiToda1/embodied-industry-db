@@ -1,0 +1,96 @@
+id: hiring-2026-10-06-agibot-world-model-navigation
+org: agibot
+topic: world-model-navigation
+title: 世界模型与端到端导航
+judgment: 招聘组合支持公司持续加强具身基础模型与人形导航算法，但不证明模型指标或整机功能已经上线。
+limitations: 覆盖630个已知岗位URL中的243份正文、235份唯一正文；不是完整招聘目录。 岗位职责和任职要求反映用人方向，不等于项目已落地、指标已实现或岗位近期发布。 部分岗位可能属于子公司、共创或不同产品线，不能合并推算单一项目进度。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-agibot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 630
+  saved_bodies: 243
+  unique_bodies: 235
+  reviewed_bodies: 235
+evidence_groups:
+- hash: 864431f64313ee5cab0e75bb6060b012e669b0704ecac53ed73ed0677eabd5c1
+  role: 岗位职责
+  quote: '- 研究面向机器人与具身智能的世界模型，学习动作、环境状态与未来变化之间的规律'
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/2a17eb14aa274c2e0nJ93NW7FFZZ.html
+- hash: f8e1ba7f2d56e0da2336eb30d29b0d1c185e2980c6b1e0b24605476bce5f6ca8
+  role: 岗位职责
+  quote: 负责VLM-Nav/VLN/VLA相关算法研发
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/019f2e4d66d763900nN62tW4GVZW.html
+- hash: 60098c2d98c0c5858f2d5b39611c938adcb6ec143224c8e7f849f4e31862118b
+  role: 岗位职责
+  quote: 负责 VLM-Nav / VLN 相关算法研发
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/0c09f1332bc8b2a50nN-39q1FlFT.html
+- hash: b774b64e33f239d57c4ca6b1fdaff360ed2098d9a770de799e5e91d5a7cca1e2
+  role: 岗位职责
+  quote: 负责VLN/VLM-Nav算法研发：视觉-语言-动作对齐、指令理解、路径规划与闭环执行
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/38d18bb1263edc380nZ73tu-EFFS.html
+- hash: 31e72ba4b5d0cdc98ab47893282594e2172114eb254a4056cb1be7ca38d6cccc
+  role: 岗位职责
+  quote: 构建面向机器人与具身任务的世界模型，用于环境预测、规划推演与策略学习，提升长时序决策能⼒
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/49d86b2a6aea527b0nV63tm7E1BX.html
+- hash: f6aed0d2cb0c1aca29d1fbc2a6983869ade596b96b98492472984eed0cd5203b
+  role: 岗位职责
+  quote: '- 研究面向机器人与具身智能的世界模型，学习动作、环境状态与未来变化之间的规律'
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/367bc0c4e0d65ba60nJ83dm0ElpZ.html
+- hash: 3a4a9b732967ceaada42ee5f868914fc19669b29a52e64adeef1a04091057dd7
+  role: 岗位职责
+  quote: ⽀撑 VLA、世界模型、多模态生成模型及强化学习模型的预训练与后训练
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/1377f9f767682deb0nNy396_GVpQ.html
+- hash: 6ff5c3da9a23eb4355ac94a6062da407d30e3bd5854d2238b7fb13a14e24fd24
+  role: 岗位职责
+  quote: 与Agent/规划/VLN协同，围绕任务成功率与稳定性闭环优化
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/30cd860614d2ed030nF42966FVtX.html
+- hash: f223d2e895261779985a8e87a583f8c8588c0fd973c53aaf69eadae01bf9c3e9
+  role: 岗位职责
+  quote: 优化多模态数据合成、世界模型状态预测、端侧大模型架构设计等技术
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/028c12b6cbc67adb0nF-2ti6GFtQ.html
+- hash: 66b2ddb98f817980b04b4430a5b2946c73498bce0a7109a291ea0b43bdce8e2f
+  role: 岗位职责
+  quote: 负责环境表征的构建与优化，研究并实现 BEV、Occupancy、语义地图等表征⽅法，为导航规划提供统⼀的场景理解能⼒
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/375e3fcc5cd80d700nN90t-6ElJT.html
+- hash: 0bd789b17e42d73ef3edf10baf6c77fea589bd2af32b0cc7bd79aca9c0ae1c51
+  role: 岗位职责
+  quote: 负责环境表征的构建与优化，研究并实现 BEV、Occupancy、语义地图等表征⽅法，为导航规划提供统⼀的场景理解能⼒
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/0089bcf088b244790nN-39W9E1dY.html
+- hash: 8e223985b98c49e4afcfbad06141af5788ad6a4e336b9b3956e5bc6d7ee22a64
+  role: 岗位职责
+  quote: 研发视觉、语言与空间记忆的VLN算法
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/424d9f547501c6360nd-3d27EVJY.html
+- hash: 540c00e127e7dfe43a610318ad8828c48275838af71250b0d98f1c07a9f299db
+  role: 岗位职责
+  quote: 负责VLM-Nav/VLN/VLA相关算法研发
+  reason: 职责直接涉及世界模型或端到端视觉语言导航。
+  urls:
+  - https://www.zhipin.com/job_detail/2fe3b74e65055fa70nN609u5FVpY.html

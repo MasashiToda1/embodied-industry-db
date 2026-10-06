@@ -1,0 +1,662 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "agibot",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "864431f64313ee5cab0e75bb6060b012e669b0704ecac53ed73ed0677eabd5c1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2a17eb14aa274c2e0nJ93NW7FFZZ.html",
+          "title": "世界模型算法工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "- 研究面向机器人与具身智能的世界模型，学习动作、环境状态与未来变化之间的规律"
+      ]
+    },
+    {
+      "hash": "f8e1ba7f2d56e0da2336eb30d29b0d1c185e2980c6b1e0b24605476bce5f6ca8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/019f2e4d66d763900nN62tW4GVZW.html",
+          "title": "端到端双足导航算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责VLM-Nav/VLN/VLA相关算法研发"
+      ]
+    },
+    {
+      "hash": "60098c2d98c0c5858f2d5b39611c938adcb6ec143224c8e7f849f4e31862118b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0c09f1332bc8b2a50nN-39q1FlFT.html",
+          "title": "VLN算法工程师-HK",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责 VLM-Nav / VLN 相关算法研发"
+      ]
+    },
+    {
+      "hash": "b774b64e33f239d57c4ca6b1fdaff360ed2098d9a770de799e5e91d5a7cca1e2",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/38d18bb1263edc380nZ73tu-EFFS.html",
+          "title": "VLN视觉语言导航算法研究员/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责VLN/VLM-Nav算法研发：视觉-语言-动作对齐、指令理解、路径规划与闭环执行",
+        "建立数据与评测体系：仿真与真机场景回放、对抗case库、⾃动化回归、线上失败归因与难例回流"
+      ]
+    },
+    {
+      "hash": "31e72ba4b5d0cdc98ab47893282594e2172114eb254a4056cb1be7ca38d6cccc",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/49d86b2a6aea527b0nV63tm7E1BX.html",
+          "title": "世界模型算法工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "构建面向机器人与具身任务的世界模型，用于环境预测、规划推演与策略学习，提升长时序决策能⼒"
+      ]
+    },
+    {
+      "hash": "f6aed0d2cb0c1aca29d1fbc2a6983869ade596b96b98492472984eed0cd5203b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/367bc0c4e0d65ba60nJ83dm0ElpZ.html",
+          "title": "世界模型算法工程师/专家(A216034)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "- 研究面向机器人与具身智能的世界模型，学习动作、环境状态与未来变化之间的规律"
+      ]
+    },
+    {
+      "hash": "3a4a9b732967ceaada42ee5f868914fc19669b29a52e64adeef1a04091057dd7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1377f9f767682deb0nNy396_GVpQ.html",
+          "title": "具身大模型训练框架工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "⽀撑 VLA、世界模型、多模态生成模型及强化学习模型的预训练与后训练"
+      ]
+    },
+    {
+      "hash": "6ff5c3da9a23eb4355ac94a6062da407d30e3bd5854d2238b7fb13a14e24fd24",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/30cd860614d2ed030nF42966FVtX.html",
+          "title": "多模态理解算法研究员/专家(A44934)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "与Agent/规划/VLN协同，围绕任务成功率与稳定性闭环优化",
+        "建⽴评测与数据策略：线上失败归因、难例回流、版本对⽐与回归测试"
+      ]
+    },
+    {
+      "hash": "f223d2e895261779985a8e87a583f8c8588c0fd973c53aaf69eadae01bf9c3e9",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/028c12b6cbc67adb0nF-2ti6GFtQ.html",
+          "title": "大模型AI算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "优化多模态数据合成、世界模型状态预测、端侧大模型架构设计等技术",
+        "投入多模态AgenticAI算法研究"
+      ]
+    },
+    {
+      "hash": "66b2ddb98f817980b04b4430a5b2946c73498bce0a7109a291ea0b43bdce8e2f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/375e3fcc5cd80d700nN90t-6ElJT.html",
+          "title": "导航与感知算法工程师-HK",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责环境表征的构建与优化，研究并实现 BEV、Occupancy、语义地图等表征⽅法，为导航规划提供统⼀的场景理解能⼒"
+      ]
+    },
+    {
+      "hash": "0bd789b17e42d73ef3edf10baf6c77fea589bd2af32b0cc7bd79aca9c0ae1c51",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0089bcf088b244790nN-39W9E1dY.html",
+          "title": "导航与感知算法工程师-HK(A06889)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责环境表征的构建与优化，研究并实现 BEV、Occupancy、语义地图等表征⽅法，为导航规划提供统⼀的场景理解能⼒"
+      ]
+    },
+    {
+      "hash": "8e223985b98c49e4afcfbad06141af5788ad6a4e336b9b3956e5bc6d7ee22a64",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/424d9f547501c6360nd-3d27EVJY.html",
+          "title": "空间智能算法工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发视觉、语言与空间记忆的VLN算法"
+      ]
+    },
+    {
+      "hash": "540c00e127e7dfe43a610318ad8828c48275838af71250b0d98f1c07a9f299db",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2fe3b74e65055fa70nN609u5FVpY.html",
+          "title": "端到端双足导航算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责VLM-Nav/VLN/VLA相关算法研发"
+      ]
+    },
+    {
+      "hash": "8dd071230e4bf193eda50921256d091ab24f08c4f8ca96d109b2b71c290894cd",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0b8e587f2db015c60nN93dm-E1ZS.html",
+          "title": "具身场景验证工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建并维护采集、质检、⼊库、微调训练的数据回流管线"
+      ]
+    },
+    {
+      "hash": "a8dcb1523e537f0c6e25008c3ad3eb45c33e9e7d7924c31af01be677ad83a6ad",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1c33ae0f01c640940nJ739S5EltV.html",
+          "title": "机器人数据工程师(A139309)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据回流与质量闭环：打通部署态真机多传感器数据回流通道，建⽴质量检查、检索复用与失败案例回流机制"
+      ]
+    },
+    {
+      "hash": "59637f895eb1b5fbc26657453951abc97b08b170a718154cb07661127ff7e997",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/560a4fc057b9637c0nN939y6EFJU.html",
+          "title": "仿真与数据基础设施工程师-HK 招聘",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责真机数据采集与标注流水线的落地，制定并完善数据规范，实现⾤集、清洗、标注、入库、版本管理的自动化"
+      ]
+    },
+    {
+      "hash": "caf456fed8fb59c9b6fd8ffc148f32ca258724bd8d60996ac0c8ccdcd62a1847",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0e88353d394554750nNy2NS_E1BU.html",
+          "title": "具身后训练强化学习算法研究员",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "- 负责具身基础模型的后训练与强化学习研发，持续提升机器人任务成功率、稳定性、执行节拍与泛化能力"
+      ]
+    },
+    {
+      "hash": "9fb060d7850acf423b0ac15c50573438936f68f62b1330a1bc9392e2d2aeb5c8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/161207385891b1870nN93dm5GVVW.html",
+          "title": "具身大数据运营经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "支撑数据回流：现场发现的异常与难例及时反馈给场景中台，难例数据经质检后进入回流管线，保证可追溯、可回流"
+      ]
+    },
+    {
+      "hash": "46b424bb90c6c281461362d41f5b149f8f141cd3192e476e9d2812a025a7996f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0df891faeaa6019d0nN52tu1FlRU.html",
+          "title": "具身感知算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "- 建立数据闭环与模型评测体系：负责多模态数据采集、自动化标注、难例挖掘、仿真/真实场景评测及算法持续优化"
+      ]
+    },
+    {
+      "hash": "b0c9615cd1c830ca6be53373b2e270a28ce43c50f067fde9749122485c4143a4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3719961ab342835f0nN52tq5EltQ.html",
+          "title": "具身感知算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "- 建立数据闭环与模型评测体系：负责多模态数据采集、自动化标注、难例挖掘、仿真/真实场景评测及算法持续优化"
+      ]
+    },
+    {
+      "hash": "1fec15e277c4b1db2d32771c868cb82141f407f325c8b079ba0d4945703b26b5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4d600bcd39482a4f0nd82du6FlJQ.html",
+          "title": "具身数据评测工程师（遥操作/VLA方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "制定数据采集规范与标注标准，确保遥操作/仿真/真实数据质量"
+      ]
+    },
+    {
+      "hash": "da602c5c3aeaea6ae55671a856358c6a0993862e2a3263646253641aa62229d6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/10878fd56b94c8940nN_39y8GVRW.html",
+          "title": "具身算法工程师（VLA/RL）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "探索 RL 与模仿学习（IL）的混合训练范式：利用⼈类演示数据初始化策略，再通过 RL 进行微调和鲁棒性增强"
+      ]
+    },
+    {
+      "hash": "d179436a1d7619198108f684eddf5cfbdbaedf2687602f16c3efff0177815d7b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1daab5a2319608020nJ_0tq-F1VX.html",
+          "title": "强化学习工程师（真机操作方向）(A117145)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "构建分布式 RL 训练基础设施，对接多仿真器后端与真机环境，支持多算法并⾏实验与大规模数据采集"
+      ]
+    },
+    {
+      "hash": "f61f9f1e6e509544a51b1e17a3094b5413dfe6c11ced2bd4325719cd61f06fb1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3b92131b21d99fd50nJ-3tu0EldS.html",
+          "title": "数据闭环后端开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器⼈数据闭环全链路后端开发，打通⾤集、训练、部署、真机测试到失败数据回流的完整链路"
+      ]
+    },
+    {
+      "hash": "43baa513103c560f224ad4f0babd8ec953b986610a731635d80933848f43859c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/b38e19d8eb87573d0nJ72N-9GFRR.html",
+          "title": "机器人数据工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据回流与质量闭环：打通部署态真机多传感器数据回流通道，建⽴质量检查、检索复用与失败案例回流机制"
+      ]
+    },
+    {
+      "hash": "b237538ca7dbf7e4447d7ba90544fe294a071ec9830305af246a1d5b06f81da1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0ae68935cb0a66cd0nNy3dW9FVBY.html",
+          "title": "关节驱控研发工程师(A135857)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身智能机器人关节驱控系统研发"
+      ]
+    },
+    {
+      "hash": "50e87f7734f6ae67fa54e9739d26c547a3285e1ca77c8878867c7aa74b98810e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0333375815993df80nN50tW1EFRY.html",
+          "title": "机器人操作系统中间件工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/2da7217c10c3c17d0nJ839y4FVNV.html",
+          "title": "机器人操作系统中间件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人底层软件数据链路节点和服务中间件的设计、开发与优化"
+      ]
+    },
+    {
+      "hash": "650e85a9a0fc05683f302a032ef41fc0e9ac4195255973158ebf7b9f171a7b5a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/20f6d748c331a9a80nF82dm8EFJU.html",
+          "title": "BSP开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人系统BSP驱动、Linux内核、硬件抽象层API 及工具链的相关开发"
+      ]
+    },
+    {
+      "hash": "253b3681c1853feba76bac441611a0ce3329e4f6cb6a9bf5cece4e720a3719bf",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3afbf255e0d9e2520nF53d-5E1tZ.html",
+          "title": "BSP驱动开发专家/工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器⼈系统BSP驱动、Linux内核、抽象层API 及工具链的配置开发"
+      ]
+    },
+    {
+      "hash": "6d18598e442ec0c1c702bbbcbc955813f4c2433e9f46d33e24427faea4a6b62a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/146c1228a50781fd0nd_3d27EFFQ.html",
+          "title": "C++软件工程师（算法方向）(A165649)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "基于ROS2进程通信机制，设计实现应用切换，任务调度切换逻辑"
+      ]
+    },
+    {
+      "hash": "80c90c973816db37e32bf9feec48741251b2e7ed4c9f530ff9aa06297933069c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0db5098693d06e930nF82dm5GFRW.html",
+          "title": "C++软件开发工程师（通信中间件专家）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责基于ROS2/DDS中间件，构建高可靠性、低延迟的分布式机器人通信与控制系统"
+      ]
+    },
+    {
+      "hash": "858b0dd8dc6145d93e67f249b51461d7d8976caa10f859b29274aea7af46f24f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0e1e50b5f46afe380nF82du5FlJQ.html",
+          "title": "c++软件开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责系统集成工作，在有限的系统资源下，优化机器人运行性能，提升系统稳定性，保障极低的控制延迟"
+      ]
+    },
+    {
+      "hash": "4246e852a37970baa97dd5978c6cd7c237d207d539c270151163e8d2c1298327",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5229c7b6b451b2e00nRz3t66EVZX.html",
+          "title": "交互Audio系统开发专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "设备驱动开发：编写和调试 Linux ALSA 音频设备驱动程序，实现对音频硬件设备的有效控制和管理"
+      ]
+    },
+    {
+      "hash": "858a4ba0184e6752bf10c38b62de31b5c04828034d7a6ae209439f886f4e2b27",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/27718445635f6da20nJ_3tS7F1tQ.html",
+          "title": "全身运控框架开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与硬件（电机、驱动器、传感器）与 MC 框架的联调适配，完成驱动抽象、协议封装与控制闭环优化"
+      ]
+    },
+    {
+      "hash": "d4ce6baa8d88ec02953459c09aed976a8fe8eab972599fbaa030fd0e48d653ce",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/37f27a17eb6803ab0nNy3969E1pZ.html",
+          "title": "关节模组工程师(A35223)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "推动关节技术优化，如模块化设计、柔性缓冲结构、低功耗驱动方案研发"
+      ]
+    },
+    {
+      "hash": "1626a2c08c8db65055edae4dc59ef8ae0ce15f19dad8d7309df0dcb7e01eea24",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/00a61f65378982fe0nNy3Ny1GVFR.html",
+          "title": "关节模组工程师/专家",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/0d80944a2c828be40nN40928FFdS.html",
+          "title": "关节模组工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/1fffe3908c6156230nN829S8E1tX.html",
+          "title": "关节模组工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "推动关节技术优化，如模块化设计、柔性缓冲结构、低功耗驱动方案研发"
+      ]
+    },
+    {
+      "hash": "7910bbd90a69960a6f9c2303db7fb685f5526bffed54efa0f7cf3fbc4ca27387",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/19b084c2cf4fc7e50nF43t-6F1BR.html",
+          "title": "嵌入式软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发"
+      ]
+    },
+    {
+      "hash": "a32d330c74159a98d47e26c25c7deb575c89a834ca2e86fc4f7b96924fb1770c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5794d215a0c7bf510nZ_2d61EVJZ.html",
+          "title": "嵌入式软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发"
+      ]
+    },
+    {
+      "hash": "b7c632ae07dc44cd6ab7222559d2d1e026134a517baccd2b1fa2eb6283a838ab",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/29381de7d88884950nF93d6_GFFV.html",
+          "title": "嵌入式软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发"
+      ]
+    },
+    {
+      "hash": "c044bc8c700f0c9b64409beca0a029b146e0f586eb22081fe62627d017d834dc",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/29f20e0a85043b350nN829S9E1FW.html",
+          "title": "嵌入式软件工程师（Linux / 电机 HAL）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责 Linux 平台下电机硬件抽象层（Motor HAL）的设计、开发与维护"
+      ]
+    },
+    {
+      "hash": "b5285d739d251b2a14f8e372411cfcbb99e509f1a7125fad03fa37a77532c909",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2361188dd259dcb40nR53tm4GVVS.html",
+          "title": "底层软件开发专家/工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人系统BSP驱动、Linux内核裁减适配、硬件抽象层API 及相关产测烧录工具的开发"
+      ]
+    },
+    {
+      "hash": "1fa98654ed34e4778747853ce59787b93a70d412d0c71ac97b69977d88a514b7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4b968a60674975490ndy3dq8EVtS.html",
+          "title": "机器人操作系统工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责通用机器人原生开源操作系统核心模块研发"
+      ]
+    },
+    {
+      "hash": "498742ecaa1fb8e380b7e1f5756a92a7be25f18d9b7eecfd41cfcc449379341c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2ed2c732ad75b2b903173d-0E1dQ.html",
+          "title": "灵巧手软件算法总监",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "组建并管理软件算法团队，涵盖运动控制、感知融合、智能学习、嵌入式软件方向"
+      ]
+    },
+    {
+      "hash": "93cba39d2cffcdeb99844b25129c3a4e6bc8793b319cd5908cb3ffc7a444e2e2",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0628f4aba44b003c0nF42Nm1EVFZ.html",
+          "title": "电机控制软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责电机控制器的方案设计、建模仿真、算法设计与优化、软件实现与调试"
+      ]
+    },
+    {
+      "hash": "af92a028c34f4d4aae83e028475c2ed5011ec4847485d016a74d608e75c6efd3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0a1bde101e92b9d70nF839q5EFRS.html",
+          "title": "电机驱动工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器⼈关节电机驱动软件开发调试，优化FOC控制，提升关节运动性能与稳定性"
+      ]
+    },
+    {
+      "hash": "27102d1f1fadcd2fd898690291546c80517dc41a6872e18538282dd299902e4f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/06bb1c13d32fb7070nN-2tS7ElpS.html",
+          "title": "硬件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "电机驱动电路：三相桥（FET 半桥 / 全桥）、栅极驱动、电流采样（分流 / 霍尔）"
+      ]
+    },
+    {
+      "hash": "3c01b29f790368979246487a9f948419b2ae180dcb41fd88fcbdbee4691e7abf",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/42ec1f5fb42062b80nZ-0tm_FFpV.html",
+          "title": "遥操作软件架构师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "构建机器人端与操作端的 DDS 实时通信模块，确保低延迟、强鲁棒性、高吞吐（50ms 级端到端）"
+      ]
+    },
+    {
+      "hash": "86d8886476cb9b4f922a3cf86305945f1efedff6c30136dbd3d3d0589a1f6d47",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4b201d56bc4b16560nV63Nu-EltX.html",
+          "title": "高级c++开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "基于 ROS2 / AIMRT 中间件，设计并维护应用层与业务线基础软件，封装业务级数据结构、通信接口及公共能力"
+      ]
+    },
+    {
+      "hash": "2c5e1136228c20179521f94f27b578e80026a5a0f295f6ef33949df27d44394d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1c240a5d5809cd3c0nd_3dy8FlZY.html",
+          "title": "Agent算法工程师(A34133)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责构建机器人的自主Agent的架构并实现，使得机器人具备记忆管理（短期/长期）与上下文理解的任务分解、⼯具调⽤的能⼒"
+      ]
+    }
+  ]
+}

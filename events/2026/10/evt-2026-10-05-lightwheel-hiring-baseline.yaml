@@ -1,0 +1,510 @@
+id: evt-2026-10-05-lightwheel-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: lightwheel
+  role: subject
+title:
+  zh: 光轮智能招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 岗位职责覆盖数据采集、标注、治理、仿真、云端处理链路及质量监控。 岗位分别要求建设模型评测闭环，并将仿真或离线训练得到的策略部署到真实机器人。 交付岗位覆盖仿真评测系统的需求、部署和验收，现场岗位覆盖整机联调、传感器接入及安全系统集成。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/3a8c2dcf85874bfa0nB709y_FFtY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/18bb9bf1124dabd00nJz2929E1RV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/51b710c6d1b1f7ea0nZ62t-0E1FZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3de02d71f1ac99d70nZ62tm8FVRW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/12beffe93d6386270nN539u-FlVW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/61619a99706b9d000nZ82t-9EVJR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/16e4805dc900a6210nJ92tu7EFpR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/fd73c99564038bdf0nJ92tq4GVVV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/554dcd655fbfc4860nJ73tu_E1VZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/0d1c9919c392725b0nN829y8FVJY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/24f73bb9b17f6ea70nN92ty8FVtW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/4155607a20188df30nJ629m_EFVX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/54572dea0a1c6f7f0nJ62tS1FVVW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/37c9e12579f16d0f0nFz392_FFZQ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/0526e388eee6185f0nJ-2tu5F1JY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/23ca65c902631f970nJ-3dW0E1ZQ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/4f545e2fa08508e10nF72d65GFNS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/4cf647247e4c01220nF53ti8GVNZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/20884da5919f40be0nJ73tu-FVNU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/53c968d03b858d070nF909m1FFJZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/16e8cd06f4f7cf490nN629i-FFVV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/386e65232fd97cf90nJ73tu-GVVR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/05e3b82c24f7f9180nF439q9FFBR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/8324dd178100c8a90nZ83924F1FY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/af54d556466dc4db0nd82ti8FlVU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/02ff216b39a2b7810nZ809q1FVBS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/275a5b989ff44fef0nF429m8FltU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/0c41cbc552ff2cd10nN72N-_EltW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/661e1799bdb6c8730nF93t21GFtT.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/599aa8fe9324da8e0nJ-3dW1F1NS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/1a928f7b29f54f620nFz39i5GFpU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2093caa63c847f210nF_2N-6GFRT.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/137b451d8f0c546d0nZ72Nu-F1tS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3b8ffdaecfd533e80nZ_2tq9F1dR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/5217859d4654fc4d0nZy2tu5FlRY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/e05c4cb62a35290c0nB609-1FlBS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/29bc4acf999ec06d0nN40tq4EVZY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/572221276a6d3cb40nN40tq7EFdU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2e935a075f922a7d0nZ83t26FVBQ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/e493572ad1d32e660nZy2tu6EFtX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/4aef6ef0974c14400nd63NW8F1FR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/5b5248a67bcbe9910nN83dq1F1pT.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/06650d82d76bd1540nZy2tm6GFZY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/54ae960ffc5d24070nZy2ti1FlRW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/5b3763c8760792920nJ53tS0E1BS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/1674050e04fa17e70nN639y6F1JW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/1f486c8385214ec90nd82tq5EFBX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/20ad53c947b985320nJ-3N-5F1JW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/272bbf54f6f1359d0nd42dS5GFNS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2975bbdee6c8db180nZ83t-_FFpZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3eb9bee987c399cc0nJ72Nu_ElNR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/1ae1902ccf8a07350nN50929FltS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/e9f5b98a9f543bf20nZ82t67FlpV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/5973e27788bb7b530nN42Nm1FlFW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/b19e5a1e5536e4f80nN509m_GVRS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/b7120a0b56653c240nN82d27FFdZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3de0294b7538d5610nJ_3960EFFU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2610c8a2b098e1f70nZ939m-FVFX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/42ee269c1e01f4df0nJ_2du1EVdV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/220bad35e4fe84890nF72Ni_EVVY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/dc4dab37ae8c3e7f0nN409S1E1FT.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/310d943194ea300c0nF42969FFRW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/18ae199a6395e3cd0nB70927EVZU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/e5cd8e9051ea490a0nF-3NS1EFVU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2849b67bb96069080nN72d-7FlBZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3d42c9c8d10cbc030nVy39-5GVFZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2810b2623af8b8700nR-2tq5E1tS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2241c0b0f1fc57d00nF429m9F1JS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3ac5a98a2977ee2e0nZ83tS_FlRX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/9dac6d1beac153f40nF43Nm5FFBX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/195065db5a4792030nd53tm-GVtX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/9cc5e71b444cd1700nR-2tS5FFBX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/7bd790ab5b8ca5760nV72N60EVBV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/384a130afe94429f0nF_3N69FFRQ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/57d3c94bf0c3e27b0nNy3NW7E1ZQ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/2f9948116d15d5010nB539m1FlVS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/32b655dde28aa0310nB_2tq8GFRV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/f60ef30232f312b10nNy3NS4FVNS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/140aca6f03a601ba0nd93Nq4EFBT.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/990da8082e8420c00nF93N28FFZX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/02d94ae731fe75bd0nF829W4FlZY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/075620c0518e041d0nJz2d24FFBV.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/5217c2a1c2878a190nJz2tS6FldR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/05a30081b1b96b9a0nN82Ni8E1NZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/4bc28001c8ea33190nJz2tW6FVRU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/bfebd0e40325e4210nN939--EVFR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3a452681a3c5990d0nJ92tW8ElFX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/b740c4d7afbcf8530nJ92tq1ElRU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/0255c3531a3347270nN509y5FFNX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/1d3c52cf736443b40nd60tW1GFVX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/af1a71bb0a8b661d0nN-2dW0FltU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/7146c97413846a1a0nJ_3ti4EVVU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/59f21c6fe58fe6270nd82d25FFpX.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/7f59bb634a3c0f690nN939--E1JZ.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/eba5c4408a0893b40nNy3Nu9EVVS.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/0cbdc2f8ab2965720nJz3t66E1pU.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/3182298fb97dcaf20nBy3N21GFJR.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/29b053d03f3b26560nN-29u0E1NY.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json
+- url: https://www.zhipin.com/job_detail/8dfa87433273af930nN82Nq_GVdW.html
+  publisher: 光轮智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/lightwheel.json

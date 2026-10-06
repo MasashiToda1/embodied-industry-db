@@ -1,0 +1,440 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "spirit-ai",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "156f48c8ffb0d01f2308481b4383710e3b2d4e7117c999b56501cded11bab88a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1638bdce1b42f2430nR92ty1E1pQ.html",
+          "title": "具身大模型推理优化工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与具身智能模型在端、云侧推理系统的研发和优化，支持大规模模型的高性能推理"
+      ]
+    },
+    {
+      "hash": "c09eed1a46e408a02fd33cd7970044e40506e4df405cb321dec979f4e8ffa223",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/a158f220e054306d0nJ42Nu_FVFQ.html",
+          "title": "模型微调算法工程师（后训练交付）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度"
+      ]
+    },
+    {
+      "hash": "83f2a77e5b5f83e2d5f7165cc3853a557c709a3cba4ab43714fe86b44f04c06b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5962b6d3ff2d72a10nN73dm7EFVV.html",
+          "title": "28届AI Infra实习生（推理/训练）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务"
+      ]
+    },
+    {
+      "hash": "b9122ffac76eb81ff47c93e4e5e2309a1a4de67c5716f1dbebd32e848b001814",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/28469f48107725770nN73tW8ElZT.html",
+          "title": "28届AI Infra实习生（推理/训练）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务"
+      ]
+    },
+    {
+      "hash": "f3f2cfd12fc3ea35d5ed168fd0fae5e58933367b968eebc2d50a970addc251d8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/518688a4afa99b460nJz3d28FFNQ.html",
+          "title": "28届具身智能模型评测（产品）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "本岗位隶属于具身智能算法团队，深度参与公司通用 VLA 预训练模型评测体系的核心建设⼯作，负责 五级场景库的设计、搭建"
+      ]
+    },
+    {
+      "hash": "c3a588548dec6460ba17202bc1cc3284a99bb5f2d00ed1ed11c83132b93a12e1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/b34153a94f3838370nB929S7FlNZ.html",
+          "title": "VLA算法工程师（北京杭州深圳均可）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "VLA架构下的 感知-执行闭环构建：负责将多模态感知（视觉、触觉、力觉）深度集成到 VLA（Vision-Languag"
+      ]
+    },
+    {
+      "hash": "1e3e5100936c94d11adb9598803da3bf1aa13cf5bac2c4fb31f9acf51923fc6b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/43e5bbc522a7a0b90nd43d-6ElpW.html",
+          "title": "Vla-操作算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "VLA架构下的感知-执行闭环构建：负责将多模态感知（视觉、触觉、力觉）深度集成到 VLA（Vision-Language"
+      ]
+    },
+    {
+      "hash": "065f669798bf75ee1e0a16d141f88c93e30e73ae72e71d201dced7847bb144a0",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/27afe8dfda2350910nN42t67FVFS.html",
+          "title": "【2027 届校招】具身智能AI平台研发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身智能AI平台的业务流程开发，实现数据采集任务派发、人员/设备调度、数据标注、质量监控等全流程管理，直接支撑具⾝智",
+        "负责具身智能AI平台的业务流程开发，实现数据采集任务派发、人员/设备调度、数据标注、质量监控等全流程管理"
+      ]
+    },
+    {
+      "hash": "ba151183a83c2d87834da6d4aa4b58dcea7077e3a6e1e502f600a6179329ce2e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/36c9ec5561f9f5600nV82920GFFV.html",
+          "title": "具身大模型推理&部署工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与具身智能模型在端、云侧推理系统的研发和优化，支持大规模模型的高性能推理"
+      ]
+    },
+    {
+      "hash": "0b22ce7c790878584a98af75ec668badb7ef87bee348aadc306686a32d298397",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/49658578ae72c2bb0nR_09u5F1FS.html",
+          "title": "具身大模型训练加速工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与大规模具身智能模型的训练Infra建设",
+        "⽀持数千卡规模的⼤规模训练系统性能优化"
+      ]
+    },
+    {
+      "hash": "4e4ddfb450e2e68640c1c14871ed0e303464ac8481b69408403480e0396649f6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/054be0b65f9d019f0nR93t2_F1RQ.html",
+          "title": "具身智能AI Infra实习工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务"
+      ]
+    },
+    {
+      "hash": "e98e8e9094a3acb02b7efc1d8b336a9f5122293117dac18fb453bcee71fc0744",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4eb9f3dcaf23a19b0nR939S_ElpV.html",
+          "title": "具身智能AI Infra实习工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务"
+      ]
+    },
+    {
+      "hash": "89fa06c5d0a0e91ac52cc77af632fb6784f1403034b7ce02f57c9567b204d47f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/268ad2889c83808e0nV-2N61FFdQ.html",
+          "title": "具身智能AI平台架构师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责面向具身智能的MLOps平台架构设计与核心模块开发，支持VLA模型的训练与评测"
+      ]
+    },
+    {
+      "hash": "dfcf3fa673b87477bd67f7b62b6c1cb82cd947ab15557c0a64052c481ae6f970",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4977b48761f8d0740nN-2t21GFpR.html",
+          "title": "具身智能模型微调算法工程师（后训练交付）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度"
+      ]
+    },
+    {
+      "hash": "8b6a25d58b6730630eb4ed446ed76ec82edda4d53989e83f9693ee392c17c545",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/06c0936b473ba8030nB939-9FFVX.html",
+          "title": "具身模型算法工程师（后训练）（北京杭州）",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/122e1de22c620b190nF42tu8EFpV.html",
+          "title": "具身模型算法工程师（后训练）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身模型后训练算法研究，涵盖高质量数据采集、后训练策略制定、模型调优迭代，提升模型在导航、操作等下游任务的真实环境适"
+      ]
+    },
+    {
+      "hash": "ba7fa4cf128e3eae2041c2bc5045947a5abec3bb0ffb94656c4a6f7a3429b7a3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1ff07f484a53e5f80nF42ti0F1RR.html",
+          "title": "具身模型算法工程师（预训练）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责人形机器人专属的基础模型的预训练与研究工作，探索更适合具身任务的模型架构"
+      ]
+    },
+    {
+      "hash": "40c577f907c4b66ad1e995dff37813551cca2de351e092584723e25f24e943bf",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/13bbc4ede5dbe20b0nd70tS9FVNZ.html",
+          "title": "模型云端推理架构与部署工程师（北京/杭州",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/27ea3e3dbbc221460nB-3ty6F1ZU.html",
+          "title": "大模型云端推理架构与部署工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/3c4fc27abbe164ff0nB_09-5EFVV.html",
+          "title": "大模型云端推理架构与部署工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责多模态大模型（VLM）在云端的高性能分布式推理系统设计、开发与全链路端到端部署"
+      ]
+    },
+    {
+      "hash": "885a6afee58508c5870a10d73a6ba6f79746e8b4bc9ce3a46814909430b216aa",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1b5ff16962aa87830nFz3N26EFVR.html",
+          "title": "模型微调算法工程师（后训练）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度"
+      ]
+    },
+    {
+      "hash": "e95fc08aa42e15f2dcf6c05641cc8d28ea851740384a26ab880750e531fbadd8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/35602b61a48db9390nd70tW4ElNU.html",
+          "title": "模型量化压缩算法工程师（北京/杭州）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责多模态大模型（VLM/VLA）的端到端压缩加速方案研发"
+      ]
+    },
+    {
+      "hash": "5e7741d849c89635e45afdfc70deb09af66878495029f8754d222cd273b6729b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0ca164b13f81a3310nN52929ElZS.html",
+          "title": "具身数据平台产品经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身数据的统一接入与数据湖建设，面向遥操、UMI、仿真、机器⼈⾃主运⾏回流、开源或第三方数据引入等多种数据⽣产方式"
+      ]
+    },
+    {
+      "hash": "c83ad20e11ad18288872b29d71908037b448955ff3b3e2b71337407250a62d01",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4d2185b5ba3ec6870nJz3tW1F1pX.html",
+          "title": "机器人数采设备产品经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "1，负责具身智能机器人数采设备（UMI/Ego/全⾝动捕/⼿套等） 的产品规划与定义，为产品的商业化成功负责，进⾏市场分"
+      ]
+    },
+    {
+      "hash": "6d1c1dca2c637a8176e4bed40a5263236e01e43b4cf458b4055623294ce6c76c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3a911e4008cdd7c50nJ_39q0GFJQ.html",
+          "title": "具身智能数据质检测试工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建具身智能多模态采集数据的质检体系与量化标准，覆盖视觉图像、激光点云、IMU、标定参数等数据类型，围绕完整性、畸变、画"
+      ]
+    },
+    {
+      "hash": "6f43d056857e1cc431470b6d8b4e488a97979e30798be2717be48ec53d727636",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4e3af61c6c7da32b0nd70ti7FFJU.html",
+          "title": "数据算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据质检/清洗链路研发：负责多模态（视觉、触觉、语言、Action）数据的清洗算法研发，包括异常数据剔除、低质量数据拦截"
+      ]
+    },
+    {
+      "hash": "6c212e865cda7d2fb3c96c23fecfef10ac54f744b5ba400f5298d72af4e2590d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4d257eb3bf12559d0nNy2ti0ElRT.html",
+          "title": "数据采集主管",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责采集方向整体业务统筹：对接算法及业务团队，理解和梳理不同数据类型、业务场景及交付需求，统筹制定整体采集策略、SOP及"
+      ]
+    },
+    {
+      "hash": "873cba132753ec44125f911668528840a7c6103d0ab8fd075fe9dfdbf5c29270",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0fdc715da09a20c90nN83Ni7E1BU.html",
+          "title": "具身智能软件项目经理(端侧系统)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "管理具身智能端侧软件项目：含底软、运控、模型推理、导航、Release Center、OTA、远程接管与调试系统等多个专"
+      ]
+    },
+    {
+      "hash": "3ae8eb3ba9a2ea5c981d99088341e7bff0d22b0f193246d41f8519c8fa6afd06",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4694ac1b96455aec0nJy0tq4FVNV.html",
+          "title": "脑身集成测试开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建机器人“脑-身”集成测试体系，覆盖感知决策算法、主控软件与机电执行系统的联调验证，制定集成测试方案、量化指标与流程规"
+      ]
+    },
+    {
+      "hash": "23585e285e9219ff85353713c4ccf652226f02782422c8ef15d0483f24d7f641",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/04e014297600d1550nJ829q0FVJZ.html",
+          "title": "ROS2中间件开发专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人ROS2 中间件体系的建设、优化与量产化落地"
+      ]
+    },
+    {
+      "hash": "bce74aa487c9b339dd3e2c87f32c2e075e54df49dc54c2f74a018d091f476bbb",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/564fa3f72b211f8f0nZ52Nm-FVJZ.html",
+          "title": "中/高级嵌入式工程师（机器人）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "协同硬件、算法团队完成系统集成，负责全链路应用软件联调与性能优化"
+      ]
+    },
+    {
+      "hash": "54fe97d62cc00d9a5d8687e4cbe74d2133995d8a64708535dd2b9827217214e1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5944d1dca1823bee0nFy0tu-F1dT.html",
+          "title": "具身软件开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与机器人端侧 Runtime 系统的设计、开发和持续优化，包括硬件抽象、端侧通信、可观测、资源治理等方向"
+      ]
+    },
+    {
+      "hash": "bf7dff6b814cb45828070a801492e2b8b97930c12c169e7b7646fb5c20ff27fb",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4d5407368f32d5090nF53d67FlJX.html",
+          "title": "机器人嵌入式软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人中央域控与感知系统的嵌入式软件开发，构建高质量的底层软件系统"
+      ]
+    },
+    {
+      "hash": "abee2abd1f6ecac79d9ea8b1172ef1778c70d34c3ebdac22bad2147fd49c90e1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4bca93d5730aab7f0nN72921ElNS.html",
+          "title": "机器人端侧软件开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人端侧基础软件平台设计、开发与维护，为上层业务提供稳定统一的底层软件能力"
+      ]
+    },
+    {
+      "hash": "b1e47ba87af41339c4b067266dd28b11b2fe6d5d3a9aa486b22aef495ee1e03c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/21705d34a9a238e50nN72920ElNS.html",
+          "title": "机器人软件开发工程师-杭州",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人端侧基础软件平台设计、开发与维护，为上层业务提供稳定统一的底层软件能力"
+      ]
+    }
+  ]
+}

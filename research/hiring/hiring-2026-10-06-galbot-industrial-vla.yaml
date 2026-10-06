@@ -1,0 +1,60 @@
+id: hiring-2026-10-06-galbot-industrial-vla
+org: galbot
+topic: industrial-vla
+title: 工业VLA与后训练闭环
+judgment: 招聘组合支持工业具身模型后训练和端侧部署方向；零样本泛化和工业上线仍是待验证目标。
+limitations: 覆盖245个已知岗位URL中的103份正文、91份唯一正文；不是完整招聘目录。 招聘职责中的工业后训练、真机部署和零样本泛化是工作目标，不等于已实现事实。 相近岗位可能来自同一团队的重复招聘页面，不能按页面数推算团队规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-galbot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 245
+  saved_bodies: 103
+  unique_bodies: 91
+  reviewed_bodies: 91
+evidence_groups:
+- hash: a268b370623590f166e34f8c6c2a985e8705de368a821fd927de6300e852113e
+  role: 岗位职责
+  quote: 研发用于工业具身机器人的视觉-语⾔-动作（VLA）⼤模型与可交互世界模型，实现跨任务零样本泛化
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/19b2650a2cd942b50nB-2Ni7EVVZ.html
+- hash: ce4e6d21b6eabd12e313a4570998077d4dc93cfd39be51695f00335d7803009e
+  role: 岗位职责
+  quote: 设计并实施具身大模型的监督微调（SFT）流程，基于工业场景的半结构化任务数据
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/31a9006eb636b68a0nB639W_FVdZ.html
+- hash: 14c10fa71c3e2bd6217751ec1069a722a5853f7afe6fe2a4d54be7619cea1bd4
+  role: 岗位职责
+  quote: 开展 Agentic 模型训练与 Agentic RL 相关工作
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/27f3008f87fa37330nN72tW_GFpV.html
+- hash: e445c38088f9fbf7cc416525380e064d563c7ce70198d8c8327c639d06cf7d77
+  role: 岗位职责
+  quote: 参与工业场景VLA（视觉语言动作模型）/WAM（世界动作模型） 算法研发与优化
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/2f0057628a31d54e0nF439u6FFVR.html
+- hash: b8369d2fcb6305bd87983e39c0fec044ae38792cbbb037444dcfc3394046146d
+  role: 岗位职责
+  quote: VLA+RL后训练⽅案设计与实现
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/59651b8197485e0a0nZz09W1GVZY.html
+- hash: 188bb0a5fcaace6d13607c0637f9a09570dd69acbaf1d8bc3b3b2b689e730b07
+  role: 公司自述
+  quote: 我们正在为下一代具身基座模型 / VLA（视觉-语言-动作）模型打造覆盖全生命周期的训练数据平台
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/11369e2e03b5772c0nBz29S6FVNW.html
+- hash: 7a139a919f708a2e927f32b104de466bc7369367f51e6c6afb7dbf6f677e9e2b
+  role: 公司自述
+  quote: 我们正 在为下一代具身基座模型 / VLA（视 觉-语言-动作）模型打造覆盖全生命周期的训练数据平台
+  reason: 职责直接涉及工业VLA/VLM、监督微调、强化学习对齐或后训练。
+  urls:
+  - https://www.zhipin.com/job_detail/7e4b974dac77b0660nF629i1EVZU.html

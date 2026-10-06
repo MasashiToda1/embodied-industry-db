@@ -1,0 +1,135 @@
+id: hiring-2026-10-06-spirit-ai-vla-training-inference
+org: spirit-ai
+topic: vla-training-inference
+title: VLA训练、后训练与推理优化
+judgment: 多岗位支持从训练到部署的模型工程链路建设，但职责中的落地目标不能证明具体场景已经商业交付。
+limitations: 岗位材料没有可靠发布日期，不能猜测招聘发生日期。 职责中的交付、量产和规模化均是工作目标，不等于已完成。 未获得团队人数、招聘人数和项目归属。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-spirit-ai-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 172
+  saved_bodies: 70
+  unique_bodies: 63
+  reviewed_bodies: 63
+evidence_groups:
+- hash: 156f48c8ffb0d01f2308481b4383710e3b2d4e7117c999b56501cded11bab88a
+  role: 岗位职责
+  quote: 参与具身智能模型在端、云侧推理系统的研发和优化，支持大规模模型的高性能推理
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/1638bdce1b42f2430nR92ty1E1pQ.html
+- hash: c09eed1a46e408a02fd33cd7970044e40506e4df405cb321dec979f4e8ffa223
+  role: 岗位职责
+  quote: 负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/a158f220e054306d0nJ42Nu_FVFQ.html
+- hash: 83f2a77e5b5f83e2d5f7165cc3853a557c709a3cba4ab43714fe86b44f04c06b
+  role: 岗位职责
+  quote: 负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/5962b6d3ff2d72a10nN73dm7EFVV.html
+- hash: b9122ffac76eb81ff47c93e4e5e2309a1a4de67c5716f1dbebd32e848b001814
+  role: 岗位职责
+  quote: 负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/28469f48107725770nN73tW8ElZT.html
+- hash: f3f2cfd12fc3ea35d5ed168fd0fae5e58933367b968eebc2d50a970addc251d8
+  role: 岗位职责
+  quote: 本岗位隶属于具身智能算法团队，深度参与公司通用 VLA 预训练模型评测体系的核心建设⼯作，负责 五级场景库的设计、搭建
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/518688a4afa99b460nJz3d28FFNQ.html
+- hash: c3a588548dec6460ba17202bc1cc3284a99bb5f2d00ed1ed11c83132b93a12e1
+  role: 岗位职责
+  quote: VLA架构下的 感知-执行闭环构建：负责将多模态感知（视觉、触觉、力觉）深度集成到 VLA（Vision-Languag
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/b34153a94f3838370nB929S7FlNZ.html
+- hash: 1e3e5100936c94d11adb9598803da3bf1aa13cf5bac2c4fb31f9acf51923fc6b
+  role: 岗位职责
+  quote: VLA架构下的感知-执行闭环构建：负责将多模态感知（视觉、触觉、力觉）深度集成到 VLA（Vision-Language
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/43e5bbc522a7a0b90nd43d-6ElpW.html
+- hash: 065f669798bf75ee1e0a16d141f88c93e30e73ae72e71d201dced7847bb144a0
+  role: 岗位职责
+  quote: 负责具身智能AI平台的业务流程开发，实现数据采集任务派发、人员/设备调度、数据标注、质量监控等全流程管理，直接支撑具⾝智
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/27afe8dfda2350910nN42t67FVFS.html
+- hash: ba151183a83c2d87834da6d4aa4b58dcea7077e3a6e1e502f600a6179329ce2e
+  role: 岗位职责
+  quote: 参与具身智能模型在端、云侧推理系统的研发和优化，支持大规模模型的高性能推理
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/36c9ec5561f9f5600nV82920GFFV.html
+- hash: 0b22ce7c790878584a98af75ec668badb7ef87bee348aadc306686a32d298397
+  role: 岗位职责
+  quote: 参与大规模具身智能模型的训练Infra建设
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/49658578ae72c2bb0nR_09u5F1FS.html
+- hash: 4e4ddfb450e2e68640c1c14871ed0e303464ac8481b69408403480e0396649f6
+  role: 岗位职责
+  quote: 负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/054be0b65f9d019f0nR93t2_F1RQ.html
+- hash: e98e8e9094a3acb02b7efc1d8b336a9f5122293117dac18fb453bcee71fc0744
+  role: 岗位职责
+  quote: 负责构建支撑具身智能体的核心机器学习系统，开发面向机器⼈场景的VLA⼤模型训练与推理系统，⽀撑多模态感知、运动控制、任务
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4eb9f3dcaf23a19b0nR939S_ElpV.html
+- hash: 89fa06c5d0a0e91ac52cc77af632fb6784f1403034b7ce02f57c9567b204d47f
+  role: 岗位职责
+  quote: 负责面向具身智能的MLOps平台架构设计与核心模块开发，支持VLA模型的训练与评测
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/268ad2889c83808e0nV-2N61FFdQ.html
+- hash: dfcf3fa673b87477bd67f7b62b6c1cb82cd947ab15557c0a64052c481ae6f970
+  role: 岗位职责
+  quote: 负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4977b48761f8d0740nN-2t21GFpR.html
+- hash: 8b6a25d58b6730630eb4ed446ed76ec82edda4d53989e83f9693ee392c17c545
+  role: 岗位职责
+  quote: 负责具身模型后训练算法研究，涵盖高质量数据采集、后训练策略制定、模型调优迭代，提升模型在导航、操作等下游任务的真实环境适
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/06c0936b473ba8030nB939-9FFVX.html
+  - https://www.zhipin.com/job_detail/122e1de22c620b190nF42tu8EFpV.html
+- hash: ba7fa4cf128e3eae2041c2bc5045947a5abec3bb0ffb94656c4a6f7a3429b7a3
+  role: 岗位职责
+  quote: 负责人形机器人专属的基础模型的预训练与研究工作，探索更适合具身任务的模型架构
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/1ff07f484a53e5f80nF42ti0F1RR.html
+- hash: 40c577f907c4b66ad1e995dff37813551cca2de351e092584723e25f24e943bf
+  role: 岗位职责
+  quote: 负责多模态大模型（VLM）在云端的高性能分布式推理系统设计、开发与全链路端到端部署
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/13bbc4ede5dbe20b0nd70tS9FVNZ.html
+  - https://www.zhipin.com/job_detail/27ea3e3dbbc221460nB-3ty6F1ZU.html
+  - https://www.zhipin.com/job_detail/3c4fc27abbe164ff0nB_09-5EFVV.html
+- hash: 885a6afee58508c5870a10d73a6ba6f79746e8b4bc9ce3a46814909430b216aa
+  role: 岗位职责
+  quote: 负责具身VLA模型后训练微调落地，针对机器人导航、实物操作等真实场景，完成场景化数据治理、微调策略落地，迭代优化模型精度
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/1b5ff16962aa87830nFz3N26EFVR.html
+- hash: e95fc08aa42e15f2dcf6c05641cc8d28ea851740384a26ab880750e531fbadd8
+  role: 岗位职责
+  quote: 负责多模态大模型（VLM/VLA）的端到端压缩加速方案研发
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/35602b61a48db9390nd70tW4ElNU.html

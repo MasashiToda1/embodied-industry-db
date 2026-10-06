@@ -1,0 +1,37 @@
+id: hiring-2026-10-06-wayebot-dual-arm-control
+org: wayebot
+topic: dual-arm-control
+title: 双臂柔顺力控与全栈算法
+judgment: 多岗位支持公司在补强双臂操作控制及其工程集成能力；场景职责不证明产品或客户项目已落地。
+limitations: 部分嵌入式和算法负责人岗位正文重复，已按方向合并，未重复计数。 招聘岗位中的工业巡检、消防和商业服务是需求场景，不是交付事实。 VLA、强化学习和仿真工具的要求不能直接证明已经用于产品。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-wayebot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 18
+  saved_bodies: 17
+  unique_bodies: 16
+  reviewed_bodies: 16
+evidence_groups:
+- hash: 6aafc81ceb208046b14a951c6e88fe7c1c25cccb883c183d1790d9921fd319a5
+  role: 岗位职责
+  quote: 以及多冗余⾃由度形态的机器人全身⼒控算法开发，使机器人具备与环境接触时柔顺交互能力，并根据实际场景进行应用开发完成产品化
+  reason: 支持双臂柔顺力控研发。
+  urls:
+  - https://www.zhipin.com/job_detail/62edace2c767e4400nFy3tq7E1BW.html
+- hash: fea561c2f93eb917965276a31ea721b8bdb24ce91627a3c504a2359efb190293
+  role: 岗位职责
+  quote: 法的中长期技术路线图，统筹感知、决策、控制全栈技术方向，推动强化学习、具⾝智能等前沿技术落地，构建技术壁垒。
+  reason: 支持双臂算法全栈规划与集成。
+  urls:
+  - https://www.zhipin.com/job_detail/7eac6012756d0adb0nF52Ni0FFJX.html
+  - https://www.zhipin.com/job_detail/87857349ea1bd8e80nF93dm8F1pZ.html
+- hash: 79748d5e09c7ae68de5a8f70282c39902a7ef9d3b47837faf0105c1245877d59
+  role: 岗位职责
+  quote: 力控双臂/灵巧手的先进控制算法研究，包括但不限于高精度力/位混合控制、阻抗控制、柔顺控制等，提升运动部件的动态响应与交互
+  reason: 支持双臂与灵巧手控制研发。
+  urls:
+  - https://www.zhipin.com/job_detail/b23c6e35ebfcf85f0nF529i5EFBQ.html

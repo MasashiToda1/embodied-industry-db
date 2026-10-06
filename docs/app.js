@@ -259,19 +259,39 @@ function researchView(id, today = new Date().toISOString().slice(0, 10)) {
     const latest = !topics.has(s.topic); topics.add(s.topic);
     (latest && recentResearch(s.last_observed, today) ? current : history).push(s);
   });
+  current.sort((a, b) => Number(a.kind === 'watch') - Number(b.kind === 'watch'));
   return { current, history,
     recent: evidence.filter(e => recentResearch(researchDate(e), today)),
     older: evidence.filter(e => !recentResearch(researchDate(e), today)) };
+}
+function researchEvidence(s) {
+  const groups = s.evidence_groups || [], n = s.evidence_counts;
+  if (!groups.length || !n) return '';
+  const item = g => {
+    const first = g.sources[0];
+    const link = x => `<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a>`;
+    const snapshot = `https://github.com/MasashiToda1/embodied-industry-db/blob/main/${first.snapshot.split('/').map(encodeURIComponent).join('/')}`;
+    return `<li>${link(first)}<span class="research-meta"> · ${esc(g.role)}</span>
+      <blockquote>${esc(g.quote)}</blockquote><p class="research-meta">${esc(g.reason)}</p>
+      <span class="research-meta">核验 ${esc(first.retrieved)} · <a href="${snapshot}" target="_blank" rel="noopener noreferrer">原文摘录快照</a></span>
+      ${g.sources.length > 1 ? `<details><summary>相同正文的其他链接 · ${g.sources.length - 1}</summary><ul>${g.sources.slice(1).map(x => `<li>${link(x)}</li>`).join('')}</ul></details>` : ''}</li>`;
+  };
+  return `<p class="research-count">职责支持 ${n.direct} 组 · 任职要求 ${n.requirements} 组${n.statements ? ` · 公司自述 ${n.statements} 组` : ''}</p>
+    ${n.statements ? '<p class="research-meta">公司介绍可能跨岗位复用，出现次数不代表多份独立佐证。</p>' : ''}
+    <div class="research-excerpt"><span class="research-meta">代表原文</span><ul>${item(groups[0])}</ul></div>
+    <details class="research-all"><summary>展开全部已核验证据 · ${n.groups} 组正文 / ${n.links} 个链接</summary><ul>${groups.map(item).join('')}</ul></details>`;
 }
 function researchSection(id, today) {
   const { current, history, recent, older } = researchView(id, today);
   const strength = { limited: '有限', supported: '有支持', corroborated: '有交叉印证' };
   const assessment = s => `<article class="research-reading">
-    <div class="research-meta">研判 · 证据支持：${esc(strength[s.strength] || s.strength)}</div>
-    <h4>${esc(s.title)}</h4><p>${esc(s.judgment)}</p>
+    <div class="research-meta">${s.kind === 'watch' ? '待核实线索' : '研判'} · 证据支持：${esc(strength[s.strength] || s.strength)}</div>
+    <h4>${esc(s.title)}</h4>${s.judgment !== s.title ? `<p>${esc(s.judgment)}</p>` : ''}
     <p class="muted">尚不能确认：${esc(s.limitations)}</p>
+    ${s.next_check ? `<p>后续核验：${esc(s.next_check)}</p>` : ''}
     <div class="research-meta">招聘证据核验至 ${esc(s.last_observed)} · 研判审核 ${esc(s.reviewed_on)}</div>
-    <details><summary>查看判断依据</summary><ul>${s.evidence_events.map(eid => {
+    ${researchEvidence(s)}
+    <details><summary>${s.evidence_groups ? '关联招聘事实记录' : '查看判断依据'}</summary><ul>${s.evidence_events.map(eid => {
       const e = D.events.find(x => x.id === eid);
       return e ? `<li><a href="index.html?ev=${encodeURIComponent(eid)}">${esc(e.title.zh)}</a><p>${esc(e.summary?.zh || '')}</p></li>` : '';
     }).join('')}</ul></details></article>`;
@@ -282,9 +302,12 @@ function researchSection(id, today) {
       <ul>${(e.evidence || []).map(s => `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.publisher || '原始来源')}</a>` : esc(tierZh[s.tier] || '来源')}
       ${s.snapshot ? ` · <a href="https://github.com/MasashiToda1/embodied-industry-db/blob/main/${s.snapshot.split('/').map(encodeURIComponent).join('/')}">历史快照</a>` : ''}</li>`).join('')}</ul>
     </details></article>`;
+  const coverage = [...current, ...history].find(s => s.coverage)?.coverage;
   return `<section class="card research-section" aria-label="近期研发动向">
     <h3>近期研发动向 <span class="muted">招聘线索</span></h3>
     <p class="research-intro">关注研发方向与投入变化。近期指近 90 天核验过的线索，不等于岗位仍在招；招聘要求也不等于已实现的产品能力。</p>
+    ${coverage ? `<p class="research-coverage">本批已保存 ${coverage.saved_bodies} / ${coverage.known_urls} 个已知链接的正文，按同公司相同正文去重后 ${coverage.unique_bodies} 组，均已复核。首次基线，无上月可比记录；不是公司完整招聘目录。</p>
+    <p class="research-meta">同组正文可支持多个方向，各方向数量不能相加，也不代表岗位种类、招聘人数或投入规模。近似文案仍可能服务同一团队。</p>` : ''}
     ${current.length ? current.map(assessment).join('') : `<p class="research-pending">${recent.length ? '已有近期招聘证据，尚未形成经审核的方向研判。' : '暂无近 90 天核验的招聘线索，不能据此判断公司没有研发活动。'}</p>`}
     ${recent.length ? `<details class="research-evidence" ${current.length ? '' : 'open'}><summary>近期招聘事实 · ${recent.length} 条</summary>${recent.map(fact).join('')}</details>` : ''}
     ${history.length || older.length ? `<details class="research-history"><summary>历史研判与证据 · ${history.length} 条研判 / ${older.length} 条较早事实</summary>

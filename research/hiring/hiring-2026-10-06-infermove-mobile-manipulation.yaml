@@ -1,0 +1,49 @@
+id: hiring-2026-10-06-infermove-mobile-manipulation
+org: infermove
+topic: mobile-manipulation
+title: 末端配送移动操作机器人
+judgment: 材料一致支持“移动底盘加单臂操作”的末端配送产品定位；不能由招聘文案确认车队规模或部署城市。
+limitations: 部分岗位正文高度相似，不能按不同URL重复累计为独立团队或多人需求。 招聘文案中的量产、车队和城市扩展表述不能替代实际交付证据。 工具与经验要求不能直接证明公司已采用相应技术。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-infermove-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 11
+  saved_bodies: 10
+  unique_bodies: 9
+  reviewed_bodies: 9
+evidence_groups:
+- hash: b43c75c006d9e9da808bdb3ffa3c79040ac3c18cc3eb8edb1c34ede433b864b8
+  role: 公司自述
+  quote: 机器人团队致力于打造轻量化、具备高扩展性与高可靠性的移动操作机器⼈，覆盖从室外公开道路到室内的复杂⾮结构化空间。
+  reason: 支持单臂移动操作机器人产品定位。
+  urls:
+  - https://www.zhipin.com/job_detail/c9b54f773a621dab0nJ-2ti7FFJV.html
+- hash: feef60deb1b91333aa0d5868eb97b569d700c3a13e2f1cb6e04794c252e4660b
+  role: 公司自述
+  quote: 轻量化、具备高扩展性与⾼可靠性的移动操作机器⼈，覆盖从室外公开道路到室内的复杂⾮结构化空间。
+  reason: 支持单臂移动操作机器人产品定位。
+  urls:
+  - https://www.zhipin.com/job_detail/cac63aad4ee592b00nd60tW0E1tR.html
+- hash: 1263f2f6fa058b0508f71aff732c9d8246524a5a0f059a97cb7b1fb30e2fd6a6
+  role: 公司自述
+  quote: 机器人团队致力于打造轻量化、具备高扩展性与⾼可靠性的移动操作机器⼈，覆盖从室外公开道路到室内的复杂⾮结构化空间。
+  reason: 支持单臂移动操作机器人产品定位。
+  urls:
+  - https://www.zhipin.com/job_detail/6448bf8cc16e98250nd60tW8ElVQ.html
+- hash: 7a7a96091aac02e08d8c45a81de239863a296e45c84f0aa0c05b74708420fdd5
+  role: 公司自述
+  quote: 公司简介：推行科技致力于打造轻量化、具备高扩展性与⾼可靠性的移动操作机器⼈，覆盖从室外公开道路到室内的复杂⾮结构化空间。
+  reason: 支持单臂移动操作机器人产品定位。
+  urls:
+  - https://www.zhipin.com/job_detail/b531846765d76d620nd60tW5E1tR.html
+- hash: 71c5482b21ca9af489bfe1a8e407ce025ea9aca15c6633c11152522983f07d1f
+  role: 公司自述
+  quote: 推行科技致力于打造轻量化、高扩展性、高可靠性的移动操作机器⼈，覆盖从室外公开道路到室内复杂⾮结构化空间的完整场景。
+  reason: 支持单臂移动操作机器人产品定位。
+  urls:
+  - https://www.zhipin.com/job_detail/1bf99c74d02ebacc0nF63N-0GVJX.html
+  - https://www.zhipin.com/job_detail/919898bd715332520nd-0ti6FVFV.html

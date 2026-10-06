@@ -1,0 +1,25 @@
+id: hiring-2026-10-06-wayebot-watch-signal
+org: wayebot
+topic: watch-signal
+title: 单个算法实习岗位同时出现VLA、模仿学习和Sim-to-Real研究任务。
+judgment: 单个算法实习岗位同时出现VLA、模仿学习和Sim-to-Real研究任务。
+limitations: 目前是单岗位线索，其中部分技术还属于研究跟踪或候选人经验，不能认定为现用产品栈。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-wayebot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 18
+  saved_bodies: 17
+  unique_bodies: 16
+  reviewed_bodies: 16
+evidence_groups:
+- hash: 79748d5e09c7ae68de5a8f70282c39902a7ef9d3b47837faf0105c1245877d59
+  role: 岗位职责
+  quote: VLA（视觉-语言-动作）模型、灵巧操作、模仿学习等领域最新进展，探索将多模态感知与智能控制策略应用于人形力控双臂的复杂
+  reason: 直接支持学习型操作潜在线索。
+  urls:
+  - https://www.zhipin.com/job_detail/b23c6e35ebfcf85f0nF529i5EFBQ.html
+next_check: 后续查验持续招聘、论文、官方技术发布或产品演示，确认是否形成稳定的学习型操作方向。

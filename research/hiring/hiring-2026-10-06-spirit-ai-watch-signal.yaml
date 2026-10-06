@@ -1,0 +1,25 @@
+id: hiring-2026-10-06-spirit-ai-watch-signal
+org: spirit-ai
+topic: watch-signal
+title: 训练基础设施岗位提出支持数千卡规模的大规模训练系统优化。
+judgment: 训练基础设施岗位提出支持数千卡规模的大规模训练系统优化。
+limitations: 这是岗位职责和候选能力需求，未披露当前集群规模、实际使用量或模型训练结果。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-spirit-ai-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 172
+  saved_bodies: 70
+  unique_bodies: 63
+  reviewed_bodies: 63
+evidence_groups:
+- hash: 0b22ce7c790878584a98af75ec668badb7ef87bee348aadc306686a32d298397
+  role: 岗位职责
+  quote: ⽀持数千卡规模的⼤规模训练系统性能优化
+  reason: 正文直接出现该潜在线索，但不证明成果已经落地。
+  urls:
+  - https://www.zhipin.com/job_detail/49658578ae72c2bb0nR_09u5F1FS.html
+next_check: 核验后续公开算力规模、训练平台案例、模型版本或可复现评测结果。

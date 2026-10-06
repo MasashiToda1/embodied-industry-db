@@ -1,0 +1,26 @@
+id: hiring-2026-10-06-x-square-robot-watch-signal
+org: x-square-robot
+topic: watch-signal
+title: 家庭服务场景岗位列出叠衣、收纳和桌面整理等技能SOP及训练基地运营。
+judgment: 家庭服务场景岗位列出叠衣、收纳和桌面整理等技能SOP及训练基地运营。
+limitations: 岗位描述能证明训练与运营需求，不能证明这些技能已达到产品可用水平或已对外交付。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-x-square-robot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 348
+  saved_bodies: 130
+  unique_bodies: 123
+  reviewed_bodies: 123
+evidence_groups:
+- hash: c92c318026ffae00eee3de58c8804e87edeb68a63c5059eeda780166db1f8727
+  role: 岗位职责
+  quote: 家庭场景技能SOP拆解与标准化：主导机器人家庭服务技能（如叠衣服、家居收纳、桌面整理等）的动作拆解工作
+  reason: 正文直接出现该潜在线索，但不证明成果已经落地。
+  urls:
+  - https://www.zhipin.com/job_detail/0e1c18811d2f90870nN_39-8E1dR.html
+  - https://www.zhipin.com/job_detail/5ad015cc874591690nN50tS0E1RR.html
+next_check: 核验公开演示中的任务成功率、连续运行稳定性、产品型号及客户部署证据。

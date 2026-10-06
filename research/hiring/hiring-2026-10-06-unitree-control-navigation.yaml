@@ -1,0 +1,48 @@
+id: hiring-2026-10-06-unitree-control-navigation
+org: unitree
+topic: control-navigation
+title: 运动控制、SLAM与复杂操作
+judgment: 招聘组合指向移动与腿足运动、导航和操作算法并行建设；部分样本为实习岗位，不能推断团队规模或成熟度。
+limitations: 岗位材料没有可靠发布日期，不能称为近期新增。 岗位职责表示招聘需求，不等于相关技术或项目已经落地。 相近岗位可能服务同一团队，未按URL数量推断投入规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-unitree-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 154
+  saved_bodies: 59
+  unique_bodies: 57
+  reviewed_bodies: 57
+evidence_groups:
+- hash: c9469f2dfd7dbbe563d82d74a45ec06e9f34b086bf611d325c31f23fba934c4f
+  role: 岗位职责
+  quote: 配合其他技术人员实现机器⼈在复杂环境下的运动控制
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/5476025213c2216d0nd83tm6FlFU.html
+- hash: 8b2f7f4f96897685fe66605e57271cf4f28d61fe28d1ba679e3320376ecfc607
+  role: 岗位职责
+  quote: 研发适用于多自由度机器人、腿足、轮⾜机器⼈运动控制的深度强化学习算法
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/49027f02ee0a9a5e0nN_3tm6FVdT.html
+- hash: 43367879eaee096a960130723666d0095258e6ac49f071213ed52788293f9fb7
+  role: 岗位职责
+  quote: 学习和调试室内/外未知环境下，三维地图构建、路径规划、自动避障，自主导航、目标识别等算法
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/12d505ee4be6d0840nV93d66EFRR.html
+- hash: a764a260034a1e8efa618772b2bf2ba49d381b4a3b4054ea7b5ecfdb361c0efa
+  role: 岗位职责
+  quote: 负责探索触觉感知技术在具身灵巧手操作中的前沿应用，研究并实现触觉信号与具身操作⼤模型的深度融合，提升机器⼈在复杂物理交互
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/34fa41f31dc569890nN_2ty7EFBX.html
+- hash: db89529428c5bd409bd0f844a111dc3456f5dc7157c3ed7073e09507a6274dc5
+  role: 岗位职责
+  quote: 学习和使用足式/人形机器人的算法的开发、调试和测试，包括vla⼤模型的调试和数据⾤集等
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/428506fcfed15cb60nV93d61F1FV.html

@@ -1,0 +1,31 @@
+id: hiring-2026-10-06-lightwheel-watch-signal
+org: lightwheel
+topic: watch-signal
+title: 软体物理仿真岗位涉及柔体解算、刚柔耦合与多模态训练数据生成。
+judgment: 软体物理仿真岗位涉及柔体解算、刚柔耦合与多模态训练数据生成。
+limitations: 目前主要由少量专项岗位支持，不能确认已形成成熟解算器产品或稳定业务线。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-lightwheel-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 288
+  saved_bodies: 146
+  unique_bodies: 137
+  reviewed_bodies: 137
+evidence_groups:
+- hash: f3d3d0b76f43ed1d67ac2d8be38725f461fa6417650ac233c75873f2a94cb687
+  role: 岗位职责
+  quote: 设计并实现基于物理的柔体解算器（如PBD、IPC、MPM等），结合GPU加速框架（Warp/NVIDIA CUDA）优化
+  reason: 直接支持软体物理仿真潜在线索。
+  urls:
+  - https://www.zhipin.com/job_detail/3ac5a98a2977ee2e0nZ83tS_FlRX.html
+- hash: a0d96e7480d4156e3ba23004fad226e21bbc84402bb9e0c032d0ffa356f565c2
+  role: 岗位职责
+  quote: 设计并实现基于物理的软体解算器（如PBD、IPC、VBD等），优化计算性能。
+  reason: 直接支持软体物理仿真潜在线索。
+  urls:
+  - https://www.zhipin.com/job_detail/140aca6f03a601ba0nd93Nq4EFBT.html
+next_check: 后续核对官方产品材料、技术发布或持续招聘，确认软体仿真是否成为独立产品能力。

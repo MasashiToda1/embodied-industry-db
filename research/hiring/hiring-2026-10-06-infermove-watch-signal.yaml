@@ -1,0 +1,25 @@
+id: hiring-2026-10-06-infermove-watch-signal
+org: infermove
+topic: watch-signal
+title: 安全运营岗位提出多城市、多车队并行运营和全天候值守需求。
+judgment: 安全运营岗位提出多城市、多车队并行运营和全天候值守需求。
+limitations: 这些内容属于岗位建设目标，不能确认多城市车队或7×24运营已经存在。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-infermove-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 11
+  saved_bodies: 10
+  unique_bodies: 9
+  reviewed_bodies: 9
+evidence_groups:
+- hash: 7a275c67c110149204910430a262f105a22c972d602e20a155e09918e5d8aec5
+  role: 岗位职责
+  quote: 从0到1搭建安全运营中⼼，负责组员的招募、培训、排班、绩效考核及日常质量管控，支撑多城市、多车队的并⾏运营需求。
+  reason: 直接支持多城市车队运营潜在线索。
+  urls:
+  - https://www.zhipin.com/job_detail/6b766519ec2de5140nF_2du-FldY.html
+next_check: 后续查验官方运营城市、车队部署或客户项目材料，并区分计划、试运营和正式运营。

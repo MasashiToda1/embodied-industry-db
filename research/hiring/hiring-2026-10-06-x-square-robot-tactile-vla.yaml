@@ -1,0 +1,30 @@
+id: hiring-2026-10-06-x-square-robot-tactile-vla
+org: x-square-robot
+topic: tactile-vla
+title: 触觉感知与VLA操作融合
+judgment: 多岗位支持触觉进入操作策略与模型输入的探索；岗位未披露传感器方案、基准结果或真实贡献幅度。
+limitations: 岗位材料没有可靠发布日期，不作为时间线事件。 招聘要求和岗位目标不等于技术、项目或量产状态已落地。 相似职责可能属于同一产品链路，未据岗位数量推断投入规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-x-square-robot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 348
+  saved_bodies: 130
+  unique_bodies: 123
+  reviewed_bodies: 123
+evidence_groups:
+- hash: e0c8c44f2ce3fbf1fbe36fa3127573a3cd3aca3b7d60a1f3507fa3588d719477
+  role: 岗位职责
+  quote: 负责触觉信号表征学习、触觉 encoder 建模及相关算法研发
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/093fc77264dcee5b0nBy3N-7E1tX.html
+- hash: 116d4813d1d00441d83fecad85cbca0da8f24adfb26c9ad93958b7365c27cf8e
+  role: 岗位职责
+  quote: 负责 触觉在机器人操作任务中的验证与评估
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/12b3fa2183fc36350nBz392-F1ZW.html

@@ -1,0 +1,206 @@
+id: hiring-2026-10-06-x-square-robot-manipulation-engineering
+org: x-square-robot
+topic: manipulation-engineering
+title: 灵巧操作模型的全链路工程
+judgment: 多岗位支持操作模型闭环能力建设，但岗位自述的商业化场景和交付标准仍需外部结果验证。
+limitations: 岗位材料没有可靠发布日期，不作为时间线事件。 招聘要求和岗位目标不等于技术、项目或量产状态已落地。 相似职责可能属于同一产品链路，未据岗位数量推断投入规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-x-square-robot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 348
+  saved_bodies: 130
+  unique_bodies: 123
+  reviewed_bodies: 123
+evidence_groups:
+- hash: 1bcc89a4ee55d5ecc72fde20075a204c7d626c561e10e8b9c4463c93764dda1a
+  role: 岗位职责
+  quote: 负责具身大模型在物流、制造、家庭服务、医疗等商业化场景的后训练与落地交付，从数据、模型、算法维度提升任务成功率与执行效率
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/2f3b141bf03916510nF82Nm6ElpX.html
+- hash: b4ae83e93fba1f4328447ce5790f40b8d32de9fb65ceb5e04b5244f35ae6f169
+  role: 岗位职责
+  quote: 负责云原生技术架构设计、推理场景系统优化、云原生AI套件等开发工作
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/458f98ce64e63e220nN72N26GFpU.html
+- hash: 5caa2414e60d7a46e5f5db298df4378f6dcc902ebf7391ed2d0f7a58a2efb2f4
+  role: 岗位职责
+  quote: 侧重场景应用，与模型研发团队配合，基于落地场景需求，负责Agent的场景应用与二次开发，提升具身智能体的推理能⼒和场景理
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/1e88cdb49f8fe2570nF82tW-EFtX.html
+- hash: adc084e8c1ee2f54516fcfd946ef27f9b301c351c77266685739dabda7f19546
+  role: 岗位职责
+  quote: 负责具身大模型在具体商业化场景（物流、制造、家庭服务、医疗等）中的后训练与落地交付，从数据、模型、算法等多维度提升模型在
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/3993488551130baa0nJ80t-6FlFR.html
+- hash: 9f988bef723e767db0fd42060773d3f1a06e45c03a139efc024a1b7b305e6598
+  role: 岗位职责
+  quote: 数据采集执行：根据项目需求，熟练操作任务数据采集设备
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/3b5e98d91a0afa6903N529y4GVNX.html
+- hash: 44a2bba5ca64285f564ece7fef74cbc684b3c6aeedb7c9d7095e6421989ed601
+  role: 岗位职责
+  quote: 平台架构与核心开发：负责机器人/AI业务全链路云平台系统的架构设计、核心模块开发与迭代，主导技术选型，构建稳定、高效、可
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/17fc54b67e556de20nF_3tm8E1RT.html
+- hash: f3a4dee5419b9b97034a3b1b86cde12b2705e62a92fa598870b052324b7c5470
+  role: 岗位职责
+  quote: 平台架构与核心开发：负责机器人/AI业务全链路云平台系统的架构设计、核心模块开发与迭代，主导技术选型，构建稳定、高效、可
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/5439a7228f8f970b0nJ_29i-E1dU.html
+- hash: 76cc3c8c6f9d1a6feffac084e02538f50f5e68f160d012a65fe097ea4100ee4d
+  role: 岗位职责
+  quote: 负责具身大模型在物流、制造、家庭服务、医疗等商业化场景的后训练与落地交付，从数据、模型、算法维度提升任务成功率与执行效率
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4187f07a6547b2410nF93ti1GFZU.html
+- hash: 94839cd341d1299e50d2efb75132e1be653f79f44e4f90fc4e5ae76a981c67d1
+  role: 岗位职责
+  quote: 全面统筹数据采集工厂整体运营管理，承接上下游业务需求、拆解落地执⾏：含需求对接、任务排期分发、全流程现场管控、项⽬进度跟
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/05ee3e6b9a3407ce0nFy09S4E1FW.html
+- hash: 26010908943ee37b294be8c5f035ef1aca1db9159e49fe6e8916604408b1dea3
+  role: 岗位职责
+  quote: 组织现场人员完成每日任务分配和执行
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/2dec238935bf24c90nN93dq1ElFX.html
+- hash: 9b44aa58cb4c3600742d94516e574c3353788ce061714a93ad61fdbdf4d56ba2
+  role: 岗位职责
+  quote: 组织现场人员完成每日任务分配和执行
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/5115bfc155078d760nNy39S8EFtW.html
+- hash: 45c521662e8bfc6ddeae2c1a29c417521fce96b67006f538d2274fa92fb65864
+  role: 岗位职责
+  quote: 具身智能数据项目全生命周期管理：负责机器人训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/16b825590f804d550nN43d60ElZZ.html
+  - https://www.zhipin.com/job_detail/38ef870534e571ce0nB-09q0FVtX.html
+- hash: 5970042f5f2ece783c7ab788648d36fa10f13efd6fab3a676ab69dc9c330c6ac
+  role: 岗位职责
+  quote: 具身智能数据项目全生命周期管理：负责机器人训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/400a3369ff9e04d70nF92tS-GVdX.html
+- hash: 97d2f84749303f5d6d44e67e1be44d89f2f67a7f32107f1c5b1990671e062dd5
+  role: 岗位职责
+  quote: 您将深度参与下一代多模态大模型 (语言-视觉-动作) 的数据真值构建与评测工作，跟踪前沿多模态⼤模型进展，理解模型能⼒边
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/476f2f3c88e71aac0nR63t-4F1tX.html
+- hash: a2105a6602bcc32ea698d67a74217a48c421f01b0f171626eeb003c26109c5b6
+  role: 岗位职责
+  quote: 负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/57848ba835b134f20nJy0tq0EVFT.html
+- hash: 8ebabe641cfaa5b995a8bd4772caf53d9c6739cc666cec7772898487f3909ff3
+  role: 岗位职责
+  quote: 数据标注执行：依据 AI 机器人领域项目需求及标准化标注 SOP，使用公司指定标注⼯具，对机器⼈动作相关的图像、视频等数
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/177a323a290fa7350nJy3ty9GFNQ.html
+- hash: abd07b6fabe34fbc9bd0ea3d5d8d5b4520cdae43e25fb4b0b4f51ce7d202281e
+  role: 岗位职责
+  quote: 数据标注执行：依据 AI 机器人领域项目需求及标准化标注 SOP，使⽤公司指定标注⼯具，对机器⼈动作相关的图像、视频等数
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/2c8a54c8c7d8e19d0nN_3920EFZY.html
+- hash: 7a56d63ec709cc673ebff965c3f0fbfa75a380ddedf9e31ec6090ef487c77ece
+  role: 岗位职责
+  quote: 负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/31cc7d50c8eed6010nNy39m_GVNY.html
+- hash: 7eb86c9d851f07832ea946fb3fbf03a9a0b022db17c9edf85c7785e36b1d5310
+  role: 岗位职责
+  quote: 培训授课：根据已定培训计划，面向新老采集人员开展⼊职培训、在岗复训及专项场景培训，内容覆盖⾤集标准、场景规范、设备操作
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/174460a6b2adc8d90nNy3dS7EVFV.html
+- hash: 00cd34bfd39d0efc2d3b08ce579b90e6184d96f9b05ee6b793fb3299153127d8
+  role: 岗位职责
+  quote: 负责审核质检采集及标注数据，以日维度进行质量反馈
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/35fcd940c1ef6d600nNy2NS6E1BZ.html
+- hash: 9e972fa16ed935d9c14d70470aa9ab6a874d514ccc22979619f83018fa5315ef
+  role: 岗位职责
+  quote: 负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/31cb6a6571c2bf440nJy09-6ElFQ.html
+  - https://www.zhipin.com/job_detail/4805845f7711603a0nJ72tu-EFNQ.html
+- hash: e1cc301e4d97cc516ad11c252e8efaa75c7f535d474452ba946db67d13dc0ae2
+  role: 岗位职责
+  quote: 负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/034aab56df4652d70nF93968EVpZ.html
+- hash: e4156f457b39bacc4a6b3a8e36f8c9f5fbc3787de1f1b069f08f9a0c58eb5e2d
+  role: 岗位职责
+  quote: 负责数据采集团队日常管理工作，包括人员排班、任务分配、⽬标拆解、过程督导与绩效考核，打造⾼执⾏力团队，确保数据采集任务按
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/21793379ed60f26f0nNy2NS1GVNW.html
+- hash: e95f6722d740555f6adcf99070c70f0e8cf82c4cdf5cb2453b125ca445dfdb61
+  role: 岗位职责
+  quote: 全面统筹数据采集工厂整体运营管理，承接上下游业务需求、拆解落地执⾏：含需求对接、任务排期分发、全流程现场管控、项⽬进度跟
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/060518c5bf8a4bad0nJy3t67EFVS.html
+- hash: 5e0e38068bb9cdbf2d8b51840a81c2062965f9dec5bd0dc435142d7e56dbd1f3
+  role: 岗位职责
+  quote: 数据采集体系规划与建设
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/29fbe715e3faf2ae0nN-2Ni1FVZR.html
+- hash: be54fac7f65cc57d2471af6b83068a2005f1595a61addd70c233915534a60948
+  role: 岗位职责
+  quote: 具身智能数据项目全生命周期管理：负责机器⼈训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/3f1b58f88da8c7aa0nJ42t27E1ZU.html
+- hash: 2605413d9f35bf3f31ac70ec3dd865eeec9d9327812eb0386079107adbae8f71
+  role: 岗位职责
+  quote: XR Zero工业级数据管线搭建：负责开源无本体数据集与真实机器人自⾤数据的⾤集、筛选、清洗及规范化处理
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/550db3af1931cdae0nBy29m8FlBS.html
+- hash: fc07d9e1349477aab5e07e6eb513d00d2b5e77958903ffe0c612cc96b5e033dd
+  role: 岗位职责
+  quote: 确保数据采集任务按时、按量、按质完成
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/176767f6aeb827fb0nN42tS7EVdT.html
+- hash: be9289bee7a31cc74229598a9d1e170848c16dbee3f87a9643ddb6ce6c9b46b5
+  role: 公司自述
+  quote: 我们专注于机器人灵巧操作（manipulation）方向的研发，围绕数据采集、模型训练与真机部署构建完整的技术闭环
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/443cdbc7553193710nF42N6-F1pS.html
+- hash: 70374f7947a7cd89edc1de75cab7b356a91d04618184650a3871bdc054848c87
+  role: 公司自述
+  quote: 我们专注于具身大模型的后训练与多行业核心场景的⾼质量落地交付，覆盖物流、制造、家庭服务、医疗康养等多个商业化⽅向
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/1335272b90ad66b10nBy29i1FldX.html
+- hash: 2db398b244f4d5207be23ee5bd57df4e9c1d364ae0c6f4e2a3c2c62b2804ad3b
+  role: 任职要求
+  quote: 大专及以上学历，有现场运营、项目执行、班组管理、有机器人、智能硬件、遥操、数据采集、数据标注真实场景运营相关经验
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4266d781f80510730nN929S9EVJV.html

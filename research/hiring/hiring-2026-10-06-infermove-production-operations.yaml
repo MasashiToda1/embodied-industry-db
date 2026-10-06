@@ -1,0 +1,36 @@
+id: hiring-2026-10-06-infermove-production-operations
+org: infermove
+topic: production-operations
+title: 量产导入与安全运营体系
+judgment: 招聘需求覆盖制造可行性和运营安全两端，显示团队在补产品规模化所需的工程体系；岗位中的规模目标不代表已经达成。
+limitations: 部分岗位正文高度相似，不能按不同URL重复累计为独立团队或多人需求。 招聘文案中的量产、车队和城市扩展表述不能替代实际交付证据。 工具与经验要求不能直接证明公司已采用相应技术。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-infermove-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 11
+  saved_bodies: 10
+  unique_bodies: 9
+  reviewed_bodies: 9
+evidence_groups:
+- hash: ad06f26496c2a54742ed9be22353f8e540ff58c0dd14046d81de37cf3a1b7aa2
+  role: 岗位职责
+  quote: NPI）全流程，牵头制定结构件量产工艺路线、装配工序方案，支撑手板验证、小批量试产到正式量产的全阶段落地。
+  reason: 支持量产导入与工艺闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/5198b5a3386662ee0nFy0969E1ZT.html
+- hash: 7a275c67c110149204910430a262f105a22c972d602e20a155e09918e5d8aec5
+  role: 岗位职责
+  quote: 从0到1建立安全介入全流程体系，覆盖监控、接管、异常处置三大核心环节，输出标准化SOP与应急预案，确保运营安全与合规。
+  reason: 支持安全运营体系建设。
+  urls:
+  - https://www.zhipin.com/job_detail/6b766519ec2de5140nF_2du-FldY.html
+- hash: b43c75c006d9e9da808bdb3ffa3c79040ac3c18cc3eb8edb1c34ede433b864b8
+  role: 岗位职责
+  quote: 主导NPI阶段结构件的工艺路线制定与装配方案设计，覆盖手板验证、小批试产直至正式量产的全节点推进。
+  reason: 支持量产导入与工艺闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/c9b54f773a621dab0nJ-2ti7FFJV.html

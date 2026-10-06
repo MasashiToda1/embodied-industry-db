@@ -1,5 +1,6 @@
 """研判不得绕过事实引用、主体归属和时间约束。"""
 import copy
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -59,6 +60,45 @@ class ResearchTests(unittest.TestCase):
         self.run_load()
         (self.dir / 'duplicate.yaml').write_text((self.dir / 'reading.yaml').read_text(encoding='utf-8'), encoding='utf-8')
         with self.assertRaises(ValueError): self.run_load()
+
+    def detailed(self):
+        snapshot='snapshots/hiring.json'
+        urls=['https://example.com/job/1','https://example.com/job/2']
+        raw={'format':'hiring-reviewed-excerpts-v1','org':'org','groups':[
+            {'hash':'a'*64,'excerpts':['负责机器人真机测试'],
+             'sources':[{'url':u,'title':'测试工程师','retrieved':'2025-01-01'} for u in urls]}]}
+        (self.root/'snapshots').mkdir(exist_ok=True)
+        (self.root/snapshot).write_text(json.dumps(raw),encoding='utf-8')
+        self.events[0]['evidence']=[{'url':u,'retrieved':'2025-01-01','snapshot':snapshot} for u in urls]
+        self.row.update(coverage=dict(known_urls=10,saved_bodies=4,unique_bodies=3,reviewed_bodies=3),
+            evidence_groups=[dict(hash='a'*64,role='岗位职责',quote='负责机器人真机测试',reason='支持真机验证',urls=urls)])
+
+    def test_count_bodies_not_duplicate_links(self):
+        self.detailed()
+        result=self.run_load()[0]
+        self.assertEqual(result['evidence_counts'],dict(direct=1,requirements=0,statements=0,groups=1,links=2))
+        self.assertEqual(len(result['evidence_groups'][0]['sources']),2)
+        self.row['evidence_groups'][0]['role']='任职要求'
+        self.assertEqual(self.run_load()[0]['evidence_counts']['direct'],0)
+
+    def test_reject_fabricated_quote_foreign_link_duplicate_group_and_incomplete_coverage(self):
+        self.detailed(); original=copy.deepcopy(self.row)
+        for field,value in [('quote','不存在的原文'),('hash','b'*64),('urls',['https://other.org/job']),('role','产品事实')]:
+            with self.subTest(field=field):
+                self.row=copy.deepcopy(original);self.row['evidence_groups'][0][field]=value
+                with self.assertRaises(ValueError):self.run_load()
+        self.row=copy.deepcopy(original)
+        self.row['evidence_groups']*=2
+        with self.assertRaises(ValueError):self.run_load()
+        self.row=copy.deepcopy(original);self.row['coverage']['reviewed_bodies']=2
+        with self.assertRaises(ValueError):self.run_load()
+        self.row=copy.deepcopy(original);self.row['evidence_groups'][0]['urls'].pop()
+        with self.assertRaises(ValueError):self.run_load()
+
+    def test_direction_recency_uses_its_own_sources(self):
+        self.detailed()
+        self.events[0]['evidence'].append({'url':'https://example.com/other','retrieved':'2025-01-03'})
+        self.assertEqual(self.run_load()[0]['last_observed'],'2025-01-01')
 
 
 if __name__ == '__main__': unittest.main()

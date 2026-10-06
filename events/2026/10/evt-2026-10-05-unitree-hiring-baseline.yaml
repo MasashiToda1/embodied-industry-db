@@ -1,0 +1,125 @@
+id: evt-2026-10-05-unitree-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树科技招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 算法与模型应用岗位同时覆盖感知决策类算法、模型压缩、推理加速和机器人端侧集成。 运动控制和SLAM岗位分别要求强化学习真机验证，以及建图、规划和避障算法调试。 嵌入式软件岗位涉及电机和传感器控制，测试岗位覆盖整机功能、性能、可靠性及自动化测试。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/16218d60dd40f9f30nZ-3N66EFFU.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/52b626347b8a01e10nF73tS4GVRY.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/5ab69f807dc882b10nB82965FlFY.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/3dde2b77afb69c920nB50t-7ElRU.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/673cef4d289243d30nN50ti5FlJV.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/186e444a23a858f30nF42tq6FFRT.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/01b750dd8c2d9d0c0nJ_3Nm1EFVY.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/5476025213c2216d0nd83tm6FlFU.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/49027f02ee0a9a5e0nN_3tm6FVdT.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/12d505ee4be6d0840nV93d66EFRR.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/34fa41f31dc569890nN_2ty7EFBX.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/428506fcfed15cb60nV93d61F1FV.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/14c9586c10304aea03B42NW-GFpS.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/19674fd61dd160860nB50ty_EVFW.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/378a9f640bad62680nN_09y6EVtW.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/1e777223f786919a03xy2N-9GFRQ.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/24bd815b4607af310nB50t-1EFdQ.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/13ce74a1d4056b7c03B42NW4GFNV.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/9e17505a77becc390nN_0tS5GVFW.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/57a94ceae83c53df03dy3N-_ElpW.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/5ac1fb2a2f5843930nB-0t--F1pR.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json
+- url: https://www.zhipin.com/job_detail/2d43d7026424b6ec03xy2dW0EFBS.html
+  publisher: 宇树科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/unitree.json

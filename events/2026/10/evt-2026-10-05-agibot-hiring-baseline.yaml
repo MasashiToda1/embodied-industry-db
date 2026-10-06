@@ -1,0 +1,275 @@
+id: evt-2026-10-05-agibot-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元机器人招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 多个岗位职责覆盖世界模型、多模态时序预测、VLM/VLN/VLA导航、学习式规划及双足感控协同。 岗位职责把部署态真机数据回流、失败案例、难例采集、模型微调和回归验证串成闭环。 岗位职责同时覆盖关节底层软件、电机控制、实时总线，以及ROS 2/DDS中间件和系统联调。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/2a17eb14aa274c2e0nJ93NW7FFZZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/019f2e4d66d763900nN62tW4GVZW.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0c09f1332bc8b2a50nN-39q1FlFT.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/38d18bb1263edc380nZ73tu-EFFS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/49d86b2a6aea527b0nV63tm7E1BX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/367bc0c4e0d65ba60nJ83dm0ElpZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/1377f9f767682deb0nNy396_GVpQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/30cd860614d2ed030nF42966FVtX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/028c12b6cbc67adb0nF-2ti6GFtQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/375e3fcc5cd80d700nN90t-6ElJT.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0089bcf088b244790nN-39W9E1dY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/424d9f547501c6360nd-3d27EVJY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/2fe3b74e65055fa70nN609u5FVpY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0b8e587f2db015c60nN93dm-E1ZS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/1c33ae0f01c640940nJ739S5EltV.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/560a4fc057b9637c0nN939y6EFJU.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0e88353d394554750nNy2NS_E1BU.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/161207385891b1870nN93dm5GVVW.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0df891faeaa6019d0nN52tu1FlRU.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/3719961ab342835f0nN52tq5EltQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/4d600bcd39482a4f0nd82du6FlJQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/10878fd56b94c8940nN_39y8GVRW.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/1daab5a2319608020nJ_0tq-F1VX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/3b92131b21d99fd50nJ-3tu0EldS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/b38e19d8eb87573d0nJ72N-9GFRR.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0ae68935cb0a66cd0nNy3dW9FVBY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0333375815993df80nN50tW1EFRY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/2da7217c10c3c17d0nJ839y4FVNV.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/20f6d748c331a9a80nF82dm8EFJU.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/3afbf255e0d9e2520nF53d-5E1tZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/146c1228a50781fd0nd_3d27EFFQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0db5098693d06e930nF82dm5GFRW.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0e1e50b5f46afe380nF82du5FlJQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/5229c7b6b451b2e00nRz3t66EVZX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/27718445635f6da20nJ_3tS7F1tQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/37f27a17eb6803ab0nNy3969E1pZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/00a61f65378982fe0nNy3Ny1GVFR.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0d80944a2c828be40nN40928FFdS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/1fffe3908c6156230nN829S8E1tX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/19b084c2cf4fc7e50nF43t-6F1BR.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/5794d215a0c7bf510nZ_2d61EVJZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/29381de7d88884950nF93d6_GFFV.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/29f20e0a85043b350nN829S9E1FW.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/2361188dd259dcb40nR53tm4GVVS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/4b968a60674975490ndy3dq8EVtS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/2ed2c732ad75b2b903173d-0E1dQ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0628f4aba44b003c0nF42Nm1EVFZ.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/0a1bde101e92b9d70nF839q5EFRS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/06bb1c13d32fb7070nN-2tS7ElpS.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/42ec1f5fb42062b80nZ-0tm_FFpV.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/4b201d56bc4b16560nV63Nu-EltX.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json
+- url: https://www.zhipin.com/job_detail/1c240a5d5809cd3c0nd_3dy8FlZY.html
+  publisher: 智元机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/agibot.json

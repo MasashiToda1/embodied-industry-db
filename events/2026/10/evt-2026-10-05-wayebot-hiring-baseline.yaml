@@ -1,0 +1,95 @@
+id: evt-2026-10-05-wayebot-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: wayebot
+  role: subject
+title:
+  zh: 苇熠科技招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 运控岗位覆盖双臂全身力控、阻抗与导纳控制；算法负责人岗位覆盖感知、决策、控制和系统集成。 嵌入式岗位覆盖关节驱动器传感、控制和通信；结构岗位覆盖灵巧手骨架、传动与直驱模组。 工艺岗位覆盖新产品导入、产线设计和良率改善；测试岗位覆盖电机、减速器、控制器及整机测试。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/62edace2c767e4400nFy3tq7E1BW.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/7eac6012756d0adb0nF52Ni0FFJX.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/87857349ea1bd8e80nF93dm8F1pZ.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/b23c6e35ebfcf85f0nF529i5EFBQ.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/c0c568b96f43b4940nJz2ty5GVNX.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/032e1a42fc6f45a70nF73Ni0EVpR.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/ae04f93f84510a110nZz3tu8GFtW.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/dceeca3953b37b0e0nBy09i6EFJR.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/24e8414ce08a75c70nB82Ni6FlZU.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/34081a1b2480d42d03Z52ty_FFBS.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/1a303716c8293c6e0nB93tW5FVZW.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/21467d8a2a887fda03V42tq4FVdZ.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/fa2fade702c6082c0nJ62NS7FlpZ.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/41ffa63d0a4221ba0nZ62NS-EVtS.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/5871553f53ad03a60nBy09i7GVJZ.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json
+- url: https://www.zhipin.com/job_detail/871d7c528c344e760nF729q0FlpU.html
+  publisher: 苇熠科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/wayebot.json

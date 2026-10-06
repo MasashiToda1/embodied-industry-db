@@ -1,0 +1,25 @@
+id: hiring-2026-10-06-galbot-watch-signal
+org: galbot
+topic: watch-signal
+title: 具身Agent岗位提出Agent OS、长程任务、反思纠错和Agentic RL。
+judgment: 具身Agent岗位提出Agent OS、长程任务、反思纠错和Agentic RL。
+limitations: 目前以单岗位职责为主，尚无独立证据确认Agent OS已形成可交付系统。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-galbot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 245
+  saved_bodies: 103
+  unique_bodies: 91
+  reviewed_bodies: 91
+evidence_groups:
+- hash: 14c10fa71c3e2bd6217751ec1069a722a5853f7afe6fe2a4d54be7619cea1bd4
+  role: 岗位职责
+  quote: 参与具⾝ Agent OS 的算法架构设计与升级
+  reason: 职责直接描述具身Agent OS、长程任务、反思或Agentic训练。
+  urls:
+  - https://www.zhipin.com/job_detail/27f3008f87fa37330nN72tW_GFpV.html
+next_check: 继续核验官方技术报告、产品版本、开源代码或真实机器人长程任务演示。

@@ -1,0 +1,190 @@
+id: evt-2026-10-05-spirit-ai-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: spirit-ai
+  role: subject
+title:
+  zh: 千寻智能招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 多个岗位覆盖具身模型后训练、持续学习、模型压缩以及端云侧推理系统优化。 数据平台岗位覆盖统一接入、数据湖和资产治理，数采设备产品岗位列出UMI、Ego、动捕和手套等设备。 项目管理岗位统筹底软、运控、推理和导航版本，测试岗位建设感知决策、主控软件与机电系统联调体系。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/1638bdce1b42f2430nR92ty1E1pQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/a158f220e054306d0nJ42Nu_FVFQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/5962b6d3ff2d72a10nN73dm7EFVV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/28469f48107725770nN73tW8ElZT.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/518688a4afa99b460nJz3d28FFNQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/b34153a94f3838370nB929S7FlNZ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/43e5bbc522a7a0b90nd43d-6ElpW.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/27afe8dfda2350910nN42t67FVFS.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/36c9ec5561f9f5600nV82920GFFV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/49658578ae72c2bb0nR_09u5F1FS.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/054be0b65f9d019f0nR93t2_F1RQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4eb9f3dcaf23a19b0nR939S_ElpV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/268ad2889c83808e0nV-2N61FFdQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4977b48761f8d0740nN-2t21GFpR.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/06c0936b473ba8030nB939-9FFVX.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/122e1de22c620b190nF42tu8EFpV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/1ff07f484a53e5f80nF42ti0F1RR.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/13bbc4ede5dbe20b0nd70tS9FVNZ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/27ea3e3dbbc221460nB-3ty6F1ZU.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/3c4fc27abbe164ff0nB_09-5EFVV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/1b5ff16962aa87830nFz3N26EFVR.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/35602b61a48db9390nd70tW4ElNU.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/0ca164b13f81a3310nN52929ElZS.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4d2185b5ba3ec6870nJz3tW1F1pX.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/3a911e4008cdd7c50nJ_39q0GFJQ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4e3af61c6c7da32b0nd70ti7FFJU.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4d257eb3bf12559d0nNy2ti0ElRT.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/0fdc715da09a20c90nN83Ni7E1BU.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4694ac1b96455aec0nJy0tq4FVNV.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/04e014297600d1550nJ829q0FVJZ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/564fa3f72b211f8f0nZ52Nm-FVJZ.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/5944d1dca1823bee0nFy0tu-F1dT.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4d5407368f32d5090nF53d67FlJX.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/4bca93d5730aab7f0nN72921ElNS.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json
+- url: https://www.zhipin.com/job_detail/21705d34a9a238e50nN72920ElNS.html
+  publisher: 千寻智能 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/spirit-ai.json

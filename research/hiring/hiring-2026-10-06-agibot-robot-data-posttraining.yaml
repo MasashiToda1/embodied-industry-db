@@ -1,0 +1,102 @@
+id: hiring-2026-10-06-agibot-robot-data-posttraining
+org: agibot
+topic: robot-data-posttraining
+title: 真机数据回流与场景后训练
+judgment: 多岗位支持公司招聘建设从现场问题到数据、训练和验证的迭代管线；实际覆盖本体和效果仍待核验。
+limitations: 覆盖630个已知岗位URL中的243份正文、235份唯一正文；不是完整招聘目录。 岗位职责和任职要求反映用人方向，不等于项目已落地、指标已实现或岗位近期发布。 部分岗位可能属于子公司、共创或不同产品线，不能合并推算单一项目进度。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-agibot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 630
+  saved_bodies: 243
+  unique_bodies: 235
+  reviewed_bodies: 235
+evidence_groups:
+- hash: 8dd071230e4bf193eda50921256d091ab24f08c4f8ca96d109b2b71c290894cd
+  role: 岗位职责
+  quote: 搭建并维护采集、质检、⼊库、微调训练的数据回流管线
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/0b8e587f2db015c60nN93dm-E1ZS.html
+- hash: a8dcb1523e537f0c6e25008c3ad3eb45c33e9e7d7924c31af01be677ad83a6ad
+  role: 岗位职责
+  quote: 数据回流与质量闭环：打通部署态真机多传感器数据回流通道，建⽴质量检查、检索复用与失败案例回流机制
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/1c33ae0f01c640940nJ739S5EltV.html
+- hash: b774b64e33f239d57c4ca6b1fdaff360ed2098d9a770de799e5e91d5a7cca1e2
+  role: 岗位职责
+  quote: 建立数据与评测体系：仿真与真机场景回放、对抗case库、⾃动化回归、线上失败归因与难例回流
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/38d18bb1263edc380nZ73tu-EFFS.html
+- hash: 59637f895eb1b5fbc26657453951abc97b08b170a718154cb07661127ff7e997
+  role: 岗位职责
+  quote: 负责真机数据采集与标注流水线的落地，制定并完善数据规范，实现⾤集、清洗、标注、入库、版本管理的自动化
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/560a4fc057b9637c0nN939y6EFJU.html
+- hash: caf456fed8fb59c9b6fd8ffc148f32ca258724bd8d60996ac0c8ccdcd62a1847
+  role: 岗位职责
+  quote: '- 负责具身基础模型的后训练与强化学习研发，持续提升机器人任务成功率、稳定性、执行节拍与泛化能力'
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/0e88353d394554750nNy2NS_E1BU.html
+- hash: 9fb060d7850acf423b0ac15c50573438936f68f62b1330a1bc9392e2d2aeb5c8
+  role: 岗位职责
+  quote: 支撑数据回流：现场发现的异常与难例及时反馈给场景中台，难例数据经质检后进入回流管线，保证可追溯、可回流
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/161207385891b1870nN93dm5GVVW.html
+- hash: 46b424bb90c6c281461362d41f5b149f8f141cd3192e476e9d2812a025a7996f
+  role: 岗位职责
+  quote: '- 建立数据闭环与模型评测体系：负责多模态数据采集、自动化标注、难例挖掘、仿真/真实场景评测及算法持续优化'
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/0df891faeaa6019d0nN52tu1FlRU.html
+- hash: b0c9615cd1c830ca6be53373b2e270a28ce43c50f067fde9749122485c4143a4
+  role: 岗位职责
+  quote: '- 建立数据闭环与模型评测体系：负责多模态数据采集、自动化标注、难例挖掘、仿真/真实场景评测及算法持续优化'
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/3719961ab342835f0nN52tq5EltQ.html
+- hash: 1fec15e277c4b1db2d32771c868cb82141f407f325c8b079ba0d4945703b26b5
+  role: 岗位职责
+  quote: 制定数据采集规范与标注标准，确保遥操作/仿真/真实数据质量
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/4d600bcd39482a4f0nd82du6FlJQ.html
+- hash: da602c5c3aeaea6ae55671a856358c6a0993862e2a3263646253641aa62229d6
+  role: 岗位职责
+  quote: 探索 RL 与模仿学习（IL）的混合训练范式：利用⼈类演示数据初始化策略，再通过 RL 进行微调和鲁棒性增强
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/10878fd56b94c8940nN_39y8GVRW.html
+- hash: 6ff5c3da9a23eb4355ac94a6062da407d30e3bd5854d2238b7fb13a14e24fd24
+  role: 岗位职责
+  quote: 建⽴评测与数据策略：线上失败归因、难例回流、版本对⽐与回归测试
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/30cd860614d2ed030nF42966FVtX.html
+- hash: d179436a1d7619198108f684eddf5cfbdbaedf2687602f16c3efff0177815d7b
+  role: 岗位职责
+  quote: 构建分布式 RL 训练基础设施，对接多仿真器后端与真机环境，支持多算法并⾏实验与大规模数据采集
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/1daab5a2319608020nJ_0tq-F1VX.html
+- hash: f61f9f1e6e509544a51b1e17a3094b5413dfe6c11ced2bd4325719cd61f06fb1
+  role: 岗位职责
+  quote: 负责机器⼈数据闭环全链路后端开发，打通⾤集、训练、部署、真机测试到失败数据回流的完整链路
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/3b92131b21d99fd50nJ-3tu0EldS.html
+- hash: 43baa513103c560f224ad4f0babd8ec953b986610a731635d80933848f43859c
+  role: 岗位职责
+  quote: 数据回流与质量闭环：打通部署态真机多传感器数据回流通道，建⽴质量检查、检索复用与失败案例回流机制
+  reason: 职责直接连接真机/场景数据与训练、微调、回归或质量闭环。
+  urls:
+  - https://www.zhipin.com/job_detail/b38e19d8eb87573d0nJ72N-9GFRR.html

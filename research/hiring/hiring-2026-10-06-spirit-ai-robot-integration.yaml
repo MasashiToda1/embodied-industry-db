@@ -1,0 +1,66 @@
+id: hiring-2026-10-06-spirit-ai-robot-integration
+org: spirit-ai
+topic: robot-integration
+title: 端侧软件集成与脑身测试
+judgment: 多岗位支持整机软件版本和脑身协同验证能力建设，但不提供具体整机版本的发布或量产状态。
+limitations: 岗位材料没有可靠发布日期，不能猜测招聘发生日期。 职责中的交付、量产和规模化均是工作目标，不等于已完成。 未获得团队人数、招聘人数和项目归属。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-spirit-ai-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 172
+  saved_bodies: 70
+  unique_bodies: 63
+  reviewed_bodies: 63
+evidence_groups:
+- hash: 873cba132753ec44125f911668528840a7c6103d0ab8fd075fe9dfdbf5c29270
+  role: 岗位职责
+  quote: 管理具身智能端侧软件项目：含底软、运控、模型推理、导航、Release Center、OTA、远程接管与调试系统等多个专
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/0fdc715da09a20c90nN83Ni7E1BU.html
+- hash: 3ae8eb3ba9a2ea5c981d99088341e7bff0d22b0f193246d41f8519c8fa6afd06
+  role: 岗位职责
+  quote: 搭建机器人“脑-身”集成测试体系，覆盖感知决策算法、主控软件与机电执行系统的联调验证，制定集成测试方案、量化指标与流程规
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4694ac1b96455aec0nJy0tq4FVNV.html
+- hash: 23585e285e9219ff85353713c4ccf652226f02782422c8ef15d0483f24d7f641
+  role: 岗位职责
+  quote: 负责机器人ROS2 中间件体系的建设、优化与量产化落地
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/04e014297600d1550nJ829q0FVJZ.html
+- hash: bce74aa487c9b339dd3e2c87f32c2e075e54df49dc54c2f74a018d091f476bbb
+  role: 岗位职责
+  quote: 协同硬件、算法团队完成系统集成，负责全链路应用软件联调与性能优化
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/564fa3f72b211f8f0nZ52Nm-FVJZ.html
+- hash: 54fe97d62cc00d9a5d8687e4cbe74d2133995d8a64708535dd2b9827217214e1
+  role: 岗位职责
+  quote: 参与机器人端侧 Runtime 系统的设计、开发和持续优化，包括硬件抽象、端侧通信、可观测、资源治理等方向
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/5944d1dca1823bee0nFy0tu-F1dT.html
+- hash: bf7dff6b814cb45828070a801492e2b8b97930c12c169e7b7646fb5c20ff27fb
+  role: 岗位职责
+  quote: 负责机器人中央域控与感知系统的嵌入式软件开发，构建高质量的底层软件系统
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4d5407368f32d5090nF53d67FlJX.html
+- hash: abee2abd1f6ecac79d9ea8b1172ef1778c70d34c3ebdac22bad2147fd49c90e1
+  role: 岗位职责
+  quote: 负责机器人端侧基础软件平台设计、开发与维护，为上层业务提供稳定统一的底层软件能力
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4bca93d5730aab7f0nN72921ElNS.html
+- hash: b1e47ba87af41339c4b067266dd28b11b2fe6d5d3a9aa486b22aef495ee1e03c
+  role: 岗位职责
+  quote: 负责机器人端侧基础软件平台设计、开发与维护，为上层业务提供稳定统一的底层软件能力
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/21705d34a9a238e50nN72920ElNS.html

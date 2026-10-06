@@ -41,4 +41,16 @@ assert.ok(html.includes('尚不能确认：未确认新项目'));
 assert.ok(html.includes('index.html?ev=recent'));
 assert.ok(!html.includes('尚未形成经审核'));
 assert.equal(JSON.stringify(data.events),before,'不改写历史事实');
+data.research_signals[0].evidence_counts={direct:1,requirements:0,statements:0,groups:1,links:2};
+data.research_signals[0].coverage={known_urls:10,saved_bodies:4,unique_bodies:3,reviewed_bodies:3};
+data.research_signals[0].evidence_groups=[{role:'岗位职责',quote:'<原文>',reason:'<依据>',sources:[
+  {url:'https://example.com/1',title:'岗位1',retrieved:'2025-04-01',snapshot:'snapshots/hiring.json'},
+  {url:'https://example.com/2',title:'岗位2',retrieved:'2025-04-01',snapshot:'snapshots/hiring.json'}]}];
+html=run("researchSection('org','2025-04-02')");
+assert.ok(html.includes('职责支持 1 组'));
+assert.ok(html.includes('1 组正文 / 2 个链接'));
+assert.ok(html.includes('相同正文的其他链接 · 1'));
+assert.ok(html.includes('&lt;原文&gt;'));
+assert.ok(html.includes('不是公司完整招聘目录'));
+assert.ok(!html.includes('<原文>'));
 console.log('PASS: 90天边界、未知与未来时间、主体角色、审核与核验时间分离、历史版本、空态、转义、事实不变');
