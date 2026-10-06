@@ -1,0 +1,150 @@
+id: hiring-2026-10-06-lightwheel-simulation-evaluation
+org: lightwheel
+topic: simulation-evaluation
+title: 仿真评测与真机衔接
+judgment: 招聘组合支持仿真、评测、数据回流和真机调试之间的工程衔接需求；不证明相关模型或工具已在生产系统采用。
+limitations: 岗位职责表示招聘目标，不等于项目、产品或客户交付已经完成。 VLA、Sim2Real及具体仿真工具可能出现在协作项或经验要求中，不能直接认定为现用技术栈。 岗位数量不能用于推算团队规模、招聘人数或业务收入。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-lightwheel-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 288
+  saved_bodies: 146
+  unique_bodies: 137
+  reviewed_bodies: 137
+evidence_groups:
+- hash: bb29f35e9db6b91123830366efdb2e0ae8eb0ebf84e83fab175e12c01f6ccf48
+  role: 岗位职责
+  quote: 与算法、仿真团队紧密协作，推动 sim-to-real、数据回流与快速迭代
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2810b2623af8b8700nR-2tq5E1tS.html
+- hash: 15c4e435ce464396bb1ac3e7d7ab5f6d756f23d0428a75007a1f0698bfb73d8a
+  role: 岗位职责
+  quote: 与算法、数据和仿真团队合作，推动仿真评测与真实机器⼈评测闭环。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2241c0b0f1fc57d00nF429m9F1JS.html
+- hash: f3d3d0b76f43ed1d67ac2d8be38725f461fa6417650ac233c75873f2a94cb687
+  role: 岗位职责
+  quote: 与算法团队协作，为强化学习、仿⽣控制提供高保真仿真支持，确保训练-部署一致性（Sim2Real）
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3ac5a98a2977ee2e0nZ83tS_FlRX.html
+- hash: 284cb3a16903f214a5dc632c198491e9f04e6378f3ae3d99342436ef0858bcef
+  role: 岗位职责
+  quote: ⽀持数据生成、算法验证、模型评测等场景落地。
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/9dac6d1beac153f40nF43Nm5FFBX.html
+- hash: 33705f581d9ddc3f593efca8d52034cfe7feb037c2cfef850e6cb957984036b2
+  role: 岗位职责
+  quote: 建设模型交付流程，覆盖训练架构设计、数据⾤集、数据清洗、标注、训练、评测、仿真验证、真机测试
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/37c9e12579f16d0f0nFz392_FFZQ.html
+- hash: b8e7ee90fbb414d835a1ee5b406e3131118e63288f54da30064b60ea41cc3803
+  role: 岗位职责
+  quote: – 支持 Sim2Real 验证、问题定位与性能优化
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/195065db5a4792030nd53tm-GVtX.html
+- hash: 3384f269ee76e90203027232415f63cbb411bf29de308a4b713ceaa62c50df0f
+  role: 岗位职责
+  quote: 协助推动 Sim2Real 全链路产品化、标准化
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/0526e388eee6185f0nJ-2tu5F1JY.html
+- hash: 312925ddd666b37657e954ec3cbca71cd80324da141da4d0e9d2294e887f50ef
+  role: 岗位职责
+  quote: 与算法、仿真团队紧密协作，推动 sim-to-real、数据回流与快速迭代
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/9cc5e71b444cd1700nR-2tS5FFBX.html
+- hash: 47e693e0fdd37772af5c0a8f87b6c303c8ad3bb01deb14cd48b3187ec8222d8c
+  role: 岗位职责
+  quote: 设计并优化仿真到真实（Sim2Real）迁移流程与⽅法。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/275a5b989ff44fef0nF429m8FltU.html
+- hash: b00f7927171f2892b6586dd39a5f0d08fd3bc409932041f965623dd840aadcf9
+  role: 岗位职责
+  quote: 参与具⾝智能仿真系统的开发与优化
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/7bd790ab5b8ca5760nV72N60EVBV.html
+- hash: 205a496e24261e72d86c533da757102187ffeee06642e349e891f3a7967a3dcb
+  role: 岗位职责
+  quote: 与模型、数据、控制、真机团队协作，使仿真系统服务于评测、数据生成、策略学习和产品能力迭代。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/384a130afe94429f0nF_3N69FFRQ.html
+- hash: b896e1bfabf973dcbba62abbdee9e7ba6a80e79b079e5333a2cd0d832b4f2263
+  role: 岗位职责
+  quote: 设计实验，验证数据方法或评测方法对模型性能的影响
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/e5cd8e9051ea490a0nF-3NS1EFVU.html
+- hash: f67451198c7312edb2a137d8f764103c23a030cfef8e026a60cd64a7f45ddac1
+  role: 岗位职责
+  quote: 负责设计和开发全面、高效的仿真和评测系统
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/2e935a075f922a7d0nZ83t26FVBQ.html
+- hash: 0eff70adab2304e4516ce027a5e0e56ae66169d5d6adbd857dacb6bc947dcf48
+  role: 岗位职责
+  quote: 负责具身机器人运动控制算法研发，支持机械臂操作、人形运动等任务落地。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/57d3c94bf0c3e27b0nNy3NW7E1ZQ.html
+- hash: 5406c661c35f1f5841f1b1876bd0c502a634335d0feb388e78d0c1e5a43747c9
+  role: 岗位职责
+  quote: 推动仿真环境与真实硬件测试结合
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/2f9948116d15d5010nB539m1FlVS.html
+- hash: ce8243fb1960d3909a9ec2d5cdae42115be4deebfef53ced128fdb7ff3a764c8
+  role: 岗位职责
+  quote: 负责具身机器人运动控制算法研发，支持机械臂操作、人形运动等任务落地。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/32b655dde28aa0310nB_2tq8GFRV.html
+- hash: 2706d89940d94ff3184505c8b28f6f2b1b58cc463299715fd5f54d418f24ef57
+  role: 岗位职责
+  quote: 负责具身机器人运动控制算法研发，支持机械臂操作、人形运动等任务落地。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/f60ef30232f312b10nNy3NS4FVNS.html
+- hash: a0d96e7480d4156e3ba23004fad226e21bbc84402bb9e0c032d0ffa356f565c2
+  role: 岗位职责
+  quote: 与算法团队协作，为强化学习、仿⽣控制提供高保真仿真支持，确保训练-部署⼀致性（Sim2Real）
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/140aca6f03a601ba0nd93Nq4EFBT.html
+- hash: 3b71c04be55783c2a8cc508d58846656f3fb69cb16b7f7953420c59a73c456fc
+  role: 岗位职责
+  quote: 推动 机器人硬件在真实场景的规模化部署（Sim2Real 落地）
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2610c8a2b098e1f70nZ939m-FVFX.html
+- hash: 12739f9c92af2ba5ec111a1731885a3924092e2843e83d8c1664de1ccd30b7dd
+  role: 岗位职责
+  quote: 具身智能模型训练与评测方案
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/42ee269c1e01f4df0nJ_2du1EVdV.html
+- hash: c9f0a35b8c84e6f34ed264b5912a4bca82093afe927b7b92c65f4f51871ba161
+  role: 岗位职责
+  quote: 建立并运行解决方案项目组合管理体系，统一管理人类视频、仿真评测、平台部署、机器人场景和训练场项目。
+  reason: 支持仿真、评测、控制或真机衔接的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/990da8082e8420c00nF93N28FFZX.html
+- hash: 5a152b02f38b0708a7a317431ab77d5a59a3820c6dd05918a2d4c286d45213ba
+  role: 岗位职责
+  quote: 设计端到端解决方案，包括数字工厂、机器人仿真、场景重建、仿真资产、AI 工作流等
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/02d94ae731fe75bd0nF829W4FlZY.html

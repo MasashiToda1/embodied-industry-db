@@ -1,0 +1,54 @@
+id: hiring-2026-10-06-spirit-ai-data-platform
+org: spirit-ai
+topic: data-platform
+title: 具身数据资产与数采设备
+judgment: 两类岗位支持数据生产与治理能力建设；产品经理职责中的商业化成功是目标，不代表设备已经形成销售。
+limitations: 岗位材料没有可靠发布日期，不能猜测招聘发生日期。 职责中的交付、量产和规模化均是工作目标，不等于已完成。 未获得团队人数、招聘人数和项目归属。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-spirit-ai-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 172
+  saved_bodies: 70
+  unique_bodies: 63
+  reviewed_bodies: 63
+evidence_groups:
+- hash: 5e7741d849c89635e45afdfc70deb09af66878495029f8754d222cd273b6729b
+  role: 岗位职责
+  quote: 负责具身数据的统一接入与数据湖建设，面向遥操、UMI、仿真、机器⼈⾃主运⾏回流、开源或第三方数据引入等多种数据⽣产方式
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/0ca164b13f81a3310nN52929ElZS.html
+- hash: c83ad20e11ad18288872b29d71908037b448955ff3b3e2b71337407250a62d01
+  role: 岗位职责
+  quote: 1，负责具身智能机器人数采设备（UMI/Ego/全⾝动捕/⼿套等） 的产品规划与定义，为产品的商业化成功负责，进⾏市场分
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4d2185b5ba3ec6870nJz3tW1F1pX.html
+- hash: 065f669798bf75ee1e0a16d141f88c93e30e73ae72e71d201dced7847bb144a0
+  role: 岗位职责
+  quote: 负责具身智能AI平台的业务流程开发，实现数据采集任务派发、人员/设备调度、数据标注、质量监控等全流程管理
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/27afe8dfda2350910nN42t67FVFS.html
+- hash: 6d1c1dca2c637a8176e4bed40a5263236e01e43b4cf458b4055623294ce6c76c
+  role: 岗位职责
+  quote: 搭建具身智能多模态采集数据的质检体系与量化标准，覆盖视觉图像、激光点云、IMU、标定参数等数据类型，围绕完整性、畸变、画
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/3a911e4008cdd7c50nJ_39q0GFJQ.html
+- hash: 6f43d056857e1cc431470b6d8b4e488a97979e30798be2717be48ec53d727636
+  role: 岗位职责
+  quote: 数据质检/清洗链路研发：负责多模态（视觉、触觉、语言、Action）数据的清洗算法研发，包括异常数据剔除、低质量数据拦截
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4e3af61c6c7da32b0nd70ti7FFJU.html
+- hash: 6c212e865cda7d2fb3c96c23fecfef10ac54f744b5ba400f5298d72af4e2590d
+  role: 岗位职责
+  quote: 负责采集方向整体业务统筹：对接算法及业务团队，理解和梳理不同数据类型、业务场景及交付需求，统筹制定整体采集策略、SOP及
+  reason: 正文直接支撑既定感知、控制或操作方向的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/4d257eb3bf12559d0nNy2ti0ElRT.html

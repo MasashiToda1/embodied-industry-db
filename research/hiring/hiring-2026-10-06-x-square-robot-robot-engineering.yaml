@@ -1,0 +1,255 @@
+id: hiring-2026-10-06-x-square-robot-robot-engineering
+org: x-square-robot
+topic: robot-engineering
+title: 整机工程、测试与交付基础设施
+judgment: 多岗位支持产品验证和制造导入能力建设；职责提到试产、量产并不证明某款机器人已进入对应阶段。
+limitations: 岗位材料没有可靠发布日期，不作为时间线事件。 招聘要求和岗位目标不等于技术、项目或量产状态已落地。 相似职责可能属于同一产品链路，未据岗位数量推断投入规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-x-square-robot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 348
+  saved_bodies: 130
+  unique_bodies: 123
+  reviewed_bodies: 123
+evidence_groups:
+- hash: 392fcb13cab28d7b97ca89a76c6edb0e775e53045641aabab63f8c6c9769768d
+  role: 岗位职责
+  quote: 建立整机测试体系、DVP&R、测试计划、测试流程、数据记录规范和问题闭环机制
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/20436550bb20eaa70nF82Nm7EFBY.html
+  - https://www.zhipin.com/job_detail/3a78e0deaf3323b80nJz39q1ElBU.html
+- hash: a9dca18cf519b08f75897975690f75ebaa1f8d728c0ddc0d433fefdda7cd9abc
+  role: 岗位职责
+  quote: NPI组装工艺，NPI测试工艺，机器人测试开发三个方向都需要哈，都欢迎投递
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/012517316f97b45a0nN62NW4FFRZ.html
+- hash: 9232ab763d6dd04484d1db751d706139ca05e95efb81c687efc5433be4c4ed2d
+  role: 岗位职责
+  quote: 管理、培养测试执行同学，统筹日常任务，密切配合研发同学，对所负责模块的各类功能进行专项拆解，分配合理的测试周期和人⼒、机
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/43b15a8d3187947d0nN709m8EVFV.html
+- hash: e0b25866c706eddd95456de441100e4d69fc7d4e9f28bce87218ab698d57f946
+  role: 岗位职责
+  quote: 负责关节模组在人形机器人整机中的选型、测试、集成、调试和问题跟踪
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4e293c97c53b857f0nN909i8EVBT.html
+- hash: 155591d0fa0c1d86b7a88637652585e5742b1be09cdaeea563eb7e0d712ead5a
+  role: 岗位职责
+  quote: 制定覆盖研发验证、⼩批量试产、量产交付的全流程可靠性测试策略
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/548fd49c163273500nJ70t6-EVNR.html
+- hash: c7a43bae6a36429136b0c5e43fadda7a3a3b256017af13b49506d42cb9023e13
+  role: 岗位职责
+  quote: 制定覆盖研发验证、⼩批量试产、量产交付的全流程可靠性测试策略
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/252b50e5decf13fe0nF-39y6ElJS.html
+- hash: b886a0840fb53a8bdd4430cf35d2ad2a51d7e9f63db3f01da07ad6cd37342783
+  role: 岗位职责
+  quote: 负责ISP  tuning，开展画质调试，包括 AE / AWB、去噪、锐化、⾊彩、Gamma、HDR 等模块，完成 R
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/1b43bcfb83589f800nN93ty8FltT.html
+- hash: fb41a9f0f9c73e74bcf83323eea9e85fc7fe55ce6df658564a62729e35441d1c
+  role: 岗位职责
+  quote: 负责机器人底层实时控制系统，包括关节控制器、实时通信、驱动控制、状态采集和安全保护
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/16a6d9bc86ef66170nF83t20E1dS.html
+- hash: e529e13cf65c1980836c455992f440562c35ce2b72470c53075336b5de4519b3
+  role: 岗位职责
+  quote: 开发机器人应用软件平台，支持VR/力反馈/触觉设备等多种交互⽅式
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/359a2cef6f7bf2f50nB42N-0FVFW.html
+- hash: 5d2ddaa213782470e7db863edfd64fba7a27bd133b32aa0cb2fdfe0be4db793c
+  role: 岗位职责
+  quote: 负责SoC Linux系统的总线驱动及外设驱动开发，参与硬件对接工作
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/543db34e76d4b1630nBz2tq5EVBV.html
+- hash: e828e43a55c8928a1855272c1d82b3537cc49db74fd00a57b1e0004643b314ad
+  role: 岗位职责
+  quote: 职位描述1.负责机器人控制算法的开发，调试，部署
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3ae8ccc964275ba90nJ43Ni0EFBT.html
+- hash: bdfa786e366b37bdce4647f45428a0b2c0281f03f9909addef6d25f4c5e55d93
+  role: 岗位职责
+  quote: 负责腿部、骨盆、躯干、脚部、外壳支架、传感器支架等结构件详细设计
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/30225a4bda98a06e0nF83t28EVdR.html
+- hash: dac3b0571eb95f21f9451a8d47526fca62db25e027cfe9f84607af2905fbd7c0
+  role: 岗位职责
+  quote: 负责机器人整机产品规划、市场与竞品研究、用户调研、产品立项和生命周期管理，结合分拣、巡检、搬运、操作等⽬标场景制定产品路
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3ddeba34642243fe0nN62N26FVZW.html
+- hash: dc00309266ef02cb5ceb35f00635ae4bc5255f7adf600322fab51b6e339d1410
+  role: 岗位职责
+  quote: 负责公司机器人软件功能的功能规划、竞品分析、需求分析、方案设计，推进软件功能交付落地和功能迭代
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/0d32271c109159510nZ9096_FVRV.html
+  - https://www.zhipin.com/job_detail/26208403efa3c33b0nd73ty6F1dZ.html
+- hash: 38e06a50351e7719b240a264d597ff6071395bf018f71019fdd43d1598d7045a
+  role: 岗位职责
+  quote: 负责维修工艺制定，包括拆装工艺、定损与维修测试⼯艺等，优化维修效率、成本、测试覆盖率与维修质量
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/248cdf52d1c004bc0nJy2ti_EVNU.html
+- hash: fba4f2d5b0ee444a4bacf0e5c37463ffb5b7035a3b8a6461472f766ecbf194ac
+  role: 岗位职责
+  quote: 设计并执行传感器测试、标定和数据采集实验方案
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/54bca7b4ae8866850nN72tS9EFZU.html
+- hash: 5756a6b0ca336fcf6ebef0b1d56f88239e8755a133b3bfd782fdfff8932023d8
+  role: 岗位职责
+  quote: 配合算法模块测试负责人进行日常迭代测试、对外交付测试，完成分配的专项测试、数据采集、⽇志收集等⽇常任务
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/475579f3f289106a0nN709m7FVJZ.html
+- hash: eea025f1ccab039fca3480e57602b0cedfcb9453ef9365d3a07e508dfc53b368
+  role: 岗位职责
+  quote: 统筹机械、电⽓、电⼦硬件、嵌⼊式、热管理、触觉/力觉、测试等模块的接口边界
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4242eb63a99ea05b0nF82N69GFFR.html
+- hash: ee15983b70abb00d9713db6c02d2eddf5e970288e5a0a47e3ed05312af587348
+  role: 岗位职责
+  quote: 负责具身智能系统高质量集成交付流程的持续优化与维护，深度参与量产项目的完整生命周期
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3d97ee67f24bf4fc0nN53964EFNZ.html
+- hash: 52f192a4f261b3a939cd3875f468b11a6a5ac7a8257c75a864aa6600121950e7
+  role: 岗位职责
+  quote: 负责机器人遥操场景下实时音视频链路的架构设计、开发、集成和持续优化,覆盖机器人端、网络传输、云端服务及遥操端
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4a3579080e9831ec0nBz2tu6EltV.html
+- hash: 5ebb356a72ab8e07ee7a1b70ff7806feccea2903078671e99e2f8dcc4d24b592
+  role: 岗位职责
+  quote: 负责机器人遥操场景下实时音视频链路的架构设计、开发、集成和持续优化,覆盖机器人端、网络传输、云端服务及遥操端
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/30e7f2721be484ee0nJ_29m5E1RQ.html
+- hash: 4585cd14267f0984d141367f728d4271e42602cf0cbf6f7b19a37606dd1aaaca
+  role: 岗位职责
+  quote: 负责B端具身智能设备（移动作业机器人、工业智能装备、协作机械臂）整机机械结构、关节模组、传动系统的方案创新设计、仿真校核
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/01777e7919a47cc50nN93ti8FVdV.html
+  - https://www.zhipin.com/job_detail/4c663840a238c58c0nF42dm6EVVX.html
+- hash: 45eb2f4bc058cc71029dcd09e651337137c92bb6b6cbeea80ec6ab94c7e37be9
+  role: 岗位职责
+  quote: 负责具身智能、人形机器产品落地设计与对接
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/23221a61101950ac0nF_3tW9F1tT.html
+- hash: f9e2b7a966928c6a0754b6911916c465d15b52cd51bfa5be32ff9b5937604b19
+  role: 岗位职责
+  quote: 本岗位聚焦具身机器人电源平台整体方案开发，主导机器人整机电源架构、电源树、电源分配⽹络设计，负责电源电路防护、低压⼤电流
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3447f9fc54a2eab00nN93t20F1tU.html
+- hash: 9c40f2856e5596a4501d85c5301ff898bb799055e39a7294ca6dc86daf1e75e6
+  role: 岗位职责
+  quote: 负责机器人硬件系统架构设计与演进，覆盖执行器、传感器、主控与接口标准
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/310e943254fbc5aa0nZ70969F1NT.html
+- hash: 0620ef9ff5c6625ccfd3810cb30cc971bd74a4cae0f56cc4c8a94b0e22de697c
+  role: 岗位职责
+  quote: 负责机器人硬件交付方案定制、落地与维护
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4e4ac7f7a06b59880nJ42969EFZW.html
+- hash: 914059f2ac6517cf2c22ad9f5aa5b42eddc9e8aa4e358ecbf99c694f1f01a2f4
+  role: 岗位职责
+  quote: 配合完成驱动器软硬件联调、电机参数适配、控制算法落地、整机性能调优
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/1e132c1cc913fc890nN509i8FVZY.html
+- hash: 6a467735e985d974c6bf75de5f22f26f841fcf8bc94a2f275ee5c31577e521c0
+  role: 岗位职责
+  quote: 负责机器人硬件系统测试，兼任一小部分模块功能测试
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/57ec52f5f46278500nF82dS5EFJZ.html
+- hash: a24abd3925879c84802d862642f1d18bd557c99ff58b0d2817efba881df48e6d
+  role: 岗位职责
+  quote: 负责机器人硬件系统测试，也需要兼任一小部分模块功能测试
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/2ea79df2f8a6df740nV63N6-FFtR.html
+- hash: 357920271cfdd106f1a40ad0608510ce6ddfdc175a7a22746cab28890ade72a5
+  role: 岗位职责
+  quote: 搭建和优化机器人研发全流程 CI/CD 流水线，实现算法、控制程序、固件及 ROS/ROS2 代码的自动化构建、测试、打
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/02b26e3cf159f0090nJ_2NW0EVNT.html
+- hash: 7748dc213c6773dc55e4475b3c494c533d830bef918873591f03af8ebafb318e
+  role: 岗位职责
+  quote: 搭建和优化机器人研发全流程 CI/CD 流水线，实现算法、控制程序、固件及 ROS/ROS2 代码的自动化构建、测试、打
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/59ef9cd9d7ed3b0e0nBz2tq8EFpY.html
+- hash: 695b0eace22b7705d9517597d8ff699d9ef8d8134f98091d7ce282e827b07d23
+  role: 岗位职责
+  quote: 搭建并优化机器人 CI/CD 流水线，基于 GitLab CI 实现算法、控制、固件、ROS/ROS2 的自动构建、测试
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/2f5b01ce47d9cb150nN829u5GFNY.html
+- hash: 13573c611926651ff81b1e351a22dcd422748d8208aca0249b85d3fac8fffdab
+  role: 岗位职责
+  quote: 负责机器人及相关产品的线束、连接器的需求拉通，选型以及定制化交付
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/031fbf2d63c3dccf0nR92Nq9EVRR.html
+- hash: 6f25528dcfaf960e4cf48eaa091a8e104a4ad9af00d08aa9ee5f271808dfb733
+  role: 岗位职责
+  quote: 主导机器人端侧音频处理业务模块的需求分析、技术方案设计及核心代码开发，保障⾳频系统的稳定性与可扩展性
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/042d7c3c9eb8734f0nJ83N-9F1VW.html
+- hash: 062f69779e868244202d5e89b0b5aa794c3bc05337e58e2e873d8605b2abde7f
+  role: 岗位职责
+  quote: 负责机器人IoT云平台的版本迭代测试与质量保障，涵盖 Web 前后端、与机器人端交互的 API等功能测试、接口测试、性能
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/33974e7c2510a63b0nF40t29EVVX.html
+- hash: 4b9a93945ffed19b4c30c5520dc042888c67ccc2cc1efef5e4b5f00897089864
+  role: 岗位职责
+  quote: 负责具身智能软件类项⽬从⽴项、需求拆解、⽅案评审、研发迭代、联调测试、现场部署、验收交付到回款复盘的全流程管理
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/4aeb58d6b00227b50nFy2tq9EVZY.html
+- hash: 4e1c3ff600a2747d08cbc505ebd160c61cb493874e014e7374ba687dc028383e
+  role: 岗位职责
+  quote: 负责大模型/多模态模型评测框架与工具链的 0→1 建设，是"测试体系乘法器"的核心，直接决定算法评测的效率与深度
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/5a572d0e15ef881a0nN509m7F1JU.html
+- hash: 73b0b227043c346601fc1d65d6da8c705c27d839a73968d670b19b5258387d6d
+  role: 岗位职责
+  quote: 参与硬件测试与验收规范落地，执行来料验收、整机集成验收、关键指标抽检
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3348cea40a914aa40nJz2Ny0F1JY.html
+- hash: 0bcd3442ecd37e80832309c4f8f241fb5a7ec43a908b0a4053effaa6cffe7768
+  role: 岗位职责
+  quote: 设计质量前置：参与设计评审与 DFMEA/PFMEA 分析，协助制定质量目标、测试项与放行准则，跟踪 APQP 各阶段质
+  reason: 正文直接支撑既定端侧、机电、集成或验证能力。
+  urls:
+  - https://www.zhipin.com/job_detail/1f827ecf2de20a9b0nN939y0EVBQ.html

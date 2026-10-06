@@ -1,0 +1,55 @@
+id: evt-2026-10-05-infermove-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: infermove
+  role: subject
+title:
+  zh: 推行科技招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 多个岗位的公司自述把产品描述为覆盖室外道路到室内非结构化空间，并以单臂完成抓取、放置和按钮操作。 规控岗位覆盖公开道路、园区和室内环境的路由与规划；测试岗位覆盖软件到硬件、仿真到实车。 DFM岗位要求推进结构工艺、NPI和试产问题闭环；安全运营岗位要求建立监控、接管及异常处置流程。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/c9b54f773a621dab0nJ-2ti7FFJV.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/cac63aad4ee592b00nd60tW0E1tR.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/6448bf8cc16e98250nd60tW8ElVQ.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/b531846765d76d620nd60tW5E1tR.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/1bf99c74d02ebacc0nF63N-0GVJX.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/919898bd715332520nd-0ti6FVFV.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/5198b5a3386662ee0nFy0969E1ZT.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json
+- url: https://www.zhipin.com/job_detail/6b766519ec2de5140nF_2du-FldY.html
+  publisher: 推行科技 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/infermove.json

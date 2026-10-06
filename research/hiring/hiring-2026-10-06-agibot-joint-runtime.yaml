@@ -1,0 +1,159 @@
+id: hiring-2026-10-06-agibot-joint-runtime
+org: agibot
+topic: joint-runtime
+title: 关节驱控与机器人运行时
+judgment: 招聘信号显示公司在补强本体执行器与整机软件底座，不能据此判断量产规模或稳定性水平。
+limitations: 覆盖630个已知岗位URL中的243份正文、235份唯一正文；不是完整招聘目录。 岗位职责和任职要求反映用人方向，不等于项目已落地、指标已实现或岗位近期发布。 部分岗位可能属于子公司、共创或不同产品线，不能合并推算单一项目进度。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-agibot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 630
+  saved_bodies: 243
+  unique_bodies: 235
+  reviewed_bodies: 235
+evidence_groups:
+- hash: b237538ca7dbf7e4447d7ba90544fe294a071ec9830305af246a1d5b06f81da1
+  role: 岗位职责
+  quote: 负责具身智能机器人关节驱控系统研发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0ae68935cb0a66cd0nNy3dW9FVBY.html
+- hash: 50e87f7734f6ae67fa54e9739d26c547a3285e1ca77c8878867c7aa74b98810e
+  role: 岗位职责
+  quote: 负责机器人底层软件数据链路节点和服务中间件的设计、开发与优化
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0333375815993df80nN50tW1EFRY.html
+  - https://www.zhipin.com/job_detail/2da7217c10c3c17d0nJ839y4FVNV.html
+- hash: 650e85a9a0fc05683f302a032ef41fc0e9ac4195255973158ebf7b9f171a7b5a
+  role: 岗位职责
+  quote: 负责机器人系统BSP驱动、Linux内核、硬件抽象层API 及工具链的相关开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/20f6d748c331a9a80nF82dm8EFJU.html
+- hash: 253b3681c1853feba76bac441611a0ce3329e4f6cb6a9bf5cece4e720a3719bf
+  role: 岗位职责
+  quote: 负责机器⼈系统BSP驱动、Linux内核、抽象层API 及工具链的配置开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/3afbf255e0d9e2520nF53d-5E1tZ.html
+- hash: 6d18598e442ec0c1c702bbbcbc955813f4c2433e9f46d33e24427faea4a6b62a
+  role: 岗位职责
+  quote: 基于ROS2进程通信机制，设计实现应用切换，任务调度切换逻辑
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/146c1228a50781fd0nd_3d27EFFQ.html
+- hash: 80c90c973816db37e32bf9feec48741251b2e7ed4c9f530ff9aa06297933069c
+  role: 岗位职责
+  quote: 负责基于ROS2/DDS中间件，构建高可靠性、低延迟的分布式机器人通信与控制系统
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0db5098693d06e930nF82dm5GFRW.html
+- hash: 858b0dd8dc6145d93e67f249b51461d7d8976caa10f859b29274aea7af46f24f
+  role: 岗位职责
+  quote: 负责系统集成工作，在有限的系统资源下，优化机器人运行性能，提升系统稳定性，保障极低的控制延迟
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0e1e50b5f46afe380nF82du5FlJQ.html
+- hash: 4246e852a37970baa97dd5978c6cd7c237d207d539c270151163e8d2c1298327
+  role: 岗位职责
+  quote: 设备驱动开发：编写和调试 Linux ALSA 音频设备驱动程序，实现对音频硬件设备的有效控制和管理
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/5229c7b6b451b2e00nRz3t66EVZX.html
+- hash: 858a4ba0184e6752bf10c38b62de31b5c04828034d7a6ae209439f886f4e2b27
+  role: 岗位职责
+  quote: 参与硬件（电机、驱动器、传感器）与 MC 框架的联调适配，完成驱动抽象、协议封装与控制闭环优化
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/27718445635f6da20nJ_3tS7F1tQ.html
+- hash: d4ce6baa8d88ec02953459c09aed976a8fe8eab972599fbaa030fd0e48d653ce
+  role: 岗位职责
+  quote: 推动关节技术优化，如模块化设计、柔性缓冲结构、低功耗驱动方案研发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/37f27a17eb6803ab0nNy3969E1pZ.html
+- hash: 1626a2c08c8db65055edae4dc59ef8ae0ce15f19dad8d7309df0dcb7e01eea24
+  role: 岗位职责
+  quote: 推动关节技术优化，如模块化设计、柔性缓冲结构、低功耗驱动方案研发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/00a61f65378982fe0nNy3Ny1GVFR.html
+  - https://www.zhipin.com/job_detail/0d80944a2c828be40nN40928FFdS.html
+  - https://www.zhipin.com/job_detail/1fffe3908c6156230nN829S8E1tX.html
+- hash: 7910bbd90a69960a6f9c2303db7fb685f5526bffed54efa0f7cf3fbc4ca27387
+  role: 岗位职责
+  quote: 负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/19b084c2cf4fc7e50nF43t-6F1BR.html
+- hash: a32d330c74159a98d47e26c25c7deb575c89a834ca2e86fc4f7b96924fb1770c
+  role: 岗位职责
+  quote: 负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/5794d215a0c7bf510nZ_2d61EVJZ.html
+- hash: b7c632ae07dc44cd6ab7222559d2d1e026134a517baccd2b1fa2eb6283a838ab
+  role: 岗位职责
+  quote: 负责基于 RK3588、RK3576 或同类高性能 ARM SoC 平台的嵌入式 Linux 软件开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/29381de7d88884950nF93d6_GFFV.html
+- hash: c044bc8c700f0c9b64409beca0a029b146e0f586eb22081fe62627d017d834dc
+  role: 岗位职责
+  quote: 负责 Linux 平台下电机硬件抽象层（Motor HAL）的设计、开发与维护
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/29f20e0a85043b350nN829S9E1FW.html
+- hash: b5285d739d251b2a14f8e372411cfcbb99e509f1a7125fad03fa37a77532c909
+  role: 岗位职责
+  quote: 负责机器人系统BSP驱动、Linux内核裁减适配、硬件抽象层API 及相关产测烧录工具的开发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/2361188dd259dcb40nR53tm4GVVS.html
+- hash: 1fa98654ed34e4778747853ce59787b93a70d412d0c71ac97b69977d88a514b7
+  role: 岗位职责
+  quote: 负责通用机器人原生开源操作系统核心模块研发
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/4b968a60674975490ndy3dq8EVtS.html
+- hash: 498742ecaa1fb8e380b7e1f5756a92a7be25f18d9b7eecfd41cfcc449379341c
+  role: 岗位职责
+  quote: 组建并管理软件算法团队，涵盖运动控制、感知融合、智能学习、嵌入式软件方向
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/2ed2c732ad75b2b903173d-0E1dQ.html
+- hash: 93cba39d2cffcdeb99844b25129c3a4e6bc8793b319cd5908cb3ffc7a444e2e2
+  role: 岗位职责
+  quote: 负责电机控制器的方案设计、建模仿真、算法设计与优化、软件实现与调试
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0628f4aba44b003c0nF42Nm1EVFZ.html
+- hash: af92a028c34f4d4aae83e028475c2ed5011ec4847485d016a74d608e75c6efd3
+  role: 岗位职责
+  quote: 负责机器⼈关节电机驱动软件开发调试，优化FOC控制，提升关节运动性能与稳定性
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/0a1bde101e92b9d70nF839q5EFRS.html
+- hash: 27102d1f1fadcd2fd898690291546c80517dc41a6872e18538282dd299902e4f
+  role: 岗位职责
+  quote: 电机驱动电路：三相桥（FET 半桥 / 全桥）、栅极驱动、电流采样（分流 / 霍尔）
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/06bb1c13d32fb7070nN-2tS7ElpS.html
+- hash: 3c01b29f790368979246487a9f948419b2ae180dcb41fd88fcbdbee4691e7abf
+  role: 岗位职责
+  quote: 构建机器人端与操作端的 DDS 实时通信模块，确保低延迟、强鲁棒性、高吞吐（50ms 级端到端）
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/42ec1f5fb42062b80nZ-0tm_FFpV.html
+- hash: 86d8886476cb9b4f922a3cf86305945f1efedff6c30136dbd3d3d0589a1f6d47
+  role: 岗位职责
+  quote: 基于 ROS2 / AIMRT 中间件，设计并维护应用层与业务线基础软件，封装业务级数据结构、通信接口及公共能力
+  reason: 职责直接涉及关节驱控、嵌入式运行时、中间件或整机系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/4b201d56bc4b16560nV63Nu-EltX.html

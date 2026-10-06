@@ -1,0 +1,425 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "galbot",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "b0e2dfa8001b07daca2334e0a8d4b91026ef8803811ec09656af4b2c930aba53",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/32d5c66198da860403192dS7E1BR.html",
+          "title": "人形机器人控制算法工程师 (WBC/MPC方向)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "主导或参与基于MPC的步态生成器和基于WBC的全身控制器的设计、实现与调试"
+      ]
+    },
+    {
+      "hash": "92756b91175a58575f293028519a14a83540419a0ed903983d12ec91ecf3a5cc",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/49bc3822eca6a10c03B_3Ni9FVdV.html",
+          "title": "灵巧手操作算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研究开发灵巧操作数据采集系统，协同优化软硬件，参与数据采集、数据清洗、数据分析、数据增强等工作",
+        "研究虚实迁移技术，并结合对控制算法的调试，完成从虚拟到真实的技能迁移，在真机上部署灵巧操作技能"
+      ]
+    },
+    {
+      "hash": "6d155c20104a92b20b82632675c3a58f07a9db8e63a5b05c3150c9230a7baed7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/196bf1e1e241963b0nZ50t-0EVNY.html",
+          "title": "人形强化学习控制算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒",
+        "在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人"
+      ]
+    },
+    {
+      "hash": "732baae3f54861e7a390203e7d322274f5aad46f527432e46d176b1bd294f213",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/36aac1667d85a00d0nRy2ty5E1JR.html",
+          "title": "人形强化学习控制算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒",
+        "在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人"
+      ]
+    },
+    {
+      "hash": "c9c8ec00b51f79ea0ee68355995445fb7d57e432e6ef9c274d0558af25f06e65",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/14a80f9eeb6261fa0nRz2NW-EVdZ.html",
+          "title": "具身智能操作算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与机器人与人工智能的操作算法研发，应用于室内移动操作平台的决策与控制"
+      ]
+    },
+    {
+      "hash": "33cbc671f0ca426d05bef34cca8f13384ca0dcfb58572cf37a237805ba0551d5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/190de7179bd45a2d03F53t-5GVdU.html",
+          "title": "机器人全身规划算法工程师(A101393)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人整身规划软件的框架设计及开发"
+      ]
+    },
+    {
+      "hash": "b84780ed9b27d9861c764fa8c58d6d467b8f71e02de4e06ea38905d7f4e54255",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0fae3eba06d499a90nF93t-9ElNT.html",
+          "title": "机器人强化学习算法工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/2f0c16905d645aa20nF50tm0GFRV.html",
+          "title": "机器人仿真与强化学习算法工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/351f57a1074a7dc90nFy39W4FltW.html",
+          "title": "强化学习运控算法工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/58d3e7dbbe62fc7b0nJ-3t--GFVV.html",
+          "title": "强化学习运控算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "结合机器人控制与优化方法，如 IK、WBC、MPC、轨迹优化、PD/阻抗控制等",
+        "基于 MuJoCo、Isaac 等仿真平台构建⾼保真机器⼈仿真环境，完成机器⼈模型、传感器及场景资产的建模与调试"
+      ]
+    },
+    {
+      "hash": "f2f7963a5dd9df8bede659647a6d7341182dd56dc9619bf6d3d7fe9d3d854d79",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3d2bb986b18d3926031-29y5ElRS.html",
+          "title": "机器人规划控制算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与机器人整身规划软件的框架设计及开发"
+      ]
+    },
+    {
+      "hash": "280ef4089455f99705be364591fe281e766e4e9941a68dc0ecff9b5097d41ffa",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/27bb133c3ffc0a540nRz3tm5E1dZ.html",
+          "title": "机器人遥操算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "探索下一代⼈形机器⼈全⾝遥操、灵巧手等新形态遥操作方案"
+      ]
+    },
+    {
+      "hash": "b35144d56204cc70a77675b48e2e2a410dba12109fb2305c36e3b32dc9213268",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2088588aef1caa1d03Z83t67ElJQ.html",
+          "title": "机械臂控制算法工程师-力控方向",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人控制算法、滤波算法的设计和开发，包括但不限于PID/LQR/MPC等控制算法，IIR/FIR等滤波算法"
+      ]
+    },
+    {
+      "hash": "cf8b249bfc292a0236bb2c554125e0d779017cf4a465cb39e13dc33b01a1d1cf",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/59259eb0800272430nF92dy9ElFQ.html",
+          "title": "机械臂规划控制资深工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机械臂运动规划与控制算法的设计、开发和落地，包括轨迹规划、轨迹优化、碰撞检测、避障、约束处理、速度规划等"
+      ]
+    },
+    {
+      "hash": "9e73fe1b70c94ba5a99ff3c45f367cbfabb75645f9a6e9a9bda7222bc809b7cf",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3c3ed3619ee5462b03153t-6F1dY.html",
+          "title": "足式强化学习控制算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒",
+        "在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人"
+      ]
+    },
+    {
+      "hash": "2e119c66786ed815f509c8d0f77a0b22a25125d2469cbab850237a00cdff3a36",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/38db75dcbda0318d03R809W1ElpZ.html",
+          "title": "足式机器人运动控制算法工程师(A221850)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能力",
+        "在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人"
+      ]
+    },
+    {
+      "hash": "9ec240b6241571fe07c4b926b4a87ce4925bfe4a4f18b17f229173d7b5f1c9a6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/17900a31820867e70nN93N26GFRT.html",
+          "title": "高级人形机器人感知部署工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责感知模型、运动控制及操作 Policy 在人形机器人上的实机部署",
+        "负责感知与控制系统的实机性能优化和 Sim2Real 调试"
+      ]
+    },
+    {
+      "hash": "a268b370623590f166e34f8c6c2a985e8705de368a821fd927de6300e852113e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/19b2650a2cd942b50nB-2Ni7EVVZ.html",
+          "title": "具身大模型算法专家（VLA/VLM）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发用于工业具身机器人的视觉-语⾔-动作（VLA）⼤模型与可交互世界模型，实现跨任务零样本泛化"
+      ]
+    },
+    {
+      "hash": "ce4e6d21b6eabd12e313a4570998077d4dc93cfd39be51695f00335d7803009e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/31a9006eb636b68a0nB639W_FVdZ.html",
+          "title": "具身大模型算法工程师-工业后训练",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "设计并实施具身大模型的监督微调（SFT）流程，基于工业场景的半结构化任务数据"
+      ]
+    },
+    {
+      "hash": "14c10fa71c3e2bd6217751ec1069a722a5853f7afe6fe2a4d54be7619cea1bd4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/27f3008f87fa37330nN72tW_GFpV.html",
+          "title": "具身agent算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "开展 Agentic 模型训练与 Agentic RL 相关工作",
+        "参与具⾝ Agent OS 的算法架构设计与升级"
+      ]
+    },
+    {
+      "hash": "e445c38088f9fbf7cc416525380e064d563c7ce70198d8c8327c639d06cf7d77",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2f0057628a31d54e0nF439u6FFVR.html",
+          "title": "具身智能算法工程师（VLA/WAM方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与工业场景VLA（视觉语言动作模型）/WAM（世界动作模型） 算法研发与优化"
+      ]
+    },
+    {
+      "hash": "b8369d2fcb6305bd87983e39c0fec044ae38792cbbb037444dcfc3394046146d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/59651b8197485e0a0nZz09W1GVZY.html",
+          "title": "机器人强化学习算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "VLA+RL后训练⽅案设计与实现"
+      ]
+    },
+    {
+      "hash": "188bb0a5fcaace6d13607c0637f9a09570dd69acbaf1d8bc3b3b2b689e730b07",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/11369e2e03b5772c0nBz29S6FVNW.html",
+          "title": "具身数据算法工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "我们正在为下一代具身基座模型 / VLA（视觉-语言-动作）模型打造覆盖全生命周期的训练数据平台"
+      ]
+    },
+    {
+      "hash": "7a139a919f708a2e927f32b104de466bc7369367f51e6c6afb7dbf6f677e9e2b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/7e4b974dac77b0660nF629i1EVZU.html",
+          "title": "具身数据算法工程师/专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "我们正 在为下一代具身基座模型 / VLA（视 觉-语言-动作）模型打造覆盖全生命周期的训练数据平台"
+      ]
+    },
+    {
+      "hash": "4c81d289d9528ee10f194db7e45c28c538b105af2406c023f72390a1d9b8bff7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1cc8c3a14bfeef6903Vz3NW9GVdX.html",
+          "title": "仿真开发工程师(A156770)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责搭建和维护机器人仿真平台，参与执行器、传感器以及任务场景的仿真开发与性能优化"
+      ]
+    },
+    {
+      "hash": "330d19a45812aab9ff67a35a4019071dcf2be1c90c79f48f53f5447cfd19b1e6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1b99a7645e08530a0nRy2960F1BU.html",
+          "title": "具身仿真操作算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "分析并调控数据分布，确保合成数据对大模型训练与泛化具有有效支撑"
+      ]
+    },
+    {
+      "hash": "de4767100d552ea8e3a64d400c829615cae945887be34db2431d238ba4b22251",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/29446fd3dc9cf5850nZy09u4EVFQ.html",
+          "title": "仿真开发工程师（应用方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建和维护仿真平台，参与⽰教场景与实验任务的设计与开发，⽀持多⽤户协作"
+      ]
+    },
+    {
+      "hash": "1e63e1948de3842427f4df1daeb266d6c9a4447ea69d3643e1faed366a7165dc",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2094787c69e771160nd_2dy6E1FQ.html",
+          "title": "仿真研发实习生",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/3954463d99dbcb8c0nFy0tq1FFVZ.html",
+          "title": "仿真研发实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "协助搭建和维护机器人仿真平台，参与执行器、传感器以及任务场景的仿真开发与优化工作"
+      ]
+    },
+    {
+      "hash": "edf2ac7c0fe25336a9f337d81b21f4fdf86dde39c3f70be0baac49f7220eeb41",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/04a5e2e4ca2649210nd83NW5EVtU.html",
+          "title": "仿真系统测试工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责仿真系统测试⽀持与需求跟进"
+      ]
+    },
+    {
+      "hash": "8d69ae7bdee084f64fd750fb3ff5080b04cb7a25ec73fd9869926e1698de661c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/251185702bf6736d0nF92ti7FVVU.html",
+          "title": "具身仿真实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "持续量化并调优 real2sim 在几何、外观、物理维度的对齐效果"
+      ]
+    },
+    {
+      "hash": "ec12dd79cc1f690a9a0578653d4364e0a35897d4cb4039837ac40355a670dfa4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/55073f20b9217e5b0nN_3ti8GFFT.html",
+          "title": "具身仿真实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建高保真工业机器人仿真环境（支持物理引擎、传感器模拟、接触动⼒学），⽤于算法开发、测试与合成数据⽣成"
+      ]
+    },
+    {
+      "hash": "2c2e21f45a4d64a98563f2a210258f03386fc1adf8a698e9a9cbcaf80fbf3f93",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/480b7598c246f00303V63tq4ElNS.html",
+          "title": "机器人仿真工程实习生(A27211)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "协助搭建和维护机器人仿真平台，参与机器人结构、运动、传感器及场景的模拟"
+      ]
+    },
+    {
+      "hash": "2444b357fd03491f16df562295b45213562f4c3ace15559c53330aa86230ea1c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/55dea68a259933250nB639W_E1tY.html",
+          "title": "机器人学习算法工程师-工业操作策略",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "主导机器人操作策略的Sim-to-Real迁移流程，在仿真平台中完成策略的大规模并⾏训练与自动化测试"
+      ]
+    }
+  ]
+}

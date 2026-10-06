@@ -1,0 +1,185 @@
+id: evt-2026-10-05-galbot-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: 岗位职责覆盖WBC/MPC全身控制、仿真到实体部署、灵巧手数据采集和双手协同。 岗位职责覆盖工业任务SFT、奖励模型、离在线强化学习、边缘端优化，以及VLA与可交互世界模型。 岗位职责覆盖机器人仿真平台、测试集群、评估系统，以及面向VLA训练的合成轨迹与数据分布调控。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/32d5c66198da860403192dS7E1BR.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/49bc3822eca6a10c03B_3Ni9FVdV.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/196bf1e1e241963b0nZ50t-0EVNY.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/36aac1667d85a00d0nRy2ty5E1JR.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/14a80f9eeb6261fa0nRz2NW-EVdZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/190de7179bd45a2d03F53t-5GVdU.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/0fae3eba06d499a90nF93t-9ElNT.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/2f0c16905d645aa20nF50tm0GFRV.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/351f57a1074a7dc90nFy39W4FltW.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/58d3e7dbbe62fc7b0nJ-3t--GFVV.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/3d2bb986b18d3926031-29y5ElRS.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/27bb133c3ffc0a540nRz3tm5E1dZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/2088588aef1caa1d03Z83t67ElJQ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/59259eb0800272430nF92dy9ElFQ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/3c3ed3619ee5462b03153t-6F1dY.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/38db75dcbda0318d03R809W1ElpZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/17900a31820867e70nN93N26GFRT.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/19b2650a2cd942b50nB-2Ni7EVVZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/31a9006eb636b68a0nB639W_FVdZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/27f3008f87fa37330nN72tW_GFpV.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/2f0057628a31d54e0nF439u6FFVR.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/59651b8197485e0a0nZz09W1GVZY.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/11369e2e03b5772c0nBz29S6FVNW.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/7e4b974dac77b0660nF629i1EVZU.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/1cc8c3a14bfeef6903Vz3NW9GVdX.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/1b99a7645e08530a0nRy2960F1BU.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/29446fd3dc9cf5850nZy09u4EVFQ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/2094787c69e771160nd_2dy6E1FQ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/3954463d99dbcb8c0nFy0tq1FFVZ.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/04a5e2e4ca2649210nd83NW5EVtU.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/251185702bf6736d0nF92ti7FVVU.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/55073f20b9217e5b0nN_3ti8GFFT.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/480b7598c246f00303V63tq4ElNS.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json
+- url: https://www.zhipin.com/job_detail/55dea68a259933250nB639W_E1tY.html
+  publisher: 银河通用 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/galbot.json

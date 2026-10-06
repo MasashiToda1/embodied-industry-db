@@ -1,0 +1,379 @@
+id: hiring-2026-10-06-lightwheel-embodied-data
+org: lightwheel
+topic: embodied-data
+title: 具身数据生产与质量闭环
+judgment: 多类岗位共同支持公司在补齐端到端数据生产与质量治理能力；不能据此认定平台各环节已经上线。
+limitations: 岗位职责表示招聘目标，不等于项目、产品或客户交付已经完成。 VLA、Sim2Real及具体仿真工具可能出现在协作项或经验要求中，不能直接认定为现用技术栈。 岗位数量不能用于推算团队规模、招聘人数或业务收入。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-lightwheel-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 288
+  saved_bodies: 146
+  unique_bodies: 137
+  reviewed_bodies: 137
+evidence_groups:
+- hash: fef635a5d2aed30bc9f28ea820a6706e5f209847924649d0611ec999872f88b9
+  role: 岗位职责
+  quote: 负责具身智能数据平台全生命周期管理，覆盖数据采集、标注、治理、仿真等全环节，制定产品规划及迭代策略，贴合业务需求。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3a8c2dcf85874bfa0nB709y_FFtY.html
+- hash: ae40c48a424ed74d133096775caa419c00f3ab8939b9a5eb9f35d6cfdb8dcdd6
+  role: 岗位职责
+  quote: 协助维护数据采集平台及云端处理链路，关注采集、上传、处理等关键环节的运行状态。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/18bb9bf1124dabd00nJz2929E1RV.html
+- hash: e9b794b71b2c0d0db9871515d91807d060dda22bc2e9600342d880a1fe97f06f
+  role: 岗位职责
+  quote: 构建数据⽣产、研发流程或业务流程的⾃动化系统
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/51b710c6d1b1f7ea0nZ62t-0E1FZ.html
+- hash: 147649c74e7a8bca5c90569f096687dc18d921c79503f725edab77873c2cd3ed
+  role: 岗位职责
+  quote: 负责光轮 egocentric 数据⾤集⽹络 的规模化运营，包括数据采集任务调度、产能规划与资源配置
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/3de02d71f1ac99d70nZ62tm8FVRW.html
+- hash: 8c7bbdbdfae34f23dda089f0a4510d46081987348e5b31e14210888644501ca1
+  role: 岗位职责
+  quote: 构建多模态数据体系，包括数据采集、清洗、标注、难例挖掘、合成数据及自动化评测体系
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/12beffe93d6386270nN539u-FlVW.html
+- hash: dd865518a4d629055bb372f83e1ad16759dfd3e72e6409e7e06435d3ab04f97b
+  role: 岗位职责
+  quote: 推动真实场景数据采集合作（场景开放、联合项目等）
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/61619a99706b9d000nZ82t-9EVJR.html
+- hash: a804cbc635e13e021e2da6240cc0144da712972c6e466b21f8bd967287602cfd
+  role: 岗位职责
+  quote: 承接具身数据生产与交付目标
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/16e4805dc900a6210nJ92tu7EFpR.html
+  - https://www.zhipin.com/job_detail/fd73c99564038bdf0nJ92tq4GVVV.html
+- hash: f9e1f2e8595e0f280468c7e306763ad88b289ac9d4e0f42bbe76261311a047da
+  role: 岗位职责
+  quote: 负责人类数据生产项目的整体交付
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/554dcd655fbfc4860nJ73tu_E1VZ.html
+- hash: 9700826aa0fb22fef9a9ed9f586acaf8d5c384f0c0b3e3e5dd5d7db0db33380d
+  role: 岗位职责
+  quote: 负责人类数据生产项目的整体交付
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/0d1c9919c392725b0nN829y8FVJY.html
+  - https://www.zhipin.com/job_detail/24f73bb9b17f6ea70nN92ty8FVtW.html
+- hash: 907b4da392d34edfaac31b51419ee7bb8840e93c50455b7dbac5651e796b8c8c
+  role: 岗位职责
+  quote: 负责人类数据采集基础设施建设，构建从设备端到云端（Device → Edge → Cloud）的数据采集、传输与管理体系
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/4155607a20188df30nJ629m_EFVX.html
+  - https://www.zhipin.com/job_detail/54572dea0a1c6f7f0nJ62tS1FVVW.html
+- hash: 33705f581d9ddc3f593efca8d52034cfe7feb037c2cfef850e6cb957984036b2
+  role: 岗位职责
+  quote: 建设模型交付流程，覆盖训练架构设计、数据⾤集、数据清洗、标注、训练、评测、仿真验证、真机测试、版本发布和问题回归。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/37c9e12579f16d0f0nFz392_FFZQ.html
+- hash: 3384f269ee76e90203027232415f63cbb411bf29de308a4b713ceaa62c50df0f
+  role: 岗位职责
+  quote: 负责遥操数据采集项目的端到端采集交付，同时服务内部采集需求和外部具⾝智能客户的⾤集项⽬。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/0526e388eee6185f0nJ-2tu5F1JY.html
+- hash: 0e7ab9671f74c7ac7b982c5227814f56c230f9957e6866b6ac5b8e8028121ce7
+  role: 岗位职责
+  quote: 负责具身数据项目整体交付，从需求到最终交付全流程管理
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/23ca65c902631f970nJ-3dW0E1ZQ.html
+- hash: 02b05645267171b95f4dadc8c8084e61d7e8a658efff9329f5be0b93f5b7adee
+  role: 岗位职责
+  quote: 对多模态数据的清洗、整理、格式转换和交付打包
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/4f545e2fa08508e10nF72d65GFNS.html
+- hash: 33380080606f4b4aef008a18d08e7fcdc5bb08bb7cbdb5ce2b8d6d8fdb2065ae
+  role: 岗位职责
+  quote: 对多模态数据的清洗、整理、格式转换和交付打包
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/4cf647247e4c01220nF53ti8GVNZ.html
+- hash: b4dfa752cb243f170063865563f3f606dc7f1edadd59a5109149259b85a43632
+  role: 岗位职责
+  quote: 负责数据标注项目的一线交付管理，对标注进度、产能、成本、交付周期和基础质量负责。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/20884da5919f40be0nJ73tu-FVNU.html
+  - https://www.zhipin.com/job_detail/53c968d03b858d070nF909m1FFJZ.html
+- hash: 1818ff916763d881d96342b98e1bc1f0313fd97ecadc0f8a0f24e12b76cab369
+  role: 岗位职责
+  quote: 参与视频及多模态数据质量检查，分析掉帧、冻结、模糊、曝光异常、时间戳和帧数不一致等问题。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/16e8cd06f4f7cf490nN629i-FFVV.html
+- hash: b2df9dbd6248693f909a0da72bd76c8ec40f6dfeea3b9705a7418c1f6296f66b
+  role: 岗位职责
+  quote: 分析标注错误和质量波动原因，识别规则理解偏差、样本难点、⼯具问题、⼈员能力问题或流程问题。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/386e65232fd97cf90nJ73tu-GVVR.html
+- hash: 516530b9e809a42029e22a667561f8c5596e9eeaa2bffd7f5d69e7bf1fef894b
+  role: 岗位职责
+  quote: 负责具⾝数据采集相关供应商的寻源、筛选、资质审核、合同签署、资源调度、交付跟进、结算核对与绩效评估
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/05e3b82c24f7f9180nF439q9FFBR.html
+- hash: c71c2de6be81a70ca4a66d628781e62b7e671d3f7aaef22092a0e503c204981b
+  role: 岗位职责
+  quote: 负责具身数据采集项目全流程管理：需求拆解、方案设计、执⾏与交付
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/8324dd178100c8a90nZ83924F1FY.html
+- hash: eab850eb56b31638c1fc67259914f2f49961cf0efc010d760fedb6150e988d63
+  role: 岗位职责
+  quote: 项⽬全流程交付统筹：主导项目的全生命周期管理，制定项⽬排期、里程碑计划，跟进试采、采集、验收全流程
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/af54d556466dc4db0nd82ti8FlVU.html
+- hash: 0c04661933defdfa87caf274a1093e12d8823583ec8f84f957bc1bcb1d6835c9
+  role: 岗位职责
+  quote: 对接海外供应商（东南亚 / 印度），推进数据采集落地
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/02ff216b39a2b7810nZ809q1FVBS.html
+- hash: 47e693e0fdd37772af5c0a8f87b6c303c8ad3bb01deb14cd48b3187ec8222d8c
+  role: 岗位职责
+  quote: 设计数据闭环（real data → sim calibration → policy improvement）。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/275a5b989ff44fef0nF429m8FltU.html
+- hash: f4f625f35cffccac2336b6afa1ac01f3e695a84b961c204d9faf36894c977c3a
+  role: 岗位职责
+  quote: 负责数据全链路质量治理，覆盖数据采集、预处理、转换、聚合、输出交付全流程
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/0c41cbc552ff2cd10nN72N-_EltW.html
+- hash: e6433215fbdbcaaa30b06a1563649226ca8330b56721c5ca37f966ec919f8775
+  role: 岗位职责
+  quote: 负责具身智能 AI 数据标注项目管理，包括数据标注、质检、验收与交付，确保项目按时、高质量完成。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/661e1799bdb6c8730nF93t21GFtT.html
+- hash: 72aa537ac81ec21df1bcc136033aef4903fc3e1404720a81e41036e0c85ce6b7
+  role: 岗位职责
+  quote: 深入理解具身智能业务场景及模型训练需求，将客户、算法和产品侧需求转化为清晰、可落地的标注规范、验收标准及质检方案。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/599aa8fe9324da8e0nJ-3dW1F1NS.html
+- hash: 6a2df6373d982091a9b6686b36e89ed1fc3146f6bb055ed6d1135e4b9969bbb1
+  role: 岗位职责
+  quote: 多模态数据集全链路质量管控，保障采集视频、IMU、位姿轨迹、标注数据满足模型训练与客户交付高标准要求，⽀撑机器⼈算法迭代
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/1a928f7b29f54f620nFz39i5GFpU.html
+- hash: edb0084647c4ad04114b4b7ff24035dec570643c2da04a3002e0ce4eb72225d8
+  role: 岗位职责
+  quote: 协助正式工程师维护数据采集全链路监控平台，整理采集、上传、云端处理各环节监控指标，定期导出基础监控报表。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2093caa63c847f210nF_2N-6GFRT.html
+- hash: d6061887d967e00fa28ff8b4922abc32a221ecd85a1045b232b2d47f5dc1bc61
+  role: 岗位职责
+  quote: 行为数据标注体系，将复杂的人类/仿真操作过程转化为模型可直接训练的结构化数据，对标注质量最终负责。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/137b451d8f0c546d0nZ72Nu-F1tS.html
+- hash: 37d96818e59e6fae5942a86c7726c66caf878e48763a4c4dad36365eef9576dc
+  role: 岗位职责
+  quote: 负责具身智能相关数据的标注项目全流程管理
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3b8ffdaecfd533e80nZ_2tq9F1dR.html
+- hash: 2341072ce71aed8560ce4ef377538df168ab06e6d7596a854718e9fa5e48fe97
+  role: 岗位职责
+  quote: 项目全流程管理： 负责具身智能数据标注项目的全流程推进与交付，管理标注团队（含外包），确保项目⾼效落地。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/5217859d4654fc4d0nZy2tu5FlRY.html
+- hash: f82af3e4ce1e54f9ef54273345b3713d3798db57429b552cfc1db2f4d15fd0d5
+  role: 岗位职责
+  quote: 统筹海外数据标注项目从需求对接、立项规划、执⾏落地到验收交付的全流程⼯作
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/e05c4cb62a35290c0nB609-1FlBS.html
+- hash: 79ea6c6976ad57710f91780d796916b720437ecef9dde347c9bf7559d6618ad9
+  role: 岗位职责
+  quote: 负责数采整机、关节模组、电控、传感器等核心部件的质量管控
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/29bc4acf999ec06d0nN40tq4EVZY.html
+  - https://www.zhipin.com/job_detail/572221276a6d3cb40nN40tq7EFdU.html
+- hash: f67451198c7312edb2a137d8f764103c23a030cfef8e026a60cd64a7f45ddac1
+  role: 岗位职责
+  quote: 设计并规范机械臂操作任务，标准化数据采集、模型训练及验证流程；
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2e935a075f922a7d0nZ83t26FVBQ.html
+- hash: ecfa91b14435888cbb256b8fbc1e2e0a7e0e96a9d2df6673088880fda37692fe
+  role: 岗位职责
+  quote: 按真实⽣活/工作习惯完成指定任务的数据采集​
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/e493572ad1d32e660nZy2tu6EFtX.html
+- hash: 5dc975f6e853f2a1d190872f7b0427caa9869840990882517d57bfc10cbd3d81
+  role: 岗位职责
+  quote: 制定并持续迭代具⾝数据采集规范（动作、语义、任务、评测标准），建立可量化的质量评估体系；
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/4aef6ef0974c14400nd63NW8F1FR.html
+- hash: 33bd79aa85dd12ec8b19ed9140a3f9e534f0b13a6bcf22d07a62fb9e398a2e70
+  role: 岗位职责
+  quote: 负责具身智能/大模型/机器人数据集全流程项目管理，统筹数据⾤集、标注、质检、交付、复盘全链路；
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/5b5248a67bcbe9910nN83dq1F1pT.html
+- hash: 82a02d190377c8497caa43aa2091a6ca957b4693b283609618ab56286c04ab65
+  role: 岗位职责
+  quote: 深刻理解具身智能相关标注需求，并可以根据客户需求将其转化为清晰、可执行的标注规范与质检标准。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/06650d82d76bd1540nZy2tm6GFZY.html
+- hash: c550282cb6afdca7867a85b1f52bc6a43e549522977c8147584884a734c62b56
+  role: 岗位职责
+  quote: 深刻理解具身智能相关标注需求，并可以根据客户需求将其转化为清晰、可执行的标注规范与质检标准。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/54ae960ffc5d24070nZy2ti1FlRW.html
+- hash: ab897b08709083406784c4d2a9aa661bc5c7ce54a64654d3196422fb2fd63c08
+  role: 岗位职责
+  quote: 负责机器人遥操平台整体架构设计和技术路线规划，支撑具身机器人的远程操作、任务接管和数据⾤集。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/5b3763c8760792920nJ53tS0E1BS.html
+- hash: 4714fc948ccbad031d0325ed8f7a085660ae3857661dcd14fdaf6d42667ad4af
+  role: 岗位职责
+  quote: 负责具身智能人类数据自动化标注处理管线的开发、维护和迭代
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/1674050e04fa17e70nN639y6F1JW.html
+- hash: fb0979bec4d5f6cc595710413489c0490a3355c3bcce4311e7b479d65d57b66b
+  role: 岗位职责
+  quote: 根据不同项目需求，参与设计和优化数据交付流程与⼯具，并沉淀为可复⽤的⼯具和流程
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/1f486c8385214ec90nd82tq5EFBX.html
+- hash: 71caf5bba76c172fa265c480760903248e81a06534783d2cfbfd538e51c52903
+  role: 岗位职责
+  quote: 对多模态数据的清洗、整理、格式转换和交付打包
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/20ad53c947b985320nJ-3N-5F1JW.html
+- hash: b3df104c214aa9fc30a525a5546d79c1da267477e579927359cd801a1ad10a62
+  role: 岗位职责
+  quote: 使用Python开发高效的数据处理脚本和⾃动化流程，包括点云数据清洗、格式转换、可视化及预处理
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/272bbf54f6f1359d0nd42dS5GFNS.html
+- hash: 73580e9422f39a747b0e181f8a59a864f420f39f8023101100691ddd4ea516dc
+  role: 岗位职责
+  quote: 搭建闭环流水线：构建从数据采集、清洗、挖掘到训练部署的全自动化平台（支持 PB 级多数据⾃动化处理）。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2975bbdee6c8db180nZ83t-_FFpZ.html
+- hash: fa81b82766ffef89e38bacb61aef9a39de90c1c140a152cd1301eb5d6052dd3e
+  role: 岗位职责
+  quote: 开发机器人端数据采集 SDK，采集相机、状态、action、任务日志等数据。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3eb9bee987c399cc0nJ72Nu_ElNR.html
+- hash: a61eb2c5b93d6c4ee11253032d148d91c1b08af7b6ef61458c6a8b45c2b3f939
+  role: 岗位职责
+  quote: 负责 UMI/头环类便携数据采集装置的结构设计：腕戴式操作采集单元、头戴式第一视角采集装置、夹⽖相机固定机构、⼿持⾤集杆
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/1ae1902ccf8a07350nN50929FltS.html
+- hash: 3fa52e0804f51dc2d22d06c8810dcdb1d38b2d73aafd12097ef97b1f9240a042
+  role: 岗位职责
+  quote: 负责公司大规模数据标注体系的规划与运营
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/e9f5b98a9f543bf20nZ82t67FlpV.html
+- hash: 28a3f2fb3b54804cecd03c3bd3ed8db4aa783d73019bfe0b1a387781361528d6
+  role: 岗位职责
+  quote: 梳理从任务设计、资源准备、现场采集、数据流转、质检到客户验收的生产过程。
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/5973e27788bb7b530nN42Nm1FlFW.html
+  - https://www.zhipin.com/job_detail/b19e5a1e5536e4f80nN509m_GVRS.html
+  - https://www.zhipin.com/job_detail/b7120a0b56653c240nN82d27FFdZ.html
+- hash: d088bf265089adea2000aaaf2853e8b9084bb3ea314ee042a0d96f63369bebbd
+  role: 岗位职责
+  quote: 数据采集设备公司（多模态传感器、⾤集硬件、标定设备等）
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3de0294b7538d5610nJ_3960EFFU.html
+- hash: 3b71c04be55783c2a8cc508d58846656f3fb69cb16b7f7953420c59a73c456fc
+  role: 岗位职责
+  quote: 负责光轮智能 ⼈类数据采集硬件体系（年度量产 10万+ 台）的设计、量产与持续演进
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2610c8a2b098e1f70nZ939m-FVFX.html
+- hash: 12739f9c92af2ba5ec111a1731885a3924092e2843e83d8c1664de1ccd30b7dd
+  role: 岗位职责
+  quote: 多模态数据采集与标注体系规划
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/42ee269c1e01f4df0nJ_2du1EVdV.html
+- hash: 5c53bc0c9dd341156ef5720fda03e5cfe99e5ebdb8648a91f7e653e2a07832f1
+  role: 岗位职责
+  quote: 组织内部解决方案、算法、仿真、数据处理、运营采集、标注质检、DevOps、产品、研发等团队协同推进项目交付。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/220bad35e4fe84890nF72Ni_EVVY.html
+- hash: 8dcb507b6a87c2388a9aa3b396878f27aae8969be5a483f411ae0bf6dca5514d
+  role: 岗位职责
+  quote: 负责数采整机、关节模组、电控、传感器等核心部件的质量管控
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/dc4dab37ae8c3e7f0nN409S1E1FT.html
+- hash: 6c5a8403b9ed7f9328db0c5603363ac7fc75896d7bb1a8dafc8e8a534c9e477c
+  role: 岗位职责
+  quote: 负责多传感器（Camera、IMU 等）链路的开发、同步、数据融合及稳定性保障
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/310d943194ea300c0nF42969FFRW.html
+- hash: 0af7d711177f7bcf92c636364cca606af166ee11d6d14992c21b8b5b2c4c708d
+  role: 岗位职责
+  quote: 负责具身智能采集项⽬的端到端推进，严格管控排期、预算与最终交付质量
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/18ae199a6395e3cd0nB70927EVZU.html
+- hash: b896e1bfabf973dcbba62abbdee9e7ba6a80e79b079e5333a2cd0d832b4f2263
+  role: 公司自述
+  quote: 构建更好的数据-模型-评测闭环
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/e5cd8e9051ea490a0nF-3NS1EFVU.html
+- hash: 8d7505ade1885522d35487466977571d1225ea1c6b4e7e819dcc2de6351209ab
+  role: 任职要求
+  quote: 有数据生产平台、数据链路治理或数据质量体系建设相关经验。
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/2849b67bb96069080nN72d-7FlBZ.html
+- hash: 5563ab7250f1f02dd8650dca097626b4fa55adc26f5d64d4728011df81b1e012
+  role: 任职要求
+  quote: 具备建立模型驱动的数据质量体系的能力，能够根据模型效果在质量、规模与成本之间做出合理取舍决策；
+  reason: 支持数据生产、治理或质量链条的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3d42c9c8d10cbc030nVy39-5GVFZ.html

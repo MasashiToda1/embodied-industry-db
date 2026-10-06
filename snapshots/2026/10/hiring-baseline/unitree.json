@@ -1,0 +1,285 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "unitree",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "9c8871325679b126e1065c9da0dcf8cb9a09c00c7a482eb387671cb93fd2547e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/16218d60dd40f9f30nZ-3N66EFFU.html",
+          "title": "具身智能算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "追踪 CV、强化学习、模仿学习、世界模型、多模态⼤模型（VLM/VLA）的前沿进展"
+      ]
+    },
+    {
+      "hash": "dbfff3ec088ef82e0495613f77dae19c6ce2672b5425f2797d9780176f01f687",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/52b626347b8a01e10nF73tS4GVRY.html",
+          "title": "机器人模型应用工程师（J10268）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "模型部署与推理优化：负责人形机器人AI模型（强化学习策略、VLA视觉语言⼤模型、模仿学习⽹络等）的⼯程化部署，完成模型压"
+      ]
+    },
+    {
+      "hash": "1ddf9bbaf2ccf75f76bfa5868625f51fc822ed28a421021b69b58c87c1e713ae",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5ab69f807dc882b10nB82965FlFY.html",
+          "title": "具⾝智能算法⼯程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "追踪 CV、强化学习、模仿学习、世界模型、多模态⼤模型（VLM/VLA）的前沿进展"
+      ]
+    },
+    {
+      "hash": "e84aad21b89272666e7d8a91d5f696aefccb1284ca097d816e27ec37fff8c977",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3dde2b77afb69c920nB50t-7ElRU.html",
+          "title": "具⾝智能软件⼯程师（J10216）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "· 负责具⾝智能算法和模型在机器⼈上的开发与集成，将其转化为稳定的产品功能"
+      ]
+    },
+    {
+      "hash": "7bc67ed26e8b923f9a0e622961a69678a45d2982fddc39c0d22b2ee3a346c00c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/673cef4d289243d30nN50ti5FlJV.html",
+          "title": "具身智能多模态推理算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "围绕机器人多模态大模型、视觉语言动作模型（VLA）、具身智能推理能⼒建设完整的数据、训练和评测闭环"
+      ]
+    },
+    {
+      "hash": "41f2cf750e354d320778e79cf06f366daa14c3e7a36ff7c4953fab7299d67fd2",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/186e444a23a858f30nF42tq6FFRT.html",
+          "title": "初级算法工程师（J10270）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "AI大模型相关：协助完成⼤模型的选型、微调与测试，参与⼤模型训练数据的收集、清洗、标注与校验，辅助搭建模型训练、推理的基"
+      ]
+    },
+    {
+      "hash": "71cf3187c3473010cfebb59805bf2b3ba482d1ef46a597db5b8c695d27c6a600",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/01b750dd8c2d9d0c0nJ_3Nm1EFVY.html",
+          "title": "语音大模型算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责端到端ASR（语音识别）、TTS（语音合成）大模型的训练、微调与迭代"
+      ]
+    },
+    {
+      "hash": "c9469f2dfd7dbbe563d82d74a45ec06e9f34b086bf611d325c31f23fba934c4f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5476025213c2216d0nd83tm6FlFU.html",
+          "title": "slam算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "配合其他技术人员实现机器⼈在复杂环境下的运动控制"
+      ]
+    },
+    {
+      "hash": "8b2f7f4f96897685fe66605e57271cf4f28d61fe28d1ba679e3320376ecfc607",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/49027f02ee0a9a5e0nN_3tm6FVdT.html",
+          "title": "运动控制算法工程师实习",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "研发适用于多自由度机器人、腿足、轮⾜机器⼈运动控制的深度强化学习算法"
+      ]
+    },
+    {
+      "hash": "43367879eaee096a960130723666d0095258e6ac49f071213ed52788293f9fb7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/12d505ee4be6d0840nV93d66EFRR.html",
+          "title": "导航算法工程师（实习）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "学习和调试室内/外未知环境下，三维地图构建、路径规划、自动避障，自主导航、目标识别等算法"
+      ]
+    },
+    {
+      "hash": "a764a260034a1e8efa618772b2bf2ba49d381b4a3b4054ea7b5ecfdb361c0efa",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/34fa41f31dc569890nN_2ty7EFBX.html",
+          "title": "灵巧操作算法-实习",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责探索触觉感知技术在具身灵巧手操作中的前沿应用，研究并实现触觉信号与具身操作⼤模型的深度融合，提升机器⼈在复杂物理交互"
+      ]
+    },
+    {
+      "hash": "db89529428c5bd409bd0f844a111dc3456f5dc7157c3ed7073e09507a6274dc5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/428506fcfed15cb60nV93d61F1FV.html",
+          "title": "运动控制工程师（实习）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "学习和使用足式/人形机器人的算法的开发、调试和测试，包括vla⼤模型的调试和数据⾤集等"
+      ]
+    },
+    {
+      "hash": "d3dbf6c77ea6231b1678084f6bba90b3a0259f614842876b829fa35845f1b817",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/14c9586c10304aea03B42NW-GFpS.html",
+          "title": "嵌入式软件工程师(J10008)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "无刷电机(BLDC)、永磁同步电机(PMSM)控制程序的开发"
+      ]
+    },
+    {
+      "hash": "a820a18d5942aae959bba0d483c5ab72629a0fd4890be31c5a908aa59cf2b200",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/19674fd61dd160860nB50ty_EVFW.html",
+          "title": "高级机器人测试工程师（J10078）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与软/硬件产品的需求分析与设计工作，识别可测试性需求，参与产品需求分析"
+      ]
+    },
+    {
+      "hash": "94211a31cf596225793468324d66634c56db6d8653b2e82fb888ef036faf20a7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/378a9f640bad62680nN_09y6EVtW.html",
+          "title": "PCB Layout工程师（J10303）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责PCB Layout设计，根据原理图绘制相关元件库和PCB文件以及相关生产类BOM文档输出"
+      ]
+    },
+    {
+      "hash": "26ec76f122b9220f21b93ab431cc8e5cf4002073cce63603af2a4eb3f73aafb8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1e777223f786919a03xy2N-9GFRQ.html",
+          "title": "c++软件开发工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/24bd815b4607af310nB50t-1EFdQ.html",
+          "title": "C/C++开发工程师(J10188)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与核心通信中间件的开发，基于ROS2、DDS、gRPC、ZMQ等技术栈，确保系统进程间通信的超低延迟与高可靠"
+      ]
+    },
+    {
+      "hash": "e00e1f1129f9099ad2226dfb79110356be65bce43e4913dba9f729ebec7d32b7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/13ce74a1d4056b7c03B42NW4GFNV.html",
+          "title": "嵌入式硬件工程师(J10007)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "1．负责机器人主控板．传感器．永磁同步电机驱动等硬件电路的完善设计,包括原理图．PCB Layout．PCB板的设计/布"
+      ]
+    },
+    {
+      "hash": "324b10709db17b1e1a7780e9678ba24f0848e884b0a6d3228d9daf22ef384b99",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/9e17505a77becc390nN_0tS5GVFW.html",
+          "title": "机器人机械结构工程师实习",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "聚焦消费级小型机器人本体机械结构设 计，主导3D打印快速原型验证，跟进轻量化、低成本新工艺的落地尝试"
+      ]
+    },
+    {
+      "hash": "75f8b610450f508941b683879228e7b27fa287774bdc11bdc7abfafd7d5042bd",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/57a94ceae83c53df03dy3N-_ElpW.html",
+          "title": "机器人测试工程师(J10054)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与硬件产品的需求分析与设计工作，识别可测试性需求，参与产品需求分析"
+      ]
+    },
+    {
+      "hash": "93f7f9d12b826b16a290dc70c8582624f25c4c3d1c1e3a040cbef4f6e3ffe95a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5ac1fb2a2f5843930nB-0t--F1pR.html",
+          "title": "资深系统架构师（C++方向）（J10157）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "进程间通信优化：深⼊研究并优化高性能的进程间通信技术，特别是共享内存、无锁编程、ROS2、DDS和RPC等技术，解决低延"
+      ]
+    },
+    {
+      "hash": "832e263e10a2e77235419b350c5f8bb70692e8e43960dafd9d09d5dc7f2dd6de",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2d43d7026424b6ec03xy2dW0EFBS.html",
+          "title": "高级机械结构工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "机器人机械结构设计，新工艺尝试"
+      ]
+    }
+  ]
+}

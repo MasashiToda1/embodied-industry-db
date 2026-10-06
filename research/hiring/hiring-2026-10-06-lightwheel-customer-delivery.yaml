@@ -1,0 +1,262 @@
+id: hiring-2026-10-06-lightwheel-customer-delivery
+org: lightwheel
+topic: customer-delivery
+title: 客户现场部署与平台交付
+judgment: 多岗位支持公司在加强从平台方案到客户现场联调的交付工程能力；招聘职责不证明具体客户已经验收。
+limitations: 岗位职责表示招聘目标，不等于项目、产品或客户交付已经完成。 VLA、Sim2Real及具体仿真工具可能出现在协作项或经验要求中，不能直接认定为现用技术栈。 岗位数量不能用于推算团队规模、招聘人数或业务收入。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-lightwheel-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 288
+  saved_bodies: 146
+  unique_bodies: 137
+  reviewed_bodies: 137
+evidence_groups:
+- hash: b8e7ee90fbb414d835a1ee5b406e3131118e63288f54da30064b60ea41cc3803
+  role: 岗位职责
+  quote: 基于光轮智能的仿真 × 合成数据 × 评测产品体系，对外完成端到端交付：从需求定义、方案设计，到系统上线、验收与持续优化
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/195065db5a4792030nd53tm-GVtX.html
+- hash: 8cbd03e88f875c3f5d65a3b96ddbc85b3f8a1734286bbd0c6d18d3b16b6fd88a
+  role: 岗位职责
+  quote: 负责机器人整机系统在客户现场的部署、联调与上线
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/075620c0518e041d0nJz2d24FFBV.html
+  - https://www.zhipin.com/job_detail/5217c2a1c2878a190nJz2tS6FldR.html
+- hash: 42d13a3df21e05f4d1c39b144e4c73387bb953138e3d1d2cc670b4fb83d626e4
+  role: 岗位职责
+  quote: 负责客户项目从售前到交付的端到端推进，覆盖客户需求分析、方案设计、Proposal撰写、销售支持、项目交付
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/05a30081b1b96b9a0nN82Ni8E1NZ.html
+- hash: b2f974ce0c98f47408bb8a77cb37d66268a5b16188501fd0952aa7b1be3c8fd4
+  role: 岗位职责
+  quote: 负责机器人整机系统在客户现场的部署、联调与上线​
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/4bc28001c8ea33190nJz2tW6FVRU.html
+- hash: e077127ba9e19a00da1c13602cbba05e5a62ed27b70486f92495bcfb0a03f21d
+  role: 岗位职责
+  quote: 客户项目交付：统筹计划、资源、进度、质量与风险，对项目结果负责，并沉淀可复盘、可复制的交付经验。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/bfebd0e40325e4210nN939--EVFR.html
+- hash: dd865518a4d629055bb372f83e1ad16759dfd3e72e6409e7e06435d3ab04f97b
+  role: 岗位职责
+  quote: 识别⾼价值应⽤场景，推进机器⼈落地（PoC到规模化）
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/61619a99706b9d000nZ82t-9EVJR.html
+- hash: a804cbc635e13e021e2da6240cc0144da712972c6e466b21f8bd967287602cfd
+  role: 岗位职责
+  quote: 承接具身数据生产与交付目标，制定项目整体计划、关键⾥程碑、责任分⼯和验收节点。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/16e4805dc900a6210nJ92tu7EFpR.html
+  - https://www.zhipin.com/job_detail/fd73c99564038bdf0nJ92tq4GVVV.html
+- hash: 954d00d3bfee147e44cd1b370ff29128cc968d5c80338f8b74f9934e7179a8e0
+  role: 岗位职责
+  quote: 承接具身数据生产与交付目标，制定项目整体计划、关键⾥程碑、责任分⼯和验收节点。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3a452681a3c5990d0nJ92tW8ElFX.html
+  - https://www.zhipin.com/job_detail/b740c4d7afbcf8530nJ92tq1ElRU.html
+- hash: f9e1f2e8595e0f280468c7e306763ad88b289ac9d4e0f42bbe76261311a047da
+  role: 岗位职责
+  quote: 有好奇心,深⼊理解客户和算法需求，拆解⽣产⽅案、执行规则、验收标准和交付计划。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/554dcd655fbfc4860nJ73tu_E1VZ.html
+- hash: 9700826aa0fb22fef9a9ed9f586acaf8d5c384f0c0b3e3e5dd5d7db0db33380d
+  role: 岗位职责
+  quote: 有好奇心,深⼊理解客户和算法需求，拆解⽣产⽅案、执行规则、验收标准和交付计划。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/0d1c9919c392725b0nN829y8FVJY.html
+  - https://www.zhipin.com/job_detail/24f73bb9b17f6ea70nN92ty8FVtW.html
+- hash: e10627462a2b1b6403dbc4a14850b0be2416bdb855daf91ea63556526250cfa1
+  role: 岗位职责
+  quote: 负责非标人类数据项目的整体交付，承接签约后的客户需求，明确项目范围、数据规格、验收标准、交付计划和关键风险。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/0255c3531a3347270nN509y5FFNX.html
+- hash: 284cb3a16903f214a5dc632c198491e9f04e6378f3ae3d99342436ef0858bcef
+  role: 岗位职责
+  quote: 负责仿真平台的部署、实施与项目交付。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/9dac6d1beac153f40nF43Nm5FFBX.html
+- hash: 3384f269ee76e90203027232415f63cbb411bf29de308a4b713ceaa62c50df0f
+  role: 岗位职责
+  quote: 负责遥操采集项目的需求对接、采集方案制定、设备调配、人员组织、进度管控、质量验收与交付​
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/0526e388eee6185f0nJ-2tu5F1JY.html
+- hash: 0e7ab9671f74c7ac7b982c5227814f56c230f9957e6866b6ac5b8e8028121ce7
+  role: 岗位职责
+  quote: 横跨算法、工程、技术运营、产品等团队，推动项目落地
+  reason: 完整正文直接描述该方向的职责。
+  urls:
+  - https://www.zhipin.com/job_detail/23ca65c902631f970nJ-3dW0E1ZQ.html
+- hash: 02b05645267171b95f4dadc8c8084e61d7e8a658efff9329f5be0b93f5b7adee
+  role: 岗位职责
+  quote: 与客户技术团队对接数据需求，理解客户对数据格式、字段、目录结构、传输方式、验收标准和交付周期的要求
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/4f545e2fa08508e10nF72d65GFNS.html
+- hash: 33380080606f4b4aef008a18d08e7fcdc5bb08bb7cbdb5ce2b8d6d8fdb2065ae
+  role: 岗位职责
+  quote: 与客户技术团队对接数据需求，理解客户对数据格式、字段、目录结构、传输方式、验收标准和交付周期的要求
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/4cf647247e4c01220nF53ti8GVNZ.html
+- hash: eab850eb56b31638c1fc67259914f2f49961cf0efc010d760fedb6150e988d63
+  role: 岗位职责
+  quote: 项⽬全流程交付统筹：主导项目的全生命周期管理，制定项⽬排期、里程碑计划，跟进试采、采集、验收全流程，确保按节点交付。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/af54d556466dc4db0nd82ti8FlVU.html
+- hash: 312925ddd666b37657e954ec3cbca71cd80324da141da4d0e9d2294e887f50ef
+  role: 岗位职责
+  quote: 参与现场测试、demo 搭建、客户或合作方的真机交付支持
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/9cc5e71b444cd1700nR-2tS5FFBX.html
+- hash: e7b02f91689b8117b8e4d86027c55a9a697be5138803a2fbb3db2eb243053c42
+  role: 岗位职责
+  quote: 负责客户侧技术交流、方案讲解、案例展示、POC 设计与答疑，推动客户对方案可行性和落地路径建立信任。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/1d3c52cf736443b40nd60tW1GFVX.html
+- hash: d1aa7eb5e7cfb48123ccfc2bc55fb09adfcfc526399aaef2ebb9df68594c6119
+  role: 岗位职责
+  quote: 联动公司产品、交付、算法团队，高效推进项目落地、交付验收与客户运维，保障客户满意度，实现客户成功。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/af1a71bb0a8b661d0nN-2dW0FltU.html
+- hash: cda00ad9ff740b2794d78535b2e4552abb11ae5f8058bc5f8e42d2e42c07b841
+  role: 岗位职责
+  quote: 联动公司产品、交付、算法团队，高效推进项目落地、交付验收与客户运维，保障客户满意度，实现客户成功。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/7146c97413846a1a0nJ_3ti4EVVU.html
+- hash: f4f625f35cffccac2336b6afa1ac01f3e695a84b961c204d9faf36894c977c3a
+  role: 岗位职责
+  quote: 承担数据交付的售后工作。作为数据问题对接窗口
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/0c41cbc552ff2cd10nN72N-_EltW.html
+- hash: e6433215fbdbcaaa30b06a1563649226ca8330b56721c5ca37f966ec919f8775
+  role: 岗位职责
+  quote: 负责具身智能 AI 数据标注项目管理，包括数据标注、质检、验收与交付，确保项目按时、高质量完成。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/661e1799bdb6c8730nF93t21GFtT.html
+- hash: f82af3e4ce1e54f9ef54273345b3713d3798db57429b552cfc1db2f4d15fd0d5
+  role: 岗位职责
+  quote: 定期向海外客户同步项目进度、质量情况，及时响应客户需求变更与反馈
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/e05c4cb62a35290c0nB609-1FlBS.html
+- hash: bb29f35e9db6b91123830366efdb2e0ae8eb0ebf84e83fab175e12c01f6ccf48
+  role: 岗位职责
+  quote: 负责机器⼈真机系统的部署、调试与维护（机械臂/灵巧手/移动平台等）
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/2810b2623af8b8700nR-2tq5E1tS.html
+- hash: fd0189e72c8f3e6270f0f8890354f73c0b4754a4e125c592124ecbff2fb7cc4e
+  role: 岗位职责
+  quote: 全流程项目交付管理：建立项目交付体系，严格把控项目节点与成本核算
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/59f21c6fe58fe6270nd82d25FFpX.html
+- hash: 4db9e2758e5257a0f08ea4dd237130cdeae3f79d391815faa5a02b382a8e70be
+  role: 岗位职责
+  quote: 客户项目交付：统筹计划、资源、进度、质量与风险，对项目结果负责，并沉淀可复盘、可复制的交付经验。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/7f59bb634a3c0f690nN939--E1JZ.html
+- hash: 80e27154ac10a216ea3421677f8ad9e6456d9f92aaa2e7636dac50b50635ce96
+  role: 岗位职责
+  quote: 客户项目交付：统筹计划、资源、进度、质量与风险，对项目结果负责，并沉淀可复盘、可复制的交付经验。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/eba5c4408a0893b40nNy3Nu9EVVS.html
+- hash: fb0979bec4d5f6cc595710413489c0490a3355c3bcce4311e7b479d65d57b66b
+  role: 岗位职责
+  quote: 负责多模态数据（视频、HDF5、JSON 等）的交付脚本开发与维护，支撑数据从采集完成到对外交付的稳定流转
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/1f486c8385214ec90nd82tq5EFBX.html
+- hash: 71caf5bba76c172fa265c480760903248e81a06534783d2cfbfd538e51c52903
+  role: 岗位职责
+  quote: 与客户技术团队对接数据需求，理解客户对数据格式、字段、目录结构、传输方式、验收标准和交付周期的要求
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/20ad53c947b985320nJ-3N-5F1JW.html
+- hash: f265078a5c54374f78615796857f1859e1a708a989ce1b447a437041f0049161
+  role: 岗位职责
+  quote: 统筹交付资源协调与供应商对接，推进项目按时、按质、按预算完成
+  reason: 完整正文直接描述该方向的职责。
+  urls:
+  - https://www.zhipin.com/job_detail/0cbdc2f8ab2965720nJz3t66E1pU.html
+- hash: 9cf480153484a23a31b4a2b9d2270a02456da19572a15c535aaa9f096dbd4c2a
+  role: 岗位职责
+  quote: 推动AI能⼒在物理环境中的部署与优化
+  reason: 完整正文直接描述该方向的职责或公司能力。
+  urls:
+  - https://www.zhipin.com/job_detail/3182298fb97dcaf20nBy3N21GFJR.html
+- hash: d088bf265089adea2000aaaf2853e8b9084bb3ea314ee042a0d96f63369bebbd
+  role: 岗位职责
+  quote: 机器人二次开发与部署公司（本体适配、集成调试、现场部署服务）
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/3de0294b7538d5610nJ_3960EFFU.html
+- hash: 12739f9c92af2ba5ec111a1731885a3924092e2843e83d8c1664de1ccd30b7dd
+  role: 岗位职责
+  quote: 撰写技术方案书、POC测试方案、商业计划书等售前材料，支撑项目立项与招投标。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/42ee269c1e01f4df0nJ_2du1EVdV.html
+- hash: c9f0a35b8c84e6f34ed264b5912a4bca82093afe927b7b92c65f4f51871ba161
+  role: 岗位职责
+  quote: 主持售前可交付性和客户承诺评审，未经范围、资源、周期和验收确认的项目不得直接进入交付。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/990da8082e8420c00nF93N28FFZX.html
+- hash: 5c53bc0c9dd341156ef5720fda03e5cfe99e5ebdb8648a91f7e653e2a07832f1
+  role: 岗位职责
+  quote: 负责具身智能解决方案项目的端到端交付项目管理
+  reason: 完整正文直接描述该方向的职责或能力要求。
+  urls:
+  - https://www.zhipin.com/job_detail/220bad35e4fe84890nF72Ni_EVVY.html
+- hash: e79c25f2db3c7fac78a4bd2d3547aecae4107d7425cd5d4cb22b63fb96d8ef90
+  role: 岗位职责
+  quote: 负责非标人类数据项目的整体交付，承接签约后的客户需求，明确项目范围、数据规格、验收标准、交付计划和关键风险。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/29b053d03f3b26560nN-29u0E1NY.html
+- hash: 5ac7ba60f4835e71e9660626abd3558404951e3ce69d968cf688826b98f47544
+  role: 岗位职责
+  quote: 负责非标人类数据项目的整体交付，承接签约后的客户需求，明确项目范围、数据规格、验收标准、交付计划和关键风险。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/8dfa87433273af930nN82Nq_GVdW.html
+- hash: 0af7d711177f7bcf92c636364cca606af166ee11d6d14992c21b8b5b2c4c708d
+  role: 岗位职责
+  quote: 全流程项目交付： 负责具身智能采集项⽬的端到端推进，严格管控排期、预算与最终交付质量。
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/18ae199a6395e3cd0nB70927EVZU.html
+- hash: 5a152b02f38b0708a7a317431ab77d5a59a3820c6dd05918a2d4c286d45213ba
+  role: 岗位职责
+  quote: 独立参与客户会议、方案汇报、产品演示和 PoC 验证，推动项目从机会走向落地
+  reason: 支持客户方案、现场部署或交付闭环的子组成。
+  urls:
+  - https://www.zhipin.com/job_detail/02d94ae731fe75bd0nF829W4FlZY.html

@@ -1,0 +1,986 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "x-square-robot",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "1bcc89a4ee55d5ecc72fde20075a204c7d626c561e10e8b9c4463c93764dda1a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2f3b141bf03916510nF82Nm6ElpX.html",
+          "title": "具身大模型后训练工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身大模型在物流、制造、家庭服务、医疗等商业化场景的后训练与落地交付，从数据、模型、算法维度提升任务成功率与执行效率"
+      ]
+    },
+    {
+      "hash": "b4ae83e93fba1f4328447ce5790f40b8d32de9fb65ceb5e04b5244f35ae6f169",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/458f98ce64e63e220nN72N26GFpU.html",
+          "title": "AI机器学习平台工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责云原生技术架构设计、推理场景系统优化、云原生AI套件等开发工作"
+      ]
+    },
+    {
+      "hash": "5caa2414e60d7a46e5f5db298df4378f6dcc902ebf7391ed2d0f7a58a2efb2f4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1e88cdb49f8fe2570nF82tW-EFtX.html",
+          "title": "Agent应用开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "侧重场景应用，与模型研发团队配合，基于落地场景需求，负责Agent的场景应用与二次开发，提升具身智能体的推理能⼒和场景理"
+      ]
+    },
+    {
+      "hash": "adc084e8c1ee2f54516fcfd946ef27f9b301c351c77266685739dabda7f19546",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3993488551130baa0nJ80t-6FlFR.html",
+          "title": "VLA算法后训练实习生-产品落地方向",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身大模型在具体商业化场景（物流、制造、家庭服务、医疗等）中的后训练与落地交付，从数据、模型、算法等多维度提升模型在"
+      ]
+    },
+    {
+      "hash": "9f988bef723e767db0fd42060773d3f1a06e45c03a139efc024a1b7b305e6598",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3b5e98d91a0afa6903N529y4GVNX.html",
+          "title": "【夜班】数据采集标注员",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据采集执行：根据项目需求，熟练操作任务数据采集设备"
+      ]
+    },
+    {
+      "hash": "44a2bba5ca64285f564ece7fef74cbc684b3c6aeedb7c9d7095e6421989ed601",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/17fc54b67e556de20nF_3tm8E1RT.html",
+          "title": "云平台研发工程师（后端开发方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "平台架构与核心开发：负责机器人/AI业务全链路云平台系统的架构设计、核心模块开发与迭代，主导技术选型，构建稳定、高效、可"
+      ]
+    },
+    {
+      "hash": "f3a4dee5419b9b97034a3b1b86cde12b2705e62a92fa598870b052324b7c5470",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5439a7228f8f970b0nJ_29i-E1dU.html",
+          "title": "云平台高级研发工程师（机器人/AI方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "平台架构与核心开发：负责机器人/AI业务全链路云平台系统的架构设计、核心模块开发与迭代，主导技术选型，构建稳定、高效、可"
+      ]
+    },
+    {
+      "hash": "76cc3c8c6f9d1a6feffac084e02538f50f5e68f160d012a65fe097ea4100ee4d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4187f07a6547b2410nF93ti1GFZU.html",
+          "title": "具身大模型后训练工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身大模型在物流、制造、家庭服务、医疗等商业化场景的后训练与落地交付，从数据、模型、算法维度提升任务成功率与执行效率"
+      ]
+    },
+    {
+      "hash": "94839cd341d1299e50d2efb75132e1be653f79f44e4f90fc4e5ae76a981c67d1",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/05ee3e6b9a3407ce0nFy09S4E1FW.html",
+          "title": "具身数据交付经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "全面统筹数据采集工厂整体运营管理，承接上下游业务需求、拆解落地执⾏：含需求对接、任务排期分发、全流程现场管控、项⽬进度跟"
+      ]
+    },
+    {
+      "hash": "26010908943ee37b294be8c5f035ef1aca1db9159e49fe6e8916604408b1dea3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2dec238935bf24c90nN93dq1ElFX.html",
+          "title": "具身数据标注组长（沈阳）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "组织现场人员完成每日任务分配和执行"
+      ]
+    },
+    {
+      "hash": "9b44aa58cb4c3600742d94516e574c3353788ce061714a93ad61fdbdf4d56ba2",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5115bfc155078d760nNy39S8EFtW.html",
+          "title": "具身数据采集组长（深圳）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "组织现场人员完成每日任务分配和执行"
+      ]
+    },
+    {
+      "hash": "45c521662e8bfc6ddeae2c1a29c417521fce96b67006f538d2274fa92fb65864",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/16b825590f804d550nN43d60ElZZ.html",
+          "title": "具身智能数据交付管理",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/38ef870534e571ce0nB-09q0FVtX.html",
+          "title": "具身智能数据运营",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "具身智能数据项目全生命周期管理：负责机器人训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算"
+      ]
+    },
+    {
+      "hash": "5970042f5f2ece783c7ab788648d36fa10f13efd6fab3a676ab69dc9c330c6ac",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/400a3369ff9e04d70nF92tS-GVdX.html",
+          "title": "具身智能数据交付管理【深圳】",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "具身智能数据项目全生命周期管理：负责机器人训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算"
+      ]
+    },
+    {
+      "hash": "97d2f84749303f5d6d44e67e1be44d89f2f67a7f32107f1c5b1990671e062dd5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/476f2f3c88e71aac0nR63t-4F1tX.html",
+          "title": "多模态理解/生成大模型数据算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "您将深度参与下一代多模态大模型 (语言-视觉-动作) 的数据真值构建与评测工作，跟踪前沿多模态⼤模型进展，理解模型能⼒边"
+      ]
+    },
+    {
+      "hash": "a2105a6602bcc32ea698d67a74217a48c421f01b0f171626eeb003c26109c5b6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/57848ba835b134f20nJy0tq0EVFT.html",
+          "title": "数据交付管理【沈阳外包】",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按"
+      ]
+    },
+    {
+      "hash": "8ebabe641cfaa5b995a8bd4772caf53d9c6739cc666cec7772898487f3909ff3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/177a323a290fa7350nJy3ty9GFNQ.html",
+          "title": "数据标注/AI训练师（正式实习生都需要）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据标注执行：依据 AI 机器人领域项目需求及标准化标注 SOP，使用公司指定标注⼯具，对机器⼈动作相关的图像、视频等数"
+      ]
+    },
+    {
+      "hash": "abd07b6fabe34fbc9bd0ea3d5d8d5b4520cdae43e25fb4b0b4f51ce7d202281e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2c8a54c8c7d8e19d0nN_3920EFZY.html",
+          "title": "数据标注员（沈阳）（实习）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据标注执行：依据 AI 机器人领域项目需求及标准化标注 SOP，使⽤公司指定标注⼯具，对机器⼈动作相关的图像、视频等数"
+      ]
+    },
+    {
+      "hash": "7a56d63ec709cc673ebff965c3f0fbfa75a380ddedf9e31ec6090ef487c77ece",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/31cc7d50c8eed6010nNy39m_GVNY.html",
+          "title": "数据标注管理（外包）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按"
+      ]
+    },
+    {
+      "hash": "7eb86c9d851f07832ea946fb3fbf03a9a0b022db17c9edf85c7785e36b1d5310",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/174460a6b2adc8d90nNy3dS7EVFV.html",
+          "title": "数据标注运营管理【佛山外包】",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "培训授课：根据已定培训计划，面向新老采集人员开展⼊职培训、在岗复训及专项场景培训，内容覆盖⾤集标准、场景规范、设备操作"
+      ]
+    },
+    {
+      "hash": "00cd34bfd39d0efc2d3b08ce579b90e6184d96f9b05ee6b793fb3299153127d8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/35fcd940c1ef6d600nNy2NS6E1BZ.html",
+          "title": "数据质检主管（外包）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责审核质检采集及标注数据，以日维度进行质量反馈"
+      ]
+    },
+    {
+      "hash": "9e972fa16ed935d9c14d70470aa9ab6a874d514ccc22979619f83018fa5315ef",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/31cb6a6571c2bf440nJy09-6ElFQ.html",
+          "title": "数据运营管理（外包）",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/4805845f7711603a0nJ72tu-EFNQ.html",
+          "title": "数据采集主管（外包）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按"
+      ]
+    },
+    {
+      "hash": "e1cc301e4d97cc516ad11c252e8efaa75c7f535d474452ba946db67d13dc0ae2",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/034aab56df4652d70nF93968EVpZ.html",
+          "title": "数据运营管理（外包）10k～20k",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责采集团队日常管理：人员排班、任务分配、目标拆解、过程督导与绩效考核，打造⾼执⾏⼒团队，确保数据采集任务按时、按量、按"
+      ]
+    },
+    {
+      "hash": "e4156f457b39bacc4a6b3a8e36f8c9f5fbc3787de1f1b069f08f9a0c58eb5e2d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/21793379ed60f26f0nNy2NS1GVNW.html",
+          "title": "数据采集主管（外包）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责数据采集团队日常管理工作，包括人员排班、任务分配、⽬标拆解、过程督导与绩效考核，打造⾼执⾏力团队，确保数据采集任务按"
+      ]
+    },
+    {
+      "hash": "e95f6722d740555f6adcf99070c70f0e8cf82c4cdf5cb2453b125ca445dfdb61",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/060518c5bf8a4bad0nJy3t67EFVS.html",
+          "title": "数据采集交付经理（沈阳）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "全面统筹数据采集工厂整体运营管理，承接上下游业务需求、拆解落地执⾏：含需求对接、任务排期分发、全流程现场管控、项⽬进度跟"
+      ]
+    },
+    {
+      "hash": "5e0e38068bb9cdbf2d8b51840a81c2062965f9dec5bd0dc435142d7e56dbd1f3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/29fbe715e3faf2ae0nN-2Ni1FVZR.html",
+          "title": "数据采集负责人",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "数据采集体系规划与建设"
+      ]
+    },
+    {
+      "hash": "be54fac7f65cc57d2471af6b83068a2005f1595a61addd70c233915534a60948",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3f1b58f88da8c7aa0nJ42t27E1ZU.html",
+          "title": "数据采集项目经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "具身智能数据项目全生命周期管理：负责机器⼈训练数据的⾤集、清洗、标注、质检、交付全流程项⽬管理，确保数据按时按质交付给算"
+      ]
+    },
+    {
+      "hash": "2605413d9f35bf3f31ac70ec3dd865eeec9d9327812eb0386079107adbae8f71",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/550db3af1931cdae0nBy29m8FlBS.html",
+          "title": "无本体数据工程师（Umi）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "XR Zero工业级数据管线搭建：负责开源无本体数据集与真实机器人自⾤数据的⾤集、筛选、清洗及规范化处理"
+      ]
+    },
+    {
+      "hash": "fc07d9e1349477aab5e07e6eb513d00d2b5e77958903ffe0c612cc96b5e033dd",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/176767f6aeb827fb0nN42tS7EVdT.html",
+          "title": "质检运营管理（郑州）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "确保数据采集任务按时、按量、按质完成"
+      ]
+    },
+    {
+      "hash": "be9289bee7a31cc74229598a9d1e170848c16dbee3f87a9643ddb6ce6c9b46b5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/443cdbc7553193710nF42N6-F1pS.html",
+          "title": "Robot Learning 模型全栈工程师 / 研究员",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "我们专注于机器人灵巧操作（manipulation）方向的研发，围绕数据采集、模型训练与真机部署构建完整的技术闭环"
+      ]
+    },
+    {
+      "hash": "70374f7947a7cd89edc1de75cab7b356a91d04618184650a3871bdc054848c87",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1335272b90ad66b10nBy29i1FldX.html",
+          "title": "具身基础模型应用工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "我们专注于具身大模型的后训练与多行业核心场景的⾼质量落地交付，覆盖物流、制造、家庭服务、医疗康养等多个商业化⽅向"
+      ]
+    },
+    {
+      "hash": "2db398b244f4d5207be23ee5bd57df4e9c1d364ae0c6f4e2a3c2c62b2804ad3b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4266d781f80510730nN929S9EVJV.html",
+          "title": "数据标注组长【沈阳外包】",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "大专及以上学历，有现场运营、项目执行、班组管理、有机器人、智能硬件、遥操、数据采集、数据标注真实场景运营相关经验"
+      ]
+    },
+    {
+      "hash": "e0c8c44f2ce3fbf1fbe36fa3127573a3cd3aca3b7d60a1f3507fa3588d719477",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/093fc77264dcee5b0nBy3N-7E1tX.html",
+          "title": "具身智能触觉算法工程师（触觉表征方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责触觉信号表征学习、触觉 encoder 建模及相关算法研发"
+      ]
+    },
+    {
+      "hash": "116d4813d1d00441d83fecad85cbca0da8f24adfb26c9ad93958b7365c27cf8e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/12b3fa2183fc36350nBz392-F1ZW.html",
+          "title": "机器人力/触觉感知与操作工程师 VLA 场景",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责 触觉在机器人操作任务中的验证与评估"
+      ]
+    },
+    {
+      "hash": "392fcb13cab28d7b97ca89a76c6edb0e775e53045641aabab63f8c6c9769768d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/20436550bb20eaa70nF82Nm7EFBY.html",
+          "title": "整机测试负责人(A154982)",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/3a78e0deaf3323b80nJz39q1ElBU.html",
+          "title": "整机测试lead（机器人）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "建立整机测试体系、DVP&R、测试计划、测试流程、数据记录规范和问题闭环机制"
+      ]
+    },
+    {
+      "hash": "a9dca18cf519b08f75897975690f75ebaa1f8d728c0ddc0d433fefdda7cd9abc",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/012517316f97b45a0nN62NW4FFRZ.html",
+          "title": "测试工艺工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "NPI组装工艺，NPI测试工艺，机器人测试开发三个方向都需要哈，都欢迎投递"
+      ]
+    },
+    {
+      "hash": "9232ab763d6dd04484d1db751d706139ca05e95efb81c687efc5433be4c4ed2d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/43b15a8d3187947d0nN709m8EVFV.html",
+          "title": "VLN测试工程师(A00228)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "管理、培养测试执行同学，统筹日常任务，密切配合研发同学，对所负责模块的各类功能进行专项拆解，分配合理的测试周期和人⼒、机"
+      ]
+    },
+    {
+      "hash": "e0b25866c706eddd95456de441100e4d69fc7d4e9f28bce87218ab698d57f946",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4e293c97c53b857f0nN909i8EVBT.html",
+          "title": "关节模组通用岗位(A78531)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责关节模组在人形机器人整机中的选型、测试、集成、调试和问题跟踪"
+      ]
+    },
+    {
+      "hash": "155591d0fa0c1d86b7a88637652585e5742b1be09cdaeea563eb7e0d712ead5a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/548fd49c163273500nJ70t6-EVNR.html",
+          "title": "可靠性工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "制定覆盖研发验证、⼩批量试产、量产交付的全流程可靠性测试策略"
+      ]
+    },
+    {
+      "hash": "c7a43bae6a36429136b0c5e43fadda7a3a3b256017af13b49506d42cb9023e13",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/252b50e5decf13fe0nF-39y6ElJS.html",
+          "title": "可靠性工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "制定覆盖研发验证、⼩批量试产、量产交付的全流程可靠性测试策略"
+      ]
+    },
+    {
+      "hash": "b886a0840fb53a8bdd4430cf35d2ad2a51d7e9f63db3f01da07ad6cd37342783",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1b43bcfb83589f800nN93ty8FltT.html",
+          "title": "图像ISP及驱动工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责ISP  tuning，开展画质调试，包括 AE / AWB、去噪、锐化、⾊彩、Gamma、HDR 等模块，完成 R"
+      ]
+    },
+    {
+      "hash": "fb41a9f0f9c73e74bcf83323eea9e85fc7fe55ce6df658564a62729e35441d1c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/16a6d9bc86ef66170nF83t20E1dS.html",
+          "title": "实时嵌入式工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人底层实时控制系统，包括关节控制器、实时通信、驱动控制、状态采集和安全保护"
+      ]
+    },
+    {
+      "hash": "e529e13cf65c1980836c455992f440562c35ce2b72470c53075336b5de4519b3",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/359a2cef6f7bf2f50nB42N-0FVFW.html",
+          "title": "嵌入式软件工程师（Linux）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "开发机器人应用软件平台，支持VR/力反馈/触觉设备等多种交互⽅式"
+      ]
+    },
+    {
+      "hash": "5d2ddaa213782470e7db863edfd64fba7a27bd133b32aa0cb2fdfe0be4db793c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/543db34e76d4b1630nBz2tq5EVBV.html",
+          "title": "嵌入式软件工程师（SoC+Linux方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责SoC Linux系统的总线驱动及外设驱动开发，参与硬件对接工作"
+      ]
+    },
+    {
+      "hash": "e828e43a55c8928a1855272c1d82b3537cc49db74fd00a57b1e0004643b314ad",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3ae8ccc964275ba90nJ43Ni0EFBT.html",
+          "title": "嵌入式软件工程师（控制）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "职位描述1.负责机器人控制算法的开发，调试，部署"
+      ]
+    },
+    {
+      "hash": "bdfa786e366b37bdce4647f45428a0b2c0281f03f9909addef6d25f4c5e55d93",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/30225a4bda98a06e0nF83t28EVdR.html",
+          "title": "整机机械工程师(A26423)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责腿部、骨盆、躯干、脚部、外壳支架、传感器支架等结构件详细设计"
+      ]
+    },
+    {
+      "hash": "dac3b0571eb95f21f9451a8d47526fca62db25e027cfe9f84607af2905fbd7c0",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3ddeba34642243fe0nN62N26FVZW.html",
+          "title": "整机硬件产品经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人整机产品规划、市场与竞品研究、用户调研、产品立项和生命周期管理，结合分拣、巡检、搬运、操作等⽬标场景制定产品路"
+      ]
+    },
+    {
+      "hash": "dc00309266ef02cb5ceb35f00635ae4bc5255f7adf600322fab51b6e339d1410",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0d32271c109159510nZ9096_FVRV.html",
+          "title": "整机软件产品经理",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/26208403efa3c33b0nd73ty6F1dZ.html",
+          "title": "整机软件产品经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责公司机器人软件功能的功能规划、竞品分析、需求分析、方案设计，推进软件功能交付落地和功能迭代"
+      ]
+    },
+    {
+      "hash": "38e06a50351e7719b240a264d597ff6071395bf018f71019fdd43d1598d7045a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/248cdf52d1c004bc0nJy2ti_EVNU.html",
+          "title": "新产品导入工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责维修工艺制定，包括拆装工艺、定损与维修测试⼯艺等，优化维修效率、成本、测试覆盖率与维修质量"
+      ]
+    },
+    {
+      "hash": "fba4f2d5b0ee444a4bacf0e5c37463ffb5b7035a3b8a6461472f766ecbf194ac",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/54bca7b4ae8866850nN72tS9EFZU.html",
+          "title": "机器人全栈工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "设计并执行传感器测试、标定和数据采集实验方案"
+      ]
+    },
+    {
+      "hash": "5756a6b0ca336fcf6ebef0b1d56f88239e8755a133b3bfd782fdfff8932023d8",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/475579f3f289106a0nN709m7FVJZ.html",
+          "title": "机器人测试员 _ 深圳",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "配合算法模块测试负责人进行日常迭代测试、对外交付测试，完成分配的专项测试、数据采集、⽇志收集等⽇常任务"
+      ]
+    },
+    {
+      "hash": "eea025f1ccab039fca3480e57602b0cedfcb9453ef9365d3a07e508dfc53b368",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4242eb63a99ea05b0nF82N69GFFR.html",
+          "title": "机器人系统架构师(A252683)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "统筹机械、电⽓、电⼦硬件、嵌⼊式、热管理、触觉/力觉、测试等模块的接口边界"
+      ]
+    },
+    {
+      "hash": "ee15983b70abb00d9713db6c02d2eddf5e970288e5a0a47e3ed05312af587348",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3d97ee67f24bf4fc0nN53964EFNZ.html",
+          "title": "机器人软件系统集成工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身智能系统高质量集成交付流程的持续优化与维护，深度参与量产项目的完整生命周期"
+      ]
+    },
+    {
+      "hash": "52f192a4f261b3a939cd3875f468b11a6a5ac7a8257c75a864aa6600121950e7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4a3579080e9831ec0nBz2tu6EltV.html",
+          "title": "机器人音视频工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人遥操场景下实时音视频链路的架构设计、开发、集成和持续优化,覆盖机器人端、网络传输、云端服务及遥操端"
+      ]
+    },
+    {
+      "hash": "5ebb356a72ab8e07ee7a1b70ff7806feccea2903078671e99e2f8dcc4d24b592",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/30e7f2721be484ee0nJ_29m5E1RQ.html",
+          "title": "机器人音视频工程师(A92946)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人遥操场景下实时音视频链路的架构设计、开发、集成和持续优化,覆盖机器人端、网络传输、云端服务及遥操端"
+      ]
+    },
+    {
+      "hash": "4585cd14267f0984d141367f728d4271e42602cf0cbf6f7b19a37606dd1aaaca",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/01777e7919a47cc50nN93ti8FVdV.html",
+          "title": "机械结构工程师",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/4c663840a238c58c0nF42dm6EVVX.html",
+          "title": "机械结构工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责B端具身智能设备（移动作业机器人、工业智能装备、协作机械臂）整机机械结构、关节模组、传动系统的方案创新设计、仿真校核"
+      ]
+    },
+    {
+      "hash": "45eb2f4bc058cc71029dcd09e651337137c92bb6b6cbeea80ec6ab94c7e37be9",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/23221a61101950ac0nF_3tW9F1tT.html",
+          "title": "机械结构工程师（工程方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身智能、人形机器产品落地设计与对接"
+      ]
+    },
+    {
+      "hash": "f9e2b7a966928c6a0754b6911916c465d15b52cd51bfa5be32ff9b5937604b19",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3447f9fc54a2eab00nN93t20F1tU.html",
+          "title": "电源工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "本岗位聚焦具身机器人电源平台整体方案开发，主导机器人整机电源架构、电源树、电源分配⽹络设计，负责电源电路防护、低压⼤电流"
+      ]
+    },
+    {
+      "hash": "9c40f2856e5596a4501d85c5301ff898bb799055e39a7294ca6dc86daf1e75e6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/310e943254fbc5aa0nZ70969F1NT.html",
+          "title": "硬件专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人硬件系统架构设计与演进，覆盖执行器、传感器、主控与接口标准"
+      ]
+    },
+    {
+      "hash": "0620ef9ff5c6625ccfd3810cb30cc971bd74a4cae0f56cc4c8a94b0e22de697c",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4e4ac7f7a06b59880nJ42969EFZW.html",
+          "title": "硬件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人硬件交付方案定制、落地与维护"
+      ]
+    },
+    {
+      "hash": "914059f2ac6517cf2c22ad9f5aa5b42eddc9e8aa4e358ecbf99c694f1f01a2f4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1e132c1cc913fc890nN509i8FVZY.html",
+          "title": "硬件开发类岗位（传感器、ISP、电机电源）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "配合完成驱动器软硬件联调、电机参数适配、控制算法落地、整机性能调优"
+      ]
+    },
+    {
+      "hash": "6a467735e985d974c6bf75de5f22f26f841fcf8bc94a2f275ee5c31577e521c0",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/57ec52f5f46278500nF82dS5EFJZ.html",
+          "title": "硬件测试工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人硬件系统测试，兼任一小部分模块功能测试"
+      ]
+    },
+    {
+      "hash": "a24abd3925879c84802d862642f1d18bd557c99ff58b0d2817efba881df48e6d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2ea79df2f8a6df740nV63N6-FFtR.html",
+          "title": "硬件测试工程师（系统方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人硬件系统测试，也需要兼任一小部分模块功能测试"
+      ]
+    },
+    {
+      "hash": "357920271cfdd106f1a40ad0608510ce6ddfdc175a7a22746cab28890ade72a5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/02b26e3cf159f0090nJ_2NW0EVNT.html",
+          "title": "端侧 DevOps 工程师（机器人方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建和优化机器人研发全流程 CI/CD 流水线，实现算法、控制程序、固件及 ROS/ROS2 代码的自动化构建、测试、打"
+      ]
+    },
+    {
+      "hash": "7748dc213c6773dc55e4475b3c494c533d830bef918873591f03af8ebafb318e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/59ef9cd9d7ed3b0e0nBz2tq8EFpY.html",
+          "title": "端侧 DevOps 工程师（机器人方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建和优化机器人研发全流程 CI/CD 流水线，实现算法、控制程序、固件及 ROS/ROS2 代码的自动化构建、测试、打"
+      ]
+    },
+    {
+      "hash": "695b0eace22b7705d9517597d8ff699d9ef8d8134f98091d7ce282e827b07d23",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/2f5b01ce47d9cb150nN829u5GFNY.html",
+          "title": "端侧效能研发工程师（机器人方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "搭建并优化机器人 CI/CD 流水线，基于 GitLab CI 实现算法、控制、固件、ROS/ROS2 的自动构建、测试"
+      ]
+    },
+    {
+      "hash": "13573c611926651ff81b1e351a22dcd422748d8208aca0249b85d3fac8fffdab",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/031fbf2d63c3dccf0nR92Nq9EVRR.html",
+          "title": "线束工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人及相关产品的线束、连接器的需求拉通，选型以及定制化交付"
+      ]
+    },
+    {
+      "hash": "6f25528dcfaf960e4cf48eaa091a8e104a4ad9af00d08aa9ee5f271808dfb733",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/042d7c3c9eb8734f0nJ83N-9F1VW.html",
+          "title": "语音工程化工程师（机器人端侧）(A11018)",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "主导机器人端侧音频处理业务模块的需求分析、技术方案设计及核心代码开发，保障⾳频系统的稳定性与可扩展性"
+      ]
+    },
+    {
+      "hash": "062f69779e868244202d5e89b0b5aa794c3bc05337e58e2e873d8605b2abde7f",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/33974e7c2510a63b0nF40t29EVVX.html",
+          "title": "软件测试工程师（机器人行业）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人IoT云平台的版本迭代测试与质量保障，涵盖 Web 前后端、与机器人端交互的 API等功能测试、接口测试、性能"
+      ]
+    },
+    {
+      "hash": "4b9a93945ffed19b4c30c5520dc042888c67ccc2cc1efef5e4b5f00897089864",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/4aeb58d6b00227b50nFy2tq9EVZY.html",
+          "title": "软件研发项目经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责具身智能软件类项⽬从⽴项、需求拆解、⽅案评审、研发迭代、联调测试、现场部署、验收交付到回款复盘的全流程管理"
+      ]
+    },
+    {
+      "hash": "4e1c3ff600a2747d08cbc505ebd160c61cb493874e014e7374ba687dc028383e",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5a572d0e15ef881a0nN509m7F1JU.html",
+          "title": "高级 AI 多模态测试开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责大模型/多模态模型评测框架与工具链的 0→1 建设，是\"测试体系乘法器\"的核心，直接决定算法评测的效率与深度"
+      ]
+    },
+    {
+      "hash": "73b0b227043c346601fc1d65d6da8c705c27d839a73968d670b19b5258387d6d",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/3348cea40a914aa40nJz2Ny0F1JY.html",
+          "title": "高级硬件测试工程师（系统方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与硬件测试与验收规范落地，执行来料验收、整机集成验收、关键指标抽检"
+      ]
+    },
+    {
+      "hash": "0bcd3442ecd37e80832309c4f8f241fb5a7ec43a908b0a4053effaa6cffe7768",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1f827ecf2de20a9b0nN939y0EVBQ.html",
+          "title": "高级质量工程师（DQE / SQE / CQE3个方向）",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "设计质量前置：参与设计评审与 DFMEA/PFMEA 分析，协助制定质量目标、测试项与放行准则，跟踪 APQP 各阶段质"
+      ]
+    },
+    {
+      "hash": "c92c318026ffae00eee3de58c8804e87edeb68a63c5059eeda780166db1f8727",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/0e1c18811d2f90870nN_39-8E1dR.html",
+          "title": "具身场景运营专家",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/5ad015cc874591690nN50tS0E1RR.html",
+          "title": "机器人技能训练运营专家",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "家庭场景技能SOP拆解与标准化：主导机器人家庭服务技能（如叠衣服、家居收纳、桌面整理等）的动作拆解工作"
+      ]
+    }
+  ]
+}

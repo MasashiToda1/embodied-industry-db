@@ -1,0 +1,60 @@
+id: hiring-2026-10-06-unitree-embodied-models
+org: unitree
+topic: embodied-models
+title: 具身模型开发与机器人端侧部署
+judgment: 多岗位支持公司持续补充具身模型从算法开发到端侧工程化的能力，但不能据此判断某一VLA或世界模型方案已经产品化。
+limitations: 岗位材料没有可靠发布日期，不能称为近期新增。 岗位职责表示招聘需求，不等于相关技术或项目已经落地。 相近岗位可能服务同一团队，未按URL数量推断投入规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-unitree-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 154
+  saved_bodies: 59
+  unique_bodies: 57
+  reviewed_bodies: 57
+evidence_groups:
+- hash: 9c8871325679b126e1065c9da0dcf8cb9a09c00c7a482eb387671cb93fd2547e
+  role: 岗位职责
+  quote: 追踪 CV、强化学习、模仿学习、世界模型、多模态⼤模型（VLM/VLA）的前沿进展
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/16218d60dd40f9f30nZ-3N66EFFU.html
+- hash: dbfff3ec088ef82e0495613f77dae19c6ce2672b5425f2797d9780176f01f687
+  role: 岗位职责
+  quote: 模型部署与推理优化：负责人形机器人AI模型（强化学习策略、VLA视觉语言⼤模型、模仿学习⽹络等）的⼯程化部署，完成模型压
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/52b626347b8a01e10nF73tS4GVRY.html
+- hash: 1ddf9bbaf2ccf75f76bfa5868625f51fc822ed28a421021b69b58c87c1e713ae
+  role: 岗位职责
+  quote: 追踪 CV、强化学习、模仿学习、世界模型、多模态⼤模型（VLM/VLA）的前沿进展
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/5ab69f807dc882b10nB82965FlFY.html
+- hash: e84aad21b89272666e7d8a91d5f696aefccb1284ca097d816e27ec37fff8c977
+  role: 岗位职责
+  quote: · 负责具⾝智能算法和模型在机器⼈上的开发与集成，将其转化为稳定的产品功能
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/3dde2b77afb69c920nB50t-7ElRU.html
+- hash: 7bc67ed26e8b923f9a0e622961a69678a45d2982fddc39c0d22b2ee3a346c00c
+  role: 岗位职责
+  quote: 围绕机器人多模态大模型、视觉语言动作模型（VLA）、具身智能推理能⼒建设完整的数据、训练和评测闭环
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/673cef4d289243d30nN50ti5FlJV.html
+- hash: 41f2cf750e354d320778e79cf06f366daa14c3e7a36ff7c4953fab7299d67fd2
+  role: 岗位职责
+  quote: AI大模型相关：协助完成⼤模型的选型、微调与测试，参与⼤模型训练数据的收集、清洗、标注与校验，辅助搭建模型训练、推理的基
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/186e444a23a858f30nF42tq6FFRT.html
+- hash: 71cf3187c3473010cfebb59805bf2b3ba482d1ef46a597db5b8c695d27c6a600
+  role: 岗位职责
+  quote: 负责端到端ASR（语音识别）、TTS（语音合成）大模型的训练、微调与迭代
+  reason: 正文直接支撑既定模型、数据或部署链路的一个子环节。
+  urls:
+  - https://www.zhipin.com/job_detail/01b750dd8c2d9d0c0nJ_3Nm1EFVY.html

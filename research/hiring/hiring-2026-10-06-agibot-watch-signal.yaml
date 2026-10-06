@@ -1,0 +1,31 @@
+id: hiring-2026-10-06-agibot-watch-signal
+org: agibot
+topic: watch-signal
+title: 自主Agent岗位把记忆、RAG、任务分解、工具调用和多Agent协作写入机器人端职责。
+judgment: 自主Agent岗位把记忆、RAG、任务分解、工具调用和多Agent协作写入机器人端职责。
+limitations: 目前主要是单类招聘需求，无法确认Agent架构是否已进入产品版本或真实场景。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: limited
+evidence_events:
+- evt-2026-10-05-agibot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: watch
+coverage:
+  known_urls: 630
+  saved_bodies: 243
+  unique_bodies: 235
+  reviewed_bodies: 235
+evidence_groups:
+- hash: 2c5e1136228c20179521f94f27b578e80026a5a0f295f6ef33949df27d44394d
+  role: 岗位职责
+  quote: 负责构建机器人的自主Agent的架构并实现，使得机器人具备记忆管理（短期/长期）与上下文理解的任务分解、⼯具调⽤的能⼒
+  reason: 职责直接描述机器人自主Agent的记忆、规划、工具调用或协作能力。
+  urls:
+  - https://www.zhipin.com/job_detail/1c240a5d5809cd3c0nd_3dy8FlZY.html
+- hash: f223d2e895261779985a8e87a583f8c8588c0fd973c53aaf69eadae01bf9c3e9
+  role: 岗位职责
+  quote: 投入多模态AgenticAI算法研究
+  reason: 职责直接描述机器人自主Agent的记忆、规划、工具调用或协作能力。
+  urls:
+  - https://www.zhipin.com/job_detail/028c12b6cbc67adb0nF-2ti6GFtQ.html
+next_check: 后续核验官方产品文档、版本说明、开源仓库或可复现实机演示。

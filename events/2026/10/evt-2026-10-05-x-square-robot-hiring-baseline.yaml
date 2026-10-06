@@ -1,0 +1,410 @@
+id: evt-2026-10-05-x-square-robot-hiring-baseline
+date: '2026-10-05'
+date_precision: day
+date_basis: derived
+date_as_stated: 岗位原文未提供可靠首次发布日期；本记录日期为所引正文最近核验日，核验范围2026-10-05至2026-10-05。不代表招聘启动、近期新增或当前仍有效。 核验日按采集缓存UTC日期记录。
+type: hiring_signal
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量机器人招聘职责与公司自述核验记录（首次基线）
+summary:
+  zh: Robot Learning岗位覆盖数据处理、模型训练和真机验证，后训练岗位覆盖场景数据、评测与真机部署。 两个岗位分别要求触觉数据采集与VLA辅助输入，以及触觉表征和多模态信息融合。 测试工艺岗位覆盖试产测试工站和问题闭环，整机测试岗位覆盖台架、装配准入与工程样机验收。 以上为招聘文案内容，不等于技术采用、项目完成或交付结果。
+corroboration: single
+evidence:
+- url: https://www.zhipin.com/job_detail/2f3b141bf03916510nF82Nm6ElpX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/458f98ce64e63e220nN72N26GFpU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/1e88cdb49f8fe2570nF82tW-EFtX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3993488551130baa0nJ80t-6FlFR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3b5e98d91a0afa6903N529y4GVNX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/17fc54b67e556de20nF_3tm8E1RT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/5439a7228f8f970b0nJ_29i-E1dU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4187f07a6547b2410nF93ti1GFZU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/05ee3e6b9a3407ce0nFy09S4E1FW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/2dec238935bf24c90nN93dq1ElFX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/5115bfc155078d760nNy39S8EFtW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/16b825590f804d550nN43d60ElZZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/38ef870534e571ce0nB-09q0FVtX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/400a3369ff9e04d70nF92tS-GVdX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/476f2f3c88e71aac0nR63t-4F1tX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/57848ba835b134f20nJy0tq0EVFT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/177a323a290fa7350nJy3ty9GFNQ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/2c8a54c8c7d8e19d0nN_3920EFZY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/31cc7d50c8eed6010nNy39m_GVNY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/174460a6b2adc8d90nNy3dS7EVFV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/35fcd940c1ef6d600nNy2NS6E1BZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/31cb6a6571c2bf440nJy09-6ElFQ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4805845f7711603a0nJ72tu-EFNQ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/034aab56df4652d70nF93968EVpZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/21793379ed60f26f0nNy2NS1GVNW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/060518c5bf8a4bad0nJy3t67EFVS.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/29fbe715e3faf2ae0nN-2Ni1FVZR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3f1b58f88da8c7aa0nJ42t27E1ZU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/550db3af1931cdae0nBy29m8FlBS.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/176767f6aeb827fb0nN42tS7EVdT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/443cdbc7553193710nF42N6-F1pS.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/1335272b90ad66b10nBy29i1FldX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4266d781f80510730nN929S9EVJV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/093fc77264dcee5b0nBy3N-7E1tX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/12b3fa2183fc36350nBz392-F1ZW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/20436550bb20eaa70nF82Nm7EFBY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3a78e0deaf3323b80nJz39q1ElBU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/012517316f97b45a0nN62NW4FFRZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/43b15a8d3187947d0nN709m8EVFV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4e293c97c53b857f0nN909i8EVBT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/548fd49c163273500nJ70t6-EVNR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/252b50e5decf13fe0nF-39y6ElJS.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/1b43bcfb83589f800nN93ty8FltT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/16a6d9bc86ef66170nF83t20E1dS.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/359a2cef6f7bf2f50nB42N-0FVFW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/543db34e76d4b1630nBz2tq5EVBV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3ae8ccc964275ba90nJ43Ni0EFBT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/30225a4bda98a06e0nF83t28EVdR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3ddeba34642243fe0nN62N26FVZW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/0d32271c109159510nZ9096_FVRV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/26208403efa3c33b0nd73ty6F1dZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/248cdf52d1c004bc0nJy2ti_EVNU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/54bca7b4ae8866850nN72tS9EFZU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/475579f3f289106a0nN709m7FVJZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4242eb63a99ea05b0nF82N69GFFR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3d97ee67f24bf4fc0nN53964EFNZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4a3579080e9831ec0nBz2tu6EltV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/30e7f2721be484ee0nJ_29m5E1RQ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/01777e7919a47cc50nN93ti8FVdV.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4c663840a238c58c0nF42dm6EVVX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/23221a61101950ac0nF_3tW9F1tT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3447f9fc54a2eab00nN93t20F1tU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/310e943254fbc5aa0nZ70969F1NT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4e4ac7f7a06b59880nJ42969EFZW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/1e132c1cc913fc890nN509i8FVZY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/57ec52f5f46278500nF82dS5EFJZ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/2ea79df2f8a6df740nV63N6-FFtR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/02b26e3cf159f0090nJ_2NW0EVNT.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/59ef9cd9d7ed3b0e0nBz2tq8EFpY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/2f5b01ce47d9cb150nN829u5GFNY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/031fbf2d63c3dccf0nR92Nq9EVRR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/042d7c3c9eb8734f0nJ83N-9F1VW.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/33974e7c2510a63b0nF40t29EVVX.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/4aeb58d6b00227b50nFy2tq9EVZY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/5a572d0e15ef881a0nN509m7F1JU.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/3348cea40a914aa40nJz2Ny0F1JY.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/1f827ecf2de20a9b0nN939y0EVBQ.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/0e1c18811d2f90870nN_39-8E1dR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json
+- url: https://www.zhipin.com/job_detail/5ad015cc874591690nN50tS0E1RR.html
+  publisher: 自变量机器人 · BOSS直聘招聘页
+  tier: official
+  retrieved: '2026-10-05'
+  snapshot: snapshots/2026/10/hiring-baseline/x-square-robot.json

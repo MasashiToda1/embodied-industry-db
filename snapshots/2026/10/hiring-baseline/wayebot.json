@@ -1,0 +1,208 @@
+{
+  "format": "hiring-reviewed-excerpts-v1",
+  "org": "wayebot",
+  "note": "已保存招聘正文的逐字摘录快照，非完整网页。hash用于同公司完整正文精确去重；原始完整正文保留在本地采集缓存。岗位发布日期未知，retrieved为实际读取核验日。 retrieved沿用采集缓存的UTC日期；中国时区的次日凌晨读取可对应前一UTC日期。",
+  "groups": [
+    {
+      "hash": "6aafc81ceb208046b14a951c6e88fe7c1c25cccb883c183d1790d9921fd319a5",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/62edace2c767e4400nFy3tq7E1BW.html",
+          "title": "机械臂运控算法工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "以及多冗余⾃由度形态的机器人全身⼒控算法开发，使机器人具备与环境接触时柔顺交互能力，并根据实际场景进行应用开发完成产品化"
+      ]
+    },
+    {
+      "hash": "fea561c2f93eb917965276a31ea721b8bdb24ce91627a3c504a2359efb190293",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/7eac6012756d0adb0nF52Ni0FFJX.html",
+          "title": "算法总监（人形双臂）",
+          "retrieved": "2026-10-05"
+        },
+        {
+          "url": "https://www.zhipin.com/job_detail/87857349ea1bd8e80nF93dm8F1pZ.html",
+          "title": "算法总监",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "法的中长期技术路线图，统筹感知、决策、控制全栈技术方向，推动强化学习、具⾝智能等前沿技术落地，构建技术壁垒。"
+      ]
+    },
+    {
+      "hash": "79748d5e09c7ae68de5a8f70282c39902a7ef9d3b47837faf0105c1245877d59",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/b23c6e35ebfcf85f0nF529i5EFBQ.html",
+          "title": "算法实习生",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "力控双臂/灵巧手的先进控制算法研究，包括但不限于高精度力/位混合控制、阻抗控制、柔顺控制等，提升运动部件的动态响应与交互",
+        "VLA（视觉-语言-动作）模型、灵巧操作、模仿学习等领域最新进展，探索将多模态感知与智能控制策略应用于人形力控双臂的复杂"
+      ]
+    },
+    {
+      "hash": "e327318cd867048324a4f5ee77b7140c4986805316c25d603337d5f7bcef7e59",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/c0c568b96f43b4940nJz2ty5GVNX.html",
+          "title": "嵌入式驱控软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人关节驱动器的传感，运动控制和通信算法开发；"
+      ]
+    },
+    {
+      "hash": "034c22b3aee468cdbc57491fd9a01922e044471e0cf6b9bbe98fff44a72041a6",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/032e1a42fc6f45a70nF73Ni0EVpR.html",
+          "title": "高级结构工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责灵巧⼿整体结构设计，包含骨架设计、塑胶外观件设计等；"
+      ]
+    },
+    {
+      "hash": "4f5d033e11a84823d638b54447f9342324016d8ecb08ca6182578e3974781709",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/ae04f93f84510a110nZz3tu8GFtW.html",
+          "title": "上位机软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "关节及机械臂的上位机交互软件应用程序开发，界面设计及对外通讯API接口开发；"
+      ]
+    },
+    {
+      "hash": "847bc6368d45e36e7f2dba006decb84191adfad3d5fede29d7720a24c0239705",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/dceeca3953b37b0e0nBy09i6EFJR.html",
+          "title": "嵌入式驱控软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人关节驱动器的传感，运动控制和通信算法开发；"
+      ]
+    },
+    {
+      "hash": "d7f756424508b46ec5375267ec63952b8e6cbf066f8105c3a5069f7d8949fbf9",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/24e8414ce08a75c70nB82Ni6FlZU.html",
+          "title": "高级嵌入式软件开发工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人关节驱动器的传感，运动控制和通信算法开发："
+      ]
+    },
+    {
+      "hash": "5f2c754549ffaba2fb0277f793379ad2c34bccd06ac6cd476bf72eafe4c1411b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/34081a1b2480d42d03Z52ty_FFBS.html",
+          "title": "高级应用软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "关节及机械臂的上位机交互软件应用程序开发，界面设计及对外通讯API接口开发；"
+      ]
+    },
+    {
+      "hash": "0c05408680008ba60f3d67d428ed63765304662305bbdf4c09ae2e3541ee657b",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/1a303716c8293c6e0nB93tW5FVZW.html",
+          "title": "高级机械结构工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责灵巧⼿，关节模组，机械臂等结构设计，测试及打样验证等2。"
+      ]
+    },
+    {
+      "hash": "d7171b0c7725137fffe7a2a26716c634432629da845e680b2c552b844352bebd",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/21467d8a2a887fda03V42tq4FVdZ.html",
+          "title": "高级软件工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责机器人关节驱动器的传感，运动控制和通信算法开发；"
+      ]
+    },
+    {
+      "hash": "cb315889eea3840a046e70221e53ffd0ce4331bee5fb6752daeea594ebd9088a",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/fa2fade702c6082c0nJ62NS7FlpZ.html",
+          "title": "工艺工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "负责新产品导入工作，推动新产品试产阶段的问题点闭环;"
+      ]
+    },
+    {
+      "hash": "ea98dad9375bcf74463aa4871e2c3177b090a14773da4eaa7d4022ada37a49b7",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/41ffa63d0a4221ba0nZ62NS-EVtS.html",
+          "title": "硬件测试工程师",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "参与产品设计评审，进行电机驱动系统、电机、减速器、控制器测试要求评估，进行可行性建议，推动产品设计优化；"
+      ]
+    },
+    {
+      "hash": "8d614a7a586cf1e30d8f3fdfccfeb38f5b3604d574d89f1c32f47b5f3c19c8b4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/5871553f53ad03a60nBy09i7GVJZ.html",
+          "title": "项目经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "等项目全生命周期管理，主导机器⼈产品从研发、测试、量产交付的全过程，确保项⽬按时、按质落地；"
+      ]
+    },
+    {
+      "hash": "d1394c0cb78092aece9db7faa1f1d5d19f3af53f1cbd975e332cc177a5bbf8e4",
+      "sources": [
+        {
+          "url": "https://www.zhipin.com/job_detail/871d7c528c344e760nF729q0FlpU.html",
+          "title": "项目经理",
+          "retrieved": "2026-10-05"
+        }
+      ],
+      "excerpts": [
+        "生命周期管理，主导机器⼈产品从研发，测试，量产交付的全过程，确保项⽬按时，按质，按预算落地;"
+      ]
+    }
+  ]
+}

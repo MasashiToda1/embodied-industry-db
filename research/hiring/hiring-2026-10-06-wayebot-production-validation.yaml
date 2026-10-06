@@ -1,0 +1,42 @@
+id: hiring-2026-10-06-wayebot-production-validation
+org: wayebot
+topic: production-validation
+title: 关节模组试产与测试质量
+judgment: 不同岗位共同支持关节模组制造导入和测试质量能力建设；不证明产线规模、良率或量产状态。
+limitations: 部分嵌入式和算法负责人岗位正文重复，已按方向合并，未重复计数。 招聘岗位中的工业巡检、消防和商业服务是需求场景，不是交付事实。 VLA、强化学习和仿真工具的要求不能直接证明已经用于产品。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-wayebot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 18
+  saved_bodies: 17
+  unique_bodies: 16
+  reviewed_bodies: 16
+evidence_groups:
+- hash: cb315889eea3840a046e70221e53ffd0ce4331bee5fb6752daeea594ebd9088a
+  role: 岗位职责
+  quote: 负责新产品导入工作，推动新产品试产阶段的问题点闭环;
+  reason: 支持关节模组试产与工艺质量。
+  urls:
+  - https://www.zhipin.com/job_detail/fa2fade702c6082c0nJ62NS7FlpZ.html
+- hash: ea98dad9375bcf74463aa4871e2c3177b090a14773da4eaa7d4022ada37a49b7
+  role: 岗位职责
+  quote: 参与产品设计评审，进行电机驱动系统、电机、减速器、控制器测试要求评估，进行可行性建议，推动产品设计优化；
+  reason: 支持关节和整机测试质量。
+  urls:
+  - https://www.zhipin.com/job_detail/41ffa63d0a4221ba0nZ62NS-EVtS.html
+- hash: 8d614a7a586cf1e30d8f3fdfccfeb38f5b3604d574d89f1c32f47b5f3c19c8b4
+  role: 岗位职责
+  quote: 等项目全生命周期管理，主导机器⼈产品从研发、测试、量产交付的全过程，确保项⽬按时、按质落地；
+  reason: 支持产品量产交付项目管理。
+  urls:
+  - https://www.zhipin.com/job_detail/5871553f53ad03a60nBy09i7GVJZ.html
+- hash: d1394c0cb78092aece9db7faa1f1d5d19f3af53f1cbd975e332cc177a5bbf8e4
+  role: 岗位职责
+  quote: 生命周期管理，主导机器⼈产品从研发，测试，量产交付的全过程，确保项⽬按时，按质，按预算落地;
+  reason: 支持产品量产交付项目管理。
+  urls:
+  - https://www.zhipin.com/job_detail/871d7c528c344e760nF729q0FlpU.html

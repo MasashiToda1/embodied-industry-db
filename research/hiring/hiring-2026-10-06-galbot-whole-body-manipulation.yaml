@@ -1,0 +1,105 @@
+id: hiring-2026-10-06-galbot-whole-body-manipulation
+org: galbot
+topic: whole-body-manipulation
+title: 全身控制与灵巧操作
+judgment: 多岗位支持公司加强人形运动控制和精细操作能力，但不证明具体技能成功率或量产部署。
+limitations: 覆盖245个已知岗位URL中的103份正文、91份唯一正文；不是完整招聘目录。 招聘职责中的工业后训练、真机部署和零样本泛化是工作目标，不等于已实现事实。 相近岗位可能来自同一团队的重复招聘页面，不能按页面数推算团队规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-galbot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 245
+  saved_bodies: 103
+  unique_bodies: 91
+  reviewed_bodies: 91
+evidence_groups:
+- hash: b0e2dfa8001b07daca2334e0a8d4b91026ef8803811ec09656af4b2c930aba53
+  role: 岗位职责
+  quote: 主导或参与基于MPC的步态生成器和基于WBC的全身控制器的设计、实现与调试
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/32d5c66198da860403192dS7E1BR.html
+- hash: 92756b91175a58575f293028519a14a83540419a0ed903983d12ec91ecf3a5cc
+  role: 岗位职责
+  quote: 研究开发灵巧操作数据采集系统，协同优化软硬件，参与数据采集、数据清洗、数据分析、数据增强等工作
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/49bc3822eca6a10c03B_3Ni9FVdV.html
+- hash: 6d155c20104a92b20b82632675c3a58f07a9db8e63a5b05c3150c9230a7baed7
+  role: 岗位职责
+  quote: 研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/196bf1e1e241963b0nZ50t-0EVNY.html
+- hash: 732baae3f54861e7a390203e7d322274f5aad46f527432e46d176b1bd294f213
+  role: 岗位职责
+  quote: 研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/36aac1667d85a00d0nRy2ty5E1JR.html
+- hash: c9c8ec00b51f79ea0ee68355995445fb7d57e432e6ef9c274d0558af25f06e65
+  role: 岗位职责
+  quote: 参与机器人与人工智能的操作算法研发，应用于室内移动操作平台的决策与控制
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/14a80f9eeb6261fa0nRz2NW-EVdZ.html
+- hash: 33cbc671f0ca426d05bef34cca8f13384ca0dcfb58572cf37a237805ba0551d5
+  role: 岗位职责
+  quote: 负责机器人整身规划软件的框架设计及开发
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/190de7179bd45a2d03F53t-5GVdU.html
+- hash: b84780ed9b27d9861c764fa8c58d6d467b8f71e02de4e06ea38905d7f4e54255
+  role: 岗位职责
+  quote: 结合机器人控制与优化方法，如 IK、WBC、MPC、轨迹优化、PD/阻抗控制等
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/0fae3eba06d499a90nF93t-9ElNT.html
+  - https://www.zhipin.com/job_detail/2f0c16905d645aa20nF50tm0GFRV.html
+  - https://www.zhipin.com/job_detail/351f57a1074a7dc90nFy39W4FltW.html
+  - https://www.zhipin.com/job_detail/58d3e7dbbe62fc7b0nJ-3t--GFVV.html
+- hash: f2f7963a5dd9df8bede659647a6d7341182dd56dc9619bf6d3d7fe9d3d854d79
+  role: 岗位职责
+  quote: 参与机器人整身规划软件的框架设计及开发
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/3d2bb986b18d3926031-29y5ElRS.html
+- hash: 280ef4089455f99705be364591fe281e766e4e9941a68dc0ecff9b5097d41ffa
+  role: 岗位职责
+  quote: 探索下一代⼈形机器⼈全⾝遥操、灵巧手等新形态遥操作方案
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/27bb133c3ffc0a540nRz3tm5E1dZ.html
+- hash: b35144d56204cc70a77675b48e2e2a410dba12109fb2305c36e3b32dc9213268
+  role: 岗位职责
+  quote: 负责机器人控制算法、滤波算法的设计和开发，包括但不限于PID/LQR/MPC等控制算法，IIR/FIR等滤波算法
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/2088588aef1caa1d03Z83t67ElJQ.html
+- hash: cf8b249bfc292a0236bb2c554125e0d779017cf4a465cb39e13dc33b01a1d1cf
+  role: 岗位职责
+  quote: 负责机械臂运动规划与控制算法的设计、开发和落地，包括轨迹规划、轨迹优化、碰撞检测、避障、约束处理、速度规划等
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/59259eb0800272430nF92dy9ElFQ.html
+- hash: 9e73fe1b70c94ba5a99ff3c45f367cbfabb75645f9a6e9a9bda7222bc809b7cf
+  role: 岗位职责
+  quote: 研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能⼒
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/3c3ed3619ee5462b03153t-6F1dY.html
+- hash: 2e119c66786ed815f509c8d0f77a0b22a25125d2469cbab850237a00cdff3a36
+  role: 岗位职责
+  quote: 研发基于深度强化学习的足式机器人运动控制算法，提升机器人在复杂环境下的稳定性与自适应能力
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/38db75dcbda0318d03R809W1ElpZ.html
+- hash: 9ec240b6241571fe07c4b926b4a87ce4925bfe4a4f18b17f229173d7b5f1c9a6
+  role: 岗位职责
+  quote: 负责感知模型、运动控制及操作 Policy 在人形机器人上的实机部署
+  reason: 职责直接涉及全身、足式、机械臂或灵巧手控制与操作。
+  urls:
+  - https://www.zhipin.com/job_detail/17900a31820867e70nN93N26GFRT.html

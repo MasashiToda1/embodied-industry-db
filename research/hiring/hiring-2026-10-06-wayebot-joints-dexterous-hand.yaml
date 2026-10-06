@@ -1,0 +1,66 @@
+id: hiring-2026-10-06-wayebot-joints-dexterous-hand
+org: wayebot
+topic: joints-dexterous-hand
+title: 关节驱控与灵巧手软硬件
+judgment: 招聘组合支持从底层驱控软件到灵巧手结构件的跨层研发需求；不能确认具体整机型号或成熟度。
+limitations: 部分嵌入式和算法负责人岗位正文重复，已按方向合并，未重复计数。 招聘岗位中的工业巡检、消防和商业服务是需求场景，不是交付事实。 VLA、强化学习和仿真工具的要求不能直接证明已经用于产品。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-wayebot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 18
+  saved_bodies: 17
+  unique_bodies: 16
+  reviewed_bodies: 16
+evidence_groups:
+- hash: e327318cd867048324a4f5ee77b7140c4986805316c25d603337d5f7bcef7e59
+  role: 岗位职责
+  quote: 负责机器人关节驱动器的传感，运动控制和通信算法开发；
+  reason: 支持关节嵌入式驱控软件。
+  urls:
+  - https://www.zhipin.com/job_detail/c0c568b96f43b4940nJz2ty5GVNX.html
+- hash: 034c22b3aee468cdbc57491fd9a01922e044471e0cf6b9bbe98fff44a72041a6
+  role: 岗位职责
+  quote: 负责灵巧⼿整体结构设计，包含骨架设计、塑胶外观件设计等；
+  reason: 支持灵巧手结构研发。
+  urls:
+  - https://www.zhipin.com/job_detail/032e1a42fc6f45a70nF73Ni0EVpR.html
+- hash: 4f5d033e11a84823d638b54447f9342324016d8ecb08ca6182578e3974781709
+  role: 岗位职责
+  quote: 关节及机械臂的上位机交互软件应用程序开发，界面设计及对外通讯API接口开发；
+  reason: 支持机械臂上位机与系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/ae04f93f84510a110nZz3tu8GFtW.html
+- hash: 847bc6368d45e36e7f2dba006decb84191adfad3d5fede29d7720a24c0239705
+  role: 岗位职责
+  quote: 负责机器人关节驱动器的传感，运动控制和通信算法开发；
+  reason: 支持关节嵌入式驱控软件。
+  urls:
+  - https://www.zhipin.com/job_detail/dceeca3953b37b0e0nBy09i6EFJR.html
+- hash: d7f756424508b46ec5375267ec63952b8e6cbf066f8105c3a5069f7d8949fbf9
+  role: 岗位职责
+  quote: 负责机器人关节驱动器的传感，运动控制和通信算法开发：
+  reason: 支持关节嵌入式驱控软件。
+  urls:
+  - https://www.zhipin.com/job_detail/24e8414ce08a75c70nB82Ni6FlZU.html
+- hash: 5f2c754549ffaba2fb0277f793379ad2c34bccd06ac6cd476bf72eafe4c1411b
+  role: 岗位职责
+  quote: 关节及机械臂的上位机交互软件应用程序开发，界面设计及对外通讯API接口开发；
+  reason: 支持机械臂上位机与系统集成。
+  urls:
+  - https://www.zhipin.com/job_detail/34081a1b2480d42d03Z52ty_FFBS.html
+- hash: 0c05408680008ba60f3d67d428ed63765304662305bbdf4c09ae2e3541ee657b
+  role: 岗位职责
+  quote: 负责灵巧⼿，关节模组，机械臂等结构设计，测试及打样验证等2。
+  reason: 支持灵巧手、关节和机械臂结构研发。
+  urls:
+  - https://www.zhipin.com/job_detail/1a303716c8293c6e0nB93tW5FVZW.html
+- hash: d7171b0c7725137fffe7a2a26716c634432629da845e680b2c552b844352bebd
+  role: 岗位职责
+  quote: 负责机器人关节驱动器的传感，运动控制和通信算法开发；
+  reason: 支持关节嵌入式驱控软件。
+  urls:
+  - https://www.zhipin.com/job_detail/21467d8a2a887fda03V42tq4FVdZ.html

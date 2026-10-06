@@ -1,0 +1,118 @@
+id: hiring-2026-10-06-galbot-simulation-evaluation
+org: galbot
+topic: simulation-evaluation
+title: 仿真合成数据与评测
+judgment: 多岗位支持公司建设仿真生成、评测和模型迭代基础设施，但不代表合成数据规模或仿真精度已达既定水平。
+limitations: 覆盖245个已知岗位URL中的103份正文、91份唯一正文；不是完整招聘目录。 招聘职责中的工业后训练、真机部署和零样本泛化是工作目标，不等于已实现事实。 相近岗位可能来自同一团队的重复招聘页面，不能按页面数推算团队规模。 首次基线，无上月可比记录；证据组数不代表岗位种类、人数或研发投入。
+strength: supported
+evidence_events:
+- evt-2026-10-05-galbot-hiring-baseline
+reviewed_on: '2026-10-06'
+review_reference: 维护者于2026-10-06在本聊天回复“可以”，批准已展示的8家公司招聘研判审核稿；批次 hiring-review-20261006。
+kind: focus
+coverage:
+  known_urls: 245
+  saved_bodies: 103
+  unique_bodies: 91
+  reviewed_bodies: 91
+evidence_groups:
+- hash: 4c81d289d9528ee10f194db7e45c28c538b105af2406c023f72390a1d9b8bff7
+  role: 岗位职责
+  quote: 负责搭建和维护机器人仿真平台，参与执行器、传感器以及任务场景的仿真开发与性能优化
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/1cc8c3a14bfeef6903Vz3NW9GVdX.html
+- hash: 330d19a45812aab9ff67a35a4019071dcf2be1c90c79f48f53f5447cfd19b1e6
+  role: 岗位职责
+  quote: 分析并调控数据分布，确保合成数据对大模型训练与泛化具有有效支撑
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/1b99a7645e08530a0nRy2960F1BU.html
+- hash: 6d155c20104a92b20b82632675c3a58f07a9db8e63a5b05c3150c9230a7baed7
+  role: 岗位职责
+  quote: 在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/196bf1e1e241963b0nZ50t-0EVNY.html
+- hash: 732baae3f54861e7a390203e7d322274f5aad46f527432e46d176b1bd294f213
+  role: 岗位职责
+  quote: 在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/36aac1667d85a00d0nRy2ty5E1JR.html
+- hash: de4767100d552ea8e3a64d400c829615cae945887be34db2431d238ba4b22251
+  role: 岗位职责
+  quote: 搭建和维护仿真平台，参与⽰教场景与实验任务的设计与开发，⽀持多⽤户协作
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/29446fd3dc9cf5850nZy09u4EVFQ.html
+- hash: 1e63e1948de3842427f4df1daeb266d6c9a4447ea69d3643e1faed366a7165dc
+  role: 岗位职责
+  quote: 协助搭建和维护机器人仿真平台，参与执行器、传感器以及任务场景的仿真开发与优化工作
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/2094787c69e771160nd_2dy6E1FQ.html
+  - https://www.zhipin.com/job_detail/3954463d99dbcb8c0nFy0tq1FFVZ.html
+- hash: edf2ac7c0fe25336a9f337d81b21f4fdf86dde39c3f70be0baac49f7220eeb41
+  role: 岗位职责
+  quote: 负责仿真系统测试⽀持与需求跟进
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/04a5e2e4ca2649210nd83NW5EVtU.html
+- hash: 8d69ae7bdee084f64fd750fb3ff5080b04cb7a25ec73fd9869926e1698de661c
+  role: 岗位职责
+  quote: 持续量化并调优 real2sim 在几何、外观、物理维度的对齐效果
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/251185702bf6736d0nF92ti7FVVU.html
+- hash: ec12dd79cc1f690a9a0578653d4364e0a35897d4cb4039837ac40355a670dfa4
+  role: 岗位职责
+  quote: 搭建高保真工业机器人仿真环境（支持物理引擎、传感器模拟、接触动⼒学），⽤于算法开发、测试与合成数据⽣成
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/55073f20b9217e5b0nN_3ti8GFFT.html
+- hash: 2c2e21f45a4d64a98563f2a210258f03386fc1adf8a698e9a9cbcaf80fbf3f93
+  role: 岗位职责
+  quote: 协助搭建和维护机器人仿真平台，参与机器人结构、运动、传感器及场景的模拟
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/480b7598c246f00303V63tq4ElNS.html
+- hash: 2444b357fd03491f16df562295b45213562f4c3ace15559c53330aa86230ea1c
+  role: 岗位职责
+  quote: 主导机器人操作策略的Sim-to-Real迁移流程，在仿真平台中完成策略的大规模并⾏训练与自动化测试
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/55dea68a259933250nB639W_E1tY.html
+- hash: b84780ed9b27d9861c764fa8c58d6d467b8f71e02de4e06ea38905d7f4e54255
+  role: 岗位职责
+  quote: 基于 MuJoCo、Isaac 等仿真平台构建⾼保真机器⼈仿真环境，完成机器⼈模型、传感器及场景资产的建模与调试
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/0fae3eba06d499a90nF93t-9ElNT.html
+  - https://www.zhipin.com/job_detail/2f0c16905d645aa20nF50tm0GFRV.html
+  - https://www.zhipin.com/job_detail/351f57a1074a7dc90nFy39W4FltW.html
+  - https://www.zhipin.com/job_detail/58d3e7dbbe62fc7b0nJ-3t--GFVV.html
+- hash: 92756b91175a58575f293028519a14a83540419a0ed903983d12ec91ecf3a5cc
+  role: 岗位职责
+  quote: 研究虚实迁移技术，并结合对控制算法的调试，完成从虚拟到真实的技能迁移，在真机上部署灵巧操作技能
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/49bc3822eca6a10c03B_3Ni9FVdV.html
+- hash: 9e73fe1b70c94ba5a99ff3c45f367cbfabb75645f9a6e9a9bda7222bc809b7cf
+  role: 岗位职责
+  quote: 在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/3c3ed3619ee5462b03153t-6F1dY.html
+- hash: 2e119c66786ed815f509c8d0f77a0b22a25125d2469cbab850237a00cdff3a36
+  role: 岗位职责
+  quote: 在仿真平台（如MuJoCo、Isaac Gym/Lab等）上进行算法测试与优化，确保算法能够高效应用于实际机器人
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/38db75dcbda0318d03R809W1ElpZ.html
+- hash: 9ec240b6241571fe07c4b926b4a87ce4925bfe4a4f18b17f229173d7b5f1c9a6
+  role: 岗位职责
+  quote: 负责感知与控制系统的实机性能优化和 Sim2Real 调试
+  reason: 职责直接涉及仿真平台、合成数据、虚实迁移或评测系统。
+  urls:
+  - https://www.zhipin.com/job_detail/17900a31820867e70nN93N26GFRT.html
