@@ -7,6 +7,10 @@ header{background:var(--card);border-bottom:1px solid var(--line);position:stick
 .wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 nav{display:flex;align-items:center;gap:6px;height:52px}
 nav .brand{font-weight:700;margin-right:14px}
+.nav-tabs{display:flex;align-items:center;gap:6px;white-space:nowrap}
+nav .repo-link{flex-shrink:0;margin-left:8px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--ink);white-space:nowrap}
+nav .repo-link:hover{background:var(--bg)}
+nav .repo-link:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 nav a.tab{padding:6px 12px;border-radius:20px;font-size:13px;color:var(--muted)}
 nav a.tab.on{background:var(--ink);color:#fff}
 nav .spacer{flex:1}
@@ -190,6 +194,7 @@ button.tag.on{background:var(--ink)}
 @media (max-width:600px){.route-grid{grid-template-columns:1fr}.route-selection-head button{margin-left:0}}
 footer{color:var(--muted);font-size:12px;padding:20px 0;border-top:1px solid var(--line);margin-top:30px}
 @media (max-width:860px){.two{grid-template-columns:1fr}nav input{width:120px}.fbar{flex-wrap:wrap}}
+@media (max-width:860px){nav{height:auto;min-height:52px;flex-wrap:wrap;padding:10px 0}nav .brand{margin-right:auto}nav .spacer{display:none}nav .repo-link{order:0}.nav-tabs{order:1;flex-basis:100%;overflow-x:auto;padding:3px 0}nav input{order:2;width:100%}}
 
 /* 维度决定比较内容；展示方式仅控制图表呈现。 */
 .axis-filter{margin-bottom:16px}

@@ -36,9 +36,10 @@ function nav(active) {
   const tabs = [['index', '时间线'], ['orgs', '主体'], ['axes', '轴 / 收敛'], ['graph', '图谱'], ['signals', '商业信号']];
   $('header').innerHTML = `<div class="wrap"><nav>
     <a class="brand" href="index.html">具身产业库</a>
-    ${tabs.map(([k, z]) => `<a class="tab ${k === active ? 'on' : ''}" href="${k}.html">${z}</a>`).join('')}
+    <div class="nav-tabs">${tabs.map(([k, z]) => `<a class="tab ${k === active ? 'on' : ''}" href="${k}.html">${z}</a>`).join('')}</div>
     <span class="spacer"></span>
     <input id="q" placeholder="搜主体 / 别名 / 产品名 / 事件…" autocomplete="off">
+    <a class="repo-link" href="https://github.com/MasashiToda1/embodied-industry-db" target="_blank" rel="noopener noreferrer" aria-label="打开 GitHub 仓库（新标签页）">GitHub <span aria-hidden="true">↗</span></a>
   </nav></div><div id="search-pop"></div>`;
   const q = $('#q'), pop = $('#search-pop');
   q.addEventListener('input', () => renderSearch(q.value.trim(), pop));
