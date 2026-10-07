@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-10-06-flexiv-product_launch-sim-plugin-zenoh-preview",
+  "date": "2026-10-06",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "flexiv",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "非夕仿真插件 v2.2.0 预发布改用 Zenoh 通信"
+  },
+  "summary": {
+    "zh": "flexiv_sim_plugin v2.2.0 标记为预发布版本，将仿真插件与 Elements Studio 之间的通信从 Fast-DDS 改为 Zenoh，提供组播发现与心跳机制，外部 C++/Python 仿真接口保持不变。该变化仅限此通信链路，不扩大为非夕全部产品的中间件选型。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/flexivrobotics/flexiv_sim_plugin/releases/tag/v2.2.0",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/155.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "按 GitHub release published_at 的 UTC 日期记录；不使用自动发现日期。"
+}

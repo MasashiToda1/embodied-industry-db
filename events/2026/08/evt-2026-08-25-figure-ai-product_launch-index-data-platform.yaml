@@ -1,0 +1,29 @@
+{
+  "id": "evt-2026-08-25-figure-ai-product_launch-index-data-platform",
+  "date": "2026-08-25",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "figure-ai",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Figure 发布 Index 真人动作数据采集平台"
+  },
+  "summary": {
+    "zh": "Figure 发布 Index，称通过采集者上传真实工作与生活动作视频构建 Helix 训练数据。发布时公司披露超过264000次应用下载、44000名周活跃用户、超过1600万段视频上传及累计1500万美元采集者报酬，并介绍筛选、反作弊审查、去重、重平衡和标注流程。上述数量为公司披露，不等同于合格训练样本总量，也不是公开可下载数据集。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.figure.ai/news/introducing-index",
+      "tier": "official",
+      "publisher": "Figure",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/index.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "stated"
+}

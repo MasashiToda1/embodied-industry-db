@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-10-05-alibaba-robotics-publication-rynnworld-latent",
+  "date": "2026-10-05",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "alibaba-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "阿里巴巴提交 RynnWorld-Latent 跨本体世界模型代码"
+  },
+  "summary": {
+    "zh": "官方仓库提交 RynnWorld-Latent 开源代码，以连续潜在动作作为跨人类与机器人本体的统一条件，提供视频未来预测、交互式数字遥操作和数据合成流程。核验时仓库包含 RynnLAM、训练与评测脚本及下游本体后训练配置；本条记录研究代码，不认定为量产机器人已采用，也不将仍为占位页的 RynnVLA-Latent 一并视为发布。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/alibaba-damo-academy/RynnWorld-Latent/blob/2a3a090ba2a6e8c2711be1dd2552c02cc3aad46e/README.md",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/141-world.md"
+    },
+    {
+      "url": "https://api.github.com/repos/alibaba-damo-academy/RynnWorld-Latent/commits?per_page=8",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/world-commits.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "开源代码提交 ab9fca35506660d9df8a0df4b90adf4f94af2237 的 committer.date 为 2026-10-05T11:33:29Z；内容按10月7日核验状态描述，不把后续修订回溯为首日功能。",
+  "axes": {
+    "model_form": [
+      "world-model"
+    ]
+  }
+}
