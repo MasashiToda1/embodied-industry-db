@@ -1,0 +1,36 @@
+{
+  "id": "evt-2026-08-29-sharpa-deployment-dq-shanghai",
+  "date": "2026-08-29",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "sharpa",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Sharpa 机器人在上海 DQ 门店制作冰淇淋"
+  },
+  "summary": {
+    "zh": "Sharpa 与 DQ 运营方披露，上海吴江路 DQ 门店机器人项目于8月29日启动，North 机器人使用门店现有设备及原料完成制作与交付冰淇淋的55步操作流程。记录该门店部署，不据此认定所有订单均成功、无人值守运营或已全面替代店员。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.sharpa.com/pages/sharpa-dq",
+      "tier": "official",
+      "publisher": "Sharpa",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/sharpa.html"
+    },
+    {
+      "url": "https://www.cfbgroup.net/zh-hant/news/dq-sharpa-blizzard-robot-restaurant-ai-new-scene",
+      "tier": "official",
+      "publisher": "CFB 集团",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/dq.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "stated"
+}

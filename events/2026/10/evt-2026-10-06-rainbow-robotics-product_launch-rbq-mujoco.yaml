@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-10-06-rainbow-robotics-product_launch-rbq-mujoco",
+  "date": "2026-10-06",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "rainbow-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Rainbow RBQ 新增内置 MuJoCo 仿真"
+  },
+  "summary": {
+    "zh": "RBQ v1.2609.0 发布记录新增跨平台内置 MuJoCo 物理仿真、挂载载荷物理属性配置，并更新 Point2Go 目标操作、传感器校准和对接视图。此处记录 RBQ 产品功能，不推定为该公司所有机器人使用同一仿真栈。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/RainbowRobotics/RBQ/releases/tag/v1.2609.0",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/153.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "按 GitHub release published_at 的 UTC 日期记录；不使用自动发现日期。",
+  "axes": {
+    "sim_stack": [
+      "mujoco"
+    ]
+  }
+}

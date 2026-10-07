@@ -1,0 +1,51 @@
+{
+  "id": "evt-2026-10-06-rainbow-robotics-dataset_release-jimtof-series",
+  "date": "2026-10-06",
+  "date_precision": "day",
+  "type": "dataset_release",
+  "orgs": [
+    {
+      "id": "rainbow-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "彩虹机器人公开 JIMTOF 系列 RBY1 操作数据"
+  },
+  "summary": {
+    "zh": "官方 Hub 的 JIMTOF 仓库创建于10月2日，JIMTOF_1 创建于10月6日。10月7日核验的元数据分别记录8条轨迹、13658帧和21条轨迹、33268帧，均为 LeRobot v3.0、RBY1、1个任务、30 FPS，包含前方及左右视角视频、状态与动作。两个版本可能存在重叠，不相加为独立采集总量；未标注许可，不认定可自由商用。"
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/151.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/rainbowrobotics/JIMTOF/blob/d4a1a90a4b8a1ae8754b2c2c2d44c61161792864/meta/info.json",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/151-info.json"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF_1",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/150.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/rainbowrobotics/JIMTOF_1/blob/f918e16fc34eae7e9616d392f6dd2f976de1c717/meta/info.json",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/150-info.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "采用 JIMTOF_1 Hub 创建日2026-10-06；JIMTOF 当前规模来自10月6日更新后的快照，不认定为10月2日首日规模。"
+}

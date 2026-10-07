@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-10-02-foxglove-product_launch-mcap-explorer-vscode",
+  "date": "2026-10-02",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "foxglove",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Foxglove 发布 VS Code MCAP Explorer 首版"
+  },
+  "summary": {
+    "zh": "Foxglove 发布 vscode-mcap v0.1.0。核验时 README 说明扩展可在 VS Code 查看 MCAP 文件大小、时长、消息数、通道和模式，并接入 Foxglove 可视化。文件信息查看不需要账户；可视化需要联网及 Foxglove Embed 访问权限。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/foxglove/vscode-mcap/releases/tag/v0.1.0",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/165.json"
+    },
+    {
+      "url": "https://github.com/foxglove/vscode-mcap/blob/main/README.md",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/165-readme.md"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "按 GitHub release published_at 的 UTC 日期记录；不使用自动发现日期。"
+}

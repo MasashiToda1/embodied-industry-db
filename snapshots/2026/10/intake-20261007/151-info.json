@@ -1,0 +1,188 @@
+{
+    "codebase_version": "v3.0",
+    "fps": 30,
+    "features": {
+        "action": {
+            "dtype": "float32",
+            "names": [
+                "right_arm_0",
+                "right_arm_1",
+                "right_arm_2",
+                "right_arm_3",
+                "right_arm_4",
+                "right_arm_5",
+                "right_arm_6",
+                "left_arm_0",
+                "left_arm_1",
+                "left_arm_2",
+                "left_arm_3",
+                "left_arm_4",
+                "left_arm_5",
+                "left_arm_6",
+                "right_gripper_0",
+                "left_gripper_0"
+            ],
+            "shape": [
+                16
+            ]
+        },
+        "observation.state": {
+            "dtype": "float32",
+            "names": [
+                "right_arm_0",
+                "right_arm_1",
+                "right_arm_2",
+                "right_arm_3",
+                "right_arm_4",
+                "right_arm_5",
+                "right_arm_6",
+                "left_arm_0",
+                "left_arm_1",
+                "left_arm_2",
+                "left_arm_3",
+                "left_arm_4",
+                "left_arm_5",
+                "left_arm_6",
+                "right_gripper_0",
+                "left_gripper_0"
+            ],
+            "shape": [
+                16
+            ]
+        },
+        "observation.images.front": {
+            "dtype": "video",
+            "shape": [
+                480,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 480,
+                "video.width": 640,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {}
+            }
+        },
+        "observation.images.right": {
+            "dtype": "video",
+            "shape": [
+                640,
+                480,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 640,
+                "video.width": 480,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {}
+            }
+        },
+        "observation.images.left": {
+            "dtype": "video",
+            "shape": [
+                640,
+                480,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 640,
+                "video.width": 480,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false,
+                "video.g": 2,
+                "video.crf": 30,
+                "video.preset": 12,
+                "video.fast_decode": 0,
+                "video.video_backend": "pyav",
+                "video.extra_options": {}
+            }
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    },
+    "total_episodes": 8,
+    "total_frames": 13658,
+    "total_tasks": 1,
+    "chunks_size": 1000,
+    "data_files_size_in_mb": 100,
+    "video_files_size_in_mb": 200,
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "robot_type": "rby1",
+    "splits": {
+        "train": "0:8"
+    }
+}

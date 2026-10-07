@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-10-05-foxglove-product_launch-sdk-ray-pytorch",
+  "date": "2026-10-05",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "foxglove",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Foxglove SDK 新增 Ray 与 PyTorch 数据集支持"
+  },
+  "summary": {
+    "zh": "Foxglove SDK v0.29.0 在 Python 数据集接口新增 Ray 与 PyTorch 支持，提供机器人数据接入训练工具的接口能力；本条不认定为任何机器人厂商已采用该训练流程。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/foxglove/foxglove-sdk/releases/tag/sdk/v0.29.0",
+      "tier": "official",
+      "publisher": "GitHub",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/156.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "按 GitHub release published_at 的 UTC 日期记录；不使用自动发现日期。"
+}

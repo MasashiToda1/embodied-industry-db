@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-10-07-boston-dynamics-personnel-ceo-appointment",
+  "date": "2026-10-07",
+  "date_precision": "day",
+  "type": "personnel",
+  "orgs": [
+    {
+      "id": "boston-dynamics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "波士顿动力任命前亚马逊高管出任 CEO"
+  },
+  "summary": {
+    "zh": "波士顿动力10月6日公告任命前亚马逊高管为首席执行官，任命于10月7日生效。本条仅记录管理层任命，不把公告背景中的机器人商业化目标认定为已交付成果。"
+  },
+  "evidence": [
+    {
+      "url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/",
+      "tier": "official",
+      "publisher": "Boston Dynamics",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/boston-announcement.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "stated",
+  "date_as_stated": "公告日期2026-10-06，明确生效日期2026-10-07；事件采用生效日。"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evt-2026-09-23-maniformer-product_launch-mifengpai-platform",
+  "date": "2026-09-23",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "maniformer",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "觅蜂科技发布觅蜂派众包数据采集平台"
+  },
+  "summary": {
+    "zh": "雷科技发布现场报道显示，觅蜂科技于9月23日在上海发布觅蜂派众包数据采集平台，用户领取任务、佩戴 MEgo 设备采集真实场景操作数据，按审核后的有效数据时长获得报酬。该上线事件与9月28日业务进展采访分别记录；不把任务提交视为全部验收合格，也不将设备租赁和补贴计划写成已实现收入。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leikeji.com/article/79732",
+      "tier": "media",
+      "publisher": "雷科技",
+      "retrieved": "2026-10-07",
+      "snapshot": "snapshots/2026/10/intake-20261007/maniformer.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "stated",
+  "date_as_stated": "来源发表于2026-09-23，正文明确活动于9月23日在上海举办。"
+}
