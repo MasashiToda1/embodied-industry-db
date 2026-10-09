@@ -1,0 +1,26 @@
+{
+  "id": "evt-2026-09-jaka-statement-embodied-interview",
+  "date": "2026-09",
+  "date_precision": "month",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "jaka",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "访谈记录：节卡有发展具身智能业务的打算"
+  },
+  "summary": {
+    "zh": "本库9月访谈记录称节卡有发展具身智能业务的打算。此条仅保留访谈表态，不据此新增具体技术路线、产品或交付断言；公开产品展示另有官方事件。"
+  },
+  "evidence": [
+    {
+      "tier": "first-party",
+      "method": "interview",
+      "retrieved": "2026-10-09"
+    }
+  ],
+  "corroboration": "single"
+}

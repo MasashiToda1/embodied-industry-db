@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-10-09-qianjue-product_launch-xensesdk-cpp-0-2",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "qianjue",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "千觉机器人更新 C++ SDK 的推理与标定能力"
+  },
+  "summary": {
+    "zh": "Xense C++ SDK 0.2.0 发布自包含推理支持，无需外部安装 CUDA/cuDNN，提供 GPU 检测与 CPU 回退、Windows 标定写入及本地传感器查看工具。该版本属于 C++ SDK，与既有 Python SDK 分别记录。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/XenseRobotics/xensesdk-cpp/releases/tag/v_0.2.0",
+      "tier": "official",
+      "publisher": "千觉机器人 · Xense Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/188-page.html"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,905 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026 | 雷峰网</title>
+    <meta itemprop="image" content="https://www.leiphone.com/resWeb/images/common/metaLogo.jpg" />
+            <link rel="dns-prefetch" href="https://www.leiphone.com">
+        <link rel="dns-prefetch" href="https://home.leiphone.com">
+        <link rel="dns-prefetch" href="https://m.leiphone.com">
+        <link rel="dns-prefetch" href="https://leiphone.com">
+        <meta name="baidu-site-verification" content="codeva-Gbm8aMVuca" />
+    	<meta name="google-site-verification" content="4c2S0LRoSpcyGiNmASqakMSa7yVC9C8Jnu-IRNyq5oU" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
+    <meta property="qc:admins" content="10002525706451007656375" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="https://m.leiphone.com" />
+        <meta name="robots" content="noindex, nofollow">
+            	<meta name="keywords" content="IROS,冯宗宝,至简动力" />
+	<meta name="description" content="具身智能从实验室走向真实工厂、迈向精密制造。" />
+    <meta name="sogou_site_verification" content="ilkqV8FehD"/>
+    <meta name="renderer" content="webkit">
+	<link rel="cannoical" href="https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html">    <link rel="stylesheet"  type="text/css" href="https://www.leiphone.com/resWeb/css/common/common.css?v=20201026" media="all" />
+    <script type="text/javascript">
+        window.mobilecheck = function() {
+
+            // var ua=window.navigator.userAgent;
+            // if(ua.indexOf('iPhone')>=0||ua.indexOf('iPod')>=0||ua.indexOf('ndroid')>=0){
+            //     return true;
+            // }
+
+            var check = false;
+            (function(a,b){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+            return check;
+        }
+        var check = mobilecheck();
+        if(check && (window.location.host == 'www.leiphone.com')){
+            window.location.href="//m.leiphone.com" + window.location.pathname + window.location.search;
+        }else if(!check && (window.location.host == 'm.leiphone.com')){
+            window.location.href="//www.leiphone.com" + window.location.pathname + window.location.search;
+        }
+
+        var now = new Date();
+        if(now.getFullYear() == 2022 && now.getMonth() == 11 && now.getDate() < 7){
+            document.querySelector('html').style.webkitFilter = 'grayscale(1)'
+        }
+    </script>
+    <!--
+	<script type='text/javascript'>window.BWEUM||(BWEUM={});BWEUM.info = {"stand":true,"agentType":"browser","agent":"bi-collector.oneapm.com/static/js/bw-send-411.4.5.js","beaconUrl":"bi-collector.oneapm.com/beacon","licenseKey":"fqiyF~7R36YyFnEB","applicationID":2284957};</script><script type="text/javascript" src="//bi-collector.oneapm.com/static/js/bw-loader-411.4.5.js"></script>
+	-->
+    <script>
+                    //百度统计开始
+            var _hmt = _hmt || [];
+
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?0f7e8686c8fcc36f05ce11b84012d5ee";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+            //百度统计结束
+        
+        var SCRIPT_URL 	= "https://www.leiphone.com/";
+		var BASE_URL 	= "https://www.leiphone.com/";
+		var HOME_URL 	= "https://home.leiphone.com/";
+		var IS_LOGIN 	= "1";
+        var LEIPHONE_HOME_URL = USER_CENTER  = "https://home.leiphone.com/";
+        var HAITAO_URL  = "https://haitao.leiphone.com";
+        var TRYOUT_URL  = "https://tryout.igao7.com/";
+        var PRODUCT_URL = "https://product.igao7.com/";
+	</script>
+
+	<!--[if IE]>
+    <script>
+       (function(){var e="abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');var i=e.length;while(i--){document.createElement(e[i])}})()
+    </script>
+    <![endif]-->
+
+    <!--<script src="/resWeb/js/libs/sea.js"></script>-->
+    <script src="https://www.leiphone.com/resWeb/js/libs/jquery-sea.js"></script>
+    <script src="https://www.leiphone.com/resCommon/js/yp_tipBoxes/tips.js"></script>
+    <script>
+        seajs.config({
+            map:[
+                ['.js','.' +
+                'js?20251010']
+            ]
+        });
+        seajs.use('https://www.leiphone.com/resWeb/js/common/global',function(){
+                    });
+        document.domain = "leiphone.com";
+         // 英鹏账号登录回调
+        function yingpengIslogin_callback(){
+            seajs.use('https://www.leiphone.com/resWeb/js/common/com_login',function(user) {
+              user.init();
+            });
+        }
+    </script>
+    
+    </head>
+<body>
+<!-- 顶栏广告位 -->
+<div class="top-banner">
+    <a href="https://www.leiphone.com/banner/updateClickNum/id/1538" target="_blank" title="全球「AI学术顶会」精华汇聚地">
+        <img src="https://static.leiphone.com/uploads/new/banner/6a3a22b4dadf8.jpeg" alt="全球「AI学术顶会」精华汇聚地">
+    </a>
+    <em class="closeBanner"></em>
+</div>
+
+<div class="explorer" id="low-explorer">
+    <div class="inner">
+        <em class="warn ico"></em>
+        <span>您正在使用IE低版浏览器，为了您的雷峰网账号安全和更好的产品体验，强烈建议使用更快更安全的浏览器</span>
+        <span class="ico exp-ico1"></span>
+        <span class="ico exp-ico2"></span>
+        <span class="ico exp-ico3"></span>
+        <span class="ico exp-ico4"></span>
+        <span class="ico exp-ico5"></span>
+    </div>
+</div>
+<!--[if lte IE 8]>
+    <script>
+       (function(){var e=['abbr', 'article', 'aside', 'audio', 'canvas', 'datalist', 'details', 'dialog', 'eventsource', 'figure', 'footer', 'header', 'hgroup', 'mark', 'menu', 'meter', 'nav', 'output', 'progress', 'section', 'time', 'video'];for(var i = e.length; i--;) document.createElement(e[i])})()
+
+       //低版本浏览器
+        document.getElementById("low-explorer").style.display = 'block';
+
+    </script>
+<![endif]-->
+
+
+
+<!-- header start-->
+<header class="yp-header">
+    <div class="yp-header-top clr">
+        <a class="yp-header-logo" href="https://www.leiphone.com">
+            <img src="https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1"  alt="雷峰网">
+                        <span></span>
+        </a>
+        <!-- navi -->
+
+        <div class="yp-header-menu">
+            <ul>
+                <!-- <li class="first">
+                    <a href="https://www.leiphone.com" class="sub_a">首页</a>
+                </li> -->
+<!--                <li>-->
+<!--                    <a href="--><!--?from=leiphonepc"  target="_blank" class="sub_a">AI研习社</a>-->
+<!--                </li>-->
+                <li>
+                    <a href="https://www.leiphone.com/openCourse/list"  target="_blank" class="sub_a">雷峰网公开课</a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/events"  class="sub_a">活动中心</a>
+                </li>
+                <li>
+                    <a href="https://gair.leiphone.com?from=leifengwang2021" target="_blank" class="sub_a">GAIR</a>
+                </li>
+                <li>
+                    <a href="https://www.leiphone.com/specials"  class="sub_a">专题</a>
+                </li>
+                <!-- <li>
+                    <a href="https://www.leiphone.com/specialEdition/list"  target="_blank" class="sub_a">精选</a>
+                </li> -->
+                <li class="borleft aiB">
+                <div class="line"></div>
+                    <!-- <a href="https://mooc.yanxishe.com/?f=leiphone"  target="_blank" class="sub_a">AI慕课学院</a> -->
+                </li>
+                <li class="ej borleft ig">
+                    <a href="http://www.igao7.com" target="_blank" class="sub_a">爱搞机</a>
+                                    </li>
+                <!-- <li  class="ej borleft ig">
+                    <a href="https://haitao.leiphone.com" class="sub_a">极客购</a>
+                </li> -->
+            </ul>
+
+        </div>
+        <!-- 用户登录 -->
+        <div class="yp-header-user-box">
+            <div class="yp-header-user">
+                <!-- <input type="hidden" id="is_login_tag_status" value="1"> -->
+                <div class="user-main user-haslg">
+                    <div class="avatar"><img width="36" height="36" src="https://www.leiphone.com/resWeb/home/images/member/noLogin.jpg" alt=""></div>
+                </div>
+                <div class="user-link">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 用户消息 -->
+        <!-- <div class="yp-header-message">
+            <a href="https://home.leiphone.com/notices" class="bell">
+                 <i class="ico"></i>
+                 <em class="count"></em>
+            </a>
+        </div> -->
+        <div class="yp-header-search">
+           <form method="GET" name="allSearchForm" action="https://www.leiphone.com/search" style="height: 100%;">
+                <input type="hidden" name="site" value="">
+                <input class="text" type="text" name="s" autocomplete="off" value="">
+                <input class="submit" type="submit" value="">
+                <input class="submit2" type="submit" value="">
+            </form>
+        </div>
+        <a href="https://www.leiphone.com/search" class="miniSearch"></a>
+
+    </div>
+</header>
+<!-- header end-->
+<nav class="yp-secNav">
+    <div class="wrapper">
+        <ul>
+        <li><a href="https://www.leiphone.com/category/industrynews"  class=" ">业界</a></li>
+        <li>
+            <a href="https://www.leiphone.com/category/ai"  class=" ">人工智能<em class="arrow"></em> </a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/academic">学术</a>
+                <a href="https://www.leiphone.com/category/yanxishe">开发者</a>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.leiphone.com/category/transportation"  class=" ">智能驾驶</a>
+            <!-- <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/special/391/201901/5c32f0bca9173.html">新智驾TV</a>
+            </div> -->
+        </li>
+        <li>
+            <a href="https://www.leiphone.com/category/digitalindustry" class=" ">数智化<em class="arrow"></em> </a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/redigital">零售数智化</a>
+                <a href="https://www.leiphone.com/category/findigital">金融数智化</a>
+                <a href="https://www.leiphone.com/category/mandigital">工业数智化</a>
+                <a href="https://www.leiphone.com/category/medigital">医疗数智化</a>
+                <a href="https://www.leiphone.com/category/citydigital">城市数智化</a>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.leiphone.com/category/fintech"  class=" ">金融科技<em></em></a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/BigTech">科技巨头</a>
+                <a href="https://www.leiphone.com/category/bank">银行AI</a>
+                <a href="https://www.leiphone.com/category/FinanceCloud">金融云</a>
+                <a href="https://www.leiphone.com/category/DataSecurity">风控与安全</a>
+            </div>
+        </li>
+<!--        <li><a href="--><?//= baseUrl()?><!--/category/aihealth"  class="--><!-- ">未来医疗</a></li>-->
+        <li>
+            <a href="https://www.leiphone.com/category/aihealth"  class=" ">医疗科技<em></em></a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/healthai">医疗AI</a>
+                <a href="https://www.leiphone.com/category/touzi">投融资</a>
+                <a href="https://www.leiphone.com/category/qixie">医疗器械</a>
+                <a href="https://www.leiphone.com/category/hulianwangyiliao">互联网医疗</a>
+                <a href="https://www.leiphone.com/category/shengwuyiyao">生物医药</a>
+                <a href="https://www.leiphone.com/category/jiankangxian">健康险</a>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.leiphone.com/category/chips"  class=" ">芯片</a>
+            <!-- <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/materials">材料设备</a>
+                <a href="https://www.leiphone.com/category/chipdesign">芯片设计</a>
+                <a href="https://www.leiphone.com/category/manufacturing">晶圆代工</a>
+                <a href="https://www.leiphone.com/category/packaging">封装测试</a>
+            </div> -->
+        </li>
+        <li><a href="https://www.leiphone.com/category/gbsecurity"  class=" ">政企安全</a></li>
+        <li>
+            <a href="https://www.leiphone.com/category/smartcity"  class=" ">智慧城市<em></em></a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/smartsecurity">智慧安防</a>
+                <a href="https://www.leiphone.com/category/smarteducation">智慧教育</a>
+                <a href="https://www.leiphone.com/category/smarttransportation">智慧交通</a>
+                <a href="https://www.leiphone.com/category/smartcommunity">智慧社区</a>
+                <a href="https://www.leiphone.com/category/smartretailing">智慧零售</a>
+                <a href="https://www.leiphone.com/category/smartgovernment">智慧政务</a>
+                <a href="https://www.leiphone.com/category/proptech">智慧地产</a>
+            </div>
+        </li>
+        <li><a href="https://www.leiphone.com/category/industrycloud"  class=" ">行业云</a></li>
+        <li>
+            <a href="https://www.leiphone.com/category/IndustrialInternet"  class=" ">工业互联网<em class="arrow"></em> </a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/gysoftware">工业软件</a>
+                <a href="https://www.leiphone.com/category/gysafety">工业安全</a>
+                <a href="https://www.leiphone.com/category/5ggy">5G工业互联网</a>
+                <a href="https://www.leiphone.com/category/gypractice">工业转型实践</a>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.leiphone.com/category/iot"  class=" ">AIoT<em class="arrow"></em> </a>
+            <div class="subNav">
+                <i></i>
+                <a href="https://www.leiphone.com/category/5G">物联网</a>
+                <a href="https://www.leiphone.com/category/arvr">智能硬件</a>
+                <a href="https://www.leiphone.com/category/robot">机器人</a>
+                <a href="https://www.leiphone.com/category/smarthome">智能家居</a>
+            </div>
+        </li>
+
+        </ul>
+    </div>
+</nav>
+
+<link rel="stylesheet" type="text/css" href="https://www.leiphone.com/resCommon/css/artCont_web_admin.css">
+<link rel="stylesheet" type="text/css" href="https://www.leiphone.com/resWeb/css/detail/main.css?version=20191010" media="all" />
+<script type="text/javascript">
+    var ARTICLE_CATEGORY = '181';
+    var ADMIN_URL = 'https://yingpeng.leiphone.com/';
+
+</script>
+<style type="text/css">
+    .reviewTip{
+        height: 55px;
+        line-height: 55px;
+        background: #C6E1F4;
+        color:#666;
+        font-size: 15px;
+        letter-spacing: 1px;
+        position: relative;
+        display: none;
+        text-align: center;
+    }
+    .reviewTip span{
+        letter-spacing: 0;
+        padding: 0 2px;
+    }
+    .reviewTip em{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 30px;
+        top:15px;
+        cursor: pointer;
+        background: url(/resWeb/images/common/close.png) no-repeat;
+    }
+</style>
+<div class="clr"></div>
+<div class="reviewTip">此为临时链接，仅用于文章预览，将在<span></span>时失效<em></em></div>
+<div class="lph-Nowsite clr">
+    <div class="wrapper">
+        <a href='https://www.leiphone.com'><em class='ico'></em></a>
+        <em class='arro'></em>
+        <a href="https://www.leiphone.com/category/private">顶会专区</a>
+        <em class='arro'></em>
+        <a href="#">正文</a>
+    </div>
+</div>
+
+<!-- 发送私信 -->
+<div class="sendMsg-pop">
+    <a href="javascript:;" class="closePop"><em></em></a>
+    <div class="title">发私信给<span>邓哲敏</span></div>
+    <div class="main">
+        <textarea placeholder='私信内容'></textarea>
+    </div>
+    <div class="btns">
+        <a href="javascript:;" class="send-button">发送</a>
+    </div>
+</div>
+<!-- 评论数 -->
+<a href="#lph-comment-213076" class="cmtNums" >
+    <em></em>
+    <p>0</p>
+</a>
+<div class="lph-overlay"></div>
+<!-- 当载入markdown的时候加载 -->
+<script type="text/javascript">
+    var link = "xCu836z16KSzx2Co";
+</script>
+<!-- 文章详情页 -->
+<script type="text/javascript" src='https://www.leiphone.com/resWeb/js/libs/kokoplayer/kmp.js' crossorigin="anonymous"></script>
+<div class="lphArticle-detail" data-article_url="https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html"
+data-article_id="213076" data-article_unique="xCu836z16KSzx2Co"
+data-article_seo_title="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026 | 雷峰网" data-article_seo_keywords="IROS,冯宗宝,至简动力"
+data-article_seo_description="具身智能从实验室走向真实工厂、迈向精密制造。" data-comment_type="2"
+data-collect_type="2" data-author_id="24281"
+data-author_name="邓哲敏" data-article_cmtNum="0">
+    <div class="article-template">
+        <div class="article-title">
+            <div class="inner">
+                <h1 class="headTit">
+                    至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026                </h1>
+                <div class="msg">
+                    <table>
+                        <tr>
+                            <td class="aut">
+                                本文作者：
+                                                                                                            <a href="https://www.leiphone.com/author/dengzhemin200" target="_blank" rel="nofollow">邓哲敏</a>&nbsp;&nbsp;
+                                                                                                </td>
+                                                        <td class="time">
+                                2026-10-08 14:37                            </td>
+                                                                                    <!-- <td class="tags">
+                                <em></em> -->
+                                                                                                                            <!-- </td> -->
+                                                    <!--   <td class='cmtNum'>
+                                <a href="https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html#lph-comment-213076">0条评论</a>
+                            </td> -->
+                        </tr>
+                    </table>
+                </div>
+                <div class="article-lead">
+                    <em></em>导语：具身智能从实验室走向真实工厂、迈向精密制造。                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="wrapper clr">
+
+                <div class="article-left">
+                    <div class="lph-article-comView">
+                                                <!-- 123 -->
+                        
+                        
+                                                
+                        <!-- AI影响因子 -->
+                        <!-- xhBPeYDbNuuRZkwy -->
+                                                <!-- AI影响因子 -->
+                        <!-- 正文内容 -->
+                        <section style="text-align: center;margin: 0px 16px;line-height: 1.75em;display: block;" data-mpa-action-id="mmiwq6ij1i3r" data-pm-slice="0 0 []" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bc8b005.png" class="rich_pages wxw-img" data-ratio="0.55" data-s="300,640" data-type="png" data-w="1000" style="width:100%;display:inline-block;text-align:center;background-color:transparent;" data-croporisrc="https://mmbiz.qpic.cn/sz_mmbiz_png/XqAicMdcoiafP255nkbtMPgJsNfuO13EbxT5J4xibTiaZ1jskeKpW0c4W8IxcAUX9IszlgzJ03z1LAyoy3ibp64PtOEsPYkFZmb4OicoriaVIO0tIE/0?wx_fmt=png&amp;from=appmsg" data-cropselx1="0" data-cropselx2="546" data-cropsely1="0" data-cropsely2="300" data-imgfileid="100262997" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bc8b005.png?imageMogr2/quality/90"/></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-data-temp-type="image" mpa-from-tpl="t" data-mpa-action-id="mmix4tgk1t7p" data-pm-slice="5 10 []" style="padding-left: 16px;padding-right: 16px;"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;padding-left: 0px;padding-right: 0px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;background: rgb(246, 248, 255);padding: 20px 0px 12px;margin-top: 0px;margin-bottom: 0px;" data-mid="" mpa-from-tpl="t" data-mpa-action-id="mm0fhbur236d" data-pm-slice="0 0 []"><section style="text-align: center;"><section><section style="text-align: justify;margin: 0px 16px;"><span style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;letter-spacing: 0.5px;"><span data-mpa-action-id="mmix6wyl1l05" data-pm-slice="0 0 []"><span leaf=""><span textstyle="" style="font-weight: bold">具身智能从实验室走向真实工厂、迈向精密制造。</span></span></span></span></section><span data-mpa-action-id="mqgbkegzw9n"></span><span data-mpa-action-id="mpmlbwxl8oz"></span><span data-lark-record-data="{&quot;rootId&quot;:&quot;FdZeduLh9ohPKcxr1VDcCN8nnRh&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;具身智能，攻入油烟弥漫的后厨&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+e&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7629541120642091970&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:false,&quot;pasteRandomId&quot;:&quot;cfb07fd4-9966-4c79-8ea8-e8bc041d3659&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:7,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:3,&quot;end&quot;:17},&quot;recordId&quot;:&quot;BnkadAUsgo3AbGx4g5hcavcRn7g&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><span data-lark-record-data="{&quot;rootId&quot;:&quot;M0lkd1gU4oXvBbxr0hUcNKhwn6c&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;百万流量下的机器人打工记&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+c&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7629541120642091970&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:false,&quot;pasteRandomId&quot;:&quot;80c4c2a6-c274-411e-9a10-ddcaa7bcf44b&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:4,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:6,&quot;end&quot;:18},&quot;recordId&quot;:&quot;A5vjdZwQCor3L2xjL5CcBMFTnFh&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><span data-mpa-action-id="mottit0p1adr"></span><span data-lark-record-data="{&quot;rootId&quot;:&quot;HiT6dR6bqoegBFxS6Ztci0eLn5e&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;前Covariant AI 副总裁、舟谱数据CTO慕巍博士出任「枢途科技」CTO。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+15&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7538706056718925852&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:false,&quot;pasteRandomId&quot;:&quot;dfd888fd-3d05-41de-99ef-9e50f4d1eda1&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:37,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:3,&quot;end&quot;:44},&quot;recordId&quot;:&quot;HCUjdyERwog1txxNzqYcmirnnBh&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><span data-mpa-action-id="mnzfe1dlmiz"></span><span data-mpa-action-id="mn32l2a062f"></span><span data-mpa-action-id="mmos90171jtf"></span><span data-lark-record-data="{&quot;rootId&quot;:&quot;AzjmduHCvoPVEexzmhKc7S4Enkg&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;联创团队刚刚亮相，这家物理AI创业公司的融资与股东阵容也随之浮出水面。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+z&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7536161670281445404&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:true,&quot;pasteRandomId&quot;:&quot;3ca65e27-5613-4c71-bec7-02bc36dcc7df&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:5,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:0,&quot;end&quot;:35},&quot;recordId&quot;:&quot;CuIcdfeCnoYDRFxT9eIcwHljn3Q&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><section style="text-align: left;margin-bottom: 0px;margin-top: 0px;"><span style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;letter-spacing: 0.5px;"><span leaf=""><br/></span></span></section></section></section><span data-lark-record-data="{&quot;rootId&quot;:&quot;XVkTdFgTjoSOOfx0zV4cRv7nnDg&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;贝塔无限将瞄准万亿消费级机器人蓝海市场。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+k&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7066985350417170460&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:false,&quot;pasteRandomId&quot;:&quot;d4121fb1-0735-411e-82ac-5446e497d0c2&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:6,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:3,&quot;end&quot;:23},&quot;recordId&quot;:&quot;M0FfdVGsRo1taCx2dVBcUm9SnFc&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><span data-lark-record-data="{&quot;rootId&quot;:&quot;HyUOdX3GEoRVXdxcfUfcPgCFn8K&quot;,&quot;text&quot;:{&quot;initialAttributedTexts&quot;:{&quot;text&quot;:{&quot;0&quot;:&quot;26年之于具身智能，就是23年之于大语言模型。&quot;},&quot;attribs&quot;:{&quot;0&quot;:&quot;*0+n&quot;}},&quot;apool&quot;:{&quot;numToAttrib&quot;:{&quot;0&quot;:[&quot;author&quot;,&quot;7066985350417170460&quot;]},&quot;nextNum&quot;:1}},&quot;type&quot;:&quot;text&quot;,&quot;referenceRecordMap&quot;:{},&quot;extra&quot;:{&quot;channel&quot;:&quot;saas&quot;,&quot;isEqualBlockSelection&quot;:false,&quot;pasteRandomId&quot;:&quot;223a8d9b-7e7d-40d4-b910-244b8b09367a&quot;,&quot;mention_page_title&quot;:{},&quot;external_mention_url&quot;:{}},&quot;isKeepQuoteContainer&quot;:false,&quot;isFromCode&quot;:false,&quot;selection&quot;:[{&quot;id&quot;:2,&quot;type&quot;:&quot;text&quot;,&quot;selection&quot;:{&quot;start&quot;:4,&quot;end&quot;:27},&quot;recordId&quot;:&quot;JtD7dqrTZoMV7dxZYXYcEJOSn9e&quot;}],&quot;payloadMap&quot;:{},&quot;isCut&quot;:false}" data-lark-record-format="docx/text"></span><span data-mpa-action-id="mkwc1mygyhi"></span><span data-mpa-action-id="mkqn0kmf15uo"></span><p yb-mpa-mark="mark-main-text" style="font-size: 14px;color: rgb(0, 0, 0);line-height: 25px;word-break: break-word;margin-bottom: 0px;margin-top: 0px;" data-mid=""><span leaf="" style="font-family: Arial, Helvetica, sans-serif;" mpa-font-style="mm0fhbt51zfy"><span textstyle="" style="color: #888888; font-weight: normal">&nbsp; &nbsp; 作者丨</span></span><span leaf="" style="justify-content: center;align-items: center;background: #F6F8FF;font-size: 14px;line-height: 25px;word-break: break-word;color: #888888;font-weight: normal;font-family: Arial, Helvetica, sans-serif;">邓哲敏</span><strong style="-webkit-tap-highlight-color: transparent;margin-right: 0px;margin-left: 0px;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;font-family: Optima-Regular, PingFangTC-light;box-sizing: border-box !important;overflow-wrap: break-word !important;" mpa-from-tpl="t"><span style="-webkit-tap-highlight-color: transparent;margin-right: 0px;margin-left: 0px;padding: 0px;outline: 0px;max-width: 100%;letter-spacing: 0.5px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;"><strong style="-webkit-tap-highlight-color: transparent;margin-right: 0px;margin-left: 0px;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;" mpa-from-tpl="t"><span data-pm-slice="2 2 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;-webkit-tap-highlight-color: transparent;margin: 0px 16px;padding: 0px;outline: 0px;max-width: 100%;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: \&quot;PingFang SC\&quot;, system-ui, -apple-system, BlinkMacSystemFont, \&quot;Helvetica Neue\&quot;, \&quot;Hiragino Sans GB\&quot;, \&quot;Microsoft YaHei UI\&quot;, \&quot;Microsoft YaHei\&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-align: justify;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;background-color: rgb(255, 255, 255);line-height: normal;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;&quot;,&quot;data-pm-slice&quot;:&quot;0 0 []&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;node&quot;,{&quot;tagName&quot;:&quot;strong&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;-webkit-tap-highlight-color: transparent;margin-top: 0px;margin-bottom: 0px;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]" style="-webkit-tap-highlight-color: transparent;margin-right: 0px;margin-left: 0px;padding: 0px;outline: 0px;max-width: 100%;letter-spacing: 0.5px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: transparent;margin-right: 0px;margin-left: 0px;padding: 0px;outline: 0px;max-width: 100%;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;"><br/></span></span></strong></span></strong></p><p yb-mpa-mark="mark-main-text" style="font-size: 14px;color: rgb(0, 0, 0);line-height: 25px;word-break: break-word;margin-bottom: 0px;margin-top: 0px;" data-mid=""><span style="font-family: Optima-Regular, PingFangTC-light;" data-pm-slice="1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;data-mpa-template&quot;:&quot;t&quot;,&quot;mpa-data-temp-power-by&quot;:&quot;yiban.io&quot;,&quot;mpa-data-temp-type&quot;:&quot;image&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;,&quot;data-mpa-action-id&quot;:&quot;mbgaxk84ewm&quot;,&quot;data-pm-slice&quot;:&quot;5 1 []&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px 14px 0px 14px;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;background: #F6F8FF;padding: 20px 12px 12px 12px;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;,&quot;data-mpa-action-id&quot;:&quot;mbgdp4b11wn2&quot;,&quot;data-pm-slice&quot;:&quot;0 0 []&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;yb-mpa-mark&quot;:&quot;mark-main-text&quot;,&quot;style&quot;:&quot;font-size: 14px;color: #000000;line-height: 25px;word-break: break-word;&quot;,&quot;data-mid&quot;:&quot;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]"><span style="color: #888888;font-weight: normal;font-family: Arial, Helvetica, sans-serif;" mpa-font-style="mm0fhbt510oy"><span leaf="">&nbsp; &nbsp; 编辑丨</span><span leaf="">齐铖湧</span></span></span></p><p yb-mpa-mark="mark-main-text" style="font-size: 14px;color: rgb(0, 0, 0);line-height: 25px;word-break: break-word;text-align: right;margin: 0px 16px;" data-mid=""><strong style="-webkit-tap-highlight-color: transparent;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;font-family: Optima-Regular, PingFangTC-light;box-sizing: border-box !important;overflow-wrap: break-word !important;" mpa-from-tpl="t" data-mpa-action-id="mc1ad7ht254l"><strong style="-webkit-tap-highlight-color: transparent;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;" mpa-from-tpl="t"><span data-pm-slice="2 2 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;-webkit-tap-highlight-color: transparent;margin: 0px 16px;padding: 0px;outline: 0px;max-width: 100%;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: \&quot;PingFang SC\&quot;, system-ui, -apple-system, BlinkMacSystemFont, \&quot;Helvetica Neue\&quot;, \&quot;Hiragino Sans GB\&quot;, \&quot;Microsoft YaHei UI\&quot;, \&quot;Microsoft YaHei\&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-align: justify;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;background-color: rgb(255, 255, 255);line-height: normal;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;&quot;,&quot;data-pm-slice&quot;:&quot;0 0 []&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;node&quot;,{&quot;tagName&quot;:&quot;strong&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;-webkit-tap-highlight-color: transparent;margin-top: 0px;margin-bottom: 0px;padding: 0px;outline: 0px;font-weight: bolder;max-width: 100%;letter-spacing: 0.544px;font-size: 14px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]" style="-webkit-tap-highlight-color: transparent;padding: 0px;outline: 0px;max-width: 100%;letter-spacing: 0.5px;visibility: visible;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span></strong></strong></p></section></section></section></section><section data-mpa-action-id="mus7dh3qygq" data-pm-slice="0 0 []"><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">你有没有想过，机器人也可以走进车间，亲手造出组装一台机器人所需要的零件？</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这听起来像个玩笑，实际却是具身智能最硬核的落地命题。机器人的关节、卡盘、精密结构件，无一不是靠 CNC（计算机数控）车床、铣床一道道加工出来的。如果机器人能自主照看这些机床，完成工件的抓取、上料、插入、取出与放置，那么机器人工业将被机器人自己反哺——机器人越多，造机器人的能力越强、成本越低，形成正反馈闭环。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">但要实现这一点，比想象中难得多。造机器人所需的零件，恰恰是对精度要求最苛刻的一批：工件与卡盘之间的间隙往往只有 0.5 毫米，反光的金属表面、几近无纹理的外形、高度相似的零件，都在挑战机器人的视觉、触觉与全程精度。实验室里再漂亮的演示，到了这里都得先过</span><strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">公差、节拍、良率</span></strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这三道关。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">2026 年 9 月 29 日，美国匹兹堡，机器人学顶级会议 IROS 2026 现场，一场 Tech Talk 正面回应了这一命题：如何让一台机器人自主照看两台 CNC 机床，在 0.5 毫米的间隙下完成上述全部操作，且仅用 600 条真实机器人轨迹完成训练。演讲者是至简动力强化学习负责人冯宗宝。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;d1f4d97b-8495-4d45-ac53-ec4b60835443&quot;,&quot;height&quot;:617.5732217573222,&quot;width&quot;:820.0000000000001,&quot;currHeight&quot;:617.5732217573222,&quot;currWidth&quot;:820.0000000000001,&quot;natrualHeight&quot;:1080,&quot;natrualWidth&quot;:1434,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:0.5718270571827058,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FOgo9bfSG0oAsLbxyuPmcIq99nUc%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;Ogo9bfSG0oAsLbxyuPmcIq99nUc&quot;,&quot;image_type&quot;:&quot;image/jpeg&quot;,&quot;size&quot;:71983,&quot;comments&quot;:[]}]}" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bcac619.jpg" class="rich_pages wxw-img" data-ratio="0.753125" data-type="jpeg" data-w="1280" style="background-color:transparent;width:100%;" data-width="1434" data-height="1080" data-backw="546" data-backh="411" data-imgfileid="100262999" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bcac619.jpg?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这不只是一次技术演示，更是一份关于实验室精度如何转化为工厂精度的参考答案。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">以下是冯宗宝在 IROS 2026 现场演讲的精编稿，基于现场英文演讲整理，雷峰网<span style="color:#FD5D3C;">(公众号：雷峰网)</span>在不改变原意的基础上，对口语表达和技术术语进行了重新梳理。</span></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mus842b6uwr"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mqggjy08r8x"><p style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span style="font-family:等线"><strong mpa-from-tpl="t"><span leaf="" data-pm-slice="1 1 [&quot;heading&quot;,{&quot;tagName&quot;:&quot;h3&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify; margin: 16px 16px 24px; line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;,&quot;level&quot;:3}]"><span textstyle="" style="letter-spacing: 1px; color: #4499E7; font-weight: bold">▎</span></span><span leaf="" style="text-align: justify;line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="letter-spacing: 1px; color: #4499E7">From Laboratory to Factory: Why Real-World CNC Lathe Manipulation Breaks Current Robot Learning Pipelines</span></span></strong></span></p></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">主讲人：冯宗宝，至简动力（Simplexity Robotics）</span><span leaf="" style="text-align: justify;line-height: 1.75em;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">强化学习负责人</span></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mus8490g1xle"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mba8mvlk1t2b"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px 14px 0px 14px;" data-mid="" mpa-from-tpl="t"><section style="display: flex;justify-content: flex-start;align-items: center;flex-direction: column;" data-mid="" mpa-from-tpl="t"><section nodeleaf="" style="width: 38px;height: 38px;display: flex;justify-content: center;align-items: center;margin-bottom: -38px;margin-left: -20px;" data-mid="" mpa-from-tpl="t"><img  data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bcdb14e.jpg" alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026" class="rich_pages wxw-img __bg_gif" data-ratio="1.0075757575757576" data-type="gif" data-w="132" style="display: block;height: auto !important;visibility: visible !important;width: 38px !important;background-color: transparent;" data-imgfileid="100241584" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bcdb14e.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;" data-mid="" mpa-from-tpl="t"><p style="font-size: 36px;color: #333333;line-height: 50px;" data-mid=""><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><span leaf="">01</span></strong></p><h2 data-pm-slice="0 0 []"><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;font-size: 18px;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Optima-Regular, PingFangTC-light;" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 18px;" mpa-from-tpl="t"><span leaf="">用机器人造机器人</span><span leaf=""><br/></span></strong></strong></strong></h2></section></section></section></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">本次分享从一个制造目标说起——用机器人来制造机器人。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">CNC 操作看起来可能很简单，但要让它在真实工厂里稳定可靠，是完全不同的问题。它揭示了</span><strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">实验室基准测试的成功与工厂级精度之间那道清晰的鸿沟</span></strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">。今天，我将展示我们如何努力去弥合这道鸿沟。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">至简动力是一家全栈具身智能公司。我们自研的多模态模型，把理解和生成统一在一起；一套闭环的数据飞轮，让我们能够持续改进这些模型；统一的模块化硬件平台，让它们运行在真实的机器人上；SimpleClaw 平台则给开发者提供了一个构建与部署机器人应用的开放平台。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;92e7e11e-dd8f-4c4d-b57c-aeb05e45c479&quot;,&quot;height&quot;:534,&quot;width&quot;:953,&quot;currHeight&quot;:534,&quot;currWidth&quot;:953,&quot;natrualHeight&quot;:534,&quot;natrualWidth&quot;:953,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FKdv9bQmwuoBAecx5s9AcHS1vngg%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;Kdv9bQmwuoBAecx5s9AcHS1vngg&quot;,&quot;image_type&quot;:&quot;image/png&quot;,&quot;size&quot;:240091,&quot;comments&quot;:[]}]}" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd207b9.png" class="rich_pages wxw-img" data-ratio="0.5603357817418678" data-type="png" data-w="953" style="background-color:transparent;width:100%;" data-width="953" data-height="534" data-backw="546" data-backh="306" data-imgfileid="100263000" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd207b9.png?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">在硬件侧，我们有四条产品线。i7 Pro 是我们的轮式机器人，iX 是我们的轮式人形机器人。我们还提供两种配置的模块化力控机械臂，这里分别展示了搭配 Dexter 灵巧手和夹爪的形态。最后，我们的数据采集手套帮助我们规模化采集人类演示，为机器人学习提供数据。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">所以，我们的方法连接起三个部分：我们全栈自研，从硬件、软件到模型；数据采集手套让规模化采集人类演示成为可能；多模态模型把理解与生成统一在一起。目标是从这些数据中学到更多，抬高机器人在精密 CNC 操作上的能力天花板。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">本次分享聚焦三个互补的方法：SimpleWAM 从多模态观测中生成动作片段；DRAM，即 Delta 规则循环关联记忆，用固定大小的记忆矩阵处理长时序上下文；DPE 用一个单独训练的评估器对候选动作打分，同时保持策略冻结。三者合起来，分别解决了我们 CNC 系统中的动作生成、记忆与动作选择问题。</span></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mus84p2lca7"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mba8mvlk1t2b"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px 14px 0px 14px;" data-mid="" mpa-from-tpl="t"><section style="display: flex;justify-content: flex-start;align-items: center;flex-direction: column;" data-mid="" mpa-from-tpl="t"><section nodeleaf="" style="width: 38px;height: 38px;display: flex;justify-content: center;align-items: center;margin-bottom: -38px;margin-left: -20px;" data-mid="" mpa-from-tpl="t"><img  data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd56e68.jpg" alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026" class="rich_pages wxw-img __bg_gif" data-ratio="1.0075757575757576" data-type="gif" data-w="132" style="display: block;height: auto !important;visibility: visible !important;width: 38px !important;background-color: transparent;" data-imgfileid="100241584" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd56e68.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;" data-mid="" mpa-from-tpl="t"><p style="font-size: 36px;color: #333333;line-height: 50px;" data-mid=""><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><span leaf="">02</span></strong></p><h2 data-pm-slice="0 0 []"><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;font-size: 18px;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Optima-Regular, PingFangTC-light;" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 18px;" mpa-from-tpl="t"><span leaf="">真实工厂难题</span><span leaf=""><br/></span></strong></strong></strong></h2></section></section></section></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这是我们面对的工厂难题。我们的目标是机器人造机器人，精密 CNC 操作正是其中的代表。它为什么难？</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;b6d92480-cb17-46bd-94fd-0589eb3edd37&quot;,&quot;height&quot;:531,&quot;width&quot;:951,&quot;currHeight&quot;:531,&quot;currWidth&quot;:951,&quot;natrualHeight&quot;:531,&quot;natrualWidth&quot;:951,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FI6whb5XVPopznlxvqLAcKHDLnlc%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;I6whb5XVPopznlxvqLAcKHDLnlc&quot;,&quot;image_type&quot;:&quot;image/png&quot;,&quot;size&quot;:395774,&quot;comments&quot;:[]}]}" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd90229.png" class="rich_pages wxw-img" data-ratio="0.5583596214511041" data-type="png" data-w="951" style="background-color:transparent;width:100%;" data-width="951" data-height="531" data-backw="546" data-backh="305" data-imgfileid="100263002" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bd90229.png?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">第一，工件与卡盘之间的间隙只有 0.5 毫米，几乎没有留给对位误差的空间。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">第二，反光的表面、微弱的纹理、外形相似的零件，让视觉对位变得困难。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">第三，机器人必须在受限的工作空间里完成一连串动作，而关键的接触界面并不总是可见的。因此，系统必须在整个任务过程中始终保持精度，即便视觉信息不完整。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这些 CNC 约束塑造了我们的架构：弱纹理要求一个足够强的视觉编码器；长程接近需要头部与腕部相机提供的多视角；精密接触则需要接近感知的条件化。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">于是，视觉、语言和状态输入被转换为 token。SimpleWAM 提供多模态骨干和动作 DiT。我们在两者之间插入一个 DRAM 模块，在当前观测之外补充历史上下文。动作 DiT 提出候选动作片段，DPE 用一个单独训练的评估器对这些候选打分，同时保持训练好的动作提出器固定不变。被选中的动作片段随后下发给 i7 Pro。</span></section><section mpa-from-tpl="t" data-mpa-action-id="mus853zo4rr" data-pm-slice="0 0 []"><span leaf=""><br/></span></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mus853zo1b4t"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mba8mvlk1t2b"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px 14px 0px 14px;" data-mid="" mpa-from-tpl="t"><section style="display: flex;justify-content: flex-start;align-items: center;flex-direction: column;" data-mid="" mpa-from-tpl="t"><section nodeleaf="" style="width: 38px;height: 38px;display: flex;justify-content: center;align-items: center;margin-bottom: -38px;margin-left: -20px;" data-mid="" mpa-from-tpl="t"><img  data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bdc3a7e.jpg" alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026" class="rich_pages wxw-img __bg_gif" data-ratio="1.0075757575757576" data-type="gif" data-w="132" style="display: block;height: auto !important;visibility: visible !important;width: 38px !important;background-color: transparent;" data-imgfileid="100241584" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bdc3a7e.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;" data-mid="" mpa-from-tpl="t"><p style="font-size: 36px;color: #333333;line-height: 50px;" data-mid=""><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><span leaf="">03</span></strong></p><h2 data-pm-slice="0 0 []"><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;font-size: 18px;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Optima-Regular, PingFangTC-light;" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 18px;" mpa-from-tpl="t"><span leaf="">具体应对方案</span><span leaf=""><br/></span></strong></strong></strong></h2></section></section></section></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">SimpleWAM 是我们统一的世界动作模型。它的思路是：</span><strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">训练时从丰富的未来监督中学习，推理时直接预测动作</span></strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">训练阶段，视频 DiT、3D DiT 和动作 DiT 在任务指令的引导下，联合重建未来的视频帧、3D 状态与动作片段，让模型能够同时学习视觉、空间与动作的动力学。到了推理阶段，我们只输入当前图像、当前 3D 状态和语言指令，模型直接输出动作片段，而不必再生成未来的图像或 3D 状态。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">在动手之前，我们分别提取特征，再对它们做自适应融合。一个共享的冻结编码器，保留来自头部与腕部相机的密集图像 token；随后，查询分别独立地读取每个视角，这样在融合之前，任何一个视角都不会压制另一个；门控再针对每个查询和每个特征通道，去平衡全局上下文与局部对位线索。最终，融合视觉历史与鲁棒的、状态条件化的动作 DiT，来预测动作片段。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">右侧的注意力图展示了更强的边界聚焦效果。在各方法的标称试验中，融合方法成功了 15 次，相比之下，Query-concay 为 0 次，π0.5 SFT 基线为 8 次。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;dd47a937-f6d9-4a73-84b8-539d62a0109d&quot;,&quot;height&quot;:536,&quot;width&quot;:954,&quot;currHeight&quot;:536,&quot;currWidth&quot;:954,&quot;natrualHeight&quot;:536,&quot;natrualWidth&quot;:954,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FI6jEb4iGAoztvWxE0Jqc5FYCnwg%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;I6jEb4iGAoztvWxE0Jqc5FYCnwg&quot;,&quot;image_type&quot;:&quot;image/png&quot;,&quot;size&quot;:320223,&quot;comments&quot;:[]}]}" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be081d2.png" class="rich_pages wxw-img" data-ratio="0.5618448637316562" data-type="png" data-w="954" style="background-color:transparent;width:100%;" data-width="954" data-height="536" data-backw="546" data-backh="307" data-imgfileid="100263004" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be081d2.png?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">要在一段长任务中持续稳定地动作，机器人需要来自此前步骤的上下文。为此，我们引入 DRAM——Delta 规则循环关联记忆（Delta-Rule Recurrent Associative Memory），把这种能力附加到预训练机器人策略上。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这里，冻结的 SimpleWAM 骨干从当前观测中提取特征；DRAM 先用这些特征读取记忆中的相关历史；动作 DiT 把读取到的历史与当前上下文结合起来，生成动作片段；在这之后，通过门控的 Delta 规则更新记忆，供下一步使用。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">记忆是一个固定大小的关联矩阵，因此它的占用在任务变长时保持一致。DRAM 可以在不修改骨干架构、也不重新训练骨干的前提下附加进来，让长时序记忆更容易接入现有策略。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;77c92b9b-1ebf-4b44-ab3d-f7c936deb2e6&quot;,&quot;height&quot;:537,&quot;width&quot;:954,&quot;currHeight&quot;:537,&quot;currWidth&quot;:954,&quot;natrualHeight&quot;:537,&quot;natrualWidth&quot;:954,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FNF6EbCHH0ooxESxPHi9cxgPWnWc%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;NF6EbCHH0ooxESxPHi9cxgPWnWc&quot;,&quot;image_type&quot;:&quot;image/png&quot;,&quot;size&quot;:190905,&quot;comments&quot;:[]}]}" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be37075.png" class="rich_pages wxw-img" data-ratio="0.5628930817610063" data-type="png" data-w="954" style="background-color:transparent;width:100%;" data-width="954" data-height="537" data-backw="546" data-backh="307" data-imgfileid="100263001" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be37075.png?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">在精密插入的过程中，仅靠视觉可能无法判断工件正以怎样的状态接触卡盘。力与力矩恰好能补上这些缺失的接触信息。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">我们从两个方面使用它们：其一，接近感知条件化会调整机器人的状态输入，让动作 DiT 在生成下一个动作时把接触因素考虑进去；其二，实时阻抗控制器利用实时反馈让执行更稳健，并根据接触的变化调整运动。二者结合，能够在直接插入受阻时支持恢复。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">在精密 CNC 插入任务上，这套组合方法取得了 100% 的任务成功率。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">常见的做法是用评估器的反馈去更新动作器，但这可能导致策略漂移。DPE 先训练一个行为克隆的动作器，再用一个单独训练的评估器在部署时对候选动作打分；成功的和失败的 rollout 随后只更新评估器，闭环由此形成，而动作器在机器人上始终保持冻结。DPE 提升了任务成功率，并减少了执行步数。</span></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mus85jz88ec"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mba8mvlk1t2b"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px 14px 0px 14px;" data-mid="" mpa-from-tpl="t"><section style="display: flex;justify-content: flex-start;align-items: center;flex-direction: column;" data-mid="" mpa-from-tpl="t"><section nodeleaf="" style="width: 38px;height: 38px;display: flex;justify-content: center;align-items: center;margin-bottom: -38px;margin-left: -20px;" data-mid="" mpa-from-tpl="t"><img  data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be69df6.jpg" alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026" class="rich_pages wxw-img __bg_gif" data-ratio="1.0075757575757576" data-type="gif" data-w="132" style="display: block;height: auto !important;visibility: visible !important;width: 38px !important;background-color: transparent;" data-imgfileid="100241584" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739be69df6.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;" data-mid="" mpa-from-tpl="t"><p style="font-size: 36px;color: #333333;line-height: 50px;" data-mid=""><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><span leaf="">04</span></strong></p><h2 data-pm-slice="0 0 []"><strong mpa-none-content="t" data-mid="" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;font-size: 18px;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Optima-Regular, PingFangTC-light;" mpa-from-tpl="t"><strong style="justify-content: flex-start;align-items: center;flex-direction: column;text-align: center;color: rgb(51, 51, 51);line-height: 25px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 18px;" mpa-from-tpl="t"><span leaf="">成果展示</span><span leaf=""><br/></span></strong></strong></strong></h2></section></section></section></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">我们最终实现了机器人单设备全自动值守双 CNC 机床的完整作业方案。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">本次主演示视频以五倍速呈现了机器人的全流程自主作业过程，同时通过多个细分片段，分别展示三项核心独立工序：工件自主抓取、精准上料卡盘、加工完成后的取件与归位放置。</span></section><section style="text-align: justify;margin: 16px 16px 0px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bee6133.jpg" class="rich_pages wxw-img" data-ratio="0.5625" data-type="gif" data-w="720" type="block" data-imgfileid="100263010" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bee6133.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;margin: 8px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 14px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #888888">抓取工件</span></span></section><section data-type="image" data-ace-gallery-json="{&quot;items&quot;:[{&quot;uuid&quot;:&quot;2a96e1fd-aee9-400d-acd0-6eee203f3b9b&quot;,&quot;height&quot;:182.25,&quot;width&quot;:324,&quot;currHeight&quot;:182.25,&quot;currWidth&quot;:324,&quot;natrualHeight&quot;:405,&quot;natrualWidth&quot;:720,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:0.45,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FUXs4bLoQaoL3oOxfPixcvKw9ndg%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;UXs4bLoQaoL3oOxfPixcvKw9ndg&quot;,&quot;image_type&quot;:&quot;image/gif&quot;,&quot;size&quot;:5039023,&quot;comments&quot;:[]}]}" style="text-align: justify;margin: 16px 16px 0px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bf5fcca.jpg" class="rich_pages wxw-img" data-ratio="0.5625" data-type="gif" data-w="720" style="background-color: transparent;" data-width="720" data-height="405" data-imgfileid="100263005" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bf5fcca.jpg?imageMogr2/quality/90"/></section><section style="text-align: center;margin: 8px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 14px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #888888">把工件插入卡盘</span></span></section><section style="text-align: center;margin: 8px 16px 0px;line-height: 1.75em;" nodeleaf=""><span textstyle="" style="color: #888888"><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bfe1192.jpg" class="rich_pages wxw-img" data-ratio="0.5625" data-type="gif" data-w="720" type="block" data-imgfileid="100263011" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739bfe1192.jpg?imageMogr2/quality/90"/></span></section><section style="text-align: center;margin: 8px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 14px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #888888">取出并放置工件</span></span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">值得一提的是，整个模型训练过程，我们仅使用了&nbsp;</span><strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">600 条真实机器人运动轨迹</span></strong><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">作为训练数据。</span></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;"><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">这也是我们本次工作的核心价值：将具身智能从实验室的基准测试效果，真正落地到高精度、高真实度的工业制造场景中。</span></section></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mr0e93q7lzy"><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-data-temp-type="image" mpa-from-tpl="t" data-mpa-action-id="mmix4tgk1t7p" data-pm-slice="5 10 []" style="padding-left: 16px;padding-right: 16px;"><section style="width: 100%;display: flex;justify-content: center;align-items: center;padding: 0px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;padding-left: 0px;padding-right: 0px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;background: rgb(246, 248, 255);padding: 20px 0px 12px;margin-top: 0px;margin-bottom: 0px;" data-mid="" mpa-from-tpl="t" data-mpa-action-id="mm0fhbur236d" data-pm-slice="0 0 []"><section style="width: 100%;padding: 0 10px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;display: flex;flex-direction: column;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;align-self: flex-start;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;background: rgb(246, 248, 255);text-align: center;padding: 7px 10px 11px 11px;" data-mid="" mpa-from-tpl="t"><section style="width: 100%;text-align: left;" data-mid="" mpa-from-tpl="t" data-pm-slice="3 4 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;data-mpa-template&quot;:&quot;t&quot;,&quot;mpa-data-temp-power-by&quot;:&quot;yiban.io&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;,&quot;data-mpa-action-id&quot;:&quot;mr0e7o1n1ckt&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;data-mpa-template&quot;:&quot;t&quot;,&quot;mpa-data-temp-power-by&quot;:&quot;yiban.io&quot;,&quot;mpa-data-temp-type&quot;:&quot;body&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;,&quot;data-mpa-action-id&quot;:&quot;mmykzm77ala&quot;,&quot;data-pm-slice&quot;:&quot;0 0 []&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;padding: 0 10px;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;display: flex;flex-direction: column;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;align-self: flex-start;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;width: 100%;background: rgb(246, 248, 255);text-align: center;padding: 7px 10px 11px 11px;&quot;,&quot;data-mid&quot;:&quot;&quot;,&quot;mpa-from-tpl&quot;:&quot;t&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]"><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: &quot;PingFang SC NEW&quot;, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(246, 248, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;text-align: justify;line-height: 1.75em;" data-pm-slice="0 0 []"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">为了方便大家抱团交流、互通会议消息，我们专门建了</span><span textstyle="" style="font-weight: bold">&nbsp;IROS</span></span><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">&nbsp;2026</span></strong><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold">&nbsp;参会交流群</span></span></strong><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">！进群你会解锁这些「福利」</span>?</span></strong></p><ul style="list-style-type: square;" class=" list-paddingleft-2"><li><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">会议情报站</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">：</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">投稿 DDL、格式规范、评审进度……关键节点第一时间送达，再也不怕错过 deadline，投稿准备稳稳的。</span></span></strong></p></li><li><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">同行茶话会</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">：</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">天南海北的同行都在群里，聊心得、碰思路、攒人脉，科研路上我们同行。</span></span></strong></p></li><li><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">前沿补给站</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">：</span></span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">最新研究成果、热点方向实时同步，结合会议主题帮你捋清投稿脉络，给论文灵感加满油。</span></span></strong></p></li><li><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">现场后援团：</span></span><span mpa-font-style="mscmin37y7s" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span data-pm-slice="0 0 []" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;flex-direction: column;align-self: flex-start;background: #F6F8FF;text-align: justify;line-height: 1.75em;font-weight: bold;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">（会议期间专属开启）：</span></span></span></span></strong><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"><span mpa-font-style="mscmin37y7s" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span data-pm-slice="0 0 []" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: normal">到了会场也不用慌——</span></span></span></span></strong><span data-pm-slice="0 0 []" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px 16px 8px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><span mpa-font-style="mscmvrjd1h25" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">路线导航</span></span></strong><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">：</span><span textstyle="" style="font-weight: normal; font-style: italic">场馆分布、报告厅怎么走，群里随时问；</span></span></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px 16px 8px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">议题共读</span></span></strong><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;letter-spacing: 0.034em;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">：</span><span textstyle="" style="font-weight: normal; font-style: italic">热门 session、Keynote 探讨，错过也能追；</span></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px 16px 8px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">Poster 汇编</span></span></strong><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;letter-spacing: 0.034em;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">：</span><span textstyle="" style="font-weight: normal; font-style: italic">现场海报精华整理，一键收藏不遗漏；</span></span></p><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px 16px 8px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;text-align: justify;line-height: 1.75em;"><span mpa-font-style="mscmvrjd1cx" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.034em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">约局广场</span></span></strong></span><span leaf="" mpa-font-style="mscmvrjduc1" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-weight: bold;letter-spacing: 0.034em;font-size: 15px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="font-weight: bold; font-style: italic">：</span><span textstyle="" style="font-weight: normal; font-style: italic">约饭局、采访局、交流局……想唠嗑、想合作、想面基，群里发起就成。</span></span></p></li></ul><p style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 16px 16px 24px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;clear: both;min-height: 1em;color: rgba(0, 0, 0, 0.9);font-family: &quot;PingFang SC NEW&quot;, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 17px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;letter-spacing: 0.544px;orphans: 2;text-indent: 0px;text-transform: none;widows: 2;word-spacing: 0px;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(246, 248, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;text-align: justify;line-height: 1.75em;"><strong style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;"><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">? 进群传送门：</span></strong><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">&nbsp;扫码进群或添加微信Luyoyo_2026</span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">，备注：ECCV + 单位/学校+姓名+方向</span><span leaf="" style="-webkit-tap-highlight-color: ;margin: 0px;padding: 0px;outline: 0px;max-width: 100%;box-sizing: border-box !important;overflow-wrap: break-word !important;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">。</span></p><section style="text-align: justify;margin: 16px 8px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c01889e.png" class="rich_pages wxw-img" data-ratio="0.31545454545454543" data-s="300,640" data-type="png" data-w="1100" data-croporisrc="https://mmbiz.qpic.cn/mmbiz_png/XqAicMdcoiafPzIa9uaDMlR8xbJGzfPZl2QECRpQogB7JSLIcz34YqsY11yiapOqZJxhmyjjsKjJ8y0CKImsOVqHhOdHgtOsToOGtez7MaicibJg/0?wx_fmt=png&amp;from=appmsg" data-cropselx1="0" data-cropselx2="489" data-cropsely1="0" data-cropsely2="154" data-imgfileid="100254263" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c01889e.png?imageMogr2/quality/90"/></section><p style="text-align: center;margin: 16px 8px 8px;line-height: 1.75em;"><em><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">搞科研/搞技术，信息差很重要。</span></em></p><p style="text-align: center;margin: 16px 8px 8px;line-height: 1.75em;"><em><span leaf="" style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;">来，一起快人一步！</span></em></p></section></section></section></section></section></section></section></section></section></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c03a569.jpg" class="rich_pages wxw-img" data-ratio="0.40816326530612246" data-s="300,640" data-type="jpeg" data-w="735" data-croporisrc="https://mmbiz.qpic.cn/mmbiz_jpg/XqAicMdcoiafNddVBkrlxuqcpIspAFFH0I8kGiaXEORlQOSBC2BuRyokibVjhQia3icUDaqIhhkLQiawa5b4Vsao2Bj0qWXbAAricKBlzF9BiaLN2fsM/0?wx_fmt=jpeg&amp;from=appmsg" data-cropselx1="0" data-cropselx2="546" data-cropsely1="0" data-cropsely2="223" data-imgfileid="100255816" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c03a569.jpg?imageMogr2/quality/90"/></section><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c0576d3.jpg" class="rich_pages wxw-img" data-ratio="0.40816326530612246" data-s="300,640" data-type="jpeg" data-w="735" data-croporisrc="https://mmbiz.qpic.cn/sz_mmbiz_jpg/cNFA8C0uVPtpVCDiaS2EaHCACUnIg1GpV6VicRibhE6bzGDzQOWbLmsyibOW0t5FaPLcotsJBp1SMa8sc1ACXBwSkA/0?wx_fmt=jpeg&amp;from=appmsg" data-cropselx1="0" data-cropselx2="546" data-cropsely1="0" data-cropsely2="223" data-imgfileid="100243569" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c0576d3.jpg?imageMogr2/quality/90"/></section><section data-mpa-template="t" mpa-data-temp-power-by="yiban.io" mpa-from-tpl="t" data-mpa-action-id="mpzpilb31bbr"><section data-mpa-template="t" mpa-from-tpl="t" style="-webkit-tap-highlight-color: transparent;outline: 0px;font-family: &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: rgb(255, 255, 255);letter-spacing: 0.578px;" data-mpa-action-id="mp0lz1ofco1" data-pm-slice="0 0 []"><section hm_fix="374:463" mpa-from-tpl="t" style="-webkit-tap-highlight-color: transparent;outline: 0px;"><section mpa-from-tpl="t" style="-webkit-tap-highlight-color: transparent;outline: 0px;"><section style="-webkit-tap-highlight-color: transparent;outline: 0px;letter-spacing: 0.578px;width: 677px;transform: rotate(0deg);" mpa-from-tpl="t"><section style="-webkit-tap-highlight-color: transparent;outline: 0px;width: 50px;height: 4px;background-color: rgb(68, 153, 231);" mpa-from-tpl="t"><svg viewbox="0 0 1 1" style="float:left;line-height:0;width:0;vertical-align:top;" mpa-from-tpl="t"></svg></section></section><section style="-webkit-tap-highlight-color: transparent;margin-top: -4px;padding: 10px;outline: 0px;letter-spacing: 0.578px;background-color: rgb(239, 239, 239);" mpa-from-tpl="t"><p style="-webkit-tap-highlight-color: transparent;outline: 0px;text-align: center;"><strong style="-webkit-tap-highlight-color: transparent;outline: 0px;" mpa-from-tpl="t"><span leaf="" mpa-is-content="t"><span textstyle="" style="color: #4499E7">上车，带你看遍全球 AI 顶会精华</span></span></strong></p><span data-mpa-action-id="mqgg2nab13jb"></span></section></section></section></section></section><section data-mid="" mpa-from-tpl="t"><section data-mid="" mpa-from-tpl="t"><p data-pm-slice="0 0 []" style="text-align: center;margin: 0px 16px 8px;line-height: 1.75em;"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">可独家畅览：</span></span></p><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">专家演讲PPT</span></span></p><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">大会报告全文</span></span></p><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">热门论文解读</span></span></p><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">学术新星访谈</span></span></p><span data-mpa-action-id="mqgg35eosx9"></span><section style="text-align: justify;margin: 16px 16px 24px;line-height: 1.75em;" nodeleaf=""><img alt="至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026"   data-src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c08b8da.png" class="rich_pages wxw-img" data-ratio="1" data-s="300,640" data-type="png" data-w="1000" style="width:100%;" data-croporisrc="https://mmbiz.qpic.cn/sz_mmbiz_png/XqAicMdcoiafM7wHXNibq2Azg96Yujmunrpqj6c6ha1iaeWUkln8z6Uhia2S8A7kibExUCH37MyMzAensbYib1lAsNVfib2XicYVRPDic4EVhcL90aE4c/0?wx_fmt=png&amp;from=appmsg" data-cropselx1="0" data-cropselx2="546" data-cropsely1="0" data-cropsely2="546" data-backw="546" data-backh="546" data-imgfileid="100261995" data-aistatus="1"  src="https://static.leiphone.com/uploads/new/images/20261008/6ac739c08b8da.png?imageMogr2/quality/90"/></section><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span data-eleid="11"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">扫描上方二维码</span></span></span></p><p style="text-align: center;margin-right: 16px;margin-bottom: 8px;margin-left: 16px;line-height: 1.75em;"><span data-eleid="11"><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">或点击</span></span><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">「</span></span><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">阅读原文</span></span><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">」</span></span><span leaf="" style="line-height: 1.75em;font-size: 15px;letter-spacing: 0.5px;font-family: Arial, Helvetica, sans-serif;"><span textstyle="" style="color: #4499E7; font-weight: bold">关注专区。</span></span></span></p></section></section><section><span data-lark-record-format="docx/record"></span></section><section><span data-mpa-action-id="mipr37w01zjd"></span></section>
+                                                <p>雷峰网原创文章，未经授权禁止转载。详情见<a href="https://r.xiumi.us/board/v5/3qhbI/392977584" rel="nofollow" target="_blank">转载须知</a>。</p>
+                                            
+                                            <!-- 正文内容结束 -->
+                    </div>
+
+                    <!-- 分享 -->
+                                        <div class="pageActive clr">
+                        <div class="mark-like-btn ">
+                            <a class="collect collect-no" href="javascript:;"><i></i><span>0</span>人收藏</a>
+                        </div>
+                        <!-- Baidu Button BEGIN -->
+                        <div  class="bdsharebuttonbox"  data-tag="share_213076">
+                            <span class="s-txt">分享：</span>
+                            <a href="javascript:void()" onclick="openYNote('https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html','至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026', 'https://static.leiphone.com/uploads/new/article/pic/202610/6ac739bc429ba.png','leiphone','至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026')" class="youdao " title="收藏此篇文章到有道云笔记"><i></i></a>
+                            <a class="bds_tsina weibo-btn  " data-cmd="tsina"  title="分享到新浪微博"></a>
+                            <a class="weixin-btn bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a class="bds_more more-btn" data-cmd="more"></a>
+                        </div>
+                        <script type="text/javascript">
+                            //在这里定义bds_config
+                            // var bds_config = {'snsKey':{'tsina':'2475906690'}};
+                            // var qcode = {
+                            //     api : "http://qr.liantu.com/api.php?text=",
+                            //     url :  window.location.href,
+                            //     exist : false,
+                            //     create : function(){
+                            //         if(!this.exist){
+                            //             var image = document.createElement('img');
+                            //             image.src = this.api + this.url;
+                            //             image.width = 120;
+                            //             this.exist = true;
+                            //             return image;
+                            //         }
+                            //     }
+                            // };
+                        </script>
+
+                    </div>
+                                        <!-- 相关文章 -->
+                    <!-- 相关文章 start -->
+<div class="realted-article clr">
+    <div class="title clr">
+        <span class='fl'>相关文章</span>
+    </div>
+    <div class="related-link clr">
+                         <a href="https://www.leiphone.com/tag/IROS" target="_blank" title="IROS">IROS</a>
+                 <a href="https://www.leiphone.com/tag/冯宗宝" target="_blank" title="冯宗宝">冯宗宝</a>
+                 <a href="https://www.leiphone.com/tag/至简动力" target="_blank" title="至简动力">至简动力</a>
+                     </div>
+    <div class="list">
+        <ul>
+                        <li  class="first" >
+                <a href="https://www.leiphone.com/category/academic/XSVcStujND4eWLFZ.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/202609/6abcab3ce52ab.jpg?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/category/academic/XSVcStujND4eWLFZ.html" target="_blank">具身智能不只在地上跑：给无人机装上机械臂，它们要 ...</a>
+                </div>
+            </li>
+                        <li >
+                <a href="https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/202609/6aba0c64735ff.png?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html" target="_blank">三箭齐发！Sharpa三大新品IROS全球首秀，三位一体再 ...</a>
+                </div>
+            </li>
+                        <li >
+                <a href="https://www.leiphone.com/category/robot/oQ0kNVYluhhckJea.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/202605/6a150e57ac520.jpeg?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/category/robot/oQ0kNVYluhhckJea.html" target="_blank">成为ICRA Keynote Speaker有多难？近五届国内学者占 ...</a>
+                </div>
+            </li>
+                        <li >
+                <a href="https://www.leiphone.com/category/academic/eMYQOlm1M6Nq55Kp.html" target="_blank" class="pic">
+                    <img src="https://static.leiphone.com/uploads/new/article/pic/202205/628f1f1853d0a.png?imageMogr2/thumbnail/!170x100r/gravity/Center/crop/170x100/quality/90" alt=""  width="170" height="100" />
+                </a>
+                <div class="txt">
+                    <a href="https://www.leiphone.com/category/academic/eMYQOlm1M6Nq55Kp.html" target="_blank">费曼狂想曲：能够进入体内的「外科医生」</a>
+                </div>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+<!-- 相关文章 end -->
+
+
+                    <!-- 推荐文章 -->
+                    <div class="realted-article clr recmdArticle" data-article_id="213076">
+                        <div class="list">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 广告 -->
+                    
+                    <!-- 文章 评论  -->
+                    <!--  -->
+
+                </div>
+
+                <script>
+    var codeAuthor_id   = "dengzhemin200";
+    var author_id       = "24281";
+</script>
+<div class="article-right">
+        <div class="aboutAur-main">
+        <div class="aboutAur-msg">
+            <a href="https://www.leiphone.com/author/dengzhemin200" class="avater" target="_blank" rel="nofollow">
+                <img src="https://www.leiphone.com/uploads/new/avatar/author_avatar/12_100_100.jpg" alt=""  width="80" height="80" />
+            </a>
+            <div class="name">
+                <a href="https://www.leiphone.com/author/dengzhemin200" target="_blank" rel="nofollow"><span>邓哲敏</span><em class='gold'></em></a>
+            </div>
+            <p class='profession'>编辑</p>
+            <div class="saying">
+                <em class='l-quote'></em>
+                <span></span>
+                <em class='r-quote'></em>
+            </div>
+            <div class="operate-btn">
+                <table>
+                    <tr>
+                                                                        <td>
+                            <a href="mailto:dengzhemin@leiphone.com" class="eml sub_a" rel="nofollow"><em></em></a>
+                        </td>
+                                                                    </tr>
+                </table>
+            </div>
+            <div class="btns">
+                <a href="javascript:;">发私信</a>
+            </div>
+        </div>
+
+
+        <!-- 作者的文章 -->
+        
+<div class="mouthHot-article">
+    <div class="title">当月热门文章</div>
+        <div class="list">
+            <ul>
+                        <li>
+                <a href="https://www.leiphone.com/category/ai/egX12nldi7K2aLbu.html" title="启仔远仔，想成为第一个被你带回家的硅基伙伴" target="_blank">启仔远仔，想成为第一个被你带回家的硅基伙伴</a>
+            </li>
+                        <li>
+                <a href="https://www.leiphone.com/category/ai/jIrGoPOXjx7WNljl.html" title="横扫四榜，DM0.5 凭什么面面俱到？" target="_blank">横扫四榜，DM0.5 凭什么面面俱到？</a>
+            </li>
+                        <li>
+                <a href="https://www.leiphone.com/category/ai/ThVhOdBYKbsqZo8f.html" title="强化学习大本营新作：如何破解「学新忘旧」困局" target="_blank">强化学习大本营新作：如何破解「学新忘旧」困局</a>
+            </li>
+                        <li>
+                <a href="https://www.leiphone.com/category/ai/WbD0Tf6P1oA2WDdq.html" title="独家 | 清华 AIR 首届博士李健雄创立本溯智能：五源资本领投，押注动作原生具身模型" target="_blank">独家 | 清华 AIR 首届博士李健雄创立本溯智能：五源资本领投，押注动作原生具身模型</a>
+            </li>
+                        <li>
+                <a href="https://www.leiphone.com/category/private/zoJ7chGiDi7IPHvN.html" title="动易科技刘晨澔：人形机器人羽毛球对拉 40 拍背后的分层革命 | IROS 2026" target="_blank">动易科技刘晨澔：人形机器人羽毛球对拉 40 拍背后的分层革命 | IROS 2026</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+       <!-- 作者文章结束 -->
+    </div>
+
+            <div class="weekly-choice hotNew-article">
+        <div class="rComTitle">
+            最新文章
+        </div>
+        <div class="list">
+            <ul class="justTxt">
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/VYRZFCnadDOcPDeX.html" target="_blank">
+                            <em></em>IROS 2026大奖揭晓：长期记忆拿下最佳论文，人形机器人打网球、端托盘双双获奖 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/wEpCJ4T8v9cJFgCn.html" target="_blank">
+                            <em></em>研究了1933篇 IROS 论文，我们看到了机器人学的六项新变化 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/HkC1hSwn255e7hL9.html" target="_blank">
+                            <em></em>银河通用&清华 LATENT：用「不完美人类数据」让机器人学会网球对打 | IROS 2026 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/Hd5ntJGqUoFVY1PJ.html" target="_blank">
+                            <em></em>吴佳俊 IROS 2026 演讲：结构化表征不是答案， 是机器人学会推理的脚手架 | IROS 2026 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/zoJ7chGiDi7IPHvN.html" target="_blank">
+                            <em></em>动易科技刘晨澔：人形机器人羽毛球对拉 40 拍背后的分层革命 | IROS 2026 </a>
+                    </li>
+                                    <li>
+                        <a href="https://www.leiphone.com/category/private/AaUgNDfg84ayCKbE.html" target="_blank">
+                            <em></em>对话 COBRA-Skills 一作卢平琛：仅用 50 个样本，重构 Agent 技能降本路线 </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+        <div class="serKesy-list">
+    <div class="rComTitle">
+        热门搜索
+    </div>
+    <div class="list clr">
+                <a href="https://www.leiphone.com/tag/英特尔" target="_blank">英特尔</a>
+                <a href="https://www.leiphone.com/tag/大数据" target="_blank">大数据</a>
+                <a href="https://www.leiphone.com/tag/收购" target="_blank">收购</a>
+                <a href="https://www.leiphone.com/tag/移动互联网新闻" target="_blank">移动互联网新闻</a>
+                <a href="https://www.leiphone.com/tag/O2O" target="_blank">O2O</a>
+                <a href="https://www.leiphone.com/tag/语音识别" target="_blank">语音识别</a>
+                <a href="https://www.leiphone.com/tag/扎克伯格" target="_blank">扎克伯格</a>
+                <a href="https://www.leiphone.com/tag/中国" target="_blank">中国</a>
+                <a href="https://www.leiphone.com/tag/华硕" target="_blank">华硕</a>
+                <a href="https://www.leiphone.com/tag/处理器" target="_blank">处理器</a>
+                <a href="https://www.leiphone.com/tag/雷锋早报" target="_blank">雷锋早报</a>
+            </div>
+</div>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="lineBg"></div>
+    <!-- 百度分享 -->
+    <script>
+
+        window._bd_share_config = {
+            common:{
+                bdMiniList:['tsina','weixin','more']
+            },
+            share : [
+                {
+                    bdText : '至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026',
+                    bdDesc : '至简动力冯宗宝：在间隙仅 0.5 毫米的真实场景下，实现机器人造机器人 | IROS 2026',
+                    bdUrl : 'https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html',
+                    bdPic : 'https://static.leiphone.com/uploads/new/article/pic/202610/6ac739bc429ba.png',
+                    "tag" : "share_213076",
+                    "bdSize" : 24
+                },
+            ],
+        }
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://www.leiphone.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+    </script>
+</div>
+<script type="text/javascript">
+        if(window.KMP) {
+            //直播
+            var kmp = new KMP();
+                //初始化
+                kmp.setup(document.getElementById("myVideo"), {
+                    enableUI : true,//是否使用KMP内置的UI
+                    theme    : "darkBlue",//内置皮肤名称
+                    autoplay : true,//自动播放
+                    mime     : KMP.MIME.M3U8,//视频mime类型
+                    src      : "https://p2.weizan.cn/131938448/073885432683198847/live.m3u8",//视频地址
+                    //webvtt字幕
+                    subtitle : [{
+                        "lang": "中文",
+                        "src" : "http://example.com/video/example.vtt"
+                    }]
+            });
+           //初始化后，通过kmp.media对象调用接口
+        } else {
+            //KMP.js未加载，或者加载失败
+        }
+    </script>
+    <script>
+        if(location.search){
+            history.replaceState({},'',location.pathname)
+        }
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?affce59a9d558e0d7df72d99571f5659";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+<script>
+    function openYNote(url, title, pic, vendor, summary) {
+        var target = 'http://note.youdao.com/memory/?url=' + encodeURIComponent(url) +
+            '&title=' + encodeURIComponent(title) + '&pic=' + encodeURIComponent(pic) +
+            '&product=' + encodeURIComponent('网页收藏') +
+            '&summary=' + encodeURIComponent(summary) + '&vendor=' + encodeURIComponent(vendor);
+        window.open(target);
+    }
+  seajs.use(['https://www.leiphone.com/resWeb/js/article' , 'https://www.leiphone.com/resWeb/js/load_articles']);
+
+
+
+   // document.getElementById('weixin-qt').insertBefore(qcode.create(),document.getElementById('weixin-qt-msg'));
+</script>
+
+<footer class='yp-footer'>
+    <!-- 友情链接，热门关键字 -->
+    <div class="yp-footer-link">
+        <div class="wrapper">
+            <div class="tab_tit clr">
+                <!--                <a href="javascript:;">热门关键字</a>-->
+            </div>
+            <div class="tab_con">
+                <ul>
+                                        
+                                        <li class="cur">
+                                        
+                        <!--
+                                                                                                                                                        -->
+                        <!--
+                        <a href="" target="_blank">更多</a>
+                    </li>-->
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="yp-footer-msg">
+        <div class="wrapper clr">
+            <!-- links -->
+            <div class="links">
+                <a rel="nofollow" href="https://www.leiphone.com/us/contact">联系我们</a>
+                <a rel="nofollow" href="https://www.leiphone.com/us/index">关于我们</a>
+                                <a rel="nofollow" href="https://www.leiphone.com/us/feedback">意见反馈</a>
+                <!-- <a rel="nofollow" href="https://www.leiphone.com/contribute/index">投稿</a> -->
+            </div>
+            <!-- <a href="javascript:;" class="contribute"><em></em>申请专栏作者</a> -->
+            <!-- 下载app -->
+            <div class="downLoad-app">
+                <div class="qrcode">
+                    <!-- /site/download -->
+                    <img src="/resWeb/images/common/downCode.jpg" width="96" height="96" alt="" />
+                </div>
+                <div class="txt">
+                    <p>下载雷峰网客户端</p>
+                    <a rel="nofollow" href="https://itunes.apple.com/cn/app/lei-feng-wang-yi-dong-hu-lian/id579529120?mt=8" target="_blank" class='iPhone'><em></em>iPhone</a>
+                    <a rel="nofollow" href="https://android.myapp.com/myapp/detail.htm?apkName=com.leiphone.app" target="_blank" class='Android'><em></em>Android</a>
+                </div>
+            </div>
+            <!-- 关注-->
+            <div class="contact">
+                <a rel="nofollow" href="mailto:web@leiphone.com " class='eml sub_a'><em></em></a>
+                <a rel="nofollow" href="https://www.weibo.com/p/1006062118746300" target="_blank" class='sina sub_a'><em></em></a>
+            </div>
+        </div>
+    </div>
+    <!-- copyRight -->
+    <div class="yp-copyright">
+        <div class="wrapper">
+            <p>Copyright © 2011-2026 雷峰网 深圳英鹏信息技术股份有限公司 版权所有 <a target="_blank" style="color:#9baab6;" href="https://beian.miit.gov.cn/">粤ICP备11095991号</a>
+                &nbsp;&nbsp;
+                <a href="http://szcert.ebs.org.cn/0ee69ac3-f114-4bd9-9ea1-a5a04f7cd44b" rel="nofollow" target="_blank"><img src="https://www.leiphone.com/resWeb/images/common/govIcon.gif" width="29" height="40"></a>
+                &nbsp;办公电话 0755-26581864
+                                <a rel="nofollow" href="http://www.qiniu.com/" target="_blank" rel="nofollow" style="float:right">
+                    <img src="https://www.leiphone.com/resWeb/images/common/hzs4.png?0811">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+<div id="lph-footer-gotoBar">
+    <div class="gotoTop">   
+        <a href="javascript:;" class="top" data-goto="0" data-start="100"><em></em></a>
+    </div>
+</div>
+
+<!-- 申请专栏作者 -->
+<form id="applyAutor" method="post" onsubmit="return false">
+    <div class="applyAutor-pop">   
+        <i class="close"></i> 
+        <div class="title">请填写申请人资料</div>
+        <div class="main">
+            <div class="rows clr">
+               <span class="name">姓名</span>
+               <input type="text" id="name" name="MemberAuthorType[name]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">电话</span>
+               <input type="text" id="phone" name="MemberAuthorType[phone]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">邮箱</span>
+               <input type="text" id="eml" name="MemberAuthorType[email]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">微信号</span>
+               <input type="text" id="weixin" name="MemberAuthorType[wechat]" value="">
+               <span class="error"></span>
+            </div>
+            <div class="rows clr">
+               <span class="name">作品链接</span>
+               <input type="text" id="job" name="MemberAuthorType[link]" value="">
+            </div>
+            <div class="rows clr">
+               <span class="name">个人简介</span>
+               <textarea id="description" name="MemberAuthorType[description]"></textarea>
+            </div>
+            <div class="rows clr rows-last">
+                <input type="submit" value="提 交" id="subBtn">
+                <input type="button" value="取 消" id="clsBtn">
+            </div>
+        </div>
+    </div>  
+</form>
+<!-- 遮罩层 -->
+<div class="lph-overlay"></div>
+    <!-- 右上角持续提示，邮箱未绑定的时候输出 -->
+    <div class="yzEmail_tip yzEmail_tip1" id="bandEmailTip">
+        <em></em>
+        <span>为了您的账户安全，请<a class="bbtn" href="javascript:;">验证邮箱</a></span>
+        <i class="close"></i>
+    </div>
+
+    <!-- 右上角持续提示，邮箱发送但未验证的时候输出 -->
+    <div class="yzEmail_tip yzEmail_tip2" id="sendEmailTip">
+        <span style="text-align: center;">您的邮箱还未验证,完成可获20积分哟！</span>
+        <p class="links"><a class="rbtn" href="javascript:;">重发邮箱</a><a class="sbtn" href="javascript:;">修改邮箱</a></p>
+        <i class="close"></i>
+    </div>
+
+    <!-- 记cookie弹窗，邮箱未绑定的时候弹出 -->
+    <div class="yzEmail_box yzEmail_box1 lph-pops" id="sendEmailBox">
+        <div class="head">请验证您的邮箱</div>
+        <div class="box">
+            <span class="tipp"><!-- *邮箱 --></span>
+            <input class="inp" id="sendEmail_input" placeholder="输入您的邮箱" value="" >
+            <!-- <strong>验证邮件已发送，请您查收</strong> -->
+            <a class="btn" href="javascript:;" target="_blank" id="sendEmail_btn"><i></i><em>立即验证</em></a>
+            <div class="error"></div>
+        </div>
+        <!-- <div class="boxOk">
+            <strong>验证邮件已发送，请您查收</strong>
+        </div> -->
+        <i class="close"></i>
+    </div>
+
+    <!-- 记cookie弹窗，已发送邮件但未验证 -->
+    <div class="yzEmail_box yzEmail_box2 lph-pops" id="setPwBox">
+        <div class="head">完善账号信息</div>
+        <div class="top">
+            <span>您的账号已经绑定，现在您可以<a href="javascript:;">设置密码</a>以方便用邮箱登录</span>
+        </div>
+        <div class="btm">
+            <input class="inp" type="password" id="" placeholder="输入您的密码" value="" >
+            <a class="btn" href="javascript:;" target="_blank" id=""><i></i><em>立即设置</em></a>
+            <a class="clo" href="javascript:;">以后再说</a>
+            <div class="error"></div>
+        </div>
+        <i class="close"></i>
+    </div>
+
+<script>
+    // 四站登录
+   // with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src=BASE_URL+'/resWeb/home/js/login/yp_login.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<!-- 优路跟踪代码 -->
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else{
+            bp.src = 'https://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+
+    })();
+</script>
+</body>
+</html>

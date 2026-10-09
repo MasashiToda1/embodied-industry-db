@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-10-08-roboterax-publication-video-prediction-policy-2",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "roboterax",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "星动纪元公开 VPP-2 世界动作模型项目"
+  },
+  "summary": {
+    "zh": "VPP-2 将视频预训练、单步视觉规划与动作学习组合，提供 RoboDojo 和 LIBERO 的训练、评测说明及模型权重链接。发布方为星动纪元官方组织；与英伟达模型的比较不构成英伟达成果归属。部分视频预训练骨干仍未公开，不能表述为完整预训练资源全部开放。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/roboterax/video-prediction-policy-2/blob/main/README.md",
+      "tier": "official",
+      "publisher": "星动纪元 · RobotEra",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/177-readme-decoded.md"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "model_form": [
+      "world-model"
+    ]
+  },
+  "date_basis": "derived",
+  "date_as_stated": "采用官方 README 新闻条目2026-10-08作为项目公开披露日期；代码与权重范围按10月9日核验快照记录，不等同于所有文件均在10月8日首次发布。"
+}

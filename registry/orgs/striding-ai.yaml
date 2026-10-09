@@ -9,7 +9,8 @@
   },
   "status": "active",
   "layers": [
-    "foundation"
+    "foundation",
+    "embodiment"
   ],
   "description": "面向商业和工业机器人的物理智能公司，研发世界动作模型与强化学习技术。",
   "sources": [
@@ -19,6 +20,14 @@
       "retrieved": "2026-10-01",
       "snapshot": "snapshots/2026/10/intake-audit-20261001/13.html",
       "note": "身份与产业定位核验；只收来源明确支持的信息。"
+    },
+    {
+      "url": "https://www.qbitai.com/2026/10/502035.html",
+      "tier": "official",
+      "publisher": "正行创新供稿 · 量子位授权转载",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/184-web.txt",
+      "note": "网页读取工具保存的正文快照，保留原始行号与来源；HTTP直连返回403，未将错误页作为依据。"
     }
   ]
 }

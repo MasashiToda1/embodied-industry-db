@@ -1,0 +1,27 @@
+{
+  "id": "ruqi-data",
+  "names": {
+    "zh": "如祺数据",
+    "en": "Ruqi Data",
+    "aliases": [
+      "如祺出行数据业务"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "data"
+  ],
+  "description": "如祺出行旗下数据业务板块，提供面向具身智能训练的第一人称操作数据处理平台；本库仅收其具身数据业务，不收自动驾驶运营业务。",
+  "sources": [
+    {
+      "url": "https://www.ruqimobility.com/news-center/details/168",
+      "tier": "official",
+      "publisher": "如祺出行",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/ruqi.html"
+    }
+  ],
+  "accounts": {
+    "site": "https://www.ruqimobility.com"
+  }
+}

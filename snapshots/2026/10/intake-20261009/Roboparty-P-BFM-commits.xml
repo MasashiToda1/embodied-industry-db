@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/Roboparty/P-BFM/commits/main</id>
+  <link type="text/html" rel="alternate" href="https://github.com/Roboparty/P-BFM/commits/main"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/Roboparty/P-BFM/commits/main.atom"/>
+  <title>Recent Commits to P-BFM:main</title>
+  <updated>2026-10-04T12:33:11Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c441ebd1f8471f22dea6d720d13da4a7d729cbbf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Roboparty/P-BFM/commit/c441ebd1f8471f22dea6d720d13da4a7d729cbbf"/>
+    <title>
+        Reserve main for project code; keep website on pages
+    </title>
+    <updated>2026-10-04T12:33:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/265951396?s=30&amp;v=4"/>
+    <author>
+      <name>Xuewang01</name>
+      <uri>https://github.com/Xuewang01</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Reserve main for project code; keep website on pages&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f9e6f1c50fed2f79165661676284293b9044eb11</id>
+    <link type="text/html" rel="alternate" href="https://github.com/Roboparty/P-BFM/commit/f9e6f1c50fed2f79165661676284293b9044eb11"/>
+    <title>
+        Publish P-BFM research project website
+    </title>
+    <updated>2026-10-04T12:28:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/265951396?s=30&amp;v=4"/>
+    <author>
+      <name>Xuewang01</name>
+      <uri>https://github.com/Xuewang01</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Publish P-BFM research project website&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

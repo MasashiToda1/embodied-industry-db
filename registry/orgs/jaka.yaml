@@ -1,0 +1,29 @@
+{
+  "id": "jaka",
+  "names": {
+    "zh": "节卡机器人",
+    "en": "JAKA Robotics",
+    "aliases": [
+      "节卡",
+      "JAKA",
+      "节卡机器人股份有限公司"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "embodiment"
+  ],
+  "description": "研发人形、双臂与移动操作机器人的公司；本库收录其通用具身产品，不扩展到纯工业协作机械臂业务。",
+  "sources": [
+    {
+      "url": "https://www.jaka.com/zh/newsDetail/1520",
+      "tier": "official",
+      "publisher": "节卡机器人",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/jaka.html"
+    }
+  ],
+  "accounts": {
+    "site": "https://www.jaka.com/zh"
+  }
+}

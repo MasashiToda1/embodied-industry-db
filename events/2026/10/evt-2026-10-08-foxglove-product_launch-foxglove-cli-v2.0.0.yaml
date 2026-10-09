@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-10-08-foxglove-product_launch-foxglove-cli-v2.0.0",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "foxglove",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Foxglove CLI 2.0 增加数据集与 episode 管理能力"
+  },
+  "summary": {
+    "zh": "Foxglove CLI 2.0 采用 Rust 重写，新增数据集与 episode 管理、下载及断点续传能力；包含命令兼容性变化。本条为 CLI 工具发布，与 Foxglove SDK 和 Python API 包分别记录。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/foxglove/foxglove-cli/releases/tag/v2.0.0",
+      "tier": "official",
+      "publisher": "Foxglove GitHub Releases",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/174-page.html"
+    }
+  ],
+  "corroboration": "single"
+}

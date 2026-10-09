@@ -1,0 +1,36 @@
+{
+  "id": "evt-2026-10-08-basal-intelligence-funding-reported-investment",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "funding",
+  "orgs": [
+    {
+      "id": "basal-intelligence",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "本溯智能获五源资本领投，常春藤、线性与华山资本参与"
+  },
+  "summary": {
+    "zh": "雷峰网报道本溯智能已获得五源资本领投，常春藤资本、线性资本及华山资本 WestSummit Capital 参与投资。报道未明确融资轮次、金额与实际交割日期；本条以报道日记录该消息，不补推金额或轮次。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/ai/WbD0Tf6P1oA2WDdq.html",
+      "tier": "media",
+      "publisher": "雷峰网",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/180a.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "来源10月8日报道称目前已获得投资，未给出实际交割日；日期采用报道日。",
+  "counterparties": [
+    "五源资本",
+    "常春藤资本",
+    "线性资本",
+    "华山资本 WestSummit Capital"
+  ]
+}

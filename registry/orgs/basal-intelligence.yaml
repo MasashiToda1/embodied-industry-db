@@ -1,0 +1,24 @@
+{
+  "id": "basal-intelligence",
+  "names": {
+    "zh": "本溯智能",
+    "en": "BASAL Intelligence",
+    "aliases": [
+      "BASAL"
+    ]
+  },
+  "status": "active",
+  "layers": [
+    "foundation"
+  ],
+  "description": "研发动作原生 In-Context 具身基础模型的公司；记录公司披露的研发方向，不将创始团队此前的学术成果直接归作公司已发布产品。",
+  "sources": [
+    {
+      "url": "https://www.leiphone.com/category/ai/WbD0Tf6P1oA2WDdq.html",
+      "tier": "media",
+      "publisher": "雷峰网",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/180a.html"
+    }
+  ]
+}

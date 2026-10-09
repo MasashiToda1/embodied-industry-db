@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-10-09-alibaba-robotics-publication-rynnvla-latent-source",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "alibaba-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "阿里达摩院公开 RynnVLA-Latent 实际源码"
+  },
+  "summary": {
+    "zh": "官方仓库10月9日补入 RynnLAM 训练、潜在动作标注、阶段一 VLA 预训练、阶段二后训练与评测源码，并链接 RynnLAM 及阶段一2B/4B模型。阶段一检查点仅为初始化，不是闭环控制策略；RynnBrain 骨干与 DA3-Large 编码器仍列为未发布资源。与此前已入库的 RynnWorld-Latent 分开记录。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent/blob/23da1f28c5b2ff17760d01223f37a0774d01b25a/README.md",
+      "tier": "official",
+      "publisher": "阿里达摩院",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/141-readme-decoded.md"
+    },
+    {
+      "url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent/commits/main.atom",
+      "tier": "official",
+      "publisher": "阿里达摩院 · GitHub 提交记录",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/141-commits.xml"
+    }
+  ],
+  "corroboration": "single"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-10-04-roboparty-statement-p-bfm-research-demo",
+  "date": "2026-10-04",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "roboparty",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "RoboParty 展示 P-BFM 感知行为基础模型"
+  },
+  "summary": {
+    "zh": "P-BFM 项目页展示在宇树 G1 上结合深度感知与行为表征进行地形适应、动作跟踪、目标到达、奖励推断和遥操作；训练方法标注为无监督强化学习。10月9日核验时论文与代码仍显示 coming soon，此条仅记录研究展示，不认定论文或训练代码已发布。"
+  },
+  "evidence": [
+    {
+      "url": "https://roboparty.github.io/P-BFM/",
+      "tier": "official",
+      "publisher": "RoboPartyLab",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/pbfm.html"
+    },
+    {
+      "url": "https://github.com/Roboparty/P-BFM/commits/main.atom",
+      "tier": "official",
+      "publisher": "RoboParty · GitHub 提交记录",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/Roboparty-P-BFM-commits.xml"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "control_route": [
+      "rl"
+    ]
+  },
+  "date_basis": "derived",
+  "date_as_stated": "依据官方仓库2026-10-04 Publish P-BFM research project website提交确定展示页发布时间；开放范围按10月9日核验。"
+}
