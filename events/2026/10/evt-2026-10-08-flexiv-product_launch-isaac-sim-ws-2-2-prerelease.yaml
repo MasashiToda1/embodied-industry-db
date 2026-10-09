@@ -1,0 +1,33 @@
+{
+  "id": "evt-2026-10-08-flexiv-product_launch-isaac-sim-ws-2-2-prerelease",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "flexiv",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "非夕预发布支持双臂与自动标定的 Isaac Sim 工作区"
+  },
+  "summary": {
+    "zh": "isaac_sim_ws v2.2.0 标记为预发布，增加双臂支持、通过 RDK 自动获取标定运动学参数，以及 Enlight LL、MICO、AICO 资产，适配 Isaac Sim 6.x。本条记录工作区的新能力，不重复记此前 Zenoh 插件更新，也不把预发布写成稳定版。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/flexivrobotics/isaac_sim_ws/releases/tag/v2.2.0",
+      "tier": "official",
+      "publisher": "非夕 · Flexiv Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/189-page.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "sim_stack": [
+      "isaac-sim"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "evt-2026-09-07-sharpa-publication-wm-craftnet",
+  "date": "2026-09-07",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "sharpa",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Sharpa 发表 WM-Craftnet 视触觉灵巧操作研究"
+  },
+  "summary": {
+    "zh": "WM-Craftnet 将腕部深度、触觉、本体感知与动作历史编码为循环世界状态，为强化学习操作策略提供上下文，并展示灵巧手内操作的仿真到实机迁移。世界模型用于状态估计与策略上下文，不用于潜在想象中的策略优化；实验结果属于研究演示，不等同量产交付表现。"
+  },
+  "evidence": [
+    {
+      "url": "https://arxiv.org/abs/2609.07002",
+      "tier": "primary",
+      "publisher": "arXiv",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/wm-paper.html"
+    },
+    {
+      "url": "https://www.sharpa.com/blogs/research/wm-craftnet-world-synesthesia-model-for-robust-and-generalizable-dexterous-in-hand-manipulation",
+      "tier": "official",
+      "publisher": "Sharpa",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/wmcraftnet.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "control_route": [
+      "rl"
+    ],
+    "model_form": [
+      "world-model"
+    ],
+    "data_modality": [
+      "tactile"
+    ]
+  }
+}

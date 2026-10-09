@@ -1,0 +1,33 @@
+{
+  "id": "evt-2026-06-22-ruqi-data-product_launch-embodied-data-platform",
+  "date": "2026-06-22",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "ruqi-data",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "如祺数据发布具身智能数据处理平台"
+  },
+  "summary": {
+    "zh": "如祺数据发布面向具身智能模型训练的 Ego-centric 第一人称操作数据平台，覆盖数据导入、预处理、动作标注、多层质量检查与标准化导出。平台业务属于如祺出行数据板块，不将自动驾驶业务收入或集团数据收入认定为具身收入。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.ruqimobility.com/news-center/details/168",
+      "tier": "official",
+      "publisher": "如祺出行",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/ruqi.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "data_acquisition": [
+      "human-video"
+    ]
+  }
+}

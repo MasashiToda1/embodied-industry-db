@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-09-29-simplexity-robotics-statement-cnc-manipulation-demo",
+  "date": "2026-09-29",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "simplexity-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "至简动力在 IROS 分享双 CNC 机床操作演示"
+  },
+  "summary": {
+    "zh": "至简动力在9月29日 IROS 演讲中展示 i7 Pro 照看两台 CNC 机床，介绍 SimpleWAM 动作生成、DRAM 历史记忆、DPE 候选动作评估及力反馈阻抗控制。公司称训练使用600条真实机器人轨迹，演示工件与卡盘间隙为0.5毫米；此处记录公司演讲，不认定已签客户或量产交付，论文与实验性能不作独立验证。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.leiphone.com/category/private/xCu836z16KSzx2Co.html",
+      "tier": "media",
+      "publisher": "雷峰网 · IROS 演讲整理",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/183.html"
+    }
+  ],
+  "corroboration": "single"
+}

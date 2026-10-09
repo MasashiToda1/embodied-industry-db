@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-10-08-rainbow-robotics-dataset_release-jimtof-1008",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "dataset_release",
+  "orgs": [
+    {
+      "id": "rainbow-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "彩虹机器人公开 JIMTOF_1008 数据版本"
+  },
+  "summary": {
+    "zh": "JIMTOF_1008 官方 Hub 创建于10月8日。10月9日核验元数据记录319条轨迹、558814帧、1个任务、30 FPS，采用 LeRobot v3.0 与 RBY1，含前方及左右三视角视频、状态和动作。它是已有 JIMTOF 系列的新版本，不与旧版累计为独立采集总量；未明确许可，不认定可自由商用。"
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF_1008",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/186a.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/rainbowrobotics/JIMTOF_1008/blob/5ee9e8ce932414ff5956bd926c5b5fd5073f3a2a/meta/info.json",
+      "tier": "official",
+      "publisher": "Hugging Face · rainbowrobotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/186a-info.json"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "日期取 Hub createdAt 的UTC日2026-10-08；规模来自10月9日核验快照，不认定首日所有时刻均为该规模。"
+}

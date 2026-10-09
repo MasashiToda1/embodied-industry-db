@@ -1,0 +1,35 @@
+{
+  "id": "evt-2026-10-08-striding-ai-product_launch-h1-c1-m1-retail",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "striding-ai",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "正行创新发布 H1、C1 与 M1 零售机器人方案"
+  },
+  "summary": {
+    "zh": "正行创新在 APRCE 2026 发布双足人形 H1、轮臂式 C1 和统一机器人管理平台 M1，面向补货、搬运及巡检任务。公司计划于2027年提供商业化服务，当前记录为产品方案发布；不写成已完成门店部署，不将计划中的 A1 当作已发布产品。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.qbitai.com/2026/10/502035.html",
+      "tier": "official",
+      "publisher": "正行创新供稿 · 量子位授权转载",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/184-web.txt",
+      "note": "网页读取工具保存的正文快照，保留原始行号与来源；HTTP直连返回403，未将错误页作为依据。"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "embodiment_form": [
+      "humanoid-biped",
+      "mobile-manipulator"
+    ]
+  }
+}

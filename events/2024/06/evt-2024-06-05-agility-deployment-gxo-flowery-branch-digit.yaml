@@ -1,0 +1,36 @@
+{
+  "id": "evt-2024-06-05-agility-deployment-gxo-flowery-branch-digit",
+  "date": "2024-06-05",
+  "date_precision": "day",
+  "type": "deployment",
+  "orgs": [
+    {
+      "id": "agility",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Digit 在 GXO 的 Flowery Branch 设施开始商业作业"
+  },
+  "summary": {
+    "zh": "Agility 官方回顾明确记载，Digit 于2024年6月5日在 GXO 的美国佐治亚州 Flowery Branch 设施开始商业作业，在仓储流程中搬运料箱。采用实际开始作业日期，区别于随后公布的多年 RaaS 协议日期；GXO 仅作为客户记录。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement",
+      "tier": "official",
+      "publisher": "Agility Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/agility-gxo.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "target_scene": [
+      "logistics-warehouse"
+    ]
+  },
+  "counterparties": [
+    "GXO Logistics"
+  ]
+}

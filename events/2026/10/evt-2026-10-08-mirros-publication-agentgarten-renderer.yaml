@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-10-08-mirros-publication-agentgarten-renderer",
+  "date": "2026-10-08",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "mirros",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "镜识科技公开 AgentGarten 神经渲染器训练与推理代码"
+  },
+  "summary": {
+    "zh": "官方仓库记录10月8日发布技术报告及神经渲染器训练、流式推理代码。渲染器将程序世界导出的深度与表面法线作为条件生成观察画面，基于 Cosmos3-Nano 适配；代码世界与智能体练习循环仍列为后续发布内容。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/MirroS-Lab/AgentGarten/blob/main/README.md",
+      "tier": "official",
+      "publisher": "镜识科技 · MirroS-Lab",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/176-readme-decoded.md"
+    }
+  ],
+  "corroboration": "single"
+}

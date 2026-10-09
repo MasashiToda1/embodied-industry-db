@@ -1,0 +1,28 @@
+{
+  "id": "evt-2026-09-25-foxglove-product_launch-foxglove-python-v0.20.0",
+  "date": "2026-09-25",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "foxglove",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Foxglove Python 0.20 新增数据集与 episode 接口"
+  },
+  "summary": {
+    "zh": "Foxglove Python 包0.20新增数据集与 episode API 支持，并修复下载请求的鉴权头处理。它是 Python API 客户端更新，不与此前 Foxglove SDK 的版本混用。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/foxglove/foxglove-python/releases/tag/releases/v0.20.0",
+      "tier": "official",
+      "publisher": "Foxglove GitHub Releases",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/179-page.html"
+    }
+  ],
+  "corroboration": "single"
+}

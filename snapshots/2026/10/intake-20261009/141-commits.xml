@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/alibaba-damo-academy/RynnVLA-Latent/commits/main</id>
+  <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commits/main"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commits/main.atom"/>
+  <title>Recent Commits to RynnVLA-Latent:main</title>
+  <updated>2026-10-09T05:14:23Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/23da1f28c5b2ff17760d01223f37a0774d01b25a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commit/23da1f28c5b2ff17760d01223f37a0774d01b25a"/>
+    <title>
+        Add the published HuggingFace and ModelScope model links to the README
+    </title>
+    <updated>2026-10-09T05:14:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/55451421?s=30&amp;v=4"/>
+    <author>
+      <name>Maxwell-Zhao</name>
+      <uri>https://github.com/Maxwell-Zhao</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add the published HuggingFace and ModelScope model links to the README
+
+RynnLAM and the Stage-1 RynnVLA-Latent-2B/4B checkpoints are now published
+on both hubs, so document them in a new &amp;quot;Model weights&amp;quot; section, point the
+RynnLAM Optional-components bullet at it, and narrow the TODO(hf) to the
+still-unpublished RynnBrain backbones and DA3-Large encoder. The code repo
+still ships no weights; the 2B/4B exports are Stage-1 initializations, not
+closed-loop policies.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/db8bb1328a0762e09dba88d1fd88bbec6ddddbba</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commit/db8bb1328a0762e09dba88d1fd88bbec6ddddbba"/>
+    <title>
+        Correct comments that the remediation edits left inaccurate
+    </title>
+    <updated>2026-10-09T03:52:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/55451421?s=30&amp;v=4"/>
+    <author>
+      <name>Maxwell-Zhao</name>
+      <uri>https://github.com/Maxwell-Zhao</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Correct comments that the remediation edits left inaccurate
+
+Comment-only, plus one dead branch. No behaviour change beyond the removed fallback.
+
+- write_npz claimed the skip check &amp;quot;trusts existence&amp;quot;. It has not since npz_is_complete
+  landed beside it; the atomic publish is now justified by what it actually buys -- no
+  reader, including a rebuild_latent_manifest sweep running concurrently with labeling,
+  can observe a partial file at the final path.
+- npz_is_complete accepted a bare &amp;quot;latent_action&amp;quot; member as well as the &amp;quot;.npy&amp;quot; form.
+  np.savez appends &amp;quot;.npy&amp;quot; to every key unconditionally, so that branch could never be
+  taken, and keeping it blurred the very trap the docstring exists to record.
+- The largest-remainder comment pointed at &amp;quot;the inner one at line ~730&amp;quot;, a line number
+  the surrounding edits had already moved.
+- Reflowed four comment blocks whose right edge the corpus-scale scrub left ragged.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a5c015c7ac0e35019131365bd5b872c32c5c0d81</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commit/a5c015c7ac0e35019131365bd5b872c32c5c0d81"/>
+    <title>
+        Add HuggingFace model-card metadata to the README
+    </title>
+    <updated>2026-10-09T03:18:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/55451421?s=30&amp;v=4"/>
+    <author>
+      <name>Maxwell-Zhao</name>
+      <uri>https://github.com/Maxwell-Zhao</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add HuggingFace model-card metadata to the README
+
+The README is uploaded verbatim as the model card, so without front-matter the hub
+shows no license badge, no pipeline tag and nothing to discover the repo by.
+
+base_model is left commented out rather than filled in: the hub warns about and drops
+an id that does not resolve to a live repo, and the RynnBrain-2B/4B backbones are not
+published yet. This distribution ships no weights, so nothing here is a fine-tune of
+anything -- declaring a base would be a claim the repo cannot back.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2c5135dfe70ca87f8c6c21045ca0786d2a90f126</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commit/2c5135dfe70ca87f8c6c21045ca0786d2a90f126"/>
+    <title>
+        Add the complete RynnVLA-Latent source release
+    </title>
+    <updated>2026-10-09T03:18:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/55451421?s=30&amp;v=4"/>
+    <author>
+      <name>Maxwell-Zhao</name>
+      <uri>https://github.com/Maxwell-Zhao</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add the complete RynnVLA-Latent source release
+
+Assembles the open-source release from the three internal repositories so a
+fresh clone can run the whole chain offline: RynnLAM training, latent-action
+labeling, Stage-1 latent-action VLA pretraining, Stage-2 post-training, and
+evaluation.
+
+Baseline is the previously curated RynnVLA-LA draft, reconciled file by file
+against the internal codebase. Beyond that draft this adds:
+
+- Stage-2 knobs: transfer_lr / transfer_modules (an independent peak LR for
+  inherited modules) and sampler_shuffle (episode-locality vs global order).
+  Both are resume-critical, so constants.RESUME_CRITICAL_FIELDS gained the
+  matching keys.
+- scripts/build_dataset_weights.py: temperature (alpha) reweighting of a
+  Stage-1 latent mixture. The per-dataset targets are a largest-remainder
+  rounding that sums back to the natural total, so len(dataset) -- and the
+  max_steps derived from it -- does not move when an arm is reweighted.
+- The RoboTwin and VLABench tracks: both datasets, the shared video-decode
+  helpers, the two Stage-2 recipes, example mixtures, the VLABench policy
+  server and the RoboTwin policy adapter, plus
+  scripts/build_robotwin_index.py to produce the episode index RoboTwinDataset
+  requires and nothing previously shipped could build.
+- tests/: 27 CPU-only test files, 392 passing. They run offline in under a
+  minute and are the fastest way to confirm an install actually works.
+
+Three defects found while reconciling are fixed rather than carried over: the
+resume path only applied node-local staging for resume=True and not for the
+resolved-checkpoint string, so api.train callers missed it; q01_q99 action
+normalization offset by q01 instead of the midpoint, which does not suit a
+flow head sampling N(0, 1); and the alpha-weighted virtual index was laid out
+dataset-major, which the locality sampler cannot tile, so it silently degraded
+to a plain randperm and cost 5.2x wall clock at alpha=0.7.
+
+The simulator side of RoboTwin and VLABench is deliberately not bundled, so
+no command here reproduces a benchmark score; README states that next to the
+claim it qualifies, and lists what to bring. NOTICE now records the policy
+server&amp;#39;s listening socket and its pickle framing, which the previous &amp;quot;no
+network access at runtime&amp;quot; wording contradicted.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e0e4e8174dd6920c9e1fd5b07aaaf2c10b395ddf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alibaba-damo-academy/RynnVLA-Latent/commit/e0e4e8174dd6920c9e1fd5b07aaaf2c10b395ddf"/>
+    <title>
+        Initial commit
+    </title>
+    <updated>2026-10-05T06:27:36Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/55451421?s=30&amp;v=4"/>
+    <author>
+      <name>Maxwell-Zhao</name>
+      <uri>https://github.com/Maxwell-Zhao</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Initial commit&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,168 @@
+<div align="center">
+  <h1 align="center"> LATENT </h1>
+  <h3 align="center"> Tsinghua | Galbot </h3>
+
+📑 [Paper](https://arxiv.org/abs/2603.12686v1) | 🏠 [Website](https://zzk273.github.io/LATENT/)
+</div>
+
+This is the official implementation of ***Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data***. This repository provides an open-source humanoid robot learning pipeline for motion tracker pre-training, online distillation, and high-level policy learning. The pipeline uses MuJoCo for simulation and supports multi-GPU parallel training.
+
+
+# News 🚩
+
+[March 13, 2026] Tracking codebase and a small subset of human tennis motion data released. **Now you can track these motions, with the tracking pipeline described in our paper.**
+
+
+# TODOs
+
+- [x] Release motion tracking codebase
+- [x] Release a small subset of human tennis motion data
+- [ ] Release all human tennis motion data we used
+- [ ] Release pretrained trackers to track all released human tennis motion data
+- [ ] Release DAgger online distillation codebase
+- [ ] Release pretrained latent action model trained on our tennis motion data
+- [ ] Release high-level tennis-playing policy training codebase
+- [ ] Release sim2real designs for high-level tennis-playing policy
+- [ ] Release more pretrained checkpoints
+
+
+# Initialization
+
+1. Clone the repository:
+   ```shell
+   git clone git@github.com:GalaxyGeneralRobotics/LATENT.git
+   ```
+
+2. Create a virtual environment and install dependencies:
+   ```shell
+   uv sync -i https://pypi.org/simple 
+   ```
+
+3. Create a `.env` file in the project directory with the following content:
+   ```bash
+   export GLI_PATH=<absolute_project_path>
+   export WANDB_PROJECT=<your_project_name>
+   export WANDB_ENTITY=<your_entity_name>
+   export WANDB_API_KEY=<your_wandb_api_key>
+   ```
+
+4. Download the [retargeted tennis data](https://drive.google.com/file/d/1nBGrph4Yf9wLGRZ1tTpOmtU1k3zEAN_y/view?usp=drive_link) and put them under `storage/data/mocap/Tennis/`.
+
+   The file structure should be like:
+
+   ```
+    storage/data
+    ├── mocap
+    │   └── Tennis
+    │       ├──p1
+    │       │  ├── High-Hit02_Tennis\ 001.npz
+    │       │  └── ...
+    │       └── ...
+    └── assets
+        └── ...
+   ```
+
+5. Initialize assets
+
+   ```shell
+   python latent_mj/app/mj_playground_init.py
+   ```
+
+# Usage
+
+## Initialize environment
+
+```shell
+source .venv/bin/activate; source .env;
+```
+
+
+## Motion tracking
+
+The motion tracker training pipeline is based on [OpenTrack](https://github.com/GalaxyGeneralRobotics/OpenTrack).
+
+### [Optional] Preprocess the motion data
+
+  If you want to train on your own motion data, you should first put the `.npz` files under `storage/data/mocap/<your_dataset_name>/UnitreeG1`. Then, you should run the following preprocess script to:
+
+  1. Align the frequency or the original motion data to the desired control frequency (50Hz by default).
+  2. Recalculate velocities (angular, linear, joint) and other state features based on the aligned frequency.
+  
+  **Note:** The preprocess script will overwrite the original motion files.
+
+  ```shell
+  # Use `num_batches` to split data into multiple batches for parallel processing on multiple GPUs. You should manually launch multiple processes on different GPUs for parallel processing.
+  python scripts/process_motion/preprocess_motion.py --task G1TrackingGeneral --num_batches XXX --smooth_start_end False
+  
+  # Or run on a single GPU without parallelism
+  python scripts/process_motion/preprocess_motion.py --task G1TrackingGeneral --num_batches 1 --smooth_start_end False
+  ```
+  
+  Argument `--smooth_start_end True` can generate a natural transition motion from the default pose before the original motion.
+  
+  An inverse-kinematics solver generates a smooth stepping motion from the default pose to the first motion frame. The solver uses QP optimization (OSQP) with foot position/orientation constraints and CoM balance constraints. One or two foot steps are automatically chosen based on the foot-placement gap between default pose and the pose of the first frame.
+
+  Here is a comparison of the original motion and the smoothed motion:
+
+  <table>
+    <tr>
+      <th>Original Motion</th>
+      <th>Smoothed Motion</th>
+    </tr>
+    <tr>
+      <td><img src="./storage/assets/demo/original.gif" width="100%"></td>
+      <td><img src="./storage/assets/demo/smoothed.gif" width="100%"></td>
+    </tr>
+  </table>
+
+
+### Train the model
+
+   ```bash
+   # Train without DR
+   python -m latent_mj.learning.train.train_ppo_track_tennis --task G1TrackingTennis --exp_name <your_exp_name>
+
+   # Train with DR
+   python -m latent_mj.learning.train.train_ppo_track_tennis --task G1TrackingTennisDR --exp_name <your_exp_name>
+   ```
+
+### Evaluate the model
+
+   First, convert the Brax model checkpoint to ONNX:
+
+   ```shell
+   python -m latent_mj.app.brax2onnx_tracking --task G1TrackingTennis --exp_name <your_exp_name>
+   ```
+
+   Next, run the evaluation script:
+   
+   ```shell
+   python -m latent_mj.eval.tracking.mj_onnx_video --task G1TrackingTennis --exp_name <your_exp_name> [--use_viewer] [--use_renderer] [--play_ref_motion]
+   ```
+
+## Real-World Deployment
+
+For teams interested in reproducing our system, we provide the following real-world deployment details for reference:
+- A total of 50+ motion capture cameras were used
+- Camera resolution: 2048 × 2048, at 120 Hz
+- Motion capture area: 19 × 15 meters
+
+Our real-world experiment setup (including the venue, camera system, lighting, and related infrastructure) was supported by a third-party motion capture service provider. The experiment period lasted approximately 3 weeks, with a total rental cost of around 350k RMB (approximately 50k USD).
+
+# Acknowledgement
+
+This repository is build upon `jax`, `brax`, `loco-mujoco`, `mujoco_playground`, and `OpenTrack`.
+
+If you find this repository helpful, please cite our work:
+
+```bibtex
+@misc{zhang2026learningathletichumanoidtennis,
+      title={Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data}, 
+      author={Zhikai Zhang and Haofei Lu and Yunrui Lian and Ziqing Chen and Yun Liu and Chenghuai Lin and Han Xue and Zicheng Zeng and Zekun Qi and Shaolin Zheng and Qing Luan and Jingbo Wang and Junliang Xing and He Wang and Li Yi},
+      year={2026},
+      eprint={2603.12686},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.12686}, 
+}
+```

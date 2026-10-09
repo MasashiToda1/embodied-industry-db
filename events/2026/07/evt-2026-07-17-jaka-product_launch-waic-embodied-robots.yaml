@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-07-17-jaka-product_launch-waic-embodied-robots",
+  "date": "2026-07-17",
+  "date_precision": "day",
+  "type": "product_launch",
+  "orgs": [
+    {
+      "id": "jaka",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "节卡在 WAIC 展示 JAKA π、K1-25 与 Kargo"
+  },
+  "summary": {
+    "zh": "节卡在 WAIC 展示 JAKA π 小型腿足人形机器人、K1-25 重载双臂机器人与 Kargo 移动操作机器人。官方文章发表于7月21日，明确展会展示始于7月17日；本文仅记录公开展示，不将未来双臂与移动底盘组合方案记成已交付。"
+  },
+  "evidence": [
+    {
+      "url": "https://www.jaka.com/zh/newsDetail/1520",
+      "tier": "official",
+      "publisher": "节卡机器人",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/jaka.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "embodiment_form": [
+      "humanoid-biped",
+      "mobile-manipulator"
+    ],
+    "hardware_strategy": [
+      "in-house"
+    ]
+  }
+}

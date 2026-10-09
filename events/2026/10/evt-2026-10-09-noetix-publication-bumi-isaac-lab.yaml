@@ -1,0 +1,45 @@
+{
+  "id": "evt-2026-10-09-noetix-publication-bumi-isaac-lab",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "noetix",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "松延动力公开 Bumi 的 Isaac Lab 训练工程"
+  },
+  "summary": {
+    "zh": "noetix_bumi_lab 首个提交提供 Bumi 的 AMP 行走跑步、动作模仿训练与评测说明，使用 Isaac Lab 2.2.1、Isaac Sim 5.0.0 和 RSL-RL，并提供 MuJoCo 跨仿真验证脚本说明。记录训练工程，不据 README 中的路径示例断言完整预训练权重已可下载。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/Noetix-Robotics/noetix_bumi_lab/blob/main/README.md",
+      "tier": "official",
+      "publisher": "松延动力 · Noetix Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/187-readme-decoded.md"
+    },
+    {
+      "url": "https://github.com/Noetix-Robotics/noetix_bumi_lab/commits/main.atom",
+      "tier": "official",
+      "publisher": "松延动力 · GitHub 提交记录",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/Noetix-Robotics-noetix_bumi_lab-commits.xml"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "control_route": [
+      "rl"
+    ],
+    "sim_stack": [
+      "isaac-lab",
+      "isaac-sim",
+      "mujoco"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "evt-2026-03-13-galbot-publication-latent-tennis",
+  "date": "2026-03-13",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "galbot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "银河通用参与 LATENT 人形机器人网球研究并公开部分代码"
+  },
+  "summary": {
+    "zh": "LATENT 项目使用不完整的人体网球动作数据训练人形机器人技能，作者机构包括银河通用。官方 README 记录3月13日公开动作跟踪代码与一小部分动捕数据；研究在宇树 G1 上展示，不归作银河通用自研本体，也不将尚未发布的完整训练流程记成已开放。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/GalaxyGeneralRobotics/LATENT/blob/master/README.md",
+      "tier": "official",
+      "publisher": "银河通用 · LATENT",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/latent.md"
+    },
+    {
+      "url": "https://zzk273.github.io/LATENT/",
+      "tier": "official",
+      "publisher": "LATENT 项目组",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/latent-project.html"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "control_route": [
+      "rl"
+    ],
+    "sim_stack": [
+      "mujoco"
+    ],
+    "data_acquisition": [
+      "mocap"
+    ]
+  }
+}

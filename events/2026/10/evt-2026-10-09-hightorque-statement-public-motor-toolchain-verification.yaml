@@ -1,0 +1,65 @@
+{
+  "id": "evt-2026-10-09-hightorque-statement-public-motor-toolchain-verification",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "statement",
+  "orgs": [
+    {
+      "id": "hightorque",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "高擎公开电机通信工具链资料核验"
+  },
+  "summary": {
+    "zh": "本次核验高擎官方五个仓库：motor_can_f446、motor_can_h730、motor_fdcan_h730 提供板级电机通信代码，hightorque_fdcan 提供 FDCAN 工具，hightorque_robot 提供按 YAML 配置管理多个 CAN 通道和电机的 C++ SDK。仓库保留更早开发历史，首次公开日期未核实；本条为公开资料核验，不是五次新品发布，也不认定10月8日为工具首次发布日期。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/HighTorque-Robotics/motor_can_f446",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/motor_can_f446-repo-page.html"
+    },
+    {
+      "url": "https://github.com/HighTorque-Robotics/motor_can_h730",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/motor_can_h730-repo-page.html"
+    },
+    {
+      "url": "https://github.com/HighTorque-Robotics/motor_fdcan_h730",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/motor_fdcan_h730-repo-page.html"
+    },
+    {
+      "url": "https://github.com/HighTorque-Robotics/hightorque_fdcan",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/hightorque_fdcan-repo-page.html"
+    },
+    {
+      "url": "https://github.com/HighTorque-Robotics/hightorque_robot",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/hightorque_robot-repo-page.html"
+    },
+    {
+      "url": "https://github.com/HighTorque-Robotics/hightorque_robot/blob/main/doc/使用文档.md",
+      "tier": "official",
+      "publisher": "高擎机电 · HighTorque Robotics",
+      "retrieved": "2026-10-09",
+      "snapshot": "snapshots/2026/10/intake-20261009/ht-manual.md"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "日期为本库2026-10-09完成公开工具链资料核验之日；代码提交早于监测发现，不能据监测日反推首次发布时间。"
+}

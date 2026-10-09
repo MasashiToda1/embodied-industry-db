@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="LATENT">
+  <meta name="keywords" content="Robotics, Humanoid, Whole-body Control, Tennis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    LATENT
+  </title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ38WT2YPD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QZ38WT2YPD');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+  <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
+    <video playsinline autoplay muted loop>
+      <source src=" ./static/videos/teaser.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+    style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
+    <video playsinline autoplay muted loop>
+      <source src=" ./static/videos/teaser.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="overlay"></div>
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head is-hidden-mobile">
+    <header class="navbar">
+      <div class="container is-size-5">
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item pl-4 pr-4" href="./static/scripts/Humanoid_Tennis.pdf">
+              <span class="icon" style="margin-right:5px;">
+                <img src="./static/images/pdf.svg" alt="PDF" />
+              </span>
+              <span>Paper</span>
+            </a>
+            <a class="navbar-item  pl-4 pr-4" href="https://arxiv.org/pdf/2603.12686">
+              <span class="icon" style="margin-right:5px;">
+                <img src="./static/images/arxiv.svg" alt="ArXiv" />
+              </span>
+              <span>arXiv</span> </a>
+            <a href="https://zzk273.github.io/LATENT/" class="navbar-item  pl-4 pr-4">
+              <span class="icon" style="margin-right:5px;">
+                <img src="./static/images/youtube.svg" alt="Youtube" />
+              </span>
+              <span>Video</span> </a>
+            <span class="navbar-item  pl-4 pr-4">
+              <a href="https://github.com/GalaxyGeneralRobotics/LATENT" class="button is-inverted is-large">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+        LATENT
+      </h1>
+      <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 3rem;">
+        Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data
+      </h1>
+      <!-- <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 2rem; opacity: 80%;">
+        Conference on Robot Learning 2024
+      </h1>
+      <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 1.5rem; opacity: 80%;">
+        <b>Spotlight</b> WCBM Workshop CoRL 2024
+      </h1>
+      <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 1.5rem; opacity: 80%;">
+        X-Embodiment Workshop CoRL 2024
+      </h1> -->
+
+      <div class="column has-text-centered is-hidden-tablet">
+        <div class="publication-links">
+          <!-- PDF Link. -->
+          <span class="link-block">
+            <a href="./static/scripts/Humanoid_Tennis.pdf" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="./static/images/pdf.svg" alt="PDF" />
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://arxiv.org/pdf/2603.12686" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="./static/images/arxiv.svg" alt="ArXiv" />
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Video Link. -->
+          <span class="link-block">
+            <a href="https://zzk273.github.io/LATENT/" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="./static/images/youtube.svg" alt="Youtube" />
+              </span>
+              <span>Video</span>
+            </a>
+          </span>
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href="https://github.com/GalaxyGeneralRobotics/LATENT"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot is-hidden-mobile">
+    <nav class="tabs is-boxed is-fullwidth is-size-5">
+      <ul>
+        <!-- <li><a href="#umi">Robot Data without Robots</a></li>
+        <li><a href="#task-tracking">Task Tracking without Simulating Tasks</a></li>
+        <li><a href="#wbc">Whole-body Controller</a></li>
+        <li><a href="#hardware">Hardware & System</a></li>
+        <li><a href="#qa">Q & A</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+<section class="section"  style="margin-top: 2rem; margin-bottom: 0rem;">
+  <div class="container has-text-centered" style="margin: 0.1rem auto; max-width: 1000px; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0rem;">
+  <!-- <div class="container has-text-centered" style="padding-left: 1000vw; padding-right: 1000vw;"></div> -->
+    <h1 class="title is-1">Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data</h1>
+    <p class="is-size-5">
+      <a href="https://zzk273.github.io/">Zhikai Zhang</a><sup>1,3*</sup>, <a href="https://josh00-lu.github.io/">Haofei Lu</a><sup>1,3*</sup>, <a href="https://liam-lyr.github.io/">Yunrui Lian</a><sup>1,3*</sup>, <a href="https://zq-chen22.github.io/">Ziqing Chen</a><sup>1,3</sup>,
+      <a href="https://leolyliu.github.io/">Yun Liu</a><sup>1,3</sup>, <a href="https://scholar.google.com/citations?user=tM-mEZcAAAAJ&hl=zh-CN">Chenghuai Lin</a><sup>3</sup>, <a href="https://axian12138.github.io/">Han Xue</a><sup>1,3</sup>, 
+      <a href="https://zczeng.com/">Zicheng Zeng</a><sup>3</sup>, <a href="https://qizekun.github.io/">Zekun Qi</a><sup>1,3</sup>, Shaolin Zheng<sup>3</sup>,
+      Qing Luan<sup>3</sup>, <a href="https://wangjingbo1219.github.io/">Jingbo Wang</a><sup>5</sup>, <br>
+      <a href="https://pi.cs.tsinghua.edu.cn/lab/people/jlxing/en/">Junliang Xing</a><sup>1</sup>, <a href="https://hughw19.github.io/">He Wang</a><sup>2,3</sup>, <a href="https://ericyi.github.io/">Li Yi</a><sup>1,4†</sup>
+    </p>
+    <p class="is-size-6" style="margin-top: 0.75rem;">
+      <sup>*</sup> Equal contribution
+      <sup>†</sup> Corresponding author
+    </p>
+    <p class="is-size-6" style="margin-top: 0.75rem;">
+      <sup>1</sup>Tsinghua University, <sup>2</sup>Peking University, <sup>3</sup>Galbot, 
+      <sup>4</sup>Shanghai Qi Zhi Institute, <sup>5</sup>Shanghai AI Laboratory
+    </p>
+  </div>
+</section>
+
+
+<section class="section" id="video" style="margin-top: 0rem;">
+  <div class="container is-max-desktop" style="margin-top: 0rem;">
+    <h2 class="title is-1 has-text-centered is-size-4-mobile"></h2>
+    <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 1rem; overflow: hidden;">
+      <video controls autoplay muted loop playsinline
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <source src="./static/videos/humanoid_tennis.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="section" id="video">
+  <div class="container is-max-desktop">
+    <h2 class="title is-1 has-text-centered is-size-4-mobile">Technical Summary Video</h2>
+    <iframe width="100%" style="aspect-ratio: 16 / 9;" src="
+      https://www.youtube.com/embed/TODO" title="R2S2 Technical Summary Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section> -->
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Human athletes demonstrate versatile and highly-dynamic tennis skills to successfully conduct competitive rallies with a high-speed tennis ball. 
+            However, reproducing such behaviors on humanoid robots is difficult, partially due to the lack of perfect humanoid action data or human kinematic 
+            motion data in tennis scenarios as reference. In this work, we propose LATENT, a system that Learns Athletic humanoid 
+            TEnnis skills from imperfect human motioN daTa. 
+            The imperfect human motion data consist only of motion fragments that capture the primitive skills used when playing tennis rather than precise 
+            and complete human-tennis motion sequences from real-world tennis matches, thereby significantly reducing the difficulty of data collection. Our 
+            key insight is that, despite being imperfect, such quasi-realistic data still provide priors about human primitive skills in tennis scenarios. 
+            With further correction and composition, we learn a humanoid policy that can consistently strike incoming balls under a wide range of conditions 
+            and return them to target locations, while preserving natural motion styles.
+            We also propose a series of designs for robust sim-to-real transfer and deploy our policy on the Unitree G1 humanoid robot. Our method achieves 
+            surprising results in the real world and can stably sustain multi-shot rallies with human players.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <figure style="text-align: center; margin-bottom: 1rem;">
+        <figcaption style="font-size: 1.5rem; font-weight: bold;">Multi-shot Rallies</figcaption>
+      </figure>
+      <div class="video-grid" style="display: flex; overflow-x: auto; gap: 2rem; padding-bottom: 1rem;">
+        
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/multishot/multishot-1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Rally 1</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/multishot/multishot-2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Rally 2</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/multishot/multishot-3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Rally 3</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/multishot/multishot-4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Rally 4</h2>
+        </div>
+      </div>
+
+      <figure style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+        <figcaption style="font-size: 1.5rem; font-weight: bold;">Reactive footwork</figcaption>
+      </figure>
+      <div class="video-grid" style="display: flex; overflow-x: auto; gap: 2rem; padding-bottom: 1rem;">
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/footwork/footwork-1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Footwork 1</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/footwork/footwork-2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Footwork 2</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/footwork/footwork-3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Footwork 3</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/footwork/footwork-4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Footwork 4</h2>
+        </div>
+      </div>
+
+      <figure style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+        <figcaption style="font-size: 1.5rem; font-weight: bold;">Try to beat different human players</figcaption>
+      </figure>
+      <div class="video-grid" style="display: flex; overflow-x: auto; gap: 2rem; padding-bottom: 1rem;">
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/different_player/different_player-1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Human Player 1</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/different_player/different_player-2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Human Player 2</h2>
+        </div>
+
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/different_player/different_player-3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Human Player 3</h2>
+        </div>
+      </div>
+
+      <figure style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+        <figcaption style="font-size: 1.5rem; font-weight: bold;">Self play (simulation)</figcaption>
+      </figure>
+      
+      <div class="video-grid" style="display: flex; overflow-x: auto; gap: 2rem; padding-bottom: 1rem; justify-content: center;">
+      
+        <div class="video-item" style="flex: 0 0 45%; text-align: center;">
+          <video controls muted loop playsinline style="width: 100%; border-radius: 1rem;">
+            <source src="./static/videos/self_play/self_play.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle">Self play</h2>
+        </div>
+      
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<br>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/pipeline.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+    </div>
+  </div>
+</section> -->
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 is-size-4-mobile">BibTeX</h2>
+    <pre class="is-hidden-mobile">
+      <code>
+        @misc{zhang2026learningathletichumanoidtennis,
+          title={Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data}, 
+          author={Zhikai Zhang and Haofei Lu and Yunrui Lian and Ziqing Chen and Yun Liu and Chenghuai Lin and Han Xue and Zicheng Zeng and Zekun Qi and Shaolin Zheng and Qing Luan and Jingbo Wang and Junliang Xing and He Wang and Li Yi},
+          year={2026},
+          eprint={2603.12686},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2603.12686}, 
+        }
+      </code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a href="https://nerfies.github.io/">NeRFies</a> and <a href="https://umi-on-legs.github.io/">UMI on Legs</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
