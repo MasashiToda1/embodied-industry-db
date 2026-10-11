@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/D-Robotics/slam_toolbox/commits/ros2</id>
+  <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commits/ros2"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/D-Robotics/slam_toolbox/commits/ros2.atom"/>
+  <title>Recent Commits to slam_toolbox:ros2</title>
+  <updated>2026-10-09T08:33:31Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0b06ec5b9ecb3ed885ef4e38c3e66a7c0c418ec3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/0b06ec5b9ecb3ed885ef4e38c3e66a7c0c418ec3"/>
+    <title>
+        feat(slam_toolbox): Add 3D web visualization and port to RDK X5
+    </title>
+    <updated>2026-10-09T08:33:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/b5ac4663c8953ec3a82c68644f5f79ba?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>zhikang.zeng@d-robotics.cc</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(slam_toolbox): Add 3D web visualization and port to RDK X5
+
+新增 slam_toolbox_web_node（3D Web 可视化，端口 9992，仿 drtabmap/rtabmap_web），
+并做 X5 交叉编译所需的移植裁剪。
+
+what:
+- 新增 src/slam_toolbox_web_node.cpp（boost.beast HTTP+WebSocket，订阅 /map
+  /scan /odom /pose /tf /tf_static，15Hz 推 JSON + 单独帧推栅格 PNG）、
+  web/index.html + web/three.min.js（three.js 3D 场景）、launch/web_launch.py；
+  CMakeLists 增加 target 与 install(DIRECTORY web)。
+- 移除 bond/bondcpp、G2O、OpenMP、tf2_sensor_msgs 依赖；Ceres 降级为
+  LocalParameterization（板端旧版 Ceres 无 Manifold）；tf2_ros 头文件 .hpp→.h；
+  karto_sdk CMP0167 加 if(POLICY) 保护、Boost_INCLUDE_DIR→Boost_INCLUDE_DIRS；
+  message_filters::Subscriber 显式指定 LifecycleNode 模板参数。
+
+why:
+- 板端 3GB 内存、无 rviz/桌面，需轻量浏览器可视化看建图结果；上游依赖在 X5
+  sysroot 缺失或版本不符，必须裁剪/降级才能交叉编译通过。
+
+how:
+- web 节点复用 drtabmap/rtabmap_web 的 WebServer 模式；前端轨迹/点云重建做
+  节流，避免 O(N) 重建打满浏览器。&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/33841d040dfff86f9467000bc022336995d56f20</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/33841d040dfff86f9467000bc022336995d56f20"/>
+    <title>
+        Apply the laser mounting yaw to the interactive scan preview (#897)
+    </title>
+    <updated>2026-09-21T18:29:54Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/16485416?s=30&amp;v=4"/>
+    <author>
+      <name>yugeeklab</name>
+      <uri>https://github.com/yugeeklab</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Apply the laser mounting yaw to the interactive scan preview (#897)
+
+While dragging a pose-graph node, processInteractiveFeedback() publishes
+the node&amp;#39;s stored scan at the dragged pose so it can be lined up against
+the walls already in the map. The frame it publishes that scan in was
+oriented from the node heading alone:
+
+    q1.setEuler(0., 0., node_yaw - 3.14159);
+    q2.setEuler(0., 0., 3.14159);
+    quat *= q1;
+    quat *= q2;
+
+The two terms cancel, so no mount compensation is applied at all and the
+preview comes out rotated by the laser&amp;#39;s mounting yaw. That is 0 for a
+laser bolted on square with the base, which is why this goes unnoticed,
+but anything else is visibly wrong.
+
+Measured on a robot whose scan_joint carries rpy=&amp;quot;0 -${pi} 0&amp;quot;, dragging
+each node back onto its own recorded pose, with room walls at +-2.05 m:
+
+    node 0 (at origin)      x -2.02..+2.02    outside room   0/360
+    node 1 (+0.92, +0.00)   x -0.19..+3.86    outside room 113/360
+    node 2 (+1.26, +0.30)   x +0.50..+4.54    outside room 172/360
+    node 3 (+1.26, +1.23)   x +0.50..+4.55    outside room 165/360
+
+After the fix all four land at +-2.02 with none outside. Node 0 looked
+correct beforehand only because it sits at the centre of a square room,
+where a 180 degree rotation is a symmetry.
+
+The mounting yaw is already computed for the mapping path and handed to
+karto through SetOffsetPose(), which is why the map itself is fine. Keep
+it on LaserMetadata so ScanHolder, which already resolves the right laser
+by the scan&amp;#39;s frame_id, can hand the same value to the preview. That
+keeps multiple lasers working: each scan gets its own laser&amp;#39;s yaw.
+
+Inverted lasers need no extra term: getCorrectedScan() has already
+reversed the ranges, which turns the mirrored mount into this same
+rotation.
+
+merge_maps_kinematic builds LaserMetadata directly from a deserialized
+dataset where no TF is available, but karto stored the mounting yaw on
+the laser when the map was first built, so it is read back from there.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/19c38d23f0f212874e6dc6edd54dacbe1ab4d2d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/19c38d23f0f212874e6dc6edd54dacbe1ab4d2d5"/>
+    <title>
+        Fix/scan filter state (#898)
+    </title>
+    <updated>2026-09-21T18:26:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/14162626?s=30&amp;v=4"/>
+    <author>
+      <name>sabeeh-saad</name>
+      <uri>https://github.com/sabeeh-saad</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix/scan filter state (#898)
+
+* Fix scan filter state isolation and lifecycle reconfiguration
+
+* Polish scan filter tests and threshold lookup
+
+---------
+
+Co-authored-by: Sabeeh ul Hassan Saad &amp;lt;sabeeh.saad@neura-robotics.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/97a0f186ddc73c350ff72f0ff48a35439795bf65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/97a0f186ddc73c350ff72f0ff48a35439795bf65"/>
+    <title>
+        Fix scan_header data race (#896)
+    </title>
+    <updated>2026-09-21T18:23:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/115460094?s=30&amp;v=4"/>
+    <author>
+      <name>hu1097007701</name>
+      <uri>https://github.com/hu1097007701</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix scan_header data race (#896)
+
+* Fix scan_header data race
+
+* Address scan_header review feedback&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/68517049462038b0131571dac593ccae325338eb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/68517049462038b0131571dac593ccae325338eb"/>
+    <title>
+        Use SPDX license identifier in package.xml (#899)
+    </title>
+    <updated>2026-09-21T18:22:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/140542?s=30&amp;v=4"/>
+    <author>
+      <name>wentasah</name>
+      <uri>https://github.com/wentasah</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use SPDX license identifier in package.xml (#899)
+
+Previously, package.xml license was just LGPL without version number
+and only/or-later tag. ros_license_toolkit suggests to use SPDX IDs
+containing this information so we change it.
+
+Signed-off-by: Michal Sojka &amp;lt;michal.sojka@cvut.cz&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/904fe9c7c7c2ee328812be19c9be5d3cc24bc933</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/904fe9c7c7c2ee328812be19c9be5d3cc24bc933"/>
+    <title>
+        Fix uninitialised read leaving upside-down lasers undetected (#894)
+    </title>
+    <updated>2026-09-17T17:50:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/16485416?s=30&amp;v=4"/>
+    <author>
+      <name>yugeeklab</name>
+      <uri>https://github.com/yugeeklab</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix uninitialised read leaving upside-down lasers undetected (#894)
+
+* Fix upside-down laser detection reading uninitialised memory
+
+LaserAssistant::isInverted() built a tf2::Vector3 without ever setting x
+(setZ was called twice, setX never), then pushed that point through the
+full mount transform:
+
+    tf2::Vector3 laser_orient;          // x is uninitialised
+    laser_orient.setY(0.);
+    laser_orient.setZ(0.);
+    laser_orient.setZ(1 + laser_pose_.transform.translation.z);
+    laser_orient = laser_pose * laser_orient;
+    if (laser_orient.z() &amp;lt;= 0) return true;
+
+The result is computed as
+`z = R[2][0]*x + R[2][1]*y + R[2][2]*z + t.z`, so the uninitialised x
+reaches the answer whenever R[2][0] is non-zero -- and it always is:
+going through the quaternion leaves ~1e-16 there rather than an exact 0.
+
+Instrumenting the original on a robot whose scan_joint carries
+rpy=&amp;quot;0 -${pi} 0&amp;quot; (a 180 deg flip about Y, so the laser genuinely is
+upside down), three runs out of three:
+
+    uninitialised x   = 8.09e-320      (denormal garbage)
+    R[2][0]           = 1.225e-16
+    buggy z result    = nan   -&amp;gt; inverted = FALSE
+    correct z (col 2) = -1.0  -&amp;gt; inverted = TRUE
+
+The result is not a flipped sign but NaN, and every comparison against
+NaN is false, so `if (z &amp;lt;= 0)` takes the else branch and reports the
+laser upright. scanToReadings() then skips its range reversal and karto
+is fed a mirrored scan. The pose graph still looks sane because odometry
+constrains the matcher, so only the rasterised map is visibly wrong:
+driving two laps of a 4.2 x 4.2 m room produced a 6.2 x 8.4 m /map with
+~290 occupied cells outside the room. With this fix, 4.05 x 4.05 m and
+none, and map-&amp;gt;odom settles to 0.003 m / 0.2 deg instead of drifting.
+
+Ask the rotation the question directly instead: the laser is upside down
+when its own +Z axis points down in the base frame, which is the Z
+component of the third column of the mount&amp;#39;s rotation matrix. A direction
+transforms by rotation only, so the translation is no longer applied, and
+nothing is left uninitialised.
+
+Reading uninitialised memory is undefined behaviour, so this can also
+appear to work -- the garbage may underflow to zero on another build,
+which likely explains why a symptom like this has gone unattributed for
+so long (ros-perception/slam_karto#4).
+
+* Fix out-of-bounds read and dropped beam in invertScan
+
+    for (int i = scan.ranges.size(); i != 0; i--) {
+      temp.ranges.push_back(scan.ranges[i]);
+
+The loop starts at size(), so the first iteration reads one past the end
+of the vector, and it stops at i != 0, so ranges[0] is never copied. The
+output is the correct reversal shifted by one, with whatever the
+out-of-bounds read returned in the first slot.
+
+Reduced to the same loop over an exactly-sized vector, AddressSanitizer
+reports it:
+
+    ERROR: AddressSanitizer: heap-buffer-overflow
+    READ of size 4 at 0x603000001c80
+    0x603000001c80 is located 0 bytes after 32-byte region
+
+    input  : 100 101 102 103 104 105 106 107
+    output :   0 107 106 105 104 103 102 101      (100 is gone)
+
+This runs for upside-down lasers on the interactive-markers path
+(ScanHolder::getCorrectedScan, used while dragging a pose-graph node).
+Observed on a 360-beam scan with range_min 0.1: the published
+slam_toolbox/scan_visualization carried exactly one physically
+impossible value, 0.0, at index 0, and none after the fix.
+
+Note this is reachable only once isInverted() is fixed -- while it
+wrongly reports every laser upright, invertScan() is never called at all.
+
+* Drop the added commentary&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/60fba35938fcb08710b3a34450f08dab787d7fd9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/60fba35938fcb08710b3a34450f08dab787d7fd9"/>
+    <title>
+        Reset PausedState on lifecycle configure (#886)
+    </title>
+    <updated>2026-08-17T19:21:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/138180964?s=30&amp;v=4"/>
+    <author>
+      <name>satwik-ugo</name>
+      <uri>https://github.com/satwik-ugo</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Reset PausedState on lifecycle configure (#886)
+
+- Add PausedState::reset() and call it from on_configure.
+- Clears stale pause flags that survived a deactivate/cleanup cycle.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/eee0cd5e4a161bb10f8334b5420c93876b31ca99</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/eee0cd5e4a161bb10f8334b5420c93876b31ca99"/>
+    <title>
+        rviz plugin: transform initial pose into map frame before using it (#…
+    </title>
+    <updated>2026-07-22T23:16:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/33422834?s=30&amp;v=4"/>
+    <author>
+      <name>shinobi-wolf</name>
+      <uri>https://github.com/shinobi-wolf</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;rviz plugin: transform initial pose into map frame before using it (#863) (#872) (#876)
+
+* add tf transform from fixed frame to map frame in rviz plugin intialize pose callback
+
+* fix indentation and formatting
+
+* add tf transform from fixed frame to map frame in localization pose callback&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6953058b8994c7e750277fd8f39b984453abf63c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/6953058b8994c7e750277fd8f39b984453abf63c"/>
+    <title>
+        Bump for lyrical release
+    </title>
+    <updated>2026-07-21T21:58:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/14944147?s=30&amp;v=4"/>
+    <author>
+      <name>SteveMacenski</name>
+      <uri>https://github.com/SteveMacenski</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump for lyrical release
+
+Signed-off-by: SteveMacenski &amp;lt;stevenmacenski@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d6ec75ece21db51c1851e9aa1550473707d1c051</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/d6ec75ece21db51c1851e9aa1550473707d1c051"/>
+    <title>
+        Fixes for Lyrical Release (#875)
+    </title>
+    <updated>2026-07-21T17:37:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/14944147?s=30&amp;v=4"/>
+    <author>
+      <name>SteveMacenski</name>
+      <uri>https://github.com/SteveMacenski</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fixes for Lyrical Release (#875)
+
+* Fix build warnings for Lyrical release
+
+Signed-off-by: SteveMacenski &amp;lt;stevenmacenski@gmail.com&amp;gt;
+
+* Update lib karto cmake version
+
+Signed-off-by: SteveMacenski &amp;lt;stevenmacenski@gmail.com&amp;gt;
+
+---------
+
+Signed-off-by: SteveMacenski &amp;lt;stevenmacenski@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/22bf65e14c2d2d79781aac9305e7cbc4ab0b8b04</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/22bf65e14c2d2d79781aac9305e7cbc4ab0b8b04"/>
+    <title>
+        Fix map serialization crashes in slam_toolbox (Boost registration + r…
+    </title>
+    <updated>2026-07-20T20:30:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/137199029?s=30&amp;v=4"/>
+    <author>
+      <name>Skinnyytallboy</name>
+      <uri>https://github.com/Skinnyytallboy</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix map serialization crashes in slam_toolbox (Boost registration + runtime listeners) (#873)
+
+* fix(karto): register DatasetInfo for serialization
+
+* fix(karto): skip serializing Mapper m_Listeners runtime callbacks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/67f7ad6d3555feb2c92e7b6eb0102d4fc1ac6382</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/67f7ad6d3555feb2c92e7b6eb0102d4fc1ac6382"/>
+    <title>
+        Improve slam_toolbox Windows portability (#874)
+    </title>
+    <updated>2026-07-20T17:16:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/5497832?s=30&amp;v=4"/>
+    <author>
+      <name>Tobias-Fischer</name>
+      <uri>https://github.com/Tobias-Fischer</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Improve slam_toolbox Windows portability (#874)
+
+This upstreams the current Windows portability pieces from RoboStack patch patch/ros-rolling-slam-toolbox.win.patch.
+
+Guard POSIX-only headers and stack-limit calls, use a portable sleep_for call, avoid GCC-only flags on MSVC, export Windows DLL symbols, define the Karto export macro while building Karto, and replace non-standard uint loop variables with unsigned int.
+
+Signed-off-by: Tobias Fischer &amp;lt;info@tobiasfischer.info&amp;gt;
+Co-authored-by: Daisuke Nishimatsu &amp;lt;nishimarudai@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4a27834f2ec1f9c532a19cf686a27574e8a0c68e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/4a27834f2ec1f9c532a19cf686a27574e8a0c68e"/>
+    <title>
+        Update README to remove Snap package details
+    </title>
+    <updated>2026-06-25T15:57:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/14944147?s=30&amp;v=4"/>
+    <author>
+      <name>SteveMacenski</name>
+      <uri>https://github.com/SteveMacenski</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README to remove Snap package details
+
+Removed recommendations for using snap packages and details about Snap containers.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/eecaab7b8e9e66d826b8ec6ecb4850c82bfdbe66</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/eecaab7b8e9e66d826b8ec6ecb4850c82bfdbe66"/>
+    <title>
+        feat: add validation for Mapper correlation configs to check if it is…
+    </title>
+    <updated>2026-06-21T16:29:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/212679362?s=30&amp;v=4"/>
+    <author>
+      <name>jangseop-sec</name>
+      <uri>https://github.com/jangseop-sec</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat: add validation for Mapper correlation configs to check if it is in normal bound (#860)
+
+* feat: add validation for Mapper configs to check if it is in normal bound
+
+Signed-off-by: jangseop-sec &amp;lt;jangseop@postech.ac.kr&amp;gt;
+
+* fix: update mapper bound value to 1e+-6
+
+Signed-off-by: jangseop-sec &amp;lt;jangseop@postech.ac.kr&amp;gt;
+
+---------
+
+Signed-off-by: jangseop-sec &amp;lt;jangseop@postech.ac.kr&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9b08ed928b09024440024511995c8c977c6280ed</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/9b08ed928b09024440024511995c8c977c6280ed"/>
+    <title>
+        feat:add save_map request name validation to prevent os command injec…
+    </title>
+    <updated>2026-06-21T16:27:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/212679362?s=30&amp;v=4"/>
+    <author>
+      <name>jangseop-sec</name>
+      <uri>https://github.com/jangseop-sec</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat:add save_map request name validation to prevent os command injection (#864)
+
+Signed-off-by: jangseop-sec &amp;lt;jangseop@postech.ac.kr&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ddfb96893061abca0c4f7396a07f795360400c98</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/ddfb96893061abca0c4f7396a07f795360400c98"/>
+    <title>
+        Fix UAF in sync mode during deserialize_map runtime reload (#852)
+    </title>
+    <updated>2026-05-20T17:10:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/112118946?s=30&amp;v=4"/>
+    <author>
+      <name>zhiygotthatsauce</name>
+      <uri>https://github.com/zhiygotthatsauce</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix UAF in sync mode during deserialize_map runtime reload (#852)
+
+* Fix sync deserialize_map use-after-free during runtime reload
+
+* Fix sync laser lifetime race during runtime reload&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/12114caf2c4c193e3462888a7de745b5093f2e18</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/12114caf2c4c193e3462888a7de745b5093f2e18"/>
+    <title>
+        CMake: fix boost system (#854)
+    </title>
+    <updated>2026-05-20T02:40:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/131929?s=30&amp;v=4"/>
+    <author>
+      <name>nim65s</name>
+      <uri>https://github.com/nim65s</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;CMake: fix boost system (#854)
+
+boost system has been header only since release 1.69 (December 5, 2018), and a useless stub was provided instead.
+
+in 1.89 (August 6, 2025), that stub was removed, so CMake fail if we require it.
+
+ref. https://www.boost.org/doc/libs/latest/libs/system/doc/html/system.html#changes_in_boost_1_89&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b768ead80908c08bdcd0a3953301127a446ca9fb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/b768ead80908c08bdcd0a3953301127a446ca9fb"/>
+    <title>
+        Protect clear queue with queue mutex (#853)
+    </title>
+    <updated>2026-05-15T16:55:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/112118946?s=30&amp;v=4"/>
+    <author>
+      <name>zhiygotthatsauce</name>
+      <uri>https://github.com/zhiygotthatsauce</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Protect clear queue with queue mutex (#853)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f6ae538864197a6d3f6dc41e12fd469610f784f4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/f6ae538864197a6d3f6dc41e12fd469610f784f4"/>
+    <title>
+        Fix map_start_at_dock &amp; map_start_at_dock parsing (#843)
+    </title>
+    <updated>2026-04-06T21:01:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/885742?s=30&amp;v=4"/>
+    <author>
+      <name>nxdefiant</name>
+      <uri>https://github.com/nxdefiant</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix map_start_at_dock &amp;amp; map_start_at_dock parsing (#843)
+
+* Fix map_start_at_dock &amp;amp; map_start_at_dock parsing
+
+Due to the default initialization with declare_parameter the type is
+never PARAMETER_NOT_SET so change detection of unset map_start_pose by
+checking for size=0
+
+Fixes 842
+
+* drop src/slam_toolbox_common.cpp type check&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3661355d9560cd086339d6cd4738915734c7b939</id>
+    <link type="text/html" rel="alternate" href="https://github.com/D-Robotics/slam_toolbox/commit/3661355d9560cd086339d6cd4738915734c7b939"/>
+    <title>
+        Posegraph deserialization result in service response - rolling branch…
+    </title>
+    <updated>2026-01-14T15:14:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/33027628?s=30&amp;v=4"/>
+    <author>
+      <name>fbottarel</name>
+      <uri>https://github.com/fbottarel</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Posegraph deserialization result in service response - rolling branch  (#830)
+
+* fixed dockerfile for rolling
+
+* added result to DeserializePoseGraph service
+
+* deserialize posegraph callback now adds result to service response
+
+* formatting&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>
