@@ -1,0 +1,37 @@
+{
+  "id": "evt-2026-10-09-d-robotics-publication-slam-toolbox-rdk-x5-web",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "d-robotics",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "地瓜机器人公开 SLAM Toolbox 的 RDK X5 适配及网页三维可视化"
+  },
+  "summary": {
+    "zh": "地瓜机器人在上游 SLAM Toolbox 基础上提交 RDK X5 交叉编译适配、依赖裁剪和 slam_toolbox_web_node，通过 HTTP/WebSocket 提供地图、扫描、里程计与坐标变换的网页三维可视化。该事件记录平台移植和可视化工具扩展，不将上游二维 SLAM 算法归为地瓜自研；同日 hobot_msgs 的4K消息格式更新不合并为独立来源。"
+  },
+  "evidence": [
+    {
+      "url": "https://github.com/D-Robotics/slam_toolbox/commits/ros2.atom",
+      "tier": "official",
+      "publisher": "地瓜机器人 · D-Robotics",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/slam-history.xml"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/D-Robotics/slam_toolbox/0b06ec5b9ecb3ed885ef4e38c3e66a7c0c418ec3/src/slam_toolbox_web_node.cpp",
+      "tier": "official",
+      "publisher": "地瓜机器人 · D-Robotics",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/slam-code.cpp"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方适配提交0b06ec5b9ecb3ed885ef4e38c3e66a7c0c418ec3的时间2026-10-09T08:33:31Z。"
+}

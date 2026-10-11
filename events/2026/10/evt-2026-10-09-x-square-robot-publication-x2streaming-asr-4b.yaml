@@ -1,0 +1,51 @@
+{
+  "id": "evt-2026-10-09-x-square-robot-publication-x2streaming-asr-4b",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "x-square-robot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "自变量机器人公开 X2Streaming-ASR-4B 流式语音识别模型与推理代码"
+  },
+  "summary": {
+    "zh": "自变量团队公开约4B参数的中英及中英混合流式语音识别权重和推理代码，基于 Voxtral Mini Realtime 微调，通过等待或输出决策产生不回退的文本，模型卡标明 Apache-2.0 许可。关联论文初版发表于9月8日、第三版发表于10月8日；本事件记录10月9日模型仓的发布。其训练中的 GRPO 优化语音输出时机，不属于机器人运动控制；公开材料未确认搭载机器人型号或商业部署。"
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/models/x-square-robot/X2Streaming-ASR-4B-1009",
+      "tier": "official",
+      "publisher": "自变量机器人",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/asr-meta.json"
+    },
+    {
+      "url": "https://huggingface.co/x-square-robot/X2Streaming-ASR-4B-1009/raw/main/README.md",
+      "tier": "official",
+      "publisher": "自变量机器人",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/asr-model.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/X-Square-Robot/X2Streaming-ASR/main/README.md",
+      "tier": "official",
+      "publisher": "自变量机器人",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/asr-code.md"
+    },
+    {
+      "url": "https://arxiv.org/html/2609.08672v3",
+      "tier": "primary",
+      "publisher": "arXiv · X Square Robot",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/asr-paper.html"
+    }
+  ],
+  "corroboration": "single",
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方模型仓 createdAt 的UTC日2026-10-09；模型说明与公开文件以10月11日核验快照为准，不将论文初版日期混作权重发布日期。"
+}

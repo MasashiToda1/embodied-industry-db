@@ -1,0 +1,42 @@
+{
+  "id": "evt-2026-10-09-rerun-publication-counterfactual-learning-example",
+  "date": "2026-10-09",
+  "date_precision": "day",
+  "type": "publication",
+  "orgs": [
+    {
+      "id": "rerun",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "Rerun 公开反事实训练数据诊断与策略修复示例"
+  },
+  "summary": {
+    "zh": "Rerun 公开机器人模仿学习工作流示例：检查演示数据、生成反事实变化、测量动作偏移、选择补充数据、微调策略并评估。示例以 ACT 与 MuJoCo 双臂方块转移任务贯通训练评测，并支持 LeRobot ALOHA 数据的离线分析，中间结果以 Rerun 记录、图层和表格保存。它是既有反事实学习方法的工具链实现，不是 Rerun 原创基础模型，也不证明真实机器人在线修复已完成。"
+  },
+  "evidence": [
+    {
+      "url": "https://raw.githubusercontent.com/rerun-io/example_counterfactual_learning/main/README.md",
+      "tier": "official",
+      "publisher": "Rerun",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/rerun-code.md"
+    },
+    {
+      "url": "https://github.com/rerun-io/example_counterfactual_learning/commits/main.atom",
+      "tier": "official",
+      "publisher": "Rerun",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/rerun-history.xml"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "sim_stack": [
+      "mujoco"
+    ]
+  },
+  "date_basis": "derived",
+  "date_as_stated": "日期取官方首次提交2026-10-09T18:44:44Z的UTC日；北京时间为10月10日。仓库链接的博客于核验日404，未将其作为证据。"
+}

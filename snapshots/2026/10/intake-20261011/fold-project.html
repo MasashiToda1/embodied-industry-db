@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="FoldNet++: a Large-Scale Synthetic Dataset for Robotic T-Shirt Folding and Unfolding">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="a large-scale synthetic dataset for robotic t-shirt folding and unfolding">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="garment manipulation, sim-to-real transfer, cross embodiment">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Yuxing Chen, Zhiyuan Wei, Bowen Xiao, Zhizheng Zhang, He Wang">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="epic">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="FoldNet++: a Large-Scale Synthetic Dataset for Robotic T-Shirt Folding and Unfolding">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="a large-scale synthetic dataset for robotic t-shirt folding and unfolding">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://pku-epic.github.io/FoldNetXX/">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <!-- <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png"> -->
+  <!-- <meta property="og:image:width" content="1200"> -->
+  <!-- <meta property="og:image:height" content="630"> -->
+  <!-- <meta property="og:image:alt" content="PAPER_TITLE - Research Preview"> -->
+  <!-- <meta property="article:published_time" content="2024-01-01T00:00:00.000Z"> -->
+  <!-- <meta property="article:author" content="FIRST_AUTHOR_NAME"> -->
+  <!-- <meta property="article:section" content="Research"> -->
+  <!-- <meta property="article:tag" content="KEYWORD1"> -->
+  <!-- <meta property="article:tag" content="KEYWORD2"> -->
+
+  <!-- Twitter -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <!-- <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE"> -->
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <!-- <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE"> -->
+  <!-- TODO: Same as paper title above -->
+  <!-- <meta name="twitter:title" content="PAPER_TITLE"> -->
+  <!-- TODO: Same as description above -->
+  <!-- <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS"> -->
+  <!-- TODO: Same as social preview image above -->
+  <!-- <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png"> -->
+  <!-- <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview"> -->
+
+  <!-- Academic/Research Specific -->
+  <!-- <meta name="citation_title" content="PAPER_TITLE"> -->
+  <!-- <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST"> -->
+  <!-- <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST"> -->
+  <!-- <meta name="citation_publication_date" content="2024"> -->
+  <!-- <meta name="citation_conference_title" content="CONFERENCE_NAME"> -->
+  <!-- <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf"> -->
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>FoldNet++</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link rel="apple-touch-icon" href="static/images/icon.png">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- latex -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+  
+  <!-- Structured Data for Academic Papers -->
+  <!-- <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script> -->
+  
+  <!-- Website/Organization Structured Data -->
+  <!-- <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script> -->
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <!-- TODO: Replace with your paper title -->
+              <h1 class="title is-1 publication-title">FoldNet++: a Large-Scale Synthetic Dataset for Robotic T-Shirt Folding and Unfolding</h1>
+
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your paper authors and their personal links -->
+                <span class="author-block">
+                  <a href="https://chen01yx.github.io/" target="_blank">Yuxing Chen</a><sup>1,2,*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://weizhiyuan.xyz/" target="_blank">Zhiyuan Wei</a><sup>1,2,*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://bowie375.github.io/" target="_blank">Bowen Xiao</a><sup>1,2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en" target="_blank">Zhizheng Zhang</a><sup>2,&dagger;</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1,2,&dagger;</sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your institution and conference/journal info -->
+                <span class="author-block">
+                  <sup>1</sup>CFCS, Peking University, China<br>
+                  <sup>2</sup>Galbot, China<br>
+                  CoRL 2026
+                  <!-- Conference name and year -->
+                </span>
+                <!-- TODO: Remove this line if no equal contribution -->
+                <span class="eql-cntrb">
+                  <small>
+                    <br><sup>*</sup> Equal Contribution, <sup>&dagger;</sup> Corresponding Author
+                  </small>
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2609.12433" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="https://github.com/GalaxyGeneralRobotics/FoldNetXX" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/GalaxyGeneralRobotics/FoldNetXX" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-database"></i>
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Due to the highly deformable nature of garments, training a generalizable policy for robotic T-shirt folding and unfolding remains a significant challenge. In this work, we present a large-scale synthetic dataset for robotic T-shirt folding and unfolding, covering 6 robotic embodiments, 1K T-shirts, 1K environmental assets, and 120K episodes with rich annotations, which can be used to train a wide range of manipulation policies. We first follow the FoldNet pipeline to generate a large-scale dataset of physically simulatable T-shirts with diverse appearances and annotated semantic keypoints. Based on these semantic keypoints, we then generate manipulation demonstrations for different robotic embodiments through a unified rule-based framework. We use these demonstrations to train visuomotor policies, and experimental results demonstrate that models trained solely on our synthetic data can achieve over 90% end-to-end task success rates when directly deployed to unseen real-world environments and previously unseen T-shirts from arbitrary initial configurations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Method</h2>
+            <img src="static/images/teaser_v1.svg" alt="Teaser" loading="lazy"/>
+            <div class="content has-text-justified">
+              <p>
+                Overview of FoldNet++. (a) Our dataset includes 6 robots, 1K T-shirts, and 1K table textures and HDRI environment maps. (b) Using these assets, we import them into an FEM-based physics simulator. Combined with predefined manipulation rules and domain randomization, we generate 120K episodes containing multi-view observations from three camera viewpoints, robot actions, and subtask annotations. (c) Leveraging the FoldNet++ dataset, we train different categories of models (VA, VLA, and WAM) and evaluate them across multiple embodiments in both simulated and real-world environments under zero-shot and few-shot settings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h2 class="title is-3">Results</h2>
+            <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/galbot_with_action_visualization.mp4" type="video/mp4">
+            </video>
+            <p>Deployment on Galbot-G1</p>
+
+            <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/arx_with_action_visualization.mp4" type="video/mp4">
+            </video>
+            <p>Deployment on ARX-R5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">More Videos</h2>
+
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-video1">
+                  <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/galbot3.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video2">
+                  <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/galbot2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video3">
+                  <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/galbot4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video4">
+                  <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/galbot1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <p>Galbot-G1</p>
+
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-video1">
+                  <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/arx1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video2">
+                  <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/arx2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-video3">
+                  <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+                    <source src="static/videos/arx3.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <p>ARX-R5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/galbot_5x5.mp4" type="video/mp4">
+            </video>
+            <p>Large-scale real-world testing on Galbot-G1</p>
+
+            <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/arx_3x3.mp4" type="video/mp4">
+            </video>
+            <p>Large-scale real-world testing on ARX-R5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <h2 class="title is-3">Supplementary Video</h2>
+            <video poster="" id="tree" autoplay controls muted loop style="width: 640px; height: auto;" preload="metadata">
+              <source src="static/videos/supp_video.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@inproceedings{
+chen2026foldnetxx,
+title={FoldNet++: a Large-Scale Synthetic Dataset for Robotic T-Shirt Folding and Unfolding},
+author={Yuxing Chen and Zhiyuan Wei and Bowen Xiao and Zhizheng Zhang and He Wang},
+booktitle={10th Annual Conference on Robot Learning},
+year={2026},
+url={https://openreview.net/forum?id=JMcC5JoPKD}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/rerun-io/example_counterfactual_learning/commits/main</id>
+  <link type="text/html" rel="alternate" href="https://github.com/rerun-io/example_counterfactual_learning/commits/main"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/rerun-io/example_counterfactual_learning/commits/main.atom"/>
+  <title>Recent Commits to example_counterfactual_learning:main</title>
+  <updated>2026-10-09T18:44:44Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cd1edca66da373e2f7807d440f7d7accf1f982b5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/rerun-io/example_counterfactual_learning/commit/cd1edca66da373e2f7807d440f7d7accf1f982b5"/>
+    <title>
+        Counterfactual learning example: finding the training data a robot po…
+    </title>
+    <updated>2026-10-09T18:44:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/24943992?s=30&amp;v=4"/>
+    <author>
+      <name>timsaucer</name>
+      <uri>https://github.com/timsaucer</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Counterfactual learning example: finding the training data a robot policy is missing
+
+Full imitation-learning workflow (ACT on MuJoCo cube transfer, plus LeRobot
+ALOHA data offline) with every intermediate result stored as Rerun
+recordings, layers and tables on the open-source catalog server.
+
+Co-Authored-By: Claude Opus 5.5 &amp;lt;noreply@anthropic.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

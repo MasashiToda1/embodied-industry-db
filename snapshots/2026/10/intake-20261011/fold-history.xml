@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/GalaxyGeneralRobotics/FoldNetXX/commits/main</id>
+  <link type="text/html" rel="alternate" href="https://github.com/GalaxyGeneralRobotics/FoldNetXX/commits/main"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/GalaxyGeneralRobotics/FoldNetXX/commits/main.atom"/>
+  <title>Recent Commits to FoldNetXX:main</title>
+  <updated>2026-10-10T06:33:26Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/efde29ffd6ef4d0b7ad218ea8eaaf3cf906bd678</id>
+    <link type="text/html" rel="alternate" href="https://github.com/GalaxyGeneralRobotics/FoldNetXX/commit/efde29ffd6ef4d0b7ad218ea8eaaf3cf906bd678"/>
+    <title>
+        init
+    </title>
+    <updated>2026-10-10T06:33:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/114567790?s=30&amp;v=4"/>
+    <author>
+      <name>chen01yx</name>
+      <uri>https://github.com/chen01yx</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;init&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

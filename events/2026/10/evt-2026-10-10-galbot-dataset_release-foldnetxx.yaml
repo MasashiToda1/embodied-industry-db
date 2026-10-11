@@ -1,0 +1,67 @@
+{
+  "id": "evt-2026-10-10-galbot-dataset_release-foldnetxx",
+  "date": "2026-10-10",
+  "date_precision": "day",
+  "type": "dataset_release",
+  "orgs": [
+    {
+      "id": "galbot",
+      "role": "subject"
+    }
+  ],
+  "title": {
+    "zh": "银河通用与北大公开 FoldNet++ 衣物操作合成数据与训练代码"
+  },
+  "summary": {
+    "zh": "银河通用与北京大学联合项目 FoldNet++ 公开机器人T恤折叠与展开合成数据及训练代码。项目页披露6种机器人本体、1000件T恤、1000项环境资产及12万条操作轨迹，展示 Galbot-G1 与 ARX-R5 真机研究实验。数据仓标注 CC-BY-NC-4.0，包含非商业使用限制；代码发布与研究测试不代表商业部署，也不将其他品牌测试本体记为联合发布方。"
+  },
+  "evidence": [
+    {
+      "url": "https://huggingface.co/api/datasets/GalaxyGeneralRobotics/FoldNetXX",
+      "tier": "official",
+      "publisher": "银河通用与北京大学 · FoldNet++",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/fold-meta.json"
+    },
+    {
+      "url": "https://huggingface.co/datasets/GalaxyGeneralRobotics/FoldNetXX/raw/main/README.md",
+      "tier": "official",
+      "publisher": "银河通用与北京大学 · FoldNet++",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/fold-model.md"
+    },
+    {
+      "url": "https://pku-epic.github.io/FoldNetXX/",
+      "tier": "official",
+      "publisher": "银河通用与北京大学 · FoldNet++",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/fold-project.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GalaxyGeneralRobotics/FoldNetXX/main/README.md",
+      "tier": "official",
+      "publisher": "银河通用与北京大学 · FoldNet++",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/fold-code.md"
+    },
+    {
+      "url": "https://github.com/GalaxyGeneralRobotics/FoldNetXX/commits/main.atom",
+      "tier": "official",
+      "publisher": "银河通用与北京大学 · FoldNet++",
+      "retrieved": "2026-10-11",
+      "snapshot": "snapshots/2026/10/intake-20261011/fold-history.xml"
+    }
+  ],
+  "corroboration": "single",
+  "axes": {
+    "data_acquisition": [
+      "sim-generated"
+    ],
+    "data_sourcing": [
+      "open-dataset",
+      "academic-partnership"
+    ]
+  },
+  "date_basis": "derived",
+  "date_as_stated": "官方代码首个提交时间2026-10-10T06:33:26Z；记录本次数据及代码公开，项目规模取10月11日核验说明，不作为论文首次发表日期。"
+}
