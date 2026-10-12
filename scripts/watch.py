@@ -26,7 +26,7 @@ import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urlsplit
 
 import httpx
 import yaml
@@ -212,6 +212,30 @@ def match_org(text: str, orgs: list[dict], title: str = "", kw: re.Pattern | Non
     return None
 
 
+def match_paper_org(text: str, orgs: list[dict]) -> dict | None:
+    """摘要中的官方代码链接可作候选归属；不靠作者姓名或相关工作猜机构。
+
+    必须精确匹配已核验的 GitHub owner，且只有一个主体命中。
+    这只产生待审核线索，不表示论文已入库或代码已发布。
+    """
+    owners = set()
+    for raw in re.findall(r"https?://[^\s<>]+", text):
+        try:
+            parsed = urlsplit(raw.rstrip('.,;:)'))
+        except ValueError:
+            continue
+        parts = parsed.path.strip('/').split('/')
+        if parsed.hostname in {'github.com', 'www.github.com'} and len(parts) >= 2:
+            owners.add(parts[0].casefold())
+    matches = [org for org in orgs
+               if (org.get('accounts', {}).get('github') or '').casefold() in owners]
+    if len(matches) == 1:
+        org = matches[0]
+        return {'id': org['id'], 'zh': org['zh'],
+                'matched': org['accounts']['github']}
+    return None
+
+
 # ----------------------------------------------------------------- 各源
 
 def fetch_rss(name: str, url: str, tier: str) -> list[dict]:
@@ -277,7 +301,8 @@ def fetch_arxiv(query: str, max_results: int) -> list[dict]:
             "title": norm(e.findtext(f"{ATOM}title")),
             "url": link,
             "date": norm(e.findtext(f"{ATOM}published"))[:10],
-            "summary": norm(e.findtext(f"{ATOM}summary"))[:300],
+            # 官方代码链接常在摘要末尾，截断会丢失主体归属。
+            "summary": norm(e.findtext(f"{ATOM}summary")),
             "kind": "paper",
         })
     return out
@@ -837,7 +862,10 @@ def main() -> int:
                 digest.append((k, it))
             continue
         # 新闻类：主体名必须在标题里，大厂还要同时命中机器人关键词
-        org = it.get("org") or match_org(blob, orgs, title=it["title"], kw=kw)
+        org = it.get("org")
+        if not org and it.get("kind") == "paper":
+            org = match_paper_org(blob, orgs)
+        org = org or match_org(blob, orgs, title=it["title"], kw=kw)
         if org:
             # 第三道去重：同一件事换家媒体报，链接不同内容一样——跟已入库事件比标题相似度
             if it.get("kind") == "news" and already_covered(

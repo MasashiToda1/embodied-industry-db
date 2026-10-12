@@ -1,0 +1,27 @@
+id: evt-2026-01-29-mujocolab-publication-mjlab-framework
+date: '2026-01-29'
+date_precision: day
+type: publication
+orgs:
+- id: mujocolab
+  role: subject
+title:
+  zh: MujocoLab 发表 mjlab GPU 加速机器人学习框架论文
+summary:
+  zh: mjlab 论文介绍以 MuJoCo Warp 实现GPU加速物理仿真、采用 Isaac Lab 风格的模块化环境接口，并提供速度跟踪、动作模仿与操作任务参考实现。项目按
+    Apache-2.0 发布，部分第三方代码保留原许可。记录框架研究发布，不把10月上游发现日期当作首发，也不将社区记为机器人本体制造商。
+evidence:
+- url: https://arxiv.org/abs/2601.22074
+  tier: primary
+  publisher: arXiv
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/mjlab-paper.html
+- url: https://raw.githubusercontent.com/mujocolab/mjlab/main/README.md
+  tier: official
+  publisher: MujocoLab
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/mjlab.md
+corroboration: single
+axes:
+  sim_stack:
+  - mujoco

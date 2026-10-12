@@ -1,0 +1,28 @@
+id: evt-2026-09-09-phymi-funding-seed-round
+date: '2026-09-09'
+date_precision: day
+type: funding
+orgs:
+- id: phymi
+  role: subject
+title:
+  zh: 费莫一宣布完成近亿美元种子轮融资
+summary:
+  zh: 费莫一宣布完成近亿美元种子轮融资，IDG资本领投，云启资本、滴滴出行、复星锐正、耀途资本、禾赛科技跟投。公司披露募资用于 Physical Agent
+    核心技术、真实动态数据体系、产品工程化与团队建设。金额为近亿美元，不写成精确金额；未披露实际交割日。
+evidence:
+- url: https://eu.36kr.com/zh/p/3975490482106889
+  tier: media
+  publisher: 投中网（36氪转载）
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/phymi-funding2.html
+corroboration: single
+date_basis: derived
+date_as_stated: 报道明确9月9日宣布；记录公开披露日期，实际融资交割日未披露。
+counterparties:
+- IDG资本
+- 云启资本
+- 滴滴出行
+- 复星锐正
+- 耀途资本
+- 禾赛科技

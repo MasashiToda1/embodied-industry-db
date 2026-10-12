@@ -1,0 +1,29 @@
+id: evt-2026-10-12-roboparty-publication-i-bfm-code
+date: '2026-10-12'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对公开 I-BFM 训练代码、检查点与交互演示
+summary:
+  zh: 萝博派对 I-BFM 官方仓库公开训练代码、ibfm-166m 检查点以及搬箱、推箱、踢箱交互演示，同一检查点用于多项任务。README 提供 MuJoCo
+    演示与多卡 H200 训练说明，训练代码采用 CC-BY-NC-4.0 许可。该项目与库内 P-BFM 为不同成果；本条记录代码发布，未进行训练复现，也不把10月8日建仓时间当作有效内容发布。
+evidence:
+- url: https://raw.githubusercontent.com/Roboparty/I-BFM-Code/main/README.md
+  tier: official
+  publisher: 萝博派对 · GitHub
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/216.md
+- url: https://github.com/Roboparty/I-BFM-Code/commits/main.atom
+  tier: official
+  publisher: 萝博派对 · GitHub
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/216hist.xml
+corroboration: single
+axes:
+  sim_stack:
+  - mujoco
+date_basis: derived
+date_as_stated: 官方首个代码提交61992a090f9f5425424d11d9cb562a04b7bbd054时间2026-10-12T03:39:24Z。

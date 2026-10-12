@@ -1,0 +1,18 @@
+id: evt-2026-09-04-galbot-statement-et1-first-day-preorders
+date: '2026-09-04'
+date_precision: day
+type: statement
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用披露银河星仔 ET1 首日预订超过200台
+summary:
+  zh: 界面新闻从银河通用获悉，银河星仔 ET1 开启全网预订24小时内订单量超过200台。该数字为公司披露的预订口径，不等于付款或交付；9月3日开启预订及版本价格已有独立记录，本条仅补充首日订单进展。
+evidence:
+- url: https://www.jiemian.com/article/15055619.html
+  tier: media
+  publisher: 界面新闻
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/galbot-orders.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2026-10-12-unitree-statement-robot-gpt6-tests
+date: '2026-10-12'
+date_precision: day
+type: statement
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树披露曾将 GPT-6 部署到机器人进行任务测试
+summary:
+  zh: 宇树在中国国际工业博览会公开对话中表示，团队此前将 GPT-6 部署到机器人进行任务测试，并评价效果表现不错。报道未披露具体本体、任务、测试协议或成功率；本条记录公开表态，不记为商业部署或端到端运控路线。
+evidence:
+- url: https://finance.eastmoney.com/a/202610123892520424.html
+  tier: media
+  publisher: 第一财经（东方财富转载）
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/unitree-original.html
+corroboration: single
+date_basis: derived
+date_as_stated: 公开表态发生于10月12日；测试仅称前段时间，实际测试日不详。

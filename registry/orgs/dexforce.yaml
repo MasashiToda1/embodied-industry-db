@@ -5,11 +5,15 @@ names:
   aliases:
   - DexForce
   - EmbodiChain
+  # 产品／研究项目别名，仅用于发现，不能据此认定成果已发布。
+  - UNITAS
+  - TaskAnchor
 status: active
 layers:
 - foundation
 - simulation
 accounts:
+  github: DexForce
   huggingface: DexForceAI
   site: https://www.dexforce.com
 founded: 2021
@@ -18,6 +22,10 @@ hq:
   city: 深圳
 description: 深圳的具身智能公司，自研 DexVerse 生成式仿真引擎与世界模型 DexWorldModel，以合成数据训练模型，产品含 W1 Pro 人形机器人与 DexSense 视觉传感器。
 sources:
+- url: https://github.com/DexForce/UNITAS
+  tier: official
+  retrieved: '2026-10-13'
+  note: 官方仓库作者单位列有 DexForce；核验组织账号及 UNITAS 项目归属，代码、模型与数据仍在发布计划中
 - url: https://dexforce.com/about.html
   tier: official
   retrieved: '2026-09-22'
