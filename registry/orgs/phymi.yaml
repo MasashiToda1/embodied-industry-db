@@ -1,0 +1,22 @@
+id: phymi
+names:
+  zh: 费莫一科技
+  en: PHYMI
+  aliases:
+  - 费莫一
+  - 费莫一科技（深圳）有限公司
+status: active
+layers:
+- foundation
+- embodiment
+description: 面向开放动态环境研发 Physical Agent、机器人本体与具身模型的企业；公开产品路线包含自建数据体系，尚未把发布及部署计划视为实际交付。
+sources:
+- url: https://www.leiphone.com/category/transportation/Y6GLcnioywVn3u7K.html
+  tier: media
+  retrieved: '2026-10-13'
+  note: 雷峰网采访核验公司名、机器人及具身模型研发方向
+- url: https://eu.36kr.com/zh/p/3975490482106889
+  tier: media
+  retrieved: '2026-10-13'
+  note: 融资报道披露英文名、成立于2026年及业务定位
+founded: 2026

@@ -32,7 +32,7 @@ rss:
 arxiv:
   enabled: true
   # cs.RO 全量太多，用这几个词收一收
-  query: 'cat:cs.RO AND (abs:"humanoid" OR abs:"loco-manipulation" OR abs:"vision-language-action" OR abs:"whole-body")'
+  query: 'cat:cs.RO AND (abs:"humanoid" OR abs:"loco-manipulation" OR abs:"vision-language-action" OR abs:"whole-body" OR abs:"world action model" OR abs:"VLA")'
   max_results: 40
 
 # Exa 语义搜索。来自 Agent-Reach（https://github.com/Panniantong/Agent-Reach）的搜索渠道，
@@ -54,6 +54,12 @@ exa:
     - 机器人 数据采集 训练场
     - humanoid robot funding round
     - humanoid robot deployment customer
+    # 仿真基础设施合作、操作世界模型未必使用“人形机器人”措辞。
+    - 具身智能 仿真 引擎 合作 联合发布
+    - 机器人 世界模型 操作 论文 发布
+    # 机器之心 RSS 不可用，通过公开报道及转载检索补齐，而非添加失效 feed。
+    - 机器之心 机器人 具身 世界模型
+    - Motphys 谋先飞 仿真 合作
 
 # 盯 Robotics_Notebooks，但只盯两件事：新增机构、能补上我们空着的 ref。
 # 他一天几十个提交全是技术知识 ingest，全量接进来就是噪音，

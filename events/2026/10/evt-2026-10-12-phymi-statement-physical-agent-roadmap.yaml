@@ -1,0 +1,20 @@
+id: evt-2026-10-12-phymi-statement-physical-agent-roadmap
+date: '2026-10-12'
+date_precision: day
+type: statement
+orgs:
+- id: phymi
+  role: subject
+title:
+  zh: 费莫一披露通用机器人、模型与数据体系研发路线
+summary:
+  zh: 费莫一在采访中披露面向开放动态环境研发通用机器人与具身模型，并开发数据采集设备与自有数据体系。公司计划于2026年发布本体、模型及演示，2027年开展多点部署；本体最终形态仍在探索。本条仅记录公开研发路线与计划，不视为已交付或已确定双足形态。
+evidence:
+- url: https://www.leiphone.com/category/transportation/Y6GLcnioywVn3u7K.html
+  tier: media
+  publisher: 雷峰网
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/205.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用采访报道发布日期2026-10-12；访谈实际进行日期未披露。

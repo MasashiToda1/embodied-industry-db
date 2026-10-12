@@ -1,0 +1,29 @@
+id: evt-2026-09-20-dexforce-publication-taskanchor-long-horizon-vla
+date: '2026-09-20'
+date_precision: day
+type: publication
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能联合发表 TaskAnchor 长程操作任务状态适配方法
+summary:
+  zh: 跨维智能等机构联合提出 TaskAnchor，在反应式VLA中注入执行历史相关的视觉特征与任务阶段信息，以处理相似观察下不同任务状态对应不同动作的问题；方法不增加独立规划器或改变动作生成机制。论文报告
+    RMBench、RoboMemArena 及真机研究评测。核验时项目页的代码和模型链接仍标为待发布；不记为已集成 UNITAS 或商业部署。
+evidence:
+- url: https://arxiv.org/abs/2609.23580
+  tier: primary
+  publisher: arXiv
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/taskanchor-paper.html
+- url: https://arxiv.org/html/2609.23580v1
+  tier: primary
+  publisher: arXiv
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/taskanchor-full.html
+- url: https://taskanchor.netlify.app/
+  tier: official
+  publisher: TaskAnchor 项目页
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/taskanchor-project.html
+corroboration: single

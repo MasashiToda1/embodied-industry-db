@@ -1,0 +1,19 @@
+id: mujocolab
+names:
+  zh: MujocoLab 开源社区
+  en: MujocoLab
+  aliases:
+  - mjlab
+status: active
+layers:
+- simulation
+description: 维护 mjlab GPU 加速机器人学习框架的开源工具社区；以机器人仿真工具提供方收录，不作为机器人整机公司或 Google MuJoCo
+  官方主体。
+sources:
+- url: https://raw.githubusercontent.com/mujocolab/mjlab/main/README.md
+  tier: official
+  retrieved: '2026-10-13'
+  note: 项目 README 与论文链接核验社区及工具归属
+accounts:
+  github: mujocolab
+  site: https://mujocolab.github.io/mjlab/

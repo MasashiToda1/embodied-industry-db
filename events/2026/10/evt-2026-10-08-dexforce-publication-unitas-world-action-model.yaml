@@ -1,0 +1,27 @@
+id: evt-2026-10-08-dexforce-publication-unitas-world-action-model
+date: '2026-10-08'
+date_precision: day
+type: publication
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能联合发表 UNITAS 三维世界动作模型论文
+summary:
+  zh: 跨维智能等机构联合提出 UNITAS，将机器人观察、动作流和场景变化统一到三维坐标表示，支持动作生成和给定动作的场景预测。论文报告1.7B参数及 LIBERO、RoboTwin
+    和真机操作研究评测。核验时官方仓库仅提供项目说明与素材，权重、推理代码、训练代码及数据仍列为待发布；不记为已完整开源、商业部署或独立验证的行业排名。
+evidence:
+- url: https://arxiv.org/abs/2610.12099
+  tier: primary
+  publisher: arXiv
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/unitas-paper.html
+- url: https://raw.githubusercontent.com/DexForce/UNITAS/main/README.md
+  tier: official
+  publisher: 跨维智能 · GitHub
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/unitas-readme.md
+corroboration: single
+axes:
+  model_form:
+  - world-model

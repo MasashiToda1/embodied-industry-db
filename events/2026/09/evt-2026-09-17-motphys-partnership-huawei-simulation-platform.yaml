@@ -1,0 +1,35 @@
+id: evt-2026-09-17-motphys-partnership-huawei-simulation-platform
+date: '2026-09-17'
+date_precision: day
+type: partnership
+orgs:
+- id: motphys
+  role: subject
+- id: huawei-cloudrobo
+  role: counterparty
+title:
+  zh: 莫特菲斯与华为联合发布具身智能仿真基座方案
+summary:
+  zh: 媒体报道莫特菲斯在华为全联接大会首日与华为联合发布具身智能仿真基座解决方案，以 MotrixSim 与 MotrixLab 连接仿真、强化学习训练和真机部署，方案纳入华为生态伙伴体系。报道同时披露鲲鹏及昇腾适配；未披露客户采购数量或合同金额。本条不将同稿转载视为独立验证，也不采用未核实测试条件的性能增幅。
+evidence:
+- url: https://timeline.sohu.com/news/XZHUXzGn0T
+  tier: media
+  publisher: Hi科技（搜狐号）
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/sohu-huawei.html
+- url: https://news.pedaily.cn/20261010/140452.shtml
+  tier: aggregator
+  publisher: 投资界（来源：网络）
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/motphys-coop.html
+- url: https://www.huawei.com/cn/events/huaweiconnect/terms-and-conditions-2026
+  tier: official
+  publisher: 华为
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/huawei-date.html
+corroboration: single
+axes:
+  sim_stack:
+  - in-house
+date_basis: derived
+date_as_stated: 合作报道写大会首日；华为大会官方条款明确举办日期为2026年9月17日至19日，据此取9月17日。搜狐10月9日、投资界10月10日为报道日。

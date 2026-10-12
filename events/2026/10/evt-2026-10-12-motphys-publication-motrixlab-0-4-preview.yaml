@@ -1,0 +1,22 @@
+id: evt-2026-10-12-motphys-publication-motrixlab-0-4-preview
+date: '2026-10-12'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 MotrixLab v0.4.0b0 预发布版本
+summary:
+  zh: MotrixLab v0.4.0b0 预发布版本增加 Microduck 任务、程序化地形、G1全身运动任务、异步 FastSAC 训练、AMD ROCm
+    训练依赖及真机部署配置，集成 MotrixSim 原生运行时。记录训练工具链的预发布进展，配置支持不视为真实客户部署或生产稳定性验证。
+evidence:
+- url: https://github.com/Motphys/MotrixLab/releases/tag/v0.4.0b0
+  tier: official
+  publisher: Motphys · GitHub
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261013/213.html
+corroboration: single
+axes:
+  sim_stack:
+  - in-house
