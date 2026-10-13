@@ -1,0 +1,20 @@
+id: evt-2026-09-orbbec-corporate-mower-odm-exit-reported
+date: 2026-09
+date_precision: month
+type: corporate
+orgs:
+- id: orbbec
+  role: subject
+title:
+  zh: 媒体报道奥比中光终止割草机器人整机 ODM 业务
+summary:
+  zh: 雷峰网10月12日报道，奥比中光于9月中旬在内部决定终止割草机器人整机 ODM 业务，相关感知模组业务不受影响。本条记录媒体披露的业务范围调整，尚未核到公司正式公告；不将其解释为退出全部户外感知业务或全面转向具身智能，不采用未独立核实的销量与退出原因。
+evidence:
+- url: https://www.leiphone.com/category/robot/GUx09tTTDB6WVdTN.html
+  publisher: 雷峰网
+  tier: media
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/222.html
+corroboration: single
+date_basis: derived
+date_as_stated: 报道原文为9月中旬；事件只精确到2026-09，10月12日为报道日，未编造具体决定日期。

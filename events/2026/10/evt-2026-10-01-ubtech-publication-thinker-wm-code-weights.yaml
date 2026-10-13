@@ -1,0 +1,44 @@
+id: evt-2026-10-01-ubtech-publication-thinker-wm-code-weights
+date: '2026-10-01'
+date_precision: day
+type: publication
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选公开 Thinker-WM 推理代码与模型权重
+summary:
+  zh: 优必选 Thinker-WM 项目公开推理代码与模型权重，将 RGB、深度和动作联合建模，提供世界模型、世界动作模型及视觉语言动作推理等运行模式。项目采用
+    CC BY-NC-SA 4.0 许可，含非商用限制。本条记录代码及权重公开材料，不认定模型首次提出日期，不将自报评测视为独立验证，也不认定完整训练流程或训练数据已公开。
+evidence:
+- url: https://raw.githubusercontent.com/UBTECH-Robot/Thinker-WM/main/README.md
+  publisher: 优必选 · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/226-code.md
+- url: https://huggingface.co/UBTECH-Robotics/Thinker-WM/raw/main/README.md
+  publisher: 优必选 · Hugging Face
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/226-hf.md
+- url: https://api.github.com/repos/UBTECH-Robot/Thinker-WM/commits?per_page=100
+  publisher: 优必选 · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/thinker-git-history.json
+- url: https://huggingface.co/api/models/UBTECH-Robotics/Thinker-WM/commits/main
+  publisher: 优必选 · Hugging Face
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/thinker-history.json
+- url: https://huggingface.co/api/models/UBTECH-Robotics/Thinker-WM/revision/4d27baa9f3142145734fef6a9a844018c8fc6770
+  publisher: 优必选 · Hugging Face
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/thinker-weights.json
+corroboration: single
+axes:
+  model_form:
+  - world-model
+date_basis: derived
+date_as_stated: 9月29日为仓库初始化；实际代码提交为2026-09-30T16:16:05Z，权重上传提交4d27baa9f3142145734fef6a9a844018c8fc6770为17:20:26Z，均为北京时间10月1日。采用有效材料提交时间，不代表可确认仓库由私有转公开的时间。

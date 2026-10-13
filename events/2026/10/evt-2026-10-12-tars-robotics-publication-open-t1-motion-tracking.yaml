@@ -1,0 +1,39 @@
+id: evt-2026-10-12-tars-robotics-publication-open-t1-motion-tracking
+date: '2026-10-12'
+date_precision: day
+type: publication
+orgs:
+- id: tars-robotics
+  role: subject
+title:
+  zh: 它石智航公开 T1 全身运动跟踪训练与仿真工具链
+summary:
+  zh: 它石智航 open_t1 仓库公开面向 T1 的全身运动跟踪代码，基于 BeyondMimic / whole_body_tracking 适配，提供
+    Isaac Lab 训练、ONNX 导出与 MuJoCo Sim2Sim 运行脚本。README 列出 Isaac Lab 2.3.2、Isaac Sim
+    5.x 与 RSL-RL 依赖。记录已有方法的本体适配与工具发布，不将其记为原创基础算法或实机交付。
+evidence:
+- url: https://raw.githubusercontent.com/tars-robotics/open_t1/main/README.md
+  publisher: 它石智航 · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/218-tars.md
+- url: https://api.github.com/repos/tars-robotics/open_t1/commits?per_page=10
+  publisher: 它石智航 · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/tars-history.json
+- url: https://api.github.com/repos/tars-robotics/open_t1/git/trees/main?recursive=1
+  publisher: 它石智航 · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/tars-tree.json
+corroboration: single
+axes:
+  sim_stack:
+  - isaac-lab
+  - isaac-sim
+  - mujoco
+  control_route:
+  - rl
+date_basis: derived
+date_as_stated: 有效代码提交00e1b21cc1821ad9f5cee8ec586f09e85f7f07ab为2026-10-12T13:55:25Z，即北京时间10月12日；不是仅取仓库创建日。

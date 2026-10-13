@@ -741,26 +741,26 @@ def _day(date: str) -> str:
 
 
 def cluster_hits(hits: list[tuple[str, dict]]) -> list[list[dict]]:
-    """同主体、同事件类型、发生日期相差 ≤3 天的合成一件事。
+    """只合相同 URL 或完整标题的候选；主体、类型、日期接近不足以判同一事件。
 
-    Humanoid 融资被 8 家媒体报了 8 遍，超维动力 2 遍——那是一件事不是八件。
-    HF 的批量发布已经在源头聚过，这里主要合新闻。
+    HF 批量上传已在源头聚合。跨平台的代码、模型、数据发布须人工核验关系。
     """
     buckets: dict[tuple, list[dict]] = {}
     title_key: dict[tuple, tuple] = {}     # 归一化标题 → 已有桶键，同标题不同日期也合
     for _, it in hits:
-        d = _day(it.get("date", ""))
-        # 日期粗到 3 天桶，同一件事不同媒体发稿日差一两天很常见
-        day_bucket = d[:8] + str(int(d[8:10]) // 3) if d else "?"
-        key = (it["org"]["id"], it.get("kind", "news"), day_bucket)
+        url = it.get("url", "").split("#", 1)[0].rstrip("/")
+        key = (it["org"]["id"], it.get("kind", "news"), url or len(buckets))
         # 同一标题从不同源、不同日期进来的，强制并到同一桶——
         # 英伟达那条「开源 IMO 金牌配方」雷峰网和 Exa 各给一次，日期差 4 天就开了两个 issue
-        tk = (it["org"]["id"], re.sub(r"[\s\W_]+", "", it["title"].lower())[:40])
+        tk = (it["org"]["id"], it.get("kind", "news"),
+              re.sub(r"[\s\W_]+", "", it["title"].lower()))
         if tk in title_key:
             key = title_key[tk]
         else:
             title_key[tk] = key
-        buckets.setdefault(key, []).append(it)
+        group = buckets.setdefault(key, [])
+        if not any(x.get("url", "").split("#", 1)[0].rstrip("/") == url for x in group):
+            group.append(it)
     groups = list(buckets.values())
     # 每组内按来源等级排：official > primary > media > aggregator，取最好的当头条
     rank = {"official": 0, "primary": 1, "media": 2, "aggregator": 3}
@@ -770,7 +770,7 @@ def cluster_hits(hits: list[tuple[str, dict]]) -> list[list[dict]]:
     # 组间排序决定谁能进每轮 15 个的名额。不能只按日期——第一次实跑时
     # 一笔 4 亿美元融资被 robopi_analyze v1.0.9 这种补丁版本挤进了 digest。
     # 商业信号是本库的立足点，新闻类命中比日常推送稀有得多，排前面；
-    # 多个独立来源印证的再往前；同级才看日期。
+    # 多条候选链接的再往前；链接数量不代表独立来源数量。
     def source_class(g: list[dict]) -> int:
         src = g[0].get("source", "")
         if g[0].get("kind") == "news":
@@ -793,8 +793,9 @@ def issue_body_group(group: list[dict]) -> str:
     body = issue_body(head)
     if len(group) > 1:
         others = "\n".join(f"- [{x['title'][:70]}]({x['url']}) — {x['source']}" for x in group[1:])
-        body += (f"\n\n### 其他来源（{len(group) - 1} 个，同一件事）\n\n{others}\n\n"
-                 "多个独立来源报了同一件事，入库时 corroboration 可填 multi。")
+        body += (f"\n\n### 相关候选链接（{len(group) - 1} 个，待核验）\n\n{others}\n\n"
+                 "请逐条核验是否为同一事件，以及来源是否独立。"
+                 "同一发布方的不同平台和同稿转载不算独立佐证；不能按链接数量填写 corroboration: multi。")
     return body
 
 
@@ -887,7 +888,7 @@ def main() -> int:
             digest.append((k, it))
 
     # 同一件事常被多家媒体报，聚成一条：一个 issue、多个来源 URL。
-    # 多个独立来源正是 corroboration=multi 的依据，聚合是加分不是妥协。
+    # 聚合只是减少重复候选，不构成独立来源或同一事件的认定。
     groups = cluster_hits(hits)
 
     papers = sum(1 for it in items if it["kind"] == "paper")
