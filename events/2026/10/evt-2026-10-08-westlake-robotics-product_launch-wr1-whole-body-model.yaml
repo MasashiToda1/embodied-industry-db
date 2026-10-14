@@ -1,0 +1,24 @@
+id: evt-2026-10-08-westlake-robotics-product_launch-wr1-whole-body-model
+date: '2026-10-08'
+date_precision: day
+type: product_launch
+orgs:
+- id: westlake-robotics
+  role: subject
+title:
+  zh: 西湖机器人发布 WR1 人形全身模型并展示运动操作协同
+summary:
+  zh: 西湖机器人发布 WR1 人形全身模型，介绍其大脑融合世界模型与视觉语言动作模型，生成全身动作序列，由预训练通用动作专家 GAE 执行；演示包含移动操作、柔性衣物整理及双机协同。记录公司介绍的模型架构与演示，不将宣传中的全球首次或未说明条件的成功率视为独立验证，也不认定权重已公开或已量产交付。
+evidence:
+- url: https://www.jushenhome.com/news_d.php?id=1918
+  publisher: 具身之家（转载西湖机器人）
+  tier: aggregator
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/223.html
+corroboration: single
+axes:
+  model_form:
+  - hierarchical
+  - world-model
+date_basis: derived
+date_as_stated: 正文明确10月8日正式对外发布；网页10月10日为转载时间，已有9月融资记录提及WR1并不等于本次发布。

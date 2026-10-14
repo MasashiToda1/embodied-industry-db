@@ -1,0 +1,19 @@
+id: evt-2026-10-12-rerun-product_launch-sdk-0-39
+date: '2026-10-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun SDK 0.39 扩展机器人模型与多模态数据支持
+summary:
+  zh: Rerun SDK 0.39 增加 URDF 1.1 四元数支持、原始 Bayer 图像与 PLY 网格支持，并扩展 Viewer Control 和
+    MCP 对视图配置及数据结构的操作能力。记录机器人数据查看与调试工具的版本更新；同期 gradio-rerun-viewer 版本同步不另记事件，实验性功能不记为稳定生产能力。
+evidence:
+- url: https://github.com/rerun-io/rerun/releases/tag/0.39.0
+  publisher: Rerun · GitHub
+  tier: official
+  retrieved: '2026-10-13'
+  snapshot: snapshots/2026/10/intake-20261014/232.html
+corroboration: single
