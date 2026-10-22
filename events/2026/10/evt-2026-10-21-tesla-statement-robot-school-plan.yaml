@@ -1,0 +1,20 @@
+id: evt-2026-10-21-tesla-statement-robot-school-plan
+date: '2026-10-21'
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉披露 Optimus 机器人学校计划
+summary:
+  zh: 特斯拉在季度业绩相关表态中提出为 Optimus 建设机器人学校的安排，用于机器人训练。记录计划表态，不认定学校已建成、已投入运行或已形成相关训练规模。
+evidence:
+- url: https://www.ithome.com/1/016/249.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-10.html
+corroboration: single
+date_basis: derived
+date_as_stated: 中文报道10月22日转述美国当地10月21日财报相关表态，采用原表态日期。

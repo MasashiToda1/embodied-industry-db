@@ -1,0 +1,20 @@
+id: evt-2026-10-12-jaka-product_launch-kargo50
+date: '2026-10-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: jaka
+  role: subject
+title:
+  zh: 节卡机器人发布 Kargo50 人形机器人
+summary:
+  zh: 节卡发布 Kargo50 人形机器人，面向工业场景介绍本体与操作能力。记录产品发布及公司披露的定位，不将同场纯工业协作臂另作为本库人形事件，也不认定已有规模化部署。
+evidence:
+- url: http://www.eeo.com.cn/2026/1015/1065713.shtml
+  publisher: www.eeo.com.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/262-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 正文明确10月12日发布，10月15日为报道日期。

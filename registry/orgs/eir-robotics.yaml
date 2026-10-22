@@ -1,0 +1,18 @@
+id: eir-robotics
+names:
+  zh: 四川具身科技
+  en: EIR
+  aliases:
+  - 四川具身人形机器人科技有限公司
+  - EIR
+status: active
+layers:
+- embodiment
+- locomotion
+description: 四川具身人形机器人科技有限公司研发人形机器人及全身移动操作训练部署技术，产品研发与规划产能分别记录。
+sources:
+- url: https://cbgc.scol.com.cn/news/8069843
+  publisher: cbgc.scol.com.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/eir-funding.html

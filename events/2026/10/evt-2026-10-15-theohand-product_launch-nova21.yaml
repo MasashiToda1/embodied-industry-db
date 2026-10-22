@@ -1,0 +1,18 @@
+id: evt-2026-10-15-theohand-product_launch-nova21
+date: '2026-10-15'
+date_precision: day
+type: product_launch
+orgs:
+- id: theohand
+  role: subject
+title:
+  zh: 万拿机器人发布 NOVA21 灵巧手
+summary:
+  zh: 万拿机器人在香港秋季电子产品展发布 NOVA21，介绍其采用 21 自由度全主动旋转直驱结构，配置多处力传感器并提供多种控制接口，面向多指协同与灵巧操作研发。记录发布方披露的产品设计，不将宣传参数视为独立实测或交付证明。
+evidence:
+- url: https://www.leiphone.com/category/industrynews/ep1fzlxxZTkWwo67.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/258-2.html
+corroboration: single

@@ -1,0 +1,24 @@
+id: evt-2026-10-20-eka-robotics-funding-series-a
+date: '2026-10-20'
+date_precision: day
+type: funding
+orgs:
+- id: eka-robotics
+  role: subject
+title:
+  zh: Eka Robotics 宣布完成 1.5 亿美元 A 轮融资
+summary:
+  zh: Eka Robotics 宣布完成1.5亿美元A轮融资，由 a16z 和 F-Prime 领投，用于面向物理世界的机器人智能研发。金额与轮次采用公司公告，不推断未披露估值或部署数量。
+evidence:
+- url: https://ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world
+  publisher: ekarobotics.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/316-0.html
+corroboration: single
+counterparties:
+- a16z
+- F-Prime
+amount:
+  value: 150000000
+  currency: USD

@@ -1,0 +1,19 @@
+id: evt-2026-10-19-d-robotics-product_launch-model-zoo-2-0
+date: '2026-10-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜机器人发布统一 RDK Model Zoo2.0
+summary:
+  zh: RDK Model Zoo2.0 统一 X5、S100、S100P、S600 平台相关模型部署与开发入口，提供对应工具和使用流程。记录模型库组件发布，与独立编号的
+    Skills Pack1.1 区分，不认定所有组合均已完成实机验证。
+evidence:
+- url: https://github.com/D-Robotics/rdk_model_zoo/releases/tag/model-zoo-v2.0.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/326-0.html
+corroboration: single

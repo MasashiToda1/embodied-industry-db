@@ -1,0 +1,25 @@
+id: evt-2026-10-16-eir-robotics-funding-pre-a-disclosure
+date: '2026-10-16'
+date_precision: day
+type: funding
+orgs:
+- id: eir-robotics
+  role: subject
+title:
+  zh: 四川具身科技披露完成超亿元 Pre-A 轮融资
+summary:
+  zh: 四川具身科技向媒体披露完成超 1 亿元 Pre-A 轮融资，投资方包括成都未来产业天使基金、德阳投控集团、凯州新城产业基金和中江高新区产业基金。资金用途包括爱湫研发、生产基地与销售体系建设；金额未精确披露，不填估算值，规划产能不记作已建成。
+evidence:
+- url: https://cbgc.scol.com.cn/news/8069843
+  publisher: cbgc.scol.com.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/eir-funding.html
+corroboration: single
+counterparties:
+- 成都未来产业天使基金
+- 德阳投控集团
+- 凯州新城产业基金
+- 中江高新区产业基金
+date_basis: derived
+date_as_stated: 报道明确10月16日相关负责人披露；采用披露日，不推定资金交割日期。

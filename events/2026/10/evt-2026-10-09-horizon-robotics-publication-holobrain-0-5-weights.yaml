@@ -1,0 +1,30 @@
+id: evt-2026-10-09-horizon-robotics-publication-holobrain-0-5-weights
+date: '2026-10-09'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线公开 HoloBrain0.5 模型权重与配置
+summary:
+  zh: 地平线 Hugging Face 仓库上传 HoloBrain0.5 的模型权重、配置与机器人描述文件。记录可核验文件公开，不根据简略模型卡推断未说明的训练数据、真机性能或商业部署。
+evidence:
+- url: https://huggingface.co/HorizonRobotics/HoloBrain_v0.5
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/250-0.md
+- url: https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hf-HoloBrain_v0.5.json
+- url: https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-HoloBrain_v0.5.json
+corroboration: single
+date_basis: derived
+date_as_stated: 有效文件上传提交e43ed4e6bb为10月9日，非仅以空仓初始化认定发布。

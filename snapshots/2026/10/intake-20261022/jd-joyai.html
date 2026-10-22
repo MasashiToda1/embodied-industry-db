@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js no-touch">
+<head>
+	
+<script
+    src="https://www.nvidia.cn/assets/cn/onetrust/scripttemplates/otSDKStub.js"
+    charset="UTF-8"
+    data-domain-script="1984719c-04aa-48de-8c22-5174bdf5c0ed"
+    data-language="zh-CN"
+></script>
+<script>
+    function OptanonWrapper() {
+        var event = new Event('bannerLoaded');
+        window.dispatchEvent(event);
+    }
+</script>
+<script src="https://www.nvidia.cn/assets/cn/onetrust/scripttemplates/nv-ot-custom.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta id="viewport" name="viewport"
+				content="user-scalable=no, width=device-width, height=device-height, initial-scale=1">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://blogs.nvidia.cn/xmlrpc.php">
+
+	<script>
+		// Check for js support (replace no-js class on html)
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, '') + ' js';
+		// Check if touch-capable device.
+		if ('ontouchstart' in window || navigator.maxTouchPoints) {
+			document.documentElement.className = document.documentElement.className.replace(/\bno-touch\b/, '') + ' touch';
+		}
+	</script>
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务 | NVIDIA 英伟达博客</title>
+	<meta name="description" content="JoyAI-Sim 随着 AI 正在加速进入物理世界，具身智能正从单点算法突破走向数据、仿真、评测与部署协同演进的新阶段。面向具身智能数据获取成本高、仿真与现实对齐难、模型评测难以规模化等挑战，京东推出" />
+	<link rel="canonical" href="https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/" />
+	<meta property="og:locale" content="zh_CN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务 | NVIDIA 英伟达博客" />
+	<meta property="og:description" content="JoyAI-Sim 随着 AI 正在加速进入物理世界，具身智能正从单点算法突破走向数据、仿真、评测与部署协同演进的新阶段。面向具身智能数据获取成本高、仿真与现实对齐难、模型评测难以规模化等挑战，京东推出" />
+	<meta property="og:url" content="https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/" />
+	<meta property="og:site_name" content="NVIDIA 英伟达博客" />
+	<meta property="article:published_time" content="2026-09-26T13:33:45+00:00" />
+	<meta property="article:modified_time" content="2026-10-10T06:23:43+00:00" />
+	<meta property="og:image" content="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header.jpg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="李佳维, 梁潇, 杜鹃, 刘勉之, 杨子钰, 刘跃华" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="作者" />
+	<meta name="twitter:data1" content="李佳维" />
+	<meta name="twitter:label2" content="预计阅读时间" />
+	<meta name="twitter:data2" content="2 分" />
+	<meta name="twitter:label3" content="Written by" />
+	<meta name="twitter:data3" content="李佳维, 梁潇, 杜鹃, 刘勉之, 杨子钰, 刘跃华" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#article","isPartOf":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/"},"author":[{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/f4cb536d21f5256189bcd9014427071a"},{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/1e1aec58b35d1b1905095f084021b54f"},{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/e9d5dc27f24f92c7dfb091fa42432d77"},{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/d98cf987a5d98984eab80992cbaf44d6"},{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/49018fb462bdb5df55de5d2939cf3765"},{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/b56e0d29f4bf64b615b2be48b9aaec27"}],"headline":"京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务","datePublished":"2026-09-26T13:33:45+00:00","dateModified":"2026-10-10T06:23:43+00:00","mainEntityOfPage":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/"},"wordCount":76,"image":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#primaryimage"},"thumbnailUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/09\/joy-ai-header.jpg","keywords":["Isaac","Isaac Lab"],"articleSection":["成功案例","机器人"],"inLanguage":"zh-Hans"},{"@type":"WebPage","@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/","url":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/","name":"京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务 | NVIDIA 英伟达博客","isPartOf":{"@id":"https:\/\/blogs.nvidia.cn\/#website"},"primaryImageOfPage":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#primaryimage"},"image":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#primaryimage"},"thumbnailUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/09\/joy-ai-header.jpg","datePublished":"2026-09-26T13:33:45+00:00","dateModified":"2026-10-10T06:23:43+00:00","author":{"@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/f4cb536d21f5256189bcd9014427071a"},"description":"JoyAI-Sim 随着 AI 正在加速进入物理世界，具身智能正从单点算法突破走向数据、仿真、评测与部署协同演进的新阶段。面向具身智能数据获取成本高、仿真与现实对齐难、模型评测难以规模化等挑战，京东推出","breadcrumb":{"@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#breadcrumb"},"inLanguage":"zh-Hans","potentialAction":[{"@type":"ReadAction","target":["https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/"]}]},{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#primaryimage","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/09\/joy-ai-header.jpg","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/09\/joy-ai-header.jpg","width":1920,"height":1080},{"@type":"BreadcrumbList","@id":"https:\/\/blogs.nvidia.cn\/blog\/joyai-sim-isaac-lab-arena\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/blogs.nvidia.cn\/"},{"@type":"ListItem","position":2,"name":"京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务"}]},{"@type":"WebSite","@id":"https:\/\/blogs.nvidia.cn\/#website","url":"https:\/\/blogs.nvidia.cn\/","name":"NVIDIA 英伟达博客","description":"NVIDIA","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/blogs.nvidia.cn\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"zh-Hans"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/f4cb536d21f5256189bcd9014427071a","name":"李佳维","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-lijiawei-jd-96x96.jpgb7b09dea8345b915346390b29609f3c8","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-lijiawei-jd-96x96.jpg","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-lijiawei-jd-96x96.jpg","caption":"李佳维"},"description":"李佳维是京东探索研究院算法专家。多年从事 AIGC 及具身智能领域的前沿技术研究与应用落地，擅长 Physical AI 相关的数据、模型、算力、仿真等技术领域。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/jdnvidiacn\/"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/1e1aec58b35d1b1905095f084021b54f","name":"梁潇","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-Lia-Liang-scaled-1-96x96.jpgdd775fd244042dcf2de085cfbeb932a2","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-Lia-Liang-scaled-1-96x96.jpg","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-Lia-Liang-scaled-1-96x96.jpg","caption":"梁潇"},"description":"梁潇是 NVIDIA 解决方案架构师经理，负责 NVIDIA 机器人领域软硬件产品的落地解决方案搭建与推进，例如 Isaac 平台全流程应用、机器人学习开发关键工作流设计，以及 Jetson、数据中心 GPU 等核心硬件的行业适配，助力中国客户高效落地 NVIDIA 机器人技术，加速业务创新。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/lial\/"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/e9d5dc27f24f92c7dfb091fa42432d77","name":"杜鹃","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-96x96.png52b530d13e4a7be4dbabf26be6b835d8","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-96x96.png","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-96x96.png","caption":"杜鹃"},"description":"NVIDIA 解决方案架构师，负责开发并推广面向机器人行业的解决方案，帮助客户充分利用 NVIDIA 加速计算技术，重点关注机器人数据 scaling，物理仿真和机器人学习领域。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/yvetted\/"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/d98cf987a5d98984eab80992cbaf44d6","name":"刘勉之","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-mianzhi-liu-96x96.jpged41e973453e4445f3fb905a1de86c53","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-mianzhi-liu-96x96.jpg","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-mianzhi-liu-96x96.jpg","caption":"刘勉之"},"description":"NVIDIA解决方案架构师，负责机器人仿真与评测方向的技术落地，帮助客户基于Isaac平台和Newton物理引擎构建仿真环境与评测流程，重点关注资产重建、场景搭建和sim-to-real验证领域。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/mianzhil\/"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/49018fb462bdb5df55de5d2939cf3765","name":"杨子钰","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-1-96x96.pngea6b30888652610ea1ce33cd11a2c385","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-1-96x96.png","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/cropped-图像-1-96x96.png","caption":"杨子钰"},"description":"NVIDIA解决方案架构师，负责NVIDIA解决方案架构落地及Demo Center相关工作，包括技术方案架构设计和demo构建， 侧重头部消费互联网客户在的Physical AI方向的落地支持。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/miranday\/"},{"@type":"Person","@id":"https:\/\/blogs.nvidia.cn\/#\/schema\/person\/b56e0d29f4bf64b615b2be48b9aaec27","name":"刘跃华","image":{"@type":"ImageObject","inLanguage":"zh-Hans","@id":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/yuehua-96x96.jpegb6ab6112bdaaa19a29d66d645c466c13","url":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/yuehua-96x96.jpeg","contentUrl":"https:\/\/blogs.nvidia.cn\/wp-content\/uploads\/sites\/20\/2026\/10\/yuehua-96x96.jpeg","caption":"刘跃华"},"description":"NVIDIA 解决方案架构师，技术方向聚焦 LLM 与 Agentic 推理优化，主要面向互联网行业推动 LLM、Agent 及多模态场景的AI解决方案落地。","url":"https:\/\/blogs.nvidia.cn\/blog\/author\/liujohn\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="NVIDIA 英伟达博客 &raquo; Feed" href="https://blogs.nvidia.cn/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NVIDIA 英伟达博客 &raquo; 评论 Feed" href="https://blogs.nvidia.cn/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://blogs.nvidia.cn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.nvidia.cn%2Fblog%2Fjoyai-sim-isaac-lab-arena%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://blogs.nvidia.cn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.nvidia.cn%2Fblog%2Fjoyai-sim-isaac-lab-arena%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://blogs.nvidia.cn/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://blogs.nvidia.cn/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://blogs.nvidia.cn/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://blogs.nvidia.cn/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='fvp-frontend-css' href='https://blogs.nvidia.cn/wp-content/plugins/featured-video-plus/styles/frontend.css?ver=2.3.3' media='all' />
+<link rel='stylesheet' id='yith-infs-style-css' href='https://blogs.nvidia.cn/wp-content/plugins/yith-infinite-scrolling/assets/css/frontend.css?ver=2.12.0' media='all' />
+<link rel='stylesheet' id='print-style-css' href='https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets/css/print.css' media='print' />
+<link rel='stylesheet' id='nvb-single-css' href='https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/build/single.css?ver=1761840891' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://blogs.nvidia.cn/wp-content/plugins/tablepress/css/build/default.css?ver=3.3.4' media='all' />
+<link rel='stylesheet' id='bsfrt_frontend-css' href='https://blogs.nvidia.cn/wp-content/plugins/read-meter/assets/css/bsfrt-frontend-css.min.css?ver=1.0.11' media='all' />
+<script id="jquery-core-js" src="https://blogs.nvidia.cn/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://blogs.nvidia.cn/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="jquery.fitvids-js" src="https://blogs.nvidia.cn/wp-content/plugins/featured-video-plus/js/jquery.fitvids.min.js?ver=master-2015-08"></script>
+<script id="fvp-frontend-js-extra">
+var fvpdata = {"ajaxurl":"https://blogs.nvidia.cn/wp-admin/admin-ajax.php","nonce":"a212c94f34","fitvids":"1","dynamic":"","overlay":"","opacity":"0.75","color":"b","width":"640"};
+//# sourceURL=fvp-frontend-js-extra
+</script>
+<script id="fvp-frontend-js" src="https://blogs.nvidia.cn/wp-content/plugins/featured-video-plus/js/frontend.min.js?ver=2.3.3"></script>
+<script id="nv-gtm-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets//js/nv-gtm.js?ver=20190419.0001"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogs.nvidia.cn/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<link rel='shortlink' href='https://blogs.nvidia.cn/?p=95850' />
+<!-- Stream WordPress user activity plugin v4.4.0 -->
+<meta name="generator" content="WPML ver:5.1.0 stt:59;" />
+<link type="text/css" rel="stylesheet" href="https://blogs.nvidia.cn/wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" />
+	<meta name="google-site-verification" content="fRN6Tokx0As6AGYPd4zjMBgITWR2dvXjN6Zb3gojo-Y"/>
+	<link rel="preload" as="image" href="https://www.nvidia.com/content/dam/1x1-00000000.png">
+
+<style type="text/css">
+.entry-content .bsf-rt-reading-time,
+.post-content .bsf-rt-reading-time {
+background: #eeeeee;
+
+color: #333333;
+
+font-size: 15px;
+
+margin-top: 
+		0em;
+
+margin-right: 
+		0em;
+
+margin-bottom: 
+		1em;
+
+margin-left: 
+		0em;
+
+padding-top: 
+		0.5em;
+
+padding-right: 
+		0.7em;
+
+padding-bottom: 
+		0.5em;
+
+padding-left: 
+		0.7em;
+
+width: max-content;
+
+display: block;
+
+min-width: 100px;
+
+}
+
+</style>
+				<style type="text/css">
+		.admin-bar .progress-container-top {
+		background: #3f3f3f;
+		height: 10px;
+
+		}
+		.progress-container-top {
+		background: #3f3f3f;
+		height: 10px;
+
+		}
+		.progress-container-bottom {
+		background: #3f3f3f;
+		height: 10px;
+
+		} 
+		.progress-bar {
+		background: #76b900;
+		height: 10px;
+		width: 0%;
+
+		}           
+		</style>
+				<script src="//www.nvidia.cn/content/dam/adobe-launch/5d4962a43b79/e5580b866f79/launch-6292db5ae64c.min.js"></script><style id="wp-custom-css">
+#white-footer .area{
+	width: 70% !important; 
+}
+@media screen and (max-width: 768px) {
+    #white-footer .area {
+        width: 100% !important;
+     
+    }
+}
+img.fullwidth {
+	width: 100%;
+	height: auto;
+}
+
+.single .content-area .entry-footer .cf-load-comments, .content-area .page .entry-footer .cf-load-comments {
+	display: none !important;
+}
+/*2026-3-11 Haiman: social share icons position adjustment for full width template */
+.full-width-layout a.for-wechat .qr-container {
+    height: 228px;
+    width: 170px;
+	  text-align:center;
+	  z-index: 100;
+    position: absolute;
+	margin-top:10px;
+	background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #DADADA;
+}
+.full-width-layout a.for-wechat .qr-container:before{
+	  width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #DADADA;
+    border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+    content: " ";
+    position: absolute;
+    left: 3%;
+    transform: translateY(-100%);
+}
+.full-width-layout a.for-wechat .qr-container img.qr-wechat{
+	width: 150px;
+	height: 150px;
+	margin: 10px auto;
+}
+.full-width-layout .icon-wechat:before{
+	background-position: 50% 60%;
+}
+.full-width-layout .icon-weibo:before{
+	background-position: 50% 40%;
+}
+
+/*2025-Apr-22 Haiman: Hide location selector  */
+.footer-area-5{
+	display:none !important;
+}
+
+/* 2023-12-08 Haiman: Hide wechat icon for mobile and tablet devices */
+@media screen and (max-width: 768px){
+		ul.entry-meta-social-links-list li:nth-of-type(1) {
+			display: none;
+	}
+	/*hide wechat from full width template -- Haiman added 2026-3-11*/
+	.full-width-layout__social .for-wechat{display: none;}
+}
+
+/* 2023-12-08 Haiman: overwrite style of image caption */
+.wp-block-image figcaption {
+    color: #b2b2b2;
+    font-size: 12px;
+}
+
+/* 2023-12-08 Haiman: fixed email icon position for mobile and tablet devices */
+@media screen and (max-width: 1024px){
+  .single .entry-meta-social .entry-meta-social-links-list li a.email, .author .entry-meta-social .entry-meta-social-links-list li a.email{
+    margin-top: 0;
+  }
+
+  .single .entry-meta-social .entry-meta-social-links-list li a .ea-share-count-icon.easc-envelope, .author .entry-meta-social .entry-meta-social-links-list li a .ea-share-count-icon.easc-envelope{
+    display: block;
+    font-size: 20px;
+  }
+
+}
+
+</style>
+</head>
+<body class="wp-singular post-template-default single single-post postid-95850 single-format-standard wp-theme-nvidia-blog-v5 old-font group-blog non-aggregation-view site-lang-zh-hans">
+<img src="https://www.nvidia.com/content/dam/1x1-00000000.png" width="1" height="1" style="display:none;" alt="country_code">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="inner for-masthead">
+			<div class="site-branding">
+				<a href="https://www.nvidia.cn/" rel="home">
+					<div class="site-title">
+						<svg id="logo" enable-background="new 0 0 974.7 179.7" version="1.1"
+									viewBox="0 0 974.7 179.7" xml:space="preserve"
+									xmlns="http://www.w3.org/2000/svg" width="110" height="44"><title>
+								NVIDIA 引领人工智能计算							</title>
+							<path
+								d="m962.1 144.1v-2.7h1.7c0.9 0 2.2 0.1 2.2 1.2s-0.7 1.5-1.8 1.5h-2.1m0 1.9h1.2l2.7 4.7h2.9l-3-4.9c1.5 0.1 2.7-1 2.8-2.5v-0.4c0-2.6-1.8-3.4-4.8-3.4h-4.3v11.2h2.5v-4.7m12.6-0.9c0-6.6-5.1-10.4-10.8-10.4s-10.8 3.8-10.8 10.4 5.1 10.4 10.8 10.4 10.8-3.8 10.8-10.4m-3.2 0c0.2 4.2-3.1 7.8-7.3 8h-0.3c-4.4 0.2-8.1-3.3-8.3-7.7s3.3-8.1 7.7-8.3 8.1 3.3 8.3 7.7c-0.1 0.1-0.1 0.2-0.1 0.3z"></path>
+							<path
+								d="m578.2 34v118h33.3v-118h-33.3zm-262-0.2v118.1h33.6v-91.7l26.2 0.1c8.6 0 14.6 2.1 18.7 6.5 5.3 5.6 7.4 14.7 7.4 31.2v53.9h32.6v-65.2c0-46.6-29.7-52.9-58.7-52.9h-59.8zm315.7 0.2v118h54c28.8 0 38.2-4.8 48.3-15.5 7.2-7.5 11.8-24.1 11.8-42.2 0-16.6-3.9-31.4-10.8-40.6-12.2-16.5-30-19.7-56.6-19.7h-46.7zm33 25.6h14.3c20.8 0 34.2 9.3 34.2 33.5s-13.4 33.6-34.2 33.6h-14.3v-67.1zm-134.7-25.6l-27.8 93.5-26.6-93.5h-36l38 118h48l38.4-118h-34zm231.4 118h33.3v-118h-33.3v118zm93.4-118l-46.5 117.9h32.8l7.4-20.9h55l7 20.8h35.7l-46.9-117.8h-44.5zm21.6 21.5l20.2 55.2h-41l20.8-55.2z"></path>
+							<path fill="#76B900"
+										d="m101.3 53.6v-16.2c1.6-0.1 3.2-0.2 4.8-0.2 44.4-1.4 73.5 38.2 73.5 38.2s-31.4 43.6-65.1 43.6c-4.5 0-8.9-0.7-13.1-2.1v-49.2c17.3 2.1 20.8 9.7 31.1 27l23.1-19.4s-16.9-22.1-45.3-22.1c-3-0.1-6 0.1-9 0.4m0-53.6v24.2l4.8-0.3c61.7-2.1 102 50.6 102 50.6s-46.2 56.2-94.3 56.2c-4.2 0-8.3-0.4-12.4-1.1v15c3.4 0.4 6.9 0.7 10.3 0.7 44.8 0 77.2-22.9 108.6-49.9 5.2 4.2 26.5 14.3 30.9 18.7-29.8 25-99.3 45.1-138.7 45.1-3.8 0-7.4-0.2-11-0.6v21.1h170.2v-179.7h-170.4zm0 116.9v12.8c-41.4-7.4-52.9-50.5-52.9-50.5s19.9-22 52.9-25.6v14h-0.1c-17.3-2.1-30.9 14.1-30.9 14.1s7.7 27.3 31 35.2m-73.5-39.5s24.5-36.2 73.6-40v-13.2c-54.4 4.4-101.4 50.4-101.4 50.4s26.6 77 101.3 84v-14c-54.8-6.8-73.5-67.2-73.5-67.2z"></path></svg>
+					</div>
+				</a>
+			</div><!-- .site-branding -->
+
+			<ul class="secondary-menu-socials top_search">
+				<li class="search-item">
+					<form role="search" method="get" class="search-form" action="https://blogs.nvidia.cn/">
+	<div class="form-item for-search">
+		<label>
+			<span class="screen-reader-text">搜索：</span>
+			<input type="search" class="search-field" placeholder="在博客中搜索" value="" name="s" title="搜索：" />
+		</label>
+	</div>
+	<div class="form-item for-submit">
+		<input type="submit" class="search-submit" value="搜索" />
+		<button type="submit" class="search-submit-button">	<span class="icon icon-search"></span>
+	</button>
+	</div>
+<input type='hidden' name='lang' value='zh-hans' /></form>
+					<a href="/?s=" class="search-icon-link js-search-item-link">
+						<span class="hidden">Toggle Search</span>
+					</a>
+				</li><!-- .search-item -->
+			</ul><!-- .secondary-menu-socials -->
+			<nav id="site-navigation" class="primary-menu-slot main-navigation" role="navigation">
+				<div class="main-navigation-inner">
+					<div class="menu-primary-container"><ul id="primary-menu" class="menu"><li id="menu-item-82926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82926"><a>平台</a>
+<ul class="sub-menu">
+	<li id="menu-item-82955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82955"><a href="https://www.nvidia.cn/deep-learning-ai/">人工智能与机器学习</a>
+	<ul class="sub-menu">
+		<li id="menu-item-82956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82956"><a href="https://www.nvidia.com/zh-cn/deep-learning-ai/industries/">行业</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82932"><a href="https://www.nvidia.cn/deep-learning-ai/industries/">概观</a></li>
+			<li id="menu-item-82933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82933"><a href="https://www.nvidia.cn/deep-learning-ai/industries/ai-innovators/">AI 创新者</a></li>
+			<li id="menu-item-82934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82934"><a href="https://www.nvidia.cn/industries/smart-cities-and-spaces/">AI 城市</a></li>
+			<li id="menu-item-83047" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83047"><a href="https://www.nvidia.com/en-us/industries/public-sector/">适用于公益的 AI</a></li>
+			<li id="menu-item-82935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82935"><a href="https://www.nvidia.cn/deep-learning-ai/industries/healthcare/">医疗健康</a></li>
+			<li id="menu-item-82936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82936"><a href="https://www.nvidia.cn/deep-learning-ai/industries/higher-education-research/">高等教育</a></li>
+			<li id="menu-item-83048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83048"><a href="https://www.nvidia.cn/industries/retail/">零售</a></li>
+			<li id="menu-item-82948" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82948"><a href="https://www.nvidia.cn/industries/robotics/">机器人</a></li>
+			<li id="menu-item-82949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82949"><a href="https://developer.nvidia.cn/drive">智能汽车</a></li>
+		</ul>
+</li>
+		<li id="menu-item-83049" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83049"><a href="https://developer.nvidia.cn/">开发者</a></li>
+		<li id="menu-item-82952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82952"><a>产品</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82951"><a href="https://www.nvidia.cn/data-center/dgx-systems/">DGX 系统</a></li>
+			<li id="menu-item-82928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82928"><a href="https://www.nvidia.cn/gpu-cloud/">NVIDIA NGC</a></li>
+			<li id="menu-item-82929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82929"><a href="https://www.nvidia.com/zh-cn/titan/titan-v/">NVIDIA TITAN V</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82930"><a href="https://www.nvidia.com/zh-cn/deep-learning-ai/solutions/">解决方案</a>
+		<ul class="sub-menu">
+			<li id="menu-item-83046" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83046"><a href="https://www.nvidia.cn/deep-learning-ai/solutions/inference-platform/">深度学习推理平台</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82947"><a href="https://www.nvidia.cn/deep-learning-ai/education/">教育</a></li>
+		<li id="menu-item-82950" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82950"><a href="https://www.nvidia.cn/deep-learning-ai/startups/">创业公司</a></li>
+	</ul>
+</li>
+	<li id="menu-item-82927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82927"><a href="https://www.nvidia.cn/data-center/">数据中心</a>
+	<ul class="sub-menu">
+		<li id="menu-item-82931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82931"><a href="https://www.nvidia.cn/data-center/products/">产品</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82925"><a href="https://www.nvidia.com/zh-cn/data-center/tesla/">TESLA</a></li>
+			<li id="menu-item-82953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82953"><a href="https://www.nvidia.com/zh-cn/data-center/dgx-systems/">DGX</a></li>
+			<li id="menu-item-82954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82954"><a href="https://www.nvidia.com/zh-cn/data-center/dgx-2/">DGX 2</a></li>
+			<li id="menu-item-82922" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82922"><a href="https://www.nvidia.com/zh-cn/data-center/dgx-station/">DGX-STATION</a></li>
+			<li id="menu-item-82921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82921"><a href="https://www.nvidia.com/zh-cn/data-center/hgx/">HGX-1</a></li>
+			<li id="menu-item-82920" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82920"><a href="https://www.nvidia.com/zh-cn/gpu-cloud/">NVIDIA GPU CLOUD</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82924"><a href="https://www.nvidia.cn/data-center/solutions/" title="Quadro VCA">解决方案</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82923"><a href="https://www.nvidia.cn/data-center/solutions/#deep-learning-ai">深度学习和人工智能</a></li>
+			<li id="menu-item-82957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82957"><a href="https://www.nvidia.cn/data-center/solutions/#hpc">高性能运算</a></li>
+			<li id="menu-item-82958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82958"><a href="https://www.nvidia.cn/data-center/solutions/#gpu-cloud-computing">GPU 云计算</a></li>
+			<li id="menu-item-82959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82959"><a href="https://www.nvidia.cn/design-visualization/solutions/virtualization/#utm_source=shorturl&#038;utm_medium=referrer&#038;utm_campaign=grid">虚拟桌面</a></li>
+			<li id="menu-item-82962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82962"><a href="https://www.nvidia.cn/data-center/solutions/#ai-accelerated-analytics">人工智能加速分析</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82946"><a href="https://www.nvidia.cn/accelerated-applications/">应用</a></li>
+		<li id="menu-item-82960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82960"><a href="https://developer.nvidia.cn/hpc">适用于开发者</a></li>
+		<li id="menu-item-82961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82961"><a>技术</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82965"><a href="https://www.nvidia.com/zh-cn/data-center/volta-gpu-architecture/">NVIDIA VOLTA</a></li>
+			<li id="menu-item-82966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82966"><a href="https://www.nvidia.com/zh-cn/data-center/pascal-gpu-architecture/">NVIDIA PASCAL</a></li>
+			<li id="menu-item-82967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82967"><a href="https://www.nvidia.com/zh-cn/data-center/nvlink/">NVLINK/NVSWITCH</a></li>
+			<li id="menu-item-82968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82968"><a href="https://www.nvidia.com/zh-cn/data-center/tensorcore/">TENSOR CORES</a></li>
+			<li id="menu-item-82969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82969"><a href="https://www.nvidia.com/zh-cn/data-center/index-paraview-plugin/">INDEX PARAVIEW PLUGIN</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-82998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82998"><a href="https://www.nvidia.cn/gpu-cloud/">NVIDIA NGC</a></li>
+	<li id="menu-item-82944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82944"><a href="https://www.nvidia.com/zh-cn/design-visualization/">设计和专业视觉化</a>
+	<ul class="sub-menu">
+		<li id="menu-item-82943" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82943"><a>行业</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82970"><a href="https://www.nvidia.com/zh-cn/design-visualization/industries/architecture-engineering-construction/">建筑、工程与建设</a></li>
+			<li id="menu-item-82971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82971"><a href="https://www.nvidia.cn/data-center/virtual-solutions/">教育</a></li>
+			<li id="menu-item-82972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82972"><a href="https://www.nvidia.com/zh-cn/design-visualization/industries/manufacturing/">制造业</a></li>
+			<li id="menu-item-82999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82999"><a href="https://www.nvidia.com/zh-cn/design-visualization/industries/media-entertainment/">媒体和娱乐</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82976"><a>产品</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82974"><a href="https://www.nvidia.cn/products/workstations/quadro/">NVIDIA RTX</a></li>
+			<li id="menu-item-82975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82975"><a href="https://www.nvidia.cn/design-visualization/virtual-workstation/">RTX 虚拟工作站</a></li>
+			<li id="menu-item-82977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82977"><a href="https://www.nvidia.cn/data-center/virtual-pc/">虚拟 PC</a></li>
+			<li id="menu-item-82978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82978"><a href="https://www.nvidia.cn/products/workstations/">NVIDIA RTX PRO</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82945"><a>解决方案</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82988"><a href="https://www.nvidia.com/zh-cn/design-visualization/solutions/quadro-display-desktop-management/">多显示器</a></li>
+			<li id="menu-item-82989" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82989"><a href="https://www.nvidia.com/zh-cn/design-visualization/solutions/rendering/">渲染</a></li>
+			<li id="menu-item-82990" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82990"><a href="https://www.nvidia.com/zh-cn/design-visualization/solutions/virtualization/">虚拟化</a></li>
+			<li id="menu-item-82991" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82991"><a href="https://www.nvidia.com/zh-cn/design-visualization/solutions/quadro-vr/">虚拟现实</a></li>
+			<li id="menu-item-82992" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82992"><a href="https://www.nvidia.com/zh-cn/data-center/index-paraview-plugin/">HPC 可视化</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82940" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82940"><a>技术</a>
+		<ul class="sub-menu">
+			<li id="menu-item-82993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82993"><a href="https://www.nvidia.com/zh-cn/design-visualization/technologies/material-definition-language/">材质定义语言</a></li>
+			<li id="menu-item-82994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82994"><a href="https://www.nvidia.com/zh-cn/data-center/nvlink/">NVLINK</a></li>
+			<li id="menu-item-82995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82995"><a href="http://www.nvidia.cn/object/grid-technology-cn.html">虚拟 GPU 技术</a></li>
+			<li id="menu-item-82996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82996"><a href="https://www.nvidia.com/zh-cn/design-visualization/technologies/holodeck/">全息甲板</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82942"><a href="https://developer.nvidia.cn/physx-sdk">适用于开发者</a></li>
+	</ul>
+</li>
+	<li id="menu-item-82941" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82941"><a href="https://www.nvidia.com/zh-cn/autonomous-machines/">自主机器</a>
+	<ul class="sub-menu">
+		<li id="menu-item-82973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82973"><a>行业</a>
+		<ul class="sub-menu">
+			<li id="menu-item-83001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83001"><a href="https://www.nvidia.com/zh-cn/autonomous-machines/uavs-drones-technology/">无人机</a></li>
+			<li id="menu-item-83002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83002"><a href="https://www.nvidia.com/zh-cn/autonomous-machines/robotics/">工业机器人</a></li>
+			<li id="menu-item-83003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83003"><a href="https://www.nvidia.com/zh-cn/autonomous-machines/intelligent-video-analytics-platform/">智能视频分析(IVA)</a></li>
+		</ul>
+</li>
+		<li id="menu-item-82997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82997"><a href="https://www.nvidia.com/zh-cn/autonomous-machines/embedded-systems/">产品</a></li>
+		<li id="menu-item-83000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83000"><a href="https://developer.nvidia.com/embedded-computing">开发者</a></li>
+	</ul>
+</li>
+	<li id="menu-item-82983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82983"><a href="https://www.nvidia.com/zh-cn/self-driving-cars/">智能汽车</a>
+	<ul class="sub-menu">
+		<li id="menu-item-83004" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-83004"><a>解决方案</a>
+		<ul class="sub-menu">
+			<li id="menu-item-83009" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83009"><a href="https://www.nvidia.cn/solutions/autonomous-vehicles/">智能汽车解决方案</a></li>
+			<li id="menu-item-83007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83007"><a href="https://www.nvidia.cn/use-cases/autonomous-vehicle-simulation/">智能汽车仿真</a></li>
+			<li id="menu-item-83008" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83008"><a href="https://www.nvidia.cn/solutions/autonomous-vehicles/in-vehicle-computing/">车载计算</a></li>
+			<li id="menu-item-83010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83010"><a href="https://www.nvidia.cn/solutions/autonomous-vehicles/in-vehicle-computing/">高级驾驶员辅助系统</a></li>
+		</ul>
+</li>
+		<li id="menu-item-83011" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83011"><a href="https://www.nvidia.cn/solutions/autonomous-vehicles/partners/">合作伙伴</a></li>
+		<li id="menu-item-83012" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83012"><a href="https://developer.nvidia.cn/drive">开发者</a></li>
+	</ul>
+</li>
+	<li id="menu-item-82984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82984"><a href="https://www.nvidia.com/zh-cn/geforce/">GEFORCE 游戏</a>
+	<ul class="sub-menu">
+		<li id="menu-item-83013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83013"><a href="https://www.nvidia.cn/geforce/graphics-cards/50-series/">RTX 50 系列</a></li>
+		<li id="menu-item-83014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83014"><a href="https://www.nvidia.cn/geforce/laptops/50-series/">RTX 50 系列笔记本电脑</a></li>
+		<li id="menu-item-83016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83016"><a href="https://www.nvidia.cn/geforce/products/g-sync-monitors/">G-SYNC 显示器</a></li>
+		<li id="menu-item-83017" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83017"><a href="https://www.nvidia.cn/software/nvidia-app/">NVIDIA App</a></li>
+	</ul>
+</li>
+	<li id="menu-item-82986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82986"><a>技术</a>
+	<ul class="sub-menu">
+		<li id="menu-item-82982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82982"><a href="https://www.nvidia.cn/object/virtual-reality-cn.html">虚拟现实</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-82981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82981"><a href="https://developer.nvidia.cn/">开发者</a>
+<ul class="sub-menu">
+	<li id="menu-item-83035" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83035"><a href="https://developer.nvidia.cn">开发者官网</a></li>
+	<li id="menu-item-83039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83039"><a href="https://developer.nvidia.cn/zh-cn/blog">开发者博客</a></li>
+	<li id="menu-item-83036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83036"><a href="https://developer.nvidia.cn/cuda-zone">CUDA</a></li>
+	<li id="menu-item-83037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83037"><a href="https://www.nvidia.cn/training/">深度学习培训中心</a></li>
+	<li id="menu-item-83038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83038"><a href="https://www.nvidia.cn/gtc-global/">GPU 技术大会</a></li>
+</ul>
+</li>
+<li id="menu-item-82987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82987"><a>社群</a>
+<ul class="sub-menu">
+	<li id="menu-item-82980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-82980"><a href="https://blogs.nvidia.cn/">NVIDIA 博客</a></li>
+	<li id="menu-item-83023" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83023"><a href="https://forums.developer.nvidia.cn/">论坛</a></li>
+	<li id="menu-item-83026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-83026"><a href="https://www.nvidia.cn/startups/">初创加速计划</a>
+	<ul class="sub-menu">
+		<li id="menu-item-83053" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83053"><a href="https://blogs.nvidia.cn/blog/category/inception-news/">初创加速新闻</a></li>
+		<li id="menu-item-83052" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83052"><a href="https://blogs.nvidia.cn/blog/category/inception-success-stories/">会员成功故事</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-83029" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83029"><a href="http://www.nvidia.cn/page/support.html">支持</a></li>
+<li id="menu-item-83020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-83020"><a href="http://www.nvidia.cn/Download/index.aspx?lang=cn">驱动程序</a>
+<ul class="sub-menu">
+	<li id="menu-item-83021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83021"><a href="https://www.nvidia.cn/geforce/drivers/">GeForce 驱动</a></li>
+	<li id="menu-item-83022" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83022"><a href="https://www.nvidia.cn/drivers/lookup/">所有 NVIDIA 驱动程序</a></li>
+</ul>
+</li>
+<li id="menu-item-83030" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-83030"><a href="http://www.nvidia.cn/object/about-nvidia-cn.html">关于 NVIDIA</a>
+<ul class="sub-menu">
+	<li id="menu-item-83040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83040"><a href="https://www.nvidia.cn/newsroom/">新闻中心</a></li>
+	<li id="menu-item-83041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-83041"><a href="https://blogs.nvidia.cn/">NVIDIA 博客</a></li>
+	<li id="menu-item-83027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83027"><a href="https://www.nvidia.cn/research/">前沿研究</a></li>
+	<li id="menu-item-83028" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83028"><a href="https://www.nvidia.cn/about-nvidia/webinar-portal/">网络研讨会</a></li>
+	<li id="menu-item-83050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83050"><a href="https://www.nvidia.cn/events/">活动</a></li>
+	<li id="menu-item-83031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83031"><a href="https://www.nvidia.cn/about-nvidia/">公司信息</a></li>
+	<li id="menu-item-83045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83045"><a href="https://www.nvidia.cn/about-nvidia/careers/">人才招聘</a></li>
+	<li id="menu-item-83042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83042"><a href="http://investor.nvidia.com/">投资者</a></li>
+	<li id="menu-item-83043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83043"><a href="https://www.nvidia.cn/sustainability/">企业可持续发展</a></li>
+</ul>
+</li>
+</ul></div>				</div>
+			</nav>
+		</div>
+	</header><!-- #masthead -->
+		<div class="secondary-menu-slot-wrapper">
+	<nav class="secondary-menu-slot" role="navigation">
+		<div class="secondary-menu-slot-inner inner for-masthead">
+			<div class="menu-secondary-container"><ul id="secondary-menu" class="menu"><li id="menu-item-82610" class="nav-home menu-item menu-item-type-custom menu-item-object-custom menu-item-82610"><a href="/">首页</a></li>
+<li id="menu-item-86198" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-86198"><a href="https://blogs.nvidia.cn/blog/category/generative-ai/">AI</a></li>
+<li id="menu-item-82433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82433"><a href="https://blogs.nvidia.cn/blog/category/enterprise/intelligent-networking/">网络</a></li>
+<li id="menu-item-82258" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82258"><a href="https://blogs.nvidia.cn/blog/category/auto/">智能汽车</a></li>
+<li id="menu-item-48735" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48735"><a href="https://blogs.nvidia.cn/blog/category/gaming/">游戏</a></li>
+<li id="menu-item-82646" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82646"><a href="https://blogs.nvidia.cn/blog/category/pro-graphics/">专业图形</a></li>
+<li id="menu-item-48745" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-48745"><a href="https://blogs.nvidia.cn/blog/category/robotics/">机器人</a></li>
+<li id="menu-item-82432" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82432"><a href="https://blogs.nvidia.cn/blog/category/inception-success-stories/">初创加速会员成功故事</a></li>
+<li id="menu-item-83742" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83742"><a href="https://blogs.nvidia.cn/blog/category/inception-news/">初创加速新闻</a></li>
+<li id="menu-item-82649" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-82649"><a href="https://blogs.nvidia.cn/blog/category/success-stories/">成功案例</a></li>
+<li id="menu-item-82650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82650"><a href="https://blogs.nvidia.cn/ai-podcast/">AI 播客</a></li>
+</ul></div>		</div><!-- /.secondary-menu-slot-inner -->
+	</nav>
+	</div>
+			<div id="content" class="site-content">
+			<div class="inner for-content">
+	<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+			<div class="cf-posts-with-overrides">
+		<article
+	id="post-95850"
+	class="post-with-sidebar post-95850 post type-post status-publish format-standard has-post-thumbnail hentry category-success-stories category-robotics tag-isaac tag-isaac-lab loop-item-1 for-pagenum-1"	data-url="https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/"
+	data-identifier="95850 https://blogs.nvidia.cn/?p=95850"
+	data-title="京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务"
+>
+
+	<header class="entry-header">
+		<div class="inner3">
+			<!-- TITLE -->
+			<h1>京东 JoyAI-Sim × NVIDIA Isaac Lab-Arena：基于人机对齐的具身仿真评测全流程服务</h1>
+						<div class="author_meta">
+				<span class="entry-date">2026年9月26日</span> <span class="meta-sep">作者</span> <span class="author vcard"><a href="https://blogs.nvidia.cn/blog/author/jdnvidiacn/" title="Posts by 李佳维" class="author url fn" rel="author">李佳维</a>, <a href="https://blogs.nvidia.cn/blog/author/lial/" title="Posts by 梁潇" class="author url fn" rel="author">梁潇</a>, <a href="https://blogs.nvidia.cn/blog/author/yvetted/" title="Posts by 杜鹃" class="author url fn" rel="author">杜鹃</a>, <a href="https://blogs.nvidia.cn/blog/author/mianzhil/" title="Posts by 刘勉之" class="author url fn" rel="author">刘勉之</a>, <a href="https://blogs.nvidia.cn/blog/author/miranday/" title="Posts by 杨子钰" class="author url fn" rel="author">杨子钰</a> and <a href="https://blogs.nvidia.cn/blog/author/liujohn/" title="Posts by 刘跃华" class="author url fn" rel="author">刘跃华</a></span>			</div>
+		</div><!-- /inner3 -->
+
+		<!-- FEATURED IMG/VIDEO -->
+					<div class="entry-title img-bg orientation-landscape">
+				<div class="tile-image-wrapper"><img width="1280" height="720" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-1280x720.jpg" class="attachment-medium_large size-medium_large" alt="" decoding="async" fetchpriority="high" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-1280x720.jpg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-960x540.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-1680x945.jpg 1680w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-1536x864.jpg 1536w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-1290x725.jpg 1290w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-630x354.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-300x169.jpg 300w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header-400x225.jpg 400w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header.jpg 1920w" sizes="(max-width: 1280px) 100vw, 1280px" /></div>
+			</div>
+			</header>
+
+	<!-- META -->
+	<div class="entry-meta-social">
+		<div class="share-count-section">
+			<span class="share-text">
+					<span class="icon icon-share"></span>
+					分享			</span>
+		</div>
+		<ul class="entry-meta-social-links-list">
+			<li><a href="#" class="nvb4-social-share-link for-wechat" target="_blank">	<span class="icon icon-wechat"></span>
+	<div class="qr-container" style="display:none"><img class="qr-wechat" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/"/><div class="qr-container-footer"><p>扫描二维码<br>将网页分享至朋友圈</p></div></div></a></li><li><a href="https://service.weibo.com/share/share.php?title=%E4%BA%AC%E4%B8%9C+JoyAI-Sim+%C3%97+NVIDIA+Isaac+Lab-Arena%EF%BC%9A%E5%9F%BA%E4%BA%8E%E4%BA%BA%E6%9C%BA%E5%AF%B9%E9%BD%90%E7%9A%84%E5%85%B7%E8%BA%AB%E4%BB%BF%E7%9C%9F%E8%AF%84%E6%B5%8B%E5%85%A8%E6%B5%81%E7%A8%8B%E6%9C%8D%E5%8A%A1&url=https%3A%2F%2Fblogs.nvidia.cn%2Fblog%2Fjoyai-sim-isaac-lab-arena%2F&pic=https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-header.jpg" class="nvb4-social-share-link for-weibo" target="_blank">	<span class="icon icon-weibo"></span>
+	</a></li><li><a href="#ea-share-count-email"class="ea-share-count-button style- ea-share-no-count email" data-postid="95850" data-nonce="eececbdf95""><span class="ea-share-count-icon-label"><i class="ea-share-count-icon easc-envelope"></i><span class="ea-share-count-label">Email</span></span></a></li>		</ul>
+	</div>
+
+	<div class="entry-content">
+		<span class="bsf-rt-reading-time"><span class="bsf-rt-display-label" prefix="预计阅读时间："></span> <span class="bsf-rt-display-time" reading_time="2"></span> <span class="bsf-rt-display-postfix" postfix="分钟"></span></span><div id="bsf_rt_marker"></div>
+<p class="wp-block-paragraph"><strong>JoyAI-Sim</strong></p>
+
+
+
+<p class="wp-block-paragraph">随着 AI 正在加速进入物理世界，具身智能正从单点算法突破走向数据、仿真、评测与部署协同演进的新阶段。面向具身智能数据获取成本高、仿真与现实对齐难、模型评测难以规模化等挑战，京东推出 JoyAI-Sim“机器人⇌仿真⇌人类”人机数据对齐工具链，在仿真环境中对数据资产、任务场景、交互动作进行高保真的还原，结合 Isaac Lab-Arena 高质量视效、高精度物理仿真与规模化评测能力，形成模型开发与仿真评测迭代闭环全流程，通过京东云为开发者提供从数据生产到模型评测的全流程服务，加速机器人策略从仿真走向真实应用。</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Isaac Lab-Arena</strong></p>
+
+
+
+<p class="wp-block-paragraph">NVIDIA Isaac Lab-Arena 提供了高质量视效、高精度物理仿真与规模化评测的能力，通过 RTX 技术对材质、光照进行具有真实质感的渲染，通过 Newton 物理引擎技术对交互过程进行更精准的还原，通过精简的 API 简化任务设计流程，支持跨机器人本体、物体与环境的大规模并行评测，可大幅降低评测任务实施门槛，便于开发者快速开发评测系统、发布标准化评测方案。</p>
+
+
+
+<h2 class="wp-block-heading"><strong>一、JoyAI-Sim 从 0 到 1 构建与真机评测对齐的仿真评测任务</strong></h2>
+
+
+
+<p class="wp-block-paragraph">真机评测最接近实际部署环境，但成本高、速度慢，JoyAI-Sim 围绕“Robot ⇌ Simulation ⇌ Human”构建了具身仿真工具链，支持与真机评测对齐的仿真评测任务构建，以及人机对齐的数据合成。</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="1476" height="730" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-1.jpg" alt="" class="wp-image-95871" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-1.jpg 1476w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-1-960x475.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-1-1280x633.jpg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-1-630x312.jpg 630w" sizes="(max-width: 1476px) 100vw, 1476px" /></figure>
+
+
+
+<p class="wp-block-paragraph">JoyAI-Sim 将数据资产的真实尺寸、质量、材质等物理属性还原到了仿真环境中，作为具身操作模型的物理交互对象。同时，通过针对真实视频与仿真渲染结果的校准与比对，可在仿真评测环境中持续修正视角、空间布局和资产参数，更加对齐地重建真实场景的交互反馈，并大规模创建评测和学习任务，使同一模型能够在统一任务定义下进行真机与仿真对照测试，为后续批量评测建立可靠基线。</p>
+
+
+
+<p class="wp-block-paragraph">模型部署到 JoyAI-Sim + Isaac Lab-Arena 仿真评测环境后，可记录任务成功率、碰撞、超时、轨迹、关节状态及多视角视频等信息，并通过改变物体位置、观察视角、材质和光照开展域随机化及泛化测试。除客观指标评测外，还支持人类反馈，评审者从接近操作者的视角检查模拟动作是否自然、合理和符合任务意图，并将反馈用于调整场景、控制和评测规则，这一机制补足了单一成功率无法反映的动作自然度与人机对齐问题。</p>
+
+
+
+<h2 class="wp-block-heading"><strong>二、Isaac Lab-Arena 从 1 到 N 大规模扩展评测任务</strong></h2>
+
+
+
+<p class="wp-block-paragraph">JoyAI-Sim 通过人机数据对齐构建了面向单个机器人任务的可信评测环境。在此基础上，进一步结合 Isaac Lab-Arena 提供的标准化任务组织、并行仿真和策略评测能力，将经过验证的场景、机器人本体和任务规则组织为标准化组件，扩展为更加通用、可扩展的标准化评测体系。</p>
+
+
+
+<p class="wp-block-paragraph">基于 Isaac Lab-Arena，可围绕物体实例、空间布局、材质、光照、相机视角和机器人初始状态进行域随机化，结合 RTX 高保真视觉渲染与 Newton 高精度物理仿真能力，对接触、碰撞和操作过程进行物理合理性验证，避免扩展出的任务只在视觉上成立、却无法真实执行。</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1680" height="1038" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-1680x1038.jpg" alt="" class="wp-image-95869" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-1680x1038.jpg 1680w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-960x593.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-1280x791.jpg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-1536x949.jpg 1536w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2-630x389.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-2.jpg 1918w" sizes="(max-width: 1680px) 100vw, 1680px" /></figure>
+
+
+
+<p class="wp-block-paragraph">Isaac Lab-Arena 提供统一、精简的任务接口，支持大规模并行 Rollout，使不同模型、任务和环境组合可以被批量执行、记录和比较。</p>
+
+
+
+<h2 class="wp-block-heading"><strong>三、实践效果：可信、高效、稳定的仿真评测</strong></h2>
+
+
+
+<p class="wp-block-paragraph">以桌面整理任务为例，基于 JoyAI-Sim 与 Isaac Lab-Arena 的仿真评测具有以下优势：</p>
+
+
+
+<ul class="wp-block-list">
+<li>可信：通过 JoyAI-Sim 对真实场景、机器人本体及任务流程进行高保真复刻，并将模型分别部署到真机与仿真环境中开展 Rollout，仿真评测与真实评测结果的一致性达到约&nbsp;<strong>89%</strong>；</li>
+
+
+
+<li>高效：依托 Isaac Lab-Arena 的并行仿真与规模化任务调度能力，可同时运行多组评测任务，减少真机部署、场景复位与人工操作成本，整体评测效率达到真机评测的&nbsp;<strong>3.2 倍</strong>；</li>
+
+
+
+<li>稳定：通过在仿真中统一初始状态、场景配置与评测流程，JoyAI-Sim + Isaac Lab-Arena 降低了设备状态、人工操作及环境扰动带来的随机误差，重复评测结果偏差较真机评测降低 <strong>37.7%</strong>。</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="1260" height="1198" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-3.jpg" alt="" class="wp-image-95867" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-3.jpg 1260w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-3-960x913.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-3-630x599.jpg 630w" sizes="auto, (max-width: 1260px) 100vw, 1260px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1680" height="208" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-1680x208.jpg" alt="" class="wp-image-95865" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-1680x208.jpg 1680w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-960x119.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-1280x158.jpg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-1536x190.jpg 1536w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4-630x78.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/joy-ai-4.jpg 1988w" sizes="auto, (max-width: 1680px) 100vw, 1680px" /></figure>
+
+
+
+<p class="wp-block-paragraph">这些结果表明，通过 JoyAI-Sim 完成真机评测任务的对齐，再借助 Isaac Lab-Arena 进行规模化扩展，可以在降低真机评测负担的同时，为模型训练与策略评估提供更加可信、稳定和高效的支持。</p>
+
+
+
+<h2 class="wp-block-heading"><strong>四、京东云具身仿真服务</strong></h2>
+
+
+
+<p class="wp-block-paragraph">现已在京东云 JoyBuilder 模型开发平台发布了仿真评测和数据合成的实践案例，开发者可在云上直接运行典型应用的 Notebook 工作流，参与开发并体验 JoyAI-Sim + Isaac Lab-Arena 具身仿真评测全流程的服务。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="931" height="330" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/cloud-new-arrows-reversed_20261008_160531.jpg" alt="" class="wp-image-95909" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/cloud-new-arrows-reversed_20261008_160531.jpg 931w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/09/cloud-new-arrows-reversed_20261008_160531-630x223.jpg 630w" sizes="auto, (max-width: 931px) 100vw, 931px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong>仿真评测实践案例：</strong><a target="_blank" rel="nofollow noopener noreferrer" href="https://docs.jdcloud.com/cn/jdaip/JoyAI-Sim-evaluation-practice">https://docs.jdcloud.com/cn/jdaip/JoyAI-Sim-evaluation-practice</a>。此工作流基于 JoyAI-Sim 提供了一套 1:1 还原真机评测任务的仿真评测服务。通过该服务，用户无需将模型部署到真实机器人上，即可在仿真环境中完成模型能力的评估，从而显著降低具身模型的开发与评测成本。</li>
+
+
+
+<li><strong>数据合成实践案例：</strong><a target="_blank" rel="nofollow noopener noreferrer" href="https://docs.jdcloud.com/cn/jdaip/Notebook-Cosmos-Transfer">https://docs.jdcloud.com/cn/jdaip/Notebook-Cosmos-Transfer</a>。此工作流基于 Cosmos 视频生成模型提供了一套由视频与提示词驱动的数据合成服务。通过该服务，用户可将仿真操作视频转换为真实、多样的机器人操作视频，减小 Sim-to-Real 的差距，提升具身模型数据质量、扩增数据规模。</li>
+</ul>
+
+
+
+<script data-wp-block-html="js">
+
+(function () {
+  function fixAuthorJoins() {
+    document.querySelectorAll(".author_meta .author.vcard").forEach(function (el) {
+      var walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      var nodes = [];
+      while (walk.nextNode()) nodes.push(walk.currentNode);
+      nodes.forEach(function (n) {
+        if (n.parentElement && n.parentElement.closest("a")) return;
+        var v = n.nodeValue || "";
+        if (!/,|\band\b/i.test(v)) return;
+        n.nodeValue = v
+          .replace(/\s*\band\b\s*/gi, "和")
+          .replace(/,\s*/g, "，");
+      });
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fixAuthorJoins);
+  } else {
+    fixAuthorJoins();
+  }
+})();
+
+</script>
+
+<br>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+		<footer id="post-footer" class="entry-footer  ">
+			<div class="entry-footer-categories"><span class="cat-links">分类: <a href="https://blogs.nvidia.cn/blog/category/success-stories/" rel="category tag">成功案例</a> | <a href="https://blogs.nvidia.cn/blog/category/robotics/" rel="category tag">机器人</a></span></div><div class="entry-footer-tags"><span class="tags-links">标签: <a href="https://blogs.nvidia.cn/blog/tag/isaac/" rel="tag">Isaac</a> | <a href="https://blogs.nvidia.cn/blog/tag/isaac-lab/" rel="tag">Isaac Lab</a></span></div><div id="disqus_thread"></div>		</footer>
+	</div>
+	
+<div id="secondary" class="single-latest-news-widget-area" role="complementary">
+	<aside id="nvb5categorynewswidget-3" class="widget NVB5CategoryNewsWidget"><h3 class="widget-title">NVIDIA 相关新闻</h3>		<div class="category-latest-news">
+		
+<article
+	class="excerpt  post-96179 post type-post status-publish format-standard has-post-thumbnail hentry category-generative-ai category-auto category-software tag-agentic-ai tag-cosmos tag-gtc-2026 tag-healthcare-life-sciences tag-nemotron tag-open-source tag-physical-ai tag-quantum-computing loop-item-1 for-pagenum-1"	id="post-96179"
+	data-post-id="96179"
+>
+	<div class="inner for-hentry img-bg orientation-landscape">
+		<div class="tile-image-wrapper"><img width="960" height="540" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1-960x540.png" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1-960x540.png 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1-630x354.png 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1-300x169.png 300w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1-400x225.png 400w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-key-visual-open-models-pr-gtc-berlin-2026-4k-1280x720-1.png 1280w" sizes="auto, (max-width: 960px) 100vw, 960px" /></div>
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.cn/blog/open-models-europe-industry/" class="aggregation-card-link" title="NVIDIA 开放模型推动欧洲各行业自主智能发展"></a>
+		</div>
+	</div>
+
+	<div class="title-excerpt">
+		<p class="entry-title">
+			<a href="https://blogs.nvidia.cn/blog/open-models-europe-industry/" class="entry-title-text">
+				NVIDIA 开放模型推动欧洲各行业自主智能发展			</a>
+		</p>
+	</div>
+</article>
+
+<article
+	class="excerpt  post-96130 post type-post status-publish format-standard has-post-thumbnail hentry category-news loop-item-1 for-pagenum-1"	id="post-96130"
+	data-post-id="96130"
+>
+	<div class="inner for-hentry img-bg orientation-landscape">
+		<div class="tile-image-wrapper"><img width="960" height="540" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-960x540.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-960x540.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-1680x945.jpg 1680w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-1280x720.jpg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-1536x864.jpg 1536w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-1290x725.jpg 1290w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-630x354.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-300x169.jpg 300w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture-400x225.jpg 400w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/NVIDIA-OpenShell-Reference-Architecture.jpg 1920w" sizes="auto, (max-width: 960px) 100vw, 960px" /></div>
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.cn/blog/openshell-reference-architecture/" class="aggregation-card-link" title="NVIDIA 推出面向安全 AI 智能体的 OpenShell 参考架构"></a>
+		</div>
+	</div>
+
+	<div class="title-excerpt">
+		<p class="entry-title">
+			<a href="https://blogs.nvidia.cn/blog/openshell-reference-architecture/" class="entry-title-text">
+				NVIDIA 推出面向安全 AI 智能体的 OpenShell 参考架构			</a>
+		</p>
+	</div>
+</article>
+
+<article
+	class="excerpt  post-96140 post type-post status-publish format-standard has-post-thumbnail hentry category-generative-ai tag-agentic-ai tag-artificial-intelligence tag-dgx-spark tag-gtc-2026 tag-local-ai tag-nvidia-rtx tag-open-source tag-rtx-ai-garage tag-rtx-spark loop-item-1 for-pagenum-1"	id="post-96140"
+	data-post-id="96140"
+>
+	<div class="inner for-hentry img-bg orientation-landscape">
+		<div class="tile-image-wrapper"><img width="960" height="510" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/nv-blog-1280x680-2-960x510.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/nv-blog-1280x680-2-960x510.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/nv-blog-1280x680-2-630x335.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/nv-blog-1280x680-2.jpg 1280w" sizes="auto, (max-width: 960px) 100vw, 960px" /></div>
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.cn/blog/local-ai-gtc-rtx-dgx-spark-station-sync/" class="aggregation-card-link" title="Spark 登陆欧洲：本地智能驱动新一轮智能体发展"></a>
+		</div>
+	</div>
+
+	<div class="title-excerpt">
+		<p class="entry-title">
+			<a href="https://blogs.nvidia.cn/blog/local-ai-gtc-rtx-dgx-spark-station-sync/" class="entry-title-text">
+				Spark 登陆欧洲：本地智能驱动新一轮智能体发展			</a>
+		</p>
+	</div>
+</article>
+
+<article
+	class="excerpt  post-96195 post type-post status-publish format-standard has-post-thumbnail hentry category-generative-ai category-software tag-agentic-ai tag-gtc-2026 tag-openshell loop-item-1 for-pagenum-1"	id="post-96195"
+	data-post-id="96195"
+>
+	<div class="inner for-hentry img-bg orientation-landscape">
+		<div class="tile-image-wrapper"><img width="960" height="540" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1-960x540.jpg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1-960x540.jpg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1-630x354.jpg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1-300x169.jpg 300w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1-400x225.jpg 400w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/agentic-ai-agent-toolkit-pr-berlin-social-1920x1080-5811548-1280x720-1.jpg 1280w" sizes="auto, (max-width: 960px) 100vw, 960px" /></div>
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.cn/blog/enterprise-platforms-agent-toolkit/" class="aggregation-card-link" title="NVIDIA Agent Toolkit 进一步扩展，助力企业智能体扎根企业数据"></a>
+		</div>
+	</div>
+
+	<div class="title-excerpt">
+		<p class="entry-title">
+			<a href="https://blogs.nvidia.cn/blog/enterprise-platforms-agent-toolkit/" class="entry-title-text">
+				NVIDIA Agent Toolkit 进一步扩展，助力企业智能体扎根企业数据			</a>
+		</p>
+	</div>
+</article>
+
+<article
+	class="excerpt  post-96191 post type-post status-publish format-standard has-post-thumbnail hentry category-news loop-item-1 for-pagenum-1"	id="post-96191"
+	data-post-id="96191"
+>
+	<div class="inner for-hentry img-bg orientation-landscape">
+		<div class="tile-image-wrapper"><img width="960" height="540" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-960x540.jpeg" class="attachment-medium size-medium" alt="" decoding="async" loading="lazy" srcset="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-960x540.jpeg 960w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-1280x720.jpeg 1280w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-1536x864.jpeg 1536w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-1290x725.jpeg 1290w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-630x354.jpeg 630w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-300x169.jpeg 300w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia-400x225.jpeg 400w, https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/healthcare-and-life-sciences-leaders-build-on-nvidia.jpeg 1600w" sizes="auto, (max-width: 960px) 100vw, 960px" /></div>
+		<div class="inner2 for-hentry no-gradient">
+			<a href="https://blogs.nvidia.cn/blog/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care/" class="aggregation-card-link" title="医疗健康与生命科学领军企业依托 NVIDIA 技术，推进药物研发并拓展患者诊疗服务"></a>
+		</div>
+	</div>
+
+	<div class="title-excerpt">
+		<p class="entry-title">
+			<a href="https://blogs.nvidia.cn/blog/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care/" class="entry-title-text">
+				医疗健康与生命科学领军企业依托 NVIDIA 技术，推进药物研发并拓展患者诊疗服务			</a>
+		</p>
+	</div>
+</article>
+		</div>
+		</aside><aside id="media_image-34" class="widget widget_media_image"><a href="https://pro.jd.com/mall/active/5241THFSzFqBTyyiGTgGfYiiEqU/index.html?babelChannel=ttt5"><img width="406" height="350" src="https://blogs.nvidia.cn/wp-content/uploads/sites/20/2026/10/gf-26-double11-laptop-nv-blog-406x350-zhCN-5520935.jpg" class="image wp-image-96111  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" loading="lazy" /></a></aside></div><!-- #secondary -->
+	<div class="clearfix"></div>
+</article>
+		</div>
+			</main><!-- #main -->
+</div><!-- #primary -->
+
+		</div><!-- /.inner.for-content -->
+	</div><!-- #content -->
+
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="inner for-colophon">
+
+		<!-- == FOOTER AREA 1 == -->
+		<div class="footer-area-1">
+						<nav class="footer-menu-1-slot" role="navigation">
+										<h3 class="menu-title">公司信息</h3>
+					<div class="menu-%e5%85%ac%e5%8f%b8%e4%bf%a1%e6%81%af-container"><ul id="footer-menu-1" class="menu"><li id="menu-item-48754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48754"><a target="_blank" href="https://www.nvidia.cn/about-nvidia/">关于 NVIDIA</a></li>
+<li id="menu-item-48755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48755"><a target="_blank" href="https://www.nvidia.cn/about-nvidia/ai-computing/">公司概览</a></li>
+<li id="menu-item-48756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48756"><a target="_blank" href="https://www.nvidia.cn/technologies/">技术</a></li>
+<li id="menu-item-48757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48757"><a target="_blank" href="https://www.nvidia.cn/research/">NVIDIA 研究</a></li>
+<li id="menu-item-48758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48758"><a target="_blank" href="https://investor.nvidia.com/home/default.aspx">投资者</a></li>
+<li id="menu-item-48759" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48759"><a target="_blank" href="https://www.nvidia.cn/csr/">社会责任</a></li>
+<li id="menu-item-48768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48768"><a href="https://www.nvidia.cn/foundation/">NVIDIA 基金会</a></li>
+</ul></div>			</nav>
+						<nav class="footer-menu-2-slot" role="navigation">
+										<h3 class="menu-title">参与</h3>
+					<div class="menu-%e5%8f%82%e4%b8%8e-container"><ul id="footer-menu-2" class="menu"><li id="menu-item-48760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48760"><a target="_blank" href="https://www.nvidia.cn/about-nvidia/careers/">人才招聘</a></li>
+<li id="menu-item-48761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48761"><a target="_blank" href="https://developer.nvidia.cn/zh-cn/">开发者社区</a></li>
+<li id="menu-item-48762" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48762"><a target="_blank" href="https://developer.nvidia.cn/developer-program">加入开发者计划</a></li>
+<li id="menu-item-48763" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48763"><a target="_blank" href="https://www.nvidia.cn/about-nvidia/partners/">NVIDIA 合作伙伴网络</a></li>
+<li id="menu-item-48764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48764"><a target="_blank" href="https://www.nvidia.cn/deep-learning-ai/startups/">NVIDIA 初创加速计划</a></li>
+<li id="menu-item-48765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48765"><a target="_blank" href="https://www.nvidia.cn/training/">技术培训</a></li>
+<li id="menu-item-48766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48766"><a target="_blank" href="https://academy.nvidia.com/en/">面向 IT 专业人员的培训</a></li>
+<li id="menu-item-48767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48767"><a href="https://www.nvidia.cn/ai-data-science/professional-services/">面向数据科学人员的专业服务</a></li>
+</ul></div>			</nav>
+						<nav class="footer-menu-3-slot" role="navigation">
+										<h3 class="menu-title">新闻与活动</h3>
+					<div class="menu-%e6%96%b0%e9%97%bb%e4%b8%8e%e6%b4%bb%e5%8a%a8-container"><ul id="footer-menu-3" class="menu"><li id="menu-item-48753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48753"><a href="https://www.nvidia.cn/newsroom/">新闻中心</a></li>
+<li id="menu-item-48747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-48747"><a href="https://blogs.nvidia.cn/">NVIDIA 博客</a></li>
+<li id="menu-item-48736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48736"><a href="https://www.nvidia.cn/about-nvidia/webinar-portal/">在线研讨会</a></li>
+<li id="menu-item-48737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48737"><a href="https://www.nvidia.cn/preferences/email-signup/">获得最新信息</a></li>
+<li id="menu-item-48769" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48769"><a href="https://www.nvidia.cn/events/">近期活动</a></li>
+<li id="menu-item-48770" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48770"><a href="https://www.nvidia.cn/gtc-global/">NVIDIA GPU 技术大会</a></li>
+<li id="menu-item-48771" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48771"><a href="https://www.nvidia.cn/on-demand/">NVIDIA On-Demand</a></li>
+</ul></div>			</nav>
+					</div><!-- /.footer-area-1 -->
+
+		<!-- == FOOTER AREA 2 == -->
+		<div class="footer-area-2">
+			<div class="explore-cta">
+				<a href="https://www.nvidia.cn/contact/social/">
+					<div class="explore-cta-icon-wrapper">
+							<span class="icon icon-plus"></span>
+	</div>
+					<div class="explore-cta-text">
+						<div class="explore-cta-text-inner">
+							浏览其他地区的博客和社交网络</div>
+					</div>
+				</a>
+			</div>
+		</div><!-- /.footer-area-2 -->
+
+		<!-- == FOOTER AREA 3 == -->
+		<div class="footer-area-3">
+
+		</div><!-- /.footer-area-3 -->
+
+	</div><!-- /.inner.for-colophon -->
+
+	<div id="white-footer">
+		<div class="inner for-colophon">
+			<div class="area footer-area-4">
+				<svg class="global-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 407.8 1000 184.4" enable-background="new 0 407.8 1000 184.4" xml:space="preserve">
+					<g id="nvidia-logo">
+						<path d="M987.1 555.7v-2.8h1.7c0.9 0 2.3 0.1 2.3 1.2 0 1.2-0.7 1.5-1.8 1.5H987.1M987.1 557.6h1.2l2.8 4.8h3l-3.1-5c1.5-0.1 2.9-0.8 2.9-3 0-2.7-1.8-3.5-4.9-3.5h-4.4v11.5h2.6L987.1 557.6M1000 556.7c0-6.8-5.2-10.7-11.1-10.7 -5.8 0-11.1 3.9-11.1 10.7 0 6.8 5.2 10.7 11.1 10.7S1000 563.5 1000 556.7M996.8 556.7c0 4.9-3.6 8.2-7.9 8.2l0 0c-4.4 0-7.9-3.3-7.9-8.2 0-4.9 3.6-8.2 7.9-8.2C993.2 548.6 996.8 551.9 996.8 556.7z"></path>
+						<path d="M593.2 442.7v121.1h34.2V442.7H593.2zM324.4 442.5v121.2h34.5v-94.1l26.9 0.1c8.8 0 15 2.2 19.2 6.7 5.4 5.7 7.6 15.1 7.6 32v55.3H446v-66.9c0-47.8-30.5-54.3-60.2-54.3C385.8 442.5 324.4 442.5 324.4 442.5zM648.3 442.7v121.1h55.4c29.5 0 39.2-4.9 49.6-15.9 7.4-7.7 12.1-24.7 12.1-43.3 0-17-4-32.2-11.1-41.7 -12.5-16.9-30.8-20.2-58.1-20.2H648.3zM682.2 469h14.7c21.3 0 35.1 9.5 35.1 34.4 0 24.8-13.7 34.4-35.1 34.4h-14.7V469zM544 442.7l-28.5 95.9 -27.3-95.9h-36.9l39 121.1h49.2l39.3-121.1H544zM781.4 563.7h34.2v-121h-34.2V563.7zM877.2 442.7l-47.7 121h33.7l7.6-21.3h56.5l7.2 21.3h36.6l-48.2-121H877.2zM899.4 464.8l20.7 56.6H878L899.4 464.8z"></path>
+						<path d="M103.9 462.8v-16.6c1.6-0.1 3.3-0.2 4.9-0.2 45.6-1.4 75.4 39.1 75.4 39.1s-32.2 44.8-66.8 44.8c-5 0-9.4-0.8-13.4-2.2v-50.5c17.7 2.2 21.3 10 32 27.7l23.7-20c0 0-17.3-22.7-46.5-22.7C110 462.3 106.9 462.5 103.9 462.8M103.9 407.8v24.8c1.6-0.1 3.3-0.2 4.9-0.3 63.3-2.2 104.6 51.9 104.6 51.9s-47.4 57.7-96.7 57.7c-4.5 0-8.7-0.4-12.7-1.1v15.4c3.4 0.4 7 0.7 10.6 0.7 46 0 79.2-23.5 111.4-51.2 5.3 4.3 27.2 14.7 31.7 19.2 -30.6 25.6-101.9 46.3-142.3 46.3 -3.9 0-7.6-0.2-11.3-0.6v21.6h174.7V407.8H103.9zM103.9 527.8v13.1c-42.5-7.6-54.3-51.8-54.3-51.8s20.4-22.6 54.3-26.3v14.4c0 0 0 0-0.1 0 -17.7-2.2-31.7 14.5-31.7 14.5S80 519.6 103.9 527.8M28.4 487.2c0 0 25.2-37.1 75.5-41v-13.5C48.2 437.2 0 484.4 0 484.4s27.3 79 103.9 86.3v-14.4C47.7 549.2 28.4 487.2 28.4 487.2z"></path>
+					</g>
+					<image src="images/nvidia-logo.png" alt="NVIDIA" title="NVIDIA" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+				</svg>
+					<div class="site-info">
+		<ul class="site-info-list"><li id="menu-item-88282"><a href="https://www.nvidia.cn/about-nvidia/privacy-policy/">隐私声明</a></li>
+<li id="menu-item-88283"><a href="https://www.nvidia.cn/privacy-center/">您的隐私选择</a></li>
+<li id="menu-item-88284"><a href="https://www.nvidia.cn/about-nvidia/terms-of-service/">服务条款</a></li>
+<li id="menu-item-88285"><a href="https://www.nvidia.cn/about-nvidia/accessibility/">无障碍访问</a></li>
+<li id="menu-item-88286"><a target="_blank" href="https://www.nvidia.cn/about-nvidia/company-policies/">公司政策</a></li>
+<li id="menu-item-92879"><a href="https://www.nvidia.com/en-us/security/">产品安全性</a></li>
+<li id="menu-item-88287"><a href="https://www.nvidia.cn/contact/asia/">联系我们</a></li>
+<li id="menu-item-91651"><a href="https://nvidianews.nvidia.com/">英文网站</a></li>
+</ul>		<div class="copyright">
+			Copyright &copy; 2026 NVIDIA Corporation<span>
+					|
+					<a target="_blank" rel="noreferrer nofollow" class="ipc_link"
+						href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502036963">
+							京公网安备11010502036963号
+					</a>
+				</span>
+				<span>
+				    |
+				    <a target="_blank" rel="noreferrer nofollow" class="ipc_link"
+				    href="http://beian.miit.gov.cn/">
+				    京ICP备18033986号 - 1
+				    </a>
+				</span>		</div>
+	</div>
+				</div>
+			<div class="area footer-area-5">
+				<a href="https://www.nvidia.com/en-us/location-selector/">
+				CHN - 中国				</a>
+			</div>
+		</div>
+	</div>
+</footer><!-- #colophon -->
+
+</div><!-- #page -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/sites/20/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nvidia-blog-v5/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div id="bsf_rt_progress_bar_container" class="progress-container-top">
+				<div class="progress-bar" id="bsf_rt_progress_bar"></div>
+				</div><script id="yith-infinitescroll-js" src="https://blogs.nvidia.cn/wp-content/plugins/yith-infinite-scrolling/assets/js/yith.infinitescroll.min.js?ver=2.12.0"></script>
+<script id="yith-infs-js-extra">
+var yith_infs = {"navSelector":".nvb4-single-post-pagination","nextSelector":".for-next a","itemSelector":".cf-posts-with-overrides","contentSelector":"#main","loader":"https://blogs.nvidia.cn/wp-content/plugins/yith-infinite-scrolling/assets/images/loader.gif","shop":""};
+//# sourceURL=yith-infs-js-extra
+</script>
+<script id="yith-infs-js" src="https://blogs.nvidia.cn/wp-content/plugins/yith-infinite-scrolling/assets/js/yith-infs.min.js?ver=2.12.0"></script>
+<script id="throttle-debounce-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets//js/lib/jquery.ba-throttle-debounce.min.js?ver=20190419.0001"></script>
+<script id="waypoints-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets//js/lib/waypoints/jquery.waypoints.min.js?ver=4.0.0"></script>
+<script id="waypoints-sticky-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets//js/lib/waypoints/shortcuts/sticky.min.js?ver=4.0.0"></script>
+<script data-wp-strategy="defer" defer id="fitvids-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets//js/lib/jquery.fitvids.min.js?ver=1.2.0"></script>
+<script id="magnific-popup-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/assets/js/lib/magnific-popup/jquery.magnific-popup.min.js?ver=1.0.0"></script>
+<script id="nvb-single-js-extra">
+var nvbThemeVars = {"ajaxUrl":"https://blogs.nvidia.cn/wp-admin/admin-ajax.php","disqus_url":"https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/","language":"ICL_LANGUAGE_CODE","site_url":"https://blogs.nvidia.cn"};
+//# sourceURL=nvb-single-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="nvb-single-js" src="https://blogs.nvidia.cn/wp-content/themes/nvidia-blog-v5/build/single.min.js?ver=1755094939"></script>
+<script id="page-links-to-js" src="https://blogs.nvidia.cn/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.4.1"></script>
+<script id="ea-share-count-js-extra">
+var easc = {"url":"https://blogs.nvidia.cn/wp-admin/admin-ajax.php"};
+//# sourceURL=ea-share-count-js-extra
+</script>
+<script id="ea-share-count-js" src="https://blogs.nvidia.cn/wp-content/plugins/cf-ea-share-count/assets/js/share-count.js?ver=1.5.9"></script>
+<script id="bsfrt_frontend-js-extra">
+var myObj = {"option":""};
+//# sourceURL=bsfrt_frontend-js-extra
+</script>
+<script id="bsfrt_frontend-js" src="https://blogs.nvidia.cn/wp-content/plugins/read-meter/assets/js/bsf-rt-frontend.min.js?ver=1.0.11"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://blogs.nvidia.cn/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://blogs.nvidia.cn/wp-includes/js/wp-emoji-loader.min.js
+</script>
+		<div id="easc-modal-wrap" style="display:none;">
+			<div class="easc-modal">
+				<span class="easc-modal-title">分享此文章</span>
+				<p>
+					<label for="easc-modal-recipient">收件人的邮箱地址</label>
+					<input type="text" id="easc-modal-recipient">
+				</p>
+				<p>
+					<label for="easc-modal-name">您的名字</label>
+					<input type="text" id="easc-modal-name">
+				</p>
+				<p>
+					<label for="easc-modal-email">您的邮箱地址</label>
+					<input type="text" id="easc-modal-email">
+				</p>
+				<p class="easc-modal-validation">
+					<label for="easc-modal-validation">Comments</label>
+					<input type="text" id="easc-modal-validation" autocomplete="off">
+				</p>
+				<p class="easc-modal-submit">
+					<button id="easc-modal-submit"><i class="ea-share-count-icon easc-envelope send-email-btn-icon"></i> 发送邮件</button>
+				</p>
+				<a href="#" id="easc-modal-close"><i class="easc-close close-icon"></i></a>
+				<div id="easc-modal-sent">邮件已发送</div>
+			</div>
+		</div>
+			<script type="text/javascript"> _satellite.pageBottom(); </script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+id: evt-2026-10-19-orbbec-publication-sdk-v2-ego
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: orbbec
+  role: subject
+title:
+  zh: 奥比中光公开 OrbbecSDK v2-EGO 仓库
+summary:
+  zh: 奥比中光提供面向 EGO 采集产品的 OrbbecSDK v2-EGO，包含设备控制、采集示例与平台扩展库。仓库继承SDK开发历史，本条记录新公开仓库及可见采集支持，不将通用SDK历史全部视为此次新增。
+evidence:
+- url: https://github.com/orbbec/OrbbecSDK_v2-EGO
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/307-0.md
+- url: https://api.github.com/repos/orbbec/OrbbecSDK_v2-EGO
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/date-307-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 采用10月19日官方仓库创建与可见材料记录，不以继承提交历史推断早期公开时间。

@@ -1,0 +1,40 @@
+id: evt-2026-10-14-linkerbot-publication-arm-python-ros2-sdk
+date: '2026-10-14'
+date_precision: day
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手公开机械臂 Python 与 ROS2 SDK 仓库
+summary:
+  zh: 灵心巧手提供机械臂 Python 与 ROS2 SDK，涵盖 CAN 通信、机械臂状态与控制接口及使用示例。两仓包含早期开发提交；本条记录10月14日新建公开仓库提供的工具，不把导入历史当作当时已公开，也不将两接口包装成两款新机械臂。
+evidence:
+- url: https://github.com/linker-bot/linkerbot-arm-ros2-sdk
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/256-0.md
+- url: https://github.com/linker-bot/linkerbot-arm-python-sdk
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/257-0.md
+- url: https://api.github.com/repos/linker-bot/linkerbot-arm-ros2-sdk
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/date-256-0.json
+- url: https://api.github.com/repos/linker-bot/linkerbot-arm-python-sdk
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/date-257-0.json
+- url: https://api.github.com/repos/linker-bot/linkerbot-arm-python-sdk/commits?per_page=100
+  publisher: 灵心巧手 · GitHub
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-257-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 两个官方仓库均在10月14日创建，历史提交早于该日；无法由提交时间判定更早的公开状态。

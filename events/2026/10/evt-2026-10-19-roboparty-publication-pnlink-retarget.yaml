@@ -1,0 +1,24 @@
+id: evt-2026-10-19-roboparty-publication-pnlink-retarget
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对公开 PN 动捕到 RP1 的重定向代码
+summary:
+  zh: 萝博派对公开 roboparty_pnlink，将 PN 动捕输入通过 ROS2 流程重定向到 RP1。记录接入与实时动作映射代码；第三方 PN SDK
+    的授权与代码许可分开，不概括为全部组件可自由再分发。
+evidence:
+- url: https://github.com/Roboparty/roboparty_pnlink
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/327-0.md
+- url: https://api.github.com/repos/Roboparty/roboparty_pnlink/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-327-0.json
+corroboration: single

@@ -1,0 +1,22 @@
+id: evt-2026-10-10-motphys-statement-tc8-draft-standards
+date: '2026-10-10'
+date_precision: day
+type: statement
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯披露参与 MIIT/TC8 五项仿真平台标准草案
+summary:
+  zh: 莫特菲斯在标准周相关报道中披露参与五项仿真平台标准草案编制，并与数据工作组开展预研合作。记录参与草案与预研，不将草案等同已经立项或发布的正式标准。
+evidence:
+- url: https://news.e-works.net.cn/category802/news139561.htm
+  publisher: news.e-works.net.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/245-0.html
+corroboration: single
+counterparties:
+- MIIT/TC8 数据工作组
+date_basis: derived
+date_as_stated: 采用10月10日报道日作为参与情况披露日，会议发生时间仅称近日，未确定具体日。

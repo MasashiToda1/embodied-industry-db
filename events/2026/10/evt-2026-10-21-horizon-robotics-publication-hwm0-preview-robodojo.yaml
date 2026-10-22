@@ -1,0 +1,30 @@
+id: evt-2026-10-21-horizon-robotics-publication-hwm0-preview-robodojo
+date: '2026-10-21'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线公开 HWM-0 Preview RoboDojo 推理包
+summary:
+  zh: 地平线公开 HWM-0 Preview 的 RoboDojo 60K EMA 推理包，包含模型权重与配置文件。记录实际模型文件发布，不推断未披露训练数据或完整训练管线开放。
+evidence:
+- url: https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/317-0.md
+- url: https://huggingface.co/api/models/HorizonRobotics/HWM-0-Preview-RoboDojo
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hf-HWM-0-Preview-RoboDojo.json
+- url: https://huggingface.co/api/models/HorizonRobotics/HWM-0-Preview-RoboDojo/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-HWM-0-Preview-RoboDojo.json
+corroboration: single
+date_basis: derived
+date_as_stated: 有效推理包提交22f3728ce2为10月21日。

@@ -1,0 +1,18 @@
+id: phanes-ai
+names:
+  zh: 破晓智能
+  en: PHANES AI
+  aliases:
+  - 破晓
+  - PHANES AI
+status: active
+layers:
+- data
+- foundation
+description: 研发面向人形机器人全身移动灵巧操作的世界模型与触觉数据技术，推出全身多模态采集系统 SeePhys Hub。
+sources:
+- url: https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/258-3.html

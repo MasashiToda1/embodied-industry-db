@@ -1,0 +1,26 @@
+id: evt-2026-10-15-agibot-publication-agentsdk-hospital-sample
+date: '2026-10-15'
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元公开 AgentSDK 医院导览应用示例
+summary:
+  zh: 智元 agibot_agentsdk_sample_code 仓库公开医院导览应用示例和接入说明。原候选链接重定向到同一仓库；记录示例代码公开，不将其等同
+    AgentSDK 核心完整开源或医院实际部署。
+evidence:
+- url: https://github.com/AgibotTech/agibot_agentsdk_sample_code
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/273-0.md
+- url: https://api.github.com/repos/AgibotTech/agibot_agentsdk/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-251-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 10月15日提交038fc754c1加入医院导览应用；原仓名与新仓名只计一次。

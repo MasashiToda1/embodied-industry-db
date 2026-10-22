@@ -1,0 +1,18 @@
+id: evt-2026-10-21-unitree-product_launch-h2x
+date: '2026-10-21'
+date_precision: day
+type: product_launch
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树发布 H2X 人形机器人
+summary:
+  zh: 宇树发布 H2X 人形机器人，并披露本体配置和续航等参数。续航表现记录为公司公布的条件性指标，不视为本库独立测试或量产交付证据。
+evidence:
+- url: https://www.ithome.com/1/015/876.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-12.html
+corroboration: single

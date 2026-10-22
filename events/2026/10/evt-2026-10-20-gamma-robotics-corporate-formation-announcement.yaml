@@ -1,0 +1,23 @@
+id: evt-2026-10-20-gamma-robotics-corporate-formation-announcement
+date: '2026-10-20'
+date_precision: day
+type: corporate
+orgs:
+- id: gamma-robotics
+  role: subject
+title:
+  zh: TeleAI 宣布孵化成立伽马智能
+summary:
+  zh: TeleAI 宣布其孵化的市场化企业伽马智能近日在上海注册成立，聚焦人形机器人自进化与全身模型，并介绍由中电信（上海）人工智能产业私募基金战略投资及共建实验室的安排。记录成立公告，不将公告日当作工商注册日，也不认定实验室已建成或存在已发布产品。
+evidence:
+- url: https://www.ithome.com/1/015/807.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/312-1.html
+corroboration: single
+counterparties:
+- 中国电信人工智能研究院（TeleAI）
+- 中电信（上海）人工智能产业私募基金
+date_basis: derived
+date_as_stated: IT之家10月21日报道明确TeleAI在10月20日官宣；实际注册时间仅为近日。

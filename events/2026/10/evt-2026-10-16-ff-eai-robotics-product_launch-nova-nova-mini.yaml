@@ -1,0 +1,20 @@
+id: evt-2026-10-16-ff-eai-robotics-product_launch-nova-nova-mini
+date: '2026-10-16'
+date_precision: day
+type: product_launch
+orgs:
+- id: ff-eai-robotics
+  role: subject
+title:
+  zh: FF 发布 Nova 与 Nova Mini 机器人产品
+summary:
+  zh: FF 发布 Nova 与 Nova Mini，披露 Nova 本体售价2490美元及分阶段销售安排。记录产品发布与公开报价，不把首批销售安排视作已经完成交付。
+evidence:
+- url: https://ai123.com/news/15417
+  publisher: ai123.com
+  tier: aggregator
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/290-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 原文明确北京时间10月16日，采用该披露时区。

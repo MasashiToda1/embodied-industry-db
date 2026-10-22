@@ -1,0 +1,36 @@
+id: evt-2026-10-20-ace-robotics-publication-acebrain-0-6
+date: '2026-10-20'
+date_precision: day
+type: publication
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人公开 ACE-Brain0.6 代码与权重
+summary:
+  zh: 大晓机器人公开 ACE-Brain0.6 的项目代码、模型卡与9B模型权重，面向空间理解与定位相关能力。记录同一次跨平台发布，不将空间理解模型等同已具备完整动作控制的
+    VLA。
+evidence:
+- url: https://github.com/DAXIAORobotics/ACE-Brain-0.6
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/320-0.md
+- url: https://huggingface.co/ACERobotics/ACE-Brain-0.6-9B
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/318-0.md
+- url: https://huggingface.co/api/models/ACERobotics/ACE-Brain-0.6-9B
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hf-ACE-Brain-0.6-9B.json
+- url: https://huggingface.co/api/models/ACERobotics/ACE-Brain-0.6-9B/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-ace.json
+corroboration: single
+date_basis: derived
+date_as_stated: 模型权重上传提交919bb2a2e7为10月20日，代码与权重合并记录一次。

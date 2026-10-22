@@ -1,0 +1,23 @@
+id: evt-2026-10-dream-labs-product_launch-dream1-api
+date: 2026-10
+date_precision: month
+type: product_launch
+orgs:
+- id: dream-labs
+  role: subject
+title:
+  zh: Dream Labs 发布 Dream-1 世界动作模型及控制 API
+summary:
+  zh: Dream Labs 发布 Dream-1 世界动作模型，并通过公共 API 向机器人开发者提供控制能力，官方称可用于未见过的双臂机器人并给出每小时3美元起的服务价格。记录模型服务开放及公司宣称的零样本能力，不认定独立验证、全场景泛化或权重开源。
+evidence:
+- url: https://dreamlabs.ai/research/dream-1/
+  publisher: dreamlabs.ai
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/dream.html
+corroboration: single
+axes:
+  model_form:
+  - world-model
+date_basis: derived
+date_as_stated: 官方文章仅标注October 2026，保留月精度。

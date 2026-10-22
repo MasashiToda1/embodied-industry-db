@@ -1,0 +1,24 @@
+id: evt-2026-10-19-rlwrld-publication-dexbench-cosmos
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: rlwrld
+  role: subject
+title:
+  zh: RLWRLD 公开 DexBench Cosmos 后训练适配
+summary:
+  zh: RLWRLD 在 Cosmos 框架基础上提供 DexBench 训练配方、机器人关节配置及策略服务相关适配，支持面向 RBY1-M 与舞肌 Hand2
+    的任务实验。记录下游适配，不归属 Cosmos 基础模型原创，也不将继承的上游代码全记为新增。
+evidence:
+- url: https://github.com/RLWRLD/DexBench-cosmos-framework
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/311-0.md
+- url: https://api.github.com/repos/RLWRLD/DexBench-cosmos-framework/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-311-0.json
+corroboration: single

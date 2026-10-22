@@ -1,0 +1,18 @@
+id: evt-2026-10-09-roboparty-publication-rp1-test-0-1
+date: '2026-10-09'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对发布 RP1_test 0.1 可靠性测试工具
+summary:
+  zh: RP1_test 0.1 提供机器人关节等测试流程、夹具设计与相关文档，覆盖18项测试。软件支持合成数据演示；公开测试工具不能替代实机试验，不将其记为通过全部可靠性认证。
+evidence:
+- url: https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/242-1.html
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-10-19-robotis-product_launch-ai-worker-2-3
+date: '2026-10-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 发布 AI Worker2.3
+summary:
+  zh: AI Worker2.3 增加 A1、A2 leader 等设备及 Cyclo Control 相关支持，扩展机器人操作和控制配置。记录软件版本发布，不将版本更新视为新整机交付。
+evidence:
+- url: https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/296-0.html
+corroboration: single

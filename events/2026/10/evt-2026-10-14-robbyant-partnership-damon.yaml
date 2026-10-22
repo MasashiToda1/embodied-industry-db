@@ -1,0 +1,22 @@
+id: evt-2026-10-14-robbyant-partnership-damon
+date: '2026-10-14'
+date_precision: day
+type: partnership
+orgs:
+- id: robbyant
+  role: subject
+title:
+  zh: 蚂蚁灵波披露与德马科技合作
+summary:
+  zh: 蚂蚁灵波披露与德马科技达成战略合作，面向物流包裹柔性分拣开展工程适配和测试验证。记录合作披露及约定方向，不将规划场景、未来客户或展会演示当作已完成交付。
+evidence:
+- url: https://www.leiphone.com/category/industrynews/sDAmOLZ58Kpz8ZlD.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/243-0.html
+corroboration: single
+counterparties:
+- 德马科技
+date_basis: derived
+date_as_stated: 10月14日为报道披露日，原文签约时间仅称近日；未编造具体签署日。

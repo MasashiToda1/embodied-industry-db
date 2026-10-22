@@ -1,0 +1,22 @@
+id: evt-2026-04-motphys-partnership-sinomach-digital
+date: 2026-04
+date_precision: month
+type: partnership
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯与国机数科签署战略合作框架
+summary:
+  zh: 环球网采访记载莫特菲斯于2026年4月与国机数科签署战略合作框架，围绕仿真与具身智能基础设施合作。记录框架合作，不将训练基地规划或技术表述当作已经完成的建设交付。
+evidence:
+- url: https://m.huanqiu.com/article/4RTpVc8Ma6e
+  publisher: m.huanqiu.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/281-0.html
+corroboration: single
+counterparties:
+- 国机数科
+date_basis: derived
+date_as_stated: 采访明确2026年4月，保留月精度；10月报道不是签约日。

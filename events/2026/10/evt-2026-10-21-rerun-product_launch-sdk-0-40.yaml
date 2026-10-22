@@ -1,0 +1,18 @@
+id: evt-2026-10-21-rerun-product_launch-sdk-0-40
+date: '2026-10-21'
+date_precision: day
+type: product_launch
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun 发布 SDK0.40
+summary:
+  zh: Rerun0.40 扩展 Viewer MCP、变换与目录操作，并完善 LeRobot 数据相关元数据支持。记录机器人数据查看与调试工具的实质迭代，与此前0.39独立。
+evidence:
+- url: https://github.com/rerun-io/rerun/releases/tag/0.40.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-2.html
+corroboration: single

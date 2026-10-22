@@ -1,0 +1,28 @@
+id: evt-2026-10-19-motphys-publication-dexevt-mxlab
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯公开 Dex-EVT 的 MotrixLab 训练适配
+summary:
+  zh: 莫特菲斯公开 dexevt-mxlab，提供 Dex-EVT 的平地行走、全身动作跟踪及回放和导出流程，并明确致谢 xMimic 与机器人资产来源。代码与机器人模型、动作数据的许可独立；记录适配工具，不归属跨维智能或宣称原创本体。
+evidence:
+- url: https://github.com/Motphys/dexevt-mxlab
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/293-0.md
+- url: https://api.github.com/repos/Motphys/dexevt-mxlab/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-293-0.json
+corroboration: single
+axes:
+  control_route:
+  - rl
+date_basis: derived
+date_as_stated: 有效项目初始化f982af7b85为10月19日，采用内容提交日而非空仓创建日。

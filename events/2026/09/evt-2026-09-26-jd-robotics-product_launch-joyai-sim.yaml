@@ -1,0 +1,24 @@
+id: evt-2026-09-26-jd-robotics-product_launch-joyai-sim
+date: '2026-09-26'
+date_precision: day
+type: product_launch
+orgs:
+- id: jd-robotics
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: 京东介绍 JoyAI-Sim 具身仿真训练平台
+summary:
+  zh: 京东在 NVIDIA 官方技术文章中介绍 JoyAI-Sim，使用 Newton 与 Isaac Lab Arena 等基础设施支持具身机器人仿真和任务训练。记录京东平台与底层工具关系，不将平台仅归属
+    NVIDIA，也不以10月转载时间当作首次发布。
+evidence:
+- url: https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/
+  publisher: blogs.nvidia.cn
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/jd-joyai.html
+corroboration: single
+axes:
+  sim_stack:
+  - isaac-lab

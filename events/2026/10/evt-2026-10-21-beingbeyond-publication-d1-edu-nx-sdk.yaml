@@ -1,0 +1,26 @@
+id: evt-2026-10-21-beingbeyond-publication-d1-edu-nx-sdk
+date: '2026-10-21'
+date_precision: day
+type: publication
+orgs:
+- id: beingbeyond
+  role: subject
+title:
+  zh: 超越智能公开 D1 EDU NX SDK 与示例
+summary:
+  zh: 超越智能公开 D1 EDU NX 的 ARM64 二进制 SDK0.2.0 与 Python 示例，说明当前验证范围为 Python3.10。记录 SDK
+    及示例提供，不称核心SDK全部源码开源或兼容所有Python版本。
+evidence:
+- url: https://github.com/BeingBeyond/Beingbeyond_D1_edu_nx
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/321-0.md
+- url: https://api.github.com/repos/BeingBeyond/Beingbeyond_D1_edu_nx/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-321-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 首次有效内容提交680fa6d90f为10月21日，10月20日仅为仓库创建日。

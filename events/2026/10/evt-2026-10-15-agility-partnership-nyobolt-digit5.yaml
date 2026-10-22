@@ -1,0 +1,20 @@
+id: evt-2026-10-15-agility-partnership-nyobolt-digit5
+date: '2026-10-15'
+date_precision: day
+type: partnership
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility 选择 Nyobolt 为 Digit5 提供快充电池技术
+summary:
+  zh: Agility 宣布选择 Nyobolt 为 Digit5 提供快充电池技术，并披露九分钟充电支持九十分钟运行的方案目标与2027年上半年早期接入安排。记录供应合作和公司披露的性能，不认定已经规模交付或独立实测。
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-selects-nyobolt-as-its-ultra-fast-charging-battery-technology-partner-for-digit-5
+  publisher: www.agilityrobotics.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/agility-battery.html
+corroboration: single
+counterparties:
+- Nyobolt

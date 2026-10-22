@@ -1,0 +1,28 @@
+id: evt-2026-10-14-agibot-publication-vine-code
+date: '2026-10-14'
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元公开 VINE 代码
+summary:
+  zh: 智元公开 VINE 代码，提供面向流匹配策略的价值梯度强化学习实现。记录代码公开；相关论文此前已发表，不将本次建仓改写为论文首发或新产品交付。
+evidence:
+- url: https://github.com/AgibotTech/vine-code
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/252-0.md
+- url: https://api.github.com/repos/AgibotTech/vine-code/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-252-0.json
+corroboration: single
+axes:
+  control_route:
+  - rl
+date_basis: derived
+date_as_stated: 代码初始提交e6c9019f49为10月14日。

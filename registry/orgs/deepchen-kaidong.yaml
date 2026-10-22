@@ -1,0 +1,19 @@
+id: deepchen-kaidong
+names:
+  zh: 深辰凯动
+  en: SCKD
+  aliases:
+  - 浙江深辰凯动科技有限公司
+status: active
+layers:
+- embodiment
+- locomotion
+description: 浙江深辰凯动科技有限公司研发运动机器人，以羽毛球机器人验证高速视觉追踪和运动控制；半人形通用机器人仍属于产品路线。
+sources:
+- url: https://www.zjsckd.com/about/
+  publisher: www.zjsckd.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/deepchen-about.html
+accounts:
+  site: https://www.zjsckd.com/

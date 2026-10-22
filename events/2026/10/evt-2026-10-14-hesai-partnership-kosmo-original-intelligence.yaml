@@ -1,0 +1,20 @@
+id: evt-2026-10-14-hesai-partnership-kosmo-original-intelligence
+date: '2026-10-14'
+date_precision: day
+type: partnership
+orgs:
+- id: hesai
+  role: subject
+- id: original-intelligence
+  role: counterparty
+title:
+  zh: 禾赛 Kosmo 与原力灵机签署战略合作
+summary:
+  zh: 禾赛在 Kosmo 发布活动中宣布与原力灵机签署战略合作，围绕具身智能所需真实世界三维数据开展合作。记录当日签约，不将同文列举的其他历史案例转记为当日新增合作或交付。
+evidence:
+- url: https://www.hesaitech.com/cn/news/1526/
+  publisher: www.hesaitech.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hesai-kosmo-alt.html
+corroboration: single

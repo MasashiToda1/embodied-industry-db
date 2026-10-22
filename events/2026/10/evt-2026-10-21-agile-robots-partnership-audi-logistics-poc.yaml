@@ -1,0 +1,24 @@
+id: evt-2026-10-21-agile-robots-partnership-audi-logistics-poc
+date: '2026-10-21'
+date_precision: day
+type: partnership
+orgs:
+- id: agile-robots
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: 思灵机器人与奥迪开展人形机器人物流概念验证
+summary:
+  zh: Agile Robots 与奥迪宣布在 Ingolstadt 物流顺序配送场景开展移动人形机器人概念验证，并获得 Dassault Systèmes 与
+    NVIDIA 技术支持。记录 PoC 及合作范围，不写成奥迪工厂已全面商业部署。
+evidence:
+- url: https://www.audi.com/en/press-releases/agile-robots-and-audi-to-transform-automotive-logistics-with-mobile-humanoids-supported-by-dassault-systemes-and-nvidia-18390
+  publisher: www.audi.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/333-0.html
+corroboration: single
+counterparties:
+- 奥迪
+- Dassault Systèmes

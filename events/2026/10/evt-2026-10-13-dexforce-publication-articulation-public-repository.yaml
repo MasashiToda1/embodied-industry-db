@@ -1,0 +1,30 @@
+id: evt-2026-10-13-dexforce-publication-articulation-public-repository
+date: '2026-10-13'
+date_precision: day
+type: publication
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维智能公开 Articulation 关节资产生成工具
+summary:
+  zh: 跨维智能 Articulation 仓库提供基于 Articraft 服务的关节资产生成与基准流程，生成可用于后续仿真准备的资产。README 明示未完成动力学验证；记录公开工具，不将资产可视化等同完整可用的物理仿真。
+evidence:
+- url: https://github.com/DexForce/Articulation
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/239-0.md
+- url: https://api.github.com/repos/DexForce/Articulation
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/date-239-0.json
+- url: https://api.github.com/repos/DexForce/Articulation/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-239-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 采用官方仓库创建于10月13日且当日可见有效内容的发布记录；导入提交历史早于建仓，不据此推定当时已公开。

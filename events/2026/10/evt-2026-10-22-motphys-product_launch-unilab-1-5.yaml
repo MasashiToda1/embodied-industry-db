@@ -1,0 +1,19 @@
+id: evt-2026-10-22-motphys-product_launch-unilab-1-5
+date: '2026-10-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 UniLab1.5
+summary:
+  zh: UniLab1.5 恢复 env_ids 作为公开 reset 选择器并移除1.4的布尔掩码兼容层，更新观测历史与延迟重置，增加 PPO/APPO 的可选
+    TF32 控制并统一采集器设备配置。记录需要迁移的接口与训练能力变化。
+evidence:
+- url: https://github.com/Motphys/UniLab/releases/tag/v1.5.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/338-0.html
+corroboration: single

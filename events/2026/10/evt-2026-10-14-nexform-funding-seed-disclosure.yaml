@@ -1,0 +1,23 @@
+id: evt-2026-10-14-nexform-funding-seed-disclosure
+date: '2026-10-14'
+date_precision: day
+type: funding
+orgs:
+- id: nexform
+  role: subject
+title:
+  zh: 新元体披露完成数千万元种子轮融资
+summary:
+  zh: NEXFORM新元体披露完成数千万元种子轮融资，投资方包括戈壁创投、浙大友创等，业务面向通用机器人平台、物理智能体与开发者工具。金额未精确披露；报道中的合作协议与覆盖面积不等同实际交付数量。
+evidence:
+- url: https://news.pedaily.cn/202610/570260.shtml
+  publisher: news.pedaily.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/pdf-7.html
+corroboration: single
+counterparties:
+- 戈壁创投
+- 浙大友创
+date_basis: derived
+date_as_stated: 10月14日为公告报道日，原文融资完成时间为近日。

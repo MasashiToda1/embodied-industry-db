@@ -1,0 +1,18 @@
+id: evt-2026-10-19-robotis-product_launch-cyclo-control-0-5
+date: '2026-10-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS 发布 Cyclo Control0.5
+summary:
+  zh: Cyclo Control0.5 扩展控制器切换与控制交接能力，配合机器人操作软件使用。记录控制工具实质更新，与同批日志管理维护版本区分。
+evidence:
+- url: https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/296-1.html
+corroboration: single

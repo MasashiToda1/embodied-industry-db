@@ -1,0 +1,17 @@
+id: gamma-robotics
+names:
+  zh: 伽马智能
+  en: Gamma Robotics
+  aliases:
+  - Gamma Robtics
+  - 伽马智能
+status: active
+layers:
+- foundation
+description: 由 TeleAI 孵化的市场化具身智能企业，研究人形机器人自进化与全身模型；实验室合作仍按公告计划记录。
+sources:
+- url: https://www.ithome.com/1/015/807.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/312-1.html

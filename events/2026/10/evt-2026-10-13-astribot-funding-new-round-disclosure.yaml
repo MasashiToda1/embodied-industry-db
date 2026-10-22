@@ -1,0 +1,29 @@
+id: evt-2026-10-13-astribot-funding-new-round-disclosure
+date: '2026-10-13'
+date_precision: day
+type: funding
+orgs:
+- id: astribot
+  role: subject
+title:
+  zh: 星尘智能披露完成 10 亿元新一轮融资
+summary:
+  zh: 星尘智能披露完成10亿元新一轮融资，由投控东海领投，洪泰基金、宁海兴泰合基金、善恒资本参与，先沐追加投资。报道明确该轮不同于6月B轮系列融资；本条金额为本次轮次，不将历史累计融资重复相加。
+evidence:
+- url: https://finance.eastmoney.com/a/202610133894111559.html
+  publisher: 中国证券报·中证网（东方财富转载）
+  tier: aggregator
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/pdf-5.html
+corroboration: single
+counterparties:
+- 投控东海
+- 洪泰基金
+- 宁海兴泰合基金
+- 善恒资本
+- 先沐资本
+amount:
+  value: 1000000000
+  currency: CNY
+date_basis: derived
+date_as_stated: 10月13日为媒体获悉与披露日；融资完成时间原文为近日。

@@ -1,0 +1,18 @@
+id: evt-2026-10-22-unitree-statement-g1-production-disclosure
+date: '2026-10-22'
+date_precision: day
+type: statement
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树披露 G1 累计生产规模
+summary:
+  zh: 宇树在公开回应中称 G1 累计生产数量处于1万至2万台区间。记录公司生产口径与区间，不改写为销售、交付量或取区间中值填入精确数量。
+evidence:
+- url: https://www.ithome.com/1/016/258.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-9.html
+corroboration: single

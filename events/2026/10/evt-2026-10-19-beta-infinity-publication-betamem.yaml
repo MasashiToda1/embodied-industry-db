@@ -1,0 +1,26 @@
+id: evt-2026-10-19-beta-infinity-publication-betamem
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: beta-infinity
+  role: subject
+title:
+  zh: 贝塔无限发表 BetaMem 具身智能体长期记忆研究
+summary:
+  zh: BetaMem 研究以工作、空间、实体、情节、经验及程序记忆构建可追溯长期记忆，通过监督训练、强化学习和独立回放约束记录与规则修复。记录论文与官方研究归属，论文评测不等于量产机器人已采用，也不将其他项目奖项转移给
+    BetaMem。
+evidence:
+- url: https://arxiv.org/abs/2610.26554
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/beta-paper.html
+- url: https://www.betainf.ai/
+  publisher: www.betainf.ai
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/beta-home.html
+corroboration: single
+date_basis: derived
+date_as_stated: arXiv首版提交日期为2026-10-19（UTC），不是10月22日媒体报道日。
