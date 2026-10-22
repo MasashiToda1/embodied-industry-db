@@ -1,0 +1,18 @@
+id: evt-2026-10-20-motphys-product_launch-unilab-1-4
+date: '2026-10-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 UniLab1.4
+summary:
+  zh: UniLab1.4 合并强化学习组件到 unilab.rl，更新环境状态图执行与采集器设备选择，并扩展 FlashSAC 自定义 actor 与辅助损失支持。版本包含运行时接口迁移，记录实际功能更新，不与此前1.3系列合并。
+evidence:
+- url: https://github.com/Motphys/UniLab/releases/tag/v1.4.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/301-0.html
+corroboration: single

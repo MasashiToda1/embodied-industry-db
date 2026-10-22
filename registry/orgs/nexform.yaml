@@ -1,0 +1,19 @@
+id: nexform
+names:
+  zh: 新元体
+  en: NEXFORM
+  aliases:
+  - NEXFORM新元体
+  - 杭州宇岛人工智能科技有限公司
+  - 杭州宇岛
+status: active
+layers:
+- foundation
+- simulation
+description: 杭州宇岛人工智能科技有限公司，面向通用机器人开发物理智能体、开发工具和跨本体运行平台。
+sources:
+- url: https://news.pedaily.cn/202610/570260.shtml
+  publisher: news.pedaily.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/pdf-7.html

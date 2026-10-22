@@ -1,0 +1,25 @@
+id: evt-2026-10-13-sankai-funding-series-b-disclosure
+date: '2026-10-13'
+date_precision: day
+type: funding
+orgs:
+- id: sankai
+  role: subject
+title:
+  zh: 三凯机电披露完成数亿元 B 轮融资
+summary:
+  zh: 投资界报道三凯机电完成数亿元 B 轮股权融资，由工业母机产业投资基金与物产中大投资联合领投，财通资本、温岭海和融智跟投。公司称资金用于人形机器人关节减速器及驱动一体化研发和产能建设；未披露精确金额，不将建设目标记为现有产能。
+evidence:
+- url: https://news.pedaily.cn/202610/570185.shtml
+  publisher: news.pedaily.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/pdf-6.html
+corroboration: single
+counterparties:
+- 工业母机产业投资基金
+- 物产中大投资
+- 财通资本
+- 温岭海和融智
+date_basis: derived
+date_as_stated: 10月13日为融资披露日，原文完成时间为近日。

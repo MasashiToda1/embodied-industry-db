@@ -1,0 +1,20 @@
+id: evt-2026-10-13-magiclab-statement-echopolicy0-molmospaces
+date: '2026-10-13'
+date_precision: day
+type: statement
+orgs:
+- id: magiclab
+  role: subject
+title:
+  zh: 魔法原子披露 EchoPolicy0 与 MagicBrain 在 MolmoSpaces 的研究结果
+summary:
+  zh: 魔法原子在发布稿中介绍 EchoPolicy0 操作模型及 MagicBrain 具身模型方案，并披露 MolmoSpaces 基准结果。记录公司报告的研究进展与评测，未独立复现，不据此认定工业场景部署效果或模型权重已开放。
+evidence:
+- url: https://www.penghoo.cn/a/11303.html
+  publisher: 朋湖科创（魔法原子发布稿）
+  tier: aggregator
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/magic-alternate.html
+corroboration: single
+date_basis: derived
+date_as_stated: 发布稿明确结果截至2026年10月13日，转载页面发布于10月14日。本事件日期为所报告结果的截至日，不推定测试运行日。

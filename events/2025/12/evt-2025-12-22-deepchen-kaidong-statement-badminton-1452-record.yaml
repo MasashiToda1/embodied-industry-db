@@ -1,0 +1,18 @@
+id: evt-2025-12-22-deepchen-kaidong-statement-badminton-1452-record
+date: '2025-12-22'
+date_precision: day
+type: statement
+orgs:
+- id: deepchen-kaidong
+  role: subject
+title:
+  zh: 深辰凯动披露羽毛球机器人连续对打 1452 次纪录
+summary:
+  zh: 深辰凯动官网记载，其羽毛球机器人于2025年12月22日接受吉尼斯现场认证，与专业运动员完成1452次连续对打。记录公司公布的机器人演示与纪录信息；不归属波士顿动力，也不使用2026年10月转载日期。
+evidence:
+- url: https://www.zjsckd.com/about/
+  publisher: www.zjsckd.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/deepchen-about.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2026-10-15-roboparty-publication-rp1-full-stack-release
+date: '2026-10-15'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对发布 RP1 全栈软硬件材料
+summary:
+  zh: 萝博派对披露 RP1 全栈软硬件材料发布，涵盖机器人结构、ROMOMO执行器与PartyOS等组成，标准版和Pro版具有不同自由度配置。记录相对8月首次亮相的材料发布，不将各组件视为统一许可证或认定整机已批量交付。
+evidence:
+- url: https://mekawire.com/zh/news/roboparty-rp1-open-source-humanoid-24-dof-romomo-actuators-partyos-20261015
+  publisher: mekawire.com
+  tier: aggregator
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/260-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 来源转述10月15日正式全栈发布，区别于此前展会亮相。

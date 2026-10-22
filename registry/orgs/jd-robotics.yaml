@@ -1,0 +1,26 @@
+id: jd-robotics
+names:
+  zh: 京东机器人
+  en: JD Robotics
+  aliases:
+  - 京东具身智能
+  - JoyAI-Sim
+status: active
+layers:
+- foundation
+- data
+- simulation
+description: 京东的具身机器人研究与开发业务，包括 JoyAI-Sim 仿真训练平台及参与 HIL-UMI 研究；不将集团通用电商业务纳入。
+sources:
+- url: https://blogs.nvidia.cn/blog/joyai-sim-isaac-lab-arena/
+  publisher: blogs.nvidia.cn
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/jd-joyai.html
+- url: https://arxiv.org/html/2609.20659v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hil-umi.html
+accounts:
+  site: https://www.jd.com/

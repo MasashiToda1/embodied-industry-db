@@ -1,0 +1,28 @@
+id: evt-2026-10-19-wuji-tech-publication-hand2-isaaclab
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技公开 Hand2 Isaac Lab 训练示例
+summary:
+  zh: 舞肌科技公开 wuji-isaaclab，为 Hand2 提供基于 Isaac Lab 的手部重定向任务和 PPO 训练流程。记录训练代码与配置，不认定已有适用于任意真实任务的通用策略。
+evidence:
+- url: https://github.com/wuji-technology/wuji-isaaclab
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/296-3.md
+- url: https://api.github.com/repos/wuji-technology/wuji-isaaclab/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-296-3.json
+corroboration: single
+axes:
+  sim_stack:
+  - isaac-lab
+  control_route:
+  - rl

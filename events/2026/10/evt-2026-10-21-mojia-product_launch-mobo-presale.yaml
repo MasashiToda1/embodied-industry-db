@@ -1,0 +1,23 @@
+id: evt-2026-10-21-mojia-product_launch-mobo-presale
+date: '2026-10-21'
+date_precision: day
+type: product_launch
+orgs:
+- id: mojia
+  role: subject
+title:
+  zh: 墨甲发布墨宝 Mobo 并开启预售
+summary:
+  zh: 墨甲发布面向家庭陪伴的 Mobo 机器人并宣布预售，介绍本体、交互及开发相关能力。记录正式发布与预售，不把此前预告另计一次，也不把预售数量或未来销售计划视作交付。
+evidence:
+- url: https://www.ithome.com/1/016/037.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/332-0.html
+- url: https://www.gasgoo.com/robot/news/70475575-%E5%A2%A8%E7%94%B2%E5%8F%91%E5%B8%83%E9%A6%96%E6%AC%BE%E6%B6%88%E8%B4%B9%E7%BA%A7%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A2%A8%E5%AE%9D/
+  publisher: www.gasgoo.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-13.html
+corroboration: single

@@ -1,0 +1,20 @@
+id: evt-2026-10-21-tesla-statement-optimus-production-ramp
+date: '2026-10-21'
+date_precision: day
+type: statement
+orgs:
+- id: tesla
+  role: subject
+title:
+  zh: 特斯拉披露 Optimus 在 Fremont 开始生产
+summary:
+  zh: 特斯拉第三季度报告称 Optimus 已在 Fremont 产线开始生产，并将加州生产状态列为 Early Ramp、得州列为 Construction。记录公司披露的生产进展，不把规划年产能、在建产线与实际产量混同。
+evidence:
+- url: https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf
+  publisher: assets-ir.tesla.com
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/tesla-q3.pdf
+corroboration: single
+date_basis: derived
+date_as_stated: 采用美国当地10月21日季度报告披露日期；不是声称生产于该日首次启动。

@@ -1,0 +1,20 @@
+id: evt-2026-10-14-phanes-ai-product_launch-seephys-hub
+date: '2026-10-14'
+date_precision: day
+type: product_launch
+orgs:
+- id: phanes-ai
+  role: subject
+title:
+  zh: 破晓智能与天珑移动发布 SeePhys Hub 全身多模态采集系统
+summary:
+  zh: 破晓智能联合天珑移动发布由头环、腕部设备、腰腿追踪器及触觉手套组成的 SeePhys Hub，同步记录第一视角视觉、手部接触及全身运动，并提供数据处理与动作重定向流程。记录产品发布，不认定宣传采集时长已实现或世界模型已经交付。
+evidence:
+- url: https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/258-3.html
+corroboration: single
+counterparties:
+- 天珑移动

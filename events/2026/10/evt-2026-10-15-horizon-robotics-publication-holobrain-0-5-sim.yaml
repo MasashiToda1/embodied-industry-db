@@ -1,0 +1,30 @@
+id: evt-2026-10-15-horizon-robotics-publication-holobrain-0-5-sim
+date: '2026-10-15'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线公开 HoloBrain0.5 仿真任务模型
+summary:
+  zh: 地平线公开 HoloBrain0.5_sim 模型，文件与提交说明涵盖 Robo Orchard 仿真六任务所需模型资产及运行配置。记录仿真模型发布，不将仿真任务结果解释为真机验证。
+evidence:
+- url: https://huggingface.co/HorizonRobotics/HoloBrain_v0.5_sim
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/268-0.md
+- url: https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5_sim
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hf-HoloBrain_v0.5_sim.json
+- url: https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5_sim/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-HoloBrain_v0.5_sim.json
+corroboration: single
+date_basis: derived
+date_as_stated: 10月15日14c84d2b11上传任务模型资产，同日更新为v0.5名称。

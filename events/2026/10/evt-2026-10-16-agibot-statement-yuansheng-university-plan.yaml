@@ -1,0 +1,20 @@
+id: evt-2026-10-16-agibot-statement-yuansheng-university-plan
+date: '2026-10-16'
+date_precision: day
+type: statement
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元披露元苼高校合作计划
+summary:
+  zh: 智元披露元苼高校合作计划，面向二十余所高校提出千台机器人及2亿元相关权益支持安排。记录计划与支持承诺，不作为机器人已交付数量、实际拨款或采购金额。
+evidence:
+- url: https://www.ithome.com/1/013/864.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/258-4.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用10月16日报道披露日；原文启动时间为本周。

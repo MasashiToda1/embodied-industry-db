@@ -1,0 +1,18 @@
+id: evt-2026-10-19-motphys-product_launch-motrixlab-0-4-stable
+date: '2026-10-19'
+date_precision: day
+type: product_launch
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯发布 MotrixLab0.4 正式版
+summary:
+  zh: MotrixLab0.4 正式版加入 AMD ROCm 训练支持并更新地形、机器人示例及训练流程。记录正式版相对已入库0.4b0的功能发布，不重复创建此前测试版事件。
+evidence:
+- url: https://github.com/Motphys/MotrixLab/releases/tag/v0.4.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/291-0.html
+corroboration: single

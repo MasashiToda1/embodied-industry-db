@@ -1,0 +1,25 @@
+id: evt-2026-10-14-roboparty-publication-romomo-materials
+date: '2026-10-14'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: 萝博派对公开 ROMOMO 执行器技术材料
+summary:
+  zh: 萝博派对 ROMOMO 仓库公开执行器 CAD、测试报告与 CAN 通信材料，为开发者接入和复现实验提供文档。记录技术材料公开，不将其等同执行器首次产品发布或新实机认证。
+evidence:
+- url: https://github.com/Roboparty/ROMOMO
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/312-0.md
+- url: https://api.github.com/repos/Roboparty/ROMOMO/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-312-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 初始有效材料提交f1371987fc为10月14日。

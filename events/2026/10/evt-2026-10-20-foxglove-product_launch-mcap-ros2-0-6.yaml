@@ -1,0 +1,20 @@
+id: evt-2026-10-20-foxglove-product_launch-mcap-ros2-0-6
+date: '2026-10-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布 MCAP ROS2 支持库0.6
+summary:
+  zh: MCAP ROS2 支持库0.6 改进解码缓存与元数据处理；发布说明中的内存下降来自特定测试示例，不外推为所有数据集的固定收益。
+evidence:
+- url: https://github.com/foxglove/mcap/releases/tag/releases/python/mcap-ros2-support/v0.6.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/306-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用GitHub Release published_at换算的北京时间；不是抓取日。

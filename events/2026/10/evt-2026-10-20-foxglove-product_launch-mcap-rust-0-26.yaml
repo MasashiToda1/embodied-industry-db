@@ -1,0 +1,20 @@
+id: evt-2026-10-20-foxglove-product_launch-mcap-rust-0-26
+date: '2026-10-20'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布 MCAP Rust0.26
+summary:
+  zh: MCAP Rust0.26 增加流式读取与自定义解压相关接口，扩展机器人记录数据读取与集成能力。
+evidence:
+- url: https://github.com/foxglove/mcap/releases/tag/releases/rust/v0.26.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/304-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用GitHub Release published_at换算的北京时间；不是抓取日。

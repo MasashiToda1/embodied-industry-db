@@ -1,0 +1,25 @@
+id: evt-2026-10-16-x-humanoid-publication-law
+date: '2026-10-16'
+date_precision: day
+type: publication
+orgs:
+- id: x-humanoid
+  role: subject
+title:
+  zh: 北京人形机器人创新中心与北大发表 LAW 研究
+summary:
+  zh: 北京人形机器人创新中心与北京大学研究团队提出联合语言、世界与动作建模的 LAW 框架。记录论文研究及作者单位，不归属名称中含有physical intelligence的另一家公司，也不把论文结果视为量产路线。
+evidence:
+- url: https://arxiv.org/abs/2610.23334v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/295-0.html
+corroboration: single
+axes:
+  model_form:
+  - world-model
+counterparties:
+- 北京大学
+date_basis: derived
+date_as_stated: 采用arXiv首版10月16日（UTC），非10月20日自动发现日期。

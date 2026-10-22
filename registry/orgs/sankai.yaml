@@ -1,0 +1,16 @@
+id: sankai
+names:
+  zh: 三凯机电
+  en: Sankai
+  aliases:
+  - 浙江三凯机电有限公司
+status: active
+layers:
+- components
+description: 浙江三凯机电有限公司研发精密传动部件，具有面向人形机器人关节的减速器与驱动一体化业务。
+sources:
+- url: https://news.pedaily.cn/202610/570185.shtml
+  publisher: news.pedaily.cn
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/pdf-6.html

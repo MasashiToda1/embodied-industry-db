@@ -1,0 +1,24 @@
+id: beta-infinity
+names:
+  zh: 贝塔无限
+  en: Beta Infinity
+  aliases:
+  - 贝塔无限
+  - BetaMem
+status: active
+layers:
+- foundation
+description: 研发具身模型及长期记忆框架，官方研究包括 BetaMem。
+sources:
+- url: https://www.betainf.ai/
+  publisher: www.betainf.ai
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/beta-home.html
+- url: https://arxiv.org/abs/2610.26554
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/beta-paper.html
+accounts:
+  site: https://www.betainf.ai/

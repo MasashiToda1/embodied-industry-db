@@ -1,0 +1,26 @@
+id: evt-2026-10-19-wuji-tech-publication-hand2-mujoco
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技公开 Hand2 MuJoCo 演示
+summary:
+  zh: 舞肌科技公开 wuji-mujoco，提供 Hand2 的 MuJoCo 仿真与波浪动作演示。记录仿真模型与轨迹演示，不将演示代码等同已训练的灵巧操作策略。
+evidence:
+- url: https://github.com/wuji-technology/wuji-mujoco
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/296-4.md
+- url: https://api.github.com/repos/wuji-technology/wuji-mujoco/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-296-4.json
+corroboration: single
+axes:
+  sim_stack:
+  - mujoco

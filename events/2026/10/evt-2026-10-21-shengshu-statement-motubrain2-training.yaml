@@ -1,0 +1,18 @@
+id: evt-2026-10-21-shengshu-statement-motubrain2-training
+date: '2026-10-21'
+date_precision: day
+type: statement
+orgs:
+- id: shengshu
+  role: subject
+title:
+  zh: 生数科技展示 Motubrain2.0 训练过程
+summary:
+  zh: 生数科技启动 Motubrain2.0 训练过程公开展示，介绍具身模型研发与训练安排。记录训练展示与研发进展；来源仍将权重发布描述为后续安排，不打已发布权重或完整开源标签。
+evidence:
+- url: https://www.leiphone.com/category/industrynews/kgEaqVuNRRnvxpfp.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/331-0.html
+corroboration: single

@@ -1,0 +1,35 @@
+id: evt-2026-09-17-qiyuan-robotics-publication-hil-umi
+date: '2026-09-17'
+date_precision: day
+type: publication
+orgs:
+- id: qiyuan-robotics
+  role: subject
+- id: jd-robotics
+  role: counterparty
+title:
+  zh: 启元机器人、京东与高校发表 HIL-UMI
+summary:
+  zh: HIL-UMI 研究通过人在回路的示范与纠正改善机器人操作学习，作者单位包括 PrimeBot（启元机器人）、京东科技及北京大学、西安交通大学。记录论文研究，不使用10月转载日期或将研究结果当成产品规模交付。
+evidence:
+- url: https://arxiv.org/html/2609.20659v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hil-umi.html
+- url: https://arxiv.org/abs/2609.20659
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/hil-umi-abs.html
+- url: https://zsdonghao.github.io/
+  publisher: zsdonghao.github.io
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/primebot-identity.html
+corroboration: single
+counterparties:
+- 北京大学
+- 西安交通大学
+date_basis: derived
+date_as_stated: arXiv首版为2026-09-17（UTC）；PrimeBot中文身份另由团队官方介绍核验。

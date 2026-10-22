@@ -1,0 +1,32 @@
+id: evt-2026-10-14-agibot-publication-worldoracle-evaluation
+date: '2026-10-14'
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+- id: nvidia
+  role: counterparty
+title:
+  zh: 智元与合作团队公开 WorldOracle 世界模型评测工具
+summary:
+  zh: WorldOracle 将同一初始观测和底层动作下的世界模型预测与真实执行配对，评测物理状态、交互空间关系、关键区域和多视角一致性，覆盖机器人与人手等执行形态。论文署名单位包括智元、NVIDIA及高校；记录评测代码公开，不把采用某机器人硬件当成作者归属。
+evidence:
+- url: https://github.com/AgibotTech/WorldOracle
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/242-0.md
+- url: https://arxiv.org/pdf/2610.18826
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/worldoracle-paper.pdf
+- url: https://api.github.com/repos/AgibotTech/WorldOracle/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/commits-242-0.json
+corroboration: single
+date_basis: derived
+date_as_stated: 代码历史首个Initial public release提交27ba4e92b0为2026-10-14T13:45:06Z；论文首发10月13日与代码发布分开。本事件采用代码发布日。

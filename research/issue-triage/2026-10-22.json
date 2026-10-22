@@ -1,0 +1,1745 @@
+{
+  "reviewed_on": "2026-10-22",
+  "approval": "维护者：都按你的来吧",
+  "scope": "历史111/210/211及新增235—343；新增或实质变更准入另报，不自动扩大范围。",
+  "counts": {
+    "pending": 20,
+    "admit": 47,
+    "reject": 33,
+    "duplicate": 12
+  },
+  "issues": [
+    {
+      "issue": 111,
+      "status": "pending",
+      "events": [],
+      "decision": "延续原缺口：GKZX202606090002-01完整中标供应商、916产教项目、HF20262716供应商与明细、贵州多模态咨询设计中标、诸广顺2026-08-24品牌供应商明细。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+    },
+    {
+      "issue": 210,
+      "status": "pending",
+      "events": [],
+      "decision": "Trident-Train仍访问受限，独立于可读的Trident检索模型，不猜测内容。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/210"
+    },
+    {
+      "issue": 211,
+      "status": "pending",
+      "events": [],
+      "decision": "JIMTOF/JIMTOF1及1008已有事件；csrt_bbox_tracker、segmentation_masked、segmentation_dataset__、masked_yolo_white的原始/加工关系、任务、许可和新增量待核。后两项沿用原#227候选，#299合并到本条追踪。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+    },
+    {
+      "issue": 235,
+      "status": "pending",
+      "events": [],
+      "decision": "Winverse/DeepSeek投资与智元融资仍涉及筹划／接近完成，待正式完成证据。RAPID高校论文、办公WorkBuddy、GTC议程不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/235"
+    },
+    {
+      "issue": 236,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-13-magiclab-statement-echopolicy0-molmospaces"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/236"
+    },
+    {
+      "issue": 237,
+      "status": "reject",
+      "events": [],
+      "decision": "术语页／产品目录没有可核验的独立发生日期，不作为事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/237"
+    },
+    {
+      "issue": 238,
+      "status": "reject",
+      "events": [],
+      "decision": "术语页／产品目录没有可核验的独立发生日期，不作为事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/238"
+    },
+    {
+      "issue": 239,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-13-dexforce-publication-articulation-public-repository"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/239"
+    },
+    {
+      "issue": 240,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/240"
+    },
+    {
+      "issue": 241,
+      "status": "pending",
+      "events": [],
+      "decision": "论文已核实属于Einsia.AI/清华，不属于Physical Intelligence；新主体组织身份与收录边界待补证，暂不建档。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/241"
+    },
+    {
+      "issue": 242,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-14-agibot-publication-worldoracle-evaluation",
+        "evt-2026-10-09-roboparty-publication-rp1-test-0-1"
+      ],
+      "decision": "保留：WAIC和2月产品汇总正文、河南采购完整公告、导览机器人采购结果；G1+标题误写零度，待宇树原公告；松应与摩尔线程历史合作待原公告和具体日。论坛、栏目页、历史沙龙、纯高校项目不收。WorldOracle和RP1_test见本PR事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/242"
+    },
+    {
+      "issue": 243,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-14-robbyant-partnership-longsheng-weirui",
+        "evt-2026-10-14-robbyant-partnership-damon",
+        "evt-2026-10-14-robbyant-partnership-der-xiangwang"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/243"
+    },
+    {
+      "issue": 244,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-13-astribot-funding-new-round-disclosure"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/244"
+    },
+    {
+      "issue": 245,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-10-motphys-statement-tc8-draft-standards"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/245"
+    },
+    {
+      "issue": 246,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-28-sharpa-product_launch-d01-w02-ae01"
+        ],
+        "reason": "Sharpa D01/W02/AE01已于9月28日记录，10月报道不是首次发布。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/246"
+    },
+    {
+      "issue": 247,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-20-qiyuan-robotics-product-launch-q1-t1"
+        ],
+        "reason": "启元Q1/T1及相关WorkBuddy信息已收录。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/247"
+    },
+    {
+      "issue": 248,
+      "status": "pending",
+      "events": [],
+      "decision": "原研究页面失效；需分别找回异构RL、照片级仿真等研究的原论文及作者归属，不能将聚合页作为一个新事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/248"
+    },
+    {
+      "issue": 249,
+      "status": "reject",
+      "events": [],
+      "decision": "MiniCPM-V4.7各模型规模与量化格式沿用维护者已明确的排除决定；Trident-Qwen3VL-2B是通用检索嵌入模型，未核到机器人业务关联。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/249"
+    },
+    {
+      "issue": 250,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-09-horizon-robotics-publication-holobrain-0-5-weights"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/250"
+    },
+    {
+      "issue": 251,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-agibot-publication-agentsdk-hospital-sample"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/251"
+    },
+    {
+      "issue": 252,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-14-agibot-publication-vine-code"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/252"
+    },
+    {
+      "issue": 253,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/253"
+    },
+    {
+      "issue": 254,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/254"
+    },
+    {
+      "issue": 255,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/255"
+    },
+    {
+      "issue": 256,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-14-linkerbot-publication-arm-python-ros2-sdk"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/256"
+    },
+    {
+      "issue": 257,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-14-linkerbot-publication-arm-python-ros2-sdk"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/257"
+    },
+    {
+      "issue": 258,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-15-theohand-product_launch-nova21",
+        "evt-2026-10-14-phanes-ai-product_launch-seephys-hub",
+        "evt-2026-10-09-roboparty-publication-rp1-test-0-1",
+        "evt-2026-10-16-agibot-statement-yuansheng-university-plan"
+      ],
+      "decision": "保留：大漠大具身业务待具体产品；云深处招股书待原件；北京训练基地缺新增运营日；4月融资汇总正文不可读。行业评论、新闻索引及普通3D打印不收。其余已批准产品与计划见本PR。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+    },
+    {
+      "issue": 259,
+      "status": "pending",
+      "events": [],
+      "decision": "估值、减持与财务评论不入事件；文中采集设备7月样机、8月发布等历史线索待原公告及已有记录精确比对，不记成本月新产品。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/259"
+    },
+    {
+      "issue": 260,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-roboparty-publication-rp1-full-stack-release"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/260"
+    },
+    {
+      "issue": 261,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-08-19-qingzhuo-product_launch-4m-hydraulic-electric-humanoid",
+          "evt-2026-08-24-qingzhuo-statement-digital-hydraulic-route"
+        ],
+        "reason": "Neodra/Neo1对应既有清卓动力主体；不是10月15日新发布。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/261"
+    },
+    {
+      "issue": 262,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-12-jaka-product_launch-kargo50"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/262"
+    },
+    {
+      "issue": 263,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-28-sharpa-product_launch-d01-w02-ae01"
+        ],
+        "reason": "Sharpa D01/W02/AE01已于9月28日记录，10月报道不是首次发布。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/263"
+    },
+    {
+      "issue": 264,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-10-08-westlake-robotics-product_launch-wr1-whole-body-model"
+        ],
+        "reason": "WR1已由PR #234合并。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/264"
+    },
+    {
+      "issue": 265,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-17-motphys-partnership-huawei-simulation-platform"
+        ],
+        "reason": "莫特菲斯与华为合作已由PR #217合并。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/265"
+    },
+    {
+      "issue": 266,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-17-d-robotics-funding-21",
+          "evt-2026-09-16-paxini-funding-b-plus-plus-round"
+        ],
+        "reason": "地瓜4亿美元C轮与帕西尼B++分别已有；累计40亿元不作为单轮金额。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/266"
+    },
+    {
+      "issue": 267,
+      "status": "pending",
+      "events": [],
+      "decision": "已有2024年Agility/GXO部署记录，但合同日期可能不同；原公告PDF未读通，不能未经核验直接合并或补新合同。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/267"
+    },
+    {
+      "issue": 268,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-horizon-robotics-publication-holobrain-0-5-sim"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/268"
+    },
+    {
+      "issue": 269,
+      "status": "reject",
+      "events": [],
+      "decision": "逐项检查：rdk-x5-muse-gadget为桌面助手；mono_ocr_recognition与mono_ocr_detection为通用OCR示例；FAST_LIO及slam_toolbox未见本次特定机器人适配的增量证据，不把上游仓库镜像当作地瓜原创发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/269"
+    },
+    {
+      "issue": 270,
+      "status": "reject",
+      "events": [],
+      "decision": "分别为Skills汇总、Model Zoo Skills说明及BSP开发工作流更新；Model Zoo Skills明确不更新模型资产，BSP未完成板端验证。本批不单独入事件，实际Model Zoo2.0见#326。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/270"
+    },
+    {
+      "issue": 271,
+      "status": "reject",
+      "events": [],
+      "decision": "分别为Skills汇总、Model Zoo Skills说明及BSP开发工作流更新；Model Zoo Skills明确不更新模型资产，BSP未完成板端验证。本批不单独入事件，实际Model Zoo2.0见#326。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/271"
+    },
+    {
+      "issue": 272,
+      "status": "reject",
+      "events": [],
+      "decision": "分别为Skills汇总、Model Zoo Skills说明及BSP开发工作流更新；Model Zoo Skills明确不更新模型资产，BSP未完成板端验证。本批不单独入事件，实际Model Zoo2.0见#326。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/272"
+    },
+    {
+      "issue": 273,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-agibot-publication-agentsdk-hospital-sample"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/273"
+    },
+    {
+      "issue": 274,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-16-eir-robotics-funding-pre-a-disclosure",
+        "evt-2026-10-16-ff-eai-robotics-product_launch-nova-nova-mini"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/274"
+    },
+    {
+      "issue": 275,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-10-01-ubtech-publication-thinker-wm-code-weights"
+        ],
+        "reason": "Thinker-WM有效代码与权重北京时间10月1日已由PR #234收录。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/275"
+    },
+    {
+      "issue": 276,
+      "status": "admit",
+      "events": [
+        "evt-2025-12-22-deepchen-kaidong-statement-badminton-1452-record"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/276"
+    },
+    {
+      "issue": 277,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-13-astribot-funding-new-round-disclosure"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/277"
+    },
+    {
+      "issue": 278,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-roboparty-publication-rp1-full-stack-release"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/278"
+    },
+    {
+      "issue": 279,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-10-08-dexforce-publication-unitas-world-action-model"
+        ],
+        "reason": "UNITAS已由PR #217收录。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/279"
+    },
+    {
+      "issue": 280,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-17-d-robotics-funding-21",
+          "evt-2026-09-16-paxini-funding-b-plus-plus-round"
+        ],
+        "reason": "地瓜4亿美元C轮与帕西尼B++分别已有；累计40亿元不作为单轮金额。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/280"
+    },
+    {
+      "issue": 281,
+      "status": "admit",
+      "events": [
+        "evt-2026-04-motphys-partnership-sinomach-digital"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/281"
+    },
+    {
+      "issue": 282,
+      "status": "pending",
+      "events": [],
+      "decision": "Hugging Face返回访问限制，无法核验实际文件、用途和许可；不推定已删除或已经正式发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/282"
+    },
+    {
+      "issue": 283,
+      "status": "reject",
+      "events": [],
+      "decision": "Figure Minute CLI为安装、登录等开发工具更新，未核到机器人产品或能力实质变化；新仓与Release不重复记录。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/283"
+    },
+    {
+      "issue": 284,
+      "status": "reject",
+      "events": [],
+      "decision": "Figure Minute CLI为安装、登录等开发工具更新，未核到机器人产品或能力实质变化；新仓与Release不重复记录。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/284"
+    },
+    {
+      "issue": 285,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-17-foxglove-product_launch-mcap-cli-0-4"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/285"
+    },
+    {
+      "issue": 286,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-21-mojia-product_launch-mobo-presale"
+      ],
+      "decision": "保留：OpenAI计划原访谈；美光研究官方演讲；张江麒麟/白虎数据集原始公告；上游投资正文；温州技师学院98万元采购的政府原公告。证券周报1—3月旧融资表逐项追原始来源，不整表导入、不将表内日期直接当事实。Mobo按正式发布事件处理；融资排行榜不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+    },
+    {
+      "issue": 287,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-15-agility-partnership-nyobolt-digit5"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/287"
+    },
+    {
+      "issue": 288,
+      "status": "pending",
+      "events": [],
+      "decision": "保留OpenAI人形机器人计划的原始访谈与日期。早报中飞行汽车、人物新闻及泛商业政策不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/288"
+    },
+    {
+      "issue": 289,
+      "status": "reject",
+      "events": [],
+      "decision": "估值贡献、行业技术时间表等观点，不是已发生产品、合作或交付事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/289"
+    },
+    {
+      "issue": 290,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-16-ff-eai-robotics-product_launch-nova-nova-mini"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/290"
+    },
+    {
+      "issue": 291,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-motphys-product_launch-motrixlab-0-4-stable"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/291"
+    },
+    {
+      "issue": 292,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/292"
+    },
+    {
+      "issue": 293,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-motphys-publication-dexevt-mxlab"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/293"
+    },
+    {
+      "issue": 294,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/294"
+    },
+    {
+      "issue": 295,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-16-x-humanoid-publication-law"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/295"
+    },
+    {
+      "issue": 296,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-dream-labs-funding-seed-disclosure",
+        "evt-2026-10-dream-labs-product_launch-dream1-api",
+        "evt-2026-10-19-robotis-product_launch-ai-worker-2-3",
+        "evt-2026-10-19-robotis-product_launch-cyclo-control-0-5",
+        "evt-2026-10-19-wuji-tech-publication-hand2-isaaclab",
+        "evt-2026-10-19-wuji-tech-publication-hand2-mujoco"
+      ],
+      "decision": "保留：Giga武汉邮政8月合作原公告；工博会中中科第五纪、智元G2与产量、Elite Primo、新松、越疆、汇川、KUKA独立消息待原公告；融资回顾未匹配部分继续历史核验。枢途、帕西尼已收事件去重；傅利叶GRW已有历史发布；纯工业ABB、论坛比赛回顾、通用模型新闻与行业统计不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+    },
+    {
+      "issue": 297,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-16-motphys-partnership-amd-roscon"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/297"
+    },
+    {
+      "issue": 298,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-09-28-sharpa-product_launch-d01-w02-ae01"
+        ],
+        "reason": "Sharpa D01/W02/AE01已于9月28日记录，10月报道不是首次发布。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/298"
+    },
+    {
+      "issue": 299,
+      "status": "duplicate",
+      "events": [],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "duplicate": {
+        "events": [
+          "evt-2026-10-06-rainbow-robotics-dataset_release-jimtof-series",
+          "evt-2026-10-08-rainbow-robotics-dataset_release-jimtof-1008"
+        ],
+        "reason": "已公开版本与历史候选重复；尚缺处理关系、任务与许可的数据集统一转#211继续跟踪，不新增数据量。"
+      },
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/299"
+    },
+    {
+      "issue": 300,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/300"
+    },
+    {
+      "issue": 301,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-motphys-product_launch-unilab-1-4"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/301"
+    },
+    {
+      "issue": 302,
+      "status": "reject",
+      "events": [],
+      "decision": "逐项检查：rdk-x5-muse-gadget为桌面助手；mono_ocr_recognition与mono_ocr_detection为通用OCR示例；FAST_LIO及slam_toolbox未见本次特定机器人适配的增量证据，不把上游仓库镜像当作地瓜原创发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/302"
+    },
+    {
+      "issue": 303,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/303"
+    },
+    {
+      "issue": 304,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-foxglove-product_launch-mcap-rust-0-26"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/304"
+    },
+    {
+      "issue": 305,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/305"
+    },
+    {
+      "issue": 306,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-foxglove-product_launch-mcap-ros2-0-6"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/306"
+    },
+    {
+      "issue": 307,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-orbbec-publication-sdk-v2-ego"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/307"
+    },
+    {
+      "issue": 308,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/308"
+    },
+    {
+      "issue": 309,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/309"
+    },
+    {
+      "issue": 310,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/310"
+    },
+    {
+      "issue": 311,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-rlwrld-publication-dexbench-cosmos"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/311"
+    },
+    {
+      "issue": 312,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-20-gamma-robotics-corporate-formation-announcement",
+        "evt-2026-10-14-roboparty-publication-romomo-materials"
+      ],
+      "decision": "ROMOMO与伽马见本PR；9月融资回顾已匹配的枢途和帕西尼去重，其余历史轮次待原公告核验；地理空间工具不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/312"
+    },
+    {
+      "issue": 313,
+      "status": "admit",
+      "events": [
+        "evt-2026-09-17-qiyuan-robotics-publication-hil-umi"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/313"
+    },
+    {
+      "issue": 314,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-16-motphys-partnership-amd-roscon"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/314"
+    },
+    {
+      "issue": 315,
+      "status": "admit",
+      "events": [
+        "evt-2026-09-26-jd-robotics-product_launch-joyai-sim"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/315"
+    },
+    {
+      "issue": 316,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-eka-robotics-funding-series-a"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/316"
+    },
+    {
+      "issue": 317,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-horizon-robotics-publication-hwm0-preview-robodojo"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/317"
+    },
+    {
+      "issue": 318,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-ace-robotics-publication-acebrain-0-6"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/318"
+    },
+    {
+      "issue": 319,
+      "status": "reject",
+      "events": [],
+      "decision": "MiniCPM-V4.7各模型规模与量化格式沿用维护者已明确的排除决定；Trident-Qwen3VL-2B是通用检索嵌入模型，未核到机器人业务关联。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/319"
+    },
+    {
+      "issue": 320,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-20-ace-robotics-publication-acebrain-0-6"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/320"
+    },
+    {
+      "issue": 321,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-beingbeyond-publication-d1-edu-nx-sdk"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/321"
+    },
+    {
+      "issue": 322,
+      "status": "pending",
+      "events": [],
+      "decision": "Flexiv RDK2.2标有Draft/WIP，待正式发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/322"
+    },
+    {
+      "issue": 323,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/323"
+    },
+    {
+      "issue": 324,
+      "status": "pending",
+      "events": [],
+      "decision": "Edge Site Helm包已存在，但缺少足以核验新产品能力的发布说明，暂不作为正式产品发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/324"
+    },
+    {
+      "issue": 325,
+      "status": "reject",
+      "events": [],
+      "decision": "API小改、UI组件、依赖或修复等日常维护，本批不单独记录；不按主次版本号机械准入。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/325"
+    },
+    {
+      "issue": 326,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-d-robotics-product_launch-model-zoo-2-0"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/326"
+    },
+    {
+      "issue": 327,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-19-roboparty-publication-pnlink-retarget"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/327"
+    },
+    {
+      "issue": 328,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-19-beta-infinity-publication-betamem",
+        "evt-2026-10-22-foxglove-product_launch-mcap-cpp-2-2",
+        "evt-2026-10-21-rerun-product_launch-sdk-0-40",
+        "evt-2026-10-21-unitree-product_launch-h2x",
+        "evt-2026-10-22-unitree-statement-g1-production-disclosure",
+        "evt-2026-10-21-tesla-statement-optimus-production-ramp",
+        "evt-2026-10-21-tesla-statement-robot-school-plan",
+        "evt-2026-10-21-mojia-product_launch-mobo-presale"
+      ],
+      "decision": "保留：国地中心/华为、上海仪电/物理AI院、智元LWD分别找原公告/论文和日期；融资回顾未匹配历史轮次继续核验。StaffDeck、CI工作流、尚处规划阶段的oopsie_processing、Token评论、保时捷驾驶课程、融资冷暖观点和RSS索引不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/328"
+    },
+    {
+      "issue": 329,
+      "status": "reject",
+      "events": [],
+      "decision": "估值贡献、行业技术时间表等观点，不是已发生产品、合作或交付事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/329"
+    },
+    {
+      "issue": 330,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-tesla-statement-optimus-production-ramp"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/330"
+    },
+    {
+      "issue": 331,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-shengshu-statement-motubrain2-training"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/331"
+    },
+    {
+      "issue": 332,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-mojia-product_launch-mobo-presale"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/332"
+    },
+    {
+      "issue": 333,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-21-agile-robots-partnership-audi-logistics-poc"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/333"
+    },
+    {
+      "issue": 334,
+      "status": "pending",
+      "events": [
+        "evt-2026-10-13-sankai-funding-series-b-disclosure",
+        "evt-2026-10-14-nexform-funding-seed-disclosure",
+        "evt-2026-10-13-astribot-funding-new-round-disclosure",
+        "evt-2026-10-12-jaka-product_launch-kargo50",
+        "evt-2026-10-14-hesai-product_launch-kosmo-one-world",
+        "evt-2026-10-14-hesai-partnership-kosmo-galbot",
+        "evt-2026-10-14-hesai-partnership-kosmo-original-intelligence"
+      ],
+      "decision": "保留：爱仕达创新中心原公告；豪恩机器人定点原披露（预计营收不能当订单金额）；祥源新材小批量供货原披露及客户信息。UNITAS已有；上海2028年目标、跨行业标准数量不作为公司交付或标准发布事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/334"
+    },
+    {
+      "issue": 335,
+      "status": "reject",
+      "events": [],
+      "decision": "embodichain_reports目前只有空索引／材料发布说明，缺少实际可下载报告或资产，不按已发布数据集收录。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/335"
+    },
+    {
+      "issue": 336,
+      "status": "reject",
+      "events": [],
+      "decision": "MiniCPM-V4.7各模型规模与量化格式沿用维护者已明确的排除决定；Trident-Qwen3VL-2B是通用检索嵌入模型，未核到机器人业务关联。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/336"
+    },
+    {
+      "issue": 337,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-hightorque-publication-panthera-ht-sdk-1"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/337"
+    },
+    {
+      "issue": 338,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-motphys-product_launch-unilab-1-5"
+      ],
+      "decision": "按维护者批准范围收录；证据和日期边界见事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/338"
+    },
+    {
+      "issue": 339,
+      "status": "pending",
+      "events": [],
+      "decision": "可读README缺失，尚未核实SynchronyEtsDemo实际用途、内容与发布时间；不由README失败推断仓库删除。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/339"
+    },
+    {
+      "issue": 340,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/340"
+    },
+    {
+      "issue": 341,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/341"
+    },
+    {
+      "issue": 342,
+      "status": "reject",
+      "events": [],
+      "decision": "CI、开发脚手架或发布流程维护，未形成需要单独记录的机器人产品或能力增量。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/342"
+    },
+    {
+      "issue": 343,
+      "status": "reject",
+      "events": [],
+      "decision": "Figure Minute CLI为安装、登录等开发工具更新，未核到机器人产品或能力实质变化；新仓与Release不重复记录。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/343"
+    }
+  ],
+  "events": [
+    {
+      "issues": [
+        258
+      ],
+      "event": "evt-2026-10-15-theohand-product_launch-nova21",
+      "orgs": [
+        "theohand"
+      ]
+    },
+    {
+      "issues": [
+        258
+      ],
+      "event": "evt-2026-10-14-phanes-ai-product_launch-seephys-hub",
+      "orgs": [
+        "phanes-ai"
+      ]
+    },
+    {
+      "issues": [
+        274
+      ],
+      "event": "evt-2026-10-16-eir-robotics-funding-pre-a-disclosure",
+      "orgs": [
+        "eir-robotics"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-dream-labs-funding-seed-disclosure",
+      "orgs": [
+        "dream-labs"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-dream-labs-product_launch-dream1-api",
+      "orgs": [
+        "dream-labs"
+      ]
+    },
+    {
+      "issues": [
+        312
+      ],
+      "event": "evt-2026-10-20-gamma-robotics-corporate-formation-announcement",
+      "orgs": [
+        "gamma-robotics"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-19-beta-infinity-publication-betamem",
+      "orgs": [
+        "beta-infinity"
+      ]
+    },
+    {
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-13-sankai-funding-series-b-disclosure",
+      "orgs": [
+        "sankai"
+      ]
+    },
+    {
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-14-nexform-funding-seed-disclosure",
+      "orgs": [
+        "nexform"
+      ]
+    },
+    {
+      "issues": [
+        276
+      ],
+      "event": "evt-2025-12-22-deepchen-kaidong-statement-badminton-1452-record",
+      "orgs": [
+        "deepchen-kaidong"
+      ]
+    },
+    {
+      "issues": [
+        236
+      ],
+      "event": "evt-2026-10-13-magiclab-statement-echopolicy0-molmospaces",
+      "orgs": [
+        "magiclab"
+      ]
+    },
+    {
+      "issues": [
+        239
+      ],
+      "event": "evt-2026-10-13-dexforce-publication-articulation-public-repository",
+      "orgs": [
+        "dexforce"
+      ]
+    },
+    {
+      "issues": [
+        242
+      ],
+      "event": "evt-2026-10-14-agibot-publication-worldoracle-evaluation",
+      "orgs": [
+        "agibot",
+        "nvidia"
+      ]
+    },
+    {
+      "issues": [
+        242,
+        258
+      ],
+      "event": "evt-2026-10-09-roboparty-publication-rp1-test-0-1",
+      "orgs": [
+        "roboparty"
+      ]
+    },
+    {
+      "issues": [
+        243
+      ],
+      "event": "evt-2026-10-14-robbyant-partnership-longsheng-weirui",
+      "orgs": [
+        "robbyant"
+      ]
+    },
+    {
+      "issues": [
+        243
+      ],
+      "event": "evt-2026-10-14-robbyant-partnership-damon",
+      "orgs": [
+        "robbyant"
+      ]
+    },
+    {
+      "issues": [
+        243
+      ],
+      "event": "evt-2026-10-14-robbyant-partnership-der-xiangwang",
+      "orgs": [
+        "robbyant"
+      ]
+    },
+    {
+      "issues": [
+        244,
+        277,
+        334
+      ],
+      "event": "evt-2026-10-13-astribot-funding-new-round-disclosure",
+      "orgs": [
+        "astribot"
+      ]
+    },
+    {
+      "issues": [
+        245
+      ],
+      "event": "evt-2026-10-10-motphys-statement-tc8-draft-standards",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        250
+      ],
+      "event": "evt-2026-10-09-horizon-robotics-publication-holobrain-0-5-weights",
+      "orgs": [
+        "horizon-robotics"
+      ]
+    },
+    {
+      "issues": [
+        268
+      ],
+      "event": "evt-2026-10-15-horizon-robotics-publication-holobrain-0-5-sim",
+      "orgs": [
+        "horizon-robotics"
+      ]
+    },
+    {
+      "issues": [
+        317
+      ],
+      "event": "evt-2026-10-21-horizon-robotics-publication-hwm0-preview-robodojo",
+      "orgs": [
+        "horizon-robotics"
+      ]
+    },
+    {
+      "issues": [
+        251,
+        273
+      ],
+      "event": "evt-2026-10-15-agibot-publication-agentsdk-hospital-sample",
+      "orgs": [
+        "agibot"
+      ]
+    },
+    {
+      "issues": [
+        252
+      ],
+      "event": "evt-2026-10-14-agibot-publication-vine-code",
+      "orgs": [
+        "agibot"
+      ]
+    },
+    {
+      "issues": [
+        256,
+        257
+      ],
+      "event": "evt-2026-10-14-linkerbot-publication-arm-python-ros2-sdk",
+      "orgs": [
+        "linkerbot"
+      ]
+    },
+    {
+      "issues": [
+        258
+      ],
+      "event": "evt-2026-10-16-agibot-statement-yuansheng-university-plan",
+      "orgs": [
+        "agibot"
+      ]
+    },
+    {
+      "issues": [
+        260,
+        278
+      ],
+      "event": "evt-2026-10-15-roboparty-publication-rp1-full-stack-release",
+      "orgs": [
+        "roboparty"
+      ]
+    },
+    {
+      "issues": [
+        262,
+        334
+      ],
+      "event": "evt-2026-10-12-jaka-product_launch-kargo50",
+      "orgs": [
+        "jaka"
+      ]
+    },
+    {
+      "issues": [
+        281
+      ],
+      "event": "evt-2026-04-motphys-partnership-sinomach-digital",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        285
+      ],
+      "event": "evt-2026-10-17-foxglove-product_launch-mcap-cli-0-4",
+      "orgs": [
+        "foxglove"
+      ]
+    },
+    {
+      "issues": [
+        304
+      ],
+      "event": "evt-2026-10-20-foxglove-product_launch-mcap-rust-0-26",
+      "orgs": [
+        "foxglove"
+      ]
+    },
+    {
+      "issues": [
+        306
+      ],
+      "event": "evt-2026-10-20-foxglove-product_launch-mcap-ros2-0-6",
+      "orgs": [
+        "foxglove"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-22-foxglove-product_launch-mcap-cpp-2-2",
+      "orgs": [
+        "foxglove"
+      ]
+    },
+    {
+      "issues": [
+        287
+      ],
+      "event": "evt-2026-10-15-agility-partnership-nyobolt-digit5",
+      "orgs": [
+        "agility"
+      ]
+    },
+    {
+      "issues": [
+        290,
+        274
+      ],
+      "event": "evt-2026-10-16-ff-eai-robotics-product_launch-nova-nova-mini",
+      "orgs": [
+        "ff-eai-robotics"
+      ]
+    },
+    {
+      "issues": [
+        291
+      ],
+      "event": "evt-2026-10-19-motphys-product_launch-motrixlab-0-4-stable",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        293
+      ],
+      "event": "evt-2026-10-19-motphys-publication-dexevt-mxlab",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        295
+      ],
+      "event": "evt-2026-10-16-x-humanoid-publication-law",
+      "orgs": [
+        "x-humanoid"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-19-robotis-product_launch-ai-worker-2-3",
+      "orgs": [
+        "robotis"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-19-robotis-product_launch-cyclo-control-0-5",
+      "orgs": [
+        "robotis"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-19-wuji-tech-publication-hand2-isaaclab",
+      "orgs": [
+        "wuji-tech"
+      ]
+    },
+    {
+      "issues": [
+        296
+      ],
+      "event": "evt-2026-10-19-wuji-tech-publication-hand2-mujoco",
+      "orgs": [
+        "wuji-tech"
+      ]
+    },
+    {
+      "issues": [
+        297,
+        314
+      ],
+      "event": "evt-2026-10-16-motphys-partnership-amd-roscon",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        301
+      ],
+      "event": "evt-2026-10-20-motphys-product_launch-unilab-1-4",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        338
+      ],
+      "event": "evt-2026-10-22-motphys-product_launch-unilab-1-5",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        307
+      ],
+      "event": "evt-2026-10-19-orbbec-publication-sdk-v2-ego",
+      "orgs": [
+        "orbbec"
+      ]
+    },
+    {
+      "issues": [
+        311
+      ],
+      "event": "evt-2026-10-19-rlwrld-publication-dexbench-cosmos",
+      "orgs": [
+        "rlwrld"
+      ]
+    },
+    {
+      "issues": [
+        312
+      ],
+      "event": "evt-2026-10-14-roboparty-publication-romomo-materials",
+      "orgs": [
+        "roboparty"
+      ]
+    },
+    {
+      "issues": [
+        313
+      ],
+      "event": "evt-2026-09-17-qiyuan-robotics-publication-hil-umi",
+      "orgs": [
+        "qiyuan-robotics",
+        "jd-robotics"
+      ]
+    },
+    {
+      "issues": [
+        315
+      ],
+      "event": "evt-2026-09-26-jd-robotics-product_launch-joyai-sim",
+      "orgs": [
+        "jd-robotics",
+        "nvidia"
+      ]
+    },
+    {
+      "issues": [
+        316
+      ],
+      "event": "evt-2026-10-20-eka-robotics-funding-series-a",
+      "orgs": [
+        "eka-robotics"
+      ]
+    },
+    {
+      "issues": [
+        318,
+        320
+      ],
+      "event": "evt-2026-10-20-ace-robotics-publication-acebrain-0-6",
+      "orgs": [
+        "ace-robotics"
+      ]
+    },
+    {
+      "issues": [
+        321
+      ],
+      "event": "evt-2026-10-21-beingbeyond-publication-d1-edu-nx-sdk",
+      "orgs": [
+        "beingbeyond"
+      ]
+    },
+    {
+      "issues": [
+        326
+      ],
+      "event": "evt-2026-10-19-d-robotics-product_launch-model-zoo-2-0",
+      "orgs": [
+        "d-robotics"
+      ]
+    },
+    {
+      "issues": [
+        327
+      ],
+      "event": "evt-2026-10-19-roboparty-publication-pnlink-retarget",
+      "orgs": [
+        "roboparty"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-21-rerun-product_launch-sdk-0-40",
+      "orgs": [
+        "rerun"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-21-unitree-product_launch-h2x",
+      "orgs": [
+        "unitree"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-22-unitree-statement-g1-production-disclosure",
+      "orgs": [
+        "unitree"
+      ]
+    },
+    {
+      "issues": [
+        330,
+        328
+      ],
+      "event": "evt-2026-10-21-tesla-statement-optimus-production-ramp",
+      "orgs": [
+        "tesla"
+      ]
+    },
+    {
+      "issues": [
+        328
+      ],
+      "event": "evt-2026-10-21-tesla-statement-robot-school-plan",
+      "orgs": [
+        "tesla"
+      ]
+    },
+    {
+      "issues": [
+        331
+      ],
+      "event": "evt-2026-10-21-shengshu-statement-motubrain2-training",
+      "orgs": [
+        "shengshu"
+      ]
+    },
+    {
+      "issues": [
+        332,
+        328,
+        286
+      ],
+      "event": "evt-2026-10-21-mojia-product_launch-mobo-presale",
+      "orgs": [
+        "mojia"
+      ]
+    },
+    {
+      "issues": [
+        333
+      ],
+      "event": "evt-2026-10-21-agile-robots-partnership-audi-logistics-poc",
+      "orgs": [
+        "agile-robots",
+        "nvidia"
+      ]
+    },
+    {
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-14-hesai-product_launch-kosmo-one-world",
+      "orgs": [
+        "hesai"
+      ]
+    },
+    {
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-14-hesai-partnership-kosmo-galbot",
+      "orgs": [
+        "hesai",
+        "galbot"
+      ]
+    },
+    {
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-14-hesai-partnership-kosmo-original-intelligence",
+      "orgs": [
+        "hesai",
+        "original-intelligence"
+      ]
+    },
+    {
+      "issues": [
+        337
+      ],
+      "event": "evt-2026-10-22-hightorque-publication-panthera-ht-sdk-1",
+      "orgs": [
+        "hightorque"
+      ]
+    }
+  ],
+  "new_orgs": [
+    "registry/orgs/theohand.yaml",
+    "registry/orgs/phanes-ai.yaml",
+    "registry/orgs/eir-robotics.yaml",
+    "registry/orgs/dream-labs.yaml",
+    "registry/orgs/gamma-robotics.yaml",
+    "registry/orgs/beta-infinity.yaml",
+    "registry/orgs/sankai.yaml",
+    "registry/orgs/nexform.yaml",
+    "registry/orgs/deepchen-kaidong.yaml",
+    "registry/orgs/jd-robotics.yaml"
+  ],
+  "implementation_corrections": [
+    "dexevt-mxlab发布方为莫特菲斯；wuji-technology为舞肌科技。",
+    "WorldOracle代码有效发布日10月14日；BeingBeyond SDK有效内容日10月21日。",
+    "深辰凯动纪录为羽毛球，不是乒乓球；按2025年12月22日补录。",
+    "FF发布使用来源明确的北京时间10月16日。",
+    "新增京东机器人主体承接获批JoyAI-Sim及HIL-UMI，不把京东研究仅挂在NVIDIA名下。"
+  ],
+  "source_snapshots": [
+    "snapshots/2026/10/intake-20261022/239-0.md",
+    "snapshots/2026/10/intake-20261022/242-0.md",
+    "snapshots/2026/10/intake-20261022/242-1.html",
+    "snapshots/2026/10/intake-20261022/243-0.html",
+    "snapshots/2026/10/intake-20261022/245-0.html",
+    "snapshots/2026/10/intake-20261022/250-0.md",
+    "snapshots/2026/10/intake-20261022/252-0.md",
+    "snapshots/2026/10/intake-20261022/256-0.md",
+    "snapshots/2026/10/intake-20261022/257-0.md",
+    "snapshots/2026/10/intake-20261022/258-2.html",
+    "snapshots/2026/10/intake-20261022/258-3.html",
+    "snapshots/2026/10/intake-20261022/258-4.html",
+    "snapshots/2026/10/intake-20261022/260-0.html",
+    "snapshots/2026/10/intake-20261022/262-0.html",
+    "snapshots/2026/10/intake-20261022/268-0.md",
+    "snapshots/2026/10/intake-20261022/273-0.md",
+    "snapshots/2026/10/intake-20261022/281-0.html",
+    "snapshots/2026/10/intake-20261022/285-0.html",
+    "snapshots/2026/10/intake-20261022/290-0.html",
+    "snapshots/2026/10/intake-20261022/291-0.html",
+    "snapshots/2026/10/intake-20261022/293-0.md",
+    "snapshots/2026/10/intake-20261022/295-0.html",
+    "snapshots/2026/10/intake-20261022/296-0.html",
+    "snapshots/2026/10/intake-20261022/296-1.html",
+    "snapshots/2026/10/intake-20261022/296-3.md",
+    "snapshots/2026/10/intake-20261022/296-4.md",
+    "snapshots/2026/10/intake-20261022/301-0.html",
+    "snapshots/2026/10/intake-20261022/304-0.html",
+    "snapshots/2026/10/intake-20261022/306-0.html",
+    "snapshots/2026/10/intake-20261022/307-0.md",
+    "snapshots/2026/10/intake-20261022/311-0.md",
+    "snapshots/2026/10/intake-20261022/312-0.md",
+    "snapshots/2026/10/intake-20261022/312-1.html",
+    "snapshots/2026/10/intake-20261022/314-0.html",
+    "snapshots/2026/10/intake-20261022/316-0.html",
+    "snapshots/2026/10/intake-20261022/317-0.md",
+    "snapshots/2026/10/intake-20261022/318-0.md",
+    "snapshots/2026/10/intake-20261022/320-0.md",
+    "snapshots/2026/10/intake-20261022/321-0.md",
+    "snapshots/2026/10/intake-20261022/326-0.html",
+    "snapshots/2026/10/intake-20261022/327-0.md",
+    "snapshots/2026/10/intake-20261022/328-0.html",
+    "snapshots/2026/10/intake-20261022/328-10.html",
+    "snapshots/2026/10/intake-20261022/328-12.html",
+    "snapshots/2026/10/intake-20261022/328-13.html",
+    "snapshots/2026/10/intake-20261022/328-2.html",
+    "snapshots/2026/10/intake-20261022/328-9.html",
+    "snapshots/2026/10/intake-20261022/331-0.html",
+    "snapshots/2026/10/intake-20261022/332-0.html",
+    "snapshots/2026/10/intake-20261022/333-0.html",
+    "snapshots/2026/10/intake-20261022/337-0.html",
+    "snapshots/2026/10/intake-20261022/338-0.html",
+    "snapshots/2026/10/intake-20261022/agility-battery.html",
+    "snapshots/2026/10/intake-20261022/beta-home.html",
+    "snapshots/2026/10/intake-20261022/beta-paper.html",
+    "snapshots/2026/10/intake-20261022/commits-239-0.json",
+    "snapshots/2026/10/intake-20261022/commits-242-0.json",
+    "snapshots/2026/10/intake-20261022/commits-251-0.json",
+    "snapshots/2026/10/intake-20261022/commits-252-0.json",
+    "snapshots/2026/10/intake-20261022/commits-257-0.json",
+    "snapshots/2026/10/intake-20261022/commits-293-0.json",
+    "snapshots/2026/10/intake-20261022/commits-296-3.json",
+    "snapshots/2026/10/intake-20261022/commits-296-4.json",
+    "snapshots/2026/10/intake-20261022/commits-311-0.json",
+    "snapshots/2026/10/intake-20261022/commits-312-0.json",
+    "snapshots/2026/10/intake-20261022/commits-321-0.json",
+    "snapshots/2026/10/intake-20261022/commits-327-0.json",
+    "snapshots/2026/10/intake-20261022/commits-HWM-0-Preview-RoboDojo.json",
+    "snapshots/2026/10/intake-20261022/commits-HoloBrain_v0.5.json",
+    "snapshots/2026/10/intake-20261022/commits-HoloBrain_v0.5_sim.json",
+    "snapshots/2026/10/intake-20261022/commits-ace.json",
+    "snapshots/2026/10/intake-20261022/date-239-0.json",
+    "snapshots/2026/10/intake-20261022/date-256-0.json",
+    "snapshots/2026/10/intake-20261022/date-257-0.json",
+    "snapshots/2026/10/intake-20261022/date-307-0.json",
+    "snapshots/2026/10/intake-20261022/deepchen-about.html",
+    "snapshots/2026/10/intake-20261022/dream.html",
+    "snapshots/2026/10/intake-20261022/eir-funding.html",
+    "snapshots/2026/10/intake-20261022/hesai-kosmo-alt.html",
+    "snapshots/2026/10/intake-20261022/hf-ACE-Brain-0.6-9B.json",
+    "snapshots/2026/10/intake-20261022/hf-HWM-0-Preview-RoboDojo.json",
+    "snapshots/2026/10/intake-20261022/hf-HoloBrain_v0.5.json",
+    "snapshots/2026/10/intake-20261022/hf-HoloBrain_v0.5_sim.json",
+    "snapshots/2026/10/intake-20261022/hil-umi-abs.html",
+    "snapshots/2026/10/intake-20261022/hil-umi.html",
+    "snapshots/2026/10/intake-20261022/jd-joyai.html",
+    "snapshots/2026/10/intake-20261022/magic-alternate.html",
+    "snapshots/2026/10/intake-20261022/pdf-5.html",
+    "snapshots/2026/10/intake-20261022/pdf-6.html",
+    "snapshots/2026/10/intake-20261022/pdf-7.html",
+    "snapshots/2026/10/intake-20261022/primebot-identity.html",
+    "snapshots/2026/10/intake-20261022/tesla-q3.pdf",
+    "snapshots/2026/10/intake-20261022/worldoracle-paper.pdf"
+  ]
+}

@@ -1,0 +1,19 @@
+id: dream-labs
+names:
+  zh: Dream Labs
+  en: Dream Labs
+  aliases:
+  - Dream-1
+status: active
+layers:
+- foundation
+- simulation
+description: 提供面向双臂等机器人的 Dream-1 世界动作模型及机器人控制 API。
+sources:
+- url: https://dreamlabs.ai/research/dream-1/
+  publisher: dreamlabs.ai
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/dream.html
+accounts:
+  site: https://dreamlabs.ai/

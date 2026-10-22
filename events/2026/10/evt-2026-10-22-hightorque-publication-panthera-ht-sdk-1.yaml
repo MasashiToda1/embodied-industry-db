@@ -1,0 +1,18 @@
+id: evt-2026-10-22-hightorque-publication-panthera-ht-sdk-1
+date: '2026-10-22'
+date_precision: day
+type: publication
+orgs:
+- id: hightorque
+  role: subject
+title:
+  zh: 高擎发布 Panthera HT SDK1.0
+summary:
+  zh: 高擎发布 Panthera HT SDK1.0，提供机械臂机器人描述、运动学、遥操作与图形界面等材料，并说明使用约束。记录 SDK 发布，不改写为机械臂首次产品发布。
+evidence:
+- url: https://github.com/HighTorque-Robotics/Panthera-HT_SDK/releases/tag/v1.0.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/337-0.html
+corroboration: single

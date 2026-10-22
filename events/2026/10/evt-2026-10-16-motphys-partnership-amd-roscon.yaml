@@ -1,0 +1,22 @@
+id: evt-2026-10-16-motphys-partnership-amd-roscon
+date: '2026-10-16'
+date_precision: day
+type: partnership
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯与 AMD 在 ROSCon 联合展示训练方案
+summary:
+  zh: 莫特菲斯与 AMD 在 ROSCon 开幕期间联合展示 CPU 物理仿真与 GPU 策略学习协同的具身训练方案。记录联合技术展示，报道中的加速与耗时指标未独立复现，不将展会展示视作客户交付。
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-10/19/content_598657.html
+  publisher: www.stdaily.com
+  tier: media
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/314-0.html
+corroboration: single
+counterparties:
+- AMD
+date_basis: derived
+date_as_stated: 报道明确ROSCon于10月16日开幕并展示；10月19日为报道日。

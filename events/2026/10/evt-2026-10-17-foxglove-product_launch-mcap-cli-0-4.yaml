@@ -1,0 +1,20 @@
+id: evt-2026-10-17-foxglove-product_launch-mcap-cli-0-4
+date: '2026-10-17'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布 MCAP CLI0.4
+summary:
+  zh: MCAP CLI0.4 扩展命令行数据导出，支持 CSV 与 NDJSON 输出，便于机器人日志的离线检查和后续处理。
+evidence:
+- url: https://github.com/foxglove/mcap/releases/tag/releases/mcap-cli/v0.4.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/285-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用GitHub Release published_at换算的北京时间；不是抓取日。

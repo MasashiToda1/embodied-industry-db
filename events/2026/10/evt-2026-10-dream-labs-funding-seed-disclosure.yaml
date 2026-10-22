@@ -1,0 +1,23 @@
+id: evt-2026-10-dream-labs-funding-seed-disclosure
+date: 2026-10
+date_precision: month
+type: funding
+orgs:
+- id: dream-labs
+  role: subject
+title:
+  zh: Dream Labs 宣布获得 9000 万美元种子融资
+summary:
+  zh: Dream Labs 在 Dream-1 官方发布文章中宣布结束隐身状态并获得 9000 万美元种子融资。本条只记录公司披露的融资，不推定未公开的交割日。
+evidence:
+- url: https://dreamlabs.ai/research/dream-1/
+  publisher: dreamlabs.ai
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/dream.html
+corroboration: single
+amount:
+  value: 90000000
+  currency: USD
+date_basis: derived
+date_as_stated: 官方页面标注October 2026；没有可确认的具体日，保留月精度。

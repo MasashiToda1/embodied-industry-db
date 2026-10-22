@@ -1,0 +1,20 @@
+id: evt-2026-10-22-foxglove-product_launch-mcap-cpp-2-2
+date: '2026-10-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove 发布 MCAP C++2.2
+summary:
+  zh: MCAP C++2.2 增加链式读取时间范围设置和无需回调的读取接口，并提供读取失败状态；调整默认压缩与分块行为，使分块边界与其他语言实现保持一致。记录机器人日志读写工具实质更新。
+evidence:
+- url: https://github.com/foxglove/mcap/releases/tag/releases/cpp/v2.2.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-22'
+  snapshot: snapshots/2026/10/intake-20261022/328-0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 采用GitHub Release published_at换算的北京时间；不是抓取日。
