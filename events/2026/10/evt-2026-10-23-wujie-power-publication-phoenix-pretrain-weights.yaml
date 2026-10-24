@@ -1,0 +1,30 @@
+id: evt-2026-10-23-wujie-power-publication-phoenix-pretrain-weights
+date: '2026-10-23'
+date_precision: day
+type: publication
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力公开 Phoenix 预训练权重
+summary:
+  zh: OpenPhoenix在Phoenix-Pretrain仓库上传pretrain_256013.pt，并提供许可证与NOTICE材料。该权重仓库由Phoenix-MWA官方资源入口关联，属于10月22日模型发布后的实际文件公开；预训练资源的许可分别按文件说明适用。
+evidence:
+- url: https://raw.githubusercontent.com/Anyverse-Dynamics/Phoenix-MWA/main/README.md
+  publisher: raw.githubusercontent.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/phoenix.md
+- url: https://huggingface.co/api/models/OpenPhoenix/Phoenix-Pretrain
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/phoenix-pretrain.json
+- url: https://huggingface.co/api/models/OpenPhoenix/Phoenix-Pretrain/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/phoenix-pretrain-history.json
+corroboration: single
+date_basis: derived
+date_as_stated: 采用Hugging Face实际权重上传历史的2026-10-23日期，区别于模型公布日。

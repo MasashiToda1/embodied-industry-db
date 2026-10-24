@@ -1,0 +1,31 @@
+id: gi-labs
+names:
+  zh: GI Labs
+  en: General Intelligence Labs
+  aliases:
+  - General Intelligence Labs
+  - 通用智能实验室
+  - gilabs
+status: active
+layers:
+- data
+- simulation
+description: 提供机器人学习所需的第一视角采集头显、端侧手部检测和托管数据处理流程。
+accounts:
+  site: https://www.gilabs.xyz/
+sources:
+- url: https://www.gilabs.xyz/
+  publisher: www.gilabs.xyz
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gilabs.html
+- url: https://www.gilabs.xyz/blog/ego1gs
+  publisher: www.gilabs.xyz
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gi-ego1gs.html
+- url: https://github.com/General-Intelligence-Labs
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gi-org.html

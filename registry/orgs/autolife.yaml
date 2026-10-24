@@ -1,0 +1,26 @@
+id: autolife
+names:
+  zh: 智动未来
+  en: AutoLife
+  aliases:
+  - 广东智动未来科技有限公司
+  - AutoLife Robotics
+  - 小智机器人
+status: active
+layers:
+- embodiment
+- foundation
+description: 广东智动未来科技有限公司，研发轮式双臂机器人小智与粒子可微世界模型，开展零售、接待及会展场景应用。
+accounts:
+  site: https://www.autolife.ai/
+sources:
+- url: https://www.autolife.ai/products
+  publisher: www.autolife.ai
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/autolife-products.html
+- url: https://www.autolife.ai/news/xair-2026-pgd-world-model
+  publisher: www.autolife.ai
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/autolife-pgd.html

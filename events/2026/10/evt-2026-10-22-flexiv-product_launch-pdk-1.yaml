@@ -1,0 +1,18 @@
+id: evt-2026-10-22-flexiv-product_launch-pdk-1
+date: '2026-10-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕发布 PDK1.0 机器人开发工具包
+summary:
+  zh: 非夕PDK1.0提供工作站场景、坐标树、运动学、碰撞配置、RGB-D采集和点云重建等接口，并提供C++预编译库、Python绑定及ROS2示例。点到点规划、表面加工路径与网格处理为需许可服务；发布说明仅确认Ubuntu22.04测试范围，不将预编译库发布称为核心全部源码开放。
+evidence:
+- url: https://api.github.com/repos/flexivrobotics/flexiv_pdk/releases/tags/v1.0.0
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/369-0-release.json
+corroboration: single

@@ -1,0 +1,18 @@
+id: evt-2026-10-22-flexiv-product_launch-composer-studio-1
+date: '2026-10-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: flexiv
+  role: subject
+title:
+  zh: 非夕发布 Composer Studio1.0 机器人工作站编辑工具
+summary:
+  zh: 非夕发布Composer Studio1.0，提供基于浏览器的PDK工作站编辑器，可配置场景、机器人与工具，预览关节运动并设置碰撞关系。运动规划和工具路径功能需要对应许可，配套Python示例与使用手册公开；发布说明要求配合PDK1.0及RDK1.9.4.1使用。
+evidence:
+- url: https://api.github.com/repos/flexivrobotics/flexiv_composer_studio/releases/tags/v1.0.0
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/368-0-release.json
+corroboration: single

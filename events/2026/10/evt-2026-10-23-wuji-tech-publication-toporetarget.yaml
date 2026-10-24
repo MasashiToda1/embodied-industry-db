@@ -1,0 +1,33 @@
+id: evt-2026-10-23-wuji-tech-publication-toporetarget
+date: '2026-10-23'
+date_precision: day
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌科技公开 TopoRetarget 灵巧手动作重定向工具
+summary:
+  zh: 舞肌科技公开TopoRetarget，将人手与物体运动转换为Wuji Hand 2动作，以交互网格优化保留接触关系，并施加关节与非穿透约束。仓库提供基于MuJoCo的求解器、示例和数据导入工具，代码采用MIT许可；GRAB、TACO、OakInk2与HOT3D等外部数据继续适用各自条款。
+evidence:
+- url: https://github.com/wuji-technology/toporetarget
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/367-0.md
+- url: https://api.github.com/repos/wuji-technology/toporetarget/git/trees/HEAD?recursive=1
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/367-0-tree.json
+- url: https://api.github.com/repos/wuji-technology/toporetarget/commits?per_page=20
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/367-0-commits.json
+corroboration: single
+axes:
+  sim_stack:
+  - mujoco
+date_basis: derived
+date_as_stated: 采用初始公开版本提交2026-10-23T12:27:22Z。

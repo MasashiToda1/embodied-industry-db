@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="chLan" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+	<link rel="Shortcut Icon" href="templates/images/favicon.ico">
+	<link rel="Bookmark" href="templates/images/favicon.ico">
+
+    <title>企业新闻 - 厦门建发股份有限公司</title>
+    <meta content="建发股份,厦门建发股份有限公司" name="keywords" />
+    <meta content="厦门建发股份有限公司由厦门建发集团有限公司独家发起设立，1998年在上海证券交易所上市（股票代码：600153.SH），是一家以供应链运营和房地产开发为主业的现代服务型企业。" name="description"/>
+    <link rel="Shortcut Icon" href="templates/images/favicon.ico">
+    <link rel="Bookmark" href="templates/images/favicon.ico">
+
+	<link rel="stylesheet" href="templates/style/swiper.min.css" />
+	<link rel="stylesheet" href="templates/style/animate.css" />
+	<link rel="stylesheet" href="templates/style/pageanimate.css" />
+	<link rel="stylesheet" href="templates/style/main.css?v=7" />
+	<link rel="stylesheet" href="templates/style/share.min.css" />
+
+
+	<script src="templates/script/jquery.js"></script>
+	<script src="templates/script/swiper.min.js"></script>
+	<script src="templates/script/nicescroll.js"></script>
+	<script src="templates/script/bxslider.js"></script>
+	<script src="templates/script/countUp.js"></script>
+	<script src="templates/script/main.js?v=7"></script>
+	<script src="templates/script/social-share.min.js"></script>
+
+	<link rel="apple-touch-icon" href="templates/res/touch-icon-152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="templates/res/touch-icon-120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="templates/res/touch-icon-76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="templates/res/touch-icon-60.png" sizes="60x60">
+		<![if !IE]><script src="templates/script/jquery.touchSwipe.min.js"></script><![endif]>
+	<!--[if lt IE 9]><script src="templates/script/respond.js"></script><![endif]-->
+	<!--[if lt IE 8]><script src="templates/script/selectivizr-min.js"></script><![endif]-->
+	<!--[if gte IE 9]><script src="templates/script/smooth.js"></script><![endif]-->
+
+
+
+</head>
+<body>
+<!-- 新增公共模板文件 -->
+<iframe src="gw/chat/index.html" frameborder="0" class="chat-robot" style="display:none;"></iframe>
+
+    <script>
+        // 在DOM加载后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframeEl = document.querySelector('.chat-robot');
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+            if (isMobile) {
+                iframeEl.remove();
+                return;
+            }
+
+            // 仅当检查页面返回 200 时才显示 iframe
+            fetch("/gw/en/chat/index.html", { method: "HEAD" })
+                .then(function (res) {
+                    if (res.ok) {
+                        iframeEl.style.display = ""; // 显示 iframe
+                    } else {
+                        iframeEl.remove();
+                    }
+                })
+                .catch(function () {
+                    iframeEl.remove();
+                });
+        });
+
+        function handleChatIframe(ChatIframe) {
+            switch (ChatIframe.type) {
+                case "size_change":
+                    // 设置 iframe 元素样式
+                    const iframe = document.querySelector(".chat-robot");
+                    for (const k in ChatIframe.payload) {
+                        iframe.style[k] = ChatIframe.payload[k];
+                    }
+                    break;
+                case "open_link":
+                    // 判断链接是期望的值后打开
+                    // const linkList = ["https://www.chinacnd.com/index.html"];
+                    if (ChatIframe.payload.link.startsWith("https://www.chinacnd.com")) {
+                        window.open(ChatIframe.payload.link, "_blank");
+                    }
+                    break;
+            }
+        }
+    </script>
+	<div class="header animateall">
+		<div class="menu">
+			<div class="maxsize posr">
+				<div class="logo">
+					<a href="/"><img src="templates/images/logo_home_new.png" alt="建发股份" /></a>
+					<a class="logoWhite" href="/"><img src="templates/images/logo_home_w.png" alt="建发股份" /></a>
+				</div>
+				<ul class="menubtn">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="menulist">
+					<ul class="list" eachdelay="li" delaytime="100" >
+						<li><a href="/">首页</a></li>
+						<li><a href="about.html">关于建发</a></li>
+						<li><a href="news.html">企业新闻</a></li>
+						<li><a href="lift.html">主营业务</a></li>
+						<li><a href="platform.html">运营网络</a></li>
+						<li><a href="https://www.chinacdc.com/xsx">新思想学习专栏</a></li>
+						<li><a href="join.html">加入建发</a></li>
+						<li><a href="investor.html">投资者关系</a></li>
+						<li><a href="csr.html">可持续发展</a></li>
+					</ul>
+					<div class="functions" eachdelay="li" delaytime="100" delaystart="600">
+						<ul>
+							<li class="share">
+								<!--<a href="javascript:void(0); " onclick="openErp()"><i class="iconfont">&#xe60c;</i><span>外综服</span></a> -->
+								<a href="javascript:void(0); "><i class="iconfont">&#xe60c;</i><span>分享</span></a>
+								<dl class="sub animated fadeInDown">
+									<dd>
+										<div class="bdsharebuttonbox bdshare-button-style0-32 social-share" data-initialized="true">
+											<a href="#" class="bds_weixin social-share-icon icon-wechat" data-cmd="weixin" title="分享到微信"></a>
+											<a href="#" class="bds_tsina social-share-icon icon-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="lang">
+								<a href="javascript:void(0); "><i class="iconfont">&#xe60e;</i><span>语言</span></a>
+								<dl class="sub animated fadeInDown">
+									<dd><a href="/">简体中文</a></dd>
+									<dd><a href="/en/">English</a></dd>
+								</dl>
+							</li>
+							<li class="search">
+								<a href="javascript:void(0); "><i class="iconfont">&#xe610;</i><span>搜索</span></a>
+								<dl class="sub animated fadeInDown">
+									<dd>
+										<div class="input">
+                                        <form action="search.html">
+											<input type="text" name="keywords" placeholder="请输入关键词进行搜索.." value="" autocomplete="off">
+                                            <input type="hidden" name="token" value="d140a65c547e424f9d113d8ed38d19d8" autocomplete="off" />
+											<input type="submit" value="&#xe610;" id="searchBtn" class="iconfont" autocomplete="off">
+                                        </form>
+										</div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+
+						<div class="stock_box">股票代码 : 600153.SH</div>
+					</div>
+				</div>
+				<div class="cl"></div>
+			</div>
+		</div>
+		<!-- 菜单 -->
+	</div>
+	<div class="headerHeight"></div>
+<link rel="stylesheet" href="/templates/style/business.css"/>
+		<style>.slogan.new-zh h4{white-space:nowrap;}</style>
+	<div class="slogan new-zh" style="background-image: url('https://www.chinacnd.com/upfiles/banner/202211/1668689728646.jpg');">
+		<div class="maxsize">
+			<h4>值得信赖的全球韧性供应链伙伴</h4>
+			<p class="pc">厦门建发股份有限公司 股票代码：600153.SH</p>
+    <p class="app">股票代码：600153.SH</p>
+		</div>
+	</div>
+
+	<div class="maxsize new-zh">
+		<div class="content news">
+			<div class="left">
+				<dl>
+					<dt><a href="news.html">企业新闻<!-- <i class="iconfont">&#xe623;</i> --></a></dt>
+					<dd>
+						<!-- <ul class="animateall">
+							<li class="active"><a href="news.html"><span>企业动态</span></a></li>
+							li><a href="news-media.html"><span>媒体报道</span></a></li>
+						</ul> -->
+					</dd>
+				</dl>
+			</div>
+			<div class="right">
+				<div class="video">
+					<div class="title">
+						<h1>企业新闻</h1>
+					</div>
+
+					<div class="companyNews  animateall" eachdelay="a" delaytime="100" animate="fadeInUp" effect="a">
+												<a  href="https://mp.weixin.qq.com/s/DVJ0sMBq5W7xeEriZ_RhYQ" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202610/1792376178160.png" alt="建发浆纸亮相第十届中国国际全印展，共绘印刷产业新未来"/>
+								</div>
+								<p class="news-date">2026-10-17</p>
+								<p class="news-title">建发浆纸亮相第十届中国国际全印展，共绘印刷产业新未来</p>
+								<p class="news-desc">不断完善全球产业布局，提升供应链服务能力，为推动中国造纸产业高质量发展贡献更大力量</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/5yki5q71X9VSaokfOxMFCg" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202610/1791602768898.png" alt="共拓具身智能产业新空间丨建发股份与优必选科技达成战略合作"/>
+								</div>
+								<p class="news-date">2026-10-10</p>
+								<p class="news-title">共拓具身智能产业新空间丨建发股份与优必选科技达成战略合作</p>
+								<p class="news-desc">共同推进人形机器人与具身智能产业市场化与规模化发展</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/MIWhj-VfZzXav5Lju3ASbg" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1790752444383.png" alt="共拓农牧食品供应链新空间丨建发股份与德康集团签署战略合作协议"/>
+								</div>
+								<p class="news-date">2026-09-30</p>
+								<p class="news-title">共拓农牧食品供应链新空间丨建发股份与德康集团签署战略合作协议</p>
+								<p class="news-desc">以更加专业、稳定的供应链服务助力农牧食品产业提质增效</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/4AwMovVpmH7S7SV80RNKVg" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1790246234356.png" alt="体系化推进数据资产建设，建发股份数智化能力获多项权威认可"/>
+								</div>
+								<p class="news-date">2026-09-24</p>
+								<p class="news-title">体系化推进数据资产建设，建发股份数智化能力获多项权威认可</p>
+								<p class="news-desc">将数据资源转化为推动业务创新发展的新质生产力，为供应链数智化转型升级贡献“建发实践”</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/kzCEVd8N8umFkkYF3UroYw" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1789953656028.png" alt="建发股份旗下经营单位与江苏金融租赁达成战略合作，共筑“供应链+融资租赁”产融协同新生态"/>
+								</div>
+								<p class="news-date">2026-09-21</p>
+								<p class="news-title">建发股份旗下经营单位与江苏金融租赁达成战略合作，共筑“供应链+融资租赁”产融协同新生态</p>
+								<p class="news-desc">支持产业链上下游企业稳健发展，为提升产业链供应链韧性、服务现代化产业体系建设提供有力支撑</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/JiHC3gIUpry6ZliEItCmGg" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1790041421889.png" alt="建发股份与中国地质调查局发展研究中心签署合作协议"/>
+								</div>
+								<p class="news-date">2026-09-21</p>
+								<p class="news-title">建发股份与中国地质调查局发展研究中心签署合作协议</p>
+								<p class="news-desc">推动各项合作事宜落地，更好地保障我国战略性矿产资源安全和产业链供应链安全</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/TDfoaTTFUJ-54-Plql68PQ?scene=1&amp;click_id=1453852283" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1789896204659.png" alt="聚焦小微 链通产业丨建发股份旗下经营单位与海通恒信小微签署战略合作协议"/>
+								</div>
+								<p class="news-date">2026-09-20</p>
+								<p class="news-title">聚焦小微 链通产业丨建发股份旗下经营单位与海通恒信小微签署战略合作协议</p>
+								<p class="news-desc">推动产业链、供应链、资金链深度融合，共同为实体经济和普惠金融高质量发展注入新动能</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+												<a  href="https://mp.weixin.qq.com/s/6RyHOTkDd7x6odTk8Gv6sQ" target="_blank"  class="news-wrapper" target="_blank">
+							<div class="news-item">
+								<div class="news-img">
+                                    <img class="lift-circle-2" src="templates/images/text_mid_line.png" alt="">
+                                    <img class="lift-circle-2" src="templates/images/text_out_line.png" alt="">
+																		<img class="news-preview" src="http://www.chinacnd.com/upfiles/news/202609/1789441378668.png" alt="炉火映金秋 铜业铸辉煌丨营口建发盛海多金属回收项目成功点火"/>
+								</div>
+								<p class="news-date">2026-09-15</p>
+								<p class="news-title">炉火映金秋 铜业铸辉煌丨营口建发盛海多金属回收项目成功点火</p>
+								<p class="news-desc">进一步提升上下游资源配置与协同发展能力，以产业布局夯实发展基础</p>
+								<p class="news-button">/ 阅读全文</p>
+							</div>
+						</a>
+						
+						
+												
+
+
+					</div>
+					<div class="pager">
+			<ul class="animateall"><li class="mgr10 grey"><a class="btn"  href="javascript:void(0)">上一页</a></li><li class="active"><a >1</a></li><li><a href="news-page-2.html">2</a></li><li><a href="news-page-3.html">3</a></li><li><a href="news-page-4.html">4</a></li><li><a href="news-page-5.html">5</a></li><li><a>…</a></li><li class="mgl10"><a href="news-page-2.html">下一页</a></li><li class="jumpinp"><input type="number" min="1" max="74"></li>
+					<li class="jump gobtn" data-max="74">GO</li><li><span>共 74 页</span></li></ul>
+		</div>
+				</div>
+
+			</div>
+			<div class="cl"></div>
+		</div>
+	</div>
+
+    <script>
+        $(function () {
+			if($(window).width() >= 1024) {
+				$(".news-item").hover(function () {
+					if (!$(this).text().trim().match(/市委专项巡察组进驻/m)) {
+						$(this).toggleClass("hover");
+					}
+				});
+			}
+        });
+    </script>
+
+	<div class="footer">
+		<div class="maxsize animateall">
+			<ul class="links">
+            					<li><a href="http://www.chinacdc.com/" target="_blank">建发集团</a></li>
+								<li><a href="http://mail.chinacnd.com/" target="_blank">企业邮箱</a></li>
+								<li><a href="http://vpn.chinacnd.com" target="_blank">企业VPN</a></li>
+								<!-- <li><a href="javascript:void(0); " onclick="openErp()">ERP</a></li>-->
+				<li><a href="https://www.chinacdc.com?page=website" target="_blank">建发网站群</a></li>
+				<li><a href="javascript:void(0); " onclick="$('.sitemap').fadeIn();">网站导航</a></li>
+				<li><a href="javascript:void(0); " onclick="$('.terms').fadeIn();">法律声明</a></li>
+				<li><a href="javascript:void(0); " onclick="$('.privacy').fadeIn();">隐私声明</a></li>
+			</ul>
+			<div class="copyright">
+				<span>版权所有 © 2024 厦门建发股份有限公司</span>
+				<span><a href="https://beian.miit.gov.cn" target="_blank">闽ICP备15007080号-1</a></span>
+				<span><a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">闽公网安备 35020302033082号</a></span>
+							</div>
+		</div>
+		<div class="sitemap">
+			<div class="vcenter">
+				<div class="tb">
+					<div class="tb-c">
+						<div class="maxsize">
+							<div class="win">
+								<div class="title posr">
+									<h5>网站导航</h5>
+									<a href="javascript:void(0); " class="close" onclick="$('.sitemap').fadeOut();"><i class="iconfont">&#xe605;</i></a>
+								</div>
+								<div class="content animateall">
+									<dl>
+										<dt><span>首页</span></dt>
+										<dd>
+											<ul>
+												<li><a href="/"><span>首页</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt><span>关于建发</span></dt>
+										<dd>
+											<ul>
+												<li><a href="about.html"><span>公司概况</span></a></li>
+												<li><a href="culture.html"><span>企业文化</span></a></li>
+												<li><a href="organization.html"><span>组织架构</span></a></li>
+												<li><a href="milestone.html"><span>大事记</span></a></li>
+												<li><a href="honor.html"><span>企业荣誉</span></a></li>
+												<li><a href="responsibility.html"><span>社会责任</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt><span>企业新闻</span></dt>
+										<dd>
+											<ul>
+												<li><a href="news.html"><span>企业新闻</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt><span>主营业务</span></dt>
+										<dd>
+											<ul>
+												<li><a href="lift.html"><span>供应链运营</span></a></li>
+												<li><a href="estate.html"><span>房地产开发</span></a></li>
+												<li><a href="finance.html"><span>金融服务</span></a></li>
+												<li><a href="industries.html"><span>实业投资</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt><span>加入建发</span></dt>
+										<dd>
+											<ul>
+												<li><a href="join.html"><span>建发人</span></a></li>
+												<!--<li><a href="talents.html"><span>人才理念</span></a></li>-->
+												<li><a href="https://sz.chinacnd.com/extsocialhr/" target="_blank"><span>社会招聘</span></a></li>
+												<li><a href="http://campus.51job.com/chinacnd/" target="_blank"><span>校园招聘</span></a></li>
+												<li><a href="faq.html"><span>FAQ</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+									<dl>
+										<dt><span>投资者关系</span></dt>
+										<dd>
+											<ul>
+												<li><a href="investor.html"><span>最新公告</span></a></li>
+												<li><a href="issue.html"><span>发行筹资</span></a></li>
+												<li><a href="dividend.html"><span>分红配股</span></a></li>
+												<li><a href="partner.html"><span>十大股东</span></a></li>
+												<li><a href="executives.html"><span>高管名录</span></a></li>
+												<li><a href="report.html"><span>定期报告</span></a></li>
+												<li><a href="propaganda.html"><span>宣传教育</span></a></li>
+												<li><a href="question.html"><span>问题解答</span></a></li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="terms">
+			<div class="vcenter">
+				<div class="tb">
+					<div class="tb-c">
+						<div class="maxsize">
+							<div class="win">
+								<div class="title">
+									<h5>法律声明</h5>
+									<a href="javascript:void(0); " class="close" onclick="$('.terms').fadeOut();"><i class="iconfont">&#xe605;</i></a>
+								</div>
+								<div class="content">
+                                	<div class="block">
+	<h4>
+		权利声明</h4>
+	<p>
+		除非专门说明，所有内容版权归厦门建发股份有限公司所有。保留所有权利。</p>
+	<p>
+		网站内容中提到的其它公司名称、商标和服务为各自公司的注册商标，归各公司所有。建发、厦门建发、CND、CHINACND、C&amp;D 是厦门建发股份有限公司或其控股或参股公司的（注册）商标。</p>
+	<p>
+		本网站（包括下属公司网站）的资料、信息、版面设计、图案、流程、声音、程序及其他内容的所有权、著作权及其他权利由厦门建发股份有限公司所享有并予以保留，此种权利受到《中华人民共和国民法典》、《中华人民共和国著作权法》、《中华人民共和国反不正当竞争法》及其他法律、法规、规范性法律文件及相关国际条约的保护，任何对上述权利的侵犯均有可能导致承担民事、行政或刑事责任。使用网站所提供的软件或驱动程序要服从厦门建发股份有限公司随产品所附许可证协议规定。</p>
+	<p>
+		未经厦门建发股份有限公司明确同意，严禁擅自复制和散发厦门建发股份有限公司网站资料，违者将受到民事和刑事处分。如想复制或散发本网站明示不可复制或散发的资料，请向厦门建发股份有限公司法律部提出书面申请，地址是：厦门市环岛东路1699号建发国际大厦28楼，361001。</p>
+	<p>
+		在访问我们的网站时，请遵循适用法律的规定。</p>
+</div>
+<div class="block">
+	<h4>
+		与其它站点的链接</h4>
+	<p>
+		为了给您提供方便及信息，厦门建发股份有限公司将定期允许您通过我们的网站访问其它的站点。对于通过我们的网站链接而进入的其它站点，我们将不承担任何责任，也不对这些站点的质量、性质或可靠性作任何说明。这些非建发站点链接并不意味我们向这些站点提供内容。厦门建发股份有限公司保留在不通知第三方的情况下随时删除任何超级链接的权力。</p>
+</div>
+<div class="block">
+	<h4>
+		网站回复</h4>
+	<p>
+		您发送到厦门建发股份有限公司有关网站资料的回复将不被保密。您向厦门建发股份有限公司发送回复，表明您已作了可使用、复制、传播及修改您回复中的任何信息不可撤消的、不受限制的授权，并且您同意厦门建发股份有限公司可把包含在您回复的任何计划或概念免费用于任何用途。但是，除非法律要求或征得您书面允许，我们不会透露您的名字。</p>
+</div>
+<div class="block">
+	<h4>
+		防范垃圾邮件策略</h4>
+	<p>
+		厦门建发股份有限公司及其子公司（以下称建发股份）奉行无垃圾邮件政策，杜绝发送垃圾邮件，建发股份有限公司承诺：</p>
+	<p>
+		1.决不出售或出租客户、潜在客户或Web访问者的个人资料。建发注重保护个人隐私。</p>
+	<p>
+		2.只向要求建发股份有限公司发送邮件的人士（即那些希望通过在线或离线市场宣传活动与建发股份有限公司保持联系的人员）发送邮件。</p>
+	<p>
+		3.加强对垃圾邮件的监控，采取必要的防范措施。</p>
+</div>
+
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="privacy">
+			<div class="vcenter">
+				<div class="tb">
+					<div class="tb-c">
+						<div class="maxsize">
+							<div class="win">
+								<div class="title">
+									<h5>隐私声明</h5>
+									<a href="javascript:void(0); " class="close" onclick="$('.privacy').fadeOut();"><i
+											class="iconfont">&#xe605;</i></a>
+								</div>
+								<div class="content">
+<div class="block">
+	<p>
+		建发股份业务开展的过程中，我们可能需要收集和处理某些个人数据及企业信息。本《隐私声明》旨在告知利益相关方，建发股份将如何收集、使用、存储和披露您的信息等方面内容。</p>
+	<p>
+		建发股份尊重利益相关方信息的隐私，我们已根据《中华人民共和国网络安全法》《计算机信息系统安全保护条例》《个人信息保护法》和其他适用法律，对利益相关方采取了本隐私声明中所述做法。您应仔细阅读本隐私声明，如未提出异议，则视为同意其中所述的条款和条件，用以向您提供服务、优化我们的服务以及保障您的信息安全。
+	</p>
+</div>
+<div class="block">
+	<h4>
+		1. 收集及使用您的信息</h4>
+	<p>在您与建发股份拟进行业务合作及其他场景，建发股份将收集使用您及贵司的相关信息，用途包括但不限于：</p>
+	<p>提高沟通效率。我们将通过您及贵司的信息与您进行高效的沟通，答疑解惑并提供支持。</p>
+	<p>改进产品服务。我们将通过您及贵司的信息或问卷反馈持续改进和优化本公司的产品和服务，从而带来更好的用户体验。</p>
+</div>
+<div class="block">
+	<h4>2. 存储及删除您的信息</h4>
+	<p>建发股份将依据法律法规规定的保存期限保存您及贵司的数据。我们非常重视利益相关方的信息安全，将妥善保护您及贵司的信息，以免出现信息丢失、不当使用等情况。</p>
+</div>
+<div class="block">
+	<h4>3. 披露您的信息</h4>
+	<p>建发股份充分尊重客户的个人隐私，我们不会将您及贵司的数据出售给他人。建发股份仅在法定情形或利益相关方明确同意，或为利益相关方提供服务所必须的情形下向第三方合作伙伴披露相关信息。</p>
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+;(function (win, export_obj) {
+  win["LogAnalyticsObject"] = export_obj
+  if (!win[export_obj]) {
+    function _collect() {
+      _collect.q.push(arguments)
+    }
+    _collect.q = _collect.q || []
+    win[export_obj] = _collect
+  }
+  win[export_obj].l = +new Date()
+})(window, "collectEvent")
+</script>
+<script
+async
+src="https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/5.0/collect-rangers-v5.1.4.js"
+></script>
+<script>
+window.collectEvent("init", {
+  app_id: 490214,
+  channel: "cn",
+  log: false,
+  enable_ab_test: false,
+  autotrack: false,
+  enable_stay_duration: true,
+  spa: true
+})
+window.collectEvent("start")
+</script>
+
+
+<script>
+data_location = [{"nav_top":"\u4f01\u4e1a\u65b0\u95fb","nav_left":"\u4f01\u4e1a\u65b0\u95fb","nav_left_sub":""}];
+</script>
+
+
+<script src="templates/script/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	wx.ready(function(){
+		 wxShare();
+		 });
+});
+
+
+window._host = "http://"+window.location.host;
+var _share = '厦门建发股份有限公司 官方网站',
+	_desc = '',
+	_link = document.location.href,
+	_imgUrl = window._host+'/templates/images/logo_tiny.png',
+	_shareErr = '分享失败';
+
+var AppID = "";
+var timestamp_tk = "";
+var nonceStr_tk = "";
+var signature_tk = "";
+
+
+wx.config({
+  //debug:true,
+  appId: AppID,
+  timestamp: timestamp_tk,
+  nonceStr: nonceStr_tk,
+  signature: signature_tk,
+  jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'previewImage',
+		'getLocation'
+      ]
+});
+
+  var isIE = function(ver) {
+    var b = document.createElement('b')
+    b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+    return b.getElementsByTagName('i').length === 1
+  }
+
+    function exec(command)
+    {
+
+    window.oldOnError = window.onerror;
+    window._command = command;
+    window.onerror = function (err)
+    { if (err.indexOf('utomation') != -1)
+        { alert('请更改你的IE的安全级别：开始->设置->控制面板->Internet选项->安全->自定义级别->对没有标记为安全的ActiveX控件进行初始化和脚本运行->启用。');
+            return true;
+        } else
+            return false;
+    };
+    // alert(command);
+    var wsh = new ActiveXObject('WScript.Shell');
+    if (wsh)
+    {
+        wsh.Run(command);
+    }
+    wsh = null;
+    window.onerror = window.oldOnError;
+    }
+
+  function openErp() {
+    if (isIE(5) || isIE(6) || isIE(7) || isIE(8) || isIE(9)) {
+      exec('C:\\snsoft80c\\jre\\bin\\javaws.exe -J-Djava.home=C:\\snsoft80c\\jre http://e.chinacnd.com/snsoft80/webstart.jnlp');
+    } else {
+      location.href = "http://e.chinacnd.com/snsoft80/webstart.jnlp";
+    }
+  }
+
+</script>
+
+<!--
+    <div style="display:none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260806612&web_id=1260806612" language="JavaScript"></script>
+    </div>
+ -->
+		<script>
+
+	// 	window._bd_share_config = {
+	// 	"common": {
+	// 		"bdSnsKey": {},
+	// 		"bdText": "",
+	// 		"bdMini": "2",
+	// 		"bdMiniList": false,
+	// 		"bdPic": "",
+	// 		"bdStyle": "0",
+	// 		"bdSize": "32"
+	// 	},
+	// 	"share": {}
+	// 	};
+	// with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'templates/script/share.js?v=89860593.js?cdnversion=' + ~ ( - new Date() / 36e5)];
+        </script>
+	
+
+ <div style="display:none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260806612&web_id=1260806612" language="JavaScript"></script>
+    </div>
+
+	</body>
+</html>
+

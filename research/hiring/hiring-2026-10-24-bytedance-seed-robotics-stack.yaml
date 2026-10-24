@@ -1,0 +1,13 @@
+id: hiring-2026-10-24-bytedance-seed-robotics-stack
+org: bytedance-seed
+topic: robotics-stack
+title: 数据、物理仿真与本体结构能力的招聘线索
+judgment: 官方招聘页同时列出具身数据开发、物理引擎仿真与机器人结构岗位，为机器人研发中数据、仿真及硬件能力的协同建设提供有限线索。这是首次观察，不据此判断方向增长或变化。
+limitations: 目前依据为一个官方页面上的岗位标题，缺少完整职责、各岗位首次发布时间及人员规模；也可能是既有团队的常态招聘，不能确认新项目立项、自建数采产能或新机器人发布。
+strength: limited
+kind: watch
+next_check: 核实各岗位独立详情及发布时间，在后续月度对比中检查职责与能力组合是否发生实质变化。
+evidence_events:
+- evt-2026-10-24-bytedance-seed-hiring_signal-robotics-official-baseline
+reviewed_on: '2026-10-24'
+review_reference: '维护者在本聊天批准2026-10-24 issue批次：可以 按你说的；对应issue #361逐条结论。'

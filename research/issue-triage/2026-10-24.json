@@ -1,0 +1,1488 @@
+{
+  "reviewed_on": "2026-10-24",
+  "approval": "维护者：可以 按你说的；批准2026-10-24逐条提案。",
+  "scope": "26条新增345—370与20条历史待补证；按已获批逐条提案执行。",
+  "counts": {
+    "pending": 21,
+    "admit": 9,
+    "reject": 8,
+    "duplicate": 8
+  },
+  "issues": [
+    {
+      "issue": 111,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "延续原缺口：GKZX202606090002-01完整中标供应商、916产教项目、HF20262716供应商与明细、贵州多模态咨询设计中标、诸广顺2026-08-24品牌供应商明细。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+    },
+    {
+      "issue": 210,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "Trident-Train仍访问受限，独立于可读的Trident检索模型，不猜测内容。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/210"
+    },
+    {
+      "issue": 211,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "JIMTOF/JIMTOF1及1008已有事件；csrt_bbox_tracker、segmentation_masked、segmentation_dataset__、masked_yolo_white的原始/加工关系、任务、许可和新增量待核。后两项沿用原#227候选，#299合并到本条追踪。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+    },
+    {
+      "issue": 235,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "Winverse/DeepSeek投资与智元融资仍涉及筹划／接近完成，待正式完成证据。RAPID高校论文、办公WorkBuddy、GTC议程不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/235"
+    },
+    {
+      "issue": 241,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "论文已核实属于Einsia.AI/清华，不属于Physical Intelligence；新主体组织身份与收录边界待补证，暂不建档。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/241"
+    },
+    {
+      "issue": 242,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：WAIC和2月产品汇总正文、河南采购完整公告、导览机器人采购结果；G1+标题误写零度，待宇树原公告；松应与摩尔线程历史合作待原公告和具体日。论坛、栏目页、历史沙龙、纯高校项目不收。WorldOracle和RP1_test见本PR事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/242"
+    },
+    {
+      "issue": 248,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "原研究页面失效；需分别找回异构RL、照片级仿真等研究的原论文及作者归属，不能将聚合页作为一个新事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/248"
+    },
+    {
+      "issue": 258,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：大漠大具身业务待具体产品；云深处招股书待原件；北京训练基地缺新增运营日；4月融资汇总正文不可读。行业评论、新闻索引及普通3D打印不收。其余已批准产品与计划见本PR。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+    },
+    {
+      "issue": 259,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "估值、减持与财务评论不入事件；文中采集设备7月样机、8月发布等历史线索待原公告及已有记录精确比对，不记成本月新产品。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/259"
+    },
+    {
+      "issue": 267,
+      "status": "admit",
+      "events": [
+        "evt-2024-06-27-agility-partnership-gxo-multiyear-raas"
+      ],
+      "leads": [
+        {
+          "issue": 267,
+          "title": "Agility/GXO 多年RaaS协议",
+          "status": "admit",
+          "date": "2024-06-27",
+          "reason": "GXO官方网页可读；区别于已有6月5日开始商业作业，不改旧事件。",
+          "sources": [
+            "https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics/"
+          ],
+          "existing": [
+            "evt-2024-06-05-agility-deployment-gxo-flowery-branch-digit"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/267"
+    },
+    {
+      "issue": 282,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "Hugging Face返回访问限制，无法核验实际文件、用途和许可；不推定已删除或已经正式发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/282"
+    },
+    {
+      "issue": 286,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：OpenAI计划原访谈；美光研究官方演讲；张江麒麟/白虎数据集原始公告；上游投资正文；温州技师学院98万元采购的政府原公告。证券周报1—3月旧融资表逐项追原始来源，不整表导入、不将表内日期直接当事实。Mobo按正式发布事件处理；融资排行榜不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+    },
+    {
+      "issue": 288,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留OpenAI人形机器人计划的原始访谈与日期。早报中飞行汽车、人物新闻及泛商业政策不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/288"
+    },
+    {
+      "issue": 296,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：Giga武汉邮政8月合作原公告；工博会中中科第五纪、智元G2与产量、Elite Primo、新松、越疆、汇川、KUKA独立消息待原公告；融资回顾未匹配部分继续历史核验。枢途、帕西尼已收事件去重；傅利叶GRW已有历史发布；纯工业ABB、论坛比赛回顾、通用模型新闻与行业统计不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+    },
+    {
+      "issue": 312,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "ROMOMO与伽马见本PR；9月融资回顾已匹配的枢途和帕西尼去重，其余历史轮次待原公告核验；地理空间工具不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/312"
+    },
+    {
+      "issue": 322,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "Flexiv RDK2.2标有Draft/WIP，待正式发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/322"
+    },
+    {
+      "issue": 324,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "Edge Site Helm包已存在，但缺少足以核验新产品能力的发布说明，暂不作为正式产品发布。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/324"
+    },
+    {
+      "issue": 328,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：国地中心/华为、上海仪电/物理AI院、智元LWD分别找原公告/论文和日期；融资回顾未匹配历史轮次继续核验。StaffDeck、CI工作流、尚处规划阶段的oopsie_processing、Token评论、保时捷驾驶课程、融资冷暖观点和RSS索引不收。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/328"
+    },
+    {
+      "issue": 334,
+      "status": "pending",
+      "events": [],
+      "leads": [],
+      "retained_gap": "保留：爱仕达创新中心原公告；豪恩机器人定点原披露（预计营收不能当订单金额）；祥源新材小批量供货原披露及客户信息。UNITAS已有；上海2028年目标、跨行业标准数量不作为公司交付或标准发布事件。",
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/334"
+    },
+    {
+      "issue": 339,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 339,
+          "title": "傲意HarmonyOS传感SDK",
+          "status": "reject",
+          "date": "当前版本提交2026-10-23",
+          "reason": "README已恢复：EEG/ECG/EMG/IMU等传感数据读取及算法；未证实机器人控制/遥操作用途，不因公司在库便全收SDK。",
+          "sources": [
+            "https://github.com/oymotion/SynchronyEtsDemo"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/339"
+    },
+    {
+      "issue": 345,
+      "status": "pending",
+      "events": [
+        "evt-2026-05-18-maxinsights-partnership-genesis-robot-data",
+        "evt-2026-08-12-gi-labs-product_launch-ego1gs-egohand",
+        "evt-2026-10-15-gi-labs-statement-managed-capture-pipeline",
+        "evt-2026-10-15-autolife-deployment-s3-canton-fair-phase1",
+        "evt-2026-09-04-autolife-statement-pgd-world-model-preview",
+        "evt-2026-10-09-ubtech-partnership-cnd-strategic"
+      ],
+      "leads": [
+        {
+          "issue": 345,
+          "title": "Roboparty adbd4linux",
+          "status": "reject",
+          "date": "2026-10-21",
+          "reason": "通用Linux/ADB通信移植，无机器人专属新能力。",
+          "sources": [
+            "https://github.com/Roboparty/adbd4linux"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "宇树H2-X",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "早报重复已入库内容。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/3jq4Bj4E3zJhjVBp.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-unitree-product_launch-h2x",
+            "PR #344"
+          ]
+        },
+        {
+          "issue": 345,
+          "title": "生数训练直播",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "早报重复已入库内容。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/3jq4Bj4E3zJhjVBp.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-shengshu-statement-motubrain2-training",
+            "PR #344"
+          ]
+        },
+        {
+          "issue": 345,
+          "title": "伽马智能成立",
+          "status": "duplicate",
+          "date": "2026-10-20",
+          "reason": "早报重复已入库内容。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/3jq4Bj4E3zJhjVBp.html"
+          ],
+          "existing": [
+            "evt-2026-10-20-gamma-robotics-corporate-formation-announcement",
+            "PR #344"
+          ]
+        },
+        {
+          "issue": 345,
+          "title": "早报其余手机、汽车、通用AI、人事与消费消息",
+          "status": "reject",
+          "date": "2026-10-21—22",
+          "reason": "无独立具身产业事件；不把汽车具身措辞当机器人证据。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/3jq4Bj4E3zJhjVBp.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "Maxinsights 新主体及 Genesis AI 数据合作披露",
+          "status": "admit",
+          "date": "2026-05-18",
+          "reason": "新主体：数据采集/数据基础设施层。官方公告核实机器人第一视角数据与Genesis合作；OpenAI/Google/Figure客户、1亿美元ARR等媒体说法不转成已确认合同或财务事实。",
+          "sources": [
+            "https://www.maxinsights.ai/",
+            "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c",
+            "https://www.qbitai.com/2026/10/504800.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "外骨骼及具身机器人产量统计",
+          "status": "reject",
+          "date": "2026-10",
+          "reason": "行业总量，不是可归属公司事件。",
+          "sources": [
+            "https://www.ithome.com/1/016/821.htm"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "智动未来 新主体与小智S3广交会部署",
+          "status": "admit",
+          "date": "2026-10-15—20",
+          "reason": "新主体：通用轮式机器人本体/场景应用。官网核实S3，原始采访给出16台、8点位；按展会阶段部署，服务人数属公司披露，不能视为销量。",
+          "sources": [
+            "https://www.autolife.ai/products",
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "智动未来 PGD 智子世界技术预览",
+          "status": "admit",
+          "date": "2026-09-04",
+          "reason": "官方具体日期及S3验证；只记技术预览，不称完整商用或代码公开。",
+          "sources": [
+            "https://www.autolife.ai/news/xair-2026-pgd-world-model"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "智元横琴长隆300台",
+          "status": "duplicate",
+          "date": "2026-09-24",
+          "reason": "采访文章回顾既有部署。",
+          "sources": [
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": [
+            "evt-2026-09-24-agibot-deployment-chimelong-300-robots"
+          ]
+        },
+        {
+          "issue": 345,
+          "title": "银河通用50城200太空舱",
+          "status": "pending",
+          "date": "发生日未核",
+          "reason": "只有累计运营数字，待公司原公告、统计口径及日期；不拆成200笔部署。",
+          "sources": [
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "智平方智魔方多地/人才公园部署",
+          "status": "pending",
+          "date": "2026-01及其他日期未明",
+          "reason": "采访可读但多个场景未逐一定日期；需区分首店、扩展技能与新部署。",
+          "sources": [
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "智平方兰桂坊爱宝应用",
+          "status": "pending",
+          "date": "发生日未核",
+          "reason": "案例可识别，仍需原公告或运营方证据和部署日期；不套报道日。",
+          "sources": [
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "SMYZE尚饮i店",
+          "status": "reject",
+          "date": "发生日未核",
+          "reason": "当前材料为固定饮品机械臂专用系统，未证实通用机器人载体，不建主体。",
+          "sources": [
+            "https://www.tmtpost.com/8178732.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "GI Labs 新主体与 EGO1GS/EgoHand",
+          "status": "admit",
+          "date": "2026-08-12",
+          "reason": "新主体：数采硬件/数据工具链。官方既有发布；相机2×1080p30fps，400Hz是IMU。",
+          "sources": [
+            "https://www.gilabs.xyz/blog/ego1gs",
+            "https://github.com/General-Intelligence-Labs",
+            "https://www.tmtpost.com/8178785.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "GI Labs 托管机器人数据流程",
+          "status": "admit",
+          "date": "2026-10-15",
+          "reason": "官方发布日，头显采集→处理→审核数据；作为业务能力披露，不猜客户数或训练效果。",
+          "sources": [
+            "https://www.gilabs.xyz/blog/everyday-work-to-robotics-training-data"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "GI Labs 11月新设备量产及报价",
+          "status": "pending",
+          "date": "2026-11计划；报道10-22",
+          "reason": "知情人报道，未核官方新型号、量产状态及批量价格；不与8月EGO1GS混写。",
+          "sources": [
+            "https://www.tmtpost.com/8178785.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "优必选与建发股份战略合作",
+          "status": "admit",
+          "date": "2026-10-09（官方10-10披露）",
+          "reason": "官网新闻索引确认合作，10月9日由报道明确；先记合作事实，2030万台仅销售目标，非已成交订单；建发作为合作方文本。",
+          "sources": [
+            "https://www.chinacnd.com/news.html",
+            "https://mp.weixin.qq.com/s/5yki5q71X9VSaokfOxMFCg",
+            "https://news.mysteel.com/a/26101208/F6D16006A0BEB8A0.html",
+            "https://www.tmtpost.com/8177860.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "优必选与波士渠道合作",
+          "status": "pending",
+          "date": "2026-07",
+          "reason": "媒体7月15日报道近日签约；待原公告/准确协议日期，不把7月旧闻当10月新合作。",
+          "sources": [
+            "https://www.tmtpost.com/8177860.html",
+            "https://www.aibangbots.com/a/10840"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "宇树经销收入、租赁降价、Robot Mall与贵阳门店经营数据",
+          "status": "reject",
+          "date": "2025财年及2026不同月份",
+          "reason": "混合财务/市场观察；不以累计营业额、匿名店铺亏损或采样租金建立公司新订单。",
+          "sources": [
+            "https://www.tmtpost.com/8177860.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "2026上半年融资报告",
+          "status": "reject",
+          "date": "2026-01—06",
+          "reason": "IT桔子二手数据库的汇总/排行，明确含估算和多轮合计；不整表导入、不生成虚假的单轮融资。",
+          "sources": [
+            "https://zbaogao.com/api/reports/10438?asset=pdf&disposition=attachment"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "机器之心课程/栏目入口",
+          "status": "reject",
+          "date": null,
+          "reason": "非公司事件。",
+          "sources": [
+            "https://app6ca5octe2206.pc.xiaoe-tech.com/page/1642662?navIndex=0"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "PlatformIO",
+          "status": "reject",
+          "date": null,
+          "reason": "通用嵌入式开发；无本批可核机器人产业关系。",
+          "sources": [
+            "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#platformio"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "tscircuit",
+          "status": "reject",
+          "date": null,
+          "reason": "通用电路设计；无本批可核机器人产业关系。",
+          "sources": [
+            "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#tscircuit"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "HeyPCB",
+          "status": "reject",
+          "date": null,
+          "reason": "通用PCB服务；无本批可核机器人产业关系。",
+          "sources": [
+            "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#heypcb"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 345,
+          "title": "ArduPilot Foundation",
+          "status": "reject",
+          "date": null,
+          "reason": "无人机/自动驾驶控制边界；无本批可核机器人产业关系。",
+          "sources": [
+            "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#ardupilot-foundation"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/345"
+    },
+    {
+      "issue": 346,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-wujie-power-product_launch-phoenix-mwa",
+        "evt-2026-10-23-wujie-power-publication-phoenix-pretrain-weights"
+      ],
+      "leads": [
+        {
+          "issue": 346,
+          "title": "无界动力 MWA-Phoenix、Phoenix-ILA、PhysCanvas",
+          "status": "admit",
+          "date": "2026-10-22",
+          "reason": "基座与技术方案发布；预训练代码实际存在，部分 encoder/data/rtc 分支仍 coming soon；7B 与性能为官方报告，不能声称所有流程已开源。",
+          "sources": [
+            "https://github.com/Anyverse-Dynamics/Phoenix-MWA",
+            "https://openphoenix-team.github.io/Phoenix-pages/",
+            "https://www.sina.cn/news/detail/5356767674368673.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 346,
+          "title": "Phoenix-Pretrain 权重实际上传",
+          "status": "admit",
+          "date": "2026-10-23",
+          "reason": "HF API 确认 pretrain_256013.pt 和许可证文件，约12GB；与22日技术发布分别注明日期。",
+          "sources": [
+            "https://huggingface.co/OpenPhoenix/Phoenix-Pretrain"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/346"
+    },
+    {
+      "issue": 347,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 347,
+          "title": "Motubrain 2.0 训练直播",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "上批已收，不新增。",
+          "sources": [
+            "https://www.qbitai.com/2026/10/504730.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-shengshu-statement-motubrain2-training",
+            "PR #344"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/347"
+    },
+    {
+      "issue": 348,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 348,
+          "title": "宇树 H2-X",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "同一发布的不同报道。",
+          "sources": [
+            "https://www.21jingji.com/article/20261021/herald/6232a98726fd7468d5d9640fb120ff81.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-unitree-product_launch-h2x",
+            "PR #344"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/348"
+    },
+    {
+      "issue": 349,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 349,
+          "title": "宇树 H2-X",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "同一发布的不同报道。",
+          "sources": [
+            "https://www.yicai.com/brief/103402396.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-unitree-product_launch-h2x",
+            "PR #344"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/349"
+    },
+    {
+      "issue": 350,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 350,
+          "title": "莫特菲斯与 AMD ROSCon 展示",
+          "status": "duplicate",
+          "date": "2026-10-16",
+          "reason": "20日报导不是新合作日。",
+          "sources": [
+            "https://auto.gasgoo.com/news/202610/20I70475336C601.shtml"
+          ],
+          "existing": [
+            "evt-2026-10-16-motphys-partnership-amd-roscon",
+            "PR #344"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/350"
+    },
+    {
+      "issue": 351,
+      "status": "pending",
+      "events": [],
+      "leads": [
+        {
+          "issue": 351,
+          "title": "Rainbow pi05_rby1_flower_79999",
+          "status": "pending",
+          "date": "2026-10-23 上传",
+          "reason": "实际 checkpoint 存在，但无模型卡、任务解释、许可及基座/微调说明；不从名称猜鲜花任务或自主基座。",
+          "sources": [
+            "https://huggingface.co/rainbowrobotics/pi05_rby1_flower_79999"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/351"
+    },
+    {
+      "issue": 352,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-deeprobotics-dataset_release-simready-assets"
+      ],
+      "leads": [
+        {
+          "issue": 352,
+          "title": "云深处 simready-assets",
+          "status": "admit",
+          "date": "2026-10-22",
+          "reason": "八款机器人 USD 仿真资产，含 DR02；按仿真资产发布，不称实采数据或已获NVIDIA认证；runtime报告尚有失败/缺失。",
+          "sources": [
+            "https://huggingface.co/datasets/deeproboticslab/simready-assets",
+            "https://github.com/NVIDIA-Omniverse/simready-central/pull/77"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/352"
+    },
+    {
+      "issue": 353,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 353,
+          "title": "Rainbow JIMTOF 分割/遮罩衍生集",
+          "status": "duplicate-pending",
+          "date": "2026-10-12/13",
+          "reason": "将重复候选合并到211追踪；基础集已有事件，衍生处理关系、任务、许可与新增量仍不足。",
+          "sources": [
+            "https://huggingface.co/datasets/rainbowrobotics/JIMTOF_segmentation_dataset__"
+          ],
+          "existing": [
+            "issue #211",
+            "evt-2026-10-06-rainbow-robotics-dataset_release-jimtof-series",
+            "evt-2026-10-08-rainbow-robotics-dataset_release-jimtof-1008"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/353"
+    },
+    {
+      "issue": 354,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 354,
+          "title": "Rainbow JIMTOF 分割/遮罩衍生集",
+          "status": "duplicate-pending",
+          "date": "2026-10-12/13",
+          "reason": "将重复候选合并到211追踪；基础集已有事件，衍生处理关系、任务、许可与新增量仍不足。",
+          "sources": [
+            "https://huggingface.co/datasets/rainbowrobotics/JIMTOF_segmentation_masked_yolo_white"
+          ],
+          "existing": [
+            "issue #211",
+            "evt-2026-10-06-rainbow-robotics-dataset_release-jimtof-series",
+            "evt-2026-10-08-rainbow-robotics-dataset_release-jimtof-1008"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/354"
+    },
+    {
+      "issue": 355,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 355,
+          "title": "Rainbow JIMTOF 分割/遮罩衍生集",
+          "status": "duplicate-pending",
+          "date": "2026-10-12/13",
+          "reason": "将重复候选合并到211追踪；基础集已有事件，衍生处理关系、任务、许可与新增量仍不足。",
+          "sources": [
+            "https://huggingface.co/datasets/rainbowrobotics/JIMTOF_segmentation_masked"
+          ],
+          "existing": [
+            "issue #211",
+            "evt-2026-10-06-rainbow-robotics-dataset_release-jimtof-series",
+            "evt-2026-10-08-rainbow-robotics-dataset_release-jimtof-1008"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/355"
+    },
+    {
+      "issue": 356,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 356,
+          "title": "Duatic devtools 常规版本",
+          "status": "reject",
+          "date": "2026-10-22",
+          "reason": "1.4源提交/包变更、1.5 ROS Humble/Jammy、1.6发行版归档；无新具身产品能力。",
+          "sources": [
+            "https://github.com/Duatic/duatic_devtools/releases/tag/v1.6.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/356"
+    },
+    {
+      "issue": 357,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 357,
+          "title": "Duatic devtools 常规版本",
+          "status": "reject",
+          "date": "2026-10-22",
+          "reason": "1.4源提交/包变更、1.5 ROS Humble/Jammy、1.6发行版归档；无新具身产品能力。",
+          "sources": [
+            "https://github.com/Duatic/duatic_devtools/releases/tag/v1.5.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/357"
+    },
+    {
+      "issue": 358,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 358,
+          "title": "Duatic devtools 常规版本",
+          "status": "reject",
+          "date": "2026-10-22",
+          "reason": "1.4源提交/包变更、1.5 ROS Humble/Jammy、1.6发行版归档；无新具身产品能力。",
+          "sources": [
+            "https://github.com/Duatic/duatic_devtools/releases/tag/v1.4.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/358"
+    },
+    {
+      "issue": 359,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 359,
+          "title": "Figure minute-cli 1.2",
+          "status": "reject",
+          "date": "2026-10-22 UTC",
+          "reason": "本次有排班/角色/地点写入功能，不只是安装器；但仍是采集运营行政工具，无新机器人能力或数据集。",
+          "sources": [
+            "https://github.com/figurerobotics/minute-cli/releases/tag/v1.2.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/359"
+    },
+    {
+      "issue": 360,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-motphys-publication-uni-supermimic"
+      ],
+      "leads": [
+        {
+          "issue": 360,
+          "title": "莫特菲斯 Uni-SuperMimic",
+          "status": "admit",
+          "date": "2026-10-22",
+          "reason": "实际代码的下游复现，支持UniLab/G1及MuJoCo、mjwarp、Motrix；不把SuperMimic原论文归给莫特菲斯，不称已发布训练权重。",
+          "sources": [
+            "https://github.com/Motphys/Uni-SuperMimic"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/360"
+    },
+    {
+      "issue": 361,
+      "status": "pending",
+      "events": [
+        "evt-2026-03-02-agibot-product_launch-global-raas-platform",
+        "evt-2026-10-24-bytedance-seed-hiring_signal-robotics-official-baseline"
+      ],
+      "leads": [
+        {
+          "issue": 361,
+          "title": "字节Seed招聘：数采/仿真/本体结构",
+          "status": "hiring",
+          "date": "核验2026-10-24；岗位首发未核",
+          "reason": "官方招聘页可见三方向；进入招聘证据/独立研判，不能证明新机器人已经发布或新项目已经立项，不写55K传闻薪资。",
+          "sources": [
+            "https://seed.bytedance.com/zh/career",
+            "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "松延动力秘密IPO申请传闻",
+          "status": "pending",
+          "date": "2026-10-22报道",
+          "reason": "公司未回应，缺交易所/公司确认，不能记完成融资或上市。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "特斯拉Optimus产线与外部交付计划",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "上批已收产线爬坡与计划；生产标准和未来交付不等于已向客户交货。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html"
+          ],
+          "existing": [
+            "evt-2026-10-21-tesla-statement-optimus-production-ramp",
+            "PR #344"
+          ]
+        },
+        {
+          "issue": 361,
+          "title": "宇树关于物理AI突破的演讲",
+          "status": "reject",
+          "date": "2026-10-22",
+          "reason": "泛行业预测，没有新的可归属产品/研究/交付。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "DeepSeek融资、米哈游脑机退出及早报其他非机器人内容",
+          "status": "reject",
+          "date": "2026-10-22报道",
+          "reason": "未提供本库机器人业务关联，DeepSeek本轮融资也不能证明235所述Winverse投资完成。",
+          "sources": [
+            "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "海康机器人箱式仓储/明智搬运/HAPS发布",
+          "status": "reject",
+          "date": "2026-10-23",
+          "reason": "具体产品是工业仓储AMR、叉车及关节机器人拣选工作站；开头提具身不足以跨越纯工业/AGV边界。",
+          "sources": [
+            "https://www.leiphone.com/category/robot/h4vGHMyQ6b8drzy6.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "数采乱象评论",
+          "status": "reject",
+          "date": "2026-10-23报道",
+          "reason": "匿名交易、行业观点和Figure旧试点评论不能形成新公司事件。",
+          "sources": [
+            "https://www.tmtpost.com/8180292.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "智元海外 RaaS 平台",
+          "status": "admit",
+          "date": "2026-03-02",
+          "reason": "官方MWC新闻确认上线，17国/地区、最短1天、899欧元起；历史补录，不记本月新推出。",
+          "sources": [
+            "https://www.agibot.com/article/231/detail/44.html",
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "无界动力K15法国电池工厂",
+          "status": "pending",
+          "date": "未核",
+          "reason": "出海评论中独立线索，待补：工厂身份、项目发生日期及原始部署证据。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "睿尔曼CES跨洋遥操作",
+          "status": "pending",
+          "date": "2026-01 CES",
+          "reason": "出海评论中独立线索，待补：具体演示日期及原公告。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "智元G2超视距遥操作",
+          "status": "pending",
+          "date": "未核",
+          "reason": "出海评论中独立线索，待补：原发布演示与具体日期，与旧296一起去重。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "因克斯二代快拆关节",
+          "status": "pending",
+          "date": "2026-07/08",
+          "reason": "出海评论中独立线索，待补：二代发布/预售/供货阶段的原始公告，不能用10月评论作发布日。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "磅天RobotICU售后平台",
+          "status": "pending",
+          "date": "未核",
+          "reason": "出海评论中独立线索，待补：主体身份、官方服务范围与具体启用日期；暂不建新主体。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "墨甲海外2000台/60国",
+          "status": "pending",
+          "date": "截至2026-08",
+          "reason": "出海评论中独立线索，待补：正式披露及渠道/终端交付口径，未证实独立客户订单。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "星尘绳驱维护、海外出口统计与售后成本分析",
+          "status": "reject",
+          "date": null,
+          "reason": "评论/成本估计，未提供独立新公司事件。",
+          "sources": [
+            "https://www.tmtpost.com/8179676.html"
+          ],
+          "existing": []
+        },
+        {
+          "issue": 361,
+          "title": "上游投资评论长桥链接",
+          "status": "duplicate-pending",
+          "date": "2026-10-11报道",
+          "reason": "正文仍不可读，同一上游投资线索交旧286追踪，不整篇猜测融资。",
+          "sources": [
+            "https://longbridge.com/zh-CN/news/301507898"
+          ],
+          "existing": [
+            "issue #286"
+          ]
+        },
+        {
+          "issue": 361,
+          "title": "CCTV宇树H2-X",
+          "status": "duplicate",
+          "date": "2026-10-21",
+          "reason": "23日电视跟进报道同一发布。",
+          "sources": [
+            "https://tv.cctv.com/2026/10/23/VIDEQD0DGYDglsZjLUt69tPk261023.shtml"
+          ],
+          "existing": [
+            "evt-2026-10-21-unitree-product_launch-h2x",
+            "PR #344"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/361"
+    },
+    {
+      "issue": 362,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-24-ace-robotics-dataset_release-worldfailbench"
+      ],
+      "leads": [
+        {
+          "issue": 362,
+          "title": "大晓 WorldFailBench",
+          "status": "admit-merged",
+          "date": "2026-10-23 UTC（北京时间24日）",
+          "reason": "HF实际dataset.tar.gz；GH为说明入口；两条合成一件评测数据发布，仿真失败/成功与边界样本，不称实采或两次发布。",
+          "sources": [
+            "https://huggingface.co/datasets/ACERobotics/WorldFailBench",
+            "https://github.com/DAXIAORobotics/WorldFailBench"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/362"
+    },
+    {
+      "issue": 363,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 363,
+          "title": "MiniCPM-V 4.7 量化分支",
+          "status": "reject",
+          "date": "2026-10-23",
+          "reason": "沿用维护者149决定：通用/手机多模态模型，未证实机器人应用。",
+          "sources": [
+            "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark-gguf"
+          ],
+          "existing": [
+            "issue #149",
+            "issues #249/#319/#336"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/363"
+    },
+    {
+      "issue": 364,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 364,
+          "title": "MiniCPM-V 4.7 量化分支",
+          "status": "reject",
+          "date": "2026-10-23",
+          "reason": "沿用维护者149决定：通用/手机多模态模型，未证实机器人应用。",
+          "sources": [
+            "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark-gguf"
+          ],
+          "existing": [
+            "issue #149",
+            "issues #249/#319/#336"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/364"
+    },
+    {
+      "issue": 365,
+      "status": "reject",
+      "events": [],
+      "leads": [
+        {
+          "issue": 365,
+          "title": "Trident-Qwen3VL-2B",
+          "status": "reject",
+          "date": "2026-10",
+          "reason": "通用多模态检索，许可证增加不构成机器人关联；沿用此前范围判断。",
+          "sources": [
+            "https://huggingface.co/openbmb/Trident-Qwen3VL-2B"
+          ],
+          "existing": [
+            "issues #249/#319/#336"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/365"
+    },
+    {
+      "issue": 366,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-24-ace-robotics-dataset_release-worldfailbench"
+      ],
+      "leads": [
+        {
+          "issue": 366,
+          "title": "大晓 WorldFailBench",
+          "status": "admit-merged",
+          "date": "2026-10-23 UTC（北京时间24日）",
+          "reason": "HF实际dataset.tar.gz；GH为说明入口；两条合成一件评测数据发布，仿真失败/成功与边界样本，不称实采或两次发布。",
+          "sources": [
+            "https://huggingface.co/datasets/ACERobotics/WorldFailBench",
+            "https://github.com/DAXIAORobotics/WorldFailBench"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/366"
+    },
+    {
+      "issue": 367,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-23-wuji-tech-publication-toporetarget"
+      ],
+      "leads": [
+        {
+          "issue": 367,
+          "title": "舞肌科技 TopoRetarget",
+          "status": "admit",
+          "date": "2026-10-23",
+          "reason": "保留手—物体交互的动作重定向，实际MIT代码、Wuji Hand 2及MuJoCo；外部数据许可独立，不等同新基础模型。",
+          "sources": [
+            "https://github.com/wuji-technology/toporetarget"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/367"
+    },
+    {
+      "issue": 368,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-flexiv-product_launch-composer-studio-1"
+      ],
+      "leads": [
+        {
+          "issue": 368,
+          "title": "非夕 Composer Studio 1.0",
+          "status": "admit",
+          "date": "2026-10-22",
+          "reason": "机器人场景、运动和路径可视化编辑工具；与PDK关联记录，不称全部核心开源。",
+          "sources": [
+            "https://github.com/flexivrobotics/flexiv_composer_studio/releases/tag/v1.0.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/368"
+    },
+    {
+      "issue": 369,
+      "status": "admit",
+      "events": [
+        "evt-2026-10-22-flexiv-product_launch-pdk-1"
+      ],
+      "leads": [
+        {
+          "issue": 369,
+          "title": "非夕 PDK 1.0",
+          "status": "admit",
+          "date": "2026-10-22",
+          "reason": "机器人运动学、碰撞、RGB-D、点云重建与规划工具；部分模块需许可，C++预编译库。",
+          "sources": [
+            "https://github.com/flexivrobotics/flexiv_pdk/releases/tag/v1.0.0"
+          ],
+          "existing": []
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/369"
+    },
+    {
+      "issue": 370,
+      "status": "duplicate",
+      "events": [],
+      "leads": [
+        {
+          "issue": 370,
+          "title": "地瓜四个新仓库",
+          "status": "duplicate-rejection",
+          "date": "2026-10-15—19",
+          "reason": "FAST_LIO、RDK USB gadget、两项OCR通用组件，此前已明确不收；不生成技术采用事件。",
+          "sources": [
+            "https://github.com/D-Robotics"
+          ],
+          "existing": [
+            "issues #269/#302"
+          ]
+        }
+      ],
+      "retained_gap": null,
+      "url": "https://github.com/MasashiToda1/embodied-industry-db/issues/370"
+    }
+  ],
+  "events": [
+    {
+      "issues": [
+        346
+      ],
+      "event": "evt-2026-10-22-wujie-power-product_launch-phoenix-mwa",
+      "orgs": [
+        "wujie-power"
+      ]
+    },
+    {
+      "issues": [
+        346
+      ],
+      "event": "evt-2026-10-23-wujie-power-publication-phoenix-pretrain-weights",
+      "orgs": [
+        "wujie-power"
+      ]
+    },
+    {
+      "issues": [
+        352
+      ],
+      "event": "evt-2026-10-22-deeprobotics-dataset_release-simready-assets",
+      "orgs": [
+        "deeprobotics"
+      ]
+    },
+    {
+      "issues": [
+        360
+      ],
+      "event": "evt-2026-10-22-motphys-publication-uni-supermimic",
+      "orgs": [
+        "motphys"
+      ]
+    },
+    {
+      "issues": [
+        362,
+        366
+      ],
+      "event": "evt-2026-10-24-ace-robotics-dataset_release-worldfailbench",
+      "orgs": [
+        "ace-robotics"
+      ]
+    },
+    {
+      "issues": [
+        367
+      ],
+      "event": "evt-2026-10-23-wuji-tech-publication-toporetarget",
+      "orgs": [
+        "wuji-tech"
+      ]
+    },
+    {
+      "issues": [
+        368
+      ],
+      "event": "evt-2026-10-22-flexiv-product_launch-composer-studio-1",
+      "orgs": [
+        "flexiv"
+      ]
+    },
+    {
+      "issues": [
+        369
+      ],
+      "event": "evt-2026-10-22-flexiv-product_launch-pdk-1",
+      "orgs": [
+        "flexiv"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-05-18-maxinsights-partnership-genesis-robot-data",
+      "orgs": [
+        "maxinsights",
+        "genesis-ai"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-08-12-gi-labs-product_launch-ego1gs-egohand",
+      "orgs": [
+        "gi-labs"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-10-15-gi-labs-statement-managed-capture-pipeline",
+      "orgs": [
+        "gi-labs"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-10-15-autolife-deployment-s3-canton-fair-phase1",
+      "orgs": [
+        "autolife"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-09-04-autolife-statement-pgd-world-model-preview",
+      "orgs": [
+        "autolife"
+      ]
+    },
+    {
+      "issues": [
+        345
+      ],
+      "event": "evt-2026-10-09-ubtech-partnership-cnd-strategic",
+      "orgs": [
+        "ubtech"
+      ]
+    },
+    {
+      "issues": [
+        361
+      ],
+      "event": "evt-2026-03-02-agibot-product_launch-global-raas-platform",
+      "orgs": [
+        "agibot"
+      ]
+    },
+    {
+      "issues": [
+        267
+      ],
+      "event": "evt-2024-06-27-agility-partnership-gxo-multiyear-raas",
+      "orgs": [
+        "agility"
+      ]
+    },
+    {
+      "issues": [
+        361
+      ],
+      "event": "evt-2026-10-24-bytedance-seed-hiring_signal-robotics-official-baseline",
+      "orgs": [
+        "bytedance-seed"
+      ]
+    }
+  ],
+  "new_orgs": [
+    "registry/orgs/maxinsights.yaml",
+    "registry/orgs/gi-labs.yaml",
+    "registry/orgs/autolife.yaml"
+  ],
+  "hiring_research": [
+    "research/hiring/hiring-2026-10-24-bytedance-seed-robotics-stack.yaml"
+  ],
+  "source_snapshots": [
+    "snapshots/2026/10/intake-20261024/345-4.html",
+    "snapshots/2026/10/intake-20261024/346-0.html",
+    "snapshots/2026/10/intake-20261024/352-0-api.json",
+    "snapshots/2026/10/intake-20261024/352-0-history.json",
+    "snapshots/2026/10/intake-20261024/352-0.md",
+    "snapshots/2026/10/intake-20261024/360-0-tree.json",
+    "snapshots/2026/10/intake-20261024/360-0.md",
+    "snapshots/2026/10/intake-20261024/362-0-api.json",
+    "snapshots/2026/10/intake-20261024/362-0-history.json",
+    "snapshots/2026/10/intake-20261024/362-0.md",
+    "snapshots/2026/10/intake-20261024/366-0-commits.json",
+    "snapshots/2026/10/intake-20261024/366-0.md",
+    "snapshots/2026/10/intake-20261024/367-0-commits.json",
+    "snapshots/2026/10/intake-20261024/367-0-tree.json",
+    "snapshots/2026/10/intake-20261024/367-0.md",
+    "snapshots/2026/10/intake-20261024/368-0-release.json",
+    "snapshots/2026/10/intake-20261024/369-0-release.json",
+    "snapshots/2026/10/intake-20261024/agibot-raas.html",
+    "snapshots/2026/10/intake-20261024/autolife-pgd.html",
+    "snapshots/2026/10/intake-20261024/autolife-products.html",
+    "snapshots/2026/10/intake-20261024/cnd.html",
+    "snapshots/2026/10/intake-20261024/gi-data.html",
+    "snapshots/2026/10/intake-20261024/gi-ego1gs.html",
+    "snapshots/2026/10/intake-20261024/gi-org.html",
+    "snapshots/2026/10/intake-20261024/gilabs.html",
+    "snapshots/2026/10/intake-20261024/gxo-web.json",
+    "snapshots/2026/10/intake-20261024/maxinsights-genesis.html",
+    "snapshots/2026/10/intake-20261024/maxinsights.html",
+    "snapshots/2026/10/intake-20261024/phoenix-pretrain-history.json",
+    "snapshots/2026/10/intake-20261024/phoenix-pretrain.json",
+    "snapshots/2026/10/intake-20261024/phoenix-project.html",
+    "snapshots/2026/10/intake-20261024/phoenix.md",
+    "snapshots/2026/10/intake-20261024/seed.html",
+    "snapshots/2026/10/intake-20261024/supermimic-commits-all.json",
+    "snapshots/2026/10/intake-20261024/ubtech-cnd-media.html"
+  ],
+  "implementation_notes": [
+    "WorldFailBench用北京时间10月24日，保留原上传时间2026-10-23T18:36:26Z。",
+    "智动未来展会部署按10月15—20区间起日定位，明确不是一次性交付日期。",
+    "GXO官方页保存工具提取JSON并注明非原始HTML；建发公众号验证页未入证据。",
+    "字节Seed只有一个官方招聘页及岗位标题，独立研判为有限线索，不补写职责或薪资。",
+    "十八条旧未决项沿用已批准缺口，不宣称所有旧原文已重新读通。"
+  ]
+}

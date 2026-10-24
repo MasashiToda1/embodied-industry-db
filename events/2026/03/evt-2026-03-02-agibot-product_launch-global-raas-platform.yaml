@@ -1,0 +1,21 @@
+id: evt-2026-03-02-agibot-product_launch-global-raas-platform
+date: '2026-03-02'
+date_precision: day
+type: product_launch
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元在 MWC2026 推出海外机器人租赁平台
+summary:
+  zh: 智元在MWC2026宣布海外官方商店开始运营并推出RaaS租赁服务，覆盖17个国家和地区，最短租期一天、价格899欧元起。官方说明由当地合作方提供交付及现场执行支持；记录发布时的覆盖和报价，不推断各地区已形成具体订单或当前报价仍然相同。
+evidence:
+- url: https://www.agibot.com/article/231/detail/44.html
+  publisher: www.agibot.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/agibot-raas.html
+corroboration: single
+axes:
+  delivery_model:
+  - rental

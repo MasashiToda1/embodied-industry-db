@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8faf9">
+<meta name="description" content="Phoenix brings together scalable pretraining, world-action modeling, contact-rich skills, and reinforcement learning in a learned world model.">
+<title>Phoenix</title>
+<style>:root{--paper:#f8faf9;--white:#fff;--ink:#203537;--muted:#627574;--teal:#216f65;--line:#dce6e2;--mint:#eaf3ef;--blue:#bad0eb;--green:#c5ddcd;--cyan:#a8d0d5;--width:1120px;color-scheme:light}
+*{box-sizing:border-box;letter-spacing:0}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}a{color:inherit;text-underline-offset:4px}button,select{font:inherit}button{cursor:pointer;color:inherit}a,button,select,summary{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #508fbc;outline-offset:4px}img{display:block;max-width:100%;height:auto}h1,h2,h3,p,figure{margin:0}h1,h2,h3{line-height:1.3}h2{font-size:34px;font-weight:600}h3{font-size:22px;font-weight:600}p+p{margin-top:16px}strong{font-weight:650}sub{line-height:0}code{font-size:12px;background:#edf1ef;padding:2px 4px;border-radius:3px}.wrap{width:min(100% - 64px,var(--width));margin-inline:auto;min-width:0}[hidden]{display:none!important}
+.skip{position:fixed;top:-90px;left:16px;z-index:90;background:white;padding:10px}.skip:focus{top:10px}.topbar{position:sticky;top:0;z-index:20;background:rgba(248,250,249,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:28px}.wordmark{display:inline-flex;align-items:center;gap:10px;font-size:24px;font-weight:700;text-decoration:none;white-space:nowrap}.brand-dot{width:10px;height:10px;background:var(--teal);border-radius:2px;transform:rotate(-12deg)}nav{display:flex;gap:28px}nav a{text-decoration:none;color:var(--muted);font-size:13px;white-space:nowrap}nav a:hover,nav a[aria-current="location"]{color:var(--teal)}.eyebrow{font-size:11px;color:var(--teal);font-weight:600;line-height:1.5}
+.masthead{text-align:center;padding-top:46px}.masthead h1{font-size:72px;color:var(--teal);font-weight:650;line-height:1.1;margin:18px 0}.headline{font-size:28px;font-weight:500}.hero-copy{font-size:15px;color:var(--muted);margin:16px auto 0;max-width:680px;line-height:1.9}.hero-actions{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:9px 19px;font-size:13px;font-weight:600;border:1px solid var(--line);border-radius:5px;text-decoration:none;background:white}.button.primary{background:var(--teal);border-color:var(--teal);color:white}.button:hover{filter:brightness(.96)}.text-link{font-size:13px;color:var(--teal);display:inline-block}.hero-actions .text-link{margin-left:6px}.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-block:1px solid var(--line);text-align:center}.hero-metrics>div{padding:20px 12px;display:flex;flex-direction:column;gap:1px}.hero-metrics>div+div{border-left:1px solid var(--line)}.hero-metrics strong{font-size:39px;font-weight:550;line-height:1.3;font-variant-numeric:tabular-nums}.hero-metrics strong span{font-size:23px}.hero-metrics>div>span{font-size:12px;color:var(--muted)}.metric-note{font-size:11px;color:var(--muted);margin-top:9px}
+.overview{padding-top:34px}.figure-heading{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);margin-bottom:14px}.figure-heading a{text-decoration:none}.figure-link{display:block;background:white}.figure-link:focus-visible{outline-offset:3px}.figure-link img{width:100%}figcaption,.caption{font-size:12px;line-height:1.8;color:var(--muted);margin-top:12px}figcaption a{margin-left:8px;white-space:nowrap}.intro-grid{display:grid;grid-template-columns:1fr 1.45fr;gap:70px;padding:64px 0 72px}.intro-grid>div{color:var(--muted);font-size:15px}.intro-grid h2{padding-top:3px}
+.section{padding:76px 0;border-top:1px solid var(--line)}.tint{background:#f1f6f3}.section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:65px;align-items:end;margin-bottom:36px}.section-heading .eyebrow{margin-bottom:13px}.section-heading>p{color:var(--muted);font-size:14px;max-width:440px}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:38px 0}.principles article{border-top:3px solid var(--blue);padding-top:16px}.principles article:nth-child(2){border-color:var(--cyan)}.principles article:nth-child(3){border-color:var(--green)}.index{font:12px ui-monospace,monospace;color:var(--muted)}.principles h3{font-size:18px;margin:12px 0}.principles p{font-size:13px;color:var(--muted);line-height:1.9}.feature-figure{margin-top:32px}.method-block{border-top:1px solid var(--line);margin-top:46px;padding-top:34px}.subsection-heading{display:flex;flex-direction:column;gap:9px;margin-bottom:19px}.module-code{font-size:11px;color:var(--teal);font-weight:600}.prose{max-width:940px;color:var(--muted);font-size:15px;line-height:1.95}.method-block figure{margin-top:25px}
+.data-metrics{display:grid;grid-template-columns:1fr 1fr .8fr;gap:36px;border-block:1px solid var(--line);margin-bottom:32px;padding:25px 0}.data-metrics>div{min-width:0}.data-metrics span{display:block;color:var(--muted);font-size:12px}.data-metrics strong{display:block;font-size:31px;font-weight:550;line-height:1.5;font-variant-numeric:tabular-nums}.data-metrics small{font-size:13px;margin-left:8px;font-weight:400;color:var(--muted)}#data>.wrap>.prose{margin-top:28px}details{border-block:1px solid var(--line);margin-top:24px}summary{min-height:58px;display:flex;gap:14px;align-items:center;font-size:14px;font-weight:550;cursor:pointer;list-style:none;padding:15px 0}summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:22px;color:var(--teal);margin-left:auto;line-height:1;flex-shrink:0}details[open]>summary::after{content:"−"}.summary-meta{font-size:11px;color:var(--muted);font-weight:400;margin-left:auto}summary:has(.summary-meta)::after{margin-left:5px}.detail-body{padding:5px 0 24px;color:var(--muted);font-size:14px}.detail-body .table-scroll{margin:15px 0}
+.tablist{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}.tablist button{border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;padding:13px 21px;font-size:13px;min-height:48px;font-weight:500;transition:background .15s,color .15s}.tablist button:hover{background:var(--mint)}.tablist button[aria-selected="true"]{color:var(--teal);border-bottom-color:var(--teal);background:var(--mint)}.benchmark-panel{padding-top:28px}.benchmark-summary{display:flex;justify-content:space-between;gap:32px;align-items:center;margin-bottom:32px}.benchmark-summary h3{font-size:25px;margin:8px 0}.benchmark-summary p:not(.eyebrow){font-size:13px;color:var(--muted)}.benchmark-score{text-align:right;flex-shrink:0}.benchmark-score strong{display:block;font-size:44px;color:var(--teal);font-weight:550;line-height:1.3}.benchmark-score small{font-size:24px}.benchmark-score>span{font-size:11px;color:var(--muted)}.bar-chart{padding:22px 0;border-block:1px solid var(--line)}.bar-row{display:grid;grid-template-columns:205px 1fr 85px;gap:20px;align-items:center;margin:13px 0}.bar-row>span{font-size:13px}.bar-row small{font-size:11px;color:var(--muted);margin-left:5px}.bar-track{height:25px;background:#edf1ef;overflow:hidden}.bar-fill{height:100%;display:block;background:#77b1a5}.bar-fill.baseline{background:#c5d1cd}.bar-row>strong{text-align:right;font-size:17px;font-variant-numeric:tabular-nums;font-weight:550}.result-callout{font-size:13px;color:var(--muted);margin-top:14px}.result-callout strong{color:var(--teal)}
+.table-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;border-top:1px solid #a9bcb4;scrollbar-width:thin}.report-table{border-collapse:collapse;width:100%;font-size:12px;color:var(--ink);border-bottom:1px solid #a9bcb4;font-variant-numeric:tabular-nums}.report-table th,.report-table td{padding:11px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap;line-height:1.5}.report-table th:first-child,.report-table td:first-child{text-align:left}.report-table th{font-weight:500}.report-table thead{background:#edf3ef}.report-table thead th{font-size:11px;font-weight:600}.report-table .ours{background:#e5f1eb}.report-table .table-group th,.report-table .table-group td{background:#eff1f0;text-align:center;font-weight:600}.report-table tbody tr:not(.table-group):hover{background:#eff6f2}.report-table .ours th{color:#216458}.report-table strong{font-weight:700}.report-table u{text-underline-offset:3px}.split-stats{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px 0;border-block:1px solid var(--line);margin:26px 0}.split-stats>div>span{display:block;font-size:12px;color:var(--muted)}.split-stats strong{display:block;font-size:25px;font-weight:550;margin-top:5px}.split-stats strong span{color:#91a7a0;font-size:22px;margin:0 8px}
+.demo-tabs{margin-bottom:24px}.demo-tabs button{padding:12px 17px}.video-frame{background:#e1e9e5;aspect-ratio:24/7;width:100%;overflow:hidden}.video-frame video{display:block;width:100%;height:100%;object-fit:contain}.video-toolbar{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);min-height:89px}.video-toolbar h3{font-size:18px}.video-toolbar p{font-size:12px;color:var(--muted);margin-top:3px}.video-actions{display:flex;gap:12px;align-items:center;font-size:12px;white-space:nowrap}.video-actions label{color:var(--muted)}.video-actions select{min-height:36px;padding:5px 6px;border:1px solid var(--line);background:white;border-radius:4px;color:var(--ink);font-size:12px}.video-actions a{margin-left:7px}#video-error{color:#993f37;font-size:13px;padding:12px 0}
+.analysis-block+.analysis-block{margin-top:46px;border-top:1px solid var(--line);padding-top:36px}.analysis-block figure,.analysis-block>.table-scroll{margin-top:26px}.finding-strip{border-left:3px solid var(--cyan);padding:14px 20px;background:#eef5f3;margin-top:23px}.finding-strip p{font-size:15px}.finding-strip strong{color:var(--teal)}.finding-strip>span{font-size:12px;color:var(--muted)}.demo-jump{margin-top:16px;margin-right:24px}.resources{padding-block:64px}.resource-links{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}.resource-links a{display:flex;align-items:center;justify-content:space-between;gap:15px;text-decoration:none;padding:17px 0;border-top:1px solid var(--line);font-size:14px}.resource-links small{font-size:11px;color:var(--teal);white-space:nowrap}.resource-links a:hover span{text-decoration:underline}footer{border-top:1px solid var(--line);padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted)}.footer-inner .wordmark{font-size:19px;color:var(--ink)}.footer-inner>a:last-child{text-decoration:none}
+.expanded-details{margin-top:24px;border-top:1px solid var(--line)}.detail-heading{display:flex;align-items:center;gap:14px;margin:0;padding:18px 0;font-size:15px;line-height:1.6;font-weight:550}.expanded-details .detail-body{padding-top:0}.benchmark-links{display:flex;gap:28px;flex-wrap:wrap;padding:14px 0;border-block:1px solid var(--line)}.benchmark-links a{font-size:13px;color:var(--teal);font-weight:500;text-decoration:none}.benchmark-links a:hover{text-decoration:underline}.benchmark-panel+.benchmark-panel{border-top:1px solid var(--line);margin-top:42px;padding-top:36px}
+@media(max-width:680px){.detail-heading{font-size:13px;gap:10px}.benchmark-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.benchmark-links a{font-size:11px;text-align:center}.benchmark-panel+.benchmark-panel{margin-top:28px;padding-top:28px}}
+.hero-actions .resource-pending{cursor:not-allowed;opacity:.65;text-decoration:underline;text-underline-offset:4px}
+@media(min-width:1600px){:root{--width:1220px}.masthead{padding-top:52px}.hero-metrics{margin-top:42px}.overview{padding-top:38px}}
+@media(max-width:900px){nav{gap:19px}.section-heading{gap:35px}.intro-grid{gap:35px}.data-metrics{gap:20px}.data-metrics strong{font-size:27px}.principles{gap:20px}.resource-links{grid-template-columns:1fr 1fr}.bar-row{grid-template-columns:170px 1fr 75px}.bar-row small{display:block;margin:0}.video-actions{gap:8px}}
+@media(max-width:680px){.wrap{width:calc(100% - 36px)}.nav-inner{gap:12px;min-height:90px;flex-wrap:wrap;padding-block:10px}.wordmark{font-size:21px}nav{width:100%;justify-content:space-between;gap:8px;padding-bottom:2px}nav a{font-size:12px}.masthead{padding-top:32px}.masthead h1{font-size:55px;margin:15px 0}.headline{font-size:22px;max-width:340px;margin-inline:auto}.hero-copy{font-size:13px;max-width:350px}.desktop-break{display:none}.hero-actions{gap:9px;margin-top:20px}.button{padding:9px 13px;font-size:12px}.hero-actions .text-link{font-size:12px}.hero-metrics{margin-top:28px}.hero-metrics>div{padding:18px 5px}.hero-metrics strong{font-size:28px}.hero-metrics strong span{font-size:16px}.hero-metrics>div>span{font-size:10px}.metric-note{font-size:10px}.overview{padding-top:28px}.figure-heading{font-size:10px}.intro-grid{grid-template-columns:1fr;gap:24px;padding:40px 0}.intro-grid h2 br{display:none}.intro-grid>div{font-size:14px}h2{font-size:28px}h3{font-size:21px}.section{padding:46px 0}.section-heading{grid-template-columns:1fr;gap:18px;margin-bottom:28px}.section-heading>p{font-size:13px}.section-heading .eyebrow{margin-bottom:10px}.principles{grid-template-columns:1fr;gap:22px;margin:28px 0}.principles article{padding-top:12px}.principles h3{margin:6px 0}.principles p{font-size:13px}.prose{font-size:14px}.method-block{margin-top:30px;padding-top:25px}.subsection-heading{margin-bottom:14px}.data-metrics{gap:14px;grid-template-columns:1fr 1fr;margin-bottom:24px;padding:18px 0}.data-metrics>div:last-child{grid-column:1/-1;border-top:1px solid var(--line);padding-top:12px;display:flex;align-items:center;gap:24px}.data-metrics strong{font-size:24px}.data-metrics small{font-size:11px;margin-left:5px}.data-metrics span{font-size:11px}figcaption,.caption{font-size:11px}.summary-meta{font-size:10px}summary{font-size:13px}.detail-body{font-size:13px}.tablist button{padding:11px 12px;font-size:12px;min-height:44px}.benchmark-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.benchmark-tabs button{padding:12px 5px;font-size:11px}.benchmark-summary{align-items:start;gap:16px;margin-bottom:24px}.benchmark-summary h3{font-size:21px}.benchmark-summary .eyebrow{font-size:9px}.benchmark-summary p:not(.eyebrow){font-size:11px}.benchmark-score strong{font-size:32px}.benchmark-score small{font-size:18px}.benchmark-score>span{font-size:9px;display:block;max-width:110px;line-height:1.6}.bar-row{grid-template-columns:102px 1fr 62px;gap:10px}.bar-row>span{font-size:10px}.bar-row small{font-size:9px}.bar-row>strong{font-size:13px}.bar-track{height:20px}.result-callout{font-size:12px}.report-table{font-size:11px}.report-table th,.report-table td{padding:9px 10px}.demo-tabs{gap:0;display:grid;grid-template-columns:repeat(4,1fr);margin-bottom:18px}.demo-tabs button{padding:11px 4px;font-size:11px}.video-toolbar{gap:12px;flex-wrap:wrap;min-height:125px}.video-toolbar h3{font-size:17px}.video-toolbar p{font-size:11px}.video-actions{margin-left:auto}.video-actions label{display:none}.video-frame{min-height:94px}.split-stats{gap:16px}.split-stats strong{font-size:18px}.split-stats strong span{font-size:16px;margin:0 2px}.split-stats>div>span{font-size:11px}.finding-strip{padding:12px 14px}.finding-strip p{font-size:13px}.finding-strip>span{font-size:11px}.analysis-block+.analysis-block{margin-top:32px;padding-top:28px}.resource-links{grid-template-columns:1fr}.resources{padding-block:42px}.footer-inner{flex-wrap:wrap}.footer-inner>span{order:3;flex-basis:100%;font-size:10px}}
+@media(max-width:360px){.hero-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-metrics strong{font-size:22px}.hero-metrics strong span{font-size:14px}.hero-metrics>div>span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.topbar,.hero-actions,.tablist,.video-actions,footer,.demo-jump{display:none}.wrap{width:100%;max-width:none}.section{padding:26px 0}.masthead{padding-top:0}body,.tint{background:white}[role="tabpanel"][hidden]{display:block!important}details>.detail-body{display:block!important}figure,table{break-inside:avoid}h2,h3{break-after:avoid}.table-scroll{overflow:visible}.report-table{font-size:9px}.report-table th,.report-table td{padding:5px}.video-frame{display:none}}
+
+/* Editorial reading layout. Content and media remain aligned with the Chinese report. */
+:root{--font-editorial:Georgia,'Times New Roman',serif;--paper:#faf7f2;--white:#fffdf9;--ink:#29231f;--muted:#756b63;--teal:#8c3d31;--line:#e1d7cb;--mint:#f5e9dd;--blue:#dbc0b2;--green:#e4cdb9;--cyan:#dec7b8;--width:850px}
+body{font-family:var(--font-editorial);font-size:18px;line-height:1.85;background:var(--paper);color:var(--ink)}
+.wrap{width:min(calc(100% - 64px),var(--width));margin-inline:auto}
+.topbar{position:relative;background:transparent;border-bottom:1px solid var(--line);backdrop-filter:none}
+.topbar .wrap{width:calc(100% - 80px);max-width:1380px}.nav-inner{min-height:76px;justify-content:space-between}
+.wordmark{font-family:var(--font-editorial);font-size:24px;font-weight:700}.brand-dot{background:var(--teal);border-radius:50%;width:7px;height:7px}
+.topbar nav{display:none}.language-link{font:13px/1.5 var(--font-editorial);color:var(--muted);text-decoration:none}
+main,footer{margin-left:270px}.article-toc{position:fixed;top:137px;left:32px;width:240px;font:13px/1.6 var(--font-editorial)}
+.article-toc p{font-weight:600;color:var(--ink);margin:0 0 16px}.article-toc a{display:block;color:var(--muted);padding:7px 0 7px 14px;border-left:1px solid var(--line);text-decoration:none}
+.article-toc a:hover,.article-toc a[aria-current]{color:var(--teal);border-color:var(--teal)}.toc-resources{margin-top:25px}.toc-resources a{border:0;padding-left:0;font-size:12px}
+.masthead{padding-top:65px;padding-bottom:42px;text-align:left;border-bottom:1px solid var(--line)}
+.masthead h1{font:500 clamp(36px,3.6vw,54px)/1.13 var(--font-editorial);letter-spacing:-1.7px;max-width:850px;margin:0 0 28px;text-wrap:balance}
+.hero-copy{font-size:20px;line-height:1.65;color:var(--muted);max-width:740px;margin:0}.desktop-break{display:none}
+.hero-actions{justify-content:flex-start;margin:24px 0 0;gap:24px;font:14px/1.6 var(--font-editorial)}.text-link{color:var(--teal);font-weight:500}
+.overview{padding-top:0}.intro-grid{display:block;padding:45px 0 0}.intro-grid h2{margin-bottom:25px}.intro-grid>div{font-size:18px}
+h2{font:500 33px/1.25 var(--font-editorial);letter-spacing:-.7px}h3{font:500 25px/1.35 var(--font-editorial);letter-spacing:-.3px}h4{font:600 16px/1.5 var(--font-editorial)}
+.section{padding:58px 0 0}.section:last-child{padding-bottom:70px}.tint{background:transparent}.section-heading{display:block;margin:0 0 28px}.section-heading>p{font:18px/1.85 var(--font-editorial);margin-top:22px;max-width:none;color:var(--ink)}
+.prose,.abstract-copy{font-size:18px;line-height:1.85;max-width:none}p+p{margin-top:20px}
+.editorial-principles{display:block;margin:28px 0}.editorial-principles article{border:0;padding:0;margin:22px 0}.editorial-principles h3{font-size:21px;margin:0 0 9px}.editorial-principles p{font:18px/1.85 var(--font-editorial);color:var(--ink)}
+figure{margin:30px 0}.feature-figure{margin:35px 0}.figure-link{background:var(--white);border:1px solid rgba(41,35,31,.2);border-radius:4px;padding:8px;box-shadow:2px 2px 0 var(--ink);line-height:0;box-sizing:border-box}.figure-link img{display:block;width:100%;height:auto;max-height:none;border:0;border-radius:0}
+figcaption{font:13px/1.65 var(--font-editorial);color:var(--muted);margin-top:13px;text-align:left;max-width:760px}
+.expand-figure{display:inline-block;border:0;border-bottom:1px solid var(--line);background:none;color:var(--teal);font:12px/1.7 var(--font-editorial);padding:0;margin-top:10px}
+.method-block{border:0;margin-top:40px;padding:0}.subsection-heading{display:block;margin-bottom:18px}.module-code{font:10px/1.5 var(--font-editorial);letter-spacing:1.1px;color:var(--muted);display:block;margin-bottom:9px}
+.expanded-details{border:0;border-radius:0;background:transparent;margin:25px 0}.detail-heading{padding:0 0 13px;border:0;background:transparent;gap:16px}.detail-body{padding:0;font-size:17px}.summary-meta{font:11px var(--font-editorial);color:var(--muted)}
+.table-scroll{max-width:100%;overflow-x:auto;border:1px solid var(--line);margin:20px 0 26px;background:#fff;overscroll-behavior-x:contain}
+.report-table{font:12px/1.6 var(--font-editorial);min-width:650px;width:100%;border-collapse:collapse}.report-table th,.report-table td{padding:11px 12px;vertical-align:middle}.report-table th:first-child{min-width:155px}.report-table td{font-variant-numeric:tabular-nums}.report-table .ours{background:#edf4ef}.report-table .table-group th{background:#f2f3ef}
+.benchmark-links{display:flex;gap:25px;flex-wrap:wrap;font:13px/1.5 var(--font-editorial);margin:30px 0}.benchmark-links a{color:var(--teal)}
+.benchmark-panel{border:0;border-top:1px solid var(--line);padding-top:28px;margin-top:35px}.benchmark-summary{align-items:flex-start;gap:24px;margin-bottom:22px}.benchmark-summary p:not(.eyebrow){font:17px/1.7 var(--font-editorial);color:var(--ink);max-width:570px}.benchmark-summary h3{margin-bottom:10px}
+.eyebrow{font:10px/1.6 var(--font-editorial);letter-spacing:1.4px;margin-bottom:10px}.benchmark-score strong{font:500 35px/1.1 var(--font-editorial)}.benchmark-score small{font-size:18px}.benchmark-score>span{font:10px/1.5 var(--font-editorial);max-width:130px;display:block;margin-top:9px}
+.bar-chart{margin:26px 0}.bar-row{grid-template-columns:190px 1fr 65px;font:12px/1.4 var(--font-editorial)}.bar-track{height:15px;background:#e5ebe5}.bar-fill{background:var(--teal)}.bar-fill.baseline{background:#b0bdb3}.bar-row>strong{font:14px var(--font-editorial)}
+.demo-tabs{display:flex;flex-wrap:wrap;gap:6px;border:0;margin:28px 0 18px}.demo-tabs button{font:12px/1.5 var(--font-editorial);padding:9px 12px;border:1px solid var(--line);background:transparent;border-radius:3px;min-height:38px}.demo-tabs button[aria-selected=true]{background:var(--teal);color:#fff;border-color:var(--teal)}
+.video-frame{aspect-ratio:24/7;background:#e9ede8}.video-frame video{width:100%;height:100%;object-fit:contain}.video-toolbar{align-items:flex-start;gap:16px;padding:15px 0;min-height:0;flex-wrap:wrap}.video-toolbar h3{font-size:20px}.video-toolbar p{font:12px/1.6 var(--font-editorial)}.video-actions{font:12px/1.6 var(--font-editorial);flex-wrap:wrap;white-space:normal;margin-left:0}.video-actions a{color:var(--teal)}
+.finding-strip{border-left:2px solid var(--teal);background:transparent;padding:5px 0 5px 20px;margin:25px 0}.finding-strip p{font:18px/1.8 var(--font-editorial)}.finding-strip>span{font:16px/1.7 var(--font-editorial);display:block;color:var(--muted);margin-top:8px}
+.split-stats{display:block;border:0;margin:20px 0;padding:0}.split-stats>div{margin:18px 0}.split-stats>div>span{font:14px/1.5 var(--font-editorial)}.split-stats strong{font:24px/1.5 var(--font-editorial);margin-top:5px}
+.analysis-block+.analysis-block{margin-top:45px;padding-top:35px}.demo-jump{font:13px/1.6 var(--font-editorial)}.footer-inner{gap:20px;font:11px/1.7 var(--font-editorial)}.footer-inner .wordmark{font:20px var(--font-editorial)}footer{padding:25px 0 40px;background:transparent}
+dialog{max-width:95vw;max-height:94vh;width:1200px;padding:22px;background:var(--paper);color:var(--ink);border:1px solid var(--line);overflow:auto}dialog::backdrop{background:rgba(15,28,22,.7)}dialog img{width:100%;height:auto;display:block}dialog p{font:13px/1.5 var(--font-editorial);margin-top:14px}dialog button{display:block;margin:0 0 20px auto;background:transparent;border:1px solid var(--line);padding:7px 12px;font:13px var(--font-editorial)}
+@media(min-width:1600px){.article-toc{left:calc((100vw - 1460px)/2)}main,footer{margin-left:210px}}
+@media(max-width:1100px){main,footer{margin-left:0}.article-toc{display:none}.topbar .wrap{width:calc(100% - 48px)}.topbar nav{display:flex;gap:17px;font:12px var(--font-editorial)}.masthead{padding-top:45px}.masthead h1{font-size:44px}}
+@media(max-width:680px){body{font-size:17px}.wrap{width:calc(100% - 36px)}.topbar .wrap{width:calc(100% - 36px)}.nav-inner{min-height:95px;gap:8px;padding:16px 0;flex-wrap:wrap}.wordmark{font-size:21px}.topbar nav{order:3;width:100%;justify-content:space-between;gap:8px;padding:8px 0 0;font-size:10px}.language-link{font-size:11px}.masthead{padding-top:32px;padding-bottom:30px}.masthead h1{font-size:35px;line-height:1.18;letter-spacing:-.9px}.hero-copy{font-size:18px;max-width:none}.hero-actions{margin-top:18px}.intro-grid{padding-top:34px}.intro-grid>div,.prose,.abstract-copy,.section-heading>p,.editorial-principles p{font-size:17px;line-height:1.8}.intro-grid h2 br{display:none}h2{font-size:28px}h3{font-size:23px}.section{padding-top:42px}.section-heading{margin-bottom:24px}.editorial-principles h3{font-size:20px}.benchmark-summary{display:block}.benchmark-score{margin-top:15px}.benchmark-score>span{max-width:none}.benchmark-links{gap:18px;font-size:12px}.bar-row{grid-template-columns:115px 1fr 55px;gap:8px;font-size:10px}.report-table{font-size:11px}.demo-tabs{display:flex}.demo-tabs button{font-size:11px;padding:8px 10px}.video-frame{min-height:0}.video-toolbar{min-height:0}.video-actions label{display:inline}.finding-strip p{font-size:17px}.footer-inner{display:flex;flex-wrap:wrap}.footer-inner>span{flex-basis:100%;order:3}dialog{padding:12px}.summary-meta{display:none}}
+.masthead h1 .title-phoenix{display:block;font-size:80px;line-height:1.05;letter-spacing:-2.5px;margin-bottom:18px}
+.masthead h1 .title-description{display:block;font-size:34px;line-height:1.25;letter-spacing:-.6px;text-wrap:balance}
+.title-colon{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#overview .abstract-copy,#main p,#main .prose,#main figcaption{color:var(--muted)}
+dialog .expanded-caption{font-family:var(--font-editorial);font-size:13px;line-height:1.65;color:var(--muted);margin-top:13px;text-align:left;max-width:760px}
+#method .method-block>.subsection-heading h3{font-family:var(--font-editorial);font-size:25px;font-weight:500;line-height:1.35;letter-spacing:-.3px}
+#method .editorial-principles h4{font-family:var(--font-editorial);font-size:19px;font-weight:600;line-height:1.5;margin:0 0 9px;letter-spacing:0}
+@media(max-width:680px){#method .method-block>.subsection-heading h3{font-size:23px}#method .editorial-principles h4{font-size:18px}}
+/* Full article-width rules, without extending into the sidebar gutter. */
+.section,.masthead,.benchmark-panel,.analysis-block+.analysis-block{position:relative;border-top:0;border-bottom:0}
+.section::before,.benchmark-panel::before,.analysis-block+.analysis-block::before,.masthead::after{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:var(--line)}
+.section::before{left:max(32px,calc((100% - var(--width))/2));width:min(calc(100% - 64px),var(--width))}
+.masthead::after{top:auto;bottom:0}
+@media(max-width:680px){.section::before{left:18px;width:calc(100% - 36px)}}
+.hero-actions{gap:12px}
+.hero-actions .resource-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:8px 16px;border:1px solid #c8ac97;border-radius:0;background:#f3e6d8;color:#74392d;font-family:var(--font-editorial);font-size:13px;line-height:20px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:box-shadow .15s ease,background .15s ease}
+.hero-actions .resource-button:hover,.hero-actions .resource-button:focus-visible{box-shadow:3px 3px 0 #a76848;background:#eddbc5}
+.report-table .ours{background:#f5e9dd}.report-table .table-group th{background:#f1e9df}.report-table thead th{background:#f1e9df}.table-scroll{background:#fffdf9}.bar-track{background:#eee1d4}.bar-fill.baseline{background:#c6ac97}.video-frame{background:#eee5db}code{background:#f0e7dc}a:focus-visible,button:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline-color:#b76b45}dialog::backdrop{background:rgba(41,28,20,.7)}
+/* Warm table hover colors shared across the article. */
+.report-table tbody tr:not(.table-group):hover{background:#f2e4d8}
+.report-table tbody tr.ours:hover{background:#ecd7c7}
+/* Analysis subsections use typography and whitespace, not divider lines. */
+#analysis .analysis-block,#analysis .expanded-details,#analysis .split-stats{border:0}
+#analysis .analysis-block::before,#analysis .analysis-block::after{display:none}
+#analysis .analysis-block+.analysis-block{margin-top:44px;padding-top:0}
+/* Benchmark hierarchy and table headers. */
+#results h2{font-size:33px;line-height:1.25}
+#results .benchmark-summary h3{font-size:25px;line-height:1.35;font-weight:500;margin:0 0 12px}
+#results .section-heading>p,#results .benchmark-summary p:not(.eyebrow),#results .prose{font-size:18px;line-height:1.8}
+#results .benchmark-analysis{margin-bottom:24px}
+#results .detail-heading{font-size:19px;line-height:1.5;font-weight:600;gap:16px;flex-wrap:wrap}
+#results .eyebrow{font-size:12px;line-height:1.5;letter-spacing:.06em}
+#results .summary-meta,#results .benchmark-score>span{font-size:12px;line-height:1.5;font-weight:400}
+#results .benchmark-score strong{font-size:36px;line-height:1.15}
+#results .benchmark-score small{font-size:22px}
+#results .bar-row{grid-template-columns:240px 1fr 80px}
+#results .bar-row>span,#results .split-stats>div>span{font-size:15px}
+#results .bar-row small{font-size:12px}
+#results .bar-row>strong{font-size:18px}
+#results .report-table{font-size:13px}
+#results .report-table thead th{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;border-bottom-color:var(--teal)}
+#results .report-table .ours th{color:var(--teal);font-weight:700}
+#results .report-table .table-group th{background:#f1e9df;color:var(--ink);font-size:13px}
+#results .benchmark-panel{border:0;margin-top:48px;padding-top:0}
+#results .benchmark-panel::before{display:none}
+#results #panel-plus{margin-top:0;padding-top:8px}
+#results .expanded-details{border-top:0;margin-top:24px}
+#results .detail-heading{padding-top:0}
+#results .split-stats{border:0;padding:8px 0;margin:20px 0}
+#results .bar-chart{border:1px solid var(--line);padding:16px 20px;margin:20px 0;background:var(--white)}
+@media(max-width:680px){#results h2{font-size:28px}#results .benchmark-summary h3{font-size:23px}#results .section-heading>p,#results .benchmark-summary p:not(.eyebrow),#results .prose{font-size:17px}#results .detail-heading{font-size:18px}#results .benchmark-score{text-align:left}#results .bar-row{grid-template-columns:150px 1fr 62px;gap:8px}#results .bar-row>span{font-size:13px}#results .bar-row small{display:block;margin-left:0}#results .bar-row>strong{font-size:15px}#results .report-table,#results .report-table thead th,#results .report-table .table-group th{font-size:12px}}
+.resource-icon{display:block;width:18px;height:18px;flex:0 0 18px}
+.huggingface-icon{font-family:'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif;font-size:18px;line-height:18px;letter-spacing:0;text-align:center}
+@media(max-width:680px){.masthead h1 .title-phoenix{font-size:60px;letter-spacing:-1.8px;margin-bottom:16px}.masthead h1 .title-description{font-size:26px;line-height:1.3;letter-spacing:-.4px}}
+@media print{main,footer{margin:0}.article-toc,.expand-figure,.language-link,dialog{display:none}.wrap{width:100%}.table-scroll{overflow:visible}.report-table{min-width:0}}
+
+.demo-runtime{border-left:3px solid var(--teal);padding:4px 0 4px 18px;margin:0 0 36px}
+.demo-runtime strong{display:block;font:600 21px/1.45 var(--font-editorial);color:var(--teal)}
+.demo-runtime p{font:15px/1.75 var(--font-editorial);margin-top:7px;color:var(--muted)}
+.demo-group{padding-top:10px;scroll-margin-top:110px}
+.demo-group+.demo-group{border-top:0;margin-top:44px;padding-top:0}
+#demos .video-toolbar{border:0}
+#demos .demo-group::before,#demos .demo-group::after{display:none}
+.demo-group-heading{margin-bottom:18px}
+.demo-group-heading .module-code{margin-bottom:7px;display:block}
+.demo-group-heading h3{font:500 26px/1.35 var(--font-editorial);letter-spacing:0}
+.demo-group-heading p{font:15px/1.8 var(--font-editorial);color:var(--muted);margin-top:9px;max-width:760px}
+.demo-group .demo-tabs{margin-top:18px}
+.demo-group .video-error{color:#993f37;font-size:13px;padding:12px 0}
+.demo-group .video-toolbar>div{min-width:0}
+.demo-group .video-actions{flex-wrap:wrap}
+@media(max-width:680px){.demo-runtime strong{font-size:19px}.demo-runtime p{font-size:14px}.demo-group-heading h3{font-size:23px}.demo-group+.demo-group{margin-top:32px;padding-top:0}.demo-group .demo-tabs button{max-width:100%;overflow-wrap:anywhere}}
+
+/* Three peer subsections for pretraining data. */
+#data .data-subsection+.data-subsection{margin-top:44px}
+#data .data-subsection h3{font-family:var(--font-editorial);font-size:25px;font-weight:500;line-height:1.35;letter-spacing:-.3px}
+#data .data-subsection figure{margin-top:25px}
+#data .data-subsection .table-scroll{margin:20px 0}
+@media(max-width:680px){#data .data-subsection+.data-subsection{margin-top:32px}#data .data-subsection h3{font-size:23px}}
+
+/* Numbered section hierarchy and scrollable contents. */
+.article-toc{max-height:calc(100vh - 157px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:8px}
+.article-toc>a{white-space:normal;overflow-wrap:anywhere;line-height:1.45;padding-top:5px;padding-bottom:5px}
+.article-toc .toc-level-1{font-weight:600;margin-top:8px}
+.article-toc .toc-level-2{padding-left:23px;font-size:12px}
+.article-toc .toc-level-3{padding-left:32px;font-size:11px}
+main h2[id],main h3[id],main h4[id]{scroll-margin-top:110px}
+
+/* Organization logo above the Phoenix title. */
+.masthead .organization-brand{display:block;width:240px;max-width:100%;margin:0 0 26px;border:0;text-decoration:none}
+.masthead .organization-brand img{display:block;width:100%;height:auto}
+.masthead .organization-brand:focus-visible{outline:2px solid var(--teal);outline-offset:6px;border-radius:2px}
+@media(max-width:680px){.masthead .organization-brand{width:200px;margin-bottom:22px}}
+</style>
+<style id="bibtex-style">
+.citation-box{border:1px solid var(--line);border-radius:8px;background:rgba(120,65,55,.035);overflow:hidden}
+.citation-toolbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;color:var(--muted);font-size:13px}
+.citation-toolbar button{border:1px solid var(--line);border-radius:5px;background:var(--paper);padding:5px 14px;font-size:13px}
+.citation-toolbar button:hover{background:rgba(120,65,55,.08)}
+.citation-box pre{margin:0;padding:0 24px 24px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;color:var(--ink)}
+.citation-box pre code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;background:none;padding:0;border-radius:0}
+#bibtex-copy-status{display:block;min-height:1.5em;font-size:12px;color:var(--muted);margin-top:6px}
+@media(max-width:600px){.citation-box pre{padding:0 16px 18px}.citation-toolbar{padding:12px 16px}}
+</style>
+<style id="bibtex-footer-alignment">
+footer{position:relative;border-top:0}
+footer::before{content:"";position:absolute;top:0;height:1px;background:var(--line);left:max(32px,calc((100% - var(--width))/2));width:min(calc(100% - 64px),var(--width))}
+@media(max-width:600px){footer::before{left:18px;width:calc(100% - 36px)}}
+</style>
+<style id="compact-sidebar">
+.article-toc{max-height:none;overflow:visible;overscroll-behavior:auto;scrollbar-width:auto;padding-right:0}
+</style>
+<style id="pipeline-review-layout">
+#data-pipeline>.prose{margin-top:22px}
+#data-pipeline>.feature-figure{margin-block:28px}
+.pipeline-platforms{margin-top:28px}
+.pipeline-platform-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.pipeline-platform-card{min-width:0}
+.platform-preview{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;cursor:zoom-in}
+.platform-preview img{width:100%;height:auto;aspect-ratio:1.55;object-fit:contain;background:#fff}
+.pipeline-platform-card>span{display:block;margin-top:9px;color:var(--muted);font-size:12px;line-height:1.5}
+@media(max-width:650px){.pipeline-platform-grid{grid-template-columns:1fr;gap:20px}}
+</style>
+<style id="platform-gallery-controls">
+.platform-gallery-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px}
+.platform-gallery-nav button{border:1px solid var(--line);border-radius:5px;background:var(--paper);padding:7px 14px;font:inherit;font-size:13px;color:var(--ink)}
+.platform-gallery-nav button:disabled{opacity:.35;cursor:default}
+.platform-gallery-nav span{font-size:12px;color:var(--muted);text-align:center}
+@media(max-width:600px){.platform-gallery-nav{gap:8px}.platform-gallery-nav button{padding:7px 9px}}
+</style>
+<style id="platform-gallery-button-alignment">
+#figure-dialog .platform-gallery-nav{display:flex;justify-content:space-between;align-items:center;width:100%;gap:16px}
+#figure-dialog .platform-gallery-nav button{position:static;float:none;margin:0;inset:auto;transform:none}
+#figure-dialog .platform-gallery-nav button:first-child{margin-right:auto}
+#figure-dialog .platform-gallery-nav button:last-child{margin-left:auto}
+</style>
+<style id="analysis-summary-spacing">.analysis-block>.analysis-summary{margin-top:24px}</style>
+<style id="demo-speed-label-style">#demos h2 .demo-speed-label{font-weight:700;color:var(--teal)}</style>
+<style id="demo-body-typography">
+#demos .demo-group-heading p{font-size:18px;line-height:1.85;max-width:none}
+@media(max-width:680px){#demos .demo-group-heading p{font-size:17px;line-height:1.8}}
+</style>
+<style id="sidebar-hit-area">
+/* Match the article rule's left edge, leaving a 24px non-interactive gutter. */
+@media screen and (min-width:1101px){
+ .article-toc{
+  --toc-main-offset:270px;
+  --toc-left:32px;
+  z-index:10;
+  left:var(--toc-left);
+  width:calc(var(--toc-main-offset) + max(32px, (100vw - var(--toc-main-offset) - var(--width))/2) - var(--toc-left) - 24px);
+ }
+ .article-toc>a{width:100%;padding-right:12px}
+}
+@media screen and (min-width:1600px){
+ .article-toc{--toc-main-offset:210px;--toc-left:calc((100vw - 1460px)/2)}
+}
+</style>
+<link rel="stylesheet" href="assets/prediction-examples.css?v=robotwin4">
+<style id="physcanvas-ours-style">
+#physcanvas-rl-results .ours th{color:var(--teal);font-weight:700}
+</style>
+
+<style id="phoenix-mwa-blog-20261020">
+  #method-mwa .prose,
+  #method-ila .prose,
+  #method-physcanvas .prose {
+    text-wrap: pretty;
+  }
+
+  #method-mwa .mwa-subsection {
+    margin-top: 32px;
+  }
+
+  #method-mwa .mwa-subsection h4 {
+    margin: 0 0 16px;
+    font: 600 20px/1.45 var(--font-editorial);
+  }
+
+  #method-mwa .mwa-equation {
+    max-width: 100%;
+    margin: 24px 0;
+    overflow-x: auto;
+    color: var(--ink);
+  }
+
+  #method-mwa .mwa-equation math {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  #method-mwa .mwa-references {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 680px) {
+    #method-mwa .mwa-subsection h4 {
+      font-size: 19px;
+    }
+
+    #method-mwa .mwa-equation math {
+      font-size: 16px;
+    }
+  }
+</style>
+<style id="bench2dex-tables-style">
+#panel-bench2dex .benchmark-summary{margin-bottom:24px}
+#panel-bench2dex .detail-heading{margin:0;padding:0 0 8px}
+#panel-bench2dex .table-scroll{margin:12px 0 16px}
+#panel-bench2dex .bench2dex-detail{margin-top:32px}
+#panel-bench2dex .report-table th{min-width:0}
+#panel-bench2dex .report-table thead th{text-align:center;white-space:normal}
+#panel-bench2dex .report-table thead th:first-child{text-align:left}
+#bench2dex-task-comparison{table-layout:fixed;min-width:840px}
+#panel-bench2dex #bench2dex-task-comparison,#panel-bench2dex #bench2dex-task-comparison thead th{font-size:12px}
+#bench2dex-task-comparison .bench2dex-task-column{width:23%}
+#bench2dex-task-comparison .bench2dex-embodiment-column{width:14%}
+#bench2dex-task-comparison th,#bench2dex-task-comparison td{padding:9px 5px}
+#bench2dex-task-comparison th[scope="row"]{white-space:normal;line-height:1.4;padding-left:10px}
+#bench2dex-task-comparison th[scope="rowgroup"]{text-align:center;white-space:normal;line-height:1.5;color:var(--muted);border-right:1px solid var(--line)}
+#bench2dex-task-comparison tbody+tbody tr:first-child>*{border-top:1px solid #b9afa4}
+#bench2dex-task-comparison tfoot>*{border-top:2px solid #b9afa4}
+#bench2dex-task-comparison tfoot th{text-align:left;padding-left:10px}
+#bench2dex-task-comparison tfoot tr:hover{background:#f2e4d8}
+#bench2dex-mean-comparison tbody tr:nth-child(5)>*{border-top:2px solid var(--line)}
+@media print{#bench2dex-task-comparison{min-width:0}}
+</style>
+<style id="contact-method-color">
+#contact-task-results tbody tr.ours > td:first-child{color:var(--teal);font-weight:700}
+</style>
+<style id="phoenix-prose-alignment-20261020">
+  #main .prose,
+  #main .abstract-copy {
+    text-align: justify;
+    text-align-last: start;
+    text-justify: inter-word;
+  }
+</style>
+<link rel="preload" href="assets/fonts/logo-options/subset-0.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/fonts/cinzel-brand.css">
+<style id="phoenix-horizontal-branding-20261020">
+  .masthead .organization-brands {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px 36px;
+    margin-bottom: 26px;
+  }
+  .masthead .organization-brands .organization-brand {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .masthead .organization-brands .openphoenix-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    color: #4f4d49;
+  }
+  .masthead .openphoenix-symbol {
+    position: relative;
+    display: block;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+  }
+  /* Display the original emblem while rendering its wordmark as readable text. */
+  .masthead .openphoenix-brand .openphoenix-symbol img {
+    position: absolute;
+    width: 142.857143%;
+    height: 142.857143%;
+    max-width: none;
+    left: -21.428571%;
+    top: -7.142857%;
+  }
+  .masthead .openphoenix-wordmark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: "Cinzel Brand", Georgia, serif;
+  }
+  .masthead .openphoenix-name {
+    font-size: 28px;
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+  }
+  .masthead .openphoenix-team {
+    padding-left: 3px;
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #57534f;
+  }
+  @media (max-width: 640px) {
+    .masthead .organization-brands {
+      gap: 20px 28px;
+      margin-bottom: 22px;
+    }
+    .masthead .openphoenix-symbol {
+      flex-basis: 50px;
+      width: 50px;
+      height: 50px;
+    }
+    .masthead .openphoenix-name {
+      font-size: 25px;
+    }
+  }
+</style>
+<style id="analysis-table-header-colors">
+#analysis .report-table thead th{background:var(--teal);color:var(--white);border-bottom-color:var(--teal)}
+</style>
+<style id="video-prediction-ours-color">
+#video-prediction-quality tbody tr.ours > td:first-child{color:var(--teal);font-weight:700}
+</style>
+<style id="prediction-toolbar-demo-style">
+.prediction-examples .prediction-toolbar{margin-top:0;border-bottom:0;color:var(--ink)}
+.prediction-examples .prediction-toolbar .prediction-shift{color:inherit;font-weight:500}
+.prediction-examples .prediction-toolbar .prediction-view{display:none}
+</style>
+<style id="bench2dex-rowgroup-hover">
+/* Each tbody owns one embodiment and all of its task rows. */
+#bench2dex-task-comparison tbody:hover > tr > th[scope="rowgroup"]{
+  background:#f2e4d8;
+}
+#bench2dex-task-comparison tbody:has(> tr > th[scope="rowgroup"]:hover) > tr{
+  background:#f2e4d8;
+}
+</style>
+<style id="sidebar-subsection-navigation">
+/* Expand subsections in place beneath their parent, not across the article. */
+.article-toc .toc-group{position:relative}
+.article-toc .toc-group>.toc-level-1{
+ position:relative;width:100%;padding:5px 24px 5px 14px;
+ white-space:normal;overflow-wrap:anywhere;line-height:1.45;
+}
+.toc-chevron{position:absolute;right:8px;top:50%;transform:translateY(-50%) rotate(90deg);font-size:18px;font-weight:400;opacity:.65}
+.article-toc .toc-group.is-open>.toc-level-1{color:var(--teal);border-color:var(--teal)}
+.article-toc .toc-group.is-open .toc-chevron{transform:translateY(-50%) rotate(-90deg)}
+.article-toc .toc-submenu{position:static;width:100%;padding:3px 0 5px 14px}
+.article-toc .toc-submenu[hidden]{display:none}
+.article-toc .toc-submenu,.article-toc .toc-submenu nav{box-sizing:border-box;max-width:100%;min-width:0}
+.article-toc .toc-submenu nav{display:block;padding:0;border-left:1px solid var(--line)}
+.article-toc .toc-submenu a{display:block;box-sizing:border-box;width:100%;max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;word-break:normal}
+.article-toc .toc-submenu a{
+ padding:7px 10px;border-left:2px solid transparent;margin-left:-1px;
+ font-size:12px;line-height:1.45;color:var(--muted);font-weight:400;
+}
+.article-toc .toc-submenu a:hover,.article-toc .toc-submenu a:focus-visible{
+ background:#f2e4d8;color:var(--teal);border-color:var(--teal);
+}
+.article-toc a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+</style>
+<style id="drl-transparent-brand">
+.masthead .organization-brands .drl-brand{width:78px;display:block;flex-shrink:0}
+.masthead .organization-brands .drl-brand img{width:100%;height:auto;display:block;mix-blend-mode:normal}
+@media(max-width:640px){.masthead .organization-brands .drl-brand{width:64px}}
+</style>
+<style id="drl-transparent-spacing">
+.masthead .organization-brands{gap:20px 16px}
+.masthead .organization-brands .drl-brand{width:78px;display:block;flex-shrink:0}
+.masthead .organization-brands .drl-brand img{width:100%;height:auto;display:block;mix-blend-mode:normal}
+@media(max-width:640px){.masthead .organization-brands .drl-brand{width:64px}}
+</style>
+<style id="tsinghua-brand-layout">
+.masthead .organization-brands{margin-bottom:20px}
+.masthead .university-brands{display:flex;align-items:center;margin:0 0 26px}
+.masthead .university-brands > span{display:block;border:0;text-decoration:none;width:170px;height:58px;overflow:hidden}
+.masthead .university-brands img{display:block;height:86px;width:auto;max-width:none;transform:translate(-18px,-15px)}
+@media(max-width:640px){.masthead .university-brands > span{width:147px;height:50px}.masthead .university-brands img{height:74px;transform:translate(-15px,-13px)}}
+</style>
+<style id="casia-brand-layout">
+.masthead .university-brands{gap:24px}
+.masthead .university-brands .casia-brand{width:60px;height:58px;flex-shrink:0}
+.masthead .university-brands .casia-brand img{height:58px;width:60px;object-fit:contain;transform:none}
+@media(max-width:640px){.masthead .university-brands .casia-brand{width:52px;height:50px}.masthead .university-brands .casia-brand img{height:50px;width:52px}}
+</style>
+<style id="balanced-institution-rows">
+.masthead .organization-brands,.masthead .university-brands{width:520px;max-width:100%;justify-content:space-between;gap:16px;flex-wrap:nowrap}
+.masthead .university-brands .drl-brand{width:64px;height:60px;margin:0;flex-shrink:0}
+.masthead .university-brands .drl-brand img{width:64px;height:60px;object-fit:contain;transform:none}
+.masthead .university-brands .nus-brand{width:150px;height:64px;flex-shrink:0}
+.masthead .university-brands .nus-brand img{width:150px;height:64px;object-fit:contain;transform:none}
+@media(max-width:580px){.masthead .organization-brands,.masthead .university-brands{gap:12px;flex-wrap:wrap;justify-content:flex-start}}
+</style>
+<style id="benchmark-numeric-header-alignment">
+#panel-bench2dex #bench2dex-mean-comparison thead th:not(:first-child),
+#panel-robodojo-realworld #robodojo-realworld-comparison thead th:not(:first-child){text-align:right}
+</style>
+<style id="intro-benchmark-layout">
+#overview .abstract-copy{display:flow-root;max-width:none}
+#overview .intro-benchmark-figure{float:right;width:49%;max-width:460px;margin:7px 0 22px 32px}
+#overview .intro-benchmark-figure .figure-link{padding:8px;background:#fff}
+#overview .intro-benchmark-figure .expand-figure{display:block;margin:10px auto 0}
+#figure-dialog:has(img[src*="phoenix-benchmark-overview"]){width:min(900px,94vw)}
+#figure-dialog img[src*="phoenix-benchmark-overview"]{width:auto;max-width:100%;max-height:78vh;margin-inline:auto;object-fit:contain}
+@media(max-width:760px){#overview .intro-benchmark-figure{float:none;width:min(100%,460px);max-width:100%;margin:0 auto 26px}}
+</style>
+<style id="contributions-style">
+#contributions .contribution-leads {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 12px 28px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+#contributions .contribution-leads strong {
+  color: var(--teal);
+  font-size: 15px;
+  line-height: 1.75;
+}
+#contributions .contribution-leads p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+#contributions .contribution-contact {
+  margin: 20px 0 36px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+#contributions .contribution-grid { display: grid; gap: 0; }
+#contributions .contribution-group {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 12px 28px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+#contributions .contribution-group h3 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+#contributions .contribution-group dl { margin: 0; min-width: 0; }
+#contributions .contribution-row {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 8px 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+#contributions .contribution-row:first-child { padding-top: 0; }
+#contributions .contribution-row:last-child { padding-bottom: 0; border-bottom: 0; }
+#contributions .contribution-row dt { font-size: 13px; color: var(--muted); line-height: 1.8; }
+#contributions .contribution-row dd,
+#contributions .contribution-group > p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+#contributions a { text-underline-offset: 3px; }
+@media (max-width: 900px) {
+  #contributions .contribution-leads,
+  #contributions .contribution-group { grid-template-columns: 160px minmax(0, 1fr); gap: 12px 22px; }
+  #contributions .contribution-row { grid-template-columns: 130px minmax(0, 1fr); gap: 6px 16px; }
+}
+@media (max-width: 680px) {
+  #contributions .contribution-leads,
+  #contributions .contribution-group { grid-template-columns: 1fr; gap: 12px; }
+  #contributions .contribution-group { padding: 24px 0; }
+  #contributions .contribution-row { grid-template-columns: 1fr; gap: 4px; }
+  #contributions .contribution-leads { gap: 4px; }
+}
+</style>
+<style id="community-style">
+#community .community-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;align-items:center}
+#community .community-copy h3{margin:0 0 18px;font-size:24px;line-height:1.4}
+#community .community-copy p{font-size:16px;line-height:1.8}
+#community .community-copy .community-validity{margin-top:20px;font-size:13px;color:var(--muted)}
+#community figure{margin:0;width:100%;max-width:320px}
+#community .community-qr{display:block;background:#fff;border:1px solid var(--line)}
+#community .community-qr img{display:block;width:100%;height:auto}
+#community figcaption{margin-top:12px;font-size:12px;line-height:1.6;color:var(--muted)}
+@media(max-width:680px){#community .community-layout{grid-template-columns:1fr;gap:24px}#community figure{justify-self:center}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to article</a>
+<header class="topbar"><div class="wrap nav-inner"><a class="wordmark" href="#top" aria-label="Phoenix home"><span class="brand-dot" aria-hidden="true"></span>Phoenix</a><nav aria-label="Article navigation"><a href="#demos">Demonstrations</a><a href="#method">Method</a><a href="#data">Data</a><a href="#results">Results</a><a href="#analysis">Analysis</a></nav></div></header>
+<aside class="article-toc" aria-label="Table of contents"><p>CONTENTS</p>
+<a class="toc-level-1" href="#section-1">I. Introduction</a>
+<div class="toc-group"><a class="toc-level-1" href="#section-2" aria-expanded="false" aria-controls="toc-subsections-2">II. Real-world demonstrations<span class="toc-chevron" aria-hidden="true">›</span></a><div class="toc-submenu" id="toc-subsections-2" hidden><nav aria-label="II. Real-world demonstrations subsections"><a href="#demo-heading-long-horizon">II.1 Long-Horizon Manipulation</a><a href="#demo-heading-tactile">II.2 Contact-Rich Manipulation</a><a href="#demo-heading-physcanvas">II.3 Precise Manipulation</a></nav></div></div>
+<div class="toc-group"><a class="toc-level-1" href="#section-3" aria-expanded="false" aria-controls="toc-subsections-3">III. Method<span class="toc-chevron" aria-hidden="true">›</span></a><div class="toc-submenu" id="toc-subsections-3" hidden><nav aria-label="III. Method subsections"><a href="#section-3-1">III.1 Phoenix-MWA</a><a href="#section-3-2">III.2 Phoenix-ILA</a><a href="#section-3-3">III.3 Phoenix-PhysCanvas</a></nav></div></div>
+<div class="toc-group"><a class="toc-level-1" href="#section-4" aria-expanded="false" aria-controls="toc-subsections-4">IV. Pretraining data<span class="toc-chevron" aria-hidden="true">›</span></a><div class="toc-submenu" id="toc-subsections-4" hidden><nav aria-label="IV. Pretraining data subsections"><a href="#data-distribution-heading">IV.1 Pretraining data distribution</a><a href="#data-pipeline-heading">IV.2 Pretraining data processing pipeline</a><a href="#data-action-space-heading">IV.3 Action space design</a></nav></div></div>
+<div class="toc-group"><a class="toc-level-1" href="#section-5" aria-expanded="false" aria-controls="toc-subsections-5">V. Benchmark results<span class="toc-chevron" aria-hidden="true">›</span></a><div class="toc-submenu" id="toc-subsections-5" hidden><nav aria-label="V. Benchmark results subsections"><a href="#section-5-1">V.1 LIBERO-Plus</a><a href="#section-5-2">V.2 LIBERO-Pro</a><a href="#section-5-3">V.3 RoboCasa-GR1</a><a href="#section-5-4">V.4 RoboTwin 2.0 C2R</a><a href="#section-5-5">V.5 Bench2Dex</a><a href="#section-5-6">V.6 RoboDojo-RealWorld</a></nav></div></div>
+<div class="toc-group"><a class="toc-level-1" href="#section-6" aria-expanded="false" aria-controls="toc-subsections-6">VI. Analysis<span class="toc-chevron" aria-hidden="true">›</span></a><div class="toc-submenu" id="toc-subsections-6" hidden><nav aria-label="VI. Analysis subsections"><a href="#section-6-1">VI.1 Dual-teacher distillation</a><a href="#section-6-2">VI.2 Representation &amp; pretraining</a><a href="#section-6-3">VI.3 Interaction latents</a><a href="#section-6-4">VI.4 World model policy refinement</a></nav></div></div>
+<a class="toc-level-1" href="#section-7">BibTeX</a>
+<a class="toc-level-1" href="#contributions-heading">Contribution</a>
+<a class="toc-level-1" href="#community">Community</a>
+</aside>
+<main id="main">
+<section class="masthead wrap" id="top" aria-labelledby="title">
+  <div class="organization-brands">
+    <a class="organization-brand" href="https://anyverse.com/" target="_blank" rel="noopener noreferrer" aria-label="Anyverse Dynamics official website"><img src="assets/anyverse-dynamics-logo.webp" width="3190" height="667" alt="Anyverse Dynamics"></a>
+    <a class="organization-brand openphoenix-brand" href="https://github.com/OpenPhoenix-Team" target="_blank" rel="noopener noreferrer" aria-label="OpenPhoenix Team on GitHub">
+      <span class="openphoenix-symbol" aria-hidden="true"><img src="assets/openphoenix-team-logo.webp" width="200" height="200" alt=""></span>
+      <span class="openphoenix-wordmark" aria-hidden="true"><span class="openphoenix-name">OpenPhoenix</span><span class="openphoenix-team">TEAM</span></span>
+    </a>
+    
+  </div>
+  <div class="university-brands" id="tsinghua-brand-row"><span class="organization-brand drl-brand"><img src="assets/drl-casia-transparent.png" alt="DRL CASIA"></span><span class="casia-brand" id="casia-brand" aria-label="Institute of Automation, Chinese Academy of Sciences"><img src="assets/casia-transparent.png" alt="CASIA"></span><span aria-label="Tsinghua University official website"><img src="assets/tsinghua-transparent.png" alt="Tsinghua University"></span><span class="nus-brand" id="nus-brand"><img src="assets/nus-transparent.png" alt="National University of Singapore"></span></div>
+  <h1 id="title"><span class="title-phoenix">Phoenix<span class="title-colon">:</span></span> <span class="title-description">Scaling Robotic Manipulation through Visual and Interaction Representations</span></h1>
+
+  <div class="hero-actions"><a class="resource-button" href="https://github.com/Anyverse-Dynamics/Phoenix-MWA" target="_blank" rel="noopener noreferrer"><svg class="resource-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23a11.51 11.51 0 0 1 3-.404c1.02.005 2.045.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>Code</span></a><a class="resource-button" href="https://huggingface.co/AnyverseDynamics" target="_blank" rel="noopener noreferrer"><span class="resource-icon huggingface-icon" aria-hidden="true">🤗</span><span>Models</span></a></div>
+</section>
+<section id="overview" class="overview wrap" aria-label="Overview of Phoenix world-action modeling">
+  <div class="intro-grid"><h2 id="section-1">I. Learning manipulation from large-scale experience</h2><div class="abstract-copy"><figure class="intro-benchmark-figure"><div class="figure-link"><img src="assets/phoenix-benchmark-overview-sota-20261021.webp" width="1800" height="1800" decoding="async" alt="Success-rate comparison across six benchmarks: Phoenix-MWA, open-source previous SOTA and π0.5"></div><figcaption><strong>Figure 1.</strong> Success rates on six manipulation benchmarks under the settings reported below.</figcaption></figure><p><strong>Phoenix</strong> studies how robots can learn from large collections of manipulation recordings and adapt that knowledge to physical tasks. The work, developed by Anyverse Dynamics and the reinforcement learning team at CASIA, combines a pretrained world-action model with two post-training methods: learning contact skills from demonstrations and improving policies through interaction with a learned simulator.</p>
+
+<p><strong>Phoenix-MWA</strong> predicts future visual states and actions from current observations and language instructions. Phoenix Encoder learns geometric and temporal features from two teachers; a causal-semantic VAE compresses these features for joint video-action generation. The data pool contains approximately <strong>54,400 raw hours</strong>, <strong>39,300 effective hours</strong>, and <strong>3.38 billion raw frames</strong> from robot demonstrations, egocentric videos, and UMI recordings.</p>
+
+<p>After task-specific post-training, Phoenix-MWA reaches <strong>94.63% on LIBERO-Plus</strong>, <strong>66.48% on LIBERO-Pro</strong>, <strong>82.67% on RoboCasa-GR1</strong>, and <strong>45.6% on Bench2Dex</strong>, ranking first in the reported comparisons. It also records <strong>72.42% on RoboTwin 2.0 C2R</strong> and <strong>26.11% on RoboDojo-RealWorld</strong>. Each result uses the corresponding benchmark’s post-training and evaluation setting.</p>
+
+<p><strong>Phoenix-ILA</strong> adapts the pretrained model to contact-rich tasks by learning latents that encode both motion and tactile changes. <strong>Phoenix-PhysCanvas</strong> provides a visual-tactile simulator for reinforcement learning, allowing a policy to compare the outcomes of different actions. We evaluate these two post-training methods on peeling, wiping, test-tube insertion, and block manipulation. Code and model releases are linked above.</p>
+</div></div>
+</section>
+<section class="section tint" id="demos"><div class="wrap">
+  <div class="section-heading"><div><h2 id="section-2">II. Real-world demonstrations <strong class="demo-speed-label">(1× speed)</strong></h2></div><p>The eight videos below show multi-step manipulation, sustained tool contact, and precise alignment. All run at <strong>1× speed</strong> with policy inference on an NVIDIA RTX 4090. Real-time chunking (RTC) and asynchronous execution let the model prepare the next action segment while the robot executes the current one.</p></div>
+
+
+  <article class="demo-group" id="demo-long-horizon" aria-labelledby="demo-heading-long-horizon">
+    <div class="demo-group-heading"><h3 id="demo-heading-long-horizon">II.1 Long-Horizon Manipulation</h3><p>The pencil-pouch and sandwich-preparation demonstrations show how the robot carries out several actions in sequence. After executing a short segment, it observes the new object state and plans the next segment.</p></div>
+    <div class="tablist demo-tabs" role="tablist" aria-label="Long-horizon manipulation tasks">
+      <button type="button" role="tab" id="demo-tab-breakfast" aria-controls="demo-panel-long-horizon" aria-selected="true" tabindex="0" data-video="7">Breakfast-object manipulation</button>
+      <button type="button" role="tab" id="demo-tab-pouch" aria-controls="demo-panel-long-horizon" aria-selected="false" tabindex="-1" data-video="6">Pencil-pouch manipulation</button>
+    </div>
+    <div id="demo-panel-long-horizon" role="tabpanel" aria-labelledby="demo-tab-breakfast">
+      <div class="video-frame"><video class="demo-video" width="1920" height="560" controls playsinline preload="none" poster="assets/web_posters/breakfast.jpg" aria-label="Breakfast-object manipulation: real-time RTX 4090 inference, original-speed footage"><source src="https://openphoenix-team.github.io/Phoenix-pages/demo/breakfast273_30k_rtc_three_views.webm" type="video/webm; codecs=av01.0.08M.08"><source src="demo/breakfast273_30k_rtc_three_views.mp4" type="video/mp4">Your browser does not support embedded video. <a href="demo/breakfast273_30k_rtc_three_views.mp4">Open video</a></video></div>
+      <div class="video-toolbar"><div><h3 class="video-title">Breakfast-object manipulation</h3></div><div class="video-actions"><label for="playback-rate-long-horizon">Speed</label><select id="playback-rate-long-horizon" class="playback-rate" aria-label="Long-horizon video playback speed"><option value="0.5">0.5×</option><option value="1" selected>1× (real time)</option><option value="1.5">1.5×</option><option value="2">2×</option></select><a class="video-original" href="demo/breakfast273_30k_rtc_three_views.mp4" target="_blank" rel="noopener">Original video ↗</a></div></div>
+      <p class="video-error" role="alert" hidden>This video could not be loaded. Try opening the original video.</p>
+    </div>
+  </article>
+
+  <article class="demo-group" id="demo-tactile" aria-labelledby="demo-heading-tactile">
+    <div class="demo-group-heading"><span class="module-code">Phoenix-ILA</span><h3 id="demo-heading-tactile">II.2 Contact-Rich Manipulation</h3><p>In peeling and wiping, the tool must stay in contact with the surface as it moves. Phoenix-ILA learns motion and tactile changes together so that its action targets include the contact patterns present in demonstrations. The videos show sustained contact and transitions between contact states; success rates are reported in the analysis section.</p></div>
+    <div class="tablist demo-tabs" role="tablist" aria-label="Tactile-guided manipulation tasks">
+      <button type="button" role="tab" id="demo-tab-cucumber" aria-controls="demo-panel-tactile" aria-selected="true" tabindex="0" data-video="4">Cucumber peeling</button>
+      <button type="button" role="tab" id="demo-tab-plate" aria-controls="demo-panel-tactile" aria-selected="false" tabindex="-1" data-video="5">Plate wiping</button>
+    </div>
+    <div id="demo-panel-tactile" role="tabpanel" aria-labelledby="demo-tab-cucumber">
+      <div class="video-frame"><video class="demo-video" width="1920" height="560" controls playsinline preload="none" poster="assets/web_posters/cucumber.jpg" aria-label="Cucumber peeling: real-time RTX 4090 inference, original-speed footage"><source src="https://openphoenix-team.github.io/Phoenix-pages/demo/huanggua_three_views_background_blur_v3.webm" type="video/webm; codecs=av01.0.08M.08"><source src="demo/huanggua_three_views_background_blur_v3.mp4" type="video/mp4">Your browser does not support embedded video. <a href="demo/huanggua_three_views_background_blur_v3.mp4">Open video</a></video></div>
+      <div class="video-toolbar"><div><h3 class="video-title">Cucumber peeling</h3></div><div class="video-actions"><label for="playback-rate-tactile">Speed</label><select id="playback-rate-tactile" class="playback-rate" aria-label="Tactile video playback speed"><option value="0.5">0.5×</option><option value="1" selected>1× (real time)</option><option value="1.5">1.5×</option><option value="2">2×</option></select><a class="video-original" href="demo/huanggua_three_views_background_blur_v3.mp4" target="_blank" rel="noopener">Original video ↗</a></div></div>
+      <p class="video-error" role="alert" hidden>This video could not be loaded. Try opening the original video.</p>
+    </div>
+  </article>
+
+  <article class="demo-group" id="demo-physcanvas" aria-labelledby="demo-heading-physcanvas">
+    <div class="demo-group-heading"><span class="module-code">Phoenix-PhysCanvas</span><h3 id="demo-heading-physcanvas">II.3 Precise Manipulation</h3><p>Demonstrations may not cover every approach angle or object-position error encountered during insertion. Phoenix-PhysCanvas lets the policy try different actions in a learned simulator and update from task rewards. We test the resulting policy on test-tube insertion and block manipulation under changes in lighting and object position. Bottle-cap twisting and cube repositioning provide additional qualitative demonstrations.</p></div>
+    <div class="tablist demo-tabs" role="tablist" aria-label="PhysCanvas policy-improvement tasks">
+      <button type="button" role="tab" id="demo-tab-tube" aria-controls="demo-panel-physcanvas" aria-selected="true" tabindex="0" data-video="0">Test-tube insertion</button>
+      <button type="button" role="tab" id="demo-tab-blocks" aria-controls="demo-panel-physcanvas" aria-selected="false" tabindex="-1" data-video="1">Block manipulation</button>
+      <button type="button" role="tab" id="demo-tab-bottle" aria-controls="demo-panel-physcanvas" aria-selected="false" tabindex="-1" data-video="2">Bottle-cap twisting</button>
+      <button type="button" role="tab" id="demo-tab-cube" aria-controls="demo-panel-physcanvas" aria-selected="false" tabindex="-1" data-video="3">Cube manipulation</button>
+    </div>
+    <div id="demo-panel-physcanvas" role="tabpanel" aria-labelledby="demo-tab-tube">
+      <div class="video-frame"><video class="demo-video" width="1920" height="560" controls playsinline preload="none" poster="assets/web_posters/tube.jpg" aria-label="Test-tube insertion: real-time RTX 4090 inference, original-speed footage"><source src="https://openphoenix-team.github.io/Phoenix-pages/demo/shiguan_bimanual_step015000_rtc_three_views.webm" type="video/webm; codecs=av01.0.08M.08"><source src="demo/shiguan_bimanual_step015000_rtc_three_views.mp4" type="video/mp4">Your browser does not support embedded video. <a href="demo/shiguan_bimanual_step015000_rtc_three_views.mp4">Open video</a></video></div>
+      <div class="video-toolbar"><div><h3 class="video-title">Test-tube insertion</h3></div><div class="video-actions"><label for="playback-rate-physcanvas">Speed</label><select id="playback-rate-physcanvas" class="playback-rate" aria-label="PhysCanvas video playback speed"><option value="0.5">0.5×</option><option value="1" selected>1× (real time)</option><option value="1.5">1.5×</option><option value="2">2×</option></select><a class="video-original" href="demo/shiguan_bimanual_step015000_rtc_three_views.mp4" target="_blank" rel="noopener">Original video ↗</a></div></div>
+      <p class="video-error" role="alert" hidden>This video could not be loaded. Try opening the original video.</p>
+    </div>
+  </article>
+  <noscript><ul><li><a href="demo/jimu_step015000_rtc_three_views.mp4">Blocks</a></li><li><a href="demo/bottle_02_step015000_rtc_three_views.mp4">Bottle cap</a></li><li><a href="demo/mofang_step015000_rtc_three_views.mp4">Cube</a></li><li><a href="demo/huanggua_three_views_background_blur_v3.mp4">Cucumber peeling</a></li><li><a href="demo/plate_rtc_three_views_background_blur_v3.mp4">Plate wiping</a></li><li><a href="demo/breakfast273_30k_rtc_three_views.mp4">Breakfast-object manipulation</a></li><li><a href="demo/pouch2459_50k_rollout000004_left_base_right_titlebar.mp4">Pencil pouch</a></li></ul></noscript>
+</div></section>
+<section class="section" id="method"><div class="wrap">
+  <div class="section-heading"><div><h2 id="section-3">III. Method</h2></div></div>
+  <article class="method-block" id="method-mwa">
+  <div class="subsection-heading">
+    <h3 id="section-3-1">III.1 Phoenix-MWA: Visual representations and action prediction</h3>
+  </div>
+    <p class="prose">Phoenix-MWA learns a visual representation, compresses it into latents, and jointly predicts future observations and actions. The following sections describe each stage. Phoenix-ILA and PhysCanvas then adapt this pretrained policy through demonstration-based and interactive post-training, respectively.</p>
+  <figure class="feature-figure"><div class="figure-link"><img loading="lazy" src="assets/phoenix-mwa-encoder-b-20261020.webp" width="3600" height="3608" alt="Phoenix architecture: dual-teacher distillation, a causal-semantic VAE, and world-action modeling"></div><figcaption><strong>Figure 2.</strong> Phoenix-MWA combines a dual-teacher encoder and a causal-semantic VAE for joint world-action modeling.</figcaption></figure>
+  <section class="mwa-subsection" aria-labelledby="mwa-inputs">
+    <h4 id="mwa-inputs">Inputs and prediction targets</h4>
+    <p class="prose">Given current multi-view RGB images, robot state, language, and embodiment ID, Phoenix-MWA predicts future visual latents and actions. Training samples pair 32 actions with nine frames over the same interval. States and actions share a unified <a href="#data-action-space"><strong>Action Space</strong></a>, with dataset–embodiment normalization and masks for missing views, invalid action dimensions, and padded timesteps.</p>
+  </section>
+  <section class="mwa-subsection" aria-labelledby="mwa-encoder">
+    <h4 id="mwa-encoder">Phoenix Encoder: Dual-teacher distillation of geometric and temporal knowledge</h4>
+    <p class="prose">Phoenix Encoder augments DINOv3 ViT-L/16 with a spatiotemporal adapter and learns from two frozen teachers. <strong>VGGT-Ω supplies geometric supervision</strong> through multi-layer features, depth predictions, and adjacent-frame relations, without additional ground-truth depth. <strong>V-JEPA supplies temporal supervision</strong>: the teacher sees the full video, while the student predicts teacher features in consistently masked regions across frames. We alternate the two distillation tasks and maintain an exponential moving average (EMA) of the student weights. CS-VAE and the policy use the resulting <strong>EMA DINO backbone</strong> to extract dense features frame by frame.</p>
+  </section>
+  <section class="mwa-subsection" aria-labelledby="mwa-cs-vae">
+    <h4 id="mwa-cs-vae">CS-VAE: Causal visual compression with preserved spatial structure</h4>
+    <p class="prose">Dense visual features retain semantics and geometry, but their high dimensionality and non-Gaussian distributions can make generation costly and denoising difficult. CS-VAE compresses channels and time: a spatial Transformer and two causal temporal stages reduce <strong>nine frames to three temporal positions</strong> while preserving the spatial grid. The first latent encodes only the current frame; later latents use preceding information.</p>
+    <p class="prose">The decoder reconstructs standardized features from samples of the Gaussian posterior. Reconstruction uses MSE and cosine losses, while KL regularization shapes the latent distribution toward a standard Gaussian prior for generative modeling. We train with the following objective:</p>
+    <div class="mwa-equation" tabindex="0" role="region" aria-label="CS-VAE loss: MSE loss plus cosine loss plus beta times KL loss.">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="CS-VAE loss: MSE loss plus cosine loss plus beta times KL loss."><semantics><mrow><msub><mi mathvariant="script">L</mi><mtext>CS-VAE</mtext></msub><mo>=</mo><msub><mi mathvariant="script">L</mi><mtext>MSE</mtext></msub><mo>+</mo><msub><mi mathvariant="script">L</mi><mtext>cos</mtext></msub><mo>+</mo><mi>β</mi><msub><mi mathvariant="script">L</mi><mtext>KL</mtext></msub></mrow><annotation encoding="application/x-tex">\mathcal L_{\mathrm{CS\text{-}VAE}}
+=\mathcal L_{\mathrm{MSE}}
++\mathcal L_{\mathrm{cos}}
++\beta\mathcal L_{\mathrm{KL}}.</annotation></semantics></math>
+    </div>
+  </section>
+  <section class="mwa-subsection" aria-labelledby="mwa-joint-training">
+    <h4 id="mwa-joint-training">Jointly learning future vision and actions</h4>
+    <p class="prose">We concatenate two visual latents along the channel dimension: Wan VAE latents, which capture appearance and spatial structure, and Phoenix Encoder–CS-VAE latents containing geometric and semantic features. VideoDiT and ActionDiT process video and actions, connected by a Mixture of Transformers (MoT) with masked joint attention at each layer and modality-specific processing. T5 language embeddings, projected robot states, and learned embodiment-specific soft prompts condition the action branch through cross-attention.</p>
+    <p class="prose">During flow-matching training, current visual latents stay clean, while future video latents and actions receive Gaussian noise. The model learns to jointly denoise both modalities, conditioned on current observations. Wan VAE, Phoenix Encoder, and CS-VAE remain frozen; training updates the video and action experts, state projection, and embodiment soft prompts. The joint pretraining loss combines video and action flow terms:</p>
+    <div class="mwa-equation" tabindex="0" role="region" aria-label="MWA loss: 0.5 Wan flow loss plus 0.5 CS flow loss plus action flow loss.">
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="MWA loss: 0.5 Wan flow loss plus 0.5 CS flow loss plus action flow loss."><semantics><mrow><msub><mi mathvariant="script">L</mi><mtext>MWA</mtext></msub><mo>=</mo><mn>0.5</mn><msub><mi mathvariant="script">L</mi><mtext>Wan-flow</mtext></msub><mo>+</mo><mn>0.5</mn><msub><mi mathvariant="script">L</mi><mtext>CS-flow</mtext></msub><mo>+</mo><msub><mi mathvariant="script">L</mi><mtext>action-flow</mtext></msub></mrow><annotation encoding="application/x-tex">\mathcal L_{\mathrm{MWA}}
+=0.5\mathcal L_{\mathrm{Wan\text{-}flow}}
++0.5\mathcal L_{\mathrm{CS\text{-}flow}}
++\mathcal L_{\mathrm{action\text{-}flow}}.</annotation></semantics></math>
+    </div>
+  </section>
+  <section class="mwa-subsection" aria-labelledby="mwa-execution">
+    <h4 id="mwa-execution">From prediction to robot execution</h4>
+    <p class="prose">At inference, actions are unnormalized with the training statistics and mapped to the robot’s control interface. The robot executes a short action prefix, observes the scene again, and replans. Predicted visual latents can be decoded with Wan VAE for inspection. RTC and asynchronous execution overlap planning with movement and maintain continuity between action segments.</p>
+  </section>
+  <section class="mwa-subsection" aria-labelledby="mwa-model-size">
+    <h4 id="mwa-model-size">Model size and training scope</h4>
+    <p class="prose">Phoenix-MWA uses a joint video-action backbone with approximately <strong>6B</strong> parameters, comprising a <strong>5B</strong> video expert and a <strong>1B</strong> action expert. Joint pretraining updates both experts, the state projection, and embodiment soft prompts, totaling approximately <strong>6B</strong> trainable parameters. Wan VAE (approximately <strong>705M</strong>), Phoenix Encoder (approximately <strong>621M</strong>), and CS-VAE (approximately <strong>72M</strong>) remain frozen during joint video-action pretraining and are excluded from the trainable parameter count.</p>
+  </section>
+</article><article class="method-block" id="method-ila">
+<div class="subsection-heading"><h3 id="section-3-2">III.2 Phoenix-ILA: Contact skills from demonstrations</h3></div>
+<p class="prose">Large-scale pretraining provides a starting policy, but contact-rich tasks still need task-specific training. A visually plausible path does not ensure that a peeler presses against a surface or that a cloth maintains contact. Phoenix-ILA introduces tactile information into the pretrained model by replacing direct action targets with latents learned from synchronized motion and tactile demonstrations.</p>
+<figure><div class="figure-link"><img loading="lazy" src="assets/phoenix-ila-20261020.webp" width="3600" height="1238" alt="Phoenix-ILA: a joint interaction representation of actions, tactile deformation, and force proxies"></div><figcaption><strong>Figure 3.</strong> Phoenix-ILA learns interaction latents through joint reconstruction of motion, tactile deformation, and force proxies.</figcaption></figure>
+<p class="prose">First, the Interaction Encoder embeds motion and tactile sequences separately. Joint self-attention exchanges information between them, and cross-attention incorporates multi-view visual features before temporal compression. A time-conditioned decoder reconstructs motion, three-dimensional tactile deformation, and a force proxy at queried times. Force supervision is applied both to the force head and to spatially aggregated tactile reconstructions. The decoder receives no separate visual input, so the latent must retain the information needed for reconstruction.</p>
+<p class="prose">Second, we freeze the interaction codec and encode demonstration chunks offline as normalized latent targets. Conditional flow matching trains the policy to generate these targets from Gaussian noise. We update the action branch, its input/output projections, and temporal positional encoding; the visual encoder and video branch remain frozen. Generation is conditioned on visual and dynamic context, language, robot state, and tactile history.</p>
+<p class="prose">At inference, the policy uses only currently available observations, including tactile history; it does not require future tactile measurements. Generated latents are denormalized and decoded into joint targets on the control-time grid. The robot executes a short prefix, observes again, and replans.</p>
+</article>
+<article class="method-block" id="method-physcanvas">
+<div class="subsection-heading"><h3 id="section-3-3">III.3 Phoenix-PhysCanvas: Interactive policy post-training</h3></div>
+<p class="prose">Phoenix-ILA learns from fixed demonstrations. For tasks where those demonstrations do not cover enough approach angles or position errors, <strong>Phoenix-PhysCanvas</strong> provides an interactive post-training environment. It learns from real robot trajectories, arranging time-aligned multi-view RGB, tactile images, and tactile displacements on a shared spatial canvas. Robot motion supplies camera-aligned geometric conditions. A pretrained video model with a frozen visual codec learns to predict future observations through conditional flow matching.</p>
+<figure><div class="figure-link"><img loading="lazy" src="assets/phoenix-physcanvas-v36.webp" width="3200" height="824" alt="The interaction loop between PhysCanvas and MWA for reinforcement-learning post-training"></div><figcaption><strong>Figure 4.</strong> Phoenix-PhysCanvas simulates action-conditioned visual and tactile feedback to enable closed-loop reinforcement learning for Phoenix-MWA.</figcaption></figure>
+<p class="prose">Policy training starts from real initial observations. Phoenix-MWA proposes actions, and PhysCanvas predicts the next visual and tactile observations. We sample several rollouts from each initial condition, score task completion with a reward model, and compute relative advantages within each group for GRPO updates.</p>
+<p class="prose">We then evaluate the updated policy on the physical robot. This separates improvement inside the learned simulator from improvement on real tasks; the test-tube and block results are reported below.</p>
+</article>
+</div></section>
+<section class="section tint" id="data"><div class="wrap">
+  <div class="section-heading"><div><h2 id="section-4">IV. Pretraining data</h2></div></div>
+<article class="data-subsection" id="data-distribution" aria-labelledby="data-distribution-heading"><div class="subsection-heading"><h3 id="data-distribution-heading">IV.1 Pretraining data distribution</h3></div>
+<p class="prose">The data pool contains robot demonstrations, egocentric human videos, and UMI recordings: <strong>54,413 hours</strong> of raw video, approximately <strong>3.38 billion frames</strong>, and <strong>39,306 hours</strong> retained after processing. Robot recordings account for <strong>31.09%</strong> of the effective duration, egocentric videos for <strong>63.58%</strong>, and UMI recordings for <strong>5.33%</strong>. The figure lists the sources and their durations.</p>
+
+  <figure><div class="figure-link"><img loading="lazy" src="assets/pretraining-data-pool-20261022.webp" width="1800" height="885" alt="Phoenix pretraining data: composition and effective duration of Robot, Ego, and UMI sources"></div><figcaption><strong>Figure 5.</strong> The pretraining data pool for Phoenix-MWA combines robot, egocentric, and UMI recordings, with 54.41k raw hours and 39.31k effective hours across diverse sources. Datasets shown in italics are not publicly available.</figcaption></figure>
+</article>
+<article class="data-subsection" id="data-pipeline" aria-labelledby="data-pipeline-heading"><div class="subsection-heading"><h3 id="data-pipeline-heading">IV.2 Pretraining data processing pipeline</h3></div>
+<p class="prose">Raw recordings can contain long idle periods, broken tracks, or instructions that do not match the action. Robot, Ego, and UMI data first pass through format conversion and quality filtering. Source-specific processing then aligns coordinates, annotates actions, and constructs training windows. Final review checks that video, trajectories, and language describe the same operation.</p>
+<figure class="feature-figure"><div class="figure-link"><img loading="lazy" src="assets/pretraining-data-pipeline-lossless.webp" width="3840" height="1920" alt="Pretraining data pipeline: Ego and UMI annotation, robot coordinate alignment, and language augmentation"></div><figcaption><strong>Figure 6.</strong> Phoenix converts heterogeneous demonstrations into aligned training samples through a shared processing pipeline.</figcaption></figure>
+<p class="prose"><strong>Format conversion.</strong> We convert sources to LeRobot V3 and record position units and orientation conventions explicitly. We align video timestamps with state acquisition times and check frame counts, state sequences, and task boundaries.</p>
+<p class="prose"><strong>Quality filtering.</strong> We screen recordings for decoding failures, invalid timestamps, poor visual quality, abnormal motion, and duplicates. Visual and temporal similarity are jointly considered for duplicate detection, while camera-motion compensation helps distinguish local activity from viewpoint changes in Ego videos. For robot demonstrations, stationary detection uses measured states rather than control commands, combining adjacent and cumulative changes to preserve slow movement. Only redundant stationary segments at episode boundaries are trimmed; pauses within a task are retained, and video, states, and annotation timelines remain synchronized.</p>
+<p class="prose"><strong>Data annotation.</strong> For Ego data, we screen available wrist tracks for abrupt changes that may indicate tracking errors. Language annotations capture the overall task, scene context, and time-localized hand actions. These annotations guide window descriptions: only actions with sufficient temporal overlap are included, and their combined coverage must adequately describe the selected window. We split data by original episode before constructing samples to prevent overlapping observations from leaking between training and validation sets.</p>
+<p class="prose">For Robot data, we align end-effector poses through workspace alignment, end-effector alignment and standardizing position units while maintaining synchronization with video. We augment task instructions through semantic paraphrasing, conversational rewriting, and context framing, preserving objects, arm assignments, spatial relationships, action order, and constraints. Each sample pairs an instruction with synchronized observations and state–action sequences drawn entirely from one continuous task interval.</p>
+<p class="prose"><strong>Review platforms.</strong> Reviewers inspect synchronized video, wrist trajectories, and speed curves to distinguish real movement from tracking errors. Annotation tools align window descriptions with hand-action timelines. Final review checks crop boundaries, speed peaks, windows near filtering thresholds, and simultaneous hand actions, alongside ordinary retained samples.</p>
+<figure class="pipeline-platforms">
+<div class="pipeline-platform-grid">
+<div class="pipeline-platform-card"><button type="button" class="platform-preview" aria-label="Enlarge quality filtering platform"><img loading="lazy" decoding="async" src="assets/pipeline-review/anomaly-platform.webp" width="3760" height="2400" alt="Anomaly review interface with video, speed peaks, and candidate tracking events"></button><span>(a) Quality filtering platform</span></div>
+<div class="pipeline-platform-card"><button type="button" class="platform-preview" aria-label="Enlarge data annotation platform"><img loading="lazy" decoding="async" src="assets/pipeline-review/annotation-platform.webp" width="2818" height="2104" alt="Annotation review interface comparing video windows, language descriptions, action coverage, and hand timelines"></button><span>(b) Data annotation platform</span></div>
+<div class="pipeline-platform-card"><button type="button" class="platform-preview" aria-label="Enlarge quality review platform"><img loading="lazy" decoding="async" src="assets/pipeline-review/ego-platform.webp" width="3760" height="2106" alt="Ego viewer with synchronized video, wrist trajectories, speed curves, and frame controls"></button><span>(c) Quality review platform</span></div>
+</div>
+<figcaption><strong>Figure 7.</strong> Platforms for (a) quality filtering, (b) data annotation, and (c) quality review.</figcaption>
+<button type="button" class="expand-figure" id="expand-platforms">View full-size figure ↗</button>
+</figure>
+</article>
+<article class="data-subsection" id="data-action-space" aria-labelledby="data-action-space-heading"><div class="subsection-heading"><h3 id="data-action-space-heading">IV.3 Action space design</h3></div>
+<figure class="action-space-figure">
+<div class="figure-link"><img loading="lazy" decoding="async" src="assets/phoenix-80d-two-lines-tnr-tight.webp" width="2800" height="543" alt="Unified 80-dimensional layout: Left spans indices 0 to 40 and Right spans 40 to 80, with labeled arm joints, EEF XYZ, EEF rotation, gripper, dexterous hand, torso, lift, head, mobile base, and reserved segments."></div>
+<figcaption><strong>Figure 8.</strong> Unified 80-dimensional state and action layout.</figcaption>
+</figure>
+<p class="prose">The <strong>80-dimensional state and action space</strong> assigns fixed slots to arm joints, end-effector poses, grippers, and dexterous hands, with additional channels for the torso, lift, head, and mobile base. Components with the same meaning map to the same slots; single-arm data uses the right-arm slots. Missing, invalid, and unused dimensions are filled with zeros and masked out of the loss. The shared interface preserves each robot’s available controls without assuming identical kinematics.</p>
+</article>
+</div></section>
+<section class="section" id="results"><div class="wrap">
+  <div class="section-heading"><div><h2 id="section-5">V. Benchmark results</h2></div><p>We report results on LIBERO-Plus, LIBERO-Pro, RoboCasa-GR1, RoboTwin 2.0 Clean2Random, Bench2Dex, and RoboDojo-RealWorld. Each benchmark uses its corresponding post-training and evaluation configuration.</p></div>
+  <div id="panel-plus" class="benchmark-panel" role="region" aria-label="LIBERO-Plus">
+<div class="benchmark-summary"><div><h3 id="section-5-1">V.1 LIBERO-Plus</h3></div><div class="benchmark-score"><strong>94.63<small>%</small></strong></div></div>
+<p class="prose benchmark-analysis">LIBERO-Plus tests seven perturbation categories: camera, robot, language, lighting, background, noise, and layout. Phoenix-MWA reaches <strong>94.63%</strong> overall success, with the highest scores among the compared methods in the robot, language, lighting, noise, and layout categories.</p>
+    <div class="bar-chart" aria-label="LIBERO-Plus success-rate comparison"><div class="bar-row"><span>Phoenix-MWA <small>w/o. Pretrain</small></span><div class="bar-track"><span class="bar-fill baseline" style="width:88.16%"></span></div><strong>88.16%</strong></div><div class="bar-row"><span>Phoenix-MWA <small>w. Pretrain</small></span><div class="bar-track"><span class="bar-fill" style="width:94.63%"></span></div><strong>94.63%</strong></div></div>
+<p class="prose benchmark-analysis">Without pretraining, Phoenix-MWA reaches <strong>88.16%</strong> overall success, including <strong>79.36%</strong> under camera perturbations and <strong>94.82%</strong> under noise perturbations. Pretraining raises overall success by <strong>6.47 percentage points</strong> to <strong>94.63%</strong>, with gains in all seven categories.</p>
+    <div class="expanded-details"><h4 class="detail-heading" id="section-5-1-1"><span>Comparison across seven distribution shifts</span><span class="summary-meta">Success rate (%)</span></h4><div class="detail-body"><div class="table-scroll" tabindex="0" role="region" aria-label="Complete LIBERO-Plus results"><table id="libero-plus-comparison" class="report-table">
+  <thead>
+    <tr><th scope="col">Method</th><th scope="col">Camera</th><th scope="col">Robot</th><th scope="col">Language</th><th scope="col">Light</th><th scope="col">Background</th><th scope="col">Noise</th><th scope="col">Layout</th><th scope="col">Total ↑</th></tr>
+  </thead>
+  <tbody>
+    <tr class="table-group"><th colspan="9" scope="row">VLA</th></tr>
+    <tr><th scope="row">OpenVLA</th><td>0.80</td><td>3.50</td><td>23.00</td><td>8.10</td><td>34.80</td><td>15.20</td><td>28.50</td><td>15.60</td></tr>
+    <tr><th scope="row">π0</th><td>13.80</td><td>6.00</td><td>58.80</td><td>85.00</td><td>81.40</td><td>79.00</td><td>68.90</td><td>53.60</td></tr>
+    <tr><th scope="row">π0-FAST</th><td>65.10</td><td>21.60</td><td>61.00</td><td>73.20</td><td>73.20</td><td>74.40</td><td>68.80</td><td>61.60</td></tr>
+
+    <tr><th scope="row">OpenVLA-OFT</th><td>56.40</td><td>31.90</td><td>79.50</td><td>88.70</td><td>93.30</td><td>75.80</td><td>74.20</td><td>69.60</td></tr>
+
+    <tr><th scope="row">StarVLA-OFT</th><td>47.00</td><td>60.10</td><td>87.00</td><td>96.30</td><td>95.30</td><td>73.10</td><td>79.20</td><td>75.00</td></tr>
+
+    <tr><th scope="row">ABot-M0</th><td>60.40</td><td>67.90</td><td>86.40</td><td>96.20</td><td>91.60</td><td>86.40</td><td>82.60</td><td>80.50</td></tr>
+
+
+
+    <tr><th scope="row">InternVLA-A1.5</th><td>83.10</td><td>55.10</td><td>86.90</td><td>96.40</td><td>98.20</td><td>95.60</td><td>85.20</td><td>84.80</td></tr>
+    <tr><th scope="row">π0.5</th><td>75.80</td><td>79.40</td><td>83.30</td><td>95.50</td><td>95.00</td><td>89.60</td><td>87.00</td><td>85.70</td></tr>
+
+
+
+    <tr><th scope="row">Qwen-RobotManip-Context</th><td><u>89.90</u></td><td>83.90</td><td>86.50</td><td><u>98.60</u></td><td><strong>99.90</strong></td><td><u>97.90</u></td><td>87.50</td><td>91.40</td></tr>
+  </tbody>
+  <tbody>
+    <tr class="table-group"><th colspan="9" scope="row">WAM</th></tr>
+    <tr><th scope="row">Fast-WAM</th><td>16.40</td><td>44.50</td><td>68.90</td><td>78.20</td><td>53.70</td><td>37.70</td><td>60.70</td><td>51.50</td></tr>
+    <tr><th scope="row">OpenWAM-α</th><td>33.80</td><td>76.10</td><td>88.00</td><td>97.00</td><td>87.10</td><td>39.80</td><td>77.50</td><td>69.20</td></tr>
+
+
+
+
+    <tr><th scope="row">Being-H0.7</th><td>82.00</td><td>59.00</td><td>82.80</td><td>97.80</td><td>90.00</td><td>93.50</td><td><u>88.50</u></td><td>82.10</td></tr>
+    <tr><th scope="row">Cosmos-Policy</th><td>75.80</td><td>63.30</td><td>81.70</td><td>96.50</td><td>88.90</td><td>92.70</td><td>82.20</td><td>82.20</td></tr>
+
+
+    <tr><th scope="row">ImageWAM</th><td>80.80</td><td>50.30</td><td>91.40</td><td>98.10</td><td>85.50</td><td>93.80</td><td>80.50</td><td>83.10</td></tr>
+    <tr><th scope="row">ABot-M0.5</th><td>70.50</td><td>87.40</td><td>88.60</td><td>94.00</td><td>89.70</td><td>75.50</td><td>85.20</td><td>83.40</td></tr>
+    <tr><th scope="row">InternW0-Δ</th><td><strong>90.60</strong></td><td><u>91.10</u></td><td><u>92.90</u></td><td>95.80</td><td><u>99.40</u></td><td>94.00</td><td>88.40</td><td><u>92.80</u></td></tr>
+    <tr class="ours"><th scope="row">Phoenix-MWA (w/o. Pretrain)</th><td>79.36</td><td>90.19</td><td>83.73</td><td>97.72</td><td>87.73</td><td>94.82</td><td>85.90</td><td>88.16</td></tr>
+    <tr class="ours"><th scope="row">Phoenix-MWA (w. Pretrain)</th><td>88.24</td><td><strong>94.00</strong></td><td><strong>95.51</strong></td><td><strong>99.91</strong></td><td>98.88</td><td><strong>98.31</strong></td><td><strong>90.23</strong></td><td><strong>94.63</strong></td></tr>
+  </tbody>
+</table>
+</div></div></div>
+  </div>
+  <div id="panel-pro" class="benchmark-panel" role="region" aria-label="LIBERO-Pro"><div class="benchmark-summary"><div><h3 id="section-5-2">V.2 LIBERO-Pro</h3></div><div class="benchmark-score"><strong>66.48<small>%</small></strong></div></div><div class="expanded-details"><h4 class="detail-heading" id="section-5-2-1"><span>Full comparison</span><span class="summary-meta">Success rate (%)</span></h4><div class="detail-body"><div class="table-scroll" tabindex="0" role="region" aria-label="Complete LIBERO-Pro results"><table id="libero-pro-comparison" class="report-table">
+  <thead>
+    <tr><th scope="col">Method</th><th scope="col">Obj.</th><th scope="col">Pos.</th><th scope="col">Sem.</th><th scope="col">Task</th><th scope="col">Avg.</th></tr>
+  </thead>
+  <tbody>
+    <tr class="table-group"><th colspan="6" scope="row">VLA</th></tr>
+    <tr><th scope="row">OpenVLA-OFT</th><td>27.63</td><td>5.75</td><td>59.00</td><td>0.63</td><td>23.25</td></tr>
+    <tr><th scope="row">NORA</th><td>70.50</td><td>0.00</td><td>86.25</td><td>0.00</td><td>39.00</td></tr>
+    <tr><th scope="row">MolmoAct</th><td>76.00</td><td>1.50</td><td>85.75</td><td>1.50</td><td>41.00</td></tr>
+    <tr><th scope="row">π0</th><td>90.50</td><td>0.00</td><td>90.50</td><td>0.00</td><td>45.25</td></tr>
+    <tr><th scope="row">X-VLA</th><td>79.00</td><td>0.75</td><td>96.75</td><td>6.75</td><td>46.00</td></tr>
+    <tr><th scope="row">VLA-Adapter</th><td>73.75</td><td>0.00</td><td>90.75</td><td>19.75</td><td>46.06</td></tr>
+    <tr><th scope="row">OpenVLA</th><td><u>93.00</u></td><td>0.00</td><td>97.25</td><td>0.00</td><td>47.56</td></tr>
+    <tr><th scope="row">SimVLA</th><td>81.50</td><td>8.30</td><td><u>98.80</u></td><td>6.00</td><td>48.60</td></tr>
+    <tr><th scope="row">HABILIS Brain 0</th><td>71.85</td><td>18.05</td><td>93.00</td><td>21.45</td><td>51.09</td></tr>
+    <tr><th scope="row">π0.5</th><td><strong>96.00</strong></td><td>20.75</td><td>95.75</td><td>0.75</td><td>53.31</td></tr>
+    <tr><th scope="row">Quantile Head</th><td>85.80</td><td>31.30</td><td>97.80</td><td>26.00</td><td>60.20</td></tr>
+    <tr><th scope="row">QuoVLA</th><td>88.25</td><td>36.00</td><td><strong>99.50</strong></td><td>25.50</td><td>62.31</td></tr>
+    <tr><th scope="row">Continuous Reasoning</th><td>84.60</td><td><u>39.30</u></td><td>94.90</td><td><u>37.10</u></td><td><u>64.00</u></td></tr>
+  </tbody>
+  <tbody>
+    <tr class="table-group"><th colspan="6" scope="row">WAM</th></tr>
+    <tr><th scope="row">PatchWAM</th><td>80.80</td><td>8.80</td><td>96.80</td><td>5.00</td><td>47.85</td></tr>
+    <tr><th scope="row">Flex-π</th><td>87.25</td><td>11.75</td><td>98.25</td><td>5.00</td><td>51.00</td></tr>
+    <tr><th scope="row">GAM</th><td>75.75</td><td>32.75</td><td>95.00</td><td><strong>40.50</strong></td><td>61.00</td></tr>
+    <tr class="ours"><th scope="row">Phoenix-MWA (w. Pretrain)</th><td>91.30</td><td><strong>42.55</strong></td><td>98.50</td><td>33.55</td><td><strong>66.48</strong></td></tr>
+  </tbody>
+</table>
+</div></div></div></div>
+  <div id="panel-robocasa" class="benchmark-panel" role="region" aria-label="RoboCasa-GR1"><div class="benchmark-summary"><div><h3 id="section-5-3">V.3 RoboCasa-GR1</h3></div><div class="benchmark-score"><strong>82.67<small>%</small></strong></div></div><div class="expanded-details"><h4 class="detail-heading" id="section-5-3-1"><span>Full comparison</span><span class="summary-meta">Success rate (%)</span></h4><div class="detail-body"><div class="table-scroll" tabindex="0" role="region" aria-label="Complete RoboCasa-GR1 results"><table id="robocasa-gr1-comparison" class="report-table">
+  <thead>
+    <tr><th scope="col">Method</th><th scope="col">Art.</th><th scope="col">P&amp;P</th><th scope="col">Avg.</th></tr>
+  </thead>
+  <tbody>
+    <tr class="table-group"><th colspan="4" scope="row">VLA</th></tr>
+    <tr><th scope="row">π0.5</th><td>—</td><td>—</td><td>37.00</td></tr>
+    <tr><th scope="row">GR00T N1.6</th><td>24.20</td><td>55.40</td><td>47.60</td></tr>
+    <tr><th scope="row">StarVLA-OFT</th><td>43.70</td><td>50.40</td><td>48.80</td></tr>
+    <tr><th scope="row">StarVLA-α</th><td>49.00</td><td>55.40</td><td>53.80</td></tr>
+    <tr><th scope="row">TwinBrainVLA</th><td>56.70</td><td>53.90</td><td>54.60</td></tr>
+    <tr><th scope="row">CoRE-VLA</th><td>56.20</td><td>56.60</td><td>56.50</td></tr>
+    <tr><th scope="row">ABot-M0</th><td>61.70</td><td>57.10</td><td>58.30</td></tr>
+    <tr><th scope="row">RLDX-1</th><td>57.67</td><td>59.00</td><td>58.70</td></tr>
+    <tr><th scope="row">JoyAI-RA 0.1</th><td>71.67</td><td>60.38</td><td>63.20</td></tr>
+    <tr><th scope="row">DIAL</th><td>74.30</td><td>68.90</td><td>70.20</td></tr>
+    <tr><th scope="row">ACE-Ego-0</th><td>59.00</td><td>77.40</td><td>72.80</td></tr>
+  </tbody>
+  <tbody>
+    <tr class="table-group"><th colspan="4" scope="row">WAM</th></tr>
+    <tr><th scope="row">DiT4DiT</th><td>50.30</td><td>50.90</td><td>50.80</td></tr>
+    <tr><th scope="row">LDA-1B</th><td>56.30</td><td>55.10</td><td>55.40</td></tr>
+    <tr><th scope="row">OpenWAM-α</th><td>—</td><td>—</td><td>60.50</td></tr>
+    <tr><th scope="row">Fast-WAM-IDM</th><td>59.70</td><td>78.70</td><td>73.90</td></tr>
+    <tr><th scope="row">Fast-WAM</th><td>62.00</td><td>78.80</td><td>74.60</td></tr>
+    <tr><th scope="row">WALA</th><td><u>80.33</u></td><td>73.45</td><td>75.17</td></tr>
+    <tr><th scope="row">LAWA (Full)</th><td>73.00</td><td><u>83.44</u></td><td>80.80</td></tr>
+    <tr><th scope="row">CF-WAM</th><td>75.00</td><td><strong>85.00</strong></td><td><u>82.50</u></td></tr>
+    <tr class="ours"><th scope="row">Phoenix-MWA (w. Pretrain)</th><td><strong>84.33</strong></td><td>82.11</td><td><strong>82.67</strong></td></tr>
+  </tbody>
+</table>
+</div></div></div></div>
+
+<div id="panel-robotwin" class="benchmark-panel" role="region" aria-label="RoboTwin 2.0 C2R">
+<div class="benchmark-summary"><div><h3 id="section-5-4">V.4 RoboTwin 2.0 C2R</h3></div><div class="benchmark-score"><strong>72.42<small>%</small></strong></div></div>
+<div class="expanded-details"><h4 class="detail-heading" id="section-5-4-1"><span>Full comparison</span><span class="summary-meta">Success rate (%)</span></h4><div class="detail-body">
+<div class="table-scroll" tabindex="0" role="region" aria-label="Complete RoboTwin 2.0 Clean2Random results"><table id="robotwin-c2r-comparison" class="report-table">
+<thead><tr><th scope="col">Method</th><th scope="col">Clean2Random</th></tr></thead>
+<tbody>
+<tr class="table-group"><th colspan="2" scope="row">VLA</th></tr>
+<tr><th scope="row">StarVLA</th><td>10.60</td></tr>
+<tr><th scope="row">GR00T-N1.7</th><td>20.70</td></tr>
+<tr><th scope="row">X-VLA</th><td>20.90</td></tr>
+<tr><th scope="row">Spatial Forcing</th><td>26.70</td></tr>
+<tr><th scope="row">ABot-M0</th><td>36.00</td></tr>
+<tr><th scope="row">π0.5</th><td>47.90</td></tr>
+<tr><th scope="row">GigaBrain-0.7</th><td>67.90</td></tr>
+<tr><th scope="row">Qwen-RobotManip-Context</th><td>69.40</td></tr>
+</tbody>
+<tbody>
+<tr class="table-group"><th colspan="2" scope="row">WAM</th></tr>
+<tr><th scope="row">Fast-WAM</th><td>1.90</td></tr>
+<tr><th scope="row">AHA-WAM</th><td>3.20</td></tr>
+<tr><th scope="row">X-WAM</th><td>25.80</td></tr>
+<tr><th scope="row">4D-WAM</th><td>41.80</td></tr>
+<tr><th scope="row">OpenWAM-α</th><td>48.70</td></tr>
+<tr><th scope="row">InternW0-Δ</th><td><u>71.90</u></td></tr>
+<tr class="ours"><th scope="row">Phoenix-MWA (w. Pretrain)</th><td><strong>72.42</strong></td></tr>
+</tbody>
+</table></div>
+
+</div></div></div>
+
+<div id="panel-bench2dex" class="benchmark-panel" role="region" aria-labelledby="section-5-5">
+<div class="benchmark-summary"><div><h3 id="section-5-5">V.5 Bench2Dex</h3></div><div class="benchmark-score"><strong>45.6<small>%</small></strong></div></div>
+<p class="prose benchmark-analysis">Bench2Dex includes <strong>12 arm–hand combinations</strong> and <strong>26 task–embodiment settings</strong>. Tests vary object pose, table height, backgrounds, lighting, distractors, and camera pose. Phoenix-MWA scores <strong>38.5%</strong> on equivariance (Equi.), <strong>44.1%</strong> on invariance (Inv.), and <strong>45.6%</strong> on the combined (Full) evaluation, the highest values in the comparison. Its mean across the four evaluation channels is <strong>45.6%</strong>, <strong>17.3 percentage points</strong> above the strongest compared baseline.</p>
+<h4 class="detail-heading" id="section-5-5-1"><span>Mean across all 26 tasks</span><span class="summary-meta">Success rate (%)</span></h4>
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="section-5-5-1">
+<table id="bench2dex-mean-comparison" class="report-table" aria-labelledby="section-5-5-1">
+<thead><tr><th scope="col">Metric</th><th scope="col">ACT</th><th scope="col">DP</th><th scope="col">π₀.₅</th><th scope="col">GR00T N1.5</th><th scope="col" class="bench2dex-ours">Phoenix-MWA (w. Pretrain)</th></tr></thead>
+<tbody>
+<tr><th scope="row">None</th><td>29.5%</td><td>12.9%</td><td>35.5%</td><td>48.5%</td><td class="bench2dex-ours"><strong>54.2%</strong></td></tr>
+<tr><th scope="row">Equi.</th><td>15.4%</td><td>6.3%</td><td>21.2%</td><td>18.8%</td><td class="bench2dex-ours"><strong>38.5%</strong></td></tr>
+<tr><th scope="row">Inv.</th><td>14.0%</td><td>5.2%</td><td>26.7%</td><td>26.0%</td><td class="bench2dex-ours"><strong>44.1%</strong></td></tr>
+<tr><th scope="row">Full</th><td>13.0%</td><td>3.8%</td><td>25.5%</td><td>19.8%</td><td class="bench2dex-ours"><strong>45.6%</strong></td></tr>
+<tr><th scope="row">SR</th><td>18.0%</td><td>7.1%</td><td>27.2%</td><td>28.3%</td><td class="bench2dex-ours"><strong>45.6%</strong></td></tr>
+<tr><th scope="row">LSCR</th><td>36.5%</td><td>23.0%</td><td>44.2%</td><td>47.3%</td><td class="bench2dex-ours"><strong>65.6%</strong></td></tr>
+</tbody>
+</table></div>
+
+<div class="bench2dex-detail">
+<h4 class="detail-heading" id="section-5-5-2">Task-level SR and LSCR</h4>
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="section-5-5-2">
+<table id="bench2dex-task-comparison" class="report-table" aria-labelledby="section-5-5-2">
+<colgroup><col class="bench2dex-task-column"><col class="bench2dex-embodiment-column"></colgroup>
+<colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup>
+<thead>
+<tr><th scope="col" rowspan="2">Task</th><th scope="col" rowspan="2">Embodiment</th><th scope="colgroup" colspan="2">ACT</th><th scope="colgroup" colspan="2">DP</th><th scope="colgroup" colspan="2">π₀.₅</th><th scope="colgroup" colspan="2">GR00T N1.5</th><th scope="colgroup" colspan="2" class="bench2dex-ours">Phoenix-MWA<br>(w. Pretrain)</th></tr>
+<tr><th scope="col">SR</th><th scope="col">LSCR</th><th scope="col">SR</th><th scope="col">LSCR</th><th scope="col">SR</th><th scope="col">LSCR</th><th scope="col">SR</th><th scope="col">LSCR</th><th scope="col" class="bench2dex-ours">SR</th><th scope="col" class="bench2dex-ours">LSCR</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Baking Tray Prep</th><th scope="rowgroup" rowspan="3">IIWA7 + Sharpa</th><td>6.0%</td><td>11.6%</td><td>2.0%</td><td>7.9%</td><td>27.5%</td><td>38.4%</td><td>10.0%</td><td>29.3%</td><td class="bench2dex-ours"><strong>30.0%</strong></td><td class="bench2dex-ours"><strong>61.8%</strong></td></tr>
+<tr><th scope="row">Canned Food Tray Arrangement</th><td>9.5%</td><td>34.6%</td><td>0.0%</td><td>14.8%</td><td>12.0%</td><td>38.8%</td><td>12.5%</td><td>37.3%</td><td class="bench2dex-ours"><strong>13.5%</strong></td><td class="bench2dex-ours"><strong>52.6%</strong></td></tr>
+<tr><th scope="row">Jigsaw Puzzle Assembly</th><td>0.0%</td><td>12.5%</td><td>0.0%</td><td>6.3%</td><td>0.0%</td><td>8.4%</td><td><strong>5.0%</strong></td><td><strong>30.3%</strong></td><td class="bench2dex-ours">0.0%</td><td class="bench2dex-ours">27.6%</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Gaming Desk Setup</th><th scope="rowgroup">JAKA ZU7 + DexHand021</th><td>31.0%</td><td>46.0%</td><td>9.0%</td><td>30.7%</td><td>33.5%</td><td>49.3%</td><td><strong>59.5%</strong></td><td>72.2%</td><td class="bench2dex-ours">52.0%</td><td class="bench2dex-ours"><strong>73.0%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Medicine Shoebox Pack</th><th scope="rowgroup" rowspan="2">Panda + Orca</th><td>7.5%</td><td>21.5%</td><td>0.0%</td><td>9.3%</td><td>21.5%</td><td>39.8%</td><td>13.0%</td><td>26.2%</td><td class="bench2dex-ours"><strong>49.5%</strong></td><td class="bench2dex-ours"><strong>65.5%</strong></td></tr>
+<tr><th scope="row">Tool Box Loading</th><td>20.0%</td><td>37.5%</td><td>16.5%</td><td>39.8%</td><td><strong>72.0%</strong></td><td><strong>86.0%</strong></td><td>40.0%</td><td>51.0%</td><td class="bench2dex-ours">68.5%</td><td class="bench2dex-ours">84.2%</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Sports Ball Cup Sort</th><th scope="rowgroup">Panda + Allegro</th><td>2.0%</td><td>2.5%</td><td>0.5%</td><td>4.4%</td><td>21.5%</td><td>33.6%</td><td>9.0%</td><td>21.5%</td><td class="bench2dex-ours"><strong>23.0%</strong></td><td class="bench2dex-ours"><strong>43.1%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Faucet Cup Water Fill</th><th scope="rowgroup" rowspan="2">RM65 + Revo2</th><td>7.5%</td><td>35.4%</td><td>4.0%</td><td>14.0%</td><td>15.5%</td><td>40.5%</td><td>33.0%</td><td>55.0%</td><td class="bench2dex-ours"><strong>35.5%</strong></td><td class="bench2dex-ours"><strong>66.5%</strong></td></tr>
+<tr><th scope="row">Stationery Category Sorting</th><td>1.5%</td><td>23.1%</td><td>2.0%</td><td>18.5%</td><td>0.0%</td><td>2.3%</td><td>3.0%</td><td>16.9%</td><td class="bench2dex-ours"><strong>24.5%</strong></td><td class="bench2dex-ours"><strong>55.5%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Bimanual Piano Melody</th><th scope="rowgroup" rowspan="2">xArm7 + Ability</th><td>4.0%</td><td>4.5%</td><td>0.5%</td><td>0.5%</td><td>7.5%</td><td>16.0%</td><td><strong>23.0%</strong></td><td><strong>23.5%</strong></td><td class="bench2dex-ours">4.0%</td><td class="bench2dex-ours">6.2%</td></tr>
+<tr><th scope="row">Wine Glass Plate Balance</th><td>26.0%</td><td>72.0%</td><td>3.5%</td><td>39.8%</td><td>35.0%</td><td>76.2%</td><td>28.5%</td><td>72.5%</td><td class="bench2dex-ours"><strong>40.0%</strong></td><td class="bench2dex-ours"><strong>81.8%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Cleaner Box Loading</th><th scope="rowgroup" rowspan="3">xArm7 + LEAP</th><td>33.0%</td><td>76.2%</td><td>9.0%</td><td>32.8%</td><td>55.0%</td><td>88.5%</td><td>47.0%</td><td>82.3%</td><td class="bench2dex-ours"><strong>72.5%</strong></td><td class="bench2dex-ours"><strong>95.8%</strong></td></tr>
+<tr><th scope="row">Shoebox Accessory Pack</th><td>30.0%</td><td>56.3%</td><td>9.5%</td><td>35.2%</td><td>51.0%</td><td>68.3%</td><td>40.5%</td><td>60.3%</td><td class="bench2dex-ours"><strong>64.5%</strong></td><td class="bench2dex-ours"><strong>79.8%</strong></td></tr>
+<tr><th scope="row">Toilet Lid Cleaner Pour</th><td>34.0%</td><td>50.3%</td><td>8.5%</td><td>23.5%</td><td>45.5%</td><td>53.3%</td><td>45.0%</td><td>63.3%</td><td class="bench2dex-ours"><strong>74.5%</strong></td><td class="bench2dex-ours"><strong>84.2%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Breadbasket Fast-Food Loading</th><th scope="rowgroup" rowspan="3">UR5 + RH5DG2</th><td>10.5%</td><td>15.8%</td><td>4.5%</td><td>7.3%</td><td>12.5%</td><td>15.6%</td><td>9.0%</td><td>13.5%</td><td class="bench2dex-ours"><strong>65.5%</strong></td><td class="bench2dex-ours"><strong>71.9%</strong></td></tr>
+<tr><th scope="row">Citrus Plate Loading</th><td>51.5%</td><td>69.9%</td><td>22.5%</td><td>44.4%</td><td>56.5%</td><td>67.3%</td><td>59.0%</td><td>73.1%</td><td class="bench2dex-ours"><strong>92.5%</strong></td><td class="bench2dex-ours"><strong>96.1%</strong></td></tr>
+<tr><th scope="row">Fridge Wine Interhand Pour</th><td>11.0%</td><td>48.5%</td><td>2.5%</td><td>41.8%</td><td>8.5%</td><td>36.1%</td><td>21.0%</td><td>58.6%</td><td class="bench2dex-ours"><strong>64.5%</strong></td><td class="bench2dex-ours"><strong>82.1%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Fruit Bowl Loading</th><th scope="rowgroup" rowspan="3">UR5 + RH56DFX</th><td>37.0%</td><td>62.0%</td><td>18.0%</td><td>47.8%</td><td>38.5%</td><td>71.6%</td><td>32.5%</td><td>68.1%</td><td class="bench2dex-ours"><strong>60.0%</strong></td><td class="bench2dex-ours"><strong>82.4%</strong></td></tr>
+<tr><th scope="row">Screwdriver Box &amp; Hammer</th><td>24.5%</td><td>56.2%</td><td>20.5%</td><td>49.0%</td><td>33.0%</td><td>57.5%</td><td>48.0%</td><td>73.7%</td><td class="bench2dex-ours"><strong>64.0%</strong></td><td class="bench2dex-ours"><strong>85.9%</strong></td></tr>
+<tr><th scope="row">Trash Disposal</th><td>18.5%</td><td>30.3%</td><td>14.0%</td><td>21.5%</td><td>41.0%</td><td>53.7%</td><td>34.5%</td><td>47.8%</td><td class="bench2dex-ours"><strong>44.5%</strong></td><td class="bench2dex-ours"><strong>64.8%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Fridge Fruit Shelf Sorting</th><th scope="rowgroup" rowspan="2">UR5 + Shadow</th><td>0.5%</td><td>2.6%</td><td>0.0%</td><td>15.1%</td><td>6.0%</td><td>29.6%</td><td>1.0%</td><td>19.6%</td><td class="bench2dex-ours"><strong>30.0%</strong></td><td class="bench2dex-ours"><strong>49.8%</strong></td></tr>
+<tr><th scope="row">Soup Serving</th><td>1.0%</td><td>11.5%</td><td>0.0%</td><td>3.1%</td><td>0.0%</td><td>14.0%</td><td><strong>3.0%</strong></td><td>13.9%</td><td class="bench2dex-ours"><strong>3.0%</strong></td><td class="bench2dex-ours"><strong>18.8%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Frypan Stand &amp; Pour</th><th scope="rowgroup" rowspan="2">UR5 + Schunk</th><td>19.0%</td><td>51.2%</td><td>14.5%</td><td>30.0%</td><td>15.0%</td><td>33.3%</td><td>54.5%</td><td>72.3%</td><td class="bench2dex-ours"><strong>60.0%</strong></td><td class="bench2dex-ours"><strong>85.8%</strong></td></tr>
+<tr><th scope="row">Microwave Bowl Loading</th><td>62.5%</td><td>74.9%</td><td>21.0%</td><td>48.6%</td><td>70.0%</td><td>78.4%</td><td>70.5%</td><td>82.0%</td><td class="bench2dex-ours"><strong>90.5%</strong></td><td class="bench2dex-ours"><strong>94.1%</strong></td></tr>
+</tbody>
+<tbody>
+<tr><th scope="row">Ball Box Loading</th><th scope="rowgroup" rowspan="2">UR5 + Wuji</th><td>8.5%</td><td>10.4%</td><td>0.0%</td><td>7.1%</td><td>14.0%</td><td>19.4%</td><td><strong>23.0%</strong></td><td><strong>37.1%</strong></td><td class="bench2dex-ours">9.5%</td><td class="bench2dex-ours">19.9%</td></tr>
+<tr><th scope="row">Condiment Box Loading</th><td>10.5%</td><td>31.8%</td><td>1.0%</td><td>4.2%</td><td>15.0%</td><td>33.2%</td><td>10.5%</td><td>27.7%</td><td class="bench2dex-ours"><strong>49.5%</strong></td><td class="bench2dex-ours"><strong>76.7%</strong></td></tr>
+</tbody>
+<tfoot><tr><th scope="row" colspan="2">Task mean (26 tasks)</th><td>18.0%</td><td>36.5%</td><td>7.1%</td><td>23.0%</td><td>27.2%</td><td>44.2%</td><td>28.3%</td><td>47.3%</td><td class="bench2dex-ours"><strong>45.6%</strong></td><td class="bench2dex-ours"><strong>65.6%</strong></td></tr></tfoot>
+</table></div>
+</div>
+</div>
+<div id="panel-robodojo-realworld" class="benchmark-panel" role="region" aria-labelledby="section-5-6">
+<div class="benchmark-summary"><div><h3 id="section-5-6">V.6 RoboDojo-RealWorld</h3></div><div class="benchmark-score"><strong>26.11<small>%</small></strong></div></div>
+<div class="expanded-details"><h4 class="detail-heading"><span>Full comparison</span><span class="summary-meta">Success rate (%)</span></h4><div class="detail-body">
+<div class="table-scroll" tabindex="0" role="region" aria-label="RoboDojo-RealWorld success rates"><table id="robodojo-realworld-comparison" class="report-table">
+<thead><tr><th scope="col">Method</th><th scope="col">ARX X5</th><th scope="col">Piper</th><th scope="col">Piper X</th><th scope="col">Average</th></tr></thead>
+<tbody><tr class="table-group"><th colspan="5" scope="row">VLA</th></tr>
+<tr><th scope="row">DM0</th><td>0.00%</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
+<tr><th scope="row">Spirit v1.5</th><td>0.00%</td><td>1.70%</td><td>0.00%</td><td>0.60%</td></tr>
+<tr><th scope="row">StarVLA</th><td>0.00%</td><td>5.00%</td><td>0.00%</td><td>1.70%</td></tr>
+<tr><th scope="row">π0</th><td>0.00%</td><td>5.00%</td><td>0.00%</td><td>1.70%</td></tr>
+<tr><th scope="row">GR00T-N1.7</th><td>1.70%</td><td>3.30%</td><td>0.00%</td><td>1.70%</td></tr>
+<tr><th scope="row">X-VLA</th><td>1.70%</td><td>8.30%</td><td>0.00%</td><td>3.30%</td></tr>
+<tr><th scope="row">Xiaomi-Robotics-0</th><td>8.30%</td><td>3.30%</td><td>0.00%</td><td>3.90%</td></tr>
+<tr><th scope="row">GalaxeaVLA (G0)</th><td>0.00%</td><td>13.30%</td><td>0.00%</td><td>4.40%</td></tr>
+<tr><th scope="row">InternVLA-A1</th><td>3.30%</td><td>18.30%</td><td>0.00%</td><td>7.20%</td></tr>
+<tr><th scope="row">π0.5</th><td>13.30%</td><td>21.70%</td><td>3.30%</td><td>12.80%</td></tr>
+</tbody><tbody><tr class="table-group"><th colspan="5" scope="row">WAM</th></tr>
+<tr><th scope="row">OpenWAM-α</th><td><strong>23.30%</strong></td><td><u>36.70%</u></td><td><u>13.30%</u></td><td><u>24.40%</u></td></tr>
+<tr class="ours"><th scope="row">Phoenix-MWA (w. Pretrain)</th><td><u>16.67%</u></td><td><strong>48.33%</strong></td><td><strong>13.33%</strong></td><td><strong>26.11%</strong></td></tr>
+</tbody></table></div></div></div></div>
+</div></section>
+
+<section class="section" id="analysis"><div class="wrap">
+  <div class="section-heading"><div><h2 id="section-6">VI. Analysis</h2></div><p>We measure changes in visual features and future-video prediction, then evaluate contact post-training and simulator-based reinforcement learning on real tasks.</p></div>
+  <article class="analysis-block"><div class="subsection-heading"><h3 id="section-6-1">VI.1 Visual feature analysis</h3></div><p class="prose">Phoenix Encoder starts from the DINO backbone in VGGT-Ω, denoted DINOv3 (VGGT-Ω). This initialization has a lower effective rank than the original DINOv3. We test whether dual-teacher distillation spreads feature variation across more directions while retaining the geometric initialization.</p><p class="prose">We sample 10,000 frames each from the pretraining validation set and LIBERO-Plus, using identical frames for all three encoders. CLS and Patch Mean refer to the CLS token and the average of the remaining image patch tokens, respectively. We compute effective rank from the singular values of the centered feature matrices to measure how evenly feature variation is distributed across principal directions.</p><figure><div class="figure-link"><img loading="lazy" src="assets/figure8-effective-rank-centered.webp" width="3156" height="1285" alt="Effective rank of DINOv3, DINOv3 (VGGT-Ω), and Phoenix Encoder across two data domains"></div><figcaption><strong>Figure 9.</strong> Effective rank before and after dual-teacher distillation on two data domains.</figcaption></figure><p class="prose analysis-summary">Compared with DINOv3 (VGGT-Ω), the CLS / Patch Mean effective ranks increase by <strong>5.81% / 7.86%</strong> on the pretraining validation set and <strong>2.44% / 6.55%</strong> on LIBERO-Plus. This measures a more even distribution of feature variation. It is evidence about the representation, not a direct measure of manipulation performance.</p></article>
+  <article class="analysis-block"><div class="subsection-heading"><h3 id="section-6-2">VI.2 Future-video prediction</h3></div><p class="prose">We compare FastWAM with Phoenix-MWA trained with and without pretraining on LIBERO-Plus and RoboTwin 2.0 C2R. The comparison measures whether the visual representation and pretraining improve future-video prediction.</p><p class="prose">We evaluate three models on 200 complete windows per benchmark, matched by task and window identifiers. Only the eight future frames are scored against each model’s own rollout observations. Scores are averaged equally across views (main and wrist for LIBERO-Plus; main, left wrist, and right wrist for RoboTwin) and then across windows.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Video prediction quality"><table class="report-table" id="video-prediction-quality">
+<thead>
+<tr>
+<th scope="col">Model</th>
+<th scope="col">PSNR ↑</th>
+<th scope="col">SSIM ↑</th>
+<th scope="col">LPIPS ↓</th>
+<th scope="col">DINO-GT ↑</th>
+<th scope="col">CLIP-GT ↑</th>
+</tr>
+</thead>
+<tbody id="video-prediction-libero">
+<tr class="table-group"><th colspan="6" scope="rowgroup">LIBERO-Plus</th></tr>
+<tr>
+<td>FastWAM</td>
+<td>20.75</td>
+<td>0.77</td>
+<td>0.19</td>
+<td>85.33</td>
+<td>91.50</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA (w/o. Pretrain)</td>
+<td>20.96</td>
+<td>0.78</td>
+<td>0.17</td>
+<td>86.06</td>
+<td>91.46</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA (w. Pretrain)</td>
+<td><strong>23.31</strong></td>
+<td><strong>0.81</strong></td>
+<td><strong>0.12</strong></td>
+<td><strong>90.28</strong></td>
+<td><strong>93.09</strong></td>
+</tr>
+</tbody>
+<tbody id="video-prediction-robotwin">
+<tr class="table-group"><th colspan="6" scope="rowgroup">RoboTwin 2.0 C2R</th></tr>
+<tr>
+<td>FastWAM</td>
+<td>16.51</td>
+<td>0.61</td>
+<td>0.39</td>
+<td>60.33</td>
+<td>83.27</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA (w/o. Pretrain)</td>
+<td>21.19</td>
+<td>0.75</td>
+<td>0.30</td>
+<td>76.02</td>
+<td>88.96</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA (w. Pretrain)</td>
+<td><strong>26.30</strong></td>
+<td><strong>0.82</strong></td>
+<td><strong>0.16</strong></td>
+<td><strong>86.12</strong></td>
+<td><strong>93.95</strong></td>
+</tr>
+</tbody>
+</table>
+</div><p class="prose analysis-summary">Phoenix-MWA without pretraining exceeds FastWAM on PSNR, SSIM, LPIPS, and DINO-GT on both benchmarks. Pretraining improves all five reported metrics. Relative to FastWAM, the pretrained model gains <strong>2.56 dB PSNR</strong> and reduces <strong>LPIPS by 36.84%</strong> on LIBERO-Plus; the corresponding changes on RoboTwin 2.0 C2R are <strong>9.79 dB</strong> and <strong>58.97%</strong>. The videos below show examples from <a href="#prediction-examples">LIBERO-Plus</a> and <a href="#robotwin-prediction-examples">RoboTwin 2.0 C2R</a>.</p>
+<figure class="prediction-examples" id="prediction-examples" data-video-root="demo/prediction-examples" aria-labelledby="prediction-heading">
+  <h4 class="prediction-heading" id="prediction-heading">LIBERO-Plus</h4>
+  <div class="tablist demo-tabs prediction-tabs" role="tablist" aria-label="Video prediction examples">
+    <button type="button" id="prediction-tab-bowl" role="tab" aria-selected="true" aria-controls="prediction-panel" tabindex="0" data-clip="01_camera_bowl_drawer" data-shift="Camera viewpoint" data-view="Main view">Bowl to drawer</button>
+    <button type="button" id="prediction-tab-stove" role="tab" aria-selected="false" aria-controls="prediction-panel" tabindex="-1" data-clip="02_background_stove_moka" data-shift="Background texture" data-view="Main view">Stove &amp; moka pot</button>
+    <button type="button" id="prediction-tab-sauce" role="tab" aria-selected="false" aria-controls="prediction-panel" tabindex="-1" data-clip="03_noise_bbq_sauce" data-shift="Sensor noise" data-view="Wrist view">BBQ sauce to basket</button>
+    <button type="button" id="prediction-tab-milk" role="tab" aria-selected="false" aria-controls="prediction-panel" tabindex="-1" data-clip="04_camera_milk_basket" data-shift="Camera viewpoint" data-view="Main view">Milk to basket</button>
+  </div>
+  <div id="prediction-panel" role="tabpanel" aria-labelledby="prediction-tab-bowl">
+
+    <div class="prediction-models" role="group" aria-label="Prediction models, from left to right">
+      <div class="prediction-model"><span>FastWAM</span></div>
+      <div class="prediction-model"><span>Phoenix-MWA</span> <span>(w/o. Pretrain)</span></div>
+      <div class="prediction-model"><span>Phoenix-MWA</span> <span>(w. Pretrain)</span></div>
+    </div>
+    <div class="prediction-frame">
+      <video class="prediction-video" width="672" height="224" controls loop muted playsinline preload="none" poster="demo/prediction-examples/01_camera_bowl_drawer/poster_frames.jpg" src="demo/prediction-examples/01_camera_bowl_drawer/comparison_frames.mp4" aria-label="Bowl to drawer: synchronized predictions from FastWAM, Phoenix-MWA (w/o. Pretrain), and Phoenix-MWA (w. Pretrain)">Your browser does not support embedded video. <a href="demo/prediction-examples/01_camera_bowl_drawer/comparison_frames.mp4">Open video</a></video>
+    </div>
+    <div class="prediction-toolbar video-toolbar">
+      <div aria-live="polite"><h3 class="video-title prediction-shift">Camera viewpoint</h3><p class="prediction-view">Main view</p></div>
+      <div class="prediction-actions video-actions"><label for="prediction-speed">Speed</label><select id="prediction-speed"><option value="0.5">0.5&times;</option><option value="1" selected>1&times;</option><option value="2">2&times;</option></select><a class="prediction-original" href="demo/prediction-examples/01_camera_bowl_drawer/comparison_frames.mp4" target="_blank" rel="noopener">Original video ↗</a></div>
+    </div>
+    <p class="prediction-error" role="alert" hidden>Video unavailable.</p>
+  </div>
+</figure>
+<figure class="prediction-examples" id="robotwin-prediction-examples" data-video-root="demo/robotwin-prediction-examples" aria-labelledby="robotwin-prediction-heading">
+  <h4 class="prediction-heading" id="robotwin-prediction-heading">RoboTwin 2.0 C2R</h4>
+  <div class="tablist demo-tabs prediction-tabs" role="tablist" aria-label="RoboTwin video prediction examples">
+    <button type="button" id="robotwin-prediction-tab-shoe" role="tab" aria-selected="true" aria-controls="robotwin-prediction-panel" tabindex="0" data-clip="01_place_shoe" data-shift="Clean2Random" data-view="Main view">Place shoe</button>
+    <button type="button" id="robotwin-prediction-tab-basket" role="tab" aria-selected="false" aria-controls="robotwin-prediction-panel" tabindex="-1" data-clip="02_place_object_basket" data-shift="Clean2Random" data-view="Main view">Object to basket</button>
+    <button type="button" id="robotwin-prediction-tab-blocks" role="tab" aria-selected="false" aria-controls="robotwin-prediction-panel" tabindex="-1" data-clip="03_blocks_ranking_size" data-shift="Clean2Random" data-view="Main view">Sort blocks by size</button>
+    <button type="button" id="robotwin-prediction-tab-bottle" role="tab" aria-selected="false" aria-controls="robotwin-prediction-panel" tabindex="-1" data-clip="04_move_pillbottle_pad" data-shift="Clean2Random" data-view="Main view">Pill bottle to pad</button>
+  </div>
+  <div id="robotwin-prediction-panel" role="tabpanel" aria-labelledby="robotwin-prediction-tab-shoe">
+
+    <div class="prediction-models" role="group" aria-label="Prediction models, from left to right">
+      <div class="prediction-model"><span>FastWAM</span></div>
+      <div class="prediction-model"><span>Phoenix-MWA</span> <span>(w/o. Pretrain)</span></div>
+      <div class="prediction-model"><span>Phoenix-MWA</span> <span>(w. Pretrain)</span></div>
+    </div>
+    <div class="prediction-frame">
+      <video class="prediction-video" width="768" height="256" controls loop muted playsinline preload="none" poster="demo/robotwin-prediction-examples/01_place_shoe/poster_frames.jpg" src="demo/robotwin-prediction-examples/01_place_shoe/comparison_frames.mp4" aria-label="Place shoe: synchronized predictions from FastWAM, Phoenix-MWA (w/o. Pretrain), and Phoenix-MWA (w. Pretrain)">Your browser does not support embedded video. <a href="demo/robotwin-prediction-examples/01_place_shoe/comparison_frames.mp4">Open video</a></video>
+    </div>
+    <div class="prediction-toolbar video-toolbar">
+      <div aria-live="polite"><h3 class="video-title prediction-shift">Clean2Random</h3><p class="prediction-view">Main view</p></div>
+      <div class="prediction-actions video-actions"><label for="robotwin-prediction-speed">Speed</label><select id="robotwin-prediction-speed"><option value="0.5">0.5&times;</option><option value="1" selected>1&times;</option><option value="2">2&times;</option></select><a class="prediction-original" href="demo/robotwin-prediction-examples/01_place_shoe/comparison_frames.mp4" target="_blank" rel="noopener">Original video ↗</a></div>
+    </div>
+    <p class="prediction-error" role="alert" hidden>Video unavailable.</p>
+  </div>
+</figure>
+</article>
+  <article class="analysis-block"><div class="subsection-heading"><h3 id="section-6-3">VI.3 Contact skills after ILA post-training</h3></div><p class="prose">We compare direct action generation with interaction-latent generation on peeling and plate wiping. Both require the tool to maintain contact while moving along a surface. These tests measure the effect of learning motion and tactile changes as a shared prediction target.</p><p class="prose">We report task success and <strong>F<sub>ext</sub> L1</strong>, the error between the expert reference and a resultant-force proxy computed from tactile deformation. The latter measures agreement with demonstrated contact patterns.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Contact-rich task results"><table class="report-table" id="contact-task-results">
+<thead>
+<tr>
+<th scope="col">Method</th>
+<th scope="col">Peeling SR ↑</th>
+<th scope="col">Peeling F<sub>ext</sub> L1 ↓</th>
+<th scope="col">Wiping SR ↑</th>
+<th scope="col">Wiping F<sub>ext</sub> L1 ↓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FastWAM</td>
+<td>10%</td>
+<td>2.01 ± 0.53</td>
+<td>50%</td>
+<td>1.54 ± 0.35</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA</td>
+<td>20%</td>
+<td>1.85 ± 0.63</td>
+<td>75%</td>
+<td>1.62 ± 0.41</td>
+</tr>
+<tr class="ours">
+<td>Phoenix-MWA-ILA</td>
+<td><strong>40%</strong></td>
+<td><strong>1.22 ± 0.51</strong></td>
+<td><strong>90%</strong></td>
+<td><strong>1.38 ± 0.45</strong></td>
+</tr>
+</tbody>
+</table>
+</div><p class="prose analysis-summary">With interaction latents, success rises from <strong>20% to 40%</strong> on <a href="#demos">peeling</a> and from <strong>75% to 90%</strong> on <a href="#demos">wiping</a>. Force-proxy error falls from <strong>1.85 to 1.22</strong> and from <strong>1.62 to 1.38</strong>, reductions of <strong>34.05%</strong> and <strong>14.81%</strong>. In these two tasks, more trials succeed and the executed contact patterns are closer to the expert reference.</p></article>
+  <article class="analysis-block"><div class="subsection-heading"><h3 id="section-6-4">VI.4 Real-world results after PhysCanvas GRPO</h3></div><p class="prose">Fixed demonstrations may not cover the corrective actions needed when an object is displaced or approached from a different angle. We test whether GRPO updates in PhysCanvas improve the pretrained policy when it returns to the real robot.</p><p class="prose">We start from a policy trained for <strong>30,000 SFT steps</strong>, then apply GRPO in the learned simulator. We evaluate test-tube insertion and block manipulation under <strong>three lighting conditions</strong> with varying object positions.</p><div class="table-scroll" tabindex="0" role="region" aria-label="World-model reinforcement-learning results"><table class="report-table" id="physcanvas-rl-results">
+<thead>
+<tr>
+<th scope="col">Task</th>
+<th scope="col">Method</th>
+<th scope="col">Success rates across three conditions</th>
+<th scope="col">Mean success rate ± population SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test Tube</td>
+<td>SFT 30k steps</td>
+<td>55%, 70%, 50%</td>
+<td>58.33% ± 8.50 pp</td>
+</tr>
+<tr class="ours">
+<td>Test Tube</td>
+<th scope="row">SFT 30k + PhysCanvas GRPO</th>
+<td><strong>95%, 75%, 55%</strong></td>
+<td><strong>75.00% ± 16.33 pp</strong></td>
+</tr>
+<tr>
+<td>Blocks</td>
+<td>SFT 30k steps</td>
+<td>80%, 80%, 80%</td>
+<td>80.00% ± 0.00 pp</td>
+</tr>
+<tr class="ours">
+<td>Blocks</td>
+<th scope="row">SFT 30k + PhysCanvas GRPO</th>
+<td><strong>90%, 85%, 85%</strong></td>
+<td><strong>86.67% ± 2.36 pp</strong></td>
+</tr>
+</tbody>
+</table>
+</div><p class="prose analysis-summary">After PhysCanvas GRPO, mean real-world success increases from <strong>58.33% to 75.00%</strong> on test-tube insertion and from <strong>80.00% to 86.67%</strong> on block manipulation: gains of <strong>16.67</strong> and <strong>6.67 percentage points</strong>. Both tasks improve in all three tested conditions. These results cover two tasks; transfer and stability across more tasks and environments remain to be evaluated.</p></article>
+</div></section>
+<section class="section" id="bibtex"><div class="wrap">
+<div class="section-heading"><div><h2 id="section-7">BibTeX</h2></div></div>
+<div class="citation-box"><div class="citation-toolbar"><span>BibTeX</span><button type="button" id="copy-bibtex" aria-label="Copy BibTeX citation">Copy</button></div>
+<pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex-code">@misc{openphoenix2026phoenix,
+    title  = {Phoenix: Scaling Robotic Manipulation through Visual and Interaction Representations},
+    author = {{Anyverse Dynamics} and {OpenPhoenix Team}},
+    year   = {2026},
+    month  = {October},
+    url    = {https://openphoenix-team.github.io/Phoenix-pages},
+    note   = {Blog post}
+}</code></pre></div>
+<span id="bibtex-copy-status" role="status" aria-live="polite"></span>
+</div></section>
+<section class="section" id="contributions" aria-labelledby="contributions-heading">
+  <div class="wrap">
+    <div class="section-heading"><div><h2 id="contributions-heading">Contribution</h2></div></div>
+    <div class="contribution-leads">
+      <strong>Advisers</strong>
+      <p>Qichao Zhang, Haoran Li, Dongbin Zhao</p>
+    </div>
+    <div class="contribution-leads">
+      <strong>Project Lead</strong>
+      <p><a href="https://ucaszyp.github.io/" target="_blank" rel="noopener noreferrer">Yupeng Zheng</a>, Zhongpu Xia</p>
+    </div>
+    <div class="contribution-leads">
+      <strong>Core Contributors</strong>
+      <p><a href="https://ucaszyp.github.io/" target="_blank" rel="noopener noreferrer">Yupeng Zheng</a>, Chaoyue Li, <a href="https://scholar.google.com/citations?user=Jcmk4csAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Linbo Wang</a>, <a href="https://getterupper.github.io/" target="_blank" rel="noopener noreferrer">Xiang Li</a>, Secant, <a href="https://zebinx.github.io/" target="_blank" rel="noopener noreferrer">Zebin Xing</a></p>
+    </div>
+    <p class="contribution-contact">Correspondence to: <a href="mailto:zhengyupeng18@mails.ucas.ac.cn">zhengyupeng18@mails.ucas.ac.cn</a></p>
+    <div class="contribution-grid">
+      <div class="contribution-group">
+        <h3>Model</h3>
+        <dl>
+          <div class="contribution-row">
+            <dt>Pre-training</dt>
+            <dd>Chaoyue Li, <a href="https://ucaszyp.github.io/" target="_blank" rel="noopener noreferrer">Yupeng Zheng</a>, <a href="https://scholar.google.com/citations?user=Jcmk4csAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Linbo Wang</a></dd>
+          </div>
+          <div class="contribution-row">
+            <dt>Post-training</dt>
+            <dd><a href="https://getterupper.github.io/" target="_blank" rel="noopener noreferrer">Xiang Li</a>, Xiaozhen Xu, Yixian Li, Xinchao Gou, Ziwen Cai</dd>
+          </div>
+          <div class="contribution-row">
+            <dt>Infrastructure</dt>
+            <dd>Zhiyong Zhao, Xiaohang Chen</dd>
+          </div>
+          <div class="contribution-row">
+            <dt>Tactile</dt>
+            <dd>Secant, Yujie Zang, Yuchen Liu, <a href="https://scholar.google.com/citations?user=bJrZ3kUAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Yichen Zhang</a>, <a href="https://zebinx.github.io/" target="_blank" rel="noopener noreferrer">Zebin Xing</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="contribution-group">
+        <h3>Data</h3>
+        <p><a href="https://scholar.google.com/citations?user=Jcmk4csAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Linbo Wang</a>, Xiaotian Liu, Chaoyue Li, <a href="https://ucaszyp.github.io/" target="_blank" rel="noopener noreferrer">Yupeng Zheng</a>, Songen Gu, Secant, Shuai Tian, Ning Ma, Xiaotong Su, Jing Li, Youhao Hu, Bo Li, Qiupeng Gu, Kun Zhang, Kangyang Chen, Jun Wan, Yujie Zang, Zichen Li, Yuchen Liu</p>
+      </div>
+      <div class="contribution-group">
+        <h3>Deployment</h3>
+        <p>Xiaotong Su, <a href="https://scholar.google.com/citations?user=Jcmk4csAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Linbo Wang</a>, <a href="https://scholar.google.com/citations?user=bJrZ3kUAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Yichen Zhang</a></p>
+      </div>
+      <div class="contribution-group">
+        <h3>Writing</h3>
+        <p><a href="https://getterupper.github.io/" target="_blank" rel="noopener noreferrer">Xiang Li</a>, <a href="https://ucaszyp.github.io/" target="_blank" rel="noopener noreferrer">Yupeng Zheng</a>, Chaoyue Li, Secant, <a href="https://scholar.google.com/citations?user=bJrZ3kUAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Yichen Zhang</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="community" aria-labelledby="community-heading">
+  <div class="wrap">
+    <div class="section-heading"><div><h2 id="community-heading">Community</h2></div></div>
+    <div class="community-layout">
+      <div class="community-copy">
+        <h3>MWA-Phoenix WeChat Group</h3>
+        <p>Join the WeChat group to discuss model training, benchmark evaluation, and robot deployment, and share reproduction results and questions.</p>
+        <p class="community-validity">The QR card is marked valid before October 29, 2026.</p>
+      </div>
+      <figure>
+        <a class="community-qr" href="assets/community-wechat-20261023.png" target="_blank" rel="noopener noreferrer" aria-label="Scan with WeChat to join. Click the image to open the original."><img src="assets/community-wechat-20261023.png" width="966" height="1518" loading="lazy" alt="MWA-Phoenix WeChat Group QR code"></a>
+        <figcaption>Scan with WeChat to join. Click the image to open the original.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><a class="wordmark" href="#top">Phoenix</a><span>Phoenix · World modeling and physical interaction learning</span><a href="#top">Back to top ↑</a></div></footer>
+<script type="application/json" id="video-data">[{"id": "tube", "title": "Test-tube insertion", "note": "Bimanual coordination and precise insertion", "src": "demo/shiguan_bimanual_step015000_rtc_three_views.mp4", "poster": "assets/web_posters/tube.jpg", "duration": 25.067, "size": 52533109, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/shiguan_bimanual_step015000_rtc_three_views.webm", "av1Size": 38382329}, {"id": "blocks", "title": "Block manipulation", "note": "Object manipulation with coordinated arms", "src": "demo/jimu_step015000_rtc_three_views.mp4", "poster": "assets/web_posters/blocks.jpg", "duration": 18.967, "size": 34952422, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/jimu_step015000_rtc_three_views.webm", "av1Size": 21789351}, {"id": "bottle", "title": "Bottle-cap twisting", "note": "Coordinating grasping, rotation, and contact", "src": "demo/bottle_02_step015000_rtc_three_views.mp4", "poster": "assets/web_posters/bottle.jpg", "duration": 21.0, "size": 38464499, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/bottle_02_step015000_rtc_three_views.webm", "av1Size": 25601186}, {"id": "cube", "title": "Cube manipulation", "note": "Sequential manipulation and pose adjustment", "src": "demo/mofang_step015000_rtc_three_views.mp4", "poster": "assets/web_posters/cube.jpg", "duration": 23.0, "size": 41400322, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/mofang_step015000_rtc_three_views.webm", "av1Size": 30857932}, {"id": "cucumber", "title": "Cucumber peeling", "note": "Sustained tool contact", "src": "demo/huanggua_three_views_background_blur_v3.mp4", "poster": "assets/web_posters/cucumber.jpg", "duration": 83.8, "size": 32112362, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/huanggua_three_views_background_blur_v3.webm", "av1Size": 25586496}, {"id": "plate", "title": "Plate wiping", "note": "Surface-following motion and contact control", "src": "demo/plate_rtc_three_views_background_blur_v3.mp4", "poster": "assets/web_posters/plate.jpg", "duration": 28.6, "size": 8131418, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/plate_rtc_three_views_background_blur_v3.webm", "av1Size": 5312928}, {"id": "pouch", "title": "Pencil-pouch manipulation", "note": "Manipulating everyday objects", "src": "demo/pouch2459_50k_rollout000004_left_base_right_titlebar.mp4", "poster": "assets/web_posters/pouch.jpg", "duration": 33.7, "size": 14509920, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/pouch2459_50k_rollout000004_left_base_right_titlebar.webm", "av1Size": 9254937}, {"id": "breakfast", "title": "Breakfast-object manipulation", "note": "Manipulation in everyday settings", "src": "demo/breakfast273_30k_rtc_three_views.mp4", "poster": "assets/web_posters/breakfast.jpg", "duration": 53.1, "size": 71695754, "width": 1920, "height": 560, "av1": "https://openphoenix-team.github.io/Phoenix-pages/demo/breakfast273_30k_rtc_three_views.webm", "av1Size": 36030040}]</script><script>'use strict';
+(() => {
+  function bindTabs(group, activate) {
+    const tabs = [...group.querySelectorAll('[role="tab"]')];
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        if (event.key === 'Home') next = 0;
+        if (event.key === 'End') next = tabs.length - 1;
+        if (next !== undefined) {
+          event.preventDefault();
+          activate(tabs[next]);
+          tabs[next].focus();
+        }
+      });
+    });
+    return tabs;
+  }
+  function selectTab(tabs, selected) {
+    tabs.forEach(tab => {
+      const active = tab === selected;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+    });
+  }
+  function setVideoSources(video, item) {
+    video.querySelectorAll('source').forEach(source => source.remove());
+    const sources = item.av1 ? [[item.av1, 'video/webm; codecs=av01.0.08M.08']] : [];
+    sources.push([item.src, 'video/mp4']);
+    const elements = sources.map(([src, type]) => {
+      const source = document.createElement('source');
+      source.src = src;
+      source.type = type;
+      return source;
+    });
+    video.prepend(...elements);
+    video.querySelector('a').href = item.src;
+  }
+  const videos = JSON.parse(document.getElementById('video-data').textContent);
+  const players = [...document.querySelectorAll('.demo-group video')];
+  const videoActions = new Map();
+  document.querySelectorAll('.demo-group').forEach(group => {
+    const video = group.querySelector('video');
+    const panel = group.querySelector('[role="tabpanel"]');
+    const speed = group.querySelector('.playback-rate');
+    const error = group.querySelector('.video-error');
+    let current = Number(group.querySelector('[aria-selected="true"]').dataset.video);
+    function activateVideo(tab) {
+      const index = Number(tab.dataset.video);
+      if (index === current) return;
+      const resume = !video.paused;
+      video.pause();
+      current = index;
+      const item = videos[index];
+      selectTab(tabs, tab);
+      panel.setAttribute('aria-labelledby', tab.id);
+      video.poster = item.poster;
+      setVideoSources(video, item);
+      video.setAttribute('aria-label', item.title + ': real-time RTX 4090 inference, original-speed footage');
+      video.querySelector('a').href = item.src;
+      group.querySelector('.video-title').textContent = item.title;
+      group.querySelector('.video-original').href = item.src;
+      error.hidden = true;
+      speed.value = '1';
+      video.load();
+      video.playbackRate = 1;
+      if (resume) video.play().catch(() => {});
+    }
+    const tabs = bindTabs(group.querySelector('.demo-tabs'), activateVideo);
+    tabs.forEach(tab => videoActions.set(Number(tab.dataset.video), () => {
+      activateVideo(tab);
+      group.scrollIntoView({behavior: 'smooth', block: 'start'});
+      tab.focus({preventScroll: true});
+    }));
+    speed.addEventListener('change', () => { video.playbackRate = Number(speed.value); });
+    video.addEventListener('loadedmetadata', () => { video.playbackRate = Number(speed.value); });
+    video.addEventListener('error', () => { error.hidden = false; });
+    video.addEventListener('loadeddata', () => { error.hidden = true; });
+    video.addEventListener('play', () => players.forEach(other => { if (other !== video) other.pause(); }));
+  });
+  document.querySelectorAll('[data-demo]').forEach(link => {
+    link.addEventListener('click', event => {
+      const activate = videoActions.get(Number(link.dataset.demo));
+      if (activate) {
+        event.preventDefault();
+        activate();
+      }
+    });
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) players.forEach(video => video.pause()); });
+  if ('IntersectionObserver' in window) {
+    const pauseObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (!entry.isIntersecting) entry.target.pause(); });
+    }, {threshold: 0});
+    players.forEach(video => pauseObserver.observe(video));
+    const links = [...document.querySelectorAll('nav a')];
+    const sectionObserver = new IntersectionObserver(entries => {
+      const active = entries.filter(entry => entry.isIntersecting).at(-1);
+      if (!active) return;
+      links.forEach(link => {
+        if (link.hash === '#' + active.target.id) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }, {rootMargin: '-15% 0px -65% 0px', threshold: 0});
+    links.forEach(link => sectionObserver.observe(document.querySelector(link.hash)));
+  }
+})();
+</script>
+<dialog id="figure-dialog" aria-label="Expanded figure"><button type="button" id="close-figure">Close ×</button><p class="expanded-caption"></p></dialog>
+<script>
+(() => {
+const dialog=document.getElementById('figure-dialog');
+document.querySelectorAll('figure:not(.pipeline-platforms) img').forEach(img=>{
+const button=document.createElement('button'); button.type='button'; button.className='expand-figure'; button.textContent='View full-size figure ↗';
+img.closest('figure').append(button);
+button.addEventListener('click',()=>{let full=dialog.querySelector('img');if(!full){full=document.createElement('img');dialog.insertBefore(full,dialog.querySelector('p'));}full.src=img.src;full.alt=img.alt;const caption=img.closest('figure').querySelector('figcaption');dialog.querySelector('p').replaceChildren(...(caption?[...caption.childNodes].map(node=>node.cloneNode(true)):[]));dialog.showModal();});
+});
+document.getElementById('close-figure').onclick=()=>dialog.close();
+dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+const links=[...document.querySelectorAll('.article-toc > a, .article-toc > .toc-group > a')];
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(link=>{if(link.hash==='#'+entry.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});});},{rootMargin:'-10% 0px -70% 0px'});links.forEach(link=>observer.observe(document.querySelector(link.hash)));}
+})();
+</script>
+<script>
+document.getElementById('copy-bibtex').addEventListener('click', async function(){
+  const code=document.getElementById('bibtex-code');
+  const status=document.getElementById('bibtex-copy-status');
+  try {
+    await navigator.clipboard.writeText(code.textContent);
+    this.textContent='Copied';status.textContent='Citation copied.';
+    setTimeout(()=>{this.textContent='Copy';status.textContent='';},2000);
+  } catch(error) {
+    const range=document.createRange();range.selectNodeContents(code);
+    const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);
+    status.textContent='Citation selected. Press Ctrl+C (or Command+C) to copy.';
+  }
+});
+</script>
+<script id="platform-gallery-script">
+(() => {
+  const dialog=document.getElementById('figure-dialog');
+  const previews=[...document.querySelectorAll('.platform-preview')];
+  const nav=document.createElement('div');
+  nav.className='platform-gallery-nav';nav.hidden=true;
+  nav.innerHTML='<button type="button" aria-label="Previous platform image">← Previous</button><button type="button" aria-label="Next platform image">Next →</button>';
+  dialog.append(nav);
+  const previous=nav.querySelector('button:first-child');
+  const next=nav.querySelector('button:last-child');
+  let index=0;
+  function display(at){
+    index=at;
+    const button=previews[index],img=button.querySelector('img');
+    let full=dialog.querySelector('img');
+    if(!full){full=document.createElement('img');dialog.insertBefore(full,dialog.querySelector('p'));}
+    full.src=img.src;full.alt=img.alt;
+    const caption=button.closest('figure').querySelector('figcaption');
+    dialog.querySelector('p').replaceChildren(...[...caption.childNodes].map(node=>node.cloneNode(true)));
+    previous.disabled=index===0;next.disabled=index===previews.length-1;
+    nav.hidden=false;
+    if(!dialog.open)dialog.showModal();
+  }
+  previews.forEach((button,i)=>button.addEventListener('click',()=>display(i)));
+  document.getElementById('expand-platforms').addEventListener('click',()=>display(0));
+  previous.addEventListener('click',()=>{if(index>0)display(index-1);});
+  next.addEventListener('click',()=>{if(index<previews.length-1)display(index+1);});
+  dialog.addEventListener('keydown',event=>{
+    if(nav.hidden)return;
+    if(event.key==='ArrowLeft'&&index>0){event.preventDefault();display(index-1);}
+    if(event.key==='ArrowRight'&&index<previews.length-1){event.preventDefault();display(index+1);}
+  });
+  dialog.addEventListener('close',()=>{nav.hidden=true;});
+})();
+</script>
+<script src="assets/prediction-examples.js?v=robotwin4"></script>
+<script id="sidebar-subsection-interactions">
+(() => {
+ const groups=[...document.querySelectorAll('.article-toc .toc-group')];
+ let active=null, pinned=null, closeTimer;
+ function close(group){
+   if(!group)return;
+   if(pinned===group)pinned=null;
+   group.classList.remove('is-open');
+   group.querySelector('.toc-level-1').setAttribute('aria-expanded','false');
+   group.querySelector('.toc-submenu').hidden=true;
+   if(active===group)active=null;
+ }
+ function open(group){
+   clearTimeout(closeTimer);
+   if(active!==group)close(active);
+   active=group;
+   const menu=group.querySelector('.toc-submenu');
+   menu.style.setProperty('--submenu-top','0px');
+   menu.hidden=false;
+   group.classList.add('is-open');
+   group.querySelector('.toc-level-1').setAttribute('aria-expanded','true');
+
+ }
+ groups.forEach(group=>{
+   const trigger=group.querySelector('.toc-level-1');
+   group.addEventListener('pointerenter',()=>open(group));
+   group.addEventListener('pointerleave',()=>{
+     clearTimeout(closeTimer);
+     closeTimer=setTimeout(()=>{if(pinned!==group&&!group.contains(document.activeElement))close(group);},180);
+   });
+   group.addEventListener('focusin',()=>open(group));
+   group.addEventListener('focusout',()=>{
+     setTimeout(()=>{if(pinned!==group&&!group.contains(document.activeElement)&&!group.matches(':hover'))close(group);},0);
+   });
+   trigger.addEventListener('keydown',event=>{
+     if(event.key==='ArrowRight'||event.key==='ArrowDown'){
+       event.preventDefault();open(group);group.querySelector('.toc-submenu a').focus();
+     }
+   });
+   group.addEventListener('keydown',event=>{
+     if(event.key==='Escape'){event.preventDefault();trigger.focus();close(group);}
+   });
+   group.querySelectorAll('.toc-submenu a').forEach(link=>link.addEventListener('click',()=>{
+     clearTimeout(closeTimer);open(group);pinned=group;
+     document.querySelectorAll('.toc-submenu a[aria-current]').forEach(a=>a.removeAttribute('aria-current'));
+     link.setAttribute('aria-current','location');
+   }));
+ });
+ window.addEventListener('resize',()=>{if(active)open(active);});
+ document.addEventListener('pointerdown',event=>{
+   if(active&&active!==pinned&&!active.contains(event.target))close(active);
+ });
+})();
+</script>
+</body></html>

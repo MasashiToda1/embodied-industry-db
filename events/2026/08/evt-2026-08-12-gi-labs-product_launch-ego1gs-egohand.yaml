@@ -1,0 +1,24 @@
+id: evt-2026-08-12-gi-labs-product_launch-ego1gs-egohand
+date: '2026-08-12'
+date_precision: day
+type: product_launch
+orgs:
+- id: gi-labs
+  role: subject
+title:
+  zh: GI Labs 发布 EGO1GS 采集头显与 EgoHand
+summary:
+  zh: GI Labs发布用于机器人学习的EGO1GS第一视角采集头显及端侧EgoHand手部检测模型。官方参数为双目1080p、30fps全局快门相机、400Hz九轴IMU及双麦克风音频，使用共同硬件时钟同步。EgoHand识别佩戴者双手并在采集时提供反馈；400Hz指IMU采样率，不是相机帧率。
+evidence:
+- url: https://www.gilabs.xyz/blog/ego1gs
+  publisher: www.gilabs.xyz
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gi-ego1gs.html
+corroboration: single
+axes:
+  data_acquisition:
+  - human-video
+  data_modality:
+  - rgb
+  - audio
