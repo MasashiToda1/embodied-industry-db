@@ -38,12 +38,13 @@ function nav(active) {
     <a class="brand" href="index.html">具身产业库</a>
     <div class="nav-tabs">${tabs.map(([k, z]) => `<a class="tab ${k === active ? 'on' : ''}" href="${k}.html">${z}</a>`).join('')}</div>
     <span class="spacer"></span>
-    <input id="q" placeholder="搜主体 / 别名 / 产品名 / 事件…" autocomplete="off">
+    <input id="q" type="search" aria-label="搜索主体或事件" placeholder="搜主体 / 别名 / 产品名 / 事件…" autocomplete="off">
     <a class="repo-link" href="https://github.com/MasashiToda1/embodied-industry-db" target="_blank" rel="noopener noreferrer" aria-label="打开 GitHub 仓库（新标签页）">GitHub <span aria-hidden="true">↗</span></a>
   </nav></div><div id="search-pop"></div>`;
   const q = $('#q'), pop = $('#search-pop');
   q.addEventListener('input', () => renderSearch(q.value.trim(), pop));
   q.addEventListener('focus', () => q.value && renderSearch(q.value.trim(), pop));
+  q.addEventListener('keydown', e => { if (e.key === 'Escape') pop.style.display = 'none'; });
   document.addEventListener('click', e => { if (!e.target.closest('nav') && !e.target.closest('#search-pop')) pop.style.display = 'none'; });
 }
 function renderSearch(text, pop) {
@@ -75,10 +76,10 @@ function eventRow(ev, showOrg = true) {
     <td class="mono">${ev.date}<div class="muted" style="font-size:10px">${ev.date_precision}${ev.date_basis && ev.date_basis !== 'stated' ? ' · ' + ev.date_basis : ''}</div></td>
     ${showOrg ? `<td>${orgs}</td>` : ''}
     <td><span class="chip">${D.event_types[ev.type] || ev.type}</span></td>
-    <td>${esc(ev.title.zh)}</td>
+    <td><button class="event-toggle" aria-expanded="false" aria-controls="detail-${ev.id}">${esc(ev.title.zh)}</button></td>
     <td class="right muted">${(ev.evidence || []).length}${ev.corroboration === 'multi' ? ' ✓' : ''}</td>
   </tr>
-  <tr class="detail" data-for="${ev.id}" style="display:none"><td colspan="${showOrg ? 5 : 4}"><div class="detail">
+  <tr class="detail" id="detail-${ev.id}" data-for="${ev.id}" style="display:none"><td colspan="${showOrg ? 5 : 4}"><div class="detail">
     <p class="sum">${esc(ev.summary?.zh || '')}</p>
     ${ev.amount ? `<div><b>金额</b> ${amountStr(ev.amount)}</div>` : ''}
     ${(ev.counterparties || []).length ? `<div><b>对手方</b> ${ev.counterparties.map(esc).join('、')} <span class="muted">（文本，不在 registry）</span></div>` : ''}
@@ -91,6 +92,26 @@ function bindExpand(root) {
   root.addEventListener('click', e => {
     const tr = e.target.closest('tr.ev'); if (!tr || e.target.closest('a')) return;
     const d = root.querySelector(`tr.detail[data-for="${tr.dataset.id}"]`); d.style.display = d.style.display === 'none' ? '' : 'none';
+    $('.event-toggle', tr).setAttribute('aria-expanded', String(d.style.display !== 'none'));
+  });
+}
+
+// 同一份表格内容：桌面按列，手机按带字段名的记录阅读；分页后也需补齐。
+function prepareTables(root = $('main')) {
+  $$('table', root).forEach(table => {
+    const labels = $$('thead th', table).map(th => th.textContent.trim());
+    if (!labels.length) return;
+    table.classList.add('responsive-table');
+    table.classList.toggle('event-table', !!$('tr.ev', table));
+    $$('tbody > tr:not(.detail)', table).forEach(tr => {
+      [...tr.cells].forEach((td, i) => {
+        if (td.colSpan > 1 || td.dataset.label) return;
+        td.dataset.label = labels[i];
+        const value = document.createElement('span'); value.className = 'cell-value';
+        while (td.firstChild) value.appendChild(td.firstChild);
+        td.appendChild(value);
+      });
+    });
   });
 }
 
@@ -178,7 +199,8 @@ async function pageIndex() {
     $('#fchips').innerHTML = chips.length ? chips.join('') + `<span class="fchip clear" id="f-clear">清除全部</span>` : '';
     $$('.fchip:not(.clear)').forEach(c => $('i', c).onclick = () => { if (c.dataset.f === 'range') { F.from = F.to = ''; $('#f-from').value = $('#f-to').value = ''; } else F[c.dataset.f].delete(c.dataset.k); menus.forEach(m => m.redraw()); page = 1; render(); });
     const cl = $('#f-clear'); if (cl) cl.onclick = () => { ['org', 'type', 'layer', 'axis'].forEach(f => F[f].clear()); F.from = F.to = ''; $('#f-from').value = $('#f-to').value = ''; menus.forEach(m => m.redraw()); page = 1; render(); };
-    if (want) { const d = rows.querySelector(`tr.detail[data-for="${want}"]`); if (d) { d.style.display = ''; d.previousElementSibling.scrollIntoView({ block: 'center' }); } }
+    prepareTables();
+    if (want) { const d = rows.querySelector(`tr.detail[data-for="${want}"]`); if (d) { d.style.display = ''; $('.event-toggle', d.previousElementSibling).setAttribute('aria-expanded', 'true'); d.previousElementSibling.scrollIntoView({ block: 'center' }); } }
   };
   render();
 }
@@ -441,6 +463,11 @@ async function pageAxes() {
   $$('#axis-tags .axis-option').forEach(t => t.onclick = () => { axis = t.dataset.f; remember(); draw(); });
   $$('.axis-view-switch [data-t]').forEach(t => t.onclick = () => { tab = t.dataset.t; remember(); draw(); });
   draw();
+  let chartWidth = $('#viz').clientWidth;
+  new ResizeObserver(() => {
+    const width = $('#viz').clientWidth;
+    if (width !== chartWidth) { chartWidth = width; if (tab === 'stream') draw(); }
+  }).observe($('#viz'));
 }
 function toDate(s) { s = String(s); if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return new Date(s); if (/^\d{4}-\d{2}$/.test(s)) return new Date(s + '-15'); const q = s.match(/^(\d{4})-Q([1-4])$/); if (q) return new Date(+q[1], q[2] * 3 - 2, 15); if (/^\d{4}$/.test(s)) return new Date(+s, 6, 1); return new Date(s); }
 function drawStream(el, ax) {
@@ -452,7 +479,7 @@ function drawStream(el, ax) {
   if (d3.timeMonth.count(t0, t1) < 6) t0 = d3.timeMonth.offset(t1, -6);   // 样本全在一个月内时也拉出时间感
   const months = d3.timeMonths(t0, d3.timeMonth.offset(t1, 1));
   const series = months.map(m => { const row = { t: m }; values.forEach(v => row[v] = ax.values[v].orgs.filter(o => toDate(o.first_seen) <= d3.timeMonth.offset(m, 1)).length); return row; });
-  const W = el.clientWidth - 32, H = 320, m = { t: 20, r: 20, b: 30, l: 36 };
+  const W = el.clientWidth, H = W < 600 ? 260 : 320, m = { t: 24, r: 26, b: 30, l: 36 };
   el.innerHTML = `<div class="legend" style="margin-bottom:6px">${values.map((v, i) => `<i style="background:${d3.schemeTableau10[i % 10]}"></i>${label(ax.zh ? Object.keys(D.axes_meta).find(k => D.axes_meta[k].zh === ax.zh) + ':' + v : v, ax.values[v].zh)} <span class="muted">${ax.values[v].orgs.length}</span>`).join('')}</div>`;
   const svg = d3.select(el).append('svg').attr('width', W).attr('height', H);
   const x = d3.scaleTime().domain([t0, t1]).range([m.l, W - m.r]);
@@ -460,7 +487,7 @@ function drawStream(el, ax) {
   const y = d3.scaleLinear().domain([0, d3.max(stack, s => d3.max(s, d => d[1])) || 1]).nice().range([H - m.b, m.t]);
   const area = d3.area().x(d => x(d.data.t)).y0(d => y(d[0])).y1(d => y(d[1])).curve(d3.curveMonotoneX);
   svg.selectAll('path').data(stack).join('path').attr('d', area).attr('fill', (d, i) => d3.schemeTableau10[i % 10]).attr('opacity', .9);
-  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6).tickFormat(d3.timeFormat('%Y-%m'))).selectAll('text').style('font-size', '11px');
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.min(6, Math.floor((W - m.l - m.r) / 85)))).tickFormat(d3.timeFormat('%Y-%m'))).selectAll('text').style('font-size', '11px');
   svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4)).selectAll('text').style('font-size', '11px');
   svg.append('text').attr('x', m.l).attr('y', 12).style('font-size', '11px').style('fill', '#6b6b70').text('主体数（累计首次可见）');
 }
@@ -522,7 +549,8 @@ async function pageGraph() {
   $('main').innerHTML = `<div class="wrap"><h1>图谱</h1>
     <div class="sub">节点＝主体，大小＝事件数。<b>实线＝事件里的关系</b>（投资 / 客户 / 供应），每条能点回事件。灰点＝文本对手方（投资机构、买方），不在 registry。</div>
     <div class="card" style="margin-bottom:12px"><span class="tag on" id="t-event">事件关系（实线）</span><span class="tag" id="t-shared">共享技术栈（虚线）</span><span class="tag soft" id="t-all">显示无事件的主体</span><span class="tag soft" id="t-text">显示只出现 1 次的对手方（${nText - nTextRepeat}）</span>
-      <span class="legend" style="float:right">拖动节点 · 滚轮缩放 · 点节点进主体页</span></div>
+      <span class="graph-help legend">拖动查看 · 双指或滚轮缩放 · 点节点进主体页</span></div>
+    <div class="graph-controls" role="group" aria-label="图谱缩放"><button class="fbtn" id="graph-in" aria-label="放大图谱">＋</button><button class="fbtn" id="graph-out" aria-label="缩小图谱">−</button><button class="fbtn" id="graph-fit">显示全图</button></div>
     <div id="graph"></div><div class="tip" id="tip"></div>
     <div class="notice" style="margin-top:12px">默认只画事件里的关系，对手方只显示出现 ≥2 次的（${nTextRepeat} 个）——只投过一家的机构在图上是孤枝，打开开关才显示。共享技术栈的虚线也默认关：技术选择相同不等于有关系。</div></div>`;
   // 渲染用 vasturiano/force-graph（canvas）。节点半径与字号都除以 globalScale：
@@ -559,7 +587,10 @@ async function pageGraph() {
     fg.graphData({ nodes, links });
     fg.onEngineStop(() => { fg.zoomToFit(400, 30); fg.onEngineStop(() => {}); });
   };
-  window.addEventListener('resize', () => fg.width(el.clientWidth));
+  new ResizeObserver(() => fg.width(el.clientWidth).height(el.clientHeight)).observe(el);
+  $('#graph-in').onclick = () => fg.zoom(fg.zoom() * 1.4, 200);
+  $('#graph-out').onclick = () => fg.zoom(fg.zoom() / 1.4, 200);
+  $('#graph-fit').onclick = () => fg.zoomToFit(300, 30);
   $('#t-shared').onclick = e => { showShared = !showShared; e.target.classList.toggle('on', showShared); draw(); };
   $('#t-all').onclick = e => { showAll = !showAll; e.target.classList.toggle('on', showAll); e.target.classList.toggle('soft', !showAll); draw(); };
   $('#t-text').onclick = e => { allText = !allText; e.target.classList.toggle('on', allText); e.target.classList.toggle('soft', !allText); draw(); };
@@ -745,6 +776,7 @@ async function pageSignals() {
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.body.dataset.page;
   ({ index: pageIndex, orgs: pageOrgs, org: pageOrgs, axes: pageAxes, graph: pageGraph, signals: pageSignals }[page] || pageIndex)()
+    .then(() => prepareTables())
     .catch(err => { $('main').innerHTML = `<div class="wrap"><div class="notice">加载失败：${esc(err.message)}。本地预览请先跑 <span class="mono">make site</span> 生成 data/。</div></div>`; console.error(err); });
   const f = document.createElement('footer'); f.innerHTML = `<div class="wrap">具身产业库 · 数据 CC BY 4.0 · 代码 MIT · <a href="https://github.com/MasashiToda1/embodied-industry-db">GitHub</a> · 技术维度承接自 <a href="https://github.com/ImChong/Robotics_Notebooks">Robotics_Notebooks</a> · 不排名、不打分，只有分布与时间线</div>`; document.body.appendChild(f);
 });
