@@ -1,0 +1,38 @@
+id: evt-2026-10-22-motphys-publication-uni-supermimic
+date: '2026-10-22'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯公开 Uni-SuperMimic 下游复现
+summary:
+  zh: 莫特菲斯公开基于UniLab的SuperMimic下游复现，面向Unitree G1动作追踪提供训练与评测实现，并支持mjwarp、MuJoCo及Motrix后端。仓库明确原论文来自外部团队，动作素材另行下载且适用各自许可，训练检查点未随仓库提供。
+evidence:
+- url: https://github.com/Motphys/Uni-SuperMimic
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/360-0.md
+- url: https://api.github.com/repos/Motphys/Uni-SuperMimic/git/trees/HEAD?recursive=1
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/360-0-tree.json
+- url: https://api.github.com/repos/Motphys/Uni-SuperMimic/commits?per_page=100
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/supermimic-commits-all.json
+corroboration: single
+axes:
+  control_route:
+  - rl
+  model_form:
+  - world-model
+  sim_stack:
+  - mujoco
+  - in-house
+date_basis: derived
+date_as_stated: 初始有效复现提交为2026-10-22T10:36:44Z。

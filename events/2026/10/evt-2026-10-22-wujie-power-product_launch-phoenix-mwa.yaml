@@ -1,0 +1,33 @@
+id: evt-2026-10-22-wujie-power-product_launch-phoenix-mwa
+date: '2026-10-22'
+date_precision: day
+type: product_launch
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界动力发布 MWA-Phoenix 世界动作基座及接触学习方案
+summary:
+  zh: 无界动力发布7B参数的MWA-Phoenix世界动作基座，介绍Phoenix-ILA接触学习与Phoenix-PhysCanvas视触觉世界模型，用于机器人操作及部署前策略优化。官方仓库提供预训练实现，encoder、data和rtc分支仍标为后续提供；性能指标属于团队报告，权重上传另按实际日期记录。
+evidence:
+- url: https://raw.githubusercontent.com/Anyverse-Dynamics/Phoenix-MWA/main/README.md
+  publisher: raw.githubusercontent.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/phoenix.md
+- url: https://openphoenix-team.github.io/Phoenix-pages/
+  publisher: openphoenix-team.github.io
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/phoenix-project.html
+- url: https://www.sina.cn/news/detail/5356767674368673.html
+  publisher: www.sina.cn
+  tier: media
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/346-0.html
+corroboration: single
+axes:
+  model_form:
+  - world-model
+  control_route:
+  - rl

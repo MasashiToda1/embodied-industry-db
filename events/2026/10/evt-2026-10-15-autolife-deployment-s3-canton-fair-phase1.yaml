@@ -1,0 +1,35 @@
+id: evt-2026-10-15-autolife-deployment-s3-canton-fair-phase1
+date: '2026-10-15'
+date_precision: day
+type: deployment
+orgs:
+- id: autolife
+  role: subject
+title:
+  zh: 智动未来披露小智 S3 在第140届广交会提供服务
+summary:
+  zh: 据霞光AI实验室对智动未来的采访，公司在第140届广交会8个主要点位部署16台小智S3，承担导览、零售、咖啡配送与会议迎宾等任务，报道的第一期统计区间为10月15日至20日。官网说明S3为融合感知、移动与双臂操作的轮式机器人。部署规模按受访方披露记录，不当作机器人销售或整个展期的完成交付。
+evidence:
+- url: https://www.tmtpost.com/8178732.html
+  publisher: www.tmtpost.com
+  tier: media
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/345-4.html
+- url: https://www.autolife.ai/products
+  publisher: www.autolife.ai
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/autolife-products.html
+corroboration: single
+axes:
+  embodiment_form:
+  - humanoid-wheeled
+  hardware_strategy:
+  - in-house
+  target_scene:
+  - tourism-performance
+  - commercial-service
+counterparties:
+- 第140届中国进出口商品交易会（广交会）
+date_basis: derived
+date_as_stated: 采访给出2026-10-15至10-20第一期区间；以区间起日定位，非声称16台在该日一次性交付。

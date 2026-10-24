@@ -1,0 +1,23 @@
+id: evt-2026-09-04-autolife-statement-pgd-world-model-preview
+date: '2026-09-04'
+date_precision: day
+type: statement
+orgs:
+- id: autolife
+  role: subject
+title:
+  zh: 智动未来展示智子世界 PGD 世界模型技术预览
+summary:
+  zh: 智动未来在2026 XAIR Expo首次发布智子世界PGD粒子可微世界模型技术预览，并展示小智S3验证进展。公司介绍该模型从多视角视频重建粒子化场景，支持物体与物理属性编辑以及物理推演、可微优化。记录技术预览和团队表述，不将其视为完整商业交付或公开代码发布。
+evidence:
+- url: https://www.autolife.ai/news/xair-2026-pgd-world-model
+  publisher: www.autolife.ai
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/autolife-pgd.html
+corroboration: single
+axes:
+  model_form:
+  - world-model
+  sim_stack:
+  - in-house

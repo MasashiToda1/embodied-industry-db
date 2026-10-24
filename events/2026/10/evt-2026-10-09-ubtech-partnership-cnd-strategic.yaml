@@ -1,0 +1,27 @@
+id: evt-2026-10-09-ubtech-partnership-cnd-strategic
+date: '2026-10-09'
+date_precision: day
+type: partnership
+orgs:
+- id: ubtech
+  role: subject
+title:
+  zh: 优必选与建发股份签署战略合作协议
+summary:
+  zh: 优必选与建发股份在厦门签署战略合作协议，围绕人形机器人市场化、渠道、供应链与服务开展合作。建发官网于10月10日公开确认合作，媒体记录签约为10月9日；公告中面向未来的销售目标不记作现有订单或已交付数量。
+evidence:
+- url: https://www.chinacnd.com/news.html
+  publisher: www.chinacnd.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/cnd.html
+- url: https://news.mysteel.com/a/26101208/F6D16006A0BEB8A0.html
+  publisher: news.mysteel.com
+  tier: media
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/ubtech-cnd-media.html
+corroboration: single
+counterparties:
+- 厦门建发股份有限公司
+date_basis: derived
+date_as_stated: 签约日2026-10-09由报道明确，合作方官网新闻索引在10月10日披露。公众号正文触发验证，未将验证页作为证据。

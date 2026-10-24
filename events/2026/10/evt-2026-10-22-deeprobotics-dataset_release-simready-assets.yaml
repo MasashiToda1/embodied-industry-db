@@ -1,0 +1,30 @@
+id: evt-2026-10-22-deeprobotics-dataset_release-simready-assets
+date: '2026-10-22'
+date_precision: day
+type: dataset_release
+orgs:
+- id: deeprobotics
+  role: subject
+title:
+  zh: 云深处公开 SimReady 机器人仿真资产
+summary:
+  zh: 云深处在Hugging Face公开八款机器人USD资产包，包含DR02标准与Pro、M20S、M20、X30、S10、M20_Piper和Lite3，提供物料清单、验证结果及源文件许可声明。README区分模型制作规范检查与运行时物理测试，后者仍有失败、缺失和跳过项，NVIDIA审查尚未完成。该发布为仿真资产，不能作为实机采集数据或全部测试通过的证明。
+evidence:
+- url: https://huggingface.co/datasets/deeproboticslab/simready-assets
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/352-0.md
+- url: https://huggingface.co/api/datasets/deeproboticslab/simready-assets
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/352-0-api.json
+- url: https://huggingface.co/api/datasets/deeproboticslab/simready-assets/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/352-0-history.json
+corroboration: single
+date_basis: derived
+date_as_stated: 仓库首次有效资产上传为2026-10-22；此快照包含截至核验日的资产清单与验证状态。

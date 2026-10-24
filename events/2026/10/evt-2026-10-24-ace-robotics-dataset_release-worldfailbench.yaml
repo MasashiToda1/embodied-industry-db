@@ -1,0 +1,49 @@
+id: evt-2026-10-24-ace-robotics-dataset_release-worldfailbench
+date: '2026-10-24'
+date_precision: day
+type: dataset_release
+orgs:
+- id: ace-robotics
+  role: subject
+title:
+  zh: 大晓机器人公开 WorldFailBench 失败评测数据
+summary:
+  zh: 大晓机器人在ACERobotics的Hugging Face仓库上传WorldFailBench数据包，并在官方GitHub提供配套说明。数据来自RoboTwin与LIBERO仿真闭环运行，分别包含5000和1500个评测episode的首帧及元数据，边界子集包含120组成功/失败配对和2400个rollout。数据用于失败原因、阶段及边界评测；不是实机采集数据，配套GitHub不另计一次数据发布。
+evidence:
+- url: https://huggingface.co/datasets/ACERobotics/WorldFailBench
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/362-0.md
+- url: https://huggingface.co/api/datasets/ACERobotics/WorldFailBench
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/362-0-api.json
+- url: https://huggingface.co/api/datasets/ACERobotics/WorldFailBench/commits/main
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/362-0-history.json
+- url: https://github.com/DAXIAORobotics/WorldFailBench
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/366-0.md
+- url: https://api.github.com/repos/DAXIAORobotics/WorldFailBench/commits?per_page=20
+  publisher: api.github.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/366-0-commits.json
+corroboration: single
+axes:
+  data_acquisition:
+  - sim-generated
+  data_modality:
+  - rgb
+  - language-annotated
+  data_sourcing:
+  - open-dataset
+  data_openness: fully-open
+date_basis: derived
+date_as_stated: dataset.tar.gz上传于2026-10-23T18:36:26Z，换算北京时间为2026-10-24；GitHub说明与数据包归为同次发布。

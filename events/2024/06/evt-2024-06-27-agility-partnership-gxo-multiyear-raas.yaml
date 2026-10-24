@@ -1,0 +1,28 @@
+id: evt-2024-06-27-agility-partnership-gxo-multiyear-raas
+date: '2024-06-27'
+date_precision: day
+type: partnership
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: GXO 与 Agility 公布多年 Digit RaaS 协议
+summary:
+  zh: GXO与Agility公布多年RaaS协议，在GXO的SPANX仓储设施部署Digit及Agility Arc，与既有移动机器人和输送流程协同搬运料箱。记录协议披露节点，区别于已收录的2024年6月5日开始商业作业；合同金额和机器人数量未披露。
+evidence:
+- url: https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics/
+  publisher: investors.gxo.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gxo-web.json
+corroboration: single
+axes:
+  delivery_model:
+  - rental
+  target_scene:
+  - logistics-warehouse
+counterparties:
+- GXO Logistics
+- SPANX
+date_basis: derived
+date_as_stated: 2024-06-27为GXO官方协议公告日；官方网页由检索工具提取保存，快照明确标注非原始HTML。

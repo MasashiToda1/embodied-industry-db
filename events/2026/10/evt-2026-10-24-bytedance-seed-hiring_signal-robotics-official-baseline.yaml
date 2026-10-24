@@ -1,0 +1,20 @@
+id: evt-2026-10-24-bytedance-seed-hiring_signal-robotics-official-baseline
+date: '2026-10-24'
+date_precision: day
+type: hiring_signal
+orgs:
+- id: bytedance-seed
+  role: subject
+title:
+  zh: 字节 Seed 招聘页列出数据、物理仿真与本体结构岗位
+summary:
+  zh: 2026年10月24日核验字节Seed官方招聘页，热招岗位中同时列出机器人仿真工程师（物理引擎方向）、具身智能数据开发工程师及机器人本体结构工程师。页面列出北京及北京/上海工作地点；本条为首次公开页面观察，岗位首发时间未明确，不能用于判断新增人数、招聘扩张或产品已采用某项技术。
+evidence:
+- url: https://seed.bytedance.com/zh/career
+  publisher: seed.bytedance.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/seed.html
+corroboration: single
+date_basis: derived
+date_as_stated: 日期为公开招聘页面核验日，不是岗位发布时间或项目启动日。

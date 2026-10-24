@@ -1,0 +1,23 @@
+id: evt-2026-10-15-gi-labs-statement-managed-capture-pipeline
+date: '2026-10-15'
+date_precision: day
+type: statement
+orgs:
+- id: gi-labs
+  role: subject
+title:
+  zh: GI Labs 介绍日常作业到机器人训练数据的托管流程
+summary:
+  zh: GI Labs在官方文章中说明，企业可使用EGO1及EGO1GS记录日常作业，再经托管处理与人工复核形成机器人学习数据。该流程连接采集硬件、处理、质量审核与交付；记录公开服务说明，不推定具体客户、采购量或机器人训练效果。
+evidence:
+- url: https://www.gilabs.xyz/blog/everyday-work-to-robotics-training-data
+  publisher: www.gilabs.xyz
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/gi-data.html
+corroboration: single
+axes:
+  data_acquisition:
+  - human-video
+  delivery_model:
+  - service-delivery

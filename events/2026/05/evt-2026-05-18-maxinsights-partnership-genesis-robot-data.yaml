@@ -1,0 +1,25 @@
+id: evt-2026-05-18-maxinsights-partnership-genesis-robot-data
+date: '2026-05-18'
+date_precision: day
+type: partnership
+orgs:
+- id: maxinsights
+  role: subject
+- id: genesis-ai
+  role: counterparty
+title:
+  zh: Maxinsights 披露为 Genesis AI 提供机器人训练数据
+summary:
+  zh: Maxinsights在公司公告中披露，其全球第一视角数据已用于机器人基础模型训练，并列举与Genesis AI的GENE-26.5合作。记录公司公开披露的数据供给关系，不把未具名客户、营收或媒体提及的其他客户转成已确认合同。
+evidence:
+- url: https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c
+  publisher: www.linkedin.com
+  tier: official
+  retrieved: '2026-10-24'
+  snapshot: snapshots/2026/10/intake-20261024/maxinsights-genesis.html
+corroboration: single
+axes:
+  data_acquisition:
+  - human-video
+date_basis: derived
+date_as_stated: 2026-05-18为公司公告发布日，未披露具体合同签署日。
