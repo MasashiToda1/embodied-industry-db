@@ -1790,7 +1790,7 @@
 | 状态 | 正常经营 |
 | 成立 | 2019-03 |
 | 总部 | CN深圳 |
-| 事件数 | 15 |
+| 事件数 | 13 |
 | 收录深度 | complete |
 
 ## 技术与商业栈
@@ -1802,7 +1802,6 @@
 | 本体策略 | 自研整机 | 2025-09-17 | `evt-2025-09-17-wuji-tech-product_launch-wuji-hand-1` |
 | 采集方式 | 遥操示教 | 2026-02-14 | `evt-2026-02-14-wuji-tech-product_launch-wuji-glove-1` |
 | 数据模态 | 触觉 | 2026-02-14 | `evt-2026-02-14-wuji-tech-product_launch-wuji-glove-1` |
-| 仿真栈 | Isaac Sim | 2026-10 | `evt-2026-10-wuji-tech-publication-hand2-isaaclab` |
 | 仿真栈 | Isaac Lab | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-isaaclab` |
 | 仿真栈 | MuJoCo | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-mujoco` |
 | 运控路线 | 强化学习 | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-isaaclab` |
@@ -1811,8 +1810,6 @@
 
 | 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
 |---|---|---|---|---|---|
-| 2026-10 | month | 论文、开源发布 | 舞肌wuji-mujoco | single | [official](https://github.com/wuji-technology/wuji-mujoco) |
-| 2026-10 | month | 论文、开源发布 | 舞肌wuji-isaaclab | single | [official](https://github.com/wuji-technology/wuji-isaaclab) |
 | 2026-10 | month | 论文、开源发布 | 舞肌wuji-ros2 | single | [official](https://github.com/wuji-technology/wuji-ros2) |
 | 2026-10-23 | day | 论文、开源发布 | 舞肌科技公开 TopoRetarget 灵巧手动作重定向工具 | single | [official](https://github.com/wuji-technology/toporetarget) [official](https://api.github.com/repos/wuji-technology/toporetarget/git/trees/HEAD?recursive=1) [official](https://api.github.com/repos/wuji-technology/toporetarget/commits?per_page=20) |
 | 2026-10-19 | day | 论文、开源发布 | 舞肌科技公开 Hand2 MuJoCo 演示 | single | [official](https://github.com/wuji-technology/wuji-mujoco) [official](https://api.github.com/repos/wuji-technology/wuji-mujoco/commits?per_page=100) |

@@ -5,7 +5,7 @@
   "issue_count": 100,
   "proposal_count": 226,
   "counts": {
-    "events": 74,
+    "events": 72,
     "new_orgs": 19,
     "static_org_updates": 1,
     "snapshots": 73
@@ -2527,14 +2527,14 @@
       "issues": [
         381
       ],
-      "recommendation": "准入",
+      "recommendation": "重复",
       "subject": "舞肌wuji-isaaclab",
       "date": "2026-10，仓库创建10-19",
-      "reason": "Hand2掌内方块重定向PPO训练与Sim2Real接口；不把仓库创建日当功能全部发布日期。",
+      "reason": "最终逐URL复核发现10月19日同仓库、同发布内容已经入库；撤去本PR新建重复，不改历史事件。",
       "sources": [
         "https://github.com/wuji-technology/wuji-isaaclab"
       ],
-      "existing": "未发现同事件",
+      "existing": "evt-2026-10-19-wuji-tech-publication-hand2-isaaclab",
       "proposal_id": "OCT31-080",
       "issue_urls": [
         "https://github.com/MasashiToda1/embodied-industry-db/issues/381"
@@ -2543,29 +2543,22 @@
         "https://github.com/wuji-technology"
       ],
       "approval": "维护者2026-11-01同意原处理意见；待补证仍非准入批准",
-      "implementation": {
-        "proposal_id": "OCT31-080",
-        "issues": [
-          381
-        ],
-        "event": "evt-2026-10-wuji-tech-publication-hand2-isaaclab",
-        "orgs": [
-          "wuji-tech"
-        ]
-      }
+      "original_approved_recommendation": "准入",
+      "review_correction": "2026-11-01 更正上一轮漏判；适用已授权去重范围。",
+      "implementation": null
     },
     {
       "issues": [
         381
       ],
-      "recommendation": "准入",
+      "recommendation": "重复",
       "subject": "舞肌wuji-mujoco",
       "date": "2026-10，仓库创建10-19",
-      "reason": "左右手Hand2模型加载及预录轨迹回放示例；不夸大为完整训练框架。",
+      "reason": "最终逐URL复核发现10月19日同仓库、同发布内容已经入库；撤去本PR新建重复，不改历史事件。",
       "sources": [
         "https://github.com/wuji-technology/wuji-mujoco"
       ],
-      "existing": "未发现同事件",
+      "existing": "evt-2026-10-19-wuji-tech-publication-hand2-mujoco",
       "proposal_id": "OCT31-081",
       "issue_urls": [
         "https://github.com/MasashiToda1/embodied-industry-db/issues/381"
@@ -2574,16 +2567,9 @@
         "https://github.com/wuji-technology"
       ],
       "approval": "维护者2026-11-01同意原处理意见；待补证仍非准入批准",
-      "implementation": {
-        "proposal_id": "OCT31-081",
-        "issues": [
-          381
-        ],
-        "event": "evt-2026-10-wuji-tech-publication-hand2-mujoco",
-        "orgs": [
-          "wuji-tech"
-        ]
-      }
+      "original_approved_recommendation": "准入",
+      "review_correction": "2026-11-01 更正上一轮漏判；适用已授权去重范围。",
+      "implementation": null
     },
     {
       "issues": [
@@ -7530,26 +7516,6 @@
       "event": "evt-2026-10-24-horizon-robotics-publication-holomotion-2",
       "orgs": [
         "horizon-robotics"
-      ]
-    },
-    {
-      "proposal_id": "OCT31-080",
-      "issues": [
-        381
-      ],
-      "event": "evt-2026-10-wuji-tech-publication-hand2-isaaclab",
-      "orgs": [
-        "wuji-tech"
-      ]
-    },
-    {
-      "proposal_id": "OCT31-081",
-      "issues": [
-        381
-      ],
-      "event": "evt-2026-10-wuji-tech-publication-hand2-mujoco",
-      "orgs": [
-        "wuji-tech"
       ]
     },
     {
