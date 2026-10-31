@@ -1,0 +1,13 @@
+id: mogan-tech
+names:
+  zh: 模感科技
+status: active
+layers:
+- components
+description: 研发面向具身机器人的触觉感知部件与相关技术。
+sources:
+- url: https://api3.cls.cn/share/article/2515702?app=stib&os=android&sv=247
+  publisher: api3.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/5eec9c64bcb3491a.html

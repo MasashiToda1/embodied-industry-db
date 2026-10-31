@@ -1,0 +1,17 @@
+id: syndexy
+names:
+  zh: 瞬恒智能
+  en: SynDexy
+  aliases:
+  - SynDexy
+status: active
+layers:
+- embodiment
+- foundation
+description: 研发面向灵巧操作的SynDexy C1人形机器人，披露首批小批量交付；交付客户及数量未公开。
+sources:
+- url: https://news.ikanchai.com/2026/1030/670791.shtml
+  publisher: news.ikanchai.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f19da0e2d73589d0.html

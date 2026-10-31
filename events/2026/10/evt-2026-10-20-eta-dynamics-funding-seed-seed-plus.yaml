@@ -1,0 +1,29 @@
+id: evt-2026-10-20-eta-dynamics-funding-seed-seed-plus
+date: '2026-10-20'
+date_precision: day
+type: funding
+orgs:
+- id: eta-dynamics
+  role: subject
+- id: galbot
+  role: investor
+- id: fourier
+  role: investor
+title:
+  zh: 伊塔动力种子/种子+轮
+summary:
+  zh: 伊塔动力宣布完成种子轮和种子+轮合计超亿元融资，银河通用、傅利叶等参与。公司研发机器人关节模组与力控平台，意向合作协议不作为已完成产品订单或交付。
+evidence:
+- url: https://finance.eastmoney.com/a/202610203901631216.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/d1d8b00b247744f1.html
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-20披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

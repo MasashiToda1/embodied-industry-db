@@ -1,0 +1,13 @@
+id: gewu-intelligence
+names:
+  zh: 格物通智
+status: active
+layers:
+- foundation
+description: 研发基于视觉、触觉数据的物理反演世界模型与灵巧操作智能；场景PoC计划不作为已交付事实。
+sources:
+- url: https://www.thecapital.com.cn/news/detail/125274
+  publisher: www.thecapital.com.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/5122e3c3f1a5fe86.json

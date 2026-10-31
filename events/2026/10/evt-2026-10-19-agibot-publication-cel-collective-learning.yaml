@@ -1,0 +1,24 @@
+id: evt-2026-10-19-agibot-publication-cel-collective-learning
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+- id: infinigence
+  role: counterparty
+title:
+  zh: 智元/清华/无问芯穹CEL
+summary:
+  zh: 智元、清华大学与无问芯穹团队发布CEL研究，通过FERT和FATS组织机器人群体经验学习。论文中的集群及真实任务实验仍包含人工环境复位和结果标注，不描述为完全无人训练系统。
+evidence:
+- url: https://arxiv.org/abs/2610.25736
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/7420a54429f1ece0.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-19论文v1；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 清华大学

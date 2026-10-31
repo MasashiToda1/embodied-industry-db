@@ -1,0 +1,25 @@
+id: evt-2026-10-28-rerun-product_launch-rerun-041
+date: '2026-10-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: rerun
+  role: subject
+title:
+  zh: Rerun 0.41
+summary:
+  zh: Rerun发布0.41版本，提供原始ROS消息可视化及流式数据集查询相关改进。Gradio组件同版本发布作为配套，不另记同一软件能力发布。
+evidence:
+- url: https://github.com/rerun-io/rerun/releases/tag/0.41.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/61b08233a0b5cae3.html
+- url: https://github.com/rerun-io/gradio-rerun-viewer/releases/tag/0.41.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/e5f51bb214f0e5b1.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

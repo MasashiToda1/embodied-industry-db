@@ -1,0 +1,27 @@
+id: evt-2026-10-29-inspatio-deployment-hangzhou-data-base
+date: '2026-10-29'
+date_precision: day
+type: deployment
+orgs:
+- id: inspatio
+  role: subject
+- id: meihui-interactive
+  role: counterparty
+title:
+  zh: 影溯/每回互动杭州数采基地启用
+summary:
+  zh: 影溯与每回互动参与建设的杭州具身数据采集基地启用，当地媒体记录10月29日现场活动。记录基地启用，规划数据采集能力不作为已经产出的数据量。
+evidence:
+- url: https://ori.hangzhou.com.cn/ornews/content/2026-10/29/content_9359859.htm
+  publisher: ori.hangzhou.com.cn
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/97973cc88b174558.html
+- url: https://www.hesaitech.com/cn/news/1511
+  publisher: www.hesaitech.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/8cd1cc9ed76a6bc9.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-29；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

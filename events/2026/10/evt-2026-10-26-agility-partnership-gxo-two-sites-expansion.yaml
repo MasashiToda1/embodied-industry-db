@@ -1,0 +1,22 @@
+id: evt-2026-10-26-agility-partnership-gxo-two-sites-expansion
+date: '2026-10-26'
+date_precision: day
+type: partnership
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility/GXO新增两处Digit部署协议
+summary:
+  zh: Agility公布与GXO扩大Digit商业合作，在Statesville与Lebanon新增两处设施部署安排，计划2027年初实施。记录协议与未来部署安排，不记为两处均已完成上线。
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-highlights-commercial-momentum-and-growing-enterprise-demand-for-digit-humanoid-robot
+  publisher: www.agilityrobotics.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/3a7e6078617463fb.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-26；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- GXO Logistics

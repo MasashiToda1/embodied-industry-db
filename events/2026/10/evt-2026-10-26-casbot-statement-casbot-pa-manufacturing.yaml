@@ -1,0 +1,20 @@
+id: evt-2026-10-26-casbot-statement-casbot-pa-manufacturing
+date: '2026-10-26'
+date_precision: day
+type: statement
+orgs:
+- id: casbot
+  role: subject
+title:
+  zh: 中科慧灵CASBOT PA技术披露
+summary:
+  zh: 中科慧灵在采访中介绍轻量化CASBOT PA感知到动作模型用于制鞋任务，贯通视觉、动作生成、运动学处理与真机执行，并说明支持单张消费级GPU训练。记录技术应用披露，不推定模型首发日或权重已公开。
+evidence:
+- url: https://www.cs.com.cn/ssgs/01/2026/10/26/detail_2026102610047252.html
+  publisher: www.cs.com.cn
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/384b411ab568976a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-26；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

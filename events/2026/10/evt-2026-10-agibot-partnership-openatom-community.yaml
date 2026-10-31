@@ -1,0 +1,22 @@
+id: evt-2026-10-agibot-partnership-openatom-community
+date: 2026-10
+date_precision: month
+type: partnership
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元/开放原子基金会合作
+summary:
+  zh: 智元披露与开放原子开源基金会开展捐赠与社区共建安排。合作不等于相关全部软件当日已完成开源交付。
+evidence:
+- url: https://www.agibot.com.cn/article/315/detail/261.html
+  publisher: www.agibot.com.cn
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/9ab4a3fe4214a52d.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10（发布会月底，官网10-30）；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 开放原子开源基金会

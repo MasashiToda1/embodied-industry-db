@@ -1,0 +1,13 @@
+id: xingyi-intelligence
+names:
+  zh: 星忆智能
+status: active
+layers:
+- data
+description: 面向具身智能开展数据采集与数据平台业务。
+sources:
+- url: https://finance.eastmoney.com/a/202610223904339375.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/1fe31328d18c5a18.html

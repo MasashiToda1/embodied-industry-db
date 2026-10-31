@@ -1,0 +1,22 @@
+id: evt-2026-09-18-sh-humanoid-partnership-huawei-training-showcase
+date: '2026-09-18'
+date_precision: day
+type: partnership
+orgs:
+- id: sh-humanoid
+  role: subject
+- id: huawei-cloudrobo
+  role: counterparty
+title:
+  zh: 国地中心—华为训练场样板点
+summary:
+  zh: 华为在制造与大企业全球峰会发布上海人形国地中心具身智能实训场全球样板点。记录双方公开样板合作，不将公告日期视为训练场首次启用日期。
+evidence:
+- url: https://e.huawei.com/cn/news/2026/industries/manufacturing/2026-global-showcase-manufacturing
+  publisher: e.huawei.com
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/87326490a77e5ddd.json
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-09-18；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

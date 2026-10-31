@@ -1,0 +1,13 @@
+id: henan-embodied-industry
+names:
+  zh: 河南具身智能产业发展有限公司
+status: active
+layers:
+- integration
+description: 为机器人教学实训项目提供设备与系统集成交付，已见河南理工大学具身机器人采购中标公告。
+sources:
+- url: https://notice.hpu.edu.cn/info/1001/17465.htm
+  publisher: notice.hpu.edu.cn
+  tier: primary
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/b23896fbc230b78b.html

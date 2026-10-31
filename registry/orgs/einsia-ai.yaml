@@ -1,0 +1,35 @@
+id: einsia-ai
+names:
+  zh: Einsia AI
+  aliases:
+  - Einsia.AI
+  - Einsia AI Technology (SG) PTE.
+status: active
+layers:
+- foundation
+- simulation
+description: 研发面向机器人代理的学习与记忆系统，公开EmbodiedEvo框架；收录范围限机器人学习，研究结果不作为真机交付证明。
+sources:
+- url: https://arxiv.org/abs/2610.18867v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f08d222effdf182f.html
+- url: https://einsia.ai/about/
+  publisher: einsia.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/77345567175f00e4.html
+- url: https://einsia.ai/privacy/
+  publisher: einsia.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/7e8694175ade2560.html
+- url: https://github.com/Einsia/EmbodiedEvo
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/c25d1a22dbbd1a33.html
+accounts:
+  site: https://einsia.ai
+  github: Einsia

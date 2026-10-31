@@ -1,0 +1,20 @@
+id: evt-2026-10-10-kooling-funding-angel-round
+date: '2026-10-10'
+date_precision: day
+type: funding
+orgs:
+- id: kooling
+  role: subject
+title:
+  zh: 酷灵数千万元天使轮
+summary:
+  zh: 酷灵披露完成数千万元天使轮融资，业务面向机器人热管理。采用原始报道10月10日节点，不采用后续周报编排日期作为融资发生日。
+evidence:
+- url: https://finance.eastmoney.com/a/202610103891998570.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/99b953168221cec6.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

@@ -1,0 +1,30 @@
+id: evt-2026-09-15-limx-publication-fluxvla-engine-report
+date: '2026-09-15'
+date_precision: day
+type: publication
+orgs:
+- id: limx
+  role: subject
+title:
+  zh: 逐际FluxVLA Engine技术报告
+summary:
+  zh: 逐际动力团队发布FluxVLA Engine技术报告，整合具身策略的数据、训练、评估、推理和机器人部署接口，并公开对应代码。论文v1为9月15日、v2为10月22日；本条补原始技术报告，不把后续报道记作新品首发。
+evidence:
+- url: https://arxiv.org/abs/2609.17210
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/22ea33e0b1632104.html
+- url: https://www.limxdynamics.com/en/products/fluxvla
+  publisher: www.limxdynamics.com
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/63fd838279eff4c9.html
+- url: https://github.com/FluxVLA/FluxVLA
+  publisher: github.com
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/637d53604a0a779d.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-09-15论文v1；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

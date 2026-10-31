@@ -1,0 +1,22 @@
+id: evt-2026-01-alphasquare-deployment-talent-park-zhimofang
+date: 2026-01
+date_precision: month
+type: deployment
+orgs:
+- id: alphasquare
+  role: subject
+title:
+  zh: 智平方人才公园智魔方运营
+summary:
+  zh: 深圳本地报道确认智平方智魔方于2026年1月起在深圳人才公园开展服务。记录历史场景运营，未披露具体采购合同金额及首次交付日。
+evidence:
+- url: https://www.sznews.com/news/content/2026-02/11/content_31943496.htm
+  publisher: www.sznews.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/cd9b80edee224e94.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-01；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 深圳人才公园

@@ -1,0 +1,20 @@
+id: evt-2026-10-31-motphys-publication-uni-supermimic-checkpoints-v1
+date: '2026-10-31'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+title:
+  zh: 莫特菲斯UniSuperMimic checkpoint v1
+summary:
+  zh: 莫特菲斯发布Uni-SuperMimic checkpoints-v1，提供三个实际训练检查点。该发布补充10月22日论文复现代码事件中尚未提供的权重，不重复记录为新的原始论文。
+evidence:
+- url: https://github.com/Motphys/Uni-SuperMimic/releases/tag/checkpoints-v1
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/c5968ed2bd1e03c2.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-31；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

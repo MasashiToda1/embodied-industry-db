@@ -1,0 +1,20 @@
+id: evt-2026-10-29-galbot-statement-pharmacy-pods-cumulative
+date: '2026-10-29'
+date_precision: day
+type: statement
+orgs:
+- id: galbot
+  role: subject
+title:
+  zh: 银河通用药店太空舱运营规模披露
+summary:
+  zh: 银河通用在媒体采访中披露，药店太空舱已在近50个城市累计运营200多个。记录公司受访时的累计运营口径，不拆为单日新增订单、设备销售数量或200个独立部署事件。
+evidence:
+- url: https://m.21jingji.com/article/20261029/herald/4a01bec61c00a3c3c552c92754528039_zaker.html
+  publisher: m.21jingji.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/5e37456f4aa25afc.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-29披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

@@ -1,0 +1,15 @@
+id: huixi-tech
+names:
+  zh: 辉羲
+  aliases:
+  - 辉羲智能
+status: active
+layers:
+- components
+description: 研发计算芯片及软硬件平台，本库仅记录机器人计算产品及其研发资金相关披露，不扩展收录自动驾驶业务。
+sources:
+- url: https://stock.stockstar.com/IG2026102600030047.shtml
+  publisher: stock.stockstar.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/68fa2ffa78c32457.html

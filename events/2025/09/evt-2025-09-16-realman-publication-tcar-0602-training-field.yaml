@@ -1,0 +1,34 @@
+id: evt-2025-09-16-realman-publication-tcar-0602-training-field
+date: '2025-09-16'
+date_precision: day
+type: publication
+orgs:
+- id: realman
+  role: subject
+- id: sh-humanoid
+  role: counterparty
+- id: x-humanoid
+  role: counterparty
+- id: unitree
+  role: counterparty
+- id: xiaomi-robotics
+  role: counterparty
+- id: ubtech
+  role: counterparty
+- id: agibot
+  role: counterparty
+title:
+  zh: CR-3-0602TS:2025训练场技术规范
+summary:
+  zh: 机器人检测认证联盟发布并实施CR-3-0602TS:2025《人形机器人数据采集训练场技术规范》。原文将睿尔曼、上海人形机器人创新中心、北京人形机器人创新中心、宇树、小米、优必选、智元等列为起草单位；本条记录参与起草与规范发布，不表述为睿尔曼独家标准或2026年新标准。
+evidence:
+- url: https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf
+  publisher: develop.realman-robotics.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/7cb14e0b68800d97.pdf
+corroboration: single
+date_basis: derived
+date_as_stated: 2025-09-16；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 机器人检测认证联盟

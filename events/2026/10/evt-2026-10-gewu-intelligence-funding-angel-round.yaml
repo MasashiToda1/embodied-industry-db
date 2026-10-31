@@ -1,0 +1,25 @@
+id: evt-2026-10-gewu-intelligence-funding-angel-round
+date: 2026-10
+date_precision: month
+type: funding
+orgs:
+- id: gewu-intelligence
+  role: subject
+title:
+  zh: 格物通智近亿元天使轮
+summary:
+  zh: 格物通智披露完成近亿元天使轮融资，投资方包括匹克投资、鸿富资产、杭州资本和杭州人才集团等。公司面向机器人灵巧操作研发物理反演世界模型；场景PoC计划不作为已交付成果。
+evidence:
+- url: https://www.thecapital.com.cn/news/detail/125274
+  publisher: www.thecapital.com.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/5122e3c3f1a5fe86.json
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 匹克投资
+- 鸿富资产
+- 杭州资本
+- 杭州人才集团

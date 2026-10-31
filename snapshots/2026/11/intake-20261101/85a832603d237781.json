@@ -1,0 +1,7 @@
+{
+  "url": "https://www.sii.edu.cn/2026/0506/c27a959/page.htm",
+  "title": "LWD ：边部署边进化的通用机器人训练范式",
+  "retrieved": "2026-11-01",
+  "capture_method": "web.run原网页文本提取；本文件为摘录整理，非原始HTML",
+  "excerpt": "2026.05.08。上海创智学院与智元机器人具身研究中心联合发布LWD（Learning While Deploying）。系统使用Actor–Learner异步架构，连接离线RL预训练、集群真机交互与在线RL后训练。"
+}

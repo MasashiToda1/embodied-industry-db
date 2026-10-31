@@ -1,0 +1,25 @@
+id: evt-2026-10-08-henan-embodied-industry-procurement-hpu-robotics-lab
+date: '2026-10-08'
+date_precision: day
+type: procurement
+orgs:
+- id: henan-embodied-industry
+  role: subject
+title:
+  zh: 河南理工大学机器人采购结果
+summary:
+  zh: 河南理工大学公布机器人采购中标结果，河南具身智能产业发展有限公司以7788210元中标。采购包包含多类机器人及配套设备，整包金额不全部归属某一品牌；记录中标，不表示完成验收交付。
+evidence:
+- url: https://notice.hpu.edu.cn/info/1001/17465.htm
+  publisher: notice.hpu.edu.cn
+  tier: primary
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/b23896fbc230b78b.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-08公告；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 河南理工大学
+amount:
+  value: 7788210
+  currency: CNY

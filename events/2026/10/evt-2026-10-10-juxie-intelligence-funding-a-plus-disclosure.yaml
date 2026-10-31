@@ -1,0 +1,27 @@
+id: evt-2026-10-10-juxie-intelligence-funding-a-plus-disclosure
+date: '2026-10-10'
+date_precision: day
+type: funding
+orgs:
+- id: juxie-intelligence
+  role: subject
+- id: x-square-robot
+  role: investor
+title:
+  zh: 巨蟹智能A+融资
+summary:
+  zh: 巨蟹智能披露完成超亿元A+轮融资，自变量机器人等机构参与投资。公司产品包括一体化关节模组与谐波减速器；金额仅为区间描述，不填精确值。
+evidence:
+- url: https://news.qq.com/rain/a/20261011A09UNN00
+  publisher: news.qq.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f0d95daefef6c721.html
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

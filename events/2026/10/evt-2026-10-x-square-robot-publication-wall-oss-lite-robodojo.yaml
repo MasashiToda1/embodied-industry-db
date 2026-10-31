@@ -1,0 +1,20 @@
+id: evt-2026-10-x-square-robot-publication-wall-oss-lite-robodojo
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: x-square-robot
+  role: subject
+title:
+  zh: 自变量WALL-OSS 1.0 Lite RoboDojo
+summary:
+  zh: 自变量在官方Hugging Face账号公开WALL-OSS 1.0 Lite RoboDojo模型与权重，说明基于Qwen系列视觉语言骨干、动作分块及记忆机制用于RoboDojo任务。记录基准微调资源，不推定已经部署于真实客户。
+evidence:
+- url: https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f9966acec3d168d1.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-23 UTC；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

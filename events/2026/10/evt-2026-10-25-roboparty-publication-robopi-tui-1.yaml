@@ -1,0 +1,20 @@
+id: evt-2026-10-25-roboparty-publication-robopi-tui-1
+date: '2026-10-25'
+date_precision: day
+type: publication
+orgs:
+- id: roboparty
+  role: subject
+title:
+  zh: RoboPi TUI 1.0
+summary:
+  zh: 萝博派对发布RoboPi TUI 1.0板端配置与测试插件系统，提供终端界面和配置、检测、报告接口。仓库创建与同一版本发布合为一条；软件测试不能代表全部板卡和插件已完成实机验收。
+evidence:
+- url: https://github.com/Roboparty/robopi_TUI/releases/tag/v1.0.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/9b6b87b1a0da52f5.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-25；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

@@ -1,0 +1,13 @@
+id: songying-tech
+names:
+  zh: 松应科技
+status: active
+layers:
+- simulation
+description: 研发ORCA机器人仿真与训练工具链，公开资料说明适配国产GPU平台。
+sources:
+- url: https://caifuhao.eastmoney.com/news/20260720162930855112730
+  publisher: caifuhao.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/52331378a3aee16c.html

@@ -1,0 +1,20 @@
+id: evt-2026-10-d-robotics-publication-rdk-robot-learning-plugins
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: d-robotics
+  role: subject
+title:
+  zh: 地瓜rdk-plugins机器人学习模块
+summary:
+  zh: 地瓜机器人公开rdk-plugins中的机器人学习工作流，包含数据导入、训练、评估和部署相关模块。记录机器人专属工具部分，通用聊天和OCR模板不据此写入机器人技术路线。
+evidence:
+- url: https://github.com/D-Robotics/rdk-plugins
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/350dce6f91735fd1.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

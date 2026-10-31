@@ -1,0 +1,18 @@
+id: juxie-intelligence
+names:
+  zh: 巨蟹智能
+status: active
+layers:
+- components
+description: 提供机器人一体化关节模组及谐波减速器，收录关键部件业务。
+sources:
+- url: https://news.qq.com/rain/a/20261011A09UNN00
+  publisher: news.qq.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f0d95daefef6c721.html
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html

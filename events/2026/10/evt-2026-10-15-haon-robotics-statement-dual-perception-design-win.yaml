@@ -1,0 +1,25 @@
+id: evt-2026-10-15-haon-robotics-statement-dual-perception-design-win
+date: '2026-10-15'
+date_precision: day
+type: statement
+orgs:
+- id: haon-robotics
+  role: subject
+title:
+  zh: 豪恩机器人两项定点披露
+summary:
+  zh: 豪恩汽电披露旗下豪恩机器人获得某机器人客户3M鱼眼摄像感知系统和超声波雷达感知系统的独家供应定点。披露的逾3000万元为项目预估营业额，不是已经实现的收入或确定采购合同金额；客户名称未公开。
+evidence:
+- url: https://www.cls.cn/detail/2505189
+  publisher: www.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/cfd15ef16f21e092.html
+- url: https://caifuhao.eastmoney.com/news/20261015090605286784990
+  publisher: caifuhao.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/b15de896104bc78a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-15披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

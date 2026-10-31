@@ -1,0 +1,20 @@
+id: evt-2026-10-26-agility-statement-three-manufacturing-paid-programs
+date: '2026-10-26'
+date_precision: day
+type: statement
+orgs:
+- id: agility
+  role: subject
+title:
+  zh: Agility新增三家制造业付费项目披露
+summary:
+  zh: Agility披露新增三家制造业企业付费项目，未公开客户名称和项目金额。记录公司商业进展声明，不将销售机会、意向客户数量或条件性收入当作已实现收入。
+evidence:
+- url: https://www.agilityrobotics.com/content/agility-robotics-highlights-commercial-momentum-and-growing-enterprise-demand-for-digit-humanoid-robot
+  publisher: www.agilityrobotics.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/3a7e6078617463fb.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-26；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

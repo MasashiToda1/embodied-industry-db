@@ -1,0 +1,20 @@
+id: evt-2026-10-28-robotis-publication-applications-1-1-f2-vr
+date: '2026-10-28'
+date_precision: day
+type: publication
+orgs:
+- id: robotis
+  role: subject
+title:
+  zh: ROBOTIS applications 1.1
+summary:
+  zh: ROBOTIS发布robotis_applications 1.1，变更说明列出F2 VR遥操作支持及相关启动配置。变更日志日期为10月22日、发布包为10月28日；记录软件能力，不推定本体销售或交付。
+evidence:
+- url: https://github.com/ROBOTIS-GIT/robotis_applications/releases/tag/1.1.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/1ca2cd15e0a38cbf.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-22变更；10-28发布包；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

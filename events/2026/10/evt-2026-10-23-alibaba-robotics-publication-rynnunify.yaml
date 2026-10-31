@@ -1,0 +1,23 @@
+id: evt-2026-10-23-alibaba-robotics-publication-rynnunify
+date: '2026-10-23'
+date_precision: day
+type: publication
+orgs:
+- id: alibaba-robotics
+  role: subject
+title:
+  zh: 阿里RynnUnify
+summary:
+  zh: 阿里团队发布RynnUnify论文，研究统一机器人理解、规划与世界动作建模，并提供对应代码入口。记录研究与软件资源，实验指标不作为客户部署证明。
+evidence:
+- url: https://arxiv.org/abs/2610.32965
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/e0ce81ff789e9233.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-23；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  model_form:
+  - world-model

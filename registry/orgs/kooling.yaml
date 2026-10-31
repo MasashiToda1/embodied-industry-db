@@ -1,0 +1,13 @@
+id: kooling
+names:
+  zh: 酷灵
+status: active
+layers:
+- components
+description: 研发面向机器人的热管理技术与部件。
+sources:
+- url: https://finance.eastmoney.com/a/202610103891998570.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/99b953168221cec6.html

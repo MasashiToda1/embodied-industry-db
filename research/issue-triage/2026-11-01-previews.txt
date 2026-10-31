@@ -1,0 +1,2052 @@
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 智元机器人
+
+**AgiBot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型、数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | 2023-02 |
+| 总部 | CN上海 |
+| 事件数 | 68 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 轮式人形 | 2025-01-06 | `evt-2025-01-06-agibot-deployment-1000th-unit` |
+| 本体形态 | 双足人形 | 2024-10-24 | `evt-2024-10-24-agibot-publication-lingxi-x1-opensource` |
+| 运控路线 | 强化学习 | 2024-10-24 | `evt-2024-10-24-agibot-publication-lingxi-x1-opensource` |
+| 本体策略 | 自研整机 | 2024-10-24 | `evt-2024-10-24-agibot-publication-lingxi-x1-opensource` |
+| 采集方式 | 人类视频 | 2025-03-10 | `evt-2025-03-10-agibot-product_launch-go1` |
+| 采集方式 | 仿真合成 | 2025-03-10 | `evt-2025-03-10-agibot-product_launch-go1` |
+| 采集方式 | 遥操示教 | 2024-12-19 | `evt-2024-12-19-agibot-dataset_release-agibot-world` |
+| 采集方式 | 真机自采 | 2024-12-19 | `evt-2024-12-19-agibot-dataset_release-agibot-world` |
+| 开放程度 | 完全开放 | 2025-04-21 | `evt-2025-04-21-agibot-publication-genie-sim` |
+| 开放程度 | 部分开放 | 2024-12-19 | `evt-2024-12-19-agibot-dataset_release-agibot-world` |
+| 组织方式 | 自建数据工厂 | 2024-12-19 | `evt-2024-12-19-agibot-dataset_release-agibot-world` |
+| 模型形态 | 世界模型 | 2025-08-07 | `evt-2025-08-07-agibot-publication-genie-envisioner` |
+| 模型形态 | 端到端 VLA | 2025-03-10 | `evt-2025-03-10-agibot-product_launch-go1` |
+| 仿真栈 | MuJoCo | 2026-09-24 | `evt-2026-09-24-agibot-publication-sonic-for-a3` |
+| 仿真栈 | Isaac Sim | 2026-09-22 | `evt-2026-09-22-agibot-publication-genie-sim-robot-model` |
+| 仿真栈 | 自研 | 2025-04-21 | `evt-2025-04-21-agibot-publication-genie-sim` |
+| 交付形态 | 租赁 | 2026-03-02 | `evt-2026-03-02-agibot-product_launch-global-raas-platform` |
+| 交付形态 | 卖整机 | 2025-07 | `evt-2025-07-agibot-procurement-china-mobile-hangzhou` |
+| 目标场景 | 工业制造 | 2025-10-16 | `evt-2025-10-16-agibot-product_launch-lingling-g2` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 芯际无限Pre-A | single | [media](https://finance.eastmoney.com/a/202610203901463528.html) |
+| 2026-10 | month | 融资、并购 | 温擎智控获智元投资 | single | [media](https://www.forbeschina.com/business/72275) |
+| 2026-10 | month | 官方表态 | 智元累计2万台产量披露 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 官方表态 | 智元G2场景累计部署披露 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 论文、开源发布 | 智元OmniGlove SDK | single | [official](https://github.com/AgibotTech/agilink_omniglove_sdk) [official](https://github.com/AgibotTech/agilink_omniglove_sdk/releases/tag/v1.0.0) |
+| 2026-10 | month | 论文、开源发布 | 智元AGILE运控框架 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元WITA-OMNI | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元皮下液冷关节方案 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元OmniHand 3系列/OmniPicker 3 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元MEgo Glove Air/Ultra | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元Link-U OS 1.0 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元Genie Evolver/Genie Master工具 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 产品发布、版本迭代 | 智元AHA 3硬件架构 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 合作、生态、联盟 | 智元/开放原子基金会合作 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 合作、生态、联盟 | 智元/国家自然科学基金联合基金 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10 | month | 合作、生态、联盟 | 智元/中国移动5G-A及6G合作 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10-29 | day | 产品发布、版本迭代 | 智元GO-3 Preview | single | [media](https://www.ithome.com/1/019/806.htm) [official](https://www.agibot.com.cn/article/315/detail/261.html) |
+| 2026-10-26 | day | 产品发布、版本迭代 | 智元G2 Max | single | [official](https://www.agibot.com.cn/article/315/detail/256.html) |
+| 2026-10-19 | day | 论文、开源发布 | 智元/清华/无问芯穹CEL | single | [primary](https://arxiv.org/abs/2610.25736) |
+| 2026-10-16 | day | 官方表态 | 智元披露元苼高校合作计划 | single | [media](https://www.ithome.com/1/013/864.htm) |
+| 2026-10-15 | day | 论文、开源发布 | 智元公开 AgentSDK 医院导览应用示例 | single | [official](https://github.com/AgibotTech/agibot_agentsdk_sample_code) [official](https://api.github.com/repos/AgibotTech/agibot_agentsdk/commits?per_page=100) |
+| 2026-10-14 | day | 论文、开源发布 | 智元与合作团队公开 WorldOracle 世界模型评测工具 | single | [official](https://github.com/AgibotTech/WorldOracle) [primary](https://arxiv.org/pdf/2610.18826) [official](https://api.github.com/repos/AgibotTech/WorldOracle/commits?per_page=100) |
+| 2026-10-14 | day | 论文、开源发布 | 智元公开 VINE 代码 | single | [official](https://github.com/AgibotTech/vine-code) [official](https://api.github.com/repos/AgibotTech/vine-code/commits?per_page=100) |
+| 2026-10-05 | day | 招聘信号 | 智元机器人招聘职责与公司自述核验记录（首次基线） | single | [official](https://www.zhipin.com/job_detail/2a17eb14aa274c2e0nJ93NW7FFZZ.html) [official](https://www.zhipin.com/job_detail/019f2e4d66d763900nN62tW4GVZW.html) [official](https://www.zhipin.com/job_detail/0c09f1332bc8b2a50nN-39q1FlFT.html) [official](https://www.zhipin.com/job_detail/38d18bb1263edc380nZ73tu-EFFS.html) [official](https://www.zhipin.com/job_detail/49d86b2a6aea527b0nV63tm7E1BX.html) [official](https://www.zhipin.com/job_detail/367bc0c4e0d65ba60nJ83dm0ElpZ.html) [official](https://www.zhipin.com/job_detail/1377f9f767682deb0nNy396_GVpQ.html) [official](https://www.zhipin.com/job_detail/30cd860614d2ed030nF42966FVtX.html) [official](https://www.zhipin.com/job_detail/028c12b6cbc67adb0nF-2ti6GFtQ.html) [official](https://www.zhipin.com/job_detail/375e3fcc5cd80d700nN90t-6ElJT.html) [official](https://www.zhipin.com/job_detail/0089bcf088b244790nN-39W9E1dY.html) [official](https://www.zhipin.com/job_detail/424d9f547501c6360nd-3d27EVJY.html) [official](https://www.zhipin.com/job_detail/2fe3b74e65055fa70nN609u5FVpY.html) [official](https://www.zhipin.com/job_detail/0b8e587f2db015c60nN93dm-E1ZS.html) [official](https://www.zhipin.com/job_detail/1c33ae0f01c640940nJ739S5EltV.html) [official](https://www.zhipin.com/job_detail/560a4fc057b9637c0nN939y6EFJU.html) [official](https://www.zhipin.com/job_detail/0e88353d394554750nNy2NS_E1BU.html) [official](https://www.zhipin.com/job_detail/161207385891b1870nN93dm5GVVW.html) [official](https://www.zhipin.com/job_detail/0df891faeaa6019d0nN52tu1FlRU.html) [official](https://www.zhipin.com/job_detail/3719961ab342835f0nN52tq5EltQ.html) [official](https://www.zhipin.com/job_detail/4d600bcd39482a4f0nd82du6FlJQ.html) [official](https://www.zhipin.com/job_detail/10878fd56b94c8940nN_39y8GVRW.html) [official](https://www.zhipin.com/job_detail/1daab5a2319608020nJ_0tq-F1VX.html) [official](https://www.zhipin.com/job_detail/3b92131b21d99fd50nJ-3tu0EldS.html) [official](https://www.zhipin.com/job_detail/b38e19d8eb87573d0nJ72N-9GFRR.html) [official](https://www.zhipin.com/job_detail/0ae68935cb0a66cd0nNy3dW9FVBY.html) [official](https://www.zhipin.com/job_detail/0333375815993df80nN50tW1EFRY.html) [official](https://www.zhipin.com/job_detail/2da7217c10c3c17d0nJ839y4FVNV.html) [official](https://www.zhipin.com/job_detail/20f6d748c331a9a80nF82dm8EFJU.html) [official](https://www.zhipin.com/job_detail/3afbf255e0d9e2520nF53d-5E1tZ.html) [official](https://www.zhipin.com/job_detail/146c1228a50781fd0nd_3d27EFFQ.html) [official](https://www.zhipin.com/job_detail/0db5098693d06e930nF82dm5GFRW.html) [official](https://www.zhipin.com/job_detail/0e1e50b5f46afe380nF82du5FlJQ.html) [official](https://www.zhipin.com/job_detail/5229c7b6b451b2e00nRz3t66EVZX.html) [official](https://www.zhipin.com/job_detail/27718445635f6da20nJ_3tS7F1tQ.html) [official](https://www.zhipin.com/job_detail/37f27a17eb6803ab0nNy3969E1pZ.html) [official](https://www.zhipin.com/job_detail/00a61f65378982fe0nNy3Ny1GVFR.html) [official](https://www.zhipin.com/job_detail/0d80944a2c828be40nN40928FFdS.html) [official](https://www.zhipin.com/job_detail/1fffe3908c6156230nN829S8E1tX.html) [official](https://www.zhipin.com/job_detail/19b084c2cf4fc7e50nF43t-6F1BR.html) [official](https://www.zhipin.com/job_detail/5794d215a0c7bf510nZ_2d61EVJZ.html) [official](https://www.zhipin.com/job_detail/29381de7d88884950nF93d6_GFFV.html) [official](https://www.zhipin.com/job_detail/29f20e0a85043b350nN829S9E1FW.html) [official](https://www.zhipin.com/job_detail/2361188dd259dcb40nR53tm4GVVS.html) [official](https://www.zhipin.com/job_detail/4b968a60674975490ndy3dq8EVtS.html) [official](https://www.zhipin.com/job_detail/2ed2c732ad75b2b903173d-0E1dQ.html) [official](https://www.zhipin.com/job_detail/0628f4aba44b003c0nF42Nm1EVFZ.html) [official](https://www.zhipin.com/job_detail/0a1bde101e92b9d70nF839q5EFRS.html) [official](https://www.zhipin.com/job_detail/06bb1c13d32fb7070nN-2tS7ElpS.html) [official](https://www.zhipin.com/job_detail/42ec1f5fb42062b80nZ-0tm_FFpV.html) [official](https://www.zhipin.com/job_detail/4b201d56bc4b16560nV63Nu-EltX.html) [official](https://www.zhipin.com/job_detail/1c240a5d5809cd3c0nd_3dy8FlZY.html) |
+| 2026-09-28 | day | 落地部署、客户签约 | 智元灵犀 X2 在爱仕达百店开展零售服务 | single | [media](https://yangtzeer.com/news/startups/agibot-100-humanoids-asd-stores/) |
+| 2026-09-24 | day | 论文、开源发布 | 智元创建 SONIC 全身控制 A3 适配仓库 | single | [official](https://api.github.com/repos/AgibotTech/sonic_for_a3) [official](https://github.com/AgibotTech/sonic_for_a3/blob/main/README.md) |
+| 2026-09-24 | day | 落地部署、客户签约 | 智元向横琴长隆飞船乐园部署超过 300 台机器人 | single | [media](https://www.leiphone.com/category/robot/23F3DiDtv7Puosqy.html) [media](https://www.ithome.com/1/006/710.htm) |
+| 2026-09-22 | day | 论文、开源发布 | 智元创建 GenieSim 机器人描述与仿真资产仓库 | single | [official](https://api.github.com/repos/AgibotTech/genie_sim_robot_model) [official](https://github.com/AgibotTech/genie_sim_robot_model/blob/main/README.md) |
+| 2026-09-15 | day | 论文、开源发布 | 原力灵机 DM0.5 在 RoboColiseum 四个子榜单登顶 | single | [media](https://www.leiphone.com/category/ai/jIrGoPOXjx7WNljl.html) |
+| 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
+| 2026-08-13 | day | 融资、并购 | 意优科技宣布完成超 2 亿元 B 轮融资，三星风险投资等 12 家机构参投 | single | [media](https://www.zhidx.com/p/584691.html) |
+| 2026-07-28 | day | 融资、并购 | 德塔智能完成近 5 亿元天使++ 轮融资 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
+| 2026-07-24 | day | 成立、改名、注册变更、关停 | 智元创新宣布启动赴港上市流程 | single | [media](https://finance.sina.com.cn/wm/2026-07-25/doc-iniiyptt1420151.shtml) |
+| 2026-06-28 | day | 落地部署、客户签约 | 智元机器人第 1.5 万台通用具身机器人（精灵 G2）下线 | single | [media](http://sh.people.com.cn/n2/2026/0629/c138654-41623829.html) |
+| 2026-05-08 | day | 论文、开源发布 | 智元与上海创智学院LWD | single | [official](https://www.sii.edu.cn/2026/0506/c27a959/page.htm) |
+| 2026-05-07 | day | 落地部署、客户签约 | 雷赛智能称 2025 年无框力矩电机交付超 12 万台、获智元机器人「优秀供应商伙伴」，行星 / 谐波关节模组与 21 自由度灵巧手已批量供应数十家机器人客户 | single | [media](https://www.stcn.com/article/detail/3898779.html) |
+| 2026-04-17 | day | 落地部署、客户签约 | 意优科技再获智元机器人「优秀供应商伙伴奖」，为其一体化关节定点供应商 | single | [official](https://eyoubot.com/company-news/eyou-wins-agibot-outstanding-supplier-partner-award-again) |
+| 2026-03-02 | day | 产品发布、版本迭代 | 智元在 MWC2026 推出海外机器人租赁平台 | single | [official](https://www.agibot.com/article/231/detail/44.html) |
+| 2026-01 | month | 融资、并购 | 智身科技宣布完成连续多轮融资，累计数亿元，智元机器人等参投 | single | [media](https://tech.ifeng.com/c/8wZeUpurplD) |
+| 2026-01-21 | day | 成立、改名、注册变更、关停 | 意优科技机器人关节自动化产线在上海张江投产 | single | [media](https://www.ne-time.cn/web/article/37717) |
+| 2025-12-22 | day | 公开价格 | 擎天租平台上线日租价：灵犀 X2 青春版 1499 元 / 天起，D1Edu 机器狗 200 元 / 天 | single | [media](https://news.dayoo.com/finance/202512/22/171077_54908782.htm) |
+| 2025-12-22 | day | 成立、改名、注册变更、关停 | 擎天租机器人租赁平台在上海发布 | single | [media](https://news.dayoo.com/finance/202512/22/171077_54908782.htm) |
+| 2025-12-18 | day | 产品发布、版本迭代 | 大晓机器人正式亮相，发布 ACE 具身研发范式、开悟世界模型 3.0（Kairos 3.0）与具身超级大脑模组 A1 | multi | [media](https://www.sh.chinanews.com.cn/kjjy/2025-12-19/143451.shtml) [media](http://www.zqrb.cn/finance/hangyedongtai/2025-12-19/A1766148040897.html) |
+| 2025-12-12 | day | 招投标中标 | 复旦采购公告包含两台智元灵犀 X2 | single | [primary](https://xxgk.fudan.edu.cn/_upload/article/files/eb/23/6b43218f43ceb9c688f69be3dea4/657de252-2c4c-43ab-bc64-c4f00b391d1b.pdf) |
+| 2025-11 | month | 成立、改名、注册变更、关停 | 智元创新完成股改，改制为股份有限公司 | single | [media](https://www.cls.cn/detail/2195804) |
+| 2025-11-06 | day | 成立、改名、注册变更、关停 | 智元恒岳对上纬新材的要约收购完成股份交割，合计持股 63.6232% | single | [media](https://www.cls.cn/detail/2193496) |
+| 2025-10-16 | day | 产品发布、版本迭代 | 智元机器人发布工业级具身作业机器人精灵 G2，已获龙旗科技、均胜电子过亿元订单 | single | [media](https://www.cls.cn/detail/2171827) |
+| 2025-09 | month | 落地部署、客户签约 | 珞石与智元签订协议，供应仿人机械臂 | single | [media](https://m.gelonghui.com/p/5510236) |
+| 2025-09-23 | day | 成立、改名、注册变更、关停 | 上纬新材协议转让股份完成过户，智元恒岳成为控股股东 | single | [media](https://www.cls.cn/detail/2153787) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-08-11 | day | 融资、并购 | 智元创新增资入股玉禾田旗下深圳玉树智能，持股 5% | single | [media](https://www.21jingji.com/article/20250811/herald/503d1a57d1782d0aab4c234fd2e3d903.html) |
+| 2025-08-07 | day | 论文、开源发布 | 智元机器人发布世界基座平台 Genie Envisioner 论文 | single | [primary](https://arxiv.org/abs/2508.05635) |
+| 2025-07 | month | 招投标中标 | 智元机器人中标中移（杭州）人形双足机器人代工服务采购项目标包 1 | single | [media](https://www.c114.com.cn/news/118/a1292870.html) |
+| 2025-07-08 | day | 成立、改名、注册变更、关停 | 上纬新材公告控股股东将由 SWANCOR 萨摩亚变更为智元恒岳 | single | [media](https://www.nbd.com.cn/articles/2025-07-08/3936752.html) |
+| 2025-06-28 | day | 合作、生态、联盟 | 玉禾田与上海智元新创签署战略合作协议，推动人形机器人进入城市服务场景 | single | [media](https://www.hbzhan.com/news/detail/189617.html) |
+| 2025-05-29 | day | 官方表态 | 国家机器人检测与评定中心颁出全球首张人形机器人 CR 认证「001」证书 | multi | [official](https://www.sri-robot.com/news/1222.html) [official](https://www.agibot.com.cn/article/188/detail/69.html) |
+| 2025-05-22 | day | 融资、并购 | 京东科技与上海具身智创基金入股智元机器人 | single | [media](https://cd.nbd.com.cn/articles/2025-05-24/3886882.html) |
+| 2025-04-21 | day | 论文、开源发布 | 智元机器人开源仿真平台 Genie Sim | single | [official](https://github.com/AgibotTech/genie_sim) |
+| 2025-03 | month | 落地部署、客户签约 | 千觉机器人触觉感知方案落地智元机器人 | multi | [media](https://www.geekpark.net/news/346630) [media](https://sensor.ofweek.com/2025-05/ART-81013-8120-30662389.html) |
+| 2025-03-24 | day | 融资、并购 | 智元机器人完成腾讯领投的新一轮融资 | single | [media](https://www.yicai.com/news/102530827.html) |
+| 2025-03-10 | day | 产品发布、版本迭代 | 智元机器人发布通用具身基座大模型 GO-1 与 ViLLA 架构 | single | [media](https://news.qq.com/rain/a/20250310A05HBK00) |
+| 2025-02 | month | 融资、并购 | 千觉机器人完成天使 + 轮融资，智元机器人入股 | single | [media](https://news.qq.com/rain/a/20250507A068DO00) |
+| 2025-02-27 | day | 合作、生态、联盟 | 百度智能云与智元机器人签署战略合作协议，共建可二次开发的人形机器人平台 | multi | [media](https://news.zol.com.cn/954/9543459.html) [media](https://news.qq.com/rain/a/20250303A0470C00) |
+| 2025-01-06 | day | 落地部署、客户签约 | 智元机器人量产第 1000 台通用具身机器人下线 | single | [media](https://www.techsir.com/a/202501/90070.html) |
+| 2024-12-19 | day | 数据集发布 | 智元机器人开源真机操作数据集 AgiBot World（Alpha） | single | [official](https://huggingface.co/datasets/agibot-world/AgiBotWorld-Alpha) |
+| 2024-10 | month | 融资、并购 | 首形科技获天使轮投资，投资方含智元机器人 | single | [media](https://finance.ifeng.com/c/8kWQoPlTKzP) |
+| 2024-10-24 | day | 论文、开源发布 | 智元机器人开源灵犀 X1 的软硬件全栈资料 | single | [official](https://github.com/AgibotTech/agibot_x1_infer) |
+| 2024-09-29 | day | 落地部署、客户签约 | 因时机器人披露微型伺服电缸与灵巧手已服务的客户范围 | single | [aggregator](https://news.pedaily.cn/202409/540834.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Agility Robotics
+
+**Agility Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2015 |
+| 总部 | USSalem |
+| 事件数 | 14 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 目标场景 | 工业制造 | 2024-11-13 | `evt-2024-11-13-agility-funding-schaeffler-strategic-investment` |
+| 目标场景 | 物流仓储 | 2024-06-05 | `evt-2024-06-05-agility-deployment-gxo-flowery-branch-digit` |
+| 交付形态 | 订阅 | 2026-02-19 | `evt-2026-02-19-agility-deployment-toyota-canada-raas` |
+| 交付形态 | 卖整机 | 2025-03-31 | `evt-2025-03-31-agility-product_launch-digit-safety-and-amr-integration` |
+| 交付形态 | 服务交付 | 2025-03-31 | `evt-2025-03-31-agility-product_launch-digit-safety-and-amr-integration` |
+| 交付形态 | 租赁 | 2024-06-27 | `evt-2024-06-27-agility-partnership-gxo-multiyear-raas` |
+| 本体形态 | 双足人形 | 2024-11-13 | `evt-2024-11-13-agility-funding-schaeffler-strategic-investment` |
+| 本体策略 | 自研整机 | 2025-08-08 | `evt-2025-08-08-agility-corporate-robofab-production-scale` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-26 | day | 官方表态 | Agility新增三家制造业付费项目披露 | single | [official](https://www.agilityrobotics.com/content/agility-robotics-highlights-commercial-momentum-and-growing-enterprise-demand-for-digit-humanoid-robot) |
+| 2026-10-26 | day | 合作、生态、联盟 | Agility/GXO新增两处Digit部署协议 | single | [official](https://www.agilityrobotics.com/content/agility-robotics-highlights-commercial-momentum-and-growing-enterprise-demand-for-digit-humanoid-robot) |
+| 2026-10-15 | day | 合作、生态、联盟 | Agility 选择 Nyobolt 为 Digit5 提供快充电池技术 | single | [official](https://www.agilityrobotics.com/content/agility-robotics-selects-nyobolt-as-its-ultra-fast-charging-battery-technology-partner-for-digit-5) |
+| 2026-09-15 | day | 产品发布、版本迭代 | Agility 发布新一代人形机器人 Digit 5，面向与人近距离协作作业 | single | [official](https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale) |
+| 2026-07-14 | day | 成立、改名、注册变更、关停 | Agility 与 Churchill XI 向 SEC 秘密提交 Form S-4 注册声明草案 | single | [primary](https://www.sec.gov/Archives/edgar/data/2074973/000121390026077981/ea029792301ex99-1.htm) |
+| 2026-06-24 | day | 融资、并购 | Agility Robotics 与 Churchill Capital Corp XI 签署合并协议拟上市，投前估值 25 亿美元 | multi | [official](https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi) [primary](https://www.sec.gov/Archives/edgar/data/2074973/000121390026071287/ea0295484-8k425_church11.htm) |
+| 2026-02-19 | day | 落地部署、客户签约 | Toyota Motor Manufacturing Canada 与 Agility 签 RaaS 商业协议，试点后部署 Digit | single | [official](https://www.agilityrobotics.com/content/agility-robotics-announces-commercial-agreement-with-toyota-motor-manufacturing-canada) |
+| 2025-12-10 | day | 落地部署、客户签约 | Mercado Libre 与 Agility Robotics 签商业协议，在得州 San Antonio 履约中心部署 Digit | single | [official](https://www.agilityrobotics.com/content/mercado-libre-and-agility-robotics-announce-commercial-agreement) |
+| 2025-08-08 | day | 成立、改名、注册变更、关停 | Agility Robotics 的 Salem RoboFab 工厂披露产能与人员规模 | single | [media](https://www.oregonlive.com/silicon-forest/2025/08/oregon-factory-builds-the-walking-robots-of-tomorrow-these-are-going-to-be-a-part-of-everyday-life.html) |
+| 2025-03-31 | day | 产品发布、版本迭代 | Agility Robotics 公布 Digit 新版本能力：安全功能、四小时电池与 Arc 对接 AMR | single | [official](https://www.agilityrobotics.com/content/agility-robotics-announces-new-innovations-for-market-leading-humanoid-robot-digit) |
+| 2025-01 | month | 落地部署、客户签约 | 舍弗勒美国 Cheraw 工厂启用 Agility Robotics 的 Digit 人形机器人上下料 | single | [official](https://schaeffler-tomorrow.com/en/article/welcome-aboard-robo) |
+| 2024-11-13 | day | 融资、并购 | Agility Robotics获 Schaeffler 少数股权投资，并签下其全球工厂采购协议 | single | [official](https://www.agilityrobotics.com/content/agility-robotics-announces-strategic-investment-and-agreement-with-motion-technology-company-schaeffler-group) |
+| 2024-06-27 | day | 合作、生态、联盟 | GXO 与 Agility 公布多年 Digit RaaS 协议 | single | [official](https://investors.gxo.com/news-releases/news-release-details/gxo-signs-industry-first-multi-year-agreement-agility-robotics/) |
+| 2024-06-05 | day | 落地部署、客户签约 | Digit 在 GXO 的 Flowery Branch 设施开始商业作业 | single | [official](https://www.agilityrobotics.com/content/digit-deployed-at-gxo-in-historic-humanoid-raas-agreement) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 阿里巴巴
+
+**Alibaba**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | CN杭州 |
+| 事件数 | 11 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 分层 | 2026-02-10 | `evt-2026-02-10-alibaba-robotics-product_launch-rynnbrain` |
+| 模型形态 | 端到端 VLA | 2025-06-26 | `evt-2025-06-26-alibaba-robotics-publication-worldvla` |
+| 模型形态 | 世界模型 | 2025-06-26 | `evt-2025-06-26-alibaba-robotics-publication-worldvla` |
+| 仿真栈 | MuJoCo | 2025-08-11 | `evt-2025-08-11-alibaba-robotics-publication-rynn-opensource-trio` |
+| 采集方式 | 人类视频 | 2025-08-11 | `evt-2025-08-11-alibaba-robotics-publication-rynn-opensource-trio` |
+| 开放程度 | 完全开放 | 2025-08-11 | `evt-2025-08-11-alibaba-robotics-publication-rynn-opensource-trio` |
+| 本体形态 | 四足 | 2026-04-19 | `evt-2026-04-19-alibaba-robotics-product_launch-amap-tutu` |
+| 本体策略 | 自研整机 | 2026-04-19 | `evt-2026-04-19-alibaba-robotics-product_launch-amap-tutu` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-23 | day | 论文、开源发布 | 阿里RynnUnify | single | [primary](https://arxiv.org/abs/2610.32965) |
+| 2026-10-09 | day | 论文、开源发布 | 阿里达摩院公开 RynnVLA-Latent 实际源码 | single | [official](https://github.com/alibaba-damo-academy/RynnVLA-Latent/blob/23da1f28c5b2ff17760d01223f37a0774d01b25a/README.md) [official](https://github.com/alibaba-damo-academy/RynnVLA-Latent/commits/main.atom) |
+| 2026-10-05 | day | 论文、开源发布 | 阿里巴巴提交 RynnWorld-Latent 跨本体世界模型代码 | single | [official](https://github.com/alibaba-damo-academy/RynnWorld-Latent/blob/2a3a090ba2a6e8c2711be1dd2552c02cc3aad46e/README.md) [official](https://api.github.com/repos/alibaba-damo-academy/RynnWorld-Latent/commits?per_page=8) |
+| 2026-08-22 | day | 产品发布、版本迭代 | RoboParty 在 2026 世界机器人大会首次完整公开下一代通用人形机器人 RP1 外观 | single | [media](http://www.investorscn.com/2026/08/22/135964/) |
+| 2026-04-19 | day | 产品发布、版本迭代 | 阿里旗下高德公开首款四足具身机器人途途，在亦庄人形机器人半马首次亮相 | multi | [media](http://jjckb.xinhuanet.com/20260419/cc7ebda5b06a46ba8300d83dbbb2cdc7/c.html) [media](https://www.stcn.com/article/detail/3765222.html) |
+| 2026-02-10 | day | 产品发布、版本迭代 | 阿里达摩院发布并开源具身智能大脑基础模型 RynnBrain | single | [media](https://finance.sina.com.cn/tech/digi/2026-02-10/doc-inhmihnp5577461.shtml) |
+| 2025-08-11 | day | 论文、开源发布 | 阿里达摩院在世界机器人大会开源 RynnVLA-001-7B、RynnEC 与机器人上下文协议 RynnRCP | multi | [media](https://www.qbitai.com/2025/08/320807.html) [official](https://github.com/alibaba-damo-academy/RynnRCP) |
+| 2025-06-26 | day | 论文、开源发布 | 阿里达摩院发布并开源论文《WorldVLA: Towards Autoregressive Action World Model》 | single | [primary](https://arxiv.org/abs/2506.21539) |
+| 2025-06-19 | day | 融资、并购 | 宇树科技确认完成 C 轮融资交割 | single | [media](https://www.stcn.com/article/detail/2155160.html) |
+| 2025-03-06 | day | 融资、并购 | 逐际动力完成 A+ 轮融资，半年累计完成 5 亿元 A 轮系列融资 | multi | [official](https://www.limxdynamics.com/zh/news/BK000018) [media](https://stcn.com/article/detail/1565362.html) |
+| 2024-10-16 | day | 融资、并购 | 星动纪元完成 Pre-A 轮融资 | single | [media](https://www.tmtpost.com/7286341.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 智平方
+
+**AlphaSquare**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2023-04 |
+| 总部 | CN深圳 |
+| 事件数 | 10 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 模仿学习 | 2025-06-02 | `evt-2025-06-02-alphasquare-publication-fast-in-slow` |
+| 模型形态 | 端到端 VLA | 2025-04-17 | `evt-2025-04-17-alphasquare-product_launch-alphabot-2-govla` |
+| 模型形态 | 分层 | 2025-04-17 | `evt-2025-04-17-alphasquare-product_launch-alphabot-2-govla` |
+| 数据模态 | RGB 图像 | 2025-06-02 | `evt-2025-06-02-alphasquare-publication-fast-in-slow` |
+| 数据模态 | 点云 | 2025-06-02 | `evt-2025-06-02-alphasquare-publication-fast-in-slow` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-31 | day | 落地部署、客户签约 | 智平方兰桂坊爱宝运营 | single | [media](https://www.ithome.com/0/996/802.htm) |
+| 2026-06-29 | day | 融资、并购 | 智平方宣布完成近 50 亿元系列融资，估值超 200 亿元 | single | [media](https://www.caixin.com/2026-06-29/102458633.html) |
+| 2026-06-15 | day | 产品发布、版本迭代 | 智平方在智源大会发布类脑式具身智能系统 NeuroVLA 并开源 | single | [media](https://www.donews.com/news/detail/4/6595774.html) |
+| 2026-04 | month | 成立、改名、注册变更、关停 | 智平方完成股份制改造，更名为智平方（深圳）科技股份有限公司 | single | [media](https://www.cls.cn/detail/2341170) |
+| 2026-02-23 | day | 融资、并购 | 智平方宣布完成超 10 亿元 B 轮系列融资，估值超百亿元 | single | [media](https://www.bjnews.com.cn/detail/1771819839129832.html) |
+| 2026-01 | month | 落地部署、客户签约 | 智平方人才公园智魔方运营 | single | [media](https://www.sznews.com/news/content/2026-02/11/content_31943496.htm) |
+| 2025-06-02 | day | 论文、开源发布 | 论文《Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning》提交 arXiv | single | [primary](https://arxiv.org/abs/2506.01953) |
+| 2025-04-17 | day | 产品发布、版本迭代 | 智平方发布通用智能机器人 AlphaBot 2 与全域全身 VLA 大模型 GOVLA | single | [official](https://ai2robotics.com/%E6%99%BA%E5%B9%B3%E6%96%B9%E5%8F%91%E5%B8%83%E5%85%A8%E6%96%B0%E4%B8%80%E4%BB%A3%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BAalphabot-2%E5%BC%80%E5%90%AFagi%E7%BB%88%E7%AB%AF%E6%96%B0/) |
+| 2025-03-06 | day | 融资、并购 | 智平方完成 Pre A+ 轮融资 | single | [official](https://ai2robotics.com/%E6%99%BA%E5%B9%B3%E6%96%B9-%E5%AE%8C%E6%88%90%E6%95%B0%E4%BA%BF%E5%85%83pre-a%E8%BD%AE%E8%9E%8D%E8%B5%84-%E6%8E%A8%E5%8A%A8%E6%90%AD%E8%BD%BD%E4%B8%96%E7%95%8C%E9%A2%86%E5%85%88%E6%B0%B4/) |
+| 2025-01-07 | day | 融资、并购 | 智平方完成 Pre-A 轮战略融资 | single | [media](https://www.chinaventure.com.cn/news/80-20250107-384655.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 伯牙智能
+
+**Botyard**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件、运控与小脑 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-30 | day | 官方表态 | 伯牙Botyard灵巧手及运控技术披露 | single | [official](https://botyard.ai/product) [media](https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 中科慧灵
+
+**CASBOT**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | 2023-08 |
+| 总部 | CN北京 |
+| 事件数 | 12 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-11-13 | `evt-2024-11-13-casbot-product-launch-casbot-01` |
+| 目标场景 | 商业服务 | 2025-06 | `evt-2025-06-casbot-product-launch-casbot-02` |
+| 目标场景 | 科教与科研 | 2025-06 | `evt-2025-06-casbot-product-launch-casbot-02` |
+| 目标场景 | 工业制造 | 2024-11-13 | `evt-2024-11-13-casbot-product-launch-casbot-01` |
+| 目标场景 | 巡检与特种作业 | 2024-11-13 | `evt-2024-11-13-casbot-product-launch-casbot-01` |
+| 本体策略 | 自研整机 | 2024-11-13 | `evt-2024-11-13-casbot-product-launch-casbot-01` |
+| 数据模态 | RGB-D | 2025-06 | `evt-2025-06-casbot-product-launch-casbot-02` |
+| 数据模态 | 音频 | 2025-06 | `evt-2025-06-casbot-product-launch-casbot-02` |
+| 数据模态 | 力与力矩 | 2025-05-23 | `evt-2025-05-23-casbot-publication-dtrt-icra` |
+| 数据模态 | 关节轨迹 | 2025-05-23 | `evt-2025-05-23-casbot-publication-dtrt-icra` |
+| 交付形态 | 卖整机 | 2025-06 | `evt-2025-06-casbot-product-launch-casbot-02` |
+| 组织方式 | 高校合作 | 2026-01-07 | `evt-2026-01-07-casbot-partnership-beijing-key-lab` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 中科慧灵CASBOT数亿元A++ | single | [media](https://www.cs.com.cn/ssgs/01/2026/10/26/detail_2026102610047252.html) |
+| 2026-10-26 | day | 官方表态 | 中科慧灵制鞋机器人在手订单披露 | single | [media](https://www.cs.com.cn/ssgs/01/2026/10/26/detail_2026102610047252.html) |
+| 2026-10-26 | day | 官方表态 | 中科慧灵CASBOT PA技术披露 | single | [media](https://www.cs.com.cn/ssgs/01/2026/10/26/detail_2026102610047252.html) |
+| 2026-09-16 | day | 成立、改名、注册变更、关停 | 中科慧灵西南区域总部落地重庆大渡口区，同场举行灵宝机器人重庆首台套交付 | single | [media](http://cq.people.com.cn/n2/2026/0916/c367650-41698378.html) |
+| 2026-07 | month | 成立、改名、注册变更、关停 | 中科慧灵与蓝思科技、湖南华夏投资集团合资成立灵巧手公司「中科慧思」 | single | [media](https://eu.36kr.com/zh/p/3931010805579139) |
+| 2026-06 | month | 落地部署、客户签约 | 中科慧灵与杰克科技签署 2000 台制鞋场景定制机器人预交付订单，合同金额 4.04 亿元 | multi | [media](https://app.xinhuanet.com/news/article.html?articleId=20260718a82754c01428436a9b5683bdbf10d403) [media](http://www.weekhao.com/ai/a21562976) |
+| 2026-01-07 | day | 合作、生态、联盟 | 灵宝 CASBOT 与中科院自动化所、国网北京电力共建「工业具身智能北京市重点实验室」获批 | single | [media](https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202601/t20260107_4406763.html) |
+| 2025-06 | month | 产品发布、版本迭代 | 灵宝 CASBOT 发布第二代全尺寸双足人形机器人 CASBOT 02，京东标准版售价 32.88 万元 | single | [media](https://www.cnaiplus.com/a/robot/8564060.html) |
+| 2025-06-26 | day | 融资、并购 | 灵宝 CASBOT 完成近亿元天使+轮融资，蓝思科技领投 | single | [media](https://www.stdaily.com/web/gdxw/2025-06/26/content_360833.html) |
+| 2025-05-23 | day | 论文、开源发布 | 中科慧灵与中科院自动化所合作论文 DTRT 发布于 arXiv，获 ICRA 2025 录用 | multi | [primary](https://arxiv.org/abs/2505.17490) [media](https://www.robotsky.cc/news/2025052113699.html) |
+| 2025-02-18 | day | 融资、并购 | 灵宝 CASBOT 宣布天使轮融资累计超亿元，联想创投、国投创合参投 | multi | [media](https://www.tmtpost.com/7460102.html) [media](https://www.21jingji.com/article/20250218/herald/9c7ce794eff8339bb014d825d983fb9e.html) |
+| 2024-11-13 | day | 产品发布、版本迭代 | 中科慧灵发布首款全尺寸双足人形机器人灵宝 CASBOT 01 | multi | [media](https://www.stdaily.com/web/gdxw/2024-11/14/content_258423.html) [media](https://news.qq.com/rain/a/20241114A01ZTT00) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 地瓜机器人
+
+**D-Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2024-01 |
+| 总部 | CN深圳 |
+| 事件数 | 28 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 目标场景 | 工业制造 | 2026-07-13 | `evt-2026-07-13-d-robotics-partnership-tars-a3-s600` |
+| 本体形态 | 复合移动操作 | 2026-07-13 | `evt-2026-07-13-d-robotics-partnership-tars-a3-s600` |
+| 运控路线 | 强化学习 | 2026-09-18 | `evt-2026-09-18-d-robotics-publication-robot-learning-platform-v0-1-0` |
+| 模型形态 | 模仿学习 | 2026-09-18 | `evt-2026-09-18-d-robotics-publication-robot-learning-platform-v0-1-0` |
+| 仿真栈 | MuJoCo | 2026-09-18 | `evt-2026-09-18-d-robotics-publication-robot-learning-platform-v0-1-0` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 地瓜rdk-plugins机器人学习模块 | single | [official](https://github.com/D-Robotics/rdk-plugins) |
+| 2026-10-19 | day | 产品发布、版本迭代 | 地瓜机器人发布统一 RDK Model Zoo2.0 | single | [official](https://github.com/D-Robotics/rdk_model_zoo/releases/tag/model-zoo-v2.0.0) |
+| 2026-10-09 | day | 论文、开源发布 | 地瓜机器人公开 SLAM Toolbox 的 RDK X5 适配及网页三维可视化 | single | [official](https://github.com/D-Robotics/slam_toolbox/commits/ros2.atom) [official](https://raw.githubusercontent.com/D-Robotics/slam_toolbox/0b06ec5b9ecb3ed885ef4e38c3e66a7c0c418ec3/src/slam_toolbox_web_node.cpp) |
+| 2026-09-29 | day | 论文、开源发布 | 地瓜机器人创建 2026 冬季 RDK 开发者挑战赛仓库 | single | [official](https://api.github.com/repos/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter) [official](https://github.com/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter/blob/main/README.md) |
+| 2026-09-29 | day | 论文、开源发布 | 地瓜机器人创建 RDK 社区项目展示仓库 | single | [official](https://api.github.com/repos/D-Robotics/RDK-Community-Build) [official](https://github.com/D-Robotics/RDK-Community-Build/blob/main/README.md) |
+| 2026-09-24 | day | 论文、开源发布 | 地瓜机器人发布 X5 OE Skills v1.1.0 | single | [official](https://github.com/D-Robotics/oe-skills-x5/releases/tag/v1.1.0) [official](https://github.com/D-Robotics/oe-skills-x5/blob/v1.1.0/README.md) |
+| 2026-09-20 | day | 数据集发布 | 地瓜机器人发布数据集 Uranus-Demo-Data | single | [official](https://huggingface.co/datasets/D-Robotics/Uranus-Demo-Data) |
+| 2026-09-18 | day | 论文、开源发布 | 地瓜机器人发布 Robot Learning Platform v0.1.0 | single | [official](https://github.com/D-Robotics/robot-learning-platform/releases/tag/v0.1.0) [official](https://github.com/D-Robotics/robot-learning-platform/blob/v0.1.0/README.md) |
+| 2026-09-18 | day | 论文、开源发布 | 地瓜机器人创建端到端多目标跟踪工具仓库 | single | [official](https://api.github.com/repos/D-Robotics/di-e2e-mot) [official](https://github.com/D-Robotics/di-e2e-mot/blob/develop/README.md) |
+| 2026-09-18 | day | 论文、开源发布 | 地瓜机器人发布模型 Uranus-1.3B-Distillation | single | [official](https://huggingface.co/D-Robotics/Uranus-1.3B-Distillation) |
+| 2026-09-17 | day | 融资、并购 | 宣布完成 4 亿美元 C 轮融资，未来资产领投，美团参与战略投资，合肥国投、南山战新投等地方国资跟投，高瓴、五源、线性、 | single | [media](https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml) |
+| 2026-09-16 | day | 论文、开源发布 | 地瓜机器人新建仓库 time_synchronization_installer | single | [official](https://github.com/D-Robotics/time_synchronization_installer) |
+| 2026-07-17 | day | 合作、生态、联盟 | 谋先飞（Motphys）联合地瓜机器人、影眸科技发布「具身智能可训练仿真闭环联合解决方案」 | single | [media](https://www.ne-time.cn/web/article/39201) |
+| 2026-07-15 | day | 落地部署、客户签约 | 地瓜机器人公布旭日 S600 落地进展：与 20 余家头部客户达成合作，进入量产验证 | single | [media](http://finance.people.com.cn/n1/2026/0720/c1004-40764182.html) |
+| 2026-07-13 | day | 合作、生态、联盟 | 它石智航 A3 轮式双臂工业机器人全面搭载地瓜旭日 S600，开启规模化量产 | single | [media](https://news.pedaily.cn/202607/566223.shtml) |
+| 2026-06-11 | day | 合作、生态、联盟 | 智在无界与地瓜机器人达成战略合作，Being-H-Flash 在旭日 S600/S100 端侧部署 | single | [official](https://beingbeyond.com/newsInfo/1214.html) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+| 2026-05-20 | day | 合作、生态、联盟 | 千寻智能与地瓜机器人达成战略合作，Spirit v1.5 完成与旭日 S600 适配 | single | [official](https://www.spirit-ai.com/news/32) |
+| 2026-04-28 | day | 论文、开源发布 | 莫特菲斯等：GS-Playground | single | [primary](https://arxiv.org/abs/2604.25459v1) |
+| 2026-04-08 | day | 融资、并购 | 地瓜机器人宣布完成 1.5 亿美元 B2 轮融资，B 轮累计 2.7 亿美元 | single | [media](https://tech.caijing.com.cn/20260408/5152351.shtml) |
+| 2026-03-19 | day | 成立、改名、注册变更、关停 | 地平线年度业绩公告披露：不再拥有地瓜机器人控制权，地瓜机器人取消入账转为联营公司 | single | [primary](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900928_c.pdf) |
+| 2026-03-16 | day | 融资、并购 | 地瓜机器人宣布完成 1.2 亿美元 B1 轮融资 | single | [media](https://tech.caijing.com.cn/20260316/5147174.shtml) |
+| 2026-02-13 | day | 产品发布、版本迭代 | 地平线发布并开源 HoloBrain-0 具身智能 VLA 基座模型及 RoboOrchard 基础设施 | single | [official](https://www.horizon.auto/news/technology/435) |
+| 2025-12-08 | day | 产品发布、版本迭代 | 地平线在 2025 技术生态大会发布具身智能小脑基座模型 HoloMotion 与大脑基座模型 HoloBrain | single | [official](https://www.horizon.auto/news/press/427) |
+| 2025-11-21 | day | 产品发布、版本迭代 | 地瓜机器人在 DDC2025 开发者大会揭晓具身智能大算力开发平台 S600 | single | [media](https://www.stdaily.com/web/gdxw/2025-11/21/content_435861.html) |
+| 2025-06-11 | day | 产品发布、版本迭代 | 地瓜机器人发布 RDK S100 机器人开发套件并开启预售 | single | [media](https://www.qbitai.com/2025/06/292932.html) |
+| 2025-05-28 | day | 融资、并购 | 地瓜机器人完成 1 亿美元 A 轮融资 | multi | [media](https://www.stdaily.com/web/gdxw/2025-05/28/content_346937.html) [media](https://www.qbitai.com/2025/05/288738.html) |
+| 2024-09-20 | day | 产品发布、版本迭代 | 地瓜机器人开发者日发布旭日 5 芯片与 RDK X5、RDK S100 开发者套件 | multi | [media](https://www.leiphone.com/category/industrynews/rhw4I1kHNrJ61BPO.html) [media](https://news.qq.com/rain/a/20240920A06KY000) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 跨维智能
+
+**DexForce**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2021 |
+| 总部 | CN深圳 |
+| 事件数 | 13 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 固定双臂 | 2025-07-27 | `evt-2025-07-27-dexforce-product_launch-w1-pro-core` |
+| 本体形态 | 轮式人形 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 本体策略 | 自研整机 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 采集方式 | 仿真合成 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 目标场景 | 文旅与表演 | 2026-02-10 | `evt-2026-02-10-dexforce-partnership-tourism-thousands-units` |
+| 目标场景 | 家庭 | 2025-07-27 | `evt-2025-07-27-dexforce-product_launch-w1-pro-core` |
+| 目标场景 | 工业制造 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 目标场景 | 商业服务 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 目标场景 | 科教与科研 | 2025-01-20 | `evt-2025-01-20-dexforce-product_launch-w1` |
+| 模型形态 | 世界模型 | 2026-10-08 | `evt-2026-10-08-dexforce-publication-unitas-world-action-model` |
+| 模型形态 | 端到端 VLA | 2025-07-27 | `evt-2025-07-27-dexforce-product_launch-w1-pro-core` |
+| 仿真栈 | 自研 | 2025-07-27 | `evt-2025-07-27-dexforce-publication-embodichain` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-24 | day | 数据集发布 | 跨维 EmbodiChain 仿真数据集 | single | [official](https://huggingface.co/datasets/DexForceAI/embodichain_datasets) |
+| 2026-10-13 | day | 论文、开源发布 | 跨维智能公开 Articulation 关节资产生成工具 | single | [official](https://github.com/DexForce/Articulation) [official](https://api.github.com/repos/DexForce/Articulation) [official](https://api.github.com/repos/DexForce/Articulation/commits?per_page=100) |
+| 2026-10-08 | day | 论文、开源发布 | 跨维智能联合发表 UNITAS 三维世界动作模型论文 | single | [primary](https://arxiv.org/abs/2610.12099) [official](https://raw.githubusercontent.com/DexForce/UNITAS/main/README.md) |
+| 2026-09-23 | day | 论文、开源发布 | 跨维智能上传 EmbodiChain 足式机器人策略检查点 | single | [official](https://huggingface.co/api/models/DexForceAI/embodichain_model) [official](https://huggingface.co/DexForceAI/embodichain_model/raw/main/README.md) [official](https://huggingface.co/api/models/DexForceAI/embodichain_model/commits/main) |
+| 2026-09-20 | day | 论文、开源发布 | 跨维智能联合发表 TaskAnchor 长程操作任务状态适配方法 | single | [primary](https://arxiv.org/abs/2609.23580) [primary](https://arxiv.org/html/2609.23580v1) [official](https://taskanchor.netlify.app/) |
+| 2026-06-30 | day | 融资、并购 | 跨维智能完成 10 亿元人民币 B 轮融资，投后估值超百亿 | multi | [official](https://www.dexforce.com/news_detail.php?id=1261) [media](https://www.stcn.com/article/detail/3988923.html) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+| 2026-04-28 | day | 论文、开源发布 | 莫特菲斯等：GS-Playground | single | [primary](https://arxiv.org/abs/2604.25459v1) |
+| 2026-02-10 | day | 合作、生态、联盟 | 跨维智能签署三项文旅战略合作，与盈新数科约定三年内落地不少于 1000 台机器人 | multi | [official](https://dexforce.com/news_detail.php?id=1241) [media](https://www.stcn.com/article/detail/3638105.html) |
+| 2025-07-27 | day | 论文、开源发布 | 跨维智能推出开源具身智能开发平台 EmbodiChain | single | [media](https://www.pingwest.com/a/306441) |
+| 2025-07-27 | day | 产品发布、版本迭代 | 跨维智能在 WAIC 2025 发布第二代人形机器人 DexForce W1 Pro 与无底盘版 W1 Core，开启预售 | multi | [media](https://www.pingwest.com/a/306441) [media](https://www.stcn.com/article/detail/2763737.html) |
+| 2025-07-10 | day | 融资、并购 | 跨维智能完成 A1&A2 轮融资，原话为「数亿元」 | multi | [media](https://www.21jingji.com/article/20250710/herald/121306a84ec4749b08f2adc1dd4bb20c.html) [media](https://www.yicai.com/news/102715181.html) |
+| 2025-01-20 | day | 产品发布、版本迭代 | 跨维智能发布人形机器人 DexForce W1 | single | [media](https://www.ithome.com/0/826/024.htm) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Einsia AI
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 仿真栈 | Isaac Sim | 2026-10-13 | `evt-2026-10-13-einsia-ai-publication-embodiedevo` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-13 | day | 论文、开源发布 | Einsia AI / EmbodiedEvo | single | [primary](https://arxiv.org/abs/2610.18867v1) [official](https://einsia.ai/about/) [official](https://einsia.ai/privacy/) [official](https://github.com/Einsia/EmbodiedEvo) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 伊塔动力
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-20 | day | 融资、并购 | 伊塔动力种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610203901631216.html) [media](https://www.forbeschina.com/business/72275) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 傅利叶
+
+**Fourier**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2015 |
+| 总部 | CN上海 |
+| 事件数 | 16 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-09-26 | `evt-2024-09-26-fourier-product_launch-gr2` |
+| 采集方式 | 真机自采 | 2025-03-08 | `evt-2025-03-08-fourier-dataset_release-actionnet` |
+| 采集方式 | 遥操示教 | 2024-10-22 | `evt-2024-10-22-fourier-publication-teleoperation-farts` |
+| 数据模态 | 关节轨迹 | 2025-03-08 | `evt-2025-03-08-fourier-dataset_release-actionnet` |
+| 数据模态 | RGB 图像 | 2024-10-22 | `evt-2024-10-22-fourier-publication-teleoperation-farts` |
+| 数据模态 | RGB-D | 2024-10-22 | `evt-2024-10-22-fourier-publication-teleoperation-farts` |
+| 模型形态 | 模仿学习 | 2024-10-22 | `evt-2024-10-22-fourier-publication-teleoperation-farts` |
+| 开放程度 | 部分开放 | 2025-03-08 | `evt-2025-03-08-fourier-dataset_release-actionnet` |
+| 本体策略 | 自研整机 | 2025-04-11 | `evt-2025-04-11-fourier-publication-n1-opensource` |
+| 目标场景 | 家庭 | 2026-08 | `evt-2026-08-fourier-product_launch-gr3c-wrc` |
+| 目标场景 | 物流仓储 | 2026-07-17 | `evt-2026-07-17-fourier-product_launch-grw-wheeled-dual-arm` |
+| 目标场景 | 工业制造 | 2026-07-17 | `evt-2026-07-17-fourier-product_launch-grw-wheeled-dual-arm` |
+| 目标场景 | 医疗与康养 | 2025-05-09 | `evt-2025-05-09-fourier-partnership-rehab-port-simc` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-20 | day | 融资、并购 | 伊塔动力种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610203901631216.html) [media](https://www.forbeschina.com/business/72275) |
+| 2026-08 | month | 产品发布、版本迭代 | 傅利叶在 WRC 2026 推出 GR-3C，Ultra 版搭载速腾聚创 Airy 激光雷达 | single | [media](https://www.ne-time.cn/web/article/39527) |
+| 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
+| 2026-07-17 | day | 产品发布、版本迭代 | 傅利叶在 WAIC 2026 发布首款轮式双臂机器人 GRW | single | [media](https://finance.sina.com.cn/jjxw/2026-07-18/doc-iniieweh1549509.shtml) |
+| 2026-04-10 | day | 产品发布、版本迭代 | 百度智能云联合多家具身智能企业推出「具身智能数据超市（Beta 版）」 | single | [media](https://www.stcn.com/article/detail/3741461.html) |
+| 2025-11-21 | day | 产品发布、版本迭代 | 地瓜机器人在 DDC2025 开发者大会揭晓具身智能大算力开发平台 S600 | single | [media](https://www.stdaily.com/web/gdxw/2025-11/21/content_435861.html) |
+| 2025-09-08 | day | 产品发布、版本迭代 | 傅利叶人形机器人 GR-3 开启预售，10 月上市交付 | single | [media](https://www.cls.cn/detail/2138111) |
+| 2025-08-06 | day | 产品发布、版本迭代 | 傅利叶在北京发布全尺寸人形 Care-bot GR-3 | single | [media](https://www.stcn.com/article/detail/2975614.html) |
+| 2025-06-26 | day | 融资、并购 | 润阳科技拟以 3 亿元增资傅利叶，增资后持股 3.5060% | single | [media](https://www.chnfund.com/article/7fbacafb-f3a1-c1da-ab78-3a1abdfd399e) |
+| 2025-05-09 | day | 合作、生态、联盟 | 傅利叶与上海国际医学中心共建「具身智能康复港」 | single | [media](https://www.yicai.com/news/102607558.html) |
+| 2025-04-11 | day | 论文、开源发布 | 傅利叶发布首款开源人形机器人 Fourier N1 并开放完整本体资源包 | single | [media](https://www.cnfin.com/gs-lb/detail/20250411/4216053_1.html) |
+| 2025-03-08 | day | 数据集发布 | 傅利叶发布全尺寸人形机器人数据集 Fourier ActionNet | single | [official](https://huggingface.co/datasets/FourierIntelligence/ActionNet) |
+| 2025-01-07 | day | 融资、并购 | 傅利叶完成 E 系列融资 | single | [media](https://www.yicai.com/news/102430454.html) |
+| 2024-12-10 | day | 合作、生态、联盟 | RoboCup 联盟宣布与加速进化建立合作伙伴关系 | multi | [official](https://www.robocup.org/news/172) [official](https://www.booster.tech/cn/news/3/) |
+| 2024-10-22 | day | 论文、开源发布 | 傅利叶开源遥操作系统 teleoperation（F.A.R.T.S.） | single | [official](https://github.com/FFTAI/teleoperation) |
+| 2024-09-26 | day | 产品发布、版本迭代 | 傅利叶发布新一代通用人形机器人 GR-2 | single | [media](https://www.thepaper.cn/newsDetail_forward_28862550) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Foxglove
+
+**Foxglove**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 15 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体策略 | 纯软件 | 2021-05-10 | `evt-2021-05-10-foxglove-product_launch-visualization-introduction` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-28 | day | 产品发布、版本迭代 | Foxglove CLI 2.1与Python 0.22 | single | [official](https://github.com/foxglove/foxglove-cli/releases/tag/v2.1.0) [official](https://github.com/foxglove/foxglove-python/releases/tag/releases/v0.22.0) |
+| 2026-10-22 | day | 产品发布、版本迭代 | Foxglove 发布 MCAP C++2.2 | single | [official](https://github.com/foxglove/mcap/releases/tag/releases/cpp/v2.2.0) |
+| 2026-10-20 | day | 产品发布、版本迭代 | Foxglove 发布 MCAP Rust0.26 | single | [official](https://github.com/foxglove/mcap/releases/tag/releases/rust/v0.26.0) |
+| 2026-10-20 | day | 产品发布、版本迭代 | Foxglove 发布 MCAP ROS2 支持库0.6 | single | [official](https://github.com/foxglove/mcap/releases/tag/releases/python/mcap-ros2-support/v0.6.0) |
+| 2026-10-17 | day | 产品发布、版本迭代 | Foxglove 发布 MCAP CLI0.4 | single | [official](https://github.com/foxglove/mcap/releases/tag/releases/mcap-cli/v0.4.0) |
+| 2026-10-08 | day | 产品发布、版本迭代 | Foxglove CLI 2.0 增加数据集与 episode 管理能力 | single | [official](https://github.com/foxglove/foxglove-cli/releases/tag/v2.0.0) |
+| 2026-10-05 | day | 产品发布、版本迭代 | Foxglove SDK 新增 Ray 与 PyTorch 数据集支持 | single | [official](https://github.com/foxglove/foxglove-sdk/releases/tag/sdk/v0.29.0) |
+| 2026-10-02 | day | 产品发布、版本迭代 | Foxglove 发布 VS Code MCAP Explorer 首版 | single | [official](https://github.com/foxglove/vscode-mcap/releases/tag/v0.1.0) [official](https://github.com/foxglove/vscode-mcap/blob/main/README.md) |
+| 2026-09-29 | day | 论文、开源发布 | Foxglove SDK 0.28.0 与 ROS Bridge 3.6.0 更新远程点云压缩能力 | single | [official](https://github.com/foxglove/foxglove-sdk/releases/tag/sdk/v0.28.0) [official](https://github.com/foxglove/foxglove-sdk/releases/tag/ros-v3.6.0) [official](https://github.com/foxglove/foxglove-bridge-ros1/releases/tag/v3.5.0) |
+| 2026-09-25 | day | 产品发布、版本迭代 | Foxglove Python 0.20 新增数据集与 episode 接口 | single | [official](https://github.com/foxglove/foxglove-python/releases/tag/releases/v0.20.0) |
+| 2026-08-18 | day | 产品发布、版本迭代 | Foxglove 发布对话式数据工作流与多次运行对比功能 | single | [official](https://foxglove.dev/blog/introducing-the-agentic-data-platform-for-physical-ai) |
+| 2025-11-11 | day | 融资、并购 | Foxglove 宣布完成 4000 万美元 B 轮融资 | single | [official](https://foxglove.dev/blog/foxglove-series-b) |
+| 2024-03-10 | day | 产品发布、版本迭代 | Foxglove 2.0 合并可视化与数据平台并调整开源策略 | single | [official](https://foxglove.dev/blog/foxglove-2-0-unifying-robotics-observability) |
+| 2022-02-15 | day | 论文、开源发布 | Foxglove 发布 MCAP 机器人数据容器格式测试版 | single | [official](https://foxglove.dev/blog/introducing-the-mcap-file-format) |
+| 2021-05-10 | day | 产品发布、版本迭代 | Foxglove 介绍跨平台机器人可视化与调试工具 | single | [official](https://foxglove.dev/blog/introducing-foxglove) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 银河通用
+
+**Galbot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | 2023 |
+| 总部 | CN北京 |
+| 事件数 | 30 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 端到端 VLA | 2025-01-09 | `evt-2025-01-09-galbot-publication-graspvla` |
+| 采集方式 | 光学动捕 | 2026-03-13 | `evt-2026-03-13-galbot-publication-latent-tennis` |
+| 采集方式 | 遥操示教 | 2025-06-06 | `evt-2025-06-06-galbot-publication-openwbt` |
+| 采集方式 | 仿真合成 | 2025-01-09 | `evt-2025-01-09-galbot-publication-graspvla` |
+| 本体形态 | 四足 | 2026-06-23 | `evt-2026-06-23-galbot-procurement-yibin-500` |
+| 本体形态 | 双足人形 | 2025-06-06 | `evt-2025-06-06-galbot-publication-openwbt` |
+| 本体形态 | 轮式人形 | 2025-03 | `evt-2025-03-galbot-deployment-haidian-retail-warehouse` |
+| 目标场景 | 科教与科研 | 2026-06 | `evt-2026-06-galbot-procurement-taizhou-training` |
+| 目标场景 | 巡检与特种作业 | 2026-06-23 | `evt-2026-06-23-galbot-procurement-yibin-500` |
+| 目标场景 | 工业制造 | 2025-06-17 | `evt-2025-06-17-galbot-partnership-bosch-jv` |
+| 目标场景 | 商业服务 | 2025-03 | `evt-2025-03-galbot-deployment-haidian-retail-warehouse` |
+| 交付形态 | 卖整机 | 2025-08 | `evt-2025-08-galbot-procurement-yibin-batch1` |
+| 交付形态 | 服务交付 | 2025-03 | `evt-2025-03-galbot-deployment-haidian-retail-warehouse` |
+| 仿真栈 | MuJoCo | 2026-03-13 | `evt-2026-03-13-galbot-publication-latent-tennis` |
+| 仿真栈 | Isaac Sim | 2025-06-06 | `evt-2025-06-06-galbot-publication-openwbt` |
+| 运控路线 | 强化学习 | 2026-03-13 | `evt-2026-03-13-galbot-publication-latent-tennis` |
+| 组织方式 | 开源数据集 | 2026-10-10 | `evt-2026-10-10-galbot-dataset_release-foldnetxx` |
+| 组织方式 | 高校合作 | 2026-10-10 | `evt-2026-10-10-galbot-dataset_release-foldnetxx` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-29 | day | 官方表态 | 银河通用药店太空舱运营规模披露 | single | [media](https://m.21jingji.com/article/20261029/herald/4a01bec61c00a3c3c552c92754528039_zaker.html) |
+| 2026-10-20 | day | 融资、并购 | 伊塔动力种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610203901631216.html) [media](https://www.forbeschina.com/business/72275) |
+| 2026-10-14 | day | 合作、生态、联盟 | 禾赛 Kosmo 与银河通用签署战略合作 | single | [official](https://www.hesaitech.com/cn/news/1526/) |
+| 2026-10-10 | day | 数据集发布 | 银河通用与北大公开 FoldNet++ 衣物操作合成数据与训练代码 | single | [official](https://huggingface.co/api/datasets/GalaxyGeneralRobotics/FoldNetXX) [official](https://huggingface.co/datasets/GalaxyGeneralRobotics/FoldNetXX/raw/main/README.md) [official](https://pku-epic.github.io/FoldNetXX/) [official](https://raw.githubusercontent.com/GalaxyGeneralRobotics/FoldNetXX/main/README.md) [official](https://github.com/GalaxyGeneralRobotics/FoldNetXX/commits/main.atom) |
+| 2026-10-05 | day | 招聘信号 | 银河通用招聘职责与公司自述核验记录（首次基线） | single | [official](https://www.zhipin.com/job_detail/32d5c66198da860403192dS7E1BR.html) [official](https://www.zhipin.com/job_detail/49bc3822eca6a10c03B_3Ni9FVdV.html) [official](https://www.zhipin.com/job_detail/196bf1e1e241963b0nZ50t-0EVNY.html) [official](https://www.zhipin.com/job_detail/36aac1667d85a00d0nRy2ty5E1JR.html) [official](https://www.zhipin.com/job_detail/14a80f9eeb6261fa0nRz2NW-EVdZ.html) [official](https://www.zhipin.com/job_detail/190de7179bd45a2d03F53t-5GVdU.html) [official](https://www.zhipin.com/job_detail/0fae3eba06d499a90nF93t-9ElNT.html) [official](https://www.zhipin.com/job_detail/2f0c16905d645aa20nF50tm0GFRV.html) [official](https://www.zhipin.com/job_detail/351f57a1074a7dc90nFy39W4FltW.html) [official](https://www.zhipin.com/job_detail/58d3e7dbbe62fc7b0nJ-3t--GFVV.html) [official](https://www.zhipin.com/job_detail/3d2bb986b18d3926031-29y5ElRS.html) [official](https://www.zhipin.com/job_detail/27bb133c3ffc0a540nRz3tm5E1dZ.html) [official](https://www.zhipin.com/job_detail/2088588aef1caa1d03Z83t67ElJQ.html) [official](https://www.zhipin.com/job_detail/59259eb0800272430nF92dy9ElFQ.html) [official](https://www.zhipin.com/job_detail/3c3ed3619ee5462b03153t-6F1dY.html) [official](https://www.zhipin.com/job_detail/38db75dcbda0318d03R809W1ElpZ.html) [official](https://www.zhipin.com/job_detail/17900a31820867e70nN93N26GFRT.html) [official](https://www.zhipin.com/job_detail/19b2650a2cd942b50nB-2Ni7EVVZ.html) [official](https://www.zhipin.com/job_detail/31a9006eb636b68a0nB639W_FVdZ.html) [official](https://www.zhipin.com/job_detail/27f3008f87fa37330nN72tW_GFpV.html) [official](https://www.zhipin.com/job_detail/2f0057628a31d54e0nF439u6FFVR.html) [official](https://www.zhipin.com/job_detail/59651b8197485e0a0nZz09W1GVZY.html) [official](https://www.zhipin.com/job_detail/11369e2e03b5772c0nBz29S6FVNW.html) [official](https://www.zhipin.com/job_detail/7e4b974dac77b0660nF629i1EVZU.html) [official](https://www.zhipin.com/job_detail/1cc8c3a14bfeef6903Vz3NW9GVdX.html) [official](https://www.zhipin.com/job_detail/1b99a7645e08530a0nRy2960F1BU.html) [official](https://www.zhipin.com/job_detail/29446fd3dc9cf5850nZy09u4EVFQ.html) [official](https://www.zhipin.com/job_detail/2094787c69e771160nd_2dy6E1FQ.html) [official](https://www.zhipin.com/job_detail/3954463d99dbcb8c0nFy0tq1FFVZ.html) [official](https://www.zhipin.com/job_detail/04a5e2e4ca2649210nd83NW5EVtU.html) [official](https://www.zhipin.com/job_detail/251185702bf6736d0nF92ti7FVVU.html) [official](https://www.zhipin.com/job_detail/55073f20b9217e5b0nN_3ti8GFFT.html) [official](https://www.zhipin.com/job_detail/480b7598c246f00303V63tq4ElNS.html) [official](https://www.zhipin.com/job_detail/55dea68a259933250nB639W_E1tY.html) |
+| 2026-10-02 | day | 公开价格 | 媒体披露银河星仔 ET1 三个版本售价，基础版 7.9 万元 | single | [media](https://finance.sina.com.cn/wm/2026-10-02/doc-inituwtp5963713.shtml) |
+| 2026-09-22 | day | 论文、开源发布 | 银河通用发布 GalbotSDK V1.10.0 | single | [official](https://github.com/GalaxyGeneralRobotics/GalbotSDK/releases/tag/V1.10.0) [official](https://github.com/GalaxyGeneralRobotics/GalbotSDK/blob/V1.10.0/README.md) [official](https://github.com/GalaxyGeneralRobotics/GalbotSDK/blob/V1.10.0/CHANGELOG.md) |
+| 2026-09-13 | day | 论文、开源发布 | 银河通用新建仓库 PASSAGE | single | [official](https://github.com/GalaxyGeneralRobotics/PASSAGE) |
+| 2026-09-04 | day | 官方表态 | 银河通用披露银河星仔 ET1 首日预订超过200台 | single | [media](https://www.jiemian.com/article/15055619.html) |
+| 2026-09-03 | day | 产品发布、版本迭代 | 银河通用小型双足人形机器人银河星仔 GALBOT ET1 开启预订 | single | [media](http://www.zqrb.cn/tmt/tmthangye/2026-09-03/A1788425656665.html) |
+| 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
+| 2026-08-18 | day | 落地部署、客户签约 | 禾赛 2026 年二季度机器人激光雷达出货 142371 台，宇树、蚂蚁灵波、银河通用、星海图等下新增订单 | single | [primary](https://investor.hesaitech.com/news-releases/news-release-details/hesai-group-reports-second-quarter-2026-unaudited-financial/) |
+| 2026-06 | month | 招投标中标 | 银河通用中标台州具身机器人实训研创中心（二期）设备采购 | single | [media](https://zhidx.com/p/568369.html) |
+| 2026-06-23 | day | 招投标中标 | 银河通用以 2.3592 亿元位列宜宾具身智能本体采购项目第一中标候选人 | single | [media](https://zhidx.com/p/568369.html) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+| 2026-03-13 | day | 论文、开源发布 | 银河通用参与 LATENT 人形机器人网球研究并公开部分代码 | single | [official](https://github.com/GalaxyGeneralRobotics/LATENT/blob/master/README.md) [official](https://zzk273.github.io/LATENT/) |
+| 2026-03-02 | day | 融资、并购 | 银河通用宣布完成 25 亿元新一轮融资 | single | [media](https://www.caixin.com/2026-03-02/102418619.html) |
+| 2025-12 | month | 融资、并购 | 银河通用完成超 3 亿美元新一轮融资，中国移动链长基金领投 | single | [official](https://www.prnasia.com/story/516737-1.shtml) |
+| 2025-12-19 | day | 合作、生态、联盟 | 大晓机器人与银河通用达成战略合作，围绕世界模型协同与具身智能产品化落地 | single | [media](https://finance.sina.com.cn/stock/t/2025-12-20/doc-inhcncic6475857.shtml) |
+| 2025-11-27 | day | 成立、改名、注册变更、关停 | 银河通用完成股改，更名为北京银河通用机器人股份有限公司 | single | [media](https://www.cls.cn/detail/2223766) |
+| 2025-08 | month | 招投标中标 | 银河通用中标宜宾叙州区第一批人形智能机器人采购项目 | single | [media](https://zhidx.com/p/568369.html) |
+| 2025-07-05 | day | 产品发布、版本迭代 | 兆威机电在深圳发布新一代仿生灵巧手 ZWHAND，含 DM17 与 LM06 系列 | multi | [media](https://www.stcn.com/article/detail/2419511.html) [media](http://sz.people.com.cn/n2/2025/0708/c202846-41284285.html) [media](http://www.zqrb.cn/gscy/gongsi/2025-07-07/A1751878830603.html) |
+| 2025-06 | month | 产品发布、版本迭代 | 银河通用在 2025 北京智源大会发布端到端具身大模型 GroceryVLA | single | [media](https://www.qbitai.com/2025/06/291904.html) |
+| 2025-06-23 | day | 融资、并购 | 银河通用完成由宁德时代领投的 11 亿元新一轮融资 | single | [media](https://www.nbd.com.cn/articles/2025-06-23/3917796.html) |
+| 2025-06-17 | day | 合作、生态、联盟 | 银河通用与博世中国、博原资本联合成立合资公司博银合创 | single | [media](https://www.nbd.com.cn/articles/2025-06-17/3911543.html) |
+| 2025-06-06 | day | 论文、开源发布 | 银河通用开源人形机器人全身遥操作系统 OpenWBT | single | [official](https://github.com/GalaxyGeneralRobotics/OpenWBT) |
+| 2025-03 | month | 落地部署、客户签约 | 银河通用人形机器人零售仓在北京海淀北下关街道落地 | single | [media](https://www.beinet.net.cn/jjyw/cyfz/202508/t14439502.html) |
+| 2025-01-09 | day | 论文、开源发布 | 银河通用发布端到端具身抓取基础大模型 GraspVLA | single | [media](https://m.bjnews.com.cn/detail/1736425483129079.html) |
+| 2024-11-18 | day | 融资、并购 | 银河通用完成 5 亿元战略轮融资 | single | [media](https://companies.caixin.com/2024-11-19/102259043.html) |
+| 2024-09-29 | day | 落地部署、客户签约 | 因时机器人披露微型伺服电缸与灵巧手已服务的客户范围 | single | [aggregator](https://news.pedaily.cn/202409/540834.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 格物通智
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 格物通智近亿元天使轮 | single | [media](https://www.thecapital.com.cn/news/detail/125274) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 豪恩机器人
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-15 | day | 官方表态 | 豪恩机器人两项定点披露 | single | [media](https://www.cls.cn/detail/2505189) [media](https://caifuhao.eastmoney.com/news/20261015090605286784990) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 河南具身智能产业发展有限公司
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 系统集成与方案交付 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-08 | day | 招投标中标 | 河南理工大学机器人采购结果 | single | [primary](https://notice.hpu.edu.cn/info/1001/17465.htm) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 地平线
+
+**Horizon Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2015-07 |
+| 总部 | CN北京 |
+| 事件数 | 22 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 世界模型 | 2026-09-28 | `evt-2026-09-28-horizon-robotics-publication-cogwam-research-note` |
+| 模型形态 | 端到端 VLA | 2026-02-13 | `evt-2026-02-13-horizon-robotics-product_launch-holobrain-0` |
+| 模型形态 | 动作生成 | 2025-12-08 | `evt-2025-12-08-horizon-robotics-product_launch-holomotion-holobrain` |
+| 运控路线 | 强化学习 | 2025-12-08 | `evt-2025-12-08-horizon-robotics-product_launch-holomotion-holobrain` |
+| 采集方式 | 光学动捕 | 2026-05-18 | `evt-2026-05-18-horizon-robotics-product_launch-holomotion-1` |
+| 采集方式 | 遥操示教 | 2026-02-13 | `evt-2026-02-13-horizon-robotics-product_launch-holobrain-0` |
+| 采集方式 | 人类视频 | 2026-02-13 | `evt-2026-02-13-horizon-robotics-product_launch-holobrain-0` |
+| 采集方式 | 仿真合成 | 2026-02-13 | `evt-2026-02-13-horizon-robotics-product_launch-holobrain-0` |
+| 本体形态 | 双足人形 | 2026-05-18 | `evt-2026-05-18-horizon-robotics-product_launch-holomotion-1` |
+| 仿真栈 | MuJoCo | 2026-10-24 | `evt-2026-10-24-horizon-robotics-publication-holomotion-supermimic` |
+| 仿真栈 | Isaac Sim | 2026-09-28 | `evt-2026-09-28-horizon-robotics-publication-cogwam-research-note` |
+| 仿真栈 | Isaac Lab | 2026-09-28 | `evt-2026-09-28-horizon-robotics-publication-cogwam-research-note` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 地平线UniURDF | single | [official](https://github.com/HorizonRobotics/UniURDF) |
+| 2026-10-24 | day | 论文、开源发布 | 地平线HoloMotion SuperMimic | single | [official](https://github.com/HorizonRobotics/HoloMotion/releases/tag/supermimic) |
+| 2026-10-24 | day | 论文、开源发布 | 地平线HoloMotion 2.0 | single | [official](https://github.com/HorizonRobotics/HoloMotion/releases/tag/v2.0.0) |
+| 2026-10-24 | day | 论文、开源发布 | 地平线HoloBoxing | single | [official](https://github.com/HorizonRobotics/HoloMotion/releases/tag/holoboxing) |
+| 2026-10-21 | day | 论文、开源发布 | 地平线公开 HWM-0 Preview RoboDojo 推理包 | single | [official](https://huggingface.co/HorizonRobotics/HWM-0-Preview-RoboDojo) [official](https://huggingface.co/api/models/HorizonRobotics/HWM-0-Preview-RoboDojo) [official](https://huggingface.co/api/models/HorizonRobotics/HWM-0-Preview-RoboDojo/commits/main) |
+| 2026-10-15 | day | 论文、开源发布 | 地平线公开 HoloBrain0.5 仿真任务模型 | single | [official](https://huggingface.co/HorizonRobotics/HoloBrain_v0.5_sim) [official](https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5_sim) [official](https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5_sim/commits/main) |
+| 2026-10-09 | day | 论文、开源发布 | 地平线公开 HoloBrain0.5 模型权重与配置 | single | [official](https://huggingface.co/HorizonRobotics/HoloBrain_v0.5) [official](https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5) [official](https://huggingface.co/api/models/HorizonRobotics/HoloBrain_v0.5/commits/main) |
+| 2026-09-29 | day | 论文、开源发布 | 地平线提交 Ego4WAM 第一视角人类数据研究说明 | single | [official](https://github.com/HorizonRobotics/Ego4WAM/blob/abbf69f4e36fbff6457d8e190adec3afd651b5b3/README.md) [official](https://api.github.com/repos/HorizonRobotics/Ego4WAM/git/commits/abbf69f4e36fbff6457d8e190adec3afd651b5b3) |
+| 2026-09-29 | day | 论文、开源发布 | 地平线上传 Ego4WAM Joint 变体模型权重 | single | [official](https://huggingface.co/api/models/HorizonRobotics/Ego4WAM) [official](https://huggingface.co/HorizonRobotics/Ego4WAM/raw/main/README.md) [official](https://huggingface.co/api/models/HorizonRobotics/Ego4WAM/commits/main) |
+| 2026-09-28 | day | 论文、开源发布 | 地平线提交 CogWAM RoboDojo 复现技术说明 | single | [official](https://github.com/HorizonRobotics/CogWAM/blob/ceb5c169c72c47920965aeb2f348ac6f4e153caf/README.md) [official](https://api.github.com/repos/HorizonRobotics/CogWAM/git/commits/ceb5c169c72c47920965aeb2f348ac6f4e153caf) |
+| 2026-09-24 | day | 论文、开源发布 | 地平线上传 CogWAM 预训练检查点 | single | [official](https://huggingface.co/api/models/HorizonRobotics/CogWAM) [official](https://huggingface.co/HorizonRobotics/CogWAM/raw/main/README.md) [official](https://huggingface.co/api/models/HorizonRobotics/CogWAM/commits/main) |
+| 2026-09-11 | day | 论文、开源发布 | 地平线发布 RoboOrchardCore v0.7.0 | single | [official](https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.7.0-release) |
+| 2026-09-11 | day | 论文、开源发布 | 地平线发布 RoboOrchardCore v0.6.0 | single | [official](https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.6.0-release) |
+| 2026-05-18 | day | 产品发布、版本迭代 | 地平线发布并开源 HoloMotion-1：4 亿参数人形机器人全身控制「小脑大模型」 | multi | [official](https://www.horizon.auto/news/technology/456) [media](https://finance.sina.com.cn/tech/digi/2026-05-19/doc-inhymivm2307662.shtml) |
+| 2026-03-19 | day | 成立、改名、注册变更、关停 | 地平线年度业绩公告披露：不再拥有地瓜机器人控制权，地瓜机器人取消入账转为联营公司 | single | [primary](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0319/2026031900928_c.pdf) |
+| 2026-02-13 | day | 产品发布、版本迭代 | 地平线发布并开源 HoloBrain-0 具身智能 VLA 基座模型及 RoboOrchard 基础设施 | single | [official](https://www.horizon.auto/news/technology/435) |
+| 2025-12-08 | day | 产品发布、版本迭代 | 地平线在 2025 技术生态大会发布具身智能小脑基座模型 HoloMotion 与大脑基座模型 HoloBrain | single | [official](https://www.horizon.auto/news/press/427) |
+| 2025-07-30 | day | 论文、开源发布 | 地平线开源机器人运行时底座 RoboOrchardCore 并发布 v0.1.0 | single | [official](https://github.com/HorizonRobotics/RoboOrchardCore/releases/tag/v0.1.0-release) |
+| 2025-06-12 | day | 论文、开源发布 | 地平线发布并开源生成式 3D 世界引擎 EmbodiedGen | single | [primary](https://arxiv.org/abs/2506.10600) [official](https://github.com/HorizonRobotics/EmbodiedGen) |
+| 2025-05-29 | day | 论文、开源发布 | 地平线发布机器人数据合成框架论文《RoboTransfer: Controllable Geometry-Consistent Video Diffusion for Manipulation Policy Transfer》 | single | [primary](https://arxiv.org/abs/2505.23171) |
+| 2024-11-22 | day | 论文、开源发布 | 地平线发布具身 3D 感知模型论文《BIP3D: Bridging 2D Images and 3D Perception for Embodied Intelligence》 | single | [primary](https://arxiv.org/abs/2411.14869) [official](https://github.com/HorizonRobotics/BIP3D) |
+| 2024-10-24 | day | 融资、并购 | 地平线在香港交易所主板挂牌上市 | multi | [official](https://www.horizon.auto/news/press/306) [media](https://www.nbd.com.cn/articles/2024-10-24/3603332.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 华为 CloudRobo
+
+**Huawei CloudRobo**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2025 |
+| 总部 | CN深圳 |
+| 事件数 | 11 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 轮式人形 | 2025-05-12 | `evt-2025-05-12-huawei-cloudrobo-partnership-ubtech` |
+| 本体形态 | 双足人形 | 2025-03-06 | `evt-2025-03-06-huawei-cloudrobo-partnership-leju-5ga-kuavo` |
+| 目标场景 | 巡检与特种作业 | 2026-09-18 | `evt-2026-09-18-huawei-cloudrobo-product_launch-hc2026-upgrades-partner-robots` |
+| 目标场景 | 商业服务 | 2026-09-18 | `evt-2026-09-18-huawei-cloudrobo-product_launch-hc2026-upgrades-partner-robots` |
+| 目标场景 | 工业制造 | 2025-05-12 | `evt-2025-05-12-huawei-cloudrobo-partnership-ubtech` |
+| 目标场景 | 家庭 | 2025-05-12 | `evt-2025-05-12-huawei-cloudrobo-partnership-ubtech` |
+| 模型形态 | 分层 | 2025-06-20 | `evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025` |
+| 模型形态 | 世界模型 | 2025-06-20 | `evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025` |
+| 交付形态 | 订阅 | 2025-06-20 | `evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025` |
+| 交付形态 | 卖软件授权 | 2025-06-20 | `evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025` |
+| 采集方式 | 仿真合成 | 2025-06-20 | `evt-2025-06-20-huawei-cloudrobo-product_launch-cloudrobo-hdc2025` |
+| 本体策略 | 纯软件 | 2025-09-19 | `evt-2025-09-19-huawei-cloudrobo-product_launch-cloudrobo-r2c-hc2025` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-09-18 | day | 合作、生态、联盟 | 国地中心—华为训练场样板点 | single | [official](https://e.huawei.com/cn/news/2026/industries/manufacturing/2026-global-showcase-manufacturing) |
+| 2026-09-18 | day | 产品发布、版本迭代 | 华为云 CloudRobo 在全联接大会 2026 发布平台能力升级，并与福龙马、亿嘉和发布环卫与电力作业机器人 | multi | [media](https://news.iresearch.cn/yx/2026/09/566832.shtml) [media](https://news.ikanchai.com/2026/0921/667785.shtml) |
+| 2026-09-17 | day | 合作、生态、联盟 | 莫特菲斯与华为联合发布具身智能仿真基座方案 | single | [media](https://timeline.sohu.com/news/XZHUXzGn0T) [aggregator](https://news.pedaily.cn/20261010/140452.shtml) [official](https://www.huawei.com/cn/events/huaweiconnect/terms-and-conditions-2026) |
+| 2026-07-20 | day | 合作、生态、联盟 | 国地中心联合华为发布具身智能实训场样板点并揭牌启用 | multi | [official](https://e.huawei.com/cn/news/2026/industries/manufacturing/national-geographic-center) [media](https://finance.sina.com.cn/roll/2026-07-20/doc-iniimqsk8240862.shtml) |
+| 2026-06-05 | day | 产品发布、版本迭代 | 华为云发布全流程具身智能开发平台 CloudRobo，宣布 6 月 30 日开启公测 | multi | [media](https://finance.sina.com.cn/tech/shenji/2026-06-05/doc-iniaikay8695810.shtml) [media](https://www.cinn.cn/rdzt/zghjs/2026/06-08/vrdLdqEr.html) |
+| 2025-09-19 | day | 产品发布、版本迭代 | 华为云在全联接大会 2025 展示 CloudRobo 具身智能平台，R2C 协议三项国家标准立项并确立首批 20 家伙伴 | multi | [official](https://www.huaweicloud.com/news/2025/20250919104714436.html) [media](https://www.sh.chinanews.com.cn/chanjing/2025-09-19/140153.shtml) |
+| 2025-06-20 | day | 产品发布、版本迭代 | 华为云在 HDC 2025 发布 CloudRobo 具身智能平台与 R2C 联接协议 | single | [official](https://www.huaweicloud.com/news/2025/20250620101057482.html) |
+| 2025-05-12 | day | 合作、生态、联盟 | 华为与优必选签署全面合作协议，围绕具身智能与人形机器人合作 | single | [media](https://m.mp.oeeee.com/a/BAAFRD0000202505121085818.html) |
+| 2025-04-11 | day | 合作、生态、联盟 | 华为云与埃夫特在华为云生态大会 2025 签署具身智能合作备忘录 | single | [official](https://www.efort.com.cn/index.php/news/newsdetail/517.html) |
+| 2025-03-06 | day | 合作、生态、联盟 | 中国移动、华为与乐聚在 MWC2025 联合发布搭载 5G-A 技术的人形机器人夸父 | single | [media](https://www.nbd.com.cn/articles/2025-03-06/3778119.html) |
+| 2024-11-15 | day | 合作、生态、联盟 | 华为（深圳）全球具身智能产业创新中心启动运营，与 16 家企业签署合作备忘录 | single | [media](https://caifuhao.eastmoney.com/news/20241115170249743115900) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 辉羲
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 辉羲Pre-B及B轮合计17亿元 | single | [media](https://stock.stockstar.com/IG2026102600030047.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 无问芯穹
+
+**Infinigence**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 2 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-19 | day | 论文、开源发布 | 智元/清华/无问芯穹CEL | single | [primary](https://arxiv.org/abs/2610.25736) |
+| 2026-09-24 | day | 论文、开源发布 | 无问芯穹与清华大学公开 RLark 具身任务平台 | single | [media](https://www.qbitai.com/2026/09/496767.html) [official](https://github.com/RLinf/RLark) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 影溯智能
+
+**InSpatio**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链、数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-29 | day | 落地部署、客户签约 | 影溯/每回互动杭州数采基地启用 | single | [media](https://ori.hangzhou.com.cn/ornews/content/2026-10/29/content_9359859.htm) [official](https://www.hesaitech.com/cn/news/1511) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 巨蟹智能
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-10 | day | 融资、并购 | 巨蟹智能A+融资 | single | [media](https://news.qq.com/rain/a/20261011A09UNN00) [media](https://www.forbeschina.com/business/72275) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 酷灵
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-10 | day | 融资、并购 | 酷灵数千万元天使轮 | single | [media](https://finance.eastmoney.com/a/202610103891998570.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 逐际动力
+
+**LimX Dynamics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、运控与小脑 |
+| 状态 | 正常经营 |
+| 成立 | 2022-01 |
+| 总部 | CN深圳 |
+| 事件数 | 19 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-09-14 | `evt-2024-09-14-limx-publication-tron1-rl-deploy-python` |
+| 运控路线 | 模型预测控制 | 2024-10-16 | `evt-2024-10-16-limx-product-launch-tron1` |
+| 运控路线 | 强化学习 | 2024-09-14 | `evt-2024-09-14-limx-publication-tron1-rl-deploy-python` |
+| 仿真栈 | Isaac Lab | 2025-07-14 | `evt-2025-07-14-limx-publication-tron1-rl-isaaclab` |
+| 仿真栈 | Isaac Sim | 2024-10-16 | `evt-2024-10-16-limx-product-launch-tron1` |
+| 仿真栈 | MuJoCo | 2024-09-14 | `evt-2024-09-14-limx-publication-tron1-rl-deploy-python` |
+| 目标场景 | 商业服务 | 2026-05-25 | `evt-2026-05-25-limx-product-launch-luna` |
+| 目标场景 | 文旅与表演 | 2026-05-25 | `evt-2026-05-25-limx-product-launch-luna` |
+| 目标场景 | 工业制造 | 2025-07-23 | `evt-2025-07-23-limx-partnership-saic-beijing-lab` |
+| 目标场景 | 科教与科研 | 2024-10-16 | `evt-2024-10-16-limx-product-launch-tron1` |
+| 交付形态 | 卖整机 | 2024-10-16 | `evt-2024-10-16-limx-product-launch-tron1` |
+| 采集方式 | 真机自采 | 2025-07-23 | `evt-2025-07-23-limx-partnership-saic-beijing-lab` |
+| 采集方式 | 遥操示教 | 2025-07-23 | `evt-2025-07-23-limx-partnership-saic-beijing-lab` |
+| 模型形态 | 分层 | 2026-01-12 | `evt-2026-01-12-limx-product-launch-cosa` |
+| 模型形态 | 端到端 VLA | 2025-07-23 | `evt-2025-07-23-limx-partnership-saic-beijing-lab` |
+| 本体策略 | 自研整机 | 2025-07-30 | `evt-2025-07-30-limx-product-launch-oli-preorder` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 模感科技亿元级天使+ | single | [media](https://api3.cls.cn/share/article/2515702?app=stib&os=android&sv=247) |
+| 2026-09-15 | day | 论文、开源发布 | 逐际FluxVLA Engine技术报告 | single | [primary](https://arxiv.org/abs/2609.17210) [official](https://www.limxdynamics.com/en/products/fluxvla) [official](https://github.com/FluxVLA/FluxVLA) |
+| 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
+| 2026-08-21 | day | 合作、生态、联盟 | 汪星人科技以逐际动力金牌经销商身份参加 2026 世界机器人大会 | single | [media](https://m.21jingji.com/article/20260821/herald/4afabd1f6589c0b3e6d16faaf4475469.html) |
+| 2026-08-10 | day | 落地部署、客户签约 | 逐际动力称全系列机器人在手订单数千台，过半来自海外 | single | [media](https://finance.sina.com.cn/roll/2026-08-10/doc-inimvxcf2749632.shtml) |
+| 2026-07-14 | day | 融资、并购 | 逐际动力完成近 2 亿美元 Pre-IPO 轮融资，半年累计融资 4 亿美元 | single | [official](https://www.limxdynamics.com/zh/news/BK000063) |
+| 2026-05-25 | day | 产品发布、版本迭代 | 逐际动力发布全尺寸交互人形机器人 LimX Luna | single | [official](https://www.limxdynamics.com/zh/news/BK000061) |
+| 2026-02-02 | day | 融资、并购 | 逐际动力完成 2 亿美元 B 轮融资 | multi | [official](https://www.limxdynamics.com/zh/news/BK000056) [media](https://www.36kr.com/p/3664227663651718) |
+| 2026-01-12 | day | 产品发布、版本迭代 | 逐际动力发布具身 Agentic OS 系统 LimX COSA | single | [official](https://www.limxdynamics.com/zh/news/BK000054) |
+| 2025-12-18 | day | 产品发布、版本迭代 | 逐际动力发布多形态具身机器人 TRON 2，售价 4.98 万元起开放预订 | single | [official](https://www.limxdynamics.com/zh/news/BK000047) |
+| 2025-07-30 | day | 产品发布、版本迭代 | 逐际动力发布全尺寸人形机器人 LimX Oli 并开放预订，售价 15.8 万元起 | single | [official](https://www.limxdynamics.com/zh/news/BK000022) |
+| 2025-07-23 | day | 合作、生态、联盟 | 上汽北京与逐际动力签署战略合作备忘录，共建具身智能联合实验室 | single | [official](https://www.limxdynamics.com/zh/news/BK000023) |
+| 2025-07-21 | day | 融资、并购 | 逐际动力新一轮融资获京东战略领投 | single | [official](https://www.limxdynamics.com/zh/news/BK000021) |
+| 2025-07-14 | day | 论文、开源发布 | 逐际动力开源基于 Isaac Lab 的 TRON1 强化学习训练栈 | single | [official](https://github.com/limxdynamics/tron1-rl-isaaclab) |
+| 2025-07-05 | day | 论文、开源发布 | 逐际动力开源人形机器人 Python 版强化学习部署仓库 | single | [official](https://github.com/limxdynamics/humanoid-rl-deploy-python) |
+| 2025-05-06 | day | 论文、开源发布 | 逐际动力开源全尺寸人形机器人模型与 MuJoCo 仿真环境 | single | [official](https://github.com/limxdynamics/humanoid-description) [official](https://github.com/limxdynamics/humanoid-mujoco-sim) |
+| 2025-03-06 | day | 融资、并购 | 逐际动力完成 A+ 轮融资，半年累计完成 5 亿元 A 轮系列融资 | multi | [official](https://www.limxdynamics.com/zh/news/BK000018) [media](https://stcn.com/article/detail/1565362.html) |
+| 2024-10-16 | day | 产品发布、版本迭代 | 逐际动力发售首款多形态双足机器人 TRON 1，标准版早鸟价 6.98 万元起 | multi | [official](https://www.limxdynamics.com/zh/news/BK000014) [media](https://www.ithome.com/0/802/665.htm) |
+| 2024-09-14 | day | 论文、开源发布 | 逐际动力开源 TRON1 的 Python 版强化学习部署仓库 | single | [official](https://github.com/limxdynamics/tron1-rl-deploy-python) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 灵心巧手
+
+**LinkerBot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | 2023-07 |
+| 总部 | CN北京 |
+| 事件数 | 20 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 数据模态 | 触觉 | 2025-01-20 | `evt-2025-01-20-linkerbot-product_launch-titanium-t10-t20` |
+| 数据模态 | RGB 图像 | 2025-01-20 | `evt-2025-01-20-linkerbot-product_launch-titanium-t10-t20` |
+| 目标场景 | 工业制造 | 2025-07-26 | `evt-2025-07-26-linkerbot-product_launch-l6-industrial-waic` |
+| 本体策略 | 自研整机 | 2026-07-17 | `evt-2026-07-17-linkerbot-product_launch-linker-hand-o30` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 灵心巧手Primitive v0.1 | single | [official](https://github.com/linker-bot/primitive/releases/tag/release_v0.1) |
+| 2026-10 | month | 论文、开源发布 | 灵心巧手GeminiDepthPort | single | [official](https://github.com/linker-bot/GeminiDepthPort) |
+| 2026-10-14 | day | 论文、开源发布 | 灵心巧手公开机械臂 Python 与 ROS2 SDK 仓库 | single | [official](https://github.com/linker-bot/linkerbot-arm-ros2-sdk) [official](https://github.com/linker-bot/linkerbot-arm-python-sdk) [official](https://api.github.com/repos/linker-bot/linkerbot-arm-ros2-sdk) [official](https://api.github.com/repos/linker-bot/linkerbot-arm-python-sdk) [official](https://api.github.com/repos/linker-bot/linkerbot-arm-python-sdk/commits?per_page=100) |
+| 2026-09-30 | day | 合作、生态、联盟 | 苇熠科技披露与灵心巧手设立合资公司灵熠新创 | single | [official](https://www.waybot.org/sys-nd/12.html) |
+| 2026-09-14 | day | 论文、开源发布 | 灵心巧手发布 linkerhand-cpp-sdk v2.2.0 | single | [official](https://github.com/linker-bot/linkerhand-cpp-sdk/releases/tag/v2.2.0) |
+| 2026-09-09 | day | 论文、开源发布 | 灵心巧手发布 linkerhand-o30-ros2 v1.0.0 | single | [official](https://github.com/linker-bot/linkerhand-o30-ros2/releases/tag/v1.0.0) |
+| 2026-07-17 | day | 产品发布、版本迭代 | 灵心巧手在 WAIC 2026 首发 20 自由度全直驱灵巧手 Linker Hand O30 | single | [media](https://robot.ofweek.com/2026-07/ART-898890-8120-30695066.html) |
+| 2026-04-29 | day | 融资、并购 | 灵心巧手完成 B+ 轮融资，中关村科学城基金、中银资产、复星创富等投资 | single | [media](https://tech.caijing.com.cn/20260430/5157315.shtml) |
+| 2026-02-12 | day | 融资、并购 | 灵心巧手完成近 15 亿元 B 轮融资，道得投资、盛世投资领投 | single | [media](https://www.stcn.com/article/detail/3641823.html) |
+| 2025-12-29 | day | 融资、并购 | 灵心巧手完成 A++ 轮融资，红杉中国、创世伙伴创投等投资 | single | [media](https://www.bjnews.com.cn/detail/1766978522129896.html) |
+| 2025-11-25 | day | 融资、并购 | 灵心巧手完成数亿元 A+ 轮融资，乐聚机器人、奥克斯等参投 | single | [media](https://www.bjnews.com.cn/detail/1764057751169471.html) |
+| 2025-10-24 | day | 融资、并购 | 灵心巧手完成数亿元 A 轮融资，京国瑞管理公司与博佳资本领投 | single | [media](https://www.stcn.com/article/detail/3404786.html) |
+| 2025-08-07 | day | 融资、并购 | 灵心巧手完成数亿元天使轮融资 | single | [media](https://m.bjnews.com.cn/detail/1754571161168596.html) |
+| 2025-07-26 | day | 产品发布、版本迭代 | 灵心巧手 Linker Hand L6 工业版在 2025 WAIC 首次亮相 | single | [media](https://www.36kr.com/p/3398252618238081) |
+| 2025-07-02 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand 仿真环境仓库 | single | [official](https://github.com/linker-bot/linkerhand-sim) |
+| 2025-04-28 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand 灵巧手 URDF 模型仓库 | single | [official](https://github.com/linker-bot/linkerhand-urdf) |
+| 2025-04-08 | day | 融资、并购 | 灵心巧手完成超亿元种子轮融资 | single | [media](https://www.bjnews.com.cn/detail/1744119812168063.html) |
+| 2025-04-01 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand ROS2 SDK | single | [official](https://github.com/linker-bot/linkerhand-ros2-sdk) |
+| 2025-02-05 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand Python SDK | single | [official](https://github.com/linker-bot/linkerhand-python-sdk) |
+| 2025-01-20 | day | 产品发布、版本迭代 | 灵心巧手发布 Linker Hand 灵巧手钛金版 T10、T20 | single | [media](https://news.qq.com/rain/a/20250120A08BVH00) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 每回互动
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给、场景运营与租赁 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-29 | day | 落地部署、客户签约 | 影溯/每回互动杭州数采基地启用 | single | [media](https://ori.hangzhou.com.cn/ornews/content/2026-10/29/content_9359859.htm) [official](https://www.hesaitech.com/cn/news/1511) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 模感科技
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 模感科技亿元级天使+ | single | [media](https://api3.cls.cn/share/article/2515702?app=stib&os=android&sv=247) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 莫特菲斯
+
+**Motphys**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2020 |
+| 总部 | CN北京 |
+| 事件数 | 18 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 仿真栈 | MuJoCo | 2026-05-28 | `evt-2026-05-28-motphys-publication-unilab-heterogeneous-rl` |
+| 仿真栈 | 自研 | 2025-08-12 | `evt-2025-08-12-motphys-product_launch-motrixsim-0-2-0` |
+| 采集方式 | 仿真合成 | 2025-10-30 | `evt-2025-10-30-motphys-deployment-wuhan-sim-training-ground` |
+| 交付形态 | 卖软件授权 | 2025-10-30 | `evt-2025-10-30-motphys-deployment-wuhan-sim-training-ground` |
+| 运控路线 | 强化学习 | 2026-05-28 | `evt-2026-05-28-motphys-publication-unilab-heterogeneous-rl` |
+| 模型形态 | 世界模型 | 2026-10-22 | `evt-2026-10-22-motphys-publication-uni-supermimic` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-31 | day | 论文、开源发布 | 莫特菲斯UniSuperMimic checkpoint v1 | single | [official](https://github.com/Motphys/Uni-SuperMimic/releases/tag/checkpoints-v1) |
+| 2026-10-22 | day | 论文、开源发布 | 莫特菲斯公开 Uni-SuperMimic 下游复现 | single | [official](https://github.com/Motphys/Uni-SuperMimic) [official](https://api.github.com/repos/Motphys/Uni-SuperMimic/git/trees/HEAD?recursive=1) [official](https://api.github.com/repos/Motphys/Uni-SuperMimic/commits?per_page=100) |
+| 2026-10-22 | day | 产品发布、版本迭代 | 莫特菲斯发布 UniLab1.5 | single | [official](https://github.com/Motphys/UniLab/releases/tag/v1.5.0) |
+| 2026-10-20 | day | 产品发布、版本迭代 | 莫特菲斯发布 UniLab1.4 | single | [official](https://github.com/Motphys/UniLab/releases/tag/v1.4.0) |
+| 2026-10-19 | day | 论文、开源发布 | 莫特菲斯公开 Dex-EVT 的 MotrixLab 训练适配 | single | [official](https://github.com/Motphys/dexevt-mxlab) [official](https://api.github.com/repos/Motphys/dexevt-mxlab/commits?per_page=100) |
+| 2026-10-19 | day | 产品发布、版本迭代 | 莫特菲斯发布 MotrixLab0.4 正式版 | single | [official](https://github.com/Motphys/MotrixLab/releases/tag/v0.4.0) |
+| 2026-10-16 | day | 合作、生态、联盟 | 莫特菲斯与 AMD 在 ROSCon 联合展示训练方案 | single | [media](https://www.stdaily.com/web/gdxw/2026-10/19/content_598657.html) |
+| 2026-10-12 | day | 论文、开源发布 | 莫特菲斯发布 MotrixLab v0.4.0b0 预发布版本 | single | [official](https://github.com/Motphys/MotrixLab/releases/tag/v0.4.0b0) |
+| 2026-10-10 | day | 官方表态 | 莫特菲斯披露参与 MIIT/TC8 五项仿真平台标准草案 | single | [media](https://news.e-works.net.cn/category802/news139561.htm) |
+| 2026-09-20 | day | 论文、开源发布 | 莫特菲斯发布 UniLab v1.3.1 | single | [official](https://github.com/Motphys/UniLab/releases/tag/v1.3.1) |
+| 2026-09-17 | day | 合作、生态、联盟 | 莫特菲斯与华为联合发布具身智能仿真基座方案 | single | [media](https://timeline.sohu.com/news/XZHUXzGn0T) [aggregator](https://news.pedaily.cn/20261010/140452.shtml) [official](https://www.huawei.com/cn/events/huaweiconnect/terms-and-conditions-2026) |
+| 2026-09-16 | day | 论文、开源发布 | 莫特菲斯发布 UniLab v1.3.0 | single | [official](https://github.com/Motphys/UniLab/releases/tag/v1.3.0) |
+| 2026-07-17 | day | 合作、生态、联盟 | 谋先飞（Motphys）联合地瓜机器人、影眸科技发布「具身智能可训练仿真闭环联合解决方案」 | single | [media](https://www.ne-time.cn/web/article/39201) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+| 2026-04 | month | 合作、生态、联盟 | 莫特菲斯与国机数科签署战略合作框架 | single | [media](https://m.huanqiu.com/article/4RTpVc8Ma6e) |
+| 2026-04-28 | day | 论文、开源发布 | 莫特菲斯等：GS-Playground | single | [primary](https://arxiv.org/abs/2604.25459v1) |
+| 2025-10-30 | day | 落地部署、客户签约 | 谋先飞与武汉临空港经开区签约共建机器人仿真训练场，同日发布 MotrixLab 并设华中总部 | multi | [media](http://www.hb.xinhuanet.com/20251030/04f2e249f18f4554b3edae8f4243cb97/c.html) [media](https://www.wuhan.gov.cn/sy/whyw/202510/t20251031_2669711.shtml) |
+| 2025-08-12 | day | 产品发布、版本迭代 | 莫特菲斯物理仿真引擎 MotrixSim 发布 0.2.0 版本 | single | [official](https://pypi.org/project/motrixsim/0.2.0/) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 墨现科技
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-10 | day | 融资、并购 | 墨现科技产业轮融资 | single | [media](https://news.qq.com/rain/a/20261011A09UNN00) [media](https://www.forbeschina.com/business/72275) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 求之科技
+
+**QZTech**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给、整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2023-01 |
+| 总部 | CN无锡 |
+| 事件数 | 6 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 复合移动操作 | 2026-07-01 | `evt-2026-07-01-qiuzhi-tech-funding-angel-round` |
+| 采集方式 | 遥操示教 | 2026-07-01 | `evt-2026-07-01-qiuzhi-tech-funding-angel-round` |
+| 模型形态 | 分层 | 2026-08-03 | `evt-2026-08-03-qiuzhi-tech-funding-angel-plus-round` |
+| 仿真栈 | MuJoCo | 2026-08-03 | `evt-2026-08-03-qiuzhi-tech-funding-angel-plus-round` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-03 | day | 产品发布、版本迭代 | 求之科技在官网上线具身智能基础模型 ORION-0，采用 S3-S2-S1-S0 四层分级架构 | single | [media](https://www.163.com/dy/article/L3D73L4J05569K8R.html) |
+| 2026-08-03 | day | 融资、并购 | 求之科技完成 1 亿美元天使+轮融资，IDG、达晨、九阳等参投 | multi | [media](https://www.163.com/dy/article/L3D54AQV05118HA4.html) [media](https://www.stcn.com/article/detail/4056353.html) |
+| 2026-07-01 | day | 融资、并购 | 求之科技宣布完成超 1 亿美元天使轮融资，君联资本、联想创投等联合参投 | multi | [media](https://www.chinaventure.com.cn/news/114-20260701-392086.html) [media](https://www.sohu.com/a/1048144579_121455647) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+| 2026-04-28 | day | 论文、开源发布 | 莫特菲斯等：GS-Playground | single | [primary](https://arxiv.org/abs/2604.25459v1) |
+| 2025-07 | month | 融资、并购 | 求之科技完成 A 轮融资 | single | [media](https://www.163.com/dy/article/K4K4D0K0051984TV.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 彩虹机器人
+
+**Rainbow Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2011 |
+| 总部 | KR世宗 |
+| 事件数 | 21 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 单臂 | 2026-09-21 | `evt-2026-09-21-rainbow-robotics-dataset-rb10-iros` |
+| 本体形态 | 轮式人形 | 2024-09-30 | `evt-2024-09-30-rainbow-robotics-publication-rby1-sdk-first-release` |
+| 开放程度 | 完全开放 | 2024-09-30 | `evt-2024-09-30-rainbow-robotics-publication-rby1-sdk-first-release` |
+| 目标场景 | 物流仓储 | 2026-06-14 | `evt-2026-06-14-rainbow-robotics-deployment-coupang-rb-y1-pilot` |
+| 目标场景 | 工业制造 | 2025-10-24 | `evt-2025-10-24-rainbow-robotics-partnership-samsung-heavy-shipbuilding-robots` |
+| 目标场景 | 科教与科研 | 2024-10-11 | `evt-2024-10-11-rainbow-robotics-deployment-rb-y1-first-30-units` |
+| 交付形态 | 卖整机 | 2024-10-11 | `evt-2024-10-11-rainbow-robotics-deployment-rb-y1-first-30-units` |
+| 数据模态 | RGB 图像 | 2026-09-21 | `evt-2026-09-21-rainbow-robotics-dataset-rb10-iros` |
+| 数据模态 | 关节轨迹 | 2026-09-21 | `evt-2026-09-21-rainbow-robotics-dataset-rb10-iros` |
+| 仿真栈 | MuJoCo | 2026-10-06 | `evt-2026-10-06-rainbow-robotics-product_launch-rbq-mujoco` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-27 | day | 数据集发布 | Rainbow pink_circle_merge | single | [official](https://huggingface.co/datasets/rainbowrobotics/pink_circle_merge) |
+| 2026-10-08 | day | 数据集发布 | 彩虹机器人公开 JIMTOF_1008 数据版本 | single | [official](https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF_1008) [official](https://huggingface.co/datasets/rainbowrobotics/JIMTOF_1008/blob/5ee9e8ce932414ff5956bd926c5b5fd5073f3a2a/meta/info.json) |
+| 2026-10-06 | day | 产品发布、版本迭代 | Rainbow RBQ 新增内置 MuJoCo 仿真 | single | [official](https://github.com/RainbowRobotics/RBQ/releases/tag/v1.2609.0) |
+| 2026-10-06 | day | 数据集发布 | 彩虹机器人公开 JIMTOF 系列 RBY1 操作数据 | single | [official](https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF) [official](https://huggingface.co/datasets/rainbowrobotics/JIMTOF/blob/d4a1a90a4b8a1ae8754b2c2c2d44c61161792864/meta/info.json) [official](https://huggingface.co/api/datasets/rainbowrobotics/JIMTOF_1) [official](https://huggingface.co/datasets/rainbowrobotics/JIMTOF_1/blob/f918e16fc34eae7e9616d392f6dd2f976de1c717/meta/info.json) |
+| 2026-09-23 | day | 数据集发布 | 彩虹机器人 RB-10 IROS 数据集 0923 版记录 333 条轨迹 | single | [official](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double_0923/blob/320d090447984457617b007578e95c1fade7d460/meta/info.json) [official](https://huggingface.co/api/datasets/rainbowrobotics/rb10_iros_double_0923) [official](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double/blob/main/meta/info.json) |
+| 2026-09-21 | day | 数据集发布 | 彩虹机器人发布 RB-10 IROS 演示数据集（LeRobot 格式） | single | [official](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_double) |
+| 2026-09-19 | day | 论文、开源发布 | 彩虹机器人发布模型 rb10_iros_0917_pi05 | single | [official](https://huggingface.co/rainbowrobotics/rb10_iros_0917_pi05) |
+| 2026-09-17 | day | 数据集发布 | 彩虹机器人发布数据集 rb10_iros_0917 | single | [official](https://huggingface.co/datasets/rainbowrobotics/rb10_iros_0917) |
+| 2026-09-15 | day | 论文、开源发布 | 彩虹机器人发布 rb-sdk 0.1.2.dev2 | single | [official](https://github.com/RainbowRobotics/rb-sdk/releases/tag/0.1.2.dev2) |
+| 2026-09-13 | day | 论文、开源发布 | 彩虹机器人发布 rb-sdk 0.1.2.dev1 | single | [official](https://github.com/RainbowRobotics/rb-sdk/releases/tag/0.1.2.dev1) |
+| 2026-07-06 | day | 落地部署、客户签约 | Rainbow Robotics 向丰田累计供应约 25 台 RB-Y1，较 2024 年首批 5—6 台扩大约五倍 | single | [media](https://en.etnews.com/20260707200002) |
+| 2026-06-14 | day | 落地部署、客户签约 | Rainbow Robotics 移动双臂机器人 RB-Y1 进入 Coupang 物流中心做实证验证 | single | [media](https://en.etnews.com/20260615200005) |
+| 2026-04-13 | day | 产品发布、版本迭代 | Rainbow Robotics 在 SIMTOS 2026 首次公开工业用移动双臂机器人 RB-Y2，单臂负载提升至约 6—7 kg | single | [media](https://kidd.co.kr/news/245649) |
+| 2025-10-24 | day | 合作、生态、联盟 | Rainbow Robotics 与三星重工合作开发船厂 AI 焊接机器人：三星重工提供数据与测试环境，Rainbow 负责硬件 | single | [media](https://www.ajupress.com/view/20251024142000329) |
+| 2025-07-02 | day | 落地部署、客户签约 | 彩虹机器人移动双臂机器人 RB-Y1 上市一年累计交付约 80 台 | single | [media](https://zdnet.co.kr/view/?no=20250702145450) |
+| 2025-03-22 | day | 招投标中标 | 年报披露三星电子 2024 年向彩虹机器人采购 14.5 亿韩元产品 | single | [media](https://zdnet.co.kr/view/?no=20250322011853) |
+| 2025-03-05 | day | 成立、改名、注册变更、关停 | 韩国公平交易委员会批准三星电子收购彩虹机器人 | single | [media](https://en.yna.co.kr/view/AEN20250305003500320) |
+| 2024-12-31 | day | 融资、并购 | 三星电子行使认购期权将 Rainbow Robotics 持股增至 35%，成为最大股东并将其并为子公司 | multi | [official](https://news.samsung.com/global/samsung-electronics-to-become-largest-shareholder-in-rainbow-robotics-accelerating-future-robot-development) [media](https://www.asiae.co.kr/en/article/2024123109125960726) |
+| 2024-10-13 | day | 落地部署、客户签约 | 电子新闻报道彩虹机器人向丰田供应移动双臂机器人 RB-Y1 | single | [media](https://www.etnews.com/20241011000228) |
+| 2024-10-11 | day | 落地部署、客户签约 | 彩虹机器人移动双臂机器人 RB-Y1 预售 30 台售罄并开始正式交付 | single | [media](https://zdnet.co.kr/view/?no=20241011170145) |
+| 2024-09-30 | day | 论文、开源发布 | 彩虹机器人在 GitHub 发布 RB-Y1 官方 SDK rby1-sdk 首批版本 | single | [official](https://github.com/RainbowRobotics/rby1-sdk) [official](https://github.com/RainbowRobotics/rby1-sdk/releases/tag/v0.1.11) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 睿尔曼智能
+
+**RealMan Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、关键部件 |
+| 状态 | 正常经营 |
+| 成立 | 2018-01 |
+| 总部 | CN北京 |
+| 事件数 | 7 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 轮式人形 | 2026-07-17 | `evt-2026-07-17-realman-product_launch-realbot-s2-l2` |
+| 本体形态 | 单臂 | 2025-05-06 | `evt-2025-05-06-realman-publication-rm-api2-1-1-0` |
+| 采集方式 | 遥操示教 | 2025-08-08 | `evt-2025-08-08-realman-product_launch-realbot-platform` |
+| 采集方式 | 真机自采 | 2025-08-08 | `evt-2025-08-08-realman-product_launch-realbot-platform` |
+| 组织方式 | 政府共建训练场 | 2025-08-08 | `evt-2025-08-08-realman-product_launch-realbot-platform` |
+| 本体策略 | 自研整机 | 2026-07-17 | `evt-2026-07-17-realman-product_launch-realbot-s2-l2` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-14 | day | 成立、改名、注册变更、关停 | 睿尔曼智能提交上市辅导备案，拟登陆创业板 | single | [media](https://www.36kr.com/p/3944696405572742) |
+| 2026-07-17 | day | 产品发布、版本迭代 | 睿尔曼智能首发 RealBot-S2 与 RealBot-L2 轮式人形机器人 | single | [media](https://www.stdaily.com/web/gdxw/2026-07/18/content_549415.html) |
+| 2026-03-04 | day | 融资、并购 | 睿尔曼智能完成近 5 亿元融资 | single | [media](https://finance.sina.com.cn/roll/2026-03-04/doc-inhpvpqk3879613.shtml) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-08-15 | day | 落地部署、客户签约 | 石景山人形机器人数据训练中心开放日披露运营规模与数据服务 | single | [media](https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202508/t20250818_4175247.html) |
+| 2025-08-08 | day | 产品发布、版本迭代 | 睿尔曼在 2025 世界机器人大会发布 RealBOT 具身开源平台 | single | [media](https://www.qbitai.com/2025/08/321183.html) |
+| 2025-05-06 | day | 论文、开源发布 | 睿尔曼开源机械臂开发包 RM_API2 发布 1.1.0 | single | [official](https://github.com/RealManRobot/RM_API2/releases/tag/1.1.0) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Rerun
+
+**Rerun**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2022 |
+| 总部 | SEStockholm |
+| 事件数 | 7 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体策略 | 纯软件 | 2023-02-15 | `evt-2023-02-15-rerun-publication-oss-beta` |
+| 仿真栈 | MuJoCo | 2026-10-09 | `evt-2026-10-09-rerun-publication-counterfactual-learning-example` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-28 | day | 产品发布、版本迭代 | Rerun 0.41 | single | [official](https://github.com/rerun-io/rerun/releases/tag/0.41.0) [official](https://github.com/rerun-io/gradio-rerun-viewer/releases/tag/0.41.0) |
+| 2026-10-21 | day | 产品发布、版本迭代 | Rerun 发布 SDK0.40 | single | [official](https://github.com/rerun-io/rerun/releases/tag/0.40.0) |
+| 2026-10-12 | day | 产品发布、版本迭代 | Rerun SDK 0.39 扩展机器人模型与多模态数据支持 | single | [official](https://github.com/rerun-io/rerun/releases/tag/0.39.0) |
+| 2026-10-09 | day | 论文、开源发布 | Rerun 公开反事实训练数据诊断与策略修复示例 | single | [official](https://raw.githubusercontent.com/rerun-io/example_counterfactual_learning/main/README.md) [official](https://github.com/rerun-io/example_counterfactual_learning/commits/main.atom) |
+| 2026-05-13 | day | 产品发布、版本迭代 | Rerun SDK 0.32 发布机器人数据处理与训练读取功能 | single | [official](https://api.github.com/repos/rerun-io/rerun/releases/tags/0.32.0) |
+| 2025-03-20 | day | 融资、并购 | Rerun 宣布完成 1700 万美元种子轮融资 | single | [official](https://www.globenewswire.com/news-release/2025/03/20/3046617/0/en/rerun-raises-17m-to-build-the-data-infrastructure-powering-the-physical-ai-revolution.html) |
+| 2023-02-15 | day | 论文、开源发布 | Rerun 公开发布机器人数据可视化开源测试版 | single | [official](https://rerun.io/blog/oss-beta) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 萝博派对
+
+**RoboParty**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链、动作与节目内容 |
+| 状态 | 正常经营 |
+| 成立 | 2025-02 |
+| 总部 | CN上海 |
+| 事件数 | 19 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2026-08-22 | `evt-2026-08-22-roboparty-product_launch-rp1-wrc-debut` |
+| 目标场景 | 科教与科研 | 2026-08-22 | `evt-2026-08-22-roboparty-product_launch-rp1-wrc-debut` |
+| 本体策略 | 自研整机 | 2026-08-22 | `evt-2026-08-22-roboparty-product_launch-rp1-wrc-debut` |
+| 仿真栈 | MuJoCo | 2026-09-25 | `evt-2026-09-25-roboparty-publication-real2sim-public-preview` |
+| 运控路线 | 强化学习 | 2026-10-04 | `evt-2026-10-04-roboparty-statement-p-bfm-research-demo` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-25 | day | 论文、开源发布 | RoboPi TUI 1.0 | single | [official](https://github.com/Roboparty/robopi_TUI/releases/tag/v1.0.0) |
+| 2026-10-19 | day | 论文、开源发布 | 萝博派对公开 PN 动捕到 RP1 的重定向代码 | single | [official](https://github.com/Roboparty/roboparty_pnlink) [official](https://api.github.com/repos/Roboparty/roboparty_pnlink/commits?per_page=100) |
+| 2026-10-15 | day | 论文、开源发布 | 萝博派对发布 RP1 全栈软硬件材料 | single | [aggregator](https://mekawire.com/zh/news/roboparty-rp1-open-source-humanoid-24-dof-romomo-actuators-partyos-20261015) |
+| 2026-10-14 | day | 论文、开源发布 | 萝博派对公开 ROMOMO 执行器技术材料 | single | [official](https://github.com/Roboparty/ROMOMO) [official](https://api.github.com/repos/Roboparty/ROMOMO/commits?per_page=100) |
+| 2026-10-12 | day | 论文、开源发布 | 萝博派对公开 I-BFM 训练代码、检查点与交互演示 | single | [official](https://raw.githubusercontent.com/Roboparty/I-BFM-Code/main/README.md) [official](https://github.com/Roboparty/I-BFM-Code/commits/main.atom) |
+| 2026-10-09 | day | 论文、开源发布 | 萝博派对发布 RP1_test 0.1 可靠性测试工具 | single | [official](https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0) |
+| 2026-10-04 | day | 官方表态 | RoboParty 展示 P-BFM 感知行为基础模型 | single | [official](https://roboparty.github.io/P-BFM/) [official](https://github.com/Roboparty/P-BFM/commits/main.atom) |
+| 2026-09-30 | day | 论文、开源发布 | 萝博派对创建 roboparty_capture 数据采集工具仓库 | single | [official](https://api.github.com/repos/Roboparty/roboparty_capture) [official](https://github.com/Roboparty/roboparty_capture/blob/feat/recording-workflow/README.md) |
+| 2026-09-25 | day | 论文、开源发布 | 萝博派对公开 Real2Sim 研究工程流程预览版 | single | [official](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/releases/tag/public-preview-20260925) [official](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/blob/public-preview-20260925/README.md) |
+| 2026-09-18 | day | 论文、开源发布 | 萝博派对发布 robopi_analyze v1.0.9 | single | [official](https://github.com/Roboparty/robopi_analyze/releases/tag/v1.0.9) |
+| 2026-09-15 | day | 论文、开源发布 | 萝博派对新建 4 个仓库（2026-09-10～2026-09-15） | single | [official](https://github.com/Roboparty) |
+| 2026-09-14 | day | 论文、开源发布 | 萝博派对发布 robopi_addon v1.7.18 | single | [official](https://github.com/Roboparty/robopi_addon/releases/tag/v1.7.18) |
+| 2026-09-10 | day | 论文、开源发布 | 萝博派对发布 roboparty_bms v1.5.0 | single | [official](https://github.com/Roboparty/roboparty_bms/releases/tag/v1.5.0) |
+| 2026-09-10 | day | 论文、开源发布 | 萝博派对发布 roboparty_dexhand v0.5.0 | single | [official](https://github.com/Roboparty/roboparty_dexhand/releases/tag/v0.5.0) [official](https://github.com/Roboparty/roboparty_dexhand/blob/v0.5.0/README.md) |
+| 2026-08-22 | day | 产品发布、版本迭代 | RoboParty 在 2026 世界机器人大会首次完整公开下一代通用人形机器人 RP1 外观 | single | [media](http://www.investorscn.com/2026/08/22/135964/) |
+| 2026-07-15 | day | 融资、并购 | RoboParty 萝博派对连续完成近 5 亿元天使++轮和 Pre-A 轮融资，Pre-A 轮由宁德时代独家投资 | single | [media](https://finance.sina.com.cn/tech/roll/2026-07-15/doc-inihvytp7900556.shtml) |
+| 2026-05-19 | day | 融资、并购 | RoboParty 萝博派对完成数千万美元天使+轮融资，顺为资本领投、小米战投追加 | multi | [media](https://news.pedaily.cn/202605/564040.shtml) [media](https://finance.sina.com.cn/wm/2026-05-20/doc-inhyqqhf8552209.shtml) |
+| 2026-03-31 | day | 融资、并购 | RoboParty 萝博派对完成 2000 万美元天使轮融资，商汤国香资本、经纬创投联合领投 | single | [media](https://news.pedaily.cn/202603/562269.shtml) |
+| 2025-02-21 | day | 成立、改名、注册变更、关停 | 上海萝博派对科技有限公司成立 | multi | [official](https://github.com/Roboparty/roboto_origin/blob/main/README_cn.md) [aggregator](https://baike.baidu.com/item/%E4%B8%8A%E6%B5%B7%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/66988002) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# ROBOTIS
+
+**ROBOTIS**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、关键部件 |
+| 状态 | 正常经营 |
+| 成立 | 1999 |
+| 总部 | KR首尔 |
+| 事件数 | 18 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2026-04-21 | `evt-2026-04-21-robotis-product_launch-ai-sapiens-k0-humanoid` |
+| 本体形态 | 轮式人形 | 2025-04-30 | `evt-2025-04-30-robotis-deployment-lg-electronics-ai-worker-first-batch` |
+| 本体形态 | 单臂 | 2025-03-26 | `evt-2025-03-26-robotis-product_launch-omy-open-source-manipulator` |
+| 采集方式 | 真机自采 | 2025-05-15 | `evt-2025-05-15-robotis-publication-ai-worker-open-source-ros2` |
+| 采集方式 | 遥操示教 | 2025-03-26 | `evt-2025-03-26-robotis-product_launch-omy-open-source-manipulator` |
+| 目标场景 | 物流仓储 | 2025-07 | `evt-2025-07-robotis-product_launch-ai-worker-ffw-bg2` |
+| 目标场景 | 工业制造 | 2025-07 | `evt-2025-07-robotis-product_launch-ai-worker-ffw-bg2` |
+| 目标场景 | 科教与科研 | 2025-04-30 | `evt-2025-04-30-robotis-deployment-lg-electronics-ai-worker-first-batch` |
+| 交付形态 | 卖整机 | 2025-04-30 | `evt-2025-04-30-robotis-deployment-lg-electronics-ai-worker-first-batch` |
+| 模型形态 | 模仿学习 | 2025-05-15 | `evt-2025-05-15-robotis-publication-ai-worker-open-source-ros2` |
+| 开放程度 | 完全开放 | 2025-05-15 | `evt-2025-05-15-robotis-publication-ai-worker-open-source-ros2` |
+| 本体策略 | 自研整机 | 2026-04-21 | `evt-2026-04-21-robotis-product_launch-ai-sapiens-k0-humanoid` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-28 | day | 论文、开源发布 | ROBOTIS applications 1.1 | single | [official](https://github.com/ROBOTIS-GIT/robotis_applications/releases/tag/1.1.0) |
+| 2026-10-19 | day | 产品发布、版本迭代 | ROBOTIS 发布 Cyclo Control0.5 | single | [official](https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0) |
+| 2026-10-19 | day | 产品发布、版本迭代 | ROBOTIS 发布 AI Worker2.3 | single | [official](https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0) |
+| 2026-09-21 | day | 论文、开源发布 | ROBOTIS发布 cyclo_control 0.4.1 | single | [official](https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.4.1) |
+| 2026-09-15 | day | 论文、开源发布 | ROBOTIS发布 ai_worker 2.2.7 | single | [official](https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.2.7) |
+| 2026-09-07 | day | 论文、开源发布 | ROBOTIS发布 ai_sapiens 0.2.1 | single | [official](https://github.com/ROBOTIS-GIT/ai_sapiens/releases/tag/0.2.1) |
+| 2026-09-03 | day | 落地部署、客户签约 | CJ 大韩通运在 Olive Young 龙仁物流中心包装线上线两台 ROBOTIS 双臂人形机器人，模型由 RLWRLD 提供 | single | [media](https://en.sedaily.com/finance/2026/09/03/cj-logistics-deploys-humanoid-robots-at-warehouse-in-korean) |
+| 2026-06-22 | day | 合作、生态、联盟 | LG 电子与 ROBOTIS 签署 MOU：LG 拟入股 ROBOTIS 乌兹别克斯坦执行器工厂，并在 AI Sapiens 人形平台上联合研发 | single | [media](https://en.edaily.co.kr/news/eda202606225886/) |
+| 2026-06-15 | day | 成立、改名、注册变更、关停 | ROBOTIS 塔什干人形机器人及零部件工厂在 Yangi Avlod 特别工业区奠基，项目投资额 1 亿美元 | single | [media](https://www.uzdaily.uz/en/robotis-to-launch-humanoid-robot-production-in-tashkent/) |
+| 2026-04-21 | day | 产品发布、版本迭代 | ROBOTIS 公开开源人形平台 AI Sapiens 首款机型 K0：1.3 m、34 kg、23 自由度，搭载自研 DYNAMIXEL-Q 准直驱执行器 | single | [media](https://www.humanoidsdaily.com/news/robotis-enters-the-open-source-humanoid-arena-with-ai-sapiens-k0-platform) |
+| 2025-12-09 | day | 合作、生态、联盟 | ROBOTIS 与乌兹别克斯坦 UzElTechSanoat 签署合作协议，在当地扩建机器人生产基地并获政府用地与税收支持 | single | [media](https://www.asiae.co.kr/en/article/2025120914313940141) |
+| 2025-08-28 | day | 融资、并购 | ROBOTIS 公告 1000 亿韩元股东配售增资，用于乌兹别克斯坦工厂、精密加工与 QDD 电机产线 | single | [media](https://zdnet.co.kr/view/?no=20250828170335) |
+| 2025-08-07 | day | 合作、生态、联盟 | ROBOTIS 与投摩罗机器人（Tomorrow Robotics）签署作业型人形机器人共同事业化协议 | single | [media](https://www.irobotnews.com/news/articleView.html?idxno=41086) |
+| 2025-07 | month | 产品发布、版本迭代 | ROBOTIS 作业型半人形机器人 AI Worker 于 7 月正式发售 | multi | [media](https://zdnet.co.kr/view/?no=20250815011258) [media](https://www.irobotnews.com/news/articleView.html?idxno=41086) |
+| 2025-06-16 | day | 合作、生态、联盟 | ROBOTIS 与 LG 电子签署人形机器人共同研究与事业化协议 | single | [media](https://zdnet.co.kr/view/?no=20250617085154) |
+| 2025-05-15 | day | 论文、开源发布 | ROBOTIS 开源 AI Worker 平台与 Physical AI Tools 工具链 | single | [official](https://discourse.openrobotics.org/t/introduction-to-robotis-ai-worker/43780) [official](https://github.com/ROBOTIS-GIT/ai_worker) |
+| 2025-04-30 | day | 落地部署、客户签约 | ROBOTIS 向 LG 电子交付首批作业型半人形机器人 AI Worker | single | [media](https://zdnet.co.kr/view/?no=20250430162916) |
+| 2025-03-26 | day | 产品发布、版本迭代 | ROBOTIS 宣布 6 月推出开源协作机械臂 OM-Y 与配套 AI Manipulator | single | [media](https://www.mk.co.kr/en/business/11274315) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Ropedia
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 世界模型 | 2026-10-19 | `evt-2026-10-19-ropedia-publication-w0` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-19 | day | 论文、开源发布 | Ropedia W0 | single | [primary](https://arxiv.org/abs/2610.26855) [official](https://github.com/Ropedia/ropedia-w0) [official](https://ropedia.com) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 上海人形机器人创新中心
+
+**Shanghai Humanoid Robot Innovation Center**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、数据采集与供给、仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | 2023-12 |
+| 总部 | CN上海 |
+| 事件数 | 14 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 四足 | 2025-03-21 | `evt-2025-03-21-sh-humanoid-publication-gewu-sim-platform` |
+| 本体形态 | 轮式人形 | 2025-03-21 | `evt-2025-03-21-sh-humanoid-publication-gewu-sim-platform` |
+| 本体形态 | 双足人形 | 2024-10-28 | `evt-2024-10-28-sh-humanoid-publication-openloong-hardware` |
+| 本体策略 | 自研整机 | 2024-10-28 | `evt-2024-10-28-sh-humanoid-publication-openloong-hardware` |
+| 开放程度 | 完全开放 | 2024-10-28 | `evt-2024-10-28-sh-humanoid-publication-openloong-hardware` |
+| 组织方式 | 高校合作 | 2025-07 | `evt-2025-07-sh-humanoid-partnership-training-ground-network` |
+| 组织方式 | 政府共建训练场 | 2025-01-21 | `evt-2025-01-21-sh-humanoid-deployment-embodied-training-ground` |
+| 组织方式 | 自建数据工厂 | 2025-01-21 | `evt-2025-01-21-sh-humanoid-deployment-embodied-training-ground` |
+| 采集方式 | 仿真合成 | 2025-10-31 | `evt-2025-10-31-sh-humanoid-statement-baihu-data-case` |
+| 采集方式 | 遥操示教 | 2025-01-21 | `evt-2025-01-21-sh-humanoid-deployment-embodied-training-ground` |
+| 采集方式 | 真机自采 | 2025-01-21 | `evt-2025-01-21-sh-humanoid-deployment-embodied-training-ground` |
+| 仿真栈 | 自研 | 2025-03-21 | `evt-2025-03-21-sh-humanoid-publication-gewu-sim-platform` |
+| 运控路线 | 强化学习 | 2025-03-21 | `evt-2025-03-21-sh-humanoid-publication-gewu-sim-platform` |
+| 目标场景 | 工业制造 | 2025-07 | `evt-2025-07-sh-humanoid-product_launch-qinglong-matrix` |
+| 目标场景 | 科教与科研 | 2025-07 | `evt-2025-07-sh-humanoid-product_launch-qinglong-matrix` |
+| 目标场景 | 商业服务 | 2025-05-07 | `evt-2025-05-07-sh-humanoid-partnership-qiaoyin-city-service` |
+| 目标场景 | 巡检与特种作业 | 2025-05-07 | `evt-2025-05-07-sh-humanoid-partnership-qiaoyin-city-service` |
+| 目标场景 | 家庭 | 2025-05-07 | `evt-2025-05-07-sh-humanoid-partnership-qiaoyin-city-service` |
+| 交付形态 | 卖整机 | 2025-05-07 | `evt-2025-05-07-sh-humanoid-partnership-qiaoyin-city-service` |
+| 数据模态 | 关节轨迹 | 2025-10-31 | `evt-2025-10-31-sh-humanoid-statement-baihu-data-case` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-09-18 | day | 合作、生态、联盟 | 国地中心—华为训练场样板点 | single | [official](https://e.huawei.com/cn/news/2026/industries/manufacturing/2026-global-showcase-manufacturing) |
+| 2026-07 | month | 产品发布、版本迭代 | 国地中心在 WAIC 2026 展出「青龙 3.0」，配千寻位置联合研发的时空算力背包 | single | [media](https://www.cls.cn/detail/2097422) |
+| 2026-07-20 | day | 合作、生态、联盟 | 国地中心联合华为发布具身智能实训场样板点并揭牌启用 | multi | [official](https://e.huawei.com/cn/news/2026/industries/manufacturing/national-geographic-center) [media](https://finance.sina.com.cn/roll/2026-07-20/doc-iniimqsk8240862.shtml) |
+| 2026-07-20 | day | 落地部署、客户签约 | 上海市人形机器人中试服务平台投入运营，国地中心与卓益得签千台套试制专项 | multi | [media](https://finance.sina.com.cn/roll/2026-07-20/doc-iniimqsk8240862.shtml) [media](https://www.ofweek.com/im/2026-07/ART-201900-8120-30695296.html) |
+| 2026-07-15 | day | 落地部署、客户签约 | 地瓜机器人公布旭日 S600 落地进展：与 20 余家头部客户达成合作，进入量产验证 | single | [media](http://finance.people.com.cn/n1/2026/0720/c1004-40764182.html) |
+| 2025-10-31 | day | 官方表态 | 国家数据局案例披露上海人形机器人具身操作数据集建设规模 | single | [primary](https://www.nda.gov.cn/sjj/ywpd/szkjyjcss/1031/20251031193216150911981_pc.html) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-08-14 | day | 论文、开源发布 | 格物仿真平台发布 2.0 版本代码，覆盖行走、导航、操作任务 | single | [official](https://github.com/loongOpen/Unity-RL-Playground) |
+| 2025-07 | month | 产品发布、版本迭代 | 国地中心在 WAIC 2025 期间发布青龙人形机器人产品矩阵，含青龙 Pro、青龙 Lite、青龙 Wheel | multi | [media](https://news.qq.com/rain/a/20250728A09SQI00) [media](https://finance.sina.com.cn/roll/2025-07-28/doc-infhywqz5774422.shtml) |
+| 2025-07 | month | 合作、生态、联盟 | 国地中心签约共建人形机器人训练场合作生态，在江苏、河南建设训练场分中心 | multi | [media](https://finance.sina.com.cn/roll/2025-07-28/doc-infhywqz5774422.shtml) [media](https://news.qq.com/rain/a/20250728A09SQI00) |
+| 2025-05-07 | day | 合作、生态、联盟 | 国地中心与侨银股份合作，双方签订 1000 台城市服务人形机器人意向订单 | single | [primary](https://mp.weixin.qq.com/s/n6ezf-tT0Vz1mrXfdAbkfQ) |
+| 2025-03-21 | day | 论文、开源发布 | 国地中心联合上海大学、清华大学发布具身智能仿真平台「格物」，在 OpenLoong 社区开源 | multi | [media](https://www.news.cn/tech/20250321/0e6d99d550a741199e5cd4f09cd8b7fa/c.html) [official](https://github.com/loongOpen/Unity-RL-Playground) |
+| 2025-01-21 | day | 落地部署、客户签约 | 国地中心具身智能训练场在浦东张江启用，首期部署超 100 台异构人形机器人 | single | [media](https://www.stdaily.com/web/gdxw/2025-01/22/content_289587.html) |
+| 2024-10-28 | day | 论文、开源发布 | OpenLoong 开源青龙全尺寸通用人形机器人硬件系统仓库 OpenLoong-Hardware | single | [official](https://github.com/loongOpen/OpenLoong-Hardware) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# Sharpa
+
+**Sharpa**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、关键部件、具身基础模型、数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 4 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 运控路线 | 强化学习 | 2026-09-07 | `evt-2026-09-07-sharpa-publication-wm-craftnet` |
+| 模型形态 | 世界模型 | 2026-09-07 | `evt-2026-09-07-sharpa-publication-wm-craftnet` |
+| 数据模态 | 触觉 | 2026-09-07 | `evt-2026-09-07-sharpa-publication-wm-craftnet` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-09-28 | day | 产品发布、版本迭代 | Sharpa 在 IROS 发布 D01、W02 与 AE01 | single | [media](https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html) [official](https://www.sharpa.com/) |
+| 2026-09-07 | day | 论文、开源发布 | Sharpa 发表 WM-Craftnet 视触觉灵巧操作研究 | single | [primary](https://arxiv.org/abs/2609.07002) [official](https://www.sharpa.com/blogs/research/wm-craftnet-world-synesthesia-model-for-robust-and-generalizable-dexterous-in-hand-manipulation) |
+| 2026-08-29 | day | 落地部署、客户签约 | Sharpa 机器人在上海 DQ 门店制作冰淇淋 | single | [official](https://www.sharpa.com/pages/sharpa-dq) [official](https://www.cfbgroup.net/zh-hant/news/dq-sharpa-blizzard-robot-restaurant-ai-new-scene) |
+| 2026-05-28 | day | 论文、开源发布 | 莫特菲斯等：UniLab原始论文 | single | [primary](https://arxiv.org/abs/2605.30313v1) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 松应科技
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 仿真与工具链 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-07-20 | day | 官方表态 | 松应 ORCA 国产GPU适配披露 | single | [media](https://caifuhao.eastmoney.com/news/20260720162930855112730) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 瞬恒智能
+
+**SynDexy**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-30 | day | 落地部署、客户签约 | 瞬恒SynDexy C1首次小批量交付 | single | [media](https://news.ikanchai.com/2026/1030/670791.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 优必选
+
+**UBTECH**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、系统集成与方案交付 |
+| 状态 | 正常经营 |
+| 成立 | 2012-03 |
+| 总部 | CN深圳 |
+| 事件数 | 20 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-12 | `evt-2024-12-ubtech-deployment-zeekr-phase2` |
+| 目标场景 | 商业服务 | 2025-04-24 | `evt-2025-04-24-ubtech-deployment-first-small-batch-contract` |
+| 目标场景 | 科教与科研 | 2025-03-12 | `evt-2025-03-12-ubtech-product_launch-tiangong-walker` |
+| 目标场景 | 工业制造 | 2024-12 | `evt-2024-12-ubtech-deployment-zeekr-phase2` |
+| 交付形态 | 卖整机 | 2025-03-12 | `evt-2025-03-12-ubtech-product_launch-tiangong-walker` |
+| 模型形态 | 世界模型 | 2026-10-01 | `evt-2026-10-01-ubtech-publication-thinker-wm-code-weights` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-09 | day | 合作、生态、联盟 | 优必选与建发股份签署战略合作协议 | single | [official](https://www.chinacnd.com/news.html) [media](https://news.mysteel.com/a/26101208/F6D16006A0BEB8A0.html) |
+| 2026-10-01 | day | 论文、开源发布 | 优必选公开 Thinker-WM 推理代码与模型权重 | single | [official](https://raw.githubusercontent.com/UBTECH-Robot/Thinker-WM/main/README.md) [official](https://huggingface.co/UBTECH-Robotics/Thinker-WM/raw/main/README.md) [official](https://api.github.com/repos/UBTECH-Robot/Thinker-WM/commits?per_page=100) [official](https://huggingface.co/api/models/UBTECH-Robotics/Thinker-WM/commits/main) [official](https://huggingface.co/api/models/UBTECH-Robotics/Thinker-WM/revision/4d27baa9f3142145734fef6a9a844018c8fc6770) |
+| 2026-09-25 | day | 官方表态 | 优必选与哈萨克斯坦方面讨论阿拉木图机器人生产基地 | single | [media](https://www.ithome.com/1/008/652.htm) |
+| 2026-08-03 | day | 落地部署、客户签约 | 万机易租披露平台可调度合作机器人超 5000 台，接入优必选、越疆、自变量、魔法原子等厂商 | single | [media](https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/) |
+| 2026-07 | month | 合作、生态、联盟 | 优必选与波士渠道合作 | single | [media](https://www.aibangbots.com/a/10840) [media](https://m.cnmo.com/news/814923.html) |
+| 2025-11-28 | day | 招投标中标 | 优必选中标九江市人形机器人数据采集与训练中心项目，金额 1.43 亿元 | single | [media](https://www.cls.cn/detail/2213431) |
+| 2025-11-25 | day | 招投标中标 | 优必选中标防城港人形机器人数据采集与测试中心项目，金额 2.64 亿元 | single | [media](https://www.jiemian.com/article/13677481.html) |
+| 2025-11-25 | day | 融资、并购 | 优必选配售 3146.8 万股新 H 股，配售价 98.80 港元，募资总额约 31.09 亿港元 | single | [primary](https://www.hkexnews.hk/listedco/listconews/sehk/2025/1125/2025112500084_c.pdf) |
+| 2025-11-12 | day | 落地部署、客户签约 | 优必选首批数百台 Walker S2 开启量产交付 | single | [media](https://www.ithome.com/0/897/076.htm) |
+| 2025-10-19 | day | 招投标中标 | 优必选中标广西具身智能数据采集及测试中心设备采购项目，金额 1.26 亿元 | single | [media](https://i.ifeng.com/c/8nZxnYEqJWH) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-09-03 | day | 落地部署、客户签约 | 优必选获 2.5 亿元人形机器人采购合同，以 Walker S2 为主 | single | [media](https://www.stcn.com/article/detail/3322201.html) |
+| 2025-07-18 | day | 招投标中标 | 优必选中标觅亿（上海）汽车科技 9051.15 万元机器人设备采购项目 | single | [media](https://www.chnfund.com/article/AR0f4cfc36-d317-03bc-d084-3a1b39b801a8) |
+| 2025-07-17 | day | 产品发布、版本迭代 | 优必选在新一代工业人形机器人 Walker S2 上发布热插拔自主换电系统 | single | [media](https://www.stdaily.com/web/gdxw/2025-07/18/content_372094.html) |
+| 2025-05-12 | day | 合作、生态、联盟 | 华为与优必选签署全面合作协议，围绕具身智能与人形机器人合作 | single | [media](https://m.mp.oeeee.com/a/BAAFRD0000202505121085818.html) |
+| 2025-04-24 | day | 落地部署、客户签约 | 优必选签订首份小批量工业制造场景人形机器人采购合同 | single | [primary](https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0427/2025042700002_c.pdf) |
+| 2025-03-12 | day | 产品发布、版本迭代 | 优必选联合北京人形机器人创新中心发布全尺寸科研教育人形机器人天工行者，售价 29.9 万元起 | single | [media](https://news.qq.com/rain/a/20250312A0ALQN00) |
+| 2024-12 | month | 落地部署、客户签约 | 优必选 Walker S1 进入极氪智慧工厂开启第二阶段实训 | single | [media](https://www.stcn.com/article/detail/1444653.html) |
+| 2024-11-20 | day | 融资、并购 | 优必选按一般授权配售 700 万股新 H 股，所得款项总额约 5.8716 亿港元 | single | [primary](https://www1.hkexnews.hk/listedco/listconews/sehk/2024/1120/2024112000026_c.pdf) |
+| 2024-09-29 | day | 落地部署、客户签约 | 因时机器人披露微型伺服电缸与灵巧手已服务的客户范围 | single | [aggregator](https://news.pedaily.cn/202409/540834.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 宇树科技
+
+**Unitree Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、运控与小脑 |
+| 状态 | 正常经营 |
+| 成立 | 2016 |
+| 总部 | CN杭州 |
+| 事件数 | 38 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 四足 | 2025-06-05 | `evt-2025-06-05-unitree-publication-unitree-rl-lab` |
+| 本体形态 | 双足人形 | 2024-10-18 | `evt-2024-10-18-unitree-publication-unitree-lerobot` |
+| 采集方式 | 遥操示教 | 2024-10-18 | `evt-2024-10-18-unitree-publication-unitree-lerobot` |
+| 采集方式 | 真机自采 | 2024-10-18 | `evt-2024-10-18-unitree-publication-unitree-lerobot` |
+| 模型形态 | 模仿学习 | 2024-10-18 | `evt-2024-10-18-unitree-publication-unitree-lerobot` |
+| 目标场景 | 文旅与表演 | 2025-01-28 | `evt-2025-01-28-unitree-deployment-cctv-gala-yangbot` |
+| 数据模态 | 关节轨迹 | 2025-02-18 | `evt-2025-02-18-unitree-dataset_release-g1-dex3-lerobot` |
+| 数据模态 | RGB 图像 | 2025-02-18 | `evt-2025-02-18-unitree-dataset_release-g1-dex3-lerobot` |
+| 开放程度 | 完全开放 | 2025-02-18 | `evt-2025-02-18-unitree-dataset_release-g1-dex3-lerobot` |
+| 仿真栈 | Isaac Sim | 2025-06-24 | `evt-2025-06-24-unitree-publication-unitree-sim-isaaclab` |
+| 仿真栈 | Isaac Lab | 2025-06-05 | `evt-2025-06-05-unitree-publication-unitree-rl-lab` |
+| 仿真栈 | MuJoCo | 2025-06-05 | `evt-2025-06-05-unitree-publication-unitree-rl-lab` |
+| 运控路线 | 强化学习 | 2025-06-05 | `evt-2025-06-05-unitree-publication-unitree-rl-lab` |
+| 交付形态 | 卖整机 | 2025-07-25 | `evt-2025-07-25-unitree-product_launch-r1` |
+| 本体策略 | 自研整机 | 2026-09-22 | `evt-2026-09-22-unitree-product_launch-dex5-s` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 宇树RobotSkills | single | [official](https://github.com/unitreerobotics/unitree_robotskills) |
+| 2026-10 | month | 论文、开源发布 | 宇树D2-Arm SDK/模型交付包 | single | [official](https://github.com/unitreerobotics/D2-Arm) |
+| 2026-10-22 | day | 官方表态 | 宇树披露 G1 累计生产规模 | single | [media](https://www.ithome.com/1/016/258.htm) |
+| 2026-10-21 | day | 产品发布、版本迭代 | 宇树发布 H2X 人形机器人 | single | [media](https://www.ithome.com/1/015/876.htm) |
+| 2026-10-12 | day | 官方表态 | 宇树披露曾将 GPT-6 部署到机器人进行任务测试 | single | [media](https://finance.eastmoney.com/a/202610123892520424.html) |
+| 2026-10-05 | day | 招聘信号 | 宇树科技招聘职责与公司自述核验记录（首次基线） | single | [official](https://www.zhipin.com/job_detail/16218d60dd40f9f30nZ-3N66EFFU.html) [official](https://www.zhipin.com/job_detail/52b626347b8a01e10nF73tS4GVRY.html) [official](https://www.zhipin.com/job_detail/5ab69f807dc882b10nB82965FlFY.html) [official](https://www.zhipin.com/job_detail/3dde2b77afb69c920nB50t-7ElRU.html) [official](https://www.zhipin.com/job_detail/673cef4d289243d30nN50ti5FlJV.html) [official](https://www.zhipin.com/job_detail/186e444a23a858f30nF42tq6FFRT.html) [official](https://www.zhipin.com/job_detail/01b750dd8c2d9d0c0nJ_3Nm1EFVY.html) [official](https://www.zhipin.com/job_detail/5476025213c2216d0nd83tm6FlFU.html) [official](https://www.zhipin.com/job_detail/49027f02ee0a9a5e0nN_3tm6FVdT.html) [official](https://www.zhipin.com/job_detail/12d505ee4be6d0840nV93d66EFRR.html) [official](https://www.zhipin.com/job_detail/34fa41f31dc569890nN_2ty7EFBX.html) [official](https://www.zhipin.com/job_detail/428506fcfed15cb60nV93d61F1FV.html) [official](https://www.zhipin.com/job_detail/14c9586c10304aea03B42NW-GFpS.html) [official](https://www.zhipin.com/job_detail/19674fd61dd160860nB50ty_EVFW.html) [official](https://www.zhipin.com/job_detail/378a9f640bad62680nN_09y6EVtW.html) [official](https://www.zhipin.com/job_detail/1e777223f786919a03xy2N-9GFRQ.html) [official](https://www.zhipin.com/job_detail/24bd815b4607af310nB50t-1EFdQ.html) [official](https://www.zhipin.com/job_detail/13ce74a1d4056b7c03B42NW4GFNV.html) [official](https://www.zhipin.com/job_detail/9e17505a77becc390nN_0tS5GVFW.html) [official](https://www.zhipin.com/job_detail/57a94ceae83c53df03dy3N-_ElpW.html) [official](https://www.zhipin.com/job_detail/5ac1fb2a2f5843930nB-0t--F1pR.html) [official](https://www.zhipin.com/job_detail/2d43d7026424b6ec03xy2dW0EFBS.html) |
+| 2026-09-28 | day | 论文、开源发布 | 宇树上传 UnifoLM-WLA-1.0-Base 权重 | single | [official](https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base) [official](https://huggingface.co/unitreerobotics/UnifoLM-WLA-1.0-Base/raw/main/README.md) [official](https://huggingface.co/api/models/unitreerobotics/UnifoLM-WLA-1.0-Base/commits/main) |
+| 2026-09-28 | day | 论文、开源发布 | 宇树创建 R1 七自由度机械臂低层控制 SDK 仓库 | single | [official](https://api.github.com/repos/unitreerobotics/r1-7a_sdk) [official](https://github.com/unitreerobotics/r1-7a_sdk/blob/main/README.md) |
+| 2026-09-22 | day | 产品发布、版本迭代 | 宇树科技发布新一代灵巧手 Dex5-S，单手 22 自由度，3.99 万元起 | single | [media](https://tech.ifeng.com/c/8wcXH4svBbP) |
+| 2026-09-18 | day | 数据集发布 | 宇树科技批量发布 63 个数据集（2026-09-13～2026-09-18） | single | [official](https://huggingface.co/unitreerobotics) |
+| 2026-09-11 | day | 论文、开源发布 | 宇树科技发布模型 UnifoLM-ER-Flow | single | [official](https://huggingface.co/unitreerobotics/UnifoLM-ER-Flow) |
+| 2026-09-03 | day | 产品发布、版本迭代 | 银河通用小型双足人形机器人银河星仔 GALBOT ET1 开启预订 | single | [media](http://www.zqrb.cn/tmt/tmthangye/2026-09-03/A1788425656665.html) |
+| 2026-08 | month | 落地部署、客户签约 | 青瞳视觉在 WRC 2026 联合宇树科技演示动捕驱动的 G1 人机乒乓对打、实时遥操作与 RoboEval 运动测评 | single | [official](https://en.chingmu.com/company-news/10792.shtml) |
+| 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
+| 2026-08-19 | day | 融资、并购 | 宇树科技在上交所科创板挂牌上市，证券代码 688836 | single | [media](https://www.36kr.com/p/3943674198218376) |
+| 2026-08-18 | day | 落地部署、客户签约 | 禾赛 2026 年二季度机器人激光雷达出货 142371 台，宇树、蚂蚁灵波、银河通用、星海图等下新增订单 | single | [primary](https://investor.hesaitech.com/news-releases/news-release-details/hesai-group-reports-second-quarter-2026-unaudited-financial/) |
+| 2026-08-17 | day | 产品发布、版本迭代 | 宇树科技发布人形机器人新品「超人」 | single | [media](https://www.thepaper.cn/newsDetail_forward_33798806) |
+| 2026-07-19 | day | 产品发布、版本迭代 | 面壁智能在 WAIC 2026 发布首个具身智能模型系列 MiniCPM-Robot | single | [media](https://www.zhidx.com/p/577495.html) |
+| 2026-07-02 | day | 融资、并购 | 证监会同意宇树科技科创板 IPO 注册 | single | [media](https://m.thepaper.cn/detail/33503334) |
+| 2026-06-24 | day | 公开价格 | 宇树 R1 人形机器人官方售价由 3.99 万元下调至 2.99 万元起 | single | [media](https://m.21jingji.com/article/20260626/herald/7f0f65c1dd637d9fb0f80cd2bf877a17.html) |
+| 2026-03-20 | day | 融资、并购 | 上交所受理宇树科技科创板 IPO 申请 | single | [media](https://www.yicai.com/news/103096915.html) |
+| 2026-01-05 | day | 合作、生态、联盟 | 腾讯 Robotics X 与宇树科技达成战略合作，Tairos 具身大模型部署于宇树 G1 落地敦煌导览 | multi | [media](https://finance.sina.com.cn/tjhz/2026-01-06/doc-inhfkfup7178371.shtml) [media](https://www.robot-china.com/news/202601/06/94851.html) |
+| 2025-10-20 | day | 产品发布、版本迭代 | 宇树科技发布全尺寸人形机器人 Unitree H2 | single | [media](https://wallstreetcn.com/articles/3757489) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-08-21 | day | 落地部署、客户签约 | 速腾聚创 2025 年中期业绩：机器人及其他激光雷达上半年销量约 4.63 万台 | multi | [primary](https://www.hkexnews.hk/listedco/listconews/sehk/2025/0821/2025082101018_c.pdf) [media](https://stcn.com/article/detail/3248993.html) |
+| 2025-07 | month | 招投标中标 | 宇树科技中标中移（杭州）人形双足机器人代工服务采购项目标包 2 | single | [media](https://www.c114.com.cn/news/118/a1292870.html) |
+| 2025-07-25 | day | 产品发布、版本迭代 | 宇树科技发布人形机器人 Unitree R1 智能伙伴，售价 3.99 万元起 | single | [media](https://www.21jingji.com/article/20250725/herald/1656fcc4d8354b494542174508088eae.html) |
+| 2025-07-18 | day | 融资、并购 | 宇树科技在浙江证监局办理 IPO 辅导备案 | single | [media](https://stcn.com/article/detail/2657492.html) |
+| 2025-06-24 | day | 论文、开源发布 | 宇树科技开源基于 Isaac Lab 的仿真环境 unitree_sim_isaaclab | single | [official](https://github.com/unitreerobotics/unitree_sim_isaaclab) |
+| 2025-06-19 | day | 融资、并购 | 宇树科技确认完成 C 轮融资交割 | single | [media](https://www.stcn.com/article/detail/2155160.html) |
+| 2025-06-05 | day | 论文、开源发布 | 宇树科技开源强化学习训练框架 unitree_rl_lab | single | [official](https://github.com/unitreerobotics/unitree_rl_lab) |
+| 2025-05 | month | 落地部署、客户签约 | 宇树科技机器人格斗训练采用青瞳视觉光学动捕系统采集数据 | single | [official](https://www.chingmu.com/company-news/newsdetail_854.shtml) |
+| 2025-05-28 | day | 成立、改名、注册变更、关停 | 宇树科技变更为股份有限公司并更名为杭州宇树科技股份有限公司 | single | [media](http://www.chinanews.com.cn/cj/2025/05-30/10424536.shtml) |
+| 2025-02-18 | day | 数据集发布 | 宇树科技在 Hugging Face 发布 G1 Dex3 操作数据集系列 | single | [official](https://huggingface.co/datasets/unitreerobotics/G1_Dex3_BlockStacking_Dataset) [official](https://huggingface.co/api/datasets/unitreerobotics/G1_Dex3_BlockStacking_Dataset) |
+| 2025-01-28 | day | 落地部署、客户签约 | 宇树 H1 集群参演 2025 年央视春晚创意融合舞蹈《秧BOT》 | single | [media](http://www.news.cn/local/20250129/0bc78414b22a472898cf7e402d291ea0/c.html) |
+| 2024-12-10 | day | 合作、生态、联盟 | RoboCup 联盟宣布与加速进化建立合作伙伴关系 | multi | [official](https://www.robocup.org/news/172) [official](https://www.booster.tech/cn/news/3/) |
+| 2024-10-18 | day | 论文、开源发布 | 宇树科技开源 unitree_lerobot 数据转换与训练验证仓库 | single | [official](https://github.com/unitreerobotics/unitree_lerobot) |
+| 2024-09-29 | day | 落地部署、客户签约 | 因时机器人披露微型伺服电缸与灵巧手已服务的客户范围 | single | [aggregator](https://news.pedaily.cn/202409/540834.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 温擎智控
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 温擎智控获智元投资 | single | [media](https://www.forbeschina.com/business/72275) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 舞肌科技
+
+**Wuji Technology**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | 2019-03 |
+| 总部 | CN深圳 |
+| 事件数 | 13 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体策略 | 自研整机 | 2025-09-17 | `evt-2025-09-17-wuji-tech-product_launch-wuji-hand-1` |
+| 采集方式 | 遥操示教 | 2026-02-14 | `evt-2026-02-14-wuji-tech-product_launch-wuji-glove-1` |
+| 数据模态 | 触觉 | 2026-02-14 | `evt-2026-02-14-wuji-tech-product_launch-wuji-glove-1` |
+| 仿真栈 | Isaac Lab | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-isaaclab` |
+| 仿真栈 | MuJoCo | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-mujoco` |
+| 运控路线 | 强化学习 | 2026-10-19 | `evt-2026-10-19-wuji-tech-publication-hand2-isaaclab` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 舞肌wuji-ros2 | single | [official](https://github.com/wuji-technology/wuji-ros2) |
+| 2026-10-23 | day | 论文、开源发布 | 舞肌科技公开 TopoRetarget 灵巧手动作重定向工具 | single | [official](https://github.com/wuji-technology/toporetarget) [official](https://api.github.com/repos/wuji-technology/toporetarget/git/trees/HEAD?recursive=1) [official](https://api.github.com/repos/wuji-technology/toporetarget/commits?per_page=20) |
+| 2026-10-19 | day | 论文、开源发布 | 舞肌科技公开 Hand2 MuJoCo 演示 | single | [official](https://github.com/wuji-technology/wuji-mujoco) [official](https://api.github.com/repos/wuji-technology/wuji-mujoco/commits?per_page=100) |
+| 2026-10-19 | day | 论文、开源发布 | 舞肌科技公开 Hand2 Isaac Lab 训练示例 | single | [official](https://github.com/wuji-technology/wuji-isaaclab) [official](https://api.github.com/repos/wuji-technology/wuji-isaaclab/commits?per_page=100) |
+| 2026-09-21 | day | 论文、开源发布 | 舞肌科技发布 wuji-studio v2026.9.21 | single | [official](https://github.com/wuji-technology/wuji-studio/releases/tag/v2026.9.21) |
+| 2026-09-11 | day | 论文、开源发布 | 舞肌科技发布 wuji-description v2026.9.11 | single | [official](https://github.com/wuji-technology/wuji-description/releases/tag/v2026.9.11) |
+| 2026-07-15 | day | 融资、并购 | 舞肌科技工商变更新增蚂蚁集团关联公司、美团龙珠等股东（A+ 轮） | single | [media](https://www.stcn.com/article/detail/4020460.html) |
+| 2026-06 | month | 产品发布、版本迭代 | 舞肌科技在 ICRA 2026 展示新一代 20 自由度全直驱灵巧手 Wuji Hand 2 | single | [media](https://www.ne-time.cn/web/article/38936) |
+| 2026-05 | month | 落地部署、客户签约 | 舞肌科技证实 Genesis AI 基础模型 GENE-26.5 演示中的灵巧手为 Wuji Hand | single | [media](https://www.ne-time.cn/web/article/38662) |
+| 2026-02-14 | day | 产品发布、版本迭代 | 舞肌科技发布第一代 Wuji Glove 智能数据手套 | single | [media](https://www.ne-time.cn/web/article/38662) |
+| 2026-02-06 | day | 融资、并购 | 舞肌科技工商变更新增中移数字转型产业基金、Alphaist Partners 等股东（A 轮） | single | [media](https://news.qq.com/rain/a/20260206A04KXB00) |
+| 2025-09-17 | day | 产品发布、版本迭代 | 舞肌科技发布 20 自由度全直驱灵巧手 Wuji Hand 1.0 | single | [media](https://c.m.163.com/news/a/KA23S7EO0511B6FU.html) |
+| 2025-08-26 | day | 论文、开源发布 | 舞肌科技开源 Wuji Hand SDK（wujihandpy） | single | [official](https://github.com/wuji-technology/wujihandpy) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 北京人形机器人创新中心
+
+**X-Humanoid**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | 2023-11 |
+| 总部 | CN北京 |
+| 事件数 | 16 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 轮式人形 | 2025-03-12 | `evt-2025-03-12-x-humanoid-product_launch-huisikaiwu` |
+| 本体形态 | 单臂 | 2025-03-12 | `evt-2025-03-12-x-humanoid-product_launch-huisikaiwu` |
+| 本体形态 | 双足人形 | 2024-11-11 | `evt-2024-11-11-x-humanoid-publication-tiangong-opensource-plan` |
+| 开放程度 | 完全开放 | 2025-06 | `evt-2025-06-x-humanoid-dataset_release-artvip` |
+| 开放程度 | 部分开放 | 2024-11-11 | `evt-2024-11-11-x-humanoid-publication-tiangong-opensource-plan` |
+| 模型形态 | 世界模型 | 2025-08-08 | `evt-2025-08-08-x-humanoid-product_launch-tiangong-2` |
+| 模型形态 | 模仿学习 | 2025-07-07 | `evt-2025-07-07-x-humanoid-publication-tienkung-lab` |
+| 模型形态 | 分层 | 2025-03-12 | `evt-2025-03-12-x-humanoid-product_launch-huisikaiwu` |
+| 模型形态 | 端到端 VLA | 2025-03-12 | `evt-2025-03-12-x-humanoid-product_launch-huisikaiwu` |
+| 仿真栈 | Isaac Lab | 2025-07-07 | `evt-2025-07-07-x-humanoid-publication-tienkung-lab` |
+| 仿真栈 | MuJoCo | 2025-07-07 | `evt-2025-07-07-x-humanoid-publication-tienkung-lab` |
+| 运控路线 | 强化学习 | 2025-07-07 | `evt-2025-07-07-x-humanoid-publication-tienkung-lab` |
+| 采集方式 | 光学动捕 | 2025-07-07 | `evt-2025-07-07-x-humanoid-publication-tienkung-lab` |
+| 目标场景 | 工业制造 | 2025-08-08 | `evt-2025-08-08-x-humanoid-product_launch-tiangong-2` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-16 | day | 论文、开源发布 | 北京人形机器人创新中心与北大发表 LAW 研究 | single | [primary](https://arxiv.org/abs/2610.23334v1) |
+| 2026-07-15 | day | 落地部署、客户签约 | 地瓜机器人公布旭日 S600 落地进展：与 20 余家头部客户达成合作，进入量产验证 | single | [media](http://finance.people.com.cn/n1/2026/0720/c1004-40764182.html) |
+| 2026-02-10 | day | 产品发布、版本迭代 | 北京人形机器人创新中心发布通用机器人平台具身天工 3.0 | single | [media](https://www.beijing.gov.cn/ywdt/gzdt/202602/t20260211_4507573.html) |
+| 2026-02-03 | day | 融资、并购 | 北京人形机器人创新中心完成首轮超 7 亿元市场化融资 | single | [media](http://jjckb.xinhuanet.com/20260203/4004edaf36254db98159bab1fc57764d/c.html) |
+| 2026-01-29 | day | 落地部署、客户签约 | 北京人形机器人创新中心中试验证平台启动，第 1000 台客户定制化样机下线 | single | [media](https://kw.beijing.gov.cn/xwdt/kcyx/xwdtscyqld/202601/t20260130_4477386.html) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+| 2025-08-21 | day | 落地部署、客户签约 | 速腾聚创 2025 年中期业绩：机器人及其他激光雷达上半年销量约 4.63 万台 | multi | [primary](https://www.hkexnews.hk/listedco/listconews/sehk/2025/0821/2025082101018_c.pdf) [media](https://stcn.com/article/detail/3248993.html) |
+| 2025-08-12 | day | 落地部署、客户签约 | 奥比中光 2025 年半年报披露天工 Pro 机器人搭载 Gemini 330 系列深度相机 | single | [primary](http://static.cninfo.com.cn/finalpage/2025-08-12/1224444650.PDF) |
+| 2025-08-09 | day | 合作、生态、联盟 | 百度智能云在 2025 世界机器人大会与北京人形机器人创新中心签约，提供百舸 GPU 云平台与具身数据采标服务 | single | [official](https://cloud.baidu.com/article/3548913) [official](https://qianfan.cloud.baidu.com/qianfandev/topic/686313) |
+| 2025-08-08 | day | 产品发布、版本迭代 | 北京人形机器人创新中心在 2025 世界机器人大会发布天工、天轶 2.0 产品矩阵 | single | [media](http://bj.people.com.cn/n2/2025/0810/c14540-41317847.html) |
+| 2025-07-07 | day | 论文、开源发布 | 北京人形机器人创新中心开源运动控制框架 Tien Kung-Lab | single | [official](https://www.x-humanoid.com/news-view-215.html) |
+| 2025-06 | month | 数据集发布 | 北京人形机器人创新中心发布铰接数字资产集 ArtVIP | single | [official](https://huggingface.co/datasets/X-Humanoid/ArtVIP) |
+| 2025-03-12 | day | 产品发布、版本迭代 | 北京人形机器人创新中心发布通用具身智能平台「慧思开物」 | single | [media](http://www.news.cn/20250313/5083d83510b74bf283088abf06c6b198/c.html) |
+| 2025-03-12 | day | 产品发布、版本迭代 | 优必选联合北京人形机器人创新中心发布全尺寸科研教育人形机器人天工行者，售价 29.9 万元起 | single | [media](https://news.qq.com/rain/a/20250312A0ALQN00) |
+| 2024-11-11 | day | 论文、开源发布 | 国家地方共建具身智能机器人创新中心发布天工开源计划 | single | [media](http://bj.news.cn/20241112/ab41ce67e5ce4e5b86f2c147919349cf/c.html) |
+| 2024-10-10 | day | 成立、改名、注册变更、关停 | 北京具身智能机器人创新中心升级为国家地方共建具身智能机器人创新中心 | single | [media](http://www.bj.xinhuanet.com/20241011/2c7b463df8374670925ef1dac3ca4639/c.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 自变量机器人
+
+**X Square Robot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2023-12 |
+| 总部 | CN深圳 |
+| 事件数 | 25 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 端到端 VLA | 2024-11 | `evt-2024-11-x-square-robot-product_launch-wall-a` |
+| 本体形态 | 轮式人形 | 2025-08-08 | `evt-2025-08-08-x-square-robot-product_launch-quanta-x2` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 自变量WALL-OSS 1.0 Lite RoboDojo | single | [official](https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo) |
+| 2026-10-10 | day | 融资、并购 | 墨现科技产业轮融资 | single | [media](https://news.qq.com/rain/a/20261011A09UNN00) [media](https://www.forbeschina.com/business/72275) |
+| 2026-10-10 | day | 融资、并购 | 巨蟹智能A+融资 | single | [media](https://news.qq.com/rain/a/20261011A09UNN00) [media](https://www.forbeschina.com/business/72275) |
+| 2026-10-09 | day | 论文、开源发布 | 自变量机器人公开 X2Streaming-ASR-4B 流式语音识别模型与推理代码 | single | [official](https://huggingface.co/api/models/x-square-robot/X2Streaming-ASR-4B-1009) [official](https://huggingface.co/x-square-robot/X2Streaming-ASR-4B-1009/raw/main/README.md) [official](https://raw.githubusercontent.com/X-Square-Robot/X2Streaming-ASR/main/README.md) [primary](https://arxiv.org/html/2609.08672v3) |
+| 2026-10-05 | day | 招聘信号 | 自变量机器人招聘职责与公司自述核验记录（首次基线） | single | [official](https://www.zhipin.com/job_detail/2f3b141bf03916510nF82Nm6ElpX.html) [official](https://www.zhipin.com/job_detail/458f98ce64e63e220nN72N26GFpU.html) [official](https://www.zhipin.com/job_detail/1e88cdb49f8fe2570nF82tW-EFtX.html) [official](https://www.zhipin.com/job_detail/3993488551130baa0nJ80t-6FlFR.html) [official](https://www.zhipin.com/job_detail/3b5e98d91a0afa6903N529y4GVNX.html) [official](https://www.zhipin.com/job_detail/17fc54b67e556de20nF_3tm8E1RT.html) [official](https://www.zhipin.com/job_detail/5439a7228f8f970b0nJ_29i-E1dU.html) [official](https://www.zhipin.com/job_detail/4187f07a6547b2410nF93ti1GFZU.html) [official](https://www.zhipin.com/job_detail/05ee3e6b9a3407ce0nFy09S4E1FW.html) [official](https://www.zhipin.com/job_detail/2dec238935bf24c90nN93dq1ElFX.html) [official](https://www.zhipin.com/job_detail/5115bfc155078d760nNy39S8EFtW.html) [official](https://www.zhipin.com/job_detail/16b825590f804d550nN43d60ElZZ.html) [official](https://www.zhipin.com/job_detail/38ef870534e571ce0nB-09q0FVtX.html) [official](https://www.zhipin.com/job_detail/400a3369ff9e04d70nF92tS-GVdX.html) [official](https://www.zhipin.com/job_detail/476f2f3c88e71aac0nR63t-4F1tX.html) [official](https://www.zhipin.com/job_detail/57848ba835b134f20nJy0tq0EVFT.html) [official](https://www.zhipin.com/job_detail/177a323a290fa7350nJy3ty9GFNQ.html) [official](https://www.zhipin.com/job_detail/2c8a54c8c7d8e19d0nN_3920EFZY.html) [official](https://www.zhipin.com/job_detail/31cc7d50c8eed6010nNy39m_GVNY.html) [official](https://www.zhipin.com/job_detail/174460a6b2adc8d90nNy3dS7EVFV.html) [official](https://www.zhipin.com/job_detail/35fcd940c1ef6d600nNy2NS6E1BZ.html) [official](https://www.zhipin.com/job_detail/31cb6a6571c2bf440nJy09-6ElFQ.html) [official](https://www.zhipin.com/job_detail/4805845f7711603a0nJ72tu-EFNQ.html) [official](https://www.zhipin.com/job_detail/034aab56df4652d70nF93968EVpZ.html) [official](https://www.zhipin.com/job_detail/21793379ed60f26f0nNy2NS1GVNW.html) [official](https://www.zhipin.com/job_detail/060518c5bf8a4bad0nJy3t67EFVS.html) [official](https://www.zhipin.com/job_detail/29fbe715e3faf2ae0nN-2Ni1FVZR.html) [official](https://www.zhipin.com/job_detail/3f1b58f88da8c7aa0nJ42t27E1ZU.html) [official](https://www.zhipin.com/job_detail/550db3af1931cdae0nBy29m8FlBS.html) [official](https://www.zhipin.com/job_detail/176767f6aeb827fb0nN42tS7EVdT.html) [official](https://www.zhipin.com/job_detail/443cdbc7553193710nF42N6-F1pS.html) [official](https://www.zhipin.com/job_detail/1335272b90ad66b10nBy29i1FldX.html) [official](https://www.zhipin.com/job_detail/4266d781f80510730nN929S9EVJV.html) [official](https://www.zhipin.com/job_detail/093fc77264dcee5b0nBy3N-7E1tX.html) [official](https://www.zhipin.com/job_detail/12b3fa2183fc36350nBz392-F1ZW.html) [official](https://www.zhipin.com/job_detail/20436550bb20eaa70nF82Nm7EFBY.html) [official](https://www.zhipin.com/job_detail/3a78e0deaf3323b80nJz39q1ElBU.html) [official](https://www.zhipin.com/job_detail/012517316f97b45a0nN62NW4FFRZ.html) [official](https://www.zhipin.com/job_detail/43b15a8d3187947d0nN709m8EVFV.html) [official](https://www.zhipin.com/job_detail/4e293c97c53b857f0nN909i8EVBT.html) [official](https://www.zhipin.com/job_detail/548fd49c163273500nJ70t6-EVNR.html) [official](https://www.zhipin.com/job_detail/252b50e5decf13fe0nF-39y6ElJS.html) [official](https://www.zhipin.com/job_detail/1b43bcfb83589f800nN93ty8FltT.html) [official](https://www.zhipin.com/job_detail/16a6d9bc86ef66170nF83t20E1dS.html) [official](https://www.zhipin.com/job_detail/359a2cef6f7bf2f50nB42N-0FVFW.html) [official](https://www.zhipin.com/job_detail/543db34e76d4b1630nBz2tq5EVBV.html) [official](https://www.zhipin.com/job_detail/3ae8ccc964275ba90nJ43Ni0EFBT.html) [official](https://www.zhipin.com/job_detail/30225a4bda98a06e0nF83t28EVdR.html) [official](https://www.zhipin.com/job_detail/3ddeba34642243fe0nN62N26FVZW.html) [official](https://www.zhipin.com/job_detail/0d32271c109159510nZ9096_FVRV.html) [official](https://www.zhipin.com/job_detail/26208403efa3c33b0nd73ty6F1dZ.html) [official](https://www.zhipin.com/job_detail/248cdf52d1c004bc0nJy2ti_EVNU.html) [official](https://www.zhipin.com/job_detail/54bca7b4ae8866850nN72tS9EFZU.html) [official](https://www.zhipin.com/job_detail/475579f3f289106a0nN709m7FVJZ.html) [official](https://www.zhipin.com/job_detail/4242eb63a99ea05b0nF82N69GFFR.html) [official](https://www.zhipin.com/job_detail/3d97ee67f24bf4fc0nN53964EFNZ.html) [official](https://www.zhipin.com/job_detail/4a3579080e9831ec0nBz2tu6EltV.html) [official](https://www.zhipin.com/job_detail/30e7f2721be484ee0nJ_29m5E1RQ.html) [official](https://www.zhipin.com/job_detail/01777e7919a47cc50nN93ti8FVdV.html) [official](https://www.zhipin.com/job_detail/4c663840a238c58c0nF42dm6EVVX.html) [official](https://www.zhipin.com/job_detail/23221a61101950ac0nF_3tW9F1tT.html) [official](https://www.zhipin.com/job_detail/3447f9fc54a2eab00nN93t20F1tU.html) [official](https://www.zhipin.com/job_detail/310e943254fbc5aa0nZ70969F1NT.html) [official](https://www.zhipin.com/job_detail/4e4ac7f7a06b59880nJ42969EFZW.html) [official](https://www.zhipin.com/job_detail/1e132c1cc913fc890nN509i8FVZY.html) [official](https://www.zhipin.com/job_detail/57ec52f5f46278500nF82dS5EFJZ.html) [official](https://www.zhipin.com/job_detail/2ea79df2f8a6df740nV63N6-FFtR.html) [official](https://www.zhipin.com/job_detail/02b26e3cf159f0090nJ_2NW0EVNT.html) [official](https://www.zhipin.com/job_detail/59ef9cd9d7ed3b0e0nBz2tq8EFpY.html) [official](https://www.zhipin.com/job_detail/2f5b01ce47d9cb150nN829u5GFNY.html) [official](https://www.zhipin.com/job_detail/031fbf2d63c3dccf0nR92Nq9EVRR.html) [official](https://www.zhipin.com/job_detail/042d7c3c9eb8734f0nJ83N-9F1VW.html) [official](https://www.zhipin.com/job_detail/33974e7c2510a63b0nF40t29EVVX.html) [official](https://www.zhipin.com/job_detail/4aeb58d6b00227b50nFy2tq9EVZY.html) [official](https://www.zhipin.com/job_detail/5a572d0e15ef881a0nN509m7F1JU.html) [official](https://www.zhipin.com/job_detail/3348cea40a914aa40nJz2Ny0F1JY.html) [official](https://www.zhipin.com/job_detail/1f827ecf2de20a9b0nN939y0EVBQ.html) [official](https://www.zhipin.com/job_detail/0e1c18811d2f90870nN_39-8E1dR.html) [official](https://www.zhipin.com/job_detail/5ad015cc874591690nN50tS0E1RR.html) |
+| 2026-09-30 | day | 官方表态 | 自变量展示 TwinDEX 无本体数据长程操作演示 | single | [media](https://www.leiphone.com/category/robot/S9YPlbN9tONrBqrI.html) |
+| 2026-09-20 | day | 论文、开源发布 | 自变量 X2Real 仿真资产包完成第 107 个分片上传 | single | [official](https://huggingface.co/api/datasets/x-square-robot/x2real-assets) [official](https://huggingface.co/datasets/x-square-robot/x2real-assets/raw/main/README.md) [official](https://huggingface.co/api/datasets/x-square-robot/x2real-assets/commits/main) |
+| 2026-09-16 | day | 论文、开源发布 | 自变量机器人发布模型 X-Planner-9B-0916 | single | [official](https://huggingface.co/x-square-robot/X-Planner-9B-0916) |
+| 2026-09-16 | day | 数据集发布 | 自变量机器人发布数据集 xplanner-benchmark | single | [official](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark) |
+| 2026-09-10 | day | 论文、开源发布 | 自变量机器人发布模型 X2Streaming-TTS-1.7B | single | [official](https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B) |
+| 2026-08-03 | day | 落地部署、客户签约 | 万机易租披露平台可调度合作机器人超 5000 台，接入优必选、越疆、自变量、魔法原子等厂商 | single | [media](https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/) |
+| 2026-06 | month | 融资、并购 | 自变量机器人连续完成 B+、B++ 和 C 轮融资，投中网称估值超 200 亿元 | single | [media](https://www.chinaventure.com.cn/news/80-20260629-392068.html) |
+| 2026-05-21 | day | 落地部署、客户签约 | 奥比中光称 2026 年一季度人形机器人相关订单环比翻倍，全球机器人客户超 1000 家 | single | [official](http://www.orbbec.com.cn/index/News/info.html?cate=31&id=368) |
+| 2026-04 | month | 融资、并购 | 自变量机器人完成近 20 亿元 B 轮融资，小米战投、红杉中国领投 | single | [media](https://www.36kr.com/p/3774502008963841) |
+| 2026-02 | month | 融资、并购 | 自变量机器人完成数亿元新一轮融资，上汽金控、中金上汽基金领投 | single | [media](https://news.qq.com/rain/a/20260226A0399000) |
+| 2026-01-12 | day | 融资、并购 | 自变量机器人完成 10 亿元 A++ 轮融资，字节跳动、红杉中国等参与 | single | [media](https://fgw.sz.gov.cn/ztzl/qtztzl/szscjmyjjfzzhfwpt/mqfc/myqyfzdt/content/post_12613417.html) |
+| 2025-11-21 | day | 产品发布、版本迭代 | 地瓜机器人在 DDC2025 开发者大会揭晓具身智能大算力开发平台 S600 | single | [media](https://www.stdaily.com/web/gdxw/2025-11/21/content_435861.html) |
+| 2025-09-08 | day | 产品发布、版本迭代 | 自变量机器人发布并开源端到端具身基础模型 WALL-OSS | single | [media](https://www.qbitai.com/2025/09/329142.html) |
+| 2025-09-08 | day | 融资、并购 | 自变量机器人宣布完成近 10 亿元 A+ 轮融资，阿里云、国科投资领投 | single | [media](https://www.stcn.com/article/detail/3326996.html) |
+| 2025-08-08 | day | 产品发布、版本迭代 | 自变量机器人在 2025 世界机器人大会首发轮式双臂仿人形机器人量子 2 号 | single | [media](https://stcn.com/article/detail/3020500.html) |
+| 2025-05-12 | day | 融资、并购 | 自变量机器人宣布完成 Pre-A+++ 轮与 A 轮两轮融资 | single | [media](https://www.tmtpost.com/7562506.html) |
+| 2025-02-18 | day | 融资、并购 | 自变量机器人完成 Pre-A++ 轮融资 | single | [media](https://stock.caijing.com.cn/20250218/5071099.shtml) |
+| 2024-11 | month | 产品发布、版本迭代 | 自变量机器人对外披露 Great Wall 系列端到端统一具身大模型 WALL-A | single | [media](https://news.qq.com/rain/a/20241107A07Z7400) |
+| 2024-11-15 | day | 合作、生态、联盟 | 华为（深圳）全球具身智能产业创新中心启动运营，与 16 家企业签署合作备忘录 | single | [media](https://caifuhao.eastmoney.com/news/20241115170249743115900) |
+| 2024-11-04 | day | 融资、并购 | 自变量机器人连续完成 Pre-A 与 Pre-A+ 两轮融资 | single | [aggregator](https://news.pedaily.cn/202411/542429.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 小米机器人
+
+**Xiaomi Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | 2022 |
+| 总部 | CN北京 |
+| 事件数 | 5 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 目标场景 | 工业制造 | 2026-03-02 | `evt-2026-03-02-xiaomi-robotics-deployment-factory-internship` |
+| 本体形态 | 双足人形 | 2026-08-19 | `evt-2026-08-19-xiaomi-robotics-product_launch-new-humanoid-wrc` |
+| 模型形态 | 分层 | 2026-08-19 | `evt-2026-08-19-xiaomi-robotics-product_launch-new-humanoid-wrc` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-27 | day | 官方表态 | 小米触觉灵巧手研究披露 | single | [media](https://www.ithome.com/1/018/345.htm) |
+| 2026-08-19 | day | 产品发布、版本迭代 | 小米新一代人形机器人在 2026 世界机器人大会首次亮相 | single | [media](https://www.jiemian.com/article/14953257.html) |
+| 2026-07-16 | day | 产品发布、版本迭代 | 小米推出具身基座模型 Xiaomi-Robotics-1 | single | [media](https://hk.finance.yahoo.com/news/%E5%B0%8F%E7%B1%B3-01810-%E4%BB%8A%E6%97%A5%E6%8E%A8%E5%87%BA%E5%85%B7%E8%BA%AB%E5%9F%BA%E5%BA%A7%E6%A8%A1%E5%9E%8B-xiaomi-robotics-080300497.html) |
+| 2026-03-02 | day | 落地部署、客户签约 | 小米人形机器人进入汽车工厂「实习」 | single | [media](https://www.21jingji.com/article/20260302/herald/08affb6ec0392e8076bc491ca9056af1.html) |
+| 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 星忆智能
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-22 | day | 融资、并购 | 星忆智能种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610223904339375.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 芯际无限
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 融资、并购 | 芯际无限Pre-A | single | [media](https://finance.eastmoney.com/a/202610203901463528.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 小鹏机器人
+
+**XPeng Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2020 |
+| 总部 | CN广州 |
+| 事件数 | 7 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-11-06 | `evt-2024-11-06-xpeng-robotics-product_launch-iron` |
+| 本体策略 | 自研整机 | 2024-11-06 | `evt-2024-11-06-xpeng-robotics-product_launch-iron` |
+| 目标场景 | 工业制造 | 2024-11-06 | `evt-2024-11-06-xpeng-robotics-product_launch-iron` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 论文、开源发布 | 小鹏Capek 0.5权重 | single | [official](https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B) |
+| 2026-10-28 | day | 官方表态 | 小鹏IRON固态电池小批量生产披露 | single | [media](https://www.ithome.com/1/018/884.htm) |
+| 2026-09-08 | day | 成立、改名、注册变更、关停 | 小鹏机器人生产线启用，首台 IRON 自主走下产线 | single | [media](https://robot.ofweek.com/2026-09/ART-898890-8110-30702459.html) |
+| 2026-08-24 | day | 融资、并购 | 小鹏机器人业务首轮融资超 9 亿美元 | single | [official](https://www.xiaopeng.com/news/company_news/5585.html) |
+| 2026-06-10 | day | 关键人事 | 何小鹏兼任小鹏机器人业务 CEO | single | [media](https://www.yicai.com/news/103223315.html) |
+| 2026-02-25 | day | 成立、改名、注册变更、关停 | 小鹏布局人形机器人全链条量产基地 | single | [official](https://www.xiaopeng.com/news/company_news/5537.html) |
+| 2024-11-06 | day | 产品发布、版本迭代 | 小鹏在 AI 科技日发布 AI 机器人 Iron | single | [official](https://www.xiaopeng.com/news/company_news/5409.html) |

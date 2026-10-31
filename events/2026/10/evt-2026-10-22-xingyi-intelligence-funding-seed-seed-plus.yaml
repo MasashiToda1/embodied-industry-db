@@ -1,0 +1,25 @@
+id: evt-2026-10-22-xingyi-intelligence-funding-seed-seed-plus
+date: '2026-10-22'
+date_precision: day
+type: funding
+orgs:
+- id: xingyi-intelligence
+  role: subject
+title:
+  zh: 星忆智能种子/种子+轮
+summary:
+  zh: 星忆智能披露种子与种子+轮累计数千万元融资，相关投资方包括顺禧、凌云光、中关村及一创等。两轮总额合并披露，未分别公开单轮金额，不重复累计。
+evidence:
+- url: https://finance.eastmoney.com/a/202610223904339375.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/1fe31328d18c5a18.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-22披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 顺禧
+- 凌云光
+- 中关村
+- 一创
