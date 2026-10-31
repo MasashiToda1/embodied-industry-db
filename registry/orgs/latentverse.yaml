@@ -1,0 +1,17 @@
+id: latentverse
+names:
+  zh: 潜界科技
+  en: LatentVerse
+  aliases:
+  - 北京潜界科技有限公司
+status: active
+layers:
+- foundation
+description: 研发面向通用机器人的具身基座模型；融资及研发方向披露不作为产品已经发布的证明。
+sources:
+- url: https://m.bjnews.com.cn/detail/1786420754129093.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/72857a98118b004a.json
+  note: 网页阅读核验摘要存档；原始HTML下载失败，未冒充原始页面。

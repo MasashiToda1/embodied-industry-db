@@ -1,0 +1,22 @@
+id: evt-2026-08-17-linkerbot-partnership-kaichuang-fund-framework
+date: '2026-08-17'
+date_precision: day
+type: partnership
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手与开创电气签署产业基金合作框架
+summary:
+  zh: 开创电气公告与灵心巧手等签署合作框架，拟设规模1亿元的产业基金并推进机器人关节项目，灵心巧手拟出资1000万元。具体项目尚未正式签约，本条不记为已完成融资、基金成立或产线投产。
+evidence:
+- url: https://static.cninfo.com.cn/finalpage/2026-08-17/1225478013.PDF
+  publisher: 浙江开创电气股份有限公司（巨潮资讯）
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/e59c7cd38a297a3f.pdf
+corroboration: single
+date_basis: derived
+date_as_stated: 上市公司2026年8月17日公告披露框架协议；按公告日记录，未推定资金实际到账。
+counterparties:
+- 浙江开创电气股份有限公司

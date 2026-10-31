@@ -1,0 +1,13 @@
+id: kaiwang-data
+names:
+  zh: 恺望数据
+status: active
+layers:
+- data
+description: 提供面向机器人训练的数据采集与数据服务；收录范围限具身数据业务，不扩展自动驾驶业务。
+sources:
+- url: https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml
+  publisher: finance.sina.com.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/9a551c9bb13e65b3.html
