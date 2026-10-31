@@ -1,0 +1,38 @@
+id: evt-2026-10-13-einsia-ai-publication-embodiedevo
+date: '2026-10-13'
+date_precision: day
+type: publication
+orgs:
+- id: einsia-ai
+  role: subject
+title:
+  zh: Einsia AI / EmbodiedEvo
+summary:
+  zh: Einsia AI发布EmbodiedEvo论文，研究冻结基础模型通过技能与经验记忆在机器人仿真任务中迭代学习。官方项目与代码仓库可见；记录学习框架与论文实验，不将其描述为基础模型权重训练或实机部署。
+evidence:
+- url: https://arxiv.org/abs/2610.18867v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f08d222effdf182f.html
+- url: https://einsia.ai/about/
+  publisher: einsia.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/77345567175f00e4.html
+- url: https://einsia.ai/privacy/
+  publisher: einsia.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/7e8694175ade2560.html
+- url: https://github.com/Einsia/EmbodiedEvo
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/c25d1a22dbbd1a33.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-13论文v1；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  sim_stack:
+  - isaac-sim

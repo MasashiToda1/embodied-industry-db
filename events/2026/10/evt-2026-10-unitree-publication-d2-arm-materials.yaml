@@ -1,0 +1,20 @@
+id: evt-2026-10-unitree-publication-d2-arm-materials
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: unitree
+  role: subject
+title:
+  zh: 宇树D2-Arm SDK/模型交付包
+summary:
+  zh: 宇树公开D2-Arm软件资料仓库，提供SDK安装包、URDF及ArmEcho镜像相关文档。记录软件和模型资料公开，不能由delivery materials措辞推定硬件已商业交付。
+evidence:
+- url: https://github.com/unitreerobotics/D2-Arm
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/852fcd607d56c6db.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10，仓库创建10-29；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

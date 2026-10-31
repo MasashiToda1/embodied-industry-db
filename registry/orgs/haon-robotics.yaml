@@ -1,0 +1,20 @@
+id: haon-robotics
+names:
+  zh: 豪恩机器人
+  aliases:
+  - 深圳市豪恩机器人感知技术有限公司
+status: active
+layers:
+- components
+description: 豪恩汽电旗下机器人感知业务主体，研发视觉、超声波等机器人感知产品；不收汽车电子业务。
+sources:
+- url: https://www.cls.cn/detail/2505189
+  publisher: www.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/cfd15ef16f21e092.html
+- url: https://caifuhao.eastmoney.com/news/20261015090605286784990
+  publisher: caifuhao.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/b15de896104bc78a.html

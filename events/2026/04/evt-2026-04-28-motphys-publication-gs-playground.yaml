@@ -1,0 +1,30 @@
+id: evt-2026-04-28-motphys-publication-gs-playground
+date: '2026-04-28'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+- id: dexforce
+  role: counterparty
+- id: qiuzhi-tech
+  role: counterparty
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 莫特菲斯等：GS-Playground
+summary:
+  zh: GS-Playground论文研究将物理仿真与批量3D Gaussian Splatting渲染结合，用于视觉机器人学习和Real2Sim场景重建。产业作者单位包括莫特菲斯、跨维、求之科技DISCOVER
+    Robotics与地瓜；性能是论文实验结果，不作实际生产部署指标。
+evidence:
+- url: https://arxiv.org/abs/2604.25459v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/f50e48282e9c1afc.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-04-28；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  sim_stack:
+  - in-house

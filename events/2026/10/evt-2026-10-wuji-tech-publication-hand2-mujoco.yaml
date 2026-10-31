@@ -1,0 +1,23 @@
+id: evt-2026-10-wuji-tech-publication-hand2-mujoco
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌wuji-mujoco
+summary:
+  zh: 舞肌公开Hand2的MuJoCo仿真示例，加载左右手MJCF模型并回放预录运动轨迹。该仓库为模型加载与控制演示，不称完整强化学习平台。
+evidence:
+- url: https://github.com/wuji-technology/wuji-mujoco
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/e924a602b2b07e70.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10，仓库创建10-19；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  sim_stack:
+  - mujoco

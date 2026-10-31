@@ -1,0 +1,19 @@
+id: meihui-interactive
+names:
+  zh: 每回互动
+status: active
+layers:
+- data
+- operation
+description: 参与杭州具身数据采集基地建设与运营，收录机器人数据采集相关业务。
+sources:
+- url: https://ori.hangzhou.com.cn/ornews/content/2026-10/29/content_9359859.htm
+  publisher: ori.hangzhou.com.cn
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/97973cc88b174558.html
+- url: https://www.hesaitech.com/cn/news/1511
+  publisher: www.hesaitech.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/8cd1cc9ed76a6bc9.html

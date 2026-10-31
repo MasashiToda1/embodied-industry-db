@@ -1,0 +1,25 @@
+id: evt-2026-10-30-botyard-statement-s1-control-capabilities
+date: '2026-10-30'
+date_precision: day
+type: statement
+orgs:
+- id: botyard
+  role: subject
+title:
+  zh: 伯牙Botyard灵巧手及运控技术披露
+summary:
+  zh: 伯牙智能在采访中介绍高山S1灵巧手的混合驱动方案及配套动作控制研发。官网区分22个关节与18个主动自由度；公司说明开发30多种动作供上层模型调用。记录技术披露，不将采访日当产品首次上市日。
+evidence:
+- url: https://botyard.ai/product
+  publisher: botyard.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/b00e8c335105b461.html
+- url: https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/78b4a72bc2a6179d.json
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-30采访；产品页V0.1为9月；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

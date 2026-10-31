@@ -1,0 +1,20 @@
+id: evt-2026-10-24-horizon-robotics-publication-holomotion-2
+date: '2026-10-24'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线HoloMotion 2.0
+summary:
+  zh: 地平线发布HoloMotion 2.0，提供稀疏关键点动作控制相关的训练、仿真和G1部署代码及模型资源。发布说明涉及Pelvis1与Keypoint5等输入模式，不将实验支持范围推定为所有本体通用。
+evidence:
+- url: https://github.com/HorizonRobotics/HoloMotion/releases/tag/v2.0.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/90fd5a3c90ea4714.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-24；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

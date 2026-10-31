@@ -1,0 +1,22 @@
+id: evt-2026-10-wenqing-control-funding-agibot-investment
+date: 2026-10
+date_precision: month
+type: funding
+orgs:
+- id: wenqing-control
+  role: subject
+- id: agibot
+  role: investor
+title:
+  zh: 温擎智控获智元投资
+summary:
+  zh: 媒体披露智元投资温擎智控，后者提供机器人系统级液冷方案，连接关节、控制器和电池等热源。交易金额与精确完成日未公开，按10月披露记录。
+evidence:
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

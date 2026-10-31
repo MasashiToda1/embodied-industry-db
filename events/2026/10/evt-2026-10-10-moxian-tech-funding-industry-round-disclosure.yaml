@@ -1,0 +1,29 @@
+id: evt-2026-10-10-moxian-tech-funding-industry-round-disclosure
+date: '2026-10-10'
+date_precision: day
+type: funding
+orgs:
+- id: moxian-tech
+  role: subject
+- id: x-square-robot
+  role: investor
+title:
+  zh: 墨现科技产业轮融资
+summary:
+  zh: 墨现科技披露完成数千万元产业轮融资，自变量机器人与松山湖产投等参与。公司聚焦柔性触觉感知部件；未披露精确金额。
+evidence:
+- url: https://news.qq.com/rain/a/20261011A09UNN00
+  publisher: news.qq.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/f0d95daefef6c721.html
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 松山湖产投

@@ -1,0 +1,23 @@
+id: evt-2026-10-24-horizon-robotics-publication-holoboxing
+date: '2026-10-24'
+date_precision: day
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线HoloBoxing
+summary:
+  zh: 地平线公开HoloBoxing，结合高层拳击规划与冻结的HoloMotion低层控制，并提供模仿学习、强化学习自博弈及本地仿真运行资源。发布内容是技术框架，不代表比赛获奖或客户交付。
+evidence:
+- url: https://github.com/HorizonRobotics/HoloMotion/releases/tag/holoboxing
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/919d90eab98b5c28.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-24；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  control_route:
+  - rl

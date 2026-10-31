@@ -1,0 +1,26 @@
+id: evt-2026-10-wuji-tech-publication-hand2-isaaclab
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: wuji-tech
+  role: subject
+title:
+  zh: 舞肌wuji-isaaclab
+summary:
+  zh: 舞肌公开Wuji Hand2掌内方块重定向训练环境，以Isaac Lab及Isaac Sim为基础使用PPO训练，并提供导出和对接实机部署的说明。记录工具链公开，接口说明不替代实机验收。
+evidence:
+- url: https://github.com/wuji-technology/wuji-isaaclab
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/d7111d91cfc72f03.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10，仓库创建10-19；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  sim_stack:
+  - isaac-sim
+  - isaac-lab
+  control_route:
+  - rl

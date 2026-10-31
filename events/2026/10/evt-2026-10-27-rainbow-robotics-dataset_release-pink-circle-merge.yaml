@@ -1,0 +1,20 @@
+id: evt-2026-10-27-rainbow-robotics-dataset_release-pink-circle-merge
+date: '2026-10-27'
+date_precision: day
+type: dataset_release
+orgs:
+- id: rainbow-robotics
+  role: subject
+title:
+  zh: Rainbow pink_circle_merge
+summary:
+  zh: 彩虹机器人官方账号公开pink_circle_merge数据集，元数据标识为RBY1左臂LeRobot数据，包含46个episode与26201帧，30fps及单路图像。记录文件可见范围，不从仓库名称推定具体操作任务，也不与未核关系的加工版本加总。
+evidence:
+- url: https://huggingface.co/datasets/rainbowrobotics/pink_circle_merge
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/a119d9e2bf2082cb.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-27；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

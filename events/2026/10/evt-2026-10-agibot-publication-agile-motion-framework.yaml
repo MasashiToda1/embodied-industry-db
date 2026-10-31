@@ -1,0 +1,20 @@
+id: evt-2026-10-agibot-publication-agile-motion-framework
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元AGILE运控框架
+summary:
+  zh: 智元介绍AGILE运动控制训练框架及相关仿真训练方案。记录框架宣布，未逐项确认的代码开放状态不填为全面开源。
+evidence:
+- url: https://www.agibot.com.cn/article/315/detail/261.html
+  publisher: www.agibot.com.cn
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/9ab4a3fe4214a52d.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10（发布会月底，官网10-30）；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

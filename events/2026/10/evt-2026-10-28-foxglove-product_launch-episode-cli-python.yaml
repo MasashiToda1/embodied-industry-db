@@ -1,0 +1,25 @@
+id: evt-2026-10-28-foxglove-product_launch-episode-cli-python
+date: '2026-10-28'
+date_precision: day
+type: product_launch
+orgs:
+- id: foxglove
+  role: subject
+title:
+  zh: Foxglove CLI 2.1与Python 0.22
+summary:
+  zh: Foxglove发布CLI 2.1及Python 0.22，增加episode属性相关能力；CLI提供episode编辑、版本历史及批量操作，Python支持自定义属性。两个客户端能力分别按版本说明记录，不将所有CLI能力归给Python。
+evidence:
+- url: https://github.com/foxglove/foxglove-cli/releases/tag/v2.1.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/32e23fb8fbe78be4.html
+- url: https://github.com/foxglove/foxglove-python/releases/tag/releases/v0.22.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/ed2be3748cfc0db8.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

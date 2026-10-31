@@ -1,0 +1,25 @@
+id: evt-2026-10-24-dexforce-dataset_release-embodichain-newton-data
+date: '2026-10-24'
+date_precision: day
+type: dataset_release
+orgs:
+- id: dexforce
+  role: subject
+title:
+  zh: 跨维 EmbodiChain 仿真数据集
+summary:
+  zh: 跨维在DexForceAI账号公开EmbodiChain仿真数据，包含NeRD Cartpole与Ant的Newton参考数据及清单、校验信息。每个训练集标为1024000条转换，现有下载数据与论文实验总规模区分；文件许可按各自说明适用。
+evidence:
+- url: https://huggingface.co/datasets/DexForceAI/embodichain_datasets
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/b03ab4d4b94efdb5.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-24；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  data_acquisition:
+  - sim-generated
+  sim_stack:
+  - in-house

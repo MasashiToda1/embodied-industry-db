@@ -1,0 +1,27 @@
+id: ropedia
+names:
+  zh: Ropedia
+status: active
+layers:
+- data
+- foundation
+description: 面向机器人学习建设多模态经验数据及世界动作模型，公开Ropedia W0研究与资源。
+sources:
+- url: https://arxiv.org/abs/2610.26855
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/9a7fdd3c6dd57014.html
+- url: https://github.com/Ropedia/ropedia-w0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/b4a01d99a70d3a7d.html
+- url: https://ropedia.com
+  publisher: ropedia.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/47e28a6efc9a502b.html
+accounts:
+  site: https://ropedia.com
+  github: Ropedia

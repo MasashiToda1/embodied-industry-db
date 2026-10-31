@@ -1,0 +1,20 @@
+id: evt-2026-10-agibot-product_launch-mego-glove-air-ultra
+date: 2026-10
+date_precision: month
+type: product_launch
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元MEgo Glove Air/Ultra
+summary:
+  zh: 智元发布MEgo Glove Air与Ultra采集手套，介绍姿态、力及触觉采集能力。产品系列与OmniGlove SDK代码发布分开记录，不推定全部规格一致。
+evidence:
+- url: https://www.agibot.com.cn/article/315/detail/261.html
+  publisher: www.agibot.com.cn
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/9ab4a3fe4214a52d.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10（发布会月底，官网10-30）；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

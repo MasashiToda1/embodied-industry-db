@@ -1,0 +1,25 @@
+id: evt-2026-05-08-agibot-publication-lwd-offline-online-rl
+date: '2026-05-08'
+date_precision: day
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元与上海创智学院LWD
+summary:
+  zh: 上海创智学院官网披露与智元共同研究的LWD框架，使用Actor–Learner异步架构连接离线强化学习预训练、真机交互和在线后训练。机器人自主轨迹与人工接管数据共同用于训练，记录研究披露而非完全无人运行。
+evidence:
+- url: https://www.sii.edu.cn/2026/0506/c27a959/page.htm
+  publisher: www.sii.edu.cn
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/85a832603d237781.json
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-05-08官网披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 上海创智学院
+axes:
+  control_route:
+  - rl

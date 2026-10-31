@@ -1,0 +1,20 @@
+id: evt-2026-10-horizon-robotics-publication-uniurdf
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: horizon-robotics
+  role: subject
+title:
+  zh: 地平线UniURDF
+summary:
+  zh: 地平线公开UniURDF工具，以配置方式处理URDF坐标、TCP对齐、模型裁剪及正向运动学校验。记录10月公开仓库观察，不把发现日当作全部功能首次完成日。
+evidence:
+- url: https://github.com/HorizonRobotics/UniURDF
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/88ff3591f975f554.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10，仓库创建10-14；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

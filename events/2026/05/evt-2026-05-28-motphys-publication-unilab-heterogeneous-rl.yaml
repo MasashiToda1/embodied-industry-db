@@ -1,0 +1,37 @@
+id: evt-2026-05-28-motphys-publication-unilab-heterogeneous-rl
+date: '2026-05-28'
+date_precision: day
+type: publication
+orgs:
+- id: motphys
+  role: subject
+- id: qiuzhi-tech
+  role: counterparty
+- id: dexforce
+  role: counterparty
+- id: galbot
+  role: counterparty
+- id: sharpa
+  role: counterparty
+- id: d-robotics
+  role: counterparty
+title:
+  zh: 莫特菲斯等：UniLab原始论文
+summary:
+  zh: UniLab论文提出CPU仿真与GPU学习解耦的异构机器人强化学习架构，使用MuJoCoUni和MotrixSim后端。论文单位包含莫特菲斯、求之科技DISCOVER
+    Robotics、跨维、银河通用、Sharpa及地瓜等；本条记录原始研究，区别于后续软件版本。
+evidence:
+- url: https://arxiv.org/abs/2605.30313v1
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/b48fb78927e8700f.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-05-28；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  sim_stack:
+  - mujoco
+  - in-house
+  control_route:
+  - rl

@@ -1,0 +1,18 @@
+id: eta-dynamics
+names:
+  zh: 伊塔动力
+status: active
+layers:
+- components
+description: 研发机器人高性能关节模组与柔顺力控双臂操作平台。
+sources:
+- url: https://finance.eastmoney.com/a/202610203901631216.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/d1d8b00b247744f1.html
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html

@@ -1,0 +1,25 @@
+id: evt-2026-10-agibot-publication-omniglove-sdk
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: agibot
+  role: subject
+title:
+  zh: 智元OmniGlove SDK
+summary:
+  zh: 智元公开OmniGlove SDK，提供头文件、平台库和接口文档，用于手套姿态、触觉及机器人系统集成。源码接口与预编译库按实际文件区分；同一SDK新仓与首次版本合为一件事。
+evidence:
+- url: https://github.com/AgibotTech/agilink_omniglove_sdk
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/55ac96a6079b2882.html
+- url: https://github.com/AgibotTech/agilink_omniglove_sdk/releases/tag/v1.0.0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/ddd0874dc449e497.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

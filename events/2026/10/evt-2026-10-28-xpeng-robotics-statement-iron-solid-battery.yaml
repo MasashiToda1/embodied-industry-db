@@ -1,0 +1,20 @@
+id: evt-2026-10-28-xpeng-robotics-statement-iron-solid-battery
+date: '2026-10-28'
+date_precision: day
+type: statement
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏IRON固态电池小批量生产披露
+summary:
+  zh: 小鹏披露用于IRON机器人的固态电池已进入小批量生产阶段。记录对象是电池部件，不扩展成IRON整机量产或客户交付。
+evidence:
+- url: https://www.ithome.com/1/018/884.htm
+  publisher: www.ithome.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/46f187826d841322.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-28；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

@@ -1,0 +1,20 @@
+id: evt-2026-10-huixi-tech-funding-preb-b-combined
+date: 2026-10
+date_precision: month
+type: funding
+orgs:
+- id: huixi-tech
+  role: subject
+title:
+  zh: 辉羲Pre-B及B轮合计17亿元
+summary:
+  zh: 辉羲披露完成Pre-B及B轮合计17亿元融资。本条按两轮合计披露记录，不将全年累计融资额替代本次金额，也不把合计金额拆写为各轮金额。收录范围限机器人计算业务关联。
+evidence:
+- url: https://stock.stockstar.com/IG2026102600030047.shtml
+  publisher: stock.stockstar.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/68fa2ffa78c32457.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

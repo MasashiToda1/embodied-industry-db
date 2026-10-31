@@ -1,0 +1,33 @@
+id: evt-2026-10-19-ropedia-publication-w0
+date: '2026-10-19'
+date_precision: day
+type: publication
+orgs:
+- id: ropedia
+  role: subject
+title:
+  zh: Ropedia W0
+summary:
+  zh: Ropedia发布W0论文和机器人世界动作模型资源，5B实现及权重可见，14B资源仍属计划。训练经验为多来源混合数据，不全部计为自采；代码、权重与数据分别适用各自许可。
+evidence:
+- url: https://arxiv.org/abs/2610.26855
+  publisher: arxiv.org
+  tier: primary
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/9a7fdd3c6dd57014.html
+- url: https://github.com/Ropedia/ropedia-w0
+  publisher: github.com
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/b4a01d99a70d3a7d.html
+- url: https://ropedia.com
+  publisher: ropedia.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/47e28a6efc9a502b.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10-19论文v1；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+axes:
+  model_form:
+  - world-model

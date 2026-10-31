@@ -1,0 +1,13 @@
+id: wenqing-control
+names:
+  zh: 温擎智控
+status: active
+layers:
+- components
+description: 面向机器人关节、控制器与电池等热源提供系统级液冷方案。
+sources:
+- url: https://www.forbeschina.com/business/72275
+  publisher: www.forbeschina.com
+  tier: media
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/71bafa1d7119527a.html

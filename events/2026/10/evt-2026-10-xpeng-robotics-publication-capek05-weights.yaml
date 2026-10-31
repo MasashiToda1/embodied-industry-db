@@ -1,0 +1,20 @@
+id: evt-2026-10-xpeng-robotics-publication-capek05-weights
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: xpeng-robotics
+  role: subject
+title:
+  zh: 小鹏Capek 0.5权重
+summary:
+  zh: 小鹏机器人公开Capek0.5-35B-A3B模型权重与说明，总参数约35B、激活约3B，用于具身状态理解与动作指导。该模型为视觉语言模型，不直接等同输出机器人控制动作的策略；本条区分10月权重公开与8月论文。
+evidence:
+- url: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
+  publisher: huggingface.co
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/d99978810c69a80c.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10公开权重；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

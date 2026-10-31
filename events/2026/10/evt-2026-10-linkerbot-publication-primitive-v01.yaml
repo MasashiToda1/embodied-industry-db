@@ -1,0 +1,20 @@
+id: evt-2026-10-linkerbot-publication-primitive-v01
+date: 2026-10
+date_precision: month
+type: publication
+orgs:
+- id: linkerbot
+  role: subject
+title:
+  zh: 灵心巧手Primitive v0.1
+summary:
+  zh: 灵心巧手公开Primitive v0.1动作原语工具，面向机器人手势与动作调用。记录此版本发布，后续版本新增特性不回填为v0.1功能。
+evidence:
+- url: https://github.com/linker-bot/primitive/releases/tag/release_v0.1
+  publisher: github.com
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/00200bcafe009bc6.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

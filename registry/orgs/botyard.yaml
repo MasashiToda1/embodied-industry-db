@@ -1,0 +1,22 @@
+id: botyard
+names:
+  zh: 伯牙智能
+  en: Botyard
+status: active
+layers:
+- components
+- locomotion
+description: 研发高山S1灵巧手及配套运控动作能力，官网区分关节数量与主动自由度。
+sources:
+- url: https://botyard.ai/product
+  publisher: botyard.ai
+  tier: official
+  retrieved: '2026-10-31'
+  snapshot: snapshots/2026/11/intake-20261101/b00e8c335105b461.html
+- url: https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html
+  publisher: www.leiphone.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/78b4a72bc2a6179d.json
+accounts:
+  site: https://botyard.ai

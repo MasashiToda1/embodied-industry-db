@@ -1,0 +1,13 @@
+id: xinji-infinity
+names:
+  zh: 芯际无限
+status: active
+layers:
+- components
+description: 研发RISC-V等计算芯片，收录范围限具身机器人计算产品及相关融资，不覆盖通用汽车芯片业务。
+sources:
+- url: https://finance.eastmoney.com/a/202610203901463528.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/682d4281d4f8c411.html

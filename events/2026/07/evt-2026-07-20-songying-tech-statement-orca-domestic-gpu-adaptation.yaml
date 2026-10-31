@@ -1,0 +1,20 @@
+id: evt-2026-07-20-songying-tech-statement-orca-domestic-gpu-adaptation
+date: '2026-07-20'
+date_precision: day
+type: statement
+orgs:
+- id: songying-tech
+  role: subject
+title:
+  zh: 松应 ORCA 国产GPU适配披露
+summary:
+  zh: 风语筑公开资料介绍松应ORCA仿真工具已适配摩尔线程等国产GPU平台。记录合作方公开的适配说明，未披露具体合同签署日，不据此推定全部机器人使用该平台。
+evidence:
+- url: https://caifuhao.eastmoney.com/news/20260720162930855112730
+  publisher: caifuhao.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/52331378a3aee16c.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-07-20披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。

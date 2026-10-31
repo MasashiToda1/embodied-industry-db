@@ -1,0 +1,25 @@
+id: evt-2026-10-mogan-tech-funding-angel-plus
+date: 2026-10
+date_precision: month
+type: funding
+orgs:
+- id: mogan-tech
+  role: subject
+- id: limx
+  role: investor
+title:
+  zh: 模感科技亿元级天使+
+summary:
+  zh: 模感科技披露完成亿元级天使+轮融资，鼎晖、绿洲等领投，逐际动力等参与。记录触觉感知相关融资，亿元级不换算为精确一亿元。
+evidence:
+- url: https://api3.cls.cn/share/article/2515702?app=stib&os=android&sv=247
+  publisher: api3.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/intake-20261101/5eec9c64bcb3491a.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026-10披露；按来源中论文、版本、公告或公开披露的时间定位，未披露的合同交割、实际出货或首次功能上线日不推定。
+counterparties:
+- 鼎晖
+- 绿洲
