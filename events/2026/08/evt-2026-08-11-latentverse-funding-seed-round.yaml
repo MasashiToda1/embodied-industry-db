@@ -1,0 +1,29 @@
+id: evt-2026-08-11-latentverse-funding-seed-round
+date: '2026-08-11'
+date_precision: day
+type: funding
+orgs:
+- id: latentverse
+  role: subject
+- id: agibot
+  role: investor
+- id: roboterax
+  role: investor
+title:
+  zh: 潜界科技宣布数亿元种子轮融资
+summary:
+  zh: 潜界科技宣布近日完成数亿元种子轮融资，投资方包括高瓴创投、清流资本、英诺基金、智元及星动纪元。公司研发具身基座模型，精确金额未披露；研发方向不作已发布产品记录。
+evidence:
+- url: https://m.bjnews.com.cn/detail/1786420754129093.html
+  publisher: 新京报
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/72857a98118b004a.json
+  note: 网页阅读核验摘要存档；原始HTML下载失败，未冒充原始页面。
+corroboration: single
+date_basis: derived
+date_as_stated: 新京报2026年8月11日报道公司当日宣布近日融资，记录宣布日，不推定交割日。
+counterparties:
+- 高瓴创投
+- 清流资本
+- 英诺基金

@@ -1,0 +1,22 @@
+id: evt-2026-09-wujie-power-deployment-k15-france-arrival
+date: 2026-09
+date_precision: month
+type: deployment
+orgs:
+- id: wujie-power
+  role: subject
+title:
+  zh: 无界K15首批抵达远景动力法国工厂
+summary:
+  zh: 无界动力首批K15机器人于9月上旬抵达法国，计划在远景动力法国电池超级工厂启动现场部署。记录到货节点，报道时现场部署尚待启动，不记为产线已运行。
+evidence:
+- url: https://www.stdaily.com/web/gdxw/2026-09/10/content_578172.html
+  publisher: www.stdaily.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/238846499517d280.html
+corroboration: single
+date_basis: derived
+date_as_stated: 科技日报2026年9月10日报道9月上旬抵达，按月份精度记录；区别于7月发货与认证节点。
+counterparties:
+- 远景动力法国电池超级工厂
