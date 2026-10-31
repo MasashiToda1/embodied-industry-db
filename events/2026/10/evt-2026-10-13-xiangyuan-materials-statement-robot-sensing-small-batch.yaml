@@ -1,0 +1,21 @@
+id: evt-2026-10-13-xiangyuan-materials-statement-robot-sensing-small-batch
+date: '2026-10-13'
+date_precision: day
+type: statement
+orgs:
+- id: xiangyuan-materials
+  role: subject
+title:
+  zh: 祥源新材披露机器人压阻材料进入小批量交付
+summary:
+  zh: 祥源新材在互动平台答复中披露，其压阻传感材料已完成人形机器人导入验证，处于小批量交付阶段。客户、交付数量和金额未公开。
+evidence:
+- url: https://egs.stcn.com/news/detail/2349112.html
+  publisher: 人民财讯（证券时报）
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/a3095b968148a44b.json
+  note: 网页阅读核验摘要存档；原始HTML下载失败，未冒充原始页面。
+corroboration: single
+date_basis: derived
+date_as_stated: 人民财讯引用2026年10月13日公司互动平台答复；是状态披露日，不推定首次交付日。
