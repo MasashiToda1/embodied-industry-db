@@ -1,0 +1,22 @@
+id: evt-2026-06-16-galaxea-partnership-cathay-xingtu-plan
+date: '2026-06-16'
+date_precision: day
+type: partnership
+orgs:
+- id: galaxea
+  role: subject
+title:
+  zh: 星海图与凯辉发布星途计划
+summary:
+  zh: 星海图与凯辉基金发布星途计划，提出未来5年投入10亿元推动具身智能生态。记录计划发布，计划金额不填为已完成投资额，也不推定具体项目已获资金。
+evidence:
+- url: https://finance.sina.com.cn/7x24/2026-06-16/doc-inicqnrx4540286.shtml
+  publisher: finance.sina.com.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/0c83a6e95932a776.html
+corroboration: single
+date_basis: derived
+date_as_stated: 2026年6月16日大会现场报道披露计划；计划周期与实际资金投入进度分别看待。
+counterparties:
+- 凯辉基金

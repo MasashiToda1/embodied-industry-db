@@ -1,0 +1,28 @@
+id: evt-2026-10-30-pokebot-product_launch-roboapi-preview
+date: '2026-10-30'
+date_precision: day
+type: product_launch
+orgs:
+- id: pokebot
+  role: subject
+title:
+  zh: 破壳发布RoboAPI技术预览与Poke-Aurora模型技术
+summary:
+  zh: 破壳机器人发布RoboAPI技术预览，由自研世界—动作模型Poke-Aurora根据机器人观测、状态和用户指令输出后续动作。官网提供开发者文档和接入入口，预览期免费且注明非商业化用途；API开放不表示模型权重开源。零样本泛化与评测结果为公司测试口径，未作为独立验证或量产交付。
+axes:
+  model_form:
+  - world-model
+evidence:
+- url: https://pokebot.com/zh-cn/ai
+  publisher: 破壳机器人 PokeBot
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/pokebot/1dcf357bcaff8597.html
+- url: https://developers.pokebot.com/zh/docs/roboapi/latest
+  publisher: 破壳机器人 PokeBot
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/pokebot/2e9c77b3e7f56589.html
+corroboration: single
+date_basis: derived
+date_as_stated: 官方中英文发布页均标注2026年10月30日；开发者文档按11月1日可访问状态核验，不据此推定全部文档功能均在首发日上线。

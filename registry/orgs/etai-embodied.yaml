@@ -1,0 +1,15 @@
+id: etai-embodied
+names:
+  zh: 乙太具身
+  aliases:
+  - 乙太具身科技（北京）有限公司
+status: active
+layers:
+- data
+description: 研发面向具身机器人的数据采集硬件与数据系统；与机器人关节企业伊塔动力为不同主体。
+sources:
+- url: https://finance.eastmoney.com/a/202610203900595017.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/2423cfd8efa8d454.html

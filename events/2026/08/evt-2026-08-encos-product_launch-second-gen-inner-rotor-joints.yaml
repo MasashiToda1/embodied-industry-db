@@ -1,0 +1,21 @@
+id: evt-2026-08-encos-product_launch-second-gen-inner-rotor-joints
+date: 2026-08
+date_precision: month
+type: product_launch
+orgs:
+- id: encos
+  role: subject
+title:
+  zh: 因克斯发布二代内转子关节模组并开放采购
+summary:
+  zh: 因克斯在2026世界机器人大会发布二代内转子关节模组并开放采购，介绍快拆设计。记录产品发布与开放采购，不推定实际销售或交付数量。
+evidence:
+- url: https://invest.nanjing.gov.cn/gzdt/202610/t20261019_6021384.html
+  publisher: 新华日报（南京市投资促进局转载）
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/ed508ff04c2412df.json
+  note: 网页阅读核验摘要存档；原始HTML下载失败，未冒充原始页面。
+corroboration: single
+date_basis: derived
+date_as_stated: 新华日报10月19日报道明确指向2026年8月世界机器人大会，按8月记录。

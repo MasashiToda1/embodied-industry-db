@@ -10,7 +10,7 @@
 | 状态 | 正常经营 |
 | 成立 | 2023-02 |
 | 总部 | CN上海 |
-| 事件数 | 68 |
+| 事件数 | 71 |
 | 收录深度 | complete |
 
 ## 技术与商业栈
@@ -45,6 +45,7 @@
 |---|---|---|---|---|---|
 | 2026-10 | month | 融资、并购 | 芯际无限Pre-A | single | [media](https://finance.eastmoney.com/a/202610203901463528.html) |
 | 2026-10 | month | 融资、并购 | 温擎智控获智元投资 | single | [media](https://www.forbeschina.com/business/72275) |
+| 2026-10 | month | 成立、改名、注册变更、关停 | 乙太具身新增智元与华为哈勃股东 | single | [media](https://finance.eastmoney.com/a/202610203900595017.html) |
 | 2026-10 | month | 官方表态 | 智元累计2万台产量披露 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
 | 2026-10 | month | 官方表态 | 智元G2场景累计部署披露 | single | [official](https://www.agibot.com.cn/article/315/detail/261.html) |
 | 2026-10 | month | 论文、开源发布 | 智元OmniGlove SDK | single | [official](https://github.com/AgibotTech/agilink_omniglove_sdk) [official](https://github.com/AgibotTech/agilink_omniglove_sdk/releases/tag/v1.0.0) |
@@ -74,12 +75,14 @@
 | 2026-09-15 | day | 论文、开源发布 | 原力灵机 DM0.5 在 RoboColiseum 四个子榜单登顶 | single | [media](https://www.leiphone.com/category/ai/jIrGoPOXjx7WNljl.html) |
 | 2026-08-26 | day | 落地部署、客户签约 | 速腾聚创 2026 年上半年机器人激光雷达销量 282600 台，同比增长 510.4%，并首次披露空间相机、触觉、关节模组进展 | single | [media](https://www.163.com/dy/article/L5B3OFHP053990SN.html) |
 | 2026-08-13 | day | 融资、并购 | 意优科技宣布完成超 2 亿元 B 轮融资，三星风险投资等 12 家机构参投 | single | [media](https://www.zhidx.com/p/584691.html) |
+| 2026-08-11 | day | 融资、并购 | 潜界科技宣布数亿元种子轮融资 | single | [media](https://m.bjnews.com.cn/detail/1786420754129093.html) |
 | 2026-07-28 | day | 融资、并购 | 德塔智能完成近 5 亿元天使++ 轮融资 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
 | 2026-07-24 | day | 成立、改名、注册变更、关停 | 智元创新宣布启动赴港上市流程 | single | [media](https://finance.sina.com.cn/wm/2026-07-25/doc-iniiyptt1420151.shtml) |
 | 2026-06-28 | day | 落地部署、客户签约 | 智元机器人第 1.5 万台通用具身机器人（精灵 G2）下线 | single | [media](http://sh.people.com.cn/n2/2026/0629/c138654-41623829.html) |
 | 2026-05-08 | day | 论文、开源发布 | 智元与上海创智学院LWD | single | [official](https://www.sii.edu.cn/2026/0506/c27a959/page.htm) |
 | 2026-05-07 | day | 落地部署、客户签约 | 雷赛智能称 2025 年无框力矩电机交付超 12 万台、获智元机器人「优秀供应商伙伴」，行星 / 谐波关节模组与 21 自由度灵巧手已批量供应数十家机器人客户 | single | [media](https://www.stcn.com/article/detail/3898779.html) |
 | 2026-04-17 | day | 落地部署、客户签约 | 意优科技再获智元机器人「优秀供应商伙伴奖」，为其一体化关节定点供应商 | single | [official](https://eyoubot.com/company-news/eyou-wins-agibot-outstanding-supplier-partner-award-again) |
+| 2026-04-15 | day | 融资、并购 | 德塔披露三轮融资合计超亿元 | single | [media](https://www.cls.cn/detail/2344999) |
 | 2026-03-02 | day | 产品发布、版本迭代 | 智元在 MWC2026 推出海外机器人租赁平台 | single | [official](https://www.agibot.com/article/231/detail/44.html) |
 | 2026-01 | month | 融资、并购 | 智身科技宣布完成连续多轮融资，累计数亿元，智元机器人等参投 | single | [media](https://tech.ifeng.com/c/8wZeUpurplD) |
 | 2026-01-21 | day | 成立、改名、注册变更、关停 | 意优科技机器人关节自动化产线在上海张江投产 | single | [media](https://www.ne-time.cn/web/article/37717) |
@@ -255,6 +258,27 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 爱仕达
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、系统集成与方案交付 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 2 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-13 | day | 官方表态 | 爱仕达展示自主研发ASD-S2人形机器人 | single | [media](https://api3.cls.cn/share/article/2504033?app=&os=CailianpressWeb&sv=866) |
+| 2026-10-13 | day | 成立、改名、注册变更、关停 | 爱仕达具身智能创新中心与生态联盟揭牌 | single | [media](https://api3.cls.cn/share/article/2504033?app=&os=CailianpressWeb&sv=866) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 伯牙智能
 
 **Botyard**
@@ -390,6 +414,43 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 德塔智能
+
+**Delta Intelligence**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型、运控与小脑 |
+| 状态 | 正常经营 |
+| 成立 | 2026-01 |
+| 总部 | CN北京 |
+| 事件数 | 4 |
+| 收录深度 | draft |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 采集方式 | 人类视频 | 2026-07-28 | `evt-2026-07-28-delta-intelligence-product-launch-delta-d1` |
+| 采集方式 | 光学动捕 | 2026-07-28 | `evt-2026-07-28-delta-intelligence-product-launch-delta-d1` |
+| 数据模态 | RGB 图像 | 2026-07-28 | `evt-2026-07-28-delta-intelligence-product-launch-delta-d1` |
+| 数据模态 | 关节轨迹 | 2026-07-28 | `evt-2026-07-28-delta-intelligence-product-launch-delta-d1` |
+| 目标场景 | 工业制造 | 2026-09-18 | `evt-2026-09-18-delta-intelligence-partnership-changan-tianshu` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-09-18 | day | 合作、生态、联盟 | 德塔智能与长安天枢智能机器人签署战略合作备忘录，面向汽车制造场景 | multi | [aggregator](https://www.gkzhan.com/news/detail/195721.html) [media](https://auto.ifeng.com/c/8wWaZoXYSdm) |
+| 2026-07-28 | day | 产品发布、版本迭代 | 德塔智能发布头戴式全身全景数据采集设备 Delta D1 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
+| 2026-07-28 | day | 融资、并购 | 德塔智能完成近 5 亿元天使++ 轮融资 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
+| 2026-04-15 | day | 融资、并购 | 德塔披露三轮融资合计超亿元 | single | [media](https://www.cls.cn/detail/2344999) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 跨维智能
 
 **DexForce**
@@ -471,6 +532,28 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 因克斯
+
+**Encos**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08 | month | 产品发布、版本迭代 | 因克斯发布二代内转子关节模组并开放采购 | single | [media](https://invest.nanjing.gov.cn/gzdt/202610/t20261019_6021384.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 伊塔动力
 
 | 项 | 值 |
@@ -487,6 +570,26 @@
 | 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
 |---|---|---|---|---|---|
 | 2026-10-20 | day | 融资、并购 | 伊塔动力种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610203901631216.html) [media](https://www.forbeschina.com/business/72275) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 乙太具身
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 成立、改名、注册变更、关停 | 乙太具身新增智元与华为哈勃股东 | single | [media](https://finance.eastmoney.com/a/202610203900595017.html) |
 
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
@@ -592,6 +695,78 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 福建人形机器人创新中心
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-23 | day | 融资、并购 | 福建人形机器人创新中心宣布Pre-A+轮融资 | single | [media](https://finance.eastmoney.com/a/202610233906219295.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 星海图
+
+**Galaxea**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | 2023-09 |
+| 总部 | CN北京 |
+| 事件数 | 15 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2026-06-16 | `evt-2026-06-16-galaxea-product_launch-kengo-biped` |
+| 本体形态 | 复合移动操作 | 2025-08-23 | `evt-2025-08-23-galaxea-dataset_release-open-world-dataset` |
+| 本体形态 | 轮式人形 | 2024-10-16 | `evt-2024-10-16-galaxea-product_launch-r1` |
+| 仿真栈 | Isaac Sim | 2024-10-16 | `evt-2024-10-16-galaxea-product_launch-r1` |
+| 仿真栈 | MuJoCo | 2024-10-16 | `evt-2024-10-16-galaxea-product_launch-r1` |
+| 目标场景 | 科教与科研 | 2024-10-16 | `evt-2024-10-16-galaxea-product_launch-r1` |
+| 采集方式 | 遥操示教 | 2025-08-23 | `evt-2025-08-23-galaxea-dataset_release-open-world-dataset` |
+| 采集方式 | 真机自采 | 2025-08-23 | `evt-2025-08-23-galaxea-dataset_release-open-world-dataset` |
+| 开放程度 | 部分开放 | 2025-08-23 | `evt-2025-08-23-galaxea-dataset_release-open-world-dataset` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-18 | day | 落地部署、客户签约 | 禾赛 2026 年二季度机器人激光雷达出货 142371 台，宇树、蚂蚁灵波、银河通用、星海图等下新增订单 | single | [primary](https://investor.hesaitech.com/news-releases/news-release-details/hesai-group-reports-second-quarter-2026-unaudited-financial/) |
+| 2026-07-28 | day | 融资、并购 | 德塔智能完成近 5 亿元天使++ 轮融资 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
+| 2026-07-16 | day | 落地部署、客户签约 | 蚂蚁灵波与国大药房的「机器人智慧药房」在上海门店投入运营，入选 WAIC 2026 镇馆之宝 | single | [media](https://cn.chinadaily.com.cn/a/202607/16/WS6a587c38a310d709c2fbdd76.html) |
+| 2026-06-16 | day | 产品发布、版本迭代 | 星海图在全球开发者大会首秀自研双足人形机器人 Kengo（行客） | single | [media](https://www.stcn.com/article/detail/3965058.html) |
+| 2026-06-16 | day | 合作、生态、联盟 | 星海图与凯辉发布星途计划 | single | [media](https://finance.sina.com.cn/7x24/2026-06-16/doc-inicqnrx4540286.shtml) |
+| 2026-04-15 | day | 融资、并购 | 德塔披露三轮融资合计超亿元 | single | [media](https://www.cls.cn/detail/2344999) |
+| 2026-04-02 | day | 融资、并购 | 星海图完成 20 亿元 B+ 轮融资 | single | [media](https://tech.caijing.com.cn/20260402/5151629.shtml) |
+| 2026-02-11 | day | 融资、并购 | 星海图完成 10 亿元 B 轮融资 | single | [media](https://equalocean.com/news/2026021221744-galaxea-ai-secures-10-billion-rmb-series-b-funding) |
+| 2025-12-18 | day | 融资、并购 | 简智机器人完成第三轮（天使轮）融资，顺为资本领投；成立 4 个月三轮融资总额超 2 亿元 | single | [media](https://www.nbd.com.cn/articles/2025-12-19/4186954.html) |
+| 2025-09-19 | day | 产品发布、版本迭代 | 华为云在全联接大会 2025 展示 CloudRobo 具身智能平台，R2C 协议三项国家标准立项并确立首批 20 家伙伴 | multi | [official](https://www.huaweicloud.com/news/2025/20250919104714436.html) [media](https://www.sh.chinanews.com.cn/chanjing/2025-09-19/140153.shtml) |
+| 2025-08-23 | day | 数据集发布 | 星海图发布真实世界移动操作数据集 Galaxea Open-World Dataset | single | [official](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) |
+| 2025-07-09 | day | 融资、并购 | 星海图完成 A4 轮及 A5 轮战略融资 | single | [media](https://www.caixin.com/2025-07-09/102339623.html) |
+| 2025-04-03 | day | 融资、并购 | 星海图接连完成 A2、A3 轮系列融资 | single | [aggregator](https://news.pedaily.cn/202504/547919.shtml) |
+| 2025-02 | month | 融资、并购 | 星海图完成 A 轮融资，蚂蚁集团独家领投 | single | [media](https://finance.sina.com.cn/jjxw/2025-02-21/doc-inemffqf2913760.shtml) |
+| 2024-10-16 | day | 产品发布、版本迭代 | 星海图发布新一代具身智能本体星海图 R1 | single | [media](https://news.qq.com/rain/a/20241016A04N7300) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 银河通用
 
 **Galbot**
@@ -602,7 +777,7 @@
 | 状态 | 正常经营 |
 | 成立 | 2023 |
 | 总部 | CN北京 |
-| 事件数 | 30 |
+| 事件数 | 31 |
 | 收录深度 | complete |
 
 ## 技术与商业栈
@@ -634,6 +809,7 @@
 
 | 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
 |---|---|---|---|---|---|
+| 2026-10 | month | 成立、改名、注册变更、关停 | 简智新增百度网讯与银河通用股东 | single | [media](https://finance.eastmoney.com/a/202610093891229181.html) |
 | 2026-10-29 | day | 官方表态 | 银河通用药店太空舱运营规模披露 | single | [media](https://m.21jingji.com/article/20261029/herald/4a01bec61c00a3c3c552c92754528039_zaker.html) |
 | 2026-10-20 | day | 融资、并购 | 伊塔动力种子/种子+轮 | single | [media](https://finance.eastmoney.com/a/202610203901631216.html) [media](https://www.forbeschina.com/business/72275) |
 | 2026-10-14 | day | 合作、生态、联盟 | 禾赛 Kosmo 与银河通用签署战略合作 | single | [official](https://www.hesaitech.com/cn/news/1526/) |
@@ -906,6 +1082,32 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 简智机器人
+
+**JZ Robot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给、关键部件 |
+| 状态 | 正常经营 |
+| 成立 | 2025-05 |
+| 总部 | CN北京 |
+| 事件数 | 5 |
+| 收录深度 | draft |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 成立、改名、注册变更、关停 | 简智新增百度网讯与银河通用股东 | single | [media](https://finance.eastmoney.com/a/202610093891229181.html) |
+| 2026-08-26 | day | 融资、并购 | 简智机器人完成 A 轮融资，Momenta 领投，累计融资超 2 亿美元 | single | [media](https://robot.ofweek.com/2026-08/ART-8321201-8140-30700216.html) |
+| 2026-06-01 | day | 融资、并购 | 简智机器人完成连续多轮共数亿元融资，蚂蚁集团、滴滴、德联资本分别领投 | single | [media](https://www.36kr.com/p/3834105574270600) |
+| 2025-12-18 | day | 融资、并购 | 简智机器人完成第三轮（天使轮）融资，顺为资本领投；成立 4 个月三轮融资总额超 2 亿元 | single | [media](https://www.nbd.com.cn/articles/2025-12-19/4186954.html) |
+| 2025-05-29 | day | 成立、改名、注册变更、关停 | 简智新创（北京）机器人科技有限公司成立 | multi | [aggregator](https://vc.pedaily.cn/company/822267.html) [media](https://robot.ofweek.com/2026-08/ART-8321201-8140-30700216.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 巨蟹智能
 
 | 项 | 值 |
@@ -926,6 +1128,26 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 恺望数据
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-04 | day | 融资、并购 | 恺望数据披露逾亿元战略融资 | single | [media](https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 酷灵
 
 | 项 | 值 |
@@ -942,6 +1164,78 @@
 | 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
 |---|---|---|---|---|---|
 | 2026-10-10 | day | 融资、并购 | 酷灵数千万元天使轮 | single | [media](https://finance.eastmoney.com/a/202610103891998570.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 潜界科技
+
+**LatentVerse**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-08-11 | day | 融资、并购 | 潜界科技宣布数亿元种子轮融资 | single | [media](https://m.bjnews.com.cn/detail/1786420754129093.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 乐聚机器人
+
+**Leju**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2016 |
+| 总部 | CN深圳 |
+| 事件数 | 16 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2024-11 | `evt-2024-11-leju-procurement-faw-hongqi-poc` |
+| 目标场景 | 工业制造 | 2024-11 | `evt-2024-11-leju-procurement-faw-hongqi-poc` |
+| 目标场景 | 物流仓储 | 2024-11 | `evt-2024-11-leju-procurement-faw-hongqi-poc` |
+| 交付形态 | 卖整机 | 2025-01-17 | `evt-2025-01-17-leju-deployment-100th-unit-baic` |
+| 运控路线 | 模型预测控制 | 2025-05-17 | `evt-2025-05-17-leju-publication-kuavo-ros-opensource` |
+| 运控路线 | 全身控制 | 2025-05-17 | `evt-2025-05-17-leju-publication-kuavo-ros-opensource` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-07-28 | day | 融资、并购 | 德塔智能完成近 5 亿元天使++ 轮融资 | single | [media](https://www.bjnews.com.cn/detail/1785246449129444.html) |
+| 2026-07-19 | day | 合作、生态、联盟 | 面壁智能与乐聚机器人、吉利汽车推出具身智能落地方案 | single | [media](https://finance.sina.com.cn/stock/t/2026-07-23/doc-iniiusma7781160.shtml) |
+| 2026-07-16 | day | 落地部署、客户签约 | 蚂蚁灵波与国大药房的「机器人智慧药房」在上海门店投入运营，入选 WAIC 2026 镇馆之宝 | single | [media](https://cn.chinadaily.com.cn/a/202607/16/WS6a587c38a310d709c2fbdd76.html) |
+| 2026-05-19 | day | 融资、并购 | 乐聚智能创业板 IPO 申请获深交所受理，拟募资 26 亿元 | single | [media](https://www.thepaper.cn/newsDetail_forward_33200994) |
+| 2026-04-15 | day | 融资、并购 | 德塔披露三轮融资合计超亿元 | single | [media](https://www.cls.cn/detail/2344999) |
+| 2026-01 | month | 融资、并购 | 具脑磐石完成数千万元种子轮融资，乐聚机器人、四川科创投等参与 | single | [media](https://www.wdn.com.cn/jingji/202601/173382.html) |
+| 2025-11-25 | day | 融资、并购 | 灵心巧手完成数亿元 A+ 轮融资，乐聚机器人、奥克斯等参投 | single | [media](https://www.bjnews.com.cn/detail/1764057751169471.html) |
+| 2025-10-30 | day | 成立、改名、注册变更、关停 | 乐聚智能在深圳证监局办理 A 股上市辅导备案，辅导券商为东方证券 | single | [media](https://news.cnr.cn/native/gd/kx/20251103/t20251103_527417303.shtml) |
+| 2025-10-22 | day | 融资、并购 | 乐聚机器人完成 Pre-IPO 轮融资，深投控资本等联合投资 | single | [media](https://www.cls.cn/detail/2176420) |
+| 2025-09 | month | 落地部署、客户签约 | 乐聚与京石科创联合运营石景山机器人训练场 | single | [primary](https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202509/t20250926_4211351.html) |
+| 2025-09 | month | 成立、改名、注册变更、关停 | 乐聚机器人完成股改，更名为乐聚智能（深圳）股份有限公司 | single | [media](https://www.chnfund.com/article/AR5ea79dfd-bd7b-0bf5-c728-3a1d1eaf3087) |
+| 2025-05-17 | day | 论文、开源发布 | 乐聚机器人开源夸父机器人 ROS 仓库 kuavo-ros-opensource | single | [official](https://github.com/LejuRobotics/kuavo-ros-opensource) |
+| 2025-03-06 | day | 合作、生态、联盟 | 中国移动、华为与乐聚在 MWC2025 联合发布搭载 5G-A 技术的人形机器人夸父 | single | [media](https://www.nbd.com.cn/articles/2025-03-06/3778119.html) |
+| 2025-01-17 | day | 落地部署、客户签约 | 乐聚第 100 台全尺寸人形机器人交付北汽越野车 | single | [media](https://www.ithome.com/0/825/317.htm) |
+| 2024-11 | month | 招投标中标 | 乐聚中标一汽公开招标的人形机器人项目 | single | [media](https://www.thepaper.cn/newsDetail_forward_30582771) |
+| 2024-11-15 | day | 合作、生态、联盟 | 华为（深圳）全球具身智能产业创新中心启动运营，与 16 家企业签署合作备忘录 | single | [media](https://caifuhao.eastmoney.com/news/20241115170249743115900) |
 
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
@@ -1019,7 +1313,7 @@
 | 状态 | 正常经营 |
 | 成立 | 2023-07 |
 | 总部 | CN北京 |
-| 事件数 | 20 |
+| 事件数 | 21 |
 | 收录深度 | draft |
 
 ## 技术与商业栈
@@ -1043,6 +1337,7 @@
 | 2026-09-30 | day | 合作、生态、联盟 | 苇熠科技披露与灵心巧手设立合资公司灵熠新创 | single | [official](https://www.waybot.org/sys-nd/12.html) |
 | 2026-09-14 | day | 论文、开源发布 | 灵心巧手发布 linkerhand-cpp-sdk v2.2.0 | single | [official](https://github.com/linker-bot/linkerhand-cpp-sdk/releases/tag/v2.2.0) |
 | 2026-09-09 | day | 论文、开源发布 | 灵心巧手发布 linkerhand-o30-ros2 v1.0.0 | single | [official](https://github.com/linker-bot/linkerhand-o30-ros2/releases/tag/v1.0.0) |
+| 2026-08-17 | day | 合作、生态、联盟 | 灵心巧手与开创电气签署产业基金合作框架 | single | [primary](https://static.cninfo.com.cn/finalpage/2026-08-17/1225478013.PDF) |
 | 2026-07-17 | day | 产品发布、版本迭代 | 灵心巧手在 WAIC 2026 首发 20 自由度全直驱灵巧手 Linker Hand O30 | single | [media](https://robot.ofweek.com/2026-07/ART-898890-8120-30695066.html) |
 | 2026-04-29 | day | 融资、并购 | 灵心巧手完成 B+ 轮融资，中关村科学城基金、中银资产、复星创富等投资 | single | [media](https://tech.caijing.com.cn/20260430/5157315.shtml) |
 | 2026-02-12 | day | 融资、并购 | 灵心巧手完成近 15 亿元 B 轮融资，道得投资、盛世投资领投 | single | [media](https://www.stcn.com/article/detail/3641823.html) |
@@ -1057,6 +1352,81 @@
 | 2025-04-01 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand ROS2 SDK | single | [official](https://github.com/linker-bot/linkerhand-ros2-sdk) |
 | 2025-02-05 | day | 论文、开源发布 | 灵心巧手开源 LinkerHand Python SDK | single | [official](https://github.com/linker-bot/linkerhand-python-sdk) |
 | 2025-01-20 | day | 产品发布、版本迭代 | 灵心巧手发布 Linker Hand 灵巧手钛金版 T10、T20 | single | [media](https://news.qq.com/rain/a/20250120A08BVH00) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 鹿明机器人
+
+**Lumos Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、数据采集与供给、动作与节目内容 |
+| 状态 | 正常经营 |
+| 成立 | 2024-09 |
+| 总部 | CN深圳 |
+| 事件数 | 11 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 轮式人形 | 2025-08 | `evt-2025-08-lumos-robotics-product_launch-mos1-and-nix` |
+| 本体形态 | 固定双臂 | 2025-08 | `evt-2025-08-lumos-robotics-product_launch-mos1-and-nix` |
+| 本体形态 | 双足人形 | 2024-12 | `evt-2024-12-lumos-robotics-product_launch-lus1` |
+| 本体策略 | 自研整机 | 2024-12 | `evt-2024-12-lumos-robotics-product_launch-lus1` |
+| 数据模态 | 触觉 | 2025-05 | `evt-2025-05-lumos-robotics-product_launch-lux-tactile-module` |
+| 数据模态 | RGB 图像 | 2025-05 | `evt-2025-05-lumos-robotics-product_launch-lux-tactile-module` |
+| 交付形态 | 服务交付 | 2026-09-19 | `evt-2026-09-19-lumos-robotics-deployment-theater` |
+| 交付形态 | 订阅 | 2026-08-19 | `evt-2026-08-19-lumos-robotics-product_launch-nexcore` |
+| 交付形态 | 卖软件授权 | 2026-08-19 | `evt-2026-08-19-lumos-robotics-product_launch-nexcore` |
+| 交付形态 | 卖整机 | 2025-05 | `evt-2025-05-lumos-robotics-product_launch-lux-tactile-module` |
+| 目标场景 | 文旅与表演 | 2026-09-19 | `evt-2026-09-19-lumos-robotics-deployment-theater` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-09-19 | day | 落地部署、客户签约 | 鹿明机器人剧场《机器人和 TA 的朋友们》在深圳全球首演 | single | [media](https://www.leiphone.com/category/industrynews/KQYlP3qCFGorz4hm.html) |
+| 2026-08-19 | day | 产品发布、版本迭代 | 鹿明机器人在 WRC 2026 首发技能进化引擎 Lumos NexCore，并展出重载轮臂机器人 MOS2 | multi | [media](https://finance.sina.com.cn/roll/2026-08-19/doc-ininvmyq8303221.shtml) [media](https://www.tmtpost.com/nictation/8108562.html) |
+| 2026-08-04 | day | 融资、并购 | 恺望数据披露逾亿元战略融资 | single | [media](https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml) |
+| 2026-07-14 | day | 合作、生态、联盟 | 鹿明机器人与京东签署战略合作，目标三年内京东平台累计销售额突破 10 亿元 | multi | [media](https://www.gasgoo.com/robot/news/70465668-3%E5%B9%B410%E4%BA%BF%E9%94%80%E5%94%AE%E9%A2%9D-%E9%B9%BF%E6%98%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%8E%E4%BA%AC%E4%B8%9C%E8%BE%BE%E6%88%90%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C/) [media](https://www.pai.com.cn/p/01kxfnk8r40wj822rfg4kjqr7c) |
+| 2026-05-11 | day | 融资、并购 | 鹿明机器人完成数亿元 A1 及 A2 轮融资，三菱电机连续领投，累计融资近 10 亿元 | multi | [media](https://www.jiemian.com/article/14408632.html) [media](https://fgw.sz.gov.cn/ztzl/qtztzl/szscjmyjjfzzhfwpt/mqfc/myqyfzdt/content/post_12909785.html) |
+| 2025-08 | month | 产品发布、版本迭代 | 鹿明机器人发布重载轮式双臂机器人 Lumos MOS 1 与迷你双足人形机器人 Lumos NIX | single | [official](https://www.lumosbot.tech/about/) |
+| 2025-06 | month | 产品发布、版本迭代 | 鹿明机器人发布全尺寸双足人形机器人 Lumos LUS2 | single | [official](https://www.lumosbot.tech/about/) |
+| 2025-05 | month | 产品发布、版本迭代 | 鹿明机器人发布 LUX 系列视触觉模组 | multi | [official](https://www.lumosbot.tech/about/) [aggregator](https://news.pedaily.cn/202505/550373.shtml) |
+| 2025-05-30 | day | 融资、并购 | 鹿明机器人完成天使++轮融资，天使轮累计融资原话为「近 2 亿」 | multi | [aggregator](https://news.pedaily.cn/202505/550373.shtml) [official](https://www.lumosbot.tech/about/) |
+| 2025-04-09 | day | 融资、并购 | 鹿明机器人完成天使轮及天使+轮两轮融资，原话为「近亿元」 | multi | [aggregator](https://news.pedaily.cn/202504/548124.shtml) [official](https://www.lumosbot.tech/about/) |
+| 2024-12 | month | 产品发布、版本迭代 | 鹿明机器人发布全尺寸双足人形机器人 Lumos LUS1 | single | [official](https://www.lumosbot.tech/about/) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 觅蜂科技
+
+**Maniformer**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 数据采集与供给 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 4 |
+| 收录深度 | draft |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10 | month | 合作、生态、联盟 | 觅蜂投资小派并开展具身数据合作 | single | [media](https://news.pedaily.cn/202610/570582.shtml) |
+| 2026-09-28 | day | 官方表态 | 觅蜂科技披露无本体数据采集与质检业务进展 | single | [media](https://www.tmtpost.com/8153852.html) [official](https://www.maniformer.ai/pages/mego) |
+| 2026-09-23 | day | 产品发布、版本迭代 | 觅蜂科技发布觅蜂派众包数据采集平台 | single | [media](https://www.leikeji.com/article/79732) |
+| 2026-08-04 | day | 融资、并购 | 恺望数据披露逾亿元战略融资 | single | [media](https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml) |
 
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
@@ -1173,6 +1543,85 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 松延动力
+
+**Noetix Robotics**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2023-09 |
+| 总部 | CN北京 |
+| 事件数 | 11 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 本体形态 | 双足人形 | 2025-03-14 | `evt-2025-03-14-noetix-product-launch-n2-e1` |
+| 目标场景 | 家庭 | 2025-10-23 | `evt-2025-10-23-noetix-pricing-bumi-9998` |
+| 目标场景 | 科教与科研 | 2025-03-14 | `evt-2025-03-14-noetix-product-launch-n2-e1` |
+| 交付形态 | 卖整机 | 2025-03-14 | `evt-2025-03-14-noetix-product-launch-n2-e1` |
+| 运控路线 | 强化学习 | 2026-10-09 | `evt-2026-10-09-noetix-publication-bumi-isaac-lab` |
+| 运控路线 | 混合 | 2025-03-14 | `evt-2025-03-14-noetix-product-launch-n2-e1` |
+| 模型形态 | 世界模型 | 2026-09-08 | `evt-2026-09-08-noetix-product-launch-scalabot-heron` |
+| 仿真栈 | Isaac Lab | 2026-10-09 | `evt-2026-10-09-noetix-publication-bumi-isaac-lab` |
+| 仿真栈 | Isaac Sim | 2026-10-09 | `evt-2026-10-09-noetix-publication-bumi-isaac-lab` |
+| 仿真栈 | MuJoCo | 2026-10-09 | `evt-2026-10-09-noetix-publication-bumi-isaac-lab` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-09 | day | 论文、开源发布 | 松延动力公开 Bumi 的 Isaac Lab 训练工程 | single | [official](https://github.com/Noetix-Robotics/noetix_bumi_lab/blob/main/README.md) [official](https://github.com/Noetix-Robotics/noetix_bumi_lab/commits/main.atom) |
+| 2026-09-08 | day | 产品发布、版本迭代 | 松延动力发布具身智能技术品牌 Scalabot 与首个世界模型 HERON-World Model | multi | [media](https://www.d1ev.com/news/shichang/312299) [media](https://www.stcn.com/article/detail/4190007.html) |
+| 2026-08-04 | day | 融资、并购 | 恺望数据披露逾亿元战略融资 | single | [media](https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml) |
+| 2026-03-12 | day | 落地部署、客户签约 | 松延动力在 AWE2026 现场交付「小布米」，宣布与京东深化合作 | single | [media](https://egs.stcn.com/news/detail/2250552.html) |
+| 2026-03-02 | day | 融资、并购 | 松延动力完成近 10 亿元 B 轮融资，宁德时代系晨道资本领投 | multi | [media](https://www.stcn.com/article/detail/3656889.html) [media](https://www.bjnews.com.cn/detail/1772414188129618.html) |
+| 2025-11-26 | day | 融资、并购 | 松延动力完成近 2 亿元 Pre-B+ 轮融资，中金资本领投 | single | [media](https://stcn.com/article/detail/3512757.html) |
+| 2025-10-26 | day | 融资、并购 | 松延动力完成近 3 亿元 Pre-B 轮融资，方广资本领投 | multi | [aggregator](https://news.pedaily.cn/202510/556361.shtml) [media](https://stcn.com/article/detail/3512757.html) |
+| 2025-10-23 | day | 公开价格 | 松延动力消费级人形机器人「小布米」上线京东，定价 9998 元 | multi | [media](https://stcn.com/article/detail/3512757.html) [aggregator](https://news.pedaily.cn/202510/556361.shtml) |
+| 2025-08-05 | day | 融资、并购 | 松延动力完成数亿元 A++ 轮融资 | multi | [media](https://www.bjnews.com.cn/detail/1754385295168483.html) [media](https://www.nbd.com.cn/articles/2025-08-05/4001291.html) |
+| 2025-03-17 | day | 融资、并购 | 松延动力宣布完成连续两轮过亿元 A 轮及 A+ 轮融资 | multi | [aggregator](https://news.pedaily.cn/202503/547212.shtml) [media](https://news.qq.com/rain/a/20250317A09H7400) |
+| 2025-03-14 | day | 产品发布、版本迭代 | 松延动力发布人形机器人 N2 与升级版 E1，宣传起售价 3.99 万元 | multi | [media](https://www.tmtpost.com/7494943.html) [media](https://www.nbd.com.cn/articles/2025-04-23/3844689.html) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 破壳机器人
+
+**PokeBot**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 世界模型 | 2026-10-30 | `evt-2026-10-30-pokebot-product_launch-roboapi-preview` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-30 | day | 产品发布、版本迭代 | 破壳发布RoboAPI技术预览与Poke-Aurora模型技术 | single | [official](https://pokebot.com/zh-cn/ai) [official](https://developers.pokebot.com/zh/docs/roboapi/latest) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 求之科技
 
 **QZTech**
@@ -1280,8 +1729,8 @@
 | 状态 | 正常经营 |
 | 成立 | 2018-01 |
 | 总部 | CN北京 |
-| 事件数 | 7 |
-| 收录深度 | draft |
+| 事件数 | 8 |
+| 收录深度 | complete |
 
 ## 技术与商业栈
 
@@ -1303,6 +1752,7 @@
 | 2026-08-14 | day | 成立、改名、注册变更、关停 | 睿尔曼智能提交上市辅导备案，拟登陆创业板 | single | [media](https://www.36kr.com/p/3944696405572742) |
 | 2026-07-17 | day | 产品发布、版本迭代 | 睿尔曼智能首发 RealBot-S2 与 RealBot-L2 轮式人形机器人 | single | [media](https://www.stdaily.com/web/gdxw/2026-07/18/content_549415.html) |
 | 2026-03-04 | day | 融资、并购 | 睿尔曼智能完成近 5 亿元融资 | single | [media](https://finance.sina.com.cn/roll/2026-03-04/doc-inhpvpqk3879613.shtml) |
+| 2026-01 | month | 官方表态 | 睿尔曼在CES演示北京至拉斯维加斯遥操作 | single | [media](https://tech.ifeng.com/c/8piwzID2mEJ) |
 | 2025-09-16 | day | 论文、开源发布 | CR-3-0602TS:2025训练场技术规范 | single | [official](https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf) |
 | 2025-08-15 | day | 落地部署、客户签约 | 石景山人形机器人数据训练中心开放日披露运营规模与数据服务 | single | [media](https://kw.beijing.gov.cn/xwdt/kcyx/xwdtshgg/202508/t20250818_4175247.html) |
 | 2025-08-08 | day | 产品发布、版本迭代 | 睿尔曼在 2025 世界机器人大会发布 RealBOT 具身开源平台 | single | [media](https://www.qbitai.com/2025/08/321183.html) |
@@ -1396,6 +1846,54 @@
 | 2026-05-19 | day | 融资、并购 | RoboParty 萝博派对完成数千万美元天使+轮融资，顺为资本领投、小米战投追加 | multi | [media](https://news.pedaily.cn/202605/564040.shtml) [media](https://finance.sina.com.cn/wm/2026-05-20/doc-inhyqqhf8552209.shtml) |
 | 2026-03-31 | day | 融资、并购 | RoboParty 萝博派对完成 2000 万美元天使轮融资，商汤国香资本、经纬创投联合领投 | single | [media](https://news.pedaily.cn/202603/562269.shtml) |
 | 2025-02-21 | day | 成立、改名、注册变更、关停 | 上海萝博派对科技有限公司成立 | multi | [official](https://github.com/Roboparty/roboto_origin/blob/main/README_cn.md) [aggregator](https://baike.baidu.com/item/%E4%B8%8A%E6%B5%B7%E8%90%9D%E5%8D%9A%E6%B4%BE%E5%AF%B9%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/66988002) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 星动纪元
+
+**ROBOTERA**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体、具身基础模型 |
+| 状态 | 正常经营 |
+| 成立 | 2023-08 |
+| 总部 | CN北京 |
+| 事件数 | 12 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 模型形态 | 端到端 VLA | 2025-07-22 | `evt-2025-07-22-roboterax-product_launch-l7` |
+| 模型形态 | 世界模型 | 2025-05-05 | `evt-2025-05-05-roboterax-publication-video-prediction-policy` |
+| 模型形态 | 模仿学习 | 2025-05-05 | `evt-2025-05-05-roboterax-publication-video-prediction-policy` |
+| 本体形态 | 双足人形 | 2025-07-22 | `evt-2025-07-22-roboterax-product_launch-l7` |
+| 本体形态 | 轮式人形 | 2025-06-19 | `evt-2025-06-19-roboterax-product_launch-q5` |
+| 目标场景 | 物流仓储 | 2026-05-20 | `evt-2026-05-20-roboterax-deployment-china-post-guangzhou` |
+| 目标场景 | 商业服务 | 2025-06-19 | `evt-2025-06-19-roboterax-product_launch-q5` |
+| 交付形态 | 卖整机 | 2025-07-22 | `evt-2025-07-22-roboterax-product_launch-l7` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-08 | day | 论文、开源发布 | 星动纪元公开 VPP-2 世界动作模型项目 | single | [official](https://github.com/roboterax/video-prediction-policy-2/blob/main/README.md) |
+| 2026-08-11 | day | 融资、并购 | 潜界科技宣布数亿元种子轮融资 | single | [media](https://m.bjnews.com.cn/detail/1786420754129093.html) |
+| 2026-07-06 | day | 融资、并购 | 星动纪元完成新一轮 10 亿元融资，诚通基金领投 | single | [media](https://wallstreetcn.com/articles/3776271) |
+| 2026-05-20 | day | 落地部署、客户签约 | 星动纪元 M7 机器人在中国邮政广州邮区中心上岗分拣供件 | single | [media](https://www.xinhuanet.com/auto/20260520/956452f4df2849f382429141780b2ecd/c.html) |
+| 2026-04-27 | day | 融资、并购 | 星动纪元完成超 2 亿美元新一轮融资，顺丰集团领投 | single | [media](https://stcn.com/article/detail/3821910.html) |
+| 2026-03 | month | 融资、并购 | 星动纪元完成 10 亿元战略轮融资，三星、新加坡电信等参投 | single | [media](https://www.bjnews.com.cn/detail/1772673112129969.html) |
+| 2025-11-20 | day | 融资、并购 | 星动纪元完成近 10 亿元 A+ 轮融资，吉利资本领投 | single | [media](https://www.qbitai.com/2025/11/354404.html) |
+| 2025-07-22 | day | 产品发布、版本迭代 | 星动纪元发布全尺寸双足人形机器人星动 L7 并开始发售 | single | [media](https://www.bjnews.com.cn/detail/1753191627168875.html) |
+| 2025-07-07 | day | 融资、并购 | 星动纪元完成 A 轮融资 | single | [media](https://companies.caixin.com/2025-07-07/102338941.html) |
+| 2025-06-19 | day | 产品发布、版本迭代 | 星动纪元推出超拟人服务机器人星动 Q5 | single | [media](https://www.cs.com.cn/ssgs/gsxw/202506/t20250620_6497349.html) |
+| 2025-05-05 | day | 论文、开源发布 | 星动纪元参与开源通用机器人策略 Video Prediction Policy | single | [official](https://github.com/roboterax/video-prediction-policy) |
+| 2024-10-16 | day | 融资、并购 | 星动纪元完成 Pre-A 轮融资 | single | [media](https://www.tmtpost.com/7286341.html) |
 
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
@@ -1827,6 +2325,47 @@
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
 
+# 无界动力
+
+**Wujie Power**
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 整机本体 |
+| 状态 | 正常经营 |
+| 成立 | 2025-03 |
+| 总部 | CN北京 |
+| 事件数 | 9 |
+| 收录深度 | complete |
+
+## 技术与商业栈
+
+历史取值不删，`首次可见` 指本库收录到的最早证据日期。
+
+| 轴 | 取值 | 首次可见 | 来源事件 |
+|---|---|---|---|
+| 目标场景 | 工业制造 | 2026-07-09 | `evt-2026-07-09-wujie-power-deployment-k15-ce-europe-delivery` |
+| 本体形态 | 轮式人形 | 2026-07-09 | `evt-2026-07-09-wujie-power-deployment-k15-ce-europe-delivery` |
+| 模型形态 | 世界模型 | 2026-10-22 | `evt-2026-10-22-wujie-power-product_launch-phoenix-mwa` |
+| 运控路线 | 强化学习 | 2026-10-22 | `evt-2026-10-22-wujie-power-product_launch-phoenix-mwa` |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-23 | day | 论文、开源发布 | 无界动力公开 Phoenix 预训练权重 | single | [official](https://raw.githubusercontent.com/Anyverse-Dynamics/Phoenix-MWA/main/README.md) [official](https://huggingface.co/api/models/OpenPhoenix/Phoenix-Pretrain) [official](https://huggingface.co/api/models/OpenPhoenix/Phoenix-Pretrain/commits/main) |
+| 2026-10-22 | day | 产品发布、版本迭代 | 无界动力发布 MWA-Phoenix 世界动作基座及接触学习方案 | single | [official](https://raw.githubusercontent.com/Anyverse-Dynamics/Phoenix-MWA/main/README.md) [official](https://openphoenix-team.github.io/Phoenix-pages/) [media](https://www.sina.cn/news/detail/5356767674368673.html) |
+| 2026-09 | month | 落地部署、客户签约 | 无界K15首批抵达远景动力法国工厂 | single | [media](https://www.stdaily.com/web/gdxw/2026-09/10/content_578172.html) |
+| 2026-07-09 | day | 落地部署、客户签约 | 无界动力 K15 通过欧盟 CE 认证，首批机器人发往远景法国工厂开启全球交付 | single | [media](https://d1ev.com/news/shichang/306302) |
+| 2026-06-26 | day | 融资、并购 | 无界动力宣布完成超 2 亿美元天使轮融资，京东关联基金等参投 | single | [media](https://www.nbd.com.cn/articles/2026-06-26/4439245.html) |
+| 2026-04-27 | day | 融资、并购 | 无界动力完成天使++轮融资，远景科技集团领投并签署超 5 亿元全球订单 | single | [media](https://www.donews.com/news/detail/1/6530934.html) |
+| 2026-02-14 | day | 融资、并购 | 无界动力完成超 2 亿元天使+轮融资，深创投、创新工场等新股东加入 | single | [media](https://news.pedaily.cn/202602/561044.shtml) |
+| 2025-11-10 | day | 融资、并购 | 无界动力完成约 3 亿元天使轮融资，红杉中国、线性资本领投 | single | [media](https://finance.sina.com.cn/roll/2025-11-12/doc-infxcuqx3455336.shtml) |
+| 2025-03-21 | day | 成立、改名、注册变更、关停 | 无界动力（北京）技术研发有限公司成立 | single | [media](https://finance.sina.com.cn/roll/2025-11-12/doc-infxcuqx3455336.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
 # 北京人形机器人创新中心
 
 **X-Humanoid**
@@ -1895,7 +2434,7 @@
 | 状态 | 正常经营 |
 | 成立 | 2023-12 |
 | 总部 | CN深圳 |
-| 事件数 | 25 |
+| 事件数 | 26 |
 | 收录深度 | draft |
 
 ## 技术与商业栈
@@ -1921,6 +2460,7 @@
 | 2026-09-16 | day | 论文、开源发布 | 自变量机器人发布模型 X-Planner-9B-0916 | single | [official](https://huggingface.co/x-square-robot/X-Planner-9B-0916) |
 | 2026-09-16 | day | 数据集发布 | 自变量机器人发布数据集 xplanner-benchmark | single | [official](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark) |
 | 2026-09-10 | day | 论文、开源发布 | 自变量机器人发布模型 X2Streaming-TTS-1.7B | single | [official](https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B) |
+| 2026-08-04 | day | 融资、并购 | 恺望数据披露逾亿元战略融资 | single | [media](https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml) |
 | 2026-08-03 | day | 落地部署、客户签约 | 万机易租披露平台可调度合作机器人超 5000 台，接入优必选、越疆、自变量、魔法原子等厂商 | single | [media](https://www.gasgoo.com/robot/news/70468423-seeds-%E4%B8%87%E6%9C%BA%E6%98%93%E7%A7%9F%E5%AE%8C%E6%88%90%E6%96%B0%E4%B8%80%E8%BD%AE%E8%9E%8D%E8%B5%84/) |
 | 2026-06 | month | 融资、并购 | 自变量机器人连续完成 B+、B++ 和 C 轮融资，投中网称估值超 200 亿元 | single | [media](https://www.chinaventure.com.cn/news/80-20260629-392068.html) |
 | 2026-05-21 | day | 落地部署、客户签约 | 奥比中光称 2026 年一季度人形机器人相关订单环比翻倍，全球机器人客户超 1000 家 | single | [official](http://www.orbbec.com.cn/index/News/info.html?cate=31&id=368) |
@@ -1936,6 +2476,26 @@
 | 2024-11 | month | 产品发布、版本迭代 | 自变量机器人对外披露 Great Wall 系列端到端统一具身大模型 WALL-A | single | [media](https://news.qq.com/rain/a/20241107A07Z7400) |
 | 2024-11-15 | day | 合作、生态、联盟 | 华为（深圳）全球具身智能产业创新中心启动运营，与 16 家企业签署合作备忘录 | single | [media](https://caifuhao.eastmoney.com/news/20241115170249743115900) |
 | 2024-11-04 | day | 融资、并购 | 自变量机器人连续完成 Pre-A 与 Pre-A+ 两轮融资 | single | [aggregator](https://news.pedaily.cn/202411/542429.shtml) |
+
+
+<!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->
+
+# 祥源新材
+
+| 项 | 值 |
+|---|---|
+| 产业层 | 关键部件 |
+| 状态 | 正常经营 |
+| 成立 | — |
+| 总部 | — |
+| 事件数 | 1 |
+| 收录深度 | stub |
+
+## 时间线
+
+| 日期 | 精度 | 类型 | 事件 | 佐证 | 来源 |
+|---|---|---|---|---|---|
+| 2026-10-13 | day | 官方表态 | 祥源新材披露机器人压阻材料进入小批量交付 | single | [media](https://egs.stcn.com/news/detail/2349112.html) |
 
 
 <!-- 本文件由 scripts/compile.py 生成，请勿手改。改事实去 events/，改身份去 registry/ -->

@@ -1,0 +1,20 @@
+id: evt-2026-10-13-asd-robotics-corporate-embodied-center-alliance
+date: '2026-10-13'
+date_precision: day
+type: corporate
+orgs:
+- id: asd-robotics
+  role: subject
+title:
+  zh: 爱仕达具身智能创新中心与生态联盟揭牌
+summary:
+  zh: 爱仕达在发布会上为智能谷具身智能创新中心与生态联盟揭牌。记录揭牌活动，不将规划产能或合作意向记为已经建成、完成交付的项目。
+evidence:
+- url: https://api3.cls.cn/share/article/2504033?app=&os=CailianpressWeb&sv=866
+  publisher: api3.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/e46a9df217eb39ab.html
+corroboration: single
+date_basis: derived
+date_as_stated: 财联社2026年10月14日报道前一日发布会，定位为10月13日。
