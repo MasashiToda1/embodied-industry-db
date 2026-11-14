@@ -1,0 +1,28 @@
+id: evt-2026-04-15-delta-intelligence-funding-first-three-rounds
+date: '2026-04-15'
+date_precision: day
+type: funding
+orgs:
+- id: delta-intelligence
+  role: subject
+- id: leju
+  role: investor
+- id: agibot
+  role: investor
+- id: galaxea
+  role: investor
+title:
+  zh: 德塔披露三轮融资合计超亿元
+summary:
+  zh: 德塔智能披露已完成三轮融资、合计超亿元，投资方包括高瓴创投、乐聚、智元和星海图。按三轮合计披露记录，不猜测各轮金额；区别于后续第六轮融资消息。
+evidence:
+- url: https://www.cls.cn/detail/2344999
+  publisher: www.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/f8df988966bccc22.html
+corroboration: single
+date_basis: derived
+date_as_stated: 科创板日报2026年4月15日披露早期三轮融资；记录披露日，不推定各轮交割日。
+counterparties:
+- 高瓴创投

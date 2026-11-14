@@ -1,0 +1,23 @@
+id: evt-2026-10-23-fujian-humanoid-funding-pre-a-plus
+date: '2026-10-23'
+date_precision: day
+type: funding
+orgs:
+- id: fujian-humanoid
+  role: subject
+title:
+  zh: 福建人形机器人创新中心宣布Pre-A+轮融资
+summary:
+  zh: 福建人形机器人创新中心宣布完成Pre-A+轮融资，投资方包括福州市鼓楼区城建投资发展集团和厦门航智量数未来科技孵化器。融资金额未披露，规划中的年产能不计为已建成。
+evidence:
+- url: https://finance.eastmoney.com/a/202610233906219295.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/b32f714f5a3c6f45.html
+corroboration: single
+date_basis: derived
+date_as_stated: 证券时报报道明确2026年10月23日宣布完成；记录宣布日，未推定交割日。
+counterparties:
+- 福州市鼓楼区城建投资发展集团有限公司
+- 厦门航智量数未来科技孵化器有限公司

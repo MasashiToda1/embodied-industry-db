@@ -1,0 +1,37 @@
+id: evt-2026-08-04-kaiwang-data-funding-strategic-round
+date: '2026-08-04'
+date_precision: day
+type: funding
+orgs:
+- id: kaiwang-data
+  role: subject
+- id: lumos-robotics
+  role: investor
+- id: noetix
+  role: investor
+- id: x-square-robot
+  role: investor
+- id: maniformer
+  role: investor
+title:
+  zh: 恺望数据披露逾亿元战略融资
+summary:
+  zh: 恺望数据披露完成逾亿元战略融资，北京亦庄产业升级基金、华方资本、天际资本等领投；鹿明机器人、松延动力、自变量和觅蜂科技等产业方参与。记录机器人数据业务相关融资，逾亿元不换算为精确金额。
+evidence:
+- url: https://finance.sina.com.cn/roll/2026-08-04/doc-inimeefi5240213.shtml
+  publisher: finance.sina.com.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/9a551c9bb13e65b3.html
+corroboration: single
+date_basis: derived
+date_as_stated: 封面新闻2026年8月4日披露近日融资；记录公开披露日，不推定交割日。
+counterparties:
+- 北京亦庄产业升级基金
+- 华方资本
+- 天际资本
+- 新鼎资本
+- 迈睿资管
+- 亚盛资本
+- 清智资本
+- 璞跃资本

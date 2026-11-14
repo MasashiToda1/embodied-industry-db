@@ -1,0 +1,2138 @@
+{
+  "approved_on": "2026-11-01",
+  "approval": "维护者回复“好”，批准上一条逐项汇总的15条准入、2条重复；其他待补证项继续保留。",
+  "events": [
+    "events/2026/10/evt-2026-10-23-fujian-humanoid-funding-pre-a-plus.yaml",
+    "events/2026/10/evt-2026-10-13-xiangyuan-materials-statement-robot-sensing-small-batch.yaml",
+    "events/2026/08/evt-2026-08-04-kaiwang-data-funding-strategic-round.yaml",
+    "events/2026/10/evt-2026-10-13-asd-robotics-corporate-embodied-center-alliance.yaml",
+    "events/2026/10/evt-2026-10-13-asd-robotics-statement-asd-s2-demonstration.yaml",
+    "events/2026/09/evt-2026-09-wujie-power-deployment-k15-france-arrival.yaml",
+    "events/2026/01/evt-2026-01-realman-statement-ces-transpacific-teleoperation.yaml",
+    "events/2026/08/evt-2026-08-encos-product_launch-second-gen-inner-rotor-joints.yaml",
+    "events/2026/10/evt-2026-10-maniformer-partnership-pimax-investment-data.yaml",
+    "events/2026/10/evt-2026-10-etai-embodied-corporate-agibot-hubble-shareholders.yaml",
+    "events/2026/08/evt-2026-08-17-linkerbot-partnership-kaichuang-fund-framework.yaml",
+    "events/2026/10/evt-2026-10-jianzhi-robot-corporate-baidu-galbot-shareholders.yaml",
+    "events/2026/04/evt-2026-04-15-delta-intelligence-funding-first-three-rounds.yaml",
+    "events/2026/08/evt-2026-08-11-latentverse-funding-seed-round.yaml",
+    "events/2026/06/evt-2026-06-16-galaxea-partnership-cathay-xingtu-plan.yaml"
+  ],
+  "orgs": [
+    "registry/orgs/fujian-humanoid.yaml",
+    "registry/orgs/xiangyuan-materials.yaml",
+    "registry/orgs/kaiwang-data.yaml",
+    "registry/orgs/asd-robotics.yaml",
+    "registry/orgs/etai-embodied.yaml",
+    "registry/orgs/latentverse.yaml"
+  ],
+  "snapshots": [
+    "snapshots/2026/11/followup-20261101/0c83a6e95932a776.html",
+    "snapshots/2026/11/followup-20261101/111666be4b563360.html",
+    "snapshots/2026/11/followup-20261101/238846499517d280.html",
+    "snapshots/2026/11/followup-20261101/2423cfd8efa8d454.html",
+    "snapshots/2026/11/followup-20261101/2e499f5178b6e9ca.html",
+    "snapshots/2026/11/followup-20261101/72857a98118b004a.json",
+    "snapshots/2026/11/followup-20261101/9a551c9bb13e65b3.html",
+    "snapshots/2026/11/followup-20261101/9e55d99e992431dd.html",
+    "snapshots/2026/11/followup-20261101/a3095b968148a44b.json",
+    "snapshots/2026/11/followup-20261101/b32f714f5a3c6f45.html",
+    "snapshots/2026/11/followup-20261101/e46a9df217eb39ab.html",
+    "snapshots/2026/11/followup-20261101/e59c7cd38a297a3f.pdf",
+    "snapshots/2026/11/followup-20261101/ed508ff04c2412df.json",
+    "snapshots/2026/11/followup-20261101/f8df988966bccc22.html"
+  ],
+  "records": [
+    {
+      "proposal_ids": [
+        "OCT31-206"
+      ],
+      "issues": [
+        442
+      ],
+      "event": "evt-2026-10-23-fujian-humanoid-funding-pre-a-plus",
+      "orgs": [
+        "fujian-humanoid"
+      ],
+      "subject": "福建人形机器人创新中心Pre-A+"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-056"
+      ],
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-13-xiangyuan-materials-statement-robot-sensing-small-batch",
+      "orgs": [
+        "xiangyuan-materials"
+      ],
+      "subject": "祥源新材压阻材料小批量交付"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-034"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-08-04-kaiwang-data-funding-strategic-round",
+      "orgs": [
+        "kaiwang-data",
+        "lumos-robotics",
+        "noetix",
+        "x-square-robot",
+        "maniformer"
+      ],
+      "subject": "恺望数据融资"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-054"
+      ],
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-13-asd-robotics-corporate-embodied-center-alliance",
+      "orgs": [
+        "asd-robotics"
+      ],
+      "subject": "爱仕达智能谷具身智能创新中心揭牌"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-054"
+      ],
+      "issues": [
+        334
+      ],
+      "event": "evt-2026-10-13-asd-robotics-statement-asd-s2-demonstration",
+      "orgs": [
+        "asd-robotics"
+      ],
+      "subject": "爱仕达ASD-S2展示"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-064"
+      ],
+      "issues": [
+        361
+      ],
+      "event": "evt-2026-09-wujie-power-deployment-k15-france-arrival",
+      "orgs": [
+        "wujie-power"
+      ],
+      "subject": "无界K15首批抵达法国工厂"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-065"
+      ],
+      "issues": [
+        361
+      ],
+      "event": "evt-2026-01-realman-statement-ces-transpacific-teleoperation",
+      "orgs": [
+        "realman"
+      ],
+      "subject": "睿尔曼CES跨洋遥操作演示"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-067"
+      ],
+      "issues": [
+        361
+      ],
+      "event": "evt-2026-08-encos-product_launch-second-gen-inner-rotor-joints",
+      "orgs": [
+        "encos"
+      ],
+      "subject": "因克斯二代内转子关节发布并开放采购"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-205"
+      ],
+      "issues": [
+        442
+      ],
+      "event": "evt-2026-10-maniformer-partnership-pimax-investment-data",
+      "orgs": [
+        "maniformer"
+      ],
+      "subject": "觅蜂投资小派并开展数据合作"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-167"
+      ],
+      "issues": [
+        403
+      ],
+      "event": "evt-2026-10-etai-embodied-corporate-agibot-hubble-shareholders",
+      "orgs": [
+        "etai-embodied",
+        "agibot"
+      ],
+      "subject": "智元/华为哈勃入股乙太具身"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-039"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-08-17-linkerbot-partnership-kaichuang-fund-framework",
+      "orgs": [
+        "linkerbot"
+      ],
+      "subject": "灵心巧手/开创电气产业基金框架协议"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-035"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-10-jianzhi-robot-corporate-baidu-galbot-shareholders",
+      "orgs": [
+        "jianzhi-robot",
+        "galbot"
+      ],
+      "subject": "简智新增百度、银河通用股东"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-036"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-04-15-delta-intelligence-funding-first-three-rounds",
+      "orgs": [
+        "delta-intelligence",
+        "leju",
+        "agibot",
+        "galaxea"
+      ],
+      "subject": "德塔早期三轮融资、星海图参投"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-037"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-08-11-latentverse-funding-seed-round",
+      "orgs": [
+        "latentverse",
+        "agibot",
+        "roboterax"
+      ],
+      "subject": "潜界科技数亿元种子轮"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-038"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "event": "evt-2026-06-16-galaxea-partnership-cathay-xingtu-plan",
+      "orgs": [
+        "galaxea"
+      ],
+      "subject": "星海图/凯辉星途计划"
+    }
+  ],
+  "duplicates": [
+    {
+      "proposal_ids": [
+        "OCT31-054"
+      ],
+      "issues": [
+        334
+      ],
+      "subject": "爱仕达63城100店零售服务",
+      "date": "2026-09-28至30",
+      "sources": [
+        "https://api3.cls.cn/share/article/2504033?app=&os=CailianpressWeb&sv=866"
+      ],
+      "finding": "已匹配本库智元灵犀X2百店服务事件，同一活动不另入。爱宝称呼不能据名归给智平方。",
+      "recommendation": "重复（补查结论待维护者确认）",
+      "boundary": "已有主体",
+      "existing": "evt-2026-09-28-agibot-deployment-asd-100-stores",
+      "decision": "approved_duplicate"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-036"
+      ],
+      "issues": [
+        286,
+        373
+      ],
+      "subject": "星海图投资简智",
+      "date": "2025-12-18披露",
+      "sources": [
+        "https://finance.eastmoney.com/a/202610103891928235.html"
+      ],
+      "finding": "既有天使轮事件已经说明星海图参加种子轮；不再用10月回顾生成一笔新投资。",
+      "boundary": "已有主体",
+      "existing": "evt-2025-12-18-jianzhi-robot-funding-angel-round",
+      "recommendation": "重复（补查结论待维护者确认）",
+      "decision": "approved_duplicate"
+    }
+  ],
+  "prior_review": "research/issue-triage/2026-11-01.json",
+  "remaining_research_gaps": [
+    {
+      "issues": [
+        403,
+        442
+      ],
+      "subject": "柳州机器人实训室采购",
+      "date": "2026-10-09",
+      "recommendation": "部分补证，官方附件仍需核验",
+      "source": "https://guangxi.jianyu360.cn/jybx/20261010_26100992155265.html",
+      "finding": "公告转载载明广西威思盾中标，总价2243746元，设备品牌附件未读到。采购预算2255020元与成交价区分；不把整包归给机器人本体品牌。",
+      "proposal_ids": [
+        "OCT31-180"
+      ]
+    },
+    {
+      "proposal_ids": [
+        "OCT31-068"
+      ],
+      "issues": [
+        361
+      ],
+      "subject": "磅天RobotICU海外售后",
+      "date": "2026-09案例；10-14报道",
+      "sources": [
+        "https://i.ifeng.com/c/8xD8cmftc5S"
+      ],
+      "finding": "惠州日报原稿转载确认平台身份和服务范围；具体美国检修案例是割草/扫雪设备，不能作为通用机器人部署证据。人形仅见目录覆盖，仍缺人形客户/项目。",
+      "recommendation": "继续待补证",
+      "boundary": "候选运营/集成，当前确证案例在收录边界外",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-049"
+      ],
+      "issues": [
+        322
+      ],
+      "subject": "Flexiv RDK2.2",
+      "date": "未正式发布",
+      "sources": [
+        "https://github.com/flexivrobotics/flexiv_rdk/releases/tag/v2.2"
+      ],
+      "finding": "11月1日复核官方页，标题仍v2.2 Draft，正文WIP。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-191"
+      ],
+      "issues": [
+        419
+      ],
+      "subject": "诺亦腾Pre-A+++",
+      "date": "2026-10线索",
+      "sources": [
+        "https://m.10jqka.com.cn/20261030/c681262588.shtml",
+        "https://www.chinaventure.com.cn/flash/list.html"
+      ],
+      "finding": "找到同花顺原转载链接及投中快讯，指向汇融基金独家；原转载访问失败，尚未核定与已有6月Pre-A++交割关系。保留待补证；不从AI解读推断估值台阶或基金隶属关系。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "evt-2026-06-15-noitom-funding-pre-a-plus-plus-round；registry明确包含分拆主体"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-001",
+        "OCT31-003",
+        "OCT31-139"
+      ],
+      "issues": [
+        111,
+        373
+      ],
+      "subject": "历史采购原公告",
+      "date": "未补齐",
+      "sources": [],
+      "finding": "按项目编号检索GKZX202606090002-01、HF20262716未找到完整原公告；上二工官网再次直取仍SSL失败。金额/供应商/品牌缺口保留。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-053"
+      ],
+      "issues": [
+        328
+      ],
+      "subject": "上海仪电与PAIR合作",
+      "date": "8月6日线索",
+      "sources": [
+        "https://www.inesa.com/shinesa_gywmxwzxzhxw/2026-02-15/Detail_180104.htm"
+      ],
+      "finding": "官网命中的是2月白皮书；第三方回顾称8月6日合作但本次仍未取得相应原公告，不能替代。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-192"
+      ],
+      "issues": [
+        419
+      ],
+      "subject": "失败经验驱动世界模型",
+      "date": "未核定",
+      "sources": [
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "finding": "原新浪线索打不开；搜索出现CEL、Motus2、EvoWorld等不同研究，不能凭近似主题认定原论文。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-018",
+        "OCT31-071",
+        "OCT31-072",
+        "OCT31-073"
+      ],
+      "issues": [
+        242,
+        375
+      ],
+      "subject": "宇树四个型号",
+      "date": "首次发布日期未核定",
+      "sources": [
+        "https://shop.unitree.com/apps/geo/products/unitree-bionic-7-axis-dexterous-robotic-arm"
+      ],
+      "finding": "官方商店可确认R1-7a型号存在，但不能给出原聚合消息的首发日期；G1+/H2i/Dex5S仍缺对应原公告。",
+      "recommendation": "继续待补证",
+      "boundary": "已有主体",
+      "existing": "未发现同事件"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-007",
+        "OCT31-008",
+        "OCT31-009",
+        "OCT31-010",
+        "OCT31-111",
+        "OCT31-112"
+      ],
+      "issues": [
+        211,
+        408,
+        409
+      ],
+      "subject": "Rainbow加工数据的关系",
+      "date": "11月1日复核",
+      "sources": [
+        "https://huggingface.co/rainbowrobotics"
+      ],
+      "finding": "两个README仅有Source fingerprint及export gate；一个需访问权限，其余未提供README。仍无法把fingerprint对应到具体原始集或证明独立新增采集。",
+      "boundary": "已有主体",
+      "existing": "未发现同事件",
+      "recommendation": "继续待补证"
+    },
+    {
+      "proposal_ids": [
+        "OCT31-176",
+        "OCT31-197"
+      ],
+      "issues": [
+        403,
+        432
+      ],
+      "subject": "Lightning Pixel与Patch身份",
+      "date": "11月1日复核",
+      "sources": [
+        "https://github.com/sponsors/lightningpixel"
+      ],
+      "finding": "上游原始条目仅标签和alias，无身份链接。公开同名Lightning Pixel是做Modly的3D独立开发者，不能证明与上游标签同一主体或有机器人业务；Patch仍缺官方身份。",
+      "boundary": "未建立产业主体",
+      "existing": "未发现同事件",
+      "recommendation": "继续待补证"
+    }
+  ],
+  "snapshot_limitations": "11份原始HTML/PDF；3份网页核验摘要明确标注非原始页面。",
+  "remaining_proposals": [
+    {
+      "issues": [
+        111
+      ],
+      "recommendation": "待补证",
+      "subject": "GKZX202606090002-01采购",
+      "date": "2026-06",
+      "reason": "仍缺完整中标供应商及品牌明细；不猜成交归属。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-001",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+      ],
+      "candidate_urls": [
+        "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+        "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+        "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+        "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        111
+      ],
+      "recommendation": "待补证",
+      "subject": "916产教项目",
+      "date": "未核定",
+      "reason": "原项目链接失效，缺完整采购公告。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-002",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+      ],
+      "candidate_urls": [
+        "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+        "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+        "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+        "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        111
+      ],
+      "recommendation": "待补证",
+      "subject": "华中科技大学 HF20262716",
+      "date": "2026-09-24公告",
+      "reason": "已读到214825.78元总额及R1机械臂、GO2-U2等明细，仍缺完整中标供应商；不可把总价全算成一种机器人。",
+      "sources": [
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-003",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+      ],
+      "candidate_urls": [
+        "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+        "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+        "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+        "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        111
+      ],
+      "recommendation": "待补证",
+      "subject": "贵州多模态咨询设计中标",
+      "date": "未核定",
+      "reason": "缺官方完整中标公告与承接主体。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-004",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+      ],
+      "candidate_urls": [
+        "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+        "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+        "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+        "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        111
+      ],
+      "recommendation": "待补证",
+      "subject": "诸广顺采购",
+      "date": "2026-08-24线索",
+      "reason": "仍缺品牌、供应商明细。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-005",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/111"
+      ],
+      "candidate_urls": [
+        "https://www.guangsuzb.com/succeed_v_2069244178316840966.html",
+        "https://bbda.com/bidDetail/6ce8c9f276206f59d625a8107d6d5ac9dc842b626a06b7f967d65c05dedf15e7.html",
+        "https://www.dingbiao.com/zhaobiao/dd5264032b0e69dcfd98a20b645faf89.html",
+        "https://www.gongchengzhaobiao.cn/news-ce3cccc1b40dac081364c12ae620783a/",
+        "https://biaoxun.shuidi.cn/detail/16d9e82ebeab2d8b3a6763bff74f8870.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        211
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow csrt_bbox_tracker",
+      "date": "原上传日见候选",
+      "reason": "未核清与原始JIMTOF的加工关系、任务及独立新增内容；集中保留211，不重复挂多条。",
+      "sources": [],
+      "existing": "JIMTOF/JIMTOF1/1008已有记录；衍生项不据名字判重复",
+      "proposal_id": "OCT31-007",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/rainbowrobotics"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        211
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow JIMTOF_segmentation_masked",
+      "date": "原上传日见候选",
+      "reason": "未核清与原始JIMTOF的加工关系、任务及独立新增内容；集中保留211，不重复挂多条。",
+      "sources": [],
+      "existing": "JIMTOF/JIMTOF1/1008已有记录；衍生项不据名字判重复",
+      "proposal_id": "OCT31-008",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/rainbowrobotics"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        211
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow JIMTOF_segmentation_dataset__",
+      "date": "原上传日见候选",
+      "reason": "未核清与原始JIMTOF的加工关系、任务及独立新增内容；集中保留211，不重复挂多条。",
+      "sources": [],
+      "existing": "JIMTOF/JIMTOF1/1008已有记录；衍生项不据名字判重复",
+      "proposal_id": "OCT31-009",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/rainbowrobotics"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        211
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow JIMTOF_masked_yolo_white",
+      "date": "原上传日见候选",
+      "reason": "未核清与原始JIMTOF的加工关系、任务及独立新增内容；集中保留211，不重复挂多条。",
+      "sources": [],
+      "existing": "JIMTOF/JIMTOF1/1008已有记录；衍生项不据名字判重复",
+      "proposal_id": "OCT31-010",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/211"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/rainbowrobotics"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        242
+      ],
+      "recommendation": "待补证",
+      "subject": "WAIC及2月产品汇总",
+      "date": "未核定",
+      "reason": "缺可核验正文和独立产品日期",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-015",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/242"
+      ],
+      "candidate_urls": [
+        "https://github.com/AgibotTech/WorldOracle",
+        "https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0",
+        "https://www.qbitai.com/2026/10/503294.html",
+        "https://www.robotsj.cn/xinpinsudi/2125.html",
+        "https://www.xix.ai/zh/ainews/zerotech-unveils-g1-humanoid-robot-with-upgraded-motors-vision-and-battery-life-standard-version-priced-at-95000-rmb.html",
+        "https://www.robotsj.cn/xinpinsudi/1360.html",
+        "https://jinshui.zfcg.henan.gov.cn/henan/content?infoId=2025730",
+        "https://bid.tgnet.com/Bidding/0750184541529245969n1.html",
+        "https://m.jiemian.com/article/12564062.html",
+        "https://www.almosthuman.cn/",
+        "http://www.jintiankansha.com/column/pJMG8ZXFLd",
+        "https://www.jintiankansha.com/column/R3f5BStU2X",
+        "http://sechub.in/view/3138739",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#university-of-almeria"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        242
+      ],
+      "recommendation": "待补证",
+      "subject": "河南历史采购",
+      "date": "未核定",
+      "reason": "旧项目与本批HPU项目编号尚不能认定同一件事",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-016",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/242"
+      ],
+      "candidate_urls": [
+        "https://github.com/AgibotTech/WorldOracle",
+        "https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0",
+        "https://www.qbitai.com/2026/10/503294.html",
+        "https://www.robotsj.cn/xinpinsudi/2125.html",
+        "https://www.xix.ai/zh/ainews/zerotech-unveils-g1-humanoid-robot-with-upgraded-motors-vision-and-battery-life-standard-version-priced-at-95000-rmb.html",
+        "https://www.robotsj.cn/xinpinsudi/1360.html",
+        "https://jinshui.zfcg.henan.gov.cn/henan/content?infoId=2025730",
+        "https://bid.tgnet.com/Bidding/0750184541529245969n1.html",
+        "https://m.jiemian.com/article/12564062.html",
+        "https://www.almosthuman.cn/",
+        "http://www.jintiankansha.com/column/pJMG8ZXFLd",
+        "https://www.jintiankansha.com/column/R3f5BStU2X",
+        "http://sechub.in/view/3138739",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#university-of-almeria"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        242
+      ],
+      "recommendation": "待补证",
+      "subject": "导览机器人采购",
+      "date": "未核定",
+      "reason": "缺中标结果和产业主体归属",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-017",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/242"
+      ],
+      "candidate_urls": [
+        "https://github.com/AgibotTech/WorldOracle",
+        "https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0",
+        "https://www.qbitai.com/2026/10/503294.html",
+        "https://www.robotsj.cn/xinpinsudi/2125.html",
+        "https://www.xix.ai/zh/ainews/zerotech-unveils-g1-humanoid-robot-with-upgraded-motors-vision-and-battery-life-standard-version-priced-at-95000-rmb.html",
+        "https://www.robotsj.cn/xinpinsudi/1360.html",
+        "https://jinshui.zfcg.henan.gov.cn/henan/content?infoId=2025730",
+        "https://bid.tgnet.com/Bidding/0750184541529245969n1.html",
+        "https://m.jiemian.com/article/12564062.html",
+        "https://www.almosthuman.cn/",
+        "http://www.jintiankansha.com/column/pJMG8ZXFLd",
+        "https://www.jintiankansha.com/column/R3f5BStU2X",
+        "http://sechub.in/view/3138739",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#university-of-almeria"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        242,
+        375
+      ],
+      "recommendation": "待补证",
+      "subject": "宇树G1+",
+      "date": "未核定",
+      "reason": "旧标题错配零度；聚合消息不足以确认正式型号、发布时间及配置。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-018",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/242",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/375"
+      ],
+      "candidate_urls": [
+        "https://github.com/AgibotTech/WorldOracle",
+        "https://github.com/Roboparty/rp1_test/releases/tag/v0.1.0",
+        "https://www.qbitai.com/2026/10/503294.html",
+        "https://www.robotsj.cn/xinpinsudi/2125.html",
+        "https://www.xix.ai/zh/ainews/zerotech-unveils-g1-humanoid-robot-with-upgraded-motors-vision-and-battery-life-standard-version-priced-at-95000-rmb.html",
+        "https://www.robotsj.cn/xinpinsudi/1360.html",
+        "https://jinshui.zfcg.henan.gov.cn/henan/content?infoId=2025730",
+        "https://bid.tgnet.com/Bidding/0750184541529245969n1.html",
+        "https://m.jiemian.com/article/12564062.html",
+        "https://www.almosthuman.cn/",
+        "http://www.jintiankansha.com/column/pJMG8ZXFLd",
+        "https://www.jintiankansha.com/column/R3f5BStU2X",
+        "http://sechub.in/view/3138739",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#university-of-almeria",
+        "https://ai123.com/news/16026"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        258
+      ],
+      "recommendation": "待补证",
+      "subject": "大漠大具身业务",
+      "date": "未核定",
+      "reason": "缺通用机器人产品，不能凭无人机业务建具身主体",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-021",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+      ],
+      "candidate_urls": [
+        "https://github.com/Roboparty/RP1_test/releases/tag/v0.1.0",
+        "https://www.leiphone.com/category/robot/OA7EpCSSkv3D6yMD.html",
+        "https://www.leiphone.com/category/industrynews/ep1fzlxxZTkWwo67.html",
+        "https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html",
+        "https://www.ithome.com/1/013/864.htm",
+        "https://www.tmtpost.com/8168901.html",
+        "https://www.robotsj.cn/shichangdongtai/1741.html",
+        "https://news.pedaily.cn/202610/570043.shtml",
+        "https://www.news.cn/tech/20261009/505ddd1209b34d428aa0b81c34f737bd/c.html",
+        "https://www.sina.cn/news/detail/5352838773082788.html",
+        "https://www.jiqizhixin.com/industry",
+        "https://www.motphys.com/products",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#ultimaker"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        258
+      ],
+      "recommendation": "待补证",
+      "subject": "云深处招股书",
+      "date": "未核定",
+      "reason": "缺招股文件原件和上市阶段确认",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-022",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+      ],
+      "candidate_urls": [
+        "https://github.com/Roboparty/RP1_test/releases/tag/v0.1.0",
+        "https://www.leiphone.com/category/robot/OA7EpCSSkv3D6yMD.html",
+        "https://www.leiphone.com/category/industrynews/ep1fzlxxZTkWwo67.html",
+        "https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html",
+        "https://www.ithome.com/1/013/864.htm",
+        "https://www.tmtpost.com/8168901.html",
+        "https://www.robotsj.cn/shichangdongtai/1741.html",
+        "https://news.pedaily.cn/202610/570043.shtml",
+        "https://www.news.cn/tech/20261009/505ddd1209b34d428aa0b81c34f737bd/c.html",
+        "https://www.sina.cn/news/detail/5352838773082788.html",
+        "https://www.jiqizhixin.com/industry",
+        "https://www.motphys.com/products",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#ultimaker"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        258
+      ],
+      "recommendation": "待补证",
+      "subject": "北京训练基地",
+      "date": "未核定",
+      "reason": "未证实这次报道对应新增运营事件",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-023",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+      ],
+      "candidate_urls": [
+        "https://github.com/Roboparty/RP1_test/releases/tag/v0.1.0",
+        "https://www.leiphone.com/category/robot/OA7EpCSSkv3D6yMD.html",
+        "https://www.leiphone.com/category/industrynews/ep1fzlxxZTkWwo67.html",
+        "https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html",
+        "https://www.ithome.com/1/013/864.htm",
+        "https://www.tmtpost.com/8168901.html",
+        "https://www.robotsj.cn/shichangdongtai/1741.html",
+        "https://news.pedaily.cn/202610/570043.shtml",
+        "https://www.news.cn/tech/20261009/505ddd1209b34d428aa0b81c34f737bd/c.html",
+        "https://www.sina.cn/news/detail/5352838773082788.html",
+        "https://www.jiqizhixin.com/industry",
+        "https://www.motphys.com/products",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#ultimaker"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        258
+      ],
+      "recommendation": "待补证",
+      "subject": "4月融资回顾",
+      "date": "未核定",
+      "reason": "缺可读正文与独立轮次来源",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-024",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/258"
+      ],
+      "candidate_urls": [
+        "https://github.com/Roboparty/RP1_test/releases/tag/v0.1.0",
+        "https://www.leiphone.com/category/robot/OA7EpCSSkv3D6yMD.html",
+        "https://www.leiphone.com/category/industrynews/ep1fzlxxZTkWwo67.html",
+        "https://www.leiphone.com/category/robot/HYxX8W4aXp8UgmIO.html",
+        "https://www.ithome.com/1/013/864.htm",
+        "https://www.tmtpost.com/8168901.html",
+        "https://www.robotsj.cn/shichangdongtai/1741.html",
+        "https://news.pedaily.cn/202610/570043.shtml",
+        "https://www.news.cn/tech/20261009/505ddd1209b34d428aa0b81c34f737bd/c.html",
+        "https://www.sina.cn/news/detail/5352838773082788.html",
+        "https://www.jiqizhixin.com/industry",
+        "https://www.motphys.com/products",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#ultimaker"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        259
+      ],
+      "recommendation": "待补证",
+      "subject": "采集设备7月样机、8月发布",
+      "date": "2026-07/08线索",
+      "reason": "需核型号及原发布；不套用10月评论日期。估值、减持评论不入库。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-025",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/259"
+      ],
+      "candidate_urls": [
+        "https://www.tmtpost.com/8168985.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        286,
+        288
+      ],
+      "recommendation": "待补证",
+      "subject": "OpenAI人形机器人计划",
+      "date": "未核定",
+      "reason": "缺原始访谈与日期；合并到286追踪，不记完成发布。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-027",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/286",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/288"
+      ],
+      "candidate_urls": [
+        "https://www.ithome.com/1/014/433.htm",
+        "https://www.ithome.com/1/014/419.htm",
+        "https://www.tmtpost.com/8172207.html",
+        "https://pdf.dfcfw.com/pdf/H3_AP202603151820566177_1.pdf?1773601930000.pdf=",
+        "https://news.qq.com/rain/a/20261011A09UNN00",
+        "https://www.robothub.app/zh/rankings/funding",
+        "https://mekawire.com/zh/news/chery-aimoga-mobo-home-companion-humanoid-global-pre-orders-oct-21-wuhu-22-dof-moagent-20261018",
+        "https://www.zhaotoubiaowang.com/bidding/detail_for_164347.html",
+        "https://www.leiphone.com/category/zaobao/DlLESyleeLkyq5Dy.html",
+        "https://www.ithome.com/1/014/709.htm"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        286
+      ],
+      "recommendation": "待补证",
+      "subject": "美光机器人研究",
+      "date": "未核定",
+      "reason": "缺原始演讲与研究范围",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-028",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+      ],
+      "candidate_urls": [
+        "https://www.ithome.com/1/014/433.htm",
+        "https://www.ithome.com/1/014/419.htm",
+        "https://www.tmtpost.com/8172207.html",
+        "https://pdf.dfcfw.com/pdf/H3_AP202603151820566177_1.pdf?1773601930000.pdf=",
+        "https://news.qq.com/rain/a/20261011A09UNN00",
+        "https://www.robothub.app/zh/rankings/funding",
+        "https://mekawire.com/zh/news/chery-aimoga-mobo-home-companion-humanoid-global-pre-orders-oct-21-wuhu-22-dof-moagent-20261018",
+        "https://www.zhaotoubiaowang.com/bidding/detail_for_164347.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        286
+      ],
+      "recommendation": "待补证",
+      "subject": "张江麒麟/白虎数据集",
+      "date": "未核定",
+      "reason": "缺原始数据说明、发布主体与日期",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-029",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+      ],
+      "candidate_urls": [
+        "https://www.ithome.com/1/014/433.htm",
+        "https://www.ithome.com/1/014/419.htm",
+        "https://www.tmtpost.com/8172207.html",
+        "https://pdf.dfcfw.com/pdf/H3_AP202603151820566177_1.pdf?1773601930000.pdf=",
+        "https://news.qq.com/rain/a/20261011A09UNN00",
+        "https://www.robothub.app/zh/rankings/funding",
+        "https://mekawire.com/zh/news/chery-aimoga-mobo-home-companion-humanoid-global-pre-orders-oct-21-wuhu-22-dof-moagent-20261018",
+        "https://www.zhaotoubiaowang.com/bidding/detail_for_164347.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        286
+      ],
+      "recommendation": "待补证",
+      "subject": "温州技师学院98万元采购",
+      "date": "未核定",
+      "reason": "缺政府完整采购公告",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-030",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+      ],
+      "candidate_urls": [
+        "https://www.ithome.com/1/014/433.htm",
+        "https://www.ithome.com/1/014/419.htm",
+        "https://www.tmtpost.com/8172207.html",
+        "https://pdf.dfcfw.com/pdf/H3_AP202603151820566177_1.pdf?1773601930000.pdf=",
+        "https://news.qq.com/rain/a/20261011A09UNN00",
+        "https://www.robothub.app/zh/rankings/funding",
+        "https://mekawire.com/zh/news/chery-aimoga-mobo-home-companion-humanoid-global-pre-orders-oct-21-wuhu-22-dof-moagent-20261018",
+        "https://www.zhaotoubiaowang.com/bidding/detail_for_164347.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        286
+      ],
+      "recommendation": "待补证",
+      "subject": "1—3月融资历史表",
+      "date": "未核定",
+      "reason": "逐笔缺原轮次来源，不整表导入",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-031",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/286"
+      ],
+      "candidate_urls": [
+        "https://www.ithome.com/1/014/433.htm",
+        "https://www.ithome.com/1/014/419.htm",
+        "https://www.tmtpost.com/8172207.html",
+        "https://pdf.dfcfw.com/pdf/H3_AP202603151820566177_1.pdf?1773601930000.pdf=",
+        "https://news.qq.com/rain/a/20261011A09UNN00",
+        "https://www.robothub.app/zh/rankings/funding",
+        "https://mekawire.com/zh/news/chery-aimoga-mobo-home-companion-humanoid-global-pre-orders-oct-21-wuhu-22-dof-moagent-20261018",
+        "https://www.zhaotoubiaowang.com/bidding/detail_for_164347.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "Giga武汉邮政合作",
+      "date": "2026-08线索",
+      "reason": "仍缺合作原公告和具体项目范围。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-040",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：中科第五纪",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-041",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：智元G2及生产规模",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-042",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：Elite Primo",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-043",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：新松",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-044",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：越疆",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-045",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：汇川",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-046",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296
+      ],
+      "recommendation": "待补证",
+      "subject": "工博会：KUKA",
+      "date": "展会期间，独立事件日待核",
+      "reason": "需分别确认新产品/演示及通用机器人关联；不把展会汇总整包写入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-047",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        296,
+        312,
+        328,
+        419
+      ],
+      "recommendation": "待补证",
+      "subject": "9月融资回顾中未匹配的历史轮次",
+      "date": "历史轮次日期待核",
+      "reason": "枢途、帕西尼已有记录；Sharpa累计融资不能作新一轮；小鹏历史融资与宇树/梅卡曼德IPO阶段待逐笔原始公告。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-048",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/296",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/312",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/328",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/419"
+      ],
+      "candidate_urls": [
+        "https://github.com/ROBOTIS-GIT/ai_worker/releases/tag/2.3.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_control/releases/tag/0.5.0",
+        "https://github.com/ROBOTIS-GIT/cyclo_manager/releases/tag/1.2.0",
+        "https://github.com/wuji-technology/wuji-isaaclab",
+        "https://github.com/wuji-technology/wuji-mujoco",
+        "https://www.leiphone.com/category/private/7vTJq8gu376Dldil.html",
+        "https://www.qbitai.com/2026/10/504199.html",
+        "https://www.tmtpost.com/8168146.html",
+        "https://www.tmtpost.com/8173675.html",
+        "https://www.tmtpost.com/8173980.html",
+        "https://qiye.chinadaily.com.cn/a/202609/20/WS6aaf4e82e4b09a165c78b2ca.html",
+        "https://www.eefocus.com/article/2104639.html",
+        "https://theroboradar.com/news/ciif-2026-robots-move-from-demo-to-factory-b0a6a0",
+        "https://www.thepaper.cn/newsDetail_forward_34170041",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#dream-labs",
+        "https://github.com/Roboparty/ROMOMO",
+        "https://www.ithome.com/1/015/807.htm",
+        "https://finance.sina.com.cn/jjxw/2026-09-20/doc-inispyne8983626.shtml",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#opengeos",
+        "https://github.com/foxglove/mcap/releases/tag/releases/cpp/v2.2.0",
+        "https://github.com/OpenBMB/StaffDeck/releases/tag/v1.0.0-preview",
+        "https://github.com/rerun-io/rerun/releases/tag/0.40.0",
+        "https://github.com/ROBOTIS-GIT/github-workflows",
+        "https://github.com/TRI-ML/oopsie_processing",
+        "https://www.leiphone.com/category/ai/jvyFCFgqJxJtOvjo.html",
+        "https://www.leiphone.com/category/industrynews/uxVZGVMwc8JuD0Px.html",
+        "https://www.leiphone.com/category/industrynews/me3CuOBHyOqL14Pd.html",
+        "https://www.ithome.com/1/016/270.htm",
+        "https://www.ithome.com/1/016/258.htm",
+        "https://www.ithome.com/1/016/249.htm",
+        "https://www.yicai.com/news/103402672.html",
+        "https://www.ithome.com/1/015/876.htm",
+        "https://www.gasgoo.com/robot/news/70475575-%E5%A2%A8%E7%94%B2%E5%8F%91%E5%B8%83%E9%A6%96%E6%AC%BE%E6%B6%88%E8%B4%B9%E7%BA%A7%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A2%A8%E5%AE%9D/",
+        "https://www.morerss.com/%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83",
+        "https://www.leiphone.com/category/ai/D4SlkV6zQ4ill9MG.html",
+        "https://www.qbitai.com/2026/10/506273.html",
+        "https://www.qbitai.com/2026/10/506063.html",
+        "https://www.qbitai.com/2026/10/506042.html",
+        "https://www.ithome.com/1/019/353.htm",
+        "https://www.tmtpost.com/8185839.html",
+        "https://www.tmtpost.com/8185429.html",
+        "https://field.10jqka.com.cn/20261028/c681196036.shtml",
+        "https://www.eet-china.com/mp/a528868.html",
+        "https://www.agibot.com.cn/article/315/detail/256.html",
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        322
+      ],
+      "recommendation": "待补证",
+      "subject": "Flexiv RDK 2.2",
+      "date": "Draft/WIP",
+      "reason": "官方版本仍标未完成，保留待正式发布。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-049",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/322"
+      ],
+      "candidate_urls": [
+        "https://github.com/flexivrobotics/flexiv_rdk/releases/tag/v2.2"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        328
+      ],
+      "recommendation": "待补证",
+      "subject": "上海仪电/物理AI研究院合作",
+      "date": "未核定",
+      "reason": "缺与该线索对应的正式公告，其他白皮书不替代此合作证据。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-053",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/328"
+      ],
+      "candidate_urls": [
+        "https://github.com/foxglove/mcap/releases/tag/releases/cpp/v2.2.0",
+        "https://github.com/OpenBMB/StaffDeck/releases/tag/v1.0.0-preview",
+        "https://github.com/rerun-io/rerun/releases/tag/0.40.0",
+        "https://github.com/ROBOTIS-GIT/github-workflows",
+        "https://github.com/TRI-ML/oopsie_processing",
+        "https://www.leiphone.com/category/ai/jvyFCFgqJxJtOvjo.html",
+        "https://www.leiphone.com/category/industrynews/uxVZGVMwc8JuD0Px.html",
+        "https://www.leiphone.com/category/industrynews/me3CuOBHyOqL14Pd.html",
+        "https://www.ithome.com/1/016/270.htm",
+        "https://www.ithome.com/1/016/258.htm",
+        "https://www.ithome.com/1/016/249.htm",
+        "https://www.yicai.com/news/103402672.html",
+        "https://www.ithome.com/1/015/876.htm",
+        "https://www.gasgoo.com/robot/news/70475575-%E5%A2%A8%E7%94%B2%E5%8F%91%E5%B8%83%E9%A6%96%E6%AC%BE%E6%B6%88%E8%B4%B9%E7%BA%A7%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A2%A8%E5%AE%9D/",
+        "https://www.morerss.com/%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        361
+      ],
+      "recommendation": "待补证",
+      "subject": "智元G2超视距遥操作",
+      "date": "历史日期待核",
+      "reason": "缺原演示，与296合并核验",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-066",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/361"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html",
+        "https://www.leiphone.com/category/robot/h4vGHMyQ6b8drzy6.html",
+        "https://www.tmtpost.com/8180292.html",
+        "https://www.tmtpost.com/8179676.html",
+        "https://longbridge.com/zh-CN/news/301507898",
+        "https://tv.cctv.com/2026/10/23/VIDEQD0DGYDglsZjLUt69tPk261023.shtml"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        361
+      ],
+      "recommendation": "待补证",
+      "subject": "磅天RobotICU",
+      "date": "历史日期待核",
+      "reason": "主体身份、服务范围和启用时间未核定",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-068",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/361"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html",
+        "https://www.leiphone.com/category/robot/h4vGHMyQ6b8drzy6.html",
+        "https://www.tmtpost.com/8180292.html",
+        "https://www.tmtpost.com/8179676.html",
+        "https://longbridge.com/zh-CN/news/301507898",
+        "https://tv.cctv.com/2026/10/23/VIDEQD0DGYDglsZjLUt69tPk261023.shtml"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        361
+      ],
+      "recommendation": "待补证",
+      "subject": "墨甲海外2000台/60国",
+      "date": "历史日期待核",
+      "reason": "缺正式披露，渠道覆盖不等于终端交付",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-069",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/361"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html",
+        "https://www.leiphone.com/category/robot/h4vGHMyQ6b8drzy6.html",
+        "https://www.tmtpost.com/8180292.html",
+        "https://www.tmtpost.com/8179676.html",
+        "https://longbridge.com/zh-CN/news/301507898",
+        "https://tv.cctv.com/2026/10/23/VIDEQD0DGYDglsZjLUt69tPk261023.shtml"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        375
+      ],
+      "recommendation": "待补证",
+      "subject": "宇树H2i",
+      "date": "未核定",
+      "reason": "聚合页不足以确认正式型号、发布时间和参数。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-071",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/375"
+      ],
+      "candidate_urls": [
+        "https://ai123.com/news/16026"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        375
+      ],
+      "recommendation": "待补证",
+      "subject": "宇树Dex5S",
+      "date": "未核定",
+      "reason": "聚合页不足以确认正式型号、发布时间和参数。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-072",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/375"
+      ],
+      "candidate_urls": [
+        "https://ai123.com/news/16026"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        375
+      ],
+      "recommendation": "待补证",
+      "subject": "宇树R1-7a",
+      "date": "未核定",
+      "reason": "聚合页不足以确认正式型号、发布时间和参数。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-073",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/375"
+      ],
+      "candidate_urls": [
+        "https://ai123.com/news/16026"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        408
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow pink_circle_bb",
+      "date": "2026-10-27",
+      "reason": "41回合21414帧，但与merge版本关系和新增价值未完全核定；集中到396追踪，不假定独立数据采集。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-111",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/408"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/datasets/rainbowrobotics/pink_circle_bb"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        409
+      ],
+      "recommendation": "待补证",
+      "subject": "Rainbow pink_circle_trim",
+      "date": "2026-10-27",
+      "reason": "41回合21414帧，但与merge版本关系和新增价值未完全核定；集中到396追踪，不假定独立数据采集。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-112",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/409"
+      ],
+      "candidate_urls": [
+        "https://huggingface.co/datasets/rainbowrobotics/pink_circle_trim"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        373
+      ],
+      "recommendation": "待补证",
+      "subject": "上海第二工业大学教学机器人采购",
+      "date": "2026-10-14公告线索",
+      "reason": "校方原链接访问失败，缺完整供应商、型号、金额，不猜中标归属。",
+      "sources": [
+        "https://zc.sspu.edu.cn/2026/1014/c1310a172713/page.htm"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-139",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/373"
+      ],
+      "candidate_urls": [
+        "https://www.tmtpost.com/8180836.html",
+        "https://www.leaderobot.com/news/10134",
+        "https://zc.sspu.edu.cn/2026/1014/c1310a172713/page.htm",
+        "https://develop.realman-robotics.com/realman/docs/images/multimedia/zh/datatraining/guide/datastandard/CR_3_0602TS_2025/CR-3-0602TS2025%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E8%AE%AD%E7%BB%83%E5%9C%BA%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83.pdf",
+        "https://www.motphys.com/zh/motrixsim/"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "灵枢启智源创路演",
+      "date": "2026-10-26",
+      "reason": "已读路演报道，但仍需组织身份和实际通用机器人产品证据；不把创业方向当已发布模型。",
+      "sources": [
+        "https://cn.dailyeconomic.com/2026/10/27/158808.html"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-151",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "张量场科技源创路演",
+      "date": "2026-10-26",
+      "reason": "已读路演报道，但仍需组织身份和实际通用机器人产品证据；不把创业方向当已发布模型。",
+      "sources": [
+        "https://cn.dailyeconomic.com/2026/10/27/158808.html"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-152",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "苍穹极智源创路演",
+      "date": "2026-10-26",
+      "reason": "已读路演报道，但仍需组织身份和实际通用机器人产品证据；不把创业方向当已发布模型。",
+      "sources": [
+        "https://cn.dailyeconomic.com/2026/10/27/158808.html"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-153",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "潜向量科技源创路演",
+      "date": "2026-10-26",
+      "reason": "已读路演报道，但仍需组织身份和实际通用机器人产品证据；不把创业方向当已发布模型。",
+      "sources": [
+        "https://cn.dailyeconomic.com/2026/10/27/158808.html"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-154",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "中科博特A轮",
+      "date": "2026-10线索",
+      "reason": "融资可见于汇总，但主营为特种作业；需核实际通用人形产品及独立轮次来源。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-174",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403
+      ],
+      "recommendation": "待补证",
+      "subject": "Lightning Pixel新主体",
+      "date": "无日期",
+      "reason": "上游只有标签名；未核到组织身份与机器人产业业务。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-176",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        403,
+        442
+      ],
+      "recommendation": "待补证",
+      "subject": "柳州LZZC2026-G1-990645-LZSZ",
+      "date": "2026-10-09线索",
+      "reason": "已见广西威思盾供应商名称，缺官方原公告、金额及设备附件，不猜品牌。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-180",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/403",
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/442"
+      ],
+      "candidate_urls": [
+        "https://github.com/OpenBMB/MiniCPM-OCR",
+        "https://github.com/Westwood-Robotics/BEAR_Calibration_Tool/releases/tag/v3.3",
+        "https://www.leiphone.com/category/ai/80I0hBKAVSTsKbtM.html",
+        "https://www.qbitai.com/2026/10/505865.html",
+        "https://www.ithome.com/1/018/884.htm",
+        "https://www.tmtpost.com/8184213.html",
+        "https://www.21jingji.com/article/20261028/1f05bf33ed79ba271d7e6b2e2084363f.html",
+        "https://zhichai.net/topic/178635748",
+        "https://news.qq.com/rain/a/20261025A091SD00",
+        "http://sh.news.cn/20261027/eb0b550a8c4c4a378179d1bfe7d24311/c.html",
+        "https://zfcg.henan.gov.cn/henan/content?bz=1&channelCode=H600102&infoId=2025730",
+        "https://bidding.jszhaobiao.cn/result-detail-333272940.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#lightning-pixel",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#part-db",
+        "https://www.leiphone.com/category/academic/xPVWQgBN3Foj7fo5.html",
+        "https://www.leiphone.com/category/robot/jv4zJUmQr2wkoN0i.html",
+        "https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html",
+        "https://www.leiphone.com/category/robot/espiC5FlGhRbSj1b.html",
+        "https://www.leiphone.com/category/robot/9NTmjVmWkIyllzaj.html",
+        "https://latestrobotnews.com/zh/embodied-ai-funding-week-components-data-chips-zh/",
+        "https://www.tmtpost.com/8177987.html",
+        "https://www.agibot.com.cn/article/315/detail/261.html",
+        "https://www.guandian.cn/m/show/614119",
+        "https://finance.sina.com.cn/jjxw/2026-10-30/doc-iniwywtu2308485.shtml",
+        "https://notice.hpu.edu.cn/info/1001/17465.htm",
+        "http://bbda.com/bidDetail/d3d667151ceace146b6c5a24fba4c50dd83155a46bce651d3ab09d52f9457b3f.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        419
+      ],
+      "recommendation": "待补证",
+      "subject": "小雨智造/钢结构质检中心联合实验室",
+      "date": "2026-10-29线索",
+      "reason": "需原合作公告及通用机器人关联；纯焊接检验项目不自动纳入。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-182",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/419"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/ai/D4SlkV6zQ4ill9MG.html",
+        "https://www.qbitai.com/2026/10/506273.html",
+        "https://www.qbitai.com/2026/10/506063.html",
+        "https://www.qbitai.com/2026/10/506042.html",
+        "https://www.ithome.com/1/019/353.htm",
+        "https://www.tmtpost.com/8185839.html",
+        "https://www.tmtpost.com/8185429.html",
+        "https://field.10jqka.com.cn/20261028/c681196036.shtml",
+        "https://www.eet-china.com/mp/a528868.html",
+        "https://www.agibot.com.cn/article/315/detail/256.html",
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        419
+      ],
+      "recommendation": "待补证",
+      "subject": "Optimus充电工作演示",
+      "date": "2026-10报道线索",
+      "reason": "缺原始演示、主体确认和发生日，不推定已上岗部署。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-187",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/419"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/ai/D4SlkV6zQ4ill9MG.html",
+        "https://www.qbitai.com/2026/10/506273.html",
+        "https://www.qbitai.com/2026/10/506063.html",
+        "https://www.qbitai.com/2026/10/506042.html",
+        "https://www.ithome.com/1/019/353.htm",
+        "https://www.tmtpost.com/8185839.html",
+        "https://www.tmtpost.com/8185429.html",
+        "https://field.10jqka.com.cn/20261028/c681196036.shtml",
+        "https://www.eet-china.com/mp/a528868.html",
+        "https://www.agibot.com.cn/article/315/detail/256.html",
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        419
+      ],
+      "recommendation": "待补证",
+      "subject": "诺亦腾Pre-A+++",
+      "date": "2026-10报道线索",
+      "reason": "可能与6月已收Pre-A++的延伸报道交叠；需独立轮次与投资方原披露，避免多一个加号就新建融资。",
+      "sources": [],
+      "existing": "evt-2026-06-15-noitom-funding-pre-a-plus-plus-round",
+      "proposal_id": "OCT31-191",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/419"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/ai/D4SlkV6zQ4ill9MG.html",
+        "https://www.qbitai.com/2026/10/506273.html",
+        "https://www.qbitai.com/2026/10/506063.html",
+        "https://www.qbitai.com/2026/10/506042.html",
+        "https://www.ithome.com/1/019/353.htm",
+        "https://www.tmtpost.com/8185839.html",
+        "https://www.tmtpost.com/8185429.html",
+        "https://field.10jqka.com.cn/20261028/c681196036.shtml",
+        "https://www.eet-china.com/mp/a528868.html",
+        "https://www.agibot.com.cn/article/315/detail/256.html",
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        419
+      ],
+      "recommendation": "待补证",
+      "subject": "失败经验驱动世界模型论文",
+      "date": "未核定",
+      "reason": "新浪/微博摘录未明确可核对的原论文，不猜标题和归属。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-192",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/419"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/ai/D4SlkV6zQ4ill9MG.html",
+        "https://www.qbitai.com/2026/10/506273.html",
+        "https://www.qbitai.com/2026/10/506063.html",
+        "https://www.qbitai.com/2026/10/506042.html",
+        "https://www.ithome.com/1/019/353.htm",
+        "https://www.tmtpost.com/8185839.html",
+        "https://www.tmtpost.com/8185429.html",
+        "https://field.10jqka.com.cn/20261028/c681196036.shtml",
+        "https://www.eet-china.com/mp/a528868.html",
+        "https://www.agibot.com.cn/article/315/detail/256.html",
+        "https://www.sina.cn/news/detail/5356052520633633.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        432
+      ],
+      "recommendation": "待补证",
+      "subject": "Patch新主体",
+      "date": "无日期",
+      "reason": "上游只有团队标签，缺实际组织、产品和机器人业务来源。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-197",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/432"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/industrynews/CLO1sIKJzw59DmrI.html",
+        "https://www.tmtpost.com/8186657.html",
+        "https://www.nbd.com.cn/articles/2026-10-29/4628526.html",
+        "https://www.ithome.com/1/019/806.htm",
+        "https://www.diaifu.net/post/37862.html",
+        "https://github.com/ImChong/Robotics_Notebooks/blob/main/schema/institutions.json#patch-gg"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        442
+      ],
+      "recommendation": "待补证",
+      "subject": "源升Apex Hand源创计划",
+      "date": "IROS期间，确日待核",
+      "reason": "报道有开发者计划，但首次公告日/已有计划关系待核；二代数采尚在开发，百万次测试不当认证结果。",
+      "sources": [],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-199",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/442"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/academic/xPVWQgBN3Foj7fo5.html",
+        "https://www.leiphone.com/category/robot/jv4zJUmQr2wkoN0i.html",
+        "https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html",
+        "https://www.leiphone.com/category/robot/espiC5FlGhRbSj1b.html",
+        "https://www.leiphone.com/category/robot/9NTmjVmWkIyllzaj.html",
+        "https://latestrobotnews.com/zh/embodied-ai-funding-week-components-data-chips-zh/",
+        "https://www.tmtpost.com/8177987.html",
+        "https://www.agibot.com.cn/article/315/detail/261.html",
+        "https://www.guandian.cn/m/show/614119",
+        "https://finance.sina.com.cn/jjxw/2026-10-30/doc-iniwywtu2308485.shtml",
+        "https://notice.hpu.edu.cn/info/1001/17465.htm",
+        "http://bbda.com/bidDetail/d3d667151ceace146b6c5a24fba4c50dd83155a46bce651d3ab09d52f9457b3f.html"
+      ],
+      "approval": "待维护者决定"
+    },
+    {
+      "issues": [
+        442
+      ],
+      "recommendation": "待补证",
+      "subject": "磐虎天使轮",
+      "date": "2026-10-15/16披露",
+      "reason": "投资方公告确认融资，但业务集中地下巡检；需核通用机器人载体边界后再建主体。",
+      "sources": [
+        "https://puhuacapital.com/mobile/index.php/news",
+        "https://api3.cls.cn/share/article/2507017?app=stib&os=android&sv=136"
+      ],
+      "existing": "未发现同事件",
+      "proposal_id": "OCT31-204",
+      "issue_urls": [
+        "https://github.com/MasashiToda1/embodied-industry-db/issues/442"
+      ],
+      "candidate_urls": [
+        "https://www.leiphone.com/category/academic/xPVWQgBN3Foj7fo5.html",
+        "https://www.leiphone.com/category/robot/jv4zJUmQr2wkoN0i.html",
+        "https://www.leiphone.com/category/robot/EnKFLg1RRmN9SaHJ.html",
+        "https://www.leiphone.com/category/robot/espiC5FlGhRbSj1b.html",
+        "https://www.leiphone.com/category/robot/9NTmjVmWkIyllzaj.html",
+        "https://latestrobotnews.com/zh/embodied-ai-funding-week-components-data-chips-zh/",
+        "https://www.tmtpost.com/8177987.html",
+        "https://www.agibot.com.cn/article/315/detail/261.html",
+        "https://www.guandian.cn/m/show/614119",
+        "https://finance.sina.com.cn/jjxw/2026-10-30/doc-iniwywtu2308485.shtml",
+        "https://notice.hpu.edu.cn/info/1001/17465.htm",
+        "http://bbda.com/bidDetail/d3d667151ceace146b6c5a24fba4c50dd83155a46bce651d3ab09d52f9457b3f.html"
+      ],
+      "approval": "待维护者决定"
+    }
+  ],
+  "remaining_issues": [
+    111,
+    211,
+    242,
+    258,
+    259,
+    286,
+    288,
+    296,
+    312,
+    322,
+    328,
+    361,
+    373,
+    375,
+    403,
+    408,
+    409,
+    419,
+    432,
+    442
+  ],
+  "close_on_merge_additions": [
+    334
+  ]
+}

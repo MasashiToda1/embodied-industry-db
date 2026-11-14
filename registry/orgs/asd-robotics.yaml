@@ -1,0 +1,14 @@
+id: asd-robotics
+names:
+  zh: 爱仕达
+status: active
+layers:
+- embodiment
+- integration
+description: 开展ASD-S2人形机器人研发与具身智能集成；仅收通用人形及机器人系统集成相关事实，不收厨具或纯工业机械臂业务。
+sources:
+- url: https://api3.cls.cn/share/article/2504033?app=&os=CailianpressWeb&sv=866
+  publisher: api3.cls.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/e46a9df217eb39ab.html

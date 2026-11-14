@@ -1,0 +1,26 @@
+# RoboAPI与Poke-Aurora为产品别名，用于新闻候选匹配；不表示独立公司。
+id: pokebot
+names:
+  zh: 破壳机器人
+  en: PokeBot
+  aliases:
+  - 破壳
+  - RoboAPI
+  - Poke-Aurora
+status: active
+layers:
+- foundation
+description: 研发面向通用家庭机器人的具身基础模型，发布由世界—动作模型Poke-Aurora驱动的RoboAPI技术预览；本体仍处预告阶段，不将其记为已交付产品。
+accounts:
+  site: https://pokebot.com
+sources:
+- url: https://www.pokebot.com/
+  publisher: 破壳机器人 PokeBot
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/pokebot/a2d7dcb1651598cf.html
+- url: https://pokebot.com/zh-cn/ai
+  publisher: 破壳机器人 PokeBot
+  tier: official
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/pokebot/1dcf357bcaff8597.html
