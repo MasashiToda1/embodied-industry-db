@@ -1,0 +1,20 @@
+id: evt-2026-01-realman-statement-ces-transpacific-teleoperation
+date: 2026-01
+date_precision: month
+type: statement
+orgs:
+- id: realman
+  role: subject
+title:
+  zh: 睿尔曼在CES演示北京至拉斯维加斯遥操作
+summary:
+  zh: 睿尔曼在CES 2026期间演示跨洋实时遥操作，从北京通过远程作业网络控制拉斯维加斯展台机器人递送物品。记录展会演示，不作为客户生产部署。
+evidence:
+- url: https://tech.ifeng.com/c/8piwzID2mEJ
+  publisher: tech.ifeng.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/9e55d99e992431dd.html
+corroboration: single
+date_basis: derived
+date_as_stated: 凤凰科技2026年1月7日报道CES期间演示，未确定具体演示日，按月份记录。

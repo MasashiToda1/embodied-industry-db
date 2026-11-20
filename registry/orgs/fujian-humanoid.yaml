@@ -1,0 +1,15 @@
+id: fujian-humanoid
+names:
+  zh: 福建人形机器人创新中心
+  aliases:
+  - 福建人形机器人创新中心有限公司
+status: active
+layers:
+- embodiment
+description: 研发福智系列通用人形机器人；收录人形本体业务，规划产能不视为已建成产能。
+sources:
+- url: https://finance.eastmoney.com/a/202610233906219295.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/b32f714f5a3c6f45.html

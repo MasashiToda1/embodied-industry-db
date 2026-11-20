@@ -1,0 +1,14 @@
+id: xiangyuan-materials
+names:
+  zh: 祥源新材
+status: active
+layers:
+- components
+description: 提供用于人形机器人的柔性压阻传感材料；收录范围限机器人柔性传感材料，不收一般泡棉业务。
+sources:
+- url: https://egs.stcn.com/news/detail/2349112.html
+  publisher: 人民财讯（证券时报）
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/a3095b968148a44b.json
+  note: 网页阅读核验摘要存档；原始HTML下载失败，未冒充原始页面。
