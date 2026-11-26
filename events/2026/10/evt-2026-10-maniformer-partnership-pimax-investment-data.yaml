@@ -1,0 +1,22 @@
+id: evt-2026-10-maniformer-partnership-pimax-investment-data
+date: 2026-10
+date_precision: month
+type: partnership
+orgs:
+- id: maniformer
+  role: subject
+title:
+  zh: 觅蜂投资小派并开展具身数据合作
+summary:
+  zh: 觅蜂科技投资小派创新科技（杭州）股份有限公司（Pimax），双方围绕具身数据开展合作。交易金额未披露；小派作为合作对手方，不扩展为泛VR产业主体。
+evidence:
+- url: https://news.pedaily.cn/202610/570582.shtml
+  publisher: news.pedaily.cn
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/111666be4b563360.html
+corroboration: single
+date_basis: derived
+date_as_stated: 投资界2026年10月21日披露，未明确交易完成日，按10月记录。
+counterparties:
+- 小派创新科技（杭州）股份有限公司（Pimax）

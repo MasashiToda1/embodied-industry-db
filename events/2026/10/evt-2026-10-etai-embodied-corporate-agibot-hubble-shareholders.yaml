@@ -1,0 +1,24 @@
+id: evt-2026-10-etai-embodied-corporate-agibot-hubble-shareholders
+date: 2026-10
+date_precision: month
+type: corporate
+orgs:
+- id: etai-embodied
+  role: subject
+- id: agibot
+  role: investor
+title:
+  zh: 乙太具身新增智元与华为哈勃股东
+summary:
+  zh: 工商变更报道显示，乙太具身新增智元创新（上海）科技股份有限公司及深圳哈勃科技投资合伙企业（有限合伙）等股东。记录股东变更，未披露交易金额；注册资本不作为融资金额。
+evidence:
+- url: https://finance.eastmoney.com/a/202610203900595017.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/2423cfd8efa8d454.html
+corroboration: single
+date_basis: derived
+date_as_stated: 科创板日报2026年10月20日报道近日工商变更，按月份记录，不推定融资轮次或交割日。
+counterparties:
+- 深圳哈勃科技投资合伙企业（有限合伙）

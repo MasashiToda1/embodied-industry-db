@@ -1,0 +1,35 @@
+{
+  "approved_on": "2026-11-01",
+  "approval": "维护者：准入，并补充监控检索。",
+  "events": [
+    "events/2026/10/evt-2026-10-30-pokebot-product_launch-roboapi-preview.yaml"
+  ],
+  "orgs": [
+    "registry/orgs/pokebot.yaml"
+  ],
+  "snapshots": [
+    "snapshots/2026/11/pokebot/1dcf357bcaff8597.html",
+    "snapshots/2026/11/pokebot/a2d7dcb1651598cf.html",
+    "snapshots/2026/11/pokebot/2e9c77b3e7f56589.html"
+  ],
+  "records": [
+    {
+      "proposal_id": "NOV01-POKEBOT",
+      "issues": [],
+      "event": "evt-2026-10-30-pokebot-product_launch-roboapi-preview",
+      "orgs": [
+        "pokebot"
+      ]
+    }
+  ],
+  "source_date": "2026-10-30",
+  "dedup": "全库主体别名、事件、GitHub issue及PR检索未发现破壳/RoboAPI记录。",
+  "boundary": "具身基础模型层；产品面向通用家庭机器人的操作智能，不能因演示载体是机械臂而归为纯工业机械臂厂商。",
+  "monitoring": "新增具身模型API中英文查询及破壳品牌查询；现有每日Watch任务发现候选，仍需逐条审核。不添加未经验证的GitHub/Hugging Face账号。",
+  "limitations": [
+    "API可访问/免费预览不等于权重开源或商业服务正式上线。",
+    "世界模型路线由公司原文确认；未推定仿真栈、运控路线或采集方式。",
+    "公司性能指标不作为第三方验证。",
+    "官网accounts.site仅记录身份入口，现有Watch未提供逐官网页面监控。"
+  ]
+}

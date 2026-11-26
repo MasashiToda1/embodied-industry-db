@@ -1,0 +1,24 @@
+id: evt-2026-10-jianzhi-robot-corporate-baidu-galbot-shareholders
+date: 2026-10
+date_precision: month
+type: corporate
+orgs:
+- id: jianzhi-robot
+  role: subject
+- id: galbot
+  role: investor
+title:
+  zh: 简智新增百度网讯与银河通用股东
+summary:
+  zh: 工商变更报道显示，简智新增北京百度网讯科技有限公司、苏州盖博特科技有限公司等股东。记录股权变更，不填未披露的交易金额或融资轮次，注册资本变化不视为融资额。
+evidence:
+- url: https://finance.eastmoney.com/a/202610093891229181.html
+  publisher: finance.eastmoney.com
+  tier: media
+  retrieved: '2026-11-01'
+  snapshot: snapshots/2026/11/followup-20261101/2e499f5178b6e9ca.html
+corroboration: single
+date_basis: derived
+date_as_stated: 南方财经2026年10月9日报道近日变更，按月份精度记录。
+counterparties:
+- 北京百度网讯科技有限公司
